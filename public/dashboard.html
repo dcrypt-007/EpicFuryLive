@@ -20,7 +20,7 @@
     <link rel="canonical" href="https://epicfurylive.com">
 
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-sR5DrKvs/L2QbjWcsVBZ2GnU2mM6I9jNJzYD7PtqL+dRPYMRUbNLN7p0RCj7LJ1OfD8kCzCzQvZjdF6GwA/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-d5nkXVJeDVkjQBTLCpp2djjHqPEXZc4xQtXPMVOhUhMKkkkHmXUO1FZLWIVHJDxl1nP2hBFBzSLFkfYHU47TFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1739,7 +1739,7 @@
     </div>
 
     <!-- Leaflet JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
         // DATA
@@ -1784,11 +1784,10 @@
         // INITIALIZE MAP
         function initMap() {
             map = L.map('map').setView([30, 48], 4);
-            L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors',
-                maxZoom: 18,
-                tileSize: 256,
-                subdomains: 'abc'
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap contributors © CARTO',
+                maxZoom: 19,
+                subdomains: 'abcd'
             }).addTo(map);
 
             addMarkers();
@@ -1953,10 +1952,15 @@
 
         // INIT
         document.addEventListener('DOMContentLoaded', () => {
-            initMap();
-            initCasualtiesChart();
+            // Clocks first — these must always work
             updateClocks();
             setInterval(updateClocks, 1000);
+
+            // Charts
+            try { initCasualtiesChart(); } catch(e) { console.warn('Chart init failed:', e); }
+
+            // Map — depends on Leaflet loading
+            try { initMap(); } catch(e) { console.warn('Map init failed:', e); }
         });
     </script>
 </body>
