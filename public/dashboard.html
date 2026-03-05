@@ -227,6 +227,10 @@
             display: block;
         }
 
+        #tab-dashboard.active {
+            display: grid !important;
+        }
+
         /* Dashboard Layout */
         #tab-dashboard {
             display: grid;
@@ -647,7 +651,7 @@
         .event-type-badge.protest { background-color: var(--type-protest); color: #000000; }
 
         /* Responsive Design */
-        @media (max-width: 1400px) {
+        @media (max-width: 1024px) {
             #tab-dashboard {
                 grid-template-columns: 1fr;
             }
@@ -955,16 +959,16 @@
         </div>
 
         <!-- TAB 2: VERIFIED EVENTS -->
-        <div id="tab-events" class="tab-content" style="display:none;"></div>
+        <div id="tab-events" class="tab-content"></div>
 
         <!-- TAB 3: CLAIMS FEED -->
-        <div id="tab-claims" class="tab-content" style="display:none;"></div>
+        <div id="tab-claims" class="tab-content"></div>
 
         <!-- TAB 4: POLLS -->
-        <div id="tab-polls" class="tab-content" style="display:none;"></div>
+        <div id="tab-polls" class="tab-content"></div>
 
         <!-- TAB 5: ABOUT -->
-        <div id="tab-about" class="tab-content" style="display:none;"></div>
+        <div id="tab-about" class="tab-content"></div>
     </div>
 
 
@@ -2786,13 +2790,28 @@
 
         // --------- Tab Switching ---------
         function switchTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(tc => {
+                tc.classList.remove('active');
+                tc.style.display = 'none';
+            });
+            // Deactivate all tab buttons
             document.querySelectorAll('.tab-button').forEach(tb => tb.classList.remove('active'));
 
-            document.getElementById('tab-' + tabName).classList.add('active');
+            // Show selected tab
+            const tabEl = document.getElementById('tab-' + tabName);
+            tabEl.classList.add('active');
+            if (tabName === 'dashboard') {
+                tabEl.style.display = 'grid';
+            } else {
+                tabEl.style.display = 'block';
+            }
+
+            // Activate the clicked button
             event.target.classList.add('active');
 
-            if (tabName === 'dashboard' && CHART_INSTANCE) {
+            // Resize map if returning to dashboard
+            if (tabName === 'dashboard' && typeof MAP !== 'undefined' && MAP) {
                 setTimeout(() => MAP.invalidateSize(), 100);
             }
         }
@@ -3006,6 +3025,19 @@
         setTimeout(() => {
             populateActivityFeed();
             initializeChart();
+            populateEventsTabs();
+            populateClaimsTab();
+            populatePolsTab();
+            populateAboutTab();
+
+            // Ensure only dashboard is visible on load
+            document.querySelectorAll('.tab-content').forEach(tc => {
+                if (tc.id === 'tab-dashboard') {
+                    tc.style.display = 'grid';
+                } else {
+                    tc.style.display = 'none';
+                }
+            });
         }, 100);
     </script>
 
