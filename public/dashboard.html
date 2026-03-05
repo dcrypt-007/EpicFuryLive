@@ -417,6 +417,155 @@
             color: #cbd5e1;
         }
 
+        /* THREAT EXCHANGE */
+        .threat-exchange {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .threat-exchange-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #e0e6ed;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .threat-exchange-subtitle {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-bottom: 16px;
+        }
+
+        .threat-item {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            gap: 12px;
+            padding: 14px 0;
+            border-bottom: 1px solid #1e2a3a;
+            font-size: 13px;
+        }
+
+        .threat-item:last-child {
+            border-bottom: none;
+        }
+
+        .threat-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .threat-date {
+            color: #94a3b8;
+            font-size: 11px;
+        }
+
+        .threat-severity {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+
+        .severity-critical {
+            background: #991b1b;
+            color: #fca5a5;
+        }
+
+        .severity-high {
+            background: #92400e;
+            color: #fcd34d;
+        }
+
+        .severity-medium {
+            background: #1e3a5f;
+            color: #93c5fd;
+        }
+
+        .severity-low {
+            background: #1a2e1a;
+            color: #86efac;
+        }
+
+        .threat-content {
+            line-height: 1.6;
+        }
+
+        .threat-actor {
+            font-weight: 700;
+            margin-right: 4px;
+        }
+
+        .threat-actor-us { color: #60a5fa; }
+        .threat-actor-israel { color: #60a5fa; }
+        .threat-actor-iran { color: #f87171; }
+        .threat-actor-hezbollah { color: #fb923c; }
+        .threat-actor-houthi { color: #fb923c; }
+        .threat-actor-russia { color: #c084fc; }
+        .threat-actor-china { color: #c084fc; }
+        .threat-actor-iraq { color: #fb923c; }
+
+        .threat-text {
+            color: #cbd5e1;
+        }
+
+        .threat-target {
+            display: inline-block;
+            background: #1e2a3a;
+            padding: 1px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            color: #94a3b8;
+            margin-top: 6px;
+        }
+
+        .threat-source {
+            color: #64748b;
+            font-size: 11px;
+            margin-top: 4px;
+        }
+
+        .threat-filter-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .threat-filter-btn {
+            padding: 4px 12px;
+            background: transparent;
+            border: 1px solid #334155;
+            color: #94a3b8;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .threat-filter-btn:hover,
+        .threat-filter-btn.active {
+            border-color: #60a5fa;
+            color: #60a5fa;
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .threat-item {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* TAB 2: THE COST */
         .cost-container {
             display: grid;
@@ -1012,6 +1161,207 @@
             </div>
 
             <div id="map"></div>
+
+            <!-- THREAT EXCHANGE -->
+            <div class="threat-exchange">
+                <div class="threat-exchange-title">
+                    Threat Exchange
+                </div>
+                <div class="threat-exchange-subtitle">All public threats, warnings, and ultimatums issued by parties to the conflict — chronological</div>
+
+                <div class="threat-filter-bar">
+                    <button class="threat-filter-btn active" onclick="filterThreats(this, 'all')">All</button>
+                    <button class="threat-filter-btn" onclick="filterThreats(this, 'us')">United States</button>
+                    <button class="threat-filter-btn" onclick="filterThreats(this, 'israel')">Israel</button>
+                    <button class="threat-filter-btn" onclick="filterThreats(this, 'iran')">Iran / IRGC</button>
+                    <button class="threat-filter-btn" onclick="filterThreats(this, 'proxy')">Proxies</button>
+                    <button class="threat-filter-btn" onclick="filterThreats(this, 'world')">Russia / China</button>
+                </div>
+
+                <div id="threatList">
+                    <div class="threat-item" data-actor="iran">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 5, 2026</div>
+                            <div class="threat-severity severity-high">High</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-iran">IRAN (Acting FM Araghchi):</span>
+                            <span class="threat-text">Any European military involvement — including defensive systems — will be considered "an act of war" against the Islamic Republic.</span>
+                            <div class="threat-target">Target: EU / NATO → Europe</div>
+                            <div class="threat-source">Source: Al Jazeera, Reuters</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="iran">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 5, 2026</div>
+                            <div class="threat-severity severity-critical">Critical</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-iran">IRAN (IRGC spokesman):</span>
+                            <span class="threat-text">Iran announces "measured response" to continued strikes. IRGC warns all US bases in the region remain valid targets and operations will continue until "full cessation of aggression."</span>
+                            <div class="threat-target">Target: US military bases → Gulf region</div>
+                            <div class="threat-source">Source: IRGC Telegram channels, Reuters</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="proxy">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 5, 2026</div>
+                            <div class="threat-severity severity-high">High</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-iraq">IRAQI MILITIAS (Kata'ib Hezbollah):</span>
+                            <span class="threat-text">Drone strikes launched at US base in Iraq. Militia warns of "open war" if US does not withdraw forces from Iraqi soil within 48 hours.</span>
+                            <div class="threat-target">Target: US forces → Iraq</div>
+                            <div class="threat-source">Source: Al Jazeera</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="world">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 4, 2026</div>
+                            <div class="threat-severity severity-medium">Medium</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-russia">RUSSIA (FM Lavrov):</span>
+                            <span class="threat-text">Warns the US-Israeli war could trigger nuclear proliferation across the Middle East. States Arab countries may now pursue nuclear weapons, and that "the nuclear proliferation problem could spiral out of control."</span>
+                            <div class="threat-target">Target: US / Israel → Global stability</div>
+                            <div class="threat-source">Source: Al Jazeera, Democracy Now</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="world">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 4, 2026</div>
+                            <div class="threat-severity severity-medium">Medium</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-china">CHINA (FM spokesperson):</span>
+                            <span class="threat-text">Condemns the "grave violation of Iran's sovereignty" and calls for "immediate cessation of military operations." Warns the conflict risks "loss of control" and threatens global economic stability.</span>
+                            <div class="threat-target">Target: US / Israel → Diplomatic</div>
+                            <div class="threat-source">Source: Chinese Foreign Ministry press conference</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="us">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 4, 2026</div>
+                            <div class="threat-severity severity-critical">Critical</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-us">US (SecDef Hegseth):</span>
+                            <span class="threat-text">States Epic Fury goals are "laser-focused" — complete destruction of Iran's nuclear capability and ballistic missile arsenal. Warns Iran that any further retaliation "will be met with overwhelming and disproportionate force." Dismisses Russia and China as "non-factors."</span>
+                            <div class="threat-target">Target: Iran → Military infrastructure</div>
+                            <div class="threat-source">Source: DOD press briefing, AP</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="israel">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 4, 2026</div>
+                            <div class="threat-severity severity-critical">Critical</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-israel">ISRAEL (IDF):</span>
+                            <span class="threat-text">Confirms strikes on Hezbollah command centers near Beirut. Warns Lebanon that continued Hezbollah operations will result in "expansion of operations across all of Lebanon." Over 70 weapons depots struck in southern Lebanon.</span>
+                            <div class="threat-target">Target: Hezbollah / Lebanon → Beirut, S. Lebanon</div>
+                            <div class="threat-source">Source: IDF spokesperson, Reuters</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="iran">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 2, 2026</div>
+                            <div class="threat-severity severity-critical">Critical</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-iran">IRAN (IRGC Gen. Jabbari):</span>
+                            <span class="threat-text">"Not a single drop of oil will leave the region." Threatens to attack any ship transiting the Strait of Hormuz and vows to destroy all economic hubs in the Middle East.</span>
+                            <div class="threat-target">Target: Global shipping → Strait of Hormuz, Gulf economies</div>
+                            <div class="threat-source">Source: IRGC statements, Al Jazeera, TIME</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="iran">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 2, 2026</div>
+                            <div class="threat-severity severity-critical">Critical</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-iran">IRAN (IRGC):</span>
+                            <span class="threat-text">Launches 500+ ballistic missiles and 2,000+ drones targeting Israel and US bases across Jordan, Kuwait, Bahrain, Qatar, Iraq, Saudi Arabia, and UAE. Tehran vows to "completely destroy the Middle East's military and economic infrastructure."</span>
+                            <div class="threat-target">Target: Israel, US bases → Gulf-wide</div>
+                            <div class="threat-source">Source: CENTCOM, CNN, Al Jazeera</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="proxy">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 1, 2026</div>
+                            <div class="threat-severity severity-high">High</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-hezbollah">HEZBOLLAH:</span>
+                            <span class="threat-text">Fires rockets at northern Israel "in response to the elimination of Khamenei." Warns that all Israeli cities are within range and that the "resistance front will not rest until the Zionist entity is destroyed."</span>
+                            <div class="threat-target">Target: Israel → Northern Israel, Tel Aviv</div>
+                            <div class="threat-source">Source: CNN, Al Jazeera</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="us">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 1, 2026</div>
+                            <div class="threat-severity severity-critical">Critical</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-us">US (President Trump):</span>
+                            <span class="threat-text">Authorizes Operation Epic Fury to "crush the Iranian regime and end the nuclear threat." Announces campaign projected to last "4 to 5 weeks" but could go "far longer." States Iran "ignored 74 warnings" not to rebuild its nuclear program.</span>
+                            <div class="threat-target">Target: Iran → Regime, nuclear program, military</div>
+                            <div class="threat-source">Source: White House statement, C-SPAN, Al Jazeera</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="proxy">
+                        <div class="threat-meta">
+                            <div class="threat-date">Feb 28, 2026</div>
+                            <div class="threat-severity severity-medium">Medium</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-houthi">HOUTHIS (Ansar Allah):</span>
+                            <span class="threat-text">Threaten to escalate and resume Red Sea attacks in response to US-Israeli strikes on Iran. Internal debate ongoing over whether to rejoin conflict or preserve ceasefire. Potential targets include US warships and bases in Bahrain (US Fifth Fleet).</span>
+                            <div class="threat-target">Target: US Navy, Red Sea shipping → Red Sea, Gulf of Aden</div>
+                            <div class="threat-source">Source: Stimson Center, Reuters</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="world">
+                        <div class="threat-meta">
+                            <div class="threat-date">Feb 28, 2026</div>
+                            <div class="threat-severity severity-medium">Medium</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-russia">RUSSIA (Foreign Ministry):</span>
+                            <span class="threat-text">Accuses US and Israel of a "premeditated and unprovoked act of armed aggression against a sovereign UN member state." Calls emergency UN Security Council session. Warning remains diplomatic — no military intervention pledged.</span>
+                            <div class="threat-target">Target: US / Israel → Diplomatic</div>
+                            <div class="threat-source">Source: Democracy Now, Palestine Chronicle</div>
+                        </div>
+                    </div>
+
+                    <div class="threat-item" data-actor="us">
+                        <div class="threat-meta">
+                            <div class="threat-date">Mar 7, 2025</div>
+                            <div class="threat-severity severity-high">High</div>
+                        </div>
+                        <div class="threat-content">
+                            <span class="threat-actor threat-actor-us">US (President Trump — pre-war):</span>
+                            <span class="threat-text">Sends letter to Khamenei demanding Iran fully dismantle nuclear program, halt all enrichment, and end proxy support — with compliance required within two months. Warns "failure to accept could expose Iran to serious military consequences."</span>
+                            <div class="threat-target">Target: Iran → Nuclear program</div>
+                            <div class="threat-source">Source: White House, C-SPAN, Wikipedia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div style="margin-bottom: 24px;">
                 <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">Theater of Operations</div>
@@ -1829,6 +2179,20 @@
             mapFilters[filterType] = !mapFilters[filterType];
             btn.classList.toggle('active');
             addMarkers();
+        }
+
+        // THREAT FILTER
+        function filterThreats(btn, filter) {
+            document.querySelectorAll('.threat-filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.threat-item').forEach(item => {
+                if (filter === 'all') {
+                    item.style.display = '';
+                } else {
+                    item.style.display = item.dataset.actor === filter ? '' : 'none';
+                }
+            });
         }
 
         // TAB SWITCHING
