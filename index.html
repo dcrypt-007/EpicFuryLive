@@ -756,11 +756,11 @@
 
     <!-- Tab Navigation -->
     <div class="tab-nav">
-        <button class="tab-button active" onclick="switchTab('dashboard')">Dashboard</button>
-        <button class="tab-button" onclick="switchTab('events')">Verified Events</button>
-        <button class="tab-button" onclick="switchTab('claims')">Claims Feed</button>
-        <button class="tab-button" onclick="switchTab('polls')">Polls</button>
-        <button class="tab-button" onclick="switchTab('about')">About</button>
+        <button class="tab-button active" onclick="switchTab('dashboard', this)">Dashboard</button>
+        <button class="tab-button" onclick="switchTab('events', this)">Verified Events</button>
+        <button class="tab-button" onclick="switchTab('claims', this)">Claims Feed</button>
+        <button class="tab-button" onclick="switchTab('polls', this)">Polls</button>
+        <button class="tab-button" onclick="switchTab('about', this)">About</button>
     </div>
 
     <!-- Main Container -->
@@ -2789,7 +2789,7 @@
         }
 
         // --------- Tab Switching ---------
-        function switchTab(tabName) {
+        function switchTab(tabName, btnEl) {
             // Hide all tab content
             document.querySelectorAll('.tab-content').forEach(tc => {
                 tc.classList.remove('active');
@@ -2808,7 +2808,7 @@
             }
 
             // Activate the clicked button
-            event.target.classList.add('active');
+            btnEl.classList.add('active');
 
             // Resize map if returning to dashboard
             if (tabName === 'dashboard' && typeof MAP !== 'undefined' && MAP) {
