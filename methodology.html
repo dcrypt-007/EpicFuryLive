@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology & Sources - Epic Fury Live</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0f1a;
+            color: #e0e6ed;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(224, 230, 237, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            color: #4a9eff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #7ab8ff;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #4a9eff, #7ab8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #8899aa;
+            margin-bottom: 40px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #4a9eff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #bccce0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            color: #c5cdd5;
+        }
+
+        .tier-box {
+            background-color: rgba(74, 158, 255, 0.05);
+            border-left: 4px solid #4a9eff;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+        }
+
+        .tier-label {
+            font-weight: 600;
+            color: #4a9eff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .confidence-rating {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .confirmed {
+            background-color: rgba(76, 175, 80, 0.2);
+            color: #4caf50;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+
+        .likely {
+            background-color: rgba(74, 158, 255, 0.2);
+            color: #4a9eff;
+            border: 1px solid rgba(74, 158, 255, 0.3);
+        }
+
+        .unconfirmed {
+            background-color: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            border: 1px solid rgba(255, 193, 7, 0.3);
+        }
+
+        .disproven {
+            background-color: rgba(244, 67, 54, 0.2);
+            color: #f44336;
+            border: 1px solid rgba(244, 67, 54, 0.3);
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #e0e6ed;
+        }
+
+        .highlight {
+            background-color: rgba(74, 158, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 2px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(224, 230, 237, 0.1);
+            font-size: 14px;
+            color: #8899aa;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-links">
+                <a href="/">← Back to Dashboard</a>
+            </div>
+            <h1>Epic Fury Live</h1>
+            <div class="subtitle">War Tracker & Conflict Intelligence</div>
+        </header>
+
+        <main>
+            <h1 style="font-size: 28px; margin-top: 30px; margin-bottom: 40px;">Methodology & Sources</h1>
+
+            <section>
+                <h2>Our Mission</h2>
+                <p>Epic Fury Live is a free, public-service conflict tracker maintained by independent contributors. We exist to provide clarity without spin—delivering verified information about the US-Israel-Iran conflict in real-time.</p>
+                <p>Our goal is straightforward: help the public understand what is actually happening, who said what, and what evidence supports each claim. We distinguish between facts, analysis, and conjecture. We correct errors immediately. We do not engage in advocacy or sensationalism.</p>
+            </section>
+
+            <section>
+                <h2>Source Tier System</h2>
+                <p>We classify all information according to source credibility. This helps you understand how much confidence we have in each claim.</p>
+
+                <div class="tier-box">
+                    <div class="tier-label">Tier 1: Primary Sources</div>
+                    <p>Official government statements (CENTCOM, Department of Defense, Israeli Defense Forces), UN agencies, IAEA reports, and direct statements from recognized military authorities. These are the highest-confidence sources because they come directly from organizations with institutional responsibility for accuracy.</p>
+                </div>
+
+                <div class="tier-box">
+                    <div class="tier-label">Tier 2: Major Outlets</div>
+                    <p>Reuters, Associated Press, Agence France-Presse, BBC, CNN, Al Jazeera, PBS, and comparable international news organizations. We require at least 2 independent sources from this tier before reporting claims as factual. These outlets maintain editorial standards and verify reporting.</p>
+                </div>
+
+                <div class="tier-box">
+                    <div class="tier-label">Tier 3: Unverified Sources</div>
+                    <p>Social media accounts, Telegram channels, single-source reports, and eyewitness testimony. We report these stories because they may contain valuable information, but we <span class="highlight">always label them as unconfirmed</span>. Information from Tier 3 sources is flagged visually so readers understand the verification status.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Confidence Ratings</h2>
+                <p>Every claim on Epic Fury Live is tagged with one of four confidence levels:</p>
+
+                <div style="margin: 25px 0;">
+                    <span class="confidence-rating confirmed">Confirmed</span>
+                    <p style="margin-left: 0;">Multiple Tier 1 or Tier 2 sources independently verify the claim. The information has been cross-checked and contradictions resolved. These are facts we are confident about.</p>
+                </div>
+
+                <div style="margin: 25px 0;">
+                    <span class="confidence-rating likely">Likely</span>
+                    <p style="margin-left: 0;">Strong evidence from credible sources supports the claim, but it has not been independently verified by multiple outlets. The information is probably accurate, but there is room for revision as more data emerges.</p>
+                </div>
+
+                <div style="margin: 25px 0;">
+                    <span class="confidence-rating unconfirmed">Unconfirmed</span>
+                    <p style="margin-left: 0;">Information comes from a single source or represents eyewitness reports we have not been able to corroborate. This may be accurate and may prove important, but it requires independent verification before we treat it as established fact.</p>
+                </div>
+
+                <div style="margin: 25px 0;">
+                    <span class="confidence-rating disproven">Disproven</span>
+                    <p style="margin-left: 0;">We have confirmed that a claim is false. The original report is retained with a correction note explaining why the claim was incorrect and what evidence contradicts it. Transparency means showing our errors, not hiding them.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Corrections Policy</h2>
+                <p>Mistakes happen. When we identify errors in our reporting, we correct them immediately and log the correction with a timestamp. Corrections are not hidden—they are noted clearly in the updated entry so readers can see exactly what changed and when.</p>
+                <p>We do not delete incorrect entries. Instead, we update them transparently so the public can see our error-checking process at work. This approach builds trust and accountability.</p>
+            </section>
+
+            <section>
+                <h2>Editorial Standards</h2>
+                <p>Epic Fury Live follows these editorial principles:</p>
+                <ul>
+                    <li><strong>No sensationalism.</strong> We report facts without exaggeration or inflammatory language designed to provoke emotional reactions.</li>
+                    <li><strong>No glorification of violence.</strong> We report deaths, injuries, and destruction factually, not as achievements or spectacles.</li>
+                    <li><strong>Uncertainty is labeled.</strong> When information is incomplete or contradictory, we say so explicitly rather than presenting uncertainty as fact.</li>
+                    <li><strong>Analysis is separated from facts.</strong> Opinion and interpretation are clearly marked as such and are presented separately from factual reporting. Readers can distinguish what happened from what we think about what happened.</li>
+                    <li><strong>Attribution is precise.</strong> Every major claim includes a source attribution so readers can verify where information comes from.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>What We Don't Do</h2>
+                <ul>
+                    <li><strong>No speculation.</strong> We do not present guesses or theories as facts, even when the guess seems reasonable.</li>
+                    <li><strong>No unverified casualty claims.</strong> Death tolls are reported only when sourced to credible outlets or official statements. When casualty figures vary widely, we report the range and identify the source of each estimate.</li>
+                    <li><strong>No political advocacy.</strong> We do not campaign for policy positions, endorse political candidates, or frame conflicts around partisan narratives. Our job is to help you understand what is happening, not to tell you what to think about it.</li>
+                    <li><strong>No original intelligence.</strong> We do not publish leaked documents, classified information, or original investigations. We synthesize publicly available reporting.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Contact</h2>
+                <p>Epic Fury Live is maintained by independent contributors committed to accuracy and transparency. This project is not affiliated with any government agency, military organization, or political entity. We operate independently to serve the public interest.</p>
+                <p>Questions about methodology, corrections, or concerns about specific reporting can be directed to the project maintainers through the official repository.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Last updated: March 5, 2026</p>
+            <p>Epic Fury Live — Independent Conflict Tracking</p>
+        </footer>
+    </div>
+</body>
+</html>
