@@ -565,8 +565,12 @@ def update_data_json(news_items):
         print("  No new RSS items — keeping existing developments")
 
     # ---- WRITE DATA.JSON ----
-    with open("data.json", "w") as f:
-        json.dump(data, f, indent=2)
+    # Use ensure_ascii=True so all non-ASCII chars become \uXXXX escapes.
+    # This prevents encoding issues across GitHub Actions, GitHub Pages,
+    # and different browser environments. The browser's JSON parser handles
+    # \uXXXX escapes correctly and renders the proper Unicode characters.
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=True)
     print(f"  Updated data.json (Day {days})")
 
     return data  # Return for history tracking
@@ -662,8 +666,8 @@ def update_history(data):
     if len(history["dailySummaries"]) > 365:
         history["dailySummaries"] = history["dailySummaries"][-365:]
 
-    with open("history.json", "w") as f:
-        json.dump(history, f, indent=2)
+    with open("history.json", "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2, ensure_ascii=True)
     print(f"  History: {len(history['snapshots'])} hourly, {len(history['dailySummaries'])} daily")
 
 
