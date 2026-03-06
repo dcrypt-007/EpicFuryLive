@@ -127,9 +127,6 @@
     }
     </script>
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-d5nkXVJeDVkjQBTLCpp2djjHqPEXZc4xQtXPMVOhUhMKkkkHmXUO1FZLWIVHJDxl1nP2hBFBzSLFkfYHU47TFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -453,14 +450,6 @@
 
         .theater-locations strong {
             color: #cbd5e1;
-        }
-
-        #map {
-            width: 100%;
-            height: 400px;
-            border-radius: 8px;
-            border: 1px solid #1e2a3a;
-            margin-bottom: 24px;
         }
 
         .map-filter {
@@ -1376,18 +1365,6 @@
                 </div>
             </div>
 
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; gap: 12px; flex-wrap: wrap;">
-                <div style="font-size: 14px; font-weight: 600; color: #e0e6ed;">Map Filters:</div>
-                <div class="map-filter">
-                    <button class="map-filter-btn active" onclick="toggleMapFilter(this, 'strikes')">Strikes on Iran</button>
-                    <button class="map-filter-btn active" onclick="toggleMapFilter(this, 'bases')">US/Coalition Bases</button>
-                    <button class="map-filter-btn active" onclick="toggleMapFilter(this, 'retaliation')">Iranian Retaliation</button>
-                    <button class="map-filter-btn active" onclick="toggleMapFilter(this, 'naval')">Naval Positions</button>
-                </div>
-            </div>
-
-            <div id="map"></div>
-
             <!-- THREAT EXCHANGE -->
             <div class="threat-exchange">
                 <div class="threat-exchange-title">
@@ -1519,10 +1496,10 @@
                     <div class="cost-section-title">Financial Cost</div>
 
                     <div style="margin-bottom: 24px;">
-                        <div class="counter" id="totalCost">$5,000,000,000+</div>
+                        <div class="counter" id="totalCost">$4.0 billion+</div>
                         <div class="counter-label" id="totalCostLabel">Total Estimated Cost (6 days)</div>
                         <div style="font-size: 13px; color: #94a3b8; border-bottom: 1px solid #1e2a3a; padding-bottom: 16px;">
-                            <strong id="dailyBurnRate">Daily burn rate: ~$1 billion/day</strong><br>
+                            <strong id="dailyBurnRate">Daily burn rate: ~$663M/day</strong><br>
                             Includes all military operations, logistics, personnel, equipment expenditure.
                         </div>
                     </div>
@@ -1831,72 +1808,7 @@
 
     </div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
     <script>
-        // MAP DATA — will be loaded from data.json
-        let mapData = {};
-
-        let map;
-        let markers = [];
-        let mapFilters = {
-            strikes: true,
-            bases: true,
-            retaliation: true,
-            naval: true
-        };
-
-        // INITIALIZE MAP
-        function initMap() {
-            map = L.map('map').setView([30, 48], 4);
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors © CARTO',
-                maxZoom: 19,
-                subdomains: 'abcd'
-            }).addTo(map);
-
-            addMarkers();
-        }
-
-        // ADD MARKERS
-        function addMarkers() {
-            markers.forEach(m => map.removeLayer(m));
-            markers = [];
-
-            const colors = {
-                strike: '#ef4444',
-                base: '#3b82f6',
-                retaliation: '#f97316',
-                naval: '#22c55e'
-            };
-
-            Object.keys(mapData).forEach(category => {
-                if (!mapFilters[category]) return;
-
-                mapData[category].forEach(point => {
-                    const circle = L.circleMarker([point.lat, point.lng], {
-                        radius: 8,
-                        fillColor: colors[point.type],
-                        color: colors[point.type],
-                        weight: 2,
-                        opacity: 0.8,
-                        fillOpacity: 0.6
-                    }).bindPopup(`<div style="color: #0a0f1a; font-size: 12px;"><strong>${point.name}</strong><br>${point.type}</div>`);
-
-                    circle.addTo(map);
-                    markers.push(circle);
-                });
-            });
-        }
-
-        // TOGGLE MAP FILTER
-        function toggleMapFilter(btn, filterType) {
-            mapFilters[filterType] = !mapFilters[filterType];
-            btn.classList.toggle('active');
-            addMarkers();
-        }
-
         // THREAT FILTER
         function filterThreats(btn, filter) {
             document.querySelectorAll('.threat-filter-btn').forEach(b => b.classList.remove('active'));
@@ -1929,14 +1841,13 @@
             // Add active class to button
             button.classList.add('active');
 
-            // If Cost tab, animate counters
+            // If Cost tab, animate counters and resize charts that were created while tab was hidden
             if (tabId === 'cost') {
                 animateCounters();
-            }
-
-            // If Live tab, reinitialize map
-            if (tabId === 'live' && !map) {
-                setTimeout(() => initMap(), 100);
+                setTimeout(() => {
+                    if (trendsChartInstance) trendsChartInstance.resize();
+                    if (costChartInstance) costChartInstance.resize();
+                }, 50);
             }
         }
 
@@ -2350,7 +2261,7 @@
                     <div class="theater-body">
                         <div class="theater-description">${t.description}</div>
                         <div class="theater-locations">
-                            <strong>${t.locationsLabel || 'Key locations'}:</strong> ${t.locations.join(', ')}
+                            <strong>${t.locationsLabel || 'Key locations'}:</strong> ${Array.isArray(t.locations) ? t.locations.join(', ') : t.locations}
                         </div>
                     </div>
                 </div>`;
@@ -2469,7 +2380,7 @@
             if (polls.groundTroops) {
                 const gt = polls.groundTroops;
                 html += `<div style="margin-bottom: 20px;">
-                    <div class="poll-label">${gt.label}</div>
+                    <div class="poll-label">${gt.label || 'Ground Troops: Should the US deploy ground forces?'}</div>
                     <div class="bar-chart-container">
                         <div class="bar-segment bar-support" style="width: ${gt.support}%;">${gt.support}% Support</div>
                         <div class="bar-segment bar-oppose" style="width: ${gt.oppose}%;">${gt.oppose}% Oppose</div>
@@ -2505,12 +2416,6 @@
             container.innerHTML = impacts.map(item => {
                 return `<div class="diplomatic-item">${item}</div>`;
             }).join('\n');
-        }
-
-        function renderMapMarkers(markerData) {
-            if (!markerData) return;
-            mapData = markerData;
-            if (map) addMarkers();
         }
 
         function renderBreakdown(breakdown) {
@@ -2620,7 +2525,6 @@
                     if (data.polls) renderPolls(data.polls);
                     if (data.regionalReactions) renderRegionalReactions(data.regionalReactions);
                     if (data.diplomaticImpacts) renderDiplomaticImpacts(data.diplomaticImpacts);
-                    if (data.mapMarkers) renderMapMarkers(data.mapMarkers);
                     if (data.financialCost && data.financialCost.breakdown) renderBreakdown(data.financialCost.breakdown);
                     if (data.financialCost && data.financialCost.projections) renderProjections(data.financialCost.projections);
 
@@ -2649,9 +2553,6 @@
 
             // Trends charts — load historical data
             try { initTrendsCharts(); } catch(e) { console.warn('Trends chart init failed:', e); }
-
-            // Map — depends on Leaflet loading
-            try { initMap(); } catch(e) { console.warn('Map init failed:', e); }
         });
     </script>
 
