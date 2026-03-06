@@ -7,6 +7,7 @@ Data sources:
 - RSS feeds from Al Jazeera, Reuters, BBC, CNN, AP
 - Structured data extraction
 - Timestamp and stats refresh
+- Historical data tracking for trends
 
 Usage:
     python3 scripts/update_site.py
@@ -19,6 +20,7 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from html import escape
+from email.utils import parsedate_to_datetime
 
 # ============================================================
 # CONFIG: RSS feeds to pull from
@@ -165,52 +167,6 @@ def update_timestamps(html):
     return html
 
 
-def update_latest_developments(html, news_items):
-    """Replace the Latest Developments section with fresh news items."""
-    if not news_items:
-        print("  No new items to inject — keeping existing developments")
-        return html
-
-    # Build new development entries
-    entries = []
-    for item in news_items[:10]:
-        # Try to parse the pubDate
-        try:
-            # RFC 822 format from RSS
-            from email.utils import parsedate_to_datetime
-            dt = parsedate_to_datetime(item["pubDate"])
-        except:
-            dt = datetime.now(timezone.utc)
-
-        iso = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-        display = dt.strftime("%b %d, %H:%M UTC")
-
-        title = escape(item["title"])
-        desc = escape(item["description"][:200])
-        source = escape(item["source"])
-
-        entry = f"""                <div class="development-item">
-                    <time class="development-time" datetime="{iso}">{display}</time>
-                    <span class="development-text"><strong>{title}</strong> — {desc} <span style="color:#64748b;font-size:11px;">[{source}]</span></span>
-                </div>"""
-        entries.append(entry)
-
-    new_section = "\n".join(entries)
-
-    # Replace existing development items
-    pattern = r'(<div class="latest-title">Latest Developments</div>\n)(.*?)(\n\s*</div>\s*\n\s*</div>\s*\n\s*<!-- TAB 2)'
-    replacement = rf'\g<1>{new_section}\n\g<3>'
-
-    updated = re.sub(pattern, replacement, html, flags=re.DOTALL)
-
-    if updated == html:
-        print("  Warning: Could not locate Latest Developments section to update")
-    else:
-        print(f"  Injected {len(entries)} development items")
-
-    return updated
-
-
 def update_rss_feed(news_items):
     """Regenerate rss.xml with fresh items."""
     if not news_items:
@@ -252,8 +208,11 @@ def update_rss_feed(news_items):
     print(f"  Updated rss.xml with {len(items_xml)} items")
 
 
-def update_data_json():
-    """Update data.json with current timestamps and computed values."""
+# ============================================================
+# UPDATE DATA.JSON — All dynamic content
+# ============================================================
+def update_data_json(news_items):
+    """Update data.json with current timestamps, computed values, and fresh RSS developments."""
     now = datetime.now(timezone.utc)
     iso_now = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -268,28 +227,174 @@ def update_data_json():
         print("  Warning: data.json not found or invalid, skipping")
         return
 
-    # Update dynamic values
+    # ---- TIMESTAMPS & DAY COUNT ----
     data["lastUpdated"] = iso_now
     data["dayCount"] = days
 
-    # Update financial cost day count
+    # ---- FINANCIAL COST (auto-calculated) ----
     if "financialCost" in data:
         data["financialCost"]["daysOfOps"] = days
+
         # Recalculate total cost based on burn rate (~$1B/day)
         total_billions = days
         data["financialCost"]["totalCost"] = f"${total_billions},000,000,000+"
-        # Update carrier ops cost (2 CSGs @ $7M/day)
-        carrier_cost = 2 * 7_000_000 * days
-        data["financialCost"]["carrierOps"]["detail"] = f"2 CSGs @ $7M/day × {days} days"
-        data["financialCost"]["carrierOps"]["total"] = f"${carrier_cost:,}"
 
-    # Update banner cost
+        # Update carrier ops in the breakdown array
+        if "breakdown" in data["financialCost"]:
+            carrier_cost = 2 * 7_000_000 * days
+            for item in data["financialCost"]["breakdown"]:
+                if item.get("category") == "Carrier Ops":
+                    item["detail"] = f"2 CSGs @ $7M/day × {days} days"
+                    item["cost"] = f"${carrier_cost:,}"
+                    break
+
+    # ---- BANNER STATS ----
     if "banner" in data:
         data["banner"]["cost"] = f"${days}B+"
 
+    # ---- DEVELOPMENTS (inject RSS items) ----
+    if news_items:
+        new_devs = []
+        for item in news_items[:10]:
+            try:
+                dt = parsedate_to_datetime(item["pubDate"])
+            except Exception:
+                dt = now
+
+            iso_time = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+            title = item["title"]
+            desc = item["description"][:200]
+            source = item["source"]
+
+            new_devs.append({
+                "time": iso_time,
+                "text": f"<strong>{escape(title)}</strong> — {escape(desc)} <span style=\"color:#64748b;font-size:11px;\">[{escape(source)}]</span>"
+            })
+
+        if new_devs:
+            # Merge: put new items first, keep existing items that aren't duplicates
+            existing_devs = data.get("developments", [])
+            new_times = {d["time"] for d in new_devs}
+
+            # Keep existing items that don't overlap with new ones
+            kept_existing = [d for d in existing_devs if d["time"] not in new_times]
+
+            # Combine and limit to 20 most recent
+            all_devs = new_devs + kept_existing
+            data["developments"] = all_devs[:20]
+            print(f"  Injected {len(new_devs)} RSS items into developments (total: {len(data['developments'])})")
+    else:
+        print("  No new RSS items — keeping existing developments")
+
+    # ---- WRITE DATA.JSON ----
     with open("data.json", "w") as f:
         json.dump(data, f, indent=2)
     print(f"  Updated data.json (Day {days}, cost ${days}B+)")
+
+    return data  # Return for history tracking
+
+
+# ============================================================
+# HISTORY TRACKING — Append daily snapshot for trend charts
+# ============================================================
+def update_history(data):
+    """Append a snapshot of key stats to history.json for trend tracking."""
+    if not data:
+        return
+
+    now = datetime.now(timezone.utc)
+    today = now.strftime("%Y-%m-%d")
+    hour = now.strftime("%H:00")
+
+    # Load existing history
+    try:
+        with open("history.json", "r") as f:
+            history = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        history = {"snapshots": []}
+
+    # Extract key metrics for this snapshot
+    snapshot = {
+        "timestamp": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "date": today,
+        "hour": hour,
+        "dayCount": data.get("dayCount", 0),
+        "iranDeaths": data.get("humanCost", {}).get("iranDeaths", "0"),
+        "usKIA": data.get("humanCost", {}).get("usKIA", "0"),
+        "israeliDeaths": data.get("humanCost", {}).get("israeliDeaths", "0"),
+        "gulfCasualties": data.get("humanCost", {}).get("gulfCasualties", "0"),
+        "iranWounded": data.get("humanCost", {}).get("iranWounded", "0"),
+        "civilianDeaths": data.get("humanCost", {}).get("civilianDeaths", "0"),
+        "totalCost": data.get("financialCost", {}).get("totalCost", "$0"),
+        "totalStrikes": data.get("banner", {}).get("strikes", "0"),
+        "threatCount": len(data.get("threats", [])),
+        "homelandThreatCount": len(data.get("homelandThreats", [])),
+        "developmentCount": len(data.get("developments", []))
+    }
+
+    # Check if we already have a snapshot for this hour (avoid duplicates)
+    existing_hours = {s.get("timestamp", "")[:13] for s in history["snapshots"]}
+    current_hour_key = snapshot["timestamp"][:13]
+
+    if current_hour_key in existing_hours:
+        # Update the existing entry for this hour instead of adding a duplicate
+        for i, s in enumerate(history["snapshots"]):
+            if s.get("timestamp", "")[:13] == current_hour_key:
+                history["snapshots"][i] = snapshot
+                break
+        print(f"  Updated existing history snapshot for {today} {hour}")
+    else:
+        history["snapshots"].append(snapshot)
+        print(f"  Added new history snapshot for {today} {hour}")
+
+    # Keep last 90 days of hourly data (90 * 24 = 2160 max snapshots)
+    max_snapshots = 2160
+    if len(history["snapshots"]) > max_snapshots:
+        history["snapshots"] = history["snapshots"][-max_snapshots:]
+
+    # Also maintain a daily summary for long-term trends
+    if "dailySummaries" not in history:
+        history["dailySummaries"] = []
+
+    # Check if we already have a daily summary for today
+    existing_dates = {s.get("date", "") for s in history["dailySummaries"]}
+    if today not in existing_dates:
+        history["dailySummaries"].append({
+            "date": today,
+            "dayCount": snapshot["dayCount"],
+            "iranDeaths": snapshot["iranDeaths"],
+            "usKIA": snapshot["usKIA"],
+            "israeliDeaths": snapshot["israeliDeaths"],
+            "gulfCasualties": snapshot["gulfCasualties"],
+            "civilianDeaths": snapshot["civilianDeaths"],
+            "totalCost": snapshot["totalCost"],
+            "totalStrikes": snapshot["totalStrikes"],
+            "threatCount": snapshot["threatCount"]
+        })
+        print(f"  Added daily summary for {today}")
+    else:
+        # Update today's daily summary with latest values
+        for i, s in enumerate(history["dailySummaries"]):
+            if s.get("date") == today:
+                history["dailySummaries"][i].update({
+                    "iranDeaths": snapshot["iranDeaths"],
+                    "usKIA": snapshot["usKIA"],
+                    "israeliDeaths": snapshot["israeliDeaths"],
+                    "gulfCasualties": snapshot["gulfCasualties"],
+                    "civilianDeaths": snapshot["civilianDeaths"],
+                    "totalCost": snapshot["totalCost"],
+                    "totalStrikes": snapshot["totalStrikes"],
+                    "threatCount": snapshot["threatCount"]
+                })
+                break
+
+    # Keep last 365 days of daily summaries
+    if len(history["dailySummaries"]) > 365:
+        history["dailySummaries"] = history["dailySummaries"][-365:]
+
+    with open("history.json", "w") as f:
+        json.dump(history, f, indent=2)
+    print(f"  History: {len(history['snapshots'])} hourly snapshots, {len(history['dailySummaries'])} daily summaries")
 
 
 def update_sitemap():
@@ -341,26 +446,22 @@ def main():
     print("=" * 60)
 
     # 1. Fetch news
-    print("\n[1/5] Fetching news from RSS feeds...")
+    print("\n[1/7] Fetching news from RSS feeds...")
     news_items = fetch_all_feeds()
     print(f"  Total: {len(news_items)} relevant items")
 
     # 2. Read current HTML
-    print("\n[2/5] Reading index.html...")
+    print("\n[2/7] Reading index.html...")
     with open("index.html", "r") as f:
         html = f.read()
     print(f"  Read {len(html)} bytes")
 
-    # 3. Update timestamps
-    print("\n[3/5] Updating timestamps and freshness signals...")
+    # 3. Update timestamps in HTML
+    print("\n[3/7] Updating timestamps and freshness signals...")
     html = update_timestamps(html)
 
-    # 4. Update latest developments (only if we got fresh items)
-    print("\n[4/5] Updating Latest Developments...")
-    html = update_latest_developments(html, news_items)
-
-    # 5. Write updated files
-    print("\n[5/5] Writing updated files...")
+    # 4. Write updated HTML files
+    print("\n[4/7] Writing updated HTML files...")
     with open("index.html", "w") as f:
         f.write(html)
     print("  Wrote index.html")
@@ -370,13 +471,17 @@ def main():
         f.write(html)
     print("  Wrote public/dashboard.html")
 
-    # Update data.json (live stats)
-    update_data_json()
+    # 5. Update data.json (all dynamic content + RSS developments)
+    print("\n[5/7] Updating data.json...")
+    data = update_data_json(news_items)
 
-    # Update RSS feed
+    # 6. Update history.json (trend tracking)
+    print("\n[6/7] Updating history.json...")
+    update_history(data)
+
+    # 7. Update supporting files
+    print("\n[7/7] Updating RSS feed and sitemap...")
     update_rss_feed(news_items)
-
-    # Update sitemap
     update_sitemap()
 
     print("\n" + "=" * 60)
