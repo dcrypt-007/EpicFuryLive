@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Fury Live — Admin</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #0a0f1a;
+            color: #e0e6ed;
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .admin-header {
+            background: #111827;
+            border-bottom: 1px solid #1e2a3a;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .admin-header h1 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .admin-header a {
+            color: #ef4444;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .admin-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        /* TOKEN SECTION */
+        .token-section {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .token-section h2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .token-section p {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .token-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .token-row input {
+            flex: 1;
+        }
+
+        /* FORM */
+        .add-video-form {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .add-video-form h2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e0e6ed;
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px 14px;
+            background: #0d1320;
+            border: 1px solid #1e2a3a;
+            border-radius: 6px;
+            color: #e0e6ed;
+            font-size: 14px;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #ef4444;
+        }
+
+        .form-group select option {
+            background: #0d1320;
+            color: #e0e6ed;
+        }
+
+        .form-hint {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        .btn {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #dc2626;
+        }
+
+        .btn-primary:disabled {
+            background: #4a1c1c;
+            cursor: not-allowed;
+            color: #94a3b8;
+        }
+
+        .btn-secondary {
+            background: #1e2a3a;
+            color: #e0e6ed;
+        }
+
+        .btn-secondary:hover {
+            background: #2a3a4e;
+        }
+
+        .btn-danger {
+            background: transparent;
+            color: #ef4444;
+            border: 1px solid #ef4444;
+            padding: 4px 12px;
+            font-size: 12px;
+        }
+
+        .btn-danger:hover {
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        /* STATUS MESSAGES */
+        .status-msg {
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 16px;
+            display: none;
+        }
+
+        .status-msg.success {
+            display: block;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+        }
+
+        .status-msg.error {
+            display: block;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+
+        .status-msg.loading {
+            display: block;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #3b82f6;
+        }
+
+        /* EXISTING VIDEOS LIST */
+        .video-list {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .video-list h2 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .video-list-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 0;
+            border-bottom: 1px solid #1e2a3a;
+        }
+
+        .video-list-item:last-child {
+            border-bottom: none;
+        }
+
+        .video-list-thumb {
+            width: 120px;
+            height: 68px;
+            border-radius: 4px;
+            object-fit: cover;
+            background: #0d1320;
+            flex-shrink: 0;
+        }
+
+        .video-list-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .video-list-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e0e6ed;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .video-list-meta {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        .video-list-empty {
+            color: #64748b;
+            font-size: 13px;
+            font-style: italic;
+            text-align: center;
+            padding: 24px 0;
+        }
+
+        /* PREVIEW */
+        .preview-container {
+            margin-top: 12px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: none;
+        }
+
+        .preview-container.visible {
+            display: block;
+        }
+
+        .preview-container iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-header">
+    <h1>Epic Fury Live — Admin</h1>
+    <a href="https://www.epicfurylive.com" target="_blank">View Live Site</a>
+</div>
+
+<div class="admin-container">
+
+    <!-- STATUS -->
+    <div id="statusMsg" class="status-msg"></div>
+
+    <!-- TOKEN -->
+    <div class="token-section">
+        <h2>GitHub Access</h2>
+        <p>Enter your GitHub Personal Access Token (with repo scope). It stays in your browser only — never sent anywhere except GitHub's API.</p>
+        <div class="token-row">
+            <input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+            <button class="btn btn-secondary" onclick="testToken()">Test</button>
+        </div>
+    </div>
+
+    <!-- ADD VIDEO -->
+    <div class="add-video-form">
+        <h2>Add Combat Footage</h2>
+
+        <div class="form-group">
+            <label>YouTube URL</label>
+            <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <div class="form-hint">Paste any YouTube URL — we'll extract the video ID automatically.</div>
+        </div>
+
+        <div id="videoPreview" class="preview-container"></div>
+
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" id="videoTitle" placeholder="e.g. US Navy torpedo strikes Iranian vessel off Sri Lanka">
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select id="videoCategory">
+                <option value="Airstrike">Airstrike</option>
+                <option value="Naval Engagement">Naval Engagement</option>
+                <option value="Drone Strike">Drone Strike</option>
+                <option value="Bomb Strike">Bomb Strike</option>
+                <option value="Missile Strike">Missile Strike</option>
+                <option value="Ground Operations">Ground Operations</option>
+                <option value="Iranian Retaliation">Iranian Retaliation</option>
+                <option value="Aftermath">Aftermath</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Source (optional)</label>
+            <input type="text" id="videoSource" placeholder="e.g. CENTCOM, Reuters, BBC, etc.">
+        </div>
+
+        <div class="form-group">
+            <label>Date of Footage (optional)</label>
+            <input type="date" id="videoDate">
+        </div>
+
+        <button class="btn btn-primary" id="addBtn" onclick="addVideo()">Add Video & Push to Site</button>
+    </div>
+
+    <!-- EXISTING VIDEOS -->
+    <div class="video-list">
+        <h2>Current Videos on Site</h2>
+        <div id="videoListContainer">
+            <div class="video-list-empty">Loading...</div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // =========================================
+    // CONFIG
+    // =========================================
+    const REPO_OWNER = 'dcrypt-007';
+    const REPO_NAME = 'EpicFuryLive';
+    const DATA_PATH = 'data.json';
+    const BRANCH = 'main';
+    const API_BASE = 'https://api.github.com';
+
+    // =========================================
+    // HELPERS
+    // =========================================
+
+    function getToken() {
+        return document.getElementById('ghToken').value.trim();
+    }
+
+    function showStatus(msg, type) {
+        const el = document.getElementById('statusMsg');
+        el.textContent = msg;
+        el.className = 'status-msg ' + type;
+        if (type === 'success') {
+            setTimeout(() => { el.className = 'status-msg'; }, 5000);
+        }
+    }
+
+    function extractYouTubeId(url) {
+        if (!url) return null;
+        // Handle various YouTube URL formats
+        const patterns = [
+            /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/v\/|youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/,
+            /^([a-zA-Z0-9_-]{11})$/  // bare ID
+        ];
+        for (const p of patterns) {
+            const m = url.match(p);
+            if (m) return m[1];
+        }
+        return null;
+    }
+
+    // =========================================
+    // YOUTUBE URL PREVIEW
+    // =========================================
+    document.getElementById('videoUrl').addEventListener('input', function() {
+        const id = extractYouTubeId(this.value);
+        const preview = document.getElementById('videoPreview');
+        if (id) {
+            preview.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe>`;
+            preview.classList.add('visible');
+        } else {
+            preview.innerHTML = '';
+            preview.classList.remove('visible');
+        }
+    });
+
+    // =========================================
+    // GITHUB API
+    // =========================================
+
+    async function ghFetch(endpoint, options = {}) {
+        const token = getToken();
+        if (!token) throw new Error('No GitHub token entered.');
+        const resp = await fetch(API_BASE + endpoint, {
+            ...options,
+            headers: {
+                'Authorization': 'token ' + token,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json',
+                ...(options.headers || {})
+            }
+        });
+        if (!resp.ok) {
+            const body = await resp.json().catch(() => ({}));
+            throw new Error(`GitHub API error ${resp.status}: ${body.message || resp.statusText}`);
+        }
+        return resp.json();
+    }
+
+    async function getFileContent() {
+        const data = await ghFetch(`/repos/${REPO_OWNER}/${REPO_NAME}/contents/${DATA_PATH}?ref=${BRANCH}`);
+        const content = JSON.parse(atob(data.content.replace(/\n/g, '')));
+        return { content, sha: data.sha };
+    }
+
+    async function updateFile(newContent, sha, message) {
+        const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(newContent, null, 2) + '\n')));
+        return ghFetch(`/repos/${REPO_OWNER}/${REPO_NAME}/contents/${DATA_PATH}`, {
+            method: 'PUT',
+            body: JSON.stringify({
+                message: message,
+                content: encoded,
+                sha: sha,
+                branch: BRANCH,
+                committer: {
+                    name: 'Epic Fury Admin',
+                    email: 'bot@epicfurylive.com'
+                }
+            })
+        });
+    }
+
+    // =========================================
+    // TEST TOKEN
+    // =========================================
+
+    async function testToken() {
+        try {
+            showStatus('Testing token...', 'loading');
+            const user = await ghFetch('/user');
+            showStatus('Token works! Logged in as ' + user.login, 'success');
+            loadExistingVideos();
+        } catch (e) {
+            showStatus('Token failed: ' + e.message, 'error');
+        }
+    }
+
+    // =========================================
+    // LOAD EXISTING VIDEOS
+    // =========================================
+
+    async function loadExistingVideos() {
+        const container = document.getElementById('videoListContainer');
+        try {
+            const { content } = await getFileContent();
+            const videos = content.videos || [];
+            if (!videos.length) {
+                container.innerHTML = '<div class="video-list-empty">No videos added yet. Add your first one above!</div>';
+                return;
+            }
+            container.innerHTML = videos.map((v, i) => {
+                const thumb = `https://img.youtube.com/vi/${v.youtubeId}/mqdefault.jpg`;
+                const dateStr = v.date ? new Date(v.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '';
+                return `<div class="video-list-item">
+                    <img class="video-list-thumb" src="${thumb}" alt="">
+                    <div class="video-list-info">
+                        <div class="video-list-title">${v.title || 'Untitled'}</div>
+                        <div class="video-list-meta">${v.category || ''} ${v.source ? '— ' + v.source : ''} ${dateStr ? '— ' + dateStr : ''}</div>
+                    </div>
+                    <button class="btn btn-danger" onclick="removeVideo(${i})">Remove</button>
+                </div>`;
+            }).join('');
+        } catch (e) {
+            container.innerHTML = '<div class="video-list-empty">Enter your GitHub token above to see existing videos.</div>';
+        }
+    }
+
+    // =========================================
+    // ADD VIDEO
+    // =========================================
+
+    async function addVideo() {
+        const url = document.getElementById('videoUrl').value.trim();
+        const title = document.getElementById('videoTitle').value.trim();
+        const category = document.getElementById('videoCategory').value;
+        const source = document.getElementById('videoSource').value.trim();
+        const date = document.getElementById('videoDate').value;
+
+        const youtubeId = extractYouTubeId(url);
+        if (!youtubeId) {
+            showStatus('Invalid YouTube URL. Please paste a valid YouTube link.', 'error');
+            return;
+        }
+        if (!title) {
+            showStatus('Please enter a title for the video.', 'error');
+            return;
+        }
+
+        const btn = document.getElementById('addBtn');
+        btn.disabled = true;
+        btn.textContent = 'Pushing to GitHub...';
+        showStatus('Reading current data.json from GitHub...', 'loading');
+
+        try {
+            const { content, sha } = await getFileContent();
+
+            // Ensure videos array exists
+            if (!content.videos) content.videos = [];
+
+            // Check for duplicate
+            if (content.videos.some(v => v.youtubeId === youtubeId)) {
+                showStatus('This video is already on the site.', 'error');
+                btn.disabled = false;
+                btn.textContent = 'Add Video & Push to Site';
+                return;
+            }
+
+            // Build the new video entry
+            const newVideo = {
+                youtubeId: youtubeId,
+                title: title,
+                category: category
+            };
+            if (source) newVideo.source = source;
+            if (date) newVideo.date = date;
+            newVideo.addedAt = new Date().toISOString();
+
+            // Add to front of array (newest first)
+            content.videos.unshift(newVideo);
+
+            showStatus('Committing to GitHub...', 'loading');
+            await updateFile(content, sha, 'Add combat footage: ' + title);
+
+            showStatus('Video added! It will appear on the site in 1-2 minutes after GitHub Pages rebuilds.', 'success');
+
+            // Clear form
+            document.getElementById('videoUrl').value = '';
+            document.getElementById('videoTitle').value = '';
+            document.getElementById('videoSource').value = '';
+            document.getElementById('videoDate').value = '';
+            document.getElementById('videoPreview').innerHTML = '';
+            document.getElementById('videoPreview').classList.remove('visible');
+
+            // Refresh list
+            loadExistingVideos();
+
+        } catch (e) {
+            showStatus('Failed: ' + e.message, 'error');
+        }
+
+        btn.disabled = false;
+        btn.textContent = 'Add Video & Push to Site';
+    }
+
+    // =========================================
+    // REMOVE VIDEO
+    // =========================================
+
+    async function removeVideo(index) {
+        if (!confirm('Remove this video from the site?')) return;
+
+        showStatus('Removing video...', 'loading');
+        try {
+            const { content, sha } = await getFileContent();
+            const removed = content.videos.splice(index, 1);
+            const title = removed[0] ? removed[0].title : 'video';
+            await updateFile(content, sha, 'Remove combat footage: ' + title);
+            showStatus('Video removed. Site will update in 1-2 minutes.', 'success');
+            loadExistingVideos();
+        } catch (e) {
+            showStatus('Failed: ' + e.message, 'error');
+        }
+    }
+
+    // =========================================
+    // INIT — try loading videos on page load
+    // =========================================
+    loadExistingVideos();
+</script>
+</body>
+</html>

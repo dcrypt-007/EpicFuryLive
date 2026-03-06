@@ -503,6 +503,85 @@
             border-bottom: none;
         }
 
+        /* COMBAT FOOTAGE */
+        .combat-footage {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+
+        .combat-footage-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #e0e6ed;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .combat-footage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+        }
+
+        .video-card {
+            background: #0d1320;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-card iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            display: block;
+        }
+
+        .video-card-info {
+            padding: 12px;
+        }
+
+        .video-card-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e0e6ed;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .video-card-meta {
+            font-size: 11px;
+            color: #64748b;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .video-category-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+        }
+
+        .combat-footage-empty {
+            color: #64748b;
+            font-size: 13px;
+            font-style: italic;
+            text-align: center;
+            padding: 24px 0;
+        }
+
         .development-time {
             color: #94a3b8;
             font-size: 12px;
@@ -1408,6 +1487,13 @@
             <div class="latest-developments">
                 <div class="latest-title">Latest Developments</div>
                 <div id="developmentsList">
+                    <!-- Rendered dynamically from data.json -->
+                </div>
+            </div>
+
+            <div class="combat-footage">
+                <div class="combat-footage-title">Combat Footage</div>
+                <div class="combat-footage-grid" id="combatFootageGrid">
                     <!-- Rendered dynamically from data.json -->
                 </div>
             </div>
@@ -2413,6 +2499,30 @@
             }).join('\n');
         }
 
+        function renderCombatFootage(videos) {
+            const container = document.getElementById('combatFootageGrid');
+            if (!container) return;
+            if (!videos || !videos.length) {
+                container.innerHTML = '<div class="combat-footage-empty">No combat footage added yet.</div>';
+                return;
+            }
+            container.innerHTML = videos.map(v => {
+                const dateStr = v.date ? new Date(v.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+                const catTag = v.category ? `<span class="video-category-tag">${v.category}</span>` : '';
+                return `<div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/${v.youtubeId}" allowfullscreen loading="lazy"></iframe>
+                    <div class="video-card-info">
+                        <div class="video-card-title">${v.title || 'Untitled'}</div>
+                        <div class="video-card-meta">
+                            ${catTag}
+                            ${v.source ? '<span>' + v.source + '</span>' : ''}
+                            ${dateStr ? '<span>' + dateStr + '</span>' : ''}
+                        </div>
+                    </div>
+                </div>`;
+            }).join('\n');
+        }
+
         function renderDiplomaticImpacts(impacts) {
             const container = document.getElementById('diplomaticList');
             if (!container || !impacts) return;
@@ -2524,6 +2634,7 @@
                     if (data.homelandThreats) renderHomelandThreats(data.homelandThreats);
                     if (data.theaterOps) renderTheaterOps(data.theaterOps);
                     if (data.developments) renderDevelopments(data.developments);
+                    if (data.videos) renderCombatFootage(data.videos);
                     if (data.evidence) renderEvidence(data.evidence);
                     if (data.claims) renderClaims(data.claims);
                     if (data.polls) renderPolls(data.polls);
