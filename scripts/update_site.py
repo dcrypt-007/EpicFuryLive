@@ -149,6 +149,14 @@ def extract_number_near_keyword(text, keywords, min_val=1, max_val=999999):
     - "4 carrier strike groups"
     - "45,000 troops deployed"
 
+    Also handles vague quantity words and converts them to estimates:
+    - "dozens of" → 50
+    - "hundreds of" → 500
+    - "scores of" → 40
+    - "several" → 5
+    - "a handful of" → 5
+    - "multiple" → 3
+
     Filters out false positives like:
     - "2,000-pound bombs" (bomb weight, not count)
     - "$14.9 billion" (dollar amounts)
@@ -156,6 +164,19 @@ def extract_number_near_keyword(text, keywords, min_val=1, max_val=999999):
     """
     if not keywords:
         return None
+
+    # Vague quantity words → estimated numeric values
+    VAGUE_QUANTITIES = {
+        r'dozens?\s+of': 50,
+        r'scores?\s+of': 40,
+        r'hundreds?\s+of': 500,
+        r'a\s+handful\s+of': 5,
+        r'several': 5,
+        r'multiple': 3,
+        r'a\s+few': 3,
+        r'numerous': 50,
+        r'a\s+number\s+of': 20,
+    }
 
     # Patterns that indicate a number is NOT a quantity count
     # (bomb weight, dollar amounts, percentages, dates, etc.)
@@ -174,7 +195,7 @@ def extract_number_near_keyword(text, keywords, min_val=1, max_val=999999):
         if kw not in text_lower:
             continue
 
-        # Find all numbers within 80 characters of the keyword
+        # Find all keyword positions
         kw_positions = [m.start() for m in re.finditer(re.escape(kw), text_lower)]
 
         for pos in kw_positions:
@@ -182,8 +203,17 @@ def extract_number_near_keyword(text, keywords, min_val=1, max_val=999999):
             window_start = max(0, pos - 80)
             window_end = min(len(text), pos + len(kw) + 80)
             window = text[window_start:window_end]
+            window_lower = window.lower()
 
-            # Find numbers in the window (handles commas, +, ~)
+            # --- PASS 1: Check for vague quantity words near the keyword ---
+            # e.g., "dropped dozens of bunker busters" → 50
+            for pattern, estimate in VAGUE_QUANTITIES.items():
+                if re.search(pattern, window_lower):
+                    if min_val <= estimate <= max_val:
+                        if best_match is None or estimate > best_match:
+                            best_match = estimate
+
+            # --- PASS 2: Check for explicit numbers near the keyword ---
             # Patterns: "3,700", "500+", "~2,000", "more than 45000", "approximately 150"
             for match in re.finditer(r'(?:more than |over |approximately |about |nearly |~|>)?\s*(\d{1,3}(?:,\d{3})*(?:\.\d+)?)\s*\+?', window):
                 num_str = match.group(1)
