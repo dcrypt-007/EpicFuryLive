@@ -223,7 +223,7 @@ def update_rss_feed(news_items):
     for item in news_items[:10]:
         title = escape(item["title"])
         desc = escape(item["description"][:300])
-        link = escape(item.get("link", "https://epicfurylive.com"))
+        link = escape(item.get("link", "https://www.epicfurylive.com"))
         guid = f"epic-fury-{now.strftime('%Y%m%d')}-{hash(title) % 100000}"
 
         items_xml.append(f"""    <item>
@@ -238,7 +238,7 @@ def update_rss_feed(news_items):
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Epic Fury Live — US-Iran War Tracker</title>
-    <link>https://epicfurylive.com</link>
+    <link>https://www.epicfurylive.com</link>
     <description>Live tracking of the US-Israel-Iran conflict. Real-time updates, verified casualties, evidence, and analysis.</description>
     <language>en-us</language>
     <lastBuildDate>{rfc822}</lastBuildDate>
@@ -260,25 +260,25 @@ def update_sitemap():
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://epicfurylive.com/</loc>
+    <loc>https://www.epicfurylive.com/</loc>
     <lastmod>{now}</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://epicfurylive.com/methodology.html</loc>
+    <loc>https://www.epicfurylive.com/methodology.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://epicfurylive.com/glossary.html</loc>
+    <loc>https://www.epicfurylive.com/glossary.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://epicfurylive.com/rss.xml</loc>
+    <loc>https://www.epicfurylive.com/rss.xml</loc>
     <lastmod>{now}</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.5</priority>

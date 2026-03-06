@@ -56,7 +56,7 @@ User-agent: SemrushBot
 Crawl-delay: 10
 
 # Sitemap location
-Sitemap: https://epicfurylive.com/sitemap.xml
+Sitemap: https://www.epicfurylive.com/sitemap.xml
 ```
 
 **Purpose**: Tell search engines which pages to crawl; explicitly welcome AI crawlers (they cite sources if they can crawl them).
@@ -75,7 +75,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Home page (highest priority, updated daily) -->
   <url>
-    <loc>https://epicfurylive.com/</loc>
+    <loc>https://www.epicfurylive.com/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -93,7 +93,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Daily briefs (high priority, updated daily) -->
   <url>
-    <loc>https://epicfurylive.com/briefs/2026-03-05/</loc>
+    <loc>https://www.epicfurylive.com/briefs/2026-03-05/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -109,7 +109,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Updates/feed page -->
   <url>
-    <loc>https://epicfurylive.com/updates/</loc>
+    <loc>https://www.epicfurylive.com/updates/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -117,7 +117,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Incident pages -->
   <url>
-    <loc>https://epicfurylive.com/incidents/</loc>
+    <loc>https://www.epicfurylive.com/incidents/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -125,7 +125,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Actors page -->
   <url>
-    <loc>https://epicfurylive.com/actors/</loc>
+    <loc>https://www.epicfurylive.com/actors/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -133,7 +133,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Map page -->
   <url>
-    <loc>https://epicfurylive.com/map/</loc>
+    <loc>https://www.epicfurylive.com/map/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -141,7 +141,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Methodology (important for trust/citations) -->
   <url>
-    <loc>https://epicfurylive.com/methodology/</loc>
+    <loc>https://www.epicfurylive.com/methodology/</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -149,7 +149,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Glossary -->
   <url>
-    <loc>https://epicfurylive.com/glossary/</loc>
+    <loc>https://www.epicfurylive.com/glossary/</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -157,7 +157,7 @@ Create `/sitemap.xml` (updated automatically when you add pages):
 
   <!-- Corrections/changelog -->
   <url>
-    <loc>https://epicfurylive.com/corrections/</loc>
+    <loc>https://www.epicfurylive.com/corrections/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -176,13 +176,13 @@ Add to the `<head>` of every HTML page:
 
 ```html
 <!-- Home page -->
-<link rel="canonical" href="https://epicfurylive.com/" />
+<link rel="canonical" href="https://www.epicfurylive.com/" />
 
 <!-- Daily brief example -->
-<link rel="canonical" href="https://epicfurylive.com/briefs/2026-03-05/" />
+<link rel="canonical" href="https://www.epicfurylive.com/briefs/2026-03-05/" />
 
 <!-- Methodology -->
-<link rel="canonical" href="https://epicfurylive.com/methodology/" />
+<link rel="canonical" href="https://www.epicfurylive.com/methodology/" />
 ```
 
 **Purpose**: Tell Google which version is the "official" one. Prevents duplicate content issues if you ever publish on Medium or other platforms.
@@ -199,10 +199,10 @@ Add this template to every page `<head>`:
 <meta property="og:site_name" content="Epic Fury Live" />
 <meta property="og:title" content="[TITLE] — US-Israel-Iran Conflict Tracker" />
 <meta property="og:description" content="[DESCRIPTION]" />
-<meta property="og:image" content="https://epicfurylive.com/assets/og-image-1200x630.png" />
+<meta property="og:image" content="https://www.epicfurylive.com/assets/og-image-1200x630.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://epicfurylive.com[PAGE_PATH]" />
+<meta property="og:url" content="https://www.epicfurylive.com[PAGE_PATH]" />
 <meta property="og:locale" content="en_US" />
 
 <!-- ========== TWITTER CARD ========== -->
@@ -210,7 +210,7 @@ Add this template to every page `<head>`:
 <meta name="twitter:site" content="@epicfurylive" />
 <meta name="twitter:title" content="[TITLE] — US-Israel-Iran Conflict Tracker" />
 <meta name="twitter:description" content="[DESCRIPTION]" />
-<meta name="twitter:image" content="https://epicfurylive.com/assets/twitter-card-1024x512.png" />
+<meta name="twitter:image" content="https://www.epicfurylive.com/assets/twitter-card-1024x512.png" />
 
 <!-- ========== ARTICLE-SPECIFIC (for daily briefs, updates) ========== -->
 <meta property="article:published_time" content="2026-03-05T00:00:00Z" />
@@ -227,7 +227,7 @@ Add this template to every page `<head>`:
 <meta property="og:type" content="website" />
 <meta property="og:title" content="US-Israel-Iran Conflict: Live Tracker & Analysis" />
 <meta property="og:description" content="Real-time updates on the 2026 US-Israel-Iran conflict. Confirmed incidents, casualty counts, timelines, and source methodology." />
-<meta property="og:image" content="https://epicfurylive.com/assets/og-home.png" />
+<meta property="og:image" content="https://www.epicfurylive.com/assets/og-home.png" />
 ```
 
 **For Daily Brief (e.g., /briefs/2026-03-05/):**
@@ -501,8 +501,8 @@ Add to `index.html` `<head>`:
   "@type": "Organization",
   "name": "Epic Fury Live",
   "alternateName": "Epic Fury",
-  "url": "https://epicfurylive.com",
-  "logo": "https://epicfurylive.com/assets/logo-600x400.png",
+  "url": "https://www.epicfurylive.com",
+  "logo": "https://www.epicfurylive.com/assets/logo-600x400.png",
   "sameAs": [
     "https://twitter.com/epicfurylive",
     "https://linkedin.com/company/epicfurylive"
@@ -534,13 +534,13 @@ Add to `index.html` `<head>`:
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Epic Fury Live",
-  "url": "https://epicfurylive.com",
+  "url": "https://www.epicfurylive.com",
   "description": "Real-time tracker of the 2026 US-Israel-Iran conflict with verified incidents, timelines, and analysis.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://epicfurylive.com/?search={search_term_string}"
+      "urlTemplate": "https://www.epicfurylive.com/?search={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -561,20 +561,20 @@ Add to `/briefs/YYYY-MM-DD/index.html` `<head>`:
   "@type": "NewsArticle",
   "headline": "Daily Brief: March 5, 2026 — US-Israel-Iran Conflict",
   "alternativeHeadline": "Today's key incidents, confirmed reports, and diplomatic activity",
-  "image": "https://epicfurylive.com/assets/brief-2026-03-05.png",
+  "image": "https://www.epicfurylive.com/assets/brief-2026-03-05.png",
   "datePublished": "2026-03-05T00:00:00Z",
   "dateModified": "2026-03-05T18:00:00Z",
   "author": {
     "@type": "Organization",
     "name": "Epic Fury Live",
-    "url": "https://epicfurylive.com"
+    "url": "https://www.epicfurylive.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Epic Fury Live",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://epicfurylive.com/assets/logo-600x400.png"
+      "url": "https://www.epicfurylive.com/assets/logo-600x400.png"
     }
   },
   "description": "Real-time updates from March 5, 2026. 3 airstrikes confirmed. 2 diplomatic statements. 1 naval incident reported.",
@@ -602,19 +602,19 @@ Add to every page except home:
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://epicfurylive.com"
+      "item": "https://www.epicfurylive.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Briefs",
-      "item": "https://epicfurylive.com/briefs/"
+      "item": "https://www.epicfurylive.com/briefs/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "March 5, 2026",
-      "item": "https://epicfurylive.com/briefs/2026-03-05/"
+      "item": "https://www.epicfurylive.com/briefs/2026-03-05/"
     }
   ]
 }
@@ -632,19 +632,19 @@ Add to every page except home:
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://epicfurylive.com"
+      "item": "https://www.epicfurylive.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Incidents",
-      "item": "https://epicfurylive.com/incidents/"
+      "item": "https://www.epicfurylive.com/incidents/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Isfahan Airstrike",
-      "item": "https://epicfurylive.com/incidents/isfahan-shahed-march-5/"
+      "item": "https://www.epicfurylive.com/incidents/isfahan-shahed-march-5/"
     }
   ]
 }
@@ -715,7 +715,7 @@ Add to `index.html` and `/updates/index.html` when displaying live updates:
   "description": "Real-time updates on military incidents, diplomatic activity, and analysis.",
   "datePublished": "2026-03-05T00:00:00Z",
   "dateModified": "2026-03-05T18:32:00Z",
-  "image": "https://epicfurylive.com/assets/live-tracker-image.png",
+  "image": "https://www.epicfurylive.com/assets/live-tracker-image.png",
   "author": {
     "@type": "Organization",
     "name": "Epic Fury Live"
@@ -732,7 +732,7 @@ Add to `index.html` and `/updates/index.html` when displaying live updates:
       },
       "description": "Multiple sources confirm US-allied airstrike on Shahed drone facility.",
       "articleBody": "Full details here...",
-      "url": "https://epicfurylive.com/incidents/isfahan-shahed-march-5/",
+      "url": "https://www.epicfurylive.com/incidents/isfahan-shahed-march-5/",
       "mentions": [
         {
           "@type": "Thing",
@@ -754,7 +754,7 @@ Add to `index.html` and `/updates/index.html` when displaying live updates:
         "name": "Epic Fury Live"
       },
       "description": "Pentagon issues official response to regional military activity.",
-      "url": "https://epicfurylive.com/briefs/2026-03-05/#statement-defense-secretary"
+      "url": "https://www.epicfurylive.com/briefs/2026-03-05/#statement-defense-secretary"
     }
   ]
 }
@@ -800,21 +800,21 @@ epicfurylive.com/
 
 | Path | Purpose | Update Frequency | Example URL |
 |------|---------|------------------|-------------|
-| `/` | Live dashboard with current status | Hourly | `https://epicfurylive.com/` |
-| `/updates/` | Chronological feed of all updates | Real-time | `https://epicfurylive.com/updates/` |
-| `/updates/[update-id]/` | Individual update with sources | Real-time | `https://epicfurylive.com/updates/update-mar5-14-32/` |
-| `/briefs/YYYY-MM-DD/` | Daily summary brief | Daily at 23:59 UTC | `https://epicfurylive.com/briefs/2026-03-05/` |
-| `/incidents/` | Searchable incident list | Daily | `https://epicfurylive.com/incidents/?type=airstrike&country=iran` |
-| `/incidents/[id]/` | Individual incident details | Weekly | `https://epicfurylive.com/incidents/isfahan-shahed-march-5/` |
-| `/actors/` | List of all actors (countries, groups) | Weekly | `https://epicfurylive.com/actors/` |
-| `/actors/[slug]/` | Individual country/group profile | Weekly | `https://epicfurylive.com/actors/iran/`, `/actors/irgc/` |
-| `/map/` | Interactive map (fullscreen) | Daily | `https://epicfurylive.com/map/` |
-| `/methodology/` | Editorial standards | Monthly | `https://epicfurylive.com/methodology/` |
-| `/glossary/` | Searchable term definitions | Monthly | `https://epicfurylive.com/glossary/` |
-| `/glossary/#[term]` | Anchor to specific term | Monthly | `https://epicfurylive.com/glossary/#shahed-drone` |
-| `/corrections/` | Correction log (changelog) | Weekly | `https://epicfurylive.com/corrections/` |
-| `/rss.xml` | RSS feed of updates | Real-time | `https://epicfurylive.com/rss.xml` |
-| `/atom.xml` | Atom feed alternative | Real-time | `https://epicfurylive.com/atom.xml` |
+| `/` | Live dashboard with current status | Hourly | `https://www.epicfurylive.com/` |
+| `/updates/` | Chronological feed of all updates | Real-time | `https://www.epicfurylive.com/updates/` |
+| `/updates/[update-id]/` | Individual update with sources | Real-time | `https://www.epicfurylive.com/updates/update-mar5-14-32/` |
+| `/briefs/YYYY-MM-DD/` | Daily summary brief | Daily at 23:59 UTC | `https://www.epicfurylive.com/briefs/2026-03-05/` |
+| `/incidents/` | Searchable incident list | Daily | `https://www.epicfurylive.com/incidents/?type=airstrike&country=iran` |
+| `/incidents/[id]/` | Individual incident details | Weekly | `https://www.epicfurylive.com/incidents/isfahan-shahed-march-5/` |
+| `/actors/` | List of all actors (countries, groups) | Weekly | `https://www.epicfurylive.com/actors/` |
+| `/actors/[slug]/` | Individual country/group profile | Weekly | `https://www.epicfurylive.com/actors/iran/`, `/actors/irgc/` |
+| `/map/` | Interactive map (fullscreen) | Daily | `https://www.epicfurylive.com/map/` |
+| `/methodology/` | Editorial standards | Monthly | `https://www.epicfurylive.com/methodology/` |
+| `/glossary/` | Searchable term definitions | Monthly | `https://www.epicfurylive.com/glossary/` |
+| `/glossary/#[term]` | Anchor to specific term | Monthly | `https://www.epicfurylive.com/glossary/#shahed-drone` |
+| `/corrections/` | Correction log (changelog) | Weekly | `https://www.epicfurylive.com/corrections/` |
+| `/rss.xml` | RSS feed of updates | Real-time | `https://www.epicfurylive.com/rss.xml` |
+| `/atom.xml` | Atom feed alternative | Real-time | `https://www.epicfurylive.com/atom.xml` |
 
 ---
 
@@ -1399,8 +1399,8 @@ Create `/briefs/2026-03-05/index.html` using this structure:
   <meta property="og:type" content="article">
   <meta property="og:title" content="Daily Brief: March 5, 2026 — US-Israel-Iran Conflict">
   <meta property="og:description" content="Today's summary: 3 airstrikes confirmed, 2 diplomatic statements. Read verified updates.">
-  <meta property="og:image" content="https://epicfurylive.com/assets/brief-2026-03-05.png">
-  <meta property="og:url" content="https://epicfurylive.com/briefs/2026-03-05/">
+  <meta property="og:image" content="https://www.epicfurylive.com/assets/brief-2026-03-05.png">
+  <meta property="og:url" content="https://www.epicfurylive.com/briefs/2026-03-05/">
   <meta property="article:published_time" content="2026-03-05T00:00:00Z">
   <meta property="article:modified_time" content="2026-03-05T23:59:00Z">
   <meta property="article:author" content="Epic Fury Live">
@@ -1412,30 +1412,30 @@ Create `/briefs/2026-03-05/index.html` using this structure:
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Daily Brief: March 5, 2026">
   <meta name="twitter:description" content="3 airstrikes confirmed, 2 diplomatic statements, 1 shipping incident.">
-  <meta name="twitter:image" content="https://epicfurylive.com/assets/twitter-brief-2026-03-05.png">
+  <meta name="twitter:image" content="https://www.epicfurylive.com/assets/twitter-brief-2026-03-05.png">
 
   <!-- Canonical + Structured Data -->
-  <link rel="canonical" href="https://epicfurylive.com/briefs/2026-03-05/">
+  <link rel="canonical" href="https://www.epicfurylive.com/briefs/2026-03-05/">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     "headline": "Daily Brief: March 5, 2026 — US-Israel-Iran Conflict",
-    "image": "https://epicfurylive.com/assets/brief-2026-03-05.png",
+    "image": "https://www.epicfurylive.com/assets/brief-2026-03-05.png",
     "datePublished": "2026-03-05T00:00:00Z",
     "dateModified": "2026-03-05T23:59:00Z",
     "author": {
       "@type": "Organization",
       "name": "Epic Fury Live",
-      "url": "https://epicfurylive.com"
+      "url": "https://www.epicfurylive.com"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Epic Fury Live",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://epicfurylive.com/assets/logo-600x400.png"
+        "url": "https://www.epicfurylive.com/assets/logo-600x400.png"
       }
     },
     "description": "Real-time updates from March 5, 2026. 3 airstrikes confirmed. 2 diplomatic statements. 1 naval incident reported.",
@@ -1455,19 +1455,19 @@ Create `/briefs/2026-03-05/index.html` using this structure:
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://epicfurylive.com"
+        "item": "https://www.epicfurylive.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Daily Briefs",
-        "item": "https://epicfurylive.com/briefs/"
+        "item": "https://www.epicfurylive.com/briefs/"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "March 5, 2026",
-        "item": "https://epicfurylive.com/briefs/2026-03-05/"
+        "item": "https://www.epicfurylive.com/briefs/2026-03-05/"
       }
     ]
   }
@@ -1671,11 +1671,11 @@ Create `/incidents/[incident-id]/index.html` using this structure:
   <meta property="og:type" content="article">
   <meta property="og:title" content="Isfahan Airstrike: Shahed Facility - March 5, 2026">
   <meta property="og:description" content="Confirmed airstrike on Iran's drone facility. Multiple sources, timeline, and analysis.">
-  <meta property="og:image" content="https://epicfurylive.com/assets/isfahan-facility-image.png">
+  <meta property="og:image" content="https://www.epicfurylive.com/assets/isfahan-facility-image.png">
   <meta property="article:published_time" content="2026-03-05T14:32:00Z">
   <meta property="article:modified_time" content="2026-03-05T18:00:00Z">
 
-  <link rel="canonical" href="https://epicfurylive.com/incidents/isfahan-shahed-march-5/">
+  <link rel="canonical" href="https://www.epicfurylive.com/incidents/isfahan-shahed-march-5/">
 
   <!-- Schema markup -->
   <script type="application/ld+json">
@@ -1689,7 +1689,7 @@ Create `/incidents/[incident-id]/index.html` using this structure:
       "@type": "Organization",
       "name": "Epic Fury Live"
     },
-    "image": "https://epicfurylive.com/assets/isfahan-facility-image.png"
+    "image": "https://www.epicfurylive.com/assets/isfahan-facility-image.png"
   }
   </script>
 </head>
@@ -2027,7 +2027,7 @@ This is the full text for your `/methodology/` page. Publish this verbatim.
 <head>
   <title>How We Report: Editorial Methodology | Epic Fury Live</title>
   <meta name="description" content="Our editorial standards, source verification system, and commitment to accuracy in conflict reporting.">
-  <link rel="canonical" href="https://epicfurylive.com/methodology/">
+  <link rel="canonical" href="https://www.epicfurylive.com/methodology/">
 </head>
 
 <body>
@@ -2455,7 +2455,7 @@ Execute these steps once, during launch weekend:
 
 1. Go to https://search.google.com/search-console
 2. Click **Add Property**
-3. Enter: `https://epicfurylive.com`
+3. Enter: `https://www.epicfurylive.com`
 4. Choose **URL prefix** (easier than domain verification for GitHub Pages)
 5. Verify ownership via HTML file:
    - Download verification HTML file from Google
@@ -2468,14 +2468,14 @@ Execute these steps once, during launch weekend:
 
 1. In Search Console, go to **Sitemaps**
 2. Click **Add/test sitemaps**
-3. Enter: `https://epicfurylive.com/sitemap.xml`
+3. Enter: `https://www.epicfurylive.com/sitemap.xml`
 4. Click **Submit**
 5. Google will crawl it within 24 hours
 
 ### Step 3: Request URL Indexing (5 minutes)
 
 1. In Search Console, click **URL inspection** (top search bar)
-2. Enter: `https://epicfurylive.com/`
+2. Enter: `https://www.epicfurylive.com/`
 3. Click **Request indexing**
 4. Repeat for key pages:
    - `/briefs/`
