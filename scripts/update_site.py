@@ -258,7 +258,6 @@ def calculate_costs(cost_model, days_of_ops):
     Returns (total_cost, daily_burn_rate, breakdown_list)
     """
     total = 0
-    daily_burn = 0
     breakdown = []
     now = datetime.now(timezone.utc)
 
@@ -267,7 +266,6 @@ def calculate_costs(cost_model, days_of_ops):
         qty = item.get("quantity", 0)
         cost_per_day = item.get("unitCostPerDay", 0)
         daily_cost = cost_per_day * qty
-
         # Calculate days active
         start = item.get("activeStartDate")
         end = item.get("activeEndDate")
@@ -285,7 +283,6 @@ def calculate_costs(cost_model, days_of_ops):
 
         line_total = daily_cost * active_days
         total += line_total
-        daily_burn += daily_cost
 
         # Format for display
         if qty > 1:
@@ -316,6 +313,10 @@ def calculate_costs(cost_model, days_of_ops):
             "detail": detail,
             "cost": f"${line_total:,.0f}"
         })
+
+    # Daily burn = total cost / days (actual average daily spend, not just ops cost)
+    days_of_ops_safe = max(days_of_ops, 1)
+    daily_burn = total / days_of_ops_safe
 
     return total, daily_burn, breakdown
 
