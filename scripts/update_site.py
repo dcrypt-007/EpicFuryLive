@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """
-Epic Fury Live — Automated Site Updater
+Epic Fury Live — Automated Site Updater + OpenClaw Cost Tracker
 Runs hourly via GitHub Actions to pull fresh conflict data and update the dashboard.
+
+OpenClaw scans RSS articles for cost-driving data (munition counts, carrier
+deployments, sortie numbers, troop figures) and recalculates the financial
+cost model automatically. Time-based costs (carriers at sea, personnel
+deployed) accumulate daily. Event-based costs (missiles fired, sorties flown)
+update when new quantities are found in reporting.
 
 Data sources:
 - RSS feeds from Al Jazeera, Reuters, BBC, CNN, AP
-- Structured data extraction
+- Structured data extraction via OpenClaw pattern matching
 - Timestamp and stats refresh
 - Historical data tracking for trends
 
@@ -21,6 +27,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from html import escape
 from email.utils import parsedate_to_datetime
+import math
 
 # ============================================================
 # CONFIG: RSS feeds to pull from
@@ -126,6 +133,220 @@ def fetch_all_feeds():
 
 
 # ============================================================
+# OPENCLAW — Cost-Driving Data Extractor
+# ============================================================
+
+def extract_number_near_keyword(text, keywords, min_val=1, max_val=999999):
+    """
+    Search text for a number appearing near one of the keywords.
+    Returns the largest number found near any keyword, or None if no match.
+
+    Handles formats like:
+    - "500 Tomahawk missiles"
+    - "launched 500+ Tomahawk"
+    - "more than 3,700 strikes"
+    - "approximately 2,000 sorties"
+    - "4 carrier strike groups"
+    - "45,000 troops deployed"
+    """
+    if not keywords:
+        return None
+
+    text_lower = text.lower()
+    best_match = None
+
+    for keyword in keywords:
+        kw = keyword.lower()
+        if kw not in text_lower:
+            continue
+
+        # Find all numbers within 80 characters of the keyword
+        kw_positions = [m.start() for m in re.finditer(re.escape(kw), text_lower)]
+
+        for pos in kw_positions:
+            # Search window around the keyword
+            window_start = max(0, pos - 80)
+            window_end = min(len(text), pos + len(kw) + 80)
+            window = text[window_start:window_end]
+
+            # Find numbers in the window (handles commas, +, ~)
+            # Patterns: "3,700", "500+", "~2,000", "more than 45000", "approximately 150"
+            number_patterns = re.findall(r'(?:more than |over |approximately |about |nearly |~|>)?\s*(\d{1,3}(?:,\d{3})*(?:\.\d+)?)\s*\+?', window)
+
+            for num_str in number_patterns:
+                try:
+                    num = int(num_str.replace(',', '').split('.')[0])
+                    if min_val <= num <= max_val:
+                        if best_match is None or num > best_match:
+                            best_match = num
+                except ValueError:
+                    continue
+
+    return best_match
+
+
+def openclaw_scan(news_items, cost_model):
+    """
+    OpenClaw engine: scan news articles for cost-driving data and update
+    the cost model quantities when new, higher numbers are found.
+
+    Returns a list of updates made.
+    """
+    updates = []
+
+    if not news_items or not cost_model:
+        return updates
+
+    # Combine all article text for scanning
+    all_text = ""
+    for item in news_items:
+        all_text += item["title"] + " " + item["description"] + " "
+
+    if not all_text.strip():
+        return updates
+
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # Scan time-based items (look for quantity changes, e.g., more carrier groups)
+    for item in cost_model.get("timeBased", []):
+        if not item.get("keywords"):
+            continue
+
+        found = extract_number_near_keyword(
+            all_text,
+            item["keywords"],
+            min_val=1,
+            max_val=500000  # reasonable cap for personnel, ships, etc.
+        )
+
+        if found is not None and found > item.get("quantity", 0):
+            old_qty = item["quantity"]
+            item["quantity"] = found
+            item["lastUpdated"] = now_str
+            item["source"] = "OpenClaw (auto-detected from RSS)"
+            updates.append(f"  [OpenClaw] {item['category']}: quantity {old_qty} → {found}")
+
+    # Scan event-based items (look for higher cumulative counts)
+    for item in cost_model.get("eventBased", []):
+        if not item.get("keywords"):
+            continue
+
+        found = extract_number_near_keyword(
+            all_text,
+            item["keywords"],
+            min_val=1,
+            max_val=100000  # reasonable cap for munitions
+        )
+
+        if found is not None and found > item.get("quantity", 0):
+            old_qty = item["quantity"]
+            item["quantity"] = found
+            item["lastUpdated"] = now_str
+            item["source"] = "OpenClaw (auto-detected from RSS)"
+            updates.append(f"  [OpenClaw] {item['category']}: quantity {old_qty} → {found}")
+
+    return updates
+
+
+def calculate_costs(cost_model, days_of_ops):
+    """
+    Calculate all costs from the cost model.
+
+    Time-based items: unitCostPerDay × quantity × days active
+    Event-based items: unitCost × quantity
+
+    Returns (total_cost, daily_burn_rate, breakdown_list)
+    """
+    total = 0
+    daily_burn = 0
+    breakdown = []
+    now = datetime.now(timezone.utc)
+
+    # Time-based costs
+    for item in cost_model.get("timeBased", []):
+        qty = item.get("quantity", 0)
+        cost_per_day = item.get("unitCostPerDay", 0)
+        daily_cost = cost_per_day * qty
+
+        # Calculate days active
+        start = item.get("activeStartDate")
+        end = item.get("activeEndDate")
+
+        if start:
+            start_dt = datetime.strptime(start, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            if end:
+                end_dt = datetime.strptime(end, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                active_days = (end_dt - start_dt).days
+            else:
+                active_days = (now - start_dt).days
+            active_days = max(active_days, 1)
+        else:
+            active_days = days_of_ops
+
+        line_total = daily_cost * active_days
+        total += line_total
+        daily_burn += daily_cost
+
+        # Format for display
+        if qty > 1:
+            detail = f"{qty:,} × ${cost_per_day:,.0f}/day × {active_days} days"
+        else:
+            detail = f"${cost_per_day:,.0f}/day × {active_days} days"
+
+        breakdown.append({
+            "category": item["category"],
+            "detail": detail,
+            "cost": f"${line_total:,.0f}"
+        })
+
+    # Event-based costs
+    for item in cost_model.get("eventBased", []):
+        qty = item.get("quantity", 0)
+        unit_cost = item.get("unitCost", 0)
+        line_total = unit_cost * qty
+        total += line_total
+
+        if qty > 1:
+            detail = f"{qty:,} × ${unit_cost:,.0f} each"
+        else:
+            detail = f"Lump sum"
+
+        breakdown.append({
+            "category": item["category"],
+            "detail": detail,
+            "cost": f"${line_total:,.0f}"
+        })
+
+    return total, daily_burn, breakdown
+
+
+def format_cost(amount):
+    """Format a dollar amount for display. E.g., 6543000000 → '$6.5 billion+'"""
+    if amount >= 1_000_000_000:
+        billions = amount / 1_000_000_000
+        # Round to nearest 0.1 billion
+        return f"${billions:,.1f} billion+"
+    elif amount >= 1_000_000:
+        millions = amount / 1_000_000
+        return f"${millions:,.0f} million+"
+    else:
+        return f"${amount:,.0f}"
+
+
+def format_cost_short(amount):
+    """Short format for banner. E.g., 6543000000 → '$6.5B+'"""
+    if amount >= 1_000_000_000:
+        billions = amount / 1_000_000_000
+        if billions == int(billions):
+            return f"${int(billions)}B+"
+        return f"${billions:.1f}B+"
+    elif amount >= 1_000_000:
+        millions = amount / 1_000_000
+        return f"${millions:.0f}M+"
+    return f"${amount:,.0f}"
+
+
+# ============================================================
 # UPDATE HTML FILE
 # ============================================================
 def update_timestamps(html):
@@ -209,10 +430,10 @@ def update_rss_feed(news_items):
 
 
 # ============================================================
-# UPDATE DATA.JSON — All dynamic content
+# UPDATE DATA.JSON — All dynamic content + OpenClaw cost model
 # ============================================================
 def update_data_json(news_items):
-    """Update data.json with current timestamps, computed values, and fresh RSS developments."""
+    """Update data.json with current timestamps, computed values, OpenClaw cost model, and fresh RSS developments."""
     now = datetime.now(timezone.utc)
     iso_now = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -231,26 +452,39 @@ def update_data_json(news_items):
     data["lastUpdated"] = iso_now
     data["dayCount"] = days
 
-    # ---- FINANCIAL COST (auto-calculated) ----
-    if "financialCost" in data:
+    # ---- OPENCLAW: Scan RSS for cost-driving data ----
+    cost_model = data.get("financialCost", {}).get("costModel")
+    if cost_model:
+        print("  [OpenClaw] Scanning articles for cost-driving data...")
+        updates = openclaw_scan(news_items, cost_model)
+        if updates:
+            for u in updates:
+                print(u)
+            print(f"  [OpenClaw] Made {len(updates)} quantity updates")
+        else:
+            print("  [OpenClaw] No new quantity updates found in articles")
+
+        # ---- CALCULATE COSTS from model ----
+        total_cost, daily_burn, breakdown = calculate_costs(cost_model, days)
+
         data["financialCost"]["daysOfOps"] = days
+        data["financialCost"]["totalCost"] = format_cost(total_cost)
+        data["financialCost"]["dailyBurnRate"] = f"~{format_cost_short(daily_burn).replace('+', '')}/day"
+        data["financialCost"]["breakdown"] = breakdown
 
-        # Recalculate total cost based on burn rate (~$1B/day)
-        total_billions = days
-        data["financialCost"]["totalCost"] = f"${total_billions},000,000,000+"
+        # Update banner cost
+        if "banner" in data:
+            data["banner"]["cost"] = format_cost_short(total_cost)
 
-        # Update carrier ops in the breakdown array
-        if "breakdown" in data["financialCost"]:
-            carrier_cost = 2 * 7_000_000 * days
-            for item in data["financialCost"]["breakdown"]:
-                if item.get("category") == "Carrier Ops":
-                    item["detail"] = f"2 CSGs @ $7M/day × {days} days"
-                    item["cost"] = f"${carrier_cost:,}"
-                    break
-
-    # ---- BANNER STATS ----
-    if "banner" in data:
-        data["banner"]["cost"] = f"${days}B+"
+        print(f"  [OpenClaw] Total cost: {format_cost(total_cost)} | Daily burn: {format_cost_short(daily_burn)}/day")
+    else:
+        # Fallback: simple formula if no cost model
+        if "financialCost" in data:
+            data["financialCost"]["daysOfOps"] = days
+            total_billions = days
+            data["financialCost"]["totalCost"] = f"${total_billions},000,000,000+"
+        if "banner" in data:
+            data["banner"]["cost"] = f"${days}B+"
 
     # ---- DEVELOPMENTS (inject RSS items) ----
     if news_items:
@@ -272,14 +506,9 @@ def update_data_json(news_items):
             })
 
         if new_devs:
-            # Merge: put new items first, keep existing items that aren't duplicates
             existing_devs = data.get("developments", [])
             new_times = {d["time"] for d in new_devs}
-
-            # Keep existing items that don't overlap with new ones
             kept_existing = [d for d in existing_devs if d["time"] not in new_times]
-
-            # Combine and limit to 20 most recent
             all_devs = new_devs + kept_existing
             data["developments"] = all_devs[:20]
             print(f"  Injected {len(new_devs)} RSS items into developments (total: {len(data['developments'])})")
@@ -289,7 +518,7 @@ def update_data_json(news_items):
     # ---- WRITE DATA.JSON ----
     with open("data.json", "w") as f:
         json.dump(data, f, indent=2)
-    print(f"  Updated data.json (Day {days}, cost ${days}B+)")
+    print(f"  Updated data.json (Day {days})")
 
     return data  # Return for history tracking
 
@@ -311,7 +540,7 @@ def update_history(data):
         with open("history.json", "r") as f:
             history = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
-        history = {"snapshots": []}
+        history = {"snapshots": [], "dailySummaries": []}
 
     # Extract key metrics for this snapshot
     snapshot = {
@@ -326,75 +555,67 @@ def update_history(data):
         "iranWounded": data.get("humanCost", {}).get("iranWounded", "0"),
         "civilianDeaths": data.get("humanCost", {}).get("civilianDeaths", "0"),
         "totalCost": data.get("financialCost", {}).get("totalCost", "$0"),
+        "dailyBurnRate": data.get("financialCost", {}).get("dailyBurnRate", "$0"),
         "totalStrikes": data.get("banner", {}).get("strikes", "0"),
         "threatCount": len(data.get("threats", [])),
         "homelandThreatCount": len(data.get("homelandThreats", [])),
         "developmentCount": len(data.get("developments", []))
     }
 
-    # Check if we already have a snapshot for this hour (avoid duplicates)
-    existing_hours = {s.get("timestamp", "")[:13] for s in history["snapshots"]}
+    # Check if we already have a snapshot for this hour
+    existing_hours = {s.get("timestamp", "")[:13] for s in history.get("snapshots", [])}
     current_hour_key = snapshot["timestamp"][:13]
 
     if current_hour_key in existing_hours:
-        # Update the existing entry for this hour instead of adding a duplicate
         for i, s in enumerate(history["snapshots"]):
             if s.get("timestamp", "")[:13] == current_hour_key:
                 history["snapshots"][i] = snapshot
                 break
         print(f"  Updated existing history snapshot for {today} {hour}")
     else:
-        history["snapshots"].append(snapshot)
+        history.setdefault("snapshots", []).append(snapshot)
         print(f"  Added new history snapshot for {today} {hour}")
 
-    # Keep last 90 days of hourly data (90 * 24 = 2160 max snapshots)
+    # Keep last 90 days of hourly data
     max_snapshots = 2160
     if len(history["snapshots"]) > max_snapshots:
         history["snapshots"] = history["snapshots"][-max_snapshots:]
 
-    # Also maintain a daily summary for long-term trends
+    # Daily summary
     if "dailySummaries" not in history:
         history["dailySummaries"] = []
 
-    # Check if we already have a daily summary for today
     existing_dates = {s.get("date", "") for s in history["dailySummaries"]}
+    daily_data = {
+        "date": today,
+        "dayCount": snapshot["dayCount"],
+        "iranDeaths": snapshot["iranDeaths"],
+        "usKIA": snapshot["usKIA"],
+        "israeliDeaths": snapshot["israeliDeaths"],
+        "gulfCasualties": snapshot["gulfCasualties"],
+        "civilianDeaths": snapshot["civilianDeaths"],
+        "totalCost": snapshot["totalCost"],
+        "dailyBurnRate": snapshot["dailyBurnRate"],
+        "totalStrikes": snapshot["totalStrikes"],
+        "threatCount": snapshot["threatCount"]
+    }
+
     if today not in existing_dates:
-        history["dailySummaries"].append({
-            "date": today,
-            "dayCount": snapshot["dayCount"],
-            "iranDeaths": snapshot["iranDeaths"],
-            "usKIA": snapshot["usKIA"],
-            "israeliDeaths": snapshot["israeliDeaths"],
-            "gulfCasualties": snapshot["gulfCasualties"],
-            "civilianDeaths": snapshot["civilianDeaths"],
-            "totalCost": snapshot["totalCost"],
-            "totalStrikes": snapshot["totalStrikes"],
-            "threatCount": snapshot["threatCount"]
-        })
+        history["dailySummaries"].append(daily_data)
         print(f"  Added daily summary for {today}")
     else:
-        # Update today's daily summary with latest values
         for i, s in enumerate(history["dailySummaries"]):
             if s.get("date") == today:
-                history["dailySummaries"][i].update({
-                    "iranDeaths": snapshot["iranDeaths"],
-                    "usKIA": snapshot["usKIA"],
-                    "israeliDeaths": snapshot["israeliDeaths"],
-                    "gulfCasualties": snapshot["gulfCasualties"],
-                    "civilianDeaths": snapshot["civilianDeaths"],
-                    "totalCost": snapshot["totalCost"],
-                    "totalStrikes": snapshot["totalStrikes"],
-                    "threatCount": snapshot["threatCount"]
-                })
+                history["dailySummaries"][i] = daily_data
                 break
 
-    # Keep last 365 days of daily summaries
+    # Keep last 365 days
     if len(history["dailySummaries"]) > 365:
         history["dailySummaries"] = history["dailySummaries"][-365:]
 
     with open("history.json", "w") as f:
         json.dump(history, f, indent=2)
-    print(f"  History: {len(history['snapshots'])} hourly snapshots, {len(history['dailySummaries'])} daily summaries")
+    print(f"  History: {len(history['snapshots'])} hourly, {len(history['dailySummaries'])} daily")
 
 
 def update_sitemap():
@@ -441,7 +662,7 @@ def update_sitemap():
 # ============================================================
 def main():
     print("=" * 60)
-    print("Epic Fury Live — Automated Update")
+    print("Epic Fury Live — Automated Update + OpenClaw")
     print(f"Time: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
     print("=" * 60)
 
@@ -465,14 +686,12 @@ def main():
     with open("index.html", "w") as f:
         f.write(html)
     print("  Wrote index.html")
-
-    # Also sync to public/dashboard.html
     with open("public/dashboard.html", "w") as f:
         f.write(html)
     print("  Wrote public/dashboard.html")
 
-    # 5. Update data.json (all dynamic content + RSS developments)
-    print("\n[5/7] Updating data.json...")
+    # 5. Update data.json (all dynamic content + OpenClaw cost model)
+    print("\n[5/7] Updating data.json + OpenClaw cost analysis...")
     data = update_data_json(news_items)
 
     # 6. Update history.json (trend tracking)

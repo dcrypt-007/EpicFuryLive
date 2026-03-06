@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-06T04:44:40Z",
+  "lastUpdated": "2026-03-06T04:59:29Z",
   "dayCount": 6,
   "banner": {
     "strikes": "~3,700",
     "killed": "1,045+",
-    "cost": "$6B+"
+    "cost": "$4.0B+"
   },
   "humanCost": {
     "iranDeaths": "1,045",
@@ -47,49 +47,352 @@
     }
   },
   "financialCost": {
-    "totalCost": "$6,000,000,000+",
-    "dailyBurnRate": "~$1 billion/day",
+    "totalCost": "$4.0 billion+",
+    "dailyBurnRate": "~$133M/day",
     "daysOfOps": 6,
+    "costModel": {
+      "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
+      "timeBased": [
+        {
+          "id": "carrier_ops",
+          "category": "Carrier Strike Groups",
+          "unitCostPerDay": 7000000,
+          "quantity": 2,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [
+            "carrier strike group",
+            "CSG",
+            "carrier group",
+            "USS Lincoln",
+            "USS Ford",
+            "USS Eisenhower",
+            "USS Truman",
+            "USS Reagan",
+            "USS Nimitz",
+            "USS Vinson",
+            "carrier deployed"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "CENTCOM, USNI News"
+        },
+        {
+          "id": "destroyers",
+          "category": "Destroyers & Escorts",
+          "unitCostPerDay": 240000,
+          "quantity": 13,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [
+            "destroyer",
+            "DDG",
+            "escort",
+            "Arleigh Burke",
+            "guided-missile destroyer"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "CENTCOM"
+        },
+        {
+          "id": "personnel",
+          "category": "Deployed Personnel",
+          "unitCostPerDay": 500,
+          "quantity": 45000,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [
+            "troops deployed",
+            "service members",
+            "personnel deployed",
+            "soldiers deployed",
+            "marines deployed"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "Pentagon estimates"
+        },
+        {
+          "id": "intel_cyber",
+          "category": "Intelligence & Cyber Ops",
+          "unitCostPerDay": 15000000,
+          "quantity": 1,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [],
+          "lastUpdated": "2026-03-05",
+          "source": "Estimate based on DOD cyber/intel budget"
+        },
+        {
+          "id": "logistics_support",
+          "category": "Logistics & Supply Chain",
+          "unitCostPerDay": 25000000,
+          "quantity": 1,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [],
+          "lastUpdated": "2026-03-05",
+          "source": "Estimate based on Iraq/Afghanistan logistics costs"
+        },
+        {
+          "id": "fuel_ops",
+          "category": "Aviation & Naval Fuel",
+          "unitCostPerDay": 40000000,
+          "quantity": 1,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [],
+          "lastUpdated": "2026-03-05",
+          "source": "DOD fuel consumption estimates (theater operations)"
+        },
+        {
+          "id": "drone_ops",
+          "category": "UAV / Drone Operations",
+          "unitCostPerDay": 8000000,
+          "quantity": 1,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [
+            "MQ-9",
+            "Reaper",
+            "drone strike",
+            "UAV",
+            "RQ-4",
+            "Global Hawk"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "Air Force, CENTCOM"
+        },
+        {
+          "id": "comms_space",
+          "category": "Satellite & Communications",
+          "unitCostPerDay": 5000000,
+          "quantity": 1,
+          "activeStartDate": "2026-02-28",
+          "activeEndDate": null,
+          "keywords": [],
+          "lastUpdated": "2026-03-05",
+          "source": "DOD Space Command estimates"
+        }
+      ],
+      "eventBased": [
+        {
+          "id": "tomahawk",
+          "category": "Tomahawk Cruise Missiles",
+          "unitCost": 2000000,
+          "quantity": 500,
+          "keywords": [
+            "tomahawk",
+            "cruise missile launched",
+            "TLAM"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "CENTCOM, Navy"
+        },
+        {
+          "id": "jdam",
+          "category": "JDAM Guided Bombs",
+          "unitCost": 25000,
+          "quantity": 2000,
+          "keywords": [
+            "JDAM",
+            "guided bomb",
+            "precision munition",
+            "bombs dropped"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "CENTCOM"
+        },
+        {
+          "id": "jassm",
+          "category": "AGM-158 JASSM/JASSM-ER (Standoff Missiles)",
+          "unitCost": 1500000,
+          "quantity": 200,
+          "keywords": [
+            "JASSM",
+            "AGM-158",
+            "standoff missile",
+            "cruise missile",
+            "air-launched missile"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "Air Force, Lockheed Martin unit cost"
+        },
+        {
+          "id": "sdb",
+          "category": "Small Diameter Bombs (SDB/SDB II)",
+          "unitCost": 40000,
+          "quantity": 1500,
+          "keywords": [
+            "SDB",
+            "small diameter bomb",
+            "GBU-39",
+            "GBU-53",
+            "StormBreaker"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "Air Force"
+        },
+        {
+          "id": "b2_sorties",
+          "category": "B-2 Bomber Sorties",
+          "unitCost": 5500000,
+          "quantity": 8,
+          "keywords": [
+            "B-2",
+            "B2 bomber",
+            "stealth bomber",
+            "B-2 Spirit",
+            "bomber sortie"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "CENTCOM, Air Force"
+        },
+        {
+          "id": "fighter_sorties",
+          "category": "Fighter/Attack Sorties",
+          "unitCost": 100000,
+          "quantity": 4500,
+          "keywords": [
+            "sortie",
+            "F-35",
+            "F-15",
+            "F-22",
+            "F/A-18",
+            "fighter sortie",
+            "combat sortie",
+            "air sortie",
+            "strike sortie"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "CENTCOM, Air Force"
+        },
+        {
+          "id": "interceptors",
+          "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
+          "unitCost": 4000000,
+          "quantity": 150,
+          "keywords": [
+            "SM-3",
+            "SM-6",
+            "THAAD",
+            "Patriot",
+            "interceptor",
+            "missile defense",
+            "intercepted",
+            "shot down missile"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "MDA, CENTCOM"
+        },
+        {
+          "id": "prestrike_buildup",
+          "category": "Pre-strike Buildup & Deployment",
+          "unitCost": 630000000,
+          "quantity": 1,
+          "keywords": [],
+          "lastUpdated": "2026-03-05",
+          "source": "Pentagon budget documents"
+        },
+        {
+          "id": "medical_casualty",
+          "category": "Medical & Casualty Care",
+          "unitCost": 50000000,
+          "quantity": 1,
+          "keywords": [
+            "medical evacuation",
+            "medevac",
+            "casualty care",
+            "field hospital"
+          ],
+          "lastUpdated": "2026-03-05",
+          "source": "DOD medical estimates"
+        }
+      ]
+    },
     "breakdown": [
       {
-        "category": "Tomahawk Missiles",
-        "detail": "~500 launched @ $2M each",
-        "cost": "$1,000,000,000"
-      },
-      {
-        "category": "JDAM Munitions",
-        "detail": "~2,000 dropped @ $25K each",
-        "cost": "$50,000,000"
-      },
-      {
-        "category": "B-2 Sorties",
-        "detail": "Multiple 37-hr missions @ $5.5M each",
-        "cost": "$40,000,000+"
-      },
-      {
-        "category": "Carrier Ops",
-        "detail": "2 CSGs @ $7M/day \u00d7 6 days",
+        "category": "Carrier Strike Groups",
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 6 days",
         "cost": "$84,000,000"
       },
       {
-        "category": "Pre-strike Buildup",
-        "detail": "Deployment, logistics, surge ops",
+        "category": "Destroyers & Escorts",
+        "detail": "13 \u00d7 $240,000/day \u00d7 6 days",
+        "cost": "$18,720,000"
+      },
+      {
+        "category": "Deployed Personnel",
+        "detail": "45,000 \u00d7 $500/day \u00d7 6 days",
+        "cost": "$135,000,000"
+      },
+      {
+        "category": "Intelligence & Cyber Ops",
+        "detail": "$15,000,000/day \u00d7 6 days",
+        "cost": "$90,000,000"
+      },
+      {
+        "category": "Logistics & Supply Chain",
+        "detail": "$25,000,000/day \u00d7 6 days",
+        "cost": "$150,000,000"
+      },
+      {
+        "category": "Aviation & Naval Fuel",
+        "detail": "$40,000,000/day \u00d7 6 days",
+        "cost": "$240,000,000"
+      },
+      {
+        "category": "UAV / Drone Operations",
+        "detail": "$8,000,000/day \u00d7 6 days",
+        "cost": "$48,000,000"
+      },
+      {
+        "category": "Satellite & Communications",
+        "detail": "$5,000,000/day \u00d7 6 days",
+        "cost": "$30,000,000"
+      },
+      {
+        "category": "Tomahawk Cruise Missiles",
+        "detail": "500 \u00d7 $2,000,000 each",
+        "cost": "$1,000,000,000"
+      },
+      {
+        "category": "JDAM Guided Bombs",
+        "detail": "2,000 \u00d7 $25,000 each",
+        "cost": "$50,000,000"
+      },
+      {
+        "category": "AGM-158 JASSM/JASSM-ER (Standoff Missiles)",
+        "detail": "200 \u00d7 $1,500,000 each",
+        "cost": "$300,000,000"
+      },
+      {
+        "category": "Small Diameter Bombs (SDB/SDB II)",
+        "detail": "1,500 \u00d7 $40,000 each",
+        "cost": "$60,000,000"
+      },
+      {
+        "category": "B-2 Bomber Sorties",
+        "detail": "8 \u00d7 $5,500,000 each",
+        "cost": "$44,000,000"
+      },
+      {
+        "category": "Fighter/Attack Sorties",
+        "detail": "4,500 \u00d7 $100,000 each",
+        "cost": "$450,000,000"
+      },
+      {
+        "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
+        "detail": "150 \u00d7 $4,000,000 each",
+        "cost": "$600,000,000"
+      },
+      {
+        "category": "Pre-strike Buildup & Deployment",
+        "detail": "Lump sum",
         "cost": "$630,000,000"
       },
       {
-        "category": "Aircraft Sorties",
-        "detail": "F-35, F-15E, F-22, F/A-18, others",
-        "cost": "$500,000,000+"
-      },
-      {
-        "category": "Personnel & Medical",
-        "detail": "Mobilization, casualty care, logistics",
-        "cost": "$300,000,000+"
-      },
-      {
-        "category": "Intelligence & Support",
-        "detail": "Reconnaissance, signals, cyber ops",
-        "cost": "$400,000,000+"
+        "category": "Medical & Casualty Care",
+        "detail": "Lump sum",
+        "cost": "$50,000,000"
       }
     ],
     "projections": [
