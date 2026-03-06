@@ -2509,8 +2509,9 @@
             container.innerHTML = videos.map(v => {
                 const dateStr = v.date ? new Date(v.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
                 const catTag = v.category ? `<span class="video-category-tag">${v.category}</span>` : '';
+                const startParam = v.startTime ? `?start=${v.startTime}` : '';
                 return `<div class="video-card">
-                    <iframe src="https://www.youtube.com/embed/${v.youtubeId}" allowfullscreen loading="lazy"></iframe>
+                    <iframe src="https://www.youtube.com/embed/${v.youtubeId}${startParam}" allowfullscreen loading="lazy"></iframe>
                     <div class="video-card-info">
                         <div class="video-card-title">${v.title || 'Untitled'}</div>
                         <div class="video-card-meta">

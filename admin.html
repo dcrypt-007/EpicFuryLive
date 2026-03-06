@@ -413,14 +413,31 @@
         return null;
     }
 
+    function extractStartTime(url) {
+        if (!url) return 0;
+        // Match t=123 or t=123s or t=1m30s or start=123
+        const tMatch = url.match(/[?&]t=(\d+)s?(?:&|$)/);
+        if (tMatch) return parseInt(tMatch[1]);
+        const startMatch = url.match(/[?&]start=(\d+)/);
+        if (startMatch) return parseInt(startMatch[1]);
+        // Handle t=1m30s format
+        const hmMatch = url.match(/[?&]t=(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s?)?/);
+        if (hmMatch) {
+            return (parseInt(hmMatch[1] || 0) * 3600) + (parseInt(hmMatch[2] || 0) * 60) + parseInt(hmMatch[3] || 0);
+        }
+        return 0;
+    }
+
     // =========================================
     // YOUTUBE URL PREVIEW
     // =========================================
     document.getElementById('videoUrl').addEventListener('input', function() {
         const id = extractYouTubeId(this.value);
+        const startTime = extractStartTime(this.value);
         const preview = document.getElementById('videoPreview');
         if (id) {
-            preview.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe>`;
+            const startParam = startTime ? `?start=${startTime}` : '';
+            preview.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}${startParam}" allowfullscreen></iframe>`;
             preview.classList.add('visible');
         } else {
             preview.innerHTML = '';
@@ -531,6 +548,7 @@
         const date = document.getElementById('videoDate').value;
 
         const youtubeId = extractYouTubeId(url);
+        const startTime = extractStartTime(url);
         if (!youtubeId) {
             showStatus('Invalid YouTube URL. Please paste a valid YouTube link.', 'error');
             return;
@@ -551,12 +569,12 @@
             // Ensure videos array exists
             if (!content.videos) content.videos = [];
 
-            // Check for duplicate
-            if (content.videos.some(v => v.youtubeId === youtubeId)) {
-                showStatus('This video is already on the site.', 'error');
-                btn.disabled = false;
-                btn.textContent = 'Add Video & Push to Site';
-                return;
+            // If duplicate exists, remove the old one (allows replacing with new timestamp)
+            const existingIdx = content.videos.findIndex(v => v.youtubeId === youtubeId);
+            let commitMsg = 'Add combat footage: ' + title;
+            if (existingIdx !== -1) {
+                content.videos.splice(existingIdx, 1);
+                commitMsg = 'Update combat footage: ' + title;
             }
 
             // Build the new video entry
@@ -565,6 +583,7 @@
                 title: title,
                 category: category
             };
+            if (startTime) newVideo.startTime = startTime;
             if (source) newVideo.source = source;
             if (date) newVideo.date = date;
             newVideo.addedAt = new Date().toISOString();
@@ -573,7 +592,7 @@
             content.videos.unshift(newVideo);
 
             showStatus('Committing to GitHub...', 'loading');
-            await updateFile(content, sha, 'Add combat footage: ' + title);
+            await updateFile(content, sha, commitMsg);
 
             showStatus('Video added! It will appear on the site in 1-2 minutes after GitHub Pages rebuilds.', 'success');
 
