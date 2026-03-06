@@ -41,13 +41,6 @@ RSS_FEEDS = [
         "tier": 2
     },
     {
-        "name": "Reuters - World",
-        "url": "https://feeds.reuters.com/Reuters/worldNews",
-        "keywords": ["iran", "tehran", "israel", "strike", "hezbollah", "houthi", "persian gulf",
-                     "killed", "casualties", "deaths", "missile", "nuclear"],
-        "tier": 2
-    },
-    {
         "name": "BBC - World",
         "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
         "keywords": ["iran", "israel", "us strike", "hezbollah", "houthi", "middle east",
@@ -55,17 +48,24 @@ RSS_FEEDS = [
         "tier": 2
     },
     {
-        "name": "AP News - Middle East",
-        "url": "https://rsshub.app/apnews/topics/apf-middleeast",
-        "keywords": ["iran", "israel", "strike", "hezbollah", "houthi", "killed", "missile",
-                     "irgc", "tehran", "nuclear"],
+        "name": "Google News - Iran",
+        "url": "https://news.google.com/rss/search?q=iran+strike+OR+killed+OR+missile+OR+nuclear&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
+                     "houthi", "irgc", "epic fury", "pentagon", "centcom", "casualties"],
         "tier": 2
     },
     {
-        "name": "CNN - World",
-        "url": "http://rss.cnn.com/rss/edition_world.rss",
-        "keywords": ["iran", "israel", "strike", "hezbollah", "killed", "missile", "nuclear",
-                     "epic fury", "pentagon", "centcom"],
+        "name": "Google News - US Military Iran",
+        "url": "https://news.google.com/rss/search?q=US+military+Iran+OR+CENTCOM+OR+%22epic+fury%22&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "centcom", "pentagon",
+                     "epic fury", "troops", "navy", "carrier", "hezbollah", "houthi"],
+        "tier": 2
+    },
+    {
+        "name": "Google News - Iran Casualties",
+        "url": "https://news.google.com/rss/search?q=Iran+casualties+OR+%22death+toll%22+OR+killed+airstrikes&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "killed", "death toll", "casualties", "dead", "wounded", "deaths",
+                     "strike", "airstrike", "civilian"],
         "tier": 2
     },
 ]
@@ -128,7 +128,7 @@ def fetch_rss(feed_config):
     return items
 
 
-def fetch_article_text(url, max_chars=2000):
+def fetch_article_text(url, max_chars=3000):
     """
     Fetch the full text of an article by following its link.
     Returns plain text stripped of HTML tags, capped at max_chars.
@@ -137,18 +137,26 @@ def fetch_article_text(url, max_chars=2000):
     try:
         req = urllib.request.Request(
             url,
-            headers={"User-Agent": "EpicFuryLive/1.0 (conflict-tracker)"}
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Language": "en-US,en;q=0.9",
+            }
         )
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with urllib.request.urlopen(req, timeout=12) as resp:
             html = resp.read().decode("utf-8", errors="replace")
 
         # Strip HTML tags and get plain text
         text = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.DOTALL | re.IGNORECASE)
         text = re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<nav[^>]*>.*?</nav>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<header[^>]*>.*?</header>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<footer[^>]*>.*?</footer>', '', text, flags=re.DOTALL | re.IGNORECASE)
         text = re.sub(r'<[^>]+>', ' ', text)
         text = re.sub(r'\s+', ' ', text).strip()
         return text[:max_chars]
     except Exception as e:
+        print(f"    [Debug] Failed to fetch article: {url[:60]}... ({e})")
         return ""
 
 
@@ -170,14 +178,20 @@ def fetch_all_feeds():
             seen_titles.add(title_key)
             unique.append(item)
 
-    unique = unique[:15]  # Top 15 most recent
+    unique = unique[:20]  # Top 20 most recent
 
-    # Fetch full article text for the top 5 most relevant articles
+    # Debug: show what articles we got
+    print(f"  Unique articles after dedup: {len(unique)}")
+    for i, item in enumerate(unique[:5]):
+        print(f"    [{i+1}] {item['title'][:80]}")
+        print(f"        Desc: {item['description'][:120]}...")
+
+    # Fetch full article text for the top articles
     # This gives the scanners much richer text to work with
     print("  Fetching full article text for top articles...")
     fetched = 0
-    for item in unique[:8]:  # Try top 8, stop after 5 successes
-        if fetched >= 5:
+    for item in unique[:12]:  # Try top 12, stop after 8 successes
+        if fetched >= 8:
             break
         link = item.get("link", "")
         if not link:
@@ -187,7 +201,9 @@ def fetch_all_feeds():
             item["full_text"] = full_text
             fetched += 1
             print(f"    Fetched full text: {item['title'][:60]}... ({len(full_text)} chars)")
-    print(f"  Got full text for {fetched} articles")
+        else:
+            print(f"    No text from: {item['title'][:60]}...")
+    print(f"  Got full text for {fetched}/{min(len(unique), 12)} articles")
 
     return unique
 
@@ -554,39 +570,46 @@ def scan_casualties(news_items, human_cost):
 
     # Build scanning text from RSS + full article text
     text_parts = []
+    full_text_count = 0
     for item in news_items:
         text_parts.append(item["title"] + " " + item["description"])
         if "full_text" in item:
             text_parts.append(item["full_text"])
+            full_text_count += 1
     all_text = " ".join(text_parts)
+    print(f"    Scanning {len(news_items)} articles ({full_text_count} with full text, {len(all_text)} total chars)")
 
     # --- Iranian deaths ---
-    # Broad keywords — RSS articles say things like "death toll rises to X",
-    # "X killed in strikes", "X dead", etc.
     iran_death_keywords = [
         "killed", "death toll", "dead", "deaths", "casualties",
         "iran killed", "iranian killed", "killed in iran",
         "iran death toll", "iranian dead", "iran casualties",
         "confirmed deaths", "killed in airstrikes", "killed in strikes",
         "reported killed", "people killed", "have been killed",
-        "ministry of health"
+        "ministry of health", "toll", "fatalities"
     ]
-    found = extract_number_near_keyword(all_text, iran_death_keywords, min_val=100, max_val=500000)
+    found = extract_number_near_keyword(all_text, iran_death_keywords, min_val=50, max_val=500000)
+    current = int(human_cost.get("iranDeaths", "0").replace(",", "").replace("+", ""))
     if found:
-        current = int(human_cost.get("iranDeaths", "0").replace(",", "").replace("+", ""))
+        print(f"    [Debug] Iran deaths: found {found:,} in text (current: {current:,})")
         if found > current:
             human_cost["iranDeaths"] = f"{found:,}"
             updates.append(f"  [Casualties] Iranian deaths: {current:,} -> {found:,}")
+        else:
+            print(f"    [Debug] Iran deaths: {found:,} <= current {current:,}, no update")
+    else:
+        print(f"    [Debug] Iran deaths: no number found near keywords (current: {current:,})")
 
     # --- US KIA ---
     us_kia_keywords = [
         "us killed", "american killed", "us soldiers killed", "us troops killed",
         "us military killed", "american soldiers dead", "us service members killed",
-        "us kia", "americans killed in"
+        "us kia", "americans killed in", "us personnel killed", "american troops"
     ]
     found = extract_number_near_keyword(all_text, us_kia_keywords, min_val=1, max_val=10000)
     if found:
         current = int(human_cost.get("usKIA", "0").replace(",", "").replace("+", ""))
+        print(f"    [Debug] US KIA: found {found} (current: {current})")
         if found > current:
             human_cost["usKIA"] = str(found)
             updates.append(f"  [Casualties] US KIA: {current} -> {found}")
@@ -599,6 +622,7 @@ def scan_casualties(news_items, human_cost):
     found = extract_number_near_keyword(all_text, israeli_keywords, min_val=1, max_val=50000)
     if found:
         current = int(human_cost.get("israeliDeaths", "0").replace(",", "").replace("+", ""))
+        print(f"    [Debug] Israeli deaths: found {found} (current: {current})")
         if found > current:
             human_cost["israeliDeaths"] = str(found)
             updates.append(f"  [Casualties] Israeli deaths: {current} -> {found}")
@@ -606,11 +630,12 @@ def scan_casualties(news_items, human_cost):
     # --- Civilian deaths ---
     civilian_keywords = [
         "civilian killed", "civilians killed", "civilian deaths", "civilian casualties",
-        "civilian death toll", "civilians dead", "civilian toll"
+        "civilian death toll", "civilians dead", "civilian toll", "women and children"
     ]
     found = extract_number_near_keyword(all_text, civilian_keywords, min_val=10, max_val=500000)
     if found:
         current = int(human_cost.get("civilianDeaths", "0").replace(",", "").replace("+", ""))
+        print(f"    [Debug] Civilian deaths: found {found} (current: {current})")
         if found > current:
             human_cost["civilianDeaths"] = str(found)
             updates.append(f"  [Casualties] Civilian deaths: {current} -> {found}")
@@ -618,12 +643,13 @@ def scan_casualties(news_items, human_cost):
     # --- Iranian wounded ---
     wounded_keywords = [
         "iranian wounded", "iran injured", "iranians injured", "injured in iran",
-        "iranian hospitalized", "wounded in airstrikes"
+        "iranian hospitalized", "wounded in airstrikes", "wounded", "injured"
     ]
     found = extract_number_near_keyword(all_text, wounded_keywords, min_val=100, max_val=1000000)
     if found:
         current_str = human_cost.get("iranWounded", "0").replace(",", "").replace("+", "")
         current = int(current_str) if current_str.isdigit() else 0
+        print(f"    [Debug] Iran wounded: found {found:,} (current: {current:,})")
         if found > current:
             human_cost["iranWounded"] = f"{found:,}+"
             updates.append(f"  [Casualties] Iranian wounded: {current:,} -> {found:,}")
@@ -665,18 +691,30 @@ def scan_strikes(news_items, banner):
         "confirmed strikes", "total strikes", "airstrikes conducted",
         "strikes launched", "sorties flown", "bombing runs",
         "strikes on iran", "struck targets", "targets hit",
-        "strike missions", "combat missions"
+        "strike missions", "combat missions", "targets destroyed"
     ]
+
+    # Also try with lower min_val to see what we find
+    found_any = extract_number_near_keyword(all_text, strike_keywords, min_val=10, max_val=999999)
     found = extract_number_near_keyword(all_text, strike_keywords, min_val=500, max_val=999999)
+
+    current_str = banner.get("strikes", "0").replace("~", "").replace(",", "").replace("+", "")
+    try:
+        current = int(current_str)
+    except ValueError:
+        current = 0
+
+    if found_any:
+        print(f"    [Debug] Strikes: found number {found_any:,} near keywords (threshold: 500, current: {current:,})")
     if found:
-        current_str = banner.get("strikes", "0").replace("~", "").replace(",", "").replace("+", "")
-        try:
-            current = int(current_str)
-        except ValueError:
-            current = 0
+        print(f"    [Debug] Strikes: found {found:,} above threshold (current: {current:,})")
         if found > current:
             banner["strikes"] = f"~{found:,}"
             updates.append(f"  [Strikes] Total strikes: ~{current:,} -> ~{found:,}")
+        else:
+            print(f"    [Debug] Strikes: {found:,} <= current {current:,}, no update")
+    else:
+        print(f"    [Debug] Strikes: no number >= 500 found near keywords")
 
     return updates
 
@@ -700,9 +738,10 @@ def scan_threats(news_items, existing_threats):
     # Key threat actors and their keywords
     THREAT_ACTORS = {
         "IRAN (IRGC)": {
-            "keywords": ["irgc", "revolutionary guard"],
+            "keywords": ["irgc", "revolutionary guard", "quds force"],
             "threat_words": ["threatens", "warned", "vowed", "pledged", "promised retaliation",
-                           "will attack", "will strike", "will close", "will retaliate", "declared"],
+                           "will attack", "will strike", "will close", "will retaliate", "declared",
+                           "retaliation", "revenge", "response"],
             "severity": "critical",
             "target_default": "US / Israel"
         },
@@ -712,23 +751,36 @@ def scan_threats(news_items, existing_threats):
             "severity": "critical",
             "target_default": "US / Israel"
         },
+        "Iran": {
+            "keywords": ["iran warns", "iran threatens", "iran vows", "iran retaliates",
+                        "iranian threat", "tehran warns", "tehran threatens", "iran says",
+                        "iran fires", "iran launches", "iran attacks", "iranian strikes"],
+            "threat_words": ["warn", "threat", "retali", "vow", "attack", "strike", "launch",
+                           "fire", "target", "respond", "revenge", "nuclear"],
+            "severity": "high",
+            "target_default": "US / Israel"
+        },
         "Hezbollah": {
-            "keywords": ["hezbollah", "nasrallah"],
-            "threat_words": ["threatens", "warned", "vowed", "rocket", "barrage", "will attack", "retaliate"],
+            "keywords": ["hezbollah", "nasrallah", "lebanon attack", "lebanon strike"],
+            "threat_words": ["threatens", "warned", "vowed", "rocket", "barrage", "will attack",
+                           "retaliate", "fires", "launches", "strikes", "attacks"],
             "severity": "high",
             "target_default": "Israel"
         },
         "Houthi (Ansar Allah)": {
-            "keywords": ["houthi", "ansar allah"],
-            "threat_words": ["threatens", "blockade", "attack ships", "red sea", "will target", "strike"],
+            "keywords": ["houthi", "ansar allah", "yemen"],
+            "threat_words": ["threatens", "blockade", "attack ships", "red sea", "will target",
+                           "strike", "fires", "launches", "attacks", "missile"],
             "severity": "high",
             "target_default": "Red Sea shipping"
         },
         "US (Pentagon)": {
             "keywords": ["pentagon", "centcom", "secdef", "defense secretary",
-                        "trump", "president trump", "white house"],
+                        "trump", "president trump", "white house", "us military",
+                        "american forces", "us strikes", "us attacks"],
             "threat_words": ["warns", "warned", "escalation", "will respond", "overwhelming force",
-                           "surrender", "no deal", "crush", "destroy", "devastating"],
+                           "surrender", "no deal", "crush", "destroy", "devastating",
+                           "strike", "attack", "bomb", "launch", "deploy"],
             "severity": "critical",
             "target_default": "Iran"
         },
@@ -746,6 +798,8 @@ def scan_threats(news_items, existing_threats):
         # Use first 60 chars of text as fingerprint
         existing_texts.add(t.get("text", "")[:60].lower())
 
+    print(f"    Scanning {len(news_items)} articles for threats (existing: {len(existing_threats)})")
+
     for item in news_items:
         text = item["title"] + " " + item["description"]
         if "full_text" in item:
@@ -761,6 +815,8 @@ def scan_threats(news_items, existing_threats):
             # Check if this article contains threat language
             threat_match = any(tw in text_lower for tw in config["threat_words"])
             if not threat_match:
+                matched_kws = [kw for kw in config["keywords"] if kw in text_lower]
+                print(f"    [Debug] {actor}: actor match ({matched_kws[0]}) but no threat words in: {item['title'][:60]}")
                 continue
 
             # Build the threat text from the article
@@ -822,20 +878,26 @@ def scan_evidence(news_items, existing_evidence):
 
     # Evidence keywords — things that suggest verifiable, newsworthy events
     EVIDENCE_KEYWORDS = [
-        "satellite imagery", "satellite images", "confirmed strike",
+        "satellite imagery", "satellite images", "confirmed strike", "confirms",
         "battle damage assessment", "bda", "iaea confirms", "centcom confirms",
         "pentagon confirms", "video shows", "footage shows", "photos show",
-        "verified", "intelligence assessment", "nuclear facility",
-        "missile launch", "intercepted", "shot down", "destroyed",
-        "explosion", "school hit", "hospital hit", "struck",
+        "verified", "intelligence assessment", "nuclear facility", "nuclear site",
+        "missile launch", "intercepted", "shot down", "destroyed", "hits",
+        "explosion", "school hit", "hospital hit", "struck", "bombed",
         "attack on ship", "sinks", "rescue", "first time",
         "new weapon", "prsm", "new missile", "used for the first time",
-        "sailors", "warship"
+        "sailors", "warship", "damage", "crater", "rubble",
+        "killed in strike", "missile hit", "targeted", "air defense",
+        "nuclear", "enrichment", "uranium", "reactor",
+        "carrier", "deployed", "troops land", "ground operation"
     ]
 
     existing_titles = set()
     for e in existing_evidence:
         existing_titles.add(e.get("title", "")[:50].lower())
+
+    print(f"    Scanning {len(news_items)} articles for evidence (existing: {len(existing_evidence)})")
+    matched_count = 0
 
     for item in news_items:
         text = item["title"] + " " + item["description"]
@@ -844,12 +906,17 @@ def scan_evidence(news_items, existing_evidence):
         text_lower = text.lower()
 
         # Must match at least one evidence keyword
-        if not any(kw in text_lower for kw in EVIDENCE_KEYWORDS):
+        matched_kws = [kw for kw in EVIDENCE_KEYWORDS if kw in text_lower]
+        if not matched_kws:
             continue
+
+        matched_count += 1
+        print(f"    [Debug] Evidence keyword match ({matched_kws[0]}): {item['title'][:70]}")
 
         title = re.sub(r'<[^>]+>', '', item["title"]).strip()
         fingerprint = title[:50].lower()
         if fingerprint in existing_titles:
+            print(f"    [Debug] Skipped (duplicate): {title[:50]}")
             continue
 
         # Determine confidence level
@@ -890,6 +957,7 @@ def scan_evidence(news_items, existing_evidence):
     if len(existing_evidence) > 20:
         del existing_evidence[20:]
 
+    print(f"    Evidence: {matched_count} keyword matches, {len(updates)} new items added")
     return updates
 
 
