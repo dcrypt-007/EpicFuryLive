@@ -566,6 +566,123 @@
             }
         }
 
+        /* HOMELAND THREATS */
+        .homeland-threats {
+            background: #111827;
+            border: 1px solid #7f1d1d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .homeland-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fca5a5;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .homeland-subtitle {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-bottom: 16px;
+        }
+
+        .homeland-item {
+            padding: 16px;
+            margin-bottom: 12px;
+            background: #0d1321;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            border-left: 4px solid #64748b;
+        }
+
+        .homeland-item.status-confirmed { border-left-color: #ef4444; }
+        .homeland-item.status-investigating { border-left-color: #f59e0b; }
+        .homeland-item.status-unconfirmed { border-left-color: #6b7280; }
+        .homeland-item.status-active { border-left-color: #f97316; }
+
+        .homeland-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .homeland-item-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #e0e6ed;
+        }
+
+        .homeland-status {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .homeland-status.s-confirmed {
+            background: #991b1b;
+            color: #fca5a5;
+        }
+
+        .homeland-status.s-investigating {
+            background: #78350f;
+            color: #fcd34d;
+        }
+
+        .homeland-status.s-unconfirmed {
+            background: #374151;
+            color: #9ca3af;
+        }
+
+        .homeland-status.s-active {
+            background: #7c2d12;
+            color: #fdba74;
+        }
+
+        .homeland-status.s-monitoring {
+            background: #1e3a5f;
+            color: #93c5fd;
+        }
+
+        .homeland-item-body {
+            font-size: 13px;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .homeland-item-meta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            font-size: 11px;
+            color: #64748b;
+        }
+
+        .homeland-item-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .homeland-region {
+            background: #1e2a3a;
+            padding: 1px 8px;
+            border-radius: 3px;
+            color: #94a3b8;
+        }
+
         /* TAB 2: THE COST */
         .cost-container {
             display: grid;
@@ -1359,6 +1476,104 @@
                             <div class="threat-target">Target: Iran → Nuclear program</div>
                             <div class="threat-source">Source: White House, C-SPAN, Wikipedia</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOMELAND THREATS -->
+            <div class="homeland-threats">
+                <div class="homeland-title">
+                    Homeland Threats
+                </div>
+                <div class="homeland-subtitle">Domestic security threats, sleeper cell reports, cyberattacks, and incidents linked or potentially linked to the conflict — verification status shown for each</div>
+
+                <div class="homeland-item status-confirmed">
+                    <div class="homeland-item-header">
+                        <div class="homeland-item-title">Austin Bar Shooting — Possible Iran-Motivated Attack</div>
+                        <div class="homeland-status s-investigating">Investigating</div>
+                    </div>
+                    <div class="homeland-item-body">
+                        On March 1, Ndiaga Diagne (53, naturalized US citizen from Senegal) opened fire on Buford's Backyard Beer Garden on W. 6th Street in Austin, TX, killing 3 and wounding 15 before being fatally shot by police. He wore a shirt with an Iranian flag design and a "Property of Allah" hoodie. Search warrant at his home revealed an Iranian flag and photos of Iranian regime leaders. FBI investigating as possible terrorism linked to US-Iran conflict. Authorities caution motive is not yet confirmed.
+                    </div>
+                    <div class="homeland-item-meta">
+                        <span>Mar 1, 2026</span>
+                        <span class="homeland-region">Austin, TX</span>
+                        <span>Sources: CBS News, CNN, Washington Post, TIME, Fox News</span>
+                    </div>
+                </div>
+
+                <div class="homeland-item status-active">
+                    <div class="homeland-item-header">
+                        <div class="homeland-item-title">FBI on High Alert — Nationwide Sleeper Cell Monitoring</div>
+                        <div class="homeland-status s-active">Active</div>
+                    </div>
+                    <div class="homeland-item-body">
+                        FBI Director Kash Patel mobilized counterterrorism and intelligence teams nationwide following the start of Operation Epic Fury. Joint Terrorism Task Forces are working to monitor and disrupt potential Iran-linked plots. Federal and local law enforcement have boosted security in major US cities. DHS issued an internal law enforcement bulletin warning of potential lone-wolf and cyberattacks — but has NOT issued a public NTAS (National Terrorism Advisory System) alert, drawing criticism from security experts.
+                    </div>
+                    <div class="homeland-item-meta">
+                        <span>Feb 28 – ongoing</span>
+                        <span class="homeland-region">Nationwide</span>
+                        <span>Sources: Fox News, Fortune, HSToday, NPR, Newsmax</span>
+                    </div>
+                </div>
+
+                <div class="homeland-item status-unconfirmed">
+                    <div class="homeland-item-header">
+                        <div class="homeland-item-title">Iran/Hezbollah Sleeper Cell Network — Documented Locations</div>
+                        <div class="homeland-status s-monitoring">Monitoring</div>
+                    </div>
+                    <div class="homeland-item-body">
+                        US intelligence has documented Hezbollah operatives and Iran-linked sleeper cells in multiple US cities over the past decade. Known locations include Houston, TX (explosive precursor stockpiling), Los Angeles, CA (surveillance operations), Boston, MA (documented cell presence), Portland, OR, and Louisville, KY (operatives deliberately placed to form dormant cells). Security experts warn these cells could be activated as retaliation. No confirmed activations reported as of March 5, but FBI is conducting heightened surveillance across all known locations.
+                    </div>
+                    <div class="homeland-item-meta">
+                        <span>Historical – heightened since Feb 28</span>
+                        <span class="homeland-region">Houston · LA · Boston · Portland · Louisville</span>
+                        <span>Sources: HSToday, JNS, Jerusalem Post, Fox News</span>
+                    </div>
+                </div>
+
+                <div class="homeland-item status-active">
+                    <div class="homeland-item-header">
+                        <div class="homeland-item-title">Iran Cyberattack Threat — 60+ Hacktivist Groups Active</div>
+                        <div class="homeland-status s-active">Active</div>
+                    </div>
+                    <div class="homeland-item-body">
+                        An estimated 60+ individual hacktivist groups linked to Iran are active as of March 2. Targets include US government agencies, critical infrastructure (utilities, finance, healthcare), and Israeli systems. Iran may use AI to accelerate cyberattack capabilities. However, Iran's internet connectivity dropped to 1-4% after Feb 28 strikes, potentially limiting near-term state-sponsored attacks. CISA (Cybersecurity and Infrastructure Security Agency) is stretched thin due to partial government shutdown and furloughs. No confirmed large-scale attacks yet, but Palo Alto Unit 42 reports increased reconnaissance activity.
+                    </div>
+                    <div class="homeland-item-meta">
+                        <span>Mar 2 – ongoing</span>
+                        <span class="homeland-region">US Infrastructure · Government Systems</span>
+                        <span>Sources: Palo Alto Unit 42, Fortune, CNBC, CSIS, Nextgov</span>
+                    </div>
+                </div>
+
+                <div class="homeland-item status-unconfirmed">
+                    <div class="homeland-item-header">
+                        <div class="homeland-item-title">State & Local Security Posture Elevated Across US</div>
+                        <div class="homeland-status s-monitoring">Monitoring</div>
+                    </div>
+                    <div class="homeland-item-body">
+                        Multiple US states have independently stepped up security measures in response to the Iran conflict. Increased police presence at critical infrastructure sites, government buildings, Jewish community centers, and high-profile public venues. National Guard deployments reported in several states. State-level intelligence fusion centers coordinating with federal agencies on threat monitoring.
+                    </div>
+                    <div class="homeland-item-meta">
+                        <span>Mar 1 – ongoing</span>
+                        <span class="homeland-region">Multiple US states</span>
+                        <span>Sources: NPR, ABC News, Newsmax</span>
+                    </div>
+                </div>
+
+                <div class="homeland-item status-unconfirmed">
+                    <div class="homeland-item-header">
+                        <div class="homeland-item-title">No DHS NTAS Alert Issued — Security Experts Critical</div>
+                        <div class="homeland-status s-unconfirmed">Controversial</div>
+                    </div>
+                    <div class="homeland-item-body">
+                        Despite the largest US military operation since the Iraq War, DHS has not issued a public National Terrorism Advisory System alert. The last NTAS bulletin was issued June 22, 2025. Homeland security experts have publicly questioned why no alert has been issued, noting that the threat environment following Epic Fury exceeds the threshold that triggered previous alerts. DHS has issued internal law enforcement bulletins but nothing public-facing.
+                    </div>
+                    <div class="homeland-item-meta">
+                        <span>As of Mar 5, 2026</span>
+                        <span class="homeland-region">National policy</span>
+                        <span>Sources: HSToday, DHS.gov, CFR</span>
                     </div>
                 </div>
             </div>
