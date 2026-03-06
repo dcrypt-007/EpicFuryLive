@@ -1535,57 +1535,15 @@
                                 <th>Cost</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Tomahawk Missiles</td>
-                                <td>~500 launched @ $2M each</td>
-                                <td class="cost-value">$1,000,000,000</td>
-                            </tr>
-                            <tr>
-                                <td>JDAM Munitions</td>
-                                <td>~2,000 dropped @ $25K each</td>
-                                <td class="cost-value">$50,000,000</td>
-                            </tr>
-                            <tr>
-                                <td>B-2 Sorties</td>
-                                <td>Multiple 37-hr missions @ $5.5M each</td>
-                                <td class="cost-value">$40,000,000+</td>
-                            </tr>
-                            <tr>
-                                <td>Carrier Ops</td>
-                                <td>2 CSGs @ $7M/day × 6 days</td>
-                                <td class="cost-value">$84,000,000</td>
-                            </tr>
-                            <tr>
-                                <td>Pre-strike Buildup</td>
-                                <td>Deployment, logistics, surge ops</td>
-                                <td class="cost-value">$630,000,000</td>
-                            </tr>
-                            <tr>
-                                <td>Aircraft Sorties</td>
-                                <td>F-35, F-15E, F-22, F/A-18, others</td>
-                                <td class="cost-value">$500,000,000+</td>
-                            </tr>
-                            <tr>
-                                <td>Personnel & Medical</td>
-                                <td>Mobilization, casualty care, logistics</td>
-                                <td class="cost-value">$300,000,000+</td>
-                            </tr>
-                            <tr>
-                                <td>Intelligence & Support</td>
-                                <td>Reconnaissance, signals, cyber ops</td>
-                                <td class="cost-value">$400,000,000+</td>
-                            </tr>
+                        <tbody id="breakdownBody">
+                            <!-- Rendered dynamically from data.json -->
                         </tbody>
                     </table>
 
                     <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #1e2a3a;">
                         <div style="font-size: 14px; font-weight: 600; color: #e0e6ed; margin-bottom: 12px;">Projections</div>
-                        <div style="font-size: 13px; color: #cbd5e1; line-height: 1.7;">
-                            <strong>3-week war scenario:</strong> Tens of billions in direct military costs.<br><br>
-                            <strong>Penn Wharton estimate:</strong> $210B total economic impact (including fuel prices, insurance, shipping disruption, global supply chain interruption).<br><br>
-                            <strong>Direct military cost (conservative):</strong> ~$65B for full campaign (assuming no ground invasion).<br><br>
-                            <strong>Broader impacts:</strong> 1M+ affected by travel disruptions, 1,900 flights canceled across Middle East, global oil market volatility increasing fuel costs worldwide.
+                        <div style="font-size: 13px; color: #cbd5e1; line-height: 1.7;" id="projectionsText">
+                            <!-- Rendered dynamically from data.json -->
                         </div>
                         <div style="font-size: 12px; color: #94a3b8; margin-top: 12px; padding-top: 12px; border-top: 1px solid #1e2a3a;">
                             Sources: SIPRI military expenditure database, CENTCOM cost assessments, Pentagon budget documents, Wharton School economic modeling, Reuters.
@@ -2555,6 +2513,33 @@
             if (map) addMarkers();
         }
 
+        function renderBreakdown(breakdown) {
+            const tbody = document.getElementById('breakdownBody');
+            if (!tbody || !breakdown || !breakdown.length) return;
+
+            tbody.innerHTML = breakdown.map(item => {
+                return `<tr>
+                    <td>${item.category}</td>
+                    <td>${item.detail}</td>
+                    <td class="cost-value">${item.cost}</td>
+                </tr>`;
+            }).join('\n');
+        }
+
+        function renderProjections(projections) {
+            const container = document.getElementById('projectionsText');
+            if (!container || !projections || !projections.length) return;
+
+            container.innerHTML = projections.map(p => {
+                // Bold the part before the colon if there is one
+                const colonIdx = p.indexOf(':');
+                if (colonIdx > 0) {
+                    return `<strong>${p.substring(0, colonIdx + 1)}</strong>${p.substring(colonIdx + 1)}`;
+                }
+                return p;
+            }).join('<br><br>');
+        }
+
         // LIVE DATA UPDATER — fetches data.json and refreshes all stats
         function loadLiveData() {
             fetch('/data.json?t=' + Date.now())
@@ -2636,6 +2621,8 @@
                     if (data.regionalReactions) renderRegionalReactions(data.regionalReactions);
                     if (data.diplomaticImpacts) renderDiplomaticImpacts(data.diplomaticImpacts);
                     if (data.mapMarkers) renderMapMarkers(data.mapMarkers);
+                    if (data.financialCost && data.financialCost.breakdown) renderBreakdown(data.financialCost.breakdown);
+                    if (data.financialCost && data.financialCost.projections) renderProjections(data.financialCost.projections);
 
                     // Update chart data if available
                     if (data.humanCost && data.humanCost.chartData) {
