@@ -148,9 +148,23 @@ def extract_number_near_keyword(text, keywords, min_val=1, max_val=999999):
     - "approximately 2,000 sorties"
     - "4 carrier strike groups"
     - "45,000 troops deployed"
+
+    Filters out false positives like:
+    - "2,000-pound bombs" (bomb weight, not count)
+    - "$14.9 billion" (dollar amounts)
+    - "90 percent" (percentages)
     """
     if not keywords:
         return None
+
+    # Patterns that indicate a number is NOT a quantity count
+    # (bomb weight, dollar amounts, percentages, dates, etc.)
+    FALSE_POSITIVE_SUFFIXES = re.compile(
+        r'[\-\s]*(pound|lb|kg|kilogram|ton|mile|km|kilometer|feet|foot|meter|'
+        r'percent|%|billion|million|trillion|dollar|year|month|day|hour|minute|second|'
+        r'inch|caliber|cal|mm|acre|fahrenheit|celsius|degree)',
+        re.IGNORECASE
+    )
 
     text_lower = text.lower()
     best_match = None
@@ -171,9 +185,13 @@ def extract_number_near_keyword(text, keywords, min_val=1, max_val=999999):
 
             # Find numbers in the window (handles commas, +, ~)
             # Patterns: "3,700", "500+", "~2,000", "more than 45000", "approximately 150"
-            number_patterns = re.findall(r'(?:more than |over |approximately |about |nearly |~|>)?\s*(\d{1,3}(?:,\d{3})*(?:\.\d+)?)\s*\+?', window)
+            for match in re.finditer(r'(?:more than |over |approximately |about |nearly |~|>)?\s*(\d{1,3}(?:,\d{3})*(?:\.\d+)?)\s*\+?', window):
+                num_str = match.group(1)
+                # Check what comes AFTER the number — filter out false positives
+                after_num = window[match.end():]
+                if FALSE_POSITIVE_SUFFIXES.match(after_num):
+                    continue
 
-            for num_str in number_patterns:
                 try:
                     num = int(num_str.replace(',', '').split('.')[0])
                     if min_val <= num <= max_val:
