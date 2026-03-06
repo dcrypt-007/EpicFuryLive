@@ -128,6 +128,30 @@ def fetch_rss(feed_config):
     return items
 
 
+def fetch_article_text(url, max_chars=2000):
+    """
+    Fetch the full text of an article by following its link.
+    Returns plain text stripped of HTML tags, capped at max_chars.
+    Used to get richer text for scanning beyond short RSS descriptions.
+    """
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "EpicFuryLive/1.0 (conflict-tracker)"}
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+
+        # Strip HTML tags and get plain text
+        text = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r'<[^>]+>', ' ', text)
+        text = re.sub(r'\s+', ' ', text).strip()
+        return text[:max_chars]
+    except Exception as e:
+        return ""
+
+
 def fetch_all_feeds():
     """Fetch all configured RSS feeds and return combined items."""
     all_items = []
@@ -146,7 +170,26 @@ def fetch_all_feeds():
             seen_titles.add(title_key)
             unique.append(item)
 
-    return unique[:15]  # Top 15 most recent
+    unique = unique[:15]  # Top 15 most recent
+
+    # Fetch full article text for the top 5 most relevant articles
+    # This gives the scanners much richer text to work with
+    print("  Fetching full article text for top articles...")
+    fetched = 0
+    for item in unique[:8]:  # Try top 8, stop after 5 successes
+        if fetched >= 5:
+            break
+        link = item.get("link", "")
+        if not link:
+            continue
+        full_text = fetch_article_text(link)
+        if full_text and len(full_text) > 200:
+            item["full_text"] = full_text
+            fetched += 1
+            print(f"    Fetched full text: {item['title'][:60]}... ({len(full_text)} chars)")
+    print(f"  Got full text for {fetched} articles")
+
+    return unique
 
 
 # ============================================================
@@ -502,19 +545,31 @@ def scan_casualties(news_items, human_cost):
     """
     Scan RSS articles for updated casualty figures.
     Only updates a number if a HIGHER number is found (casualties only go up).
+    Uses both RSS descriptions AND full article text when available.
     Returns list of updates made.
     """
     updates = []
     if not news_items:
         return updates
 
-    all_text = " ".join(item["title"] + " " + item["description"] for item in news_items)
+    # Build scanning text from RSS + full article text
+    text_parts = []
+    for item in news_items:
+        text_parts.append(item["title"] + " " + item["description"])
+        if "full_text" in item:
+            text_parts.append(item["full_text"])
+    all_text = " ".join(text_parts)
 
     # --- Iranian deaths ---
+    # Broad keywords — RSS articles say things like "death toll rises to X",
+    # "X killed in strikes", "X dead", etc.
     iran_death_keywords = [
-        "iranian killed", "iran deaths", "iranian deaths", "iranian casualties",
-        "killed in iran", "iran death toll", "iranian dead", "deaths in iran",
-        "iran ministry of health", "confirmed deaths", "killed in airstrikes"
+        "killed", "death toll", "dead", "deaths", "casualties",
+        "iran killed", "iranian killed", "killed in iran",
+        "iran death toll", "iranian dead", "iran casualties",
+        "confirmed deaths", "killed in airstrikes", "killed in strikes",
+        "reported killed", "people killed", "have been killed",
+        "ministry of health"
     ]
     found = extract_number_near_keyword(all_text, iran_death_keywords, min_val=100, max_val=500000)
     if found:
@@ -591,18 +646,26 @@ def scan_casualties(news_items, human_cost):
 def scan_strikes(news_items, banner):
     """
     Scan RSS for updated strike count numbers.
+    Uses both RSS descriptions AND full article text when available.
     Returns list of updates made.
     """
     updates = []
     if not news_items:
         return updates
 
-    all_text = " ".join(item["title"] + " " + item["description"] for item in news_items)
+    text_parts = []
+    for item in news_items:
+        text_parts.append(item["title"] + " " + item["description"])
+        if "full_text" in item:
+            text_parts.append(item["full_text"])
+    all_text = " ".join(text_parts)
 
     strike_keywords = [
+        "strikes", "airstrikes", "air strikes", "sorties",
         "confirmed strikes", "total strikes", "airstrikes conducted",
-        "strikes launched", "sorties flown", "bombing runs", "strikes on iran",
-        "strikes have hit", "struck targets"
+        "strikes launched", "sorties flown", "bombing runs",
+        "strikes on iran", "struck targets", "targets hit",
+        "strike missions", "combat missions"
     ]
     found = extract_number_near_keyword(all_text, strike_keywords, min_val=500, max_val=999999)
     if found:
@@ -662,8 +725,10 @@ def scan_threats(news_items, existing_threats):
             "target_default": "Red Sea shipping"
         },
         "US (Pentagon)": {
-            "keywords": ["pentagon", "centcom", "secdef", "defense secretary"],
-            "threat_words": ["warns", "warned", "escalation", "will respond", "overwhelming force"],
+            "keywords": ["pentagon", "centcom", "secdef", "defense secretary",
+                        "trump", "president trump", "white house"],
+            "threat_words": ["warns", "warned", "escalation", "will respond", "overwhelming force",
+                           "surrender", "no deal", "crush", "destroy", "devastating"],
             "severity": "critical",
             "target_default": "Iran"
         },
@@ -683,6 +748,8 @@ def scan_threats(news_items, existing_threats):
 
     for item in news_items:
         text = item["title"] + " " + item["description"]
+        if "full_text" in item:
+            text += " " + item["full_text"][:500]  # Use first 500 chars of full text for threats
         text_lower = text.lower()
 
         for actor, config in THREAT_ACTORS.items():
@@ -753,13 +820,17 @@ def scan_evidence(news_items, existing_evidence):
     except ValueError:
         today = now.strftime("%b %d, %Y")
 
-    # Evidence keywords — things that suggest verifiable facts
+    # Evidence keywords — things that suggest verifiable, newsworthy events
     EVIDENCE_KEYWORDS = [
         "satellite imagery", "satellite images", "confirmed strike",
         "battle damage assessment", "bda", "iaea confirms", "centcom confirms",
         "pentagon confirms", "video shows", "footage shows", "photos show",
         "verified", "intelligence assessment", "nuclear facility",
-        "missile launch", "intercepted", "shot down", "destroyed"
+        "missile launch", "intercepted", "shot down", "destroyed",
+        "explosion", "school hit", "hospital hit", "struck",
+        "attack on ship", "sinks", "rescue", "first time",
+        "new weapon", "prsm", "new missile", "used for the first time",
+        "sailors", "warship"
     ]
 
     existing_titles = set()
@@ -768,6 +839,8 @@ def scan_evidence(news_items, existing_evidence):
 
     for item in news_items:
         text = item["title"] + " " + item["description"]
+        if "full_text" in item:
+            text += " " + item["full_text"][:500]
         text_lower = text.lower()
 
         # Must match at least one evidence keyword
