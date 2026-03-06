@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Epic Fury Live — US-Iran War Tracker | Live Updates, Casualties & Evidence</title>
     <meta name="description" content="Live tracking of the US-Israel-Iran conflict. Real-time strike map, verified casualties, financial cost, timeline of how we got here, and the evidence behind it all.">
 
@@ -55,6 +58,11 @@
         "coverageStartTime": "2026-02-28T00:00:00Z",
         "datePublished": "2026-02-28T00:00:00Z",
         "dateModified": "2026-03-05T00:00:00Z",
+        "author": {
+            "@type": "Organization",
+            "name": "Epic Fury Live",
+            "url": "https://epicfurylive.com"
+        },
         "publisher": {
             "@type": "Organization",
             "name": "Epic Fury Live",
@@ -88,7 +96,7 @@
                 "name": "What is Operation Epic Fury?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Operation Epic Fury is the US military codename for the joint US-Israeli strikes on Iran that began February 28, 2026. Israel's codename is Operation Roaring Lion. The campaign targets Iran's nuclear facilities, ballistic missile infrastructure, and military command centers."
+                    "text": "Confirmed: Operation Epic Fury is the US military codename for the joint US-Israeli strikes on Iran that began February 28, 2026. Israel's codename is Operation Roaring Lion. The campaign targets Iran's nuclear facilities, ballistic missile infrastructure, and military command centers. (Source: CENTCOM, White House. As of March 5, 2026.)"
                 }
             },
             {
@@ -96,7 +104,7 @@
                 "name": "How many casualties in the Iran war?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "As of March 5, 2026, over 1,045 deaths have been reported from US-Israeli strikes according to the Human Rights Activists News Agency. Iran claims 1,700+ killed. Casualty figures remain under independent verification. Iranian retaliation has killed dozens in Gulf states."
+                    "text": "Reported (figures vary by source): As of March 5, 2026, over 1,045 deaths have been reported from US-Israeli strikes according to the Human Rights Activists News Agency (Tier 2 source). Iran claims 1,700+ killed (unverified). Casualty figures remain under independent verification and may change significantly. Iranian retaliation has killed dozens in Gulf states per local authorities. This tracker distinguishes confirmed from unconfirmed casualty reports."
                 }
             },
             {
@@ -104,7 +112,7 @@
                 "name": "Was Khamenei killed?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "CENTCOM confirmed on March 1, 2026 that Supreme Leader Ayatollah Ali Khamenei was killed in the initial wave of Operation Epic Fury strikes on Tehran on February 28. Iran has not officially confirmed or denied his death. Multiple intelligence sources assess with high confidence the strike succeeded."
+                    "text": "Confirmed (high confidence): CENTCOM confirmed on March 1, 2026 that Supreme Leader Ayatollah Ali Khamenei was killed in the initial wave of Operation Epic Fury strikes on Tehran on February 28. Iran has not officially confirmed or denied his death. Multiple Tier 1 intelligence sources assess with high confidence the strike succeeded. (Sources: CENTCOM briefing, IDF spokesperson, Reuters. As of March 5, 2026.)"
                 }
             },
             {
@@ -112,7 +120,7 @@
                 "name": "Are there Iran sleeper cells in the US?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "US intelligence has documented Hezbollah operatives and Iran-linked cells in multiple US cities including Houston, Los Angeles, Boston, Portland, and Louisville. Following Operation Epic Fury, FBI Director Kash Patel mobilized counterterrorism teams nationwide. As of March 5, 2026, no confirmed sleeper cell activations have been reported, but the FBI is conducting heightened surveillance."
+                    "text": "Reported (monitoring): US intelligence has documented Hezbollah operatives and Iran-linked cells in multiple US cities including Houston, Los Angeles, Boston, Portland, and Louisville. Following Operation Epic Fury, FBI Director Kash Patel mobilized counterterrorism teams nationwide. As of March 5, 2026, no confirmed sleeper cell activations have been reported, but the FBI is conducting heightened surveillance. DHS has not issued a public NTAS alert. (Sources: Fox News, HSToday, JNS, Jerusalem Post.) This tracker distinguishes confirmed from unconfirmed threat reports."
                 }
             }
         ]
@@ -1305,12 +1313,13 @@
     <!-- HEADER -->
     <div class="header">
         <div class="header-left">
-            <div class="header-title">
+            <h1 class="header-title" style="margin:0;font-size:inherit;">
                 <span class="pulse-dot"></span>
                 EPIC FURY LIVE
-            </div>
+            </h1>
             <div>
-                <div class="header-subtitle">OSINT Dashboard — US · Israel · Iran Conflict</div>
+                <div class="header-subtitle">US-Iran War Tracker — Live Updates, Casualties & Evidence</div>
+                <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Last updated: <time id="siteLastUpdated" datetime="2026-03-05T22:00:00Z">Mar 5, 2026 22:00 UTC</time></div>
             </div>
         </div>
 
@@ -1326,7 +1335,7 @@
         </div>
 
         <div class="header-disclaimer">
-            All information from open sources.<br>Claims ≠ Facts. Sources cited throughout.
+            All information from open sources.<br>Claims ≠ Facts. Sources cited throughout.<br><a href="/methodology.html" style="color: #64748b; font-size: 11px; text-decoration: underline;">This tracker distinguishes confirmed vs. unconfirmed reports. See methodology.</a>
         </div>
     </div>
 
@@ -1350,7 +1359,7 @@
                     ~3,700 confirmed strikes · 1,045+ reported killed · $5B+ estimated cost
                 </div>
                 <div class="banner-footer">
-                    Last updated <span id="lastUpdated">Mar 5, 2026 14:32 UTC</span> · Sources: CENTCOM, IDF, Reuters, AP, Al Jazeera
+                    Last updated <span id="lastUpdated">Mar 5, 2026 14:32 UTC</span> · Sources: <a href="/glossary.html" style="color:#60a5fa;text-decoration:none;border-bottom:1px dotted #60a5fa;" title="Glossary: CENTCOM">CENTCOM</a>, IDF, Reuters, AP, Al Jazeera
                 </div>
             </div>
 
@@ -1398,7 +1407,7 @@
                 <div id="threatList">
                     <div class="threat-item" data-actor="iran">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 5, 2026</div>
+                            <time class="threat-date" datetime="2026-03-05">Mar 5, 2026</time>
                             <div class="threat-severity severity-high">High</div>
                         </div>
                         <div class="threat-content">
@@ -1411,7 +1420,7 @@
 
                     <div class="threat-item" data-actor="iran">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 5, 2026</div>
+                            <time class="threat-date" datetime="2026-03-05">Mar 5, 2026</time>
                             <div class="threat-severity severity-critical">Critical</div>
                         </div>
                         <div class="threat-content">
@@ -1424,7 +1433,7 @@
 
                     <div class="threat-item" data-actor="proxy">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 5, 2026</div>
+                            <time class="threat-date" datetime="2026-03-05">Mar 5, 2026</time>
                             <div class="threat-severity severity-high">High</div>
                         </div>
                         <div class="threat-content">
@@ -1437,7 +1446,7 @@
 
                     <div class="threat-item" data-actor="world">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 4, 2026</div>
+                            <time class="threat-date" datetime="2026-03-04">Mar 4, 2026</time>
                             <div class="threat-severity severity-medium">Medium</div>
                         </div>
                         <div class="threat-content">
@@ -1450,7 +1459,7 @@
 
                     <div class="threat-item" data-actor="world">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 4, 2026</div>
+                            <time class="threat-date" datetime="2026-03-04">Mar 4, 2026</time>
                             <div class="threat-severity severity-medium">Medium</div>
                         </div>
                         <div class="threat-content">
@@ -1463,7 +1472,7 @@
 
                     <div class="threat-item" data-actor="us">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 4, 2026</div>
+                            <time class="threat-date" datetime="2026-03-04">Mar 4, 2026</time>
                             <div class="threat-severity severity-critical">Critical</div>
                         </div>
                         <div class="threat-content">
@@ -1476,7 +1485,7 @@
 
                     <div class="threat-item" data-actor="israel">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 4, 2026</div>
+                            <time class="threat-date" datetime="2026-03-04">Mar 4, 2026</time>
                             <div class="threat-severity severity-critical">Critical</div>
                         </div>
                         <div class="threat-content">
@@ -1489,12 +1498,12 @@
 
                     <div class="threat-item" data-actor="iran">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 2, 2026</div>
+                            <time class="threat-date" datetime="2026-03-02">Mar 2, 2026</time>
                             <div class="threat-severity severity-critical">Critical</div>
                         </div>
                         <div class="threat-content">
                             <span class="threat-actor threat-actor-iran">IRAN (IRGC Gen. Jabbari):</span>
-                            <span class="threat-text">"Not a single drop of oil will leave the region." Threatens to attack any ship transiting the Strait of Hormuz and vows to destroy all economic hubs in the Middle East.</span>
+                            <span class="threat-text">"Not a single drop of oil will leave the region." Threatens to attack any ship transiting the <a href="/glossary.html" style="color:#60a5fa;text-decoration:none;border-bottom:1px dotted #60a5fa;" title="Glossary: Strait of Hormuz">Strait of Hormuz</a> and vows to destroy all economic hubs in the Middle East.</span>
                             <div class="threat-target">Target: Global shipping → Strait of Hormuz, Gulf economies</div>
                             <div class="threat-source">Source: IRGC statements, Al Jazeera, TIME</div>
                         </div>
@@ -1502,7 +1511,7 @@
 
                     <div class="threat-item" data-actor="iran">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 2, 2026</div>
+                            <time class="threat-date" datetime="2026-03-02">Mar 2, 2026</time>
                             <div class="threat-severity severity-critical">Critical</div>
                         </div>
                         <div class="threat-content">
@@ -1515,7 +1524,7 @@
 
                     <div class="threat-item" data-actor="proxy">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 1, 2026</div>
+                            <time class="threat-date" datetime="2026-03-01">Mar 1, 2026</time>
                             <div class="threat-severity severity-high">High</div>
                         </div>
                         <div class="threat-content">
@@ -1528,7 +1537,7 @@
 
                     <div class="threat-item" data-actor="us">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 1, 2026</div>
+                            <time class="threat-date" datetime="2026-03-01">Mar 1, 2026</time>
                             <div class="threat-severity severity-critical">Critical</div>
                         </div>
                         <div class="threat-content">
@@ -1541,7 +1550,7 @@
 
                     <div class="threat-item" data-actor="proxy">
                         <div class="threat-meta">
-                            <div class="threat-date">Feb 28, 2026</div>
+                            <time class="threat-date" datetime="2026-02-28">Feb 28, 2026</time>
                             <div class="threat-severity severity-medium">Medium</div>
                         </div>
                         <div class="threat-content">
@@ -1554,7 +1563,7 @@
 
                     <div class="threat-item" data-actor="world">
                         <div class="threat-meta">
-                            <div class="threat-date">Feb 28, 2026</div>
+                            <time class="threat-date" datetime="2026-02-28">Feb 28, 2026</time>
                             <div class="threat-severity severity-medium">Medium</div>
                         </div>
                         <div class="threat-content">
@@ -1567,7 +1576,7 @@
 
                     <div class="threat-item" data-actor="us">
                         <div class="threat-meta">
-                            <div class="threat-date">Mar 7, 2025</div>
+                            <time class="threat-date" datetime="2025-03-07">Mar 7, 2025</time>
                             <div class="threat-severity severity-high">High</div>
                         </div>
                         <div class="threat-content">
@@ -1691,7 +1700,7 @@
                                 ~3,700 combined US-Israeli strikes on nuclear facilities, IRGC bases, command centers, and conventional military infrastructure. Khamenei killed in initial strikes. Iranian missile launch capability reduced 86%.
                             </div>
                             <div class="theater-locations">
-                                <strong>Key locations:</strong> Natanz, Isfahan, Fordow, Tehran, Bushehr, Bandar Abbas
+                                <strong>Key locations:</strong> <a href="/glossary.html" style="color:#60a5fa;text-decoration:none;border-bottom:1px dotted #60a5fa;" title="Glossary: Natanz">Natanz</a>, Isfahan, <a href="/glossary.html" style="color:#60a5fa;text-decoration:none;border-bottom:1px dotted #60a5fa;" title="Glossary: Fordow">Fordow</a>, Tehran, Bushehr, Bandar Abbas
                             </div>
                         </div>
                     </div>
@@ -1746,43 +1755,43 @@
             <div class="latest-developments">
                 <div class="latest-title">Latest Developments</div>
                 <div class="development-item">
-                    <span class="development-time">Mar 5, 14:30 UTC</span>
+                    <time class="development-time" datetime="2026-03-05T14:30:00Z">Mar 5, 14:30 UTC</time>
                     <span class="development-text">Iran announces "measured response" to continued strikes, but no major offensive operations detected. Israeli air defense systems report heightened alert.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 5, 10:15 UTC</span>
+                    <time class="development-time" datetime="2026-03-05T10:15:00Z">Mar 5, 10:15 UTC</time>
                     <span class="development-text">CENTCOM reports Natanz centrifuge facility estimated 90%+ destroyed. Iran's enrichment capacity severely compromised. Details classified.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 4, 22:45 UTC</span>
+                    <time class="development-time" datetime="2026-03-04T22:45:00Z">Mar 4, 22:45 UTC</time>
                     <span class="development-text">Saudi Arabia officially closes airspace to non-military aircraft through March 10. Houthi launched 15 drone attacks on Red Sea shipping.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 4, 15:20 UTC</span>
+                    <time class="development-time" datetime="2026-03-04T15:20:00Z">Mar 4, 15:20 UTC</time>
                     <span class="development-text">Israeli officials confirm strikes on Hezbollah command centers near Beirut. Lebanese government demands international intervention.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 4, 08:00 UTC</span>
+                    <time class="development-time" datetime="2026-03-04T08:00:00Z">Mar 4, 08:00 UTC</time>
                     <span class="development-text">US Navy shoots down Iranian ballistic missile and 8 drones near Kuwait. One US serviceman injured, 47 treating for blast injuries.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 3, 18:30 UTC</span>
+                    <time class="development-time" datetime="2026-03-03T18:30:00Z">Mar 3, 18:30 UTC</time>
                     <span class="development-text">Satellite imagery confirms destruction of Fordow underground enrichment facility's main processing halls.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 3, 12:00 UTC</span>
+                    <time class="development-time" datetime="2026-03-03T12:00:00Z">Mar 3, 12:00 UTC</time>
                     <span class="development-text">UN Emergency Session convenes. Russia and China condemn strikes, vote against ceasefire resolution.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 2, 09:45 UTC</span>
+                    <time class="development-time" datetime="2026-03-02T09:45:00Z">Mar 2, 09:45 UTC</time>
                     <span class="development-text">Iran retaliates with 500+ ballistic missiles, 2,000+ drones at Israel and US bases. 90%+ intercepted by US-Israeli air defense.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Mar 1, 16:30 UTC</span>
+                    <time class="development-time" datetime="2026-03-01T16:30:00Z">Mar 1, 16:30 UTC</time>
                     <span class="development-text">CENTCOM announces Khamenei killed in initial strikes. Iran's military command structure in disarray. Leadership succession unclear.</span>
                 </div>
                 <div class="development-item">
-                    <span class="development-time">Feb 28, 22:00 UTC</span>
+                    <time class="development-time" datetime="2026-02-28T22:00:00Z">Feb 28, 22:00 UTC</time>
                     <span class="development-time">Operation Epic Fury / Roaring Lion begins. 1,700+ US strikes in first 72 hours. Israeli forces activate across all fronts.</span>
                 </div>
             </div>
@@ -1984,7 +1993,7 @@
                     <div class="timeline-year">2015</div>
                     <div class="timeline-title">JCPOA Signed (Iran Nuclear Deal)</div>
                     <div class="timeline-text">
-                        Iran agrees to limit uranium enrichment to 3.67% (well below weapons-grade 90%). Agrees to IAEA inspections. International sanctions are lifted. Obama calls it his signature diplomatic achievement.
+                        Iran agrees to limit uranium enrichment to 3.67% (well below weapons-grade 90%). Agrees to <a href="/glossary.html" style="color:#60a5fa;text-decoration:none;border-bottom:1px dotted #60a5fa;" title="Glossary: IAEA">IAEA</a> inspections. International sanctions are lifted. Obama calls it his signature diplomatic achievement.
                     </div>
                     <div class="timeline-callout">
                         <strong>Why it mattered:</strong> For the first time, Iran's nuclear program was verifiably constrained. IAEA confirmed Iran's compliance in every quarterly report. Mutual trust began—tentatively.
