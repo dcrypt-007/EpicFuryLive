@@ -1841,13 +1841,17 @@
             // Add active class to button
             button.classList.add('active');
 
-            // If Cost tab, animate counters and resize charts that were created while tab was hidden
+            // If Cost tab, animate counters and init charts (deferred until tab is visible)
             if (tabId === 'cost') {
                 animateCounters();
                 setTimeout(() => {
-                    if (trendsChartInstance) trendsChartInstance.resize();
-                    if (costChartInstance) costChartInstance.resize();
-                }, 50);
+                    // Create charts on first visit (they need the tab visible to render)
+                    if (!window._costChartsInitialized) {
+                        try { initCasualtiesChart(); } catch(e) { console.warn('Chart init failed:', e); }
+                        try { initTrendsCharts(); } catch(e) { console.warn('Trends chart init failed:', e); }
+                        window._costChartsInitialized = true;
+                    }
+                }, 100);
             }
         }
 
@@ -2548,11 +2552,8 @@
             try { loadLiveData(); } catch(e) { console.warn('Live data load failed:', e); }
             setInterval(loadLiveData, 5 * 60 * 1000);
 
-            // Charts
-            try { initCasualtiesChart(); } catch(e) { console.warn('Chart init failed:', e); }
-
-            // Trends charts — load historical data
-            try { initTrendsCharts(); } catch(e) { console.warn('Trends chart init failed:', e); }
+            // Charts are deferred — created on first visit to Cost tab
+            // (Chart.js cannot render on display:none elements)
         });
     </script>
 
