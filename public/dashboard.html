@@ -57,7 +57,7 @@
         "url": "https://www.epicfurylive.com",
         "coverageStartTime": "2026-02-28T00:00:00Z",
         "datePublished": "2026-02-28T00:00:00Z",
-        "dateModified": "2026-03-06T02:12:42Z",
+        "dateModified": "2026-03-06T04:06:59Z",
         "author": {
             "@type": "Organization",
             "name": "Epic Fury Live",
@@ -1319,7 +1319,7 @@
             </h1>
             <div>
                 <div class="header-subtitle">US-Iran War Tracker — Live Updates, Casualties & Evidence</div>
-                <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Last updated: <time id="siteLastUpdated" datetime="2026-03-06T02:12:42Z">Mar 06, 2026 02:12 UTC</time></div>
+                <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Last updated: <time id="siteLastUpdated" datetime="2026-03-06T04:06:59Z">Mar 06, 2026 04:06 UTC</time></div>
             </div>
         </div>
 
@@ -1355,11 +1355,11 @@
         <div id="live" class="tab-content active">
             <div class="banner">
                 <div class="banner-date" id="bannerDay">DAY 6 — OPERATION EPIC FURY</div>
-                <div class="banner-status">
+                <div class="banner-status" id="bannerStats">
                     ~3,700 confirmed strikes · 1,045+ reported killed · $5B+ estimated cost
                 </div>
                 <div class="banner-footer">
-                    Last updated <span id="lastUpdated">Mar 06, 2026 02:12 UTC</span> · Sources: <a href="/glossary.html" style="color:#60a5fa;text-decoration:none;border-bottom:1px dotted #60a5fa;" title="Glossary: CENTCOM">CENTCOM</a>, IDF, Reuters, AP, Al Jazeera
+                    Last updated <span id="lastUpdated">Mar 06, 2026 04:06 UTC</span> · Sources: <a href="/glossary.html" style="color:#60a5fa;text-decoration:none;border-bottom:1px dotted #60a5fa;" title="Glossary: CENTCOM">CENTCOM</a>, IDF, Reuters, AP, Al Jazeera
                 </div>
             </div>
 
@@ -1807,47 +1807,47 @@
                     <div class="counter-item">
                         <div class="counter-number" id="iranCounter">1,045</div>
                         <div class="counter-name">Iranian Deaths (Confirmed)</div>
-                        <div class="counter-note">
+                        <div class="counter-note" id="iranDeathsNote">
                             Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.
                         </div>
                     </div>
 
                     <div class="counter-item">
-                        <div class="counter-number">6</div>
+                        <div class="counter-number" id="usKIA">6</div>
                         <div class="counter-name">US Military KIA</div>
-                        <div class="counter-note">
+                        <div class="counter-note" id="usKIANote">
                             6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.
                         </div>
                     </div>
 
                     <div class="counter-item">
-                        <div class="counter-number">11</div>
+                        <div class="counter-number" id="israeliDeaths">11</div>
                         <div class="counter-name">Israeli Deaths</div>
-                        <div class="counter-note">
+                        <div class="counter-note" id="israeliDeathsNote">
                             Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.
                         </div>
                     </div>
 
                     <div class="counter-item">
-                        <div class="counter-number">9</div>
+                        <div class="counter-number" id="gulfCasualties">9</div>
                         <div class="counter-name">Gulf State Casualties</div>
-                        <div class="counter-note">
+                        <div class="counter-note" id="gulfCasualtiesNote">
                             Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.
                         </div>
                     </div>
 
                     <div class="counter-item">
-                        <div class="counter-number">6,000+</div>
+                        <div class="counter-number" id="iranWounded">6,000+</div>
                         <div class="counter-name">Wounded (Iran)</div>
-                        <div class="counter-note">
+                        <div class="counter-note" id="iranWoundedNote">
                             Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.
                         </div>
                     </div>
 
                     <div class="counter-item">
-                        <div class="counter-number">148</div>
+                        <div class="counter-number" id="civilianDeaths">148</div>
                         <div class="counter-name">Civilian Deaths (Disputed)</div>
-                        <div class="counter-note">
+                        <div class="counter-note" id="civilianDeathsNote">
                             Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.
                         </div>
                     </div>
@@ -1862,10 +1862,10 @@
                     <div class="cost-section-title">Financial Cost</div>
 
                     <div style="margin-bottom: 24px;">
-                        <div class="counter">$5,000,000,000+</div>
-                        <div class="counter-label">Total Estimated Cost (6 days)</div>
+                        <div class="counter" id="totalCost">$5,000,000,000+</div>
+                        <div class="counter-label" id="totalCostLabel">Total Estimated Cost (6 days)</div>
                         <div style="font-size: 13px; color: #94a3b8; border-bottom: 1px solid #1e2a3a; padding-bottom: 16px;">
-                            <strong>Daily burn rate: ~$1 billion/day</strong><br>
+                            <strong id="dailyBurnRate">Daily burn rate: ~$1 billion/day</strong><br>
                             Includes all military operations, logistics, personnel, equipment expenditure.
                         </div>
                     </div>
@@ -2638,11 +2638,90 @@
             });
         }
 
+        // LIVE DATA UPDATER — fetches data.json and refreshes all stats
+        function loadLiveData() {
+            fetch('/data.json?t=' + Date.now())
+                .then(r => r.json())
+                .then(data => {
+                    // Banner stats
+                    const bs = document.getElementById('bannerStats');
+                    if (bs && data.banner) {
+                        bs.textContent = data.banner.strikes + ' confirmed strikes · ' + data.banner.killed + ' reported killed · ' + data.banner.cost + ' estimated cost';
+                    }
+
+                    // Day counter
+                    if (data.dayCount) {
+                        const bd = document.getElementById('bannerDay');
+                        if (bd) bd.textContent = 'DAY ' + data.dayCount + ' — OPERATION EPIC FURY';
+                    }
+
+                    // Human cost counters
+                    const hc = data.humanCost;
+                    if (hc) {
+                        const updates = [
+                            ['iranCounter', hc.iranDeaths],
+                            ['usKIA', hc.usKIA],
+                            ['israeliDeaths', hc.israeliDeaths],
+                            ['gulfCasualties', hc.gulfCasualties],
+                            ['iranWounded', hc.iranWounded],
+                            ['civilianDeaths', hc.civilianDeaths]
+                        ];
+                        updates.forEach(([id, val]) => {
+                            const el = document.getElementById(id);
+                            if (el && val) el.textContent = val;
+                        });
+
+                        // Update notes if they changed
+                        const noteUpdates = [
+                            ['iranDeathsNote', hc.iranDeathsNote],
+                            ['usKIANote', hc.usKIANote],
+                            ['israeliDeathsNote', hc.israeliDeathsNote],
+                            ['gulfCasualtiesNote', hc.gulfCasualtiesNote],
+                            ['iranWoundedNote', hc.iranWoundedNote],
+                            ['civilianDeathsNote', hc.civilianDeathsNote]
+                        ];
+                        noteUpdates.forEach(([id, val]) => {
+                            const el = document.getElementById(id);
+                            if (el && val) el.textContent = val;
+                        });
+                    }
+
+                    // Financial cost
+                    const fc = data.financialCost;
+                    if (fc) {
+                        const tc = document.getElementById('totalCost');
+                        if (tc && fc.totalCost) tc.textContent = fc.totalCost;
+                        const tcl = document.getElementById('totalCostLabel');
+                        if (tcl && fc.daysOfOps) tcl.textContent = 'Total Estimated Cost (' + fc.daysOfOps + ' days)';
+                        const dbr = document.getElementById('dailyBurnRate');
+                        if (dbr && fc.dailyBurnRate) dbr.textContent = 'Daily burn rate: ' + fc.dailyBurnRate;
+                    }
+
+                    // Last updated timestamp
+                    if (data.lastUpdated) {
+                        const d = new Date(data.lastUpdated);
+                        const formatted = d.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }) + ' ' +
+                            d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC' }) + ' UTC';
+                        const lu = document.getElementById('lastUpdated');
+                        if (lu) lu.textContent = formatted;
+                        const slu = document.getElementById('siteLastUpdated');
+                        if (slu) { slu.textContent = formatted; slu.setAttribute('datetime', data.lastUpdated); }
+                    }
+
+                    console.log('Live data refreshed at', new Date().toISOString());
+                })
+                .catch(e => console.warn('Live data fetch failed:', e));
+        }
+
         // INIT
         document.addEventListener('DOMContentLoaded', () => {
             // Clocks first — these must always work
             updateClocks();
             setInterval(updateClocks, 1000);
+
+            // Load live data from data.json immediately, then every 5 minutes
+            try { loadLiveData(); } catch(e) { console.warn('Live data load failed:', e); }
+            setInterval(loadLiveData, 5 * 60 * 1000);
 
             // Charts
             try { initCasualtiesChart(); } catch(e) { console.warn('Chart init failed:', e); }

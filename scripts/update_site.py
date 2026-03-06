@@ -252,6 +252,46 @@ def update_rss_feed(news_items):
     print(f"  Updated rss.xml with {len(items_xml)} items")
 
 
+def update_data_json():
+    """Update data.json with current timestamps and computed values."""
+    now = datetime.now(timezone.utc)
+    iso_now = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    # Conflict start date
+    start = datetime(2026, 2, 28, tzinfo=timezone.utc)
+    days = (now - start).days
+
+    try:
+        with open("data.json", "r") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("  Warning: data.json not found or invalid, skipping")
+        return
+
+    # Update dynamic values
+    data["lastUpdated"] = iso_now
+    data["dayCount"] = days
+
+    # Update financial cost day count
+    if "financialCost" in data:
+        data["financialCost"]["daysOfOps"] = days
+        # Recalculate total cost based on burn rate (~$1B/day)
+        total_billions = days
+        data["financialCost"]["totalCost"] = f"${total_billions},000,000,000+"
+        # Update carrier ops cost (2 CSGs @ $7M/day)
+        carrier_cost = 2 * 7_000_000 * days
+        data["financialCost"]["carrierOps"]["detail"] = f"2 CSGs @ $7M/day × {days} days"
+        data["financialCost"]["carrierOps"]["total"] = f"${carrier_cost:,}"
+
+    # Update banner cost
+    if "banner" in data:
+        data["banner"]["cost"] = f"${days}B+"
+
+    with open("data.json", "w") as f:
+        json.dump(data, f, indent=2)
+    print(f"  Updated data.json (Day {days}, cost ${days}B+)")
+
+
 def update_sitemap():
     """Update sitemap.xml lastmod dates."""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -329,6 +369,9 @@ def main():
     with open("public/dashboard.html", "w") as f:
         f.write(html)
     print("  Wrote public/dashboard.html")
+
+    # Update data.json (live stats)
+    update_data_json()
 
     # Update RSS feed
     update_rss_feed(news_items)
