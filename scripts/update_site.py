@@ -36,19 +36,36 @@ RSS_FEEDS = [
     {
         "name": "Al Jazeera - Iran",
         "url": "https://www.aljazeera.com/xml/rss/all.xml",
-        "keywords": ["iran", "tehran", "irgc", "epic fury", "hezbollah", "strait of hormuz", "houthi"],
+        "keywords": ["iran", "tehran", "irgc", "epic fury", "hezbollah", "strait of hormuz", "houthi",
+                     "killed", "casualties", "deaths", "strike", "missile", "nuclear"],
         "tier": 2
     },
     {
         "name": "Reuters - World",
         "url": "https://feeds.reuters.com/Reuters/worldNews",
-        "keywords": ["iran", "tehran", "israel", "strike", "hezbollah", "houthi", "persian gulf"],
+        "keywords": ["iran", "tehran", "israel", "strike", "hezbollah", "houthi", "persian gulf",
+                     "killed", "casualties", "deaths", "missile", "nuclear"],
         "tier": 2
     },
     {
         "name": "BBC - World",
         "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-        "keywords": ["iran", "israel", "us strike", "hezbollah", "houthi", "middle east"],
+        "keywords": ["iran", "israel", "us strike", "hezbollah", "houthi", "middle east",
+                     "killed", "casualties", "deaths", "nuclear"],
+        "tier": 2
+    },
+    {
+        "name": "AP News - Middle East",
+        "url": "https://rsshub.app/apnews/topics/apf-middleeast",
+        "keywords": ["iran", "israel", "strike", "hezbollah", "houthi", "killed", "missile",
+                     "irgc", "tehran", "nuclear"],
+        "tier": 2
+    },
+    {
+        "name": "CNN - World",
+        "url": "http://rss.cnn.com/rss/edition_world.rss",
+        "keywords": ["iran", "israel", "strike", "hezbollah", "killed", "missile", "nuclear",
+                     "epic fury", "pentagon", "centcom"],
         "tier": 2
     },
 ]
@@ -481,8 +498,333 @@ def update_rss_feed(news_items):
 # ============================================================
 # UPDATE DATA.JSON — All dynamic content + OpenClaw cost model
 # ============================================================
+def scan_casualties(news_items, human_cost):
+    """
+    Scan RSS articles for updated casualty figures.
+    Only updates a number if a HIGHER number is found (casualties only go up).
+    Returns list of updates made.
+    """
+    updates = []
+    if not news_items:
+        return updates
+
+    all_text = " ".join(item["title"] + " " + item["description"] for item in news_items)
+
+    # --- Iranian deaths ---
+    iran_death_keywords = [
+        "iranian killed", "iran deaths", "iranian deaths", "iranian casualties",
+        "killed in iran", "iran death toll", "iranian dead", "deaths in iran",
+        "iran ministry of health", "confirmed deaths", "killed in airstrikes"
+    ]
+    found = extract_number_near_keyword(all_text, iran_death_keywords, min_val=100, max_val=500000)
+    if found:
+        current = int(human_cost.get("iranDeaths", "0").replace(",", "").replace("+", ""))
+        if found > current:
+            human_cost["iranDeaths"] = f"{found:,}"
+            updates.append(f"  [Casualties] Iranian deaths: {current:,} -> {found:,}")
+
+    # --- US KIA ---
+    us_kia_keywords = [
+        "us killed", "american killed", "us soldiers killed", "us troops killed",
+        "us military killed", "american soldiers dead", "us service members killed",
+        "us kia", "americans killed in"
+    ]
+    found = extract_number_near_keyword(all_text, us_kia_keywords, min_val=1, max_val=10000)
+    if found:
+        current = int(human_cost.get("usKIA", "0").replace(",", "").replace("+", ""))
+        if found > current:
+            human_cost["usKIA"] = str(found)
+            updates.append(f"  [Casualties] US KIA: {current} -> {found}")
+
+    # --- Israeli deaths ---
+    israeli_keywords = [
+        "israeli killed", "israelis killed", "israeli dead", "israel deaths",
+        "israeli casualties", "killed in israel"
+    ]
+    found = extract_number_near_keyword(all_text, israeli_keywords, min_val=1, max_val=50000)
+    if found:
+        current = int(human_cost.get("israeliDeaths", "0").replace(",", "").replace("+", ""))
+        if found > current:
+            human_cost["israeliDeaths"] = str(found)
+            updates.append(f"  [Casualties] Israeli deaths: {current} -> {found}")
+
+    # --- Civilian deaths ---
+    civilian_keywords = [
+        "civilian killed", "civilians killed", "civilian deaths", "civilian casualties",
+        "civilian death toll", "civilians dead", "civilian toll"
+    ]
+    found = extract_number_near_keyword(all_text, civilian_keywords, min_val=10, max_val=500000)
+    if found:
+        current = int(human_cost.get("civilianDeaths", "0").replace(",", "").replace("+", ""))
+        if found > current:
+            human_cost["civilianDeaths"] = str(found)
+            updates.append(f"  [Casualties] Civilian deaths: {current} -> {found}")
+
+    # --- Iranian wounded ---
+    wounded_keywords = [
+        "iranian wounded", "iran injured", "iranians injured", "injured in iran",
+        "iranian hospitalized", "wounded in airstrikes"
+    ]
+    found = extract_number_near_keyword(all_text, wounded_keywords, min_val=100, max_val=1000000)
+    if found:
+        current_str = human_cost.get("iranWounded", "0").replace(",", "").replace("+", "")
+        current = int(current_str) if current_str.isdigit() else 0
+        if found > current:
+            human_cost["iranWounded"] = f"{found:,}+"
+            updates.append(f"  [Casualties] Iranian wounded: {current:,} -> {found:,}")
+
+    # --- Gulf casualties ---
+    gulf_keywords = [
+        "killed in kuwait", "killed in uae", "killed in saudi", "killed in bahrain",
+        "gulf casualties", "gulf region deaths", "deaths in gulf"
+    ]
+    found = extract_number_near_keyword(all_text, gulf_keywords, min_val=1, max_val=50000)
+    if found:
+        current = int(human_cost.get("gulfCasualties", "0").replace(",", "").replace("+", ""))
+        if found > current:
+            human_cost["gulfCasualties"] = str(found)
+            updates.append(f"  [Casualties] Gulf casualties: {current} -> {found}")
+
+    return updates
+
+
+def scan_strikes(news_items, banner):
+    """
+    Scan RSS for updated strike count numbers.
+    Returns list of updates made.
+    """
+    updates = []
+    if not news_items:
+        return updates
+
+    all_text = " ".join(item["title"] + " " + item["description"] for item in news_items)
+
+    strike_keywords = [
+        "confirmed strikes", "total strikes", "airstrikes conducted",
+        "strikes launched", "sorties flown", "bombing runs", "strikes on iran",
+        "strikes have hit", "struck targets"
+    ]
+    found = extract_number_near_keyword(all_text, strike_keywords, min_val=500, max_val=999999)
+    if found:
+        current_str = banner.get("strikes", "0").replace("~", "").replace(",", "").replace("+", "")
+        try:
+            current = int(current_str)
+        except ValueError:
+            current = 0
+        if found > current:
+            banner["strikes"] = f"~{found:,}"
+            updates.append(f"  [Strikes] Total strikes: ~{current:,} -> ~{found:,}")
+
+    return updates
+
+
+def scan_threats(news_items, existing_threats):
+    """
+    Scan RSS articles for new threat/warning statements from key actors.
+    Only adds genuinely new threats not already captured.
+    Returns list of new threats added.
+    """
+    updates = []
+    if not news_items:
+        return updates
+
+    now = datetime.now(timezone.utc)
+    try:
+        today = now.strftime("%b %-d, %Y")  # Linux/macOS: "Mar 6, 2026"
+    except ValueError:
+        today = now.strftime("%b %d, %Y")   # Windows fallback: "Mar 06, 2026"
+
+    # Key threat actors and their keywords
+    THREAT_ACTORS = {
+        "IRAN (IRGC)": {
+            "keywords": ["irgc", "revolutionary guard"],
+            "threat_words": ["threatens", "warned", "vowed", "pledged", "promised retaliation",
+                           "will attack", "will strike", "will close", "will retaliate", "declared"],
+            "severity": "critical",
+            "target_default": "US / Israel"
+        },
+        "IRAN (Supreme Leader)": {
+            "keywords": ["khamenei", "supreme leader"],
+            "threat_words": ["threatens", "warned", "fatwa", "declared", "vowed"],
+            "severity": "critical",
+            "target_default": "US / Israel"
+        },
+        "Hezbollah": {
+            "keywords": ["hezbollah", "nasrallah"],
+            "threat_words": ["threatens", "warned", "vowed", "rocket", "barrage", "will attack", "retaliate"],
+            "severity": "high",
+            "target_default": "Israel"
+        },
+        "Houthi (Ansar Allah)": {
+            "keywords": ["houthi", "ansar allah"],
+            "threat_words": ["threatens", "blockade", "attack ships", "red sea", "will target", "strike"],
+            "severity": "high",
+            "target_default": "Red Sea shipping"
+        },
+        "US (Pentagon)": {
+            "keywords": ["pentagon", "centcom", "secdef", "defense secretary"],
+            "threat_words": ["warns", "warned", "escalation", "will respond", "overwhelming force"],
+            "severity": "critical",
+            "target_default": "Iran"
+        },
+        "IRAN (Foreign Minister)": {
+            "keywords": ["iran foreign minister", "iranian foreign minister", "araghchi"],
+            "threat_words": ["warns", "warned", "threatened", "consequences", "act of war"],
+            "severity": "high",
+            "target_default": "International"
+        }
+    }
+
+    # Get existing threat text snippets to avoid duplicates
+    existing_texts = set()
+    for t in existing_threats:
+        # Use first 60 chars of text as fingerprint
+        existing_texts.add(t.get("text", "")[:60].lower())
+
+    for item in news_items:
+        text = item["title"] + " " + item["description"]
+        text_lower = text.lower()
+
+        for actor, config in THREAT_ACTORS.items():
+            # Check if this article mentions the actor
+            actor_match = any(kw in text_lower for kw in config["keywords"])
+            if not actor_match:
+                continue
+
+            # Check if this article contains threat language
+            threat_match = any(tw in text_lower for tw in config["threat_words"])
+            if not threat_match:
+                continue
+
+            # Build the threat text from the article
+            # Use title as the summary, clean HTML tags
+            threat_text = re.sub(r'<[^>]+>', '', item["title"]).strip()
+
+            # Skip if we already have something very similar
+            fingerprint = threat_text[:60].lower()
+            if fingerprint in existing_texts:
+                continue
+
+            # Determine target from text context
+            target = config["target_default"]
+            if "israel" in text_lower and "us" in text_lower:
+                target = "US / Israel"
+            elif "europe" in text_lower or "nato" in text_lower:
+                target = "NATO / Europe"
+            elif "red sea" in text_lower or "shipping" in text_lower:
+                target = "Global shipping"
+            elif "strait of hormuz" in text_lower:
+                target = "Global shipping -> Strait of Hormuz"
+            elif "oil" in text_lower:
+                target = "Global oil supply"
+
+            new_threat = {
+                "date": today,
+                "severity": config["severity"],
+                "actor": actor,
+                "text": threat_text,
+                "target": f"Target: {target}",
+                "source": f"Source: {item['source']}, {item.get('link', '')}".rstrip(", ")
+            }
+
+            existing_threats.insert(0, new_threat)  # Newest first
+            existing_texts.add(fingerprint)
+            updates.append(f"  [Threats] New: {actor} - {threat_text[:80]}...")
+
+    # Cap at 25 threats
+    if len(existing_threats) > 25:
+        del existing_threats[25:]
+
+    return updates
+
+
+def scan_evidence(news_items, existing_evidence):
+    """
+    Scan RSS for new strike reports, battle damage assessments, and verifiable evidence.
+    Returns list of updates made.
+    """
+    updates = []
+    if not news_items:
+        return updates
+
+    now = datetime.now(timezone.utc)
+    try:
+        today = now.strftime("%b %-d, %Y")
+    except ValueError:
+        today = now.strftime("%b %d, %Y")
+
+    # Evidence keywords — things that suggest verifiable facts
+    EVIDENCE_KEYWORDS = [
+        "satellite imagery", "satellite images", "confirmed strike",
+        "battle damage assessment", "bda", "iaea confirms", "centcom confirms",
+        "pentagon confirms", "video shows", "footage shows", "photos show",
+        "verified", "intelligence assessment", "nuclear facility",
+        "missile launch", "intercepted", "shot down", "destroyed"
+    ]
+
+    existing_titles = set()
+    for e in existing_evidence:
+        existing_titles.add(e.get("title", "")[:50].lower())
+
+    for item in news_items:
+        text = item["title"] + " " + item["description"]
+        text_lower = text.lower()
+
+        # Must match at least one evidence keyword
+        if not any(kw in text_lower for kw in EVIDENCE_KEYWORDS):
+            continue
+
+        title = re.sub(r'<[^>]+>', '', item["title"]).strip()
+        fingerprint = title[:50].lower()
+        if fingerprint in existing_titles:
+            continue
+
+        # Determine confidence level
+        confidence = "medium"
+        if any(w in text_lower for w in ["centcom confirms", "pentagon confirms", "satellite imagery", "iaea confirms", "verified"]):
+            confidence = "high"
+        elif any(w in text_lower for w in ["claims", "unverified", "alleged", "reportedly"]):
+            confidence = "low"
+
+        # Determine category
+        category = "Military Strike"
+        if any(w in text_lower for w in ["nuclear", "enrichment", "iaea", "uranium"]):
+            category = "Nuclear"
+        elif any(w in text_lower for w in ["cyber", "hack"]):
+            category = "Cyber"
+        elif any(w in text_lower for w in ["naval", "ship", "strait", "carrier"]):
+            category = "Naval"
+        elif any(w in text_lower for w in ["missile defense", "intercepted", "iron dome", "thaad"]):
+            category = "Missile Defense"
+
+        desc = re.sub(r'<[^>]+>', '', item["description"]).strip()[:250]
+
+        new_evidence = {
+            "title": title,
+            "date": today,
+            "confidence": confidence,
+            "category": category,
+            "description": desc,
+            "source": item["source"],
+            "link": item.get("link", "")
+        }
+
+        existing_evidence.insert(0, new_evidence)
+        existing_titles.add(fingerprint)
+        updates.append(f"  [Evidence] New: [{confidence}] {title[:80]}...")
+
+    # Cap at 20 evidence items
+    if len(existing_evidence) > 20:
+        del existing_evidence[20:]
+
+    return updates
+
+
 def update_data_json(news_items):
-    """Update data.json with current timestamps, computed values, OpenClaw cost model, and fresh RSS developments."""
+    """
+    Update data.json with current timestamps, computed values, OpenClaw cost model,
+    auto-scanned casualties, strike counts, threats, evidence, and fresh RSS developments.
+    """
     now = datetime.now(timezone.utc)
     iso_now = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -535,6 +877,52 @@ def update_data_json(news_items):
         if "banner" in data:
             data["banner"]["cost"] = f"${days}B+"
 
+    # ---- CASUALTY SCANNER: Auto-update death tolls from RSS ----
+    if "humanCost" in data:
+        print("  [Casualties] Scanning articles for updated casualty figures...")
+        cas_updates = scan_casualties(news_items, data["humanCost"])
+        if cas_updates:
+            for u in cas_updates:
+                print(u)
+            # Update the banner killed count to match Iranian deaths
+            iran_deaths = data["humanCost"].get("iranDeaths", "0")
+            data["banner"]["killed"] = f"{iran_deaths}+"
+            print(f"  [Casualties] Made {len(cas_updates)} casualty updates")
+        else:
+            print("  [Casualties] No new casualty figures found in articles")
+
+    # ---- STRIKE COUNTER: Auto-update total strikes from RSS ----
+    if "banner" in data:
+        print("  [Strikes] Scanning articles for updated strike counts...")
+        strike_updates = scan_strikes(news_items, data["banner"])
+        if strike_updates:
+            for u in strike_updates:
+                print(u)
+        else:
+            print("  [Strikes] No new strike count data found in articles")
+
+    # ---- THREAT SCANNER: Detect new threats from RSS ----
+    if "threats" in data:
+        print("  [Threats] Scanning articles for new threat statements...")
+        threat_updates = scan_threats(news_items, data["threats"])
+        if threat_updates:
+            for u in threat_updates:
+                print(u)
+            print(f"  [Threats] Added {len(threat_updates)} new threats")
+        else:
+            print("  [Threats] No new threats detected in articles")
+
+    # ---- EVIDENCE SCANNER: Detect new verified reports from RSS ----
+    if "evidence" in data:
+        print("  [Evidence] Scanning articles for new verifiable evidence...")
+        ev_updates = scan_evidence(news_items, data["evidence"])
+        if ev_updates:
+            for u in ev_updates:
+                print(u)
+            print(f"  [Evidence] Added {len(ev_updates)} new evidence items")
+        else:
+            print("  [Evidence] No new evidence detected in articles")
+
     # ---- DEVELOPMENTS (inject RSS items) ----
     if news_items:
         new_devs = []
@@ -551,7 +939,7 @@ def update_data_json(news_items):
 
             new_devs.append({
                 "time": iso_time,
-                "text": f"<strong>{escape(title)}</strong> — {escape(desc)} <span style=\"color:#64748b;font-size:11px;\">[{escape(source)}]</span>"
+                "text": f"<strong>{escape(title)}</strong> -- {escape(desc)} <span style=\"color:#64748b;font-size:11px;\">[{escape(source)}]</span>"
             })
 
         if new_devs:
@@ -562,7 +950,7 @@ def update_data_json(news_items):
             data["developments"] = all_devs[:20]
             print(f"  Injected {len(new_devs)} RSS items into developments (total: {len(data['developments'])})")
     else:
-        print("  No new RSS items — keeping existing developments")
+        print("  No new RSS items -- keeping existing developments")
 
     # ---- WRITE DATA.JSON ----
     # Use ensure_ascii=True so all non-ASCII chars become \uXXXX escapes.
@@ -720,7 +1108,7 @@ def main():
     print("=" * 60)
 
     # 1. Fetch news
-    print("\n[1/7] Fetching news from RSS feeds...")
+    print("\n[1/7] Fetching news from RSS feeds (5 sources)...")
     news_items = fetch_all_feeds()
     print(f"  Total: {len(news_items)} relevant items")
 
@@ -743,8 +1131,8 @@ def main():
         f.write(html)
     print("  Wrote public/dashboard.html")
 
-    # 5. Update data.json (all dynamic content + OpenClaw cost model)
-    print("\n[5/7] Updating data.json + OpenClaw cost analysis...")
+    # 5. Update data.json — OpenClaw costs + casualties + strikes + threats + evidence + developments
+    print("\n[5/7] Updating data.json (OpenClaw + casualties + strikes + threats + evidence + developments)...")
     data = update_data_json(news_items)
 
     # 6. Update history.json (trend tracking)
