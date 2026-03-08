@@ -1428,7 +1428,8 @@ def update_data_json(news_items):
 
             new_devs.append({
                 "time": iso_time,
-                "text": f"<strong>{escape(title)}</strong> -- {escape(desc)} <span style=\"color:#64748b;font-size:11px;\">[{escape(source)}]</span>"
+                "text": f"<strong>{escape(title)}</strong> -- {escape(desc)} <span style=\"color:#64748b;font-size:11px;\">[{escape(source)}]</span>",
+                "link": item.get("link", "")
             })
 
         if new_devs:
