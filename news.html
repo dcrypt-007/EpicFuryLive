@@ -151,39 +151,30 @@
             border-bottom-color: #ef4444;
         }
 
-        /* MAIN CONTENT */
-        .main-container {
-            flex: 1;
-            display: flex;
-            overflow: hidden;
-            gap: 0;
-        }
-
-        /* LEFT PANEL - HEADLINES */
-        .headlines-panel {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            border-right: 1px solid #1e2a3a;
-            overflow: hidden;
-        }
-
-        .filter-buttons {
+        /* FILTER BAR */
+        .filter-bar {
             background: #111827;
             border-bottom: 1px solid #1e2a3a;
-            padding: 12px 16px;
+            padding: 12px 24px;
             display: flex;
-            gap: 8px;
+            align-items: center;
+            gap: 12px;
             flex-wrap: wrap;
-            overflow-y: auto;
-            max-height: 60px;
+        }
+
+        .filter-label {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
         }
 
         .filter-btn {
             background: #1e2a3a;
             border: 1px solid #2a3e52;
             color: #94a3b8;
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 4px;
             font-size: 12px;
             font-weight: 500;
@@ -204,48 +195,88 @@
             border-color: #ef4444;
         }
 
-        .headlines-list {
+        .headline-count {
+            margin-left: auto;
+            font-size: 12px;
+            color: #64748b;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* NEWS WIRE */
+        .news-wire {
             flex: 1;
             overflow-y: auto;
-            padding: 12px;
+            padding: 20px 24px;
+            max-width: 960px;
+            margin: 0 auto;
+            width: 100%;
         }
 
-        .headline-card {
-            background: #111827;
-            border: 1px solid #1e2a3a;
-            border-radius: 6px;
-            padding: 12px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .headline-card:hover {
-            border-color: #2a3e52;
-            background: #131b28;
-        }
-
-        .headline-card.active {
-            border-color: #ef4444;
-            background: #1a2332;
-        }
-
-        .headline-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 8px;
+        .wire-date-group {
             margin-bottom: 8px;
         }
 
-        .source-badge {
+        .wire-date-label {
+            font-family: 'JetBrains Mono', monospace;
             font-size: 11px;
-            font-weight: 600;
-            padding: 3px 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #475569;
+            padding: 8px 0;
+            border-bottom: 1px solid #1e2a3a;
+            margin-bottom: 12px;
+        }
+
+        .wire-item {
+            display: flex;
+            gap: 16px;
+            padding: 14px 16px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .wire-item:hover {
+            border-color: #2a3e52;
+            background: #131b28;
+            transform: translateX(2px);
+        }
+
+        .wire-item-time {
+            flex-shrink: 0;
+            width: 56px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #64748b;
+            padding-top: 2px;
+        }
+
+        .wire-item-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .wire-item-top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+
+        .source-badge {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 8px;
             border-radius: 3px;
             text-transform: uppercase;
             white-space: nowrap;
             flex-shrink: 0;
+            letter-spacing: 0.3px;
         }
 
         /* Source color coding */
@@ -259,184 +290,101 @@
         .badge-google { background: #64748b; color: #fff; }
         .badge-default { background: #475569; color: #fff; }
 
-        .headline-time {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
-            color: #64748b;
-            flex-shrink: 0;
+        .tier-badge {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.3px;
         }
 
-        .headline-title {
-            font-size: 13px;
+        .tier-1 { background: #ef444420; color: #ef4444; border: 1px solid #ef444440; }
+        .tier-2 { background: #f59e0b20; color: #f59e0b; border: 1px solid #f59e0b40; }
+        .tier-3 { background: #64748b20; color: #94a3b8; border: 1px solid #64748b40; }
+
+        .wire-item-title {
+            font-size: 15px;
             font-weight: 600;
             color: #e0e6ed;
-            margin-bottom: 6px;
             line-height: 1.4;
+            margin-bottom: 4px;
         }
 
-        .headline-excerpt {
-            font-size: 12px;
+        .wire-item-desc {
+            font-size: 13px;
             color: #94a3b8;
             line-height: 1.4;
-            margin-bottom: 8px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
 
-        .headline-meta {
+        .wire-item-arrow {
+            flex-shrink: 0;
+            color: #475569;
+            font-size: 16px;
             display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .category-badge {
-            font-size: 10px;
-            background: #1e2a3a;
-            color: #94a3b8;
-            padding: 3px 6px;
-            border-radius: 3px;
-            text-transform: uppercase;
-        }
-
-        /* RIGHT PANEL - READER */
-        .reader-panel {
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            background: #0f1419;
-        }
-
-        .reader-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            transition: all 0.2s ease;
         }
 
-        .reader-empty {
+        .wire-item:hover .wire-item-arrow {
+            color: #ef4444;
+            transform: translateX(3px);
+        }
+
+        /* No-link state for developments fallback */
+        .wire-item.no-link {
+            cursor: default;
+        }
+
+        .wire-item.no-link:hover {
+            transform: none;
+        }
+
+        .wire-item.no-link .wire-item-arrow {
+            display: none;
+        }
+
+        /* Loading & empty states */
+        .state-message {
             text-align: center;
+            padding: 60px 24px;
             color: #64748b;
         }
 
-        .reader-empty-icon {
+        .state-message-icon {
             font-size: 48px;
             margin-bottom: 16px;
             opacity: 0.5;
         }
 
-        .reader-article {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .reader-article-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: #e0e6ed;
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-
-        .reader-article-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid #1e2a3a;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .reader-source-badge {
-            font-size: 12px;
-            font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 3px;
-            text-transform: uppercase;
-        }
-
-        .reader-time {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
-            color: #64748b;
-        }
-
-        .reader-article-description {
-            flex: 1;
+        .state-message-text {
             font-size: 14px;
-            color: #cbd5e1;
             line-height: 1.6;
-            margin-bottom: 20px;
-            overflow-y: auto;
         }
 
-        .reader-article-iframe {
-            flex: 1;
-            border: 1px solid #1e2a3a;
-            border-radius: 6px;
-            margin-bottom: 16px;
-            background: #fff;
-            display: none;
-        }
-
-        .reader-article-iframe.show {
-            display: block;
-        }
-
-        .reader-article-link {
-            display: inline-block;
-            background: #ef4444;
-            color: #fff;
-            padding: 10px 16px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.2s ease;
-            margin-bottom: 12px;
-        }
-
-        .reader-article-link:hover {
-            background: #dc2626;
-        }
-
-        .reader-block-message {
-            background: #1e2a3a;
-            border: 1px solid #2a3e52;
-            border-radius: 4px;
-            padding: 12px;
-            font-size: 12px;
-            color: #94a3b8;
-            margin-bottom: 12px;
+        .state-message-text.error {
+            color: #ef4444;
         }
 
         /* Scrollbar styling */
-        .headlines-list::-webkit-scrollbar,
-        .reader-article-description::-webkit-scrollbar {
+        .news-wire::-webkit-scrollbar {
             width: 8px;
         }
 
-        .headlines-list::-webkit-scrollbar-track,
-        .reader-article-description::-webkit-scrollbar-track {
-            background: #111827;
+        .news-wire::-webkit-scrollbar-track {
+            background: #0a0f1a;
         }
 
-        .headlines-list::-webkit-scrollbar-thumb,
-        .reader-article-description::-webkit-scrollbar-thumb {
+        .news-wire::-webkit-scrollbar-thumb {
             background: #1e2a3a;
             border-radius: 4px;
         }
 
-        .headlines-list::-webkit-scrollbar-thumb:hover,
-        .reader-article-description::-webkit-scrollbar-thumb:hover {
+        .news-wire::-webkit-scrollbar-thumb:hover {
             background: #2a3e52;
         }
 
@@ -461,23 +409,7 @@
         }
 
         /* Responsive */
-        @media (max-width: 1200px) {
-            .headlines-panel { width: 55%; }
-            .reader-panel { width: 45%; }
-        }
-
         @media (max-width: 768px) {
-            .main-container {
-                flex-direction: column;
-            }
-
-            .headlines-panel, .reader-panel {
-                width: 100%;
-                height: 50%;
-                border-right: none;
-                border-bottom: 1px solid #1e2a3a;
-            }
-
             .header {
                 flex-direction: column;
                 align-items: flex-start;
@@ -494,8 +426,31 @@
                 text-align: left;
             }
 
-            .filter-buttons {
-                max-height: none;
+            .news-wire {
+                padding: 12px 12px;
+            }
+
+            .wire-item {
+                padding: 12px;
+                gap: 10px;
+            }
+
+            .wire-item-time {
+                width: 44px;
+                font-size: 11px;
+            }
+
+            .wire-item-title {
+                font-size: 14px;
+            }
+
+            .filter-bar {
+                padding: 10px 12px;
+                gap: 8px;
+            }
+
+            .filter-label {
+                display: none;
             }
         }
     </style>
@@ -536,33 +491,25 @@
         <button class="tab-button" onclick="window.location.href='/index.html#evidence'">THE EVIDENCE</button>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-container">
-        <!-- LEFT PANEL: HEADLINES -->
-        <div class="headlines-panel">
-            <div class="filter-buttons">
-                <button class="filter-btn active" onclick="filterBySource(this, 'ALL')">ALL</button>
-                <button class="filter-btn" onclick="filterBySource(this, 'Al Jazeera')">Al Jazeera</button>
-                <button class="filter-btn" onclick="filterBySource(this, 'BBC')">BBC</button>
-                <button class="filter-btn" onclick="filterBySource(this, 'Reuters')">Reuters</button>
-                <button class="filter-btn" onclick="filterBySource(this, 'AP News')">AP</button>
-                <button class="filter-btn" onclick="filterBySource(this, 'France 24')">France 24</button>
-                <button class="filter-btn" onclick="filterBySource(this, 'Times of Israel')">Times of Israel</button>
-                <button class="filter-btn" onclick="filterBySource(this, 'Stars and Stripes')">Stars & Stripes</button>
-            </div>
-            <div class="headlines-list" id="headlinesList">
-                <div style="color: #64748b; text-align: center; padding: 24px;">Loading headlines...</div>
-            </div>
-        </div>
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+        <span class="filter-label">Source</span>
+        <button class="filter-btn active" onclick="filterBySource(this, 'ALL')">ALL</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'Al Jazeera')">Al Jazeera</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'BBC')">BBC</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'Reuters')">Reuters</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'AP')">AP</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'France 24')">France 24</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'Times of Israel')">Times of Israel</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'Stars and Stripes')">Stars & Stripes</button>
+        <span class="headline-count" id="headlineCount"></span>
+    </div>
 
-        <!-- RIGHT PANEL: READER -->
-        <div class="reader-panel">
-            <div class="reader-content">
-                <div class="reader-empty">
-                    <div class="reader-empty-icon">📰</div>
-                    <div>Select a headline to read</div>
-                </div>
-            </div>
+    <!-- NEWS WIRE -->
+    <div class="news-wire" id="newsWire">
+        <div class="state-message">
+            <div class="state-message-icon">&#x1F4E1;</div>
+            <div class="state-message-text">Loading headlines...</div>
         </div>
     </div>
 
@@ -585,7 +532,6 @@
         // State
         let allHeadlines = [];
         let currentFilter = 'ALL';
-        let selectedArticle = null;
 
         // Color mapping for source badges
         const sourceColors = {
@@ -605,106 +551,53 @@
         function getBadgeClass(source) {
             for (let [key, value] of Object.entries(sourceColors)) {
                 if (source.toLowerCase().includes(key.toLowerCase())) {
-                    return `badge-${value}`;
+                    return 'badge-' + value;
                 }
             }
             return 'badge-default';
         }
 
         function getSourceShorthand(source) {
-            if (source.includes('Reuters')) return 'Reuters';
+            if (source.includes('Reuters')) return 'REUTERS';
             if (source.includes('AP')) return 'AP';
             if (source.includes('BBC')) return 'BBC';
-            if (source.includes('Al Jazeera')) return 'AJ';
-            if (source.includes('France 24')) return 'F24';
-            if (source.includes('Times of Israel')) return 'ToI';
-            if (source.includes('Stars and Stripes')) return 'S&S';
-            return source.slice(0, 10);
+            if (source.includes('Al Jazeera')) return 'AL JAZEERA';
+            if (source.includes('France 24')) return 'FRANCE 24';
+            if (source.includes('Times of Israel')) return 'TIMES OF ISR';
+            if (source.includes('Stars and Stripes')) return 'STARS & STRIPES';
+            return source.toUpperCase().slice(0, 12);
         }
 
-        function formatTimeAgo(isoTime) {
+        function formatTimeShort(isoTime) {
+            const date = new Date(isoTime);
+            return date.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false,
+                timeZone: 'UTC'
+            });
+        }
+
+        function formatDateGroup(isoTime) {
             const date = new Date(isoTime);
             const now = new Date();
-            const seconds = Math.floor((now - date) / 1000);
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const itemDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+            const diffDays = Math.floor((today - itemDate) / (1000 * 60 * 60 * 24));
 
-            if (seconds < 60) return 'now';
-            if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
-            if (seconds < 86400) return `${Math.floor(seconds / 3600)}h ago`;
-            if (seconds < 604800) return `${Math.floor(seconds / 86400)}d ago`;
-            return date.toLocaleDateString();
+            if (diffDays === 0) return 'Today';
+            if (diffDays === 1) return 'Yesterday';
+            return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' });
         }
 
         function updateClocks() {
             const now = new Date();
-            const utcString = now.toUTCString().split(' ').slice(4, 5)[0];
             document.getElementById('utcClock').textContent = now.toUTCString().split(' ').slice(4, 5)[0];
 
-            // Calculate day count
             const days = Math.floor((now - START_DATE) / (1000 * 60 * 60 * 24));
-            const daysDisplay = days >= 0 ? `DAY ${days}` : 'DAY —';
-
-            // Time within day
+            const daysDisplay = days >= 0 ? 'DAY ' + days : 'DAY —';
             const timeStr = now.toUTCString().split(' ')[4];
-            document.getElementById('conflictClock').textContent = `${daysDisplay} — ${timeStr}`;
-        }
-
-        function renderHeadlines() {
-            const list = document.getElementById('headlinesList');
-
-            let filtered = currentFilter === 'ALL'
-                ? allHeadlines
-                : allHeadlines.filter(h => h.source.includes(currentFilter));
-
-            if (filtered.length === 0) {
-                list.innerHTML = '<div style="color: #64748b; text-align: center; padding: 24px;">No headlines found</div>';
-                return;
-            }
-
-            list.innerHTML = filtered.map(headline => `
-                <div class="headline-card ${selectedArticle && selectedArticle.link === headline.link ? 'active' : ''}"
-                     onclick="selectArticle(event, ${JSON.stringify(headline).replace(/"/g, '&quot;')})">
-                    <div class="headline-header">
-                        <span class="source-badge ${getBadgeClass(headline.source)}">${getSourceShorthand(headline.source)}</span>
-                        <span class="headline-time">${formatTimeAgo(headline.time)}</span>
-                    </div>
-                    <div class="headline-title">${escapeHtml(headline.title)}</div>
-                    <div class="headline-excerpt">${escapeHtml(headline.description)}</div>
-                    <div class="headline-meta">
-                        <span class="category-badge">Tier ${headline.tier}</span>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function selectArticle(e, headline) {
-            selectedArticle = headline;
-            renderHeadlines();
-            renderArticle(headline);
-        }
-
-        function renderArticle(headline) {
-            const reader = document.querySelector('.reader-content');
-            const badgeClass = getBadgeClass(headline.source);
-
-            reader.innerHTML = `
-                <div class="reader-article">
-                    <h2 class="reader-article-title">${escapeHtml(headline.title)}</h2>
-                    <div class="reader-article-meta">
-                        <span class="reader-source-badge ${badgeClass}">${escapeHtml(headline.source)}</span>
-                        <span class="reader-time">${formatTimeAgo(headline.time)}</span>
-                    </div>
-                    <div class="reader-article-description">${escapeHtml(headline.description)}</div>
-                    <div class="reader-block-message">This source doesn't allow embedding. Click below to read the full article.</div>
-                    <a href="${escapeHtml(headline.link)}" target="_blank" class="reader-article-link">Read Full Article →</a>
-                </div>
-            `;
-        }
-
-        function filterBySource(btn, source) {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            currentFilter = source;
-            renderHeadlines();
+            document.getElementById('conflictClock').textContent = daysDisplay + ' — ' + timeStr;
         }
 
         function escapeHtml(text) {
@@ -713,23 +606,95 @@
             return div.innerHTML;
         }
 
+        function renderHeadlines() {
+            const wire = document.getElementById('newsWire');
+            const countEl = document.getElementById('headlineCount');
+
+            let filtered = currentFilter === 'ALL'
+                ? allHeadlines
+                : allHeadlines.filter(function(h) {
+                    return h.source.toLowerCase().includes(currentFilter.toLowerCase());
+                });
+
+            countEl.textContent = filtered.length + ' headline' + (filtered.length !== 1 ? 's' : '');
+
+            if (filtered.length === 0) {
+                wire.innerHTML = '<div class="state-message"><div class="state-message-icon">&#x1F50D;</div><div class="state-message-text">No headlines match this filter</div></div>';
+                return;
+            }
+
+            // Group by date
+            var groups = {};
+            filtered.forEach(function(h) {
+                var key = formatDateGroup(h.time);
+                if (!groups[key]) groups[key] = [];
+                groups[key].push(h);
+            });
+
+            var html = '';
+            Object.keys(groups).forEach(function(dateLabel) {
+                html += '<div class="wire-date-group">';
+                html += '<div class="wire-date-label">' + dateLabel + '</div>';
+
+                groups[dateLabel].forEach(function(h) {
+                    var hasLink = h.link && h.link.trim() !== '';
+                    var tierClass = h.tier === 1 ? 'tier-1' : (h.tier === 2 ? 'tier-2' : 'tier-3');
+
+                    if (hasLink) {
+                        html += '<a class="wire-item" href="' + escapeHtml(h.link) + '" target="_blank" rel="noopener noreferrer">';
+                    } else {
+                        html += '<div class="wire-item no-link">';
+                    }
+
+                    html += '<div class="wire-item-time">' + formatTimeShort(h.time) + '</div>';
+                    html += '<div class="wire-item-content">';
+                    html += '<div class="wire-item-top">';
+                    html += '<span class="source-badge ' + getBadgeClass(h.source) + '">' + getSourceShorthand(h.source) + '</span>';
+                    html += '<span class="tier-badge ' + tierClass + '">Tier ' + h.tier + '</span>';
+                    html += '</div>';
+                    html += '<div class="wire-item-title">' + escapeHtml(h.title) + '</div>';
+                    if (h.description) {
+                        html += '<div class="wire-item-desc">' + escapeHtml(h.description) + '</div>';
+                    }
+                    html += '</div>';
+
+                    if (hasLink) {
+                        html += '<div class="wire-item-arrow">&#x2192;</div>';
+                    }
+
+                    html += hasLink ? '</a>' : '</div>';
+                });
+
+                html += '</div>';
+            });
+
+            wire.innerHTML = html;
+        }
+
+        function filterBySource(btn, source) {
+            document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            currentFilter = source;
+            renderHeadlines();
+        }
+
         async function loadHeadlines() {
             try {
-                const response = await fetch('/data.json');
-                const data = await response.json();
+                var response = await fetch('/data.json?t=' + Date.now());
+                var data = await response.json();
 
                 if (data.newsFeed && Array.isArray(data.newsFeed) && data.newsFeed.length > 0) {
                     allHeadlines = data.newsFeed;
                     renderHeadlines();
                 } else if (data.developments && Array.isArray(data.developments) && data.developments.length > 0) {
                     // Fallback: convert developments to newsFeed format
-                    allHeadlines = data.developments.map(dev => {
-                        const titleMatch = dev.text.match(/<strong>(.*?)<\/strong>/);
-                        const title = titleMatch ? titleMatch[1] : dev.text.replace(/<[^>]+>/g, '').substring(0, 120);
-                        const descMatch = dev.text.match(/<\/strong>\s*--\s*(.*?)(?:<span|$)/);
-                        const desc = descMatch ? descMatch[1].trim() : '';
-                        const sourceMatch = dev.text.match(/\[(.*?)\]/);
-                        const source = sourceMatch ? sourceMatch[1] : 'Al Jazeera';
+                    allHeadlines = data.developments.map(function(dev) {
+                        var titleMatch = dev.text.match(/<strong>(.*?)<\/strong>/);
+                        var title = titleMatch ? titleMatch[1] : dev.text.replace(/<[^>]+>/g, '').substring(0, 120);
+                        var descMatch = dev.text.match(/<\/strong>\s*--\s*(.*?)(?:<span|$)/);
+                        var desc = descMatch ? descMatch[1].trim() : '';
+                        var sourceMatch = dev.text.match(/\[(.*?)\]/);
+                        var source = sourceMatch ? sourceMatch[1] : 'Al Jazeera';
                         return {
                             title: title,
                             description: desc,
@@ -741,24 +706,20 @@
                     });
                     renderHeadlines();
                 } else {
-                    document.getElementById('headlinesList').innerHTML = '<div style="color: #64748b; text-align: center; padding: 24px;">No headlines available yet. Headlines will appear after the next hourly update.</div>';
+                    document.getElementById('newsWire').innerHTML = '<div class="state-message"><div class="state-message-icon">&#x1F4E1;</div><div class="state-message-text">No headlines available yet. Headlines will appear after the next hourly update.</div></div>';
                 }
             } catch (error) {
                 console.error('Error loading headlines:', error);
-                document.getElementById('headlinesList').innerHTML = '<div style="color: #ef4444; text-align: center; padding: 24px;">Error loading headlines</div>';
+                document.getElementById('newsWire').innerHTML = '<div class="state-message"><div class="state-message-icon">&#x26A0;</div><div class="state-message-text error">Error loading headlines. Will retry automatically.</div></div>';
             }
         }
 
-        function initAutoRefresh() {
-            setInterval(loadHeadlines, REFRESH_INTERVAL);
-        }
-
-        // Initialize on page load
-        document.addEventListener('DOMContentLoaded', () => {
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
             updateClocks();
             setInterval(updateClocks, 1000);
             loadHeadlines();
-            initAutoRefresh();
+            setInterval(loadHeadlines, REFRESH_INTERVAL);
         });
     </script>
 </body>
