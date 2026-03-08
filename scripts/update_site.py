@@ -40,51 +40,47 @@ import math
 # ============================================================
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
-LLM_STATS_PROMPT = """You are a military intelligence analyst updating a live war tracker for the 2026 US-Israel-Iran conflict (Operation Epic Fury, which began February 28, 2026).
+LLM_STATS_PROMPT = """You are a data extraction assistant for a war tracker website. This is a REAL, ONGOING conflict.
 
-Based on your knowledge of current events and reporting, provide the BEST AVAILABLE estimates for each field below. Use the most credible sources (CENTCOM, IDF, Iranian state media, Reuters, AP, BBC, Al Jazeera). Where numbers are disputed, use the most widely-reported middle estimate.
+Today is {today}, Day {day_count} of the US-Israel-Iran military conflict (which began February 28, 2026).
 
-CRITICAL RULES:
-- Only provide numbers you're reasonably confident about from actual reporting
-- If you genuinely don't know a figure, use null
-- Do NOT hallucinate or invent numbers — only report what has been reported in credible sources
-- For "killed" figures, only count direct conflict deaths, not displaced/wounded
-- Numbers should represent CUMULATIVE totals, not daily
-- Include a brief source note for each figure
+Below are the CURRENT values on our tracker, followed by today's latest news headlines from RSS feeds. Your job is to extract any UPDATED casualty figures, strike counts, or new threats from the headlines. If a headline mentions a specific number that updates one of our tracked fields, provide the new value. If no headline provides a clear update for a field, return null for that field (meaning keep the current value).
 
-Return ONLY valid JSON in this exact format (no markdown, no explanation, just the JSON object):
+CURRENT TRACKER VALUES:
+{current_values}
 
+TODAY'S NEWS HEADLINES:
+{headlines}
+
+Based on these headlines, extract any updated numbers. CRITICAL RULES:
+- Only update a field if a headline clearly states a new, higher number
+- All casualty numbers are CUMULATIVE totals — they only go up
+- If no headline mentions a specific field, use null (keep current value)
+- For bannerKilled, use the best total estimate across all parties
+- For newThreats, extract any clearly stated military threats from headlines
+- Return ONLY valid JSON, no markdown, no explanation
+
+Return this exact JSON structure:
 {{
-  "iranDeaths": {{"value": 1045, "note": "Iranian Ministry of Health confirmed figure"}},
-  "usKIA": {{"value": 202, "note": "CENTCOM confirmed"}},
-  "israeliDeaths": {{"value": 1300, "note": "IDF spokesperson confirmed"}},
-  "civilianDeaths": {{"value": 148, "note": "Disputed - Iranian claim, US disputes"}},
-  "iranWounded": {{"value": 6000, "note": "Iranian Ministry reports"}},
-  "gulfCasualties": {{"value": 0, "note": "Source"}},
-  "totalStrikes": {{"value": 3700, "note": "CENTCOM confirmed total"}},
-  "bannerKilled": {{"value": 1045, "note": "Best estimate of total reported killed"}},
-  "newThreats": [
-    {{
-      "actor": "IRAN (IRGC)",
-      "severity": "critical",
-      "text": "Brief description of the threat",
-      "target": "Target: US / Israel",
-      "source": "Source: Reuters"
-    }}
-  ],
-  "newDevelopments": [
-    "One-line summary of a key recent development"
-  ],
-  "summary": "One paragraph overall situation summary for today"
-}}
-
-Today's date is {today}. It is Day {day_count} of the conflict."""
+  "iranDeaths": {{"value": null, "note": "source headline or null if unchanged"}},
+  "usKIA": {{"value": null, "note": "source headline or null if unchanged"}},
+  "israeliDeaths": {{"value": null, "note": "source headline or null if unchanged"}},
+  "civilianDeaths": {{"value": null, "note": "source headline or null if unchanged"}},
+  "iranWounded": {{"value": null, "note": "source headline or null if unchanged"}},
+  "gulfCasualties": {{"value": null, "note": "source headline or null if unchanged"}},
+  "totalStrikes": {{"value": null, "note": "source headline or null if unchanged"}},
+  "bannerKilled": {{"value": null, "note": "source headline or null if unchanged"}},
+  "newThreats": [],
+  "summary": "One paragraph summary of today's key developments based on the headlines"
+}}"""
 
 
-def llm_update_stats(days):
+def llm_update_stats(days, news_items=None, current_data=None):
     """
-    Call the Anthropic Claude API to get current, accurate conflict statistics.
+    Call the Anthropic Claude API to extract updated stats from today's headlines.
+    Feeds the LLM current tracker values + fresh RSS headlines as context.
     Returns a dict of updated stats, or None if the API call fails.
     """
     if not ANTHROPIC_API_KEY:
@@ -94,9 +90,108 @@ def llm_update_stats(days):
     now = datetime.now(timezone.utc)
     today = now.strftime("%B %d, %Y")
 
-    prompt = LLM_STATS_PROMPT.format(today=today, day_count=days)
+    # Build current values string from data.json
+    current_values = "No current values available"
+    if current_data:
+        hc = current_data.get("humanCost", {})
+        banner = current_data.get("banner", {})
+        current_values = (
+            f"- Iranian deaths: {hc.get('iranDeaths', 'unknown')}\n"
+            f"- US KIA: {hc.get('usKIA', 'unknown')}\n"
+            f"- Israeli deaths: {hc.get('israeliDeaths', 'unknown')}\n"
+            f"- Civilian deaths: {hc.get('civilianDeaths', 'unknown')}\n"
+            f"- Iranian wounded: {hc.get('iranWounded', 'unknown')}\n"
+            f"- Gulf casualties: {hc.get('gulfCasualties', 'unknown')}\n"
+            f"- Total strikes: {banner.get('strikes', 'unknown')}\n"
+            f"- Banner killed: {banner.get('killed', 'unknown')}"
+        )
 
-    # Build the Anthropic API request
+    # Build headlines string from RSS items
+    headlines = "No headlines available"
+    if news_items:
+        headline_lines = []
+        for item in news_items[:20]:
+            title = item.get("title", "")
+            desc = item.get("description", "")[:200]
+            source = item.get("source", "")
+            headline_lines.append(f"- [{source}] {title}: {desc}")
+        headlines = "\n".join(headline_lines)
+
+    prompt = LLM_STATS_PROMPT.format(
+        today=today,
+        day_count=days,
+        current_values=current_values,
+        headlines=headlines
+    )
+
+    # Try OpenAI first (GPT-4o-mini — fast, cheap, cooperative), then fall back to Claude
+    text = None
+
+    if OPENAI_API_KEY:
+        text = _call_openai(prompt)
+
+    if text is None and ANTHROPIC_API_KEY:
+        text = _call_anthropic(prompt)
+
+    if text is None:
+        print("  [LLM] No API key available or all API calls failed")
+        return None
+
+    # Parse JSON from the response (handle potential markdown wrapping)
+    try:
+        if text.startswith("```"):
+            text = re.sub(r'^```(?:json)?\s*', '', text)
+            text = re.sub(r'\s*```$', '', text)
+
+        stats = json.loads(text)
+        print("  [LLM] Successfully parsed updated stats")
+        return stats
+
+    except json.JSONDecodeError as e:
+        print(f"  [LLM] Failed to parse JSON response: {e}")
+        print(f"  [LLM] Raw text: {text[:500]}...")
+        return None
+
+
+def _call_openai(prompt):
+    """Call OpenAI GPT-4o-mini API. Returns raw text response or None."""
+    request_body = json.dumps({
+        "model": "gpt-4o-mini",
+        "max_tokens": 2000,
+        "messages": [
+            {"role": "system", "content": "You are a data extraction assistant. Return ONLY valid JSON. No markdown, no explanation."},
+            {"role": "user", "content": prompt}
+        ]
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/chat/completions",
+        data=request_body,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {OPENAI_API_KEY}",
+        },
+        method="POST",
+    )
+
+    try:
+        print("  [LLM] Calling OpenAI GPT-4o-mini for stat extraction...")
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            response = json.loads(resp.read().decode("utf-8"))
+        text = response["choices"][0]["message"]["content"].strip()
+        print("  [LLM] Got response from OpenAI")
+        return text
+    except urllib.error.HTTPError as e:
+        error_body = e.read().decode("utf-8", errors="replace")
+        print(f"  [LLM] OpenAI API error {e.code}: {error_body[:200]}")
+        return None
+    except Exception as e:
+        print(f"  [LLM] OpenAI failed: {e}")
+        return None
+
+
+def _call_anthropic(prompt):
+    """Call Anthropic Claude API. Returns raw text response or None."""
     request_body = json.dumps({
         "model": "claude-sonnet-4-20250514",
         "max_tokens": 2000,
@@ -117,32 +212,18 @@ def llm_update_stats(days):
     )
 
     try:
-        print("  [LLM] Calling Claude API for current conflict stats...")
+        print("  [LLM] Calling Claude API for stat extraction...")
         with urllib.request.urlopen(req, timeout=30) as resp:
             response = json.loads(resp.read().decode("utf-8"))
-
-        # Extract the text response
         text = response["content"][0]["text"].strip()
-
-        # Parse JSON from the response (handle potential markdown wrapping)
-        if text.startswith("```"):
-            text = re.sub(r'^```(?:json)?\s*', '', text)
-            text = re.sub(r'\s*```$', '', text)
-
-        stats = json.loads(text)
-        print("  [LLM] Successfully received updated stats from Claude")
-        return stats
-
+        print("  [LLM] Got response from Claude")
+        return text
     except urllib.error.HTTPError as e:
         error_body = e.read().decode("utf-8", errors="replace")
-        print(f"  [LLM] API error {e.code}: {error_body[:200]}")
-        return None
-    except json.JSONDecodeError as e:
-        print(f"  [LLM] Failed to parse JSON response: {e}")
-        print(f"  [LLM] Raw text: {text[:300]}...")
+        print(f"  [LLM] Claude API error {e.code}: {error_body[:200]}")
         return None
     except Exception as e:
-        print(f"  [LLM] Failed: {e}")
+        print(f"  [LLM] Claude failed: {e}")
         return None
 
 
@@ -1238,7 +1319,7 @@ def update_data_json(news_items):
     # ---- LLM-POWERED STAT UPDATE (replaces regex scanners) ----
     # Instead of unreliable regex scanning, we ask Claude for current verified stats.
     # This runs once per day (controlled by GitHub Actions schedule).
-    llm_stats = llm_update_stats(days)
+    llm_stats = llm_update_stats(days, news_items=news_items, current_data=data)
     if llm_stats:
         print("  [LLM] Applying updated stats from Claude...")
         llm_updates = apply_llm_stats(data, llm_stats)
