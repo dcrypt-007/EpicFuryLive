@@ -504,74 +504,297 @@
         }
 
         /* COMBAT FOOTAGE */
-        .combat-footage {
+        /* ========== BLOG-STYLE VIDEO FEED ========== */
+        .live-layout {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 24px;
+            margin-top: 0;
+        }
+
+        @media (max-width: 960px) {
+            .live-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .video-feed {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .feed-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .feed-section-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        .feed-section-note {
+            font-size: 11px;
+            color: #64748b;
+        }
+
+        /* Featured (hero) video */
+        .video-card-featured {
             background: #111827;
             border: 1px solid #1e2a3a;
-            border-radius: 8px;
-            padding: 20px;
-            margin-top: 24px;
-        }
-
-        .combat-footage-title {
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 16px;
-            color: #e0e6ed;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .combat-footage-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 16px;
-        }
-
-        .video-card {
-            background: #0d1320;
-            border: 1px solid #1e2a3a;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
         }
 
-        .video-card iframe {
-            width: 100%;
-            aspect-ratio: 16 / 9;
+        .video-card-featured .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: #000;
+        }
+
+        .video-card-featured .video-embed iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
             border: none;
-            display: block;
         }
 
-        .video-card-info {
-            padding: 12px;
+        .video-card-featured .video-meta {
+            padding: 16px 20px;
         }
 
-        .video-card-title {
-            font-size: 13px;
+        .video-card-featured .video-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.3;
+            color: #e0e6ed;
+        }
+
+        .video-card-featured .video-desc {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .video-tag {
+            display: inline-block;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-right: 6px;
+        }
+
+        .tag-strike { background: #7f1d1d; color: #fca5a5; }
+        .tag-naval { background: #1e3a5f; color: #93c5fd; }
+        .tag-nuclear { background: #4a1d7f; color: #c4b5fd; }
+        .tag-evidence { background: #1a3a2f; color: #86efac; }
+        .tag-breaking { background: #ef4444; color: #fff; }
+        .tag-cyber { background: #1a3a3f; color: #67e8f9; }
+        .tag-featured { background: #ef4444; color: #fff; }
+
+        .video-source {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 8px;
+        }
+
+        /* Standard video cards (2-up grid) */
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 700px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .video-card {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .video-card:hover {
+            border-color: #334155;
+            transform: translateY(-2px);
+        }
+
+        .video-card .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: #000;
+        }
+
+        .video-card .video-embed iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+
+        .video-card .video-meta {
+            padding: 12px 14px;
+        }
+
+        .video-card .video-title {
+            font-size: 14px;
             font-weight: 600;
             color: #e0e6ed;
             margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .video-card .video-source {
+            font-size: 11px;
+            color: #64748b;
+        }
+
+        /* ========== LIVE SIDEBAR ========== */
+        .live-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-card {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .sidebar-card-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #1e2a3a;
+        }
+
+        .sidebar-headline-card {
+            background: linear-gradient(135deg, #1a1028 0%, #111827 100%);
+            border: 1px solid #2d1b69;
+        }
+
+        .sidebar-headline-text {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 8px;
+            color: #e0e6ed;
+        }
+
+        .sidebar-headline-confidence {
+            display: inline-block;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #166534;
+            color: #86efac;
+            font-weight: 600;
+        }
+
+        .sidebar-headline-sub {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 8px;
             line-height: 1.4;
         }
 
-        .video-card-meta {
-            font-size: 11px;
-            color: #64748b;
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
+        .sidebar-threat-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #1e2a3a;
         }
 
-        .video-category-tag {
+        .sidebar-threat-item:last-child { border-bottom: none; }
+
+        .sidebar-threat-severity {
             display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 10px;
-            font-weight: 600;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .sidebar-sev-critical { background: #ef4444; }
+        .sidebar-sev-high { background: #f59e0b; }
+
+        .sidebar-threat-actor {
+            font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            background: rgba(239, 68, 68, 0.15);
             color: #ef4444;
+            font-weight: 600;
+        }
+
+        .sidebar-threat-text {
+            font-size: 13px;
+            color: #cbd5e1;
+            margin-top: 2px;
+            line-height: 1.4;
+        }
+
+        .sidebar-threat-date {
+            font-size: 10px;
+            color: #475569;
+            margin-top: 4px;
+        }
+
+        .sidebar-dev-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #1e2a3a;
+            font-size: 13px;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+
+        .sidebar-dev-item:last-child { border-bottom: none; }
+
+        .sidebar-dev-time {
+            font-size: 10px;
+            color: #64748b;
+            font-family: 'SF Mono', ui-monospace, monospace;
+        }
+
+        .dashboard-full-link {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: #60a5fa;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+            cursor: pointer;
+        }
+
+        .dashboard-full-link:hover {
+            background: #334155;
         }
 
         .combat-footage-empty {
@@ -1421,6 +1644,7 @@
 
         <!-- TAB 1: LIVE -->
         <div id="live" class="tab-content active">
+            <!-- BANNER -->
             <div class="banner">
                 <div class="banner-date" id="bannerDay">DAY 7 — OPERATION EPIC FURY</div>
                 <div class="banner-status" id="bannerStats">
@@ -1431,80 +1655,107 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-title">
-                    Supreme Leader Khamenei Killed in Initial Strikes; Iranian Missile Capability Down 86%
-                    <span class="confidence-badge confidence-high">HIGH CONFIDENCE</span>
-                </div>
-                <div class="card-text">
-                    Supreme Leader Ayatollah Khamenei was killed on February 28, 2026, in the first wave of Operation Epic Fury strikes targeting Tehran. According to IDF intelligence and CENTCOM, he was at a command center when it was struck. Iran's government has not officially confirmed or denied his death, but regional intelligence sources and diaspora networks suggest the strike succeeded. Khamenei's death represents a major strategic blow to the Islamic Republic's continuity of command. Additionally, US and Israeli strikes have reduced Iranian ballistic missile launch capability by an estimated 86%, though this figure remains under independent verification.
-                </div>
-                <div class="card-source">
-                    Sources: CENTCOM briefing Mar 1 2026, IDF spokesperson, Reuters, intelligence assessments
-                </div>
-            </div>
+            <!-- BLOG-STYLE LAYOUT: VIDEO FEED + SIDEBAR -->
+            <div class="live-layout">
 
-            <!-- THREAT EXCHANGE -->
-            <div class="threat-exchange">
-                <div class="threat-exchange-title">
-                    Threat Exchange
-                </div>
-                <div class="threat-exchange-subtitle">All public threats, warnings, and ultimatums issued by parties to the conflict — chronological</div>
+                <!-- LEFT: VIDEO FEED -->
+                <div class="video-feed">
+                    <div class="feed-section-header">
+                        <div class="feed-section-title">Today's Key Coverage</div>
+                        <div class="feed-section-note">Curated daily</div>
+                    </div>
 
-                <div class="threat-filter-bar">
-                    <button class="threat-filter-btn active" onclick="filterThreats(this, 'all')">All</button>
-                    <button class="threat-filter-btn" onclick="filterThreats(this, 'us')">United States</button>
-                    <button class="threat-filter-btn" onclick="filterThreats(this, 'israel')">Israel</button>
-                    <button class="threat-filter-btn" onclick="filterThreats(this, 'iran')">Iran / IRGC</button>
-                    <button class="threat-filter-btn" onclick="filterThreats(this, 'proxy')">Proxies</button>
-                    <button class="threat-filter-btn" onclick="filterThreats(this, 'world')">Russia / China</button>
+                    <!-- Featured video (rendered from data.json) -->
+                    <div id="featuredVideoContainer">
+                        <!-- Rendered dynamically from data.json -->
+                    </div>
+
+                    <!-- More videos grid -->
+                    <div class="feed-section-header" style="margin-top:4px;">
+                        <div class="feed-section-title">More Coverage</div>
+                    </div>
+                    <div class="video-grid" id="videoGridContainer">
+                        <!-- Rendered dynamically from data.json -->
+                    </div>
+
+                    <!-- THREAT EXCHANGE (below videos) -->
+                    <div class="threat-exchange" style="margin-top:8px;">
+                        <div class="threat-exchange-title">Threat Exchange</div>
+                        <div class="threat-exchange-subtitle">All public threats, warnings, and ultimatums issued by parties to the conflict — chronological</div>
+                        <div class="threat-filter-bar">
+                            <button class="threat-filter-btn active" onclick="filterThreats(this, 'all')">All</button>
+                            <button class="threat-filter-btn" onclick="filterThreats(this, 'us')">United States</button>
+                            <button class="threat-filter-btn" onclick="filterThreats(this, 'israel')">Israel</button>
+                            <button class="threat-filter-btn" onclick="filterThreats(this, 'iran')">Iran / IRGC</button>
+                            <button class="threat-filter-btn" onclick="filterThreats(this, 'proxy')">Proxies</button>
+                            <button class="threat-filter-btn" onclick="filterThreats(this, 'world')">Russia / China</button>
+                        </div>
+                        <div id="threatList">
+                            <!-- Rendered dynamically from data.json -->
+                        </div>
+                    </div>
+
+                    <!-- HOMELAND THREATS -->
+                    <div class="homeland-threats">
+                        <div class="homeland-title">Homeland Threats</div>
+                        <div class="homeland-subtitle">Domestic security threats, sleeper cell reports, cyberattacks, and incidents linked or potentially linked to the conflict</div>
+                        <div id="homelandList">
+                            <!-- Rendered dynamically from data.json -->
+                        </div>
+                    </div>
+
+                    <!-- THEATER OF OPERATIONS -->
+                    <div style="margin-bottom: 24px;">
+                        <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">Theater of Operations</div>
+                        <div class="theater-grid" id="theaterGrid">
+                            <!-- Rendered dynamically from data.json -->
+                        </div>
+                    </div>
                 </div>
 
-                <div id="threatList">
-                    <!-- Rendered dynamically from data.json -->
-                </div>
-            </div>
+                <!-- RIGHT: SIDEBAR -->
+                <div class="live-sidebar">
 
-            <!-- HOMELAND THREATS -->
-            <div class="homeland-threats">
-                <div class="homeland-title">
-                    Homeland Threats
-                </div>
-                <div class="homeland-subtitle">Domestic security threats, sleeper cell reports, cyberattacks, and incidents linked or potentially linked to the conflict — verification status shown for each</div>
+                    <!-- KEY HEADLINE -->
+                    <div class="sidebar-card sidebar-headline-card">
+                        <div class="sidebar-card-title">Key Intelligence</div>
+                        <div class="sidebar-headline-text" id="sidebarHeadlineText">Supreme Leader Khamenei Killed in Initial Strikes; Iranian Missile Capability Down 86%</div>
+                        <span class="sidebar-headline-confidence" id="sidebarHeadlineConfidence">High Confidence</span>
+                        <div class="sidebar-headline-sub" id="sidebarHeadlineSub">According to IDF intelligence and CENTCOM, he was at a command center when it was struck. Iran's government has not officially confirmed or denied his death.</div>
+                    </div>
 
-                <div id="homelandList">
-                    <!-- Rendered dynamically from data.json -->
-                </div>
-            </div>
+                    <!-- LATEST DEVELOPMENTS (compact) -->
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-title">Live Developments</div>
+                        <div id="sidebarDevelopmentsList">
+                            <!-- Rendered dynamically from data.json -->
+                        </div>
+                    </div>
 
-            <div style="margin-bottom: 24px;">
-                <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">Theater of Operations</div>
-                <div class="theater-grid" id="theaterGrid">
-                    <!-- Rendered dynamically from data.json -->
-                </div>
-            </div>
+                    <!-- ACTIVE THREATS (compact) -->
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-title">Active Threats</div>
+                        <div id="sidebarThreatList">
+                            <!-- Rendered dynamically from data.json -->
+                        </div>
+                    </div>
 
-            <div class="latest-developments">
-                <div class="latest-title">Latest Developments</div>
-                <div id="developmentsList">
-                    <!-- Rendered dynamically from data.json -->
-                </div>
-            </div>
+                    <!-- WAR DOCUMENTATION -->
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-title">War Documentation</div>
+                        <div id="warDocList">
+                            <!-- Rendered dynamically from data.json -->
+                        </div>
+                    </div>
 
-            <div class="latest-developments" style="margin-top: 24px;">
-                <div class="latest-title">War Documentation</div>
-                <div class="war-doc-subtitle" style="font-size: 12px; color: #64748b; margin-bottom: 16px;">Verified strike reports, battle damage assessments, and conflict documentation from open sources</div>
-                <div id="warDocList">
-                    <!-- Rendered dynamically from data.json -->
+                    <!-- FULL DASHBOARD LINK -->
+                    <div class="dashboard-full-link" onclick="switchTab(document.querySelectorAll('.tab-button')[1], 'cost')">
+                        View Full Cost Dashboard &rarr;<br>
+                        <span style="font-weight:400;font-size:11px;color:#94a3b8;">Casualties · Costs · Evidence · Timeline</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="combat-footage">
-                <div class="combat-footage-title">Combat Footage</div>
-                <div class="combat-footage-grid" id="combatFootageGrid">
-                    <!-- Rendered dynamically from data.json -->
-                </div>
-            </div>
+            </div><!-- end .live-layout -->
         </div>
 
         <!-- TAB 2: THE COST -->
@@ -2382,6 +2633,37 @@
             }).join('\n');
         }
 
+        // Sidebar: compact developments (top 6)
+        function renderSidebarDevelopments(devs) {
+            const container = document.getElementById('sidebarDevelopmentsList');
+            if (!container || !devs) return;
+
+            container.innerHTML = devs.slice(0, 6).map(d => {
+                const dt = new Date(d.time);
+                const timeStr = dt.toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'UTC'}) + ' UTC';
+                return `<div class="sidebar-dev-item">
+                    <div class="sidebar-dev-time">${timeStr}</div>
+                    <div>${d.text}</div>
+                </div>`;
+            }).join('\n');
+        }
+
+        // Sidebar: compact threat feed (top 4)
+        function renderSidebarThreats(threats) {
+            const container = document.getElementById('sidebarThreatList');
+            if (!container || !threats) return;
+
+            container.innerHTML = threats.slice(0, 4).map(t => {
+                const sevClass = t.severity === 'critical' ? 'sidebar-sev-critical' : 'sidebar-sev-high';
+                return `<div class="sidebar-threat-item">
+                    <span class="sidebar-threat-severity ${sevClass}"></span>
+                    <span class="sidebar-threat-actor">${t.actor || ''}</span>
+                    <div class="sidebar-threat-text">${t.text || ''}</div>
+                    <div class="sidebar-threat-date">${t.date || ''}</div>
+                </div>`;
+            }).join('\n');
+        }
+
         function renderEvidence(evidence) {
             const container = document.getElementById('evidenceGrid');
             if (!container || !evidence) return;
@@ -2531,25 +2813,71 @@
         }
 
         function renderCombatFootage(videos) {
-            const container = document.getElementById('combatFootageGrid');
-            if (!container) return;
+            const featuredContainer = document.getElementById('featuredVideoContainer');
+            const gridContainer = document.getElementById('videoGridContainer');
+            if (!featuredContainer || !gridContainer) return;
+
             if (!videos || !videos.length) {
-                container.innerHTML = '<div class="combat-footage-empty">No combat footage added yet.</div>';
+                featuredContainer.innerHTML = '<div class="combat-footage-empty">No videos added yet. Add YouTube IDs to data.json to populate the feed.</div>';
+                gridContainer.innerHTML = '';
                 return;
             }
-            container.innerHTML = videos.map(v => {
-                const dateStr = v.date ? new Date(v.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
-                const catTag = v.category ? `<span class="video-category-tag">${v.category}</span>` : '';
+
+            // Category → tag class mapping
+            const tagMap = {
+                'missile strike': 'tag-strike', 'strike': 'tag-strike', 'airstrike': 'tag-strike',
+                'naval': 'tag-naval', 'naval engagement': 'tag-naval',
+                'nuclear': 'tag-nuclear',
+                'evidence': 'tag-evidence', 'bda': 'tag-evidence', 'satellite': 'tag-evidence',
+                'cyber': 'tag-cyber',
+                'breaking': 'tag-breaking'
+            };
+            function getTagClass(cat) {
+                if (!cat) return 'tag-strike';
+                return tagMap[cat.toLowerCase()] || 'tag-strike';
+            }
+
+            // Find featured video (first one marked featured:true, or just the first one)
+            let featured = videos.find(v => v.featured) || videos[0];
+            let others = videos.filter(v => v !== featured);
+
+            // Render featured video
+            const fStart = featured.startTime ? `?start=${featured.startTime}` : '';
+            const fDate = featured.date ? new Date(featured.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+            const fTagClass = getTagClass(featured.category);
+
+            featuredContainer.innerHTML = `
+                <div class="video-card-featured">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/${featured.youtubeId}${fStart}" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-meta">
+                        ${featured.category ? `<span class="video-tag ${fTagClass}">${featured.category}</span>` : ''}
+                        <span class="video-tag tag-featured">Featured</span>
+                        <div class="video-title" style="margin-top:8px;">${featured.title || 'Untitled'}</div>
+                        ${featured.description ? `<div class="video-desc">${featured.description}</div>` : ''}
+                        <div class="video-source">${featured.source || ''} ${fDate ? '· ' + fDate : ''}</div>
+                    </div>
+                </div>`;
+
+            // Render grid of other videos
+            if (others.length === 0) {
+                gridContainer.innerHTML = '<div class="combat-footage-empty" style="grid-column:1/-1;">Add more videos to data.json to populate this grid.</div>';
+                return;
+            }
+
+            gridContainer.innerHTML = others.map(v => {
                 const startParam = v.startTime ? `?start=${v.startTime}` : '';
+                const dateStr = v.date ? new Date(v.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+                const catClass = getTagClass(v.category);
                 return `<div class="video-card">
-                    <iframe src="https://www.youtube.com/embed/${v.youtubeId}${startParam}" allowfullscreen loading="lazy"></iframe>
-                    <div class="video-card-info">
-                        <div class="video-card-title">${v.title || 'Untitled'}</div>
-                        <div class="video-card-meta">
-                            ${catTag}
-                            ${v.source ? '<span>' + v.source + '</span>' : ''}
-                            ${dateStr ? '<span>' + dateStr + '</span>' : ''}
-                        </div>
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/${v.youtubeId}${startParam}" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-meta">
+                        ${v.category ? `<span class="video-tag ${catClass}">${v.category}</span>` : ''}
+                        <div class="video-title" style="margin-top:6px;">${v.title || 'Untitled'}</div>
+                        <div class="video-source">${v.source || ''} ${dateStr ? '· ' + dateStr : ''}</div>
                     </div>
                 </div>`;
             }).join('\n');
@@ -2663,9 +2991,11 @@
 
                     // Render dynamic sections
                     if (data.threats) renderThreats(data.threats);
+                    if (data.threats) renderSidebarThreats(data.threats);
                     if (data.homelandThreats) renderHomelandThreats(data.homelandThreats);
                     if (data.theaterOps) renderTheaterOps(data.theaterOps);
                     if (data.developments) renderDevelopments(data.developments);
+                    if (data.developments) renderSidebarDevelopments(data.developments);
                     if (data.warDocumentation) renderWarDocumentation(data.warDocumentation);
                     if (data.videos) renderCombatFootage(data.videos);
                     if (data.evidence) renderEvidence(data.evidence);
