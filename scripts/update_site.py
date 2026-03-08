@@ -55,29 +55,29 @@ CRITICAL RULES:
 
 Return ONLY valid JSON in this exact format (no markdown, no explanation, just the JSON object):
 
-{
-  "iranDeaths": {"value": 1045, "note": "Iranian Ministry of Health confirmed figure"},
-  "usKIA": {"value": 202, "note": "CENTCOM confirmed"},
-  "israeliDeaths": {"value": 1300, "note": "IDF spokesperson confirmed"},
-  "civilianDeaths": {"value": 148, "note": "Disputed - Iranian claim, US disputes"},
-  "iranWounded": {"value": 6000, "note": "Iranian Ministry reports"},
-  "gulfCasualties": {"value": 0, "note": "Source"},
-  "totalStrikes": {"value": 3700, "note": "CENTCOM confirmed total"},
-  "bannerKilled": {"value": 1045, "note": "Best estimate of total reported killed"},
+{{
+  "iranDeaths": {{"value": 1045, "note": "Iranian Ministry of Health confirmed figure"}},
+  "usKIA": {{"value": 202, "note": "CENTCOM confirmed"}},
+  "israeliDeaths": {{"value": 1300, "note": "IDF spokesperson confirmed"}},
+  "civilianDeaths": {{"value": 148, "note": "Disputed - Iranian claim, US disputes"}},
+  "iranWounded": {{"value": 6000, "note": "Iranian Ministry reports"}},
+  "gulfCasualties": {{"value": 0, "note": "Source"}},
+  "totalStrikes": {{"value": 3700, "note": "CENTCOM confirmed total"}},
+  "bannerKilled": {{"value": 1045, "note": "Best estimate of total reported killed"}},
   "newThreats": [
-    {
+    {{
       "actor": "IRAN (IRGC)",
       "severity": "critical",
       "text": "Brief description of the threat",
       "target": "Target: US / Israel",
       "source": "Source: Reuters"
-    }
+    }}
   ],
   "newDevelopments": [
     "One-line summary of a key recent development"
   ],
   "summary": "One paragraph overall situation summary for today"
-}
+}}
 
 Today's date is {today}. It is Day {day_count} of the conflict."""
 
