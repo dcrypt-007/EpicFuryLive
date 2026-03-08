@@ -1506,7 +1506,7 @@
                     <div class="line"></div>
                 </div>
                 <div class="briefing-card" id="briefingContent">
-                    <!-- Rendered dynamically from data.summary -->
+                    <span style="color:#64748b;font-style:italic;">AI briefing will appear after the next automated update cycle.</span>
                 </div>
             </div>
 
@@ -2312,9 +2312,188 @@
             }).join('<br><br>');
         }
 
-        // Chart initialization stubs (kept for compatibility)
-        function initCasualtiesChart() {}
-        function initTrendsCharts() {}
+        // Chart defaults
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.borderColor = '#1e2a3a';
+        Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+
+        // Casualties breakdown bar chart (from data.json chartData)
+        function initCasualtiesChart() {
+            const canvas = document.getElementById('casualtiesChart');
+            if (!canvas || !window._chartData) return;
+            const cd = window._chartData;
+            if (!cd.dates || !cd.iranDeaths) return;
+
+            if (window._casualtiesChartInstance) window._casualtiesChartInstance.destroy();
+            window._casualtiesChartInstance = new Chart(canvas.getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: cd.dates,
+                    datasets: [
+                        {
+                            label: 'Iranian Deaths (daily)',
+                            data: cd.iranDeaths,
+                            backgroundColor: '#ef4444',
+                            borderRadius: 3
+                        },
+                        {
+                            label: 'Other Deaths (daily)',
+                            data: cd.otherDeaths || cd.dates.map(() => 0),
+                            backgroundColor: '#f59e0b',
+                            borderRadius: 3
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { boxWidth: 12, padding: 16 } },
+                        title: { display: true, text: 'Daily Casualty Reports by Date', color: '#e0e6ed', font: { size: 14, weight: 600 } }
+                    },
+                    scales: {
+                        x: { grid: { display: false } },
+                        y: { beginAtZero: true, grid: { color: '#1e2a3a' } }
+                    }
+                }
+            });
+        }
+
+        // Trends + Cost charts (from history.json dailySummaries)
+        function initTrendsCharts() {
+            fetch('/history.json?t=' + Date.now())
+                .then(r => r.json())
+                .then(hist => {
+                    const sums = hist.dailySummaries;
+                    if (!sums || sums.length < 2) return;
+
+                    const labels = sums.map(s => s.date.replace('2026-', ''));
+                    const parseNum = (v) => parseInt(String(v).replace(/[^0-9]/g, ''), 10) || 0;
+
+                    // --- Cumulative Casualties Trend ---
+                    const trendsCanvas = document.getElementById('trendsChart');
+                    if (trendsCanvas) {
+                        const iranData = sums.map(s => parseNum(s.iranDeaths));
+                        const usData = sums.map(s => parseNum(s.usKIA));
+                        const isrData = sums.map(s => parseNum(s.israeliDeaths));
+
+                        if (window._trendsChartInstance) window._trendsChartInstance.destroy();
+                        window._trendsChartInstance = new Chart(trendsCanvas.getContext('2d'), {
+                            type: 'line',
+                            data: {
+                                labels: labels,
+                                datasets: [
+                                    {
+                                        label: 'Iranian Deaths (reported)',
+                                        data: iranData,
+                                        borderColor: '#ef4444',
+                                        backgroundColor: '#ef444420',
+                                        fill: true,
+                                        tension: 0.3,
+                                        pointRadius: 4,
+                                        pointBackgroundColor: '#ef4444'
+                                    },
+                                    {
+                                        label: 'US KIA',
+                                        data: usData,
+                                        borderColor: '#3b82f6',
+                                        backgroundColor: '#3b82f620',
+                                        fill: true,
+                                        tension: 0.3,
+                                        pointRadius: 4,
+                                        pointBackgroundColor: '#3b82f6'
+                                    },
+                                    {
+                                        label: 'Israeli Deaths',
+                                        data: isrData,
+                                        borderColor: '#06b6d4',
+                                        backgroundColor: '#06b6d420',
+                                        fill: true,
+                                        tension: 0.3,
+                                        pointRadius: 4,
+                                        pointBackgroundColor: '#06b6d4'
+                                    }
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: { position: 'top', labels: { boxWidth: 12, padding: 16 } },
+                                    title: { display: true, text: 'Cumulative Casualties Over Time (All Parties)', color: '#e0e6ed', font: { size: 14, weight: 600 } },
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(ctx) {
+                                                return ctx.dataset.label + ': ' + ctx.parsed.y.toLocaleString();
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    x: { grid: { display: false } },
+                                    y: { beginAtZero: true, grid: { color: '#1e2a3a' }, ticks: { callback: v => v.toLocaleString() } }
+                                }
+                            }
+                        });
+                    }
+
+                    // --- Cost Escalation Trend ---
+                    const costCanvas = document.getElementById('costTrendChart');
+                    if (costCanvas) {
+                        const costData = sums.map(s => {
+                            const str = s.totalCost || '0';
+                            if (str.toLowerCase().includes('billion')) {
+                                const m = str.match(/([\d.]+)/);
+                                return m ? parseFloat(m[1]) : 0;
+                            }
+                            return parseNum(str) / 1000000000;
+                        });
+
+                        if (window._costTrendInstance) window._costTrendInstance.destroy();
+                        window._costTrendInstance = new Chart(costCanvas.getContext('2d'), {
+                            type: 'line',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    label: 'Estimated Total Cost ($B)',
+                                    data: costData,
+                                    borderColor: '#f59e0b',
+                                    backgroundColor: '#f59e0b20',
+                                    fill: true,
+                                    tension: 0.3,
+                                    pointRadius: 5,
+                                    pointBackgroundColor: '#f59e0b',
+                                    borderWidth: 3
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: { display: false },
+                                    title: { display: true, text: 'Estimated Cost Escalation ($B)', color: '#e0e6ed', font: { size: 14, weight: 600 } },
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(ctx) {
+                                                return '$' + ctx.parsed.y.toFixed(1) + ' billion';
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    x: { grid: { display: false } },
+                                    y: {
+                                        beginAtZero: true,
+                                        grid: { color: '#1e2a3a' },
+                                        ticks: { callback: v => '$' + v + 'B' }
+                                    }
+                                }
+                            }
+                        });
+                    }
+                })
+                .catch(e => console.warn('History chart load failed:', e));
+        }
 
         // Load live data
         function loadLiveData() {
@@ -2323,6 +2502,11 @@
                 .then(data => {
                     // Update Conflict Dashboard
                     renderDashboardStats(data);
+
+                    // Store chart data for Cost tab charts
+                    if (data.humanCost && data.humanCost.chartData) {
+                        window._chartData = data.humanCost.chartData;
+                    }
 
                     // Update Cost tab elements
                     const hc = data.humanCost;
