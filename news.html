@@ -718,11 +718,30 @@
                 const response = await fetch('/data.json');
                 const data = await response.json();
 
-                if (data.newsFeed && Array.isArray(data.newsFeed)) {
+                if (data.newsFeed && Array.isArray(data.newsFeed) && data.newsFeed.length > 0) {
                     allHeadlines = data.newsFeed;
                     renderHeadlines();
+                } else if (data.developments && Array.isArray(data.developments) && data.developments.length > 0) {
+                    // Fallback: convert developments to newsFeed format
+                    allHeadlines = data.developments.map(dev => {
+                        const titleMatch = dev.text.match(/<strong>(.*?)<\/strong>/);
+                        const title = titleMatch ? titleMatch[1] : dev.text.replace(/<[^>]+>/g, '').substring(0, 120);
+                        const descMatch = dev.text.match(/<\/strong>\s*--\s*(.*?)(?:<span|$)/);
+                        const desc = descMatch ? descMatch[1].trim() : '';
+                        const sourceMatch = dev.text.match(/\[(.*?)\]/);
+                        const source = sourceMatch ? sourceMatch[1] : 'Al Jazeera';
+                        return {
+                            title: title,
+                            description: desc,
+                            link: '',
+                            source: source,
+                            time: dev.time,
+                            tier: 2
+                        };
+                    });
+                    renderHeadlines();
                 } else {
-                    document.getElementById('headlinesList').innerHTML = '<div style="color: #64748b; text-align: center; padding: 24px;">No headlines available</div>';
+                    document.getElementById('headlinesList').innerHTML = '<div style="color: #64748b; text-align: center; padding: 24px;">No headlines available yet. Headlines will appear after the next hourly update.</div>';
                 }
             } catch (error) {
                 console.error('Error loading headlines:', error);

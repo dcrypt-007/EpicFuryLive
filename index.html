@@ -1555,7 +1555,7 @@
                     </div>
 
                     <div class="counter-item">
-                        <div class="counter-number" id="usKIA">6</div>
+                        <div class="counter-number" id="usKIA">202</div>
                         <div class="counter-name">US Military KIA</div>
                         <div class="counter-note" id="usKIANote">
                             6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.
@@ -1563,7 +1563,7 @@
                     </div>
 
                     <div class="counter-item">
-                        <div class="counter-number" id="israeliDeaths">11</div>
+                        <div class="counter-number" id="israeliDeaths">1,300</div>
                         <div class="counter-name">Israeli Deaths</div>
                         <div class="counter-note" id="israeliDeathsNote">
                             Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.
@@ -1622,10 +1622,10 @@
                     <div class="cost-section-title">Financial Cost</div>
 
                     <div style="margin-bottom: 24px;">
-                        <div class="counter" id="totalCost">$4.0 billion+</div>
-                        <div class="counter-label" id="totalCostLabel">Total Estimated Cost (6 days)</div>
+                        <div class="counter" id="totalCost">$11.7 billion+</div>
+                        <div class="counter-label" id="totalCostLabel">Total Estimated Cost (8 days)</div>
                         <div style="font-size: 13px; color: #94a3b8; border-bottom: 1px solid #1e2a3a; padding-bottom: 16px;">
-                            <strong id="dailyBurnRate">Daily burn rate: ~$663M/day</strong><br>
+                            <strong id="dailyBurnRate">Daily burn rate: ~$1.5B/day</strong><br>
                             Includes all military operations, logistics, personnel, equipment expenditure.
                         </div>
                     </div>
@@ -1974,13 +1974,19 @@
 
             let html = '';
             developments.slice(0, 8).forEach(dev => {
-                const time = new Date(dev.timestamp).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-                html += `<div class="ticker-item"><span class="time">${time}</span> ${dev.headline}</div>`;
+                const time = new Date(dev.time).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC' });
+                // dev.text contains HTML like "<strong>Title</strong> -- Description <span>source</span>"
+                // Extract just the title for the ticker
+                const titleMatch = dev.text.match(/<strong>(.*?)<\/strong>/);
+                const title = titleMatch ? titleMatch[1] : dev.text.replace(/<[^>]+>/g, '').substring(0, 100);
+                html += `<div class="ticker-item"><span class="time">${time}</span> ${title}</div>`;
             });
             // Duplicate for seamless scroll
             developments.slice(0, 8).forEach(dev => {
-                const time = new Date(dev.timestamp).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-                html += `<div class="ticker-item"><span class="time">${time}</span> ${dev.headline}</div>`;
+                const time = new Date(dev.time).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC' });
+                const titleMatch = dev.text.match(/<strong>(.*?)<\/strong>/);
+                const title = titleMatch ? titleMatch[1] : dev.text.replace(/<[^>]+>/g, '').substring(0, 100);
+                html += `<div class="ticker-item"><span class="time">${time}</span> ${title}</div>`;
             });
             container.innerHTML = html;
         }
@@ -2282,11 +2288,67 @@
             fetch('/data.json?t=' + Date.now())
                 .then(r => r.json())
                 .then(data => {
+                    // Update Conflict Dashboard
                     renderDashboardStats(data);
+
+                    // Update Cost tab elements
+                    const hc = data.humanCost;
+                    if (hc) {
+                        const costUpdates = [
+                            ['iranCounter', hc.iranDeaths],
+                            ['usKIA', hc.usKIA],
+                            ['israeliDeaths', hc.israeliDeaths],
+                            ['gulfCasualties', hc.gulfCasualties],
+                            ['iranWounded', hc.iranWounded],
+                            ['civilianDeaths', hc.civilianDeaths]
+                        ];
+                        costUpdates.forEach(([id, val]) => {
+                            const el = document.getElementById(id);
+                            if (el && val) el.textContent = val;
+                        });
+                        // Update notes
+                        const noteUpdates = [
+                            ['iranDeathsNote', hc.iranDeathsNote],
+                            ['usKIANote', hc.usKIANote],
+                            ['israeliDeathsNote', hc.israeliDeathsNote],
+                            ['gulfCasualtiesNote', hc.gulfCasualtiesNote],
+                            ['iranWoundedNote', hc.iranWoundedNote],
+                            ['civilianDeathsNote', hc.civilianDeathsNote]
+                        ];
+                        noteUpdates.forEach(([id, val]) => {
+                            const el = document.getElementById(id);
+                            if (el && val) el.textContent = val;
+                        });
+                    }
+
+                    // Financial cost
+                    const fc = data.financialCost;
+                    if (fc) {
+                        const tc = document.getElementById('totalCost');
+                        if (tc && fc.totalCost) tc.textContent = fc.totalCost;
+                        const tcl = document.getElementById('totalCostLabel');
+                        if (tcl && fc.daysOfOps) tcl.textContent = 'Total Estimated Cost (' + fc.daysOfOps + ' days)';
+                        const dbr = document.getElementById('dailyBurnRate');
+                        if (dbr && fc.dailyBurnRate) dbr.textContent = 'Daily burn rate: ' + fc.dailyBurnRate;
+                    }
+
+                    // Last updated timestamp
+                    if (data.lastUpdated) {
+                        const d = new Date(data.lastUpdated);
+                        const formatted = d.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }) + ' ' +
+                            d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC' }) + ' UTC';
+                        const lu = document.getElementById('lastUpdated');
+                        if (lu) lu.textContent = formatted;
+                        const slu = document.getElementById('siteLastUpdated');
+                        if (slu) { slu.textContent = formatted; slu.setAttribute('datetime', data.lastUpdated); }
+                    }
+
+                    // Render other dynamic sections
                     if (data.evidence) renderEvidence(data.evidence);
                     if (data.claims) renderClaims(data.claims);
                     if (data.financialCost && data.financialCost.breakdown) renderBreakdown(data.financialCost.breakdown);
                     if (data.financialCost && data.financialCost.projections) renderProjections(data.financialCost.projections);
+
                     console.log('Live data refreshed at', new Date().toISOString());
                 })
                 .catch(e => console.warn('Live data fetch failed:', e));
