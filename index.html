@@ -6,17 +6,17 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Epic Fury Live — US-Iran War Tracker | Live Updates, Casualties & Evidence</title>
-    <meta name="description" content="Live tracking of the US-Israel-Iran conflict. Real-time strike map, verified casualties, financial cost, timeline of how we got here, and the evidence behind it all.">
+    <title>Epic Fury Live — US-Iran War Dashboard | Live Conflict Tracker</title>
+    <meta name="description" content="Live conflict dashboard tracking the 2026 US-Israel-Iran war. Real-time casualty figures, financial cost clock, military scoreboard, and verified intelligence.">
 
     <!-- Social sharing (iMessage, Twitter, Facebook, etc.) -->
-    <meta property="og:title" content="Epic Fury Live — US-Iran War Tracker">
-    <meta property="og:description" content="Live conflict dashboard: strike map, verified casualties, the cost, how we got here, and the evidence. Updated daily.">
+    <meta property="og:title" content="Epic Fury Live — US-Iran War Dashboard | Live Conflict Tracker">
+    <meta property="og:description" content="Live conflict dashboard tracking the 2026 US-Israel-Iran war. Casualty figures, cost clock, military scoreboard, and verified intelligence.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.epicfurylive.com/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Epic Fury Live — US-Iran War Tracker">
-    <meta name="twitter:description" content="Live conflict dashboard tracking the US-Israel-Iran war. Strike map, casualties, costs, and evidence.">
+    <meta name="twitter:title" content="Epic Fury Live — US-Iran War Dashboard | Live Conflict Tracker">
+    <meta name="twitter:description" content="Live conflict dashboard tracking the 2026 US-Israel-Iran war. Casualty figures, cost clock, military scoreboard, and verified intelligence.">
 
     <!-- SEO -->
     <meta name="keywords" content="US Iran war, Iran conflict, Operation Epic Fury, Iran strikes, US Iran tracker, Iran war dashboard, Iran casualties, Iran nuclear evidence, Iran sleeper cells, Strait of Hormuz, Iran war map">
@@ -1918,6 +1918,14 @@
         }
 
         // TAB SWITCHING
+        // SEO-friendly page titles per tab
+        const TAB_TITLES = {
+            'dashboard': 'Epic Fury Live — US-Iran War Dashboard | Live Conflict Tracker',
+            'cost':      'Cost of the Iran War — Casualties, Spending & Burn Rate | Epic Fury Live',
+            'history':   'US-Iran Conflict Timeline — From JCPOA to Operation Epic Fury',
+            'evidence':  'Iran War Evidence — Verified Claims & Intelligence | Epic Fury Live'
+        };
+
         function switchTab(button, tabId) {
             document.querySelectorAll('.tab-content').forEach(tab => {
                 tab.classList.remove('active');
@@ -1927,6 +1935,11 @@
             });
             document.getElementById(tabId).classList.add('active');
             button.classList.add('active');
+
+            // Update page title for SEO and browser tab
+            if (TAB_TITLES[tabId]) {
+                document.title = TAB_TITLES[tabId];
+            }
 
             if (tabId === 'cost') {
                 animateCounters();
