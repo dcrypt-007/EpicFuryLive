@@ -42,11 +42,12 @@ import math
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
-LLM_STATS_PROMPT = """You are a data extraction assistant for a war tracker website. This is a REAL, ONGOING conflict.
+LLM_STATS_PROMPT = """You are a military analyst updating a live war tracker. This is a REAL, ONGOING conflict — the US-Israel-Iran war that began February 28, 2026 (Operation Epic Fury). Today is {today}, Day {day_count}.
 
-Today is {today}, Day {day_count} of the US-Israel-Iran military conflict (which began February 28, 2026).
-
-Below are the CURRENT values on our tracker, followed by today's latest news headlines from RSS feeds. Your job is to extract any UPDATED casualty figures, strike counts, or new threats from the headlines. If a headline mentions a specific number that updates one of our tracked fields, provide the new value. If no headline provides a clear update for a field, return null for that field (meaning keep the current value).
+Below are our tracker's CURRENT values and today's RSS headlines. Your job:
+1. Use the headlines AND your own knowledge of this conflict to provide the best current estimates
+2. If you know a figure has changed since our current value, provide the updated number
+3. If you're unsure or have no new information for a field, return null (keep current value)
 
 CURRENT TRACKER VALUES:
 {current_values}
@@ -54,26 +55,27 @@ CURRENT TRACKER VALUES:
 TODAY'S NEWS HEADLINES:
 {headlines}
 
-Based on these headlines, extract any updated numbers. CRITICAL RULES:
-- Only update a field if a headline clearly states a new, higher number
-- All casualty numbers are CUMULATIVE totals — they only go up
-- If no headline mentions a specific field, use null (keep current value)
-- For bannerKilled, use the best total estimate across all parties
-- For newThreats, extract any clearly stated military threats from headlines
+CRITICAL RULES:
+- All casualty numbers are CUMULATIVE totals — they only go up, never down
+- If our current value seems outdated or too low based on what you know, provide an updated number
+- If a headline explicitly mentions a new figure, use that
+- For iranDeaths: Iranian government, HRANA, and Western sources all report different numbers. Use the most credible mid-range estimate you can find. Our current value may be outdated.
+- For bannerKilled: this should be the total killed across ALL parties (Iran + US + Israel + Gulf + civilians)
+- For newThreats: extract any clearly stated military threats from headlines
 - Return ONLY valid JSON, no markdown, no explanation
 
 Return this exact JSON structure:
 {{
-  "iranDeaths": {{"value": null, "note": "source headline or null if unchanged"}},
-  "usKIA": {{"value": null, "note": "source headline or null if unchanged"}},
-  "israeliDeaths": {{"value": null, "note": "source headline or null if unchanged"}},
-  "civilianDeaths": {{"value": null, "note": "source headline or null if unchanged"}},
-  "iranWounded": {{"value": null, "note": "source headline or null if unchanged"}},
-  "gulfCasualties": {{"value": null, "note": "source headline or null if unchanged"}},
-  "totalStrikes": {{"value": null, "note": "source headline or null if unchanged"}},
-  "bannerKilled": {{"value": null, "note": "source headline or null if unchanged"}},
+  "iranDeaths": {{"value": null, "note": "source or reasoning"}},
+  "usKIA": {{"value": null, "note": "source or reasoning"}},
+  "israeliDeaths": {{"value": null, "note": "source or reasoning"}},
+  "civilianDeaths": {{"value": null, "note": "source or reasoning"}},
+  "iranWounded": {{"value": null, "note": "source or reasoning"}},
+  "gulfCasualties": {{"value": null, "note": "source or reasoning"}},
+  "totalStrikes": {{"value": null, "note": "source or reasoning"}},
+  "bannerKilled": {{"value": null, "note": "total across all parties"}},
   "newThreats": [],
-  "summary": "One paragraph summary of today's key developments based on the headlines"
+  "summary": "One paragraph summary of today's key developments"
 }}"""
 
 
