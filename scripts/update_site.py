@@ -42,12 +42,7 @@ import math
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
-LLM_STATS_PROMPT = """You are a military analyst updating a live war tracker. This is a REAL, ONGOING conflict — the US-Israel-Iran war that began February 28, 2026 (Operation Epic Fury). Today is {today}, Day {day_count}.
-
-Below are our tracker's CURRENT values and today's RSS headlines. Your job:
-1. Use the headlines AND your own knowledge of this conflict to provide the best current estimates
-2. If you know a figure has changed since our current value, provide the updated number
-3. If you're unsure or have no new information for a field, return null (keep current value)
+LLM_STATS_PROMPT = """You are a military analyst updating a live war tracker for the 2026 US-Israel-Iran war (Operation Epic Fury), which began February 28, 2026. Today is {today}, Day {day_count}.
 
 CURRENT TRACKER VALUES:
 {current_values}
@@ -55,13 +50,24 @@ CURRENT TRACKER VALUES:
 TODAY'S NEWS HEADLINES:
 {headlines}
 
-CRITICAL RULES:
-- All casualty numbers are CUMULATIVE totals — they only go up, never down
-- If our current value seems outdated or too low based on what you know, provide an updated number
-- If a headline explicitly mentions a new figure, use that
-- For iranDeaths: Iranian government, HRANA, and Western sources all report different numbers. Use the most credible mid-range estimate you can find. Our current value may be outdated.
-- For bannerKilled: this should be the total killed across ALL parties (Iran + US + Israel + Gulf + civilians)
-- For newThreats: extract any clearly stated military threats from headlines
+YOUR JOB: Update ALL casualty and strike figures using headlines + your own knowledge. This is a real, active war — numbers change daily. You MUST provide your best estimate for EVERY field. Do NOT return null unless you have zero information about a field. Returning null means the tracker stays frozen, which is unacceptable for a live war tracker.
+
+FIELD-SPECIFIC GUIDANCE:
+- iranDeaths: This is the MOST IMPORTANT field. Multiple sources report different numbers: Iran MOH (~1,000-2,000), HRANA opposition group (~5,000-7,000), Trump admin (~30,000+). Use a credible mid-range estimate. After {day_count} days of heavy bombing including ~3,700 strikes on a country of 88 million people, the death toll is certainly growing daily. If our current value seems stale or low, INCREASE it with your best estimate. Do NOT leave this null.
+- usKIA: US military killed in action. Check headlines for any new incidents. Even without specific headlines, ongoing operations produce casualties.
+- israeliDeaths: Israeli military and civilian deaths from Iranian retaliation and Hezbollah attacks.
+- civilianDeaths: Disputed Iranian civilian casualties from strikes on non-military targets.
+- iranWounded: Iranian wounded — typically 3-5x the death count in modern conflicts.
+- gulfCasualties: Deaths in Gulf states (UAE, Saudi, Kuwait, Bahrain) from Iranian retaliation.
+- totalStrikes: Combined US-Israeli strikes. This number grows daily as operations continue.
+- bannerKilled: TOTAL killed across ALL parties (Iran + US + Israel + Gulf + civilians). Sum of all death figures.
+
+RULES:
+- All numbers are CUMULATIVE — they only go up, never down
+- You MUST return a numeric value for iranDeaths, usKIA, israeliDeaths, and totalStrikes — these are critical
+- If a headline mentions a specific new number, use it
+- If no headline mentions a field but the war is ongoing, estimate a reasonable daily increase
+- For newThreats: extract clearly stated military threats from headlines
 - Return ONLY valid JSON, no markdown, no explanation
 
 Return this exact JSON structure:
@@ -85,8 +91,8 @@ def llm_update_stats(days, news_items=None, current_data=None):
     Feeds the LLM current tracker values + fresh RSS headlines as context.
     Returns a dict of updated stats, or None if the API call fails.
     """
-    if not ANTHROPIC_API_KEY:
-        print("  [LLM] No ANTHROPIC_API_KEY set — skipping LLM stat update")
+    if not OPENAI_API_KEY and not ANTHROPIC_API_KEY:
+        print("  [LLM] No API keys set — skipping LLM stat update")
         return None
 
     now = datetime.now(timezone.utc)
@@ -366,6 +372,41 @@ RSS_FEEDS = [
         "url": "https://news.google.com/rss/search?q=Iran+casualties+OR+%22death+toll%22+OR+killed+airstrikes&hl=en-US&gl=US&ceid=US:en",
         "keywords": ["iran", "killed", "death toll", "casualties", "dead", "wounded", "deaths",
                      "strike", "airstrike", "civilian"],
+        "tier": 2
+    },
+    {
+        "name": "Reuters - World",
+        "url": "https://news.google.com/rss/search?q=site:reuters.com+iran+war+OR+strike+OR+conflict&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
+                     "houthi", "irgc", "epic fury", "pentagon", "centcom", "casualties"],
+        "tier": 1
+    },
+    {
+        "name": "AP News",
+        "url": "https://news.google.com/rss/search?q=site:apnews.com+iran+war+OR+strike+OR+military&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear",
+                     "pentagon", "centcom", "casualties", "military"],
+        "tier": 1
+    },
+    {
+        "name": "France 24",
+        "url": "https://news.google.com/rss/search?q=site:france24.com+iran+war+OR+strike&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "tehran", "strike", "killed", "hezbollah", "middle east",
+                     "nuclear", "war"],
+        "tier": 2
+    },
+    {
+        "name": "Times of Israel",
+        "url": "https://news.google.com/rss/search?q=site:timesofisrael.com+iran+OR+hezbollah+OR+strike&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "tehran", "strike", "hezbollah", "idf", "israel",
+                     "missile", "nuclear", "killed"],
+        "tier": 2
+    },
+    {
+        "name": "Stars and Stripes",
+        "url": "https://news.google.com/rss/search?q=site:stripes.com+iran+OR+centcom+OR+navy&hl=en-US&gl=US&ceid=US:en",
+        "keywords": ["iran", "centcom", "navy", "military", "troops", "strike",
+                     "pentagon", "deployed"],
         "tier": 2
     },
 ]
@@ -1399,6 +1440,41 @@ def update_data_json(news_items):
             print(f"  Injected {len(new_devs)} RSS items into developments (total: {len(data['developments'])})")
     else:
         print("  No new RSS items -- keeping existing developments")
+
+    # ---- BUILD NEWS FEED ----
+    # Save full RSS items for the News Feed page (separate from developments)
+    if news_items:
+        new_feed = []
+        for item in news_items[:100]:  # Keep up to 100 items
+            try:
+                dt = parsedate_to_datetime(item.get("pubDate", ""))
+            except Exception:
+                dt = now
+            new_feed.append({
+                "title": item["title"],
+                "description": item.get("description", "")[:300],
+                "link": item.get("link", ""),
+                "source": item.get("source", "Unknown"),
+                "time": dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "tier": item.get("tier", 2)
+            })
+        # Sort by time, newest first
+        new_feed.sort(key=lambda x: x["time"], reverse=True)
+        # Deduplicate by title similarity
+        seen_titles = set()
+        unique_feed = []
+        for item in new_feed:
+            title_key = item["title"].lower()[:60]
+            if title_key not in seen_titles:
+                seen_titles.add(title_key)
+                unique_feed.append(item)
+        data["newsFeed"] = unique_feed[:80]  # Cap at 80
+        print(f"  Saved {len(data['newsFeed'])} items to newsFeed")
+
+    # ---- SAVE LLM SUMMARY ----
+    if llm_stats and llm_stats.get("summary"):
+        data["summary"] = llm_stats["summary"]
+        print(f"  Saved LLM summary to data.json")
 
     # ---- WRITE DATA.JSON ----
     # Use ensure_ascii=True so all non-ASCII chars become \uXXXX escapes.
