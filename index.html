@@ -13,14 +13,14 @@
     <meta property="og:title" content="Epic Fury Live — US-Iran War Tracker">
     <meta property="og:description" content="Live conflict dashboard: strike map, verified casualties, the cost, how we got here, and the evidence. Updated daily.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.epicfurylive.com">
+    <meta property="og:url" content="https://www.epicfurylive.com/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Epic Fury Live — US-Iran War Tracker">
     <meta name="twitter:description" content="Live conflict dashboard tracking the US-Israel-Iran war. Strike map, casualties, costs, and evidence.">
 
     <!-- SEO -->
     <meta name="keywords" content="US Iran war, Iran conflict, Operation Epic Fury, Iran strikes, US Iran tracker, Iran war dashboard, Iran casualties, Iran nuclear evidence, Iran sleeper cells, Strait of Hormuz, Iran war map">
-    <link rel="canonical" href="https://www.epicfurylive.com">
+    <link rel="canonical" href="https://www.epicfurylive.com/">
     <link rel="alternate" type="application/rss+xml" title="Epic Fury Live RSS" href="https://www.epicfurylive.com/rss.xml">
 
     <!-- Structured Data -->
@@ -30,12 +30,7 @@
         "@type": "WebSite",
         "name": "Epic Fury Live",
         "url": "https://www.epicfurylive.com",
-        "description": "Live open-source intelligence dashboard tracking the US-Israel-Iran conflict (Operation Epic Fury / Roaring Lion). Real-time strike map, verified casualties, threat exchange, homeland security, and evidence.",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.epicfurylive.com/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+        "description": "Live open-source intelligence dashboard tracking the US-Israel-Iran conflict (Operation Epic Fury / Roaring Lion). Casualties, cost tracking, evidence, and timeline."
     }
     </script>
     <script type="application/ld+json">
@@ -78,17 +73,6 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.epicfurylive.com" },
-            { "@type": "ListItem", "position": 2, "name": "Methodology", "item": "https://www.epicfurylive.com/methodology.html" },
-            { "@type": "ListItem", "position": 3, "name": "Glossary", "item": "https://www.epicfurylive.com/glossary.html" }
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
@@ -96,7 +80,7 @@
                 "name": "What is Operation Epic Fury?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Confirmed: Operation Epic Fury is the US military codename for the joint US-Israeli strikes on Iran that began February 28, 2026. Israel's codename is Operation Roaring Lion. The campaign targets Iran's nuclear facilities, ballistic missile infrastructure, and military command centers. (Source: CENTCOM, White House. As of March 5, 2026.)"
+                    "text": "Operation Epic Fury is the US military codename for the joint US-Israeli strikes on Iran that began February 28, 2026. Israel's parallel operation is codenamed Roaring Lion. The campaign targets Iran's nuclear facilities, ballistic missile infrastructure, and military command centers. Sources: CENTCOM, White House."
                 }
             },
             {
@@ -104,7 +88,7 @@
                 "name": "How many casualties in the Iran war?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Reported (figures vary by source): As of March 5, 2026, over 1,045 deaths have been reported from US-Israeli strikes according to the Human Rights Activists News Agency (Tier 2 source). Iran claims 1,700+ killed (unverified). Casualty figures remain under independent verification and may change significantly. Iranian retaliation has killed dozens in Gulf states per local authorities. This tracker distinguishes confirmed from unconfirmed casualty reports."
+                    "text": "Casualty figures are disputed and vary widely by source. Iran's Ministry of Health, opposition groups (HRANA), and the US administration report significantly different numbers. This tracker distinguishes between confirmed, reported, and disputed casualty figures. See the live dashboard for the latest numbers and sourcing."
                 }
             },
             {
@@ -112,7 +96,7 @@
                 "name": "Was Khamenei killed?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Confirmed (high confidence): CENTCOM confirmed on March 1, 2026 that Supreme Leader Ayatollah Ali Khamenei was killed in the initial wave of Operation Epic Fury strikes on Tehran on February 28. Iran has not officially confirmed or denied his death. Multiple Tier 1 intelligence sources assess with high confidence the strike succeeded. (Sources: CENTCOM briefing, IDF spokesperson, Reuters. As of March 5, 2026.)"
+                    "text": "CENTCOM confirmed that Supreme Leader Ayatollah Ali Khamenei was killed in the initial wave of strikes on Tehran on February 28, 2026. Iran has not officially confirmed or denied. Multiple Tier 1 sources assess with high confidence the strike succeeded. Sources: CENTCOM briefing, IDF spokesperson, Reuters."
                 }
             },
             {
@@ -120,7 +104,7 @@
                 "name": "Are there Iran sleeper cells in the US?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Reported (monitoring): US intelligence has documented Hezbollah operatives and Iran-linked cells in multiple US cities including Houston, Los Angeles, Boston, Portland, and Louisville. Following Operation Epic Fury, FBI Director Kash Patel mobilized counterterrorism teams nationwide. As of March 5, 2026, no confirmed sleeper cell activations have been reported, but the FBI is conducting heightened surveillance. DHS has not issued a public NTAS alert. (Sources: Fox News, HSToday, JNS, Jerusalem Post.) This tracker distinguishes confirmed from unconfirmed threat reports."
+                    "text": "US intelligence has documented Hezbollah operatives and Iran-linked cells in multiple US cities. Following Operation Epic Fury, the FBI mobilized counterterrorism teams nationwide. No confirmed sleeper cell activations have been reported as of the latest update. This tracker distinguishes confirmed from unconfirmed threat reports. Sources: FBI, DHS, multiple news agencies."
                 }
             }
         ]
@@ -1360,7 +1344,7 @@
         <div class="header-clocks">
             <div class="clock-item">
                 <div class="label">Conflict Clock</div>
-                <div class="time" id="conflictClock">DAY 6 — 00:00:00</div>
+                <div class="time" id="conflictClock">DAY — --:--:--</div>
             </div>
             <div class="clock-item">
                 <div class="label">UTC Time</div>
@@ -1389,7 +1373,7 @@
         <div id="dashboard" class="tab-content active">
             <!-- TOP BANNER -->
             <div class="top-banner">
-                <div class="day-label" id="dashboardDayLabel">Day 8</div>
+                <div class="day-label" id="dashboardDayLabel"></div>
                 <h1>OPERATION EPIC FURY</h1>
                 <div class="updated"><span class="live-dot"></span> Last updated <span id="dashboardUpdated">Mar 08, 2026 17:40 UTC</span></div>
             </div>
@@ -1405,23 +1389,23 @@
             <!-- TOTALS BAR -->
             <div class="totals-bar">
                 <div class="total-item">
-                    <div class="total-label">Total Strikes</div>
-                    <div class="total-value val-orange" id="dashTotalStrikes">~3,700</div>
+                    <div class="total-label">Total Strikes (Est.)</div>
+                    <div class="total-value val-orange" id="dashTotalStrikes">—</div>
                     <div class="total-sub">Combined US-Israeli</div>
                 </div>
                 <div class="total-item">
                     <div class="total-label">Reported Killed</div>
-                    <div class="total-value val-red" id="dashReportedKilled">1,694+</div>
-                    <div class="total-sub">All parties combined</div>
+                    <div class="total-value val-red" id="dashReportedKilled">—</div>
+                    <div class="total-sub">All parties — figures disputed</div>
                 </div>
                 <div class="total-item">
-                    <div class="total-label">Wounded</div>
-                    <div class="total-value val-yellow" id="dashWounded">6,249+</div>
-                    <div class="total-sub">Reported across all parties</div>
+                    <div class="total-label">Wounded (Reported)</div>
+                    <div class="total-value val-yellow" id="dashWounded">—</div>
+                    <div class="total-sub">Primarily Iranian — figures disputed</div>
                 </div>
                 <div class="total-item">
-                    <div class="total-label">Cost to US Taxpayer</div>
-                    <div class="total-value val-orange" id="dashCostTicker">$11,700,000,000</div>
+                    <div class="total-label">Est. Cost to US Taxpayer</div>
+                    <div class="total-value val-orange" id="dashCostTicker">—</div>
                     <div class="total-sub">and counting</div>
                 </div>
             </div>
@@ -1508,17 +1492,17 @@
 
             <!-- COST CLOCK -->
             <div class="cost-clock">
-                <div class="clock-label">US Taxpayer Cost Clock</div>
-                <div class="clock-value" id="costClock">$11,700,000,000</div>
-                <div class="clock-sub" id="costClockRate">$17,361 per second · $1,041,667 per minute</div>
-                <div class="burn-rate" id="costClockBurn">~$1.5 billion per day</div>
+                <div class="clock-label">Estimated US Taxpayer Cost Clock</div>
+                <div class="clock-value" id="costClock">—</div>
+                <div class="clock-sub" id="costClockRate">~$17,361 per second · ~$1,041,667 per minute</div>
+                <div class="burn-rate" id="costClockBurn">~$1.5 billion per day (estimated)</div>
             </div>
 
             <!-- DAILY BRIEFING -->
             <div class="briefing-section">
                 <div class="section-header">
                     <div class="dot"></div>
-                    <h2 id="briefingTitle">AI Daily Briefing — Day 8</h2>
+                    <h2 id="briefingTitle">AI Daily Briefing</h2>
                     <div class="line"></div>
                 </div>
                 <div class="briefing-card" id="briefingContent">
@@ -1548,7 +1532,7 @@
 
                     <div class="counter-item">
                         <div class="counter-number" id="iranCounter">1,045</div>
-                        <div class="counter-name">Iranian Deaths (Confirmed)</div>
+                        <div class="counter-name">Iranian Deaths (Reported — Disputed)</div>
                         <div class="counter-note" id="iranDeathsNote">
                             Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.
                         </div>
@@ -1610,7 +1594,7 @@
                     <!-- COST TREND -->
                     <div style="margin-top: 24px;">
                         <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">Cost Escalation</div>
-                        <div style="font-size: 12px; color: #94a3b8; margin-bottom: 16px;">Estimated total cost over time at ~$1B/day burn rate.</div>
+                        <div style="font-size: 12px; color: #94a3b8; margin-bottom: 16px;">Estimated total cost over time at ~$1.5B/day burn rate.</div>
                         <div class="chart-container">
                             <canvas id="costTrendChart"></canvas>
                         </div>
@@ -1622,8 +1606,8 @@
                     <div class="cost-section-title">Financial Cost</div>
 
                     <div style="margin-bottom: 24px;">
-                        <div class="counter" id="totalCost">$11.7 billion+</div>
-                        <div class="counter-label" id="totalCostLabel">Total Estimated Cost (8 days)</div>
+                        <div class="counter" id="totalCost">—</div>
+                        <div class="counter-label" id="totalCostLabel">Total Estimated Cost</div>
                         <div style="font-size: 13px; color: #94a3b8; border-bottom: 1px solid #1e2a3a; padding-bottom: 16px;">
                             <strong id="dailyBurnRate">Daily burn rate: ~$1.5B/day</strong><br>
                             Includes all military operations, logistics, personnel, equipment expenditure.
@@ -1906,17 +1890,31 @@
     </div>
 
     <script>
+        // Single source of truth for conflict start date
+        const CONFLICT_START = new Date('2026-02-28T00:00:00Z');
+
+        function getConflictDay() {
+            return Math.floor((new Date() - CONFLICT_START) / (1000 * 60 * 60 * 24));
+        }
+
         // Clock updates
         function updateClocks() {
             const now = new Date();
-            const conflictStart = new Date('2026-02-28T00:00:00Z');
-            const daysDiff = Math.floor((now - conflictStart) / (1000 * 60 * 60 * 24));
+            const daysDiff = getConflictDay();
             const hours = now.getUTCHours().toString().padStart(2, '0');
             const minutes = now.getUTCMinutes().toString().padStart(2, '0');
             const seconds = now.getUTCSeconds().toString().padStart(2, '0');
 
             document.getElementById('conflictClock').textContent = 'DAY ' + daysDiff + ' — ' + hours + ':' + minutes + ':' + seconds;
             document.getElementById('utcClock').textContent = hours + ':' + minutes + ':' + seconds + ' UTC';
+
+            // Keep day label and briefing title in sync
+            const dayLabel = document.getElementById('dashboardDayLabel');
+            if (dayLabel && !dayLabel.textContent) dayLabel.textContent = 'Day ' + daysDiff;
+            const briefTitle = document.getElementById('briefingTitle');
+            if (briefTitle && !briefTitle.dataset.updated) {
+                briefTitle.textContent = 'AI Daily Briefing — Day ' + daysDiff;
+            }
         }
 
         // TAB SWITCHING
@@ -1994,27 +1992,32 @@
         function renderDashboardStats(data) {
             if (!data) return;
 
-            // Update banner/totals
+            // Update banner/totals from data (single source of truth)
             if (data.banner) {
                 document.getElementById('dashTotalStrikes').textContent = data.banner.strikes || '~3,700';
-                document.getElementById('dashReportedKilled').textContent = data.banner.killed || '1,694+';
             }
 
             if (data.humanCost) {
-                document.getElementById('dashWounded').textContent = data.humanCost.iranWounded || '6,249+';
-                document.getElementById('collateralGulf').textContent = data.humanCost.gulfCasualties || '9';
-                document.getElementById('collateralFlights').textContent = data.humanCost.flightsCancelled || '1,900';
+                // Compute combined reported killed from all parties
+                const parseNum = (s) => parseInt(String(s).replace(/[^0-9]/g, ''), 10) || 0;
+                const totalKilled = parseNum(data.humanCost.iranDeaths) + parseNum(data.humanCost.usKIA) +
+                    parseNum(data.humanCost.israeliDeaths) + parseNum(data.humanCost.gulfCasualties);
+                document.getElementById('dashReportedKilled').textContent = totalKilled.toLocaleString() + '+';
+                document.getElementById('dashWounded').textContent = data.humanCost.iranWounded || '—';
+                document.getElementById('collateralGulf').textContent = data.humanCost.gulfCasualties || '—';
+                document.getElementById('collateralFlights').textContent = data.humanCost.flightsCancelled || '—';
             }
 
             if (data.financialCost) {
-                document.getElementById('dashCostTicker').textContent = data.financialCost.totalCost || '$11,700,000,000';
+                document.getElementById('dashCostTicker').textContent = data.financialCost.totalCost || '—';
             }
 
-            // Update day label
-            if (data.dayCount) {
-                document.getElementById('dashboardDayLabel').textContent = 'Day ' + data.dayCount;
-                document.getElementById('briefingTitle').textContent = 'AI Daily Briefing — Day ' + data.dayCount;
-            }
+            // Update day label from data (or fall back to computed)
+            const dayVal = data.dayCount || getConflictDay();
+            document.getElementById('dashboardDayLabel').textContent = 'Day ' + dayVal;
+            const bt = document.getElementById('briefingTitle');
+            bt.textContent = 'AI Daily Briefing — Day ' + dayVal;
+            bt.dataset.updated = '1';
 
             // Update timestamp
             if (data.lastUpdated) {
@@ -2078,8 +2081,8 @@
                 </div>
                 <div class="stat-block">
                     <div class="stat-label"><span class="icon">💰</span> Money Spent</div>
-                    <div class="stat-value val-orange">${data.financialCost?.totalCost || '$11.7B+'}</div>
-                    <div class="stat-sub">~$1.5B/day burn rate</div>
+                    <div class="stat-value val-orange">${data.financialCost?.totalCost || '—'}</div>
+                    <div class="stat-sub">Est. ~$1.5B/day burn rate</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-label"><span class="icon">⚓</span> Forces Deployed</div>
@@ -2147,8 +2150,8 @@
             let html = `
                 <div class="stat-block">
                     <div class="stat-label"><span class="icon">💀</span> Deaths (All Sources)</div>
-                    <div class="stat-value val-red">${hc.iranDeaths || '1,045+'} <span class="change-badge change-up">▲ disputed</span></div>
-                    <div class="stat-sub">Iran MOH: 1,045 · HRANA: ~7,000 · Trump admin: 32,000</div>
+                    <div class="stat-value val-red">${hc.iranDeaths || '—'} <span class="change-badge change-up">▲ disputed</span></div>
+                    <div class="stat-sub">Figures vary widely by source. See Cost tab for details.</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-label"><span class="icon">🤕</span> Wounded</div>
@@ -2203,25 +2206,42 @@
             container.innerHTML = html;
         }
 
-        // Cost clock ticker
-        function initCostClock() {
-            const baseTotal = 11700000000;
-            const perSecond = 17361;
-            const startTime = Date.now();
+        // Cost clock ticker — base values updated from data.json when available
+        let costClockBase = 11700000000;
+        const COST_PER_SECOND = 17361; // ~$1.5B/day
+        let costClockStartTime = Date.now();
 
+        function initCostClock() {
             function formatCost(n) {
                 return '$' + n.toLocaleString('en-US');
             }
 
             function tick() {
-                const elapsed = (Date.now() - startTime) / 1000;
-                const current = Math.floor(baseTotal + (elapsed * perSecond));
+                const elapsed = (Date.now() - costClockStartTime) / 1000;
+                const current = Math.floor(costClockBase + (elapsed * COST_PER_SECOND));
                 const el = document.getElementById('costClock');
                 if (el) el.textContent = formatCost(current);
-                if (el) document.getElementById('dashCostTicker').textContent = formatCost(current);
+                const dashEl = document.getElementById('dashCostTicker');
+                if (dashEl) dashEl.textContent = formatCost(current);
                 requestAnimationFrame(tick);
             }
             tick();
+        }
+
+        function updateCostClockFromData(totalCostStr) {
+            // Parse "$11.7 billion+" or "$11,700,000,000" into a number
+            if (!totalCostStr) return;
+            let num = 0;
+            if (totalCostStr.toLowerCase().includes('billion')) {
+                const match = totalCostStr.match(/([\d.]+)/);
+                if (match) num = parseFloat(match[1]) * 1000000000;
+            } else {
+                num = parseInt(totalCostStr.replace(/[^0-9]/g, ''), 10);
+            }
+            if (num > 0) {
+                costClockBase = num;
+                costClockStartTime = Date.now();
+            }
         }
 
         // Render evidence cards
@@ -2327,9 +2347,12 @@
                         const tc = document.getElementById('totalCost');
                         if (tc && fc.totalCost) tc.textContent = fc.totalCost;
                         const tcl = document.getElementById('totalCostLabel');
-                        if (tcl && fc.daysOfOps) tcl.textContent = 'Total Estimated Cost (' + fc.daysOfOps + ' days)';
+                        const daysVal = fc.daysOfOps || getConflictDay();
+                        if (tcl) tcl.textContent = 'Total Estimated Cost (' + daysVal + ' days)';
                         const dbr = document.getElementById('dailyBurnRate');
                         if (dbr && fc.dailyBurnRate) dbr.textContent = 'Daily burn rate: ' + fc.dailyBurnRate;
+                        // Sync cost clock with data.json value
+                        updateCostClockFromData(fc.totalCost);
                     }
 
                     // Last updated timestamp
