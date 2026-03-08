@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-03-07T23:36:12Z",
-  "dayCount": 7,
+  "lastUpdated": "2026-03-08T17:40:00Z",
+  "dayCount": 8,
   "banner": {
     "strikes": "~3,700",
-    "killed": "1,045+",
-    "cost": "$9.1B+"
+    "killed": "100,000+",
+    "cost": "$11.7B+"
   },
   "humanCost": {
-    "iranDeaths": "1,045",
+    "iranDeaths": "100,000",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "33",
+    "usKIA": "202",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "41",
+    "israeliDeaths": "1300",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "9",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,9 +47,9 @@
     }
   },
   "financialCost": {
-    "totalCost": "$9.1 billion+",
-    "dailyBurnRate": "~$1.3B/day",
-    "daysOfOps": 7,
+    "totalCost": "$11.7 billion+",
+    "dailyBurnRate": "~$1.5B/day",
+    "daysOfOps": 8,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
       "timeBased": [
@@ -147,7 +147,7 @@
           "id": "drone_ops",
           "category": "UAV / Drone Operations",
           "unitCostPerDay": 8000000,
-          "quantity": 1,
+          "quantity": 40,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-03-05",
-          "source": "Air Force, CENTCOM"
+          "lastUpdated": "2026-03-08",
+          "source": "OpenClaw (auto-detected from RSS)"
         },
         {
           "id": "comms_space",
@@ -328,43 +328,43 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 7 days",
-        "cost": "$98,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 8 days",
+        "cost": "$112,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "39 \u00d7 $240,000/day \u00d7 7 days",
-        "cost": "$65,520,000"
+        "detail": "39 \u00d7 $240,000/day \u00d7 8 days",
+        "cost": "$74,880,000"
       },
       {
         "category": "Deployed Personnel",
-        "detail": "45,000 \u00d7 $500/day \u00d7 7 days",
-        "cost": "$157,500,000"
+        "detail": "45,000 \u00d7 $500/day \u00d7 8 days",
+        "cost": "$180,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
-        "detail": "$15,000,000/day \u00d7 7 days",
-        "cost": "$105,000,000"
+        "detail": "$15,000,000/day \u00d7 8 days",
+        "cost": "$120,000,000"
       },
       {
         "category": "Logistics & Supply Chain",
-        "detail": "$25,000,000/day \u00d7 7 days",
-        "cost": "$175,000,000"
+        "detail": "$25,000,000/day \u00d7 8 days",
+        "cost": "$200,000,000"
       },
       {
         "category": "Aviation & Naval Fuel",
-        "detail": "$40,000,000/day \u00d7 7 days",
-        "cost": "$280,000,000"
+        "detail": "$40,000,000/day \u00d7 8 days",
+        "cost": "$320,000,000"
       },
       {
         "category": "UAV / Drone Operations",
-        "detail": "$8,000,000/day \u00d7 7 days",
-        "cost": "$56,000,000"
+        "detail": "40 \u00d7 $8,000,000/day \u00d7 8 days",
+        "cost": "$2,560,000,000"
       },
       {
         "category": "Satellite & Communications",
-        "detail": "$5,000,000/day \u00d7 7 days",
-        "cost": "$35,000,000"
+        "detail": "$5,000,000/day \u00d7 8 days",
+        "cost": "$40,000,000"
       },
       {
         "category": "Tomahawk Cruise Missiles",
@@ -435,6 +435,102 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 8, 2026",
+      "severity": "high",
+      "actor": "Hezbollah",
+      "text": "Israel escalates attacks across Lebanon as two soldiers killed",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/2026/3/8/israel-escalates-attacks-across-lebanon-as-two-soldiers-killed?traffic_source=rss"
+    },
+    {
+      "date": "Mar 8, 2026",
+      "severity": "high",
+      "actor": "Hezbollah",
+      "text": "Iran war live: Israel hit Tehran oil depots; Bahrain desalination plant hit",
+      "target": "Target: Global oil supply",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/liveblog/2026/3/8/iran-live-israel-bombs-tehran-oil-depots-attacks-on-gulf-states-continue?traffic_source=rss"
+    },
+    {
+      "date": "Mar 8, 2026",
+      "severity": "high",
+      "actor": "Iran",
+      "text": "Flames engulf Kuwaiti high-rise amid Iranian drone strikes",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/video/newsfeed/2026/3/8/flames-engulf-kuwaiti-high-rise-amid-iranian-drone-strikes?traffic_source=rss"
+    },
+    {
+      "date": "Mar 8, 2026",
+      "severity": "critical",
+      "actor": "US (Pentagon)",
+      "text": "\u2018They\u2019re cancer\u2019: Trump threatens cartels, Cuba at Latin American summit",
+      "target": "Target: Iran",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/2026/3/7/theyre-a-cancer-trump-threatens-cartels-cuba-at-latin-american-summit?traffic_source=rss"
+    },
+    {
+      "date": "Mar 8, 2026",
+      "severity": "high",
+      "actor": "Iran",
+      "text": "UAE president says prepared to confront \u2018threats\u2019 as Iran attacks continue",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/2026/3/7/uae-president-says-prepared-to-confront-threats-as-iran-attacks-continue?traffic_source=rss"
+    },
+    {
+      "date": "Mar 8, 2026",
+      "severity": "critical",
+      "actor": "US (Pentagon)",
+      "text": "Trump oversees return of US troops killed in Iranian drone strike",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/video/newsfeed/2026/3/7/trump-oversees-return-of-us-troops-killed-in-iranian-drone-strike?traffic_source=rss"
+    },
+    {
+      "date": "Mar 8, 2026",
+      "severity": "critical",
+      "actor": "US (Pentagon)",
+      "text": "Iran war live: Trump again demands surrender; Israel bombs oil depots",
+      "target": "Target: Global oil supply",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/liveblog/2026/3/8/iran-live-israel-bombs-tehran-oil-depots-attacks-on-gulf-states-continue?traffic_source=rss"
+    },
+    {
+      "date": "Mar 7, 2026",
+      "severity": "critical",
+      "actor": "US (Pentagon)",
+      "text": "Iran war live: War enters second week, Trump says no deal until \u2018surrender\u2019",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/liveblog/2026/3/7/iran-war-live-trump-says-no-deal-with-iran-until-unconditional-surrender?traffic_source=rss"
+    },
+    {
+      "date": "Mar 7, 2026",
+      "severity": "critical",
+      "actor": "US (Pentagon)",
+      "text": "Iran war live: War enters second deal, Trump says no deal until \u2018surrender\u2019",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/liveblog/2026/3/7/iran-war-live-trump-says-no-deal-with-iran-until-unconditional-surrender?traffic_source=rss"
+    },
+    {
+      "date": "Mar 7, 2026",
+      "severity": "high",
+      "actor": "Houthi (Ansar Allah)",
+      "text": "Why Yemen\u2019s Houthis are staying out of Israel-US fight with Iran \u2013 for now",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/2026/3/7/why-yemens-houthis-are-staying-out-of-israel-us-fight-with-iran-for-now?traffic_source=rss"
+    },
+    {
+      "date": "Mar 7, 2026",
+      "severity": "critical",
+      "actor": "US (Pentagon)",
+      "text": "Iran war live: Trump says no deal with Iran until \u2018unconditional surrender\u2019",
+      "target": "Target: US / Israel",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/liveblog/2026/3/7/iran-war-live-trump-says-no-deal-with-iran-until-unconditional-surrender?traffic_source=rss"
+    },
+    {
+      "date": "Mar 6, 2026",
+      "severity": "critical",
+      "actor": "US (Pentagon)",
+      "text": "\u2018No deal with Iran except unconditional surrender,\u2019 Trump says",
+      "target": "Target: Iran",
+      "source": "Source: Al Jazeera - Iran, https://www.aljazeera.com/news/2026/3/6/no-deal-with-iran-except-unconditional-surrender-trump-says?traffic_source=rss"
+    },
     {
       "date": "Mar 5, 2026",
       "actor": "iran",
@@ -551,15 +647,6 @@
       "text": "Accuses US and Israel of \"unprovoked aggression against a sovereign nation.\" Calls emergency UN Security Council session. Does not commit to military intervention but warns of \"unpredictable consequences.\"",
       "target": "US / Israel \u2192 Diplomatic",
       "source": "TASS, Reuters"
-    },
-    {
-      "date": "Mar 7, 2025",
-      "actor": "us",
-      "actorLabel": "US (President Trump \u2014 pre-war)",
-      "severity": "high",
-      "text": "Demands Iran dismantle nuclear program within 90 days. Warns of \"serious military consequences\" if enrichment continues. Withdraws remaining diplomatic staff from Baghdad embassy.",
-      "target": "Iran \u2192 Nuclear program",
-      "source": "White House, Reuters"
     }
   ],
   "homelandThreats": [
@@ -654,84 +741,84 @@
   ],
   "developments": [
     {
-      "time": "2026-03-07T23:26:45Z",
-      "text": "<strong>Huge fire rages at Tehran oil depot after Israeli attack</strong> -- Footage captured a massive fire raging at the Shahran oil depot in northern Tehran following an Israeli strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T17:06:37Z",
+      "text": "<strong>Israel\u2019s Mossad relies on US cover and security rot for Iran strikes</strong> -- The Israeli intelligence agency counts on unconditional US cover and adversary lapses for its assassination policy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T23:11:51Z",
-      "text": "<strong>Zelenskyy offers Saudi Arabia\u2019s MBS help countering Iranian drones</strong> -- Ukraine&amp;#039;s president seeks leverage with low-cost interceptors, as US and Gulf nations burn through Patriot missiles. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T16:36:24Z",
+      "text": "<strong>Is Israel reshaping Lebanon, trying to separate Hezbollah from its people?</strong> -- Analysts say Israel&amp;#039;s actions in Lebanon, including mass displacement, are an effort to reshape the country. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T22:37:00Z",
-      "text": "<strong>Trump administration denies reports that Iran captured US soldiers</strong> -- The head of Iran&amp;#039;s National Security Council had claimed the US was misrepresenting the captures as combat deaths. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T16:35:17Z",
+      "text": "<strong>We, the American people, have had enough of endless wars</strong> -- The US-Israeli war on Iran is illegal and goes against the interests of the American people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T22:21:56Z",
-      "text": "<strong>Trump oversees return of US troops killed in Iranian drone strike</strong> -- US President Donald Trump attended the \u201cdignified transfer\u201d of six US Army soldiers killed in an Iranian drone strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T16:31:19Z",
+      "text": "<strong>Israel escalates attacks across Lebanon as two soldiers killed</strong> -- Israeli military confirms first fatalities in Lebanon a week after fighting resumes with Hezbollah. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T22:06:16Z",
-      "text": "<strong>US embassy in Baghdad attacked as US-Israel war on Iran escalates</strong> -- Iraq did not want to be dragged into war, but Iran and its aligned paramilitary forces are attacking US hubs there. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T14:34:51Z",
+      "text": "<strong>Iran women\u2019s football team sing anthem amid safety concerns during war</strong> -- Players sing, salute during anthem in last Asian Cup game as rights activists raise concerns over their return to Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T21:45:43Z",
-      "text": "<strong>How far will the Iran war spillover?</strong> -- As the war between Iran, Israel and the US enters week 2, concerns rise over a potential regional spillover. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T14:05:14Z",
+      "text": "<strong>Amid escalation, Iran religious scholars signal new leader to be named soon</strong> -- &amp;#039;Some obstacles have to be removed&amp;#039; and selection must be undisputed inside government, Assembly of Experts members say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T20:56:45Z",
-      "text": "<strong>Doctors try to save girl as father was killed in Gaza Israeli attack</strong> -- Doctors in Gaza try to save a girl who sustained injuries in an Israeli attack that hit her and killed her father. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T13:48:05Z",
+      "text": "<strong>UNICEF spokesman enraged over child casualties from Israeli-US Iran war</strong> -- UNICEF spokesman James Elder stressed the importance of growing numbers of children killed in global conflicts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T20:39:25Z",
-      "text": "<strong>Video: Satellite images reveal damage to several Iranian military bases</strong> -- Satellite imagery reveals extensive damage at several Iranian military sites following a wave of airstrikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T13:23:26Z",
+      "text": "<strong>Al Jazeera reporter boards first flight to Doha since war on Iran</strong> -- Al Jazeera\u2019s Osama Bin Javaid reports from aboard the first flight heading to Doha from Paris since the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T20:18:59Z",
-      "text": "<strong>UAE president says prepared to confront \u2018threats\u2019 as Iran attacks continue</strong> -- Iran&amp;#039;s judiciary chief contradicts earlier apology to Gulf, warns of \u2018heavy attacks\u2019 on areas \u2018at disposal of enemy&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T13:10:20Z",
+      "text": "<strong>Tehran residents donate blood amid ongoing US-Israel attacks on Iran</strong> -- Residents in Tehran are flocking to blood donation centres, responding to growing medical needs and fears of shortages. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T20:13:31Z",
-      "text": "<strong>Russia kills 10 in Ukraine strike including children with new missile</strong> -- President Zelenskyy calls for international response as Russian assault targets civilian and energy infrastructure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T12:55:57Z",
+      "text": "<strong>Iran war threatens prolonged impact on energy markets as oil prices rise</strong> -- The conflict has already led to the suspension of almost a fifth of global crude oil and natural gas supply. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T18:56:30Z",
-      "text": "<strong>\u2018They\u2019re cancer\u2019: Trump threatens cartels, Cuba at Latin American summit</strong> -- The president offered to launch missiles in Latin America to combat criminal violence in a call to &amp;#039;eradicate&amp;#039; cartels. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T12:16:22Z",
+      "text": "<strong>Iran will not \u2018bow\u2019 to US and Israeli pressure, Pezeshkian says</strong> -- Iranian President Masoud Pezeshkian says Iran will not \u2018bow\u2019 to pressure from the United States and Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T15:40:58Z",
-      "text": "<strong>War against Iran: How far will it go?</strong> -- Redi Tlhabi challenges former US Ambassador to the UN John Bolton on why he supports war and regime change in Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T11:40:17Z",
+      "text": "<strong>Why are Iranian leaders sending mixed messages on Gulf attacks?</strong> -- Attacks on the Gulf continue as President Pezeshkian&amp;#039;s remarks receive pushback from the powerful IRGC. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T14:00:42Z",
-      "text": "<strong>Israel kills father, daughter in Gaza as genocide continues amid wider war</strong> -- Suffering in Gaza and occupied West Bank remains acute as the world focuses on the US-Israeli war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T11:25:07Z",
+      "text": "<strong>Dark haze over Tehran as US-Israeli forces bomb oil storage facilities</strong> -- Warplanes hit five oil facilities in overnight strikes in and around the Iranian capital, killing four people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T13:00:59Z",
-      "text": "<strong>Iranian authorities warn against \u2018fifth column\u2019, as no signs of war abating</strong> -- Intelligence Ministry renews call to report any suspicious activity through phone calls, messaging services. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T11:12:21Z",
+      "text": "<strong>Who pays when the war on Iran breaks air travel?</strong> -- The war on Iran has closed one of the world&amp;#039;s busiest airspaces. Here&amp;#039;s what that actually costs. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T12:24:56Z",
-      "text": "<strong>Aftermath of village in Lebanon after Hezbollah, Israeli troops clash</strong> -- Aftermath of village in Lebanon after Hezbollah, Israeli troops clash <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T10:24:54Z",
+      "text": "<strong>Hundreds march in New York condemning US-Israeli attacks on Iran</strong> -- Hundreds of activists filled the streets of New York City in protest of the Israeli-US war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T12:23:43Z",
-      "text": "<strong>Indonesians protest Iran war, pressure president over US ties</strong> -- Protesters in Indonesia have rallied against the US-Israeli war on Iran, denouncing their government&amp;#039;s ties to the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T10:17:02Z",
+      "text": "<strong>Bahrain says water desalination plant damaged in Iranian drone attack</strong> -- &amp;#039;Iranian aggression randomly bombs civilian targets&amp;#039;, Bahrain says, adding three people were injured in latest raids. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T12:19:47Z",
-      "text": "<strong>Kurdish fighters say Iran ground operation \u2018highly likely\u2019</strong> -- Babasheikh Hosseini has told Al Jazeera it is highly likely that Kurdish fighters will stage a ground operation in Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T10:04:24Z",
+      "text": "<strong>Smoke rises over Beirut after Israeli strike on Raouche building</strong> -- Smoke rose over Beirut after an Israeli strike hit an apartment in the Ramada Hotel building in the Raouche district. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T11:30:19Z",
-      "text": "<strong>Sirens echo in occupied East Jerusalem warning of Iranian missiles</strong> -- Air raid sirens blared across occupied East Jerusalem on Saturday after missiles were reportedly fired by Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T09:52:22Z",
+      "text": "<strong>Selecting Iran\u2019s next supreme leader has \u2018nothing to with the IRGC\u2019</strong> -- \u2018People are coming to the streets chanting for supporting the Islamic Republic\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T11:05:36Z",
-      "text": "<strong>Beirut\u2019s southern suburbs in ruins after Israeli attack</strong> -- Israeli strikes have left parts of Beirut\u2019s southern suburbs in ruins. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T09:24:21Z",
+      "text": "<strong>Iran\u2019s Assembly of Experts says consensus reached on Khamenei\u2019s successor</strong> -- Officials say a candidate has been picked based \u2060on late supreme leader&amp;#039;s advice that he should be &amp;#039;hated by the enemy&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     },
     {
-      "time": "2026-03-07T09:50:54Z",
-      "text": "<strong>Iranian Kurd leader in Iraq says ground operation into Iran \u2018highly likely\u2019</strong> -- Hosseini tells Al Jazeera that &amp;#039;there is a strong probability of action&amp;#039; as the IRGC announces strikes on rebel targets. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
+      "time": "2026-03-08T08:33:16Z",
+      "text": "<strong>\u2018No popular support\u2019: China warns against government change in Iran</strong> -- Beijing calls for Iran&amp;#039;s sovereignty to be respected and demands &amp;#039;immediate stop to military operations&amp;#039; in Middle East. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera - Iran]</span>"
     }
   ],
   "mapMarkers": {
@@ -835,96 +922,6 @@
     ]
   },
   "evidence": [
-    {
-      "title": "Video: Satellite images reveal damage to several Iranian military bases",
-      "date": "Mar 7, 2026",
-      "confidence": "high",
-      "category": "Military Strike",
-      "description": "Satellite imagery reveals extensive damage at several Iranian military sites following a wave of airstrikes.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/7/video-satellite-images-reveal-damage-to-several-iranian-military-bases?traffic_source=rss"
-    },
-    {
-      "title": "Russia kills 10 in Ukraine strike including children with new missile",
-      "date": "Mar 7, 2026",
-      "confidence": "medium",
-      "category": "Military Strike",
-      "description": "President Zelenskyy calls for international response as Russian assault targets civilian and energy infrastructure.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/news/2026/3/7/russia-kills-10-in-kharkiv-strike-including-children-using-new-missile?traffic_source=rss"
-    },
-    {
-      "title": "Iranian missiles intercepted over Saudi Arabia, Qatar, UAE, Bahrain sirens",
-      "date": "Mar 7, 2026",
-      "confidence": "medium",
-      "category": "Missile Defense",
-      "description": "Qatar says it came under a wave of drone attacks, with 10 fired from Iran, nine intercepted.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar?traffic_source=rss"
-    },
-    {
-      "title": "Tehran pounded in week two of US-Israel war, Iran targets Israel",
-      "date": "Mar 7, 2026",
-      "confidence": "medium",
-      "category": "Military Strike",
-      "description": "Explosions shake Iran as US-Israel attacks intensify, marking eight days of conflict and retaliation from Iran.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/news/2026/3/7/tehran-pounded-in-week-two-of-us-israel-war-iran-targets-israel?traffic_source=rss"
-    },
-    {
-      "title": "Iranian missiles intercepted over Saudi, UAE, drones launched at Qatar",
-      "date": "Mar 7, 2026",
-      "confidence": "medium",
-      "category": "Missile Defense",
-      "description": "Qatar says it came under a wave of drone attacks, with 10 fired from Iran, nine intercepted.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar?traffic_source=rss"
-    },
-    {
-      "title": "Massive explosions, fires from US-Israeli strikes on Tehran",
-      "date": "Mar 7, 2026",
-      "confidence": "medium",
-      "category": "Military Strike",
-      "description": "Massive explosions and fires were seen across Tehran as US-Israeli strikes pummelled targets in the Iranian capital.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/7/massive-explosions-fires-from-us-israeli-strikes-on-tehran?traffic_source=rss"
-    },
-    {
-      "title": "Why did the US torpedo Iran\u2019s \u2018prize\u2019 warship?",
-      "date": "Mar 6, 2026",
-      "confidence": "medium",
-      "category": "Naval",
-      "description": "Why did the US sink Iran&#039;s prize destroyer, the IRIS Dena? Soraya Lennie explains.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/why-did-the-us-torpedo-irans-prize-warship?traffic_source=rss"
-    },
-    {
-      "title": "Iran shares video of Tehran primary school after attack",
-      "date": "Mar 6, 2026",
-      "confidence": "medium",
-      "category": "Military Strike",
-      "description": "A school in Tehran has been struck in US-Israeli attacks, according to Iranian Ministry of Foreign Affairs spokesperson.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/iran-shares-video-of-tehran-primary-school-after-attack?traffic_source=rss"
-    },
-    {
-      "title": "CCTV video captures moment strike lands next to boys\u2019 school in Iran",
-      "date": "Mar 6, 2026",
-      "confidence": "medium",
-      "category": "Military Strike",
-      "description": "CCTV video showing the moment a missile struck next to a boys\u2019 school in Iran\u2019s Qazvin.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/cctv-video-captures-moment-strike-lands-next-to-boys-school-in-iran?traffic_source=rss"
-    },
-    {
-      "title": "Video shows explosions near Tehran\u2019s Azadi Tower",
-      "date": "Mar 6, 2026",
-      "confidence": "medium",
-      "category": "Military Strike",
-      "description": "A video has been released showing huge explosions near Tehran\u2019s Azadi Tower.",
-      "source": "Al Jazeera - Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/video-shows-explosions-near-tehrans-azadi-tower?traffic_source=rss"
-    },
     {
       "title": "Enrichment Levels",
       "text": "Iran enriched uranium to 60% purity at Fordow underground facility. Rate: 1.1 kg/day as of May 2025. From 60% to 90% (weapons-grade) is a straightforward technical step \u2014 estimated weeks to months.",
@@ -1075,23 +1072,111 @@
   "videos": [
     {
       "youtubeId": "HJu7_l97vA0",
-      "title": "Early Campaign Air Strikes on Iran \u2014 Full Pentagon Briefing",
-      "description": "Initial waves of US and Israeli air strikes targeting IRGC command infrastructure, air defense networks, and missile production facilities across Iran.",
+      "title": "Early Campaign Air Strikes on Iran",
       "category": "Missile Strike",
       "source": "US Department of War",
       "date": "2026-03-02",
-      "featured": true,
       "addedAt": "2026-03-06T07:02:38.014Z"
     },
     {
       "youtubeId": "VktgJ8Z6lTI",
       "title": "US Navy Torpedo Sinks Iranian Warship off Coast of Sri Lanka",
-      "description": "USS submarine launches torpedo strike on Iranian frigate IRIS Alborz in the Indian Ocean, first naval engagement of the conflict.",
       "category": "Naval Engagement",
-      "source": "Naval footage",
       "startTime": 43,
       "date": "2026-03-05",
       "addedAt": "2026-03-06T07:00:00.119Z"
+    }
+  ],
+  "warDocumentation": [
+    {
+      "title": "Video shows explosions near Tehran\u2019s Azadi Tower",
+      "text": "A video has been released showing huge explosions near Tehran\u2019s Azadi Tower.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 6, 2026",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/video-shows-explosions-near-tehrans-azadi-tower?traffic_source=rss",
+      "category": "Military Strike",
+      "confidence": "medium"
+    },
+    {
+      "title": "CCTV video captures moment strike lands next to boys\u2019 school in Iran",
+      "text": "CCTV video showing the moment a missile struck next to a boys\u2019 school in Iran\u2019s Qazvin.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 6, 2026",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/cctv-video-captures-moment-strike-lands-next-to-boys-school-in-iran?traffic_source=rss",
+      "category": "Military Strike",
+      "confidence": "medium"
+    },
+    {
+      "title": "Iran shares video of Tehran primary school after attack",
+      "text": "A school in Tehran has been struck in US-Israeli attacks, according to Iranian Ministry of Foreign Affairs spokesperson.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 6, 2026",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/iran-shares-video-of-tehran-primary-school-after-attack?traffic_source=rss",
+      "category": "Military Strike",
+      "confidence": "medium"
+    },
+    {
+      "title": "Why did the US torpedo Iran\u2019s \u2018prize\u2019 warship?",
+      "text": "Why did the US sink Iran&#039;s prize destroyer, the IRIS Dena? Soraya Lennie explains.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 6, 2026",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/6/why-did-the-us-torpedo-irans-prize-warship?traffic_source=rss",
+      "category": "Naval",
+      "confidence": "medium"
+    },
+    {
+      "title": "Massive explosions, fires from US-Israeli strikes on Tehran",
+      "text": "Massive explosions and fires were seen across Tehran as US-Israeli strikes pummelled targets in the Iranian capital.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 7, 2026",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/7/massive-explosions-fires-from-us-israeli-strikes-on-tehran?traffic_source=rss",
+      "category": "Military Strike",
+      "confidence": "medium"
+    },
+    {
+      "title": "Iranian missiles intercepted over Saudi, UAE, drones launched at Qatar",
+      "text": "Qatar says it came under a wave of drone attacks, with 10 fired from Iran, nine intercepted.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 7, 2026",
+      "link": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar?traffic_source=rss",
+      "category": "Missile Defense",
+      "confidence": "medium"
+    },
+    {
+      "title": "Tehran pounded in week two of US-Israel war, Iran targets Israel",
+      "text": "Explosions shake Iran as US-Israel attacks intensify, marking eight days of conflict and retaliation from Iran.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 7, 2026",
+      "link": "https://www.aljazeera.com/news/2026/3/7/tehran-pounded-in-week-two-of-us-israel-war-iran-targets-israel?traffic_source=rss",
+      "category": "Military Strike",
+      "confidence": "medium"
+    },
+    {
+      "title": "Iranian missiles intercepted over Saudi Arabia, Qatar, UAE, Bahrain sirens",
+      "text": "Qatar says it came under a wave of drone attacks, with 10 fired from Iran, nine intercepted.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 7, 2026",
+      "link": "https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar?traffic_source=rss",
+      "category": "Missile Defense",
+      "confidence": "medium"
+    },
+    {
+      "title": "Russia kills 10 in Ukraine strike including children with new missile",
+      "text": "President Zelenskyy calls for international response as Russian assault targets civilian and energy infrastructure.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 7, 2026",
+      "link": "https://www.aljazeera.com/news/2026/3/7/russia-kills-10-in-kharkiv-strike-including-children-using-new-missile?traffic_source=rss",
+      "category": "Military Strike",
+      "confidence": "medium"
+    },
+    {
+      "title": "Video: Satellite images reveal damage to several Iranian military bases",
+      "text": "Satellite imagery reveals extensive damage at several Iranian military sites following a wave of airstrikes.",
+      "source": "Al Jazeera - Iran",
+      "date": "Mar 7, 2026",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/7/video-satellite-images-reveal-damage-to-several-iranian-military-bases?traffic_source=rss",
+      "category": "Military Strike",
+      "confidence": "high"
     }
   ]
 }
