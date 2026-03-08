@@ -22,6 +22,8 @@ jobs:
           python-version: '3.11'
 
       - name: Run update script
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 scripts/update_site.py
 
       - name: Validate schema

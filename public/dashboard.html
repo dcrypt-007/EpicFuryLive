@@ -2515,37 +2515,55 @@
                 'world': 'threat-actor-russia'
             };
 
+            // Derive a display label if actorLabel is missing
+            function getActorLabel(threat) {
+                if (threat.actorLabel) return threat.actorLabel;
+                // Build label from the actor field
+                const a = (threat.actor || 'Unknown').toUpperCase();
+                return a;
+            }
+
             // Determine sub-class for proxies and world actors based on actorLabel
             function getActorClass(threat) {
-                if (threat.actor === 'proxy') {
-                    if (threat.actorLabel.includes('HOUTHI')) return 'threat-actor-houthi';
-                    if (threat.actorLabel.includes('HEZBOLLAH')) return 'threat-actor-hezbollah';
-                    if (threat.actorLabel.includes('IRAQI')) return 'threat-actor-iraq';
+                const label = getActorLabel(threat).toUpperCase();
+                if (threat.actor === 'proxy' || label.includes('HOUTHI') || label.includes('HEZBOLLAH') || label.includes('IRAQI')) {
+                    if (label.includes('HOUTHI')) return 'threat-actor-houthi';
+                    if (label.includes('HEZBOLLAH')) return 'threat-actor-hezbollah';
+                    if (label.includes('IRAQI')) return 'threat-actor-iraq';
                     return 'threat-actor-hezbollah';
                 }
-                if (threat.actor === 'world') {
-                    if (threat.actorLabel.includes('CHINA')) return 'threat-actor-china';
+                if (threat.actor === 'world' || label.includes('CHINA') || label.includes('RUSSIA')) {
+                    if (label.includes('CHINA')) return 'threat-actor-china';
                     return 'threat-actor-russia';
                 }
+                // Match by keyword in the actor string
+                if (label.includes('IRAN') || label.includes('IRGC')) return 'threat-actor-iran';
+                if (label.includes('US') || label.includes('PENTAGON') || label.includes('CENTCOM')) return 'threat-actor-us';
+                if (label.includes('ISRAEL') || label.includes('IDF')) return 'threat-actor-israel';
                 return actorClassMap[threat.actor] || '';
             }
 
             container.innerHTML = threats.map(t => {
-                const dateISO = t.isoDate || t.date.replace(/(\w+) (\d+), (\d+)/, (m, mon, day, yr) => {
+                const label = getActorLabel(t);
+                const dateISO = t.isoDate || (t.date || '').replace(/(\w+) (\d+), (\d+)/, (m, mon, day, yr) => {
                     const months = {Jan:'01',Feb:'02',Mar:'03',Apr:'04',May:'05',Jun:'06',Jul:'07',Aug:'08',Sep:'09',Oct:'10',Nov:'11',Dec:'12'};
                     return yr + '-' + (months[mon]||'01') + '-' + day.padStart(2,'0');
                 });
 
-                return `<div class="threat-item" data-actor="${t.actor}">
+                // Clean up target/source — avoid double "Target:" or "Source:" prefix
+                const targetText = (t.target || '').replace(/^Target:\s*/i, '');
+                const sourceText = (t.source || '').replace(/^Source:\s*/i, '');
+
+                return `<div class="threat-item" data-actor="${t.actor || ''}">
                     <div class="threat-meta">
-                        <time class="threat-date" datetime="${dateISO}">${t.date}</time>
-                        <div class="threat-severity severity-${t.severity}">${t.severity.charAt(0).toUpperCase() + t.severity.slice(1)}</div>
+                        <time class="threat-date" datetime="${dateISO}">${t.date || ''}</time>
+                        <div class="threat-severity severity-${t.severity || 'high'}">${(t.severity || 'high').charAt(0).toUpperCase() + (t.severity || 'high').slice(1)}</div>
                     </div>
                     <div class="threat-content">
-                        <span class="threat-actor ${getActorClass(t)}">${t.actorLabel}:</span>
-                        <span class="threat-text">${t.text}</span>
-                        <div class="threat-target">Target: ${t.target}</div>
-                        <div class="threat-source">Source: ${t.source}</div>
+                        <span class="threat-actor ${getActorClass(t)}">${label}:</span>
+                        <span class="threat-text">${t.text || ''}</span>
+                        <div class="threat-target">Target: ${targetText}</div>
+                        <div class="threat-source">Source: ${sourceText}</div>
                     </div>
                 </div>`;
             }).join('\n');
