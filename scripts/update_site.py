@@ -1053,16 +1053,42 @@ def update_data_json(news_items):
         else:
             print("  [Threats] No new threats detected in articles")
 
-    # ---- EVIDENCE SCANNER: Detect new verified reports from RSS ----
+    # ---- EVIDENCE TAB: Static nuclear evidence only (locked) ----
+    # The Evidence tab is reserved for curated nuclear weapons evidence (IAEA data).
+    # RSS-injected items are automatically moved to warDocumentation on the LIVE tab.
     if "evidence" in data:
-        print("  [Evidence] Scanning articles for new verifiable evidence...")
-        ev_updates = scan_evidence(news_items, data["evidence"])
-        if ev_updates:
-            for u in ev_updates:
-                print(u)
-            print(f"  [Evidence] Added {len(ev_updates)} new evidence items")
-        else:
-            print("  [Evidence] No new evidence detected in articles")
+        # Nuclear evidence sources that should stay
+        NUCLEAR_SOURCES = ["iaea", "iiss", "isis", "intelligence assessment"]
+        original_evidence = []
+        war_docs = data.get("warDocumentation", [])
+        moved = 0
+        for item in data["evidence"]:
+            source_lower = (item.get("source", "") + " " + item.get("title", "")).lower()
+            is_nuclear = any(ns in source_lower for ns in NUCLEAR_SOURCES) or \
+                         any(kw in source_lower for kw in ["enrichment", "stockpile", "breakout", "fordow", "uranium", "iaea"])
+            if is_nuclear:
+                original_evidence.append(item)
+            else:
+                # Move non-nuclear items to warDocumentation
+                war_doc = {
+                    "title": item.get("title", ""),
+                    "text": item.get("description", item.get("text", "")),
+                    "source": item.get("source", ""),
+                    "date": item.get("date", ""),
+                    "link": item.get("link", ""),
+                    "category": item.get("category", "Military Strike"),
+                    "confidence": item.get("confidence", "medium")
+                }
+                # Avoid duplicates
+                existing_titles = {d.get("title", "")[:50].lower() for d in war_docs}
+                if war_doc["title"][:50].lower() not in existing_titles:
+                    war_docs.insert(0, war_doc)
+                    moved += 1
+        data["evidence"] = original_evidence
+        data["warDocumentation"] = war_docs[:20]  # Cap at 20
+        if moved:
+            print(f"  [Evidence] Moved {moved} non-nuclear items to warDocumentation")
+        print(f"  [Evidence] Locked: {len(original_evidence)} nuclear evidence items preserved")
 
     # ---- DEVELOPMENTS (inject RSS items) ----
     if news_items:
