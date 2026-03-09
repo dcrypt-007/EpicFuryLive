@@ -2591,15 +2591,28 @@
             }
         }
 
-        // Initialize immediately (script is at end of body, DOM is ready)
-        (function init() {
-            updateClocks();
-            setInterval(updateClocks, 1000);
+        // Initialize the dashboard — triple-redundant to handle all browser edge cases
+        var _initDone = false;
+        function initDashboard() {
+            if (_initDone) return;
+            _initDone = true;
+            try {
+                updateClocks();
+                setInterval(updateClocks, 1000);
+            } catch(e) { console.warn('Clock init failed:', e); }
             try { loadLiveData(); } catch(e) { console.warn('Live data load failed:', e); }
             setInterval(loadLiveData, 5 * 60 * 1000);
-            initCostClock();
-            handleHashNavigation();
-        })();
+            try { initCostClock(); } catch(e) { console.warn('Cost clock init failed:', e); }
+            try { handleHashNavigation(); } catch(e) { console.warn('Hash nav failed:', e); }
+            console.log('Dashboard initialized');
+        }
+
+        // Strategy 1: Run immediately (script is at end of body)
+        try { initDashboard(); } catch(e) { console.warn('Immediate init failed:', e); }
+        // Strategy 2: Run on window load (catches deferred/async edge cases)
+        window.addEventListener('load', initDashboard);
+        // Strategy 3: Fallback timeout (catches everything else)
+        setTimeout(initDashboard, 500);
         window.addEventListener('hashchange', handleHashNavigation);
     </script>
 

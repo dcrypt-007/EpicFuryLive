@@ -725,13 +725,18 @@
             }
         }
 
-        // Initialize immediately (script is at end of body, DOM is ready)
-        (function init() {
-            updateClocks();
-            setInterval(updateClocks, 1000);
-            loadHeadlines();
-            setInterval(loadHeadlines, REFRESH_INTERVAL);
-        })();
+        // Initialize — triple-redundant for all browser edge cases
+        var _initDone = false;
+        function initNews() {
+            if (_initDone) return;
+            _initDone = true;
+            try { updateClocks(); setInterval(updateClocks, 1000); } catch(e) { console.warn('Clock init failed:', e); }
+            try { loadHeadlines(); setInterval(loadHeadlines, REFRESH_INTERVAL); } catch(e) { console.warn('Headlines init failed:', e); }
+            console.log('News page initialized');
+        }
+        try { initNews(); } catch(e) { console.warn('Immediate init failed:', e); }
+        window.addEventListener('load', initNews);
+        setTimeout(initNews, 500);
     </script>
 </body>
 </html>
