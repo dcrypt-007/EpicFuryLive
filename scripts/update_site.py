@@ -1475,10 +1475,35 @@ def update_data_json(news_items):
         data["newsFeed"] = unique_feed[:80]  # Cap at 80
         print(f"  Saved {len(data['newsFeed'])} items to newsFeed")
 
-    # ---- SAVE LLM SUMMARY ----
+    # ---- SAVE LLM SUMMARY (stacked by day) ----
     if llm_stats and llm_stats.get("summary"):
-        data["summary"] = llm_stats["summary"]
-        print(f"  Saved LLM summary to data.json")
+        new_summary = llm_stats["summary"]
+        data["summary"] = new_summary  # Keep latest for backward compat
+
+        # Accumulate daily briefings — one per day, newest first
+        if "briefings" not in data:
+            data["briefings"] = []
+        today_str = now.strftime("%Y-%m-%d")
+        day_num = days
+        # Check if we already have a briefing for today — update it
+        found = False
+        for b in data["briefings"]:
+            if b.get("date") == today_str:
+                b["summary"] = new_summary
+                b["day"] = day_num
+                found = True
+                break
+        if not found:
+            data["briefings"].insert(0, {
+                "date": today_str,
+                "day": day_num,
+                "summary": new_summary
+            })
+        # Keep last 90 days of briefings
+        data["briefings"] = data["briefings"][:90]
+        # Ensure newest first
+        data["briefings"].sort(key=lambda x: x.get("date", ""), reverse=True)
+        print(f"  Saved LLM summary to data.json (briefings: {len(data['briefings'])} days)")
 
     # ---- WRITE DATA.JSON ----
     # Use ensure_ascii=True so all non-ASCII chars become \uXXXX escapes.
