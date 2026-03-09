@@ -725,13 +725,13 @@
             }
         }
 
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
+        // Initialize immediately (script is at end of body, DOM is ready)
+        (function init() {
             updateClocks();
             setInterval(updateClocks, 1000);
             loadHeadlines();
             setInterval(loadHeadlines, REFRESH_INTERVAL);
-        });
+        })();
     </script>
 </body>
 </html>

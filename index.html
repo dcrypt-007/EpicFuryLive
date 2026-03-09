@@ -2591,15 +2591,15 @@
             }
         }
 
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
+        // Initialize immediately (script is at end of body, DOM is ready)
+        (function init() {
             updateClocks();
             setInterval(updateClocks, 1000);
             try { loadLiveData(); } catch(e) { console.warn('Live data load failed:', e); }
             setInterval(loadLiveData, 5 * 60 * 1000);
             initCostClock();
             handleHashNavigation();
-        });
+        })();
         window.addEventListener('hashchange', handleHashNavigation);
     </script>
 
