@@ -43,30 +43,34 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 
-LLM_STATS_PROMPT = """You are a fact-checker for a live war tracker covering the 2026 US-Israel-Iran war (Operation Epic Fury), which began February 28, 2026. Today is {today}, Day {day_count}.
+LLM_STATS_PROMPT = """You are a fact-checker for epicfurylive.com, a live war tracker for the 2026 US-Israel-Iran war (Operation Epic Fury), which began February 28, 2026. Today is {today}, Day {day_count}.
 
-TODAY'S NEWS HEADLINES:
+IMPORTANT: Use your web search tool to look up the CURRENT CONFIRMED numbers for each field below. Search for the latest reporting from Pentagon, CENTCOM, IDF, Iran Ministry of Health, Reuters, AP, Al Jazeera, etc.
+
+Search queries to try:
+- "US soldiers killed Operation Epic Fury" or "US KIA Iran war 2026"
+- "Israeli deaths Iran war 2026"
+- "Iran death toll US strikes 2026"
+- "Iran war casualties March 2026"
+
+ADDITIONAL CONTEXT — today's RSS headlines:
 {headlines}
 
-YOUR JOB: Provide the CONFIRMED, SOURCE-BACKED numbers for each field below. This tracker must be credible — we only display numbers that real news organizations have reported.
-
-CRITICAL RULES:
-- Only return numbers that are backed by named sources (Pentagon, CENTCOM, Iran MOH, HRANA, IDF, Reuters, AP, etc.)
-- Do NOT estimate or extrapolate. Do NOT assume "ongoing operations produce casualties."
-- If NO credible source has reported a number for a field, return null. Null is perfectly fine — it means "no confirmed update."
-- Cite the source for every non-null value in the "note" field.
+RULES:
+- Use ONLY numbers backed by named sources you found via web search or in the headlines above.
+- Do NOT estimate or guess. If you cannot find a confirmed number, return null.
+- Cite the source URL or name for every non-null value.
 - These are CUMULATIVE totals, not daily increments.
-- Accuracy is more important than having a number for every field.
 
 FIELDS:
-- iranDeaths: Total Iranian deaths reported by credible sources. Different sources give very different numbers — cite which source you are using.
-- usKIA: US military killed in action. ONLY count deaths confirmed by the Pentagon or CENTCOM.
-- israeliDeaths: Israeli military and civilian deaths confirmed by IDF or Israeli media.
-- civilianDeaths: Iranian civilian casualties from credible humanitarian or media sources.
-- iranWounded: Iranian wounded from credible sources.
-- gulfCasualties: Deaths in Gulf states (UAE, Saudi, Kuwait, Bahrain) from credible sources.
-- totalStrikes: Combined US-Israeli strikes from Pentagon/CENTCOM/IDF briefings.
-- bannerKilled: TOTAL killed across ALL parties. Sum of confirmed death figures only.
+- iranDeaths: Total Iranian deaths (cite which source — Iran MOH, HRANA, etc.)
+- usKIA: US military killed in action — ONLY Pentagon/CENTCOM confirmed deaths
+- israeliDeaths: Israeli military + civilian deaths from IDF or Israeli media
+- civilianDeaths: Iranian civilian casualties from humanitarian/media sources
+- iranWounded: Iranian wounded from credible sources
+- gulfCasualties: Deaths in Gulf states (UAE, Saudi, Kuwait, Bahrain)
+- totalStrikes: Combined US-Israeli strikes from official briefings
+- bannerKilled: TOTAL killed across ALL parties (sum of confirmed figures)
 
 Return ONLY valid JSON, no markdown, no explanation:
 {{
@@ -144,18 +148,17 @@ def llm_update_stats(days, news_items=None, current_data=None):
 
 
 def _call_openai(prompt):
-    """Call OpenAI GPT-5.4 API. Returns raw text response or None."""
+    """Call OpenAI Responses API with web_search enabled.
+    GPT can search the live internet to find real confirmed numbers."""
     request_body = json.dumps({
         "model": "gpt-5.4",
-        "max_completion_tokens": 2000,
-        "messages": [
-            {"role": "system", "content": "You are a data extraction assistant. Return ONLY valid JSON. No markdown, no explanation."},
-            {"role": "user", "content": prompt}
-        ]
+        "tools": [{"type": "web_search"}],
+        "instructions": "You are a data extraction assistant. Return ONLY valid JSON. No markdown, no explanation.",
+        "input": prompt
     }).encode("utf-8")
 
     req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions",
+        "https://api.openai.com/v1/responses",
         data=request_body,
         headers={
             "Content-Type": "application/json",
@@ -165,15 +168,33 @@ def _call_openai(prompt):
     )
 
     try:
-        print("  [LLM] Calling OpenAI GPT-5.4 for stat extraction...")
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        print("  [LLM] Calling OpenAI Responses API (GPT-5.4 + web search)...")
+        with urllib.request.urlopen(req, timeout=60) as resp:
             response = json.loads(resp.read().decode("utf-8"))
-        text = response["choices"][0]["message"]["content"].strip()
-        print("  [LLM] Got response from OpenAI")
-        return text
+
+        # Extract text from the Responses API output array
+        # The output is an array of items; we need type="message" items
+        text = ""
+        for item in response.get("output", []):
+            if item.get("type") == "message":
+                for content in item.get("content", []):
+                    if content.get("type") == "output_text":
+                        text += content.get("text", "")
+
+        if not text:
+            # Fallback: try output_text top-level helper
+            text = response.get("output_text", "")
+
+        if text:
+            print("  [LLM] Got response from OpenAI (with web search)")
+            return text.strip()
+        else:
+            print(f"  [LLM] OpenAI returned empty output. Keys: {list(response.keys())}")
+            return None
+
     except urllib.error.HTTPError as e:
         error_body = e.read().decode("utf-8", errors="replace")
-        print(f"  [LLM] OpenAI API error {e.code}: {error_body[:200]}")
+        print(f"  [LLM] OpenAI API error {e.code}: {error_body[:300]}")
         return None
     except Exception as e:
         print(f"  [LLM] OpenAI failed: {e}")
