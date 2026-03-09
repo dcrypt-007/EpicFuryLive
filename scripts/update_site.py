@@ -147,7 +147,7 @@ def _call_openai(prompt):
     """Call OpenAI GPT-5.4 API. Returns raw text response or None."""
     request_body = json.dumps({
         "model": "gpt-5.4",
-        "max_tokens": 2000,
+        "max_completion_tokens": 2000,
         "messages": [
             {"role": "system", "content": "You are a data extraction assistant. Return ONLY valid JSON. No markdown, no explanation."},
             {"role": "user", "content": prompt}
