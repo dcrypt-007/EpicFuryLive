@@ -42,53 +42,51 @@ import math
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
-LLM_STATS_PROMPT = """You are a military analyst updating a live war tracker for the 2026 US-Israel-Iran war (Operation Epic Fury), which began February 28, 2026. Today is {today}, Day {day_count}.
-
-CURRENT TRACKER VALUES:
-{current_values}
+LLM_STATS_PROMPT = """You are a fact-checker for a live war tracker covering the 2026 US-Israel-Iran war (Operation Epic Fury), which began February 28, 2026. Today is {today}, Day {day_count}.
 
 TODAY'S NEWS HEADLINES:
 {headlines}
 
-YOUR JOB: Update ALL casualty and strike figures using headlines + your own knowledge. This is a real, active war — numbers change daily. You MUST provide your best estimate for EVERY field. Do NOT return null unless you have zero information about a field. Returning null means the tracker stays frozen, which is unacceptable for a live war tracker.
+YOUR JOB: Provide the CONFIRMED, SOURCE-BACKED numbers for each field below. This tracker must be credible — we only display numbers that real news organizations have reported.
 
-FIELD-SPECIFIC GUIDANCE:
-- iranDeaths: This is the MOST IMPORTANT field. Multiple sources report different numbers: Iran MOH (~1,000-2,000), HRANA opposition group (~5,000-7,000), Trump admin (~30,000+). Use a credible mid-range estimate. After {day_count} days of heavy bombing including ~3,700 strikes on a country of 88 million people, the death toll is certainly growing daily. If our current value seems stale or low, INCREASE it with your best estimate. Do NOT leave this null.
-- usKIA: US military killed in action. Check headlines for any new incidents. Even without specific headlines, ongoing operations produce casualties.
-- israeliDeaths: Israeli military and civilian deaths from Iranian retaliation and Hezbollah attacks.
-- civilianDeaths: Disputed Iranian civilian casualties from strikes on non-military targets.
-- iranWounded: Iranian wounded — typically 3-5x the death count in modern conflicts.
-- gulfCasualties: Deaths in Gulf states (UAE, Saudi, Kuwait, Bahrain) from Iranian retaliation.
-- totalStrikes: Combined US-Israeli strikes. This number grows daily as operations continue.
-- bannerKilled: TOTAL killed across ALL parties (Iran + US + Israel + Gulf + civilians). Sum of all death figures.
+CRITICAL RULES:
+- Only return numbers that are backed by named sources (Pentagon, CENTCOM, Iran MOH, HRANA, IDF, Reuters, AP, etc.)
+- Do NOT estimate or extrapolate. Do NOT assume "ongoing operations produce casualties."
+- If NO credible source has reported a number for a field, return null. Null is perfectly fine — it means "no confirmed update."
+- Cite the source for every non-null value in the "note" field.
+- These are CUMULATIVE totals, not daily increments.
+- Accuracy is more important than having a number for every field.
 
-RULES:
-- All numbers are CUMULATIVE — they only go up, never down
-- You MUST return a numeric value for iranDeaths, usKIA, israeliDeaths, and totalStrikes — these are critical
-- If a headline mentions a specific new number, use it
-- If no headline mentions a field but the war is ongoing, estimate a reasonable daily increase
-- For newThreats: extract clearly stated military threats from headlines
-- Return ONLY valid JSON, no markdown, no explanation
+FIELDS:
+- iranDeaths: Total Iranian deaths reported by credible sources. Different sources give very different numbers — cite which source you are using.
+- usKIA: US military killed in action. ONLY count deaths confirmed by the Pentagon or CENTCOM.
+- israeliDeaths: Israeli military and civilian deaths confirmed by IDF or Israeli media.
+- civilianDeaths: Iranian civilian casualties from credible humanitarian or media sources.
+- iranWounded: Iranian wounded from credible sources.
+- gulfCasualties: Deaths in Gulf states (UAE, Saudi, Kuwait, Bahrain) from credible sources.
+- totalStrikes: Combined US-Israeli strikes from Pentagon/CENTCOM/IDF briefings.
+- bannerKilled: TOTAL killed across ALL parties. Sum of confirmed death figures only.
 
-Return this exact JSON structure:
+Return ONLY valid JSON, no markdown, no explanation:
 {{
-  "iranDeaths": {{"value": null, "note": "source or reasoning"}},
-  "usKIA": {{"value": null, "note": "source or reasoning"}},
-  "israeliDeaths": {{"value": null, "note": "source or reasoning"}},
-  "civilianDeaths": {{"value": null, "note": "source or reasoning"}},
-  "iranWounded": {{"value": null, "note": "source or reasoning"}},
-  "gulfCasualties": {{"value": null, "note": "source or reasoning"}},
-  "totalStrikes": {{"value": null, "note": "source or reasoning"}},
-  "bannerKilled": {{"value": null, "note": "total across all parties"}},
+  "iranDeaths": {{"value": null, "note": "source"}},
+  "usKIA": {{"value": null, "note": "source"}},
+  "israeliDeaths": {{"value": null, "note": "source"}},
+  "civilianDeaths": {{"value": null, "note": "source"}},
+  "iranWounded": {{"value": null, "note": "source"}},
+  "gulfCasualties": {{"value": null, "note": "source"}},
+  "totalStrikes": {{"value": null, "note": "source"}},
+  "bannerKilled": {{"value": null, "note": "sum of confirmed figures"}},
   "newThreats": [],
-  "summary": "One paragraph summary of today's key developments"
+  "summary": "One paragraph summary of today's key developments based on confirmed reporting only"
 }}"""
 
 
 def llm_update_stats(days, news_items=None, current_data=None):
     """
     Call the Anthropic Claude API to extract updated stats from today's headlines.
-    Feeds the LLM current tracker values + fresh RSS headlines as context.
+    Feeds fresh RSS headlines to GPT and asks for confirmed, source-backed numbers.
+    No current values are sent — GPT reports what sources say, not incremental updates.
     Returns a dict of updated stats, or None if the API call fails.
     """
     if not OPENAI_API_KEY and not ANTHROPIC_API_KEY:
@@ -97,22 +95,6 @@ def llm_update_stats(days, news_items=None, current_data=None):
 
     now = datetime.now(timezone.utc)
     today = now.strftime("%B %d, %Y")
-
-    # Build current values string from data.json
-    current_values = "No current values available"
-    if current_data:
-        hc = current_data.get("humanCost", {})
-        banner = current_data.get("banner", {})
-        current_values = (
-            f"- Iranian deaths: {hc.get('iranDeaths', 'unknown')}\n"
-            f"- US KIA: {hc.get('usKIA', 'unknown')}\n"
-            f"- Israeli deaths: {hc.get('israeliDeaths', 'unknown')}\n"
-            f"- Civilian deaths: {hc.get('civilianDeaths', 'unknown')}\n"
-            f"- Iranian wounded: {hc.get('iranWounded', 'unknown')}\n"
-            f"- Gulf casualties: {hc.get('gulfCasualties', 'unknown')}\n"
-            f"- Total strikes: {banner.get('strikes', 'unknown')}\n"
-            f"- Banner killed: {banner.get('killed', 'unknown')}"
-        )
 
     # Build headlines string from RSS items
     headlines = "No headlines available"
@@ -128,7 +110,6 @@ def llm_update_stats(days, news_items=None, current_data=None):
     prompt = LLM_STATS_PROMPT.format(
         today=today,
         day_count=days,
-        current_values=current_values,
         headlines=headlines
     )
 
@@ -238,8 +219,9 @@ def _call_anthropic(prompt):
 def apply_llm_stats(data, llm_stats):
     """
     Apply LLM-provided stats to data.json.
-    Only updates values if the LLM provides them (non-null).
-    For casualty figures, only updates if the new value is >= current (casualties only go up).
+    Sets values DIRECTLY from GPT — no incremental logic, no min_check.
+    Only updates a field if GPT provides a non-null value with a source.
+    If GPT returns null for a field, the existing value is preserved.
     """
     if not llm_stats:
         return []
@@ -254,19 +236,20 @@ def apply_llm_stats(data, llm_stats):
     human_cost = data.get("humanCost", {})
     banner = data.get("banner", {})
 
-    # --- Update casualty figures ---
+    # --- Update casualty figures (direct from GPT, no min_check) ---
     CASUALTY_FIELDS = {
-        "iranDeaths": {"key": "iranDeaths", "format": "{:,}", "min_check": True},
-        "usKIA": {"key": "usKIA", "format": "{}", "min_check": True},
-        "israeliDeaths": {"key": "israeliDeaths", "format": "{}", "min_check": True},
-        "civilianDeaths": {"key": "civilianDeaths", "format": "{}", "min_check": True},
-        "iranWounded": {"key": "iranWounded", "format": "{:,}+", "min_check": True},
-        "gulfCasualties": {"key": "gulfCasualties", "format": "{}", "min_check": True},
+        "iranDeaths": {"key": "iranDeaths", "format": "{:,}"},
+        "usKIA": {"key": "usKIA", "format": "{}"},
+        "israeliDeaths": {"key": "israeliDeaths", "format": "{}"},
+        "civilianDeaths": {"key": "civilianDeaths", "format": "{}"},
+        "iranWounded": {"key": "iranWounded", "format": "{:,}+"},
+        "gulfCasualties": {"key": "gulfCasualties", "format": "{}"},
     }
 
     for field, config in CASUALTY_FIELDS.items():
         stat = llm_stats.get(field)
         if not stat or stat.get("value") is None:
+            print(f"    [LLM] {field}: no confirmed value — keeping existing")
             continue
 
         new_val = int(stat["value"])
@@ -274,13 +257,9 @@ def apply_llm_stats(data, llm_stats):
         current = int(str(current_str).replace(",", "").replace("+", "").strip() or "0")
         note = stat.get("note", "")
 
-        if config["min_check"] and new_val < current:
-            print(f"    [LLM] {field}: LLM says {new_val:,} but current is {current:,} — keeping current (casualties don't go down)")
-            continue
-
+        formatted = config["format"].format(new_val)
+        human_cost[config["key"]] = formatted
         if new_val != current:
-            formatted = config["format"].format(new_val)
-            human_cost[config["key"]] = formatted
             updates.append(f"  [LLM] {field}: {current:,} -> {new_val:,} ({note})")
         else:
             print(f"    [LLM] {field}: confirmed at {current:,} ({note})")
@@ -296,10 +275,9 @@ def apply_llm_stats(data, llm_stats):
         new_strikes = int(strikes_stat["value"])
         current_str = banner.get("strikes", "0").replace("~", "").replace(",", "").replace("+", "")
         current_strikes = int(current_str) if current_str.isdigit() else 0
-        if new_strikes >= current_strikes:
-            banner["strikes"] = f"~{new_strikes:,}"
-            if new_strikes != current_strikes:
-                updates.append(f"  [LLM] strikes: ~{current_strikes:,} -> ~{new_strikes:,}")
+        banner["strikes"] = f"~{new_strikes:,}"
+        if new_strikes != current_strikes:
+            updates.append(f"  [LLM] strikes: ~{current_strikes:,} -> ~{new_strikes:,}")
 
     # --- Add new threats from LLM ---
     new_threats = llm_stats.get("newThreats", [])
@@ -307,7 +285,6 @@ def apply_llm_stats(data, llm_stats):
         existing_texts = {t.get("text", "")[:60].lower() for t in data["threats"]}
         added = 0
         for threat in new_threats:
-            # Handle both dict format {"text": "...", "actor": "..."} and plain string format
             if isinstance(threat, str):
                 threat = {"text": threat, "actor": "Unknown", "severity": "high"}
             if not isinstance(threat, dict) or not threat.get("text"):
@@ -331,7 +308,6 @@ def apply_llm_stats(data, llm_stats):
 
         if added:
             updates.append(f"  [LLM] Added {added} new threats")
-            # Cap at 25
             if len(data["threats"]) > 25:
                 del data["threats"][25:]
 
@@ -901,8 +877,15 @@ def update_rss_feed(news_items):
 # ============================================================
 # UPDATE DATA.JSON — All dynamic content + OpenClaw cost model
 # ============================================================
-def scan_casualties(news_items, human_cost):
-    """
+
+# NOTE: scan_casualties was removed. All casualty/strike figures now come
+# exclusively from GPT fact-checking in apply_llm_stats().
+# The old function used regex to scan headlines for numbers, which produced
+# unreliable results (e.g., inflating US KIA from 7 to 200+).
+
+
+def _removed_scan_casualties():
+    """REMOVED — see apply_llm_stats() instead.
     Scan RSS articles for updated casualty figures.
     Only updates a number if a HIGHER number is found (casualties only go up).
     Uses both RSS descriptions AND full article text when available.
