@@ -112,7 +112,7 @@
     </script>
 
     <!-- Chart.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-d5nkXVJeDVkjQBTLCpp2djjHqPEXZc4xQtXPMVOhUhMKkkkHmXUO1FZLWIVHJDxl1nP2hBFBzSLFkfYHU47TFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Google Fonts for JetBrains Mono -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -2312,13 +2312,16 @@
             }).join('<br><br>');
         }
 
-        // Chart defaults
-        Chart.defaults.color = '#94a3b8';
-        Chart.defaults.borderColor = '#1e2a3a';
-        Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+        // Chart defaults (guarded — Chart.js may fail to load from CDN)
+        if (typeof Chart !== 'undefined') {
+            Chart.defaults.color = '#94a3b8';
+            Chart.defaults.borderColor = '#1e2a3a';
+            Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+        }
 
         // Casualties breakdown bar chart (from data.json chartData)
         function initCasualtiesChart() {
+            if (typeof Chart === 'undefined') { console.warn('Chart.js not loaded, skipping casualties chart'); return; }
             const canvas = document.getElementById('casualtiesChart');
             if (!canvas || !window._chartData) return;
             const cd = window._chartData;
@@ -2361,6 +2364,7 @@
 
         // Trends + Cost charts (from history.json dailySummaries)
         function initTrendsCharts() {
+            if (typeof Chart === 'undefined') { console.warn('Chart.js not loaded, skipping trends charts'); return; }
             fetch('/history.json?t=' + Date.now())
                 .then(r => r.json())
                 .then(hist => {
@@ -2591,29 +2595,31 @@
             }
         }
 
-        // Initialize the dashboard — triple-redundant to handle all browser edge cases
-        var _initDone = false;
-        function initDashboard() {
-            if (_initDone) return;
-            _initDone = true;
-            try {
-                updateClocks();
-                setInterval(updateClocks, 1000);
-            } catch(e) { console.warn('Clock init failed:', e); }
-            try { loadLiveData(); } catch(e) { console.warn('Live data load failed:', e); }
-            setInterval(loadLiveData, 5 * 60 * 1000);
-            try { initCostClock(); } catch(e) { console.warn('Cost clock init failed:', e); }
-            try { handleHashNavigation(); } catch(e) { console.warn('Hash nav failed:', e); }
-            console.log('Dashboard initialized');
-        }
+    </script>
 
-        // Strategy 1: Run immediately (script is at end of body)
-        try { initDashboard(); } catch(e) { console.warn('Immediate init failed:', e); }
-        // Strategy 2: Run on window load (catches deferred/async edge cases)
-        window.addEventListener('load', initDashboard);
-        // Strategy 3: Fallback timeout (catches everything else)
-        setTimeout(initDashboard, 500);
-        window.addEventListener('hashchange', handleHashNavigation);
+    <!-- INIT SCRIPT — separate tag so a Chart.js or other error in main script cannot kill it -->
+    <script>
+        (function() {
+            var done = false;
+            function boot() {
+                if (done) return;
+                done = true;
+                console.log('[INIT] Dashboard boot starting...');
+                try { updateClocks(); setInterval(updateClocks, 1000); } catch(e) { console.warn('[INIT] Clock failed:', e); }
+                try { loadLiveData(); } catch(e) { console.warn('[INIT] Live data failed:', e); }
+                setInterval(loadLiveData, 5 * 60 * 1000);
+                try { initCostClock(); } catch(e) { console.warn('[INIT] Cost clock failed:', e); }
+                try { handleHashNavigation(); } catch(e) { console.warn('[INIT] Hash nav failed:', e); }
+                window.addEventListener('hashchange', handleHashNavigation);
+                console.log('[INIT] Dashboard boot complete');
+            }
+            // Try immediately
+            try { boot(); } catch(e) { console.warn('[INIT] Immediate boot failed:', e); }
+            // Fallback on window load
+            window.addEventListener('load', boot);
+            // Fallback timeout
+            setTimeout(boot, 500);
+        })();
     </script>
 
     <!-- SITE FOOTER -->
