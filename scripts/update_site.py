@@ -307,7 +307,10 @@ def apply_llm_stats(data, llm_stats):
         existing_texts = {t.get("text", "")[:60].lower() for t in data["threats"]}
         added = 0
         for threat in new_threats:
-            if not threat.get("text"):
+            # Handle both dict format {"text": "...", "actor": "..."} and plain string format
+            if isinstance(threat, str):
+                threat = {"text": threat, "actor": "Unknown", "severity": "high"}
+            if not isinstance(threat, dict) or not threat.get("text"):
                 continue
             fingerprint = threat["text"][:60].lower()
             if fingerprint in existing_texts:
@@ -1596,6 +1599,12 @@ def update_sitemap():
     <lastmod>{now}</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.epicfurylive.com/news.html</loc>
+    <lastmod>{now}</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.epicfurylive.com/methodology.html</loc>
