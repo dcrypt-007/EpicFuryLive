@@ -42,6 +42,53 @@ import math
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
+# ============================================================
+# CONFIRMED BASELINES — manually verified from named sources.
+# GPT values are validated against these. Any GPT output that deviates
+# beyond max_delta from the baseline is REJECTED as a hallucination.
+# To update a baseline: verify the new number from a named source,
+# then update the value and date here.
+# ============================================================
+CONFIRMED_BASELINES = {
+    "usKIA": {
+        "value": 7,
+        "max_delta": 20,       # GPT can report up to baseline + max_delta
+        "source": "CENTCOM: 6 killed Kuwait Mar 2 + 1 died of wounds Mar 8",
+        "updated": "2026-03-09"
+    },
+    "israeliDeaths": {
+        "value": 11,
+        "max_delta": 50,
+        "source": "IDF: 9 Beit Shemesh missile strike + 2 IED Gaza",
+        "updated": "2026-03-09"
+    },
+    "gulfCasualties": {
+        "value": 9,
+        "max_delta": 30,
+        "source": "Official statements: mostly civilian, UAE/Saudi/Kuwait/Bahrain",
+        "updated": "2026-03-09"
+    },
+    # Iran figures are heavily disputed across sources, so wider bounds
+    "iranDeaths": {
+        "value": 1045,
+        "max_delta": 5000,
+        "source": "Iran MOH ~1,045 confirmed; HRANA estimates up to 7,000",
+        "updated": "2026-03-09"
+    },
+    "civilianDeaths": {
+        "value": 148,
+        "max_delta": 2000,
+        "source": "Disputed; girls school strike Mar 2, US disputes",
+        "updated": "2026-03-09"
+    },
+    "iranWounded": {
+        "value": 6000,
+        "max_delta": 20000,
+        "source": "Iranian state media, IRC",
+        "updated": "2026-03-09"
+    },
+}
+
 LLM_STATS_PROMPT = """You are a fact-checker for a live war tracker covering the 2026 US-Israel-Iran war (Operation Epic Fury), which began February 28, 2026. Today is {today}, Day {day_count}.
 
 TODAY'S NEWS HEADLINES:
@@ -113,7 +160,7 @@ def llm_update_stats(days, news_items=None, current_data=None):
         headlines=headlines
     )
 
-    # Try OpenAI first (GPT-4o-mini — fast, cheap, cooperative), then fall back to Claude
+    # Try OpenAI first (GPT-5.4 — fast, cheap, cooperative), then fall back to Claude
     text = None
 
     if OPENAI_API_KEY:
@@ -143,9 +190,9 @@ def llm_update_stats(days, news_items=None, current_data=None):
 
 
 def _call_openai(prompt):
-    """Call OpenAI GPT-4o-mini API. Returns raw text response or None."""
+    """Call OpenAI GPT-5.4 API. Returns raw text response or None."""
     request_body = json.dumps({
-        "model": "gpt-4o-mini",
+        "model": "gpt-5.4",
         "max_tokens": 2000,
         "messages": [
             {"role": "system", "content": "You are a data extraction assistant. Return ONLY valid JSON. No markdown, no explanation."},
@@ -164,7 +211,7 @@ def _call_openai(prompt):
     )
 
     try:
-        print("  [LLM] Calling OpenAI GPT-4o-mini for stat extraction...")
+        print("  [LLM] Calling OpenAI GPT-5.4 for stat extraction...")
         with urllib.request.urlopen(req, timeout=30) as resp:
             response = json.loads(resp.read().decode("utf-8"))
         text = response["choices"][0]["message"]["content"].strip()
@@ -236,7 +283,7 @@ def apply_llm_stats(data, llm_stats):
     human_cost = data.get("humanCost", {})
     banner = data.get("banner", {})
 
-    # --- Update casualty figures (direct from GPT, no min_check) ---
+    # --- Update casualty figures (validated against CONFIRMED_BASELINES) ---
     CASUALTY_FIELDS = {
         "iranDeaths": {"key": "iranDeaths", "format": "{:,}"},
         "usKIA": {"key": "usKIA", "format": "{}"},
@@ -248,15 +295,46 @@ def apply_llm_stats(data, llm_stats):
 
     for field, config in CASUALTY_FIELDS.items():
         stat = llm_stats.get(field)
+        baseline = CONFIRMED_BASELINES.get(field)
+
         if not stat or stat.get("value") is None:
-            print(f"    [LLM] {field}: no confirmed value — keeping existing")
+            # No GPT value — use baseline if we have one and current is wildly off
+            if baseline:
+                current_str = human_cost.get(config["key"], "0")
+                current = int(str(current_str).replace(",", "").replace("+", "").strip() or "0")
+                max_allowed = baseline["value"] + baseline["max_delta"]
+                if current > max_allowed:
+                    # Current value exceeds baseline bounds — reset to baseline
+                    formatted = config["format"].format(baseline["value"])
+                    human_cost[config["key"]] = formatted
+                    updates.append(f"  [BASELINE] {field}: {current:,} -> {baseline['value']:,} (reset: was beyond bounds, source: {baseline['source']})")
+            else:
+                print(f"    [LLM] {field}: no confirmed value — keeping existing")
             continue
 
         new_val = int(stat["value"])
+        note = stat.get("note", "")
         current_str = human_cost.get(config["key"], "0")
         current = int(str(current_str).replace(",", "").replace("+", "").strip() or "0")
-        note = stat.get("note", "")
 
+        # Validate against baseline bounds
+        if baseline:
+            max_allowed = baseline["value"] + baseline["max_delta"]
+            if new_val > max_allowed:
+                # GPT hallucinated — reject and use baseline
+                formatted = config["format"].format(baseline["value"])
+                human_cost[config["key"]] = formatted
+                updates.append(f"  [REJECTED] {field}: GPT said {new_val:,} but max allowed is {max_allowed:,} — using baseline {baseline['value']:,} ({baseline['source']})")
+                continue
+            if new_val < baseline["value"]:
+                # GPT returned less than baseline — use baseline (casualties don't go down from confirmed)
+                formatted = config["format"].format(baseline["value"])
+                human_cost[config["key"]] = formatted
+                if current != baseline["value"]:
+                    updates.append(f"  [BASELINE] {field}: {current:,} -> {baseline['value']:,} (GPT said {new_val:,}, using baseline floor)")
+                continue
+
+        # Value is within bounds — accept it
         formatted = config["format"].format(new_val)
         human_cost[config["key"]] = formatted
         if new_val != current:
@@ -1359,7 +1437,24 @@ def update_data_json(news_items):
         else:
             print("  [LLM] All stats confirmed — no changes needed")
     else:
-        print("  [LLM] Skipped (no API key or API call failed) — stats unchanged")
+        print("  [LLM] Skipped (no API key or API call failed)")
+        # Even without LLM, enforce baselines on any previously-hallucinated values
+        llm_updates = apply_llm_stats(data, {})
+
+    # ---- ENFORCE BASELINES (always runs, even without LLM) ----
+    # If any current value exceeds baseline bounds, reset it now
+    human_cost = data.get("humanCost", {})
+    for field, baseline in CONFIRMED_BASELINES.items():
+        key = field
+        current_str = human_cost.get(key, "0")
+        current = int(str(current_str).replace(",", "").replace("+", "").strip() or "0")
+        max_allowed = baseline["value"] + baseline["max_delta"]
+        if current > max_allowed:
+            fmt = "{:,}" if field in ("iranDeaths", "iranWounded") else "{}"
+            if field == "iranWounded":
+                fmt = "{:,}+"
+            human_cost[key] = fmt.format(baseline["value"])
+            print(f"  [BASELINE ENFORCE] {field}: {current:,} -> {baseline['value']:,} (exceeded max {max_allowed:,})")
 
     # ---- EVIDENCE TAB: Static nuclear evidence only (locked) ----
     # The Evidence tab is reserved for curated nuclear weapons evidence (IAEA data).
