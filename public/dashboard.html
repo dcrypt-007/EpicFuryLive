@@ -52,7 +52,7 @@
         "url": "https://www.epicfurylive.com",
         "coverageStartTime": "2026-02-28T00:00:00Z",
         "datePublished": "2026-02-28T00:00:00Z",
-        "dateModified": "2026-03-09T09:02:29Z",
+        "dateModified": "2026-03-09T10:07:47Z",
         "author": {
             "@type": "Organization",
             "name": "Epic Fury Live",
@@ -741,6 +741,24 @@
 
         .briefing-card strong { color: #f1f5f9; }
 
+        .briefing-day-label {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #f97316;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .briefing-card + .briefing-day-label {
+            margin-top: 16px;
+        }
+
+        .briefing-card.past {
+            border-left-color: #334155;
+            opacity: 0.7;
+        }
+
         /* CHANGES GRID */
         .changes-grid {
             display: grid;
@@ -1337,7 +1355,7 @@
             </h1>
             <div>
                 <div class="header-subtitle">US-Iran War Tracker — Live Updates, Casualties & Evidence</div>
-                <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Last updated: <time id="siteLastUpdated" datetime="2026-03-09T09:02:29Z">Mar 09, 2026 09:02 UTC</time></div>
+                <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Last updated: <time id="siteLastUpdated" datetime="2026-03-09T10:07:47Z">Mar 09, 2026 10:07 UTC</time></div>
             </div>
         </div>
 
@@ -1498,15 +1516,17 @@
                 <div class="burn-rate" id="costClockBurn">~$1.5 billion per day (estimated)</div>
             </div>
 
-            <!-- DAILY BRIEFING -->
+            <!-- DAILY BRIEFING (stacked by day) -->
             <div class="briefing-section">
                 <div class="section-header">
                     <div class="dot"></div>
                     <h2 id="briefingTitle">AI Daily Briefing</h2>
                     <div class="line"></div>
                 </div>
-                <div class="briefing-card" id="briefingContent">
-                    <span style="color:#64748b;font-style:italic;">AI briefing will appear after the next automated update cycle.</span>
+                <div id="briefingsContainer">
+                    <div class="briefing-card" id="briefingContent">
+                        <span style="color:#64748b;font-style:italic;">AI briefing will appear after the next automated update cycle.</span>
+                    </div>
                 </div>
             </div>
 
@@ -2050,8 +2070,20 @@
             renderIsraelStats(data);
             renderIranStats(data);
 
-            // Render briefing and changes
-            if (data.summary) {
+            // Render stacked briefings (newest first)
+            if (data.briefings && Array.isArray(data.briefings) && data.briefings.length > 0) {
+                var container = document.getElementById('briefingsContainer');
+                var html = '';
+                data.briefings.forEach(function(b, i) {
+                    var dateStr = b.date || '';
+                    var dayNum = b.day || '?';
+                    var label = 'Day ' + dayNum + ' — ' + dateStr;
+                    var pastClass = i > 0 ? ' past' : '';
+                    html += '<div class="briefing-day-label">' + label + '</div>';
+                    html += '<div class="briefing-card' + pastClass + '">' + b.summary + '</div>';
+                });
+                container.innerHTML = html;
+            } else if (data.summary) {
                 document.getElementById('briefingContent').textContent = data.summary;
             }
             if (data.changes && Array.isArray(data.changes)) {
