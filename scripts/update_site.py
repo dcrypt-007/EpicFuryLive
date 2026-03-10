@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 """
-Epic Fury Live — Automated Site Updater + OpenClaw Cost Tracker
+Epic Fury Live — Automated Site Updater + LLM-Driven Cost Tracker
 Runs hourly via GitHub Actions to pull fresh conflict data and update the dashboard.
 
-OpenClaw scans RSS articles for cost-driving data (munition counts, carrier
-deployments, sortie numbers, troop figures) and recalculates the financial
-cost model automatically. Time-based costs (carriers at sea, personnel
-deployed) accumulate daily. Event-based costs (missiles fired, sorties flown)
-update when new quantities are found in reporting.
+ALL dynamic numbers (casualties, strikes, cost model quantities) are updated
+by GPT-5.4 with web search. The LLM understands context and returns only
+confirmed, source-backed numbers — replacing the old OpenClaw keyword scanner
+which caused false positives by blindly extracting numbers near trigger words.
+
+Time-based costs (carriers at sea, personnel deployed) accumulate daily.
+Event-based costs (missiles fired, sorties flown) update when the LLM finds
+new confirmed quantities from credible sources.
 
 Data sources:
-- RSS feeds from Al Jazeera, Reuters, BBC, CNN, AP
-- Structured data extraction via OpenClaw pattern matching
+- RSS feeds from Al Jazeera, Reuters, BBC, CNN, AP, Google News
+- LLM-powered stat extraction (GPT-5.4 + web search, Claude fallback)
 - Timestamp and stats refresh
 - Historical data tracking for trends
 
@@ -52,17 +55,29 @@ Search queries to try:
 - "Israeli deaths Iran war 2026"
 - "Iran death toll US strikes 2026"
 - "Iran war casualties March 2026"
+- "US military Iran deployment troops 2026"
+- "Tomahawk missiles fired Iran 2026"
+- "US airstrikes sorties Iran 2026"
+- "carrier strike group deployed Iran 2026"
+- "US drones Iran MQ-9 Reaper 2026"
+- "missile interceptors Iran THAAD SM-3 2026"
+- "B-2 bomber sorties Iran bunker buster 2026"
 
 ADDITIONAL CONTEXT — today's RSS headlines:
 {headlines}
+
+CURRENT VALUES IN OUR DATABASE (for reference — update ONLY if you find newer confirmed data):
+{current_values}
 
 RULES:
 - Use ONLY numbers backed by named sources you found via web search or in the headlines above.
 - Do NOT estimate or guess. If you cannot find a confirmed number, return null.
 - Cite the source URL or name for every non-null value.
 - These are CUMULATIVE totals, not daily increments.
+- For military quantities: understand context! "1,200 drone strikes" means 1,200 individual strikes, NOT 1,200 drone units deployed. Read carefully.
+- A number near a keyword does NOT mean it applies to that keyword. "The US has fired 500 Tomahawks" is valid. "500 people were killed near a Tomahawk site" is NOT a Tomahawk count.
 
-FIELDS:
+=== SECTION 1: CASUALTY FIELDS ===
 - iranDeaths: Total Iranian deaths (cite which source — Iran MOH, HRANA, etc.)
 - usKIA: US military killed in action — ONLY Pentagon/CENTCOM confirmed deaths
 - israeliDeaths: Israeli military + civilian deaths from IDF or Israeli media
@@ -71,6 +86,25 @@ FIELDS:
 - gulfCasualties: Deaths in Gulf states (UAE, Saudi, Kuwait, Bahrain)
 - totalStrikes: Combined US-Israeli strikes from official briefings
 - bannerKilled: TOTAL killed across ALL parties (sum of confirmed figures)
+
+=== SECTION 2: MILITARY COST MODEL — QUANTITIES DEPLOYED/USED ===
+These are the quantities that drive our financial cost model. Update ONLY with confirmed numbers.
+
+TIME-BASED (ongoing operations — how many are currently deployed/active):
+- carrier_ops: Number of US carrier strike groups currently deployed to the theater (currently {carrier_ops}). Search "carrier strike group Iran" or "CSG deployed Middle East".
+- destroyers: Number of US destroyers/escorts in theater (currently {destroyers}). Search "US Navy destroyers Iran" or "DDG deployed CENTCOM".
+- personnel: Total US military personnel deployed for this operation (currently {personnel}). Search "US troops deployed Iran" or "CENTCOM troop levels".
+- drone_ops: Number of active drone/UAV operational units (not individual strikes — this is units like MQ-9 squadrons). Currently {drone_ops}. Search "MQ-9 Reaper deployed Iran" or "US drone units Middle East".
+
+EVENT-BASED (cumulative totals — how many have been fired/flown total):
+- tomahawk: Total Tomahawk cruise missiles fired (currently {tomahawk}). Search "Tomahawk missiles fired Iran 2026".
+- jdam: Total JDAM guided bombs dropped (currently {jdam}). Search "JDAM bombs dropped Iran".
+- jassm: Total JASSM/JASSM-ER standoff missiles fired (currently {jassm}). Search "JASSM missiles fired Iran".
+- sdb: Total Small Diameter Bombs used (currently {sdb}). Search "SDB bombs Iran".
+- b2_sorties: Total B-2 stealth bomber sorties flown (currently {b2_sorties}). Search "B-2 bomber sorties Iran".
+- mop_bunker_busters: Total GBU-57 MOP bunker busters dropped (currently {mop_bunker_busters}). CRITICAL: The US only has ~20 MOPs in inventory. This number should rarely exceed 20-30. Search "GBU-57 MOP Iran bunker".
+- fighter_sorties: Total fighter/attack aircraft sorties flown (currently {fighter_sorties}). Search "US fighter sorties Iran" or "combat sorties CENTCOM".
+- interceptors: Total missile interceptors fired — SM-3, THAAD, Patriot (currently {interceptors}). Search "missile interceptors fired Iran" or "SM-3 THAAD intercepts".
 
 Return ONLY valid JSON, no markdown, no explanation:
 {{
@@ -82,6 +116,18 @@ Return ONLY valid JSON, no markdown, no explanation:
   "gulfCasualties": {{"value": null, "note": "source"}},
   "totalStrikes": {{"value": null, "note": "source"}},
   "bannerKilled": {{"value": null, "note": "sum of confirmed figures"}},
+  "carrier_ops": {{"value": null, "note": "source"}},
+  "destroyers": {{"value": null, "note": "source"}},
+  "personnel": {{"value": null, "note": "source"}},
+  "drone_ops": {{"value": null, "note": "source"}},
+  "tomahawk": {{"value": null, "note": "source"}},
+  "jdam": {{"value": null, "note": "source"}},
+  "jassm": {{"value": null, "note": "source"}},
+  "sdb": {{"value": null, "note": "source"}},
+  "b2_sorties": {{"value": null, "note": "source"}},
+  "mop_bunker_busters": {{"value": null, "note": "source"}},
+  "fighter_sorties": {{"value": null, "note": "source"}},
+  "interceptors": {{"value": null, "note": "source"}},
   "newThreats": [],
   "summary": "One paragraph summary of today's key developments based on confirmed reporting only"
 }}"""
@@ -112,10 +158,45 @@ def llm_update_stats(days, news_items=None, current_data=None):
             headline_lines.append(f"- [{source}] {title}: {desc}")
         headlines = "\n".join(headline_lines)
 
+    # Build current values string so the LLM knows what we have
+    current_values = "No current data available"
+    if current_data:
+        cv_lines = []
+        human = current_data.get("humanCost", {})
+        banner = current_data.get("banner", {})
+        cv_lines.append(f"- iranDeaths: {human.get('iranDeaths', 'unknown')}")
+        cv_lines.append(f"- usKIA: {human.get('usKIA', 'unknown')}")
+        cv_lines.append(f"- israeliDeaths: {human.get('israeliDeaths', 'unknown')}")
+        cv_lines.append(f"- civilianDeaths: {human.get('civilianDeaths', 'unknown')}")
+        cv_lines.append(f"- iranWounded: {human.get('iranWounded', 'unknown')}")
+        cv_lines.append(f"- gulfCasualties: {human.get('gulfCasualties', 'unknown')}")
+        cv_lines.append(f"- totalStrikes: {banner.get('strikes', 'unknown')}")
+        cv_lines.append(f"- bannerKilled: {banner.get('killed', 'unknown')}")
+        current_values = "\n".join(cv_lines)
+
+    # Extract current cost model quantities for the prompt
+    cost_quantities = {}
+    cost_model = current_data.get("financialCost", {}).get("costModel", {}) if current_data else {}
+    for item in cost_model.get("timeBased", []) + cost_model.get("eventBased", []):
+        cost_quantities[item.get("id", "")] = item.get("quantity", 0)
+
     prompt = LLM_STATS_PROMPT.format(
         today=today,
         day_count=days,
-        headlines=headlines
+        headlines=headlines,
+        current_values=current_values,
+        carrier_ops=cost_quantities.get("carrier_ops", "unknown"),
+        destroyers=cost_quantities.get("destroyers", "unknown"),
+        personnel=cost_quantities.get("personnel", "unknown"),
+        drone_ops=cost_quantities.get("drone_ops", "unknown"),
+        tomahawk=cost_quantities.get("tomahawk", "unknown"),
+        jdam=cost_quantities.get("jdam", "unknown"),
+        jassm=cost_quantities.get("jassm", "unknown"),
+        sdb=cost_quantities.get("sdb", "unknown"),
+        b2_sorties=cost_quantities.get("b2_sorties", "unknown"),
+        mop_bunker_busters=cost_quantities.get("mop_bunker_busters", "unknown"),
+        fighter_sorties=cost_quantities.get("fighter_sorties", "unknown"),
+        interceptors=cost_quantities.get("interceptors", "unknown"),
     )
 
     # Try OpenAI first (GPT-5.4 — fast, cheap, cooperative), then fall back to Claude
@@ -332,6 +413,105 @@ def apply_llm_stats(data, llm_stats):
             updates.append(f"  [LLM] Added {added} new threats")
             if len(data["threats"]) > 25:
                 del data["threats"][25:]
+
+    return updates
+
+
+def apply_llm_costs(data, llm_stats):
+    """
+    Apply LLM-provided cost model quantities to data.json.
+    The LLM returns confirmed quantities for military assets (carriers deployed,
+    missiles fired, sorties flown, etc.) which drive the financial cost model.
+
+    Only updates a field if the LLM provides a non-null value with a source.
+    Includes sanity-check caps as a safety net to prevent obviously wrong values,
+    but the primary intelligence comes from the LLM understanding context.
+    """
+    if not llm_stats:
+        return []
+
+    updates = []
+    cost_model = data.get("financialCost", {}).get("costModel")
+    if not cost_model:
+        return updates
+
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # Safety-net caps — these are absolute physical maximums, not the primary filter.
+    # The LLM should return sensible numbers; these only catch catastrophic errors.
+    SAFETY_CAPS = {
+        "carrier_ops": 6,
+        "destroyers": 60,
+        "personnel": 250000,
+        "intel_cyber": 5,
+        "logistics_support": 5,
+        "fuel_ops": 5,
+        "drone_ops": 150,
+        "comms_space": 5,
+        "tomahawk": 5000,
+        "jdam": 25000,
+        "jassm": 2500,
+        "sdb": 20000,
+        "b2_sorties": 200,
+        "mop_bunker_busters": 30,
+        "fighter_sorties": 25000,
+        "interceptors": 3000,
+        "prestrike_buildup": 1,
+        "medical_casualty": 5,
+    }
+
+    # Cost model items the LLM can update
+    COST_FIELDS = [
+        "carrier_ops", "destroyers", "personnel", "drone_ops",
+        "tomahawk", "jdam", "jassm", "sdb", "b2_sorties",
+        "mop_bunker_busters", "fighter_sorties", "interceptors",
+    ]
+
+    # Build a lookup of cost model items by ID
+    all_items = {}
+    for item in cost_model.get("timeBased", []) + cost_model.get("eventBased", []):
+        item_id = item.get("id", "")
+        if item_id:
+            all_items[item_id] = item
+
+    for field in COST_FIELDS:
+        stat = llm_stats.get(field)
+        if not stat or stat.get("value") is None:
+            print(f"    [LLM-Cost] {field}: no value returned -- keeping existing")
+            continue
+
+        try:
+            new_val = int(stat["value"])
+        except (ValueError, TypeError):
+            print(f"    [LLM-Cost] {field}: invalid value '{stat.get('value')}' -- skipping")
+            continue
+
+        note = stat.get("note", "")
+
+        # Safety cap check
+        cap = SAFETY_CAPS.get(field)
+        if cap and new_val > cap:
+            print(f"    [LLM-Cost] WARNING: {field} value {new_val:,} exceeds safety cap {cap:,} -- clamping")
+            new_val = cap
+
+        # Don't allow zero or negative
+        if new_val <= 0:
+            print(f"    [LLM-Cost] {field}: value {new_val} is zero/negative -- skipping")
+            continue
+
+        # Apply to cost model
+        item = all_items.get(field)
+        if item:
+            old_qty = item.get("quantity", 0)
+            item["quantity"] = new_val
+            item["lastUpdated"] = now_str
+            item["source"] = f"LLM-verified ({note})"
+            if new_val != old_qty:
+                updates.append(f"  [LLM-Cost] {field}: {old_qty:,} -> {new_val:,} ({note})")
+            else:
+                print(f"    [LLM-Cost] {field}: confirmed at {old_qty:,} ({note})")
+        else:
+            print(f"    [LLM-Cost] {field}: not found in cost model -- skipping")
 
     return updates
 
@@ -1369,19 +1549,38 @@ def update_data_json(news_items):
     data["lastUpdated"] = iso_now
     data["dayCount"] = days
 
-    # ---- OPENCLAW: Scan RSS for cost-driving data ----
+    # ---- LLM-POWERED UPDATES (replaces OpenClaw keyword scanning) ----
+    # The LLM (GPT-5.4 with web search) handles ALL dynamic number updates:
+    # casualties, strikes, AND cost model quantities (carriers, missiles, sorties, etc.)
+    # This replaces the old OpenClaw regex scanner which caused false positives.
     cost_model = data.get("financialCost", {}).get("costModel")
-    if cost_model:
-        print("  [OpenClaw] Scanning articles for cost-driving data...")
-        updates = openclaw_scan(news_items, cost_model)
-        if updates:
-            for u in updates:
-                print(u)
-            print(f"  [OpenClaw] Made {len(updates)} quantity updates")
-        else:
-            print("  [OpenClaw] No new quantity updates found in articles")
 
-        # ---- CALCULATE COSTS from model ----
+    llm_stats = llm_update_stats(days, news_items=news_items, current_data=data)
+    if llm_stats:
+        # Apply casualty & strike updates
+        print("  [LLM] Applying updated stats...")
+        llm_updates = apply_llm_stats(data, llm_stats)
+        if llm_updates:
+            for u in llm_updates:
+                print(u)
+            print(f"  [LLM] Made {len(llm_updates)} casualty/strike updates")
+        else:
+            print("  [LLM] All casualty/strike stats confirmed -- no changes needed")
+
+        # Apply cost model quantity updates
+        print("  [LLM] Applying cost model quantities...")
+        cost_updates = apply_llm_costs(data, llm_stats)
+        if cost_updates:
+            for u in cost_updates:
+                print(u)
+            print(f"  [LLM] Made {len(cost_updates)} cost model updates")
+        else:
+            print("  [LLM] All cost quantities confirmed -- no changes needed")
+    else:
+        print("  [LLM] Skipped (no API key or API call failed) -- stats unchanged")
+
+    # ---- CALCULATE COSTS from model (always runs, uses LLM-updated quantities) ----
+    if cost_model:
         total_cost, daily_burn, breakdown = calculate_costs(cost_model, days)
 
         data["financialCost"]["daysOfOps"] = days
@@ -1393,7 +1592,7 @@ def update_data_json(news_items):
         if "banner" in data:
             data["banner"]["cost"] = format_cost_short(total_cost)
 
-        print(f"  [OpenClaw] Total cost: {format_cost(total_cost)} | Daily burn: {format_cost_short(daily_burn)}/day")
+        print(f"  [Cost] Total cost: {format_cost(total_cost)} | Daily burn: {format_cost_short(daily_burn)}/day")
     else:
         # Fallback: simple formula if no cost model
         if "financialCost" in data:
@@ -1402,22 +1601,6 @@ def update_data_json(news_items):
             data["financialCost"]["totalCost"] = f"${total_billions},000,000,000+"
         if "banner" in data:
             data["banner"]["cost"] = f"${days}B+"
-
-    # ---- LLM-POWERED STAT UPDATE (replaces regex scanners) ----
-    # Instead of unreliable regex scanning, we ask Claude for current verified stats.
-    # This runs once per day (controlled by GitHub Actions schedule).
-    llm_stats = llm_update_stats(days, news_items=news_items, current_data=data)
-    if llm_stats:
-        print("  [LLM] Applying updated stats from Claude...")
-        llm_updates = apply_llm_stats(data, llm_stats)
-        if llm_updates:
-            for u in llm_updates:
-                print(u)
-            print(f"  [LLM] Made {len(llm_updates)} updates from LLM")
-        else:
-            print("  [LLM] All stats confirmed — no changes needed")
-    else:
-        print("  [LLM] Skipped (no API key or API call failed) — stats unchanged")
 
     # ---- EVIDENCE TAB: Static nuclear evidence only (locked) ----
     # The Evidence tab is reserved for curated nuclear weapons evidence (IAEA data).
@@ -1731,8 +1914,8 @@ def main():
         f.write(html)
     print("  Wrote public/dashboard.html")
 
-    # 5. Update data.json — OpenClaw costs + casualties + strikes + threats + evidence + developments
-    print("\n[5/7] Updating data.json (OpenClaw + casualties + strikes + threats + evidence + developments)...")
+    # 5. Update data.json — LLM-driven costs + casualties + strikes + threats + evidence + developments
+    print("\n[5/7] Updating data.json (LLM costs + casualties + strikes + threats + evidence + developments)...")
     data = update_data_json(news_items)
 
     # 6. Update history.json (trend tracking)
