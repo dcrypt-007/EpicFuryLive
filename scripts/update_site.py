@@ -673,16 +673,51 @@ def openclaw_scan(news_items, cost_model):
 
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
+    # Per-item realistic maximum quantities — prevents false positives from RSS text
+    # These represent the absolute upper bound of what's physically plausible
+    ITEM_MAX_CAPS = {
+        # Time-based
+        "carrier_ops": 6,           # US has 11 total, max 6 deployed at once
+        "destroyers": 50,           # realistic cap for destroyer count
+        "personnel": 200000,        # max deployed personnel
+        "intel_cyber": 5,           # multiplier, not a real count
+        "logistics_support": 5,
+        "fuel_ops": 5,
+        "drone_ops": 100,           # drone operation units, not individual drones
+        "comms_space": 5,
+        # Event-based
+        "tomahawk": 5000,           # total US inventory ~4,000
+        "jdam": 20000,
+        "jassm": 2000,             # total US inventory ~2,000
+        "sdb": 15000,
+        "b2_sorties": 200,          # US has 20 B-2s
+        "mop_bunker_busters": 200,  # total inventory ~20-30, but counting bombs not sorties
+        "fighter_sorties": 20000,
+        "interceptors": 2000,       # missile defense interceptors
+        "prestrike_buildup": 1,     # one-time cost
+        "medical_casualty": 5,
+    }
+
+    # Sanity check: clamp any existing quantities that exceed caps (fixes past false positives)
+    for item in cost_model.get("timeBased", []) + cost_model.get("eventBased", []):
+        item_id = item.get("id", "")
+        cap = ITEM_MAX_CAPS.get(item_id)
+        if cap and item.get("quantity", 0) > cap:
+            old_qty = item["quantity"]
+            item["quantity"] = cap
+            updates.append(f"  [OpenClaw] CLAMPED {item_id}: {old_qty:,} -> {cap:,} (exceeded max cap)")
+
     # Scan time-based items (look for quantity changes, e.g., more carrier groups)
     for item in cost_model.get("timeBased", []):
         if not item.get("keywords"):
             continue
 
+        item_cap = ITEM_MAX_CAPS.get(item.get("id", ""), 500)
         found = extract_number_near_keyword(
             all_text,
             item["keywords"],
             min_val=1,
-            max_val=500000  # reasonable cap for personnel, ships, etc.
+            max_val=item_cap
         )
 
         if found is not None and found > item.get("quantity", 0):
@@ -697,11 +732,12 @@ def openclaw_scan(news_items, cost_model):
         if not item.get("keywords"):
             continue
 
+        item_cap = ITEM_MAX_CAPS.get(item.get("id", ""), 5000)
         found = extract_number_near_keyword(
             all_text,
             item["keywords"],
             min_val=1,
-            max_val=100000  # reasonable cap for munitions
+            max_val=item_cap
         )
 
         if found is not None and found > item.get("quantity", 0):
