@@ -520,7 +520,7 @@ def apply_llm_costs(data, llm_stats):
 # CONFIG: RSS feeds to pull from
 # ============================================================
 RSS_FEEDS = [
-    # --- DIRECT RSS FEEDS (most reliable, no Google middleman) ---
+    # --- DIRECT RSS FEEDS (verified working, no Google middleman) ---
     {
         "name": "Al Jazeera",
         "url": "https://www.aljazeera.com/xml/rss/all.xml",
@@ -536,11 +536,11 @@ RSS_FEEDS = [
         "tier": 2
     },
     {
-        "name": "Reuters World",
-        "url": "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
-        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
-                     "pentagon", "centcom", "casualties", "irgc", "epic fury"],
-        "tier": 1
+        "name": "CNN World",
+        "url": "http://rss.cnn.com/rss/edition_world.rss",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear",
+                     "pentagon", "centcom", "casualties", "military", "war"],
+        "tier": 2
     },
     {
         "name": "NPR World",
@@ -550,8 +550,8 @@ RSS_FEEDS = [
         "tier": 2
     },
     {
-        "name": "France 24 Middle East",
-        "url": "https://www.france24.com/en/middle-east/rss",
+        "name": "France 24",
+        "url": "https://www.france24.com/en/rss",
         "keywords": ["iran", "tehran", "strike", "killed", "hezbollah", "missile",
                      "nuclear", "war", "casualties", "irgc"],
         "tier": 2
@@ -564,13 +564,6 @@ RSS_FEEDS = [
         "tier": 2
     },
     {
-        "name": "Defense One",
-        "url": "https://www.defenseone.com/rss/",
-        "keywords": ["iran", "centcom", "navy", "military", "strike", "pentagon",
-                     "deployed", "carrier", "missile", "troops", "epic fury"],
-        "tier": 2
-    },
-    {
         "name": "The Guardian World",
         "url": "https://www.theguardian.com/world/rss",
         "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
@@ -578,32 +571,46 @@ RSS_FEEDS = [
         "tier": 2
     },
     {
-        "name": "CNN World",
-        "url": "http://rss.cnn.com/rss/edition_world.rss",
+        "name": "Defense One",
+        "url": "https://www.defenseone.com/rss/all/",
+        "keywords": ["iran", "centcom", "navy", "military", "strike", "pentagon",
+                     "deployed", "carrier", "missile", "troops", "epic fury"],
+        "tier": 2
+    },
+    {
+        "name": "Defense News",
+        "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
+        "keywords": ["iran", "centcom", "navy", "military", "strike", "pentagon",
+                     "deployed", "carrier", "missile", "troops"],
+        "tier": 2
+    },
+    {
+        "name": "Jerusalem Post",
+        "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx",
+        "keywords": ["iran", "tehran", "strike", "hezbollah", "idf", "israel",
+                     "missile", "nuclear", "killed", "irgc"],
+        "tier": 2
+    },
+    # --- GOOGLE NEWS (Reuters & AP killed their native RSS — Google is the only way) ---
+    {
+        "name": "Reuters via Google",
+        "url": "https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com+iran&ceid=US:en&hl=en-US&gl=US",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
+                     "pentagon", "centcom", "casualties", "irgc", "epic fury", "war"],
+        "tier": 1
+    },
+    {
+        "name": "AP via Google",
+        "url": "https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com+iran&ceid=US:en&hl=en-US&gl=US",
         "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear",
                      "pentagon", "centcom", "casualties", "military", "war"],
-        "tier": 2
+        "tier": 1
     },
     {
-        "name": "ABC News",
-        "url": "https://abcnews.go.com/abcnews/internationalheadlines",
-        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear",
-                     "pentagon", "centcom", "casualties", "military"],
-        "tier": 2
-    },
-    # --- GOOGLE NEWS (backup — may be blocked from GitHub Actions) ---
-    {
-        "name": "Google News - Iran",
-        "url": "https://news.google.com/rss/search?q=iran+strike+OR+killed+OR+missile+OR+nuclear&hl=en-US&gl=US&ceid=US:en",
+        "name": "Google News - Iran War",
+        "url": "https://news.google.com/rss/search?q=iran+war+OR+%22epic+fury%22+OR+CENTCOM+OR+airstrike&hl=en-US&gl=US&ceid=US:en",
         "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
                      "houthi", "irgc", "epic fury", "pentagon", "centcom", "casualties"],
-        "tier": 2
-    },
-    {
-        "name": "Google News - US Military",
-        "url": "https://news.google.com/rss/search?q=US+military+Iran+OR+CENTCOM+OR+%22epic+fury%22&hl=en-US&gl=US&ceid=US:en",
-        "keywords": ["iran", "tehran", "strike", "killed", "missile", "centcom", "pentagon",
-                     "epic fury", "troops", "navy", "carrier", "hezbollah", "houthi"],
         "tier": 2
     },
 ]

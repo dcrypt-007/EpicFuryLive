@@ -295,9 +295,13 @@
         .badge-ap { background: #f59e0b; color: #fff; }
         .badge-bbc { background: #3b82f6; color: #fff; }
         .badge-aljazeera { background: #ef4444; color: #fff; }
+        .badge-cnn { background: #dc2626; color: #fff; }
+        .badge-npr { background: #2563eb; color: #fff; }
+        .badge-guardian { background: #1d4ed8; color: #fff; }
         .badge-france24 { background: #8b5cf6; color: #fff; }
         .badge-israel { background: #06b6d4; color: #fff; }
-        .badge-stripes { background: #6366f1; color: #fff; }
+        .badge-jpost { background: #0891b2; color: #fff; }
+        .badge-defense { background: #6366f1; color: #fff; }
         .badge-google { background: #64748b; color: #fff; }
         .badge-default { background: #475569; color: #fff; }
 
@@ -508,11 +512,15 @@
         <button class="filter-btn active" onclick="filterBySource(this, 'ALL')">ALL</button>
         <button class="filter-btn" onclick="filterBySource(this, 'Al Jazeera')">Al Jazeera</button>
         <button class="filter-btn" onclick="filterBySource(this, 'BBC')">BBC</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'CNN')">CNN</button>
         <button class="filter-btn" onclick="filterBySource(this, 'Reuters')">Reuters</button>
         <button class="filter-btn" onclick="filterBySource(this, 'AP')">AP</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'NPR')">NPR</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'Guardian')">Guardian</button>
         <button class="filter-btn" onclick="filterBySource(this, 'France 24')">France 24</button>
         <button class="filter-btn" onclick="filterBySource(this, 'Times of Israel')">Times of Israel</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'Stars and Stripes')">Stars & Stripes</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'Jerusalem Post')">Jerusalem Post</button>
+        <button class="filter-btn" onclick="filterBySource(this, 'Defense')">Defense</button>
         <span class="headline-count" id="headlineCount"></span>
     </div>
 
@@ -547,15 +555,17 @@
         // Color mapping for source badges
         const sourceColors = {
             'Al Jazeera': 'aljazeera',
-            'Reuters - World': 'reuters',
             'Reuters': 'reuters',
-            'AP News': 'ap',
             'AP': 'ap',
-            'BBC - World': 'bbc',
             'BBC': 'bbc',
+            'CNN': 'cnn',
+            'NPR': 'npr',
+            'Guardian': 'guardian',
             'France 24': 'france24',
             'Times of Israel': 'israel',
-            'Stars and Stripes': 'stripes',
+            'Jerusalem Post': 'jpost',
+            'Defense One': 'defense',
+            'Defense News': 'defense',
             'Google News': 'google'
         };
 
@@ -572,10 +582,15 @@
             if (source.includes('Reuters')) return 'REUTERS';
             if (source.includes('AP')) return 'AP';
             if (source.includes('BBC')) return 'BBC';
+            if (source.includes('CNN')) return 'CNN';
+            if (source.includes('NPR')) return 'NPR';
+            if (source.includes('Guardian')) return 'GUARDIAN';
             if (source.includes('Al Jazeera')) return 'AL JAZEERA';
             if (source.includes('France 24')) return 'FRANCE 24';
             if (source.includes('Times of Israel')) return 'TIMES OF ISR';
-            if (source.includes('Stars and Stripes')) return 'STARS & STRIPES';
+            if (source.includes('Jerusalem Post')) return 'JPOST';
+            if (source.includes('Defense One')) return 'DEF ONE';
+            if (source.includes('Defense News')) return 'DEF NEWS';
             return source.toUpperCase().slice(0, 12);
         }
 
