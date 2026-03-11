@@ -319,6 +319,179 @@ def _call_anthropic(prompt):
         return None
 
 
+# ============================================================
+# AI DAILY BRIEFING — Long-form article generated once per day
+# ============================================================
+
+LLM_BRIEFING_PROMPT = """You are a senior intelligence analyst writing a daily briefing for epicfurylive.com, a live war tracker for the 2026 US-Israel-Iran conflict (Operation Epic Fury), which began February 28, 2026. Today is {today}, Day {day_count}.
+
+Use your web search tool extensively to find the LATEST information from the past 24 hours. Search for:
+- "Operation Epic Fury latest" or "US Iran war today {today}"
+- "Iran war military operations today"
+- "oil prices Iran conflict" or "Brent crude today"
+- "Iran war market reaction" or "stock market Iran"
+- "Iran war humanitarian" or "civilian casualties Iran war"
+- "Iran diplomacy talks ceasefire"
+- "gas hoarding Asia" or "fuel shortages Iran war"
+
+Write a comprehensive ~1500-word intelligence briefing covering ALL of the following sections. Use ## for section headers:
+
+## Military Operations Summary
+What happened in the last 24 hours? US/Coalition strikes, Iranian responses, naval operations, air campaigns. Include specific targets, weapon systems used, and any confirmed results.
+
+## What Each Side Is Reporting
+US/Coalition claims vs Iranian claims. What is CENTCOM/Pentagon saying? What is Iranian state media (IRNA, Press TV) saying? What is Israel reporting? Highlight contradictions and propaganda.
+
+## Market & Economic Impact
+Oil prices (Brent, WTI), stock market moves, commodity prices. How are global markets reacting? Include specific numbers (e.g., "Brent crude at $XX/barrel").
+
+## Consumer & Supply Chain Effects
+Are consumers hoarding fuel? Reports of gas station lines? Supply chain disruptions? Focus on Asia-Pacific region where fuel hoarding has been reported. Shipping route disruptions through Strait of Hormuz.
+
+## Diplomatic Developments
+Any ceasefire talks? UN statements? China/Russia positioning? Regional reactions from Gulf states? Back-channel negotiations?
+
+## Humanitarian Situation
+Civilian casualties, displacement, infrastructure damage, humanitarian aid. UNHCR/Red Cross reports. Impact on civilian populations in Iran and the region.
+
+IMPORTANT RULES:
+- Write in a professional, analytical tone — like a Reuters long-form analysis
+- Use specific numbers and sources wherever possible
+- If you cannot find confirmed information for a section, say "No confirmed reports in the last 24 hours" rather than making things up
+- Do NOT use markdown bold (**text**) excessively — keep it readable
+- Each section should be 150-250 words
+- Include a brief 2-sentence opening paragraph before the first section header summarizing the day's most significant development
+- End with a short "Outlook" paragraph on what to watch for tomorrow
+"""
+
+
+def _call_openai_text(prompt):
+    """Call OpenAI Responses API with web_search for long-form TEXT (not JSON).
+    Used for the daily briefing article generation."""
+    if not OPENAI_API_KEY:
+        return None
+
+    request_body = json.dumps({
+        "model": "gpt-5.4",
+        "tools": [{"type": "web_search"}],
+        "instructions": "You are a senior intelligence analyst. Write clear, detailed, professional analysis. Do NOT wrap your response in code blocks or JSON.",
+        "input": prompt
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/responses",
+        data=request_body,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {OPENAI_API_KEY}",
+        },
+        method="POST",
+    )
+
+    try:
+        print("  [Briefing] Calling OpenAI GPT-5.4 for daily briefing...")
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            response = json.loads(resp.read().decode("utf-8"))
+
+        text = ""
+        for item in response.get("output", []):
+            if item.get("type") == "message":
+                for content in item.get("content", []):
+                    if content.get("type") == "output_text":
+                        text += content.get("text", "")
+
+        if not text:
+            text = response.get("output_text", "")
+
+        if text:
+            print(f"  [Briefing] Got briefing from OpenAI ({len(text)} chars)")
+            return text.strip()
+        else:
+            print("  [Briefing] OpenAI returned empty output")
+            return None
+
+    except Exception as e:
+        print(f"  [Briefing] OpenAI failed: {e}")
+        return None
+
+
+def _call_anthropic_text(prompt):
+    """Call Anthropic Claude for long-form TEXT briefing (fallback)."""
+    if not ANTHROPIC_API_KEY:
+        return None
+
+    request_body = json.dumps({
+        "model": "claude-sonnet-4-20250514",
+        "max_tokens": 4000,
+        "messages": [
+            {"role": "user", "content": prompt}
+        ]
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=request_body,
+        headers={
+            "Content-Type": "application/json",
+            "x-api-key": ANTHROPIC_API_KEY,
+            "anthropic-version": "2023-06-01",
+        },
+        method="POST",
+    )
+
+    try:
+        print("  [Briefing] Calling Claude API for daily briefing (fallback)...")
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            response = json.loads(resp.read().decode("utf-8"))
+        text = response["content"][0]["text"].strip()
+        print(f"  [Briefing] Got briefing from Claude ({len(text)} chars)")
+        return text
+    except Exception as e:
+        print(f"  [Briefing] Claude failed: {e}")
+        return None
+
+
+def generate_daily_briefing(data, days):
+    """Generate a daily AI briefing article. Only generates once per day.
+    Returns {date, day, title, content} or None."""
+    now = datetime.now(timezone.utc)
+    today_str = now.strftime("%Y-%m-%d")
+
+    # Check if today's briefing already exists
+    existing = data.get("dailyBriefing", {})
+    if existing.get("date") == today_str and existing.get("content"):
+        print(f"  [Briefing] Today's briefing already exists ({today_str}) — skipping")
+        return None
+
+    try:
+        today_formatted = now.strftime("%B %-d, %Y")
+    except ValueError:
+        today_formatted = now.strftime("%B %d, %Y")
+
+    prompt = LLM_BRIEFING_PROMPT.format(today=today_formatted, day_count=days)
+
+    # Try OpenAI first, then Claude fallback
+    content = _call_openai_text(prompt)
+    if not content:
+        content = _call_anthropic_text(prompt)
+
+    if not content:
+        print("  [Briefing] Failed to generate briefing from any LLM")
+        return None
+
+    # Build briefing object
+    briefing = {
+        "date": today_str,
+        "day": days,
+        "title": f"Day {days} Intelligence Briefing — {today_formatted}",
+        "content": content,
+        "generatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    }
+
+    print(f"  [Briefing] Generated Day {days} briefing ({len(content)} chars)")
+    return briefing
+
+
 def apply_llm_stats(data, llm_stats):
     """
     Apply LLM-provided stats to data.json.
@@ -1673,6 +1846,25 @@ def update_data_json(news_items):
         # Ensure newest first
         data["briefings"].sort(key=lambda x: x.get("date", ""), reverse=True)
         print(f"  Saved LLM summary to data.json (briefings: {len(data['briefings'])} days)")
+
+    # ---- AI DAILY BRIEFING (once per day) ----
+    briefing = generate_daily_briefing(data, days)
+    if briefing:
+        data["dailyBriefing"] = briefing
+
+        # Archive previous briefings
+        if "briefingArchive" not in data:
+            data["briefingArchive"] = []
+
+        # Add to archive if not already there
+        existing_dates = {b.get("date") for b in data["briefingArchive"]}
+        if briefing["date"] not in existing_dates:
+            data["briefingArchive"].insert(0, briefing)
+
+        # Cap archive at 90 days, newest first
+        data["briefingArchive"].sort(key=lambda x: x.get("date", ""), reverse=True)
+        data["briefingArchive"] = data["briefingArchive"][:90]
+        print(f"  [Briefing] Archive: {len(data['briefingArchive'])} total briefings stored")
 
     # ---- WRITE DATA.JSON ----
     # Use ensure_ascii=True so all non-ASCII chars become \uXXXX escapes.

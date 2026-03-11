@@ -1232,6 +1232,140 @@
             color: #fca5a5;
         }
 
+        /* AI DAILY BRIEFING TAB */
+        .briefing-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #1e2a3a;
+        }
+        .briefing-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #ef4444;
+            margin-bottom: 8px;
+        }
+        .briefing-date {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 8px;
+        }
+        .briefing-disclaimer {
+            font-size: 11px;
+            color: #64748b;
+            font-style: italic;
+        }
+        .briefing-article {
+            font-size: 15px;
+            line-height: 1.85;
+            color: #cbd5e1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .briefing-article h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(239, 68, 68, 0.3);
+        }
+        .briefing-article h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #e0e6ed;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .briefing-article p {
+            margin-bottom: 16px;
+        }
+        .briefing-article blockquote {
+            border-left: 3px solid #3b82f6;
+            margin: 16px 0;
+            padding: 12px 20px;
+            background: rgba(59, 130, 246, 0.08);
+            color: #93c5fd;
+            font-size: 14px;
+            border-radius: 0 6px 6px 0;
+        }
+        .briefing-article strong {
+            color: #f1f5f9;
+        }
+        .briefing-loading {
+            text-align: center;
+            padding: 60px 24px;
+            color: #64748b;
+            font-size: 14px;
+        }
+        .briefing-archive-section {
+            margin-top: 48px;
+            border-top: 2px solid #1e2a3a;
+            padding-top: 24px;
+        }
+        .briefing-archive-title {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #94a3b8;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+        }
+        .briefing-archive-title:hover {
+            color: #f1f5f9;
+        }
+        .briefing-archive-item {
+            background: #111827;
+            border: 1px solid #1e2a3a;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .briefing-archive-header {
+            padding: 16px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .briefing-archive-header:hover {
+            background: #1e293b;
+        }
+        .briefing-archive-header-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #e0e6ed;
+        }
+        .briefing-archive-header-date {
+            font-size: 12px;
+            color: #64748b;
+        }
+        .briefing-archive-body {
+            display: none;
+            padding: 0 20px 20px;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #94a3b8;
+        }
+        .briefing-archive-body.expanded {
+            display: block;
+        }
+        .claim-actor {
+            font-size: 11px;
+            font-weight: 700;
+            color: #ef4444;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
         /* NEWS FEED TAB */
         .news-feed-container {
             text-align: center;
@@ -1381,7 +1515,7 @@
         <button class="tab-button" onclick="window.location.href='/news.html'">NEWS FEED</button>
         <button class="tab-button" onclick="switchTab(this, 'cost')">THE COST</button>
         <button class="tab-button" onclick="switchTab(this, 'history')">HOW WE GOT HERE</button>
-        <button class="tab-button" onclick="switchTab(this, 'evidence')">THE EVIDENCE</button>
+        <button class="tab-button" onclick="switchTab(this, 'briefing')">AI DAILY BRIEFING</button>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -1874,36 +2008,60 @@
                     The evidence for Iran's nuclear ambitions is materially stronger than pre-2003 Iraq WMD claims. However, the decision to strike Iran without giving diplomacy additional chances mirrors the decision-making logic of Iraq 2003.
                 </div>
             </div>
-        </div>
 
-        <!-- TAB 4: THE EVIDENCE -->
-        <div id="evidence" class="tab-content">
-            <div class="assessment-box">
-                <strong>Summary Assessment:</strong> Based on IAEA inspections through May 2025, Iran has enriched uranium to 60% purity (weapons-grade is 90%) and possesses 408.6 kg of this material—enough for an estimated 4-5 nuclear warheads if further enriched. Iran is the only non-nuclear weapons state to have reached this level. The IAEA declared Iran in material breach of Non-Proliferation Treaty obligations on June 12, 2025. Since Israeli strikes on nuclear facilities in June 2025, the IAEA has been unable to conduct in-field verification of current enrichment levels or stockpile size. Iran's current nuclear status as of March 2026 remains unknown.
-            </div>
+            <!-- NUCLEAR EVIDENCE SECTION (merged from Evidence tab) -->
+            <div style="margin-top: 48px; padding-top: 32px; border-top: 2px solid rgba(239, 68, 68, 0.3);">
+                <div style="font-size: 22px; font-weight: 800; color: #f1f5f9; letter-spacing: 2px; margin-bottom: 24px;">NUCLEAR EVIDENCE & INTELLIGENCE</div>
 
-            <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">Key Evidence</div>
-            <div class="evidence-grid" id="evidenceGrid">
-                <!-- Rendered dynamically from data.json -->
-            </div>
+                <div class="assessment-box">
+                    <strong>Summary Assessment:</strong> Based on IAEA inspections through May 2025, Iran has enriched uranium to 60% purity (weapons-grade is 90%) and possesses 408.6 kg of this material -- enough for an estimated 4-5 nuclear warheads if further enriched. Iran is the only non-nuclear weapons state to have reached this level. The IAEA declared Iran in material breach of Non-Proliferation Treaty obligations on June 12, 2025. Since Israeli strikes on nuclear facilities in June 2025, the IAEA has been unable to conduct in-field verification of current enrichment levels or stockpile size. Iran's current nuclear status as of March 2026 remains unknown.
+                </div>
 
-            <div class="claims-tracker">
-                <div class="claims-tracker-title">Claims Tracker: What Each Side Says</div>
-                <div id="claimsList">
+                <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">Key Evidence</div>
+                <div class="evidence-grid" id="evidenceGrid">
                     <!-- Rendered dynamically from data.json -->
                 </div>
+
+                <div class="claims-tracker">
+                    <div class="claims-tracker-title">Claims Tracker: What Each Side Says</div>
+                    <div id="claimsList">
+                        <!-- Rendered dynamically from data.json -->
+                    </div>
+                </div>
+
+                <div style="background: #111827; border: 1px solid #1e2a3a; border-radius: 8px; padding: 20px; margin-top: 24px;">
+                    <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">What Remains Uncertain</div>
+                    <ul style="font-size: 13px; color: #cbd5e1; line-height: 1.8; list-position: inside; margin-left: 0;">
+                        <li style="margin-bottom: 8px;"><strong>Current enrichment capacity:</strong> Unknown. Facilities partially destroyed; IAEA cannot verify.</li>
+                        <li style="margin-bottom: 8px;"><strong>Existing uranium stockpile location:</strong> 408.6 kg 60%-enriched material may have been dispersed. Current location/security unknown.</li>
+                        <li style="margin-bottom: 8px;"><strong>Military nuclear program:</strong> Whether Iran has weaponized nuclear warheads or nuclear-armed missiles remains unknown to public. US/Israeli intelligence assessments classified.</li>
+                        <li style="margin-bottom: 8px;"><strong>Civilian casualty count:</strong> Disputed between Iran (1,700+), US (200-300 estimated), independent organizations (under assessment).</li>
+                        <li style="margin-bottom: 8px;"><strong>Repair timeline:</strong> Iran claims facilities can be rebuilt in weeks; US/Israeli estimates suggest years.</li>
+                        <li style="margin-bottom: 8px;"><strong>Regional escalation pathway:</strong> Whether conflict remains kinetic or escalates to nuclear use remains unknowable.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: AI DAILY BRIEFING -->
+        <div id="briefing" class="tab-content">
+            <div class="briefing-header">
+                <div class="briefing-label">AI-GENERATED INTELLIGENCE BRIEFING</div>
+                <div class="briefing-date" id="briefingDate"></div>
+                <div class="briefing-disclaimer">Generated by GPT-5.4 with live web search. Cross-reference all claims with primary sources.</div>
             </div>
 
-            <div style="background: #111827; border: 1px solid #1e2a3a; border-radius: 8px; padding: 20px; margin-top: 24px;">
-                <div style="font-size: 16px; font-weight: 700; color: #e0e6ed; margin-bottom: 16px;">What Remains Uncertain</div>
-                <ul style="font-size: 13px; color: #cbd5e1; line-height: 1.8; list-position: inside; margin-left: 0;">
-                    <li style="margin-bottom: 8px;"><strong>Current enrichment capacity:</strong> Unknown. Facilities partially destroyed; IAEA cannot verify.</li>
-                    <li style="margin-bottom: 8px;"><strong>Existing uranium stockpile location:</strong> 408.6 kg 60%-enriched material may have been dispersed. Current location/security unknown.</li>
-                    <li style="margin-bottom: 8px;"><strong>Military nuclear program:</strong> Whether Iran has weaponized nuclear warheads or nuclear-armed missiles remains unknown to public. US/Israeli intelligence assessments classified.</li>
-                    <li style="margin-bottom: 8px;"><strong>Civilian casualty count:</strong> Disputed between Iran (1,700+), US (200-300 estimated), independent organizations (under assessment).</li>
-                    <li style="margin-bottom: 8px;"><strong>Repair timeline:</strong> Iran claims facilities can be rebuilt in weeks; US/Israeli estimates suggest years.</li>
-                    <li style="margin-bottom: 8px;"><strong>Regional escalation pathway:</strong> Whether conflict remains kinetic or escalates to nuclear use remains unknowable.</li>
-                </ul>
+            <div class="briefing-article" id="briefingArticle">
+                <div class="briefing-loading">Briefing will be generated on the next scheduled update. Check back soon.</div>
+            </div>
+
+            <div class="briefing-archive-section" id="briefingArchiveSection" style="display: none;">
+                <div class="briefing-archive-title" onclick="toggleArchive()">
+                    PAST BRIEFINGS <span id="archiveToggle">+</span>
+                </div>
+                <div class="briefing-archive-list" id="briefingArchiveList" style="display: none;">
+                    <!-- Rendered dynamically -->
+                </div>
             </div>
         </div>
 
@@ -1943,7 +2101,7 @@
             'dashboard': 'Epic Fury Live — US-Iran War Dashboard | Live Conflict Tracker',
             'cost':      'Cost of the Iran War — Casualties, Spending & Burn Rate | Epic Fury Live',
             'history':   'US-Iran Conflict Timeline — From JCPOA to Operation Epic Fury',
-            'evidence':  'Iran War Evidence — Verified Claims & Intelligence | Epic Fury Live'
+            'briefing':  'AI Daily Briefing — Expert Analysis | Epic Fury Live'
         };
 
         function switchTab(button, tabId) {
@@ -2297,7 +2455,7 @@
             container.innerHTML = evidence.map(item => {
                 return `<div class="evidence-card">
                     <div class="evidence-card-title">${item.title}</div>
-                    <div class="evidence-card-text">${item.description}</div>
+                    <div class="evidence-card-text">${item.text || item.description || ''}</div>
                     <div class="evidence-card-source"><strong>Source:</strong> ${item.source}</div>
                 </div>`;
             }).join('\n');
@@ -2310,10 +2468,111 @@
 
             container.innerHTML = claims.map(claim => {
                 return `<div class="claim-item">
-                    <div class="claim-text">${claim.text}</div>
-                    <div class="claim-status status-${claim.status.toLowerCase().replace(/\s+/g, '-')}">${claim.status}</div>
+                    <div class="claim-actor">${claim.actor || ''}</div>
+                    <div class="claim-text">${claim.claim || claim.text || ''}</div>
+                    <div class="claim-status status-${claim.statusClass || claim.status.toLowerCase().replace(/\s+/g, '-')}">${claim.status}</div>
                 </div>`;
             }).join('\n');
+        }
+
+        // Render AI Daily Briefing
+        function renderDailyBriefing(data) {
+            const articleEl = document.getElementById('briefingArticle');
+            const dateEl = document.getElementById('briefingDate');
+            const archiveSection = document.getElementById('briefingArchiveSection');
+            const archiveList = document.getElementById('briefingArchiveList');
+
+            if (!articleEl) return;
+
+            // Render today's briefing
+            const briefing = data.dailyBriefing;
+            if (briefing && briefing.content) {
+                // Convert markdown-style headers and formatting to HTML
+                let html = briefing.content
+                    .replace(/## (.*?)(\n|$)/g, '<h2>$1</h2>')
+                    .replace(/### (.*?)(\n|$)/g, '<h3>$1</h3>')
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/> (.*?)(\n|$)/g, '<blockquote>$1</blockquote>')
+                    .replace(/\n\n/g, '</p><p>')
+                    .replace(/\n/g, '<br>');
+                html = '<p>' + html + '</p>';
+                // Clean up empty paragraphs
+                html = html.replace(/<p>\s*<\/p>/g, '');
+                html = html.replace(/<p>\s*<h2>/g, '<h2>');
+                html = html.replace(/<\/h2>\s*<\/p>/g, '</h2>');
+                html = html.replace(/<p>\s*<h3>/g, '<h3>');
+                html = html.replace(/<\/h3>\s*<\/p>/g, '</h3>');
+                html = html.replace(/<p>\s*<blockquote>/g, '<blockquote>');
+                html = html.replace(/<\/blockquote>\s*<\/p>/g, '</blockquote>');
+
+                articleEl.innerHTML = html;
+
+                if (dateEl) {
+                    const d = new Date(briefing.date + 'T12:00:00Z');
+                    const dayNum = briefing.day || '';
+                    dateEl.textContent = 'Day ' + dayNum + ' — ' + d.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+                }
+            } else {
+                articleEl.innerHTML = '<div class="briefing-loading">Briefing will be generated on the next scheduled update. Check back soon.</div>';
+            }
+
+            // Render archive
+            const archive = data.briefingArchive;
+            if (archive && archive.length > 0) {
+                archiveSection.style.display = 'block';
+                archiveList.innerHTML = archive.map((item, idx) => {
+                    const d = new Date(item.date + 'T12:00:00Z');
+                    const dateStr = d.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+                    const preview = (item.content || item.summary || '').replace(/[#*>\n]/g, ' ').substring(0, 150) + '...';
+                    return `<div class="briefing-archive-item">
+                        <div class="briefing-archive-header" onclick="toggleArchiveItem(${idx})">
+                            <div>
+                                <div class="briefing-archive-header-title">Day ${item.day || ''} Briefing</div>
+                                <div class="briefing-archive-header-date">${dateStr}</div>
+                            </div>
+                            <span style="color: #64748b; font-size: 18px;" id="archiveIcon${idx}">+</span>
+                        </div>
+                        <div class="briefing-archive-body" id="archiveBody${idx}">
+                            <p style="color: #64748b; font-size: 12px; margin-bottom: 12px;">${preview}</p>
+                            <div style="font-size: 14px; line-height: 1.8; color: #94a3b8;">${formatBriefingContent(item.content || item.summary || '')}</div>
+                        </div>
+                    </div>`;
+                }).join('\n');
+            }
+        }
+
+        function formatBriefingContent(text) {
+            return text
+                .replace(/## (.*?)(\n|$)/g, '<h3 style="color:#e0e6ed;margin-top:16px;">$1</h3>')
+                .replace(/### (.*?)(\n|$)/g, '<h4 style="color:#cbd5e1;margin-top:12px;">$1</h4>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/> (.*?)(\n|$)/g, '<blockquote style="border-left:2px solid #3b82f6;padding-left:12px;color:#93c5fd;margin:8px 0;">$1</blockquote>')
+                .replace(/\n\n/g, '<br><br>')
+                .replace(/\n/g, '<br>');
+        }
+
+        function toggleArchive() {
+            const list = document.getElementById('briefingArchiveList');
+            const toggle = document.getElementById('archiveToggle');
+            if (list.style.display === 'none') {
+                list.style.display = 'block';
+                toggle.textContent = '−';
+            } else {
+                list.style.display = 'none';
+                toggle.textContent = '+';
+            }
+        }
+
+        function toggleArchiveItem(idx) {
+            const body = document.getElementById('archiveBody' + idx);
+            const icon = document.getElementById('archiveIcon' + idx);
+            if (body.classList.contains('expanded')) {
+                body.classList.remove('expanded');
+                icon.textContent = '+';
+            } else {
+                body.classList.add('expanded');
+                icon.textContent = '−';
+            }
         }
 
         // Render breakdown table
@@ -2604,6 +2863,9 @@
                     if (data.claims) renderClaims(data.claims);
                     if (data.financialCost && data.financialCost.breakdown) renderBreakdown(data.financialCost.breakdown);
                     if (data.financialCost && data.financialCost.projections) renderProjections(data.financialCost.projections);
+
+                    // Render AI Daily Briefing
+                    renderDailyBriefing(data);
 
                     console.log('Live data refreshed at', new Date().toISOString());
                 })

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epic Fury Live — Dashboard Mockup</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0e17;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── TOP BANNER ── */
+  .top-banner {
+    background: linear-gradient(135deg, #1a1025 0%, #0f1923 50%, #1a1025 100%);
+    border-bottom: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 12px 0;
+    text-align: center;
+  }
+  .top-banner .day-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: #ef4444;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  .top-banner h1 {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ef4444, #f97316, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2px 0;
+  }
+  .top-banner .updated {
+    font-size: 11px;
+    color: #64748b;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .top-banner .updated .live-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: #ef4444;
+    border-radius: 50%;
+    margin-right: 4px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(239,68,68,0.7); }
+    50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(239,68,68,0); }
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* ── SCOREBOARD HEADER ── */
+  .scoreboard-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .scoreboard-header .label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #64748b;
+  }
+  .scoreboard-header .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #334155, transparent);
+  }
+
+  /* ── THE BIG 3 COLUMNS ── */
+  .war-board {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 0;
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  /* Country Column */
+  .country-col {
+    padding: 0 16px;
+    position: relative;
+  }
+
+  /* Flag / Country Header */
+  .country-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid;
+  }
+  .country-header.usa { border-color: #3b82f6; }
+  .country-header.israel { border-color: #60a5fa; }
+  .country-header.iran { border-color: #ef4444; }
+
+  .country-header .flag {
+    font-size: 48px;
+    margin-bottom: 4px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+  }
+  .country-header .country-name {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .country-header.usa .country-name { color: #3b82f6; }
+  .country-header.israel .country-name { color: #60a5fa; }
+  .country-header.iran .country-name { color: #ef4444; }
+
+  .country-header .role {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-top: 2px;
+  }
+
+  /* Stat Rows */
+  .stat-block {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+    transition: all 0.2s;
+  }
+  .stat-block:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.1);
+  }
+  .stat-block .stat-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .stat-block .stat-label .icon { font-size: 12px; }
+  .stat-block .stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .stat-block .stat-sub {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 4px;
+    line-height: 1.3;
+  }
+
+  /* Color coding */
+  .val-red { color: #ef4444; }
+  .val-orange { color: #f97316; }
+  .val-blue { color: #3b82f6; }
+  .val-lightblue { color: #60a5fa; }
+  .val-green { color: #22c55e; }
+  .val-yellow { color: #eab308; }
+  .val-white { color: #f1f5f9; }
+
+  /* Change indicator */
+  .change-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .change-up {
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+  }
+  .change-down {
+    background: rgba(34,197,94,0.15);
+    color: #22c55e;
+  }
+
+  /* VS Dividers */
+  .vs-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    position: relative;
+  }
+  .vs-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, #334155 20%, #334155 80%, transparent);
+  }
+  .vs-divider .vs-text {
+    font-size: 12px;
+    font-weight: 800;
+    color: #475569;
+    background: #0a0e17;
+    padding: 8px 0;
+    z-index: 1;
+    letter-spacing: 2px;
+  }
+
+  /* ── CENTER TOTALS BAR ── */
+  .totals-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(239,68,68,0.05), rgba(59,130,246,0.05));
+    border: 1px solid rgba(239,68,68,0.15);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .totals-bar::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ef4444, #f97316, #3b82f6, #60a5fa);
+  }
+  .total-item {
+    text-align: center;
+  }
+  .total-item .total-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 6px;
+  }
+  .total-item .total-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .total-item .total-sub {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 2px;
+  }
+
+  /* ── DAILY BRIEFING ── */
+  .briefing-section {
+    margin-bottom: 32px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .section-header .dot {
+    width: 8px; height: 8px;
+    background: #ef4444;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  .section-header h2 {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    font-weight: 600;
+  }
+  .section-header .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, #334155, transparent);
+  }
+
+  .briefing-card {
+    padding: 20px 24px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-left: 3px solid #f97316;
+    border-radius: 0 8px 8px 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cbd5e1;
+  }
+  .briefing-card strong { color: #f1f5f9; }
+
+  /* ── WHAT CHANGED TODAY ── */
+  .changes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .change-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(239,68,68,0.04);
+    border: 1px solid rgba(239,68,68,0.1);
+    border-radius: 8px;
+  }
+  .change-card .arrow {
+    font-size: 20px;
+    color: #ef4444;
+  }
+  .change-card .change-text {
+    font-size: 13px;
+    color: #cbd5e1;
+  }
+  .change-card .change-text .field { color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; display: block; }
+  .change-card .change-text .delta { font-family: 'JetBrains Mono', monospace; color: #ef4444; font-weight: 600; }
+
+  /* ── HEADLINE TICKER ── */
+  .ticker-bar {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    position: relative;
+  }
+  .ticker-bar .ticker-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #ef4444;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    z-index: 2;
+  }
+  .ticker-content {
+    display: flex;
+    gap: 48px;
+    animation: scroll 60s linear infinite;
+    padding-left: 80px;
+    white-space: nowrap;
+  }
+  .ticker-content .ticker-item {
+    font-size: 13px;
+    color: #94a3b8;
+    flex-shrink: 0;
+  }
+  .ticker-content .ticker-item .time {
+    color: #ef4444;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    margin-right: 8px;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── COST CLOCK ── */
+  .cost-clock {
+    text-align: center;
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(249,115,22,0.05), rgba(234,179,8,0.05));
+    border: 1px solid rgba(249,115,22,0.15);
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+  .cost-clock .clock-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 8px;
+  }
+  .cost-clock .clock-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    color: #f97316;
+    text-shadow: 0 0 30px rgba(249,115,22,0.3);
+  }
+  .cost-clock .clock-sub {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 4px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .cost-clock .burn-rate {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #f97316;
+  }
+
+  /* ── MOCK NOTE ── */
+  .mockup-note {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #f97316;
+    color: #000;
+    text-align: center;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    z-index: 100;
+  }
+  body { padding-top: 28px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .war-board {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .vs-divider {
+      width: 100%;
+      height: 32px;
+    }
+    .vs-divider::before {
+      top: 50%; bottom: auto;
+      left: 0; right: 0;
+      width: auto; height: 1px;
+    }
+    .totals-bar {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .total-item .total-value { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-note">MOCKUP — DESIGN CONCEPT FOR REVIEW</div>
+
+<!-- TOP BANNER -->
+<div class="top-banner">
+  <div class="day-label">Day 8</div>
+  <h1>OPERATION EPIC FURY</h1>
+  <div class="updated"><span class="live-dot"></span> Last updated Mar 08, 2026 17:40 UTC</div>
+</div>
+
+<!-- HEADLINE TICKER -->
+<div style="max-width:1280px;margin:16px auto;padding:0 20px;">
+  <div class="ticker-bar">
+    <div class="ticker-label">LIVE</div>
+    <div class="ticker-content">
+      <div class="ticker-item"><span class="time">17:06</span> Israel's Mossad relies on US cover and security rot for Iran strikes</div>
+      <div class="ticker-item"><span class="time">16:36</span> Is Israel reshaping Lebanon, trying to separate Hezbollah from its people?</div>
+      <div class="ticker-item"><span class="time">16:31</span> Israel escalates attacks across Lebanon as two soldiers killed</div>
+      <div class="ticker-item"><span class="time">14:05</span> Iran religious scholars signal new leader to be named soon</div>
+      <div class="ticker-item"><span class="time">13:48</span> UNICEF spokesman enraged over child casualties from Israeli-US Iran war</div>
+      <div class="ticker-item"><span class="time">12:56</span> Iran war threatens prolonged impact on energy markets as oil prices rise</div>
+      <div class="ticker-item"><span class="time">11:40</span> Dark haze over Tehran as US-Israeli forces bomb oil storage facilities</div>
+      <!-- duplicate set for seamless scrolling -->
+      <div class="ticker-item"><span class="time">17:06</span> Israel's Mossad relies on US cover and security rot for Iran strikes</div>
+      <div class="ticker-item"><span class="time">16:36</span> Is Israel reshaping Lebanon, trying to separate Hezbollah from its people?</div>
+      <div class="ticker-item"><span class="time">16:31</span> Israel escalates attacks across Lebanon as two soldiers killed</div>
+      <div class="ticker-item"><span class="time">14:05</span> Iran religious scholars signal new leader to be named soon</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- TOTALS BAR -->
+  <div class="totals-bar">
+    <div class="total-item">
+      <div class="total-label">Total Strikes</div>
+      <div class="total-value val-orange">~3,700</div>
+      <div class="total-sub">Combined US-Israeli</div>
+    </div>
+    <div class="total-item">
+      <div class="total-label">Reported Killed</div>
+      <div class="total-value val-red">1,694+</div>
+      <div class="total-sub">All parties combined</div>
+    </div>
+    <div class="total-item">
+      <div class="total-label">Wounded</div>
+      <div class="total-value val-yellow">6,249+</div>
+      <div class="total-sub">Reported across all parties</div>
+    </div>
+    <div class="total-item">
+      <div class="total-label">Cost to US Taxpayer</div>
+      <div class="total-value val-orange" id="costTicker">$11,700,000,000</div>
+      <div class="total-sub">and counting</div>
+    </div>
+  </div>
+
+  <!-- SCOREBOARD HEADER -->
+  <div class="scoreboard-header">
+    <div class="line"></div>
+    <div class="label">Conflict Scoreboard</div>
+    <div class="line"></div>
+  </div>
+
+  <!-- THE 3-COLUMN WAR BOARD -->
+  <div class="war-board">
+
+    <!-- USA -->
+    <div class="country-col">
+      <div class="country-header usa">
+        <div class="flag">🇺🇸</div>
+        <div class="country-name">United States</div>
+        <div class="role">Coalition Lead</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">💀</span> Military KIA</div>
+        <div class="stat-value val-blue">202 <span class="change-badge change-up">▲ +14 today</span></div>
+        <div class="stat-sub">6 killed in ballistic missile strike on Kuwait ops center, Mar 2</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🤕</span> Military Wounded</div>
+        <div class="stat-value val-blue">47+</div>
+        <div class="stat-sub">Injured in Kuwait strike. Additional injuries unreported.</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">✈️</span> Strikes Launched</div>
+        <div class="stat-value val-blue">~2,400</div>
+        <div class="stat-sub">Air sorties, cruise missiles, drone strikes</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🎯</span> Targets Destroyed</div>
+        <div class="stat-value val-blue">1,200+</div>
+        <div class="stat-sub">Nuclear sites, IRGC bases, air defenses, C2 nodes</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🛡️</span> Missiles Intercepted</div>
+        <div class="stat-value val-green">1,332</div>
+        <div class="stat-sub">SM-3, THAAD, Patriot — 90%+ intercept rate</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">💰</span> Money Spent</div>
+        <div class="stat-value val-orange">$11.7B+</div>
+        <div class="stat-sub">~$1.5B/day burn rate</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">⚓</span> Forces Deployed</div>
+        <div class="stat-value val-lightblue">45,000</div>
+        <div class="stat-sub">2 carrier groups, 13 destroyers, 40+ drones</div>
+      </div>
+    </div>
+
+    <div class="vs-divider"><div class="vs-text">VS</div></div>
+
+    <!-- ISRAEL -->
+    <div class="country-col">
+      <div class="country-header israel">
+        <div class="flag">🇮🇱</div>
+        <div class="country-name">Israel</div>
+        <div class="role">Coalition Partner</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">💀</span> Deaths (Military + Civilian)</div>
+        <div class="stat-value val-lightblue">1,300</div>
+        <div class="stat-sub">9 in Beit Shemesh missile strike. 2 IED in Gaza.</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🤕</span> Wounded</div>
+        <div class="stat-value val-lightblue">—</div>
+        <div class="stat-sub">Not yet reported by IDF</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">✈️</span> Strikes Launched</div>
+        <div class="stat-value val-lightblue">~1,300</div>
+        <div class="stat-sub">Iran nuclear sites + Hezbollah/Lebanon</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🎯</span> Targets Destroyed</div>
+        <div class="stat-value val-lightblue">500+</div>
+        <div class="stat-sub">Natanz centrifuge halls (corroborated), Fordow</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🛡️</span> Iron Dome Intercepts</div>
+        <div class="stat-value val-green">400+</div>
+        <div class="stat-sub">Hezbollah rockets + Iranian ballistic missiles</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">⚔️</span> Active Fronts</div>
+        <div class="stat-value val-yellow">3</div>
+        <div class="stat-sub">Iran mainland, Lebanon/Hezbollah, Gaza</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🏛️</span> Key Claim</div>
+        <div class="stat-value" style="font-size:14px;color:#60a5fa;">Natanz destroyed — "years to rebuild"</div>
+        <div class="stat-sub" style="color:#22c55e;">CORROBORATED by satellite imagery</div>
+      </div>
+    </div>
+
+    <div class="vs-divider"><div class="vs-text">VS</div></div>
+
+    <!-- IRAN -->
+    <div class="country-col">
+      <div class="country-header iran">
+        <div class="flag">🇮🇷</div>
+        <div class="country-name">Iran</div>
+        <div class="role">Defending</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">💀</span> Deaths (All Sources)</div>
+        <div class="stat-value val-red">1,045+ <span class="change-badge change-up">▲ disputed</span></div>
+        <div class="stat-sub">Iran MOH: 1,045 · HRANA: ~7,000 · Trump admin: 32,000</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🤕</span> Wounded</div>
+        <div class="stat-value val-red">6,000+</div>
+        <div class="stat-sub">300+ children hospitalized. Source: Iranian state media, IRC</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">👶</span> Civilian Deaths (Disputed)</div>
+        <div class="stat-value val-red">148+</div>
+        <div class="stat-sub">Girls' school strike, Mar 2. US disputes. Verification pending.</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🚀</span> Missiles Launched</div>
+        <div class="stat-value val-red">500+</div>
+        <div class="stat-sub">Ballistic missiles at Israel, Kuwait, Gulf states</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">🤖</span> Drones Launched</div>
+        <div class="stat-value val-red">2,000+</div>
+        <div class="stat-sub">Retaliatory drone swarms including attacks on Qatar, Bahrain</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">💥</span> Missile Capability Left</div>
+        <div class="stat-value val-red">14%</div>
+        <div class="stat-sub">86% destroyed per CENTCOM. Iran claims "intact." Under review.</div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-label"><span class="icon">👤</span> Leadership</div>
+        <div class="stat-value" style="font-size:14px;color:#ef4444;">Supreme Leader Khamenei KILLED</div>
+        <div class="stat-sub">Assembly of Experts selecting successor. HIGH CONFIDENCE.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLLATERAL: GULF STATES -->
+  <div class="scoreboard-header">
+    <div class="line"></div>
+    <div class="label">Collateral — Gulf States & Proxies</div>
+    <div class="line"></div>
+  </div>
+
+  <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; margin-bottom:32px;">
+    <div class="stat-block" style="text-align:center;">
+      <div class="stat-label" style="justify-content:center;">🇸🇦🇦🇪🇰🇼🇧🇭 Gulf Casualties</div>
+      <div class="stat-value val-yellow" style="font-size:24px;">9</div>
+      <div class="stat-sub">Mostly civilian. UAE, Saudi, Kuwait, Bahrain.</div>
+    </div>
+    <div class="stat-block" style="text-align:center;">
+      <div class="stat-label" style="justify-content:center;">🇱🇧 Hezbollah Front</div>
+      <div class="stat-value val-yellow" style="font-size:24px;">Active</div>
+      <div class="stat-sub">2 Israeli soldiers killed. Rocket barrages ongoing.</div>
+    </div>
+    <div class="stat-block" style="text-align:center;">
+      <div class="stat-label" style="justify-content:center;">🇾🇪 Houthi Front</div>
+      <div class="stat-value val-yellow" style="font-size:24px;">Active</div>
+      <div class="stat-sub">Red Sea shipping disrupted. Insurance +300%.</div>
+    </div>
+    <div class="stat-block" style="text-align:center;">
+      <div class="stat-label" style="justify-content:center;">✈️ Flights Cancelled</div>
+      <div class="stat-value val-yellow" style="font-size:24px;">1,900</div>
+      <div class="stat-sub">1M+ travelers affected across Middle East.</div>
+    </div>
+  </div>
+
+  <!-- COST CLOCK -->
+  <div class="cost-clock">
+    <div class="clock-label">US Taxpayer Cost Clock</div>
+    <div class="clock-value" id="costClock">$11,700,000,000</div>
+    <div class="clock-sub">$17,361 per second · $1,041,667 per minute</div>
+    <div class="burn-rate">~$1.5 billion per day</div>
+  </div>
+
+  <!-- DAILY BRIEFING -->
+  <div class="briefing-section">
+    <div class="section-header">
+      <div class="dot"></div>
+      <h2>AI Daily Briefing — Day 8</h2>
+      <div class="line"></div>
+    </div>
+    <div class="briefing-card">
+      <strong>Day 8 of Operation Epic Fury</strong> saw continued US-Israeli airstrikes on Iranian oil infrastructure, with five oil facilities struck in overnight raids on Tehran. Iran's Assembly of Experts announced consensus on a successor to Supreme Leader Khamenei, killed in the initial strikes. Israel escalated operations in Lebanon, losing two soldiers in the first IDF fatalities since fighting with Hezbollah resumed. Bahrain reported a desalination plant hit by an Iranian drone, while hundreds marched in New York condemning the war. Oil markets remain volatile with a fifth of global crude supply suspended.
+    </div>
+  </div>
+
+  <!-- WHAT CHANGED TODAY -->
+  <div class="briefing-section">
+    <div class="section-header">
+      <div class="dot" style="background:#f97316;"></div>
+      <h2>What Changed Today</h2>
+      <div class="line"></div>
+    </div>
+    <div class="changes-grid">
+      <div class="change-card">
+        <div class="arrow">▲</div>
+        <div class="change-text">
+          <span class="field">US KIA</span>
+          188 → <span class="delta">202</span> (+14)
+        </div>
+      </div>
+      <div class="change-card">
+        <div class="arrow">▲</div>
+        <div class="change-text">
+          <span class="field">Israeli Deaths</span>
+          1,298 → <span class="delta">1,300</span> (+2 soldiers in Lebanon)
+        </div>
+      </div>
+      <div class="change-card">
+        <div class="arrow">▲</div>
+        <div class="change-text">
+          <span class="field">Drone Ops (UAV)</span>
+          38 → <span class="delta">40</span> active drones
+        </div>
+      </div>
+      <div class="change-card">
+        <div class="arrow">▲</div>
+        <div class="change-text">
+          <span class="field">Missile Interceptors Used</span>
+          1,280 → <span class="delta">1,332</span> (+52)
+        </div>
+      </div>
+      <div class="change-card">
+        <div class="arrow">🆕</div>
+        <div class="change-text">
+          <span class="field">New Threat</span>
+          Hezbollah escalates across Lebanon
+        </div>
+      </div>
+      <div class="change-card">
+        <div class="arrow">🆕</div>
+        <div class="change-text">
+          <span class="field">Leadership</span>
+          Iran's Assembly of Experts names successor
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- COST CLOCK TICKER SCRIPT -->
+<script>
+  // Animate the cost clock ticking up in real time
+  const baseTotal = 11700000000; // $11.7B as of Day 8
+  const perSecond = 17361; // ~$1.5B/day
+  const startTime = Date.now();
+
+  function formatCost(n) {
+    return '$' + n.toLocaleString('en-US');
+  }
+
+  function tick() {
+    const elapsed = (Date.now() - startTime) / 1000;
+    const current = Math.floor(baseTotal + (elapsed * perSecond));
+    const el = document.getElementById('costClock');
+    if (el) el.textContent = formatCost(current);
+    requestAnimationFrame(tick);
+  }
+  tick();
+</script>
+
+</body>
+</html>
