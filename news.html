@@ -506,21 +506,11 @@
         <button class="tab-button" onclick="window.location.href='/index.html#evidence'">THE EVIDENCE</button>
     </div>
 
-    <!-- FILTER BAR -->
-    <div class="filter-bar">
-        <span class="filter-label">Source</span>
+    <!-- FILTER BAR — buttons auto-generated from actual data sources -->
+    <div class="filter-bar" id="filterBar">
+        <span class="filter-label">SOURCE</span>
         <button class="filter-btn active" onclick="filterBySource(this, 'ALL')">ALL</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'Al Jazeera')">Al Jazeera</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'BBC')">BBC</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'CNN')">CNN</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'Reuters')">Reuters</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'AP')">AP</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'NPR')">NPR</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'Guardian')">Guardian</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'France 24')">France 24</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'Times of Israel')">Times of Israel</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'Jerusalem Post')">Jerusalem Post</button>
-        <button class="filter-btn" onclick="filterBySource(this, 'Defense')">Defense</button>
+        <!-- Source buttons are dynamically added by buildFilterButtons() -->
         <span class="headline-count" id="headlineCount"></span>
     </div>
 
@@ -704,6 +694,46 @@
             renderHeadlines();
         }
 
+        function buildFilterButtons() {
+            // Auto-generate source filter buttons from actual data
+            var bar = document.getElementById('filterBar');
+            var countEl = document.getElementById('headlineCount');
+            // Remove old dynamic buttons (keep ALL button and count span)
+            var oldBtns = bar.querySelectorAll('.filter-btn:not(.active-permanent)');
+            // Count sources in data
+            var sourceCounts = {};
+            allHeadlines.forEach(function(h) {
+                var short = getSourceShorthand(h.source);
+                if (!sourceCounts[short]) sourceCounts[short] = { count: 0, filter: h.source };
+                sourceCounts[short].count++;
+            });
+            // Build buttons for sources that have articles, sorted by count
+            var sorted = Object.entries(sourceCounts).sort(function(a, b) { return b[1].count - a[1].count; });
+            // Remove existing dynamic buttons
+            bar.querySelectorAll('.filter-btn-dynamic').forEach(function(b) { b.remove(); });
+            sorted.forEach(function(entry) {
+                var short = entry[0];
+                var info = entry[1];
+                var btn = document.createElement('button');
+                btn.className = 'filter-btn filter-btn-dynamic';
+                btn.textContent = short.charAt(0) + short.slice(1).toLowerCase();
+                // Use a broad filter term that .includes() will match
+                var filterTerm = info.filter.split(' ')[0]; // first word
+                // Special cases for multi-word sources
+                if (info.filter.includes('Al Jazeera')) filterTerm = 'Al Jazeera';
+                else if (info.filter.includes('France 24')) filterTerm = 'France 24';
+                else if (info.filter.includes('Times of Israel')) filterTerm = 'Times of Israel';
+                else if (info.filter.includes('Jerusalem Post')) filterTerm = 'Jerusalem Post';
+                else if (info.filter.includes('Defense One')) filterTerm = 'Defense';
+                else if (info.filter.includes('Defense News')) filterTerm = 'Defense';
+                else if (info.filter.includes('Reuters')) filterTerm = 'Reuters';
+                else if (info.filter.includes('AP')) filterTerm = 'AP';
+                else if (info.filter.includes('Google')) filterTerm = 'Google';
+                btn.onclick = function() { filterBySource(btn, filterTerm); };
+                bar.insertBefore(btn, countEl);
+            });
+        }
+
         async function loadHeadlines() {
             try {
                 var response = await fetch('/data.json?t=' + Date.now());
@@ -711,6 +741,7 @@
 
                 if (data.newsFeed && Array.isArray(data.newsFeed) && data.newsFeed.length > 0) {
                     allHeadlines = data.newsFeed;
+                    buildFilterButtons();
                     renderHeadlines();
                 } else if (data.developments && Array.isArray(data.developments) && data.developments.length > 0) {
                     // Fallback: convert developments to newsFeed format
@@ -730,6 +761,7 @@
                             tier: 2
                         };
                     });
+                    buildFilterButtons();
                     renderHeadlines();
                 } else {
                     document.getElementById('newsWire').innerHTML = '<div class="state-message"><div class="state-message-icon">&#x1F4E1;</div><div class="state-message-text">No headlines available yet. Headlines will appear after the next hourly update.</div></div>';
