@@ -520,20 +520,78 @@ def apply_llm_costs(data, llm_stats):
 # CONFIG: RSS feeds to pull from
 # ============================================================
 RSS_FEEDS = [
+    # --- DIRECT RSS FEEDS (most reliable, no Google middleman) ---
     {
-        "name": "Al Jazeera - Iran",
+        "name": "Al Jazeera",
         "url": "https://www.aljazeera.com/xml/rss/all.xml",
         "keywords": ["iran", "tehran", "irgc", "epic fury", "hezbollah", "strait of hormuz", "houthi",
                      "killed", "casualties", "deaths", "strike", "missile", "nuclear"],
         "tier": 2
     },
     {
-        "name": "BBC - World",
+        "name": "BBC World",
         "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
         "keywords": ["iran", "israel", "us strike", "hezbollah", "houthi", "middle east",
                      "killed", "casualties", "deaths", "nuclear"],
         "tier": 2
     },
+    {
+        "name": "Reuters World",
+        "url": "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
+                     "pentagon", "centcom", "casualties", "irgc", "epic fury"],
+        "tier": 1
+    },
+    {
+        "name": "NPR World",
+        "url": "https://feeds.npr.org/1004/rss.xml",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
+                     "pentagon", "centcom", "casualties", "military", "war"],
+        "tier": 2
+    },
+    {
+        "name": "France 24 Middle East",
+        "url": "https://www.france24.com/en/middle-east/rss",
+        "keywords": ["iran", "tehran", "strike", "killed", "hezbollah", "missile",
+                     "nuclear", "war", "casualties", "irgc"],
+        "tier": 2
+    },
+    {
+        "name": "Times of Israel",
+        "url": "https://www.timesofisrael.com/feed/",
+        "keywords": ["iran", "tehran", "strike", "hezbollah", "idf", "israel",
+                     "missile", "nuclear", "killed", "irgc", "epic fury"],
+        "tier": 2
+    },
+    {
+        "name": "Defense One",
+        "url": "https://www.defenseone.com/rss/",
+        "keywords": ["iran", "centcom", "navy", "military", "strike", "pentagon",
+                     "deployed", "carrier", "missile", "troops", "epic fury"],
+        "tier": 2
+    },
+    {
+        "name": "The Guardian World",
+        "url": "https://www.theguardian.com/world/rss",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
+                     "pentagon", "centcom", "casualties", "war"],
+        "tier": 2
+    },
+    {
+        "name": "CNN World",
+        "url": "http://rss.cnn.com/rss/edition_world.rss",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear",
+                     "pentagon", "centcom", "casualties", "military", "war"],
+        "tier": 2
+    },
+    {
+        "name": "ABC News",
+        "url": "https://abcnews.go.com/abcnews/internationalheadlines",
+        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear",
+                     "pentagon", "centcom", "casualties", "military"],
+        "tier": 2
+    },
+    # --- GOOGLE NEWS (backup — may be blocked from GitHub Actions) ---
     {
         "name": "Google News - Iran",
         "url": "https://news.google.com/rss/search?q=iran+strike+OR+killed+OR+missile+OR+nuclear&hl=en-US&gl=US&ceid=US:en",
@@ -542,52 +600,10 @@ RSS_FEEDS = [
         "tier": 2
     },
     {
-        "name": "Google News - US Military Iran",
+        "name": "Google News - US Military",
         "url": "https://news.google.com/rss/search?q=US+military+Iran+OR+CENTCOM+OR+%22epic+fury%22&hl=en-US&gl=US&ceid=US:en",
         "keywords": ["iran", "tehran", "strike", "killed", "missile", "centcom", "pentagon",
                      "epic fury", "troops", "navy", "carrier", "hezbollah", "houthi"],
-        "tier": 2
-    },
-    {
-        "name": "Google News - Iran Casualties",
-        "url": "https://news.google.com/rss/search?q=Iran+casualties+OR+%22death+toll%22+OR+killed+airstrikes&hl=en-US&gl=US&ceid=US:en",
-        "keywords": ["iran", "killed", "death toll", "casualties", "dead", "wounded", "deaths",
-                     "strike", "airstrike", "civilian"],
-        "tier": 2
-    },
-    {
-        "name": "Reuters - World",
-        "url": "https://news.google.com/rss/search?q=site:reuters.com+iran+war+OR+strike+OR+conflict&hl=en-US&gl=US&ceid=US:en",
-        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear", "hezbollah",
-                     "houthi", "irgc", "epic fury", "pentagon", "centcom", "casualties"],
-        "tier": 1
-    },
-    {
-        "name": "AP News",
-        "url": "https://news.google.com/rss/search?q=site:apnews.com+iran+war+OR+strike+OR+military&hl=en-US&gl=US&ceid=US:en",
-        "keywords": ["iran", "tehran", "strike", "killed", "missile", "nuclear",
-                     "pentagon", "centcom", "casualties", "military"],
-        "tier": 1
-    },
-    {
-        "name": "France 24",
-        "url": "https://news.google.com/rss/search?q=site:france24.com+iran+war+OR+strike&hl=en-US&gl=US&ceid=US:en",
-        "keywords": ["iran", "tehran", "strike", "killed", "hezbollah", "middle east",
-                     "nuclear", "war"],
-        "tier": 2
-    },
-    {
-        "name": "Times of Israel",
-        "url": "https://news.google.com/rss/search?q=site:timesofisrael.com+iran+OR+hezbollah+OR+strike&hl=en-US&gl=US&ceid=US:en",
-        "keywords": ["iran", "tehran", "strike", "hezbollah", "idf", "israel",
-                     "missile", "nuclear", "killed"],
-        "tier": 2
-    },
-    {
-        "name": "Stars and Stripes",
-        "url": "https://news.google.com/rss/search?q=site:stripes.com+iran+OR+centcom+OR+navy&hl=en-US&gl=US&ceid=US:en",
-        "keywords": ["iran", "centcom", "navy", "military", "troops", "strike",
-                     "pentagon", "deployed"],
         "tier": 2
     },
 ]
@@ -1891,7 +1907,7 @@ def main():
     print("=" * 60)
 
     # 1. Fetch news
-    print("\n[1/7] Fetching news from RSS feeds (5 sources)...")
+    print("\n[1/7] Fetching news from RSS feeds (12 sources)...")
     news_items = fetch_all_feeds()
     print(f"  Total: {len(news_items)} relevant items")
 
