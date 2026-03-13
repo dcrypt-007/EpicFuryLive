@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-03-13T22:45:46Z",
+  "lastUpdated": "2026-03-13T23:43:46Z",
   "dayCount": 13,
   "banner": {
-    "strikes": "~5,000",
-    "killed": "1,489+",
-    "cost": "$8.5B+"
+    "strikes": "~1,000",
+    "killed": "1,343+",
+    "cost": "$8.3B+"
   },
   "humanCost": {
-    "iranDeaths": "1,444",
+    "iranDeaths": "1,300",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "11",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "15",
+    "israeliDeaths": "13",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "19",
+    "gulfCasualties": "17",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "18,551+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1172",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$8.5 billion+",
-    "dailyBurnRate": "~$651M/day",
+    "totalCost": "$8.3 billion+",
+    "dailyBurnRate": "~$637M/day",
     "daysOfOps": 13,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-13",
-          "source": "LLM-verified (AP, February 13, 2026: Trump confirmed deployment of a second aircraft carrier group to the Middle East; no newer contrary confirmed count found)"
+          "source": "LLM-verified (AP on March 13, 2026 reports the Navy had 12 ships 'including the aircraft carrier USS Abraham Lincoln and eight destroyers' in the Arabian Sea; the USS Tripoli amphibious group was still more than a week away, so confirmed carrier strike groups currently in theater: 1.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 39,
+          "quantity": 8,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-03-06",
-          "source": "OpenClaw (auto-detected from RSS)"
+          "lastUpdated": "2026-03-13",
+          "source": "LLM-verified (AP on March 13, 2026 reports the Navy had 12 ships in the Arabian Sea, including 'eight destroyers.')"
         },
         {
           "id": "personnel",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-03-13",
-          "source": "LLM-verified (AP News, March 13, 2026, reports USS Oscar Austin shot down a ballistic missile over Turkey and says it was the third such interception over Turkey in the last two weeks; no broader confirmed cumulative THAAD/SM-3/Patriot total found)"
+          "source": "LLM-verified (AP on March 13, 2026 reports the USS Oscar Austin shot down an Iranian ballistic missile over Turkey and says it was the 'third such interception' over Turkey in the last two weeks. This confirms at least 3 U.S. naval intercept events, but not a full theater-wide SM-3/THAAD/Patriot missile count.)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 13 days",
-        "cost": "$182,000,000"
+        "detail": "$7,000,000/day \u00d7 13 days",
+        "cost": "$91,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "39 \u00d7 $240,000/day \u00d7 13 days",
-        "cost": "$121,680,000"
+        "detail": "8 \u00d7 $240,000/day \u00d7 13 days",
+        "cost": "$24,960,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported a ballistic missile interception over Turkey by USS Oscar Austin, the third such interception over Turkey in two weeks, indicating expanding geographic spillover.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iran's continued missile and drone attacks on Israel and Gulf states and said the Strait of Hormuz remains effectively closed.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on March 13 that the U.S. ordered 2,500 Marines and the amphibious assault ship USS Tripoli toward the Middle East, signaling a further force buildup.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 13, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP reported Iran continues daily missile and drone attacks on Israel and neighboring Gulf states while the Strait of Hormuz remains effectively closed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 13 that four crew members from a US KC-135 that crashed in western Iraq were found dead; this appears separate from the 7 KIA combat total.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 13 that a large blast struck near Tehran's al-Quds Day rally area.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran continues to threaten shipping and maintain pressure on the Strait of Hormuz, keeping Brent crude above $100/barrel",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Family of Michigan synagogue suspect killed in Lebanon airstrike, officials say",
+      "description": "The FBI said the suspect had large quantities of fireworks and petrol in his vehicle when it caught fire after ramming a synagogue on Thursday.",
+      "link": "https://www.bbc.com/news/articles/cdxz0jpzk4do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-13T23:36:41Z",
+      "tier": 2
+    },
+    {
       "title": "Under drone fire, exiled Kurds wait to confront Iranian regime",
       "description": "A group of fighters based in Iraq say they are \"ready to go home\", as they face drone attacks from Tehran.",
       "link": "https://www.bbc.com/news/articles/c79505804lpo?at_medium=RSS&at_campaign=rss",
@@ -1301,14 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "As hopes of regime change in Iran fade, Netanyahu faces political test",
-      "description": "Israeli leaders are framing the bombing campaign as having transformed the Middle East in their favour as pressure to end the conflict builds.",
-      "link": "https://www.bbc.com/news/articles/cvg5yp7v0ppo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-13T15:35:26Z",
-      "tier": 2
-    },
-    {
       "title": "Thousands march worldwide in solidarity with Palestine, Iran on al-Quds Day",
       "description": "Despite war, al-Quds Day marches in Tehran saw thousands protest, voicing anger against Israel and the US.",
       "link": "https://www.aljazeera.com/gallery/2026/3/13/thousands-march-worldwide-in-solidarity-with-palestine-iran-on-al-quds-day?traffic_source=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in searched sources shows Iran\u2019s official death toll at 1,444 and wounded at 18,551 as of March 13, 2026, while at least 15 Israelis, 11 US service members, and 19 people in Gulf states have been reported killed. Al Jazeera\u2019s updated live tracker says CENTCOM reported more than 5,000 US strikes on targets in Iran by March 10, and AP reported on March 13 that the US is reinforcing the theater with 2,500 Marines and the USS Tripoli after nearly two weeks of war. Several requested military-usage totals, including Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, and interceptor firings, could not be confirmed from named current sources in the searched results, so they remain null.",
+  "summary": "Confirmed reporting on Friday, March 13, 2026 indicates the war is still escalating: AP reports the U.S. is sending 2,500 Marines and the amphibious assault ship USS Tripoli toward the region, while Iranian authorities say more than 1,300 people have been killed in Iran and the KC-135 crash in western Iraq raised confirmed U.S. military deaths in Operation Epic Fury to at least 13. Al Jazeera\u2019s latest casualty tracker still lists at least 13 Israelis killed, more than 12,000 wounded in Iran, and 17 deaths in Gulf states. Officially, CENTCOM has only publicly confirmed 'over 1,000' targets struck in the first 24 hours, and AP says the Navy currently has one carrier, USS Abraham Lincoln, and eight destroyers operating in the Arabian Sea.",
   "briefings": [
     {
       "date": "2026-03-13",
       "day": 13,
-      "summary": "Confirmed reporting available in searched sources shows Iran\u2019s official death toll at 1,444 and wounded at 18,551 as of March 13, 2026, while at least 15 Israelis, 11 US service members, and 19 people in Gulf states have been reported killed. Al Jazeera\u2019s updated live tracker says CENTCOM reported more than 5,000 US strikes on targets in Iran by March 10, and AP reported on March 13 that the US is reinforcing the theater with 2,500 Marines and the USS Tripoli after nearly two weeks of war. Several requested military-usage totals, including Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, and interceptor firings, could not be confirmed from named current sources in the searched results, so they remain null."
+      "summary": "Confirmed reporting on Friday, March 13, 2026 indicates the war is still escalating: AP reports the U.S. is sending 2,500 Marines and the amphibious assault ship USS Tripoli toward the region, while Iranian authorities say more than 1,300 people have been killed in Iran and the KC-135 crash in western Iraq raised confirmed U.S. military deaths in Operation Epic Fury to at least 13. Al Jazeera\u2019s latest casualty tracker still lists at least 13 Israelis killed, more than 12,000 wounded in Iran, and 17 deaths in Gulf states. Officially, CENTCOM has only publicly confirmed 'over 1,000' targets struck in the first 24 hours, and AP says the Navy currently has one carrier, USS Abraham Lincoln, and eight destroyers operating in the Arabian Sea."
     },
     {
       "date": "2026-03-12",
