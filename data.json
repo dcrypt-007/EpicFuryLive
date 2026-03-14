@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-14T03:06:34Z",
+  "lastUpdated": "2026-03-14T04:53:02Z",
   "dayCount": 14,
   "banner": {
-    "strikes": "~5,500",
-    "killed": "1,325+",
+    "strikes": "~5,000",
+    "killed": "1,491+",
     "cost": "$8.7B+"
   },
   "humanCost": {
-    "iranDeaths": "1,300",
+    "iranDeaths": "1,444",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "12",
+    "israeliDeaths": "15",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "17",
+    "gulfCasualties": "19",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "12,000+",
+    "iranWounded": "18,551+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1172",
+    "civilianDeaths": "1444",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -48,7 +48,7 @@
   },
   "financialCost": {
     "totalCost": "$8.7 billion+",
-    "dailyBurnRate": "~$623M/day",
+    "dailyBurnRate": "~$621M/day",
     "daysOfOps": 14,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,14 +73,14 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-03-13",
-          "source": "LLM-verified (AP on March 13, 2026 reports the Navy had 12 ships 'including the aircraft carrier USS Abraham Lincoln and eight destroyers' in the Arabian Sea; the USS Tripoli amphibious group was still more than a week away, so confirmed carrier strike groups currently in theater: 1.)"
+          "lastUpdated": "2026-03-14",
+          "source": "LLM-verified (AP reporting identifies USS Abraham Lincoln as the carrier operating in theater; no newer confirmed report found showing a second carrier strike group currently in theater: https://apnews.com/article/634f406a5bb416b7a1a8bec8cc72b4b8)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 8,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-03-13",
-          "source": "LLM-verified (AP on March 13, 2026 reports the Navy had 12 ships in the Arabian Sea, including 'eight destroyers.')"
+          "lastUpdated": "2026-03-14",
+          "source": "LLM-verified (AP Jan. 26, 2026 reported USS Abraham Lincoln arrived with three accompanying warships/destroyers; no newer official confirmed theater-wide destroyer count found: https://apnews.com/article/58e6da912f9167df94f913d7dafe5af4)"
         },
         {
           "id": "personnel",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "8 \u00d7 $240,000/day \u00d7 14 days",
-        "cost": "$26,880,000"
+        "detail": "3 \u00d7 $240,000/day \u00d7 14 days",
+        "cost": "$10,080,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported 2,500 additional Marines and an amphibious assault ship are being sent to the Middle East.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on March 14 that the U.S. struck military sites on Iran's Kharg Island and Trump warned Iran's oil infrastructure could be targeted next if interference with shipping continues.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 14, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "A ballistic missile was intercepted over Turkey by USS Oscar Austin, the third such interception over Turkey in the last two weeks according to AP",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran continued attacks on Gulf energy and infrastructure, with Saudi Arabia saying it downed nearly 50 drones on March 13, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Pete Hegseth claimed Iran's new supreme leader Mojtaba Khamenei was injured, while AP said he offered no evidence.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-03-14T04:14:33Z",
+      "text": "<strong>Trump posts bombing video after saying US hit Kharg Island</strong> -- Donald Trump shared footage of US air strikes on Iran&amp;#039;s Kharg Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/trump-posts-bombing-video-after-saying-us-hit-kharg-island?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-14T03:11:50Z",
+      "text": "<strong>Trump claims US \u2018way ahead of schedule\u2019 in Iran war</strong> -- US President Donald Trump said the United States is \u201cway ahead of schedule\u201d in its war with Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/trump-claims-us-way-ahead-of-schedule-in-iran?traffic_source=rss"
+    },
+    {
       "time": "2026-03-14T02:39:05Z",
       "text": "<strong>Projectile falls, explodes in Israel\u2019s Negev</strong> -- Video from the Negev in southern Israel captured the moment a projectile following an Iranian missile attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/projectile-falls-explodes-in-israels-negev?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-03-13T12:54:49Z",
       "text": "<strong>Four killed in US military plane crash in Iraq</strong> -- Four killed in US military plane crash in Iraq <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/13/four-killed-in-us-military-plane-crash-in-iraq?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-13T12:50:04Z",
-      "text": "<strong>What\u2019s happened in Gaza and the West Bank since the start of the Iran war?</strong> -- Israel has closed the Rafah border crossing and Israeli settler attacks in the occupied West Bank have continued. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/13/whats-happened-in-gaza-and-the-west-bank-since-the-start-of-the-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-13T12:41:15Z",
-      "text": "<strong>Dozens injured after missile attack hits northern Israel</strong> -- A missile attack that hit a Palestinian community in northern Israel has injured dozens of people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/13/dozens-injured-after-missile-attack-hits-northern-israel?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Trump posts bombing video after saying US hit Kharg Island",
+      "description": "Donald Trump shared footage of US air strikes on Iran&#039;s Kharg Island.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/trump-posts-bombing-video-after-saying-us-hit-kharg-island?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T04:14:33Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump claims US \u2018way ahead of schedule\u2019 in Iran war",
+      "description": "US President Donald Trump said the United States is \u201cway ahead of schedule\u201d in its war with Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/trump-claims-us-way-ahead-of-schedule-in-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T03:11:50Z",
+      "tier": 2
+    },
+    {
       "title": "Projectile falls, explodes in Israel\u2019s Negev",
       "description": "Video from the Negev in southern Israel captured the moment a projectile following an Iranian missile attack.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/projectile-falls-explodes-in-israels-negev?traffic_source=rss",
@@ -1226,6 +1242,14 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/experts-doubt-hegseth-claim-no-need-to-worry-about-hormuz?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-14T02:25:22Z",
+      "tier": 2
+    },
+    {
+      "title": "More US Marines and warships to be moved to Middle East, reports say",
+      "description": "The reinforcements will come from an amphibious ready group that is usually based in Japan, an official told CBS, the BBC's US partner.",
+      "link": "https://www.bbc.com/news/articles/cq8gj9n12g8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-14T00:53:15Z",
       "tier": 2
     },
     {
@@ -1317,14 +1341,6 @@
       "tier": 2
     },
     {
-      "title": "Bahrain & Saudi Arabia Grands Prix to be cancelled",
-      "description": "The Bahrain and Saudi Arabia Grands Prix scheduled for next month are set to be cancelled as a result of the Middle East war.",
-      "link": "https://www.bbc.com/sport/formula1/articles/c875vw1lwjzo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-13T17:12:12Z",
-      "tier": 2
-    },
-    {
       "title": "Ukraine, EU allies slam US decision to roll back Russia oil sanctions",
       "description": "Volodymyr Zelenskyy says move &#039;does not help peace&#039; as Europe reels from soaring energy prices linked to Iran war.",
       "link": "https://www.aljazeera.com/news/2026/3/13/ukraine-eu-allies-slam-us-decision-to-roll-back-russia-oil-sanctions?traffic_source=rss",
@@ -1349,36 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "Air attack hits as Iran\u2019s chief justice gives lives interview at rally",
-      "description": "An air attack hit in Tehran as Iran\u2019s chief justice gave lives interview at an al-Quds rally",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/13/air-attack-hits-as-irans-chief-justice-gives-lives-interview-at-rally?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-13T15:25:52Z",
-      "tier": 2
-    },
-    {
       "title": "All six crew members killed after US refuelling plane crashes in Iraq",
       "description": "The US Central Command says all six crew members died after a refuelling aircraft went down over western Iraq.",
       "link": "https://www.bbc.com/news/articles/cy0dz5ql17vo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-13T14:29:12Z",
       "tier": 2
-    },
-    {
-      "title": "Bodies of 84 Iranian sailors killed in US torpedo strike to be repatriated",
-      "description": "The seamen died when Iranian warship the Iris Dena was sunk on 4 March by a US submarine near Sri Lanka.",
-      "link": "https://www.bbc.com/news/articles/c363lk4xk07o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-13T10:43:21Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of March 14, 2026 indicates Operation Epic Fury has killed at least 13 U.S. service members, including six killed in a KC-135 crash in western Iraq, while Israel's reported death toll remains 12 and Iranian authorities say more than 1,300 people have been killed in Iran. Iran's deputy health minister told Al Jazeera that more than 12,000 people have been wounded, most of the dead being civilians. On the military side, Adm. Brad Cooper said U.S. forces had struck over 5,500 targets in Iran by March 11, up from more than 5,000 cited by AP on March 10. On March 13, AP also reported a major U.S. strike on Kharg Island and the deployment of roughly 2,500 additional Marines and at least one extra warship, while live reporting from Al Jazeera showed Iran was still launching missile attacks into Israel, including strikes affecting the Negev and central Israel.",
+  "summary": "Confirmed reporting on March 13-14 indicates the war continues to escalate: AP reported U.S. strikes on Iran's Kharg Island and the deployment of 2,500 additional Marines plus an amphibious assault ship to the region, while Al Jazeera's AJLabs tracker, citing the Iran Health Ministry and other official sources, listed 1,444 killed and 18,551 wounded in Iran, 15 Israelis killed, 13 confirmed U.S. military deaths, and 19 deaths across Gulf states; the latest official DoD/CENTCOM fact sheet located still gives the cumulative strike total as over 5,000 targets hit in the first 10 days of Operation Epic Fury.",
   "briefings": [
     {
       "date": "2026-03-14",
       "day": 14,
-      "summary": "Confirmed reporting as of March 14, 2026 indicates Operation Epic Fury has killed at least 13 U.S. service members, including six killed in a KC-135 crash in western Iraq, while Israel's reported death toll remains 12 and Iranian authorities say more than 1,300 people have been killed in Iran. Iran's deputy health minister told Al Jazeera that more than 12,000 people have been wounded, most of the dead being civilians. On the military side, Adm. Brad Cooper said U.S. forces had struck over 5,500 targets in Iran by March 11, up from more than 5,000 cited by AP on March 10. On March 13, AP also reported a major U.S. strike on Kharg Island and the deployment of roughly 2,500 additional Marines and at least one extra warship, while live reporting from Al Jazeera showed Iran was still launching missile attacks into Israel, including strikes affecting the Negev and central Israel."
+      "summary": "Confirmed reporting on March 13-14 indicates the war continues to escalate: AP reported U.S. strikes on Iran's Kharg Island and the deployment of 2,500 additional Marines plus an amphibious assault ship to the region, while Al Jazeera's AJLabs tracker, citing the Iran Health Ministry and other official sources, listed 1,444 killed and 18,551 wounded in Iran, 15 Israelis killed, 13 confirmed U.S. military deaths, and 19 deaths across Gulf states; the latest official DoD/CENTCOM fact sheet located still gives the cumulative strike total as over 5,000 targets hit in the first 10 days of Operation Epic Fury."
     },
     {
       "date": "2026-03-13",
