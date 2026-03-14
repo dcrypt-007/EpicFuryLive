@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-03-14T19:41:46Z",
+  "lastUpdated": "2026-03-14T20:46:09Z",
   "dayCount": 14,
   "banner": {
-    "strikes": "~5,500",
-    "killed": "1,338+",
+    "strikes": "~5,000",
+    "killed": "1,325+",
     "cost": "$8.8B+"
   },
   "humanCost": {
@@ -13,9 +13,9 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "12",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "19",
+    "gulfCasualties": "6",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "18,551+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1300",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -48,7 +48,7 @@
   },
   "financialCost": {
     "totalCost": "$8.8 billion+",
-    "dailyBurnRate": "~$630M/day",
+    "dailyBurnRate": "~$631M/day",
     "daysOfOps": 14,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-14",
-          "source": "LLM-verified (CBS News, Mar. 5, 2026: Adm. Brad Cooper said 'two carrier strike groups' are participating (cbsnews.com/news/pete-hegseth-brad-cooper-iran-news-conference-03-05-2026/))"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury pages show Ford (CVN-78) and Abraham Lincoln (CVN-72) operating in support of the campaign)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 52500,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-14",
-          "source": "LLM-verified (CBS News, Mar. 5, 2026: Adm. Brad Cooper said 'more than 50,000 troops' are participating (cbsnews.com/news/pete-hegseth-brad-cooper-iran-news-conference-03-05-2026/))"
+          "source": "LLM-verified (AP, Mar. 13-14, 2026: roughly 2,500 Marines and USS Tripoli ordered to region on top of about 50,000 U.S. troops already in the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 14 days",
-        "cost": "$350,000,000"
+        "detail": "52,500 \u00d7 $500/day \u00d7 14 days",
+        "cost": "$367,500,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The US is sending roughly 2,500 additional Marines and at least one extra warship, including USS Tripoli, to the Middle East.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran threatened UAE ports and other US-linked oil, economic and energy infrastructure after accusing the US of launching strikes on Kharg Island from the UAE.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 14, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP, Mar. 13: 2,500 more Marines and an amphibious assault ship were being sent to the Middle East.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, Mar. 14: Trump said U.S. forces struck military targets on Iran's Kharg Island, signaling potential escalation around Iranian oil infrastructure.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, Mar. 14: debris from an intercepted Iranian drone hit an oil facility in the UAE, and a fire broke out near Fujairah port with no casualties reported.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,18 @@
   ],
   "developments": [
     {
+      "time": "2026-03-14T20:01:20Z",
+      "text": "<strong>Turkey on alert as Iran conflict escalates, warns against provocations</strong> -- Turkish President Recep Tayyip Erdogan says Ankara is monitoring the regional war involving Iran, the US, and Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/turkey-on-alert-as-iran-conflict-escalates-warns-against-provocations?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-14T19:58:27Z",
+      "text": "<strong>UNESCO condemns strike on Minab girls\u2019 school: \u2018They attacked twice\u2026 How</strong> -- Secretary of Iran\u2019s National Commission for UNESCO, condemned a missile strike on a girls\u2019 primary school in Minab. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/unesco-condemns-strike-on-minab-girls-school-they-attacked-twice-how?traffic_source=rss"
+    },
+    {
       "time": "2026-03-14T19:28:58Z",
-      "text": "<strong>Five killed in attacks on Ukraine as EU extends sanctions against Russians</strong> -- EU maintains pressure after slamming US for lifting sanctions on Russian oil exports as Middle East war bites. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Six killed in attacks on Ukraine as EU extends sanctions against Russians</strong> -- EU maintains pressure after slamming US for lifting sanctions on Russian oil exports as Middle East war bites. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/14/eu-sanctions-against-russia-renewed-amid-deadly-attacks-on-ukraine?traffic_source=rss"
     },
     {
@@ -841,16 +851,6 @@
       "time": "2026-03-14T11:21:20Z",
       "text": "<strong>Family pulled from the rubble after US-Israeli strikes on Tehran</strong> -- Video shows rescue teams rescuing families from under the rubble after US-Israeli strikes hit residential areas in Tehra <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/family-pulled-from-the-rubble-after-us-israeli-strikes-on-tehran?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-14T11:17:10Z",
-      "text": "<strong>The battle on the propaganda front intensifies</strong> -- As the US and Israel battle to control the story of their war against Iran, their messaging gets harder to defend. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/the-listening-post/2026/3/14/the-battle-on-the-propaganda-front-intensifies?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-14T09:53:03Z",
-      "text": "<strong>Hamas urges Iran to halt attacks on Gulf, slams aggression on Tehran</strong> -- The Palestinian group calls for end to Gulf attacks while supporting Tehran\u2019s right to defend against Israel and US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/14/hamas-urges-iran-to-halt-attacks-on-neighbouring-gulf-states?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,7 +1213,23 @@
   ],
   "newsFeed": [
     {
-      "title": "Five killed in attacks on Ukraine as EU extends sanctions against Russians",
+      "title": "Turkey on alert as Iran conflict escalates, warns against provocations",
+      "description": "Turkish President Recep Tayyip Erdogan says Ankara is monitoring the regional war involving Iran, the US, and Israel.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/turkey-on-alert-as-iran-conflict-escalates-warns-against-provocations?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T20:01:20Z",
+      "tier": 2
+    },
+    {
+      "title": "UNESCO condemns strike on Minab girls\u2019 school: \u2018They attacked twice\u2026 How",
+      "description": "Secretary of Iran\u2019s National Commission for UNESCO, condemned a missile strike on a girls\u2019 primary school in Minab.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/unesco-condemns-strike-on-minab-girls-school-they-attacked-twice-how?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T19:58:27Z",
+      "tier": 2
+    },
+    {
+      "title": "Six killed in attacks on Ukraine as EU extends sanctions against Russians",
       "description": "EU maintains pressure after slamming US for lifting sanctions on Russian oil exports as Middle East war bites.",
       "link": "https://www.aljazeera.com/news/2026/3/14/eu-sanctions-against-russia-renewed-amid-deadly-attacks-on-ukraine?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1333,14 +1349,6 @@
       "tier": 2
     },
     {
-      "title": "Fire and damage after strike on US embassy compound in Baghdad",
-      "description": "A strike on the heavily fortified United States embassy compound in Baghdad caused a fire and damage to the complex.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/fire-and-damage-after-strike-on-us-embassy-compound-in-baghdad?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-14T13:55:01Z",
-      "tier": 2
-    },
-    {
       "title": "Hamas urges key ally Iran to halt attacks on Gulf states",
       "description": "The Palestinian group also affirms Tehran's right to defend itself from \"aggression\" by the US and Israel.",
       "link": "https://www.bbc.com/news/articles/cvg3xk6xgyzo?at_medium=RSS&at_campaign=rss",
@@ -1357,14 +1365,6 @@
       "tier": 2
     },
     {
-      "title": "Two Indian ships cross Strait of Hormuz as Iran says it allowed passage",
-      "description": "Iran&#039;s envoy to New Delhi says Tehran allowed some Indian vessels to pass the Strait in rare exception to the blockade.",
-      "link": "https://www.aljazeera.com/news/2026/3/14/two-indian-ships-cross-strait-of-hormuz-as-iran-says-it-allowed-passage?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-14T12:58:22Z",
-      "tier": 2
-    },
-    {
       "title": "Family of Michigan synagogue suspect killed in Lebanon airstrike, officials say",
       "description": "The FBI said the suspect had large quantities of fireworks and petrol in his vehicle when it caught fire after ramming a synagogue on Thursday.",
       "link": "https://www.bbc.com/news/articles/cdxz0jpzk4do?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available on March 13-14, 2026 indicates the war has entered its third week with Iranian authorities saying more than 1,300 people have been killed in Iran, Israel reporting 12 deaths, and AP reporting the US military death toll reached 13 overall after a KC-135 crash, of whom seven were confirmed killed in combat. AP also reported 2,500 additional US Marines are being deployed, while prior CBS reporting citing Adm. Brad Cooper said more than 50,000 US troops and two carrier strike groups are participating and that US strikes had exceeded 5,500 targets in Iran. AP and Al Jazeera reporting also point to widening regional risk, including confirmed deaths in Gulf states and new Iranian threats against UAE ports and US-linked infrastructure.",
+  "summary": "Confirmed reporting on March 14, 2026 indicates the war has entered its third week with AP reporting that Iranian authorities say more than 1,300 people have been killed in Iran, Israel has reported 12 deaths, and the Pentagon-confirmed U.S. death toll remains seven service members, while Al Jazeera\u2019s latest health-ministry-based reporting still cites more than 12,000 wounded in Iran. CENTCOM\u2019s most recent publicly indexed strike count cited by Al Jazeera is more than 5,000 targets struck in Iran as of March 10. Regionally, the UAE said Iranian attacks have killed six people, and AP reported Tehran has now threatened UAE ports and broader US-linked energy infrastructure after U.S. strikes on Kharg Island; meanwhile Washington is reinforcing the theater with about 2,500 additional Marines and an added warship.",
   "briefings": [
     {
       "date": "2026-03-14",
       "day": 14,
-      "summary": "Confirmed reporting available on March 13-14, 2026 indicates the war has entered its third week with Iranian authorities saying more than 1,300 people have been killed in Iran, Israel reporting 12 deaths, and AP reporting the US military death toll reached 13 overall after a KC-135 crash, of whom seven were confirmed killed in combat. AP also reported 2,500 additional US Marines are being deployed, while prior CBS reporting citing Adm. Brad Cooper said more than 50,000 US troops and two carrier strike groups are participating and that US strikes had exceeded 5,500 targets in Iran. AP and Al Jazeera reporting also point to widening regional risk, including confirmed deaths in Gulf states and new Iranian threats against UAE ports and US-linked infrastructure."
+      "summary": "Confirmed reporting on March 14, 2026 indicates the war has entered its third week with AP reporting that Iranian authorities say more than 1,300 people have been killed in Iran, Israel has reported 12 deaths, and the Pentagon-confirmed U.S. death toll remains seven service members, while Al Jazeera\u2019s latest health-ministry-based reporting still cites more than 12,000 wounded in Iran. CENTCOM\u2019s most recent publicly indexed strike count cited by Al Jazeera is more than 5,000 targets struck in Iran as of March 10. Regionally, the UAE said Iranian attacks have killed six people, and AP reported Tehran has now threatened UAE ports and broader US-linked energy infrastructure after U.S. strikes on Kharg Island; meanwhile Washington is reinforcing the theater with about 2,500 additional Marines and an added warship."
     },
     {
       "date": "2026-03-13",
