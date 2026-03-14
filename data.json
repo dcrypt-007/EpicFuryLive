@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-14T20:46:09Z",
+  "lastUpdated": "2026-03-14T21:42:56Z",
   "dayCount": 14,
   "banner": {
-    "strikes": "~5,000",
+    "strikes": "~3,000",
     "killed": "1,325+",
-    "cost": "$8.8B+"
+    "cost": "$8.7B+"
   },
   "humanCost": {
     "iranDeaths": "1,300",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "12",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "6",
+    "gulfCasualties": "14",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$8.8 billion+",
-    "dailyBurnRate": "~$631M/day",
+    "totalCost": "$8.7 billion+",
+    "dailyBurnRate": "~$624M/day",
     "daysOfOps": 14,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-14",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury pages show Ford (CVN-78) and Abraham Lincoln (CVN-72) operating in support of the campaign)"
+          "source": "LLM-verified (AP, March 14, 2026: 'the Navy had 12 ships, including the aircraft carrier USS Abraham Lincoln and eight destroyers, in the Arabian Sea' (turn5view4). Only one carrier explicitly confirmed in accessible current reporting searched.)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-03-14",
-          "source": "LLM-verified (AP March 14, 2026 reports the Navy had 12 ships in/near the Arabian Sea earlier in the week, including 8 destroyers)"
+          "source": "LLM-verified (AP, March 14, 2026: 'the Navy had 12 ships, including the aircraft carrier USS Abraham Lincoln and eight destroyers, in the Arabian Sea' (turn5view4).)"
         },
         {
           "id": "personnel",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 14 days",
-        "cost": "$196,000,000"
+        "detail": "$7,000,000/day \u00d7 14 days",
+        "cost": "$98,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the UAE Defense Ministry said nine ballistic missiles and 33 drones were fired toward the UAE on March 14; the attacks had killed six people and wounded 141 others overall in the UAE (turn3news0).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported debris from an intercepted Iranian drone sparked a fire in Fujairah, UAE, with no casualties reported there on March 14 (turn1view2).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iran openly threatened non-U.S. assets and ports in the UAE on March 14 after alleging the U.S. used Emirati locations to launch strikes (turn1view2).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran has effectively closed the Strait of Hormuz while continuing missile and drone attacks on Israel and Gulf states, according to AP reporting on March 14, 2026",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. Embassy compound in Baghdad was attacked and an intercepted Iranian drone caused debris damage at a UAE oil facility, per AP reporting on March 14, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran threatened attacks on cities in the UAE after U.S. strikes on Kharg Island, according to AP reporting on March 14, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, Mar. 13: 2,500 more Marines and an amphibious assault ship were being sent to the Middle East.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-03-14T21:25:17Z",
+      "text": "<strong>US-Israeli strike kills 15 at Isfahan factory, Iranian media says</strong> -- Iranian media report the deaths in central Iran as Tehran launches new missile salvoes at Israeli targets. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/14/us-israeli-strike-kills-15-at-isfahan-factory-iranian-media-says?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-14T20:59:54Z",
+      "text": "<strong>Thousands in Madrid protest \u2018forgotten\u2019 Gaza, warn Iran war may spiral into</strong> -- Thousands rallied in central Madrid calling for an end to the war involving the United States, Israel and Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/thousands-in-madrid-protest-forgotten-gaza-warn-iran-war-may-spiral-into?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-14T20:38:26Z",
+      "text": "<strong>Hundreds protest against US-Israeli strikes on Iran in Seoul</strong> -- Hundreds of peace activists and demonstrators marched in central Seoul on Saturday in protest of the US-Israeli strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/hundreds-protest-against-us-israeli-strikes-on-iran-in-seoul?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-14T20:35:49Z",
+      "text": "<strong>Two more Iranian female footballers pull Australia asylum bids: State media</strong> -- Seven members of the Iranian football delegation sought asylum, with four now known to have withdrawn applications. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/3/14/two-more-iranian-women-footballers-pull-australia-asylum-bids-state-media?traffic_source=rss"
+    },
+    {
       "time": "2026-03-14T20:01:20Z",
       "text": "<strong>Turkey on alert as Iran conflict escalates, warns against provocations</strong> -- Turkish President Recep Tayyip Erdogan says Ankara is monitoring the regional war involving Iran, the US, and Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/turkey-on-alert-as-iran-conflict-escalates-warns-against-provocations?traffic_source=rss"
@@ -831,26 +851,6 @@
       "time": "2026-03-14T14:07:05Z",
       "text": "<strong>Why is Iran\u2019s Kharg Island important?</strong> -- US President Donald Trump shared a video of strikes on Kharg Island, Iran\u2019s main oil export hub. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/us-bombs-irans-oil-hub-kharg-island?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-14T13:55:01Z",
-      "text": "<strong>Fire and damage after strike on US embassy compound in Baghdad</strong> -- A strike on the heavily fortified United States embassy compound in Baghdad caused a fire and damage to the complex. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/fire-and-damage-after-strike-on-us-embassy-compound-in-baghdad?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-14T12:58:22Z",
-      "text": "<strong>Two Indian ships cross Strait of Hormuz as Iran says it allowed passage</strong> -- Iran&amp;#039;s envoy to New Delhi says Tehran allowed some Indian vessels to pass the Strait in rare exception to the blockade. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/14/two-indian-ships-cross-strait-of-hormuz-as-iran-says-it-allowed-passage?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-14T12:12:07Z",
-      "text": "<strong>Another 5 Palestinians killed in Israel\u2019s genocide in Gaza amid wider war</strong> -- Israeli forces carry out daily attacks on besieged Gaza, as humanitarian conditions amid Iran war worsen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/14/israels-genocide-in-gaza-claims-another-5-palestinian-lives-amid-wider-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-14T11:21:20Z",
-      "text": "<strong>Family pulled from the rubble after US-Israeli strikes on Tehran</strong> -- Video shows rescue teams rescuing families from under the rubble after US-Israeli strikes hit residential areas in Tehra <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/family-pulled-from-the-rubble-after-us-israeli-strikes-on-tehran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "US-Israeli strike kills 15 at Isfahan factory, Iranian media says",
+      "description": "Iranian media report the deaths in central Iran as Tehran launches new missile salvoes at Israeli targets.",
+      "link": "https://www.aljazeera.com/news/2026/3/14/us-israeli-strike-kills-15-at-isfahan-factory-iranian-media-says?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T21:25:17Z",
+      "tier": 2
+    },
+    {
+      "title": "Thousands in Madrid protest \u2018forgotten\u2019 Gaza, warn Iran war may spiral into",
+      "description": "Thousands rallied in central Madrid calling for an end to the war involving the United States, Israel and Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/thousands-in-madrid-protest-forgotten-gaza-warn-iran-war-may-spiral-into?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T20:59:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Three more Iran football team members change minds over asylum",
+      "description": "Four of seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
+      "link": "https://www.bbc.com/news/articles/c98gz372683o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-14T20:48:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Hundreds protest against US-Israeli strikes on Iran in Seoul",
+      "description": "Hundreds of peace activists and demonstrators marched in central Seoul on Saturday in protest of the US-Israeli strikes.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/hundreds-protest-against-us-israeli-strikes-on-iran-in-seoul?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T20:38:26Z",
+      "tier": 2
+    },
+    {
+      "title": "Two more Iranian female footballers pull Australia asylum bids: State media",
+      "description": "Seven members of the Iranian football delegation sought asylum, with four now known to have withdrawn applications.",
+      "link": "https://www.aljazeera.com/sports/2026/3/14/two-more-iranian-women-footballers-pull-australia-asylum-bids-state-media?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-14T20:35:49Z",
+      "tier": 2
+    },
+    {
       "title": "Turkey on alert as Iran conflict escalates, warns against provocations",
       "description": "Turkish President Recep Tayyip Erdogan says Ankara is monitoring the regional war involving Iran, the US, and Israel.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/turkey-on-alert-as-iran-conflict-escalates-warns-against-provocations?traffic_source=rss",
@@ -1301,14 +1341,6 @@
       "tier": 2
     },
     {
-      "title": "Rescuers blame weather and 'underprepared skiers' for rise in Alps avalanche deaths",
-      "description": "The BBC joins a French Alps rescue team as the number of skiers killed this season passes 100.",
-      "link": "https://www.bbc.com/news/articles/cev7111kx9wo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-14T16:32:25Z",
-      "tier": 2
-    },
-    {
       "title": "Iran allows limited Indian shipping through Strait of Hormuz",
       "description": "Iran has allowed some Indian vessels through the Strait of Hormuz.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/iran-allows-limited-indian-shipping-through-strait-of-hormuz?traffic_source=rss",
@@ -1322,30 +1354,6 @@
       "link": "https://www.aljazeera.com/news/2026/3/14/israel-bombs-basij-checkpoints-in-tehran-as-us-iran-trade-fire-and-jabs?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-14T16:03:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says Strait of Hormuz will not be reopened to US ships",
-      "description": "A member of Iran\u2019s Expediency Council says the Strait of Hormuz will remain closed to US ships.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/iran-says-strait-of-hormuz-will-not-be-reopened-to-us-ships?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-14T15:18:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Vatican envoy visits Lebanese church after priest killed in shelling",
-      "description": "The Vatican envoy to Lebanon visited Qlayaa, after a priest was killed in an Israeli attack.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/vatican-envoy-visits-lebanese-church-after-priest-killed-in-shelling?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-14T14:55:53Z",
-      "tier": 2
-    },
-    {
-      "title": "Why is Iran\u2019s Kharg Island important?",
-      "description": "US President Donald Trump shared a video of strikes on Kharg Island, Iran\u2019s main oil export hub.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/14/us-bombs-irans-oil-hub-kharg-island?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-14T14:07:05Z",
       "tier": 2
     },
     {
@@ -1363,22 +1371,14 @@
       "source": "BBC World",
       "time": "2026-03-14T13:27:32Z",
       "tier": 2
-    },
-    {
-      "title": "Family of Michigan synagogue suspect killed in Lebanon airstrike, officials say",
-      "description": "The FBI said the suspect had large quantities of fireworks and petrol in his vehicle when it caught fire after ramming a synagogue on Thursday.",
-      "link": "https://www.bbc.com/news/articles/cdxz0jpzk4do?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-13T23:36:41Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on March 14, 2026 indicates the war has entered its third week with AP reporting that Iranian authorities say more than 1,300 people have been killed in Iran, Israel has reported 12 deaths, and the Pentagon-confirmed U.S. death toll remains seven service members, while Al Jazeera\u2019s latest health-ministry-based reporting still cites more than 12,000 wounded in Iran. CENTCOM\u2019s most recent publicly indexed strike count cited by Al Jazeera is more than 5,000 targets struck in Iran as of March 10. Regionally, the UAE said Iranian attacks have killed six people, and AP reported Tehran has now threatened UAE ports and broader US-linked energy infrastructure after U.S. strikes on Kharg Island; meanwhile Washington is reinforcing the theater with about 2,500 additional Marines and an added warship.",
+  "summary": "Confirmed reporting available in accessible searches on March 14, 2026, shows the war entering its third week, with AP reporting Iran threatened UAE ports and other non-U.S. assets after alleging U.S. strikes were launched from the UAE, while the UAE reported a new barrage of nine ballistic missiles and 33 drones and said total casualties in the UAE stood at six killed and 141 wounded. CENTCOM\u2019s latest easily verifiable official cumulative operational figure found was its March 6 fact sheet stating that over 3,000 targets had been struck in the first seven days of Operation Epic Fury. For U.S. casualties, AP reported by March 8 that the American death toll had risen to seven, while earlier CENTCOM had publicly confirmed three KIA on March 1; AP also reported about 140 U.S. troops had been injured as of March 10. Other requested cumulative figures, especially current Iranian and Israeli death totals and detailed weapons expenditure counts, could not be confirmed with sufficient reliability from the named sources accessible in search results, so they are left null.",
   "briefings": [
     {
       "date": "2026-03-14",
       "day": 14,
-      "summary": "Confirmed reporting on March 14, 2026 indicates the war has entered its third week with AP reporting that Iranian authorities say more than 1,300 people have been killed in Iran, Israel has reported 12 deaths, and the Pentagon-confirmed U.S. death toll remains seven service members, while Al Jazeera\u2019s latest health-ministry-based reporting still cites more than 12,000 wounded in Iran. CENTCOM\u2019s most recent publicly indexed strike count cited by Al Jazeera is more than 5,000 targets struck in Iran as of March 10. Regionally, the UAE said Iranian attacks have killed six people, and AP reported Tehran has now threatened UAE ports and broader US-linked energy infrastructure after U.S. strikes on Kharg Island; meanwhile Washington is reinforcing the theater with about 2,500 additional Marines and an added warship."
+      "summary": "Confirmed reporting available in accessible searches on March 14, 2026, shows the war entering its third week, with AP reporting Iran threatened UAE ports and other non-U.S. assets after alleging U.S. strikes were launched from the UAE, while the UAE reported a new barrage of nine ballistic missiles and 33 drones and said total casualties in the UAE stood at six killed and 141 wounded. CENTCOM\u2019s latest easily verifiable official cumulative operational figure found was its March 6 fact sheet stating that over 3,000 targets had been struck in the first seven days of Operation Epic Fury. For U.S. casualties, AP reported by March 8 that the American death toll had risen to seven, while earlier CENTCOM had publicly confirmed three KIA on March 1; AP also reported about 140 U.S. troops had been injured as of March 10. Other requested cumulative figures, especially current Iranian and Israeli death totals and detailed weapons expenditure counts, could not be confirmed with sufficient reliability from the named sources accessible in search results, so they are left null."
     },
     {
       "date": "2026-03-13",
