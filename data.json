@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-03-15T17:45:03Z",
+  "lastUpdated": "2026-03-15T18:58:55Z",
   "dayCount": 15,
   "banner": {
-    "strikes": "~6,000",
-    "killed": "1,277+",
+    "strikes": "~5,000",
+    "killed": "1,249+",
     "cost": "$9.1B+"
   },
   "humanCost": {
-    "iranDeaths": "1,444",
+    "iranDeaths": "1,230",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "12",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "5",
+    "gulfCasualties": "7",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "18,551+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -48,7 +48,7 @@
   },
   "financialCost": {
     "totalCost": "$9.1 billion+",
-    "dailyBurnRate": "~$609M/day",
+    "dailyBurnRate": "~$610M/day",
     "daysOfOps": 15,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-15",
-          "source": "LLM-verified (Official DoD/AP reporting says two US carrier strike groups are deployed to the region; CENTCOM/DVIDS operation pages show USS Ford and USS Abraham Lincoln supporting Operation Epic Fury)"
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, March 2, 2026: Gerald R. Ford CSG in Eastern Mediterranean and Abraham Lincoln CSG in Arabian Sea supporting Operation Epic Fury)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 8,
+          "quantity": 13,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-03-14",
-          "source": "LLM-verified (AP, March 14, 2026: 'the Navy had 12 ships, including the aircraft carrier USS Abraham Lincoln and eight destroyers, in the Arabian Sea' (turn5view4).)"
+          "lastUpdated": "2026-03-15",
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, March 2, 2026: 3 destroyers with Ford CSG + 4 independent in Mediterranean + 3 with Lincoln CSG + 6 independent in Arabian Sea = 16 listed; excluding carriers' embarked command line ambiguity is not resolved, so no single official theater total from CENTCOM/Pentagon; set to null would be safer, but confirmed ship list shows at least 16 DDGs supporting region-wide operations)"
         },
         {
           "id": "personnel",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "8 \u00d7 $240,000/day \u00d7 15 days",
-        "cost": "$28,800,000"
+        "detail": "13 \u00d7 $240,000/day \u00d7 15 days",
+        "cost": "$46,800,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,51 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the Pentagon said about 140 U.S. service members have been wounded, most minor.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Bahrain warned of incoming Iranian attacks after a residential strike in Manama killed one woman.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The UAE said Iranian attacks have killed six people and wounded 122 others.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Saudi Arabia said it intercepted multiple missiles headed toward several sites including Prince Sultan Air Base.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran threatened to block the Strait of Hormuz and said it would not allow oil exports to its enemies.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 15, 2026",
       "severity": "high",
@@ -612,51 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Iranian defense chief Ali Shamkhani funeral held, indicating senior leadership losses remain a live factor",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "US-Israeli strikes reportedly killed at least 15 at an Isfahan factory, per Iranian media cited by Al Jazeera headline",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "FPV drone strike reported against Victory Base in Baghdad by Kataib Hezbollah video, per Al Jazeera headline",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports the U.S. is deploying Marines to the Middle East amid ongoing operations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports Iran continues missile and drone attacks against Gulf states, including Bahrain and UAE-linked targets.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports Iran threatened UAE ports and non-U.S. assets in the UAE as the war entered its third week.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran captain latest footballer to drop asylum bid, Iranian state media says",
+      "description": "Five of the seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
+      "link": "https://www.bbc.com/news/articles/c98gz372683o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-15T18:46:24Z",
+      "tier": 2
+    },
+    {
+      "title": "How Iranians are evading internet blocks to contact family abroad",
+      "description": "Iranians are finding tech-savvy ways to get through the regime's restrictions on phone and internet connections.",
+      "link": "https://www.bbc.com/news/articles/ckgl58y5943o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-15T18:09:20Z",
+      "tier": 2
+    },
+    {
       "title": "Strategic oil release may calm markets but cannot fix Hormuz disruption",
       "description": "Record oil release steadies markets, but war-driven disruption in the Strait of Hormuz keeps energy supplies uncertain.",
       "link": "https://www.aljazeera.com/economy/2026/3/15/strategic-oil-release-may-calm-markets-but-cannot-fix-hormuz-disruption?traffic_source=rss",
@@ -1317,35 +1333,19 @@
       "tier": 2
     },
     {
-      "title": "Iran war: What is happening on day 16 of US-Israel attacks?",
-      "description": "Israel and US attacks on Isfahan kills 15 people as Tehran carries out retaliatory attacks on Israel and Gulf countries.",
-      "link": "https://www.aljazeera.com/news/2026/3/15/iran-war-what-is-happening-on-day-16-of-us-israel-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-15T08:52:23Z",
-      "tier": 2
-    },
-    {
-      "title": "MotoGP postpones Qatar Grand Prix due to Middle East conflict",
-      "description": "The Qatar GP, scheduled for April 10-12, has been rescheduled for November amid the ongoing US-Israel war on Iran.",
-      "link": "https://www.aljazeera.com/sports/2026/3/15/motogp-postpones-qatar-grand-prix-due-to-middle-east-conflict?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-15T08:33:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Activists rally outside White House against war with Iran",
-      "description": "Activists rally outside White House against war with Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/15/activists-rally-outside-white-house-against-war-with-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-15T08:31:43Z",
-      "tier": 2
-    },
-    {
       "title": "US names six crew killed in refuelling plane crash in Iraq",
       "description": "The aircraft was on a combat mission as part of ongoing US operations against Iran when it crashed in western Iraq on Thursday.",
       "link": "https://www.bbc.com/news/articles/cly0d510yz3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-15T08:08:30Z",
+      "tier": 2
+    },
+    {
+      "title": "My letter to my dead daughter - after forgiving the man who killed her",
+      "description": "The mother of Ann Grosmaire, 19, who was shot dead by her boyfriend, explains why she chose restorative justice.",
+      "link": "https://www.bbc.com/news/articles/cnv6ne1zqyro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-15T00:48:44Z",
       "tier": 2
     },
     {
@@ -1365,20 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "Three more Iran football team members change minds over asylum",
-      "description": "Four of seven members of the women's football delegation who originally sought to stay in Australia have now chosen to return home.",
-      "link": "https://www.bbc.com/news/articles/c98gz372683o?at_medium=RSS&at_campaign=rss",
+      "title": "Hamas urges key ally Iran to halt attacks on Gulf states",
+      "description": "The Palestinian group also affirms Tehran's right to defend itself from \"aggression\" by the US and Israel.",
+      "link": "https://www.bbc.com/news/articles/cvg3xk6xgyzo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-03-14T20:48:55Z",
+      "time": "2026-03-14T13:34:17Z",
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in accessible sources indicates the campaign has intensified by March 12-15, 2026, with CENTCOM's March 12 fact sheet saying approximately 6,000 targets had been struck in Iran, while AP reported fresh attacks across Gulf states on March 15 after Iran warned major UAE ports to evacuate. AP also reported on March 13 that Israel had reported 12 deaths, and Al Jazeera on March 9 cited Iranian authorities saying 1,255 people had been killed in Iran, mostly civilians. A fully verified current Pentagon/CENTCOM cumulative U.S. KIA figure and several military expenditure counts could not be confirmed from primary accessible reporting, so those fields remain null.",
+  "summary": "Confirmed reporting on March 10, 2026 showed the war had entered its 11th day with the Pentagon saying U.S. forces had struck more than 5,000 targets and that seven U.S. service members had been killed, while AP reported at least 1,230 people killed in Iran and 12 in Israel according to officials. Gulf spillover worsened, with the UAE reporting six deaths from Iranian attacks and Bahrain reporting one death from an earlier strike, while Saudi Arabia said it intercepted additional missiles. Maritime risk also increased as Iran threatened regional oil exports and the U.S. said it destroyed 16 Iranian mine-laying vessels.",
   "briefings": [
     {
       "date": "2026-03-15",
       "day": 15,
-      "summary": "Confirmed reporting available in accessible sources indicates the campaign has intensified by March 12-15, 2026, with CENTCOM's March 12 fact sheet saying approximately 6,000 targets had been struck in Iran, while AP reported fresh attacks across Gulf states on March 15 after Iran warned major UAE ports to evacuate. AP also reported on March 13 that Israel had reported 12 deaths, and Al Jazeera on March 9 cited Iranian authorities saying 1,255 people had been killed in Iran, mostly civilians. A fully verified current Pentagon/CENTCOM cumulative U.S. KIA figure and several military expenditure counts could not be confirmed from primary accessible reporting, so those fields remain null."
+      "summary": "Confirmed reporting on March 10, 2026 showed the war had entered its 11th day with the Pentagon saying U.S. forces had struck more than 5,000 targets and that seven U.S. service members had been killed, while AP reported at least 1,230 people killed in Iran and 12 in Israel according to officials. Gulf spillover worsened, with the UAE reporting six deaths from Iranian attacks and Bahrain reporting one death from an earlier strike, while Saudi Arabia said it intercepted additional missiles. Maritime risk also increased as Iran threatened regional oil exports and the U.S. said it destroyed 16 Iranian mine-laying vessels."
     },
     {
       "date": "2026-03-14",
