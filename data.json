@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-16T15:19:55Z",
+  "lastUpdated": "2026-03-16T17:17:34Z",
   "dayCount": 16,
   "banner": {
-    "strikes": "~5,000",
-    "killed": "1,492+",
-    "cost": "$9.6B+"
+    "strikes": "~5,500",
+    "killed": "1,495+",
+    "cost": "$9.2B+"
   },
   "humanCost": {
-    "iranDeaths": "1,444",
+    "iranDeaths": "1,300",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "15",
+    "israeliDeaths": "12",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "18,551+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1097",
+    "civilianDeaths": "170",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$9.6 billion+",
-    "dailyBurnRate": "~$600M/day",
+    "totalCost": "$9.2 billion+",
+    "dailyBurnRate": "~$575M/day",
     "daysOfOps": 16,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 52500,
+          "quantity": 2500,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-16",
-          "source": "LLM-verified (Approximate current deployment level referenced by your database; Al Jazeera cites about 40,000-50,000 U.S. soldiers in region as of mid-2025, but no current operation-specific confirmed official total found, so this should likely be treated as unconfirmed)"
+          "source": "LLM-verified (AP, March 13, 2026: 'About 2,500 U.S. Marines are being deployed to the Middle East.' This is the latest confirmed deployment increment found, not total U.S. personnel in theater.)"
         },
         {
           "id": "intel_cyber",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "52,500 \u00d7 $500/day \u00d7 16 days",
-        "cost": "$420,000,000"
+        "detail": "2,500 \u00d7 $500/day \u00d7 16 days",
+        "cost": "$20,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Israel stepping up strikes in Beirut/Lebanon while U.S. and Israel continued attacks on Tehran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported continuing Iranian attacks on commercial shipping and threats to Strait of Hormuz traffic.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on March 16, 2026 that an Iranian drone strike temporarily forced the closure of Dubai airport.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 16, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reporting indicate Iran has broadened pressure on Gulf states, including threats linked to UAE ports and continuing retaliatory missile/drone attacks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on March 15 reported Trump called for a naval coalition to protect shipping through the Strait of Hormuz amid widening regional attacks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on March 15 reported the UAE said it was attacked Sunday by four ballistic missiles and six drones from Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera\u2019s March 15 tracker says U.S. forces have struck more than 5,000 targets in Iran since February 28, indicating continued high operational tempo.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,38 @@
   ],
   "developments": [
     {
+      "time": "2026-03-16T17:01:52Z",
+      "text": "<strong>US responsible for deadly attack on Iranian school: Amnesty International</strong> -- Rights group says Tomahawk missile likely used in Minab school strike that killed at least 170 people, mostly children. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/16/us-responsible-for-deadly-attack-on-iranian-school-amnesty-international?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T17:01:01Z",
+      "text": "<strong>Afghanistan says children among four killed in latest attacks by Pakistan</strong> -- The civilians - three children and a woman - are killed in an attack on Khost province, local official says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/16/afghanistan-says-children-among-those-killed-in-latest-attacks-by-pakistan?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T16:00:08Z",
+      "text": "<strong>US, Israel now know \u2018what kind of nation they are dealing with\u2019</strong> -- Iran\u2019s Foreign Minister Abbas Araghchi says his country has shown it is ready to take the war \u201cas far as necessary&amp;quot;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/us-israel-now-know-what-kind-of-nation-they-are-dealing?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T15:54:02Z",
+      "text": "<strong>How badly has the Iran war hit the global economy? The tell-tale signs</strong> -- Oil and gas price hikes due to the war have rattled the global economy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/16/the-tell-tale-signs-how-bad-has-the-iran-war-hit-the-global-economy?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T15:49:27Z",
+      "text": "<strong>Is Russia benefitting from the Iran war?</strong> -- The US is allowing the purchase of Russian oil that\u2019s stranded at sea after the war on Iran led to higher energy prices. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/is-russia-benefitting-from-the-iran-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T14:55:53Z",
+      "text": "<strong>Iran officials tout \u2018Trump-burning\u2019 celebration amid battle of narratives</strong> -- Iranian state media calls for turning fire festival into a symbolic protest by burning figures of Trump and Netanyahu. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/16/iran-officials-tout-trump-burning-celebration-amid-battle-of-narratives?traffic_source=rss"
+    },
+    {
       "time": "2026-03-16T14:40:46Z",
-      "text": "<strong>EU leaders reject military involvement in Strait of Hormuz amid war on Iran</strong> -- Pushback comes as US President Donald Trump says NATO allies should help secure key waterway amid soaring oil prices. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>European leaders reject military involvement in Strait of Hormuz</strong> -- Pushback comes as US President Donald Trump says NATO allies should help secure key waterway amid soaring oil prices. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/16/eu-leaders-reject-military-involvement-in-strait-of-hormuz-amid-war-on-iran?traffic_source=rss"
     },
     {
@@ -821,36 +851,6 @@
       "time": "2026-03-16T08:50:09Z",
       "text": "<strong>Israeli strike on Gaza police kills officers</strong> -- An Israeli attack on a police vehicle in central Gaza has killed eight officers including a senior police official. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/israeli-strike-on-gaza-police-kills-officers?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T08:43:49Z",
-      "text": "<strong>Map shows how 16 days of attacks have evolved in US-Israel war on Iran</strong> -- Here&amp;#039;s a day-by-day breakdown of attacks, illustrating the targets hit and the weapons used since February 28. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/16/map-shows-how-16-days-of-attacks-have-evolved-in-us-israel-war-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T08:42:56Z",
-      "text": "<strong>The Iran war picture blackout</strong> -- Al Jazeera\u2019s Linh Nguyen breaks down Planet Labs delaying the publication of its satellite imagery during an active war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/digital-dilemma/2026/3/16/the-iran-war-picture-blackout?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T08:22:54Z",
-      "text": "<strong>How closing the Strait of Hormuz raises your grocery bill</strong> -- Closing the Strait of Hormuz raised oil prices. It also raises the cost of bread. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/3/16/how-closing-the-strait-of-hormuz-raises-your-grocery-bill?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T08:01:26Z",
-      "text": "<strong>Iran war: What is happening on day 17 of US-Israel attacks?</strong> -- Dubai contained a fire near its airport and temporarily suspended flights, while Trump claimed Iran wants to negotiate. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/16/iran-war-what-is-happening-on-day-17-of-us-israel-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T07:52:59Z",
-      "text": "<strong>Drone attack disrupts Dubai flights as Iran continues Gulf attacks</strong> -- At least one person killed in Abu Dhabi. Dubai flights disrupted, and fire breaks out in Fujairah after Iranian attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/16/drone-strike-disrupts-dubai-flights-as-iran-continues-gulf-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T06:56:13Z",
-      "text": "<strong>Japan begins release of oil reserves as Iran war sparks energy crisis</strong> -- Tokyo&amp;#039;s move comes as oil prices remain elevated amid the effective closure\u00a0of the\u00a0Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/3/16/japan-begins-release-of-oil-reserves-as-iran-war-sparks-energy-crisis?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,7 +1213,63 @@
   ],
   "newsFeed": [
     {
-      "title": "EU leaders reject military involvement in Strait of Hormuz amid war on Iran",
+      "title": "US responsible for deadly attack on Iranian school: Amnesty International",
+      "description": "Rights group says Tomahawk missile likely used in Minab school strike that killed at least 170 people, mostly children.",
+      "link": "https://www.aljazeera.com/news/2026/3/16/us-responsible-for-deadly-attack-on-iranian-school-amnesty-international?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T17:01:52Z",
+      "tier": 2
+    },
+    {
+      "title": "Afghanistan says children among four killed in latest attacks by Pakistan",
+      "description": "The civilians - three children and a woman - are killed in an attack on Khost province, local official says.",
+      "link": "https://www.aljazeera.com/news/2026/3/16/afghanistan-says-children-among-those-killed-in-latest-attacks-by-pakistan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T17:01:01Z",
+      "tier": 2
+    },
+    {
+      "title": "US, Israel now know \u2018what kind of nation they are dealing with\u2019",
+      "description": "Iran\u2019s Foreign Minister Abbas Araghchi says his country has shown it is ready to take the war \u201cas far as necessary&quot;.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/us-israel-now-know-what-kind-of-nation-they-are-dealing?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T16:00:08Z",
+      "tier": 2
+    },
+    {
+      "title": "How badly has the Iran war hit the global economy? The tell-tale signs",
+      "description": "Oil and gas price hikes due to the war have rattled the global economy.",
+      "link": "https://www.aljazeera.com/news/2026/3/16/the-tell-tale-signs-how-bad-has-the-iran-war-hit-the-global-economy?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T15:54:02Z",
+      "tier": 2
+    },
+    {
+      "title": "Is Russia benefitting from the Iran war?",
+      "description": "The US is allowing the purchase of Russian oil that\u2019s stranded at sea after the war on Iran led to higher energy prices.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/is-russia-benefitting-from-the-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T15:49:27Z",
+      "tier": 2
+    },
+    {
+      "title": "Wary allies show there's no quick fix to Trump's Iran crisis",
+      "description": "European leaders are hesitant to help Trump secure the Strait of Hormuz, but they know inaction on the Iran war isn't really an option.",
+      "link": "https://www.bbc.com/news/articles/c8r17plnvy3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-16T15:12:25Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran officials tout \u2018Trump-burning\u2019 celebration amid battle of narratives",
+      "description": "Iranian state media calls for turning fire festival into a symbolic protest by burning figures of Trump and Netanyahu.",
+      "link": "https://www.aljazeera.com/news/2026/3/16/iran-officials-tout-trump-burning-celebration-amid-battle-of-narratives?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T14:55:53Z",
+      "tier": 2
+    },
+    {
+      "title": "European leaders reject military involvement in Strait of Hormuz",
       "description": "Pushback comes as US President Donald Trump says NATO allies should help secure key waterway amid soaring oil prices.",
       "link": "https://www.aljazeera.com/news/2026/3/16/eu-leaders-reject-military-involvement-in-strait-of-hormuz-amid-war-on-iran?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1301,14 +1357,6 @@
       "tier": 2
     },
     {
-      "title": "Who wants what from the Iran war?",
-      "description": "Most people, although not everybody, want this war to end as quickly as possible. But on what terms?",
-      "link": "https://www.bbc.com/news/articles/cgk2lm5znyro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-16T11:00:03Z",
-      "tier": 2
-    },
-    {
       "title": "Monastery shelters families fleeing Israeli strikes in Lebanon",
       "description": "Families displaced by Israeli airstrikes in Lebanon have found shelter at the Saints Peter and Paul Monastery in Qattine",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/monastery-shelters-families-fleeing-israeli-strikes-in-lebanon?traffic_source=rss",
@@ -1323,62 +1371,14 @@
       "source": "Al Jazeera",
       "time": "2026-03-16T10:26:54Z",
       "tier": 2
-    },
-    {
-      "title": "How Israel, the US and Iran deploy covert ops",
-      "description": "Sometimes called sleeper cells, these anonymous agents employ deception to spy, sabotage or kill.",
-      "link": "https://www.aljazeera.com/gallery/2026/3/16/how-israel-the-us-and-iran-deploy-covert-ops?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T08:59:20Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli strike on Gaza police kills officers",
-      "description": "An Israeli attack on a police vehicle in central Gaza has killed eight officers including a senior police official.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/israeli-strike-on-gaza-police-kills-officers?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T08:50:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Ten killed in fire at India hospital intensive care unit",
-      "description": "All the victims of the fire in Odisha state are patients, and 11 hospital staff are being treated for burns.",
-      "link": "https://www.bbc.com/news/articles/c363gpe3exjo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-16T05:41:28Z",
-      "tier": 2
-    },
-    {
-      "title": "'A new norm': BBC visits Doha market starting to fill up again two weeks into Iran war",
-      "description": "The BBC's International News correspondent, Barbara Plett Usher, visits Doha's Souq Waqif market as strikes in the region continue.",
-      "link": "https://www.bbc.com/news/videos/cp32gez414yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-16T05:14:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran taking steps to prevent anti-establishment protests, Tehran residents tell BBC",
-      "description": "Residents describe new security checkpoints around the capital, where they say people are stopped and searched.",
-      "link": "https://www.bbc.com/news/articles/clygdwqw5dvo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-16T04:43:43Z",
-      "tier": 2
-    },
-    {
-      "title": "How passenger planes keep flying during a war",
-      "description": "Airspace over Iran and the Gulf remains severely restricted following missile strikes, putting additional pressure on airlines.",
-      "link": "https://www.bbc.com/news/articles/cn4gne35kvno?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-16T00:05:11Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed March 16 reporting shows the war\u2019s cumulative toll has risen to at least 1,444 dead and 18,551 wounded in Iran, 15 dead in Israel, 13 confirmed US military fatalities, and 20 killed in Gulf states, according to Al Jazeera\u2019s live tracker citing Iran\u2019s Health Ministry, the US military, and regional authorities. The same tracker says CENTCOM reported more than 5,000 US targets struck in Iran as of March 10, while AP reported on March 12 that the conflict had continued amid references to 6,000 US airstrikes, soaring oil prices, and ongoing concern over civilian casualties.",
+  "summary": "As of Monday, March 16, 2026, the clearest confirmed reporting available indicates more than 1,300 people have been killed in Iran according to the Iranian Red Crescent, the U.S. military death toll has risen to at least 13 after the KC-135 crash in Iraq, and Israel has reported 12 deaths; CENTCOM\u2019s Adm. Brad Cooper said U.S. forces had struck over 5,500 targets in Iran by March 11. AP also reported a new Iranian drone strike that temporarily closed Dubai airport, underscoring continued spillover into Gulf states, while the only specific newly confirmed Iranian civilian toll found in today\u2019s material was Amnesty International\u2019s assessment, cited by Al Jazeera, that a Minab school strike killed at least 170 people, mostly children.",
   "briefings": [
     {
       "date": "2026-03-16",
       "day": 16,
-      "summary": "Confirmed March 16 reporting shows the war\u2019s cumulative toll has risen to at least 1,444 dead and 18,551 wounded in Iran, 15 dead in Israel, 13 confirmed US military fatalities, and 20 killed in Gulf states, according to Al Jazeera\u2019s live tracker citing Iran\u2019s Health Ministry, the US military, and regional authorities. The same tracker says CENTCOM reported more than 5,000 US targets struck in Iran as of March 10, while AP reported on March 12 that the conflict had continued amid references to 6,000 US airstrikes, soaring oil prices, and ongoing concern over civilian casualties."
+      "summary": "As of Monday, March 16, 2026, the clearest confirmed reporting available indicates more than 1,300 people have been killed in Iran according to the Iranian Red Crescent, the U.S. military death toll has risen to at least 13 after the KC-135 crash in Iraq, and Israel has reported 12 deaths; CENTCOM\u2019s Adm. Brad Cooper said U.S. forces had struck over 5,500 targets in Iran by March 11. AP also reported a new Iranian drone strike that temporarily closed Dubai airport, underscoring continued spillover into Gulf states, while the only specific newly confirmed Iranian civilian toll found in today\u2019s material was Amnesty International\u2019s assessment, cited by Al Jazeera, that a Minab school strike killed at least 170 people, mostly children."
     },
     {
       "date": "2026-03-15",
