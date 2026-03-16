@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-16T11:57:50Z",
+  "lastUpdated": "2026-03-16T13:55:46Z",
   "dayCount": 16,
   "banner": {
-    "strikes": "~5,500",
-    "killed": "1,266+",
-    "cost": "$9.5B+"
+    "strikes": "~6,000",
+    "killed": "2,410+",
+    "cost": "$9.6B+"
   },
   "humanCost": {
-    "iranDeaths": "1,230",
+    "iranDeaths": "1,300",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "12",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "17",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "18,551+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1300",
+    "civilianDeaths": "1097",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$9.5 billion+",
-    "dailyBurnRate": "~$593M/day",
+    "totalCost": "$9.6 billion+",
+    "dailyBurnRate": "~$600M/day",
     "daysOfOps": 16,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-16",
-          "source": "LLM-verified (CENTCOM imagery/releases visible March 16, 2026 specifically identify USS Abraham Lincoln (CVN-72) supporting Operation Epic Fury; no second currently confirmed carrier strike group found in accessible official/current reporting.)"
+          "source": "LLM-verified (Reporting indicates Abraham Lincoln and Gerald R. Ford carrier strike groups were operating in support of Operation Epic Fury; USNI/AP/Jane's-derived reporting found via search (turn5search4, turn5search7, turn5search0))"
         },
         {
           "id": "destroyers",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 16 days",
-        "cost": "$112,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 16 days",
+        "cost": "$224,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Qatar reported responding to a missile attack, AP Mar. 13, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran continued attacks on Gulf shipping and energy infrastructure, AP Mar. 13, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian drone strike temporarily shut Dubai airport, AP Mar. 16, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 16, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "U.S. military death toll rose to 13 after a KC-135 refueling aircraft crash in western Iraq, per AP citing CENTCOM-confirmed deaths.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 13 that the U.S. was sending 2,500 more Marines and an amphibious assault ship to the Middle East.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 14 that Iran openly threatened non-U.S. assets in the UAE and urged evacuation of key Emirati ports.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 15 that Trump called for foreign warships to help keep the Strait of Hormuz open, but other countries had not yet committed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-03-16T13:39:55Z",
+      "text": "<strong>The US-Israeli strategy against Iran is working. Here is why</strong> -- Every aspect of Iran\u2019s ability to project regional power is being successfully degraded. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/3/16/the-us-israeli-strategy-against-iran-is-working-here-is-why?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T13:18:54Z",
+      "text": "<strong>Qatar insists Iran is targeting civilian areas</strong> -- Qatar\u2019s Foreign Ministry spokesperson Majed Al Ansari says Iranian attacks have targeted residential areas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/qatar-insists-iran-is-targeting-civilian-areas?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T12:43:00Z",
+      "text": "<strong>Strait of Hormuz: Which countries\u2019 ships has Iran allowed safe passage to?</strong> -- Tehran allows a small number of ships from certain countries to pass through waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/3/16/strait-of-hormuz-which-countriess-ships-has-iran-allowed-safe-passage-to?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-16T12:20:26Z",
+      "text": "<strong>South Korean protesters criticise Trump over Hormuz security demand</strong> -- Activists in South Korea have staged a protest against Donald Trump\u2019s request for help securing the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/south-korean-protesters-criticise-trump-over-hormuz-security-demand?traffic_source=rss"
+    },
+    {
       "time": "2026-03-16T11:21:07Z",
       "text": "<strong>Iran still playing in World Cup 2026 despite withdrawal rumours, AFC says</strong> -- Asian Football Confederation says it hasn&amp;#039;t received any notification of Iran pulling out of upcoming World Cup. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/3/16/iran-still-playing-in-world-cup-2026-despite-withdrawal-rumours-afc-says?traffic_source=rss"
@@ -831,26 +851,6 @@
       "time": "2026-03-16T03:14:39Z",
       "text": "<strong>Nobody wants to get involved\u2019 in Strait of Hormuz military operations</strong> -- Charles Kupchan says the US and allies are reluctant to use military means to safeguard the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/quotable/2026/3/16/nobody-wants-to-get-involved-in-strait-of-hormuz-military-operations?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T02:05:53Z",
-      "text": "<strong>Oil prices keep rising as Trump seeks coalition to reopen Strait of Hormuz</strong> -- Brent crude tops $106 a barrel as markets see no end in sight to the halt of traffic through the critical waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/3/16/oil-prices-keep-rising-as-trump-seeks-coalition-to-reopen-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T01:26:27Z",
-      "text": "<strong>US-Israeli strike pounds city of Hamadan, Iran</strong> -- Footage shows huge plumes of smoke from a US-Israeli strike on Hamadan, Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/us-israeli-strike-pounds-city-of-hamadan-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T00:00:00Z",
-      "text": "<strong>Iran war live: Trump threatens NATO if allies fail to help on Hormuz</strong> -- Iran&amp;#039;s Foreign Minister Abbas Araghchi says Tehran never sought a ceasefire with the US, and is ready for a long war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/3/16/iran-war-live-tehran-rejects-trump-claim-on-talks-gulf-attacks-continue?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-15T23:34:06Z",
-      "text": "<strong>Top Trump adviser says Iran war price tag at $12bn so far</strong> -- Pressure grows on the US president&amp;#039;s administration as war costs spiral and the mission&amp;#039;s endgame remains unclear. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/15/top-trump-advisor-says-iran-war-price-tag-at-approximately-12bn-so-far?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "The US-Israeli strategy against Iran is working. Here is why",
+      "description": "Every aspect of Iran\u2019s ability to project regional power is being successfully degraded.",
+      "link": "https://www.aljazeera.com/opinions/2026/3/16/the-us-israeli-strategy-against-iran-is-working-here-is-why?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T13:39:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Qatar insists Iran is targeting civilian areas",
+      "description": "Qatar\u2019s Foreign Ministry spokesperson Majed Al Ansari says Iranian attacks have targeted residential areas.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/qatar-insists-iran-is-targeting-civilian-areas?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T13:18:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran hits key UAE oil port and Dubai airport",
+      "description": "The port of Fujairah plays a crucial role in helping keep global supplies moving when the Strait of Hormuz is blocked.",
+      "link": "https://www.bbc.com/news/articles/crl4gxgkkylo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-16T12:43:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Strait of Hormuz: Which countries\u2019 ships has Iran allowed safe passage to?",
+      "description": "Tehran allows a small number of ships from certain countries to pass through waterway.",
+      "link": "https://www.aljazeera.com/economy/2026/3/16/strait-of-hormuz-which-countriess-ships-has-iran-allowed-safe-passage-to?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T12:43:00Z",
+      "tier": 2
+    },
+    {
+      "title": "South Korean protesters criticise Trump over Hormuz security demand",
+      "description": "Activists in South Korea have staged a protest against Donald Trump\u2019s request for help securing the Strait of Hormuz.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/south-korean-protesters-criticise-trump-over-hormuz-security-demand?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-16T12:20:26Z",
+      "tier": 2
+    },
+    {
       "title": "Iran still playing in World Cup 2026 despite withdrawal rumours, AFC says",
       "description": "Asian Football Confederation says it hasn&#039;t received any notification of Iran pulling out of upcoming World Cup.",
       "link": "https://www.aljazeera.com/sports/2026/3/16/iran-still-playing-in-world-cup-2026-despite-withdrawal-rumours-afc-says?traffic_source=rss",
@@ -1309,22 +1349,6 @@
       "tier": 2
     },
     {
-      "title": "Drone attack disrupts Dubai flights as Iran continues Gulf attacks",
-      "description": "At least one person killed in Abu Dhabi. Dubai flights disrupted, and fire breaks out in Fujairah after Iranian attacks.",
-      "link": "https://www.aljazeera.com/news/2026/3/16/drone-strike-disrupts-dubai-flights-as-iran-continues-gulf-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T07:52:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Japan begins release of oil reserves as Iran war sparks energy crisis",
-      "description": "Tokyo&#039;s move comes as oil prices remain elevated amid the effective closure\u00a0of the\u00a0Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/economy/2026/3/16/japan-begins-release-of-oil-reserves-as-iran-war-sparks-energy-crisis?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T06:56:13Z",
-      "tier": 2
-    },
-    {
       "title": "Ten killed in fire at India hospital intensive care unit",
       "description": "All the victims of the fire in Odisha state are patients, and 11 hospital staff are being treated for burns.",
       "link": "https://www.bbc.com/news/articles/c363gpe3exjo?at_medium=RSS&at_campaign=rss",
@@ -1347,38 +1371,14 @@
       "source": "BBC World",
       "time": "2026-03-16T04:43:43Z",
       "tier": 2
-    },
-    {
-      "title": "How passenger planes keep flying during a war",
-      "description": "Airspace over Iran and the Gulf remains severely restricted following missile strikes, putting additional pressure on airlines.",
-      "link": "https://www.bbc.com/news/articles/cn4gne35kvno?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-16T00:05:11Z",
-      "tier": 2
-    },
-    {
-      "title": "Michigan synagogue attacker's brother was Hezbollah commander, IDF says",
-      "description": "US officials previously said the man accused of ramming a truck full of explosives into a synagogue had recently lost family in Lebanon.",
-      "link": "https://www.bbc.com/news/articles/c4gj1135x7ro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-15T20:47:36Z",
-      "tier": 2
-    },
-    {
-      "title": "Watch: Why Kharg Island is a lifeline for Iran",
-      "description": "BBC Security Brief's Mikey Kay breaks down why Kharg Island is so strategically important for Tehran.",
-      "link": "https://www.bbc.com/news/videos/c4g7ddn9xz0o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-14T01:21:14Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today shows the war has entered its third week with U.S. and Israeli strikes continuing across Iran while Iranian retaliation persists against Israel and Gulf states. The latest accessible official/major-media figures support at least 1,230 deaths in Iran, 7 U.S. troops killed in action, 12 deaths in Israel, about 1,300 Iranian civilian deaths as cited by Tehran via Al Jazeera, 17 cumulative deaths in Gulf states, and 5,500 targets struck in Iran per a CENTCOM commander update reported by Stars and Stripes. CENTCOM has also confirmed that six crew members killed in the March 12 KC-135 crash in Iraq died in a non-hostile incident and therefore are not counted as KIA.",
+  "summary": "Confirmed reporting on March 16, 2026 indicates the war remains active on multiple fronts: AP reported U.S. and Israeli strikes continued against targets in Tehran while an Iranian drone strike temporarily shut Dubai airport, and AP on March 13 said about 2,500 additional U.S. Marines were being deployed as Iran kept attacking Gulf shipping and energy infrastructure. For casualties, AP reported more than 1,300 killed in Iran, 13 confirmed U.S. military deaths, and 12 deaths reported in Israel; HRANA reported 1,097 Iranian civilians killed, while Iran\u2019s deputy health minister told Al Jazeera that 12,000 people had been wounded. Officially sourced cumulative weapons-expended counts were not reliably available in the searched material, though CENTCOM\u2019s March 6 fact sheet confirmed the operation had used more than 20 weapons systems and struck over 3,000 targets in its first seven days, and AP later referenced 6,000 U.S. airstrikes by March 12.",
   "briefings": [
     {
       "date": "2026-03-16",
       "day": 16,
-      "summary": "Confirmed reporting available today shows the war has entered its third week with U.S. and Israeli strikes continuing across Iran while Iranian retaliation persists against Israel and Gulf states. The latest accessible official/major-media figures support at least 1,230 deaths in Iran, 7 U.S. troops killed in action, 12 deaths in Israel, about 1,300 Iranian civilian deaths as cited by Tehran via Al Jazeera, 17 cumulative deaths in Gulf states, and 5,500 targets struck in Iran per a CENTCOM commander update reported by Stars and Stripes. CENTCOM has also confirmed that six crew members killed in the March 12 KC-135 crash in Iraq died in a non-hostile incident and therefore are not counted as KIA."
+      "summary": "Confirmed reporting on March 16, 2026 indicates the war remains active on multiple fronts: AP reported U.S. and Israeli strikes continued against targets in Tehran while an Iranian drone strike temporarily shut Dubai airport, and AP on March 13 said about 2,500 additional U.S. Marines were being deployed as Iran kept attacking Gulf shipping and energy infrastructure. For casualties, AP reported more than 1,300 killed in Iran, 13 confirmed U.S. military deaths, and 12 deaths reported in Israel; HRANA reported 1,097 Iranian civilians killed, while Iran\u2019s deputy health minister told Al Jazeera that 12,000 people had been wounded. Officially sourced cumulative weapons-expended counts were not reliably available in the searched material, though CENTCOM\u2019s March 6 fact sheet confirmed the operation had used more than 20 weapons systems and struck over 3,000 targets in its first seven days, and AP later referenced 6,000 U.S. airstrikes by March 12."
     },
     {
       "date": "2026-03-15",
