@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-03-17T06:14:12Z",
+  "lastUpdated": "2026-03-17T07:32:40Z",
   "dayCount": 17,
   "banner": {
-    "strikes": "~5,000",
-    "killed": "1,323+",
+    "strikes": "~7,600",
+    "killed": "1,312+",
     "cost": "$9.6B+"
   },
   "humanCost": {
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1255",
+    "civilianDeaths": "1250",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -48,7 +48,7 @@
   },
   "financialCost": {
     "totalCost": "$9.6 billion+",
-    "dailyBurnRate": "~$566M/day",
+    "dailyBurnRate": "~$564M/day",
     "daysOfOps": 17,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-17",
-          "source": "LLM-verified (DoD/CENTCOM official Operation Epic Fury media shows USS Abraham Lincoln (CVN-72) and USS Gerald R. Ford (CVN-78) operating in support of Epic Fury; this confirms 2 carrier strike groups in theater. https://jifco.defense.gov/Media/Multimedia/IFC-Videos/?dvpmoduleid=128139&videoid=997875 ; https://jifco.defense.gov/Media/Multimedia/IFC-Videos/?dvpTag=aircraft&dvpmoduleid=128139&videoid=998185)"
+          "source": "LLM-verified (CENTCOM media page for Operation Epic Fury shows USS Abraham Lincoln in 5th Fleet and USS Gerald R. Ford operating in the Eastern Mediterranean in support of the operation.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 13,
+          "quantity": 4,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-03-15",
-          "source": "LLM-verified (USNI News Fleet and Marine Tracker, March 2, 2026: 3 destroyers with Ford CSG + 4 independent in Mediterranean + 3 with Lincoln CSG + 6 independent in Arabian Sea = 16 listed; excluding carriers' embarked command line ambiguity is not resolved, so no single official theater total from CENTCOM/Pentagon; set to null would be safer, but confirmed ship list shows at least 16 DDGs supporting region-wide operations)"
+          "lastUpdated": "2026-03-17",
+          "source": "LLM-verified (Confirmed by named hulls seen on official CENTCOM/DVIDS media in support of Operation Epic Fury: USS Bainbridge (DDG-96), USS Spruance (DDG-111), USS Delbert D. Black (DDG-119), USS Thomas Hudner (DDG-116). This is a floor, not necessarily total theater count.)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-17",
-          "source": "LLM-verified (AP March 14 and user-provided headline context both report planned deployment of 2,500 Marines to the Gulf; no broader officially confirmed total force figure found. Using confirmed deployment figure only. https://apnews.com/article/a2399398b4c590995b814d7640362a11)"
+          "source": "LLM-verified (AP, Mar. 13, 2026: U.S. deploying 2,500 Marines to the Middle East.)"
         },
         {
           "id": "intel_cyber",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "13 \u00d7 $240,000/day \u00d7 17 days",
-        "cost": "$53,040,000"
+        "detail": "4 \u00d7 $240,000/day \u00d7 17 days",
+        "cost": "$16,320,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports Israeli troops have pushed into southern Lebanon, raising fears of a broader ground escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israel said it began a wide-scale new wave of strikes across Tehran on Mar. 17 and stepped up attacks on Hezbollah in Lebanon (AP).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian drone and missile attacks continued to hit Gulf states on Mar. 17, including air-defense activity heard in Dubai and Doha (AP).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 17, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP Mar. 15: further Gulf attacks followed Iran threats against major UAE ports; earlier airport strike wounded four security/staff personnel (turn5news14)",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP Mar. 16: Iran drone strike temporarily forced closure of Dubai airport (turn4news12)",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Israel stepping up strikes in Beirut/Lebanon while U.S. and Israel continued attacks on Tehran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported continuing Iranian attacks on commercial shipping and threats to Strait of Hormuz traffic.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-03-17T06:52:53Z",
+      "text": "<strong>Iran war: What is happening on day 18 of US-Israel attacks?</strong> -- The US-Israeli attacks target Iranian cities as the conflict spreads to the region and causes a global energy crisis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/17/iran-war-what-is-happening-on-day-18-of-us-israel-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-17T06:35:15Z",
+      "text": "<strong>Drone sparks fire at UAE oil site as Gulf takes more hits amid Iran war</strong> -- The Fujairah oil hub has been hit repeatedly by Iranian drones as the US-Israeli war continues to ignite instability. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/17/drone-sparks-fire-at-uae-oil-site-as-gulf-takes-more-hits-amid-iran-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-17T06:31:41Z",
+      "text": "<strong>Inside Qeshm, Iran\u2019s underground missile fortress and geological marvel</strong> -- From the Valley of Stars to underground missiles, Qeshm Island is strategic ground zero for the US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/3/17/inside-qeshm-irans-underground-missile-fortress-and-geological-marvel?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-17T06:13:43Z",
+      "text": "<strong>Iran\u2019s neighbours brace for fallout as war threatens new refugee crisis</strong> -- As war engulfs Iran, neighbouring states quietly prepare for a potential refugee exodus across already fragile borders. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/17/irans-neighbours-prepare-for-fallout-as-war-threatens-new-refugee-crisis?traffic_source=rss"
+    },
+    {
       "time": "2026-03-17T05:42:00Z",
       "text": "<strong>Iran negotiating with FIFA to move World Cup 2026 matches from US to Mexico</strong> -- The national football federation wants to relocate its group matches to Mexico due to the ongoing US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/3/17/iran-negotiating-with-fifa-to-move-world-cup-2026-matches-from-us-to-mexico?traffic_source=rss"
@@ -831,26 +851,6 @@
       "time": "2026-03-16T21:01:22Z",
       "text": "<strong>Ten ICU patients killed in hospital fire in eastern India</strong> -- Emergency responders carried patients out of a government hospital in Odisha, India. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/ten-icu-patients-killed-in-hospital-fire-in-eastern-india?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T21:00:54Z",
-      "text": "<strong>Who is answering Trump\u2019s call for help with Strait of Hormuz?</strong> -- Trump has criticised the response to his call to help protect shipping in the Strait of Hormuz during the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/who-is-answering-trumps-call-for-help-with-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T20:41:10Z",
-      "text": "<strong>How big of a problem is the Strait of Hormuz for Donald Trump?</strong> -- US president frustrated with unenthusiastic response after appealing for help wresting control of key strait from Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/3/16/how-big-of-a-problem-is-the-strait-of-hormuz-for-donald-trump?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T20:27:10Z",
-      "text": "<strong>Hezbollah rocket hits a residential building in Israel\u2019s Nahariya</strong> -- Firefighters battled a blaze at a residential building in Nahariya, Israel after a Hezbollah rocket hit it. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/hezbollah-rocket-hits-a-residential-building-in-israels-nahariya?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-16T17:27:54Z",
-      "text": "<strong>Civilians pulled from rubble after US-Israeli strikes on Tehran</strong> -- Rescuers have pulled civilians from the rubble after a new wave of US-Israeli strikes targeted Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/civilians-pulled-from-rubble-after-us-israeli-strikes-on-tehran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran war: What is happening on day 18 of US-Israel attacks?",
+      "description": "The US-Israeli attacks target Iranian cities as the conflict spreads to the region and causes a global energy crisis.",
+      "link": "https://www.aljazeera.com/news/2026/3/17/iran-war-what-is-happening-on-day-18-of-us-israel-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-17T06:52:53Z",
+      "tier": 2
+    },
+    {
+      "title": "Drone sparks fire at UAE oil site as Gulf takes more hits amid Iran war",
+      "description": "The Fujairah oil hub has been hit repeatedly by Iranian drones as the US-Israeli war continues to ignite instability.",
+      "link": "https://www.aljazeera.com/news/2026/3/17/drone-sparks-fire-at-uae-oil-site-as-gulf-takes-more-hits-amid-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-17T06:35:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Inside Qeshm, Iran\u2019s underground missile fortress and geological marvel",
+      "description": "From the Valley of Stars to underground missiles, Qeshm Island is strategic ground zero for the US-Israel war on Iran.",
+      "link": "https://www.aljazeera.com/features/2026/3/17/inside-qeshm-irans-underground-missile-fortress-and-geological-marvel?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-17T06:31:41Z",
+      "tier": 2
+    },
+    {
+      "title": "Dozens killed after Afghanistan rehab centre struck",
+      "description": "The BBC visited the facility and saw more than 30 bodies being carried out on stretchers.",
+      "link": "https://www.bbc.com/news/articles/c4g8n7e0l40o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-17T06:19:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran\u2019s neighbours brace for fallout as war threatens new refugee crisis",
+      "description": "As war engulfs Iran, neighbouring states quietly prepare for a potential refugee exodus across already fragile borders.",
+      "link": "https://www.aljazeera.com/news/2026/3/17/irans-neighbours-prepare-for-fallout-as-war-threatens-new-refugee-crisis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-17T06:13:43Z",
+      "tier": 2
+    },
+    {
       "title": "Iran negotiating with FIFA to move World Cup 2026 matches from US to Mexico",
       "description": "The national football federation wants to relocate its group matches to Mexico due to the ongoing US-Israel war on Iran.",
       "link": "https://www.aljazeera.com/sports/2026/3/17/iran-negotiating-with-fifa-to-move-world-cup-2026-matches-from-us-to-mexico?traffic_source=rss",
@@ -1261,14 +1301,6 @@
       "tier": 2
     },
     {
-      "title": "Dozens killed after Afghanistan rehab hospital struck",
-      "description": "The BBC visited the hospital and saw more than 30 bodies being carried out on stretchers.",
-      "link": "https://www.bbc.com/news/articles/c4g8n7e0l40o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-17T03:17:57Z",
-      "tier": 2
-    },
-    {
       "title": "Iran says wars are not won on social media",
       "description": "A spokesperson for Iran&#039;s Central Headquarters said wars are decided on the battlefield, not social media.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/17/iran-says-wars-are-not-won-on-social-media?traffic_source=rss",
@@ -1301,8 +1333,8 @@
       "tier": 2
     },
     {
-      "title": "Many killed, wounded after blasts hit Nigeria\u2019s Maiduguri, witnesses say",
-      "description": "Police deploy explosives&#039; clearance teams to three sites following suspected suicide attacks in the northeastern city.",
+      "title": "At least 23 killed after blasts hit Nigeria\u2019s Maiduguri, police say",
+      "description": "Police say &#039;preliminary investigation reveals that the incidents were carried out by suspected suicide bombers&#039;.",
       "link": "https://www.aljazeera.com/news/2026/3/17/many-killed-wounded-after-blasts-hit-nigerias-maiduguri-witnesses-say?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-17T01:05:44Z",
@@ -1339,46 +1371,14 @@
       "source": "Al Jazeera",
       "time": "2026-03-16T23:00:11Z",
       "tier": 2
-    },
-    {
-      "title": "Trump claims strikes on Iran prevented nuclear war",
-      "description": "Donald Trump claimed he ordered strikes on Iran to prevent a nuclear conflict that would have turned into World War III.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/trump-claims-strikes-on-iran-prevented-nuclear-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T22:34:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump seeks to delay meeting with China\u2019s Xi by \u2018month or so\u2019 amid Iran war",
-      "description": "The US president delays March 31-April 2 trip to China to focus on the escalating war against Iran.",
-      "link": "https://www.aljazeera.com/news/2026/3/16/trump-seeks-to-delay-meeting-with-chinas-xi-by-month-or-so-amid-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T22:25:55Z",
-      "tier": 2
-    },
-    {
-      "title": "Ten ICU patients killed in hospital fire in eastern India",
-      "description": "Emergency responders carried patients out of a government hospital in Odisha, India.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/ten-icu-patients-killed-in-hospital-fire-in-eastern-india?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T21:01:22Z",
-      "tier": 2
-    },
-    {
-      "title": "Who is answering Trump\u2019s call for help with Strait of Hormuz?",
-      "description": "Trump has criticised the response to his call to help protect shipping in the Strait of Hormuz during the war on Iran.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/16/who-is-answering-trumps-call-for-help-with-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-16T21:00:54Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on March 17, 2026 indicates the war remains active on multiple fronts: AP reports more than 1,300 people killed in Iran, 13 U.S. service members killed, and 12 deaths in Israel from Iranian missile fire, while Gulf states continued intercepting Iranian missiles and drones and a tanker off Fujairah was struck. The most recent official U.S. operations fact sheet publicly accessible from DoD/CENTCOM states that over 5,000 targets had been struck by Day 10 of Operation Epic Fury, but I could not verify newer official cumulative counts for destroyers, UAV units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, or interceptor expenditures, so those remain null.",
+  "summary": "Confirmed reporting on March 17, 2026 shows the war still escalating rather than stabilizing: AP reported new Iranian fire toward Gulf states overnight, with air defenses active in Dubai and Doha, while Israel announced a new wide-scale strike wave across Tehran and intensified attacks tied to Lebanon. For cumulative casualties, the latest widely reported confirmed figures located were more than 1,300 killed in Iran, 13 U.S. service members killed, and 12 deaths reported in Israel; Iran\u2019s deputy health minister said more than 12,000 were wounded and that most of the 1,250 confirmed dead at that time were civilians. On operations, official CENTCOM media confirms two U.S. carrier strike groups are supporting Epic Fury, while AP reported 2,500 Marines are being sent to the region; however, no current official cumulative confirmed totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP use, fighter sorties, or interceptor launches, so those remain null.",
   "briefings": [
     {
       "date": "2026-03-17",
       "day": 17,
-      "summary": "Confirmed reporting on March 17, 2026 indicates the war remains active on multiple fronts: AP reports more than 1,300 people killed in Iran, 13 U.S. service members killed, and 12 deaths in Israel from Iranian missile fire, while Gulf states continued intercepting Iranian missiles and drones and a tanker off Fujairah was struck. The most recent official U.S. operations fact sheet publicly accessible from DoD/CENTCOM states that over 5,000 targets had been struck by Day 10 of Operation Epic Fury, but I could not verify newer official cumulative counts for destroyers, UAV units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, or interceptor expenditures, so those remain null."
+      "summary": "Confirmed reporting on March 17, 2026 shows the war still escalating rather than stabilizing: AP reported new Iranian fire toward Gulf states overnight, with air defenses active in Dubai and Doha, while Israel announced a new wide-scale strike wave across Tehran and intensified attacks tied to Lebanon. For cumulative casualties, the latest widely reported confirmed figures located were more than 1,300 killed in Iran, 13 U.S. service members killed, and 12 deaths reported in Israel; Iran\u2019s deputy health minister said more than 12,000 were wounded and that most of the 1,250 confirmed dead at that time were civilians. On operations, official CENTCOM media confirms two U.S. carrier strike groups are supporting Epic Fury, while AP reported 2,500 Marines are being sent to the region; however, no current official cumulative confirmed totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP use, fighter sorties, or interceptor launches, so those remain null."
     },
     {
       "date": "2026-03-16",
