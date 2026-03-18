@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-18T19:18:02Z",
+  "lastUpdated": "2026-03-18T20:57:18Z",
   "dayCount": 18,
   "banner": {
-    "strikes": "~3,000",
-    "killed": "1,322+",
-    "cost": "$10.3B+"
+    "strikes": "~5,500",
+    "killed": "1,258+",
+    "cost": "$10.8B+"
   },
   "humanCost": {
-    "iranDeaths": "1,300",
+    "iranDeaths": "1,230",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "8",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "14",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "7",
+    "gulfCasualties": "6",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "12,000+",
+    "iranWounded": "10,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1097",
+    "civilianDeaths": "1172",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$10.3 billion+",
-    "dailyBurnRate": "~$575M/day",
+    "totalCost": "$10.8 billion+",
+    "dailyBurnRate": "~$603M/day",
     "daysOfOps": 18,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-18",
-          "source": "LLM-verified (Pentagon/JBSA Pentagon News photo caption dated March 6, 2026 confirms USS Gerald R. Ford operating in support of Operation Epic Fury; no second currently deployed carrier strike group confirmed in searched official sources.)"
+          "source": "LLM-verified (CENTCOM imagery and operation page identify USS Abraham Lincoln operating in 5th Fleet/CENTCOM AOR; no confirmed second carrier currently in theater found)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 1000,
+          "quantity": 6000,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,8 +279,8 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-03-14",
-          "source": "LLM-verified (IDF real-time updates of March 2, 2026 said the Israeli Air Force had carried out approximately 1,000 combat sorties in the skies of Iran; no newer official combined US-Israeli total found)"
+          "lastUpdated": "2026-03-18",
+          "source": "LLM-verified (CENTCOM operational briefing reported more than 6,000 combat sorties by mid-March 2026, reflected in official/secondary reporting; this is combat sorties overall, not clearly fighter-only sorties)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "1,000 \u00d7 $100,000 each",
-        "cost": "$100,000,000"
+        "detail": "6,000 \u00d7 $100,000 each",
+        "cost": "$600,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC and Al Jazeera reported Israel said it killed Iranian intelligence minister Esmail Khatib, with Iranian President Masoud Pezeshkian confirming his death Wednesday",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian leadership and Gulf states warned of possible retaliation against regional energy infrastructure after the South Pars strike",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israeli strike on Iran\u2019s South Pars gas field and Asaluyeh refinery on March 18, 2026, sharply escalated the war and pushed oil prices toward $110 a barrel",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran launched new missile attacks on Israel on March 18, 2026, killing 2 people near Tel Aviv, according to AP",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Maritime traffic through the Strait of Hormuz increased in recent days while the US sought China\u2019s help to reopen the waterway, according to the provided Al Jazeera March 18 RSS headlines.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Drone attacks struck near the US embassy in Baghdad, causing fires in the Green Zone, according to the provided Al Jazeera March 18 RSS headlines.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran fired missiles and drones across Gulf states, with interceptions and blasts reported in Qatar, UAE, Kuwait and Saudi Arabia, according to the provided Al Jazeera March 18 RSS headlines.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,28 @@
   ],
   "developments": [
     {
+      "time": "2026-03-18T19:56:15Z",
+      "text": "<strong>Oil prices surge after Israeli strike on Iran\u2019s South Pars gasfield</strong> -- There are fears that a period of elevated oil and gas prices could trigger a damaging wave of global inflation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/18/oil-prices-surge-after-israeli-strike-on-iran-gasfield-irans-threats?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-18T19:48:30Z",
+      "text": "<strong>Top US spy accused of omitting Iran intel that contradicts Trump</strong> -- Top US spy was accused of altering testimony on Iran, omitting details that contradict Trump\u2019s threat claims. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/top-us-spy-accused-of-omitting-iran-intel-that-contradicts-trump?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-18T19:38:33Z",
+      "text": "<strong>Israel attacks Iran\u2019s major gas field in new escalation</strong> -- Israel has struck facilities belonging to the world&amp;#039;s largest natural gas field in Iran, marking a sharp escalation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/israel-attacks-irans-major-gas-field-in-new-escalation?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-18T19:06:25Z",
+      "text": "<strong>US intel chief Gabbard says Iran was not rebuilding enrichment prior to war</strong> -- Gabbard&amp;#039;s testimony contradicts one of several justifications Trump has given for launching war with Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/18/us-intel-chief-gabbard-says-iran-was-not-rebuilding-enrichment-prior-to-war?traffic_source=rss"
+    },
+    {
       "time": "2026-03-18T18:59:15Z",
-      "text": "<strong>Qatar says Iran missile attack sparks fire, causes damage at gas facility</strong> -- The Ras Laffan complex is home to processing units for liquefied natural gas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Qatar says Iran missile attack sparks fire, causes damage at gas facility</strong> -- Qatar&amp;#039;s Foreign Ministry strongly condemns attack that caused &amp;quot;extensive damage&amp;quot; at the Ras Laffan complex. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/18/qatar-says-iran-missile-attack-sparks-fire-causes-damage-at-gas-facility?traffic_source=rss"
     },
     {
@@ -831,26 +851,6 @@
       "time": "2026-03-18T11:24:40Z",
       "text": "<strong>Turkiye says NATO bringing in more defences after missile interceptions</strong> -- NATO to deploy a new Patriot missile defence unit to southern Turkiye&amp;#039;s Incirlik Air Base. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/18/turkiye-says-nato-bringing-in-more-defences-after-missile-interceptions?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-18T11:23:56Z",
-      "text": "<strong>Iranian women footballers arrive in eastern Turkiye, on home border</strong> -- The team is on last leg of its journey home from Australia after Asian Cup, which began before conflict in Middle East. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/3/18/iran-womens-football-team-arrive-in-eastern-turkiye-on-home-border?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-18T11:17:38Z",
-      "text": "<strong>How Iran defied Trump threats to emerge as Strait of Hormuz gatekeeper</strong> -- Trump has called on other navies to help open the strait, but countries are instead striking deals with Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/18/how-iran-defied-trump-threats-to-emerge-as-strait-of-hormuz-gatekeeper?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-18T10:33:12Z",
-      "text": "<strong>Israel says it kills Iran intel minister in third assassination in two days</strong> -- Israel gives military permission to strike Iranian leaders at will as Iran has yet to confirm death of Esmaeil Khatib. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/18/israel-says-it-killed-iran-intel-minister-in-third-assassination-in-2-days?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-18T10:22:55Z",
-      "text": "<strong>Iranian diaspora celebrates Persian festival wrapped in US, Israeli flags</strong> -- Dancing on a beach in Barcelona, members of the Iranian diaspora celebrated the Persian festival of Chaharshanbe Suri. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/iranian-diaspora-celebrates-persian-festival-wrapped-in-us-israeli-flags?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,67 @@
   ],
   "newsFeed": [
     {
+      "title": "Oil prices surge after Israeli strike on Iran\u2019s South Pars gasfield",
+      "description": "There are fears that a period of elevated oil and gas prices could trigger a damaging wave of global inflation.",
+      "link": "https://www.aljazeera.com/news/2026/3/18/oil-prices-surge-after-israeli-strike-on-iran-gasfield-irans-threats?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-18T19:56:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Oil nears $110 a barrel after gas field strike",
+      "description": "Iran's military warned it would take \"decisive action\" in response to the strike on its energy infrastructure.",
+      "link": "https://www.bbc.com/news/articles/c78x83lpgngo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-18T19:53:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Top US spy accused of omitting Iran intel that contradicts Trump",
+      "description": "Top US spy was accused of altering testimony on Iran, omitting details that contradict Trump\u2019s threat claims.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/top-us-spy-accused-of-omitting-iran-intel-that-contradicts-trump?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-18T19:48:30Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel destroys river bridges in southern Lebanon",
+      "description": "The health ministry says that 968 people, including more than 100 children, have been killed since 2 March.",
+      "link": "https://www.bbc.com/news/articles/cvg8g98ezmzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-18T19:40:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel attacks Iran\u2019s major gas field in new escalation",
+      "description": "Israel has struck facilities belonging to the world&#039;s largest natural gas field in Iran, marking a sharp escalation.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/israel-attacks-irans-major-gas-field-in-new-escalation?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-18T19:38:33Z",
+      "tier": 2
+    },
+    {
+      "title": "US intel chief Gabbard says Iran was not rebuilding enrichment prior to war",
+      "description": "Gabbard&#039;s testimony contradicts one of several justifications Trump has given for launching war with Iran.",
+      "link": "https://www.aljazeera.com/news/2026/3/18/us-intel-chief-gabbard-says-iran-was-not-rebuilding-enrichment-prior-to-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-18T19:06:25Z",
+      "tier": 2
+    },
+    {
       "title": "Qatar says Iran missile attack sparks fire, causes damage at gas facility",
-      "description": "The Ras Laffan complex is home to processing units for liquefied natural gas.",
+      "description": "Qatar&#039;s Foreign Ministry strongly condemns attack that caused &quot;extensive damage&quot; at the Ras Laffan complex.",
       "link": "https://www.aljazeera.com/news/2026/3/18/qatar-says-iran-missile-attack-sparks-fire-causes-damage-at-gas-facility?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-18T18:59:15Z",
+      "tier": 2
+    },
+    {
+      "title": "One killed as ski gondola crashes down mountain at Swiss resort",
+      "description": "Dramatic footage showed the gondola flipping over several times in the snow before coming to a halt in Engelberg.",
+      "link": "https://www.bbc.com/news/articles/cq575yp1lw6o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-18T18:25:33Z",
       "tier": 2
     },
     {
@@ -1245,14 +1301,6 @@
       "tier": 2
     },
     {
-      "title": "Oil nears $110 a barrel after gas field strike",
-      "description": "Iran's military warned it would take \"decisive action\" in response to the strike on its energy infrastructure.",
-      "link": "https://www.bbc.com/news/articles/c78x83lpgngo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-18T17:41:23Z",
-      "tier": 2
-    },
-    {
       "title": "Iran's intelligence minister Esmail Khatib killed in air strike",
       "description": "Israel said it had killed Khatib, whose death was confirmed by Iranian President Masoud Pezeshkian on Wednesday.",
       "link": "https://www.bbc.com/news/articles/c2d1dz14k51o?at_medium=RSS&at_campaign=rss",
@@ -1266,14 +1314,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/gunshots-disperse-crowd-during-persian-new-year-festivities-in-tehran?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-18T16:51:05Z",
-      "tier": 2
-    },
-    {
-      "title": "'Very difficult to stop': BBC visits scene of Iran cluster bomb strike on Israel",
-      "description": "An elderly couple was killed after a bomb flew into their apartment in central Israel and exploded.",
-      "link": "https://www.bbc.com/news/articles/cwy9yldgn7qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-18T16:04:29Z",
       "tier": 2
     },
     {
@@ -1325,60 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "Iran holds funerals for officials Larijani and Soleimani",
-      "description": "Iranians have attended funeral processions for senior security officials Ali Larijani and Gholamreza Soleimani.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/iran-holds-funerals-for-officials-larijani-and-soleimani?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-18T13:03:23Z",
-      "tier": 2
-    },
-    {
-      "title": "Why did Trump\u2019s counterterrorism chief resign over Iran war?",
-      "description": "US counterterrorism chief Joe Kent has resigned over Washington\u2019s war on Iran, saying he cannot support the conflict.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/why-did-trumps-counterterrorism-chief-resign-over-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-18T12:35:47Z",
-      "tier": 2
-    },
-    {
       "title": "Top US counterterrorism official resigns over Iran war, urging Trump to 'reverse course'",
       "description": "National Counterterrorism Center Director Joe Kent says Trump \"started this war due to pressure from Israel and its powerful American lobby\".",
       "link": "https://www.bbc.com/news/articles/cg4g66r3z40o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-18T02:12:16Z",
       "tier": 2
-    },
-    {
-      "title": "Iranian security chief Ali Larijani killed in air strike",
-      "description": "His death is confirmed on state TV, alongside that of another senior figure, Gholamreza Soleimani",
-      "link": "https://www.bbc.com/news/articles/c24deezq6meo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-17T22:49:03Z",
-      "tier": 2
-    },
-    {
-      "title": "Air strike hit Kabul rehab centre as patients ate dinner, survivor tells BBC",
-      "description": "The exact number killed in Monday night's strike by Pakistan is still not known, but is feared to be in the hundreds.",
-      "link": "https://www.bbc.com/news/articles/ckg1kgz6wkgo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-17T18:45:54Z",
-      "tier": 2
-    },
-    {
-      "title": "Utah mother who wrote book about grief found guilty of poisoning husband",
-      "description": "A jury found that Kouri Richins killed her husband in March 2022 by poisoning him with a fentanyl-laced drink.",
-      "link": "https://www.bbc.com/news/articles/cdxg1nx2r61o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-17T01:14:04Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on March 18, 2026 shows the war widening into Gulf energy infrastructure: AP reported that Israel struck Iran\u2019s South Pars gas field and that Iran vowed retaliation against Gulf energy facilities, while also reporting Iranian attacks on Saudi Arabia\u2019s Eastern Province and on Kuwait, Bahrain, Qatar and the UAE. In the casualty data found, Al Jazeera on March 11 cited Iran\u2019s deputy health minister saying more than 12,000 people had been wounded and that most of 1,250 confirmed deaths in Iran were civilians, but I did not find a newer named-source confirmed nationwide Iranian death total in the searched official and major-media sources. For operational totals, the most solid official figure located was CENTCOM\u2019s March 6 fact sheet stating 'over 3,000' targets struck in the first seven days; I did not find newer official cumulative weapons-expended or sortie totals in the searched sources.",
+  "summary": "Confirmed reporting indicates the war intensified further on March 18, 2026, with Israel striking Iran\u2019s South Pars gas field and the Asaluyeh refinery, a major escalation that triggered fresh threats to Gulf energy infrastructure and a sharp jump in oil prices. The latest solid casualty counts I could verify were 1,230 deaths in Iran from Iranian state-linked reporting cited by AFP, 8 confirmed U.S. military deaths from Pentagon/CENTCOM-linked reporting, 14 deaths in Israel from Israeli authorities cited by AFP, and at least 1,172 Iranian civilians killed according to HRANA. On the military side, CENTCOM\u2019s latest clearly attributable operational figure remains more than 5,500 targets struck in Iran, while official material confirms one carrier strike group in theater and the use of MQ-9s, B-1s, B-2s, Patriot and THAAD systems, but I could not verify current official totals for destroyers, personnel, munitions expenditure, or interceptor launches.",
   "briefings": [
     {
       "date": "2026-03-18",
       "day": 18,
-      "summary": "Confirmed reporting on March 18, 2026 shows the war widening into Gulf energy infrastructure: AP reported that Israel struck Iran\u2019s South Pars gas field and that Iran vowed retaliation against Gulf energy facilities, while also reporting Iranian attacks on Saudi Arabia\u2019s Eastern Province and on Kuwait, Bahrain, Qatar and the UAE. In the casualty data found, Al Jazeera on March 11 cited Iran\u2019s deputy health minister saying more than 12,000 people had been wounded and that most of 1,250 confirmed deaths in Iran were civilians, but I did not find a newer named-source confirmed nationwide Iranian death total in the searched official and major-media sources. For operational totals, the most solid official figure located was CENTCOM\u2019s March 6 fact sheet stating 'over 3,000' targets struck in the first seven days; I did not find newer official cumulative weapons-expended or sortie totals in the searched sources."
+      "summary": "Confirmed reporting indicates the war intensified further on March 18, 2026, with Israel striking Iran\u2019s South Pars gas field and the Asaluyeh refinery, a major escalation that triggered fresh threats to Gulf energy infrastructure and a sharp jump in oil prices. The latest solid casualty counts I could verify were 1,230 deaths in Iran from Iranian state-linked reporting cited by AFP, 8 confirmed U.S. military deaths from Pentagon/CENTCOM-linked reporting, 14 deaths in Israel from Israeli authorities cited by AFP, and at least 1,172 Iranian civilians killed according to HRANA. On the military side, CENTCOM\u2019s latest clearly attributable operational figure remains more than 5,500 targets struck in Iran, while official material confirms one carrier strike group in theater and the use of MQ-9s, B-1s, B-2s, Patriot and THAAD systems, but I could not verify current official totals for destroyers, personnel, munitions expenditure, or interceptor launches."
     },
     {
       "date": "2026-03-17",
