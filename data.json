@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-03-18T09:08:19Z",
+  "lastUpdated": "2026-03-18T10:12:46Z",
   "dayCount": 18,
   "banner": {
-    "strikes": "~5,000",
-    "killed": "1,484+",
-    "cost": "$10.0B+"
+    "strikes": "~5,500",
+    "killed": "1,277+",
+    "cost": "$10.5B+"
   },
   "humanCost": {
-    "iranDeaths": "1,444",
+    "iranDeaths": "1,255",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "8",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "15",
+    "israeliDeaths": "14",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "12",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "18,551+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1348",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$10.0 billion+",
-    "dailyBurnRate": "~$558M/day",
+    "totalCost": "$10.5 billion+",
+    "dailyBurnRate": "~$582M/day",
     "daysOfOps": 18,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-18",
-          "source": "LLM-verified (DoD/DVIDS videos show USS Abraham Lincoln (Feb. 28) and USS Gerald R. Ford (March 2) both operating in support of Operation Epic Fury, confirming 2 carrier strike groups active in theater)"
+          "source": "LLM-verified (Official U.S. military imagery/search results show USS Gerald R. Ford and USS Abraham Lincoln operating in support of Operation Epic Fury in early March 2026)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 2500,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-03-17",
-          "source": "LLM-verified (AP reported on March 13, 2026 that 2,500 more Marines were being sent to the Middle East for the war. This is a confirmed deployment increment, not a full total theater headcount for the operation: https://apnews.com/article/2a86a1f5c5997b70c6586d957074fb0c)"
+          "lastUpdated": "2026-03-18",
+          "source": "LLM-verified (Adm. Brad Cooper said 'more than 50,000 men and women in uniform' were currently executing Operation Epic Fury in Pentagon transcript dated March 5, 2026)"
         },
         {
           "id": "intel_cyber",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "2,500 \u00d7 $500/day \u00d7 18 days",
-        "cost": "$22,500,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 18 days",
+        "cost": "$450,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and BBC reporting referenced the confirmed killing of senior Iranian official Ali Larijani, followed by retaliatory Iranian strikes",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on March 18, 2026 that Iran launched attacks on Israel and Gulf neighbors using some newer missiles designed to evade air defenses",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 18, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Ali Larijani's death was confirmed by Iranian state media and reported by BBC/Al Jazeera, indicating further decapitation risk for senior Iranian leadership",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 14 that Iran openly threatened UAE ports and AP reported March 11 that Iranian attacks targeted Gulf infrastructure including Bahrain's Muharraq Island and Dubai airport.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 16 that explosions were heard over Dubai as the UAE military intercepted incoming Iranian fire and briefly closed its airspace.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-03-18T09:42:36Z",
+      "text": "<strong>\u2018US and Israel have taken majority of Iran\u2019s ballistic missile capability\u2019</strong> -- \u2018US and Israel have taken the vast majority of Iran\u2019s ballistic missile capability\u2019 <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/quotable/2026/3/18/us-and-israel-have-taken-majority-of-irans-ballistic-missile-capability?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-18T09:19:47Z",
+      "text": "<strong>Why Israel targets Beirut\u2019s Dahiyeh and what the suburb means to Lebanon</strong> -- Dahiyeh&amp;#039;s story is not only about Hezbollah or Israel. It is about how it came to embody Lebanon\u2019s deepest inequalities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/3/18/why-israel-targets-beiruts-dahiyeh-and-what-the-suburb-means-to-lebanon?traffic_source=rss"
+    },
+    {
       "time": "2026-03-18T08:39:38Z",
       "text": "<strong>Beirut building turned to rubble by Israeli attack</strong> -- Several central neighbourhoods in Beirut have been attacked in a series of Israeli strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/beirut-building-turned-to-rubble-by-israeli-attack?traffic_source=rss"
@@ -764,12 +774,12 @@
     },
     {
       "time": "2026-03-18T08:13:25Z",
-      "text": "<strong>Aftermath of Iranian \u2018revenge\u2019 strikes on Israel leaves destruction, two ki</strong> -- Widespread damage was left across areas near Tel Aviv after overnight Iranian missile strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Aftermath of Iranian \u2018revenge\u2019 strikes on Israel, two killed</strong> -- Widespread damage was left across areas near Tel Aviv after overnight Iranian missile strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/aftermath-of-iranian-revenge-strikes-on-israel-leaves-destruction-two-ki?traffic_source=rss"
     },
     {
       "time": "2026-03-18T07:06:59Z",
-      "text": "<strong>Israel bombs central Beirut, killing 6, strafes south, east Lebanon</strong> -- Wave of Israeli air attacks launched as ground offensive widens in south where Hezbollah are fighting Israeli forces. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Israel bombs central Beirut, strafes south, east Lebanon, killing over 20</strong> -- Wave of Israeli air attacks launched as ground offensive widens in south where Hezbollah are fighting Israeli forces. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/18/israel-bombs-central-beirut-killing-6-strafes-south-east-lebanon?traffic_source=rss"
     },
     {
@@ -779,7 +789,7 @@
     },
     {
       "time": "2026-03-18T07:04:58Z",
-      "text": "<strong>Iran launches \u2018revenge\u2019 missile attack on Israel after assassinations</strong> -- Attack kills two people in central Israel&amp;#039;s Ramat Gan area and damages a Tel Aviv train station. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran launches \u2018revenge\u2019 missile attack on Israel after assassinations</strong> -- Iran continues to face a daily onslaught of US and Israeli air attacks in Tehran and across the country. . <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/18/iran-launches-revenge-missile-attack-on-israel-after-assassinations?traffic_source=rss"
     },
     {
@@ -841,16 +851,6 @@
       "time": "2026-03-18T01:04:24Z",
       "text": "<strong>Who is Joe Kent, and why did he resign as Trump\u2019s counterterrorism chief?</strong> -- Kent is the highest-level official to leave Trump administration over the US president&amp;#039;s decision to wage war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/18/who-is-joe-kent-and-why-did-he-resign-as-trumps-counterterrorism-chief?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-18T00:52:29Z",
-      "text": "<strong>Larijani\u2019s warning to US, Israel before his killing</strong> -- Ali Larijani, the late secretary of Iran\u2019s SNSC, warned the US and Israeli that killing leaders would strengthen Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/larijanis-warning-to-us-israel-before-his-killing?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-18T00:50:54Z",
-      "text": "<strong>Burning debris from missile interceptions showers Dubai</strong> -- Witness videos captured missile interceptors launching and burning debris raining from the sky in Dubai. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/burning-debris-from-missile-interceptions-showers-dubai?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "\u2018US and Israel have taken majority of Iran\u2019s ballistic missile capability\u2019",
+      "description": "\u2018US and Israel have taken the vast majority of Iran\u2019s ballistic missile capability\u2019",
+      "link": "https://www.aljazeera.com/video/quotable/2026/3/18/us-and-israel-have-taken-majority-of-irans-ballistic-missile-capability?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-18T09:42:36Z",
+      "tier": 2
+    },
+    {
+      "title": "Why Israel targets Beirut\u2019s Dahiyeh and what the suburb means to Lebanon",
+      "description": "Dahiyeh&#039;s story is not only about Hezbollah or Israel. It is about how it came to embody Lebanon\u2019s deepest inequalities.",
+      "link": "https://www.aljazeera.com/features/2026/3/18/why-israel-targets-beiruts-dahiyeh-and-what-the-suburb-means-to-lebanon?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-18T09:19:47Z",
+      "tier": 2
+    },
+    {
       "title": "Beirut building turned to rubble by Israeli attack",
       "description": "Several central neighbourhoods in Beirut have been attacked in a series of Israeli strikes.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/beirut-building-turned-to-rubble-by-israeli-attack?traffic_source=rss",
@@ -1229,7 +1245,7 @@
       "tier": 2
     },
     {
-      "title": "Aftermath of Iranian \u2018revenge\u2019 strikes on Israel leaves destruction, two ki",
+      "title": "Aftermath of Iranian \u2018revenge\u2019 strikes on Israel, two killed",
       "description": "Widespread damage was left across areas near Tel Aviv after overnight Iranian missile strikes.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/aftermath-of-iranian-revenge-strikes-on-israel-leaves-destruction-two-ki?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1237,7 +1253,7 @@
       "tier": 2
     },
     {
-      "title": "Israel bombs central Beirut, killing 6, strafes south, east Lebanon",
+      "title": "Israel bombs central Beirut, strafes south, east Lebanon, killing over 20",
       "description": "Wave of Israeli air attacks launched as ground offensive widens in south where Hezbollah are fighting Israeli forces.",
       "link": "https://www.aljazeera.com/news/2026/3/18/israel-bombs-central-beirut-killing-6-strafes-south-east-lebanon?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1254,7 +1270,7 @@
     },
     {
       "title": "Iran launches \u2018revenge\u2019 missile attack on Israel after assassinations",
-      "description": "Attack kills two people in central Israel&#039;s Ramat Gan area and damages a Tel Aviv train station.",
+      "description": "Iran continues to face a daily onslaught of US and Israeli air attacks in Tehran and across the country. .",
       "link": "https://www.aljazeera.com/news/2026/3/18/iran-launches-revenge-missile-attack-on-israel-after-assassinations?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-18T07:04:58Z",
@@ -1317,51 +1333,11 @@
       "tier": 2
     },
     {
-      "title": "Drone attacks hit near US embassy in Baghdad",
-      "description": "Fires have broken out in Baghdad\u2019s Green Zone after a drone swarm, purportedly launched by Iran-aligned groups.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/drone-attacks-hit-near-us-embassy-in-baghdad?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-18T03:26:02Z",
-      "tier": 2
-    },
-    {
-      "title": "Experts discuss \u2018Israeli strategy\u2019 in killing of senior Iran official Ali L",
-      "description": "Ross Harrison joins a panel on what the US and Israel are seeking with their killing of senior Iranian leaders.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/experts-discuss-israeli-strategy-in-killing-of-senior-iran-official-ali-l?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-18T02:57:47Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018We\u2019ll be doing something with Cuba very soon\u2019, Trump says",
-      "description": "While waging war on Iran, the US president and his secretary of state are demanding a leadership change in Cuba.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/18/well-be-doing-something-with-cuba-very-soon-trump-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-18T02:46:48Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran allowing more ships through Strait of Hormuz, data suggest",
-      "description": "Number of ships transiting Strait of Hormuz has nearly doubled in recent days, maritime intelligence company says.",
-      "link": "https://www.aljazeera.com/economy/2026/3/18/iran-allowing-more-ships-through-strait-of-hormuz-data-shows?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-18T02:22:54Z",
-      "tier": 2
-    },
-    {
       "title": "Top US counterterrorism official resigns over Iran war, urging Trump to 'reverse course'",
       "description": "National Counterterrorism Center Director Joe Kent says Trump \"started this war due to pressure from Israel and its powerful American lobby\".",
       "link": "https://www.bbc.com/news/articles/cg4g66r3z40o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-18T02:12:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Ukraine sends 201 military experts to counter Iranian drones in the Gulf",
-      "description": "Ukraine President Zelenskyy says Moscow, Tehran &#039;brothers in hatred&#039;; claims Iran&#039;s drones &#039;contain Russian components&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/3/18/over-200-ukrainian-military-experts-in-gulf-region-to-counter-irans-drones?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-18T01:58:55Z",
       "tier": 2
     },
     {
@@ -1371,14 +1347,38 @@
       "source": "BBC World",
       "time": "2026-03-18T00:07:36Z",
       "tier": 2
+    },
+    {
+      "title": "Iranian security chief Ali Larijani killed in air strike",
+      "description": "His death is confirmed on state TV, alongside that of another senior figure, Gholamreza Soleimani",
+      "link": "https://www.bbc.com/news/articles/c24deezq6meo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-17T22:49:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Air strike hit Kabul rehab centre as patients ate dinner, survivor tells BBC",
+      "description": "The exact number killed in Monday night's strike by Pakistan is still not known, but is feared to be in the hundreds.",
+      "link": "https://www.bbc.com/news/articles/ckg1kgz6wkgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-17T18:45:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Utah mother who wrote book about grief found guilty of poisoning husband",
+      "description": "A jury found that Kouri Richins killed her husband in March 2022 by poisoning him with a fentanyl-laced drink.",
+      "link": "https://www.bbc.com/news/articles/cdxg1nx2r61o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-17T01:14:04Z",
+      "tier": 2
     }
   ],
-  "summary": "As of Wednesday, March 18, 2026, the clearest accessible cumulative casualty figures remain Iran Health Ministry totals of 1,444 killed and 18,551 wounded in Iran, 15 killed in Israel, and 13 confirmed U.S. military fatalities; AP also reported that Iran launched fresh attacks on Israel and Gulf states on March 18, killing two people near Tel Aviv, while Israel struck Beirut and killed at least six people there. CENTCOM\u2019s publicly accessible Epic Fury fact sheets confirm the operation exceeded 3,000 targets struck in its first seven days, and Al Jazeera\u2019s March 18 live tracker says CENTCOM reported more than 5,000 U.S. targets struck in Iran by March 10, but I could not verify newer official cumulative deployment or munitions-usage counts for carriers, destroyers, personnel, drones, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, or interceptors.",
+  "summary": "Confirmed reporting available in the sources found indicates that Iran\u2019s officially stated death toll stood at 1,255 killed and more than 12,000 wounded as of March 9, while CENTCOM-linked reporting said U.S. forces had struck over 5,500 targets by March 11. Pentagon/CENTCOM-confirmed U.S. deaths identified in reporting total 8, and AP\u2019s March 18 reporting supports an Israeli cumulative death toll of 14 after two more people were killed near Tel Aviv. U.S. military reporting also confirms at least two carrier groups in the fight and more than 50,000 personnel involved, but I did not find reliable current confirmed totals for civilian-only Iranian deaths, Gulf-state fatalities, destroyer count, drone unit count, or cumulative munitions expenditure.",
   "briefings": [
     {
       "date": "2026-03-18",
       "day": 18,
-      "summary": "As of Wednesday, March 18, 2026, the clearest accessible cumulative casualty figures remain Iran Health Ministry totals of 1,444 killed and 18,551 wounded in Iran, 15 killed in Israel, and 13 confirmed U.S. military fatalities; AP also reported that Iran launched fresh attacks on Israel and Gulf states on March 18, killing two people near Tel Aviv, while Israel struck Beirut and killed at least six people there. CENTCOM\u2019s publicly accessible Epic Fury fact sheets confirm the operation exceeded 3,000 targets struck in its first seven days, and Al Jazeera\u2019s March 18 live tracker says CENTCOM reported more than 5,000 U.S. targets struck in Iran by March 10, but I could not verify newer official cumulative deployment or munitions-usage counts for carriers, destroyers, personnel, drones, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, or interceptors."
+      "summary": "Confirmed reporting available in the sources found indicates that Iran\u2019s officially stated death toll stood at 1,255 killed and more than 12,000 wounded as of March 9, while CENTCOM-linked reporting said U.S. forces had struck over 5,500 targets by March 11. Pentagon/CENTCOM-confirmed U.S. deaths identified in reporting total 8, and AP\u2019s March 18 reporting supports an Israeli cumulative death toll of 14 after two more people were killed near Tel Aviv. U.S. military reporting also confirms at least two carrier groups in the fight and more than 50,000 personnel involved, but I did not find reliable current confirmed totals for civilian-only Iranian deaths, Gulf-state fatalities, destroyer count, drone unit count, or cumulative munitions expenditure."
     },
     {
       "date": "2026-03-17",
