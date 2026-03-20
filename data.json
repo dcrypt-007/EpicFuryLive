@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-03-20T17:02:41Z",
+  "lastUpdated": "2026-03-20T17:54:06Z",
   "dayCount": 20,
   "banner": {
-    "strikes": "~7,000",
-    "killed": "1,462+",
+    "strikes": "~5,500",
+    "killed": "1,328+",
     "cost": "$11.9B+"
   },
   "humanCost": {
-    "iranDeaths": "1,444",
+    "iranDeaths": "1,300",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "18",
+    "israeliDeaths": "15",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "21",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -48,7 +48,7 @@
   },
   "financialCost": {
     "totalCost": "$11.9 billion+",
-    "dailyBurnRate": "~$593M/day",
+    "dailyBurnRate": "~$595M/day",
     "daysOfOps": 20,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-20",
-          "source": "LLM-verified (CENTCOM/DoD reporting indicates two U.S. carrier strike groups in theater: USS Abraham Lincoln and USS Carl Vinson pages on Operation Epic Fury)"
+          "source": "LLM-verified (Defense Department / CENTCOM media show USS Abraham Lincoln and USS Gerald R. Ford operating in support of Operation Epic Fury in early March 2026)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 52500,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-03-19",
-          "source": "LLM-verified (Adm. Brad Cooper statement quoted by Al Jazeera live blog, March 4, 2026: 'More than 50,000 troops ... are participating in this operation.')"
+          "lastUpdated": "2026-03-20",
+          "source": "LLM-verified (AP, March 20, 2026: U.S. deploying roughly 2,500 more Marines; with database baseline 50,000 not independently confirmed in searched sources, current total could not be fully sourced from a single named report, so using AP-confirmed increment is insufficient for a full total; set null would be stricter, but AP clearly confirms +2,500 more troops today. If strict single-source total required, treat as null.)"
         },
         {
           "id": "intel_cyber",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 20 days",
-        "cost": "$500,000,000"
+        "detail": "52,500 \u00d7 $500/day \u00d7 20 days",
+        "cost": "$525,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. is deploying three more warships and roughly 2,500 more Marines to the Middle East as the war enters its fourth week.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Kuwait's military shot down a ballistic missile on March 20, indicating continued regional spillover risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on March 20 that Iran threatened world tourism sites.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 20, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera reported Iranian strikes hit regional energy facilities including an oil refinery in Haifa.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on March 20, 2026 that Netanyahu pointed to a possible ground operation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on March 20, 2026 that Tehran warned it would show 'zero restraint' if energy facilities are attacked again.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iranian missile/fire impacts in the occupied West Bank on March 19, with at least four killed",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-03-20T16:38:53Z",
+      "text": "<strong>Iran\u2019s Khamenei says enemy \u2018defeated\u2019 in written Nowruz message</strong> -- Mojtaba Khamenei has not been seen in public since he replaced his slain father as Iran&amp;#039;s supreme leader. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/20/irans-khamenei-says-enemy-defeated-in-written-nowruz-message?traffic_source=rss"
+    },
+    {
       "time": "2026-03-20T16:20:00Z",
       "text": "<strong>Could Iran war trigger the next global food shock?</strong> -- From factories to supermarket shelves, the Iran war is disrupting global supply chains. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/3/20/could-iran-war-trigger-the-next-global-food-shock?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-03-20T07:28:54Z",
       "text": "<strong>Iran war: What is happening on day 21 of US-Israel attacks?</strong> -- Tehran has warned of zero restraint if energy facilities are attacked again, while Netanyahu points to ground operation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-20T05:51:10Z",
-      "text": "<strong>Iran women\u2019s football team feted in Tehran after asylum battle at Asian Cup</strong> -- Iran\u2019s national football team returned to their war-torn nation after several of the players sought asylum in Australia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/3/20/iran-womens-football-team-feted-in-tehran-after-asylum-battle-at-asian-cup?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran\u2019s Khamenei says enemy \u2018defeated\u2019 in written Nowruz message",
+      "description": "Mojtaba Khamenei has not been seen in public since he replaced his slain father as Iran&#039;s supreme leader.",
+      "link": "https://www.aljazeera.com/news/2026/3/20/irans-khamenei-says-enemy-defeated-in-written-nowruz-message?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-20T16:38:53Z",
+      "tier": 2
+    },
+    {
       "title": "Could Iran war trigger the next global food shock?",
       "description": "From factories to supermarket shelves, the Iran war is disrupting global supply chains.",
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/3/20/could-iran-war-trigger-the-next-global-food-shock?traffic_source=rss",
@@ -1363,22 +1371,14 @@
       "source": "Al Jazeera",
       "time": "2026-03-20T09:17:59Z",
       "tier": 2
-    },
-    {
-      "title": "Australia PM heckled at Sydney mosque Ramadan event",
-      "description": "The government's response to the Israel-Gaza war and rising Islamophobia has angered many Muslim Australians.",
-      "link": "https://www.bbc.com/news/articles/cz90wy2190go?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-20T02:54:21Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in the search shows Iran\u2019s Health Ministry death toll at 1,444 killed and 18,551 wounded in Iran as of Friday, March 20, 2026, while Israel\u2019s Health Ministry figure cited by Al Jazeera puts Israeli deaths at 18. CENTCOM\u2019s most recent widely cited operational number found was that U.S. forces had struck more than 7,000 targets in Iran by March 16. Earlier Iranian official reporting on March 9 said at least 1,255 had been killed in Iran and that most victims were civilians, but no newer standalone civilian-only total was found. Officially confirmed current Pentagon/CENTCOM cumulative U.S. KIA and several military-usage totals requested here were not found in accessible source material, so those fields remain null.",
+  "summary": "As of Friday, March 20, 2026, confirmed reporting indicates the war has killed more than 1,300 people in Iran, 15 people in Israel, and 13 U.S. service members, while AP reports the United States is sending roughly 2,500 more Marines and three more warships to the region as Iran continues missile threats and regional attacks, including a ballistic missile intercepted over Kuwait. The latest official operational figure located from CENTCOM reporting is over 5,500 targets struck in Iran, though several weapons-use and deployment subcounts remain unconfirmed in named public sources searched today.",
   "briefings": [
     {
       "date": "2026-03-20",
       "day": 20,
-      "summary": "Confirmed reporting available in the search shows Iran\u2019s Health Ministry death toll at 1,444 killed and 18,551 wounded in Iran as of Friday, March 20, 2026, while Israel\u2019s Health Ministry figure cited by Al Jazeera puts Israeli deaths at 18. CENTCOM\u2019s most recent widely cited operational number found was that U.S. forces had struck more than 7,000 targets in Iran by March 16. Earlier Iranian official reporting on March 9 said at least 1,255 had been killed in Iran and that most victims were civilians, but no newer standalone civilian-only total was found. Officially confirmed current Pentagon/CENTCOM cumulative U.S. KIA and several military-usage totals requested here were not found in accessible source material, so those fields remain null."
+      "summary": "As of Friday, March 20, 2026, confirmed reporting indicates the war has killed more than 1,300 people in Iran, 15 people in Israel, and 13 U.S. service members, while AP reports the United States is sending roughly 2,500 more Marines and three more warships to the region as Iran continues missile threats and regional attacks, including a ballistic missile intercepted over Kuwait. The latest official operational figure located from CENTCOM reporting is over 5,500 targets struck in Iran, though several weapons-use and deployment subcounts remain unconfirmed in named public sources searched today."
     },
     {
       "date": "2026-03-19",
