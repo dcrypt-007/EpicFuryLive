@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-20T06:07:28Z",
+  "lastUpdated": "2026-03-20T07:14:18Z",
   "dayCount": 20,
   "banner": {
     "strikes": "~3,000",
-    "killed": "1,362+",
-    "cost": "$11.9B+"
+    "killed": "1,470+",
+    "cost": "$11.7B+"
   },
   "humanCost": {
-    "iranDeaths": "1,300",
+    "iranDeaths": "1,444",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "14",
+    "israeliDeaths": "18",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "6",
+    "gulfCasualties": "8",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "9,000+",
+    "iranWounded": "18,551+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1348",
+    "civilianDeaths": "1444",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$11.9 billion+",
-    "dailyBurnRate": "~$593M/day",
+    "totalCost": "$11.7 billion+",
+    "dailyBurnRate": "~$586M/day",
     "daysOfOps": 20,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-03-19",
-          "source": "LLM-verified (CENTCOM/Al Jazeera reporting on Operation Epic Fury identifies USS Abraham Lincoln and USS Gerald R. Ford as the two US carriers supporting the operation.)"
+          "lastUpdated": "2026-03-20",
+          "source": "LLM-verified (AP live coverage on March 18, 2026 reported CENTCOM would only have one aircraft carrier supporting operations against Iran after the damaged carrier's departure)"
         },
         {
           "id": "destroyers",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 20 days",
-        "cost": "$280,000,000"
+        "detail": "$7,000,000/day \u00d7 20 days",
+        "cost": "$140,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iranian missile/fire impacts in the occupied West Bank on March 19, with at least four killed",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the damaged U.S. carrier's departure means CENTCOM is down to one carrier supporting operations against Iran",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian drone strikes hit Kuwait's Mina Al-Ahmadi refinery on March 20, 2026, causing a fire, according to AP",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 20, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "UN Secretary-General Antonio Guterres called for an end to US-Israeli attacks, warning of tragic consequences",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian attacks on Gulf oil and gas infrastructure escalated after Israel struck South Pars gasfield",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Pentagon/Trump statements reported by AP warned of further retaliation if Iran continues attacking Gulf energy assets.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported a vessel ablaze off the UAE coast and another damaged off Qatar amid the widening energy war.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1285,11 +1285,27 @@
       "tier": 2
     },
     {
+      "title": "The global winners and losers of the war in Iran",
+      "description": "As the conflict triggers economic disruption some risk being hit hard, while others stand to benefit.",
+      "link": "https://www.bbc.com/news/articles/c3wlwnn05zqo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-20T00:08:53Z",
+      "tier": 2
+    },
+    {
       "title": "Iran war live: Tehran warns of intensified strikes if energy sites targeted",
       "description": "Iran strikes Israeli oil refinery in northern city of Haifa as Tehran launches attacks on regional energy facilities.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-20T00:04:42Z",
+      "tier": 2
+    },
+    {
+      "title": "Iranians prepare for Persian new year under shadow of war",
+      "description": "Iranians speak to the BBC about preparing for the Nowruz new year festival during the war.",
+      "link": "https://www.bbc.com/news/articles/cvgkg8p7zlko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-20T00:04:34Z",
       "tier": 2
     },
     {
@@ -1349,36 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "How will Israel\u2019s decades-long assassination policy continue?",
-      "description": "Senior Iranian figures have been targeted and killed since the start of the US-Israeli war on Iran.",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/3/19/how-will-israels-decades-long-assassination-policy-continue?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-19T21:02:28Z",
-      "tier": 2
-    },
-    {
-      "title": "US considers lifting sanctions on some Iranian oil",
-      "description": "Treasury Secretary Scott Bessent broached waiving sanctions on oil already at sea, which would be a stunning reversal of longstanding American policy.",
-      "link": "https://www.bbc.com/news/articles/c9d415g55nno?at_medium=RSS&at_campaign=rss",
+      "title": "Trump compares attack on Iran to Pearl Harbor in meeting with Japanese PM",
+      "description": "In a meeting with Japanese Prime Minister, US President Donald Trump was asked why he didn't inform allies about his plan to attack Iran.",
+      "link": "https://www.bbc.com/news/videos/cx248jvgwj8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-03-19T19:55:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Former counter-terrorism head investigated by FBI over alleged leaks",
-      "description": "The former counter-terrorism head resigned on Tuesday over the war with Iran, saying the country posed \"no imminent threat\" to the US.",
-      "link": "https://www.bbc.com/news/articles/c33j3gxvgmro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-19T17:12:27Z",
+      "time": "2026-03-19T17:50:38Z",
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on March 20, 2026 shows the war continuing to expand regionally, with AP reporting Iranian attacks on Gulf energy infrastructure including Kuwait\u2019s Mina Al-Ahmadi refinery, fresh missile warnings in Israel, and renewed Israeli strikes on Tehran. For cumulative casualties, AP most recently reported at least 1,300 killed in Iran and 14 killed in Israel, while WHO said Iranian authorities had reported more than 9,000 injuries as of March 11; Pentagon-confirmed U.S. combat deaths remain 7, with 6 additional non-combat deaths from the KC-135 crash. I could not confirm newer official figures for Gulf-state deaths or for most military cost-model quantities from accessible primary-source Pentagon/CENTCOM/IDF material, so those fields are left null.",
+  "summary": "Confirmed reporting available as of March 20, 2026 indicates Iran\u2019s reported death toll has risen to 1,444 with 18,551 wounded according to Iran\u2019s Health Ministry figures carried by Al Jazeera, while Israel\u2019s death toll stands at 18 and confirmed U.S. military fatalities at 13. In the Gulf, the latest accessible confirmed deaths total 8 across Bahrain and Kuwait. AP reported fresh Iranian drone attacks on Kuwait\u2019s Mina Al-Ahmadi refinery on March 20 and noted that after a damaged U.S. carrier departs, CENTCOM will have only one aircraft carrier supporting operations against Iran. Official accessible strike-count data remains limited; the latest directly located CENTCOM fact sheet still says more than 3,000 targets had been struck in the first seven days, and I could not verify newer official cumulative weapons-use figures for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, destroyers, personnel, drone units, or interceptors.",
   "briefings": [
     {
       "date": "2026-03-20",
       "day": 20,
-      "summary": "Confirmed reporting on March 20, 2026 shows the war continuing to expand regionally, with AP reporting Iranian attacks on Gulf energy infrastructure including Kuwait\u2019s Mina Al-Ahmadi refinery, fresh missile warnings in Israel, and renewed Israeli strikes on Tehran. For cumulative casualties, AP most recently reported at least 1,300 killed in Iran and 14 killed in Israel, while WHO said Iranian authorities had reported more than 9,000 injuries as of March 11; Pentagon-confirmed U.S. combat deaths remain 7, with 6 additional non-combat deaths from the KC-135 crash. I could not confirm newer official figures for Gulf-state deaths or for most military cost-model quantities from accessible primary-source Pentagon/CENTCOM/IDF material, so those fields are left null."
+      "summary": "Confirmed reporting available as of March 20, 2026 indicates Iran\u2019s reported death toll has risen to 1,444 with 18,551 wounded according to Iran\u2019s Health Ministry figures carried by Al Jazeera, while Israel\u2019s death toll stands at 18 and confirmed U.S. military fatalities at 13. In the Gulf, the latest accessible confirmed deaths total 8 across Bahrain and Kuwait. AP reported fresh Iranian drone attacks on Kuwait\u2019s Mina Al-Ahmadi refinery on March 20 and noted that after a damaged U.S. carrier departs, CENTCOM will have only one aircraft carrier supporting operations against Iran. Official accessible strike-count data remains limited; the latest directly located CENTCOM fact sheet still says more than 3,000 targets had been struck in the first seven days, and I could not verify newer official cumulative weapons-use figures for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, destroyers, personnel, drone units, or interceptors."
     },
     {
       "date": "2026-03-19",
