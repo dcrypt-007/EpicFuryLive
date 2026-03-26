@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-03-26T03:28:14Z",
+  "lastUpdated": "2026-03-26T05:49:59Z",
   "dayCount": 26,
   "banner": {
-    "strikes": "~3,000",
-    "killed": "14+",
-    "cost": "$16.1B+"
+    "strikes": "~5,500",
+    "killed": "1,264+",
+    "cost": "$15.9B+"
   },
   "humanCost": {
-    "iranDeaths": "1,500",
+    "iranDeaths": "1,255",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "15",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "7",
+    "gulfCasualties": "2",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$16.1 billion+",
-    "dailyBurnRate": "~$619M/day",
+    "totalCost": "$15.9 billion+",
+    "dailyBurnRate": "~$612M/day",
     "daysOfOps": 26,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-03-25",
-          "source": "LLM-verified (CENTCOM/official defense media evidence retrieved shows USS Abraham Lincoln and USS Gerald R. Ford conducting Operation Epic Fury flight operations in early March 2026; no newer official count found contradicting 2.)"
+          "lastUpdated": "2026-03-26",
+          "source": "LLM-verified (AP Jan. 26, 2026 reported USS Abraham Lincoln carrier strike group in the Middle East; no second currently deployed US carrier strike group confirmed in searched results)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-03-24",
-          "source": "LLM-verified (Stars and Stripes March 4, 2026, citing USNI News fleet tracker: 'There are six destroyers ... operating independently in the Arabian Sea.')"
+          "lastUpdated": "2026-03-26",
+          "source": "LLM-verified (AP Jan. 26, 2026 reported Abraham Lincoln with 3 accompanying warships; AP Mar. 20, 2026 reported 3 more warships deploying to the Middle East)"
         },
         {
           "id": "personnel",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 26 days",
-        "cost": "$364,000,000"
+        "detail": "$7,000,000/day \u00d7 26 days",
+        "cost": "$182,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera/BBC headlines on Mar. 26, 2026 indicate de-escalation hopes dimmed, Iran publicly denied US talks, and Israel was also facing missile fire from Lebanon alongside the Iran war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP Mar. 21-22, 2026: Trump warned the US could strike Iranian power plants if the Strait of Hormuz is not reopened, while Iran warned any strike on its energy facilities would trigger attacks on US and Israeli energy and infrastructure assets.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 26, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Iran launched additional attacks on Israel and Gulf Arab countries on March 25, including a drone strike that hit a fuel tank at Kuwait International Airport",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran continued attacks on Gulf energy and military sites, with confirmed casualties across Bahrain, Kuwait, Oman and Saudi Arabia in Al Jazeera's March 25, 2026 tracker",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran threatened enemy-linked 'parks, recreational areas and tourist destinations' worldwide, according to AP reporting on March 20, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-03-26T05:06:02Z",
+      "text": "<strong>Oil prices rise higher as Iran denies US talks, dimming deescalation hopes</strong> -- Brent crude tops $104 a barrel as hopes fade for deescalation in US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/3/26/oil-prices-rise-higher-as-iran-denies-us-talks-dimming-deescalation-hopes?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-26T04:36:31Z",
+      "text": "<strong>Malaysia\u2019s prime minister says Iran talks should end war</strong> -- Malaysia\u2019s Prime Minister Anwar Ibrahim said any talks with Iran must aim to end the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/malaysias-prime-minister-says-iran-talks-should-end-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-26T03:54:44Z",
+      "text": "<strong>Videos show wave of missiles fired from Lebanon to Israel</strong> -- Videos show scenes of rocket interceptions in the sky over central Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/videos-show-wave-of-missiles-fired-from-lebanon-to-israel?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-26T03:31:36Z",
+      "text": "<strong>Russia slams second US-Israeli strike at Iran\u2019s Bushehr nuclear reactor</strong> -- Russia\u2019s foreign ministry has accused the US and Israel of trying to spark a nuclear disaster after a strike at Bushehr. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/russia-slams-second-us-israeli-strike-at-irans-bushehr-nuclear-reactor?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-26T03:28:18Z",
+      "text": "<strong>Australia bans visitors from Iran amid war in the Middle East</strong> -- Australia&amp;#039;s Home Affairs Department said decision to ban Iranian visitors amid the war was in the &amp;#039;national interest&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/26/australia-bans-visitors-from-iran-amid-war-in-the-middle-east?traffic_source=rss"
+    },
+    {
       "time": "2026-03-26T01:56:48Z",
       "text": "<strong>Harrison: \u2018There is going to be some kind of a military escalation.\u2019</strong> -- Ross Harrison says public talk of diplomacy between the US and Iran is hiding hardline positions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/harrison-there-is-going-to-be-some-kind-of-a-military-escalation?traffic_source=rss"
@@ -826,31 +851,6 @@
       "time": "2026-03-25T18:44:58Z",
       "text": "<strong>UN chief says \u2018high time\u2019 to end \u2018out of control\u2019 war on Iran</strong> -- UN Chief Antonio Guterres has said that the conflict in the Middle East is \u201cout of control\u201d. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/un-chief-says-high-time-to-end-out-of-control-war-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-25T18:41:11Z",
-      "text": "<strong>Iran\u2019s state TV outlines five conditions to end war</strong> -- Iran\u2019s state TV has set out a list of five demands it says must be met before the country will agree to end of the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/irans-state-tv-outlines-five-conditions-to-end-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-25T17:49:47Z",
-      "text": "<strong>Palestine Action hunger strikers to sue prisons over alleged mistreatment</strong> -- Activists plan to take legal action against the UK prisons that allegedly mistreated them. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/25/palestine-action-hunger-strikers-to-sue-prisons-over-alleged-mistreatment?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-25T17:10:28Z",
-      "text": "<strong>What we know about US attack on Iraqi military site</strong> -- Iraqi authorities say a US air strike on a military site in Anbar killed seven soldiers and wounded 13. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/what-we-know-about-us-attack-on-iraqi-military-site?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-25T16:36:39Z",
-      "text": "<strong>Protest in India over cooking gas crisis</strong> -- Indian opposition parties have staged a protest over the shortage of cooking gas triggered by the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/protest-in-india-over-cooking-gas-crisis?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-25T16:31:23Z",
-      "text": "<strong>Deadly US attack on Iraqi military base sparks condemnation</strong> -- The US killed seven Iraqi soldiers in a strike in Iraq as it targeted the Popular Mobilisation Forces. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/deadly-us-attack-on-iraqi-military-base-sparks-condemnation?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "Oil prices rise higher as Iran denies US talks, dimming deescalation hopes",
+      "description": "Brent crude tops $104 a barrel as hopes fade for deescalation in US-Israel war on Iran.",
+      "link": "https://www.aljazeera.com/economy/2026/3/26/oil-prices-rise-higher-as-iran-denies-us-talks-dimming-deescalation-hopes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T05:06:02Z",
+      "tier": 2
+    },
+    {
+      "title": "Malaysia\u2019s prime minister says Iran talks should end war",
+      "description": "Malaysia\u2019s Prime Minister Anwar Ibrahim said any talks with Iran must aim to end the war.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/malaysias-prime-minister-says-iran-talks-should-end-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T04:36:31Z",
+      "tier": 2
+    },
+    {
+      "title": "Videos show wave of missiles fired from Lebanon to Israel",
+      "description": "Videos show scenes of rocket interceptions in the sky over central Israel.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/videos-show-wave-of-missiles-fired-from-lebanon-to-israel?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T03:54:44Z",
+      "tier": 2
+    },
+    {
+      "title": "Russia slams second US-Israeli strike at Iran\u2019s Bushehr nuclear reactor",
+      "description": "Russia\u2019s foreign ministry has accused the US and Israel of trying to spark a nuclear disaster after a strike at Bushehr.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/russia-slams-second-us-israeli-strike-at-irans-bushehr-nuclear-reactor?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T03:31:36Z",
+      "tier": 2
+    },
+    {
+      "title": "Australia bans visitors from Iran amid war in the Middle East",
+      "description": "Australia&#039;s Home Affairs Department said decision to ban Iranian visitors amid the war was in the &#039;national interest&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/3/26/australia-bans-visitors-from-iran-amid-war-in-the-middle-east?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T03:28:18Z",
+      "tier": 2
+    },
+    {
       "title": "Harrison: \u2018There is going to be some kind of a military escalation.\u2019",
       "description": "Ross Harrison says public talk of diplomacy between the US and Iran is hiding hardline positions.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/harrison-there-is-going-to-be-some-kind-of-a-military-escalation?traffic_source=rss",
@@ -1309,38 +1349,6 @@
       "tier": 2
     },
     {
-      "title": "Iran releases video claiming to show downing of US jet",
-      "description": "Iran has released a video claiming to show the downing of a US F-18 fighter jet.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/iran-releases-video-claiming-to-show-downing-of-us-jet?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-25T20:42:03Z",
-      "tier": 2
-    },
-    {
-      "title": "Explosions and smoke seen as Iranian missiles hit Israel",
-      "description": "Explosions and smoke were seen in Israel after suspected Iranian strikes.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/explosions-and-smoke-seen-as-iranian-missiles-hit-israel?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-25T20:33:47Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump to visit Xi Jinping in China on May 14 and 15 after Iran war delay",
-      "description": "Press secretary Karoline Leavitt says Chinese President Xi Jinping will also visit US at a later date.",
-      "link": "https://www.aljazeera.com/news/2026/3/25/trump-to-visit-xi-jinping-in-china-on-may-14-and-15-after-iran-war-delay?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-25T20:20:16Z",
-      "tier": 2
-    },
-    {
-      "title": "US tells Iran to accept defeat or Trump will \u2018unleash hell\u2019",
-      "description": "The White House has warned Iran to accept what it called a military defeat, or the US will \u201chit harder\u201d than before.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/25/us-tells-iran-to-accept-defeat-or-trump-will-unleash?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-25T20:12:04Z",
-      "tier": 2
-    },
-    {
       "title": "Musketeer d'Artagnan's remains believed found under Dutch church",
       "description": "D'Artagnan was killed during the Siege of Maastricht in 1673 and later immortalised in the stories of Alexandre Dumas.",
       "link": "https://www.bbc.com/news/articles/cm2rew2dgzzo?at_medium=RSS&at_campaign=rss",
@@ -1363,22 +1371,14 @@
       "source": "BBC World",
       "time": "2026-03-24T20:34:20Z",
       "tier": 2
-    },
-    {
-      "title": "Everyday life in Asia is being upended by Iran war fuel crisis",
-      "description": "Asia relies heavily on oil and gas from the Gulf, and shortages and higher prices are starting to bite.",
-      "link": "https://www.bbc.com/news/articles/c1450zj6n48o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-24T17:12:50Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting located via web search remains patchy for March 26, 2026. USCENTCOM\u2019s latest directly located casualty statement still puts U.S. killed in action at 7 as of March 8, while AP reported by March 10 that Iranian retaliatory attacks had also killed seven soldiers in Kuwait and Saudi Arabia. On the offensive side, CENTCOM\u2019s official first-7-days fact sheet said U.S. forces had struck over 3,000 targets, and IDF said on February 28 that about 200 aircraft hit more than 500 Iranian targets in the opening wave. Today\u2019s major headlines point to continuing military escalation alongside contested talk of de-escalation, with U.S. officials pressing Iran to accept terms and Iranian officials publicly denying negotiations.",
+  "summary": "Confirmed reporting available in searched sources still points to severe Iranian casualties, with Iran's deputy health minister saying 1,255 people had been killed and more than 12,000 wounded by March 9-11, while Iran's UN ambassador put civilian deaths alone at 1,348. The Pentagon-confirmed US military death toll remained at seven, and AP/Al Jazeera reporting indicates Washington was still reinforcing the theater with additional warships, Marines, and airborne troops as of March 20-24. I found no reliable current official cumulative totals for Israeli deaths, US personnel in theater, or most weapons-expended fields, so those remain null rather than estimated.",
   "briefings": [
     {
       "date": "2026-03-26",
       "day": 26,
-      "summary": "Confirmed reporting located via web search remains patchy for March 26, 2026. USCENTCOM\u2019s latest directly located casualty statement still puts U.S. killed in action at 7 as of March 8, while AP reported by March 10 that Iranian retaliatory attacks had also killed seven soldiers in Kuwait and Saudi Arabia. On the offensive side, CENTCOM\u2019s official first-7-days fact sheet said U.S. forces had struck over 3,000 targets, and IDF said on February 28 that about 200 aircraft hit more than 500 Iranian targets in the opening wave. Today\u2019s major headlines point to continuing military escalation alongside contested talk of de-escalation, with U.S. officials pressing Iran to accept terms and Iranian officials publicly denying negotiations."
+      "summary": "Confirmed reporting available in searched sources still points to severe Iranian casualties, with Iran's deputy health minister saying 1,255 people had been killed and more than 12,000 wounded by March 9-11, while Iran's UN ambassador put civilian deaths alone at 1,348. The Pentagon-confirmed US military death toll remained at seven, and AP/Al Jazeera reporting indicates Washington was still reinforcing the theater with additional warships, Marines, and airborne troops as of March 20-24. I found no reliable current official cumulative totals for Israeli deaths, US personnel in theater, or most weapons-expended fields, so those remain null rather than estimated."
     },
     {
       "date": "2026-03-25",
