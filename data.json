@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-26T17:19:17Z",
+  "lastUpdated": "2026-03-26T19:32:36Z",
   "dayCount": 26,
   "banner": {
-    "strikes": "~10,000",
-    "killed": "1,916+",
-    "cost": "$16.1B+"
+    "strikes": "~5,500",
+    "killed": "2,681+",
+    "cost": "$15.0B+"
   },
   "humanCost": {
     "iranDeaths": "1,900",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "16",
+    "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "25",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "24,800+",
+    "iranWounded": "17,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1937",
+    "civilianDeaths": "1348",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$16.1 billion+",
-    "dailyBurnRate": "~$619M/day",
+    "totalCost": "$15.0 billion+",
+    "dailyBurnRate": "~$576M/day",
     "daysOfOps": 26,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-26",
-          "source": "LLM-verified (U.S. Department of War Weekly Sitrep, March 13, 2026: 'More than 50,000 service members are supporting Operation Epic Fury.')"
+          "source": "LLM-verified (AP, Mar. 24, 2026: U.S. preparing to send 1,000 more troops 'to supplement some 50,000 troops already in the region' (The Latest: US offers 15-point ceasefire plan to Iran))"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 500,
+          "quantity": 24,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-03-05",
-          "source": "CENTCOM, Navy"
+          "lastUpdated": "2026-03-26",
+          "source": "LLM-verified (DoD press conference transcript in searched results states a U.S. submarine launched 'more than two dozen Tomahawk land attack cruise missiles' in the strike package referenced there; exact cumulative Operation Epic Fury total not confirmed, so exact field total remains unconfirmed.)"
         },
         {
           "id": "jdam",
@@ -250,7 +250,7 @@
           "id": "mop_bunker_busters",
           "category": "GBU-57 MOP Bunker Busters",
           "unitCost": 3500000,
-          "quantity": 50,
+          "quantity": 2,
           "keywords": [
             "MOP",
             "GBU-57",
@@ -260,8 +260,8 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-03-10",
-          "source": "OpenClaw (auto-detected from RSS)"
+          "lastUpdated": "2026-03-26",
+          "source": "LLM-verified (DoD press conference transcript in searched results says 'the lead B-2 dropped two GBU-57 Massive Ordnance Penetrator weapons' on the first aim point referenced there; no confirmed cumulative Operation Epic Fury total found.)"
         },
         {
           "id": "fighter_sorties",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "500 \u00d7 $2,000,000 each",
-        "cost": "$1,000,000,000"
+        "detail": "24 \u00d7 $2,000,000 each",
+        "cost": "$48,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -393,8 +393,8 @@
       },
       {
         "category": "GBU-57 MOP Bunker Busters",
-        "detail": "50 \u00d7 $3,500,000 each",
-        "cost": "$175,000,000"
+        "detail": "2 \u00d7 $3,500,000 each",
+        "cost": "$7,000,000"
       },
       {
         "category": "Fighter/Attack Sorties",
@@ -435,6 +435,42 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reporting indicate continued Iranian missile attacks causing wider damage in Israel and ongoing pressure on Gulf infrastructure and shipping around the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline reporting says Israeli sources claimed the IRGC naval commander Alireza Tangsiri was killed near Bandar Abbas, while U.S. officials said Iran's navy had effectively been destroyed.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported U.S. preparations to deploy at least 1,000 additional 82nd Airborne troops, on top of roughly 50,000 already in the region.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on Mar. 26 that Iran rejected the U.S. ceasefire plan and continued attacks including a strike causing a fuel-tank fire at Kuwait International Airport.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 26, 2026",
       "severity": "high",
@@ -623,42 +659,6 @@
       "text": "AP reported on March 21 that Iran threatened Saudi Arabia with further attacks and that projectiles/drone activity continued toward Gulf states and UAE waters.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 20 that the U.S. military was deploying three more warships and roughly 2,500 more Marines to the Middle East.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 24 that at least 1,000 additional U.S. troops from the 82nd Airborne were set to deploy to supplement some 50,000 already in the region.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 21 that Iranian missiles struck near Arad/Dimona in southern Israel, signaling a possible new phase of targeting around sensitive strategic sites.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 21 that Iran warned any strike on its energy facilities would trigger attacks on US and Israeli energy and infrastructure assets.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-03-26T19:19:11Z",
+      "text": "<strong>Key takeaways from Trump\u2019s war on Iran meeting</strong> -- US President Donald Trump held a cabinet meeting where he discussed the war on Iran with senior officials. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/key-takeaways-from-trumps-war-on-iran-meeting?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-26T19:02:32Z",
+      "text": "<strong>Trump says Iran \u2018begging\u2019 for deal to end war as Tehran issues new demands</strong> -- Trump says US, Israel wiped out navy and air force, as Iran lawmakers plan to collect tolls for transiting ships. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/26/as-trump-claims-us-winning-tehran-asserts-legal-right-over-hormuz-strait?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-26T17:58:03Z",
+      "text": "<strong>Iranian missiles cause widespread damage across Israel in latest wave</strong> -- Iranian missiles have caused widespread damage across Israel in the latest wave of attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/iranian-missiles-cause-widespread-damage-across-israel-in-latest-wave?traffic_source=rss"
+    },
+    {
       "time": "2026-03-26T16:33:18Z",
       "text": "<strong>Pentagon boss claims Iran now has \u2018no navy, no navy leader\u2019</strong> -- Defense Secretary Pete Hegseth has said that Iran war is &amp;#039;stuff for the history books&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/pentagon-boss-claims-iran-now-has-no-navy-no-navy?traffic_source=rss"
@@ -764,7 +779,7 @@
     },
     {
       "time": "2026-03-26T15:56:05Z",
-      "text": "<strong>Tehran\u2019s\u2019tollbooth\u2019: How Iran picks who to let through Strait of Hormuz</strong> -- Iran has blocked the passage of vessels carrying 20 percent of the world\u2019s oil and liquefied natural gas supplies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Tehran\u2019s \u2018toll booth\u2019: How Iran picks who to let through Strait of Hormuz</strong> -- Iran has blocked the passage of vessels carrying 20 percent of the world\u2019s oil and liquefied natural gas supplies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/26/tehranstollbooth-how-iran-picks-who-to-let-through-strait-of-hormuz?traffic_source=rss"
     },
     {
@@ -836,21 +851,6 @@
       "time": "2026-03-26T08:53:33Z",
       "text": "<strong>\u2018He will call me Mama\u2019: The Gaza \u2018grandmother\u2019 raising an orphaned baby</strong> -- Maha was &amp;#039;Grandmother&amp;#039; in her family until she adopted Hamza, born the day an Israeli air strike killed his parents. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/features/longform/2026/3/26/he-will-call-me-mama-the-gaza-grandmother-raising-an-orphaned-baby?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-26T08:51:30Z",
-      "text": "<strong>Helium hitch: Why US-Israel war on Iran could cause MRI scan delays</strong> -- Shortage of helium will have ripple effects across medical and other industries. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/3/26/helium-hitch-why-us-israel-war-on-iran-could-cause-mri-scan-delays?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-26T08:21:43Z",
-      "text": "<strong>German minister calls Iran war an \u2018economic catastrophe\u2019</strong> -- Germany\u2019s defence minister, Boris Pistorius, says the economic impact of the war is &amp;quot;absolutely evident&amp;quot;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/german-minister-calls-iran-war-an-economic?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-26T07:47:23Z",
-      "text": "<strong>Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands</strong> -- Deadly attacks rise as Israel announces strikes on Isfahan and as Trump and Tehran debate ceasefire terms. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/26/us-israel-launch-extensive-strikes-on-central-iran-two-teenagers-killed?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,54 @@
   ],
   "newsFeed": [
     {
+      "title": "Key takeaways from Trump\u2019s war on Iran meeting",
+      "description": "US President Donald Trump held a cabinet meeting where he discussed the war on Iran with senior officials.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/key-takeaways-from-trumps-war-on-iran-meeting?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T19:19:11Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump says Iran \u2018begging\u2019 for deal to end war as Tehran issues new demands",
+      "description": "Trump says US, Israel wiped out navy and air force, as Iran lawmakers plan to collect tolls for transiting ships.",
+      "link": "https://www.aljazeera.com/news/2026/3/26/as-trump-claims-us-winning-tehran-asserts-legal-right-over-hormuz-strait?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T19:02:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Zelensky visits Saudi Arabia after offering Ukraine's drone expertise",
+      "description": "There is renewed urgency for Ukraine to get a drone deal done, as the US increasingly focuses on Iran.",
+      "link": "https://www.bbc.com/news/articles/cx2r4wxdw3no?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-26T18:24:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Iranian missiles cause widespread damage across Israel in latest wave",
+      "description": "Iranian missiles have caused widespread damage across Israel in the latest wave of attacks.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/iranian-missiles-cause-widespread-damage-across-israel-in-latest-wave?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-26T17:58:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Rationing power and diluting petrol - how African countries are coping with effects of Iran war",
+      "description": "The disruption in oil supplies has caused shortages and concerns in several African countries.",
+      "link": "https://www.bbc.com/news/articles/cq8wkq1n9epo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-26T17:57:41Z",
+      "tier": 2
+    },
+    {
+      "title": "Air Canada CEO 'deeply saddened' his English-only message distracted from victims of crash",
+      "description": "Michael Rousseau has faced calls to resign for not speaking French in his message after the LaGuardia crash, which killed two Air Canada pilots.",
+      "link": "https://www.bbc.com/news/articles/cgrlnw70xyko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-26T17:57:30Z",
+      "tier": 2
+    },
+    {
       "title": "Pentagon boss claims Iran now has \u2018no navy, no navy leader\u2019",
       "description": "Defense Secretary Pete Hegseth has said that Iran war is &#039;stuff for the history books&#039;.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/pentagon-boss-claims-iran-now-has-no-navy-no-navy?traffic_source=rss",
@@ -1229,7 +1277,7 @@
       "tier": 2
     },
     {
-      "title": "Tehran\u2019s\u2019tollbooth\u2019: How Iran picks who to let through Strait of Hormuz",
+      "title": "Tehran\u2019s \u2018toll booth\u2019: How Iran picks who to let through Strait of Hormuz",
       "description": "Iran has blocked the passage of vessels carrying 20 percent of the world\u2019s oil and liquefied natural gas supplies.",
       "link": "https://www.aljazeera.com/news/2026/3/26/tehranstollbooth-how-iran-picks-who-to-let-through-strait-of-hormuz?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1242,14 +1290,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/pakistan-says-it-is-mediating-us-iran-talks?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-26T15:33:07Z",
-      "tier": 2
-    },
-    {
-      "title": "Air Canada CEO 'deeply saddened' his poor French skills distracted from victims of crash",
-      "description": "Michael Rousseau has faced calls to resign for not speaking French in his message after the LaGuardia crash, which killed two Air Canada pilots.",
-      "link": "https://www.bbc.com/news/articles/cgrlnw70xyko?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-26T14:40:10Z",
       "tier": 2
     },
     {
@@ -1309,30 +1349,6 @@
       "tier": 2
     },
     {
-      "title": "Iran to Lebanon: Four million people displaced by US-Israeli war",
-      "description": "Three million Iranians and at least a million Lebanese have been forced from their homes because of US-Israeli attacks.",
-      "link": "https://www.aljazeera.com/news/2026/3/26/iran-to-lebanon-four-million-people-displaced-by-us-israeli-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-26T11:40:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Germany warns of world economic \u2018catastrophe\u2019; OECD cuts UK growth forecast",
-      "description": "European powers and bodies warn of economic collapse as the war on Iran nears one-month mark.",
-      "link": "https://www.aljazeera.com/news/2026/3/26/germany-warns-of-world-economic-catastrophe-oecd-cuts-uk-growth-forecast?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-26T11:16:58Z",
-      "tier": 2
-    },
-    {
-      "title": "Iranian naval commander Alireza Tangsiri killed in attack, Israel says",
-      "description": "Defence minister claims Israel has killed Alireza Tangsiri, citing his role in blocking the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/2026/3/26/iranian-naval-commander-alireza-tangsiri-killed-in-attack-says-israel?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-26T11:10:39Z",
-      "tier": 2
-    },
-    {
       "title": "Zimbabwe says 15 nationals killed after being lured to fight for Russia",
       "description": "Zimbabwe says it is engaging the Russian government to repatriate bodies and bring home those still alive.",
       "link": "https://www.bbc.com/news/articles/clyxevz45x9o?at_medium=RSS&at_campaign=rss",
@@ -1349,36 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "How the Iran war is causing fuel chaos in the Philippines",
-      "description": "BBC News Asia Business Correspondent Suranajana Tewari spoke to people taking to the streets of Manila.",
-      "link": "https://www.bbc.com/news/videos/cly64y288gwo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-26T05:13:46Z",
-      "tier": 2
-    },
-    {
       "title": "Prepare for turbulence - how a prolonged Middle East conflict could reshape how we fly",
       "description": "The Gulf's hub airports made long-distance travel cheaper - but now their future looks unclear.",
       "link": "https://www.bbc.com/news/articles/cn08x9lw0pzo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-26T00:41:16Z",
       "tier": 2
-    },
-    {
-      "title": "Watch: Inside Palestinian homes attacked by settlers",
-      "description": "Violence began after a teenage settler was killed, reportedly after being hit by a vehicle driven by a Palestinian.",
-      "link": "https://www.bbc.com/news/videos/cd9vnznv075o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-23T17:53:17Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on March 25-26, 2026 indicates the war\u2019s death toll in Iran has risen to more than 1,900, with 13 U.S. military personnel and 16 people in Israel reported killed; AP, citing CENTCOM commander Adm. Brad Cooper, also reported that U.S. forces have struck more than 10,000 targets so far. AP further reported thousands more U.S. troops were nearing the region, while current Al Jazeera reporting/headlines say Iran is tightening control over the Strait of Hormuz and Israel claims it killed IRGC naval commander Alireza Tangsiri near Bandar Abbas.",
+  "summary": "Confirmed reporting on March 25-26, 2026 indicates the war remains active despite a U.S. ceasefire proposal: AP reported more than 1,900 people killed in Iran, 13 U.S. military deaths, and a corrected Israeli war-related death total of 20 including two deaths in Lebanon, while AP also said the U.S. is preparing to add at least 1,000 more troops to roughly 50,000 already in the region. For operational tempo, the clearest confirmed strike-count found in searched sources remains CENTCOM commander Adm. Brad Cooper's March 11 statement that U.S. forces had struck over 5,500 targets in Iran; current official cumulative counts for destroyers, carriers, drones, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, fighter sorties, and interceptors were not clearly confirmed in the searched official and major-wire reporting.",
   "briefings": [
     {
       "date": "2026-03-26",
       "day": 26,
-      "summary": "Confirmed reporting on March 25-26, 2026 indicates the war\u2019s death toll in Iran has risen to more than 1,900, with 13 U.S. military personnel and 16 people in Israel reported killed; AP, citing CENTCOM commander Adm. Brad Cooper, also reported that U.S. forces have struck more than 10,000 targets so far. AP further reported thousands more U.S. troops were nearing the region, while current Al Jazeera reporting/headlines say Iran is tightening control over the Strait of Hormuz and Israel claims it killed IRGC naval commander Alireza Tangsiri near Bandar Abbas."
+      "summary": "Confirmed reporting on March 25-26, 2026 indicates the war remains active despite a U.S. ceasefire proposal: AP reported more than 1,900 people killed in Iran, 13 U.S. military deaths, and a corrected Israeli war-related death total of 20 including two deaths in Lebanon, while AP also said the U.S. is preparing to add at least 1,000 more troops to roughly 50,000 already in the region. For operational tempo, the clearest confirmed strike-count found in searched sources remains CENTCOM commander Adm. Brad Cooper's March 11 statement that U.S. forces had struck over 5,500 targets in Iran; current official cumulative counts for destroyers, carriers, drones, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, fighter sorties, and interceptors were not clearly confirmed in the searched official and major-wire reporting."
     },
     {
       "date": "2026-03-25",
