@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-03-28T17:46:47Z",
+  "lastUpdated": "2026-03-28T19:00:12Z",
   "dayCount": 28,
   "banner": {
     "strikes": "~7,800",
-    "killed": "1,993+",
-    "cost": "$15.8B+"
+    "killed": "1,931+",
+    "cost": "$15.1B+"
   },
   "humanCost": {
-    "iranDeaths": "1,937",
+    "iranDeaths": "1,900",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "16",
+    "israeliDeaths": "18",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$15.8 billion+",
-    "dailyBurnRate": "~$563M/day",
+    "totalCost": "$15.1 billion+",
+    "dailyBurnRate": "~$539M/day",
     "daysOfOps": 28,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 2500,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-28",
-          "source": "LLM-verified (War Department/Pentagon News, March 13, 2026: more than 50,000 service members supporting Operation Epic Fury.)"
+          "source": "LLM-verified (AP, Mar. 28, 2026: USS Tripoli and elements of the 31st MEU arriving in region, about 2,500 Marines. No reliable current total theater-wide deployment figure found, so latest specifically confirmed reinforcement figure provided.)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-03-28",
-          "source": "LLM-verified (U.S. DoD/CENTCOM Operation Epic Fury Fact Sheet dated March 18, 2026 lists 8,000+ combat flights.)"
+          "source": "LLM-verified (DoD Operation Epic Fury Fact Sheet, Mar. 18, 2026: 'Combat Flights: 8,000+'; used as closest official cumulative sorties figure.)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 28 days",
-        "cost": "$700,000,000"
+        "detail": "2,500 \u00d7 $500/day \u00d7 28 days",
+        "cost": "$35,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 28, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iran fired six ballistic missiles and 29 drones at Prince Sultan Air Base in Saudi Arabia on Mar. 28, 2026, injuring at least 15 U.S. troops in that strike.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 28, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Secretary of State Marco Rubio said the U.S. expects the war could finish 'in the next couple of weeks,' according to BBC headline context cited by user.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 28, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Houthi forces in Yemen claimed their first direct missile attack on Israel on March 28, 2026, potentially opening a new front.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "RSS headlines indicate intensified US-Israeli strikes on Tehran and Isfahan and renewed Houthi warnings of possible direct intervention.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 27-28, 2026 that Houthi involvement increased, including a missile fired toward Israel and concerns about broader regional escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,13 @@
   ],
   "developments": [
     {
+      "time": "2026-03-28T17:48:55Z",
+      "text": "<strong>As war rages, Iranian politicians push for exit from nuclear weapons treaty</strong> -- While US-Israeli attacks hit key infrastructure, hardliners demand withdrawal from Nuclear Non-Proliferation Treaty. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/28/lawmakers-push-npt-exit-as-us-israel-hit-irans-nuclear-sites-steel-plants?traffic_source=rss"
+    },
+    {
       "time": "2026-03-28T15:40:03Z",
-      "text": "<strong>Three journalists killed in Israeli strike on marked press car in Lebanon</strong> -- Lebanon&amp;#039;s president condemns &amp;#039;blatant crime&amp;#039;, as Israeli strikes kill more journalists. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Three journalists killed in Israeli strike on marked press car in Lebanon</strong> -- Israeli attack on clearly marked press car kills reporters as WHO laments deadly day for paramedics. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/28/three-journalists-killed-in-israeli-strike-on-marked-press-car-in-lebanon?traffic_source=rss"
     },
     {
@@ -846,11 +851,6 @@
       "time": "2026-03-28T00:05:46Z",
       "text": "<strong>Trump says US-Israeli war on Iran creating a new Middle East</strong> -- Donald Trump told a Saudi investment conference that the Middle East will soon be free from Iranian \u201cnuclear blackmail.\u201d <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/28/trump-says-us-israeli-war-on-iran-creating-a-new-middle-east?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-28T00:00:48Z",
-      "text": "<strong>Iran war live: Trump again slams NATO\u2019s lack of support for war on Tehran</strong> -- Iranian Red Crescent says more than 92,600 civilian units were damaged across the country in US-Israeli attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/3/28/iran-war-live-trump-again-slams-natos-lack-of-support-for-war-on-tehran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "As war rages, Iranian politicians push for exit from nuclear weapons treaty",
+      "description": "While US-Israeli attacks hit key infrastructure, hardliners demand withdrawal from Nuclear Non-Proliferation Treaty.",
+      "link": "https://www.aljazeera.com/news/2026/3/28/lawmakers-push-npt-exit-as-us-israel-hit-irans-nuclear-sites-steel-plants?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-28T17:48:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Three Lebanese journalists killed in Israeli strike, say broadcasters",
+      "description": "The Israeli military confirms it killed Ali Shoeib from the Hezbollah-affiliated Al Manar TV.",
+      "link": "https://www.bbc.com/news/articles/cgme1j70294o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-28T17:48:44Z",
+      "tier": 2
+    },
+    {
       "title": "Tears and defiance as Lebanese family bury child, 11, killed in Israeli strike",
       "description": "Jawad Younes and his uncle Ragheb were laid to rest on Saturday after their family compound was hit a day earlier.",
       "link": "https://www.bbc.com/news/articles/c62lx8ek9x9o?at_medium=RSS&at_campaign=rss",
@@ -1222,7 +1238,7 @@
     },
     {
       "title": "Three journalists killed in Israeli strike on marked press car in Lebanon",
-      "description": "Lebanon&#039;s president condemns &#039;blatant crime&#039;, as Israeli strikes kill more journalists.",
+      "description": "Israeli attack on clearly marked press car kills reporters as WHO laments deadly day for paramedics.",
       "link": "https://www.aljazeera.com/news/2026/3/28/three-journalists-killed-in-israeli-strike-on-marked-press-car-in-lebanon?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-03-28T15:40:03Z",
@@ -1301,22 +1317,6 @@
       "tier": 2
     },
     {
-      "title": "Philippine transport strikers say Marcos Jr failing to control oil prices",
-      "description": "Transport workers call on Philippines President Marcos Jr to focus on price caps and reining in oil companies.",
-      "link": "https://www.aljazeera.com/economy/2026/3/28/philippine-transport-strikers-say-marcos-jr-failing-to-control-oil-prices?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-28T08:31:13Z",
-      "tier": 2
-    },
-    {
-      "title": "US-Israel war on Iran: What\u2019s happening on day 29 of attacks?",
-      "description": "Tensions continue to rise with Iran warning a &#039;heavy price&#039; will be paid after Israeli air attacks.",
-      "link": "https://www.aljazeera.com/news/2026/3/28/iran-war-what-is-happening-on-day-29-of-us-israel-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-28T08:17:54Z",
-      "tier": 2
-    },
-    {
       "title": "Nepal's ex-PM arrested over fatal protest crackdown",
       "description": "More than 70 people were killed during an uprising last year which ousted Oli's government.",
       "link": "https://www.bbc.com/news/articles/cn89ry7y835o?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed March 28, 2026 reporting shows the war widening rather than winding down: AP reported that more than 300 U.S. troops have now been wounded, including at least 15 injured in Iran\u2019s latest strike on Saudi Arabia\u2019s Prince Sultan Air Base, while roughly 2,500 U.S. Marines have arrived in the region. AP\u2019s latest confirmed fatality figures found in this search still put U.S. military deaths at 13 and deaths in Israel at 16. On the operational side, the latest official DoD/CENTCOM fact sheet available lists 7,800+ targets struck and 8,000+ combat flights. Houthi entry into the conflict on March 28 adds a new maritime threat vector around Israel and commercial shipping lanes.",
+  "summary": "As of Saturday, March 28, 2026, the latest accessible confirmed reporting indicates more than 1,900 people have been killed in Iran, 13 U.S. service members have been killed in the war, and 18 people have died in Israel, while the Pentagon\u2019s March 18 Operation Epic Fury fact sheet lists 7,800+ targets struck and 8,000+ combat flights. AP also reports more than 300 U.S. service members have been wounded overall, including at least 15 wounded in Iran\u2019s latest missile-and-drone attack on Saudi Arabia\u2019s Prince Sultan Air Base, as additional U.S. forces including roughly 2,500 Marines aboard USS Tripoli arrive in the region.",
   "briefings": [
     {
       "date": "2026-03-28",
       "day": 28,
-      "summary": "Confirmed March 28, 2026 reporting shows the war widening rather than winding down: AP reported that more than 300 U.S. troops have now been wounded, including at least 15 injured in Iran\u2019s latest strike on Saudi Arabia\u2019s Prince Sultan Air Base, while roughly 2,500 U.S. Marines have arrived in the region. AP\u2019s latest confirmed fatality figures found in this search still put U.S. military deaths at 13 and deaths in Israel at 16. On the operational side, the latest official DoD/CENTCOM fact sheet available lists 7,800+ targets struck and 8,000+ combat flights. Houthi entry into the conflict on March 28 adds a new maritime threat vector around Israel and commercial shipping lanes."
+      "summary": "As of Saturday, March 28, 2026, the latest accessible confirmed reporting indicates more than 1,900 people have been killed in Iran, 13 U.S. service members have been killed in the war, and 18 people have died in Israel, while the Pentagon\u2019s March 18 Operation Epic Fury fact sheet lists 7,800+ targets struck and 8,000+ combat flights. AP also reports more than 300 U.S. service members have been wounded overall, including at least 15 wounded in Iran\u2019s latest missile-and-drone attack on Saudi Arabia\u2019s Prince Sultan Air Base, as additional U.S. forces including roughly 2,500 Marines aboard USS Tripoli arrive in the region."
     },
     {
       "date": "2026-03-27",
