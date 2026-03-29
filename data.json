@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-29T21:47:28Z",
+  "lastUpdated": "2026-03-29T22:51:16Z",
   "dayCount": 29,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "1,994+",
-    "cost": "$16.2B+"
+    "strikes": "~11,000",
+    "killed": "1,533+",
+    "cost": "$16.5B+"
   },
   "humanCost": {
-    "iranDeaths": "1,937",
+    "iranDeaths": "1,500",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "19",
+    "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "25",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "24,800+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1276",
+    "civilianDeaths": "1250",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$16.2 billion+",
-    "dailyBurnRate": "~$559M/day",
+    "totalCost": "$16.5 billion+",
+    "dailyBurnRate": "~$569M/day",
     "daysOfOps": 29,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-29",
-          "source": "LLM-verified (AP on March 28, 2026 reported the U.S. force in region includes two aircraft carriers)"
+          "source": "LLM-verified (U.S. Department of War reporting and imagery show USS Abraham Lincoln and USS Gerald R. Ford operating in support of Operation Epic Fury; March 2, 2026 briefing also said two carrier strike groups moved into position)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-29",
-          "source": "LLM-verified (AP on March 28, 2026 reported about 50,000 U.S. troops in the region)"
+          "source": "LLM-verified (Pentagon News / U.S. Department of War, March 13, 2026: 'More than 50,000 service members are supporting Operation Epic Fury')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-03-29",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury fact sheet dated March 18, 2026 lists 'Combat Flights: 8,000+')"
+          "source": "LLM-verified (U.S. Department of War / CENTCOM Operation Epic Fury Fact Sheet: The First 29 Days (March 28, 2026): 'Combat Flights: 11,000+')"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/BBC reporting indicates the conflict is widening regionally, with Houthi attacks opening another front and continued Israel-Hezbollah fighting in Lebanon.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports Iran is accusing the U.S. of preparing a possible ground attack while U.S. troop reinforcements continue to arrive in theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera report continued Iranian attacks on Gulf targets, including a Saudi air base and infrastructure in Kuwait.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 29, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on Mar. 29 reported Iran warned U.S. ground troops would be 'set on fire' if deployed.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP March 28: an Iranian strike on Prince Sultan Air Base in Saudi Arabia wounded at least 15 US troops, showing continued threat to Gulf bases.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP March 28-29: additional US forces are arriving, including USS Tripoli with about 2,500 Marines, and other Marine/Navy elements have been ordered toward the region.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP March 29: regional diplomacy in Islamabad pushed de-escalation while Iran warned that a US ground invasion would set American troops 'on fire'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-03-29T22:36:05Z",
+      "text": "<strong>Iran accuses US of plotting ground attack, as Israel steps up bombardment</strong> -- Power being restored after Iran&amp;#039;s Ministry of Energy reported outages in the capital, Tehran following attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/29/iran-accuses-us-of-plotting-ground-attack-as-israel-steps-up-bombardment?traffic_source=rss"
+    },
+    {
       "time": "2026-03-29T20:31:14Z",
       "text": "<strong>IRGC spokesperson says Trump \u2018only understands the language of force\u2019</strong> -- IRGC spokesperson Ebrahim Zolfaghari dismisses threats of US ground operations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/29/irgc-spokesperson-says-trump-only-understands-the-language-of?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-03-29T08:54:04Z",
       "text": "<strong>US-Israel war on Iran: What\u2019s happening on day 30 of attacks?</strong> -- Foreign ministers from Pakistan, Turkiye, Egypt and Saudi Arabia hold talks in Islamabad to end US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/29/us-israel-war-on-iran-whats-happening-on-day-30-of-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-29T08:44:59Z",
-      "text": "<strong>Analyst says that Iran\u2019s interest is in an extended war</strong> -- Rob Geist-Pinfold, says that the United States has an interest in ending the war while Tehran is likely to prolong it. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/quotable/2026/3/29/analyst-says-that-irans-interest-is-in-an-extended-war?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran accuses US of plotting ground attack, as Israel steps up bombardment",
+      "description": "Power being restored after Iran&#039;s Ministry of Energy reported outages in the capital, Tehran following attacks.",
+      "link": "https://www.aljazeera.com/news/2026/3/29/iran-accuses-us-of-plotting-ground-attack-as-israel-steps-up-bombardment?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-29T22:36:05Z",
+      "tier": 2
+    },
+    {
       "title": "Israeli police block Latin Patriarch from Palm Sunday mass in Jerusalem",
       "description": "The move drew criticism from the church, global leaders and the US ambassador. Israel's PM said it was a safety measure following recent Iranian strikes.",
       "link": "https://www.bbc.com/news/articles/cvg0128z41eo?at_medium=RSS&at_campaign=rss",
@@ -1363,22 +1371,14 @@
       "source": "BBC World",
       "time": "2026-03-29T00:02:46Z",
       "tier": 2
-    },
-    {
-      "title": "Twenty-two migrants die off Greek coast after six days at sea",
-      "description": "Poor weather and a lack of food and water contributed to the deaths, the Greek coastguard says.",
-      "link": "https://www.bbc.com/news/articles/cnv8z1lvn8ro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-28T15:11:59Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of March 29, 2026 shows the cumulative death toll at 1,937 in Iran, 19 in Israel, 13 U.S. service members, and 25 across Gulf states, while Iranian wounded stand at 24,800 according to the latest Al Jazeera tracker citing official sources. AP reported on March 28 that more than 300 U.S. personnel have now been wounded and that roughly 50,000 U.S. troops and two carrier groups remain in the region. The Pentagon\u2019s March 18 Operation Epic Fury fact sheet continues to be the clearest official strike metric located, listing 7,800+ targets struck and 8,000+ combat flights. Today's confirmed developments indicate continued Iranian attacks on Gulf and Israeli targets, plus a new Houthi front against Israel, while no newer official cumulative weapons-expended totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptors.",
+  "summary": "Confirmed reporting as of March 29, 2026 shows the war still expanding regionally rather than winding down: AP reported on March 28 that more than 300 U.S. troops have been wounded and 13 have been killed, while AP on March 25-26 said Iran\u2019s Health Ministry put Iran\u2019s death toll at more than 1,500 and Israel reported 20 deaths related to the war. The latest official CENTCOM/Department of War fact sheet dated March 28 said Operation Epic Fury has struck 11,000-plus targets and flown 11,000-plus combat flights. AP and Al Jazeera also reported fresh Iranian attacks on Gulf and Israeli targets, continued Israeli bombardment, and additional U.S. troop deployments to the region.",
   "briefings": [
     {
       "date": "2026-03-29",
       "day": 29,
-      "summary": "Confirmed reporting as of March 29, 2026 shows the cumulative death toll at 1,937 in Iran, 19 in Israel, 13 U.S. service members, and 25 across Gulf states, while Iranian wounded stand at 24,800 according to the latest Al Jazeera tracker citing official sources. AP reported on March 28 that more than 300 U.S. personnel have now been wounded and that roughly 50,000 U.S. troops and two carrier groups remain in the region. The Pentagon\u2019s March 18 Operation Epic Fury fact sheet continues to be the clearest official strike metric located, listing 7,800+ targets struck and 8,000+ combat flights. Today's confirmed developments indicate continued Iranian attacks on Gulf and Israeli targets, plus a new Houthi front against Israel, while no newer official cumulative weapons-expended totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptors."
+      "summary": "Confirmed reporting as of March 29, 2026 shows the war still expanding regionally rather than winding down: AP reported on March 28 that more than 300 U.S. troops have been wounded and 13 have been killed, while AP on March 25-26 said Iran\u2019s Health Ministry put Iran\u2019s death toll at more than 1,500 and Israel reported 20 deaths related to the war. The latest official CENTCOM/Department of War fact sheet dated March 28 said Operation Epic Fury has struck 11,000-plus targets and flown 11,000-plus combat flights. AP and Al Jazeera also reported fresh Iranian attacks on Gulf and Israeli targets, continued Israeli bombardment, and additional U.S. troop deployments to the region."
     },
     {
       "date": "2026-03-28",
