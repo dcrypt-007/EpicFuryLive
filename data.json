@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-03-29T13:20:21Z",
+  "lastUpdated": "2026-03-29T14:53:39Z",
   "dayCount": 29,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "3,069+",
-    "cost": "$16.2B+"
+    "strikes": "~7,000",
+    "killed": "3,020+",
+    "cost": "$16.1B+"
   },
   "humanCost": {
-    "iranDeaths": "1,937",
+    "iranDeaths": "1,500",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "19",
+    "israeliDeaths": "16",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "3",
+    "gulfCasualties": "4",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "24,800+",
+    "iranWounded": "18,551+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1348",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$16.2 billion+",
-    "dailyBurnRate": "~$559M/day",
+    "totalCost": "$16.1 billion+",
+    "dailyBurnRate": "~$554M/day",
     "daysOfOps": 29,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-29",
-          "source": "LLM-verified (AP, March 24, 2026: U.S. was preparing to send at least 1,000 more troops 'to supplement some 50,000 troops already in the Mideast.')"
+          "source": "LLM-verified (AP, March 24: U.S. prepared to send 1,000 more troops 'to supplement some 50,000 troops already in the Mideast' (apnews.com/article/8bb5e79a98ea72fccc5c50b4931ad778))"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-03-29",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, Mar. 18, 2026: 'Combat Flights: 8,000+'.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+' (media.defense.gov/.../OPERATION-EPIC-FURY-FACT-SHEET.PDF); this is combat flights, not explicitly fighter-only sorties.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP March 28: an Iranian strike on Prince Sultan Air Base in Saudi Arabia wounded at least 15 US troops, showing continued threat to Gulf bases.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP March 28-29: additional US forces are arriving, including USS Tripoli with about 2,500 Marines, and other Marine/Navy elements have been ordered toward the region.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP March 29: regional diplomacy in Islamabad pushed de-escalation while Iran warned that a US ground invasion would set American troops 'on fire'.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 29, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera headline on March 28 reported missiles hit the southern Israeli city of Eilat.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline on March 28 reported suspected Iranian drone strikes caused damage at Kuwait International Airport.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on March 25 reported an Iranian drone strike hit a fuel tank at Kuwait International Airport, underscoring continued risk to Gulf aviation and energy infrastructure.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on March 28 reported Iran fired six ballistic missiles and 29 drones at Saudi Arabia's Prince Sultan air base, wounding at least 15 U.S. troops in the latest attack.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-03-29T14:26:35Z",
+      "text": "<strong>\u2018Nowhere is really safe\u2019: Iranian dissidents grapple with US war in Iran</strong> -- Critics of Iran&amp;#039;s government say they fear retribution while in exile, as well as growing anti-immigrant sentiment. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/longform/2026/3/29/nowhere-is-really-safe-iranian-dissidents-grapple-with-us-war-in-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-29T13:33:05Z",
+      "text": "<strong>Iran \u2018hits\u2019 US AWACS, air tankers: What else has it targeted in past month?</strong> -- Iran reportedly hits E-3 Sentry flying radars, which track drones, missiles, aircraft from hundreds of kilometres away. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/29/iran-hits-us-awacs-air-tankers-what-else-has-it-targeted-in-past-month?traffic_source=rss"
+    },
+    {
       "time": "2026-03-29T11:10:43Z",
       "text": "<strong>Pakistan hosts four-nation bid to encourage US, Iran towards diplomacy</strong> -- Top diplomats of Pakistan, Egypt, Saudi Arabia and Turkiye meet to prepare ground for de-escalation in war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/29/pakistan-hosts-four-nation-bid-to-encourage-us-iran-towards-diplomacy?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-03-28T21:56:30Z",
       "text": "<strong>Pakistan secures Iran deal to send 20 ships through Strait of Hormuz</strong> -- Islamabad&amp;#039;s diplomatic push bears fruit as the world watches for signs of a broader breakthrough. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/28/pakistan-secures-iran-deal-to-send-20-ships-through-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-28T20:58:37Z",
-      "text": "<strong>Kuwait airport hit by Iranian drone strikes</strong> -- Thick, black smoke rose from Kuwait International Airport Saturday after suspected Iranian drone strikes caused damage. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/28/kuwait-airport-hit-by-iranian-drone-strikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-28T20:50:59Z",
-      "text": "<strong>Could Ukraine\u2019s drone expertise serve Gulf countries?</strong> -- Gulf nations seek new defence partnerships as Iran war escalates. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/3/28/could-ukraines-drone-expertise-serve-gulf-countries?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,27 @@
   ],
   "newsFeed": [
     {
+      "title": "\u2018Nowhere is really safe\u2019: Iranian dissidents grapple with US war in Iran",
+      "description": "Critics of Iran&#039;s government say they fear retribution while in exile, as well as growing anti-immigrant sentiment.",
+      "link": "https://www.aljazeera.com/features/longform/2026/3/29/nowhere-is-really-safe-iranian-dissidents-grapple-with-us-war-in-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-29T14:26:35Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran \u2018hits\u2019 US AWACS, air tankers: What else has it targeted in past month?",
+      "description": "Iran reportedly hits E-3 Sentry flying radars, which track drones, missiles, aircraft from hundreds of kilometres away.",
+      "link": "https://www.aljazeera.com/news/2026/3/29/iran-hits-us-awacs-air-tankers-what-else-has-it-targeted-in-past-month?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-29T13:33:05Z",
+      "tier": 2
+    },
+    {
       "title": "Iranian attacks across Gulf continue as major industrial sites hit",
       "description": "A number of people are said to have been injured after attacks on aluminium sites in the UAE and Bahrain.",
       "link": "https://www.bbc.com/news/articles/cp86yrq5jy7o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-03-29T11:38:20Z",
+      "time": "2026-03-29T13:32:49Z",
       "tier": 2
     },
     {
@@ -1325,14 +1341,6 @@
       "tier": 2
     },
     {
-      "title": "As war on Iran enters second month, Yemen\u2019s Houthis open new front",
-      "description": "The Yemeni group pledges more attacks on Israel as fears mount that the worsening conflict will spiral out of control.",
-      "link": "https://www.aljazeera.com/news/2026/3/29/as-war-on-iran-enters-second-month-yemens-houthis-open-new-front?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-29T00:59:21Z",
-      "tier": 2
-    },
-    {
       "title": "Jeremy Bowen: Trump is waging war based on instinct and it isn't working",
       "description": "One month into the conflict in Iran, Trump's gut-instinct approach is not proving effective, writes the BBC's international editor.",
       "link": "https://www.bbc.com/news/articles/c5y969pnxgvo?at_medium=RSS&at_campaign=rss",
@@ -1341,19 +1349,11 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Pakistan, Turkiye, Egypt, Saudi seek to de-escalate",
-      "description": "Push for diplomacy as Iran threatens retaliatory attacks on Israeli, US universities in the Middle East.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/3/29/iran-war-live-houthis-attack-israel-anti-war-protesters-rally-in-tel-aviv?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-29T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Key moments in first month of US-Israeli war on Iran",
-      "description": "One month after US and Israel launched strikes on Iran, the conflict has escalated across the Middle East.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/28/key-moments-in-first-month-of-us-israeli-war-on-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-28T22:50:55Z",
+      "title": "Tears and defiance as Lebanese family bury child, 11, killed in Israeli strike",
+      "description": "Jawad Younes and his uncle Ragheb were laid to rest on Saturday after their family compound was hit a day earlier.",
+      "link": "https://www.bbc.com/news/articles/c62lx8ek9x9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-28T19:02:40Z",
       "tier": 2
     },
     {
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on March 29, 2026 shows diplomacy efforts continuing in Islamabad while military escalation risks remain high: AP reports Iran warned the U.S. against any ground invasion, the U.S. has sent thousands of additional Marines and paratroopers into the region, and the Houthis have now entered the conflict with missile launches toward Israel. On casualties, AP most recently reported 13 confirmed U.S. military dead and more than 300 U.S. wounded, while exact current cumulative totals for Iranian deaths, Iranian wounded, Israeli deaths, and Gulf-state deaths could not be independently verified to the standard requested. For operations tempo, the latest confirmed official number found was CENTCOM's March 18 fact sheet stating 7,800+ targets struck and 8,000+ combat flights.",
+  "summary": "Confirmed reporting on March 28-29, 2026 shows the war still expanding rather than winding down: AP reported that more than 300 U.S. service members have now been wounded, while total confirmed U.S. dead remain 13; AP also said Iran\u2019s Health Ministry reports more than 1,500 killed in Iran, and earlier AP reporting put Israeli deaths at 16. CENTCOM\u2019s latest publicly surfaced fact sheet still lists 7,000-plus targets struck and 6,500-plus combat flights as of March 16, while fresh AP reporting says additional U.S. forces, including USS Tripoli and about 2,500 Marines, have entered the theater as diplomats in Islamabad seek de-escalation and Tehran warns against any U.S. ground invasion.",
   "briefings": [
     {
       "date": "2026-03-29",
       "day": 29,
-      "summary": "Confirmed reporting on March 29, 2026 shows diplomacy efforts continuing in Islamabad while military escalation risks remain high: AP reports Iran warned the U.S. against any ground invasion, the U.S. has sent thousands of additional Marines and paratroopers into the region, and the Houthis have now entered the conflict with missile launches toward Israel. On casualties, AP most recently reported 13 confirmed U.S. military dead and more than 300 U.S. wounded, while exact current cumulative totals for Iranian deaths, Iranian wounded, Israeli deaths, and Gulf-state deaths could not be independently verified to the standard requested. For operations tempo, the latest confirmed official number found was CENTCOM's March 18 fact sheet stating 7,800+ targets struck and 8,000+ combat flights."
+      "summary": "Confirmed reporting on March 28-29, 2026 shows the war still expanding rather than winding down: AP reported that more than 300 U.S. service members have now been wounded, while total confirmed U.S. dead remain 13; AP also said Iran\u2019s Health Ministry reports more than 1,500 killed in Iran, and earlier AP reporting put Israeli deaths at 16. CENTCOM\u2019s latest publicly surfaced fact sheet still lists 7,000-plus targets struck and 6,500-plus combat flights as of March 16, while fresh AP reporting says additional U.S. forces, including USS Tripoli and about 2,500 Marines, have entered the theater as diplomats in Islamabad seek de-escalation and Tehran warns against any U.S. ground invasion."
     },
     {
       "date": "2026-03-28",
