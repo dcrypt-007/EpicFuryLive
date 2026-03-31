@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-03-31T21:55:55Z",
+  "lastUpdated": "2026-03-31T22:52:37Z",
   "dayCount": 31,
   "banner": {
     "strikes": "~7,800",
-    "killed": "1,973+",
-    "cost": "$17.1B+"
+    "killed": "1,529+",
+    "cost": "$17.3B+"
   },
   "humanCost": {
-    "iranDeaths": "1,937",
+    "iranDeaths": "1,500",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "20",
+    "israeliDeaths": "16",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "24,800+",
+    "iranWounded": "18,551+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1348",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$17.1 billion+",
-    "dailyBurnRate": "~$552M/day",
+    "totalCost": "$17.3 billion+",
+    "dailyBurnRate": "~$559M/day",
     "daysOfOps": 31,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-31",
-          "source": "LLM-verified (CENTCOM/DVIDS imagery shows USS Abraham Lincoln and USS Gerald R. Ford conducting Operation Epic Fury flight operations on March 1-2, 2026)"
+          "source": "LLM-verified (AP March 31, 2026: USS George H.W. Bush slated to join USS Gerald R. Ford and USS Abraham Lincoln as the third carrier supporting the war)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-03-31",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 18, 2026 lists 'Combat Flights: 8,000+')"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists 'Combat Flights: 8,000+'; used as closest confirmed cumulative sorties figure.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 31 days",
-        "cost": "$434,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 31 days",
+        "cost": "$651,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and other reporting indicate continued Iranian strikes and threats against Gulf infrastructure and U.S.-linked facilities, including shelter-in-place warnings for Americans in Saudi Arabia.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP March 31 reports Iran's Revolutionary Guard threatened U.S. tech firms in the region, naming major companies as possible targets.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP March 31 reports the USS George H.W. Bush and three destroyers are deploying toward the Middle East, potentially expanding U.S. naval presence.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 31, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on March 31 that U.S. and Israeli forces launched a new wave of strikes on Iran, including around Isfahan.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 31 that Saudi Arabia said it intercepted three ballistic missiles launched toward Riyadh.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 31 that Iran struck a Kuwaiti oil tanker off Dubai, with four people wounded by debris in the UAE.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Trump threatened possible strikes on Iran's desalination infrastructure, raising regional water-security risks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-03-31T21:43:35Z",
+      "text": "<strong>Iran ambassador refuses to leave Lebanon despite expulsion order</strong> -- Lebanon has ordered Iran\u2019s ambassador to leave the country, but he has refused to go. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/iran-ambassador-refuses-to-leave-lebanon-despite-expulsion-order?traffic_source=rss"
+    },
+    {
       "time": "2026-03-31T20:51:14Z",
       "text": "<strong>Israeli air attack kills father and two-year-old son in Gaza</strong> -- A father and his two-year-old son were amongst six people killed by Israeli forces in Gaza on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/israeli-air-attack-kills-father-and-two-year-old-son-in-gaza?traffic_source=rss"
@@ -791,6 +796,11 @@
       "time": "2026-03-31T17:48:57Z",
       "text": "<strong>One month of war on Iran cost Arab countries up to $194bn: UNDP</strong> -- Even if conflict is &amp;#039;short but intense&amp;#039;, countries like Sudan, Yemen, Lebanon will see major increases in poverty rates. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/31/one-month-of-war-in-middle-east-cost-arab-states-up-to-194bn-undp?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-31T12:56:45Z",
+      "text": "<strong>Iran using children in security roles in war, reports and witnesses say</strong> -- An 11-year-old is reported to have been killed in an air strike while manning a checkpoint in Tehran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c9wqgjn7x89o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-03-31T17:04:51Z",
@@ -841,16 +851,6 @@
       "time": "2026-03-31T13:12:26Z",
       "text": "<strong>US defence secretary says next few days in Iran war will be \u2018decisive\u2019</strong> -- US Defence Secretary Pete Hegseth warned the coming days of the war with Iran will be \u2018decisive.&amp;#039; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/us-defence-secretary-says-next-few-days-in-iran-war-will-be?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T12:54:04Z",
-      "text": "<strong>Are ICE detention deaths caused by systemic failures?</strong> -- Mexican official Vanessa Calva Ruiz says the deaths of immigrants in ICE detention are caused by systemic failures. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/are-ice-detention-deaths-caused-by-systemic-failures?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T12:12:12Z",
-      "text": "<strong>Three Indonesian peacekeepers killed by Israeli attacks in Lebanon</strong> -- Two Israeli attacks in southern Lebanon have killed three Indonesian UN peacekeepers in the past 48 hours. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/three-indonesian-peacekeepers-killed-by-israeli-attacks-in-lebanon?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Peacekeepers killed by roadside explosion in Lebanon, initial report finds",
+      "description": "The deaths of the two Indonesian nationals came less than a day after another UN peacekeeper - also Indonesian - was killed in Lebanon.",
+      "link": "https://www.bbc.com/news/articles/c05d7md899ro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-31T22:07:26Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran ambassador refuses to leave Lebanon despite expulsion order",
+      "description": "Lebanon has ordered Iran\u2019s ambassador to leave the country, but he has refused to go.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/iran-ambassador-refuses-to-leave-lebanon-despite-expulsion-order?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-31T21:43:35Z",
+      "tier": 2
+    },
+    {
       "title": "US journalist Shelly Kittleson kidnapped in Baghdad",
       "description": "The US state department says a suspect in her abduction has ties to an Iran-backed militia group, Kataib Hezbollah.",
       "link": "https://www.bbc.com/news/articles/c5yled478zwo?at_medium=RSS&at_campaign=rss",
@@ -1309,22 +1325,6 @@
       "tier": 2
     },
     {
-      "title": "Why Iran believes it can outlast the US",
-      "description": "Iran is preparing for deeper US escalation while insisting it\u2019s winning. Can this war end before it widens?",
-      "link": "https://www.aljazeera.com/video/the-take-2/2026/3/31/aje-onl-tt_irn_whatcouldendthewar_av_v2-310326?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T17:04:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Qatar says \u2018ready to help\u2019 with US-Iran negotiations",
-      "description": "Qatari Foreign Ministry spokesperson Majed al-Ansari says Qatar is \u201cready to help\u201d with US-Iran negotiations.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/qatar-says-ready-to-help-with-us-iran-negotiations?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T17:00:24Z",
-      "tier": 2
-    },
-    {
       "title": "Iran using children in security roles in war, reports and witnesses say",
       "description": "An 11-year-old is reported to have been killed in an air strike while manning a checkpoint in Tehran.",
       "link": "https://www.bbc.com/news/articles/c9wqgjn7x89o?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available by March 31, 2026 shows Iran\u2019s Health Ministry tally at 1,937 killed and 24,800 injured in Iran, Israel\u2019s death toll at 20, US military fatalities at 13, and confirmed Gulf-state deaths at 3, while CENTCOM\u2019s March 18 fact sheet continued to list more than 7,800 targets struck and more than 8,000 combat flights in Operation Epic Fury. Official US material also confirms two carrier strike groups were active in support of the operation, while AP reporting indicates the conflict widened further with Houthi missile attacks on Israel and continued Iranian strikes across the Gulf, including an attack on Prince Sultan Air Base in Saudi Arabia that wounded additional US troops.",
+  "summary": "Confirmed reporting on March 31, 2026 indicates the war remains active with Iran still launching attacks despite a month of U.S.-Israeli strikes. The clearest confirmed cumulative casualty figures available in accessible reporting are 1,500 killed and 18,551 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera\u2019s March 23 tracker, 13 U.S. military deaths reported by AP from Pentagon/U.S. officials, and 16 deaths in Israel reported by AP on March 25. On the military side, CENTCOM\u2019s March 18 fact sheet says U.S. forces had struck 7,800+ targets and flown 8,000+ combat flights. AP reported March 31 that the USS George H.W. Bush is deploying with three destroyers and would become the third U.S. carrier supporting the war, signaling a further buildup rather than de-escalation.",
   "briefings": [
     {
       "date": "2026-03-31",
       "day": 31,
-      "summary": "Confirmed reporting available by March 31, 2026 shows Iran\u2019s Health Ministry tally at 1,937 killed and 24,800 injured in Iran, Israel\u2019s death toll at 20, US military fatalities at 13, and confirmed Gulf-state deaths at 3, while CENTCOM\u2019s March 18 fact sheet continued to list more than 7,800 targets struck and more than 8,000 combat flights in Operation Epic Fury. Official US material also confirms two carrier strike groups were active in support of the operation, while AP reporting indicates the conflict widened further with Houthi missile attacks on Israel and continued Iranian strikes across the Gulf, including an attack on Prince Sultan Air Base in Saudi Arabia that wounded additional US troops."
+      "summary": "Confirmed reporting on March 31, 2026 indicates the war remains active with Iran still launching attacks despite a month of U.S.-Israeli strikes. The clearest confirmed cumulative casualty figures available in accessible reporting are 1,500 killed and 18,551 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera\u2019s March 23 tracker, 13 U.S. military deaths reported by AP from Pentagon/U.S. officials, and 16 deaths in Israel reported by AP on March 25. On the military side, CENTCOM\u2019s March 18 fact sheet says U.S. forces had struck 7,800+ targets and flown 8,000+ combat flights. AP reported March 31 that the USS George H.W. Bush is deploying with three destroyers and would become the third U.S. carrier supporting the war, signaling a further buildup rather than de-escalation."
     },
     {
       "date": "2026-03-30",
