@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-03-31T22:52:37Z",
+  "lastUpdated": "2026-03-31T23:49:59Z",
   "dayCount": 31,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "1,529+",
-    "cost": "$17.3B+"
+    "strikes": "~10,000",
+    "killed": "1,934+",
+    "cost": "$17.1B+"
   },
   "humanCost": {
-    "iranDeaths": "1,500",
+    "iranDeaths": "1,900",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "16",
+    "israeliDeaths": "21",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "18,551+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1348",
+    "civilianDeaths": "1443",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$17.3 billion+",
-    "dailyBurnRate": "~$559M/day",
+    "totalCost": "$17.1 billion+",
+    "dailyBurnRate": "~$552M/day",
     "daysOfOps": 31,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-03-31",
-          "source": "LLM-verified (AP March 31, 2026: USS George H.W. Bush slated to join USS Gerald R. Ford and USS Abraham Lincoln as the third carrier supporting the war)"
+          "source": "LLM-verified (AP News reported March 28, 2026 that before recent movements the U.S. force in region included two aircraft carriers; no newer confirmed count of currently deployed carrier strike groups found)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-03-31",
-          "source": "LLM-verified (AP News, March 28, 2026: 'some 50,000 troops' in region)"
+          "source": "LLM-verified (AP News reported March 28, 2026 that the U.S. had built up about 50,000 troops in the region)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-03-31",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists 'Combat Flights: 8,000+'; used as closest confirmed cumulative sorties figure.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists 8,000+ combat flights; no newer official cumulative fighter/attack sortie total confirmed in accessible sources)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 31 days",
-        "cost": "$651,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 31 days",
+        "cost": "$434,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Mar 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "CENTCOM posted a March 31 commander update, indicating active operations were still ongoing at end of Day 31",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported March 25-26 that Iran continued missile barrages against Israel and maintained pressure in the Strait of Hormuz while ceasefire efforts stalled",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Mar 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported March 28 that Iran fired six ballistic missiles and 29 drones at Saudi Arabia's Prince Sultan Air Base, injuring at least 15 U.S. troops",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Mar 31, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP March 28: Iranian strike on Saudi Arabia's Prince Sultan Air Base wounded additional U.S. troops",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP March 28-29: Houthi forces entered the war and launched missiles at Israel",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 31 that the war has disrupted global energy markets and Brent crude was hovering around $106 per barrel.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 31 that U.S. and Israeli forces launched a new wave of strikes on Iran, including around Isfahan.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-03-31T23:12:43Z",
+      "text": "<strong>Pope Leo urges Trump to end war on Iran</strong> -- Pope Leo XIV has urged US President Donald Trump to find an \u201coff-ramp\u201d from the US and Israel\u2019s war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/pope-leo-urges-trump-to-end-war-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-31T23:03:49Z",
+      "text": "<strong>After Strait of Hormuz opens, turmoil would still last months, analysts say</strong> -- Effective shutdown of key waterway could lead to permanent changes in how shipping industry does business. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/31/after-strait-of-hormuz-opens-turmoil-would-still-last-months-analysts-say?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-31T23:02:56Z",
+      "text": "<strong>US exempts Gulf of Mexico oil drillers from endangered species protections</strong> -- The Trump administration says protections would diminish US energy competitiveness amid the ongoing war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/3/31/us-exempts-gulf-of-mexico-oil-drillers-from-endangered-species-protections?traffic_source=rss"
+    },
+    {
+      "time": "2026-03-31T22:56:54Z",
+      "text": "<strong>EU warns oil and gas prices won\u2019t quickly return to normal after Iran war</strong> -- The EU\u2019s energy commissioner has warned oil and gas prices will not return to normal any time soon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/eu-warns-oil-and-gas-prices-wont-quickly-return-to-normal-after-iran-war?traffic_source=rss"
+    },
+    {
       "time": "2026-03-31T21:43:35Z",
       "text": "<strong>Iran ambassador refuses to leave Lebanon despite expulsion order</strong> -- Lebanon has ordered Iran\u2019s ambassador to leave the country, but he has refused to go. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/iran-ambassador-refuses-to-leave-lebanon-despite-expulsion-order?traffic_source=rss"
@@ -831,26 +851,6 @@
       "time": "2026-03-31T14:26:10Z",
       "text": "<strong>Where to invest during Iran war? Ask \u2013 or don\u2019t \u2013 Mohammad Bagher Ghalibaf</strong> -- Iran\u2019s parliamentary speaker is using X to shape market sentiment, blending war messaging with financial signalling. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/31/where-to-invest-during-iran-war-ask-or-dont-mohammad-bagher-ghalibaf?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T13:56:30Z",
-      "text": "<strong>War on Iran: US\u2019s history of making other nations pay for conflicts</strong> -- White House says Trump could ask Arab nations to bear the cost of the Iran war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/31/war-on-iran-uss-history-of-making-other-nations-pay-for-conflicts?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T13:37:19Z",
-      "text": "<strong>Cancer drug facility, religious site hit in Israeli-US strikes on Iran</strong> -- The Iranian government said the company&amp;#039;s drug production line has been damaged, as no diplomatic solution is in sight. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/31/cancer-drug-facility-religious-site-hit-in-israeli-us-strikes-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T13:32:24Z",
-      "text": "<strong>Will China join Pakistan-led efforts to mediate US-Iran peace?</strong> -- Pakistan&amp;#039;s Deputy PM Ishaq Dar visits China after Islamabad talks to broker negotiations between the US and Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/31/will-china-join-pakistan-led-efforts-to-mediate-us-iran-peace?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T13:12:26Z",
-      "text": "<strong>US defence secretary says next few days in Iran war will be \u2018decisive\u2019</strong> -- US Defence Secretary Pete Hegseth warned the coming days of the war with Iran will be \u2018decisive.&amp;#039; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/us-defence-secretary-says-next-few-days-in-iran-war-will-be?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,62 @@
   ],
   "newsFeed": [
     {
+      "title": "'You're no longer my sister' - rows erupt as war divides Iranian families",
+      "description": "People in Iran describe angry scenes and tense relationships as rifts open up over the war.",
+      "link": "https://www.bbc.com/news/articles/ce9mvzpvr7xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-31T23:25:19Z",
+      "tier": 2
+    },
+    {
+      "title": "'A million things could go wrong' - why seizing Iran's uranium would be so risky for the US",
+      "description": "Seizing the stockpile would be one of the \"most complicated special operations in history,\" a former defence official tells the BBC.",
+      "link": "https://www.bbc.com/news/articles/cvglv5v4yvpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-31T23:16:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Pope Leo urges Trump to end war on Iran",
+      "description": "Pope Leo XIV has urged US President Donald Trump to find an \u201coff-ramp\u201d from the US and Israel\u2019s war on Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/pope-leo-urges-trump-to-end-war-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-31T23:12:43Z",
+      "tier": 2
+    },
+    {
+      "title": "After Strait of Hormuz opens, turmoil would still last months, analysts say",
+      "description": "Effective shutdown of key waterway could lead to permanent changes in how shipping industry does business.",
+      "link": "https://www.aljazeera.com/news/2026/3/31/after-strait-of-hormuz-opens-turmoil-would-still-last-months-analysts-say?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-31T23:03:49Z",
+      "tier": 2
+    },
+    {
+      "title": "US exempts Gulf of Mexico oil drillers from endangered species protections",
+      "description": "The Trump administration says protections would diminish US energy competitiveness amid the ongoing war on Iran.",
+      "link": "https://www.aljazeera.com/news/2026/3/31/us-exempts-gulf-of-mexico-oil-drillers-from-endangered-species-protections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-31T23:02:56Z",
+      "tier": 2
+    },
+    {
+      "title": "EU warns oil and gas prices won\u2019t quickly return to normal after Iran war",
+      "description": "The EU\u2019s energy commissioner has warned oil and gas prices will not return to normal any time soon.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/eu-warns-oil-and-gas-prices-wont-quickly-return-to-normal-after-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-03-31T22:56:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Asia's migrant workers debate if Gulf jobs are worth deadly risk of Iran war",
+      "description": "Iran's strikes on Gulf states have been especially hard for migrants who have long supported these economies to lift their families back home from poverty.",
+      "link": "https://www.bbc.com/news/articles/c0kr8lrpekmo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-31T22:48:34Z",
+      "tier": 2
+    },
+    {
       "title": "Peacekeepers killed by roadside explosion in Lebanon, initial report finds",
       "description": "The deaths of the two Indonesian nationals came less than a day after another UN peacekeeper - also Indonesian - was killed in Lebanon.",
       "link": "https://www.bbc.com/news/articles/c05d7md899ro?at_medium=RSS&at_campaign=rss",
@@ -1301,51 +1357,11 @@
       "tier": 2
     },
     {
-      "title": "US-Israel launch major attacks as Iranian authorities maintain defiance",
-      "description": "Bunker-buster bombs trigger massive secondary explosions at a mountainous area near Isfahan overnight.",
-      "link": "https://www.aljazeera.com/news/2026/3/31/us-israel-launch-major-attacks-as-iranian-authorities-maintain-defiance?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T18:07:51Z",
-      "tier": 2
-    },
-    {
-      "title": "One month of war on Iran cost Arab countries up to $194bn: UNDP",
-      "description": "Even if conflict is &#039;short but intense&#039;, countries like Sudan, Yemen, Lebanon will see major increases in poverty rates.",
-      "link": "https://www.aljazeera.com/news/2026/3/31/one-month-of-war-in-middle-east-cost-arab-states-up-to-194bn-undp?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T17:48:57Z",
-      "tier": 2
-    },
-    {
-      "title": "Palestinians convicted of lethal attacks face death penalty under new Israeli law",
-      "description": "The new law, passed on Monday, was pushed hard by the far-right and Security Minister Itamar Ben-Gvir.",
-      "link": "https://www.bbc.com/news/articles/cp8dkd6lnjdo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-31T17:30:05Z",
-      "tier": 2
-    },
-    {
       "title": "Iran using children in security roles in war, reports and witnesses say",
       "description": "An 11-year-old is reported to have been killed in an air strike while manning a checkpoint in Tehran.",
       "link": "https://www.bbc.com/news/articles/c9wqgjn7x89o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-31T12:56:45Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 16 killed and thousands displaced by gang attack in rural Haiti",
-      "description": "The attack happened in the Artibonite region, where members of the Gran Grif gang have targeted locals in the past.",
-      "link": "https://www.bbc.com/news/articles/cql76l4221qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-31T12:02:46Z",
-      "tier": 2
-    },
-    {
-      "title": "Teen cyclist killed at Road World Championships not found for 82 minutes",
-      "description": "A cyclist who was killed during the Road World Championships was not found for 82 minutes after a crash, investigators find.",
-      "link": "https://www.bbc.com/sport/cycling/articles/cnv85v7r22ro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-31T09:59:52Z",
       "tier": 2
     },
     {
@@ -1355,30 +1371,14 @@
       "source": "BBC World",
       "time": "2026-03-31T02:33:18Z",
       "tier": 2
-    },
-    {
-      "title": "Inside the cockpit of RAF tanker during defensive mission against Iranian drones",
-      "description": "Defence correspondent Jonathan Beale flies onboard a Royal Air Force Voyager as it refuels jets in the Middle East.",
-      "link": "https://www.bbc.com/news/articles/cdrmg6x2rgxo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-30T23:10:44Z",
-      "tier": 2
-    },
-    {
-      "title": "Long queues in Myanmar as Iran war fuel crisis deepens",
-      "description": "Drivers are queuing for hours at petrol stations in Myanmar as the Iran war continues to send shockwaves across the globe.",
-      "link": "https://www.bbc.com/news/videos/cn08w9ye38yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-30T22:03:59Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on March 31, 2026 indicates the war remains active with Iran still launching attacks despite a month of U.S.-Israeli strikes. The clearest confirmed cumulative casualty figures available in accessible reporting are 1,500 killed and 18,551 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera\u2019s March 23 tracker, 13 U.S. military deaths reported by AP from Pentagon/U.S. officials, and 16 deaths in Israel reported by AP on March 25. On the military side, CENTCOM\u2019s March 18 fact sheet says U.S. forces had struck 7,800+ targets and flown 8,000+ combat flights. AP reported March 31 that the USS George H.W. Bush is deploying with three destroyers and would become the third U.S. carrier supporting the war, signaling a further buildup rather than de-escalation.",
+  "summary": "Confirmed reporting on March 31, 2026 still showed active U.S. operations under Operation Epic Fury, with CENTCOM posting a new commander update. The latest major-wire casualty figures found were AP's March 26 report citing Iran's deputy health minister saying more than 1,900 people had been killed in Iran, AP's March 28 report that 13 U.S. service members had been killed, and AP's March 26 corrected figure of 18 deaths inside Israel plus 3 Israeli soldiers killed in Lebanon. HRANA's latest clearly sourced Iran civilian toll located in search results was 1,443 civilians killed as of March 23. On the military side, AP reported March 25 that CENTCOM's Adm. Brad Cooper said U.S. forces had hit more than 10,000 targets, while the March 18 CENTCOM fact sheet listed 7,800+ targets struck and 8,000+ combat flights; AP also reported March 28 that roughly 50,000 U.S. troops and two aircraft carriers were in the region.",
   "briefings": [
     {
       "date": "2026-03-31",
       "day": 31,
-      "summary": "Confirmed reporting on March 31, 2026 indicates the war remains active with Iran still launching attacks despite a month of U.S.-Israeli strikes. The clearest confirmed cumulative casualty figures available in accessible reporting are 1,500 killed and 18,551 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera\u2019s March 23 tracker, 13 U.S. military deaths reported by AP from Pentagon/U.S. officials, and 16 deaths in Israel reported by AP on March 25. On the military side, CENTCOM\u2019s March 18 fact sheet says U.S. forces had struck 7,800+ targets and flown 8,000+ combat flights. AP reported March 31 that the USS George H.W. Bush is deploying with three destroyers and would become the third U.S. carrier supporting the war, signaling a further buildup rather than de-escalation."
+      "summary": "Confirmed reporting on March 31, 2026 still showed active U.S. operations under Operation Epic Fury, with CENTCOM posting a new commander update. The latest major-wire casualty figures found were AP's March 26 report citing Iran's deputy health minister saying more than 1,900 people had been killed in Iran, AP's March 28 report that 13 U.S. service members had been killed, and AP's March 26 corrected figure of 18 deaths inside Israel plus 3 Israeli soldiers killed in Lebanon. HRANA's latest clearly sourced Iran civilian toll located in search results was 1,443 civilians killed as of March 23. On the military side, AP reported March 25 that CENTCOM's Adm. Brad Cooper said U.S. forces had hit more than 10,000 targets, while the March 18 CENTCOM fact sheet listed 7,800+ targets struck and 8,000+ combat flights; AP also reported March 28 that roughly 50,000 U.S. troops and two aircraft carriers were in the region."
     },
     {
       "date": "2026-03-30",
