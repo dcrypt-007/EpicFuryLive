@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-01T14:05:13Z",
+  "lastUpdated": "2026-04-01T15:42:27Z",
   "dayCount": 32,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "2,001+",
-    "cost": "$17.7B+"
+    "strikes": "~7,000",
+    "killed": "1,998+",
+    "cost": "$17.4B+"
   },
   "humanCost": {
     "iranDeaths": "1,937",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "27",
+    "gulfCasualties": "24",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "24,800+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$17.7 billion+",
-    "dailyBurnRate": "~$555M/day",
+    "totalCost": "$17.4 billion+",
+    "dailyBurnRate": "~$543M/day",
     "daysOfOps": 32,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (AP, March 31, 2026: USS Abraham Lincoln already in region; USS Gerald R. Ford deployed in support of the Iran war (though in Mediterranean/Croatia after repairs); USS George H.W. Bush deployed Tuesday to head to the Middle East. This yields 3 U.S. carrier strike groups deployed/assigned to the theater.)"
+          "source": "LLM-verified (AP News April 1, 2026 reports USS Abraham Lincoln already in region and USS George H.W. Bush deploying to Middle East; USS Gerald R. Ford had returned to Mediterranean/Croatia for repairs, so 2 carrier strike groups confirmed in/heading to theater.)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (AP, March 31, 2026: USS George H.W. Bush is deploying 'along with three destroyers.' No newer official total in-theater destroyer count was found, so confirmed value is at least 3 newly deploying with Bush.)"
+          "source": "LLM-verified (AP News April 1, 2026: USS George H.W. Bush deploying 'along with three destroyers.' No full current theater-wide official total confirmed beyond these 3 escorts.)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury Fact Sheet, March 18, 2026: 'Combat Flights: 8,000+'; used here as closest official cumulative sorties figure)"
+          "source": "LLM-verified (Official Pentagon/CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; used as latest official confirmed cumulative sorties figure found.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 32 days",
-        "cost": "$672,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 32 days",
+        "cost": "$448,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/Al Jazeera report continued Iranian strikes and alerts across Gulf states and Israel, including Bahrain and Kuwait incidents on April 1.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports Trump is threatening further escalation if Iran does not reopen the Strait of Hormuz by April 6, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports thousands of additional U.S. troops are heading to the Middle East, including USS George H.W. Bush with three destroyers, more 82nd Airborne troops, and additional Marines.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 1, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "CENTCOM posted a March 31 commander update, indicating active operations were still ongoing at end of Day 31",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 25-26 that Iran continued missile barrages against Israel and maintained pressure in the Strait of Hormuz while ceasefire efforts stalled",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported March 28 that Iran fired six ballistic missiles and 29 drones at Saudi Arabia's Prince Sultan Air Base, injuring at least 15 U.S. troops",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and other reporting indicate continued Iranian strikes and threats against Gulf infrastructure and U.S.-linked facilities, including shelter-in-place warnings for Americans in Saudi Arabia.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-04-01T15:13:13Z",
+      "text": "<strong>Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms</strong> -- The US has deployed thousands of additional Marines and airborne troops to the Middle East since the Iran war began. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-a-marine-expeditionary-unit-is-and-other-us-military-terms?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-01T15:11:31Z",
+      "text": "<strong>Iran denies Trump\u2019s claim Iranian president requested ceasefire</strong> -- Donald Trump says US will continue &amp;#039;blasting Iran into oblivion&amp;#039; until Strait of Hormuz is reopened. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/1/iran-denies-trumps-claim-iranian-president-requested-ceasefire?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-01T13:55:55Z",
+      "text": "<strong>Can Russia help fill the global energy gap?</strong> -- Higher crude prices due to the disruption in the Strait of Hormuz have helped Russia earn more from energy exports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/4/1/can-russia-help-fill-the-global-energy-gap?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-01T13:36:20Z",
+      "text": "<strong>French President Macron visits Japan to discuss the energy crisis</strong> -- France&amp;#039;s Macron paid a visit to Tokyo to meet with Japan&amp;#039;s Takaichi to discuss the economic war of the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/french-president-macron-visits-japan-to-discuss-the-energy-crisis?traffic_source=rss"
+    },
+    {
       "time": "2026-04-01T13:24:29Z",
       "text": "<strong>Russia imposing ban on all gasoline exports due to Iran war</strong> -- Russia imposing ban on all gasoline exports due to Iran war <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/russia-imposing-ban-on-all-gasoline-exports-due-to-iran-war?traffic_source=rss"
@@ -831,26 +851,6 @@
       "time": "2026-04-01T00:56:38Z",
       "text": "<strong>Emergency workers search for victims of Israeli airstrikes on Beirut</strong> -- Emergency workers searched through rubble in Beirut after Israeli airstrikes hit the Jnah neighbourhood. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/emergency-workers-search-for-victims-of-israeli-airstrikes-on-beirut?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-01T00:14:19Z",
-      "text": "<strong>Trump tells allies \u2018get your own oil\u2019, says Iran war could end in 2-3 weeks</strong> -- Under pressure as domestic petrol prices soar, US president says no deal needed to end war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/1/trump-tells-allies-get-your-own-oil-says-iran-war-could-end-in-2-3-weeks?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-01T00:00:00Z",
-      "text": "<strong>Iran war live: \u2018Missile from Iran\u2019 hits oil tanker off Qatar\u2019s coast</strong> -- One of three missiles launched from Iran hit an oil tanker off Qatar&amp;#039;s coast, no injuries reported. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/4/1/iran-live-trump-says-no-deal-needed-to-end-war-isfahan-steel-plants-hit?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T23:47:57Z",
-      "text": "<strong>Trump says US will be leaving Iran in two to three weeks</strong> -- Speaking to reporters in the Oval Office, US President Donald Trump says US could leave Iran \u201cin two or three weeks.&amp;quot; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/trump-says-us-will-be-leaving-iran-in-two-to-three-weeks?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T23:12:43Z",
-      "text": "<strong>Pope Leo urges Trump to end war on Iran</strong> -- Pope Leo XIV has urged US President Donald Trump to find an \u201coff-ramp\u201d from the US and Israel\u2019s war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/pope-leo-urges-trump-to-end-war-on-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms",
+      "description": "The US has deployed thousands of additional Marines and airborne troops to the Middle East since the Iran war began.",
+      "link": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-a-marine-expeditionary-unit-is-and-other-us-military-terms?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T15:13:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran denies Trump\u2019s claim Iranian president requested ceasefire",
+      "description": "Donald Trump says US will continue &#039;blasting Iran into oblivion&#039; until Strait of Hormuz is reopened.",
+      "link": "https://www.aljazeera.com/news/2026/4/1/iran-denies-trumps-claim-iranian-president-requested-ceasefire?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T15:11:31Z",
+      "tier": 2
+    },
+    {
+      "title": "Can Russia help fill the global energy gap?",
+      "description": "Higher crude prices due to the disruption in the Strait of Hormuz have helped Russia earn more from energy exports.",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/4/1/can-russia-help-fill-the-global-energy-gap?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T13:55:55Z",
+      "tier": 2
+    },
+    {
+      "title": "French President Macron visits Japan to discuss the energy crisis",
+      "description": "France&#039;s Macron paid a visit to Tokyo to meet with Japan&#039;s Takaichi to discuss the economic war of the war on Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/french-president-macron-visits-japan-to-discuss-the-energy-crisis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T13:36:20Z",
+      "tier": 2
+    },
+    {
       "title": "Russia imposing ban on all gasoline exports due to Iran war",
       "description": "Russia imposing ban on all gasoline exports due to Iran war",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/russia-imposing-ban-on-all-gasoline-exports-due-to-iran-war?traffic_source=rss",
@@ -1301,30 +1333,6 @@
       "tier": 2
     },
     {
-      "title": "War on Iran: Three key takeaways from Araghchi\u2019s interview with Al Jazeera",
-      "description": "Araghchi confirmed direct talks with Witkoff but denied that they constituted negotiations in an exclusive interview.",
-      "link": "https://www.aljazeera.com/news/2026/4/1/war-on-iran-three-key-takeaways-from-araghchis-interview-with-al-jazeera?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-01T08:27:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli police inspect damage on the road after missile impact",
-      "description": "Police inspect a strike site in Tel Aviv after a missile hit the city.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/israeli-police-inspect-damage-on-the-road-after-missile-impact?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-01T07:55:50Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE",
-      "description": "Shrapnel from an Iranian drone interception kills a Bangladeshi national in the UAE&#039;s Fujairah city.",
-      "link": "https://www.aljazeera.com/news/2026/4/1/iran-attacks-cause-fire-in-kuwait-bahrain-kill-man-in-uae?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-01T07:54:12Z",
-      "tier": 2
-    },
-    {
       "title": "China is trying to play peacemaker in the Iran war - will it work?",
       "description": "It's a turnaround for Beijing, whose official response has been muted so far. Why is China stepping in now?",
       "link": "https://www.bbc.com/news/articles/cze0kz7gr84o?at_medium=RSS&at_campaign=rss",
@@ -1333,11 +1341,19 @@
       "tier": 2
     },
     {
-      "title": "Peacekeepers killed by roadside explosion in Lebanon, initial report finds",
-      "description": "The deaths of the two Indonesian nationals came less than a day after another UN peacekeeper - also Indonesian - was killed in Lebanon.",
-      "link": "https://www.bbc.com/news/articles/c05d7md899ro?at_medium=RSS&at_campaign=rss",
+      "title": "'You're no longer my sister' - rows erupt as war divides Iranian families",
+      "description": "People in Iran describe angry scenes and tense relationships as rifts open up over the war.",
+      "link": "https://www.bbc.com/news/articles/ce9mvzpvr7xo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-03-31T22:07:26Z",
+      "time": "2026-03-31T23:25:19Z",
+      "tier": 2
+    },
+    {
+      "title": "'A million things could go wrong' - why seizing Iran's uranium would be so risky for the US",
+      "description": "Seizing the stockpile would be one of the \"most complicated special operations in history\", a former defence official tells the BBC.",
+      "link": "https://www.bbc.com/news/articles/cvglv5v4yvpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-31T23:16:15Z",
       "tier": 2
     },
     {
@@ -1349,36 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "Italian Christmas meal tragedy turns into murder inquiry",
-      "description": "Tests results suggest the two women may have been killed with ricin, according to Italian media, but police still do not have a suspect.",
-      "link": "https://www.bbc.com/news/articles/cje470qgl1yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-31T19:52:31Z",
-      "tier": 2
-    },
-    {
       "title": "Israel says it will keep control over part of southern Lebanon after war with Hezbollah ends",
       "description": "Defence Minister Israel Katz also says houses in Lebanese villages near the Israeli border will be demolished.",
       "link": "https://www.bbc.com/news/articles/c5yx8knpr5no?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-31T18:57:25Z",
       "tier": 2
-    },
-    {
-      "title": "Iran using children in security roles in war, reports and witnesses say",
-      "description": "An 11-year-old is reported to have been killed in an air strike while manning a checkpoint in Tehran.",
-      "link": "https://www.bbc.com/news/articles/c9wqgjn7x89o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-03-31T12:56:45Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available on April 1, 2026 shows the cumulative Iranian death toll at 1,937 and wounded at 24,800 according to Iran's Health Ministry as cited by Al Jazeera, with 24 killed in Israel, 13 confirmed US military fatalities, and 27 deaths across Gulf states. The latest official U.S. Defense Department Operation Epic Fury fact sheet publicly available in search results remains the March 18 update listing 7,800+ targets struck and 8,000+ combat flights, but it does not provide current official counts for carriers, destroyers, troop levels, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptor launches.",
+  "summary": "As of Wednesday, April 1, 2026, the latest confirmed public figures located show Iran\u2019s Health Ministry reporting 1,937 dead and more than 24,800 wounded inside Iran, AP reporting 13 U.S. service members killed in the war, and Al Jazeera\u2019s updated tracker listing 24 Israelis killed and 24 deaths across Bahrain, Kuwait, Saudi Arabia and the UAE. The latest official Pentagon/CENTCOM fact sheet publicly located still lists more than 7,000 targets struck and 6,500-plus combat flights as of March 16. AP also reports a fresh U.S. buildup, with the USS George H.W. Bush and three destroyers deploying, more Marines arriving, and additional 82nd Airborne troops moving into the region while Washington threatens escalation over the Strait of Hormuz.",
   "briefings": [
     {
       "date": "2026-04-01",
       "day": 32,
-      "summary": "Confirmed reporting available on April 1, 2026 shows the cumulative Iranian death toll at 1,937 and wounded at 24,800 according to Iran's Health Ministry as cited by Al Jazeera, with 24 killed in Israel, 13 confirmed US military fatalities, and 27 deaths across Gulf states. The latest official U.S. Defense Department Operation Epic Fury fact sheet publicly available in search results remains the March 18 update listing 7,800+ targets struck and 8,000+ combat flights, but it does not provide current official counts for carriers, destroyers, troop levels, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptor launches."
+      "summary": "As of Wednesday, April 1, 2026, the latest confirmed public figures located show Iran\u2019s Health Ministry reporting 1,937 dead and more than 24,800 wounded inside Iran, AP reporting 13 U.S. service members killed in the war, and Al Jazeera\u2019s updated tracker listing 24 Israelis killed and 24 deaths across Bahrain, Kuwait, Saudi Arabia and the UAE. The latest official Pentagon/CENTCOM fact sheet publicly located still lists more than 7,000 targets struck and 6,500-plus combat flights as of March 16. AP also reports a fresh U.S. buildup, with the USS George H.W. Bush and three destroyers deploying, more Marines arriving, and additional 82nd Airborne troops moving into the region while Washington threatens escalation over the Strait of Hormuz."
     },
     {
       "date": "2026-03-31",
