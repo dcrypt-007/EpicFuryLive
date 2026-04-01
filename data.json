@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-01T21:58:53Z",
+  "lastUpdated": "2026-04-01T22:57:53Z",
   "dayCount": 32,
   "banner": {
-    "strikes": "~10,000",
-    "killed": "1,929+",
-    "cost": "$19.2B+"
+    "strikes": "~6,000",
+    "killed": "1,984+",
+    "cost": "$19.0B+"
   },
   "humanCost": {
-    "iranDeaths": "1,900",
+    "iranDeaths": "1,937",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "16",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "10",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$19.2 billion+",
-    "dailyBurnRate": "~$599M/day",
+    "totalCost": "$19.0 billion+",
+    "dailyBurnRate": "~$593M/day",
     "daysOfOps": 32,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (AP News on April 1, 2026: the region has two U.S. aircraft carriers with USS George H.W. Bush arriving while another carrier remains in theater.)"
+          "source": "LLM-verified (AP March 28, 2026 reported two aircraft carriers in the region)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (AP News on March 28, 2026 reported the U.S. had built up about 50,000 troops in the region.)"
+          "source": "LLM-verified (AP March 28, 2026 reported about 50,000 U.S. troops in the region before additional Marines arrived)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 listed 8,000+ combat flights.)"
+          "source": "LLM-verified (CENTCOM reported more than 6,000 combat sorties over Iran since Feb. 28, cited March 17, 2026)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,000 \u00d7 $100,000 each",
+        "cost": "$600,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,15 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP March 28, 2026: Iranian missile and drone attack on Saudi Arabia's Prince Sultan Air Base injured at least 15 troops in the latest Gulf-base strike",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 1, 2026",
       "severity": "high",
@@ -648,15 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP reported Apr. 1 that Trump said the U.S. military could end its Iran offensive in 2 to 3 weeks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Apr. 1 that Iran hit Kuwait airport and a tanker off Qatar amid continued regional escalation.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of April 1, 2026, confirmed reporting indicates the war remains active with no verified ceasefire: AP reported more than 1,900 people killed in Iran, 16 killed in Israel, and 13 U.S. service members killed, while CENTCOM\u2019s commander said U.S. forces alone had struck more than 10,000 targets in Iran; AP also reported roughly 50,000 U.S. troops in theater and two U.S. carrier groups present or arriving, even as Iranian missile and drone attacks continue against Israel and Gulf states and fresh strikes were reported around Isfahan.",
+  "summary": "As of April 1, 2026, the clearest confirmed casualty picture from searched sources is Iran Health Ministry figures carried by Al Jazeera showing 1,937 killed and 24,800 wounded in Iran, while AP reports the U.S. military has confirmed 13 American service members killed and more than 300 wounded; Al Jazeera\u2019s tracker lists 24 people killed in Israel and 10 confirmed deaths in Gulf states counted here from Bahrain and Kuwait. On the military side, AP says about 50,000 U.S. personnel and two carrier strike groups are in the region, while CENTCOM reporting cited on March 17 says the campaign has exceeded 6,000 combat sorties and about 6,000 struck targets/sites. No newer confirmed official totals were found in the searched sources for destroyers in theater, drone-unit counts, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, or interceptor launches.",
   "briefings": [
     {
       "date": "2026-04-01",
       "day": 32,
-      "summary": "As of April 1, 2026, confirmed reporting indicates the war remains active with no verified ceasefire: AP reported more than 1,900 people killed in Iran, 16 killed in Israel, and 13 U.S. service members killed, while CENTCOM\u2019s commander said U.S. forces alone had struck more than 10,000 targets in Iran; AP also reported roughly 50,000 U.S. troops in theater and two U.S. carrier groups present or arriving, even as Iranian missile and drone attacks continue against Israel and Gulf states and fresh strikes were reported around Isfahan."
+      "summary": "As of April 1, 2026, the clearest confirmed casualty picture from searched sources is Iran Health Ministry figures carried by Al Jazeera showing 1,937 killed and 24,800 wounded in Iran, while AP reports the U.S. military has confirmed 13 American service members killed and more than 300 wounded; Al Jazeera\u2019s tracker lists 24 people killed in Israel and 10 confirmed deaths in Gulf states counted here from Bahrain and Kuwait. On the military side, AP says about 50,000 U.S. personnel and two carrier strike groups are in the region, while CENTCOM reporting cited on March 17 says the campaign has exceeded 6,000 combat sorties and about 6,000 struck targets/sites. No newer confirmed official totals were found in the searched sources for destroyers in theater, drone-unit counts, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, or interceptor launches."
     },
     {
       "date": "2026-03-31",
