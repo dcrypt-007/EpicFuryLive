@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-04-01T07:54:45Z",
+  "lastUpdated": "2026-04-01T09:35:57Z",
   "dayCount": 32,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "1,980+",
-    "cost": "$17.5B+"
+    "strikes": "~10,000",
+    "killed": "2,001+",
+    "cost": "$17.4B+"
   },
   "humanCost": {
     "iranDeaths": "1,937",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "20",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "10",
+    "gulfCasualties": "27",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "24,800+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$17.5 billion+",
-    "dailyBurnRate": "~$548M/day",
+    "totalCost": "$17.4 billion+",
+    "dailyBurnRate": "~$544M/day",
     "daysOfOps": 32,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (CENTCOM/Pentagon materials show two nuclear-powered aircraft carriers in operation, including USS Abraham Lincoln and USS Gerald R. Ford support imagery during Operation Epic Fury.)"
+          "source": "LLM-verified (AP March 31, 2026: USS George H.W. Bush deployed to Middle East; existing carrier presence already in theater, bringing current U.S. carrier strike groups to 2)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-03-27",
-          "source": "LLM-verified (CENTCOM carrier group composition pages identify 2 Ford CSG destroyers + 2 Eisenhower CSG destroyers; AP Jan. 26, 2026 reports USS Abraham Lincoln arrived with 3 accompanying warships. Latest theater-wide confirmed destroyer count found: 6)"
+          "lastUpdated": "2026-04-01",
+          "source": "LLM-verified (AP reporting indicates one carrier group with 3 destroyers already present and USS George H.W. Bush deploying with 3 destroyers, totaling 6)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-01",
-          "source": "LLM-verified (Pentagon/CENTCOM Operation Epic Fury Fact Sheet, March 18, 2026: 'Combat Flights: 8,000+'; stored as 8000 minimum confirmed count)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 6,500+ combat flights; no newer confirmed fighter/attack-aircraft sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC reporting indicate continued Iranian strikes affecting Gulf states and Tel Aviv, with wider regional spillover risk",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported thousands more U.S. troops are heading to the Middle East, including elements of the 82nd Airborne and the USS George H.W. Bush carrier strike group",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian missiles and drones continued targeting Gulf shipping and bases; Al Jazeera reported a missile hit an oil tanker off Qatar\u2019s coast",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 1, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported March 31 that heavy overnight strikes were reported around Isfahan, with Israel saying it completed a wide-scale wave of strikes there.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reporting indicate the Houthis have entered the conflict, adding a new missile threat vector against Israel and regional shipping.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera/BBC headline reporting indicates Qatar says it is ready to help negotiations, while Doha also says Iranian attacks crossed 'many red lines,' underscoring diplomatic strain in the Gulf.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Mar 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran struck a fully loaded oil tanker off Dubai coast on March 31, 2026, signaling continued threat to Gulf shipping.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-04-01T09:00:08Z",
+      "text": "<strong>US messages via Witkoff and intermediaries are not negotiations: Araghchi</strong> -- Iran&amp;#039;s foreign minister says message exchanges continue with Washington, but insists there are no negotiations or trust. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/4/1/us-messages-via-witkoff-and-intermediaries-are-not-negotiations-araghchi?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-01T08:27:51Z",
+      "text": "<strong>War on Iran: Three key takeaways from Araghchi\u2019s interview with Al Jazeera</strong> -- Araghchi confirmed direct talks with Witkoff but denied that they constituted negotiations in an exclusive interview. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/1/war-on-iran-three-key-takeaways-from-araghchis-interview-with-al-jazeera?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-01T07:55:50Z",
+      "text": "<strong>Israeli police inspect damage on the road after missile impact</strong> -- Police inspect a strike site in Tel Aviv after a missile hit the city. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/israeli-police-inspect-damage-on-the-road-after-missile-impact?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-01T07:54:12Z",
+      "text": "<strong>Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE</strong> -- Shrapnel from an Iranian drone interception kills a Bangladeshi national in the UAE&amp;#039;s Fujairah city. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/1/iran-attacks-cause-fire-in-kuwait-bahrain-kill-man-in-uae?traffic_source=rss"
+    },
+    {
       "time": "2026-04-01T07:01:14Z",
       "text": "<strong>Iran war: What is happening on day 33 of US-Israel attacks?</strong> -- Trump says US could leave Iran war in 2-3 weeks without a deal; Iran\u2019s FM Araghchi says he has no faith in talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-is-happening-on-day-33-of-us-israel-attacks?traffic_source=rss"
@@ -776,6 +796,11 @@
       "time": "2026-04-01T00:00:00Z",
       "text": "<strong>Iran war live: \u2018Missile from Iran\u2019 hits oil tanker off Qatar\u2019s coast</strong> -- One of three missiles launched from Iran hit an oil tanker off Qatar&amp;#039;s coast, no injuries reported. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/4/1/iran-live-trump-says-no-deal-needed-to-end-war-isfahan-steel-plants-hit?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-01T07:16:15Z",
+      "text": "<strong>China is trying to play peacemaker in the Iran war - will it work?</strong> -- It&#x27;s a turnaround for Beijing, whose official response has been muted so far. Why is China stepping in now? <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cze0kz7gr84o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-03-31T23:47:57Z",
@@ -826,31 +851,6 @@
       "time": "2026-03-31T19:37:35Z",
       "text": "<strong>Analysis: Hezbollah backs Iran ambassador as conflict deepens Lebanon rifts</strong> -- Lebanon\u2019s expulsion of Iranian ambassador tests limits of state power as Hezbollah fights push for disarmament. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/3/31/analysis-hezbollah-backs-iran-ambassador-as-conflict-deepens-lebanon-rifts?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T19:01:03Z",
-      "text": "<strong>Iran\u2019s FM confirms contact with US envoy Witkoff, denies talks under way</strong> -- Iran&amp;#039;s top diplomat Araghchi has told Al Jazeera that, despite contacts, Iran is not in negotiations with the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/31/no-truth-to-us-iranian-negotiations-irans-fm-tells-al-jazeera?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T18:16:11Z",
-      "text": "<strong>Israeli strike hits building in Beirut\u2019s southern suburbs</strong> -- A building in Beirut\u2019s southern suburbs has been hit by an Israeli strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/israeli-strike-hits-building-in-beiruts-southern-suburbs?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T18:07:51Z",
-      "text": "<strong>US-Israel launch major attacks as Iranian authorities maintain defiance</strong> -- Bunker-buster bombs trigger massive secondary explosions at a mountainous area near Isfahan overnight. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/31/us-israel-launch-major-attacks-as-iranian-authorities-maintain-defiance?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T17:48:57Z",
-      "text": "<strong>One month of war on Iran cost Arab countries up to $194bn: UNDP</strong> -- Even if conflict is &amp;#039;short but intense&amp;#039;, countries like Sudan, Yemen, Lebanon will see major increases in poverty rates. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/3/31/one-month-of-war-in-middle-east-cost-arab-states-up-to-194bn-undp?traffic_source=rss"
-    },
-    {
-      "time": "2026-03-31T12:56:45Z",
-      "text": "<strong>Iran using children in security roles in war, reports and witnesses say</strong> -- An 11-year-old is reported to have been killed in an air strike while manning a checkpoint in Tehran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c9wqgjn7x89o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "US messages via Witkoff and intermediaries are not negotiations: Araghchi",
+      "description": "Iran&#039;s foreign minister says message exchanges continue with Washington, but insists there are no negotiations or trust.",
+      "link": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/4/1/us-messages-via-witkoff-and-intermediaries-are-not-negotiations-araghchi?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T09:00:08Z",
+      "tier": 2
+    },
+    {
+      "title": "War on Iran: Three key takeaways from Araghchi\u2019s interview with Al Jazeera",
+      "description": "Araghchi confirmed direct talks with Witkoff but denied that they constituted negotiations in an exclusive interview.",
+      "link": "https://www.aljazeera.com/news/2026/4/1/war-on-iran-three-key-takeaways-from-araghchis-interview-with-al-jazeera?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T08:27:51Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli police inspect damage on the road after missile impact",
+      "description": "Police inspect a strike site in Tel Aviv after a missile hit the city.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/1/israeli-police-inspect-damage-on-the-road-after-missile-impact?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T07:55:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE",
+      "description": "Shrapnel from an Iranian drone interception kills a Bangladeshi national in the UAE&#039;s Fujairah city.",
+      "link": "https://www.aljazeera.com/news/2026/4/1/iran-attacks-cause-fire-in-kuwait-bahrain-kill-man-in-uae?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-01T07:54:12Z",
+      "tier": 2
+    },
+    {
       "title": "China is trying to play peacemaker in the Iran war - will it work?",
       "description": "It's a turnaround for Beijing, whose official response has been muted so far. Why is China stepping in now?",
       "link": "https://www.bbc.com/news/articles/cze0kz7gr84o?at_medium=RSS&at_campaign=rss",
@@ -1261,14 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "Trump says US will be leaving Iran in two to three weeks",
-      "description": "Speaking to reporters in the Oval Office, US President Donald Trump says US could leave Iran \u201cin two or three weeks.&quot;",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/trump-says-us-will-be-leaving-iran-in-two-to-three-weeks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T23:47:57Z",
-      "tier": 2
-    },
-    {
       "title": "'You're no longer my sister' - rows erupt as war divides Iranian families",
       "description": "People in Iran describe angry scenes and tense relationships as rifts open up over the war.",
       "link": "https://www.bbc.com/news/articles/ce9mvzpvr7xo?at_medium=RSS&at_campaign=rss",
@@ -1285,38 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "Pope Leo urges Trump to end war on Iran",
-      "description": "Pope Leo XIV has urged US President Donald Trump to find an \u201coff-ramp\u201d from the US and Israel\u2019s war on Iran.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/pope-leo-urges-trump-to-end-war-on-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T23:12:43Z",
-      "tier": 2
-    },
-    {
-      "title": "After Strait of Hormuz opens, turmoil would still last months, analysts say",
-      "description": "Effective shutdown of key waterway could lead to permanent changes in how shipping industry does business.",
-      "link": "https://www.aljazeera.com/news/2026/3/31/after-strait-of-hormuz-opens-turmoil-would-still-last-months-analysts-say?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T23:03:49Z",
-      "tier": 2
-    },
-    {
-      "title": "US exempts Gulf of Mexico oil drillers from endangered species protections",
-      "description": "The Trump administration says protections would diminish US energy competitiveness amid the ongoing war on Iran.",
-      "link": "https://www.aljazeera.com/news/2026/3/31/us-exempts-gulf-of-mexico-oil-drillers-from-endangered-species-protections?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T23:02:56Z",
-      "tier": 2
-    },
-    {
-      "title": "EU warns oil and gas prices won\u2019t quickly return to normal after Iran war",
-      "description": "The EU\u2019s energy commissioner has warned oil and gas prices will not return to normal any time soon.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/eu-warns-oil-and-gas-prices-wont-quickly-return-to-normal-after-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T22:56:54Z",
-      "tier": 2
-    },
-    {
       "title": "Asia's migrant workers debate if Gulf jobs are worth deadly risk of Iran war",
       "description": "Iran's strikes on Gulf states have been especially hard for migrants who have long supported these economies to lift their families back home from poverty.",
       "link": "https://www.bbc.com/news/articles/c0kr8lrpekmo?at_medium=RSS&at_campaign=rss",
@@ -1330,14 +1322,6 @@
       "link": "https://www.bbc.com/news/articles/c05d7md899ro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-03-31T22:07:26Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran ambassador refuses to leave Lebanon despite expulsion order",
-      "description": "Lebanon has ordered Iran\u2019s ambassador to leave the country, but he has refused to go.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/3/31/iran-ambassador-refuses-to-leave-lebanon-despite-expulsion-order?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-03-31T21:43:35Z",
       "tier": 2
     },
     {
@@ -1371,14 +1355,30 @@
       "source": "BBC World",
       "time": "2026-03-31T12:56:45Z",
       "tier": 2
+    },
+    {
+      "title": "How Pakistan won over Trump to become an unlikely mediator in the Iran war",
+      "description": "Pakistan's role as intermediary in this conflict took many by surprise. But perhaps it shouldn't have.",
+      "link": "https://www.bbc.com/news/articles/cy91vrzxn34o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-31T02:33:18Z",
+      "tier": 2
+    },
+    {
+      "title": "Inside the cockpit of RAF tanker during defensive mission against Iranian drones",
+      "description": "Defence correspondent Jonathan Beale flies onboard a Royal Air Force Voyager as it refuels jets in the Middle East.",
+      "link": "https://www.bbc.com/news/articles/cdrmg6x2rgxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-03-30T23:10:44Z",
+      "tier": 2
     }
   ],
-  "summary": "As of April 1, 2026, the clearest confirmed cumulative casualty figures found in current searched reporting are from Al Jazeera\u2019s war tracker, which lists 1,937 killed and 24,800 injured in Iran, 20 killed in Israel, and 13 confirmed U.S. military fatalities; its visible Gulf-state breakdown shows 10 confirmed deaths in Bahrain and Kuwait. On the military-operations side, the latest official Pentagon/CENTCOM fact sheet located in search results is dated March 18, 2026 and reports 7,800+ targets struck and 8,000+ combat flights. AP\u2019s April 1 coverage indicates the conflict remains active, including an Iranian missile strike hitting an oil tanker off Qatar and additional drones intercepted over Saudi Arabia.",
+  "summary": "As of April 1, 2026, confirmed reporting shows Iran\u2019s Health Ministry death toll at 1,937 with 24,800 wounded, while Al Jazeera\u2019s updated regional tracker lists 24 killed in Israel, 13 confirmed U.S. military dead, and 27 deaths across Gulf states. AP, citing CENTCOM commander Adm. Brad Cooper on March 25, reported that U.S. forces had struck more than 10,000 targets in Iran, and CENTCOM\u2019s March 16 fact sheet had previously listed 7,000+ targets struck and 6,500+ combat flights. AP also reported on March 31 that the USS George H.W. Bush and three destroyers are deploying to the Middle East, indicating two U.S. carrier strike groups and roughly six destroyers in theater, while several weapons-use subfields still lack publicly confirmed cumulative totals from named official or major-wire sources.",
   "briefings": [
     {
       "date": "2026-04-01",
       "day": 32,
-      "summary": "As of April 1, 2026, the clearest confirmed cumulative casualty figures found in current searched reporting are from Al Jazeera\u2019s war tracker, which lists 1,937 killed and 24,800 injured in Iran, 20 killed in Israel, and 13 confirmed U.S. military fatalities; its visible Gulf-state breakdown shows 10 confirmed deaths in Bahrain and Kuwait. On the military-operations side, the latest official Pentagon/CENTCOM fact sheet located in search results is dated March 18, 2026 and reports 7,800+ targets struck and 8,000+ combat flights. AP\u2019s April 1 coverage indicates the conflict remains active, including an Iranian missile strike hitting an oil tanker off Qatar and additional drones intercepted over Saudi Arabia."
+      "summary": "As of April 1, 2026, confirmed reporting shows Iran\u2019s Health Ministry death toll at 1,937 with 24,800 wounded, while Al Jazeera\u2019s updated regional tracker lists 24 killed in Israel, 13 confirmed U.S. military dead, and 27 deaths across Gulf states. AP, citing CENTCOM commander Adm. Brad Cooper on March 25, reported that U.S. forces had struck more than 10,000 targets in Iran, and CENTCOM\u2019s March 16 fact sheet had previously listed 7,000+ targets struck and 6,500+ combat flights. AP also reported on March 31 that the USS George H.W. Bush and three destroyers are deploying to the Middle East, indicating two U.S. carrier strike groups and roughly six destroyers in theater, while several weapons-use subfields still lack publicly confirmed cumulative totals from named official or major-wire sources."
     },
     {
       "date": "2026-03-31",
