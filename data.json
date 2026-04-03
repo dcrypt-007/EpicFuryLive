@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-03T15:54:08Z",
+  "lastUpdated": "2026-04-03T16:57:45Z",
   "dayCount": 34,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "3,589+",
-    "cost": "$20.1B+"
+    "strikes": "~10,000",
+    "killed": "1,529+",
+    "cost": "$19.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "29",
+    "israeliDeaths": "16",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "33",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$20.1 billion+",
-    "dailyBurnRate": "~$590M/day",
+    "totalCost": "$19.9 billion+",
+    "dailyBurnRate": "~$586M/day",
     "daysOfOps": 34,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-03",
-          "source": "LLM-verified (AP, April 1, 2026: USS Abraham Lincoln already in region; USS George H.W. Bush deploying to Middle East)"
+          "source": "LLM-verified (AP News, March 28, 2026: region had 'two aircraft carriers'.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-03",
-          "source": "LLM-verified (AP News, March 28, 2026: about 50,000 U.S. troops in the region)"
+          "source": "LLM-verified (AP News, March 28, 2026: 'some 50,000 troops' in the region.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-03",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury fact sheet dated March 18, 2026 lists 8,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026: 'Combat Flights: 6,500+'; no newer confirmed fighter/attack sortie total found.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported additional U.S. forces, including about 2,500 Marines aboard USS Tripoli, have arrived in theater, indicating continued escalation posture rather than drawdown (AP, March 28, 2026).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "CENTCOM/Adm. Cooper said Iran continues to maintain a chokehold on the Strait of Hormuz despite heavy U.S. strikes (AP, March 25, 2026).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian attacks injured U.S. troops at Prince Sultan Air Base in Saudi Arabia, showing Gulf-base vulnerability remains active (AP, March 28, 2026).",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 3, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported U.S. and Israeli strikes continuing around Tehran while Iran kept launching attacks across the region on April 3, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said Iran had until April 6, 2026 to reopen the Strait of Hormuz, indicating risk of further escalation if shipping disruption continues.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian strikes wounded U.S. troops at Prince Sultan Air Base in Saudi Arabia, showing continuing threat to U.S. forces in Gulf bases.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported fresh U.S. and Israeli strikes around Tehran and Isfahan early on April 3.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-04-03T16:24:00Z",
+      "text": "<strong>French-owned container ship transits Hormuz Strait in first since Iran war</strong> -- CMA CGM&amp;#039;s vessel becomes the first French-owned ship to traverse Hormuz since the US\u2013Israel war on Iran began. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/3/french-owned-container-ship-transits-hormuz-strait-in-first-since-iran-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-03T15:51:15Z",
+      "text": "<strong>Drone footage shows a factory in Israel damaged by Iranian missile debris</strong> -- Drone footage from Israel shows damage to a factory in Petah Tikva from debris from an intercepted Iranian missile. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/3/drone-footage-shows-a-factory-in-israel-damaged-by-iranian-missile-debris?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-03T15:43:22Z",
+      "text": "<strong>Iranian forces launch search for crew of downed US fighter jet</strong> -- News outlets in Iran share photos of wreckage and what appears to be an ejection seat with an attached parachute. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/3/iranian-forces-launch-search-for-pilot-of-downed-us-fighter-jet?traffic_source=rss"
+    },
+    {
       "time": "2026-04-03T15:18:34Z",
       "text": "<strong>Trump says with more time, US can \u2018take the oil\u2019 in Iran</strong> -- Despite weeks long Iranian blockade on Strait of Hormuz, US president claims Washington can &amp;#039;easily&amp;#039; reopen waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/3/trump-says-with-more-time-us-can-take-the-oil-in-iran?traffic_source=rss"
@@ -783,6 +798,11 @@
       "link": "https://www.aljazeera.com/news/2026/4/3/kuwait-desalination-plant-oil-refinery-hit-by-missile-and-drone-strikes?traffic_source=rss"
     },
     {
+      "time": "2026-04-03T11:53:40Z",
+      "text": "<strong>International law experts allege violations in Iran war</strong> -- The White House says it is making the entire region safer by eliminating short and long-term threats. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cy91x2n29nlo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-04-03T08:03:04Z",
       "text": "<strong>Iran condemns US-Israeli \u2018moral collapse\u2019 after attacks on civilian sites</strong> -- Strikes damage or destroy one of Iran\u2019s tallest bridges and a century-old medical research centre fighting diseases. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/3/iran-condemns-us-israeli-moral-collapse-after-attacks-on-civilian-sites?traffic_source=rss"
@@ -791,11 +811,6 @@
       "time": "2026-04-03T07:27:02Z",
       "text": "<strong>Iranian women footballers reveal \u2018enormous pressure\u2019 of the Asian Cup saga</strong> -- Two Iranian players who sought asylum in Australia before changing their minds tell their story to Al Jazeera. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/4/3/iranian-women-footballers-reveal-enormous-pressure-of-the-asian-cup-saga?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-03T11:53:40Z",
-      "text": "<strong>International law experts allege violations in Iran war</strong> -- The White House says it is making the entire region safer by eliminating short and long-term threats. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cy91x2n29nlo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-04-03T13:35:11Z",
@@ -836,21 +851,6 @@
       "time": "2026-04-03T10:18:11Z",
       "text": "<strong>International law experts allege violations in Iran war</strong> -- The White House says it is making the entire region safer by eliminating short and long-term threats. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cy91x2n29nlo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-02T21:22:53Z",
-      "text": "<strong>9-year-old boy recounts airstrike in Lebanon that killed whole family</strong> -- Karim Al-Haj Hussein survived an Israeli strike on his home in Lebanon\u2019s Baalbek that killed his family members. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/2/9-year-old-boy-recounts-airstrike-in-lebanon-that-killed-whole-family?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-02T16:09:24Z",
-      "text": "<strong>&#x27;I haven&#x27;t slept for days&#x27;: Iranians describe mounting desperation after a month of war</strong> -- Ordinary people from various parts of Iran describe expanding strikes, economic pain and fear of repression. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/crm1vj941x9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-02T21:04:35Z",
-      "text": "<strong>Oil shock triggers global price spikes as Iran war drags on</strong> -- Fuel shocks from the US-Israel war on Iran are rippling worldwide, as Strait of Hormuz disruptions push prices higher. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/2/oil-shock-triggers-global-price-spikes-as-iran-war-drags-on?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "French-owned container ship transits Hormuz Strait in first since Iran war",
+      "description": "CMA CGM&#039;s vessel becomes the first French-owned ship to traverse Hormuz since the US\u2013Israel war on Iran began.",
+      "link": "https://www.aljazeera.com/news/2026/4/3/french-owned-container-ship-transits-hormuz-strait-in-first-since-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-03T16:24:00Z",
+      "tier": 2
+    },
+    {
+      "title": "Drone footage shows a factory in Israel damaged by Iranian missile debris",
+      "description": "Drone footage from Israel shows damage to a factory in Petah Tikva from debris from an intercepted Iranian missile.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/3/drone-footage-shows-a-factory-in-israel-damaged-by-iranian-missile-debris?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-03T15:51:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Iranian forces launch search for crew of downed US fighter jet",
+      "description": "News outlets in Iran share photos of wreckage and what appears to be an ejection seat with an attached parachute.",
+      "link": "https://www.aljazeera.com/news/2026/4/3/iranian-forces-launch-search-for-pilot-of-downed-us-fighter-jet?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-03T15:43:22Z",
+      "tier": 2
+    },
+    {
       "title": "Trump says with more time, US can \u2018take the oil\u2019 in Iran",
       "description": "Despite weeks long Iranian blockade on Strait of Hormuz, US president claims Washington can &#039;easily&#039; reopen waterway.",
       "link": "https://www.aljazeera.com/news/2026/4/3/trump-says-with-more-time-us-can-take-the-oil-in-iran?traffic_source=rss",
@@ -1301,22 +1325,6 @@
       "tier": 2
     },
     {
-      "title": "Iran condemns US-Israeli \u2018moral collapse\u2019 after attacks on civilian sites",
-      "description": "Strikes damage or destroy one of Iran\u2019s tallest bridges and a century-old medical research centre fighting diseases.",
-      "link": "https://www.aljazeera.com/news/2026/4/3/iran-condemns-us-israeli-moral-collapse-after-attacks-on-civilian-sites?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-03T08:03:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Iranian women footballers reveal \u2018enormous pressure\u2019 of the Asian Cup saga",
-      "description": "Two Iranian players who sought asylum in Australia before changing their minds tell their story to Al Jazeera.",
-      "link": "https://www.aljazeera.com/sports/2026/4/3/iranian-women-footballers-reveal-enormous-pressure-of-the-asian-cup-saga?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-03T07:27:02Z",
-      "tier": 2
-    },
-    {
       "title": "Ros Atkins on\u2026the cost of the Iran war",
       "description": "The BBC's Analysis Editor Ros Atkins takes a closer look at US costs as it continues its war with with Iran.",
       "link": "https://www.bbc.com/news/videos/c1d9nnqqld0o?at_medium=RSS&at_campaign=rss",
@@ -1333,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on April 2-3, 2026 shows the war still expanding geographically: Reuters\u2019 April 2 factbox put the Iran death toll at 3,527 based on HRANA, with 1,606 civilians killed, while Al Jazeera cited Iran\u2019s Health Ministry saying 2,076 were dead and 26,500 wounded; Reuters also reported 13 U.S. service members dead and 29 Israeli deaths including 10 soldiers in Lebanon. AP reported continued Iranian attacks affecting Kuwait and Bahrain, a U.S. strike near a major Iranian bridge that killed eight celebrants and wounded 95 on April 2, and additional U.S. reinforcements including the USS George H.W. Bush carrier strike group and three destroyers heading to the region. The latest official U.S. operational total I found remains the March 18 DoD fact sheet listing 7,800+ targets struck and 8,000+ combat flights.",
+  "summary": "Confirmed reporting available as of April 3, 2026, still points to at least 13 U.S. service members killed, 16 deaths in Israel, and more than 1,500 people killed in Iran, while AP reported on March 28 that more than 300 U.S. troops had been wounded and that roughly 50,000 U.S. personnel and two carrier groups were in the region. AP also reported on March 25, citing CENTCOM commander Adm. Brad Cooper, that U.S. forces alone had struck more than 10,000 targets in Iran, while a March 16 CENTCOM fact sheet listed 6,500-plus combat flights. I could not verify newer confirmed cumulative figures for Iranian civilian-only deaths, Iranian wounded, Gulf-state deaths, destroyer counts, drone-unit counts, or individual munition totals from named primary or major-wire sources, so those fields remain null.",
   "briefings": [
     {
       "date": "2026-04-03",
       "day": 34,
-      "summary": "Confirmed reporting on April 2-3, 2026 shows the war still expanding geographically: Reuters\u2019 April 2 factbox put the Iran death toll at 3,527 based on HRANA, with 1,606 civilians killed, while Al Jazeera cited Iran\u2019s Health Ministry saying 2,076 were dead and 26,500 wounded; Reuters also reported 13 U.S. service members dead and 29 Israeli deaths including 10 soldiers in Lebanon. AP reported continued Iranian attacks affecting Kuwait and Bahrain, a U.S. strike near a major Iranian bridge that killed eight celebrants and wounded 95 on April 2, and additional U.S. reinforcements including the USS George H.W. Bush carrier strike group and three destroyers heading to the region. The latest official U.S. operational total I found remains the March 18 DoD fact sheet listing 7,800+ targets struck and 8,000+ combat flights."
+      "summary": "Confirmed reporting available as of April 3, 2026, still points to at least 13 U.S. service members killed, 16 deaths in Israel, and more than 1,500 people killed in Iran, while AP reported on March 28 that more than 300 U.S. troops had been wounded and that roughly 50,000 U.S. personnel and two carrier groups were in the region. AP also reported on March 25, citing CENTCOM commander Adm. Brad Cooper, that U.S. forces alone had struck more than 10,000 targets in Iran, while a March 16 CENTCOM fact sheet listed 6,500-plus combat flights. I could not verify newer confirmed cumulative figures for Iranian civilian-only deaths, Iranian wounded, Gulf-state deaths, destroyer counts, drone-unit counts, or individual munition totals from named primary or major-wire sources, so those fields remain null."
     },
     {
       "date": "2026-04-02",
