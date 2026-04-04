@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-04T08:59:23Z",
+  "lastUpdated": "2026-04-04T09:55:16Z",
   "dayCount": 35,
   "banner": {
-    "strikes": "~7,800",
+    "strikes": "~7,000",
     "killed": "2,140+",
-    "cost": "$20.5B+"
+    "cost": "$20.4B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$20.5 billion+",
-    "dailyBurnRate": "~$586M/day",
+    "totalCost": "$20.4 billion+",
+    "dailyBurnRate": "~$582M/day",
     "daysOfOps": 35,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (AP News March 28, 2026: US force included 'two aircraft carriers'; AP News March 31, 2026 says USS Abraham Lincoln remained in region while USS George H.W. Bush deployed as Ford left for repairs)"
+          "source": "LLM-verified (CENTCOM media page shows USS Gerald R. Ford and USS Abraham Lincoln supporting Operation Epic Fury; AP on March 31 said a third carrier was only slated to join)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (AP News March 31, 2026: USS George H.W. Bush deployed 'along with three destroyers')"
+          "source": "LLM-verified (Confirmed named destroyers visibly supporting Operation Epic Fury in official CENTCOM/DoD materials: USS Thomas Hudner (DDG-116), USS Spruance (DDG-111), USS John Finn (DDG-113))"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet, March 18, 2026: 'Combat Flights: 8,000+')"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; no newer official fighter/attack sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "WHO said on April 3, 2026 it had verified over 20 attacks on health care in Iran since March 1",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the USS George H. W. Bush deployed on March 31, 2026 and was slated to head to the Middle East, potentially making it the third carrier to support the war",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran claimed responsibility for downing two US warplanes on April 4, 2026; AP reported one US service member rescued and at least one still missing",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 4, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP reported April 2 that Israel faced incoming fire from Iran while Kuwait and Bahrain also reported being under attack.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 28, 2026 that more than 300 U.S. service members had been wounded in the war, including troops injured in an Iranian attack on Prince Sultan Air Base in Saudi Arabia.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on April 3, 2026 that a Red Crescent supply warehouse in Bushehr was attacked.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on April 3, 2026 that a U.S. fighter jet was shot down in Iran and that Iranian forces were searching for the crew.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1325,14 +1325,6 @@
       "tier": 2
     },
     {
-      "title": "US unemployment rate drops despite economic uncertainty and Iran war",
-      "description": "White House says March jobs report &#039;blew out expectations&#039; with gains made in the healthcare and construction sectors.",
-      "link": "https://www.aljazeera.com/news/2026/4/3/us-unemployment-rate-drops-despite-economic-uncertainty-and-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-03T17:35:23Z",
-      "tier": 2
-    },
-    {
       "title": "Experts dispute US account of deadly Iran sports hall strike in Lamerd",
       "description": "Six weapons experts have contested the US claim that video evidence suggests an Iranian missile could have hit the hall.",
       "link": "https://www.bbc.com/news/articles/c4gx8e1x5j3o?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1365,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of April 4, 2026 shows the war continuing to intensify: AP reports the U.S. is searching for a missing crew member after Iran brought down a U.S. aircraft on April 3, while CENTCOM\u2019s latest publicly accessible fact sheet dated March 18 said Operation Epic Fury had struck 7,800+ targets and flown 8,000+ combat flights. The most current broad casualty compilation located is Al Jazeera\u2019s AJLabs tracker updated April 3, which cites Iran\u2019s Health Ministry for 2,076 killed and 26,500 injured in Iran, gives 24 killed in Israel, 13 U.S. soldiers killed, and 27 deaths across Gulf states. For U.S. force posture, AP\u2019s March 28 and March 31 reporting indicates about 50,000 U.S. troops in theater, two carrier strike groups in/heading to the region, and three destroyers accompanying the newly deployed USS George H.W. Bush. No current confirmed official totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, interceptor launches, or active drone unit counts, so those remain null.",
+  "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the war entering its sixth week with a major escalation after two US aircraft were brought down over/near Iran, leaving one service member rescued and at least one still missing, according to AP. The most current widely cited cumulative casualty figures available in accessible reporting remain 2,076 killed and more than 26,500 wounded in Iran, 24 killed in Israel, 13 US troops killed, and 27 killed in Gulf states, while CENTCOM\u2019s latest official accessible operation-wide strike summary still appears to be its March 16 fact sheet listing 7,000+ targets struck and 6,500+ combat flights. WHO also warned on April 3 that it had verified over 20 attacks on health care in Iran since March 1.",
   "briefings": [
     {
       "date": "2026-04-04",
       "day": 35,
-      "summary": "Confirmed reporting as of April 4, 2026 shows the war continuing to intensify: AP reports the U.S. is searching for a missing crew member after Iran brought down a U.S. aircraft on April 3, while CENTCOM\u2019s latest publicly accessible fact sheet dated March 18 said Operation Epic Fury had struck 7,800+ targets and flown 8,000+ combat flights. The most current broad casualty compilation located is Al Jazeera\u2019s AJLabs tracker updated April 3, which cites Iran\u2019s Health Ministry for 2,076 killed and 26,500 injured in Iran, gives 24 killed in Israel, 13 U.S. soldiers killed, and 27 deaths across Gulf states. For U.S. force posture, AP\u2019s March 28 and March 31 reporting indicates about 50,000 U.S. troops in theater, two carrier strike groups in/heading to the region, and three destroyers accompanying the newly deployed USS George H.W. Bush. No current confirmed official totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, interceptor launches, or active drone unit counts, so those remain null."
+      "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the war entering its sixth week with a major escalation after two US aircraft were brought down over/near Iran, leaving one service member rescued and at least one still missing, according to AP. The most current widely cited cumulative casualty figures available in accessible reporting remain 2,076 killed and more than 26,500 wounded in Iran, 24 killed in Israel, 13 US troops killed, and 27 killed in Gulf states, while CENTCOM\u2019s latest official accessible operation-wide strike summary still appears to be its March 16 fact sheet listing 7,000+ targets struck and 6,500+ combat flights. WHO also warned on April 3 that it had verified over 20 attacks on health care in Iran since March 1."
     },
     {
       "date": "2026-04-03",
