@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-04-04T13:29:02Z",
+  "lastUpdated": "2026-04-04T14:52:55Z",
   "dayCount": 35,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "1,956+",
-    "cost": "$20.6B+"
+    "strikes": "~7,800",
+    "killed": "2,116+",
+    "cost": "$20.8B+"
   },
   "humanCost": {
-    "iranDeaths": "1,900",
+    "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "19",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "24",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "15,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1443",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$20.6 billion+",
-    "dailyBurnRate": "~$589M/day",
+    "totalCost": "$20.8 billion+",
+    "dailyBurnRate": "~$593M/day",
     "daysOfOps": 35,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (AP, March 31, 2026: USS George H.W. Bush deploying with three destroyers; AP, March 28, 2026 says U.S. had two aircraft carriers before Ford departed, implying 3 carrier strike groups with Bush movement)"
+          "source": "LLM-verified (AP News April 1, 2026: USS Abraham Lincoln in region, USS Gerald R. Ford deployed in support, USS George H.W. Bush deploying to Middle East)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (AP, March 31, 2026: USS George H.W. Bush deploying with three destroyers)"
+          "source": "LLM-verified (AP News April 1, 2026: USS George H.W. Bush deploying with three destroyers)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 16, 2026: 'Combat Flights: 6,500+' Returned as 6500 because only a confirmed floor is given; this is the latest explicit sorties/flight-count figure found, though not updated to April 4.)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet, U.S. Department of Defense/CENTCOM, March 18, 2026: 'Combat Flights: 8,000+')"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera's April 3-4 live casualty tracker and updates indicate Iranian retaliatory strikes continue across Israel and Gulf states, with confirmed cross-border casualties still rising.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported additional U.S. forces are heading to the Middle East, including the USS George H.W. Bush carrier strike group and more troops from the 82nd Airborne Division.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on April 4 that the U.S. was conducting a search for a missing crew member after Iran shot down a U.S. warplane on April 3.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 4, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Iranian attacks continue to cause fatalities in Gulf states, including reported damage at the UAE's Habshan gas facility in today's headline context",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Strait of Hormuz transit remains contested amid continuing threats to Gulf shipping",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran shot down two US aircraft on April 3, 2026; AP reports one crew member rescued and at least one service member missing",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline reporting says intercepted attacks caused significant damage at the UAE's Habshan gas facility, indicating continued regional energy-infrastructure risk.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1229,11 +1229,11 @@
       "tier": 2
     },
     {
-      "title": "What we know so far about the search for missing US airman in Iran",
-      "description": "US and Iranian forces are searching for a missing American crew member after a US warplane was shot down.",
-      "link": "https://www.bbc.com/news/videos/c7vqlr5gqr0o?at_medium=RSS&at_campaign=rss",
+      "title": "Australians told to continue Easter travel plans despite fuel shortages",
+      "description": "Hundreds of petrol stations across Australia have run out of fuel as the Iran war disrupts global oil shipments and pushes up prices.",
+      "link": "https://www.bbc.com/news/articles/c62l084kgk6o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-04-04T11:00:34Z",
+      "time": "2026-04-04T12:10:10Z",
       "tier": 2
     },
     {
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the war continuing to intensify: AP reports more than 1,900 killed in Iran, 19 dead in Israel, 13 confirmed U.S. military dead, and more than two dozen deaths in Gulf Arab states and the occupied West Bank. U.S. aircraft losses marked a major escalation on April 3, with two American planes shot down and one crew member still unaccounted for according to AP and BBC reporting. On the operational side, Pentagon reporting on April 1 quoted Gen. Dan Caine saying U.S. forces had struck more than 11,000 targets in the first 30 days of Operation Epic Fury.",
+  "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the Iranian death toll at 2,076 and wounded at 26,500 according to Iran\u2019s Health Ministry via Al Jazeera\u2019s April 3 tracker; U.S. military deaths remain 13 per AP reporting citing CENTCOM/Pentagon, while Israeli deaths stand at 24 in the same Al Jazeera tracker. Official U.S. operation data retrieved from the March 18 Defense Department/CENTCOM fact sheet lists 7,800+ targets struck and 8,000+ combat flights. AP also reported on April 4 that Iran shot down a U.S. warplane on April 3, leaving one crew member missing, and on April 1 that additional U.S. forces, including the USS George H.W. Bush and three destroyers, are moving into the theater.",
   "briefings": [
     {
       "date": "2026-04-04",
       "day": 35,
-      "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the war continuing to intensify: AP reports more than 1,900 killed in Iran, 19 dead in Israel, 13 confirmed U.S. military dead, and more than two dozen deaths in Gulf Arab states and the occupied West Bank. U.S. aircraft losses marked a major escalation on April 3, with two American planes shot down and one crew member still unaccounted for according to AP and BBC reporting. On the operational side, Pentagon reporting on April 1 quoted Gen. Dan Caine saying U.S. forces had struck more than 11,000 targets in the first 30 days of Operation Epic Fury."
+      "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the Iranian death toll at 2,076 and wounded at 26,500 according to Iran\u2019s Health Ministry via Al Jazeera\u2019s April 3 tracker; U.S. military deaths remain 13 per AP reporting citing CENTCOM/Pentagon, while Israeli deaths stand at 24 in the same Al Jazeera tracker. Official U.S. operation data retrieved from the March 18 Defense Department/CENTCOM fact sheet lists 7,800+ targets struck and 8,000+ combat flights. AP also reported on April 4 that Iran shot down a U.S. warplane on April 3, leaving one crew member missing, and on April 1 that additional U.S. forces, including the USS George H.W. Bush and three destroyers, are moving into the theater."
     },
     {
       "date": "2026-04-03",
