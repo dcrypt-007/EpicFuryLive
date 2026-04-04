@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-04T14:52:55Z",
+  "lastUpdated": "2026-04-04T15:47:46Z",
   "dayCount": 35,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "2,116+",
-    "cost": "$20.8B+"
+    "strikes": "~10,000",
+    "killed": "2,140+",
+    "cost": "$20.5B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "3",
+    "gulfCasualties": "27",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$20.8 billion+",
-    "dailyBurnRate": "~$593M/day",
+    "totalCost": "$20.5 billion+",
+    "dailyBurnRate": "~$586M/day",
     "daysOfOps": 35,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (AP News April 1, 2026: USS Abraham Lincoln in region, USS Gerald R. Ford deployed in support, USS George H.W. Bush deploying to Middle East)"
+          "source": "LLM-verified (AP News, March 28, 2026: U.S. had two aircraft carriers in the region after USS Gerald R. Ford left for Europe for repairs/supplies)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (AP, March 28, 2026: before latest arrivals, U.S. had some 50,000 troops in the region)"
+          "source": "LLM-verified (AP News, March 28, 2026: U.S. had built up to some 50,000 troops in the region)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-04",
-          "source": "LLM-verified (Operation Epic Fury Fact Sheet, U.S. Department of Defense/CENTCOM, March 18, 2026: 'Combat Flights: 8,000+')"
+          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury fact sheet dated March 18, 2026 lists 8,000+ combat flights; used as latest confirmed official cumulative sorties figure found)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 35 days",
-        "cost": "$735,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 35 days",
+        "cost": "$490,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported March 28 that Iran struck Saudi Arabia\u2019s Prince Sultan air base with ballistic missiles and drones, wounding U.S. personnel and underscoring the ongoing Gulf-base threat.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera also reported a projectile hit near Iran\u2019s Bushehr nuclear plant, with one reported killed, signaling continued risk around sensitive nuclear infrastructure.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported April 4 that Iran claimed responsibility for downing two U.S. warplanes and that a search was under way for a missing crewmember; independently confirmed official U.S. casualty details were not found in the searched sources.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 4, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "WHO, via Al Jazeera headline context, warned of more than 20 attacks on Iranian healthcare facilities since March 1",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP/Al Jazeera reporting indicates Iran claimed to down U.S. aircraft, adding escalation risk around U.S. air operations",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported April 2 that Kuwait and Bahrain were under attack as regional strikes continued",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian attacks continue to cause fatalities in Gulf states, including reported damage at the UAE's Habshan gas facility in today's headline context",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-04T15:15:39Z",
+      "text": "<strong>Witness records Israeli strike on building in Lebanon\u2019s Tyre</strong> -- Video captured the moment an Israeli strike targeted a building in Burj Shamali in Lebanon\u2019s Tyre district. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/witness-records-israeli-strike-on-building-in-lebanons-tyre?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-04T14:40:04Z",
+      "text": "<strong>Vehicles burn in Israel after being hit with Iranian projectile debris</strong> -- Video shows vehicles on fire in central Israel after debris from an intercepted Iranian projectile struck Ramat Gan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/vehicles-burn-in-israel-after-being-hit-with-iranian-projectile-debris?traffic_source=rss"
+    },
+    {
       "time": "2026-04-04T13:07:25Z",
       "text": "<strong>Israeli strikes damage hospital in Lebanon\u2019s Tyre; ground invasion advances</strong> -- At least 11 people are injured as Israel strikes near the Lebanese Italian Hospital in Tyre, damaging the facility. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/4/israeli-strikes-damage-hospital-in-lebanons-tyre?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-04-03T15:51:15Z",
       "text": "<strong>Drone footage shows a factory in Israel damaged by Iranian missile debris</strong> -- Drone footage from Israel shows damage to a factory in Petah Tikva from debris from an intercepted Iranian missile. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/3/drone-footage-shows-a-factory-in-israel-damaged-by-iranian-missile-debris?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-03T15:43:22Z",
-      "text": "<strong>Iran says it downed two US jets as search for one pilot continues</strong> -- Trump says downing of F-15 will not affect talks as Iranian forces say they also struck an A-10 aircraft near Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/3/iranian-forces-launch-search-for-pilot-of-downed-us-fighter-jet?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-03T15:18:34Z",
-      "text": "<strong>Trump says with more time, US can \u2018take the oil\u2019 in Iran</strong> -- Despite weeks long Iranian blockade on Strait of Hormuz, US president claims Washington can &amp;#039;easily&amp;#039; reopen waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/3/trump-says-with-more-time-us-can-take-the-oil-in-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Witness records Israeli strike on building in Lebanon\u2019s Tyre",
+      "description": "Video captured the moment an Israeli strike targeted a building in Burj Shamali in Lebanon\u2019s Tyre district.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/witness-records-israeli-strike-on-building-in-lebanons-tyre?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-04T15:15:39Z",
+      "tier": 2
+    },
+    {
+      "title": "Vehicles burn in Israel after being hit with Iranian projectile debris",
+      "description": "Video shows vehicles on fire in central Israel after debris from an intercepted Iranian projectile struck Ramat Gan.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/vehicles-burn-in-israel-after-being-hit-with-iranian-projectile-debris?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-04T14:40:04Z",
+      "tier": 2
+    },
+    {
       "title": "Israeli strikes damage hospital in Lebanon\u2019s Tyre; ground invasion advances",
       "description": "At least 11 people are injured as Israel strikes near the Lebanese Italian Hospital in Tyre, damaging the facility.",
       "link": "https://www.aljazeera.com/news/2026/4/4/israeli-strikes-damage-hospital-in-lebanons-tyre?traffic_source=rss",
@@ -1341,27 +1357,11 @@
       "tier": 2
     },
     {
-      "title": "More than 20 attacks on Iranian healthcare facilities since March 1: WHO",
-      "description": "WHO chief Tedros Adhanom Ghebreyesus says &#039;multiple attacks&#039; on Iranian healthcare facilities have been reported.",
-      "link": "https://www.aljazeera.com/news/2026/4/3/more-than-20-attacks-on-iranian-healthcare-facilities-since-march-1-who?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-03T19:16:56Z",
-      "tier": 2
-    },
-    {
       "title": "Experts dispute US account of deadly Iran sports hall strike in Lamerd",
       "description": "Six weapons experts have contested the US claim that video evidence suggests an Iranian missile could have hit the hall.",
       "link": "https://www.bbc.com/news/articles/c4gx8e1x5j3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-03T13:16:33Z",
-      "tier": 2
-    },
-    {
-      "title": "When will the Iran war end? Tracing the Trump administration's timelines",
-      "description": "Experts say many US presidents have offered a timeline for a conflict - only to then shift their estimates.",
-      "link": "https://www.bbc.com/news/articles/c4g4e6z9960o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-03T11:28:34Z",
       "tier": 2
     },
     {
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the Iranian death toll at 2,076 and wounded at 26,500 according to Iran\u2019s Health Ministry via Al Jazeera\u2019s April 3 tracker; U.S. military deaths remain 13 per AP reporting citing CENTCOM/Pentagon, while Israeli deaths stand at 24 in the same Al Jazeera tracker. Official U.S. operation data retrieved from the March 18 Defense Department/CENTCOM fact sheet lists 7,800+ targets struck and 8,000+ combat flights. AP also reported on April 4 that Iran shot down a U.S. warplane on April 3, leaving one crew member missing, and on April 1 that additional U.S. forces, including the USS George H.W. Bush and three destroyers, are moving into the theater.",
+  "summary": "Confirmed reporting available today indicates that Iranian authorities still put the cumulative death toll in Iran at 2,076 killed and 26,500 wounded, while AP\u2019s latest confirmed U.S. military toll remains 13 killed and more than 300 wounded. Al Jazeera\u2019s latest regional tracker lists 24 killed in Israel and 27 deaths across Gulf states. For operations, the latest official figures found were CENTCOM\u2019s March 25 statement via AP that U.S. forces had hit more than 10,000 targets, while the most recent official fact sheet located lists 8,000+ combat flights as of March 18. AP also reported the U.S. force posture at roughly 50,000 troops and two carrier strike groups in theater after the Ford departed for Europe.",
   "briefings": [
     {
       "date": "2026-04-04",
       "day": 35,
-      "summary": "Confirmed reporting as of Saturday, April 4, 2026 shows the Iranian death toll at 2,076 and wounded at 26,500 according to Iran\u2019s Health Ministry via Al Jazeera\u2019s April 3 tracker; U.S. military deaths remain 13 per AP reporting citing CENTCOM/Pentagon, while Israeli deaths stand at 24 in the same Al Jazeera tracker. Official U.S. operation data retrieved from the March 18 Defense Department/CENTCOM fact sheet lists 7,800+ targets struck and 8,000+ combat flights. AP also reported on April 4 that Iran shot down a U.S. warplane on April 3, leaving one crew member missing, and on April 1 that additional U.S. forces, including the USS George H.W. Bush and three destroyers, are moving into the theater."
+      "summary": "Confirmed reporting available today indicates that Iranian authorities still put the cumulative death toll in Iran at 2,076 killed and 26,500 wounded, while AP\u2019s latest confirmed U.S. military toll remains 13 killed and more than 300 wounded. Al Jazeera\u2019s latest regional tracker lists 24 killed in Israel and 27 deaths across Gulf states. For operations, the latest official figures found were CENTCOM\u2019s March 25 statement via AP that U.S. forces had hit more than 10,000 targets, while the most recent official fact sheet located lists 8,000+ combat flights as of March 18. AP also reported the U.S. force posture at roughly 50,000 troops and two carrier strike groups in theater after the Ford departed for Europe."
     },
     {
       "date": "2026-04-03",
