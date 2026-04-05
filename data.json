@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-05T14:54:35Z",
+  "lastUpdated": "2026-04-05T15:47:26Z",
   "dayCount": 36,
   "banner": {
     "strikes": "~7,000",
-    "killed": "2,140+",
-    "cost": "$21.0B+"
+    "killed": "2,135+",
+    "cost": "$20.8B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "19",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "27",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.0 billion+",
-    "dailyBurnRate": "~$583M/day",
+    "totalCost": "$20.8 billion+",
+    "dailyBurnRate": "~$579M/day",
     "daysOfOps": 36,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (AP March 31, 2026 reports USS George H.W. Bush deploying to the Middle East while USS Abraham Lincoln is already in region)"
+          "source": "LLM-verified (CENTCOM imagery/updates show USS Abraham Lincoln and USS Gerald R. Ford operating in support of Operation Epic Fury in March 2026; no official confirmation yet that third carrier has arrived as of April 5, 2026)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (CENTCOM statement quoted by Al Jazeera on March 23, 2026: US forces have flown more than 8,000 combat flights during Operation Epic Fury.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists Combat Flights: 6,500+; no newer official sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 1 that a third U.S. aircraft carrier, USS George H. W. Bush, was slated to deploy toward the Middle East, but arrival in theater was not yet officially confirmed by April 5.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported Iran-linked attacks and debris impacts continued across Gulf states, including fires and infrastructure damage in Kuwait, Bahrain and the UAE.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 3-4 that two U.S. aircraft were downed in separate incidents, with one crew member rescued and another initially missing/rescue operations ongoing.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 5, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP April 4, 2026 reported Trump set an April 6, 2026 deadline for Iran to reopen the Strait of Hormuz amid threats to widen disruption to Bab el-Mandeb shipping.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP April 4, 2026 reported two U.S. combat aircraft went down on April 3, with one U.S. crew member rescued and search activity continuing for another.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "RSS headlines supplied by user indicate Tehran rejected Trump's ultimatum to reopen the Strait of Hormuz and that the search for a missing U.S. airman continues.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on March 25, 2026 that U.S. forces had hit over 10,000 targets in Iran and CENTCOM said U.S. precision strikes had overwhelmed Iranian air defenses.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-04-05T15:08:40Z",
+      "text": "<strong>Iran\u2019s World Cup participation depends on relocation from US, minister says</strong> -- Iran awaits FIFA&amp;#039;s response after requesting relocation of its games to Mexico amid the US-Israeli war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/4/5/irans-world-cup-participation-depends-on-relocation-from-us-minister-says?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-05T15:05:49Z",
+      "text": "<strong>Why an attack on Bushehr nuclear plant would be catastrophic for the Gulf</strong> -- The US and Israel have repeatedly hit the plant, raising risks of radioactive contamination far beyond Iran&amp;#039;s borders. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/5/why-an-attack-on-bushehr-nuclear-plant-would-be-catastrophic-for-the-gulf?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-05T14:48:51Z",
+      "text": "<strong>Nepal announces two-day weekends as fuel crisis caused by Iran war deepens</strong> -- Saturday had been the only day off in Himalayan nation, which relies almost entirely on India for its fuel supplies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/5/nepal-announces-two-day-weekends-as-fuel-crisis-caused-by-iran-war-deepens?traffic_source=rss"
+    },
+    {
       "time": "2026-04-05T13:23:55Z",
       "text": "<strong>Trump offers no concrete plan as Strait of Hormuz closure shocks Europe</strong> -- Economist James Meadway says US President Donald Trump offers threats but no clear plan to end the crisis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/quotable/2026/4/5/trump-offers-no-concrete-plan-as-strait-of-hormuz-closure-shocks-europe?traffic_source=rss"
@@ -836,21 +851,6 @@
       "time": "2026-04-04T20:21:51Z",
       "text": "<strong>Indonesia receives bodies of peacekeepers killed in southern Lebanon</strong> -- Foreign Minister Sugiono told reporters that Indonesia wants a thorough UN investigation into the deaths. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/4/indonesia-receives-bodies-of-peacekeepers-killed-in-southern-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-04T20:04:21Z",
-      "text": "<strong>Israeli police arrest antiwar protesters in Tel Aviv</strong> -- Israeli police clashed with protesters and made arrests in Tel Aviv as demonstrators rallied against the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/israeli-police-arrest-antiwar-protesters-in-tel-aviv?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-04T19:48:15Z",
-      "text": "<strong>Tehran psychiatric hospital not usable after US-Israeli strike</strong> -- A psychiatric hospital in Tehran is no longer functioning after a US-Israeli strike, the hospital chief says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/tehran-psychiatric-hospital-not-usable-after-us-israeli-strike?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-04T19:17:24Z",
-      "text": "<strong>Universities hit as US, Israel ramp up attacks on Iran\u2019s infrastructure</strong> -- Authorities say at least 30 universities impacted by US and Israeli strikes since the start of the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/4/universities-hit-as-us-israel-ramp-up-attacks-on-irans-infrastructure?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "How downed F-15 US airman was rescued inside Iran",
+      "description": "The US has rescued the missing crew member of the US F-15 fighter jet which was shot down over southern Iran.",
+      "link": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-05T15:45:20Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran\u2019s World Cup participation depends on relocation from US, minister says",
+      "description": "Iran awaits FIFA&#039;s response after requesting relocation of its games to Mexico amid the US-Israeli war.",
+      "link": "https://www.aljazeera.com/sports/2026/4/5/irans-world-cup-participation-depends-on-relocation-from-us-minister-says?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-05T15:08:40Z",
+      "tier": 2
+    },
+    {
+      "title": "Why an attack on Bushehr nuclear plant would be catastrophic for the Gulf",
+      "description": "The US and Israel have repeatedly hit the plant, raising risks of radioactive contamination far beyond Iran&#039;s borders.",
+      "link": "https://www.aljazeera.com/news/2026/4/5/why-an-attack-on-bushehr-nuclear-plant-would-be-catastrophic-for-the-gulf?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-05T15:05:49Z",
+      "tier": 2
+    },
+    {
+      "title": "Nepal announces two-day weekends as fuel crisis caused by Iran war deepens",
+      "description": "Saturday had been the only day off in Himalayan nation, which relies almost entirely on India for its fuel supplies.",
+      "link": "https://www.aljazeera.com/news/2026/4/5/nepal-announces-two-day-weekends-as-fuel-crisis-caused-by-iran-war-deepens?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-05T14:48:51Z",
+      "tier": 2
+    },
+    {
       "title": "Trump offers no concrete plan as Strait of Hormuz closure shocks Europe",
       "description": "Economist James Meadway says US President Donald Trump offers threats but no clear plan to end the crisis.",
       "link": "https://www.aljazeera.com/video/quotable/2026/4/5/trump-offers-no-concrete-plan-as-strait-of-hormuz-closure-shocks-europe?traffic_source=rss",
@@ -1253,19 +1285,19 @@
       "tier": 2
     },
     {
-      "title": "What we know so far about rescue of US airman in Iran",
-      "description": "The US has rescued the missing crew member of the US F-15 fighter jet which was shot down over southern Iran.",
-      "link": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-05T10:07:16Z",
-      "tier": 2
-    },
-    {
       "title": "Kuwait\u2019s power, water plants damaged as Iran keeps attacking Gulf states",
       "description": "Bahrain and the UAE also report attacks resulting in fires, which are put out quickly.",
       "link": "https://www.aljazeera.com/news/2026/4/5/kuwait-says-power-water-facilities-hit-by-iran-as-gulf-attacks-continue?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-05T08:52:22Z",
+      "tier": 2
+    },
+    {
+      "title": "US airman injured but safe after rescue from inside Iran, Trump says",
+      "description": "The recovery of the airman follows separate search efforts by both the US and Iran.",
+      "link": "https://www.bbc.com/news/articles/cr41evk126go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-05T08:36:06Z",
       "tier": 2
     },
     {
@@ -1309,38 +1341,6 @@
       "tier": 2
     },
     {
-      "title": "Trump\u2019s unpopular war on Iran",
-      "description": "Most Americans oppose the US-Israel war on Iran. \u200b\u200bNo recent US war has ever started off being this unpopular.",
-      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/5/trumps-unpopular-war-on-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-05T05:07:35Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says Iraqi ships can pass Strait of Hormuz as transits tick up",
-      "description": "Tehran says Iraq will face no restrictions in waterway, praising country&#039;s &#039;struggle&#039; against the US.",
-      "link": "https://www.aljazeera.com/economy/2026/4/5/iran-says-iraqi-ships-can-pass-strait-of-hormuz-as-transits-tick-up?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-05T02:14:52Z",
-      "tier": 2
-    },
-    {
-      "title": "US satellite firm Planet Labs announces blackout on war on Iran images",
-      "description": "Company says move amid US-Israel war on Iran comes after a request from the US government.",
-      "link": "https://www.aljazeera.com/news/2026/4/5/us-satellite-firm-planet-labs-announces-blackout-on-war-on-iran-images?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-05T01:13:40Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Trump vows to hit power plants, bridges over Hormuz closure",
-      "description": "Tehran says shot down two US C-130 planes, two helicopters, as Iran&#039;s infrastructure attacks cause fires across Gulf.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/4/5/iran-war-live-tehran-rejects-trumps-ultimatum-fire-at-kuwait-oil-complex?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-05T00:00:00Z",
-      "tier": 2
-    },
-    {
       "title": "US says it has arrested relatives of late Iranian \u200bgeneral Qasem \u200bSoleimani",
       "description": "The niece and grand-niece of Qasem Soleimani are in the custody of US Immigration and Customs Enforcement, officials said.",
       "link": "https://www.bbc.com/news/articles/cgqkn4j48qdo?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of April 5, 2026 shows the war remains active with no ceasefire in place. AP reported President Donald Trump threatened strikes on Iran's critical infrastructure if the Strait of Hormuz is not reopened, while US forces rescued the missing crew member from the downed F-15E. The most recent confirmed cumulative casualty figures I found remain 2,076 killed and more than 26,500 wounded in Iran from Iran's Health Ministry via Al Jazeera's April 3 tracker, 13 US military fatalities confirmed by the US military and reflected by AP/Al Jazeera, 24 killed in Israel, and 27 deaths across Gulf states. The latest official strike total I found is the March 16 CENTCOM/DoD fact sheet stating 7,000+ targets struck, while a later CENTCOM statement cited by Al Jazeera said US forces had flown more than 8,000 combat flights.",
+  "summary": "Confirmed reporting on April 4-5, 2026 showed the war entering its sixth week with Iranian authorities saying 2,076 people have been killed and 26,500 wounded in Iran, AP continuing to report 13 confirmed U.S. service members killed in combat, and AP saying 19 people have been reported dead in Israel. Al Jazeera\u2019s latest tracker listed 27 deaths in Gulf states. CENTCOM\u2019s most recent official fact sheet still publicly available dated March 16 said Operation Epic Fury had struck 7,000-plus targets and generated 6,500-plus combat flights, while official CENTCOM imagery continued to show two carrier strike groups, USS Abraham Lincoln and USS Gerald R. Ford, supporting the operation. Reporting over the past two days also confirmed a major escalation with two U.S. aircraft lost and continued Iranian attacks on Gulf infrastructure.",
   "briefings": [
     {
       "date": "2026-04-05",
       "day": 36,
-      "summary": "Confirmed reporting as of April 5, 2026 shows the war remains active with no ceasefire in place. AP reported President Donald Trump threatened strikes on Iran's critical infrastructure if the Strait of Hormuz is not reopened, while US forces rescued the missing crew member from the downed F-15E. The most recent confirmed cumulative casualty figures I found remain 2,076 killed and more than 26,500 wounded in Iran from Iran's Health Ministry via Al Jazeera's April 3 tracker, 13 US military fatalities confirmed by the US military and reflected by AP/Al Jazeera, 24 killed in Israel, and 27 deaths across Gulf states. The latest official strike total I found is the March 16 CENTCOM/DoD fact sheet stating 7,000+ targets struck, while a later CENTCOM statement cited by Al Jazeera said US forces had flown more than 8,000 combat flights."
+      "summary": "Confirmed reporting on April 4-5, 2026 showed the war entering its sixth week with Iranian authorities saying 2,076 people have been killed and 26,500 wounded in Iran, AP continuing to report 13 confirmed U.S. service members killed in combat, and AP saying 19 people have been reported dead in Israel. Al Jazeera\u2019s latest tracker listed 27 deaths in Gulf states. CENTCOM\u2019s most recent official fact sheet still publicly available dated March 16 said Operation Epic Fury had struck 7,000-plus targets and generated 6,500-plus combat flights, while official CENTCOM imagery continued to show two carrier strike groups, USS Abraham Lincoln and USS Gerald R. Ford, supporting the operation. Reporting over the past two days also confirmed a major escalation with two U.S. aircraft lost and continued Iranian attacks on Gulf infrastructure."
     },
     {
       "date": "2026-04-04",
