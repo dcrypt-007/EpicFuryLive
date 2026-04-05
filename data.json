@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-04-05T21:47:27Z",
+  "lastUpdated": "2026-04-05T22:51:44Z",
   "dayCount": 36,
   "banner": {
-    "strikes": "~10,000",
-    "killed": "2,108+",
-    "cost": "$21.0B+"
+    "strikes": "~6,000",
+    "killed": "2,118+",
+    "cost": "$20.8B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "19",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "41",
+    "gulfCasualties": "5",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.0 billion+",
-    "dailyBurnRate": "~$583M/day",
+    "totalCost": "$20.8 billion+",
+    "dailyBurnRate": "~$577M/day",
     "daysOfOps": 36,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (AP reported on March 31, 2026 that USS George H.W. Bush deployed to the Middle East; current database value of 2 carrier strike groups remains consistent with latest reporting, but no single official source in retrieved results stated the theater total explicitly.)"
+          "source": "LLM-verified (AP News March 31, 2026: USS George H.W. Bush deployed to join existing carrier presence, indicating 2 carrier strike groups in theater)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (AP News March 31, 2026 says Bush deploys with three destroyers; Abraham Lincoln January deployment carried three destroyers in AP reporting, implying 6 total escorts tied to the two carrier groups)"
+          "source": "LLM-verified (AP News March 31, 2026: Bush deploying with 3 destroyers; combined with existing 3-warship escort cited for Abraham Lincoln gives 6)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (Reuters report published March 20, 2026 says additional deployments will add to the 50,000 U.S. troops already in the Middle East)"
+          "source": "LLM-verified (CENTCOM figure reported March 17, 2026: approximately 50,000 U.S. military personnel deployed in region supporting Operation Epic Fury)"
         },
         {
           "id": "intel_cyber",
@@ -184,8 +184,8 @@
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-04-03",
-          "source": "LLM-verified (Al Jazeera, March 29, 2026, citing The Washington Post report that 850 Tomahawks had been fired so far: https://www.aljazeera.com/news/2026/3/29/iran-hits-us-awacs-air-tankers-what-else-has-it-targeted-in-past-month)"
+          "lastUpdated": "2026-04-05",
+          "source": "LLM-verified (Reuters report carried by Defense News on March 27, 2026: over 850 Tomahawk cruise missiles fired)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists 8,000+ combat flights. This is the latest official cumulative flights figure retrieved, but it is not fighter-only and may include broader combat flights.)"
+          "source": "LLM-verified (CENTCOM update reported March 17, 2026: more than 6,000 combat sorties/flights since start of operation)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,000 \u00d7 $100,000 each",
+        "cost": "$600,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported additional U.S. troops, including elements of the 82nd Airborne and Marine forces, are moving into the Middle East as Washington warns of possible escalation",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump threatened broad attacks on Iranian power plants and bridges if the Strait of Hormuz is not reopened, according to AP and Al Jazeera reporting on April 4-5, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 5, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Al Jazeera reported Houthi claims of a missile attack on Israel's Ben Gurion Airport",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported continuing Iranian attacks on Gulf infrastructure, including damage to power and water facilities in Kuwait and fires in Bahrain and the UAE",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and BBC reported the second pilot from the downed F-15E was later rescued after roughly 48 hours",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of April 5, 2026 shows the war continuing to escalate: Iranian authorities say at least 2,076 people have been killed and 26,500 wounded in Iran since February 28; AP reports 13 U.S. service members and 19 people in Israel have been killed; AP also says CENTCOM chief Adm. Brad Cooper stated U.S. forces have hit more than 10,000 targets, while additional U.S. troops and the USS George H.W. Bush carrier strike group are deploying to the region and two U.S. military aircraft were downed on April 3.",
+  "summary": "Confirmed reporting as of April 5, 2026 indicates the war has reached at least 2,076 killed and 26,500 wounded in Iran according to Iranian authorities, while AP previously reported 13 confirmed U.S. military deaths and Al Jazeera\u2019s updated tracker puts Israeli deaths at 24. Gulf-state fatalities confirmed in accessible reporting total at least five, including four in the UAE and one in Kuwait. On the military side, CENTCOM reporting carried in secondary coverage said U.S. forces had flown more than 6,000 combat sorties and struck roughly 6,000 sites, while AP reported a second U.S. carrier strike group led by USS George H.W. Bush is deploying to the region and CENTCOM\u2019s March update cited about 50,000 U.S. personnel supporting Operation Epic Fury. Reuters reporting carried by Defense News said U.S. forces had fired over 850 Tomahawks by late March, underscoring the campaign\u2019s high munition expenditure.",
   "briefings": [
     {
       "date": "2026-04-05",
       "day": 36,
-      "summary": "Confirmed reporting as of April 5, 2026 shows the war continuing to escalate: Iranian authorities say at least 2,076 people have been killed and 26,500 wounded in Iran since February 28; AP reports 13 U.S. service members and 19 people in Israel have been killed; AP also says CENTCOM chief Adm. Brad Cooper stated U.S. forces have hit more than 10,000 targets, while additional U.S. troops and the USS George H.W. Bush carrier strike group are deploying to the region and two U.S. military aircraft were downed on April 3."
+      "summary": "Confirmed reporting as of April 5, 2026 indicates the war has reached at least 2,076 killed and 26,500 wounded in Iran according to Iranian authorities, while AP previously reported 13 confirmed U.S. military deaths and Al Jazeera\u2019s updated tracker puts Israeli deaths at 24. Gulf-state fatalities confirmed in accessible reporting total at least five, including four in the UAE and one in Kuwait. On the military side, CENTCOM reporting carried in secondary coverage said U.S. forces had flown more than 6,000 combat sorties and struck roughly 6,000 sites, while AP reported a second U.S. carrier strike group led by USS George H.W. Bush is deploying to the region and CENTCOM\u2019s March update cited about 50,000 U.S. personnel supporting Operation Epic Fury. Reuters reporting carried by Defense News said U.S. forces had fired over 850 Tomahawks by late March, underscoring the campaign\u2019s high munition expenditure."
     },
     {
       "date": "2026-04-04",
