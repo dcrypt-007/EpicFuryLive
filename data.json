@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-05T17:49:39Z",
+  "lastUpdated": "2026-04-05T19:04:34Z",
   "dayCount": 36,
   "banner": {
     "strikes": "~10,000",
-    "killed": "1,529+",
-    "cost": "$20.8B+"
+    "killed": "2,106+",
+    "cost": "$21.0B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "16",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "3",
+    "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$20.8 billion+",
-    "dailyBurnRate": "~$579M/day",
+    "totalCost": "$21.0 billion+",
+    "dailyBurnRate": "~$583M/day",
     "daysOfOps": 36,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (AP, March 28, 2026: U.S. force in region included two aircraft carriers.)"
+          "source": "LLM-verified (AP News March 31, 2026 reporting indicates USS Abraham Lincoln already in region and USS George H.W. Bush deploying to Middle East, implying 2 U.S. carrier strike groups in theater)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (AP March 31, 2026 reports Bush deploying with three destroyers; AP Jan. 26, 2026 reported Abraham Lincoln arrived with three destroyers)"
+          "source": "LLM-verified (AP News March 31, 2026 says Bush deploys with three destroyers; Abraham Lincoln January deployment carried three destroyers in AP reporting, implying 6 total escorts tied to the two carrier groups)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (AP, March 28, 2026: U.S. buildup described as some 50,000 troops in the region.)"
+          "source": "LLM-verified (Reuters report published March 20, 2026 says additional deployments will add to the 50,000 U.S. troops already in the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026: 6,500+ combat flights.)"
+          "source": "LLM-verified (Pentagon/CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists Combat Flights: 8,000+)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Kuwait reported strikes on an oil refinery and desalination plant; Bahrain reported drone-intercept debris injuries; UAE confirmed one fatality at an Abu Dhabi gas complex",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran said it shot down two U.S. warplanes, with one U.S. airman still reported missing in coverage reviewed",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump on April 4 threatened major escalation if Iran does not reopen the Strait of Hormuz by Tuesday, including possible strikes on power plants and bridges",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 5, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera headline says Planet Labs announced a blackout on war-related satellite imagery after a U.S. government request.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline says the Houthis claimed a cluster-missile attack on Israel's Ben Gurion airport.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline says Kuwait's power and water plants were damaged as Iran continued attacks on Gulf states; Bahrain and the UAE also reported attacks resulting in fires.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on April 5, 2026 that the previously missing U.S. crew member from a downed F-15E was rescued.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-04-05T18:29:52Z",
+      "text": "<strong>Frustration grows as Iran\u2019s wartime internet shutdown breaks grim record</strong> -- Since January, Iran&amp;#039;s near total internet blackout has impacted jobs and businesses. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/5/frustration-grows-as-irans-wartime-internet-shutdown-breaks-grim-record?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-05T18:22:14Z",
+      "text": "<strong>Video captures Iranian missile striking residential building in Haifa</strong> -- Video captured the moment of a direct hit by an Iranian missile on a residential building in Israel\u2019s Haifa. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/5/video-captures-iranian-missile-striking-residential-building-in-haifa?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-05T17:58:24Z",
+      "text": "<strong>Israeli air strikes, shelling across Lebanon add to rising death toll</strong> -- Widespread Israeli attacks pounded Lebanon from Beirut to Tyre on Sunday, adding to a rising death toll. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/5/israeli-air-strikes-shelling-across-lebanon-add-to-rising-death-toll?traffic_source=rss"
+    },
+    {
       "time": "2026-04-05T17:33:04Z",
       "text": "<strong>OPEC+ agrees to hike oil output, warns of slow recovery after attacks</strong> -- The rise is largely symbolic as some key members are unable to raise \u200bproduction amid the US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/5/opec-agrees-to-hike-oil-output-warns-of-slow-recovery-after-attacks?traffic_source=rss"
@@ -836,21 +851,6 @@
       "time": "2026-04-05T07:45:48Z",
       "text": "<strong>Iran war: What is happening on day 37 of US-Israeli attacks?</strong> -- A US crew member who has been missing since Iran shot down a fighter plane has been rescued, Trump says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/5/iran-war-what-is-happening-on-day-37-of-us-israeli-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-05T07:45:37Z",
-      "text": "<strong>Yemen\u2019s Houthis claim cluster missile attack on Israel\u2019s Ben Gurion airport</strong> -- Yemen\u2019s Houthi military spokesman has claimed responsibility for a strike on Israel\u2019s Ben Gurion\u00a0airport in Jaffa. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/5/yemens-houthis-claim-cluster-missile-attack-on-israels-ben-gurion-airport?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-05T06:51:57Z",
-      "text": "<strong>\u2018Miraculous\u2019: US rescues second pilot downed in Iran, Trump confirms</strong> -- Iran claims another US aircraft involved in the rescue of the F-15 fighter pilot has been shot down. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/5/us-rescues-airman-whose-f-15-was-downed-in-iran-trump-confirms?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-05T05:07:35Z",
-      "text": "<strong>Trump\u2019s unpopular war on Iran</strong> -- Most Americans oppose the US-Israel war on Iran. \u200b\u200bNo recent US war has ever started off being this unpopular. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/5/trumps-unpopular-war-on-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Frustration grows as Iran\u2019s wartime internet shutdown breaks grim record",
+      "description": "Since January, Iran&#039;s near total internet blackout has impacted jobs and businesses.",
+      "link": "https://www.aljazeera.com/news/2026/4/5/frustration-grows-as-irans-wartime-internet-shutdown-breaks-grim-record?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-05T18:29:52Z",
+      "tier": 2
+    },
+    {
+      "title": "Video captures Iranian missile striking residential building in Haifa",
+      "description": "Video captured the moment of a direct hit by an Iranian missile on a residential building in Israel\u2019s Haifa.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/5/video-captures-iranian-missile-striking-residential-building-in-haifa?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-05T18:22:14Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli air strikes, shelling across Lebanon add to rising death toll",
+      "description": "Widespread Israeli attacks pounded Lebanon from Beirut to Tyre on Sunday, adding to a rising death toll.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/5/israeli-air-strikes-shelling-across-lebanon-add-to-rising-death-toll?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-05T17:58:24Z",
+      "tier": 2
+    },
+    {
       "title": "OPEC+ agrees to hike oil output, warns of slow recovery after attacks",
       "description": "The rise is largely symbolic as some key members are unable to raise \u200bproduction amid the US-Israel war on Iran.",
       "link": "https://www.aljazeera.com/news/2026/4/5/opec-agrees-to-hike-oil-output-warns-of-slow-recovery-after-attacks?traffic_source=rss",
@@ -1325,22 +1349,6 @@
       "tier": 2
     },
     {
-      "title": "US pilot from downed F-15E plane rescued in Iran: What we know",
-      "description": "The second pilot from the fighter jet shot down in Iran is rescued by US rescue forces after 48 hours.",
-      "link": "https://www.aljazeera.com/news/2026/4/5/us-pilot-from-downed-f-15-plane-rescued-in-iran-what-we-know?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-05T10:10:50Z",
-      "tier": 2
-    },
-    {
-      "title": "Kuwait\u2019s power, water plants damaged as Iran keeps attacking Gulf states",
-      "description": "Bahrain and the UAE also report attacks resulting in fires, which are put out quickly.",
-      "link": "https://www.aljazeera.com/news/2026/4/5/kuwait-says-power-water-facilities-hit-by-iran-as-gulf-attacks-continue?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-05T08:52:22Z",
-      "tier": 2
-    },
-    {
       "title": "US says it has arrested relatives of late Iranian \u200bgeneral Qasem \u200bSoleimani",
       "description": "The niece and grand-niece of Qasem Soleimani are in the custody of US Immigration and Customs Enforcement, officials said.",
       "link": "https://www.bbc.com/news/articles/cgqkn4j48qdo?at_medium=RSS&at_campaign=rss",
@@ -1357,14 +1365,6 @@
       "tier": 2
     },
     {
-      "title": "What we know so far about the search for missing US airman in Iran",
-      "description": "US and Iranian forces are searching for a missing American crew member after a US warplane was shot down.",
-      "link": "https://www.bbc.com/news/videos/c7vqlr5gqr0o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-04T11:00:34Z",
-      "tier": 2
-    },
-    {
       "title": "Faced with new energy shock, Europe asks if reviving nuclear is the answer",
       "description": "As war drives up gas and fuel prices, Europeans turn again to the issue of energy independence.",
       "link": "https://www.bbc.com/news/articles/c4g8k8vq8gno?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains fragmentary. AP reported on March 25, 2026 that the war death toll had risen to more than 1,500 in Iran, 16 in Israel, and 13 U.S. military personnel, while noting only an unspecified number of Gulf civilian deaths. AP also reported on March 28 that the United States had built up about 50,000 troops and two aircraft carriers in the region, and a March 16 CENTCOM fact sheet listed 7,000+ targets struck and 6,500+ combat flights at that time; by March 25, AP cited CENTCOM commander Adm. Brad Cooper as saying U.S. forces had hit more than 10,000 targets. I could not confirm newer official cumulative figures for Iranian deaths, civilian deaths, wounded, Gulf deaths, destroyers, drone units, or specific munitions totals, so those fields are left null.",
+  "summary": "Confirmed reporting reviewed on April 5, 2026 indicates the cumulative Iranian toll remains at 2,076 killed and 26,500 wounded according to Iranian authorities cited by Al Jazeera, while AP\u2019s March 25 live coverage put cumulative deaths at 13 U.S. military personnel and 16 in Israel. AP also reported CENTCOM commander Adm. Brad Cooper saying U.S. forces had struck more than 10,000 targets in Iran, while the latest Pentagon fact sheet publicly available lists 8,000+ combat flights as of March 18. Current force reporting supports 2 U.S. carrier strike groups in theater and roughly 50,000 U.S. personnel in the region, but I could not verify fresh official cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, drone-unit counts, or missile interceptors.",
   "briefings": [
     {
       "date": "2026-04-05",
       "day": 36,
-      "summary": "Confirmed reporting available today remains fragmentary. AP reported on March 25, 2026 that the war death toll had risen to more than 1,500 in Iran, 16 in Israel, and 13 U.S. military personnel, while noting only an unspecified number of Gulf civilian deaths. AP also reported on March 28 that the United States had built up about 50,000 troops and two aircraft carriers in the region, and a March 16 CENTCOM fact sheet listed 7,000+ targets struck and 6,500+ combat flights at that time; by March 25, AP cited CENTCOM commander Adm. Brad Cooper as saying U.S. forces had hit more than 10,000 targets. I could not confirm newer official cumulative figures for Iranian deaths, civilian deaths, wounded, Gulf deaths, destroyers, drone units, or specific munitions totals, so those fields are left null."
+      "summary": "Confirmed reporting reviewed on April 5, 2026 indicates the cumulative Iranian toll remains at 2,076 killed and 26,500 wounded according to Iranian authorities cited by Al Jazeera, while AP\u2019s March 25 live coverage put cumulative deaths at 13 U.S. military personnel and 16 in Israel. AP also reported CENTCOM commander Adm. Brad Cooper saying U.S. forces had struck more than 10,000 targets in Iran, while the latest Pentagon fact sheet publicly available lists 8,000+ combat flights as of March 18. Current force reporting supports 2 U.S. carrier strike groups in theater and roughly 50,000 U.S. personnel in the region, but I could not verify fresh official cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, drone-unit counts, or missile interceptors."
     },
     {
       "date": "2026-04-04",
