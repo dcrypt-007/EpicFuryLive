@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-04-05T09:56:44Z",
+  "lastUpdated": "2026-04-05T10:55:08Z",
   "dayCount": 36,
   "banner": {
-    "strikes": "~7,000",
-    "killed": "2,001+",
-    "cost": "$20.8B+"
+    "strikes": "~10,000",
+    "killed": "1,549+",
+    "cost": "$21.0B+"
   },
   "humanCost": {
     "iranDeaths": "1,937",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "16",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "27",
+    "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "18,551+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1348",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$20.8 billion+",
-    "dailyBurnRate": "~$579M/day",
+    "totalCost": "$21.0 billion+",
+    "dailyBurnRate": "~$583M/day",
     "daysOfOps": 36,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-05",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury fact sheet, March 16, 2026: 'Combat Flights: 6,500+')"
+          "source": "LLM-verified (U.S. Defense Department Operation Epic Fury Fact Sheet dated Mar. 18, 2026: 'Combat Flights: 8,000+')"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "IDF live updates on Apr. 4 showed repeated Iranian missile launches toward Israel throughout the day, with Home Front Command alerts and search-and-rescue responses at impact sites in central Israel.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Apr. 3 reported a U.S. fighter jet was downed over Iran; one crew member was rescued while the status of the second had been unclear in early reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Apr. 2 reported Iran continued attacks on Gulf states, with Kuwait and Bahrain under attack and a U.S.-struck bridge incident near Tehran killing 8 and injuring 95 celebrants.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 5, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera and WHO reporting on April 3-4 said more than 20 attacks have struck Iranian healthcare facilities since March 1.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on April 3 reported two U.S. military aircraft were shot down in separate Iranian attacks; one crew member was rescued and at least one remained missing.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP April 2-4: Kuwait and Bahrain continued reporting Iranian aerial attacks/interceptions.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP April 4: Iranian drone reportedly damaged Oracle headquarters in Dubai, signaling continued regional spillover.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-05T10:10:50Z",
+      "text": "<strong>US pilot from downed F-15E plane rescued in Iran: What we know</strong> -- The second pilot from the fighter jet shot down in Iran is rescued by US rescue forces after 48 hours. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/5/us-pilot-from-downed-f-15-plane-rescued-in-iran-what-we-know?traffic_source=rss"
+    },
+    {
       "time": "2026-04-05T08:52:22Z",
       "text": "<strong>Kuwait\u2019s power, water plants damaged as Iran keeps attacking Gulf states</strong> -- Bahrain and the UAE also reported attacks resulting in fires, which were put out quickly. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/5/kuwait-says-power-water-facilities-hit-by-iran-as-gulf-attacks-continue?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-04-04T17:27:30Z",
       "text": "<strong>Marco Rubio says he has stripped Qassem Soleimani\u2019s niece of US residency</strong> -- In a statement, the US State Department has accused Hamideh Soleimani Afshar of being an &amp;#039;outspoken supporter&amp;#039; of Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/4/top-diplomat-marco-rubio-strips-qassem-soleimanis-niece-of-us-residency?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-04T17:02:25Z",
-      "text": "<strong>New video reveals moment US-Israeli munitions impact Iranian bridge</strong> -- New video shows the moment multiple US-Israeli strikes hit the B1 bridge in Iran&amp;#039;s northern Alborz province on Thursday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/new-video-reveals-moment-us-israeli-munitions-impact-iranian-bridge?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "US pilot from downed F-15E plane rescued in Iran: What we know",
+      "description": "The second pilot from the fighter jet shot down in Iran is rescued by US rescue forces after 48 hours.",
+      "link": "https://www.aljazeera.com/news/2026/4/5/us-pilot-from-downed-f-15-plane-rescued-in-iran-what-we-know?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-05T10:10:50Z",
+      "tier": 2
+    },
+    {
+      "title": "What we know so far about rescue of US airman in Iran",
+      "description": "The US has rescued the missing crew member of the US F-15 fighter jet which was shot down over southern Iran.",
+      "link": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-05T10:07:16Z",
+      "tier": 2
+    },
+    {
       "title": "Kuwait\u2019s power, water plants damaged as Iran keeps attacking Gulf states",
       "description": "Bahrain and the UAE also reported attacks resulting in fires, which were put out quickly.",
       "link": "https://www.aljazeera.com/news/2026/4/5/kuwait-says-power-water-facilities-hit-by-iran-as-gulf-attacks-continue?traffic_source=rss",
@@ -1253,14 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "What we know so far about rescue of US airman in Iran",
-      "description": "The US has rescued the missing crew member of the US F-15 fighter jet which was shot down over southern Iran.",
-      "link": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-05T06:59:48Z",
-      "tier": 2
-    },
-    {
       "title": "\u2018Miraculous\u2019: US rescues second pilot downed in Iran, Trump confirms",
       "description": "Iran claims another US aircraft involved in the rescue of the F-15 fighter pilot has been shot down.",
       "link": "https://www.aljazeera.com/news/2026/4/5/us-rescues-airman-whose-f-15-was-downed-in-iran-trump-confirms?traffic_source=rss",
@@ -1293,8 +1301,8 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Trump confirms rescue of US officer, says \u2018we got him\u2019",
-      "description": "Iran says US-Israeli attacks on the Mahshahr Petrochemical Zone have killed five and wounded 170.",
+      "title": "Iran war live: Iran claims new downing of US plane; Hormuz \u2018deadline\u2019 looms",
+      "description": "Tehran says it shoots down a C-130 plane and two Blackhawk helicopters belonging to the US.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/4/5/iran-war-live-tehran-rejects-trumps-ultimatum-fire-at-kuwait-oil-complex?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-05T00:00:00Z",
@@ -1325,30 +1333,6 @@
       "tier": 2
     },
     {
-      "title": "Israeli police arrest antiwar protesters in Tel Aviv",
-      "description": "Israeli police clashed with protesters and made arrests in Tel Aviv as demonstrators rallied against the war on Iran.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/israeli-police-arrest-antiwar-protesters-in-tel-aviv?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-04T20:04:21Z",
-      "tier": 2
-    },
-    {
-      "title": "Tehran psychiatric hospital not usable after US-Israeli strike",
-      "description": "A psychiatric hospital in Tehran is no longer functioning after a US-Israeli strike, the hospital chief says.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/4/tehran-psychiatric-hospital-not-usable-after-us-israeli-strike?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-04T19:48:15Z",
-      "tier": 2
-    },
-    {
-      "title": "Universities hit as US, Israel ramp up attacks on Iran\u2019s infrastructure",
-      "description": "Authorities say at least 30 universities impacted by US and Israeli strikes since the start of the war.",
-      "link": "https://www.aljazeera.com/news/2026/4/4/universities-hit-as-us-israel-ramp-up-attacks-on-irans-infrastructure?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-04T19:17:24Z",
-      "tier": 2
-    },
-    {
       "title": "Australians told to continue Easter travel plans despite fuel shortages",
       "description": "Hundreds of petrol stations across Australia have run out of fuel as the Iran war disrupts global oil shipments and pushes up prices.",
       "link": "https://www.bbc.com/news/articles/c62l084kgk6o?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1357,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of April 5, 2026 shows no authoritative public update above Al Jazeera's April 3 tracker figure of 1,937 dead in Iran, while AP\u2014citing CENTCOM\u2014continues to put U.S. combat deaths at 13. The latest AP reporting also confirms the rescue of a previously missing U.S. crew member after Iran shot down a U.S. fighter jet. Official U.S. material still publicly lists 7,000+ targets struck and 6,500+ combat flights in Operation Epic Fury, but I could not verify newer confirmed figures for most force-deployment and weapons-expended fields from Pentagon, CENTCOM, IDF, Reuters, or AP, so those remain null.",
+  "summary": "Confirmed reporting as of April 5, 2026 shows no precise new official cumulative Iran-wide death toll available from the searched primary outlets beyond AP's March 25 statement that the toll had risen to more than 1,500 in Iran. AP also continued to cite 13 confirmed U.S. military deaths and 16 deaths in Israel, while AP on March 27 reported 20 deaths in Gulf Arab states. For operations, the clearest official cumulative count found was AP's citation of CENTCOM commander Adm. Brad Cooper saying U.S. forces had struck more than 10,000 targets, while a March 18 Defense Department fact sheet listed 8,000+ combat flights. Reporting on April 2-4 confirmed continued Iranian missile attacks on Israel and Gulf states and the downing of at least one U.S. fighter jet over Iran, but the searched official and major-wire sources did not provide confirmed current totals for most deployment and munitions-use fields.",
   "briefings": [
     {
       "date": "2026-04-05",
       "day": 36,
-      "summary": "Confirmed reporting as of April 5, 2026 shows no authoritative public update above Al Jazeera's April 3 tracker figure of 1,937 dead in Iran, while AP\u2014citing CENTCOM\u2014continues to put U.S. combat deaths at 13. The latest AP reporting also confirms the rescue of a previously missing U.S. crew member after Iran shot down a U.S. fighter jet. Official U.S. material still publicly lists 7,000+ targets struck and 6,500+ combat flights in Operation Epic Fury, but I could not verify newer confirmed figures for most force-deployment and weapons-expended fields from Pentagon, CENTCOM, IDF, Reuters, or AP, so those remain null."
+      "summary": "Confirmed reporting as of April 5, 2026 shows no precise new official cumulative Iran-wide death toll available from the searched primary outlets beyond AP's March 25 statement that the toll had risen to more than 1,500 in Iran. AP also continued to cite 13 confirmed U.S. military deaths and 16 deaths in Israel, while AP on March 27 reported 20 deaths in Gulf Arab states. For operations, the clearest official cumulative count found was AP's citation of CENTCOM commander Adm. Brad Cooper saying U.S. forces had struck more than 10,000 targets, while a March 18 Defense Department fact sheet listed 8,000+ combat flights. Reporting on April 2-4 confirmed continued Iranian missile attacks on Israel and Gulf states and the downing of at least one U.S. fighter jet over Iran, but the searched official and major-wire sources did not provide confirmed current totals for most deployment and munitions-use fields."
     },
     {
       "date": "2026-04-04",
