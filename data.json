@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-06T19:20:13Z",
+  "lastUpdated": "2026-04-06T20:56:09Z",
   "dayCount": 37,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "2,142+",
-    "cost": "$21.2B+"
+    "strikes": "~7,000",
+    "killed": "1,963+",
+    "cost": "$21.0B+"
   },
   "humanCost": {
-    "iranDeaths": "2,076",
+    "iranDeaths": "1,900",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "23",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "27",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.2 billion+",
-    "dailyBurnRate": "~$572M/day",
+    "totalCost": "$21.0 billion+",
+    "dailyBurnRate": "~$567M/day",
     "daysOfOps": 37,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-06",
-          "source": "LLM-verified (DoD/Joint Intermediate Force Capabilities Office media from March 1, 2026 showed USS Abraham Lincoln operating in support of Operation Epic Fury)"
+          "source": "LLM-verified (AP News, March 31, 2026: USS George H.W. Bush carrier strike group deploying to the Middle East; retrieved current reporting confirms one carrier strike group in motion to theater, but does not confirm a second active U.S. CSG there. https://apnews.com/article/7c015aa5156525fcc95c42897de52e0f)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 6,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-06",
-          "source": "LLM-verified (AP reporting indicates 3 warships accompanying USS Abraham Lincoln and 3 destroyers deploying with USS George H.W. Bush)"
+          "source": "LLM-verified (AP News, March 31, 2026: USS George H.W. Bush is deploying 'along with three destroyers.' No higher current exact in-theater destroyer total confirmed in retrieved reporting. https://apnews.com/article/7c015aa5156525fcc95c42897de52e0f)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-06",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury Fact Sheet dated March 18, 2026: Combat Flights 8,000+)"
+          "source": "LLM-verified (CENTCOM / DoD fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; closest retrieved official cumulative sorties figure. https://media.defense.gov/2026/Mar/16/2003899496/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET.PDF)"
         },
         {
           "id": "interceptors",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "6 \u00d7 $240,000/day \u00d7 37 days",
-        "cost": "$53,280,000"
+        "detail": "3 \u00d7 $240,000/day \u00d7 37 days",
+        "cost": "$26,640,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 6 that Israel again struck the South Pars petrochemical/natural gas complex, a key Iranian energy site.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 6 that President Donald Trump widened his threat to include all of Iran's power plants and bridges if Iran does not reopen the Strait of Hormuz by his deadline.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 6, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Al Jazeera reported April 6 that Trump set an April 7, 2026 8:00 p.m. ET deadline tied to reopening the Strait of Hormuz.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on April 6 that fresh Iranian missile fire hit Israel, including Haifa, while more than 25 people were reported killed in new strikes inside Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on April 6 that a new 45-day ceasefire proposal was shared with Iran and the United States.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,41 @@
   ],
   "developments": [
     {
+      "time": "2026-04-06T20:34:47Z",
+      "text": "<strong>Israeli air strike kills at least 10 Palestinians near Gaza school</strong> -- Drones are reported to have fired missiles into an area near Maghazi refugee camp. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/6/israeli-air-strike-kills-at-least-10-palestinians-near-gaza-school?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-06T20:22:06Z",
+      "text": "<strong>Lebanon\u2019s Hezbollah and Yemen\u2019s Houthis join Iran in strike on Israel</strong> -- The Houthis in Yemen say they attacked Israel alongside their backers Iran and Hezbollah in Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/6/lebanons-hezbollah-and-yemens-houthis-join-iran-in-strike-on-israel?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-06T20:05:05Z",
+      "text": "<strong>Trump claims Iranians begging US to keep bombing Iran</strong> -- Donald Trump claimed the US has \u201cnumerous intercepts\u201d of Iranians pleading for a continuation of bombing. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/trump-claims-iranians-begging-us-to-keep-bombing-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-06T20:01:32Z",
+      "text": "<strong>Video: Trump threatens to jail reporter over Iran airman rescue leak</strong> -- Trump demanded the journalist who reported on the rescue of the US airman in Iran reveal their source. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/video-trump-threatens-to-jail-reporter-over-iran-airman-rescue-leak?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-06T19:40:59Z",
+      "text": "<strong>Renewed Israeli strikes pound Lebanon as ground offensive deepens</strong> -- Israeli forces launched renewed strikes across Lebanon, hitting the south and Beirut\u2019s outskirts, killing civilians. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/renewed-israeli-strikes-pound-lebanon-as-ground-offensive-deepens?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-06T19:34:14Z",
+      "text": "<strong>Child rescued from rubble after Russia ramps up strikes on Ukraine</strong> -- A child was rescued from the rubble of a collapsed home in Odesa after a Russian strike killed at least three people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/child-rescued-from-rubble-after-russia-ramps-up-strikes-on-ukraine?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-06T19:08:23Z",
+      "text": "<strong>Rescuers search for survivors after strikes hit homes in Iran</strong> -- Iranian Red Crescent footage shows damage in Iran, as rescuers search for survivors after US-Israeli strikes hit homes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/rescuers-search-for-survivors-after-strikes-hit-homes-in-iran?traffic_source=rss"
+    },
+    {
       "time": "2026-04-06T18:32:16Z",
       "text": "<strong>North Korea keeping Iran at arm\u2019s length, reports Seoul</strong> -- South Korea says Pyongyang is wary as it seeks to renew diplomatic dialogue with the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/6/north-korea-keeping-iran-at-arms-length-reports-seoul?traffic_source=rss"
@@ -816,41 +851,6 @@
       "time": "2026-04-06T12:58:57Z",
       "text": "<strong>\u2018Smell\u2019 of war comes to St Petersburg as Ukraine hammers Russian refineries</strong> -- Ukraine aims to drain Russia&amp;#039;s war chest with drone strikes on Pokrovsk and Ust-Luga oil facilities on the Baltic Sea. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/features/2026/4/6/smell-of-war-comes-to-st-petersburg-as-ukraine-hammers-russian-refineries?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T12:42:47Z",
-      "text": "<strong>How US operation to rescue air officer from Iran unfolded</strong> -- President Trump says US service member whose fighter jet was shot down over Iran is rescued during two raids. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/how-us-operation-to-rescue-air-officer-from-iran-unfolded?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T11:52:36Z",
-      "text": "<strong>Has Trump confirmed Iran\u2019s claim that protesters were US-armed?</strong> -- US president says Washington armed Kurdish Iranian opposition groups during the January demonstrations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/has-trump-confirmed-irans-claim-that-protesters-were-us-armed?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T11:49:04Z",
-      "text": "<strong>Iran threatens Bab al-Mandeb closure: How would that affect world trade?</strong> -- If the chokepoint were shut, along with the Strait of Hormuz, a quarter of the world&amp;#039;s energy supply would be blocked. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/iran-threatens-bab-al-mandeb-closure-how-would-that-affect-world-trade?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T11:25:17Z",
-      "text": "<strong>Pakistan offers \u2018two-phased\u2019 truce deal to end US-Israel war on Iran</strong> -- Iran, while still reviewing the proposal, says it won&amp;#039;t reopen Hormuz as part of a temporary ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/pakistan-offers-two-tier-truce-iran-wont-open-hormuz-under-temporary-one?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T11:12:53Z",
-      "text": "<strong>Trump\u2019s \u2018Bridge Day\u2019 threat: Can a last-ditch ceasefire plan work?</strong> -- Mediators Pakistan, Turkiye and Egypt are proposing a 45-day ceasefire plan. But Iran is reluctant. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/trumps-bridge-day-threat-can-a-last-ditch-ceasefire-plan-work?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T09:10:31Z",
-      "text": "<strong>Yemen\u2019s civilians fear fallout after Houthis enter Iran war</strong> -- Fears of air strikes and rising prices dominate everyday life in Sanaa as Yemen becomes embroiled in regional conflict. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/yemens-civilians-fear-fallout-after-houthis-enter-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T09:10:17Z",
-      "text": "<strong>Trump says US armed Iranian dissidents via Kurds, Kurdish groups deny claim</strong> -- Trump&amp;#039;s admission gives credence to Iranian assertion that the January protests were backed by the West to create chaos. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/trump-says-us-armed-iranian-dissidents-via-kurds-kurdish-groups-deny-claim?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,75 @@
   ],
   "newsFeed": [
     {
+      "title": "Israeli air strike kills at least 10 Palestinians near Gaza school",
+      "description": "Drones are reported to have fired missiles into an area near Maghazi refugee camp.",
+      "link": "https://www.aljazeera.com/news/2026/4/6/israeli-air-strike-kills-at-least-10-palestinians-near-gaza-school?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T20:34:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Lebanon\u2019s Hezbollah and Yemen\u2019s Houthis join Iran in strike on Israel",
+      "description": "The Houthis in Yemen say they attacked Israel alongside their backers Iran and Hezbollah in Lebanon.",
+      "link": "https://www.aljazeera.com/news/2026/4/6/lebanons-hezbollah-and-yemens-houthis-join-iran-in-strike-on-israel?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T20:22:06Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump claims Iranians begging US to keep bombing Iran",
+      "description": "Donald Trump claimed the US has \u201cnumerous intercepts\u201d of Iranians pleading for a continuation of bombing.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/trump-claims-iranians-begging-us-to-keep-bombing-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T20:05:05Z",
+      "tier": 2
+    },
+    {
+      "title": "Video: Trump threatens to jail reporter over Iran airman rescue leak",
+      "description": "Trump demanded the journalist who reported on the rescue of the US airman in Iran reveal their source.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/video-trump-threatens-to-jail-reporter-over-iran-airman-rescue-leak?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T20:01:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Renewed Israeli strikes pound Lebanon as ground offensive deepens",
+      "description": "Israeli forces launched renewed strikes across Lebanon, hitting the south and Beirut\u2019s outskirts, killing civilians.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/renewed-israeli-strikes-pound-lebanon-as-ground-offensive-deepens?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T19:40:59Z",
+      "tier": 2
+    },
+    {
+      "title": "Child rescued from rubble after Russia ramps up strikes on Ukraine",
+      "description": "A child was rescued from the rubble of a collapsed home in Odesa after a Russian strike killed at least three people.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/child-rescued-from-rubble-after-russia-ramps-up-strikes-on-ukraine?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T19:34:14Z",
+      "tier": 2
+    },
+    {
+      "title": "Ten killed in Israeli strikes and clashes between Hamas and militia in Gaza, local sources say",
+      "description": "The Israeli strikes reportedly targeted Hamas security personnel after they clashed with an Israeli-backed militia near Maghazi camp.",
+      "link": "https://www.bbc.com/news/articles/c77md512n71o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-06T19:11:20Z",
+      "tier": 2
+    },
+    {
+      "title": "Rescuers search for survivors after strikes hit homes in Iran",
+      "description": "Iranian Red Crescent footage shows damage in Iran, as rescuers search for survivors after US-Israeli strikes hit homes.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/rescuers-search-for-survivors-after-strikes-hit-homes-in-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T19:08:23Z",
+      "tier": 2
+    },
+    {
       "title": "North Korea keeping Iran at arm\u2019s length, reports Seoul",
       "description": "South Korea says Pyongyang is wary as it seeks to renew diplomatic dialogue with the US.",
       "link": "https://www.aljazeera.com/news/2026/4/6/north-korea-keeping-iran-at-arms-length-reports-seoul?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-06T18:32:16Z",
-      "tier": 2
-    },
-    {
-      "title": "How rescue of US airman in remote part of Iran unfolded",
-      "description": "The operation to extract him from the ground in hostile territory was hugely complex and involved multiple US government agencies.",
-      "link": "https://www.bbc.com/news/articles/cx2vpz1kwreo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-06T18:29:54Z",
       "tier": 2
     },
     {
@@ -1261,7 +1317,7 @@
       "tier": 2
     },
     {
-      "title": "Trump warns deadline \u2018final\u2019 as Iran pushes proposal to end war",
+      "title": "Trump warns Hormuz deadline \u2018final\u2019 as Iran pushes proposal to end war",
       "description": "US president says proposal not enough to avert threat to infrastructure should Iran fail to open Strait of Hormuz.",
       "link": "https://www.aljazeera.com/news/2026/4/6/trump-warns-deadline-final-as-iran-pushes-proposal-to-end-war?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1315,70 +1371,14 @@
       "source": "Al Jazeera",
       "time": "2026-04-06T14:04:59Z",
       "tier": 2
-    },
-    {
-      "title": "The US could still try to play the ethnic card in Iran",
-      "description": "But past experience and current geopolitical realities show such a strategy is doomed to failure.",
-      "link": "https://www.aljazeera.com/opinions/2026/4/6/the-us-could-still-try-to-play-the-ethnic-card-in-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T13:01:52Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018Smell\u2019 of war comes to St Petersburg as Ukraine hammers Russian refineries",
-      "description": "Ukraine aims to drain Russia&#039;s war chest with drone strikes on Pokrovsk and Ust-Luga oil facilities on the Baltic Sea.",
-      "link": "https://www.aljazeera.com/features/2026/4/6/smell-of-war-comes-to-st-petersburg-as-ukraine-hammers-russian-refineries?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T12:58:57Z",
-      "tier": 2
-    },
-    {
-      "title": "How US operation to rescue air officer from Iran unfolded",
-      "description": "President Trump says US service member whose fighter jet was shot down over Iran is rescued during two raids.",
-      "link": "https://www.aljazeera.com/news/2026/4/6/how-us-operation-to-rescue-air-officer-from-iran-unfolded?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T12:42:47Z",
-      "tier": 2
-    },
-    {
-      "title": "Has Trump confirmed Iran\u2019s claim that protesters were US-armed?",
-      "description": "US president says Washington armed Kurdish Iranian opposition groups during the January demonstrations.",
-      "link": "https://www.aljazeera.com/news/2026/4/6/has-trump-confirmed-irans-claim-that-protesters-were-us-armed?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T11:52:36Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran threatens Bab al-Mandeb closure: How would that affect world trade?",
-      "description": "If the chokepoint were shut, along with the Strait of Hormuz, a quarter of the world&#039;s energy supply would be blocked.",
-      "link": "https://www.aljazeera.com/news/2026/4/6/iran-threatens-bab-al-mandeb-closure-how-would-that-affect-world-trade?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T11:49:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Pakistan offers \u2018two-phased\u2019 truce deal to end US-Israel war on Iran",
-      "description": "Iran, while still reviewing the proposal, says it won&#039;t reopen Hormuz as part of a temporary ceasefire.",
-      "link": "https://www.aljazeera.com/news/2026/4/6/pakistan-offers-two-tier-truce-iran-wont-open-hormuz-under-temporary-one?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T11:25:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump\u2019s \u2018Bridge Day\u2019 threat: Can a last-ditch ceasefire plan work?",
-      "description": "Mediators Pakistan, Turkiye and Egypt are proposing a 45-day ceasefire plan. But Iran is reluctant.",
-      "link": "https://www.aljazeera.com/news/2026/4/6/trumps-bridge-day-threat-can-a-last-ditch-ceasefire-plan-work?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T11:12:53Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of April 6, 2026 indicates Iran\u2019s Health Ministry death toll stands at 2,076 killed and 26,500 wounded, while U.S. military fatalities remain 13 and Israeli deaths have risen to 26 according to Al Jazeera\u2019s updated casualty tracker and AP reporting. The latest named Pentagon fact sheet publicly available still lists 7,800+ targets struck and 8,000+ combat flights as of March 18. Today\u2019s confirmed developments center on escalation risk rather than new audited totals: Al Jazeera reports Defense Secretary Pete Hegseth said April 6 would bring the largest volume of strikes since the war began, while multiple outlets report the Trump administration is threatening infrastructure attacks on Iranian bridges and power plants if Tehran does not reopen the Strait of Hormuz by the stated deadline.",
+  "summary": "As of Monday, April 6, 2026, AP reporting says more than 1,900 people have been killed in Iran since the war began, 23 have been reported dead in Israel, and 13 U.S. service members have been killed; AP also reports that Trump widened his threat to include all Iranian power plants and bridges ahead of his Hormuz deadline, while Israel carried out another strike on the South Pars energy complex. On the military posture side, AP reported on March 31 that the USS George H.W. Bush carrier strike group, with three destroyers, was deploying to the Middle East, and a March 16 DoD/CENTCOM fact sheet said Operation Epic Fury had struck 7,000+ targets and flown 6,500+ combat flights.",
   "briefings": [
     {
       "date": "2026-04-06",
       "day": 37,
-      "summary": "Confirmed reporting as of April 6, 2026 indicates Iran\u2019s Health Ministry death toll stands at 2,076 killed and 26,500 wounded, while U.S. military fatalities remain 13 and Israeli deaths have risen to 26 according to Al Jazeera\u2019s updated casualty tracker and AP reporting. The latest named Pentagon fact sheet publicly available still lists 7,800+ targets struck and 8,000+ combat flights as of March 18. Today\u2019s confirmed developments center on escalation risk rather than new audited totals: Al Jazeera reports Defense Secretary Pete Hegseth said April 6 would bring the largest volume of strikes since the war began, while multiple outlets report the Trump administration is threatening infrastructure attacks on Iranian bridges and power plants if Tehran does not reopen the Strait of Hormuz by the stated deadline."
+      "summary": "As of Monday, April 6, 2026, AP reporting says more than 1,900 people have been killed in Iran since the war began, 23 have been reported dead in Israel, and 13 U.S. service members have been killed; AP also reports that Trump widened his threat to include all Iranian power plants and bridges ahead of his Hormuz deadline, while Israel carried out another strike on the South Pars energy complex. On the military posture side, AP reported on March 31 that the USS George H.W. Bush carrier strike group, with three destroyers, was deploying to the Middle East, and a March 16 DoD/CENTCOM fact sheet said Operation Epic Fury had struck 7,000+ targets and flown 6,500+ combat flights."
     },
     {
       "date": "2026-04-05",
