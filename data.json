@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-06T13:47:11Z",
+  "lastUpdated": "2026-04-06T15:06:20Z",
   "dayCount": 37,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "2,117+",
-    "cost": "$21.2B+"
+    "strikes": "~7,000",
+    "killed": "1,529+",
+    "cost": "$21.0B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "16",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "2",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.2 billion+",
-    "dailyBurnRate": "~$572M/day",
+    "totalCost": "$21.0 billion+",
+    "dailyBurnRate": "~$568M/day",
     "daysOfOps": 37,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-06",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists 'Combat Flights: 8,000+'.)"
+          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury fact sheet dated Mar. 16, 2026 lists 'Combat Flights: 6,500+'; used here as closest confirmed official sorties-style cumulative metric available (https://media.defense.gov/2026/Mar/16/2003899496/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET.PDF))"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Apr. 3-5 reported two U.S. aircraft were shot down in separate incidents and one aviator required a rescue operation inside Iran, indicating elevated air-defense risk to U.S. operations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera on Apr. 6 reports Trump set a deadline of 8:00 p.m. ET on Tuesday, Apr. 7, 2026, threatening attacks on Iranian bridges and power plants if the Strait of Hormuz is not fully reopened.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Apr. 6 reports Israel struck the South Pars petrochemical plant at Asaluyeh, risking further escalation around Gulf energy infrastructure.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 6, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported April 3, 2026 that two US aircraft were shot down during the war escalation and at least one crew member was initially missing, underscoring continued operational risk.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "IDF live updates on April 4-5, 2026 show repeated Iranian missile launches toward Israel and continuing Israeli strikes on Tehran and Beirut-linked Quds Force targets.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on April 5, 2026 that President Trump threatened strikes on Iranian infrastructure if the Strait of Hormuz is not reopened.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported additional U.S. troops, including elements of the 82nd Airborne and Marine forces, are moving into the Middle East as Washington warns of possible escalation",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-06T14:14:32Z",
+      "text": "<strong>Ukraine strikes Russian Black Sea energy hub Novorossiysk</strong> -- Ukraine has increased attacks on Russian energy infrastructure in bid to disrupt financing of its war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/6/ukraine-strikes-russian-black-sea-energy-hub-novorossiysk?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-06T14:04:59Z",
+      "text": "<strong>In maps and photos: Five Iranian civilian bridges at risk of US strikes</strong> -- A look at the multimillion-dollar mega structures that could be threatened by Trump&amp;#039;s &amp;#039;Bridge Day&amp;#039; ultimatum. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/4/6/in-maps-and-photos-five-iranian-civilian-bridges-at-risk-of-us-strikes?traffic_source=rss"
+    },
+    {
       "time": "2026-04-06T13:01:52Z",
       "text": "<strong>The US could still try to play the ethnic card in Iran</strong> -- But past experience and current geopolitical realities show such a strategy is doomed to failure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/opinions/2026/4/6/the-us-could-still-try-to-play-the-ethnic-card-in-iran?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-04-05T19:07:00Z",
       "text": "<strong>Trump threatens Iran in expletive-filled social media post</strong> -- Donald Trump unleashed a vulgar online tirade against Iran\u2019s leaders as his deadline for reopening the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/5/trump-threatens-iran-in-expletive-filled-social-media-post?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-05T18:36:32Z",
-      "text": "<strong>Israel continues deadly attacks on Gaza while striking Iran, Lebanon</strong> -- Israel has kept up its attacks on Gaza while striking Iran and Lebanon, killing at least four Palestinians on Sunday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/5/israel-continues-deadly-attacks-on-gaza-while-striking-iran-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-05T18:29:52Z",
-      "text": "<strong>Frustration grows as Iran\u2019s wartime internet shutdown breaks grim record</strong> -- Since January, Iran&amp;#039;s near total internet blackout has impacted jobs and businesses. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/5/frustration-grows-as-irans-wartime-internet-shutdown-breaks-grim-record?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Ukraine strikes Russian Black Sea energy hub Novorossiysk",
+      "description": "Ukraine has increased attacks on Russian energy infrastructure in bid to disrupt financing of its war.",
+      "link": "https://www.aljazeera.com/news/2026/4/6/ukraine-strikes-russian-black-sea-energy-hub-novorossiysk?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T14:14:32Z",
+      "tier": 2
+    },
+    {
+      "title": "In maps and photos: Five Iranian civilian bridges at risk of US strikes",
+      "description": "A look at the multimillion-dollar mega structures that could be threatened by Trump&#039;s &#039;Bridge Day&#039; ultimatum.",
+      "link": "https://www.aljazeera.com/economy/2026/4/6/in-maps-and-photos-five-iranian-civilian-bridges-at-risk-of-us-strikes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-06T14:04:59Z",
+      "tier": 2
+    },
+    {
       "title": "The US could still try to play the ethnic card in Iran",
       "description": "But past experience and current geopolitical realities show such a strategy is doomed to failure.",
       "link": "https://www.aljazeera.com/opinions/2026/4/6/the-us-could-still-try-to-play-the-ethnic-card-in-iran?traffic_source=rss",
@@ -1325,22 +1341,6 @@
       "tier": 2
     },
     {
-      "title": "A new regional order for the Strait of Hormuz",
-      "description": "The GCC and Iran can come up with a new security architecture for the Strait of Hormuz that can give Trump an off-ramp.",
-      "link": "https://www.aljazeera.com/opinions/2026/4/6/a-new-regional-order-for-the-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T05:40:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Vietnam\u2019s gig workers slammed by rising fuel costs amid fallout of Iran war",
-      "description": "Diesel prices have more than doubled in the Southeast Asian nation amid Iran&#039;s blockade of the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/economy/2026/4/6/vietnams-gig-workers-slammed-by-rising-fuel-costs-amid-fallout-of-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T01:14:00Z",
-      "tier": 2
-    },
-    {
       "title": "Trump declares victory after rescue but threats to US operation in Iran still loom",
       "description": "The rescue could impact how Trump views a ground operation to take Kharg Island or to seize enriched uranium sites.",
       "link": "https://www.bbc.com/news/articles/cy01vg7x5ppo?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on April 6, 2026 shows the war still escalating rather than winding down: AP reported Israel struck Iran\u2019s South Pars gas field, while Al Jazeera\u2019s live tracker, citing Iran\u2019s Health Ministry, put cumulative Iranian deaths at 2,076 and injuries at 26,500; the same tracker listed 26 Israeli deaths. AP, citing CENTCOM, said 13 U.S. service members have been killed in combat, and current Gulf-state fatality reporting supports 2 confirmed deaths so far, one in Bahrain and one in the UAE. No current official combined cumulative strike total or reliable confirmed munitions-use totals were found in available Pentagon/CENTCOM, AP, Reuters, or Al Jazeera reporting today.",
+  "summary": "Confirmed reporting available in accessible sources remains patchy as of April 6, 2026. The clearest cumulative figures I found are AP\u2019s March 25 tally of more than 1,500 killed in Iran, 16 killed in Israel, and 13 U.S. military deaths, while a March 16 Defense Department/CENTCOM fact sheet lists 7,000+ targets struck and 6,500+ combat flights. On April 6, AP reported an Israeli strike on Iran\u2019s South Pars petrochemical plant, and Al Jazeera reported President Trump set an April 7, 2026 8:00 p.m. ET deadline tied to threats against Iranian power plants and bridges if Hormuz is not reopened.",
   "briefings": [
     {
       "date": "2026-04-06",
       "day": 37,
-      "summary": "Confirmed reporting on April 6, 2026 shows the war still escalating rather than winding down: AP reported Israel struck Iran\u2019s South Pars gas field, while Al Jazeera\u2019s live tracker, citing Iran\u2019s Health Ministry, put cumulative Iranian deaths at 2,076 and injuries at 26,500; the same tracker listed 26 Israeli deaths. AP, citing CENTCOM, said 13 U.S. service members have been killed in combat, and current Gulf-state fatality reporting supports 2 confirmed deaths so far, one in Bahrain and one in the UAE. No current official combined cumulative strike total or reliable confirmed munitions-use totals were found in available Pentagon/CENTCOM, AP, Reuters, or Al Jazeera reporting today."
+      "summary": "Confirmed reporting available in accessible sources remains patchy as of April 6, 2026. The clearest cumulative figures I found are AP\u2019s March 25 tally of more than 1,500 killed in Iran, 16 killed in Israel, and 13 U.S. military deaths, while a March 16 Defense Department/CENTCOM fact sheet lists 7,000+ targets struck and 6,500+ combat flights. On April 6, AP reported an Israeli strike on Iran\u2019s South Pars petrochemical plant, and Al Jazeera reported President Trump set an April 7, 2026 8:00 p.m. ET deadline tied to threats against Iranian power plants and bridges if Hormuz is not reopened."
     },
     {
       "date": "2026-04-05",
