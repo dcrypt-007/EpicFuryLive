@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-04-07T17:16:13Z",
+  "lastUpdated": "2026-04-07T19:32:06Z",
   "dayCount": 38,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "1,956+",
-    "cost": "$21.8B+"
+    "strikes": "~7,000",
+    "killed": "2,112+",
+    "cost": "$21.7B+"
   },
   "humanCost": {
-    "iranDeaths": "1,900",
+    "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "11",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "23",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "8",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "30,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1250",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.8 billion+",
-    "dailyBurnRate": "~$575M/day",
+    "totalCost": "$21.7 billion+",
+    "dailyBurnRate": "~$571M/day",
     "daysOfOps": 38,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-07",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists 'Combat Flights: 8,000+'; used here as the closest official confirmed cumulative sorties figure.)"
+          "source": "LLM-verified (U.S. Defense Department Operation Epic Fury fact sheet dated March 16, 2026 lists 6,500+ combat flights; no newer official total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "IDF said on April 4 it struck more than 200 targets over the weekend across Iran and Lebanon while Iran continued missile launches toward Israel",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and BBC reported Trump set an April 7 deadline tied to reopening the Strait of Hormuz, with intensified U.S.-Israeli strikes ahead of the deadline",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on April 7 reported Saudi Arabia intercepted seven ballistic missiles and four drones launched by Iran",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 7, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reported President Trump set a Tuesday, April 7, 2026 deadline tied to reopening the Strait of Hormuz and threatened strikes on Iranian power plants and bridges if no deal is reached",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported the recent downing of two U.S. aircraft in/around the Iran theater, underscoring that Iranian air defenses remain active.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reporting indicate continued Iranian attacks on Gulf infrastructure, including Kuwait energy and water facilities, with renewed incidents in Bahrain and the UAE.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported President Trump on April 6 expanded threats to include all Iranian power plants and bridges if no deal is reached.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-04-07T19:07:11Z",
+      "text": "<strong>French nationals return home following Iran prison release</strong> -- Cecile Kohler and Jacques Paris were freed in November after more than three years at Evin prison. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/7/french-nationals-return-home-following-iran-prison-release?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T18:53:05Z",
+      "text": "<strong>Iraqi armed group releases abducted US journalist Shelly Kittleson</strong> -- The armed group Kataib Hezbollah said that it would free Kittleson on the condition that she leave Iraq immediately. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/7/iraqi-armed-group-releases-abducted-us-journalist-shelly-kittleson?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T18:45:27Z",
+      "text": "<strong>Tehran synagogue destroyed as US-Israeli strikes kill over a dozen</strong> -- A synagogue in Tehran was struck in a wave of US-Israeli attacks overnight. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/tehran-synagogue-destroyed-as-us-israeli-strikes-kill-over-a-dozen?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T17:32:05Z",
+      "text": "<strong>Why JD Vance joined Pakistan\u2019s last-ditch US-Iran mediation efforts</strong> -- Backchannel talks gain pace as Pakistan mediates and Iran seeks indirect engagement through US vice president. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/7/why-jd-vance-joined-pakistans-last-ditch-us-iran-mediation-efforts?traffic_source=rss"
+    },
+    {
       "time": "2026-04-07T17:03:21Z",
       "text": "<strong>Top university says US-Israel attack targeted Iran\u2019s progress, AI learning</strong> -- Iran condemns systematic attacks on civilian sites, including academic hubs, as war devastates critical infrastructure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/7/top-university-says-us-israel-attack-targeted-irans-progress-ai-learning?traffic_source=rss"
@@ -831,26 +851,6 @@
       "time": "2026-04-07T10:54:39Z",
       "text": "<strong>Palestine weekly wrap: Protests sweep West Bank after death penalty law</strong> -- Israeli strikes on Gaza escalate with children among the injured and civilians killed in densely populated areas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/7/palestine-weekly-wrap-protests-sweep-west-bank-after-death-penalty-law?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-07T10:43:52Z",
-      "text": "<strong>How US, Israel are waging a war on Iranian culture, education</strong> -- Iranian officials have told Al Jazeera the US and Israel&amp;#039;s attacks seek to wipe out Iranian identity. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/7/how-us-israel-are-waging-a-war-on-iranian-culture-education?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-07T10:24:08Z",
-      "text": "<strong>Iranian missile strike damages cars and street in Israel</strong> -- Video shows damaged sidewalks and an overturned car following an Iranian missile strike on Ramat Hasharon in IsraeL. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/iranian-missile-strike-damages-cars-and-street-in-israel?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-07T10:12:04Z",
-      "text": "<strong>Ukraine, Russia kill several civilians in tit-for-tat attacks</strong> -- At least seven people killed in Ukraine and three in Russia, a day after Zelenskyy renewed his Easter ceasefire offer. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/7/three-civilians-killed-in-both-russia-ukraine-following-drone-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-07T10:07:18Z",
-      "text": "<strong>Three killed in shooting near Israeli consulate in Turkiye\u2019s Istanbul</strong> -- Two police officers were also injured in the gunfire incident near the Israeli consulate. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/7/three-people-killed-in-gun-clash-near-israeli-consulate-in-istanbul?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,54 @@
   ],
   "newsFeed": [
     {
+      "title": "French nationals return home following Iran prison release",
+      "description": "Cecile Kohler and Jacques Paris were freed in November after more than three years at Evin prison.",
+      "link": "https://www.aljazeera.com/news/2026/4/7/french-nationals-return-home-following-iran-prison-release?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T19:07:11Z",
+      "tier": 2
+    },
+    {
+      "title": "Iraqi armed group releases abducted US journalist Shelly Kittleson",
+      "description": "The armed group Kataib Hezbollah said that it would free Kittleson on the condition that she leave Iraq immediately.",
+      "link": "https://www.aljazeera.com/news/2026/4/7/iraqi-armed-group-releases-abducted-us-journalist-shelly-kittleson?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T18:53:05Z",
+      "tier": 2
+    },
+    {
+      "title": "Tehran synagogue destroyed as US-Israeli strikes kill over a dozen",
+      "description": "A synagogue in Tehran was struck in a wave of US-Israeli attacks overnight.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/tehran-synagogue-destroyed-as-us-israeli-strikes-kill-over-a-dozen?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T18:45:27Z",
+      "tier": 2
+    },
+    {
+      "title": "US journalist Shelly Kittleson to be released after kidnap in Iraq, militia says",
+      "description": "Kataib Hezbollah says the release comes on condition that she leave Iraq immediately.",
+      "link": "https://www.bbc.com/news/articles/crm1xjp08k3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-07T17:50:17Z",
+      "tier": 2
+    },
+    {
+      "title": "Why JD Vance joined Pakistan\u2019s last-ditch US-Iran mediation efforts",
+      "description": "Backchannel talks gain pace as Pakistan mediates and Iran seeks indirect engagement through US vice president.",
+      "link": "https://www.aljazeera.com/news/2026/4/7/why-jd-vance-joined-pakistans-last-ditch-us-iran-mediation-efforts?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T17:32:05Z",
+      "tier": 2
+    },
+    {
+      "title": "Tracking recent US-Israeli strikes on Iranian infrastructure",
+      "description": "Attacks have targeted bridges, steel plants and pharmaceutical facilities, verified videos show.",
+      "link": "https://www.bbc.com/news/articles/cx2w0v19gw8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-07T17:15:34Z",
+      "tier": 2
+    },
+    {
       "title": "Top university says US-Israel attack targeted Iran\u2019s progress, AI learning",
       "description": "Iran condemns systematic attacks on civilian sites, including academic hubs, as war devastates critical infrastructure.",
       "link": "https://www.aljazeera.com/news/2026/4/7/top-university-says-us-israel-attack-targeted-irans-progress-ai-learning?traffic_source=rss",
@@ -1317,68 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "\u2018Get a grip\u2019: How Iranian embassies mocked Trump\u2019s vulgar threat",
-      "description": "Iran\u2019s embassies launched a global trolling campaign in response to Trump&#039;s profanity-laced threat.",
-      "link": "https://www.aljazeera.com/news/2026/4/7/get-a-grip-how-iranian-embassies-mocked-trumps-vulgar-threat?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-07T12:50:52Z",
-      "tier": 2
-    },
-    {
-      "title": "What\u2019s Iran\u2019s 10-point peace plan that Trump says is \u2018not good enough\u2019?",
-      "description": "As US president&#039;s deadline looms, a ceasefire appears unlikely.",
-      "link": "https://www.aljazeera.com/news/2026/4/7/whats-irans-10-point-peace-plan-that-trump-says-is-not-good-enough?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-07T12:17:37Z",
-      "tier": 2
-    },
-    {
-      "title": "US-Israeli attacks on Iran are \u2018clear and obvious war crimes\u2019",
-      "description": "\u2018We\u2019re in the time of monsters right now where we are headed towards the law of the jungle\u2019.",
-      "link": "https://www.aljazeera.com/video/quotable/2026/4/7/us-israeli-attacks-on-iran-are-clear-and-obvious-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-07T11:26:27Z",
-      "tier": 2
-    },
-    {
       "title": "Little sign of breakthrough as Trump's Iran deadline nears",
       "description": "The US president is in a delicate political position as the final hours to Tuesday's deadline for Iran to open the Strait of Hormuz tick down.",
       "link": "https://www.bbc.com/news/articles/czexw94rj5jo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-06T23:04:23Z",
       "tier": 2
-    },
-    {
-      "title": "How rescue of US airman in remote part of Iran unfolded",
-      "description": "The operation to extract him from the ground in hostile territory was hugely complex and involved multiple US government agencies.",
-      "link": "https://www.bbc.com/news/articles/cx2vpz1kwreo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-06T21:31:24Z",
-      "tier": 2
-    },
-    {
-      "title": "Ten killed in Israeli strikes and clashes between Hamas and militia in Gaza, local sources say",
-      "description": "The Israeli strikes reportedly targeted Hamas security personnel after they clashed with an Israeli-backed militia near Maghazi camp.",
-      "link": "https://www.bbc.com/news/articles/c77md512n71o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-06T19:11:20Z",
-      "tier": 2
-    },
-    {
-      "title": "'We're sinking deeper': Iranians brace for infrastructure strikes as Trump deadline nears",
-      "description": "Ordinary Iranians respond to the US president's threat to destroy Iran's power plants and bridges unless it opens the Strait of Hormuz.",
-      "link": "https://www.bbc.com/news/articles/cvgl0ng8z0do?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-06T15:40:35Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today shows the war remains active and escalatory rather than winding down. AP reported on April 7 that President Trump threatened that 'a whole civilization will die tonight' if Iran does not meet U.S. demands tied to the Strait of Hormuz, while Iranian officials called for volunteers to protect power plants and other infrastructure. AP also reported on April 4 that the war, which began on February 28, has killed thousands, and that Iran threatened U.S. regional infrastructure after Trump renewed his deadline. The latest official operational figure found from CENTCOM is its March 18 fact sheet listing 7,800+ targets struck and 8,000+ combat flights, while official Pentagon/Department of War casualty notices located in available sources support at least 11 confirmed U.S. military deaths tied to Operation Epic Fury.",
+  "summary": "Confirmed reporting as of April 7, 2026 shows the war still escalating: AP reports more than 1,900 killed in Iran overall, including 23 dead in Israel and 13 U.S. service members killed, while Al Jazeera\u2019s April 6 tracker citing Iran\u2019s Health Ministry puts Iran at 2,076 killed and more than 26,500 wounded. Official U.S. data remains sparse on current force and weapons-use totals; the latest accessible Defense Department fact sheet dated March 16 lists 7,000+ targets struck and 6,500+ combat flights, while more recent CENTCOM releases describe ongoing strikes and the successful rescue of two F-15E crew members after the April 2 shootdown. Regional spillover continues, with AP reporting fresh Iranian missile and drone attacks on Saudi Arabia and continued missile fire toward Israel.",
   "briefings": [
     {
       "date": "2026-04-07",
       "day": 38,
-      "summary": "Confirmed reporting available today shows the war remains active and escalatory rather than winding down. AP reported on April 7 that President Trump threatened that 'a whole civilization will die tonight' if Iran does not meet U.S. demands tied to the Strait of Hormuz, while Iranian officials called for volunteers to protect power plants and other infrastructure. AP also reported on April 4 that the war, which began on February 28, has killed thousands, and that Iran threatened U.S. regional infrastructure after Trump renewed his deadline. The latest official operational figure found from CENTCOM is its March 18 fact sheet listing 7,800+ targets struck and 8,000+ combat flights, while official Pentagon/Department of War casualty notices located in available sources support at least 11 confirmed U.S. military deaths tied to Operation Epic Fury."
+      "summary": "Confirmed reporting as of April 7, 2026 shows the war still escalating: AP reports more than 1,900 killed in Iran overall, including 23 dead in Israel and 13 U.S. service members killed, while Al Jazeera\u2019s April 6 tracker citing Iran\u2019s Health Ministry puts Iran at 2,076 killed and more than 26,500 wounded. Official U.S. data remains sparse on current force and weapons-use totals; the latest accessible Defense Department fact sheet dated March 16 lists 7,000+ targets struck and 6,500+ combat flights, while more recent CENTCOM releases describe ongoing strikes and the successful rescue of two F-15E crew members after the April 2 shootdown. Regional spillover continues, with AP reporting fresh Iranian missile and drone attacks on Saudi Arabia and continued missile fire toward Israel."
     },
     {
       "date": "2026-04-06",
