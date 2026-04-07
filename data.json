@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-07T05:56:50Z",
+  "lastUpdated": "2026-04-07T07:50:06Z",
   "dayCount": 38,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "2,108+",
-    "cost": "$22.3B+"
+    "strikes": "~7,000",
+    "killed": "1,918+",
+    "cost": "$21.7B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "16",
+    "israeliDeaths": "11",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$22.3 billion+",
-    "dailyBurnRate": "~$588M/day",
+    "totalCost": "$21.7 billion+",
+    "dailyBurnRate": "~$571M/day",
     "daysOfOps": 38,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-07",
-          "source": "LLM-verified (Operation Epic Fury fact sheets list Nuclear-Powered Aircraft Carriers in theater; named imagery/support pages show USS Gerald R. Ford and USS Abraham Lincoln supporting the operation)"
+          "source": "LLM-verified (AP on April 1, 2026 reported USS George H.W. Bush deploying to the Middle East while USS Abraham Lincoln was already in the region.)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-07",
-          "source": "LLM-verified (Operation Epic Fury fact sheets list Guided-Missile Destroyers; named support pages show USS Thomas Hudner, USS Bulkeley, and USS John Finn in support of the operation)"
+          "source": "LLM-verified (AP on April 1, 2026 said USS George H.W. Bush was deploying to the Middle East with three destroyers.)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-07",
-          "source": "LLM-verified (Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights; latest April 6 fact sheet omitted combat-flight line, so April 1 is latest confirmed flights figure found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 listed 6,500+ combat flights.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline on April 7, 2026 said Hegseth described current operations as the largest volume of strikes since the war began.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on April 7, 2026 that Iran fired on Israel and Gulf Arab neighbors, including seven ballistic missiles targeting Saudi Arabia's Eastern Province.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on April 7, 2026 that Trump threatened strikes on all Iranian power plants and bridges if the Strait of Hormuz is not fully reopened by Tuesday 8 p.m. EDT.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 7, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on April 5-6, 2026 reported Trump threatened strikes on Iranian infrastructure if shipping chokepoints are not reopened.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on April 6, 2026 reported Iran rejected the latest 45-day ceasefire proposal.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran shot down two U.S. aircraft on April 3, 2026, with one crew member rescued and another initially listed as missing.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Iran threatened closure of Bab al-Mandeb in addition to maintaining pressure around Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-07T06:03:57Z",
+      "text": "<strong>Iran says US-Israeli projectile has struck a synagogue in Tehran</strong> -- A US-Israeli strike has caused extensive damage to a synagogue in Tehran, according to a video by Mehr News. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/iran-says-us-israeli-projectile-has-struck-a-synagogue-in-tehran?traffic_source=rss"
+    },
+    {
       "time": "2026-04-07T04:33:45Z",
       "text": "<strong>Trump\u2019s threat to strike Iran\u2019s power plants looms</strong> -- US President Donald Trump said \u2018Tuesday will be power plant day\u2019 in a vulgar post on social media. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/trumps-threat-to-strike-irans-power-plants-looms?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-04-06T17:38:01Z",
       "text": "<strong>Trump warns deadline \u2018final\u2019 as Iran pushes proposal to end war</strong> -- US president says proposal not enough to avert threat to infrastructure should Iran fail to open Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/6/trump-warns-deadline-final-as-iran-pushes-proposal-to-end-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T17:12:30Z",
-      "text": "<strong>Trump praised airman\u2019s rescue in Iran during White House Easter event</strong> -- Donald Trump praised the rescue of a downed American airman in Iran during remarks at the White House Easter Egg roll. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/trump-praised-airmans-rescue-in-iran-during-white-house-easter-event?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran says US-Israeli projectile has struck a synagogue in Tehran",
+      "description": "A US-Israeli strike has caused extensive damage to a synagogue in Tehran, according to a video by Mehr News.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/iran-says-us-israeli-projectile-has-struck-a-synagogue-in-tehran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T06:03:57Z",
+      "tier": 2
+    },
+    {
       "title": "Trump\u2019s threat to strike Iran\u2019s power plants looms",
       "description": "US President Donald Trump said \u2018Tuesday will be power plant day\u2019 in a vulgar post on social media.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/trumps-threat-to-strike-irans-power-plants-looms?traffic_source=rss",
@@ -1237,7 +1245,7 @@
       "tier": 2
     },
     {
-      "title": "Clock ticks on Trump's Iran ultimatum with little sign of breakthrough",
+      "title": "Little sign of breakthrough as Trump's Iran deadline nears",
       "description": "The US president is in a delicate political position as the final hours to Tuesday's deadline for Iran to open the Strait of Hormuz tick down.",
       "link": "https://www.bbc.com/news/articles/czexw94rj5jo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
@@ -1357,28 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "Democrats blast Trump for Iran \u2018war crimes\u2019 threat; Republicans supportive",
-      "description": "Several members of US Congress question president&#039;s fitness for office after his expletive-laden Easter Sunday message.",
-      "link": "https://www.aljazeera.com/news/2026/4/6/democrats-blast-trump-for-iran-war-crimes-threat-republicans-supportive?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T17:51:26Z",
-      "tier": 2
-    },
-    {
-      "title": "How Asia became ground zero for the oil crisis",
-      "description": "As the Iran war disrupts oil flows, fuel shortages hit Asia first. Is this the start of a wider global energy crisis?",
-      "link": "https://www.aljazeera.com/video/the-take-2/2026/4/6/aje-onl-tt_irn_energyrevisited_av_v2-060426?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T17:47:40Z",
+      "title": "Emergency jabs after 100 children die of suspected measles in a month in Bangladesh",
+      "description": "More than 100 people, mostly children, have been killed by measles since mid-March, officials suspect.",
+      "link": "https://www.bbc.com/news/articles/cevkz2z7dm8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-06T09:59:40Z",
       "tier": 2
     }
   ],
-  "summary": "As of Tuesday, April 7, 2026, confirmed official U.S. reporting shows Operation Epic Fury has struck 13,000+ targets and continues with more than 50,000 U.S. personnel in support, while AP and Al Jazeera report the Trump administration has threatened major new attacks on Iranian infrastructure, including power plants, if Iran does not reopen the Strait of Hormuz by the stated deadline. The best current confirmed public casualty figures located are at least 2,076 dead and 26,500 wounded in Iran, 13 U.S. service members killed, and no newly confirmed official Israeli cumulative death toll above the previously used 16.",
+  "summary": "On Tuesday, April 7, 2026, AP reported fresh Israeli strikes across Iran, retaliatory Iranian missile fire at Israel and Gulf Arab neighbors, and a renewed Trump threat to hit Iran's power plants and bridges if the Strait of Hormuz is not fully reopened by 8 p.m. EDT. AP also said more than 1,900 people have been killed in Iran since the war began, while the Iranian government has not updated its toll for days. The clearest accessible official operational totals remain older U.S. figures: CENTCOM's March 16 fact sheet listed 7,000+ targets struck and 6,500+ combat flights, and AP reported on April 1 that a second carrier strike group, USS George H.W. Bush, was deploying with three destroyers to join forces already in theater.",
   "briefings": [
     {
       "date": "2026-04-07",
       "day": 38,
-      "summary": "As of Tuesday, April 7, 2026, confirmed official U.S. reporting shows Operation Epic Fury has struck 13,000+ targets and continues with more than 50,000 U.S. personnel in support, while AP and Al Jazeera report the Trump administration has threatened major new attacks on Iranian infrastructure, including power plants, if Iran does not reopen the Strait of Hormuz by the stated deadline. The best current confirmed public casualty figures located are at least 2,076 dead and 26,500 wounded in Iran, 13 U.S. service members killed, and no newly confirmed official Israeli cumulative death toll above the previously used 16."
+      "summary": "On Tuesday, April 7, 2026, AP reported fresh Israeli strikes across Iran, retaliatory Iranian missile fire at Israel and Gulf Arab neighbors, and a renewed Trump threat to hit Iran's power plants and bridges if the Strait of Hormuz is not fully reopened by 8 p.m. EDT. AP also said more than 1,900 people have been killed in Iran since the war began, while the Iranian government has not updated its toll for days. The clearest accessible official operational totals remain older U.S. figures: CENTCOM's March 16 fact sheet listed 7,000+ targets struck and 6,500+ combat flights, and AP reported on April 1 that a second carrier strike group, USS George H.W. Bush, was deploying with three destroyers to join forces already in theater."
     },
     {
       "date": "2026-04-06",
