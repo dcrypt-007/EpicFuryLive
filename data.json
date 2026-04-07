@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-04-07T07:50:06Z",
+  "lastUpdated": "2026-04-07T09:34:29Z",
   "dayCount": 38,
   "banner": {
-    "strikes": "~7,000",
-    "killed": "1,918+",
-    "cost": "$21.7B+"
+    "strikes": "~7,800",
+    "killed": "2,109+",
+    "cost": "$21.8B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "6",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "11",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "3",
+    "gulfCasualties": "27",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.7 billion+",
-    "dailyBurnRate": "~$571M/day",
+    "totalCost": "$21.8 billion+",
+    "dailyBurnRate": "~$575M/day",
     "daysOfOps": 38,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-07",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 listed 6,500+ combat flights.)"
+          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet, March 18, 2026: 'Combat Flights: 8,000+'; used as best available official cumulative sorties figure.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "IDF April 4, 2026 live updates reported continued Iranian missile launches toward Israel and more than 200 targets struck across Iran and Lebanon over the weekend.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on April 7, 2026 reported Saudi Arabia said seven Iranian ballistic missiles targeted the kingdom's Eastern Province.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on April 7, 2026 reported Trump widened threats to Iranian infrastructure, including power plants and bridges, as his deadline approached.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 7, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reported continued Iranian attacks on Gulf infrastructure, including recent hits affecting Kuwait power and water facilities and earlier fatal incidents in Bahrain and the UAE.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on April 6, 2026 reported Trump broadened threats against Iran as his ultimatum approached and Defense Secretary Pete Hegseth said April 6 would see the largest volume of strikes since day one.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on April 5, 2026 reported U.S. forces rescued two American service members after an F-15E was shot down on April 2.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on April 5-6, 2026 reported Trump threatened strikes on Iranian infrastructure if shipping chokepoints are not reopened.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,46 @@
   ],
   "developments": [
     {
+      "time": "2026-04-07T09:03:32Z",
+      "text": "<strong>Trump and Hegseth invoke God and religion in Iran war press conference</strong> -- Trump believes God backs US in Iran war, Hegseth compares airman&amp;#039;s rescue to Jesus&amp;#039; resurrection <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/trump-and-hegseth-invoke-god-and-religion-in-iran-war-press-conference?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T08:44:05Z",
+      "text": "<strong>Iran releases on bail Japan national jailed amid antigovernment protests</strong> -- The person released is believed to be Japanese broadcaster NHK&amp;#039;s Tehran bureau chief, Shinnosuke Kawashima. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/7/japanese-detained-in-iran-believed-to-be-journalist-released-on-bail?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T08:43:46Z",
+      "text": "<strong>Synagogue in Tehran \u2018completely destroyed\u2019 in US-Israeli attack</strong> -- US-Israeli strikes destroy synagogue in Tehran, prompting outrage amid reports of 15 killed across Iran overnight. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/7/synagogue-in-tehran-destroyed-in-us-israeli-strikes-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T08:39:01Z",
+      "text": "<strong>Lebanese firefighters respond to aftermath of Israeli strike</strong> -- Video shows Lebanese firefighters trying to put out flames in the southern city of Maarakeh. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/lebanese-firefighters-respond-to-aftermath-of-israeli-strike?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T08:07:05Z",
+      "text": "<strong>What is driving the Houthis\u2019 decision-making on joining the Iran war</strong> -- There are two currents within the Houthis: one favouring caution, and another favouring commitment to allies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/4/7/what-is-driving-the-houthis-decision-making-on-joining-the-iran-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T07:52:47Z",
+      "text": "<strong>How Pakistan\u2019s solar boom is shielding it from worst of Iran war crisis</strong> -- A quarter of Pakistani households are now using solar panels. This insulates millions of families from the energy crisis <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/4/7/how-pakistans-solar-boom-is-shielding-it-from-worst-of-iran-war-crisis?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T07:52:22Z",
+      "text": "<strong>Iran war: What is happening on day 39 of US-Israeli attacks?</strong> -- Trump has issued a strict deadline, but a defiant Iran says the threats by the US president are &amp;#039;delusional&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/7/iran-war-what-is-happening-on-day-39-of-us-israeli-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-07T07:39:56Z",
+      "text": "<strong>Israel threatens Iran\u2019s trains, railways before Trump\u2019s deadline expires</strong> -- The bridge linking Saudi Arabia and Bahrain has been briefly closed as Trump threatens to hit Iranian infrastructure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/7/israel-warns-iranians-to-avoid-trains-as-trump-deadline-approaches?traffic_source=rss"
+    },
+    {
       "time": "2026-04-07T06:03:57Z",
       "text": "<strong>Iran says US-Israeli projectile has struck a synagogue in Tehran</strong> -- A US-Israeli strike has caused extensive damage to a synagogue in Tehran, according to a video by Mehr News. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/iran-says-us-israeli-projectile-has-struck-a-synagogue-in-tehran?traffic_source=rss"
@@ -811,46 +851,6 @@
       "time": "2026-04-06T19:40:59Z",
       "text": "<strong>Renewed Israeli strikes pound Lebanon as ground offensive deepens</strong> -- Israeli forces launched renewed strikes across Lebanon, hitting the south and Beirut\u2019s outskirts, killing civilians. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/renewed-israeli-strikes-pound-lebanon-as-ground-offensive-deepens?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T19:34:14Z",
-      "text": "<strong>Child rescued from rubble after Russia ramps up strikes on Ukraine</strong> -- A child was rescued from the rubble of a collapsed home in Odesa after a Russian strike killed at least three people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/child-rescued-from-rubble-after-russia-ramps-up-strikes-on-ukraine?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T19:08:23Z",
-      "text": "<strong>Rescuers search for survivors after strikes hit homes in Iran</strong> -- Iranian Red Crescent footage shows damage in Iran, as rescuers search for survivors after US-Israeli strikes hit homes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/rescuers-search-for-survivors-after-strikes-hit-homes-in-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T18:32:16Z",
-      "text": "<strong>North Korea keeping Iran at arm\u2019s length, reports Seoul</strong> -- South Korea says Pyongyang is wary as it seeks to renew diplomatic dialogue with the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/north-korea-keeping-iran-at-arms-length-reports-seoul?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T18:18:16Z",
-      "text": "<strong>Hegseth says strikes on Iran increasing as Hormuz deadline looms</strong> -- US Secretary of Defense Pete Hegseth said Monday will be the \u201clargest volume of strikes\u201d on Iran since the war began. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/hegseth-says-strikes-on-iran-increasing-as-hormuz-deadline-looms?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T18:17:58Z",
-      "text": "<strong>Video: Iran\u2019s top university hit in US-Israeli strikes</strong> -- Footage shows damaged research buildings at Tehran\u2019s Sharif University following a US-Israeli strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/video-irans-top-university-hit-in-us-israeli-strikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T17:51:26Z",
-      "text": "<strong>Democrats blast Trump for Iran \u2018war crimes\u2019 threat; Republicans supportive</strong> -- Several members of US Congress question president&amp;#039;s fitness for office after his expletive-laden Easter Sunday message. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/democrats-blast-trump-for-iran-war-crimes-threat-republicans-supportive?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T17:47:40Z",
-      "text": "<strong>How Asia became ground zero for the oil crisis</strong> -- As the Iran war disrupts oil flows, fuel shortages hit Asia first. Is this the start of a wider global energy crisis? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/the-take-2/2026/4/6/aje-onl-tt_irn_energyrevisited_av_v2-060426?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-06T17:38:01Z",
-      "text": "<strong>Trump warns deadline \u2018final\u2019 as Iran pushes proposal to end war</strong> -- US president says proposal not enough to avert threat to infrastructure should Iran fail to open Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/6/trump-warns-deadline-final-as-iran-pushes-proposal-to-end-war?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,70 @@
   ],
   "newsFeed": [
     {
+      "title": "Trump and Hegseth invoke God and religion in Iran war press conference",
+      "description": "Trump believes God backs US in Iran war, Hegseth compares airman&#039;s rescue to Jesus&#039; resurrection",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/trump-and-hegseth-invoke-god-and-religion-in-iran-war-press-conference?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T09:03:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran releases on bail Japan national jailed amid antigovernment protests",
+      "description": "The person released is believed to be Japanese broadcaster NHK&#039;s Tehran bureau chief, Shinnosuke Kawashima.",
+      "link": "https://www.aljazeera.com/news/2026/4/7/japanese-detained-in-iran-believed-to-be-journalist-released-on-bail?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T08:44:05Z",
+      "tier": 2
+    },
+    {
+      "title": "Synagogue in Tehran \u2018completely destroyed\u2019 in US-Israeli attack",
+      "description": "US-Israeli strikes destroy synagogue in Tehran, prompting outrage amid reports of 15 killed across Iran overnight.",
+      "link": "https://www.aljazeera.com/news/2026/4/7/synagogue-in-tehran-destroyed-in-us-israeli-strikes-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T08:43:46Z",
+      "tier": 2
+    },
+    {
+      "title": "Lebanese firefighters respond to aftermath of Israeli strike",
+      "description": "Video shows Lebanese firefighters trying to put out flames in the southern city of Maarakeh.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/lebanese-firefighters-respond-to-aftermath-of-israeli-strike?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T08:39:01Z",
+      "tier": 2
+    },
+    {
+      "title": "What is driving the Houthis\u2019 decision-making on joining the Iran war",
+      "description": "There are two currents within the Houthis: one favouring caution, and another favouring commitment to allies.",
+      "link": "https://www.aljazeera.com/opinions/2026/4/7/what-is-driving-the-houthis-decision-making-on-joining-the-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T08:07:05Z",
+      "tier": 2
+    },
+    {
+      "title": "How Pakistan\u2019s solar boom is shielding it from worst of Iran war crisis",
+      "description": "A quarter of Pakistani households are now using solar panels. This insulates millions of families from the energy crisis",
+      "link": "https://www.aljazeera.com/features/2026/4/7/how-pakistans-solar-boom-is-shielding-it-from-worst-of-iran-war-crisis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T07:52:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war: What is happening on day 39 of US-Israeli attacks?",
+      "description": "Trump has issued a strict deadline, but a defiant Iran says the threats by the US president are &#039;delusional&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/4/7/iran-war-what-is-happening-on-day-39-of-us-israeli-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T07:52:22Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel threatens Iran\u2019s trains, railways before Trump\u2019s deadline expires",
+      "description": "The bridge linking Saudi Arabia and Bahrain has been briefly closed as Trump threatens to hit Iranian infrastructure.",
+      "link": "https://www.aljazeera.com/news/2026/4/7/israel-warns-iranians-to-avoid-trains-as-trump-deadline-approaches?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-07T07:39:56Z",
+      "tier": 2
+    },
+    {
       "title": "Iran says US-Israeli projectile has struck a synagogue in Tehran",
       "description": "A US-Israeli strike has caused extensive damage to a synagogue in Tehran, according to a video by Mehr News.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/7/iran-says-us-israeli-projectile-has-struck-a-synagogue-in-tehran?traffic_source=rss",
@@ -1301,84 +1365,20 @@
       "tier": 2
     },
     {
-      "title": "Video: Trump threatens to jail reporter over Iran airman rescue leak",
-      "description": "Trump demanded the journalist who reported on the rescue of the US airman in Iran reveal their source.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/video-trump-threatens-to-jail-reporter-over-iran-airman-rescue-leak?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T20:01:32Z",
-      "tier": 2
-    },
-    {
-      "title": "Renewed Israeli strikes pound Lebanon as ground offensive deepens",
-      "description": "Israeli forces launched renewed strikes across Lebanon, hitting the south and Beirut\u2019s outskirts, killing civilians.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/renewed-israeli-strikes-pound-lebanon-as-ground-offensive-deepens?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T19:40:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Child rescued from rubble after Russia ramps up strikes on Ukraine",
-      "description": "A child was rescued from the rubble of a collapsed home in Odesa after a Russian strike killed at least three people.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/child-rescued-from-rubble-after-russia-ramps-up-strikes-on-ukraine?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T19:34:14Z",
-      "tier": 2
-    },
-    {
       "title": "Ten killed in Israeli strikes and clashes between Hamas and militia in Gaza, local sources say",
       "description": "The Israeli strikes reportedly targeted Hamas security personnel after they clashed with an Israeli-backed militia near Maghazi camp.",
       "link": "https://www.bbc.com/news/articles/c77md512n71o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-06T19:11:20Z",
       "tier": 2
-    },
-    {
-      "title": "Rescuers search for survivors after strikes hit homes in Iran",
-      "description": "Iranian Red Crescent footage shows damage in Iran, as rescuers search for survivors after US-Israeli strikes hit homes.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/rescuers-search-for-survivors-after-strikes-hit-homes-in-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T19:08:23Z",
-      "tier": 2
-    },
-    {
-      "title": "North Korea keeping Iran at arm\u2019s length, reports Seoul",
-      "description": "South Korea says Pyongyang is wary as it seeks to renew diplomatic dialogue with the US.",
-      "link": "https://www.aljazeera.com/news/2026/4/6/north-korea-keeping-iran-at-arms-length-reports-seoul?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T18:32:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Hegseth says strikes on Iran increasing as Hormuz deadline looms",
-      "description": "US Secretary of Defense Pete Hegseth said Monday will be the \u201clargest volume of strikes\u201d on Iran since the war began.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/hegseth-says-strikes-on-iran-increasing-as-hormuz-deadline-looms?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T18:18:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Video: Iran\u2019s top university hit in US-Israeli strikes",
-      "description": "Footage shows damaged research buildings at Tehran\u2019s Sharif University following a US-Israeli strike.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/6/video-irans-top-university-hit-in-us-israeli-strikes?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-06T18:17:58Z",
-      "tier": 2
-    },
-    {
-      "title": "Emergency jabs after 100 children die of suspected measles in a month in Bangladesh",
-      "description": "More than 100 people, mostly children, have been killed by measles since mid-March, officials suspect.",
-      "link": "https://www.bbc.com/news/articles/cevkz2z7dm8o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-06T09:59:40Z",
-      "tier": 2
     }
   ],
-  "summary": "On Tuesday, April 7, 2026, AP reported fresh Israeli strikes across Iran, retaliatory Iranian missile fire at Israel and Gulf Arab neighbors, and a renewed Trump threat to hit Iran's power plants and bridges if the Strait of Hormuz is not fully reopened by 8 p.m. EDT. AP also said more than 1,900 people have been killed in Iran since the war began, while the Iranian government has not updated its toll for days. The clearest accessible official operational totals remain older U.S. figures: CENTCOM's March 16 fact sheet listed 7,000+ targets struck and 6,500+ combat flights, and AP reported on April 1 that a second carrier strike group, USS George H.W. Bush, was deploying with three destroyers to join forces already in theater.",
+  "summary": "Confirmed reporting on April 7, 2026 indicates the war remains active with no ceasefire breakthrough. AP reported Iran rejected the latest ceasefire proposal as Trump threatened broader attacks on Iranian infrastructure, while Saudi Arabia said seven Iranian ballistic missiles targeted its Eastern Province. The best current official U.S. operational figure available in retrieved primary sources remains the March 18 DoD/CENTCOM fact sheet listing 7,800+ targets struck and 8,000+ combat flights. For casualties, Al Jazeera\u2019s April 3-4 updates citing Iranian authorities reported 2,076 killed and 26,500 wounded in Iran; CENTCOM\u2019s latest directly retrieved official KIA figure remains 6 U.S. service members killed in action as of March 2; and Al Jazeera\u2019s April 6 live tracker reported 27 deaths in Gulf states.",
   "briefings": [
     {
       "date": "2026-04-07",
       "day": 38,
-      "summary": "On Tuesday, April 7, 2026, AP reported fresh Israeli strikes across Iran, retaliatory Iranian missile fire at Israel and Gulf Arab neighbors, and a renewed Trump threat to hit Iran's power plants and bridges if the Strait of Hormuz is not fully reopened by 8 p.m. EDT. AP also said more than 1,900 people have been killed in Iran since the war began, while the Iranian government has not updated its toll for days. The clearest accessible official operational totals remain older U.S. figures: CENTCOM's March 16 fact sheet listed 7,000+ targets struck and 6,500+ combat flights, and AP reported on April 1 that a second carrier strike group, USS George H.W. Bush, was deploying with three destroyers to join forces already in theater."
+      "summary": "Confirmed reporting on April 7, 2026 indicates the war remains active with no ceasefire breakthrough. AP reported Iran rejected the latest ceasefire proposal as Trump threatened broader attacks on Iranian infrastructure, while Saudi Arabia said seven Iranian ballistic missiles targeted its Eastern Province. The best current official U.S. operational figure available in retrieved primary sources remains the March 18 DoD/CENTCOM fact sheet listing 7,800+ targets struck and 8,000+ combat flights. For casualties, Al Jazeera\u2019s April 3-4 updates citing Iranian authorities reported 2,076 killed and 26,500 wounded in Iran; CENTCOM\u2019s latest directly retrieved official KIA figure remains 6 U.S. service members killed in action as of March 2; and Al Jazeera\u2019s April 6 live tracker reported 27 deaths in Gulf states."
     },
     {
       "date": "2026-04-06",
