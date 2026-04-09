@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-04-09T05:58:08Z",
+  "lastUpdated": "2026-04-09T07:55:30Z",
   "dayCount": 40,
   "banner": {
     "strikes": "~13,000",
-    "killed": "2,126+",
-    "cost": "$22.9B+"
+    "killed": "2,059+",
+    "cost": "$28.4B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "23",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "24",
+    "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$22.9 billion+",
-    "dailyBurnRate": "~$573M/day",
+    "totalCost": "$28.4 billion+",
+    "dailyBurnRate": "~$711M/day",
     "daysOfOps": 40,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -184,8 +184,8 @@
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-04-08",
-          "source": "LLM-verified (Defense News and Stars and Stripes, citing reporting on Pentagon concerns/analysis in late March 2026, say the U.S. had fired over/more than 850 Tomahawks in the Iran campaign.)"
+          "lastUpdated": "2026-04-09",
+          "source": "LLM-verified (Defense News, March 27, 2026, citing Washington Post/Pentagon context: over 850 Tomahawk cruise missiles fired.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-09",
-          "source": "LLM-verified (CBS News live blog, April 6, 2026, quoting President Trump: 10,000 combat flights over Iran since operation began)"
+          "source": "LLM-verified (White House release, April 8, 2026: over 10,200 total air sorties flown in Operation Epic Fury.)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 325,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-03-27",
-          "source": "LLM-verified (AP, March 20, 2026, citing Foreign Policy Research Institute: U.S. used around 325 Patriot missiles during the first 96 hours of the war; no newer confirmed cumulative U.S. total for SM-3/THAAD/Patriot combined found)"
+          "lastUpdated": "2026-04-09",
+          "source": "LLM-verified (Yahoo News summary of top general remarks, April 8, 2026: American and Gulf allies intercepted around 1,700 ballistic missiles; White House separately reported 700+ ballistic missile threats and 1,000+ drone threats intercepted, but not a combined interceptor-shot count by munition type.)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,000 \u00d7 $100,000 each",
-        "cost": "$1,000,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "325 \u00d7 $4,000,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israeli strikes on Lebanon continued after the US-Iran ceasefire announcement; AP reported at least 182 killed on April 8 in Lebanon, the deadliest day in the current Israel-Hezbollah war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire with Iran remained fragile on April 8, 2026, while Iran again closed the Strait of Hormuz after Israel expanded strikes in Lebanon, according to AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 9, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Netanyahu said the ceasefire does not apply to Israel's war with Hezbollah in Lebanon, leaving that front active",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on April 8 reported a two-week U.S.-Israel-Iran ceasefire, but terms remain disputed and enforcement around the Strait of Hormuz could still become a flashpoint",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline reporting says Iran agreed to reopen the Strait of Hormuz for two weeks and talks are expected in Islamabad on Friday, April 10, 2026, if the truce holds.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-09T06:32:44Z",
+      "text": "<strong>Iran war day 41: What\u2019s happening in Lebanon, Middle East and beyond?</strong> -- Lebanon has declared a national day of mourning after Israeli attacks killed at least 254 people in a single day. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/9/iran-war-day-41-whats-happening-in-lebanon-middle-east-and-beyond?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-09T05:58:36Z",
+      "text": "<strong>For Gulf states, Hormuz uncertainty casts shadow over US-Iran ceasefire</strong> -- Experts say Gulf countries are wary of the US agreeing to a deal that gives Iran leverage over the vital energy route. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/9/for-gulf-states-hormuz-uncertainty-casts-shadow-over-fragile-us-iran-truce?traffic_source=rss"
+    },
+    {
       "time": "2026-04-09T04:46:54Z",
       "text": "<strong>Trump slams NATO over Iran after meeting Rutte, renews Greenland threat</strong> -- US president meets NATO chief, expresses disappointment over member states failing to back war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/9/trump-slams-nato-over-iran-after-meeting-rutte-renews-greenland-threat?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-04-08T19:20:34Z",
       "text": "<strong>Iranians breathe a \u2018ceasefire\u2019 sigh of relief as all sides claim victory</strong> -- Celebration and scepticism coexist in Tehran as ceasefire offers reprieve despite doubts about its durability. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/8/iranians-breathe-a-ceasefire-sigh-of-relief-as-all-sides-claim-victory?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-08T19:00:28Z",
-      "text": "<strong>White House says Trump\u2019s \u2018red line\u2019 against Iran nuclear enrichment remains</strong> -- Trump&amp;#039;s spokesperson says Vice President JD Vance will lead US team for negotiations with Iran in Pakistan on Saturday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/8/white-house-says-trumps-red-line-against-iran-nuclear-enrichment-remains?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-08T18:30:33Z",
-      "text": "<strong>Trump backs Israel, says Lebanon a \u2018separate skirmish\u2019 after ceasefire</strong> -- After Israeli strikes on Beirut, Donald Trump said Lebanon isn\u2019t included in the Iran ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/8/trump-backs-israel-says-lebanon-a-separate-skirmish-after-ceasefire?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran war day 41: What\u2019s happening in Lebanon, Middle East and beyond?",
+      "description": "Lebanon has declared a national day of mourning after Israeli attacks killed at least 254 people in a single day.",
+      "link": "https://www.aljazeera.com/news/2026/4/9/iran-war-day-41-whats-happening-in-lebanon-middle-east-and-beyond?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-09T06:32:44Z",
+      "tier": 2
+    },
+    {
+      "title": "For Gulf states, Hormuz uncertainty casts shadow over US-Iran ceasefire",
+      "description": "Experts say Gulf countries are wary of the US agreeing to a deal that gives Iran leverage over the vital energy route.",
+      "link": "https://www.aljazeera.com/news/2026/4/9/for-gulf-states-hormuz-uncertainty-casts-shadow-over-fragile-us-iran-truce?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-09T05:58:36Z",
+      "tier": 2
+    },
+    {
       "title": "Trump slams NATO over Iran after meeting Rutte, renews Greenland threat",
       "description": "US president meets NATO chief, expresses disappointment over member states failing to back war on Iran.",
       "link": "https://www.aljazeera.com/news/2026/4/9/trump-slams-nato-over-iran-after-meeting-rutte-renews-greenland-threat?traffic_source=rss",
@@ -1325,19 +1341,11 @@
       "tier": 2
     },
     {
-      "title": "\u2018People are afraid\u2019: Lebanese reeling after Israel\u2019s devastating attacks",
-      "description": "Fear and confusion grip Lebanon as Israeli strikes devastate the country and its place in the ceasefire is contested.",
-      "link": "https://www.aljazeera.com/news/2026/4/8/people-are-afraid-lebanese-reeling-after-israels-devastating-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-08T20:57:02Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018Heinous crime\u2019: Al Jazeera condemns Israeli killing of journalist",
-      "description": "Al Jazeera has condemned Israel\u2019s \u201cheinous crime\u201d after a drone strike killed journalist Mohammed Wishah in Gaza.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/8/heinous-crime-al-jazeera-condemns-israeli-killing-of-journalist?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-08T20:53:32Z",
+      "title": "At least 182 killed across Lebanon in large wave of Israeli strikes",
+      "description": "Attacks hit the southern suburbs of Beirut, southern Lebanon and the eastern Bekaa Valley, hours after a US-Iran ceasefire was announced.",
+      "link": "https://www.bbc.com/news/articles/c0j6d538l6qo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-08T20:54:59Z",
       "tier": 2
     },
     {
@@ -1349,19 +1357,11 @@
       "tier": 2
     },
     {
-      "title": "Netanyahu: A \u2018ceasefire with Iran will not include Hezbollah\u2019",
-      "description": "Netanyahu says the US-Iran ceasefire \u201cwill not include Hezbollah,\u201d in his first remarks after the ceasefire.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/8/netanyahu-a-ceasefire-with-iran-will-not-include?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-08T20:24:36Z",
-      "tier": 2
-    },
-    {
-      "title": "World reacts to \u2018brutal\u2019 Israeli attacks on Lebanon after US-Iran truce",
-      "description": "Israeli attacks have killed at least 254 people and wounded 1,165 others, according to Lebanon\u2019s Civil Defence.",
-      "link": "https://www.aljazeera.com/news/2026/4/8/world-reacts-to-brutal-israeli-attacks-on-lebanon-amid-us-iran-ceasefire?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-08T19:47:57Z",
+      "title": "Iran Strait of Hormuz warning adds to shipping uncertainty",
+      "description": "Only a few vessels have crossed the strait since the US-Iran ceasefire deal, according to BBC Verify analysis.",
+      "link": "https://www.bbc.com/news/articles/c3w39lg84w2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-08T17:21:31Z",
       "tier": 2
     },
     {
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "A tentative two-week U.S.-Iran ceasefire took effect on April 8, 2026, but major uncertainty remains because Israel says the arrangement does not cover Hezbollah in Lebanon; AP reported heavy Israeli strikes in Beirut on April 8, while U.S. and Iranian officials continued disputing ceasefire scope. The latest accessible casualty figures located were Iran Health Ministry numbers carried by Al Jazeera on April 7 showing 2,076 killed and 26,500 injured in Iran, with 26 Israelis reported killed and 24 deaths across Gulf states in Bahrain, Kuwait, Oman, Saudi Arabia and the UAE. For U.S. losses, the latest accessible official/Pentagon-backed total found was 13 service members killed. On operations, official March CENTCOM/DoD fact sheets confirmed at least two carrier strike groups were involved earlier in the campaign, while CBS reported President Trump saying on April 6 that the campaign had surpassed 13,000 targets struck and 10,000 combat flights.",
+  "summary": "As of April 9, 2026, the clearest newly confirmed figures available in accessible official and major-media reporting are that 13 U.S. service members have been killed in Operation Epic Fury, U.S. forces have struck over 13,000 targets, flown over 10,200 total air sorties, and the U.S. has fired over 850 Tomahawk missiles; AP reporting also indicates at least 23 Israeli deaths tied to the broader war (19 in Israel and 4 soldiers in Lebanon) and 20 deaths in Gulf Arab states, while Iran\u2019s own cumulative national death toll appears not to have been freshly updated in current AP coverage beyond 'more than 1,900' as of late March, leaving several casualty and force-deployment fields unconfirmable today without relying on stale or secondary sourcing.",
   "briefings": [
     {
       "date": "2026-04-09",
       "day": 40,
-      "summary": "A tentative two-week U.S.-Iran ceasefire took effect on April 8, 2026, but major uncertainty remains because Israel says the arrangement does not cover Hezbollah in Lebanon; AP reported heavy Israeli strikes in Beirut on April 8, while U.S. and Iranian officials continued disputing ceasefire scope. The latest accessible casualty figures located were Iran Health Ministry numbers carried by Al Jazeera on April 7 showing 2,076 killed and 26,500 injured in Iran, with 26 Israelis reported killed and 24 deaths across Gulf states in Bahrain, Kuwait, Oman, Saudi Arabia and the UAE. For U.S. losses, the latest accessible official/Pentagon-backed total found was 13 service members killed. On operations, official March CENTCOM/DoD fact sheets confirmed at least two carrier strike groups were involved earlier in the campaign, while CBS reported President Trump saying on April 6 that the campaign had surpassed 13,000 targets struck and 10,000 combat flights."
+      "summary": "As of April 9, 2026, the clearest newly confirmed figures available in accessible official and major-media reporting are that 13 U.S. service members have been killed in Operation Epic Fury, U.S. forces have struck over 13,000 targets, flown over 10,200 total air sorties, and the U.S. has fired over 850 Tomahawk missiles; AP reporting also indicates at least 23 Israeli deaths tied to the broader war (19 in Israel and 4 soldiers in Lebanon) and 20 deaths in Gulf Arab states, while Iran\u2019s own cumulative national death toll appears not to have been freshly updated in current AP coverage beyond 'more than 1,900' as of late March, leaving several casualty and force-deployment fields unconfirmable today without relying on stale or secondary sourcing."
     },
     {
       "date": "2026-04-08",
