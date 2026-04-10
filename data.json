@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-04-10T16:08:26Z",
+  "lastUpdated": "2026-04-10T17:07:42Z",
   "dayCount": 41,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "2,089+",
-    "cost": "$28.6B+"
+    "strikes": "~7,800",
+    "killed": "2,115+",
+    "cost": "$28.7B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "6",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.6 billion+",
-    "dailyBurnRate": "~$698M/day",
+    "totalCost": "$28.7 billion+",
+    "dailyBurnRate": "~$699M/day",
     "daysOfOps": 41,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-10",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury pages show USS Gerald R. Ford (CSG-12) and USS Theodore Roosevelt (CSG-9) in theater)"
+          "source": "LLM-verified (DoD/CENTCOM media during Operation Epic Fury show USS Abraham Lincoln and USS Gerald R. Ford operating in support; no newer official theater count found)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-10",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page for CSG-12 lists USS Ramage, USS McFaul, and USS Thomas Hudner as destroyers with the strike group)"
+          "source": "LLM-verified (DoD/CENTCOM media identified USS Thomas Hudner, USS Spruance, and USS Bulkeley in Operation Epic Fury; no newer official in-theater destroyer count found)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 7300,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-10",
-          "source": "LLM-verified (Derived from official briefings found: Pentagon fact sheet dated March 16, 2026 reported 6,500+ combat flights, and IDF reported 800+ Israeli Air Force strike sorties. Combined minimum confirmed total = 7,300+.)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet dated March 18, 2026 from DoD/CENTCOM lists 8,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "7,300 \u00d7 $100,000 each",
-        "cost": "$730,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP both reported continued diplomacy in Islamabad alongside unresolved Strait of Hormuz tensions",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported a tentative two-week ceasefire took effect on April 8, but Israel said it did not cover Hezbollah/Lebanon",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on April 4 that two U.S. warplanes were downed over Iran and one crew member remained missing at that time",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 10, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Israeli strikes in Lebanon continue despite ceasefire discussions, raising risk of regional re-escalation per BBC and Al Jazeera headline context",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "A fragile U.S.-Iran ceasefire is in place but shipping remains cautious near Hormuz, per today's BBC headline context",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran says Strait of Hormuz remains open but with restrictions requiring ship coordination with Iranian forces, according to today's Al Jazeera headline context",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Defense Secretary Hegseth said U.S. forces will remain near Iran and are prepared to restart operations quickly if the ceasefire fails, indicating continued force posture risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-10T16:05:36Z",
+      "text": "<strong>JD Vance expects \u2018positive\u2019 US-Iran war talks as he departs for Pakistan</strong> -- Vice president says Trump gave &amp;#039;pretty clear guidelines&amp;#039; on talks, which will be productive if Iran does not &amp;#039;play&amp;#039; US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/10/jd-vance-expects-positive-us-iran-war-talks-as-he-departs-for-pakistan?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-10T15:59:47Z",
+      "text": "<strong>US-Iran peace talks in Islamabad face massive hurdles</strong> -- Ali Vaez, says upcoming talks between the US and Iran may be marred by a deficit of trust. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/quotable/2026/4/10/us-iran-peace-talks-in-islamabad-face-massive-hurdles?traffic_source=rss"
+    },
+    {
       "time": "2026-04-10T15:20:38Z",
       "text": "<strong>Inflation rises in US amid Iran war, Hormuz blockade</strong> -- Government report shows gasoline going up by 21.2 percent in March as petrol remains above $4 per gallon despite truce. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/10/inflation-rises-in-us-amid-iran-war-hormuz-blockade?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-04-09T23:16:47Z",
       "text": "<strong>Iran\u2019s Supreme Leader Mojtaba Khamenei says \u2018we seek compensation, not war\u2019</strong> -- Iranian state TV has read out a message from new Supreme Leader Mojtaba Khamenei which says Iran \u2018does not want war\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/9/irans-supreme-leader-mojtaba-khamenei-says-we-seek-compensation-not?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-09T22:48:25Z",
-      "text": "<strong>US-Iran ceasefire: Uncertainty over what\u2019s next</strong> -- Two\u2011week US\u2011Iran ceasefire pauses war; \u201cwho won?\u201d unresolved as Hormuz, Lebanon strikes, Iran capabilities persist. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/this-is-america/2026/4/9/us-iran-ceasefire-uncertainty-over-whats-next?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-09T21:36:43Z",
-      "text": "<strong>Hospitals in Beirut struggle to deal with casualties after Israeli attacks</strong> -- Doctors warn of worsening crises as vital supplies run low and Israeli attacks devastate Beirut and surrounding areas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/9/hospitals-in-beirut-struggle-to-deal-with-casualties-after-israeli-attacks?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "JD Vance expects \u2018positive\u2019 US-Iran war talks as he departs for Pakistan",
+      "description": "Vice president says Trump gave &#039;pretty clear guidelines&#039; on talks, which will be productive if Iran does not &#039;play&#039; US.",
+      "link": "https://www.aljazeera.com/news/2026/4/10/jd-vance-expects-positive-us-iran-war-talks-as-he-departs-for-pakistan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-10T16:05:36Z",
+      "tier": 2
+    },
+    {
+      "title": "US-Iran peace talks in Islamabad face massive hurdles",
+      "description": "Ali Vaez, says upcoming talks between the US and Iran may be marred by a deficit of trust.",
+      "link": "https://www.aljazeera.com/video/quotable/2026/4/10/us-iran-peace-talks-in-islamabad-face-massive-hurdles?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-10T15:59:47Z",
+      "tier": 2
+    },
+    {
       "title": "Inflation rises in US amid Iran war, Hormuz blockade",
       "description": "Government report shows gasoline going up by 21.2 percent in March as petrol remains above $4 per gallon despite truce.",
       "link": "https://www.aljazeera.com/news/2026/4/10/inflation-rises-in-us-amid-iran-war-hormuz-blockade?traffic_source=rss",
@@ -1277,27 +1293,11 @@
       "tier": 2
     },
     {
-      "title": "At least 11 killed in Israeli air strikes across southern Lebanon",
-      "description": "World Food Programe says situation in Lebnon is &#039;rapidly becoming a food security crisis&#039; amid Israeli attacks.",
+      "title": "At least 14 killed in Israeli air strikes across southern Lebanon",
+      "description": "World Food Programe says situation in Lebanon is &#039;rapidly becoming a food security crisis&#039; amid Israeli attacks.",
       "link": "https://www.aljazeera.com/news/2026/4/10/israel-strikes-residential-areas-destroys-homes-in-southern-lebanon?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-10T10:17:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Six months into \u2018ceasefire\u2019, Gaza suffers under persistent Israeli attacks",
-      "description": "Gaza&#039;s devastation grows as over 72,000 people killed and 172,000 injured amid Israeli violations of US-brokered truce.",
-      "link": "https://www.aljazeera.com/gallery/2026/4/10/six-months-into-a-us-brokered-ceasefire-gaza-remains-under-israeli-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-10T09:36:31Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran ceasefire: Not an off-ramp for the US but a life-saving ejection seat",
-      "description": "A Middle Eastern country has for the first time single-handedly checked the war-making capabilities of the US and Israel",
-      "link": "https://www.aljazeera.com/opinions/2026/4/10/iran-ceasefire-not-an-off-ramp-for-the-us-but-a-life-saving-ejection-seat?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-10T08:27:42Z",
       "tier": 2
     },
     {
@@ -1355,22 +1355,14 @@
       "source": "BBC World",
       "time": "2026-04-09T01:59:34Z",
       "tier": 2
-    },
-    {
-      "title": "What we know about the two-week ceasefire between the US and Iran",
-      "description": "The provisional truce comes more than a month after the US and Israel launched coordinated attacks on Iran.",
-      "link": "https://www.bbc.com/news/articles/ce84z6y3ke4o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-08T20:25:49Z",
-      "tier": 2
     }
   ],
-  "summary": "As of Friday, April 10, 2026, the newest confirmed figures found in authoritative reporting show Iran reporting 2,076 dead and 26,500 wounded, while U.S. Central Command data reported by Air Force Times says 13 U.S. service members have been killed, 381 wounded, more than 50,000 U.S. personnel remain in the region, and U.S. forces have supported more than 13,000 strikes; official IDF reporting separately says Israel has flown more than 800 strike sorties, used about 15,000 munitions, and struck more than 4,000 targets, while ceasefire-related reporting from AP and Al Jazeera indicates continued instability and fresh attacks in Gulf states despite talks.",
+  "summary": "Confirmed reporting as of April 10, 2026 shows Iran\u2019s official death toll at 2,076 killed and more than 26,500 wounded, while Al Jazeera\u2019s tracker lists 26 Israelis killed. Official U.S. military fatality reporting located in CENTCOM statements confirms 7 U.S. service members killed in action through March 8, with no newer Pentagon or CENTCOM cumulative KIA update found in the searched sources. The latest official DoD/CENTCOM operational fact sheet located was dated March 18 and reported 7,800+ targets struck and 8,000+ combat flights. Diplomatic activity intensified this week around a tentative two-week ceasefire and talks in Islamabad, but AP and other reporting indicate major disputes remain, including continued Israeli operations tied to Lebanon and unresolved Hormuz security tensions.",
   "briefings": [
     {
       "date": "2026-04-10",
       "day": 41,
-      "summary": "As of Friday, April 10, 2026, the newest confirmed figures found in authoritative reporting show Iran reporting 2,076 dead and 26,500 wounded, while U.S. Central Command data reported by Air Force Times says 13 U.S. service members have been killed, 381 wounded, more than 50,000 U.S. personnel remain in the region, and U.S. forces have supported more than 13,000 strikes; official IDF reporting separately says Israel has flown more than 800 strike sorties, used about 15,000 munitions, and struck more than 4,000 targets, while ceasefire-related reporting from AP and Al Jazeera indicates continued instability and fresh attacks in Gulf states despite talks."
+      "summary": "Confirmed reporting as of April 10, 2026 shows Iran\u2019s official death toll at 2,076 killed and more than 26,500 wounded, while Al Jazeera\u2019s tracker lists 26 Israelis killed. Official U.S. military fatality reporting located in CENTCOM statements confirms 7 U.S. service members killed in action through March 8, with no newer Pentagon or CENTCOM cumulative KIA update found in the searched sources. The latest official DoD/CENTCOM operational fact sheet located was dated March 18 and reported 7,800+ targets struck and 8,000+ combat flights. Diplomatic activity intensified this week around a tentative two-week ceasefire and talks in Islamabad, but AP and other reporting indicate major disputes remain, including continued Israeli operations tied to Lebanon and unresolved Hormuz security tensions."
     },
     {
       "date": "2026-04-09",
