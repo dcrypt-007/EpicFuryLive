@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-11T14:55:34Z",
+  "lastUpdated": "2026-04-11T15:47:38Z",
   "dayCount": 42,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,048+",
-    "cost": "$29.1B+"
+    "killed": "2,013+",
+    "cost": "$29.6B+"
   },
   "humanCost": {
-    "iranDeaths": "3,000",
+    "iranDeaths": "2,000",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.1 billion+",
-    "dailyBurnRate": "~$693M/day",
+    "totalCost": "$29.6 billion+",
+    "dailyBurnRate": "~$705M/day",
     "daysOfOps": 42,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-11",
-          "source": "LLM-verified (U.S. Central Command figure reported by Air Force Times/Military Times, April 8, 2026: 'The U.S. military has more than 50,000 personnel in the region')"
+          "source": "LLM-verified (CENTCOM / Pentagon officials said 'more than 50,000' personnel in region; returned as 50000 minimum confirmed floor)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-11",
-          "source": "LLM-verified (DoD Operation Epic Fury fact sheet dated March 18, 2026: 'Combat Flights: 8,000+'; latest official cumulative figure found)"
+          "source": "LLM-verified (CENTCOM / Pentagon fact sheet April 1, 2026 reported 'Combat Flights: 13,000+'; used as best confirmed cumulative sortie figure available)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Gulf states continued reporting interceptions and attacks even after the April 7-8 ceasefire announcement, according to Al Jazeera and AP coverage.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israeli operations in Lebanon continued to threaten the ceasefire framework, according to AP and Al Jazeera reporting referenced in current headlines.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported direct U.S.-Iran talks began in Islamabad on April 11, 2026 under a fragile two-week ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 11, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Hezbollah rocket fire damaged a 1,500-year-old church in Nahariya, underscoring continued regional spillover despite Iran-US talks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Ceasefire remains unstable as Israel intensified strikes in Lebanon and Iran again moved on the Strait of Hormuz, according to AP and Al Jazeera reporting.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian and US delegations arrived in Islamabad for talks beginning April 10-11, 2026, under a fragile two-week ceasefire framework.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The Strait of Hormuz remains a live pressure point in negotiations, with continued concern over shipping security and possible renewed escalation if talks fail.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-11T14:39:38Z",
+      "text": "<strong>US-Iran ceasefire: Can pressure, incentives, and risks deliver a final deal</strong> -- Can US\u2011Iran ceasefire hold for talks? Vance team, midterm politics, energy risks, Tehran seeks relief. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/this-is-america/2026/4/11/us-iran-ceasefire-can-pressure-incentives-and-risks-deliver-a-final-deal?traffic_source=rss"
+    },
+    {
       "time": "2026-04-11T14:17:16Z",
       "text": "<strong>Lebanon mourns security forces killed in Israeli strike</strong> -- Lebanon held funeral ceremonies for 13 members of the country\u2019s State Security agency killed in an Israeli strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/11/lebanon-mourns-security-forces-killed-in-israeli-strike?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-04-10T21:58:14Z",
       "text": "<strong>Islamabad on lockdown ahead of US-Iran talks</strong> -- Islamabad has deployed more than 10,000 military and police personnel as US and Iranian delegations arrive. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/10/islamabad-on-lockdown-ahead-of-us-iran-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-10T20:19:54Z",
-      "text": "<strong>US-Iran negotiations in Islamabad: What to expect?</strong> -- US and Iranian delegations are set to meet in Islamabad for peace talks to end six weeks of war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/10/us-iran-negotiations-in-islamabad-what-to-expect?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,19 @@
   ],
   "newsFeed": [
     {
-      "title": "Irish police push back fuel protesters at oil refinery",
+      "title": "Fuel tankers regain access to Irish oil refinery",
       "description": "Demonstrations due to high prices caused by the US-Israeli war against Iran are affecting traffic on several roads.",
       "link": "https://www.bbc.com/news/articles/c0e7rpjqw5po?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-04-11T14:41:18Z",
+      "time": "2026-04-11T15:25:09Z",
+      "tier": 2
+    },
+    {
+      "title": "US-Iran ceasefire: Can pressure, incentives, and risks deliver a final deal",
+      "description": "Can US\u2011Iran ceasefire hold for talks? Vance team, midterm politics, energy risks, Tehran seeks relief.",
+      "link": "https://www.aljazeera.com/video/this-is-america/2026/4/11/us-iran-ceasefire-can-pressure-incentives-and-risks-deliver-a-final-deal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-11T14:39:38Z",
       "tier": 2
     },
     {
@@ -1317,30 +1325,6 @@
       "tier": 2
     },
     {
-      "title": "Iran war: What is happening on day 43 of the US-Iran conflict?",
-      "description": "Senior Iranian officials arrive in Islamabad for ceasefire talks with the United States.",
-      "link": "https://www.aljazeera.com/news/2026/4/11/iran-war-what-is-happening-on-day-43-of-the-us-iran-conflict?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-11T04:49:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Pakistan ambassador speaks to Al Jazeera on eve of US-Iran talks",
-      "description": "Pakistan\u2019s ambassador to the US said weeks of intense diplomatic efforts have led to a shared commitment from all sides.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/11/pakistan-ambassador-speaks-to-al-jazeera-on-eve-of-us-iran-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-11T04:15:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Pakistan\u2019s prime minister calls US-Iran talks \u2018make or break\u2019",
-      "description": "Pakistan\u2019s Prime Minister Shehbaz Sharif has described the upcoming US-Iran talks in Islamabad as \u201cmake or break\u201d.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/11/pakistans-prime-minister-calls-us-iran-talks-make-or?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-11T04:02:42Z",
-      "tier": 2
-    },
-    {
       "title": "JD Vance takes on a perilous mission - could it backfire?",
       "description": "As the US vice-president leads peace talks with Iran, he must balance warring factions, a demanding boss and his own political future.",
       "link": "https://www.bbc.com/news/articles/c1d9z1q2997o?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1357,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on April 11, 2026 shows U.S.-Iran negotiations began in Islamabad after a fragile ceasefire, while fighting continued in Lebanon. AP reported the war has killed at least 3,000 people in Iran, 23 in Israel, and more than a dozen in Gulf Arab states. Pentagon/CENTCOM data reported April 8 said 13 U.S. service members have been killed, 381 wounded, the U.S. has more than 50,000 personnel in the region, and has supported more than 13,000 strikes. The latest official DoD fact sheet I found lists 8,000+ combat flights as of March 18, but I could not find current confirmed official totals for carriers, destroyers, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptor launches.",
+  "summary": "As of April 11, 2026, the clearest confirmed numbers available from accessible official and major-media reporting indicate that Operation Epic Fury had reached at least 13,000 U.S. strike targets, involved more than 50,000 U.S. personnel in the region, and left 13 U.S. service members dead; Iran\u2019s Health Ministry, as cited by Military Times on April 8, said more than 2,000 people had been killed and 20,000 wounded in Iran. AP reported that direct U.S.-Iran talks opened in Islamabad on April 11 under a fragile two-week ceasefire, while Israeli operations in Lebanon and continued Gulf-area interceptions underscored that the truce remained unstable.",
   "briefings": [
     {
       "date": "2026-04-11",
       "day": 42,
-      "summary": "Confirmed reporting on April 11, 2026 shows U.S.-Iran negotiations began in Islamabad after a fragile ceasefire, while fighting continued in Lebanon. AP reported the war has killed at least 3,000 people in Iran, 23 in Israel, and more than a dozen in Gulf Arab states. Pentagon/CENTCOM data reported April 8 said 13 U.S. service members have been killed, 381 wounded, the U.S. has more than 50,000 personnel in the region, and has supported more than 13,000 strikes. The latest official DoD fact sheet I found lists 8,000+ combat flights as of March 18, but I could not find current confirmed official totals for carriers, destroyers, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptor launches."
+      "summary": "As of April 11, 2026, the clearest confirmed numbers available from accessible official and major-media reporting indicate that Operation Epic Fury had reached at least 13,000 U.S. strike targets, involved more than 50,000 U.S. personnel in the region, and left 13 U.S. service members dead; Iran\u2019s Health Ministry, as cited by Military Times on April 8, said more than 2,000 people had been killed and 20,000 wounded in Iran. AP reported that direct U.S.-Iran talks opened in Islamabad on April 11 under a fragile two-week ceasefire, while Israeli operations in Lebanon and continued Gulf-area interceptions underscored that the truce remained unstable."
     },
     {
       "date": "2026-04-10",
