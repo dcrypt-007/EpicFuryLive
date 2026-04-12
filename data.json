@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-12T07:44:42Z",
+  "lastUpdated": "2026-04-12T09:05:57Z",
   "dayCount": 43,
   "banner": {
     "strikes": "~13,000",
-    "killed": "2,143+",
-    "cost": "$29.1B+"
+    "killed": "3,067+",
+    "cost": "$29.6B+"
   },
   "humanCost": {
-    "iranDeaths": "2,076",
+    "iranDeaths": "3,000",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "26,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.1 billion+",
-    "dailyBurnRate": "~$677M/day",
+    "totalCost": "$29.6 billion+",
+    "dailyBurnRate": "~$688M/day",
     "daysOfOps": 43,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-12",
-          "source": "LLM-verified (Al Jazeera explainer citing current deployment status as of April 1, 2026: USS Abraham Lincoln only carrier currently launching daily combat sorties; George H.W. Bush in transit, Ford under repair)"
+          "source": "LLM-verified (CENTCOM media page shows USS Abraham Lincoln and USS Gerald R. Ford conducting Operation Epic Fury flight operations in March 2026)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-04-11",
-          "source": "LLM-verified (AP, Apr. 11, 2026: 'the U.S. military said two destroyers transited the Strait of Hormuz ahead of mine-clearing work' (apnews.com/article/iran-us-israel-trump-lebanon-april-11-2026-2be904aee3f804892336730279e054b9))"
+          "lastUpdated": "2026-04-12",
+          "source": "LLM-verified (CENTCOM/DoD media show USS Thomas Hudner, USS Bulkeley, and USS John Finn supporting Operation Epic Fury)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-12",
-          "source": "LLM-verified (CENTCOM fact sheet dated March 16, 2026 reported 6,500+ combat flights, but newer April 6 fact sheet did not include a combat-flights line; 6,500 is latest confirmed numeric combat-flight figure found, though not current through April 12)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 18, 2026 lists 'Combat Flights: 8,000+')"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 43 days",
-        "cost": "$301,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 43 days",
+        "cost": "$602,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "2 \u00d7 $240,000/day \u00d7 43 days",
-        "cost": "$20,640,000"
+        "detail": "3 \u00d7 $240,000/day \u00d7 43 days",
+        "cost": "$30,960,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera homepage/live coverage on April 12, 2026 indicated continued concern over Strait of Hormuz shipping and ceasefire fragility.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iran\u2019s state media said Tehran remains open to continued dialogue, but no follow-on talks were announced.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 12, 2026 that U.S.-Iran talks in Islamabad ended without agreement, leaving the fragile ceasefire in doubt before its stated April 22 expiry.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 12, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported April 11 that U.S. and Iranian delegations arrived in Islamabad for first high-level talks since the war began, with the ceasefire described as fragile.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported the current U.S.-Iran ceasefire is set to expire on April 21, 2026 if no broader agreement is reached",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Hezbollah fired about 30 projectiles into northern Israel on April 11, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on April 11, 2026 that Israel rejected a ceasefire with Hezbollah and fighting in Lebanon continued ahead of talks",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,23 @@
   ],
   "developments": [
     {
+      "time": "2026-04-12T08:09:55Z",
+      "text": "<strong>What happened in 40 days of war on Iran</strong> -- Who got hit in the war on Iran? The attacks, the damage and the people caught in between. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/12/what-happened-in-40-days-of-war-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-12T08:07:31Z",
+      "text": "<strong>Iran war: What is happening on day 44 of the US-Iran conflict?</strong> -- US-Iran talks in Islamabad end without a deal, with each side blaming the other for the failure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/12/iran-war-what-is-happening-on-day-44-of-the-us-iran-conflict?traffic_source=rss"
+    },
+    {
       "time": "2026-04-12T05:25:00Z",
       "text": "<strong>Pakistan urges US and Iran to uphold ceasefire after talks end</strong> -- Pakistani Foreign Minister Ishaq Dar has insisted the US and Iran must uphold their ceasefire agreement. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/12/pakistan-urges-us-and-iran-to-uphold-ceasefire-after-talks-end?traffic_source=rss"
     },
     {
       "time": "2026-04-12T05:19:04Z",
-      "text": "<strong>US and Iran fail to reach deal after marathon talks in Pakistan</strong> -- Vice President JD Vance says Iran chose not to accept US terms, while Iran says it did not expect a deal at the first meeting. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>US and Iran fail to reach deal after marathon talks in Pakistan</strong> -- US VP JD Vance says Iran chose not to accept US terms, while Iran says it did not expect a deal at the first meeting. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/12/us-and-iran-fail-to-reach-peace-deal-after-marathon-talks-in-pakistan?traffic_source=rss"
     },
     {
@@ -841,16 +851,6 @@
       "time": "2026-04-11T18:02:34Z",
       "text": "<strong>Gaza families mourn loved ones killed in overnight Israeli air strikes</strong> -- Families gather over bodies outside a Gaza hospital after overnight Israeli air strikes killed seven people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/11/gaza-families-mourn-loved-ones-killed-in-overnight-israeli-air-strikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-11T17:32:24Z",
-      "text": "<strong>Vigil held in Madrid for victims of Israeli strikes on Lebanon</strong> -- Dozens gathered in Madrid for a vigil honouring the victims of Israeli airstrikes on Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/11/vigil-held-in-madrid-for-victims-of-israeli-strikes-on-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-11T17:29:23Z",
-      "text": "<strong>Ceasefire brings some relief for Iranians but economic outlook remains grim</strong> -- Activity picks up in Tehran&amp;#039;s Grand Bazaar compared with before the ceasefire, but vendors say sales remain slow. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/11/ceasefire-brings-some-relief-for-iranians-but-economic-outlook-remains-grim?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "What happened in 40 days of war on Iran",
+      "description": "Who got hit in the war on Iran? The attacks, the damage and the people caught in between.",
+      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/12/what-happened-in-40-days-of-war-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-12T08:09:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war: What is happening on day 44 of the US-Iran conflict?",
+      "description": "US-Iran talks in Islamabad end without a deal, with each side blaming the other for the failure.",
+      "link": "https://www.aljazeera.com/news/2026/4/12/iran-war-what-is-happening-on-day-44-of-the-us-iran-conflict?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-12T08:07:31Z",
+      "tier": 2
+    },
+    {
       "title": "Pakistan urges US and Iran to uphold ceasefire after talks end",
       "description": "Pakistani Foreign Minister Ishaq Dar has insisted the US and Iran must uphold their ceasefire agreement.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/12/pakistan-urges-us-and-iran-to-uphold-ceasefire-after-talks-end?traffic_source=rss",
@@ -1222,7 +1238,7 @@
     },
     {
       "title": "US and Iran fail to reach deal after marathon talks in Pakistan",
-      "description": "Vice President JD Vance says Iran chose not to accept US terms, while Iran says it did not expect a deal at the first meeting.",
+      "description": "US VP JD Vance says Iran chose not to accept US terms, while Iran says it did not expect a deal at the first meeting.",
       "link": "https://www.aljazeera.com/news/2026/4/12/us-and-iran-fail-to-reach-peace-deal-after-marathon-talks-in-pakistan?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-12T05:19:04Z",
@@ -1333,22 +1349,6 @@
       "tier": 2
     },
     {
-      "title": "Iran\u2019s deputy FM says Tehran has \u2018upper hand\u2019 in talks with US",
-      "description": "Iran\u2019s Gharibabadi says Tehran has entered negotiations from a position of strength and the war on Iran has failed.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/11/irans-deputy-fm-says-tehran-has-upper-hand-in-talks-with-us?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-11T19:46:41Z",
-      "tier": 2
-    },
-    {
-      "title": "US says two naval ships \u2018transited\u2019 Strait of Hormuz for mine-clearing",
-      "description": "Negotiations are ongoing between US-Iranian delegations in Islamabad, with control of the strait a key sticking point.",
-      "link": "https://www.aljazeera.com/news/2026/4/11/us-says-two-naval-ships-transited-strait-of-hormuz-for-mine-clearing?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-11T19:38:03Z",
-      "tier": 2
-    },
-    {
       "title": "Still in shock, Beirut tries to heal after deadly Israeli attacks",
       "description": "BBC Middle East Correspondent Hugo Bachega hears from people affected by this week's attacks.",
       "link": "https://www.bbc.com/news/videos/c0rx4ve0klyo?at_medium=RSS&at_campaign=rss",
@@ -1365,12 +1365,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of Sunday, April 12, 2026, the latest confirmed cumulative casualty figures located were 2,076 dead and more than 26,500 wounded in Iran (Iran Ministry of Health via Al Jazeera, updated April 10), 13 U.S. military deaths confirmed by the U.S. military/CENTCOM, 26 deaths in Israel, and 28 deaths in Gulf states. CENTCOM\u2019s latest publicly located Operation Epic Fury fact sheet dated April 6 reported 13,000+ targets struck. Diplomatically, a fragile U.S.-Iran ceasefire remains in place, but AP and Al Jazeera report that talks in Islamabad ended without a final agreement, while fighting between Israel and Hezbollah continues outside that ceasefire framework.",
+  "summary": "Confirmed reporting on April 12, 2026 shows U.S.-Iran talks in Islamabad ended without a deal, and AP says the ceasefire remains fragile ahead of its April 22 expiry. AP also reported the war has killed at least 3,000 people in Iran, while Al Jazeera\u2019s live tracker as surfaced today shows 13 U.S. soldiers killed, at least 26 deaths in Israel, and 28 deaths in Gulf states. For military activity, AP cited Gen. Dan Caine saying the U.S. has hit more than 13,000 targets, and a March 18 CENTCOM fact sheet listed 8,000+ combat flights; official sources located did not provide current confirmed cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, interceptor firings, B-2 sorties, or total deployed personnel.",
   "briefings": [
     {
       "date": "2026-04-12",
       "day": 43,
-      "summary": "As of Sunday, April 12, 2026, the latest confirmed cumulative casualty figures located were 2,076 dead and more than 26,500 wounded in Iran (Iran Ministry of Health via Al Jazeera, updated April 10), 13 U.S. military deaths confirmed by the U.S. military/CENTCOM, 26 deaths in Israel, and 28 deaths in Gulf states. CENTCOM\u2019s latest publicly located Operation Epic Fury fact sheet dated April 6 reported 13,000+ targets struck. Diplomatically, a fragile U.S.-Iran ceasefire remains in place, but AP and Al Jazeera report that talks in Islamabad ended without a final agreement, while fighting between Israel and Hezbollah continues outside that ceasefire framework."
+      "summary": "Confirmed reporting on April 12, 2026 shows U.S.-Iran talks in Islamabad ended without a deal, and AP says the ceasefire remains fragile ahead of its April 22 expiry. AP also reported the war has killed at least 3,000 people in Iran, while Al Jazeera\u2019s live tracker as surfaced today shows 13 U.S. soldiers killed, at least 26 deaths in Israel, and 28 deaths in Gulf states. For military activity, AP cited Gen. Dan Caine saying the U.S. has hit more than 13,000 targets, and a March 18 CENTCOM fact sheet listed 8,000+ combat flights; official sources located did not provide current confirmed cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, interceptor firings, B-2 sorties, or total deployed personnel."
     },
     {
       "date": "2026-04-11",
