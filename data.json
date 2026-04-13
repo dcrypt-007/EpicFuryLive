@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-04-13T21:08:41Z",
+  "lastUpdated": "2026-04-13T22:03:10Z",
   "dayCount": 44,
   "banner": {
-    "strikes": "~7,000",
-    "killed": "30+",
+    "strikes": "~13,000",
+    "killed": "3,338+",
     "cost": "$29.8B+"
   },
   "humanCost": {
@@ -15,9 +15,9 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "18,551+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1444",
+    "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -48,7 +48,7 @@
   },
   "financialCost": {
     "totalCost": "$29.8 billion+",
-    "dailyBurnRate": "~$678M/day",
+    "dailyBurnRate": "~$677M/day",
     "daysOfOps": 44,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,14 +73,14 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-04-12",
-          "source": "LLM-verified (AP News, Mar. 28, 2026: region had two aircraft carriers)"
+          "lastUpdated": "2026-04-13",
+          "source": "LLM-verified (AP, April 13, 2026: aircraft carrier USS Abraham Lincoln in theater; no second currently confirmed carrier strike group found)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 2,
+          "quantity": 11,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-13",
-          "source": "LLM-verified (AP/Axios/USNI on Apr. 11-13, 2026 report two U.S. guided-missile destroyers transited the Strait of Hormuz: USS Frank E. Petersen Jr. and USS Michael Murphy (turn3news12, turn3news14, turn3search0). This confirms at least 2 active destroyers in theater, not necessarily the full theater total.)"
+          "source": "LLM-verified (AP, April 13, 2026: U.S. Navy has 11 destroyers in Middle East waters)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-13",
-          "source": "LLM-verified (U.S. Central Command figure reported by Air Force Times on April 8, 2026: the U.S. military has more than 50,000 personnel in the region.)"
+          "source": "LLM-verified (U.S. Central Command via Military Times, April 8, 2026: more than 50,000 personnel in the region)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-13",
-          "source": "LLM-verified (U.S. Department of Defense / CENTCOM Operation Epic Fury Fact Sheet, March 16, 2026: 'Combat Flights: 6,500+'; used as minimum confirmed cumulative sorties figure.)"
+          "source": "LLM-verified (DoD Operation Epic Fury Fact Sheet dated March 18, 2026: 8,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 44 days",
-        "cost": "$616,000,000"
+        "detail": "$7,000,000/day \u00d7 44 days",
+        "cost": "$308,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "2 \u00d7 $240,000/day \u00d7 44 days",
-        "cost": "$21,120,000"
+        "detail": "11 \u00d7 $240,000/day \u00d7 44 days",
+        "cost": "$116,160,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israel-Hezbollah fighting continues despite the U.S.-Iran ceasefire, sustaining regional escalation risk",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire talks between the U.S. and Iran ended without agreement; the current truce is due to expire on April 22, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "U.S. began a blockade of Iranian ports on April 13, 2026, escalating maritime risk in the Gulf and near the Strait of Hormuz",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 13, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP/Al Jazeera Apr. 8-12, 2026: ceasefire remains fragile while Israel's Lebanon campaign continues separately, raising regional escalation risk",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP News Apr. 12, 2026: AP reports Iran war cumulative toll now at least 3,000 dead in Iran, 23 in Israel, and more than a dozen in Gulf Arab states",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP News Apr. 12, 2026: U.S. military says it will blockade Iranian ports after ceasefire talks ended without agreement",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran war fatalities have expanded regionally, with Lebanon's toll reaching 2,020 by April 12, underscoring spillover risk beyond Iran itself.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-13T21:06:39Z",
+      "text": "<strong>Israel kills three Palestinians in separate Gaza strikes</strong> -- Two Palestinians were killed in separate strikes in southern Gaza on Monday, according to officials at Nasser hospital. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/israel-kills-three-palestinians-in-separate-gaza-strikes?traffic_source=rss"
+    },
+    {
       "time": "2026-04-13T19:56:29Z",
       "text": "<strong>Hezbollah rejects Lebanon\u2019s direct negotiations with Israel</strong> -- Hezbollah leader Naim Qassem has urged Lebanon to cancel a planned Washington meeting with Israeli representatives. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/hezbollah-rejects-lebanons-direct-negotiations-with-israel?traffic_source=rss"
@@ -786,6 +791,16 @@
       "time": "2026-04-13T16:23:44Z",
       "text": "<strong>Iran releases assets of women\u2019s football captain in Australia asylum row</strong> -- Zahra Ghanbari, one of the six players who sought asylum in Australia, reversed her decision and returned to Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/4/13/iran-releases-assets-of-womens-football-captain-in-australia-asylum-row?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-13T21:29:23Z",
+      "text": "<strong>BBC joins paramedics on duty in Lebanon after Israeli strikes</strong> -- BBC Middle East correspondent Hugo Bachega joins paramedics on duty in Nabatieh - a city that was once vibrant, but is now abandoned. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/videos/cwyk8rz1pzyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-13T12:53:00Z",
+      "text": "<strong>Iran carried out highest number of executions in decades</strong> -- Organisations warn many more people could be executed in the wake of the anti-government protests which swept Iran earlier this year. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cly9ggzy3ngo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-04-13T15:41:15Z",
@@ -836,21 +851,6 @@
       "time": "2026-04-13T10:52:32Z",
       "text": "<strong>Iran\u2019s army says US plan to blockade Hormuz \u2018amounts to piracy\u2019</strong> -- The US restrictions on maritime navigation and transit in international waters are illegal, Iranian military says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/13/irans-army-says-us-plans-to-blockade-hormuz-amounts-to-piracy?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-13T10:15:49Z",
-      "text": "<strong>Starmer says UK will not support US blockade of Strait of Hormuz</strong> -- Other US allies criticise Trump&amp;#039;s move, including France, Spain and Turkiye, and China also condemns the plan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/13/starmer-says-uk-will-not-support-us-blockade-of-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-13T09:52:16Z",
-      "text": "<strong>US blockade of Iran would worsen global energy crisis, analysts say</strong> -- While US military says it will blockade Iranian ports only, move would have ripples worldwide, according to analysts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/13/us-blockade-of-iran-would-worsen-global-energy-crisis-analysts-say?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-13T08:54:22Z",
-      "text": "<strong>What Iran is saying about US plan to blockade ports</strong> -- Iran\u2019s military has called US blockade plans in the Strait of Hormuz an \u201cact of piracy\u201d. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/what-iran-is-saying-about-us-plan-to-blockade-ports?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "BBC joins paramedics on duty in Lebanon after Israeli strikes",
+      "description": "BBC Middle East correspondent Hugo Bachega joins paramedics on duty in Nabatieh - a city that was once vibrant, but is now abandoned.",
+      "link": "https://www.bbc.com/news/videos/cwyk8rz1pzyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-13T21:29:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel kills three Palestinians in separate Gaza strikes",
+      "description": "Two Palestinians were killed in separate strikes in southern Gaza on Monday, according to officials at Nasser hospital.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/israel-kills-three-palestinians-in-separate-gaza-strikes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-13T21:06:39Z",
+      "tier": 2
+    },
+    {
       "title": "Hezbollah rejects Lebanon\u2019s direct negotiations with Israel",
       "description": "Hezbollah leader Naim Qassem has urged Lebanon to cancel a planned Washington meeting with Israeli representatives.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/hezbollah-rejects-lebanons-direct-negotiations-with-israel?traffic_source=rss",
@@ -1229,19 +1245,19 @@
       "tier": 2
     },
     {
-      "title": "Israelis war-weary but most oppose Iran ceasefire, poll suggests",
-      "description": "The vast majority did not believe Hezbollah or Iran had been severely weakened by weeks of Israeli and US attacks, according to the poll.",
-      "link": "https://www.bbc.com/news/articles/clyxgxyeqpgo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-13T19:20:08Z",
-      "tier": 2
-    },
-    {
       "title": "Starmer announces talks to address the Strait of Hormuz crisis",
       "description": "Starmer has announced talks to be held this week and co-hosted with France, aiming at diplomatic end to the war on Iran",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/starmer-announces-talks-to-address-the-strait-of-hormuz-crisis?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-13T17:46:16Z",
+      "tier": 2
+    },
+    {
+      "title": "US blockade of Iranian ports explained in two minutes",
+      "description": "The BBC's security correspondent Frank Gardner explains how the US blockade of Iranian ports will work.",
+      "link": "https://www.bbc.com/news/videos/cd9vg5vggvqo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-13T17:33:26Z",
       "tier": 2
     },
     {
@@ -1277,35 +1293,11 @@
       "tier": 2
     },
     {
-      "title": "Lebanon Latest: Talks scheduled as Israeli strikes continue",
-      "description": "Israeli strikes in southern Lebanon push death toll past 2,000, as talks loom and ceasefire divisions deepen.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/aje-onl-aje_onl_lebanon_wrap-130426?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-13T15:41:15Z",
-      "tier": 2
-    },
-    {
       "title": "The US blockade of Iran is a gamble. Will it work?",
       "description": "The US military is gambling on the blockade denying Iran vital trade - but questions remain on whether the bet will pay off.",
       "link": "https://www.bbc.com/news/articles/ckgw8w7mzxgo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-13T15:27:43Z",
-      "tier": 2
-    },
-    {
-      "title": "What do we know about sea mines in and around the Strait of Hormuz?",
-      "description": "The psychological terror that the presence of sea mines can generate could paralyse the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/economy/2026/4/13/what-do-we-know-about-sea-mines-in-and-around-the-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-13T15:12:25Z",
-      "tier": 2
-    },
-    {
-      "title": "Ghanaian footballer killed after armed attackers open fire at team bus",
-      "description": "The team was returning from a match when they were attacked by \"masked men wielding guns\", officials say.",
-      "link": "https://www.bbc.com/news/articles/czx97pkyy9po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-13T14:19:02Z",
       "tier": 2
     },
     {
@@ -1347,22 +1339,14 @@
       "source": "BBC World",
       "time": "2026-04-11T23:13:23Z",
       "tier": 2
-    },
-    {
-      "title": "Still in shock, Beirut tries to heal after deadly Israeli attacks",
-      "description": "BBC Middle East Correspondent Hugo Bachega hears from people affected by this week's attacks.",
-      "link": "https://www.bbc.com/news/videos/c0rx4ve0klyo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-11T10:10:05Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on April 13, 2026 shows the conflict remains in a fragile truce phase rather than fully resolved: AP reported that the United States began a blockade of Iranian ports on April 13, with CENTCOM saying it would be enforced against vessels entering or leaving Iranian ports, while Iran responded with threats against ports in the Persian Gulf and Gulf of Oman. Weekend U.S.-Iran talks failed to secure a permanent settlement, and AP reported the current two-week ceasefire is set to expire on April 22, 2026. For cumulative metrics, the best accessible official U.S. operations figure remains the March 16 CENTCOM/Defense Department Operation Epic Fury fact sheet listing 7,000+ targets struck and 6,500+ combat flights; accessible AP reporting supports at least 7 confirmed U.S. service-member deaths and 23 confirmed Israeli deaths, but no current named-source confirmed cumulative Iranian death, civilian-death, wounded, or Gulf-state fatality totals were accessible in the search results.",
+  "summary": "As of April 13, 2026, confirmed reporting indicates the U.S.-Iran ceasefire is still holding but weekend talks ended without a deal, and the truce is set to expire on April 22. AP reported the U.S. has started a blockade of Iranian ports, while Pentagon-linked reporting from April 8 said U.S. forces have supported more than 13,000 strikes and that over 50,000 U.S. personnel remain in the region. The latest Iran casualty figure located in major reporting is 2,076 killed and at least 26,500 wounded, while Pentagon/CENTCOM-confirmed U.S. hostile-action deaths remain 7. No newer officially confirmed cumulative Israeli death total was found in accessible sources.",
   "briefings": [
     {
       "date": "2026-04-13",
       "day": 44,
-      "summary": "Confirmed reporting on April 13, 2026 shows the conflict remains in a fragile truce phase rather than fully resolved: AP reported that the United States began a blockade of Iranian ports on April 13, with CENTCOM saying it would be enforced against vessels entering or leaving Iranian ports, while Iran responded with threats against ports in the Persian Gulf and Gulf of Oman. Weekend U.S.-Iran talks failed to secure a permanent settlement, and AP reported the current two-week ceasefire is set to expire on April 22, 2026. For cumulative metrics, the best accessible official U.S. operations figure remains the March 16 CENTCOM/Defense Department Operation Epic Fury fact sheet listing 7,000+ targets struck and 6,500+ combat flights; accessible AP reporting supports at least 7 confirmed U.S. service-member deaths and 23 confirmed Israeli deaths, but no current named-source confirmed cumulative Iranian death, civilian-death, wounded, or Gulf-state fatality totals were accessible in the search results."
+      "summary": "As of April 13, 2026, confirmed reporting indicates the U.S.-Iran ceasefire is still holding but weekend talks ended without a deal, and the truce is set to expire on April 22. AP reported the U.S. has started a blockade of Iranian ports, while Pentagon-linked reporting from April 8 said U.S. forces have supported more than 13,000 strikes and that over 50,000 U.S. personnel remain in the region. The latest Iran casualty figure located in major reporting is 2,076 killed and at least 26,500 wounded, while Pentagon/CENTCOM-confirmed U.S. hostile-action deaths remain 7. No newer officially confirmed cumulative Israeli death total was found in accessible sources."
     },
     {
       "date": "2026-04-12",
