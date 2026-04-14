@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-14T19:41:36Z",
+  "lastUpdated": "2026-04-14T21:07:47Z",
   "dayCount": 45,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "2,115+",
-    "cost": "$30.7B+"
+    "strikes": "~9,000",
+    "killed": "2,143+",
+    "cost": "$30.3B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "6",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$30.7 billion+",
-    "dailyBurnRate": "~$683M/day",
+    "totalCost": "$30.3 billion+",
+    "dailyBurnRate": "~$674M/day",
     "daysOfOps": 45,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-14",
-          "source": "LLM-verified (U.S. Central Command figure reported by Air Force Times, April 8, 2026: more than 50,000 U.S. military personnel in the region)"
+          "source": "LLM-verified (AP reported on March 24, 2026 that the U.S. was sending 1,000 more troops to supplement 'some 50,000 troops already in the Mideast')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-14",
-          "source": "LLM-verified (CENTCOM fact sheet dated April 1, 2026 lists 13,000+ combat flights; latest explicit official sorties/flights figure located in current search set)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; no newer official fighter/attack sortie total found in available search results)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,15 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire remains fragile after U.S.-Iran talks in Islamabad failed over the weekend, increasing risk of renewed direct fighting before the current truce expires on April 22, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 14, 2026",
       "severity": "high",
@@ -650,15 +659,6 @@
       "text": "Iran threatened ports in the Persian Gulf and Gulf of Oman in response to the blockade",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "US naval blockade of Iranian ports began April 14, 2026, after ceasefire talks in Islamabad ended without agreement",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,23 @@
   ],
   "developments": [
     {
+      "time": "2026-04-14T20:35:55Z",
+      "text": "<strong>Israeli attack kills several people in Gaza refugee camp</strong> -- Palestinians in Gaza recorded victims of an Israeli strike on the Shati refugee camp being rushed to a medical facility. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/14/israeli-attack-kills-several-people-in-gaza-refugee-camp?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-14T20:10:34Z",
+      "text": "<strong>How US blockade on Iran will worsen energy crisis</strong> -- With the US military blockade of Iranian ports now in force, global energy markets are already reacting. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/14/how-us-blockade-on-iran-will-worsen-energy-crisis?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-14T19:30:00Z",
+      "text": "<strong>Why are global views of the US getting worse?</strong> -- We discuss the\u00a0global\u00a0standing\u00a0of the US after launching war against Iran and years of worsening views of the nation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/the-stream/2026/4/14/why-are-global-views-of-the-us-getting-worse?traffic_source=rss"
+    },
+    {
       "time": "2026-04-14T19:21:58Z",
-      "text": "<strong>Pakistan PM headed to Riyadh and Ankara amid prospect of US-Iran talks</strong> -- Sharif pushing for further negotiations. Trump says talks could resume in Pakistan in next two days. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Pakistan PM headed to Riyadh and Ankara amid prospect of new US-Iran talks</strong> -- Sharif pushing for further negotiations. Trump says talks could resume in Pakistan in next two days. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/14/pakistan-pm-headed-to-saudi-and-turkiye-amid-prospect-of-new-us-iran-talks?traffic_source=rss"
     },
     {
@@ -784,7 +799,7 @@
     },
     {
       "time": "2026-04-14T18:16:23Z",
-      "text": "<strong>Video: UN chief Antonio Guterres says talks on Iran war likely to restart</strong> -- UN Secretary-General Antonio Guterres says it\u2019s \u201chighly probably\u201d talks to end the US-Israel war on Iran will resume. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Video: UN chief Antonio Guterres says talks on Iran war likely to restart</strong> -- UN Secretary-General Antonio Guterres says it\u2019s \u201chighly probable\u201d talks to end the US-Israel war on Iran will resume. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/14/video-un-chief-antonio-guterres-says-talks-on-iran-war-likely-to-restart?traffic_source=rss"
     },
     {
@@ -836,21 +851,6 @@
       "time": "2026-04-14T11:48:17Z",
       "text": "<strong>Who controls the Strait of Hormuz?</strong> -- A US move to block the strait has intensified a broader struggle over who controls access and under what terms. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/4/14/who-controls-the-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-14T14:01:05Z",
-      "text": "<strong>Hamas rejects Gaza disarmament plan, Palestinian official says</strong> -- The official tells the BBC that the armed group will not move forward with talks until Israel fully complies with its commitments. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cn4vvxxg8lgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-14T14:18:04Z",
-      "text": "<strong>US blockade of Iran ports irresponsible and dangerous, China says</strong> -- China, the biggest buyer of Iranian oil, says the US naval blockade undermines an &quot;already fragile ceasefire&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c78lleelxj4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-14T10:59:11Z",
-      "text": "<strong>Global oil demand to plunge amid disruptions caused by war on Iran: IEA</strong> -- The IEA&amp;#039;s oil &amp;#039;demand destruction&amp;#039; report comes after its chief said unnamed countries are hoarding stocks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/14/global-oil-demand-to-plunge-amid-middle-east-war-disruptions?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,7 +1213,31 @@
   ],
   "newsFeed": [
     {
-      "title": "Pakistan PM headed to Riyadh and Ankara amid prospect of US-Iran talks",
+      "title": "Israeli attack kills several people in Gaza refugee camp",
+      "description": "Palestinians in Gaza recorded victims of an Israeli strike on the Shati refugee camp being rushed to a medical facility.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/14/israeli-attack-kills-several-people-in-gaza-refugee-camp?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-14T20:35:55Z",
+      "tier": 2
+    },
+    {
+      "title": "How US blockade on Iran will worsen energy crisis",
+      "description": "With the US military blockade of Iranian ports now in force, global energy markets are already reacting.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/14/how-us-blockade-on-iran-will-worsen-energy-crisis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-14T20:10:34Z",
+      "tier": 2
+    },
+    {
+      "title": "Why are global views of the US getting worse?",
+      "description": "We discuss the\u00a0global\u00a0standing\u00a0of the US after launching war against Iran and years of worsening views of the nation.",
+      "link": "https://www.aljazeera.com/video/the-stream/2026/4/14/why-are-global-views-of-the-us-getting-worse?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-14T19:30:00Z",
+      "tier": 2
+    },
+    {
+      "title": "Pakistan PM headed to Riyadh and Ankara amid prospect of new US-Iran talks",
       "description": "Sharif pushing for further negotiations. Trump says talks could resume in Pakistan in next two days.",
       "link": "https://www.aljazeera.com/news/2026/4/14/pakistan-pm-headed-to-saudi-and-turkiye-amid-prospect-of-new-us-iran-talks?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1262,7 +1286,7 @@
     },
     {
       "title": "Video: UN chief Antonio Guterres says talks on Iran war likely to restart",
-      "description": "UN Secretary-General Antonio Guterres says it\u2019s \u201chighly probably\u201d talks to end the US-Israel war on Iran will resume.",
+      "description": "UN Secretary-General Antonio Guterres says it\u2019s \u201chighly probable\u201d talks to end the US-Israel war on Iran will resume.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/14/video-un-chief-antonio-guterres-says-talks-on-iran-war-likely-to-restart?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-14T18:16:23Z",
@@ -1285,27 +1309,11 @@
       "tier": 2
     },
     {
-      "title": "After three years of war, what is the situation like in Sudan?",
-      "description": "Sudan\u2019s war has displaced millions and caused thousands of deaths, with no clear end in sight to the ongoing violence.",
-      "link": "https://www.aljazeera.com/news/2026/4/14/after-three-years-of-war-what-is-the-situation-like-in-sudan?traffic_source=rss",
+      "title": "Who controls the Strait of Hormuz?",
+      "description": "A US move to block the strait has intensified a broader struggle over who controls access and under what terms.",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/4/14/who-controls-the-strait-of-hormuz?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-04-14T16:49:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Ukraine strikes drone production, military support deal with Germany",
-      "description": "Germany will get access to Ukraine&#039;s cutting-edge drone expertise in return for extra help in war against Russia.",
-      "link": "https://www.aljazeera.com/news/2026/4/14/ukraine-strikes-drone-production-deal-with-germany?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-14T16:23:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Why are the US, Iran arguing over duration of uranium enrichment ban?",
-      "description": "The US reportedly wants Iran to stop enriching for 20 years. Iran has agreed to five years. Here&#039;s why that matters.",
-      "link": "https://www.aljazeera.com/news/2026/4/14/why-are-the-us-iran-arguing-over-duration-of-uranium-enrichment-ban?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-14T14:52:24Z",
+      "time": "2026-04-14T17:30:17Z",
       "tier": 2
     },
     {
@@ -1363,22 +1371,14 @@
       "source": "BBC World",
       "time": "2026-04-13T12:53:00Z",
       "tier": 2
-    },
-    {
-      "title": "Trump's threat raises risks and leaves predicaments unchanged",
-      "description": "The conflict is now a test of wills - Iran\u2019s capacity to absorb strikes versus Trump\u2019s tolerance for the war's costs.",
-      "link": "https://www.bbc.com/news/articles/c8dl5mly2rzo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-12T22:57:22Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of Tuesday, April 14, 2026 shows the war entering a fragile ceasefire-and-blockade phase: AP reports CENTCOM now puts U.S. losses at 13 killed and 399 wounded, while the latest Al Jazeera tracker citing Iran\u2019s Ministry of Health lists 2,076 deaths and more than 26,500 wounded in Iran, and 26 Israelis killed. The latest official strike figure located was Gen. Dan Caine\u2019s AP-cited statement that the U.S. had hit more than 13,000 targets, while CENTCOM\u2019s April 1 fact sheet separately listed 13,000+ combat flights. The biggest development today is the U.S. enforcement of a blockade on Iranian ports and Hormuz-linked shipping, alongside renewed diplomatic efforts for another round of U.S.-Iran talks.",
+  "summary": "Confirmed reporting on April 14, 2026 shows the biggest new development is the U.S. naval blockade of Iranian ports: CENTCOM said no ships 'made it past' the blockade in its first 24 hours and six merchant ships turned around, while AP and Al Jazeera reported the blockade applies to vessels entering and exiting Iranian ports rather than all non-Iranian traffic through the Strait of Hormuz. The most current confirmed casualty figures located remain Al Jazeera\u2019s April 13 tracker totals of 2,076 killed and 26,500 wounded in Iran, 26 killed in Israel, and 13 U.S. military personnel killed in action, while AP previously confirmed the U.S. toll had reached at least 13 after the KC-135 loss. For force posture, AP\u2019s latest confirmed broad regional figure still points to about 50,000 U.S. troops in the Middle East, but current official counts for carrier groups, destroyers, drone units, and specific munitions expended were not confirmed in the available reporting.",
   "briefings": [
     {
       "date": "2026-04-14",
       "day": 45,
-      "summary": "Confirmed reporting as of Tuesday, April 14, 2026 shows the war entering a fragile ceasefire-and-blockade phase: AP reports CENTCOM now puts U.S. losses at 13 killed and 399 wounded, while the latest Al Jazeera tracker citing Iran\u2019s Ministry of Health lists 2,076 deaths and more than 26,500 wounded in Iran, and 26 Israelis killed. The latest official strike figure located was Gen. Dan Caine\u2019s AP-cited statement that the U.S. had hit more than 13,000 targets, while CENTCOM\u2019s April 1 fact sheet separately listed 13,000+ combat flights. The biggest development today is the U.S. enforcement of a blockade on Iranian ports and Hormuz-linked shipping, alongside renewed diplomatic efforts for another round of U.S.-Iran talks."
+      "summary": "Confirmed reporting on April 14, 2026 shows the biggest new development is the U.S. naval blockade of Iranian ports: CENTCOM said no ships 'made it past' the blockade in its first 24 hours and six merchant ships turned around, while AP and Al Jazeera reported the blockade applies to vessels entering and exiting Iranian ports rather than all non-Iranian traffic through the Strait of Hormuz. The most current confirmed casualty figures located remain Al Jazeera\u2019s April 13 tracker totals of 2,076 killed and 26,500 wounded in Iran, 26 killed in Israel, and 13 U.S. military personnel killed in action, while AP previously confirmed the U.S. toll had reached at least 13 after the KC-135 loss. For force posture, AP\u2019s latest confirmed broad regional figure still points to about 50,000 U.S. troops in the Middle East, but current official counts for carrier groups, destroyers, drone units, and specific munitions expended were not confirmed in the available reporting."
     },
     {
       "date": "2026-04-13",
