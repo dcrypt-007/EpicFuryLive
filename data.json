@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-15T14:05:22Z",
+  "lastUpdated": "2026-04-15T15:38:30Z",
   "dayCount": 46,
   "banner": {
     "strikes": "~12,300",
-    "killed": "2,143+",
-    "cost": "$30.3B+"
+    "killed": "2,126+",
+    "cost": "$31.1B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
@@ -13,11 +13,11 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "11",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1097",
+    "civilianDeaths": "452",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$30.3 billion+",
-    "dailyBurnRate": "~$659M/day",
+    "totalCost": "$31.1 billion+",
+    "dailyBurnRate": "~$676M/day",
     "daysOfOps": 46,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (CENTCOM March 26, 2026 statement says 'The Abraham Lincoln Carrier Strike Group continues to conduct strike missions'; AP on April 13, 2026 says the carrier USS Abraham Lincoln is in theater)"
+          "source": "LLM-verified (AP reported March 31, 2026 that USS George H.W. Bush deployed to the Middle East as one carrier strike group)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 16,
+          "quantity": 5,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,13 +91,13 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (AP News, April 13, 2026: 'The U.S. Navy has 16 warships, including the aircraft carrier USS Abraham Lincoln, in the Middle East')"
+          "source": "LLM-verified (AP reported March 31, 2026 that USS George H.W. Bush deployed with three destroyers; AP on April 12, 2026 also reported two destroyers transited the Strait of Hormuz ahead of mine-clearing work)"
         },
         {
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 10000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (CENTCOM via Al Jazeera, April 15, 2026: 'more than 10,000' U.S. personnel involved in blockade/operation)"
+          "source": "LLM-verified (Air Force Times citing CENTCOM on April 8, 2026: 'more than 50,000 personnel in the region')"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury fact sheet, April 1, 2026: 'Combat Flights: 13,000+')"
         },
         {
           "id": "interceptors",
@@ -333,13 +333,13 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "16 \u00d7 $240,000/day \u00d7 46 days",
-        "cost": "$176,640,000"
+        "detail": "5 \u00d7 $240,000/day \u00d7 46 days",
+        "cost": "$55,200,000"
       },
       {
         "category": "Deployed Personnel",
-        "detail": "10,000 \u00d7 $500/day \u00d7 46 days",
-        "cost": "$230,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 46 days",
+        "cost": "$1,150,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported April 15, 2026 that the ceasefire remains fragile and U.S.-Iran talks may resume in coming days",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 12, 2026 that two U.S. destroyers transited the Strait of Hormuz ahead of mine-clearing work",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 12, 2026 that CENTCOM announced a blockade of Iranian ports beginning April 14 after ceasefire talks failed",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 15, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Talks to permanently end the conflict failed over the prior weekend, raising risk that the ceasefire could collapse, according to AP.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran threatened ports across the Persian Gulf and Gulf of Oman after the blockade announcement, according to AP.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "U.S. blockade of Iranian ports began April 13, 2026, sharply escalating pressure despite the tentative ceasefire, according to AP.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on April 8, 2026 that a tentative two-week ceasefire was holding, but the Strait of Hormuz confrontation risked reigniting wider fighting.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-15T14:03:10Z",
+      "text": "<strong>Every 27 minutes, someone is killed in Sudan\u2019s war</strong> -- Every day, over the last three years in Sudan, 53 people on average are killed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/15/every-27-minutes-someone-is-killed-in-sudans-war-2?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-15T13:55:40Z",
+      "text": "<strong>US-Iran talks: What\u2019s the latest on mediation efforts?</strong> -- Tehran rejects US conditions on nuclear arms; sanctions relief and strait control fuel diplomatic deadlock in Islamabad. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/15/us-iran-talks-whats-the-latest-on-mediation-efforts?traffic_source=rss"
+    },
+    {
       "time": "2026-04-15T13:40:53Z",
       "text": "<strong>What are Iran\u2019s $100bn in frozen assets and where are they held?</strong> -- Iran wants the US to release its frozen assets as part of talks. The money could help it rebuild its battered economy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/15/what-are-irans-100bn-in-frozen-assets-and-where-are-they-held?traffic_source=rss"
@@ -764,7 +774,7 @@
     },
     {
       "time": "2026-04-15T12:19:44Z",
-      "text": "<strong>Four people killed in Turkiye\u2019s second school shooting in two days</strong> -- Three students and a teacher are killed in the south-central province of \u200bKahramanmaras, according to its governor. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Four people killed in Turkiye\u2019s second school shooting in two days</strong> -- Three students and a teacher are killed in the south-central province of \u200bKahramanmaras, governor says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/15/four-killed-in-turkiyes-second-school-shooting-in-two-days?traffic_source=rss"
     },
     {
@@ -841,16 +851,6 @@
       "time": "2026-04-15T00:00:00Z",
       "text": "<strong>Iran war live: Trump says war \u2018close to over\u2019 as Hormuz blockade continues</strong> -- US president says second round of talks could be held in Pakistan as naval blockade of Iranian ports continues. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/4/15/iran-war-live-trump-hints-at-second-round-of-talks-israel-pounds-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-14T23:08:43Z",
-      "text": "<strong>Israel and Lebanon hold rare talks in Washington, DC, amid Iran war</strong> -- The meeting marks the first direct talks between the two sides, though US officials say more time is needed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/14/israel-and-lebanon-hold-rare-talks-in-washington-dc-amid-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-14T20:35:55Z",
-      "text": "<strong>Israeli attack kills several people in Gaza refugee camp</strong> -- Palestinians in Gaza recorded victims of an Israeli strike on the Shati refugee camp being rushed to a medical facility. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/14/israeli-attack-kills-several-people-in-gaza-refugee-camp?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,43 @@
   ],
   "newsFeed": [
     {
-      "title": "Four killed in second Turkish school shooting in two days",
-      "description": "Three students and one teacher died in the attack, according to the local governor.",
+      "title": "Starmer says he's 'not going to yield' to pressure from Trump on Iran war",
+      "description": "It follows a warning from the US president that America's trade deal with the UK \"can always be changed\".",
+      "link": "https://www.bbc.com/news/articles/cdxdd7ddzgdo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-15T15:27:22Z",
+      "tier": 2
+    },
+    {
+      "title": "Nine killed in second Turkish school shooting in two days",
+      "description": "Eight students and one teacher died in the attack, according to Interior Minister Mustafa Cifci.",
       "link": "https://www.bbc.com/news/articles/cn088n9e6e9o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-04-15T13:51:40Z",
+      "time": "2026-04-15T15:26:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel and Hezbollah continue attacks after Israel-Lebanon talks in US",
+      "description": "Israel strikes hit southern Lebanon and Hezbollah fires rockets at Israel, a day after rare direct negotiations.",
+      "link": "https://www.bbc.com/news/articles/c87ww2z0z3zo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-15T14:15:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Every 27 minutes, someone is killed in Sudan\u2019s war",
+      "description": "Every day, over the last three years in Sudan, 53 people on average are killed.",
+      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/15/every-27-minutes-someone-is-killed-in-sudans-war-2?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-15T14:03:10Z",
+      "tier": 2
+    },
+    {
+      "title": "US-Iran talks: What\u2019s the latest on mediation efforts?",
+      "description": "Tehran rejects US conditions on nuclear arms; sanctions relief and strait control fuel diplomatic deadlock in Islamabad.",
+      "link": "https://www.aljazeera.com/news/2026/4/15/us-iran-talks-whats-the-latest-on-mediation-efforts?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-15T13:55:40Z",
       "tier": 2
     },
     {
@@ -1226,14 +1258,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/15/what-are-irans-100bn-in-frozen-assets-and-where-are-they-held?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-15T13:40:53Z",
-      "tier": 2
-    },
-    {
-      "title": "Starmer 'not going to yield' to pressure from Trump on Iran war",
-      "description": "It follows a warning from the US president that America's trade deal with the UK \"can always be changed\".",
-      "link": "https://www.bbc.com/news/articles/cdxdd7ddzgdo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-15T13:25:06Z",
       "tier": 2
     },
     {
@@ -1246,7 +1270,7 @@
     },
     {
       "title": "Four people killed in Turkiye\u2019s second school shooting in two days",
-      "description": "Three students and a teacher are killed in the south-central province of \u200bKahramanmaras, according to its governor.",
+      "description": "Three students and a teacher are killed in the south-central province of \u200bKahramanmaras, governor says.",
       "link": "https://www.aljazeera.com/news/2026/4/15/four-killed-in-turkiyes-second-school-shooting-in-two-days?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-15T12:19:44Z",
@@ -1333,22 +1357,6 @@
       "tier": 2
     },
     {
-      "title": "China\u2019s Xi meets Russian FM Lavrov, calls relations with Moscow \u2018precious\u2019",
-      "description": "Russian Foreign Minister Sergey Lavrov met with top Chinese leadership to discuss the Iran war and other concerns.",
-      "link": "https://www.aljazeera.com/news/2026/4/15/chinas-xi-meets-russian-fm-lavrov-calls-relations-with-moscow-precious?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-15T06:37:14Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says $270bn war loss must be compensated, as fresh talks with US loom",
-      "description": "Iran demands compensation for war damages caused by US and Israeli attacks on critical infrastructure.",
-      "link": "https://www.aljazeera.com/news/2026/4/15/iran-says-270bn-war-loss-must-be-compensated-as-fresh-talks-with-us-loom?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-15T06:28:34Z",
-      "tier": 2
-    },
-    {
       "title": "Israel and Lebanon hold first direct talks since 1993",
       "description": "A US statement said the two sides had agreed to launch direct negotiations, at a time and place to be determined.",
       "link": "https://www.bbc.com/news/articles/cp8ddydl18vo?at_medium=RSS&at_campaign=rss",
@@ -1363,22 +1371,14 @@
       "source": "BBC World",
       "time": "2026-04-14T19:47:53Z",
       "tier": 2
-    },
-    {
-      "title": "Hamas rejects Gaza disarmament plan, Palestinian official says",
-      "description": "The official tells the BBC that the armed group will not move forward with talks until Israel fully complies with its commitments.",
-      "link": "https://www.bbc.com/news/articles/cn4vvxxg8lgo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-14T14:01:05Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of Wednesday, April 15, 2026 shows no verified increase over the latest widely cited cumulative casualty totals: Iran\u2019s Health Ministry figure remains 2,076 dead and 26,500 wounded, Israel\u2019s reported death toll remains 26, Pentagon-confirmed U.S. KIA remains 13, and Gulf-state deaths remain 28. On the military side, the clearest official cumulative operational figures still come from the U.S. Department of Defense\u2019s April 1 fact sheet listing 12,300+ targets struck and 13,000+ combat flights, while current reporting indicates more than 10,000 U.S. personnel are now involved in the blockade of Iranian ports as mediators work to extend the ceasefire before its April 22, 2026 expiration.",
+  "summary": "Confirmed reporting as of April 15, 2026 shows no authoritative update beyond the Iran Ministry of Health figure of 2,076 killed and 26,500 wounded in Iran, 13 confirmed U.S. military deaths, and 26 deaths in Israel. The Pentagon\u2019s April 1 fact sheet still lists 12,300+ targets struck and 13,000+ combat flights, while AP and Air Force Times reporting indicates the U.S. has more than 50,000 personnel in the region, one carrier strike group newly deployed with three destroyers, and two additional destroyers recently sent through the Strait of Hormuz ahead of mine-clearing and a newly announced blockade of Iranian ports after ceasefire talks in Pakistan collapsed.",
   "briefings": [
     {
       "date": "2026-04-15",
       "day": 46,
-      "summary": "Confirmed reporting as of Wednesday, April 15, 2026 shows no verified increase over the latest widely cited cumulative casualty totals: Iran\u2019s Health Ministry figure remains 2,076 dead and 26,500 wounded, Israel\u2019s reported death toll remains 26, Pentagon-confirmed U.S. KIA remains 13, and Gulf-state deaths remain 28. On the military side, the clearest official cumulative operational figures still come from the U.S. Department of Defense\u2019s April 1 fact sheet listing 12,300+ targets struck and 13,000+ combat flights, while current reporting indicates more than 10,000 U.S. personnel are now involved in the blockade of Iranian ports as mediators work to extend the ceasefire before its April 22, 2026 expiration."
+      "summary": "Confirmed reporting as of April 15, 2026 shows no authoritative update beyond the Iran Ministry of Health figure of 2,076 killed and 26,500 wounded in Iran, 13 confirmed U.S. military deaths, and 26 deaths in Israel. The Pentagon\u2019s April 1 fact sheet still lists 12,300+ targets struck and 13,000+ combat flights, while AP and Air Force Times reporting indicates the U.S. has more than 50,000 personnel in the region, one carrier strike group newly deployed with three destroyers, and two additional destroyers recently sent through the Strait of Hormuz ahead of mine-clearing and a newly announced blockade of Iranian ports after ceasefire talks in Pakistan collapsed."
     },
     {
       "date": "2026-04-14",
