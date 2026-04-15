@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-15T17:19:20Z",
+  "lastUpdated": "2026-04-15T19:43:20Z",
   "dayCount": 46,
   "banner": {
     "strikes": "~13,000",
-    "killed": "2,080+",
-    "cost": "$31.1B+"
+    "killed": "2,102+",
+    "cost": "$30.1B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$31.1 billion+",
-    "dailyBurnRate": "~$675M/day",
+    "totalCost": "$30.1 billion+",
+    "dailyBurnRate": "~$654M/day",
     "daysOfOps": 46,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 60000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (Air Force Times citing CENTCOM on April 8, 2026: 'more than 50,000 personnel in the region')"
+          "source": "LLM-verified (AP on March 24, 2026 reported the U.S. was preparing to send at least 1,000 more troops to supplement some 50,000 already in the Middle East; Al Jazeera on April 15, 2026 reported more than 10,000 additional troops were being sent before end-April. Combined currently confirmed deployed/being deployed total used here: 60,000 (https://apnews.com/article/8bb5e79a98ea72fccc5c50b4931ad778; https://www.aljazeera.com/news/2026/4/15/us-sending-10000-more-troops-to-middle-east-despite-iran-ceasefire))"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (CENTCOM fact sheet dated April 1, 2026 lists 13,000+ combat flights)"
+          "source": "LLM-verified (IDF reported on/about April 1, 2026 that Israeli Air Force units had conducted more than 800 attack flights and dropped about 16,000 munitions since the start of the campaign; this is the only confirmed cumulative sorties-like figure found in accessible primary reporting during this search (https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/over-800-strike-sorties-16-000-munitions-what-has-happened-since-the-launch-of-operation-roaring-lion/))"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 46 days",
-        "cost": "$1,150,000,000"
+        "detail": "60,000 \u00d7 $500/day \u00d7 46 days",
+        "cost": "$1,380,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. is sending more than 10,000 additional troops to the Middle East before the end of April, according to Al Jazeera citing U.S. officials speaking to The Washington Post.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Diplomatic activity intensified on April 15, 2026, with Pakistani mediation and prospects for a second round of U.S.-Iran talks, according to AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran threatened ports across the Persian Gulf and Gulf of Oman after the U.S. blockade of Iranian ports began, according to AP reporting on April 13-15, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 15, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Ceasefire remains fragile after U.S.-Iran talks in Islamabad failed over the weekend, increasing risk of renewed direct fighting before the current truce expires on April 22, 2026",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports renewed U.S.-Iran talks could occur within the next two days, but no second round was formally scheduled as of April 14, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports Tehran threatened to strike targets across the region if the standoff escalates",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera report the U.S. has begun enforcing a blockade of Iranian ports/traffic linked to Iran in the Strait of Hormuz as of April 14, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-15T18:57:57Z",
+      "text": "<strong>Pope Leo visits Cameroon with message of peace amid attacks from Trump</strong> -- US President Donald Trump has lashed out at pope over calls for peace and criticism of US war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/15/pope-leo-visits-cameroon-with-message-of-peace-amid-attacks-from-trump?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-15T16:59:42Z",
+      "text": "<strong>Is Iran beating the US at its own propaganda game?</strong> -- Iran has condemned a ban imposed by YouTube on a pro-Iranian group that releases Lego-style AI videos. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/15/is-iran-beating-the-us-at-its-own-propaganda-game?traffic_source=rss"
+    },
+    {
       "time": "2026-04-15T16:38:12Z",
       "text": "<strong>Netanyahu sees Lebanon as his last chance for a \u2018win\u2019</strong> -- After the failure in Gaza and Iran, the Israeli prime minister hopes he can be triumphant in Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/opinions/2026/4/15/netanyahu-sees-lebanon-as-his-last-chance-for-a?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-04-15T06:28:34Z",
       "text": "<strong>Iran says $270bn war loss must be compensated, as fresh talks with US loom</strong> -- Iran demands compensation for war damages caused by US and Israeli attacks on critical infrastructure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/15/iran-says-270bn-war-loss-must-be-compensated-as-fresh-talks-with-us-loom?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-15T05:17:44Z",
-      "text": "<strong>US military says blockade of Iran ports \u2018completely\u2019 halts economic trade</strong> -- US Central Command say more than 10,000 armed forces members, as well as warships and planes, are involved in blockade. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/4/15/us-military-says-blockade-of-iran-ports-completely-halts-economic-trade?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-15T02:54:08Z",
-      "text": "<strong>US forces kill 4 people in latest strike on vessels in eastern Pacific</strong> -- The killings mark the fourth US deadly strike in the past four days on vessels in the eastern Pacific Ocean. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/15/us-forces-kill-4-people-in-latest-strike-on-vessels-in-eastern-pacific?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,19 @@
   ],
   "newsFeed": [
     {
-      "title": "Netanyahu sees Lebanon as his last chance for a \u2018win\u2019",
-      "description": "After the failure in Gaza and Iran, the Israeli prime minister hopes he can be triumphant in Lebanon.",
-      "link": "https://www.aljazeera.com/opinions/2026/4/15/netanyahu-sees-lebanon-as-his-last-chance-for-a?traffic_source=rss",
+      "title": "Pope Leo visits Cameroon with message of peace amid attacks from Trump",
+      "description": "US President Donald Trump has lashed out at pope over calls for peace and criticism of US war on Iran.",
+      "link": "https://www.aljazeera.com/news/2026/4/15/pope-leo-visits-cameroon-with-message-of-peace-amid-attacks-from-trump?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-04-15T16:38:12Z",
+      "time": "2026-04-15T18:57:57Z",
+      "tier": 2
+    },
+    {
+      "title": "Three paramedics killed in successive Israeli strikes in Lebanon, officials say",
+      "description": "Lebanon's government condemns as a \"flagrant crime\" the killing of the paramedics, one of whom featured in a BBC report.",
+      "link": "https://www.bbc.com/news/articles/cgqkkxd09e2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-15T18:48:34Z",
       "tier": 2
     },
     {
@@ -1225,7 +1233,23 @@
       "description": "Eight students and one teacher died in the attack, according to Interior Minister Mustafa Cifci.",
       "link": "https://www.bbc.com/news/articles/cn088n9e6e9o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-04-15T16:13:51Z",
+      "time": "2026-04-15T17:50:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Is Iran beating the US at its own propaganda game?",
+      "description": "Iran has condemned a ban imposed by YouTube on a pro-Iranian group that releases Lego-style AI videos.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/15/is-iran-beating-the-us-at-its-own-propaganda-game?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-15T16:59:42Z",
+      "tier": 2
+    },
+    {
+      "title": "Netanyahu sees Lebanon as his last chance for a \u2018win\u2019",
+      "description": "After the failure in Gaza and Iran, the Israeli prime minister hopes he can be triumphant in Lebanon.",
+      "link": "https://www.aljazeera.com/opinions/2026/4/15/netanyahu-sees-lebanon-as-his-last-chance-for-a?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-15T16:38:12Z",
       "tier": 2
     },
     {
@@ -1258,14 +1282,6 @@
       "link": "https://www.bbc.com/news/articles/cdxdd7ddzgdo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-15T15:27:22Z",
-      "tier": 2
-    },
-    {
-      "title": "Israel and Hezbollah continue attacks after Israel-Lebanon talks in US",
-      "description": "Israel strikes hit southern Lebanon and Hezbollah fires rockets at Israel, a day after rare direct negotiations.",
-      "link": "https://www.bbc.com/news/articles/c87ww2z0z3zo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-15T14:15:50Z",
       "tier": 2
     },
     {
@@ -1317,22 +1333,6 @@
       "tier": 2
     },
     {
-      "title": "Anger in Lebanon as Israel launches deadly strikes despite diplomatic drive",
-      "description": "Hezbollah lawmaker Hassan Fadlallah says negotiating &#039;with the enemy is wrong&#039;, warns of &#039;internal division&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/4/15/anger-in-lebanon-as-israel-launches-deadly-strikes-despite-diplomatic-drive?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-15T11:52:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Double standards? Why Iran\u2019s nukes are scrutinised, Israel gets a pass",
-      "description": "Israel\u2019s policy of ambiguity about its nuclear capability contrasts sharply with the focus on Iran\u2019s programme.",
-      "link": "https://www.aljazeera.com/news/2026/4/15/double-standards-why-irans-nukes-are-scrutinised-israel-gets-a-pass?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-15T11:40:33Z",
-      "tier": 2
-    },
-    {
       "title": "Sri Lanka repatriates 238 Iranian sailors stranded after US torpedo attack",
       "description": "The survivors of the US attack on Iranian vessel Iris Dena, which claimed the lives of 104 people, were among those sent home.",
       "link": "https://www.bbc.com/news/articles/c9qdd318qd9o?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of Wednesday, April 15, 2026 shows the war remains in a fragile ceasefire phase: AP reported the U.S. blockade of Iranian ports is now fully implemented and earlier reported that U.S.-Iran talks in Pakistan ended without agreement, leaving the two-week truce announced on April 7 under strain ahead of its April 22 expiry. On the military side, AP cited Joint Chiefs Chairman Gen. Dan Caine on April 10 saying U.S. forces had struck more than 13,000 targets, while CENTCOM\u2019s April 1 fact sheet listed 12,300+ targets struck and 13,000+ combat flights. For casualties, the latest clearly sourced Iranian national toll found was Iran\u2019s Health Ministry figure of 2,076 killed and 26,500 wounded reported on April 2 via Al Jazeera, while the only Pentagon/CENTCOM-confirmed U.S. fatalities clearly located in searched sources were the four crew members lost in the KC-135 incident.",
+  "summary": "Confirmed reporting on April 15, 2026 indicates the war that began on February 28 remains in a fragile diplomatic phase rather than a settled end-state: AP reported active Pakistani mediation and possible new U.S.-Iran talks within days, while also noting Iran threatened Gulf shipping after the United States began a blockade of Iranian ports. The most recent confirmed casualty figures found in this search remain 2,076 killed and 26,500 wounded in Iran according to Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s live tracker, and 26 killed in Israel in that same tracker. On the military side, the latest accessible official U.S. fact sheet located in this search still listed 13,000+ targets struck as of April 6, while Al Jazeera reported today that more than 10,000 additional U.S. troops are being sent to the region, implying a deployed/being-deployed total of about 60,000 when combined with AP\u2019s previously reported 50,000 already in theater.",
   "briefings": [
     {
       "date": "2026-04-15",
       "day": 46,
-      "summary": "Confirmed reporting as of Wednesday, April 15, 2026 shows the war remains in a fragile ceasefire phase: AP reported the U.S. blockade of Iranian ports is now fully implemented and earlier reported that U.S.-Iran talks in Pakistan ended without agreement, leaving the two-week truce announced on April 7 under strain ahead of its April 22 expiry. On the military side, AP cited Joint Chiefs Chairman Gen. Dan Caine on April 10 saying U.S. forces had struck more than 13,000 targets, while CENTCOM\u2019s April 1 fact sheet listed 12,300+ targets struck and 13,000+ combat flights. For casualties, the latest clearly sourced Iranian national toll found was Iran\u2019s Health Ministry figure of 2,076 killed and 26,500 wounded reported on April 2 via Al Jazeera, while the only Pentagon/CENTCOM-confirmed U.S. fatalities clearly located in searched sources were the four crew members lost in the KC-135 incident."
+      "summary": "Confirmed reporting on April 15, 2026 indicates the war that began on February 28 remains in a fragile diplomatic phase rather than a settled end-state: AP reported active Pakistani mediation and possible new U.S.-Iran talks within days, while also noting Iran threatened Gulf shipping after the United States began a blockade of Iranian ports. The most recent confirmed casualty figures found in this search remain 2,076 killed and 26,500 wounded in Iran according to Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s live tracker, and 26 killed in Israel in that same tracker. On the military side, the latest accessible official U.S. fact sheet located in this search still listed 13,000+ targets struck as of April 6, while Al Jazeera reported today that more than 10,000 additional U.S. troops are being sent to the region, implying a deployed/being-deployed total of about 60,000 when combined with AP\u2019s previously reported 50,000 already in theater."
     },
     {
       "date": "2026-04-14",
