@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-15T21:07:13Z",
+  "lastUpdated": "2026-04-15T22:05:27Z",
   "dayCount": 46,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,036+",
-    "cost": "$30.1B+"
+    "killed": "3,263+",
+    "cost": "$31.1B+"
   },
   "humanCost": {
-    "iranDeaths": "3,000",
+    "iranDeaths": "2,000",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -15,9 +15,9 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "20,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "452",
+    "civilianDeaths": "1250",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$30.1 billion+",
-    "dailyBurnRate": "~$654M/day",
+    "totalCost": "$31.1 billion+",
+    "dailyBurnRate": "~$675M/day",
     "daysOfOps": 46,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 60000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (AP on March 24, 2026 reported the U.S. was preparing to send at least 1,000 more troops to supplement some 50,000 already in the Middle East; Al Jazeera on April 15, 2026 reported more than 10,000 additional troops were being sent before end-April. Combined currently confirmed deployed/being deployed total used here: 60,000 (https://apnews.com/article/8bb5e79a98ea72fccc5c50b4931ad778; https://www.aljazeera.com/news/2026/4/15/us-sending-10000-more-troops-to-middle-east-despite-iran-ceasefire))"
+          "source": "LLM-verified (U.S. military has more than 50,000 personnel in the region, per Air Force Times citing U.S. military/CENTCOM data on April 8, 2026)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-15",
-          "source": "LLM-verified (IDF reported on/about April 1, 2026 that Israeli Air Force units had conducted more than 800 attack flights and dropped about 16,000 munitions since the start of the campaign; this is the only confirmed cumulative sorties-like figure found in accessible primary reporting during this search (https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/over-800-strike-sorties-16-000-munitions-what-has-happened-since-the-launch-of-operation-roaring-lion/))"
+          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet lists 'Combat Flights: 13,000+'; this is combat flights, not specifically fighter-only sorties)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "60,000 \u00d7 $500/day \u00d7 46 days",
-        "cost": "$1,380,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 46 days",
+        "cost": "$1,150,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 15 that Pakistan's army chief arrived in Tehran to try to arrange a second round of U.S.-Iran negotiations after nearly seven weeks of war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported April 13 that the U.S. began a blockade of Iranian ports, while Iran threatened retaliation against ports in the Persian Gulf and Gulf of Oman.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 15, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Ceasefire talks in Pakistan failed over the weekend before April 15, 2026, leaving the truce fragile ahead of its reported April 22 expiration.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "U.S. blockade of Iranian ports began April 14, 2026, sharply raising risk of renewed naval confrontation and wider Gulf spillover.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Energy-market disruption risk remains elevated as maritime traffic to Iranian ports is being interdicted while non-Iranian transit through Hormuz continues",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -793,14 +793,19 @@
       "link": "https://www.aljazeera.com/news/2026/4/15/us-sending-10000-more-troops-to-middle-east-despite-iran-ceasefire?traffic_source=rss"
     },
     {
-      "time": "2026-04-15T14:03:10Z",
-      "text": "<strong>Every 27 minutes, someone is killed in Sudan\u2019s war</strong> -- Every day, over the last three years in Sudan, 53 people on average are killed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/15/every-27-minutes-someone-is-killed-in-sudans-war-2?traffic_source=rss"
+      "time": "2026-04-15T21:10:14Z",
+      "text": "<strong>Lyse Doucet: Under fragile ceasefire, Iranians wonder if US deal can be done</strong> -- The BBC&#x27;s chief international correspondent reports from Iran as diplomatic efforts to avoid a return to war intensify. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c4g44gj7rgno?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-04-15T18:54:06Z",
       "text": "<strong>Frank Gardner: What is China&#x27;s role in the Iran war?</strong> -- BBC Security Correspondent Frank Gardner explains how the world&#x27;s second-largest economy fits into the Gulf conflict. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/videos/cz67760pq0xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-15T14:03:10Z",
+      "text": "<strong>Every 27 minutes, someone is killed in Sudan\u2019s war</strong> -- Every day, over the last three years in Sudan, 53 people on average are killed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/15/every-27-minutes-someone-is-killed-in-sudans-war-2?traffic_source=rss"
     },
     {
       "time": "2026-04-15T13:55:40Z",
@@ -846,11 +851,6 @@
       "time": "2026-04-15T09:16:36Z",
       "text": "<strong>Iran citizen held in France over pro-Palestine comments returns home</strong> -- Release of Mahdieh Esfandiari comes a week after Iran released two French citizens held on espionage charges. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/15/iran-citizen-held-in-france-over-pro-palestine-comments-returns-state-tv?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-15T09:03:11Z",
-      "text": "<strong>North Korea boosting ability to manufacture nuclear arms, IAEA chief warns</strong> -- The nuclear watchdog&amp;#039;s chief says there is a rapid increase in operations at North Korea&amp;#039;s Yongbyon reactor. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/15/north-korea-boosting-ability-to-make-nuclear-arms-iaea?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Lyse Doucet: Under fragile ceasefire, Iranians wonder if US deal can be done",
+      "description": "The BBC's chief international correspondent reports from Iran as diplomatic efforts to avoid a return to war intensify.",
+      "link": "https://www.bbc.com/news/articles/c4g44gj7rgno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-15T21:10:14Z",
+      "tier": 2
+    },
+    {
       "title": "Nine killed in second Turkish school shooting in two days",
       "description": "Eight students and one teacher died in the attack, according to Interior Minister Mustafa Cifci.",
       "link": "https://www.bbc.com/news/articles/cn088n9e6e9o?at_medium=RSS&at_campaign=rss",
@@ -1317,14 +1325,6 @@
       "tier": 2
     },
     {
-      "title": "Every 27 minutes, someone is killed in Sudan\u2019s war",
-      "description": "Every day, over the last three years in Sudan, 53 people on average are killed.",
-      "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/4/15/every-27-minutes-someone-is-killed-in-sudans-war-2?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-15T14:03:10Z",
-      "tier": 2
-    },
-    {
       "title": "Sri Lanka repatriates 238 Iranian sailors stranded after US torpedo attack",
       "description": "The survivors of the US attack on Iranian vessel Iris Dena, which claimed the lives of 104 people, were among those sent home.",
       "link": "https://www.bbc.com/news/articles/c9qdd318qd9o?at_medium=RSS&at_campaign=rss",
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in retrieved sources shows the war\u2019s known death toll continuing to rise, with AP on April 12 saying at least 3,000 people had been killed in Iran, 23 in Israel, and more than a dozen in Gulf Arab states since February 28, while Pentagon casualty data reported by Air Force Times on April 8 put U.S. military fatalities at 13. Pakistan-mediated U.S.-Iran talks failed over the weekend, and AP reported the current ceasefire is set to expire on April 22, while subsequent U.S. threats against Iranian naval vessels suggest elevated risk of renewed fighting.",
+  "summary": "Confirmed reporting indicates the war remains under a fragile ceasefire while diplomacy continues: AP reported on April 15 that Pakistan is trying to arrange another round of U.S.-Iran talks, and AP reported on April 13 that the U.S. has begun a blockade of Iranian ports, raising risks of renewed escalation. The latest clearly sourced cumulative military figures I found are 13 U.S. troops killed and 381 wounded from CENTCOM/Pentagon data reported April 8, more than 2,000 people killed and 20,000 wounded in Iran according to Iran\u2019s Health Ministry as cited the same day, and more than 13,000 U.S. strikes/targets inside Iran per CENTCOM briefings. I could not verify several requested fields from current named official or major-wire sources, so those remain null.",
   "briefings": [
     {
       "date": "2026-04-15",
       "day": 46,
-      "summary": "Confirmed reporting available in retrieved sources shows the war\u2019s known death toll continuing to rise, with AP on April 12 saying at least 3,000 people had been killed in Iran, 23 in Israel, and more than a dozen in Gulf Arab states since February 28, while Pentagon casualty data reported by Air Force Times on April 8 put U.S. military fatalities at 13. Pakistan-mediated U.S.-Iran talks failed over the weekend, and AP reported the current ceasefire is set to expire on April 22, while subsequent U.S. threats against Iranian naval vessels suggest elevated risk of renewed fighting."
+      "summary": "Confirmed reporting indicates the war remains under a fragile ceasefire while diplomacy continues: AP reported on April 15 that Pakistan is trying to arrange another round of U.S.-Iran talks, and AP reported on April 13 that the U.S. has begun a blockade of Iranian ports, raising risks of renewed escalation. The latest clearly sourced cumulative military figures I found are 13 U.S. troops killed and 381 wounded from CENTCOM/Pentagon data reported April 8, more than 2,000 people killed and 20,000 wounded in Iran according to Iran\u2019s Health Ministry as cited the same day, and more than 13,000 U.S. strikes/targets inside Iran per CENTCOM briefings. I could not verify several requested fields from current named official or major-wire sources, so those remain null."
     },
     {
       "date": "2026-04-14",
