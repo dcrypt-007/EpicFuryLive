@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-18T20:53:56Z",
+  "lastUpdated": "2026-04-18T21:51:18Z",
   "dayCount": 49,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,067+",
-    "cost": "$33.1B+"
+    "killed": "2,143+",
+    "cost": "$32.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,000",
+    "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1332",
+    "civilianDeaths": "1300",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.1 billion+",
-    "dailyBurnRate": "~$676M/day",
+    "totalCost": "$32.8 billion+",
+    "dailyBurnRate": "~$669M/day",
     "daysOfOps": 49,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-18",
-          "source": "LLM-verified (Al Jazeera April 15, 2026, citing Washington Post and US officials: with USS George H.W. Bush arriving, carriers in region will reach 3; Abraham Lincoln and Gerald Ford already in theater)"
+          "source": "LLM-verified (AP, April 17, 2026: USS Ford's return made it 'the second aircraft carrier in the region in addition to the USS Abraham Lincoln in the Arabian Sea')"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-18",
-          "source": "LLM-verified (Air Force Times citing U.S. military/CENTCOM on Apr. 8, 2026: 'more than 50,000 personnel in the region.' Stored as 50000 for model input.)"
+          "source": "LLM-verified (U.S. Central Command figure reported by Military Times on April 8, 2026: 'The U.S. military has more than 50,000 personnel in the region')"
         },
         {
           "id": "intel_cyber",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 49 days",
-        "cost": "$1,029,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 49 days",
+        "cost": "$686,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. blockade of Iranian ports remains in effect and AP reported on April 16 that Washington broadened efforts to target Iran-linked shipping worldwide.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The fragile U.S.-Iran ceasefire is due to expire by Wednesday, April 22, 2026, increasing risk of renewed hostilities if talks fail.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran reimposed closure/restrictions on the Strait of Hormuz on April 18 and IRGC gunboats fired on ships attempting to pass, according to AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran reimposed Strait of Hormuz restrictions and the US announced/maintained a blockade of Iranian ports during failed ceasefire talks, raising renewed maritime escalation risk.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "A 10-day Israel-Lebanon ceasefire took effect on April 17, 2026, creating an opening for wider regional talks, according to AP and Al Jazeera.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran reopened the Strait of Hormuz conditionally and then threatened renewed closure over alleged U.S. 'piracy,' according to Al Jazeera and BBC headlines provided by user.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said on April 17-18, 2026 that the U.S. would resume bombing if no Iran deal is reached, according to Al Jazeera headlines provided by user.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-04-18T21:41:06Z",
+      "text": "<strong>Iran reasserts control of Hormuz Strait as Trump warns against \u2018blackmail\u2019</strong> -- Top negotiator Mohammad Bagher Ghalibaf says US naval blockade of Iran&amp;#039;s ports is &amp;#039;a clumsy and ignorant decision&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/18/iran-reasserts-control-of-hormuz-strait-as-trump-warns-against-blackmail?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-18T21:09:16Z",
+      "text": "<strong>Manchester United beat Chelsea as Cunha strike boosts Champions League hope</strong> -- Manchester United strengthen grip on third spot in Premier League with 1-0 win that leaves Chelsea relying on favours. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/4/18/manchester-united-beat-chelsea-as-cunha-strike-boosts-champions-league-hope?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-18T21:06:13Z",
+      "text": "<strong>Iran military orders Indian ship to abort Strait of Hormuz passage</strong> -- Video shows the moment Iran\u2019s military ordered an Indian ship to abort its passage of the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/iran-military-orders-indian-ship-to-abort-strait-of-hormuz-passage?traffic_source=rss"
+    },
+    {
       "time": "2026-04-18T19:29:42Z",
       "text": "<strong>Mazzucato on the Iran war\u2019s economic shock: Who pays the price?</strong> -- Redi Tlhabi speaks to economist Mariana Mazzucato on the Iran war&amp;#039;s economic fallout and who\u2019s really paying the price. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/upfront/2026/4/18/mazzucato-on-the-iran-wars-economic-shock-who-pays-the-price?traffic_source=rss"
@@ -836,21 +851,6 @@
       "time": "2026-04-18T00:54:38Z",
       "text": "<strong>Trump thanks Gulf states for their \u2018tremendous\u2019 support</strong> -- \u2018This will be a great and brilliant day for the world\u2019 Donald Trump said as Iran fully opens the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/trump-thanks-gulf-states-for-their-tremendous-support?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-18T00:00:00Z",
-      "text": "<strong>Iran war live: Hormuz Strait shut down again over US \u2018piracy\u2019, says Tehran</strong> -- Tens of thousands of people forcibly displaced by Israeli attacks on Lebanon use first day of ceasefire to return home. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/4/18/iran-war-live-tehran-says-president-trump-made-false-claims-amid-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-17T21:25:26Z",
-      "text": "<strong>Iran rejects Trump claim on deal to surrender nuclear material stockpiles</strong> -- Iran has rejected suggestions by Donald Trump that it has agreed to hand over its stockpile of enriched uranium. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/17/iran-rejects-trump-claim-on-deal-to-surrender-nuclear-material-stockpiles?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-18T06:06:38Z",
-      "text": "<strong>Oil prices plunge as Iran says Strait &#x27;open&#x27;</strong> -- Brent crude sinks by a tenth after Iran says the key waterway is open for commercial ships for the rest of the ceasefire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/ckg045z73z1o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran reasserts control of Hormuz Strait as Trump warns against \u2018blackmail\u2019",
+      "description": "Top negotiator Mohammad Bagher Ghalibaf says US naval blockade of Iran&#039;s ports is &#039;a clumsy and ignorant decision&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/4/18/iran-reasserts-control-of-hormuz-strait-as-trump-warns-against-blackmail?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-18T21:41:06Z",
+      "tier": 2
+    },
+    {
+      "title": "Strait of Hormuz closed again, Iran says, as ships attacked",
+      "description": "Tehran is blaming a US blockade for its actions, saying it breaches the ceasefire the two reached.",
+      "link": "https://www.bbc.com/news/articles/cx2631x6nelo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-18T21:19:46Z",
+      "tier": 2
+    },
+    {
+      "title": "Manchester United beat Chelsea as Cunha strike boosts Champions League hope",
+      "description": "Manchester United strengthen grip on third spot in Premier League with 1-0 win that leaves Chelsea relying on favours.",
+      "link": "https://www.aljazeera.com/sports/2026/4/18/manchester-united-beat-chelsea-as-cunha-strike-boosts-champions-league-hope?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-18T21:09:16Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran military orders Indian ship to abort Strait of Hormuz passage",
+      "description": "Video shows the moment Iran\u2019s military ordered an Indian ship to abort its passage of the Strait of Hormuz.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/iran-military-orders-indian-ship-to-abort-strait-of-hormuz-passage?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-18T21:06:13Z",
+      "tier": 2
+    },
+    {
       "title": "Mazzucato on the Iran war\u2019s economic shock: Who pays the price?",
       "description": "Redi Tlhabi speaks to economist Mariana Mazzucato on the Iran war&#039;s economic fallout and who\u2019s really paying the price.",
       "link": "https://www.aljazeera.com/video/upfront/2026/4/18/mazzucato-on-the-iran-wars-economic-shock-who-pays-the-price?traffic_source=rss",
@@ -1309,30 +1341,6 @@
       "tier": 2
     },
     {
-      "title": "US blockade of Iran needs to end before the Strait of Hormuz is fully reope",
-      "description": "Michael Shoebridge says US may be forced to end blockade of Iran to see the full reopening of the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/video/quotable/2026/4/18/us-blockade-of-iran-needs-to-end-before-the-strait-of-hormuz-is-fully-reope?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-18T11:35:39Z",
-      "tier": 2
-    },
-    {
-      "title": "Ambulance crew in south Lebanon describes Israel\u2019s \u2018triple-tap\u2019 attack",
-      "description": "Ambulance workers in Lebanon recall Israeli \u2018triple-tap\u2019 targeted strikes which killed four paramedics and wounded six.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/ambulance-crew-in-south-lebanon-describes-israels-triple-tap-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-18T10:39:22Z",
-      "tier": 2
-    },
-    {
-      "title": "As oil prices plunge below $91 after weeks, a new Hormuz crisis emerges",
-      "description": "Brent crude falls over 9 percent after Iran said it will reopen waterway, only to shut it again over US blockade.",
-      "link": "https://www.aljazeera.com/economy/2026/4/18/as-oil-prices-plunge-below-91-after-weeks-a-new-hormuz-crisis-emerges?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-18T10:29:06Z",
-      "tier": 2
-    },
-    {
       "title": "What we know about the Israel-Lebanon ceasefire",
       "description": "A 10-day truce between the two countries is now in effect, with Iran-backed Hezbollah voicing support, as negotiations continue between the US and Iran.",
       "link": "https://www.bbc.com/news/articles/cwy32277e58o?at_medium=RSS&at_campaign=rss",
@@ -1357,12 +1365,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of April 18, 2026 shows no clear new official casualty revision beyond figures already circulating this week: AP reported at least 3,000 killed in Iran since Feb. 28, Al Jazeera\u2019s April 15 tracker listed 2,076 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 U.S. soldiers killed, and 28 killed in Gulf states, while CENTCOM\u2019s April 6 fact sheet said U.S. forces had struck 13,000+ targets. The main development today is diplomatic and maritime rather than numeric: AP and Al Jazeera say the U.S.-Iran talks in Pakistan collapsed, the ceasefire is due to expire April 22, and tensions in and around the Strait of Hormuz have risen again with renewed restrictions and reported attacks on ships.",
+  "summary": "Confirmed reporting as of April 18, 2026 shows the war's cumulative known toll at 2,076 killed in Iran, 13 U.S. troops killed, at least 26 deaths in Israel and 28 deaths in Gulf states, while CENTCOM's latest publicly located operations fact sheet still lists 13,000-plus targets struck and Military Times, citing CENTCOM, reports more than 50,000 U.S. personnel in the region. AP reported today that Iran again tightened control of the Strait of Hormuz and Iranian gunboats fired on ships, while AP also reported this week that the USS Ford's arrival made two U.S. carriers present in the region. I could not verify newer official confirmed counts for destroyers, drone units, or cumulative munition-use totals such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, or interceptor launches, so those remain null.",
   "briefings": [
     {
       "date": "2026-04-18",
       "day": 49,
-      "summary": "Confirmed reporting as of April 18, 2026 shows no clear new official casualty revision beyond figures already circulating this week: AP reported at least 3,000 killed in Iran since Feb. 28, Al Jazeera\u2019s April 15 tracker listed 2,076 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 U.S. soldiers killed, and 28 killed in Gulf states, while CENTCOM\u2019s April 6 fact sheet said U.S. forces had struck 13,000+ targets. The main development today is diplomatic and maritime rather than numeric: AP and Al Jazeera say the U.S.-Iran talks in Pakistan collapsed, the ceasefire is due to expire April 22, and tensions in and around the Strait of Hormuz have risen again with renewed restrictions and reported attacks on ships."
+      "summary": "Confirmed reporting as of April 18, 2026 shows the war's cumulative known toll at 2,076 killed in Iran, 13 U.S. troops killed, at least 26 deaths in Israel and 28 deaths in Gulf states, while CENTCOM's latest publicly located operations fact sheet still lists 13,000-plus targets struck and Military Times, citing CENTCOM, reports more than 50,000 U.S. personnel in the region. AP reported today that Iran again tightened control of the Strait of Hormuz and Iranian gunboats fired on ships, while AP also reported this week that the USS Ford's arrival made two U.S. carriers present in the region. I could not verify newer official confirmed counts for destroyers, drone units, or cumulative munition-use totals such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, fighter sorties, or interceptor launches, so those remain null."
     },
     {
       "date": "2026-04-17",
