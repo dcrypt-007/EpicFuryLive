@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-18T07:35:12Z",
+  "lastUpdated": "2026-04-18T09:05:20Z",
   "dayCount": 49,
   "banner": {
     "strikes": "~13,000",
-    "killed": "2,118+",
-    "cost": "$33.1B+"
+    "killed": "2,143+",
+    "cost": "$32.7B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
@@ -13,9 +13,9 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "3",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "20,984+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1250",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.1 billion+",
-    "dailyBurnRate": "~$676M/day",
+    "totalCost": "$32.7 billion+",
+    "dailyBurnRate": "~$667M/day",
     "daysOfOps": 49,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-18",
-          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists Combat Flights: 13,000+; this is combat flights, not explicitly fighter-only sorties)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet: The First 24 Days dated March 23, 2026 lists 'Combat Flights: 9,000+'; using 9000 as minimum confirmed cumulative combat-flight/sortie count)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC reported oil prices fell after Iran said the Strait was open for commercial shipping for the duration of the ceasefire, underscoring continued volatility around Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported President Trump said the U.S. would 'start dropping bombs again' if no Iran deal is reached.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Tehran again linked Strait of Hormuz access to U.S. actions and threatened renewed closure over what it called U.S. 'piracy'.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and other reporting indicate the 10-day Israel-Lebanon ceasefire was holding on April 17, reducing immediate spillover risk from Hezbollah while U.S.-Iran talks may resume as soon as the weekend.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on April 17, 2026 that Iran said the Strait of Hormuz was fully reopened to commercial shipping, but President Trump said the U.S. blockade on Iranian ships and ports would remain in force until a broader deal is completed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.K. approved U.S. use of bases for defensive operations tied to protecting shipping and degrading missile threats around the Strait of Hormuz, per AP March 20, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran has threatened energy sites in neighboring Gulf Arab states, as reflected in AP reporting on March 20, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-18T08:25:24Z",
+      "text": "<strong>Iran has learned that the Strait of Hormuz is its strongest deterrent</strong> -- Donald Heflin, a senior fellow at Tufts University, says Iran has shown it doesn\u2019t need nuclear weapons as a deterrent. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/quotable/2026/4/18/iran-has-learned-that-the-strait-of-hormuz-is-its-strongest-deterrent?traffic_source=rss"
+    },
+    {
       "time": "2026-04-18T06:10:45Z",
       "text": "<strong>Trump says US will \u2018start dropping bombs again\u2019 if no Iran deal is reached</strong> -- US President Donald Trump says the US will \u201chave to start dropping bombs again\u201d if no US-Iran deal is reached. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/trump-says-us-will-start-dropping-bombs-again-if-no-iran-deal-is-reached?traffic_source=rss"
@@ -769,18 +774,13 @@
     },
     {
       "time": "2026-04-18T00:00:00Z",
-      "text": "<strong>Iran war live: Tehran says US blockade of ports must end as strait opens</strong> -- Tens of thousands of people forcibly displaced by Israeli attacks on Lebanon use first day of ceasefire to return home. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Hormuz Strait shut down again over US \u2018piracy\u2019, says Tehran</strong> -- Tens of thousands of people forcibly displaced by Israeli attacks on Lebanon use first day of ceasefire to return home. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/4/18/iran-war-live-tehran-says-president-trump-made-false-claims-amid-talks?traffic_source=rss"
     },
     {
       "time": "2026-04-17T21:25:26Z",
       "text": "<strong>Iran rejects Trump claim on deal to surrender nuclear material stockpiles</strong> -- Iran has rejected suggestions by Donald Trump that it has agreed to hand over its stockpile of enriched uranium. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/17/iran-rejects-trump-claim-on-deal-to-surrender-nuclear-material-stockpiles?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-17T19:10:36Z",
-      "text": "<strong>World reacts to Strait of Hormuz reopening amid US-Iran conflict</strong> -- Politicians and industry welcome reopening of the vital waterway after throttling of traffic caused oil prices to spike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/17/world-reacts-to-the-opening-of-the-strait-of-hormuz-amid-us-iran-conflict?traffic_source=rss"
     },
     {
       "time": "2026-04-18T06:06:38Z",
@@ -801,6 +801,11 @@
       "time": "2026-04-16T15:23:23Z",
       "text": "<strong>Turkish police detain 162 people over online posts about school shootings</strong> -- At least 16 people were injured in a shooting at a high school on Tuesday, before another nine were killed in a separate school shooting on Wednesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cz9025d7jqzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-17T19:10:36Z",
+      "text": "<strong>World reacts to Strait of Hormuz reopening amid US-Iran conflict</strong> -- Politicians and industry welcome reopening of the vital waterway after throttling of traffic caused oil prices to spike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/17/world-reacts-to-the-opening-of-the-strait-of-hormuz-amid-us-iran-conflict?traffic_source=rss"
     },
     {
       "time": "2026-04-17T18:35:10Z",
@@ -846,11 +851,6 @@
       "time": "2026-04-17T18:32:21Z",
       "text": "<strong>Oil prices plunge as Iran says Strait &#x27;open&#x27;</strong> -- Brent crude sinks by a tenth after Iran says the key waterway is open for commercial ships for the rest of the ceasefire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/ckg045z73z1o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-17T13:37:00Z",
-      "text": "<strong>Iran foreign minister says Strait of Hormuz \u2018completely open\u2019</strong> -- Iran says &amp;#039;passage for all commercial vessels through Strait of Hormuz&amp;#039; open during the Israel-Lebanon ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/17/iran-foreign-minister-says-strait-of-hormuz-completely-open?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran has learned that the Strait of Hormuz is its strongest deterrent",
+      "description": "Donald Heflin, a senior fellow at Tufts University, says Iran has shown it doesn\u2019t need nuclear weapons as a deterrent.",
+      "link": "https://www.aljazeera.com/video/quotable/2026/4/18/iran-has-learned-that-the-strait-of-hormuz-is-its-strongest-deterrent?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-18T08:25:24Z",
+      "tier": 2
+    },
+    {
       "title": "Trump says US will \u2018start dropping bombs again\u2019 if no Iran deal is reached",
       "description": "US President Donald Trump says the US will \u201chave to start dropping bombs again\u201d if no US-Iran deal is reached.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/trump-says-us-will-start-dropping-bombs-again-if-no-iran-deal-is-reached?traffic_source=rss",
@@ -1245,7 +1253,7 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran says US blockade of ports must end as strait opens",
+      "title": "Iran war live: Hormuz Strait shut down again over US \u2018piracy\u2019, says Tehran",
       "description": "Tens of thousands of people forcibly displaced by Israeli attacks on Lebanon use first day of ceasefire to return home.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/4/18/iran-war-live-tehran-says-president-trump-made-false-claims-amid-talks?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1258,14 +1266,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/17/iran-rejects-trump-claim-on-deal-to-surrender-nuclear-material-stockpiles?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-17T21:25:26Z",
-      "tier": 2
-    },
-    {
-      "title": "World reacts to Strait of Hormuz reopening amid US-Iran conflict",
-      "description": "Politicians and industry welcome reopening of the vital waterway after throttling of traffic caused oil prices to spike.",
-      "link": "https://www.aljazeera.com/news/2026/4/17/world-reacts-to-the-opening-of-the-strait-of-hormuz-amid-us-iran-conflict?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-17T19:10:36Z",
       "tier": 2
     },
     {
@@ -1309,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of April 18, 2026 indicates the war remains under a fragile ceasefire that began on April 8 and is set to expire on April 22 unless diplomacy succeeds. Al Jazeera\u2019s April 15 tracker, citing Iran\u2019s Ministry of Health, still lists Iran at 2,076 killed and more than 26,500 wounded, while the same tracker reports 26 Israelis killed and 13 confirmed US combat deaths; AP on April 16 also referred to at least 13 US service members killed. CENTCOM\u2019s latest publicly accessible fact sheet reviewed gives 13,000+ targets struck as of April 6, while a Defense Department April 1 fact sheet listed 13,000+ combat flights. Reporting on April 15 said the US was preparing to raise its carrier presence in the region to three and had roughly 50,000 troops already involved before planned reinforcements, even as President Trump publicly warned bombing could resume if no deal is reached.",
+  "summary": "Confirmed reporting available as of April 18, 2026 still points to at least 2,076 deaths in Iran, 13 confirmed U.S. military deaths, at least 26 deaths in Israel, 28 deaths in Gulf states, and at least 20,984 wounded in Iran; U.S. official fact sheets say Operation Epic Fury had struck 13,000-plus targets by April 6, while AP separately reported CENTCOM saying U.S. forces had hit more than 10,000 targets by late March. Today's headline flow centers on the fragile ceasefire and Strait of Hormuz access: Iran has alternated between reopening the waterway and threatening renewed closure, while Trump publicly warned bombing could resume if talks fail.",
   "briefings": [
     {
       "date": "2026-04-18",
       "day": 49,
-      "summary": "Confirmed reporting as of April 18, 2026 indicates the war remains under a fragile ceasefire that began on April 8 and is set to expire on April 22 unless diplomacy succeeds. Al Jazeera\u2019s April 15 tracker, citing Iran\u2019s Ministry of Health, still lists Iran at 2,076 killed and more than 26,500 wounded, while the same tracker reports 26 Israelis killed and 13 confirmed US combat deaths; AP on April 16 also referred to at least 13 US service members killed. CENTCOM\u2019s latest publicly accessible fact sheet reviewed gives 13,000+ targets struck as of April 6, while a Defense Department April 1 fact sheet listed 13,000+ combat flights. Reporting on April 15 said the US was preparing to raise its carrier presence in the region to three and had roughly 50,000 troops already involved before planned reinforcements, even as President Trump publicly warned bombing could resume if no deal is reached."
+      "summary": "Confirmed reporting available as of April 18, 2026 still points to at least 2,076 deaths in Iran, 13 confirmed U.S. military deaths, at least 26 deaths in Israel, 28 deaths in Gulf states, and at least 20,984 wounded in Iran; U.S. official fact sheets say Operation Epic Fury had struck 13,000-plus targets by April 6, while AP separately reported CENTCOM saying U.S. forces had hit more than 10,000 targets by late March. Today's headline flow centers on the fragile ceasefire and Strait of Hormuz access: Iran has alternated between reopening the waterway and threatening renewed closure, while Trump publicly warned bombing could resume if talks fail."
     },
     {
       "date": "2026-04-17",
