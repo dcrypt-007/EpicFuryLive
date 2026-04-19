@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-19T11:50:37Z",
+  "lastUpdated": "2026-04-19T13:34:31Z",
   "dayCount": 50,
   "banner": {
     "strikes": "~13,000",
-    "killed": "2,118+",
-    "cost": "$33.2B+"
+    "killed": "1,529+",
+    "cost": "$32.9B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "16",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.2 billion+",
-    "dailyBurnRate": "~$664M/day",
+    "totalCost": "$32.9 billion+",
+    "dailyBurnRate": "~$657M/day",
     "daysOfOps": 50,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-19",
-          "source": "LLM-verified (U.S. Department of War Operation Epic Fury page shows USS Abraham Lincoln and USS Gerald R. Ford conducting operations in support of Epic Fury.)"
+          "source": "LLM-verified (CENTCOM video gallery and imagery on March 21, 2026 prominently show USS Abraham Lincoln (CVN-72) conducting flight operations during Operation Epic Fury; no second currently deployed carrier strike group could be confirmed from official sources searched.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-04-18",
-          "source": "LLM-verified (AP reported on April 11, 2026 that 'two Navy destroyers' transited the Strait of Hormuz ahead of mine-clearing operations, citing CENTCOM.)"
+          "lastUpdated": "2026-04-19",
+          "source": "LLM-verified (CENTCOM March 21, 2026 video gallery imagery during Operation Epic Fury shows USS John Finn, USS Spruance, and USS Milius operating in-theater; minimum confirmed count is 3 destroyers.)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-19",
-          "source": "LLM-verified (Air Force Times, Apr. 8, 2026, citing U.S. military/CENTCOM: 'more than 50,000 personnel in the region')"
+          "source": "LLM-verified (Open-source reporting citing Pentagon/CENTCOM statements indicated approximately 50,000 U.S. troops remained in CENTCOM AOR during the conflict; no newer official numeric update found in searched primary sources.)"
         },
         {
           "id": "intel_cyber",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 50 days",
-        "cost": "$700,000,000"
+        "detail": "$7,000,000/day \u00d7 50 days",
+        "cost": "$350,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "2 \u00d7 $240,000/day \u00d7 50 days",
-        "cost": "$24,000,000"
+        "detail": "3 \u00d7 $240,000/day \u00d7 50 days",
+        "cost": "$36,000,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "CENTCOM said U.S. forces have forced 23 ships to turn around near the Strait of Hormuz while enforcing the blockade.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera/AP/AFP reporting says the current two-week ceasefire expires on Wednesday, April 22, 2026, unless extended.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran said on April 19, 2026 it would keep the Strait of Hormuz closed until the U.S. lifts its blockade of Iranian ports.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 19, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera report Iran has again restricted/closed the Strait of Hormuz and maritime incidents have resumed, including reported fire on vessels.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera report the U.S.-Iran ceasefire talks in Islamabad failed after roughly 20-21 hours, putting the April 22 ceasefire expiry in focus.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reporting indicate cross-border Lebanon tensions continue despite a separate Israel-Lebanon ceasefire.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the US-Iran ceasefire remains fragile and is due to expire on April 22, 2026 absent a broader agreement.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-19T12:38:11Z",
+      "text": "<strong>Trump says US negotiators to head to Pakistan for Iran ceasefire talks</strong> -- Trump announces talks in Islamabad despite accusing Iran of violating truce, as he warns Tehran of severe repercussions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/19/trump-says-us-negotiators-will-head-to-pakistan-for-iran-ceasefire-talks?traffic_source=rss"
+    },
+    {
       "time": "2026-04-19T11:40:06Z",
       "text": "<strong>Iran war: 10 frequently used words and their meanings</strong> -- The US-Israel war on Iran nears two months.  We break down some of the frequently used terminology in this war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/19/iran-war-10-frequently-used-words-and-their-meanings?traffic_source=rss"
@@ -764,7 +769,7 @@
     },
     {
       "time": "2026-04-19T09:26:26Z",
-      "text": "<strong>Iran war: What is happening on day 51 of the US-Iran conflict?</strong> -- Tehran will keep the strategic Strait of Hormuz closed until Washington ends the blockade of Iranian ports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war: What is happening on day 51 of the US-Israeli conflict?</strong> -- Tehran says it will keep the strategic Strait of Hormuz closed until Washington ends its blockade of Iranian ports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/19/iran-war-what-is-happening-on-day-51-of-the-us-iran-conflict?traffic_source=rss"
     },
     {
@@ -783,6 +788,21 @@
       "link": "https://www.aljazeera.com/news/2026/4/19/north-korea-launches-ballistic-missiles-towards-sea-off-its-east-coast?traffic_source=rss"
     },
     {
+      "time": "2026-04-19T09:55:22Z",
+      "text": "<strong>Zelensky condemns US extension of Russian sanctions waiver</strong> -- The US argues that the waiver is meant to ease the energy supply crunch sparked by the US-Israel war with Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c248m3z49j1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-18T18:09:57Z",
+      "text": "<strong>At least six killed in Kyiv as gunman opens fire and takes hostages</strong> -- The attacker, who took hostages inside a supermarket, was killed after a shoot-out with police, officials say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cm25r1vkx4lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-19T11:39:47Z",
+      "text": "<strong>French peacekeeper killed in southern Lebanon</strong> -- President Macron blames the attack on Hezbollah. The Iran-backed armed group denies &quot;any connection&quot; to the incident. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cvg4mrm2vm0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-04-19T00:00:00Z",
       "text": "<strong>Iran war live: Hormuz Strait \u2018closed\u2019 as Tehran says no date for US talks</strong> -- IRGC says the Strait of Hormuz will remain closed until the US stops blockading Iranian ports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/4/19/iran-war-live-tehran-says-no-date-set-for-us-talks-hormuz-strait-closed?traffic_source=rss"
@@ -791,16 +811,6 @@
       "time": "2026-04-18T21:41:06Z",
       "text": "<strong>Iran reasserts control of Hormuz Strait as Trump warns against \u2018blackmail\u2019</strong> -- Top negotiator Mohammad Bagher Ghalibaf says US naval blockade of Iran&amp;#039;s ports is &amp;#039;a clumsy and ignorant decision&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/18/iran-reasserts-control-of-hormuz-strait-as-trump-warns-against-blackmail?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-18T18:09:57Z",
-      "text": "<strong>At least six killed in Kyiv as gunman opens fire and takes hostages</strong> -- The attacker, who took hostages inside a supermarket, was killed after a shoot-out with police, officials say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cm25r1vkx4lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-19T09:55:22Z",
-      "text": "<strong>Zelensky condemns US extension of Russian sanctions waiver</strong> -- The US argues that the waiver is meant to ease the energy supply crunch sparked by the US-Israel war with Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c248m3z49j1o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-04-18T21:09:16Z",
@@ -841,16 +851,6 @@
       "time": "2026-04-18T12:59:53Z",
       "text": "<strong>Iran\u2019s supreme leader warns of \u2018new bitter defeats\u2019 for US and Israel</strong> -- Iran\u2019s Supreme Leader Mojtaba Khamenei warned the navy was ready to inflict \u2018new bitter defeats\u2019 on the US and Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/irans-supreme-leader-warns-of-new-bitter-defeats-for-us-and-israel?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-18T12:46:18Z",
-      "text": "<strong>Iran\u2019s deputy FM says no date for more US talks until \u2018framework\u2019 agreed</strong> -- Iran\u2019s Deputy Foreign Minister said talks with the US cannot happen until the two sides agree on a shared \u2018framework&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/18/irans-deputy-fm-says-no-date-for-more-us-talks-until-framework-agreed?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-18T12:03:33Z",
-      "text": "<strong>Iran closes Strait of Hormuz again over US blockade of its ports</strong> -- Two Indian ships crossing the Strait of Hormuz have come under fire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/18/iran-closes-strait-of-hormuz-again-over-us-blockade-of-its-ports?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Trump says US negotiators to head to Pakistan for Iran ceasefire talks",
+      "description": "Trump announces talks in Islamabad despite accusing Iran of violating truce, as he warns Tehran of severe repercussions.",
+      "link": "https://www.aljazeera.com/news/2026/4/19/trump-says-us-negotiators-will-head-to-pakistan-for-iran-ceasefire-talks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-19T12:38:11Z",
+      "tier": 2
+    },
+    {
       "title": "Iran war: 10 frequently used words and their meanings",
       "description": "The US-Israel war on Iran nears two months.  We break down some of the frequently used terminology in this war.",
       "link": "https://www.aljazeera.com/news/2026/4/19/iran-war-10-frequently-used-words-and-their-meanings?traffic_source=rss",
@@ -1245,8 +1253,8 @@
       "tier": 2
     },
     {
-      "title": "Iran war: What is happening on day 51 of the US-Iran conflict?",
-      "description": "Tehran will keep the strategic Strait of Hormuz closed until Washington ends the blockade of Iranian ports.",
+      "title": "Iran war: What is happening on day 51 of the US-Israeli conflict?",
+      "description": "Tehran says it will keep the strategic Strait of Hormuz closed until Washington ends its blockade of Iranian ports.",
       "link": "https://www.aljazeera.com/news/2026/4/19/iran-war-what-is-happening-on-day-51-of-the-us-iran-conflict?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-19T09:26:26Z",
@@ -1277,27 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Hormuz Strait \u2018closed\u2019 as Tehran says no date for US talks",
-      "description": "IRGC says the Strait of Hormuz will remain closed until the US stops blockading Iranian ports.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/4/19/iran-war-live-tehran-says-no-date-set-for-us-talks-hormuz-strait-closed?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-19T00:00:00Z",
-      "tier": 2
-    },
-    {
       "title": "Chernobyl's last wedding: The couple who married as a nuclear disaster unfolded",
       "description": "Serhiy and Iryna married 40 years ago, unaware a nuclear reactor had exploded less than 3 miles away.",
       "link": "https://www.bbc.com/news/articles/c0q92lx8q75o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-18T23:05:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran reasserts control of Hormuz Strait as Trump warns against \u2018blackmail\u2019",
-      "description": "Top negotiator Mohammad Bagher Ghalibaf says US naval blockade of Iran&#039;s ports is &#039;a clumsy and ignorant decision&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/4/18/iran-reasserts-control-of-hormuz-strait-as-trump-warns-against-blackmail?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-18T21:41:06Z",
       "tier": 2
     },
     {
@@ -1325,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in searched sources shows the war remained in a tense ceasefire phase on April 19, 2026, with Iran insisting the Strait of Hormuz will stay closed unless the U.S. ends its port blockade, while Al Jazeera\u2019s April 15 casualty tracker listed 2,076 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 confirmed U.S. military combat deaths, and 3 deaths in Bahrain; meanwhile, official CENTCOM/DoD fact sheets published April 1 and April 6 reported more than 12,300 to 13,000 targets struck and 13,000+ combat flights during Operation Epic Fury.",
+  "summary": "Confirmed reporting on April 19, 2026 indicates the war remains in a fragile ceasefire phase rather than a settled peace: Al Jazeera, citing AP/AFP and statements from Iranian and U.S. officials, reported that Iran will keep the Strait of Hormuz closed unless Washington lifts its port blockade, while the current two-week ceasefire is due to expire on April 22, 2026. On cumulative war metrics, the newest clearly confirmed figures found in primary or major-wire reporting were AP\u2019s March 25 tally of more than 1,500 killed in Iran, 16 killed in Israel, and 13 U.S. military personnel killed, alongside CENTCOM\u2019s April 6 fact sheet stating that Operation Epic Fury had struck 13,000-plus targets. I could not verify newer confirmed official totals for Iranian deaths, Iranian wounded, Gulf-state deaths, or most munitions-use categories from the required source set, so those fields remain null.",
   "briefings": [
     {
       "date": "2026-04-19",
       "day": 50,
-      "summary": "Confirmed reporting available in searched sources shows the war remained in a tense ceasefire phase on April 19, 2026, with Iran insisting the Strait of Hormuz will stay closed unless the U.S. ends its port blockade, while Al Jazeera\u2019s April 15 casualty tracker listed 2,076 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 confirmed U.S. military combat deaths, and 3 deaths in Bahrain; meanwhile, official CENTCOM/DoD fact sheets published April 1 and April 6 reported more than 12,300 to 13,000 targets struck and 13,000+ combat flights during Operation Epic Fury."
+      "summary": "Confirmed reporting on April 19, 2026 indicates the war remains in a fragile ceasefire phase rather than a settled peace: Al Jazeera, citing AP/AFP and statements from Iranian and U.S. officials, reported that Iran will keep the Strait of Hormuz closed unless Washington lifts its port blockade, while the current two-week ceasefire is due to expire on April 22, 2026. On cumulative war metrics, the newest clearly confirmed figures found in primary or major-wire reporting were AP\u2019s March 25 tally of more than 1,500 killed in Iran, 16 killed in Israel, and 13 U.S. military personnel killed, alongside CENTCOM\u2019s April 6 fact sheet stating that Operation Epic Fury had struck 13,000-plus targets. I could not verify newer confirmed official totals for Iranian deaths, Iranian wounded, Gulf-state deaths, or most munitions-use categories from the required source set, so those fields remain null."
     },
     {
       "date": "2026-04-18",
