@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-21T19:37:49Z",
+  "lastUpdated": "2026-04-21T21:05:41Z",
   "dayCount": 52,
   "banner": {
     "strikes": "~13,000",
-    "killed": "2,143+",
-    "cost": "$33.8B+"
+    "killed": "3,414+",
+    "cost": "$34.2B+"
   },
   "humanCost": {
-    "iranDeaths": "2,076",
+    "iranDeaths": "3,375",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "19",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.8 billion+",
-    "dailyBurnRate": "~$650M/day",
+    "totalCost": "$34.2 billion+",
+    "dailyBurnRate": "~$658M/day",
     "daysOfOps": 52,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-21",
-          "source": "LLM-verified (U.S. Central Command figure reported by Military Times on April 8, 2026: more than 50,000 personnel in the region)"
+          "source": "LLM-verified (U.S. Central Command official quoted by Air Force Times on April 8, 2026: 'more than 50,000 personnel in the region')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-21",
-          "source": "LLM-verified (U.S. Department of War fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; no newer official cumulative sorties figure found, so stored as minimum confirmed floor 9000 (https://media.defense.gov/2026/Mar/23/2003902061/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-THE-FIRST-24-DAYS.PDF))"
+          "source": "LLM-verified (CENTCOM fact sheet dated April 1, 2026 lists 13,000+ combat flights; this is combat flights, not explicitly fighter-only sorties)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on April 18-19, 2026 that Iran again imposed shipping restrictions and fired on ships in the Strait of Hormuz, underscoring continued maritime escalation risk despite the truce.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported on April 21, 2026 that Trump extended the Iran ceasefire but said the U.S. blockade remains in place while awaiting an Iranian proposal.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 21, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Gulf-state infrastructure remains under intermittent drone and missile threat despite the ceasefire framework, with attacks and interceptions still reported in Bahrain, Kuwait, UAE, Qatar and Saudi Arabia in early April.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran signaled retaliation after the U.S. seizure of an Iranian-flagged cargo ship, AP reported April 19, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "U.S. blockade/seizure campaign has expanded beyond Iranian ports to target Iran-linked shipping worldwide, according to AP on April 16, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-04-21T20:43:11Z",
+      "text": "<strong>Nearly 8,000 people died or disappeared on migration routes in 2025: IOM</strong> -- More than four in every 10 deaths and disappearances occurred on sea routes to Europe, UN agency says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/21/nearly-8000-people-died-or-disappeared-on-migration-routes-in-2025-iom?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-21T20:42:21Z",
+      "text": "<strong>US issues more Iran sanctions on eve of possible talks in Pakistan</strong> -- The Trump administration targets 14 individuals and entities over alleged links to Iran&amp;#039;s arms industry. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/21/us-issues-more-iran-sanctions-on-eve-of-possible-talks-in-pakistan?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-21T20:33:13Z",
+      "text": "<strong>EU eyes options as Iran conflict threatens jet fuel shortages</strong> -- The blockade of the Strait of Hormuz is causing concern in Europe, which relies heavily on imported jet fuel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/21/eu-eyes-options-as-iran-conflict-threatens-jet-fuel-shortages?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-21T20:22:17Z",
+      "text": "<strong>Trump announces Iran ceasefire extension but says blockade remains</strong> -- US president says attacks will be held off until Iranian leaders &amp;#039;come up with a unified proposal&amp;#039; to end war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/21/trump-announces-extending-iran-ceasefire-but-says-blockade-remains?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-21T19:49:14Z",
+      "text": "<strong>Two CIA agents reportedly killed in car crash in Mexican state of Chihuahua</strong> -- The presence of US officials in a law enforcement convoy raises questions about respect for Mexico&amp;#039;s sovereignty. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/21/two-cia-agents-reportedly-killed-in-car-crash-in-mexican-state-of-chihuahua?traffic_source=rss"
+    },
+    {
       "time": "2026-04-21T18:47:11Z",
       "text": "<strong>Nicaragua\u2019s president says Trump \u2018mentally deranged\u2019 over war on Iran</strong> -- Nicaraguan President has criticised his US counterpart Donald Trump, over the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/21/nicaraguas-president-says-trump-mentally-deranged-over-war-on-iran?traffic_source=rss"
@@ -766,6 +791,16 @@
       "time": "2026-04-21T14:56:46Z",
       "text": "<strong>Trump says he opposes extending Iran ceasefire amid talks uncertainty</strong> -- US president says Iran has &amp;#039;no choice&amp;#039; but to show up to the negotiations in Pakistan and accept a &amp;#039;great&amp;#039; deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/21/trump-says-he-opposes-extending-iran-ceasefire-amid-talks-uncertainty?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-21T16:05:51Z",
+      "text": "<strong>Iran sees mass redundancies from war with US and Israel</strong> -- The impact is being felt by manufacturers, retailers and the digital sector, amid warnings it could get worse if the war resumes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/ce84e31376zo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-21T16:13:27Z",
+      "text": "<strong>Israeli soldiers punished over vandalism of Jesus statue in Lebanon</strong> -- Two soldiers will be removed from combat duty and receive 30 days of military detention, Israel&#x27;s military says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cew790ppn8jo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-04-21T14:02:08Z",
@@ -793,16 +828,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/21/what-was-the-iran-nuclear-deal-trump-dumped-in-search-of-better-terms?traffic_source=rss"
     },
     {
-      "time": "2026-04-21T16:05:51Z",
-      "text": "<strong>Iran sees mass redundancies from war with US and Israel</strong> -- The impact is being felt by manufacturers, retailers and the digital sector, amid warnings it could get worse if the war resumes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/ce84e31376zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-21T16:13:27Z",
-      "text": "<strong>Israeli soldiers punished over vandalism of Jesus statue in Lebanon</strong> -- Two soldiers will be removed from combat duty and receive 30 days of military detention, Israel&#x27;s military says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cew790ppn8jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-04-21T11:11:04Z",
       "text": "<strong>Strait of Hormuz: How a threat became a playbook</strong> -- How the Strait of Hormuz became a system of control, shaping power and the global economy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/featured-documentaries/2026/4/21/strait-of-hormuz-how-a-threat-became-a-playbook?traffic_source=rss"
@@ -826,31 +851,6 @@
       "time": "2026-04-21T07:55:38Z",
       "text": "<strong>US, Iran exchange threats as fragile ceasefire set to expire</strong> -- The US and Iran trade threats as tensions escalate between the countries before their two-week ceasefire ends. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/21/us-and-iran-exchange-threats-as-fragile-ceasefire-set-to-expire?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-21T07:18:57Z",
-      "text": "<strong>Trump\u2019s Board of Peace holds Gaza reconstruction talks with UAE\u2019s DP World</strong> -- Israel has killed more than 700 people in Gaza since last year&amp;#039;s US-brokered &amp;#039;ceasefire&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/21/trumps-board-of-peace-holds-gaza-reconstruction-talks-with-uaes-dp-world?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-21T07:10:22Z",
-      "text": "<strong>Iran war: What is happening on day 53 of the US-Israel conflict?</strong> -- Diplomatic efforts to end the US-Israel war on Iran are stalled as Tehran rejects talks under pressure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/21/iran-war-what-is-happening-on-day-53-of-the-us-israel-conflict?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-21T06:05:36Z",
-      "text": "<strong>Iran war forces job losses, reverse migration in India\u2019s ceramic hub</strong> -- The ceramics industry in Gujarat&amp;#039;s Morbi has been badly hit by fuel crisis, with most units closed and workers laid off. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/21/iran-war-forces-job-losses-reverse-migration-in-indias-ceramic-hub?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-21T05:20:18Z",
-      "text": "<strong>US veterans arrested in Capitol during protest against the war on Iran</strong> -- US veterans were arrested while staging a protest in the US Capitol building in opposition to the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/21/us-veterans-arrested-in-capitol-during-protest-against-the-war-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-20T21:52:12Z",
-      "text": "<strong>Trump says US will not lift Hormuz blockade until deal made with Iran</strong> -- The US president&#x27;s comments come amid uncertainty over whether Iran will attend peace talks in Pakistan this week. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cdxd88r2wjzo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "Nearly 8,000 people died or disappeared on migration routes in 2025: IOM",
+      "description": "More than four in every 10 deaths and disappearances occurred on sea routes to Europe, UN agency says.",
+      "link": "https://www.aljazeera.com/news/2026/4/21/nearly-8000-people-died-or-disappeared-on-migration-routes-in-2025-iom?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-21T20:43:11Z",
+      "tier": 2
+    },
+    {
+      "title": "US issues more Iran sanctions on eve of possible talks in Pakistan",
+      "description": "The Trump administration targets 14 individuals and entities over alleged links to Iran&#039;s arms industry.",
+      "link": "https://www.aljazeera.com/news/2026/4/21/us-issues-more-iran-sanctions-on-eve-of-possible-talks-in-pakistan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-21T20:42:21Z",
+      "tier": 2
+    },
+    {
+      "title": "EU eyes options as Iran conflict threatens jet fuel shortages",
+      "description": "The blockade of the Strait of Hormuz is causing concern in Europe, which relies heavily on imported jet fuel.",
+      "link": "https://www.aljazeera.com/news/2026/4/21/eu-eyes-options-as-iran-conflict-threatens-jet-fuel-shortages?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-21T20:33:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump announces Iran ceasefire extension but says blockade remains",
+      "description": "US president says attacks will be held off until Iranian leaders &#039;come up with a unified proposal&#039; to end war.",
+      "link": "https://www.aljazeera.com/news/2026/4/21/trump-announces-extending-iran-ceasefire-but-says-blockade-remains?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-21T20:22:17Z",
+      "tier": 2
+    },
+    {
+      "title": "Two CIA agents reportedly killed in car crash in Mexican state of Chihuahua",
+      "description": "The presence of US officials in a law enforcement convoy raises questions about respect for Mexico&#039;s sovereignty.",
+      "link": "https://www.aljazeera.com/news/2026/4/21/two-cia-agents-reportedly-killed-in-car-crash-in-mexican-state-of-chihuahua?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-21T19:49:14Z",
+      "tier": 2
+    },
+    {
       "title": "Nicaragua\u2019s president says Trump \u2018mentally deranged\u2019 over war on Iran",
       "description": "Nicaraguan President has criticised his US counterpart Donald Trump, over the war on Iran.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/21/nicaraguas-president-says-trump-mentally-deranged-over-war-on-iran?traffic_source=rss",
@@ -1269,46 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "Iran\u2019s World Cup participation depends on team\u2019s safety in the US: Minister",
-      "description": "Iran&#039;s team is preparing for the FIFA World Cup but may not travel to the tournament, Sport Minister Donyamali says.",
-      "link": "https://www.aljazeera.com/sports/2026/4/21/irans-world-cup-participation-depends-on-teams-safety-in-the-us-minister?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-21T14:02:08Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli soldiers and settlers kill 11 Palestinians across Gaza, West Bank",
-      "description": "In Hebron, a 16-year-old is struck by a vehicle escorting an Israeli minister and killed.",
-      "link": "https://www.aljazeera.com/news/2026/4/21/israeli-soldiers-and-settlers-kill-11-palestinians-across-gaza-west?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-21T14:01:42Z",
-      "tier": 2
-    },
-    {
-      "title": "Pakistan races against time to get Iran back to US talks as truce end nears",
-      "description": "But a series of escalations by the US is complicating those efforts, say analysts.",
-      "link": "https://www.aljazeera.com/news/2026/4/21/pakistan-races-against-time-to-get-iran-back-to-us-talks-as-truce-end-nears?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-21T13:04:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran-US war: Four scenarios for what\u2019s next as talks stumble",
-      "description": "Between an expiring ceasefire and a possible deal lies a range of ways in which the war could proceed, analysts say.",
-      "link": "https://www.aljazeera.com/news/2026/4/21/iran-us-war-four-scenarios-for-whats-next-as-talks-stumble?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-21T12:22:58Z",
-      "tier": 2
-    },
-    {
-      "title": "What was the Iran nuclear deal Trump dumped in search of \u2018better\u2019 terms?",
-      "description": "Trump withdrew the US from the JCPOA in 2018, branding it &#039;the worst deal ever&#039; and seeking stronger terms.",
-      "link": "https://www.aljazeera.com/news/2026/4/21/what-was-the-iran-nuclear-deal-trump-dumped-in-search-of-better-terms?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-21T11:44:10Z",
-      "tier": 2
-    },
-    {
       "title": "Are insider traders making millions from the Iran war?",
       "description": "The BBC has found significant spikes in activity shortly before the US president made some announcements.",
       "link": "https://www.bbc.com/news/videos/c9qd9335838o?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains patchy and inconsistent. The best-supported official U.S. operational figure found is the April 6 Department of War fact sheet listing 13,000+ targets struck, while an earlier March 23 fact sheet listed 9,000+ combat flights. For casualties, AP reporting most clearly confirms 13 U.S. military personnel killed, 19 deaths in Israel, and 20 deaths in Gulf Arab states, but I could not verify a current named-source cumulative Iranian deaths, Iranian civilian deaths, or wounded total that cleanly applies to this war only. Today\u2019s confirmed developments center on a fragile ceasefire nearing expiry, stalled Pakistan-mediated talks, and heightened maritime tension after the U.S. seizure of an Iranian-linked vessel near Hormuz.",
+  "summary": "Confirmed reporting on April 21, 2026 indicates the war remains in a fragile ceasefire phase: Al Jazeera reports Trump extended the ceasefire while keeping the U.S. naval blockade in place, and AP reporting from April 18-19 described renewed Iranian interference with shipping in the Strait of Hormuz. The clearest current casualty figures located were 3,375 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s April 21 tracker, 26 killed in Israel via the same tracker, and 13 U.S. service members killed per CENTCOM/Pentagon casualty data reported April 8. CENTCOM\u2019s latest publicly located fact sheet still shows 13,000+ targets struck, but I could not find current confirmed official totals for civilian-only deaths, Gulf-state deaths, carrier groups, destroyers, drone units, or weapon-by-weapon expenditure totals, so those remain null.",
   "briefings": [
     {
       "date": "2026-04-21",
       "day": 52,
-      "summary": "Confirmed reporting available today remains patchy and inconsistent. The best-supported official U.S. operational figure found is the April 6 Department of War fact sheet listing 13,000+ targets struck, while an earlier March 23 fact sheet listed 9,000+ combat flights. For casualties, AP reporting most clearly confirms 13 U.S. military personnel killed, 19 deaths in Israel, and 20 deaths in Gulf Arab states, but I could not verify a current named-source cumulative Iranian deaths, Iranian civilian deaths, or wounded total that cleanly applies to this war only. Today\u2019s confirmed developments center on a fragile ceasefire nearing expiry, stalled Pakistan-mediated talks, and heightened maritime tension after the U.S. seizure of an Iranian-linked vessel near Hormuz."
+      "summary": "Confirmed reporting on April 21, 2026 indicates the war remains in a fragile ceasefire phase: Al Jazeera reports Trump extended the ceasefire while keeping the U.S. naval blockade in place, and AP reporting from April 18-19 described renewed Iranian interference with shipping in the Strait of Hormuz. The clearest current casualty figures located were 3,375 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s April 21 tracker, 26 killed in Israel via the same tracker, and 13 U.S. service members killed per CENTCOM/Pentagon casualty data reported April 8. CENTCOM\u2019s latest publicly located fact sheet still shows 13,000+ targets struck, but I could not find current confirmed official totals for civilian-only deaths, Gulf-state deaths, carrier groups, destroyers, drone units, or weapon-by-weapon expenditure totals, so those remain null."
     },
     {
       "date": "2026-04-20",
