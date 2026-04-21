@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-04-21T17:17:11Z",
+  "lastUpdated": "2026-04-21T19:37:49Z",
   "dayCount": 52,
   "banner": {
     "strikes": "~13,000",
     "killed": "2,143+",
-    "cost": "$34.2B+"
+    "cost": "$33.8B+"
   },
   "humanCost": {
     "iranDeaths": "2,076",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "19",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.2 billion+",
-    "dailyBurnRate": "~$658M/day",
+    "totalCost": "$33.8 billion+",
+    "dailyBurnRate": "~$650M/day",
     "daysOfOps": 52,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-21",
-          "source": "LLM-verified (CENTCOM / DOD fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (U.S. Department of War fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; no newer official cumulative sorties figure found, so stored as minimum confirmed floor 9000 (https://media.defense.gov/2026/Mar/23/2003902061/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-THE-FIRST-24-DAYS.PDF))"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Oil-shipping disruption risk remains elevated around Hormuz amid continued blockade/interdiction activity and fragile negotiations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Maritime escalation risk increased after U.S. seizure of an Iranian-linked vessel near the Strait of Hormuz over the weekend, cited by Al Jazeera on April 21, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire expiry risk increased as AP and Al Jazeera reported talks under strain and renewed U.S.-Iran threats on April 21, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 21, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "U.S. blockade/seizure campaign has expanded beyond Iranian ports to target Iran-linked shipping worldwide, according to AP on April 16, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran said it would not negotiate under threats ahead of possible Islamabad talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported renewed tension around the Strait of Hormuz after the U.S. seized an Iranian-flagged cargo ship that attempted to pass the blockade.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the two-week ceasefire is due to expire at 0000 GMT on April 22, 2026, with no confirmed extension in place.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-21T18:47:11Z",
+      "text": "<strong>Nicaragua\u2019s president says Trump \u2018mentally deranged\u2019 over war on Iran</strong> -- Nicaraguan President has criticised his US counterpart Donald Trump, over the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/21/nicaraguas-president-says-trump-mentally-deranged-over-war-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-21T18:45:32Z",
+      "text": "<strong>US forces detain Iran-linked tanker Tifani with ceasefire talks on edge</strong> -- Ship, detained under US policy to stop all Tehran-linked vessels, is under sanctions for smuggling Iranian crude. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/21/us-forces-detain-iran-linked-tanker-tifani-with-ceasefire-talks-on-edge?traffic_source=rss"
+    },
+    {
       "time": "2026-04-21T14:56:46Z",
       "text": "<strong>Trump says he opposes extending Iran ceasefire amid talks uncertainty</strong> -- US president says Iran has &amp;#039;no choice&amp;#039; but to show up to the negotiations in Pakistan and accept a &amp;#039;great&amp;#039; deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/21/trump-says-he-opposes-extending-iran-ceasefire-amid-talks-uncertainty?traffic_source=rss"
@@ -783,16 +793,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/21/what-was-the-iran-nuclear-deal-trump-dumped-in-search-of-better-terms?traffic_source=rss"
     },
     {
-      "time": "2026-04-21T11:11:04Z",
-      "text": "<strong>Strait of Hormuz: How a threat became a playbook</strong> -- How the Strait of Hormuz became a system of control, shaping power and the global economy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/featured-documentaries/2026/4/21/strait-of-hormuz-how-a-threat-became-a-playbook?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-21T10:40:38Z",
-      "text": "<strong>Is China a winner of the Iran war or facing economic risks?</strong> -- China&amp;#039;s economy beats expectations despite the Iran war, but weak demand and structural risks remain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/4/21/is-china-a-winner-of-the-iran-war-or-facing-economic-risks?traffic_source=rss"
-    },
-    {
       "time": "2026-04-21T16:05:51Z",
       "text": "<strong>Iran sees mass redundancies from war with US and Israel</strong> -- The impact is being felt by manufacturers, retailers and the digital sector, amid warnings it could get worse if the war resumes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/ce84e31376zo?at_medium=RSS&at_campaign=rss"
@@ -801,6 +801,16 @@
       "time": "2026-04-21T16:13:27Z",
       "text": "<strong>Israeli soldiers punished over vandalism of Jesus statue in Lebanon</strong> -- Two soldiers will be removed from combat duty and receive 30 days of military detention, Israel&#x27;s military says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cew790ppn8jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-21T11:11:04Z",
+      "text": "<strong>Strait of Hormuz: How a threat became a playbook</strong> -- How the Strait of Hormuz became a system of control, shaping power and the global economy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/featured-documentaries/2026/4/21/strait-of-hormuz-how-a-threat-became-a-playbook?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-21T10:40:38Z",
+      "text": "<strong>Is China a winner of the Iran war or facing economic risks?</strong> -- China&amp;#039;s economy beats expectations despite the Iran war, but weak demand and structural risks remain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/4/21/is-china-a-winner-of-the-iran-war-or-facing-economic-risks?traffic_source=rss"
     },
     {
       "time": "2026-04-21T09:02:55Z",
@@ -841,16 +851,6 @@
       "time": "2026-04-20T21:52:12Z",
       "text": "<strong>Trump says US will not lift Hormuz blockade until deal made with Iran</strong> -- The US president&#x27;s comments come amid uncertainty over whether Iran will attend peace talks in Pakistan this week. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cdxd88r2wjzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-21T09:09:07Z",
-      "text": "<strong>Canadian killed in shooting at Mexico&#x27;s ancient Teotihuac\u00e1n pyramids</strong> -- Several people were also injured in the incident on Monday at the popular tourist site, say Mexican officials, weeks before the country hosts the Fifa World Cup. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/crm1rg3ydkvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-21T01:37:53Z",
-      "text": "<strong>US is \u2018pretty far behind where they started\u2019 the war on Iran</strong> -- Daniel Benaim says the US missed the early off-ramps to declare victory over Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/quotable/2026/4/21/us-is-pretty-far-behind-where-they-started-the-war-on-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Nicaragua\u2019s president says Trump \u2018mentally deranged\u2019 over war on Iran",
+      "description": "Nicaraguan President has criticised his US counterpart Donald Trump, over the war on Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/21/nicaraguas-president-says-trump-mentally-deranged-over-war-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-21T18:47:11Z",
+      "tier": 2
+    },
+    {
+      "title": "US forces detain Iran-linked tanker Tifani with ceasefire talks on edge",
+      "description": "Ship, detained under US policy to stop all Tehran-linked vessels, is under sanctions for smuggling Iranian crude.",
+      "link": "https://www.aljazeera.com/news/2026/4/21/us-forces-detain-iran-linked-tanker-tifani-with-ceasefire-talks-on-edge?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-21T18:45:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Role of US officials killed in crash in Mexico under scrutiny",
+      "description": "Two Americans who reportedly worked for the CIA died in a car crash after a Mexican-led operation to destroy a drug lab.",
+      "link": "https://www.bbc.com/news/articles/c86expy881qo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-21T17:35:56Z",
+      "tier": 2
+    },
+    {
       "title": "Israeli soldiers punished over vandalism of Jesus statue in Lebanon",
       "description": "Two soldiers will be removed from combat duty and receive 30 days of military detention, Israel's military says.",
       "link": "https://www.bbc.com/news/articles/cew790ppn8jo?at_medium=RSS&at_campaign=rss",
@@ -1242,14 +1266,6 @@
       "link": "https://www.bbc.com/news/articles/crm1rg3ydkvo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-21T14:55:19Z",
-      "tier": 2
-    },
-    {
-      "title": "Role of US officials killed in crash in Mexico under scrutiny",
-      "description": "The two died in a car crash after a Mexican-led operation to destroy a clandestine drug lab.",
-      "link": "https://www.bbc.com/news/articles/c86expy881qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-21T14:38:39Z",
       "tier": 2
     },
     {
@@ -1293,22 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "Strait of Hormuz: How a threat became a playbook",
-      "description": "How the Strait of Hormuz became a system of control, shaping power and the global economy.",
-      "link": "https://www.aljazeera.com/video/featured-documentaries/2026/4/21/strait-of-hormuz-how-a-threat-became-a-playbook?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-21T11:11:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Is China a winner of the Iran war or facing economic risks?",
-      "description": "China&#039;s economy beats expectations despite the Iran war, but weak demand and structural risks remain.",
-      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/4/21/is-china-a-winner-of-the-iran-war-or-facing-economic-risks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-21T10:40:38Z",
-      "tier": 2
-    },
-    {
       "title": "Are insider traders making millions from the Iran war?",
       "description": "The BBC has found significant spikes in activity shortly before the US president made some announcements.",
       "link": "https://www.bbc.com/news/videos/c9qd9335838o?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of April 21, 2026, the latest confirmed publicly cited cumulative figures I found remain 2,076 dead and 26,500 wounded in Iran, 13 U.S. service members killed, 26 Israelis killed, 28 people killed in Gulf states, and 13,000+ targets struck by CENTCOM; I did not find newer confirmed official counts for civilian-only deaths in Iran or for most weapons-expended fields, so those are left null rather than estimated. Reporting today indicates the ceasefire is under renewed strain, with Trump publicly opposing an extension absent progress in talks and regional mediators still trying to keep negotiations alive.",
+  "summary": "Confirmed reporting available today remains patchy and inconsistent. The best-supported official U.S. operational figure found is the April 6 Department of War fact sheet listing 13,000+ targets struck, while an earlier March 23 fact sheet listed 9,000+ combat flights. For casualties, AP reporting most clearly confirms 13 U.S. military personnel killed, 19 deaths in Israel, and 20 deaths in Gulf Arab states, but I could not verify a current named-source cumulative Iranian deaths, Iranian civilian deaths, or wounded total that cleanly applies to this war only. Today\u2019s confirmed developments center on a fragile ceasefire nearing expiry, stalled Pakistan-mediated talks, and heightened maritime tension after the U.S. seizure of an Iranian-linked vessel near Hormuz.",
   "briefings": [
     {
       "date": "2026-04-21",
       "day": 52,
-      "summary": "As of April 21, 2026, the latest confirmed publicly cited cumulative figures I found remain 2,076 dead and 26,500 wounded in Iran, 13 U.S. service members killed, 26 Israelis killed, 28 people killed in Gulf states, and 13,000+ targets struck by CENTCOM; I did not find newer confirmed official counts for civilian-only deaths in Iran or for most weapons-expended fields, so those are left null rather than estimated. Reporting today indicates the ceasefire is under renewed strain, with Trump publicly opposing an extension absent progress in talks and regional mediators still trying to keep negotiations alive."
+      "summary": "Confirmed reporting available today remains patchy and inconsistent. The best-supported official U.S. operational figure found is the April 6 Department of War fact sheet listing 13,000+ targets struck, while an earlier March 23 fact sheet listed 9,000+ combat flights. For casualties, AP reporting most clearly confirms 13 U.S. military personnel killed, 19 deaths in Israel, and 20 deaths in Gulf Arab states, but I could not verify a current named-source cumulative Iranian deaths, Iranian civilian deaths, or wounded total that cleanly applies to this war only. Today\u2019s confirmed developments center on a fragile ceasefire nearing expiry, stalled Pakistan-mediated talks, and heightened maritime tension after the U.S. seizure of an Iranian-linked vessel near Hormuz."
     },
     {
       "date": "2026-04-20",
