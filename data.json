@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-22T20:14:21Z",
+  "lastUpdated": "2026-04-22T21:11:26Z",
   "dayCount": 53,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,442+",
-    "cost": "$33.4B+"
+    "killed": "3,414+",
+    "cost": "$34.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.4 billion+",
-    "dailyBurnRate": "~$631M/day",
+    "totalCost": "$34.7 billion+",
+    "dailyBurnRate": "~$654M/day",
     "daysOfOps": 53,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-22",
-          "source": "LLM-verified (Air Force Times reporting CENTCOM data, April 8, 2026: the U.S. military has more than 50,000 personnel in the region)"
+          "source": "LLM-verified (U.S. Central Command figure reported by Military/Air Force Times on April 8, 2026: more than 50,000 personnel in the region)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-22",
-          "source": "LLM-verified (IDF article published April 1, 2026: more than 800 Israeli Air Force strike sorties since launch of Operation Roaring Lion; no later combined U.S.-Israeli cumulative fighter/attack sortie total found)"
+          "source": "LLM-verified (Defense Department April 1, 2026 fact sheet lists 13,000+ combat flights; this is combat flights overall, not fighter-only sorties, so use with caution)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The ceasefire was extended again on April 22, but AP and BBC reporting indicates the Hormuz standoff remains volatile and diplomacy is still stalled.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on April 22 that Iran fired on three ships in the Strait of Hormuz and seized two, intensifying shipping threats amid the continuing U.S. blockade.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 22, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Trump said on April 21, 2026 he opposes extending the Iran ceasefire if talks fail, according to Al Jazeera headline cited by user",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported April 21 that tensions spiked after the US seized the Iranian-flagged vessel Touska near the Strait of Hormuz, complicating ceasefire diplomacy.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Pakistan is preparing for a possible new round of US-Iran talks in Islamabad led by Vice President JD Vance and Iranian parliament speaker Mohammad Bagher Qalibaf, though neither side publicly confirmed timing.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-22T20:30:10Z",
+      "text": "<strong>Israeli forces fire tear gas at funeral of Palestinians killed by settlers</strong> -- Israeli forces raided the funeral of two Palestinians killed by settlers at a school in the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/israeli-forces-fire-tear-gas-at-funeral-of-palestinians-killed-by-settlers?traffic_source=rss"
+    },
+    {
       "time": "2026-04-22T19:25:38Z",
       "text": "<strong>Iran blames Trump\u2019s blockade for diplomatic impasse as fragile truce holds</strong> -- Iranian Parliament Speaker Mohammad Bagher Ghalibaf says US and Israel will not achieve their goals &amp;#039;through bullying&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/22/iran-blames-trumps-blockade-for-diplomatic-impasse-as-fragile-truce-holds?traffic_source=rss"
@@ -778,16 +783,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/22/trump-calls-irans-leadership-fractured-is-it-and-whos-in-charge?traffic_source=rss"
     },
     {
-      "time": "2026-04-22T14:50:58Z",
-      "text": "<strong>The war on Iran: Breaking down the words you\u2019re hearing</strong> -- The terminology of the US-Israel war on Iran is drawn from a range of linguistic origins. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/the-war-on-iran-breaking-down-the-words-youre-hearing?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-22T13:52:41Z",
-      "text": "<strong>What is uranium enrichment and how quickly could Iran build a nuclear bomb?</strong> -- Al Jazeera spoke with MIT professor Ted Postol about what Iran could do with its 440kg of 60 percent enriched uranium. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/22/what-is-uranium-enrichment-and-how-quickly-could-iran-build-a-nuclear-bomb?traffic_source=rss"
-    },
-    {
       "time": "2026-04-22T16:19:36Z",
       "text": "<strong>US and Iran in blockade standoff as Pakistan pushes for talks</strong> -- The mood in the Strait of Hormuz remains combustible despite Trump&#x27;s ceasefire extension. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c0q9xq7knq2o?at_medium=RSS&at_campaign=rss"
@@ -801,6 +796,21 @@
       "time": "2026-04-22T00:32:10Z",
       "text": "<strong>Trump buys time for Iran deal after frantic day of diplomacy</strong> -- The US president&#x27;s decision marked the second time in as many weeks he has backed off a threat to escalate the war, buying more time. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cvg4yr90jr2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-22T05:55:18Z",
+      "text": "<strong>Thirteen killed in second India fireworks blast in three days</strong> -- Earlier this week, an explosion at a firecracker factory in neighbouring state Tamil Nadu left at least 25 dead. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cwydzddp4j9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-22T14:50:58Z",
+      "text": "<strong>The war on Iran: Breaking down the words you\u2019re hearing</strong> -- The terminology of the US-Israel war on Iran is drawn from a range of linguistic origins. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/the-war-on-iran-breaking-down-the-words-youre-hearing?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-22T13:52:41Z",
+      "text": "<strong>What is uranium enrichment and how quickly could Iran build a nuclear bomb?</strong> -- Al Jazeera spoke with MIT professor Ted Postol about what Iran could do with its 440kg of 60 percent enriched uranium. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/22/what-is-uranium-enrichment-and-how-quickly-could-iran-build-a-nuclear-bomb?traffic_source=rss"
     },
     {
       "time": "2026-04-22T12:41:45Z",
@@ -828,11 +838,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/22/iranian-gunboat-fires-on-container-ship-off-oman-coast?traffic_source=rss"
     },
     {
-      "time": "2026-04-22T05:55:18Z",
-      "text": "<strong>Thirteen killed in second India fireworks blast in three days</strong> -- Earlier this week, an explosion at a firecracker factory in neighbouring state Tamil Nadu left at least 25 dead. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwydzddp4j9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-04-22T09:16:22Z",
       "text": "<strong>Russia strikes Ukraine\u2019s Odesa port, kills railway worker in Zaporizhia</strong> -- Ukraine&amp;#039;s deputy prime minister says the attacks on the country&amp;#039;s civilian infrastructure are &amp;#039;another proof of terrorism&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/22/russian-drone-attacks-in-ukraine-strike-odesa-port-and-kill-railway-worker?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-04-22T08:24:25Z",
       "text": "<strong>How China is gaining from Iran war by showing it is different from US</strong> -- Beijing has leveraged its strong economic relationship with the US, Israel, Iran and the Gulf to keep its stakes safe. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/22/how-china-is-gaining-from-iran-war-by-showing-it-is-different-from-us?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-22T07:33:42Z",
-      "text": "<strong>Iran\u2019s UN ambassador responds to US ceasefire extension</strong> -- Iran\u2019s UN Ambassador has responded to US President Donald Trump\u2019s announcement of an extension to the ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/irans-un-ambassador-responds-to-us-ceasefire-extension?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Israeli forces fire tear gas at funeral of Palestinians killed by settlers",
+      "description": "Israeli forces raided the funeral of two Palestinians killed by settlers at a school in the occupied West Bank.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/israeli-forces-fire-tear-gas-at-funeral-of-palestinians-killed-by-settlers?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-22T20:30:10Z",
+      "tier": 2
+    },
+    {
       "title": "Iran blames Trump\u2019s blockade for diplomatic impasse as fragile truce holds",
       "description": "Iranian Parliament Speaker Mohammad Bagher Ghalibaf says US and Israel will not achieve their goals &#039;through bullying&#039;.",
       "link": "https://www.aljazeera.com/news/2026/4/22/iran-blames-trumps-blockade-for-diplomatic-impasse-as-fragile-truce-holds?traffic_source=rss",
@@ -1266,22 +1274,6 @@
       "link": "https://www.bbc.com/news/articles/cre1r4n5j5wo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-04-22T15:00:40Z",
-      "tier": 2
-    },
-    {
-      "title": "The war on Iran: Breaking down the words you\u2019re hearing",
-      "description": "The terminology of the US-Israel war on Iran is drawn from a range of linguistic origins.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/the-war-on-iran-breaking-down-the-words-youre-hearing?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-22T14:50:58Z",
-      "tier": 2
-    },
-    {
-      "title": "What is uranium enrichment and how quickly could Iran build a nuclear bomb?",
-      "description": "Al Jazeera spoke with MIT professor Ted Postol about what Iran could do with its 440kg of 60 percent enriched uranium.",
-      "link": "https://www.aljazeera.com/news/2026/4/22/what-is-uranium-enrichment-and-how-quickly-could-iran-build-a-nuclear-bomb?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-22T13:52:41Z",
       "tier": 2
     },
     {
@@ -1341,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of April 21-22, 2026, the clearest confirmed cumulative figures located are 3,375 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera, 13 confirmed U.S. military deaths from CENTCOM/Pentagon reporting, 26 deaths in Israel, 28 deaths in Gulf states, and more than 13,000 strikes or targets struck according to CENTCOM reporting through early April. A fragile ceasefire is still in place, but reporting from Al Jazeera, AP and BBC indicates tensions remain high because Iran accuses Washington of breaching the truce through its naval blockade and ship seizure operations in and around the Strait of Hormuz.",
+  "summary": "Confirmed reporting as of April 22, 2026 shows the ceasefire has been extended again, but the conflict remains highly unstable: AP reported that Iran fired on three ships in the Strait of Hormuz and seized two while the United States maintained its blockade of Iranian ports. For cumulative war totals, the latest clearly sourced figures found in current searches are 3,375 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s April 21 tracker; 13 U.S. service members killed according to CENTCOM/Pentagon data reported April 8; and 26 Israelis killed according to Al Jazeera\u2019s April 21 tracker, consistent with AP ceasefire coverage. Official U.S. operational data located in current searches puts the campaign above 13,000 strikes/combat flights and confirms more than 50,000 U.S. personnel remain in the region, but current named-source searches did not yield confirmed up-to-date counts for carrier groups, destroyers, drone units, or specific munition-use totals such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or total interceptors fired.",
   "briefings": [
     {
       "date": "2026-04-22",
       "day": 53,
-      "summary": "As of April 21-22, 2026, the clearest confirmed cumulative figures located are 3,375 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera, 13 confirmed U.S. military deaths from CENTCOM/Pentagon reporting, 26 deaths in Israel, 28 deaths in Gulf states, and more than 13,000 strikes or targets struck according to CENTCOM reporting through early April. A fragile ceasefire is still in place, but reporting from Al Jazeera, AP and BBC indicates tensions remain high because Iran accuses Washington of breaching the truce through its naval blockade and ship seizure operations in and around the Strait of Hormuz."
+      "summary": "Confirmed reporting as of April 22, 2026 shows the ceasefire has been extended again, but the conflict remains highly unstable: AP reported that Iran fired on three ships in the Strait of Hormuz and seized two while the United States maintained its blockade of Iranian ports. For cumulative war totals, the latest clearly sourced figures found in current searches are 3,375 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s April 21 tracker; 13 U.S. service members killed according to CENTCOM/Pentagon data reported April 8; and 26 Israelis killed according to Al Jazeera\u2019s April 21 tracker, consistent with AP ceasefire coverage. Official U.S. operational data located in current searches puts the campaign above 13,000 strikes/combat flights and confirms more than 50,000 U.S. personnel remain in the region, but current named-source searches did not yield confirmed up-to-date counts for carrier groups, destroyers, drone units, or specific munition-use totals such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or total interceptors fired."
     },
     {
       "date": "2026-04-21",
