@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-22T18:15:13Z",
+  "lastUpdated": "2026-04-22T20:14:21Z",
   "dayCount": 53,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,442+",
-    "cost": "$34.4B+"
+    "cost": "$33.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.4 billion+",
-    "dailyBurnRate": "~$649M/day",
+    "totalCost": "$33.4 billion+",
+    "dailyBurnRate": "~$631M/day",
     "daysOfOps": 53,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 40000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-22",
-          "source": "LLM-verified (Al Jazeera live blog April 22, 2026 quoting former Gen. Mark Kimmitt: U.S. typically keeps about 40,000 troops on the ground throughout the region)"
+          "source": "LLM-verified (Air Force Times reporting CENTCOM data, April 8, 2026: the U.S. military has more than 50,000 personnel in the region)"
         },
         {
           "id": "intel_cyber",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-04-22",
-          "source": "LLM-verified (Reuters report cited by Military Times on March 27, 2026: over 850 Tomahawk cruise missiles fired)"
+          "source": "LLM-verified (CSIS analysis published March 27, 2026, citing Washington Post reporting that Navy ships and submarines fired more than 850 Tomahawk missiles in the first four weeks of Operation Epic Fury; Axios on April 1 also reported more than 850 expended)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-22",
-          "source": "LLM-verified (U.S. Department of War Operation Epic Fury Fact Sheet dated April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (IDF article published April 1, 2026: more than 800 Israeli Air Force strike sorties since launch of Operation Roaring Lion; no later combined U.S.-Israeli cumulative fighter/attack sortie total found)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "40,000 \u00d7 $500/day \u00d7 53 days",
-        "cost": "$1,060,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 53 days",
+        "cost": "$1,325,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "A fragile truce is holding but remains at risk amid the U.S. blockade standoff and continued Israeli military activity in Lebanon, according to Al Jazeera and AP/BBC headline reporting",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran says U.S. naval blockade of the Strait of Hormuz and seizure of an Iranian container ship violate the ceasefire, according to Al Jazeera reporting on April 21, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 22, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported Pakistan is preparing for a possible new round of US-Iran talks in Islamabad led by Vice President JD Vance and Iranian parliament speaker Mohammad Bagher Qalibaf, though neither side publicly confirmed timing.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported April 21 that the April 8 ceasefire is due to expire Wednesday, April 22, 2026, and both the US and Iran signaled readiness for renewed fighting if talks fail.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP previously reported Gulf officials complained of continued Iranian drone and missile bombardment and rapidly depleting interceptor stocks in Gulf states.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-22T19:25:38Z",
+      "text": "<strong>Iran blames Trump\u2019s blockade for diplomatic impasse as fragile truce holds</strong> -- Iranian Parliament Speaker Mohammad Bagher Ghalibaf says US and Israel will not achieve their goals &amp;#039;through bullying&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/22/iran-blames-trumps-blockade-for-diplomatic-impasse-as-fragile-truce-holds?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-22T18:10:52Z",
+      "text": "<strong>At least four killed in Israeli attacks on Lebanon, journalists wounded</strong> -- Journalists wounded in Israeli attacks in at-Tiri, Lebanon&amp;#039;s National News Agency (NNA) reports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/22/at-least-four-killed-in-israeli-strikes-on-lebanon-journalists-wounded?traffic_source=rss"
+    },
+    {
       "time": "2026-04-22T16:39:02Z",
       "text": "<strong>Iran says \u2018fully prepared\u2019 for football team\u2019s World Cup participation</strong> -- Tehran says all necessary arrangements have been made for participation in the tournament cohosted by the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/22/iran-says-fully-prepared-for-football-teams-world-cup-participation?traffic_source=rss"
@@ -778,16 +788,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/22/what-is-uranium-enrichment-and-how-quickly-could-iran-build-a-nuclear-bomb?traffic_source=rss"
     },
     {
-      "time": "2026-04-22T12:41:45Z",
-      "text": "<strong>Deadly Israeli settler attack on school kills two in Ramallah</strong> -- Two people have been killed after Israeli settlers opened fire on a school in the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/deadly-israeli-settler-attack-on-school-kills-two-in-ramallah?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-22T12:33:36Z",
-      "text": "<strong>Iran calls US ship seizure \u2018piracy\u2019: Is it?</strong> -- Since the early days of the war on Iran, the US has been targeting Iranian ships in international waters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/22/iran-calls-us-ship-seizure-piracy-is-it?traffic_source=rss"
-    },
-    {
       "time": "2026-04-22T16:19:36Z",
       "text": "<strong>US and Iran in blockade standoff as Pakistan pushes for talks</strong> -- The mood in the Strait of Hormuz remains combustible despite Trump&#x27;s ceasefire extension. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c0q9xq7knq2o?at_medium=RSS&at_campaign=rss"
@@ -801,6 +801,16 @@
       "time": "2026-04-22T00:32:10Z",
       "text": "<strong>Trump buys time for Iran deal after frantic day of diplomacy</strong> -- The US president&#x27;s decision marked the second time in as many weeks he has backed off a threat to escalate the war, buying more time. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cvg4yr90jr2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-22T12:41:45Z",
+      "text": "<strong>Deadly Israeli settler attack on school kills two in Ramallah</strong> -- Two people have been killed after Israeli settlers opened fire on a school in the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/deadly-israeli-settler-attack-on-school-kills-two-in-ramallah?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-22T12:33:36Z",
+      "text": "<strong>Iran calls US ship seizure \u2018piracy\u2019: Is it?</strong> -- Since the early days of the war on Iran, the US has been targeting Iranian ships in international waters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/22/iran-calls-us-ship-seizure-piracy-is-it?traffic_source=rss"
     },
     {
       "time": "2026-04-22T11:33:41Z",
@@ -841,16 +851,6 @@
       "time": "2026-04-22T07:33:42Z",
       "text": "<strong>Iran\u2019s UN ambassador responds to US ceasefire extension</strong> -- Iran\u2019s UN Ambassador has responded to US President Donald Trump\u2019s announcement of an extension to the ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/irans-un-ambassador-responds-to-us-ceasefire-extension?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-22T07:18:26Z",
-      "text": "<strong>US halts shipment of Iraq\u2019s oil dollars to curb Iran-linked groups: WSJ</strong> -- A plane carrying nearly $500m in US banknotes was blocked by the US Treasury, according to The Wall Street Journal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/22/us-halts-iraq-dollar-shipments-in-pressure-campaign-over-iran-linked-groups?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-22T05:25:57Z",
-      "text": "<strong>Iran war: What\u2019s happening on day 54 as Trump extends ceasefire?</strong> -- Trump said the US would extend the ceasefire with Iran until it presents a proposal and talks conclude. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/22/iran-war-whats-happening-on-day-54-as-trump-extends-ceasefire?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran blames Trump\u2019s blockade for diplomatic impasse as fragile truce holds",
+      "description": "Iranian Parliament Speaker Mohammad Bagher Ghalibaf says US and Israel will not achieve their goals &#039;through bullying&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/4/22/iran-blames-trumps-blockade-for-diplomatic-impasse-as-fragile-truce-holds?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-22T19:25:38Z",
+      "tier": 2
+    },
+    {
+      "title": "At least four killed in Israeli attacks on Lebanon, journalists wounded",
+      "description": "Journalists wounded in Israeli attacks in at-Tiri, Lebanon&#039;s National News Agency (NNA) reports.",
+      "link": "https://www.aljazeera.com/news/2026/4/22/at-least-four-killed-in-israeli-strikes-on-lebanon-journalists-wounded?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-22T18:10:52Z",
+      "tier": 2
+    },
+    {
       "title": "Iran says \u2018fully prepared\u2019 for football team\u2019s World Cup participation",
       "description": "Tehran says all necessary arrangements have been made for participation in the tournament cohosted by the US.",
       "link": "https://www.aljazeera.com/news/2026/4/22/iran-says-fully-prepared-for-football-teams-world-cup-participation?traffic_source=rss",
@@ -1266,22 +1282,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/22/what-is-uranium-enrichment-and-how-quickly-could-iran-build-a-nuclear-bomb?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-22T13:52:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Deadly Israeli settler attack on school kills two in Ramallah",
-      "description": "Two people have been killed after Israeli settlers opened fire on a school in the occupied West Bank.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/22/deadly-israeli-settler-attack-on-school-kills-two-in-ramallah?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-22T12:41:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran calls US ship seizure \u2018piracy\u2019: Is it?",
-      "description": "Since the early days of the war on Iran, the US has been targeting Iranian ships in international waters.",
-      "link": "https://www.aljazeera.com/news/2026/4/22/iran-calls-us-ship-seizure-piracy-is-it?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-22T12:33:36Z",
       "tier": 2
     },
     {
@@ -1341,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of April 22, 2026, the latest confirmed cumulative casualty figures I could verify are 3,375 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 U.S. military personnel killed in combat-related incidents, and 28 killed across Gulf states; official U.S. fact sheets also show Operation Epic Fury had reached 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1. Current reporting from major outlets indicates the ceasefire remains fragile, Iran has not accepted the next round of talks, and U.S. blockade/seizure operations in and around the Strait of Hormuz continue to be the main immediate escalation risk.",
+  "summary": "As of April 21-22, 2026, the clearest confirmed cumulative figures located are 3,375 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera, 13 confirmed U.S. military deaths from CENTCOM/Pentagon reporting, 26 deaths in Israel, 28 deaths in Gulf states, and more than 13,000 strikes or targets struck according to CENTCOM reporting through early April. A fragile ceasefire is still in place, but reporting from Al Jazeera, AP and BBC indicates tensions remain high because Iran accuses Washington of breaching the truce through its naval blockade and ship seizure operations in and around the Strait of Hormuz.",
   "briefings": [
     {
       "date": "2026-04-22",
       "day": 53,
-      "summary": "As of April 22, 2026, the latest confirmed cumulative casualty figures I could verify are 3,375 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 U.S. military personnel killed in combat-related incidents, and 28 killed across Gulf states; official U.S. fact sheets also show Operation Epic Fury had reached 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1. Current reporting from major outlets indicates the ceasefire remains fragile, Iran has not accepted the next round of talks, and U.S. blockade/seizure operations in and around the Strait of Hormuz continue to be the main immediate escalation risk."
+      "summary": "As of April 21-22, 2026, the clearest confirmed cumulative figures located are 3,375 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera, 13 confirmed U.S. military deaths from CENTCOM/Pentagon reporting, 26 deaths in Israel, 28 deaths in Gulf states, and more than 13,000 strikes or targets struck according to CENTCOM reporting through early April. A fragile ceasefire is still in place, but reporting from Al Jazeera, AP and BBC indicates tensions remain high because Iran accuses Washington of breaching the truce through its naval blockade and ship seizure operations in and around the Strait of Hormuz."
     },
     {
       "date": "2026-04-21",
