@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-24T21:06:20Z",
+  "lastUpdated": "2026-04-24T22:02:53Z",
   "dayCount": 55,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,442+",
-    "cost": "$35.0B+"
+    "killed": "3,458+",
+    "cost": "$35.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "42",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.0 billion+",
-    "dailyBurnRate": "~$636M/day",
+    "totalCost": "$35.9 billion+",
+    "dailyBurnRate": "~$653M/day",
     "daysOfOps": 55,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-24",
-          "source": "LLM-verified (CENTCOM statement reported by Al Jazeera on Apr. 24, 2026 says three U.S. aircraft carriers are operating in the Middle East)"
+          "source": "LLM-verified (Al Jazeera headline context for April 24, 2026: U.S. has three aircraft carriers in the Middle East)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-24",
-          "source": "LLM-verified (CENTCOM statement reported by Al Jazeera on Apr. 24, 2026 says the three carrier groups include '15,000 soldiers'; broader regional U.S. presence was reported as 50,000+, but for currently deployed carrier/theater package this source gives 15,000.)"
+          "source": "LLM-verified (U.S. Central Command data reported by Military Times on April 8, 2026: U.S. military has more than 50,000 personnel in the region)"
         },
         {
           "id": "intel_cyber",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 55 days",
-        "cost": "$412,500,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 55 days",
+        "cost": "$1,375,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. naval posture remains elevated, with three carrier strike groups reportedly in the Middle East and a blockade posture around Iranian ports noted in current headline reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Fragile ceasefire remains in limbo as Iran has not committed to more talks with the U.S. delegation in Islamabad, according to Al Jazeera headline reporting on April 24, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 24, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Al Jazeera reported on April 24, 2026 that the Israel-Lebanon ceasefire was extended by three weeks after White House talks, indicating continued regional instability outside Iran proper.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on April 24, 2026 that the Strait of Hormuz standoff intensified after President Trump issued a 'shoot and kill' order tied to mine-laying vessels.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Israeli officials said on April 24 they were prepared to resume war operations pending a U.S. green light, according to Al Jazeera.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-04-24T20:54:28Z",
+      "text": "<strong>US sending envoys to Pakistan, raising hopes of talks with Iran\u2019s Araghchi</strong> -- Iranian Foreign Minister Abbas Araghchi arrives in Islamabad, but Tehran yet to commit to more talks with US delegation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/24/us-envoys-head-to-pakistan-raising-hopes-of-peace-talks-with-irans-araghchi?traffic_source=rss"
+    },
+    {
+      "time": "2026-04-24T20:46:38Z",
+      "text": "<strong>Israel continues attacks on Lebanon despite extension of ceasefire</strong> -- Israeli forces killed six Hezbollah fighters in an exchange of fire in the area of Bint Jbeil, southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/24/israel-continues-attacks-on-lebanon-despite-extension-of-ceasefire?traffic_source=rss"
+    },
+    {
       "time": "2026-04-24T19:05:10Z",
       "text": "<strong>Can Europe help the Middle East resolve the war on Iran?</strong> -- Al Jazeera\u2019s Rory Challands reports from the EU summit in Cyprus. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/24/can-europe-help-the-middle-east-resolve-the-war-on-iran?traffic_source=rss"
@@ -783,6 +793,16 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/24/pm-sanchez-rebuffs-us-idea-of-suspending-spain-from-nato?traffic_source=rss"
     },
     {
+      "time": "2026-04-24T16:04:29Z",
+      "text": "<strong>Nato says &#x27;no provision&#x27; to expel members after report US could seek to suspend Spain</strong> -- An internal Pentagon email reportedly outlines options to punish allies over a perceived lack of support for Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cz78x703lrvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-24T21:04:23Z",
+      "text": "<strong>No 10 says Falklands sovereignty rests with UK after report of US &#x27;review&#x27;</strong> -- An internal Pentagon document reportedly raised the prospect of a change in position in retaliation for the UK not joining the Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cde51y0zgjyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-04-24T15:00:21Z",
       "text": "<strong>Iran-Iraq Tanker War redux? Why the Strait of Hormuz crisis is different</strong> -- The Tanker War between Iran and Iraq in the 1980s also disrupted global shipping. But the situation today is different. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/24/iran-iraq-tanker-war-redux-why-the-strait-of-hormuz-crisis-is-different?traffic_source=rss"
@@ -796,11 +816,6 @@
       "time": "2026-04-24T14:33:14Z",
       "text": "<strong>US Navy authorised to target Iranian fast boats in Strait of Hormuz</strong> -- Hegseth says President Trump authorised the navy to target Iranian fast boats in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/24/us-navy-authorised-to-target-iranian-fast-boats-in-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-24T16:04:29Z",
-      "text": "<strong>Nato says &#x27;no provision&#x27; to expel members after report US could seek to suspend Spain</strong> -- An internal Pentagon email reportedly outlines options to punish allies over a perceived lack of support for Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cz78x703lrvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-04-24T17:37:28Z",
@@ -836,21 +851,6 @@
       "time": "2026-04-24T11:06:00Z",
       "text": "<strong>US considers suspending Spain from NATO, reported internal email suggests</strong> -- Pentagon email obtained by Reuters reveals US anger at Spain and the UK as Iran war tensions persist. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/24/us-weighs-retaliation-against-nato-allies-over-iran-war-divisions-reuters?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-24T14:44:13Z",
-      "text": "<strong>Nato says &#x27;no provision&#x27; to expel members after report US could seek to suspend Spain</strong> -- An internal Pentagon email reportedly outlines options to punish allies over a perceived lack of support for Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cz78x703lrvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-24T14:17:38Z",
-      "text": "<strong>No 10 says Falklands sovereignty rests with UK after report of US &#x27;review&#x27;</strong> -- An internal Pentagon document reportedly raised the prospect of a change in position in retaliation for the UK not joining the Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cde51y0zgjyo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-04-24T11:47:39Z",
-      "text": "<strong>Poisoning suspected in deaths of 18 wolves in Italian national park</strong> -- After the carcasses of 10 wolves were found last week, another eight have been found in recent days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c0mjederzwdo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1221,6 +1221,22 @@
       "tier": 2
     },
     {
+      "title": "US sending envoys to Pakistan, raising hopes of talks with Iran\u2019s Araghchi",
+      "description": "Iranian Foreign Minister Abbas Araghchi arrives in Islamabad, but Tehran yet to commit to more talks with US delegation.",
+      "link": "https://www.aljazeera.com/news/2026/4/24/us-envoys-head-to-pakistan-raising-hopes-of-peace-talks-with-irans-araghchi?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-24T20:54:28Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel continues attacks on Lebanon despite extension of ceasefire",
+      "description": "Israeli forces killed six Hezbollah fighters in an exchange of fire in the area of Bint Jbeil, southern Lebanon.",
+      "link": "https://www.aljazeera.com/news/2026/4/24/israel-continues-attacks-on-lebanon-despite-extension-of-ceasefire?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-24T20:46:38Z",
+      "tier": 2
+    },
+    {
       "title": "Relatives of 10 scientists who died or vanished grapple with impact of wild speculation",
       "description": "Conspiracies are running rampant online after the deaths or disappearances of at least 10 people tied to sensitive US research.",
       "link": "https://www.bbc.com/news/articles/cwyw9rpdl4po?at_medium=RSS&at_campaign=rss",
@@ -1301,30 +1317,6 @@
       "tier": 2
     },
     {
-      "title": "Iran-Iraq Tanker War redux? Why the Strait of Hormuz crisis is different",
-      "description": "The Tanker War between Iran and Iraq in the 1980s also disrupted global shipping. But the situation today is different.",
-      "link": "https://www.aljazeera.com/news/2026/4/24/iran-iraq-tanker-war-redux-why-the-strait-of-hormuz-crisis-is-different?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-24T15:00:21Z",
-      "tier": 2
-    },
-    {
-      "title": "Iranians bring music to sites devastated by US-Israeli attacks",
-      "description": "Iranian musicians perform on city streets and venture to sites devastated in US-Israeli attacks.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/24/iranians-bring-music-to-sites-devastated-by-us-israeli-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-24T14:47:12Z",
-      "tier": 2
-    },
-    {
-      "title": "US Navy authorised to target Iranian fast boats in Strait of Hormuz",
-      "description": "Hegseth says President Trump authorised the navy to target Iranian fast boats in the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/24/us-navy-authorised-to-target-iranian-fast-boats-in-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-24T14:33:14Z",
-      "tier": 2
-    },
-    {
       "title": "Israel's Benjamin Netanyahu treated for early-stage prostate cancer",
       "description": "The Israeli prime minister says he is \"in excellent physical condition\" after having a malignant tumour removed.",
       "link": "https://www.bbc.com/news/articles/ckgw72lrvn3o?at_medium=RSS&at_campaign=rss",
@@ -1357,12 +1349,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting currently available still supports 3,375 Iranian deaths and more than 26,500 wounded from Iran\u2019s Ministry of Health, 13 U.S. service-member deaths from Pentagon/CENTCOM casualty data, 26 Israeli deaths, 28 deaths in Gulf states, and 13,000-plus U.S. targets struck according to CENTCOM/Pentagon reporting. The main new operational update today is force posture rather than casualty revision: CENTCOM says a third U.S. carrier, USS George H.W. Bush, has arrived in the Middle East, bringing the total to three carrier strike groups with 12 accompanying ships, more than 200 aircraft and about 15,000 personnel amid a fragile ceasefire and continuing blockade pressure on Iran.",
+  "summary": "Confirmed reporting available as of April 24, 2026 still supports 13 U.S. military deaths, more than 50,000 U.S. personnel in the region, and at least 13,000 targets struck according to CENTCOM-linked reporting, while Al Jazeera\u2019s latest live tracker update lists 3,375 dead in Iran and 28 killed in Gulf states; Israeli media reporting puts Israeli war deaths at 42, and current headline reporting indicates the ceasefire remains fragile as talks with Iran are uncertain and the United States maintains a heavy regional naval presence including three carrier strike groups.",
   "briefings": [
     {
       "date": "2026-04-24",
       "day": 55,
-      "summary": "Confirmed reporting currently available still supports 3,375 Iranian deaths and more than 26,500 wounded from Iran\u2019s Ministry of Health, 13 U.S. service-member deaths from Pentagon/CENTCOM casualty data, 26 Israeli deaths, 28 deaths in Gulf states, and 13,000-plus U.S. targets struck according to CENTCOM/Pentagon reporting. The main new operational update today is force posture rather than casualty revision: CENTCOM says a third U.S. carrier, USS George H.W. Bush, has arrived in the Middle East, bringing the total to three carrier strike groups with 12 accompanying ships, more than 200 aircraft and about 15,000 personnel amid a fragile ceasefire and continuing blockade pressure on Iran."
+      "summary": "Confirmed reporting available as of April 24, 2026 still supports 13 U.S. military deaths, more than 50,000 U.S. personnel in the region, and at least 13,000 targets struck according to CENTCOM-linked reporting, while Al Jazeera\u2019s latest live tracker update lists 3,375 dead in Iran and 28 killed in Gulf states; Israeli media reporting puts Israeli war deaths at 42, and current headline reporting indicates the ceasefire remains fragile as talks with Iran are uncertain and the United States maintains a heavy regional naval presence including three carrier strike groups."
     },
     {
       "date": "2026-04-23",
