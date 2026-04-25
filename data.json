@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-25T15:56:23Z",
+  "lastUpdated": "2026-04-25T17:01:51Z",
   "dayCount": 56,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,535+",
-    "cost": "$35.5B+"
+    "strikes": "~12,300",
+    "killed": "3,429+",
+    "cost": "$35.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,375",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.5 billion+",
-    "dailyBurnRate": "~$634M/day",
+    "totalCost": "$35.9 billion+",
+    "dailyBurnRate": "~$641M/day",
     "daysOfOps": 56,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (Confirmed currently in theater by USNI Fleet Tracker April 13/20, 2026: Abraham Lincoln Carrier Strike Group in Arabian Sea; George H.W. Bush was still off southern Africa en route as of April 13 and not confirmed in theater; Tripoli is ARG, not a carrier strike group)"
+          "source": "LLM-verified (CENTCOM media page shows USS Abraham Lincoln operating in 5th Fleet and USS Gerald R. Ford operating in Eastern Mediterranean in support of Operation Epic Fury, March 2, 2026)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (USNI Fleet Tracker April 13, 2026 confirmed two destroyers in the Red Sea: USS Bainbridge and USS Thomas Hudner; broader theater-wide destroyer total not confirmed from searched primary sources)"
+          "source": "LLM-verified (CENTCOM media page shows USS Bainbridge (DDG-96), USS Spruance (DDG-111), and USS Delbert D. Black (DDG-119) supporting Operation Epic Fury)"
         },
         {
           "id": "personnel",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (CENTCOM/Department of Defense fact sheet dated April 1, 2026 lists 13,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 56 days",
-        "cost": "$392,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 56 days",
+        "cost": "$784,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "2 \u00d7 $240,000/day \u00d7 56 days",
-        "cost": "$26,880,000"
+        "detail": "3 \u00d7 $240,000/day \u00d7 56 days",
+        "cost": "$40,320,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Commercial flights resuming at Tehran airport suggests partial normalization, but conflict conditions have not fully stabilized",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire remains fragile; Tehran says blockade and threats are obstructing talks",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Strait of Hormuz maritime tensions remain elevated amid continuing U.S. naval blockade and IRGC vessel seizures/firing incidents reported April 23, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 25, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "US naval blockade activity around Iranian ports and Strait of Hormuz remains active in reporting",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. naval posture remains elevated, with three carrier strike groups reportedly in the Middle East and a blockade posture around Iranian ports noted in current headline reporting.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Fragile ceasefire remains in limbo as Iran has not committed to more talks with the U.S. delegation in Islamabad, according to Al Jazeera headline reporting on April 24, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Apr. 8, 2026: UAE reported its air defenses were engaging incoming Iranian missiles, cruise missiles, and drones after the ceasefire announcement; debris/fire incidents were also reported in the Gulf.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -798,6 +798,11 @@
       "link": "https://www.aljazeera.com/economy/2026/4/25/capture-of-ships-by-us-iran-violates-international-law-shipping-body-says?traffic_source=rss"
     },
     {
+      "time": "2026-04-24T16:04:29Z",
+      "text": "<strong>Nato says &#x27;no provision&#x27; to expel members after report US could seek to suspend Spain</strong> -- An internal Pentagon email reportedly outlines options to punish allies over a perceived lack of support for Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cz78x703lrvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-04-25T04:30:43Z",
       "text": "<strong>What\u2019s at stake for Iran and the US in Islamabad?</strong> -- Iran\u2019s foreign minister is in Islamabad, with US envoys also on the way. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/25/whats-at-stake-for-iran-and-the-us-in-islamabad?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-04-24T17:14:03Z",
       "text": "<strong>How Israel targeted and killed Lebanese journalist Amal Khalil</strong> -- Amal Khalil was killed while reporting on an Israeli air strike in southern Lebanon during a 10-day ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/the-take-2/2026/4/24/how-israel-targeted-and-killed-lebanese-journalist-amal-khalil?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-24T16:04:14Z",
-      "text": "<strong>US has three aircraft carriers in the Middle East for first time since 2003</strong> -- As tensions ramp up amid fragile truce, US military says it &amp;#039;redirected&amp;#039; 34 vessels as part of blockade on Iran&amp;#039;s ports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/24/us-has-three-aircraft-carriers-in-the-middle-east-for-first-time-since-2003?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1285,22 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "What\u2019s at stake for Iran and the US in Islamabad?",
-      "description": "Iran\u2019s foreign minister is in Islamabad, with US envoys also on the way.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/25/whats-at-stake-for-iran-and-the-us-in-islamabad?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-25T04:30:43Z",
-      "tier": 2
-    },
-    {
-      "title": "No 10 says Falklands sovereignty rests with UK after report of US 'review'",
-      "description": "An internal Pentagon document reportedly raised the prospect of a change in position in retaliation for the UK not joining the Iran war.",
-      "link": "https://www.bbc.com/news/articles/cde51y0zgjyo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-24T22:55:05Z",
-      "tier": 2
-    },
-    {
       "title": "Who is making decisions in Iran?",
       "description": "Iran's new supreme leader is supposed to have the final say, but in practice the picture is far murkier.",
       "link": "https://www.bbc.com/news/articles/cm29m732vgno?at_medium=RSS&at_campaign=rss",
@@ -1339,22 +1323,14 @@
       "source": "BBC World",
       "time": "2026-04-24T11:47:39Z",
       "tier": 2
-    },
-    {
-      "title": "'A dangerous standoff' as Strait of Hormuz blockade continues",
-      "description": "The US and Iran's rival blockades of the Strait of Hormuz have become a \"test of wills\", says Lyse Doucet.",
-      "link": "https://www.bbc.com/news/videos/ckgwlgyyyv0o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-24T09:26:14Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on April 25, 2026 indicates the U.S.-Iran ceasefire is still holding, with commercial flights resuming from Tehran\u2019s Imam Khomeini International Airport, while talks remain stalled amid continued U.S. blockade pressure and Hormuz tensions. For cumulative totals, the clearest confirmed figures found were 3,468 Iranian deaths from an Iranian official toll reported April 20, 13 U.S. service members killed per Pentagon/CENTCOM data, 26 Israeli deaths and 28 Gulf-state deaths from Al Jazeera\u2019s April 21 live tracker, and more than 13,000 U.S. strikes/combat flights from CENTCOM reporting. Many weapons-expended subfields such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptor totals could not be verified from named official or wire-source reporting and are left null.",
+  "summary": "Confirmed reporting available today indicates the April 8 ceasefire is still holding only tenuously while maritime tensions in and around the Strait of Hormuz remain high. Al Jazeera\u2019s April 21 casualty tracker, citing Iran\u2019s Ministry of Health and Israeli official reporting, lists 3,375 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the latest official U.S. fact sheet located was the April 1 CENTCOM/DoD Operation Epic Fury update, which reported 12,300+ targets struck and 13,000+ combat flights. CENTCOM media also confirms at least two U.S. carrier groups and three named destroyers were operating in support of the campaign, but current official cumulative totals for U.S. KIA, deployed personnel, missile expenditures, B-2 sorties, and interceptor use could not be verified from named primary sources in the available search results.",
   "briefings": [
     {
       "date": "2026-04-25",
       "day": 56,
-      "summary": "Confirmed reporting on April 25, 2026 indicates the U.S.-Iran ceasefire is still holding, with commercial flights resuming from Tehran\u2019s Imam Khomeini International Airport, while talks remain stalled amid continued U.S. blockade pressure and Hormuz tensions. For cumulative totals, the clearest confirmed figures found were 3,468 Iranian deaths from an Iranian official toll reported April 20, 13 U.S. service members killed per Pentagon/CENTCOM data, 26 Israeli deaths and 28 Gulf-state deaths from Al Jazeera\u2019s April 21 live tracker, and more than 13,000 U.S. strikes/combat flights from CENTCOM reporting. Many weapons-expended subfields such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptor totals could not be verified from named official or wire-source reporting and are left null."
+      "summary": "Confirmed reporting available today indicates the April 8 ceasefire is still holding only tenuously while maritime tensions in and around the Strait of Hormuz remain high. Al Jazeera\u2019s April 21 casualty tracker, citing Iran\u2019s Ministry of Health and Israeli official reporting, lists 3,375 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the latest official U.S. fact sheet located was the April 1 CENTCOM/DoD Operation Epic Fury update, which reported 12,300+ targets struck and 13,000+ combat flights. CENTCOM media also confirms at least two U.S. carrier groups and three named destroyers were operating in support of the campaign, but current official cumulative totals for U.S. KIA, deployed personnel, missile expenditures, B-2 sorties, and interceptor use could not be verified from named primary sources in the available search results."
     },
     {
       "date": "2026-04-24",
