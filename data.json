@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-25T15:01:37Z",
+  "lastUpdated": "2026-04-25T15:56:23Z",
   "dayCount": 56,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,416+",
-    "cost": "$36.4B+"
+    "killed": "3,535+",
+    "cost": "$35.5B+"
   },
   "humanCost": {
-    "iranDeaths": "3,375",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.4 billion+",
-    "dailyBurnRate": "~$650M/day",
+    "totalCost": "$35.5 billion+",
+    "dailyBurnRate": "~$634M/day",
     "daysOfOps": 56,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,14 +73,14 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-04-24",
-          "source": "LLM-verified (Al Jazeera, April 24, 2026, citing CENTCOM: three US aircraft carriers operating in the Middle East)"
+          "lastUpdated": "2026-04-25",
+          "source": "LLM-verified (Confirmed currently in theater by USNI Fleet Tracker April 13/20, 2026: Abraham Lincoln Carrier Strike Group in Arabian Sea; George H.W. Bush was still off southern Africa en route as of April 13 and not confirmed in theater; Tripoli is ARG, not a carrier strike group)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 11,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-04-21",
-          "source": "LLM-verified (AP, April 16, 2026: 'The Navy has 16 warships - 11 destroyers ... in the Middle East')"
+          "lastUpdated": "2026-04-25",
+          "source": "LLM-verified (USNI Fleet Tracker April 13, 2026 confirmed two destroyers in the Red Sea: USS Bainbridge and USS Thomas Hudner; broader theater-wide destroyer total not confirmed from searched primary sources)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (Air Force Times, citing U.S. military/CENTCOM reporting on April 8, 2026: the U.S. military has more than 50,000 personnel in the region. https://www.airforcetimes.com/news/your-military/2026/04/08/pentagon-data-13-us-troops-killed-346-wounded-in-operation-epic-fury/)"
+          "source": "LLM-verified (Air Force Times April 8, 2026, citing U.S. military/CENTCOM: 'more than 50,000 personnel in the region')"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (DoD/CENTCOM April 1, 2026 Operation Epic Fury fact sheet lists Combat Flights: 13,000+. https://media.defense.gov/2026/Apr/01/2003905658/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-APRIL-1-UPDATE.PDF)"
+          "source": "LLM-verified (CENTCOM/Department of Defense fact sheet dated April 1, 2026 lists 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 56 days",
-        "cost": "$1,176,000,000"
+        "detail": "$7,000,000/day \u00d7 56 days",
+        "cost": "$392,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "11 \u00d7 $240,000/day \u00d7 56 days",
-        "cost": "$147,840,000"
+        "detail": "2 \u00d7 $240,000/day \u00d7 56 days",
+        "cost": "$26,880,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "A third U.S. carrier group was moving toward the region, but searched sources did not confirm it had arrived in theater by April 25.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Negotiations remained stalled while the U.S. blockade and Hormuz tensions continued.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire remained in place on April 25, 2026, with commercial flights resuming from Tehran airport.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 25, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Apr. 8, 2026: UAE reported its air defenses were engaging incoming Iranian missiles, cruise missiles, and drones after the ceasefire announcement; debris/fire incidents were also reported in the Gulf.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Apr. 24, 2026: Al Jazeera reports the U.S. said it has 'redirected' 34 vessels as part of a blockade on Iran's ports.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Apr. 24, 2026: CENTCOM says the three carrier groups include 12 accompanying ships, more than 200 aircraft, and 15,000 personnel.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Apr. 24, 2026: CENTCOM says a third U.S. carrier, USS George H.W. Bush, has arrived in the Middle East, raising carrier presence to three amid a fragile ceasefire.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1349,12 +1349,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in search results indicates that by April 21, 2026, the war had caused 3,375 deaths in Iran, 26,500+ wounded there, 28 deaths in Gulf states, and 13 confirmed U.S. military deaths, while CENTCOM\u2019s April 6 fact sheet said Operation Epic Fury had struck more than 13,000 targets. A fragile ceasefire appears to be holding enough for commercial flights to resume at Tehran airport, but reporting also points to continued tension over the Strait of Hormuz blockade, maritime seizures, and ongoing Lebanon-related violence, underscoring that de-escalation remains incomplete.",
+  "summary": "Confirmed reporting on April 25, 2026 indicates the U.S.-Iran ceasefire is still holding, with commercial flights resuming from Tehran\u2019s Imam Khomeini International Airport, while talks remain stalled amid continued U.S. blockade pressure and Hormuz tensions. For cumulative totals, the clearest confirmed figures found were 3,468 Iranian deaths from an Iranian official toll reported April 20, 13 U.S. service members killed per Pentagon/CENTCOM data, 26 Israeli deaths and 28 Gulf-state deaths from Al Jazeera\u2019s April 21 live tracker, and more than 13,000 U.S. strikes/combat flights from CENTCOM reporting. Many weapons-expended subfields such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptor totals could not be verified from named official or wire-source reporting and are left null.",
   "briefings": [
     {
       "date": "2026-04-25",
       "day": 56,
-      "summary": "Confirmed reporting available in search results indicates that by April 21, 2026, the war had caused 3,375 deaths in Iran, 26,500+ wounded there, 28 deaths in Gulf states, and 13 confirmed U.S. military deaths, while CENTCOM\u2019s April 6 fact sheet said Operation Epic Fury had struck more than 13,000 targets. A fragile ceasefire appears to be holding enough for commercial flights to resume at Tehran airport, but reporting also points to continued tension over the Strait of Hormuz blockade, maritime seizures, and ongoing Lebanon-related violence, underscoring that de-escalation remains incomplete."
+      "summary": "Confirmed reporting on April 25, 2026 indicates the U.S.-Iran ceasefire is still holding, with commercial flights resuming from Tehran\u2019s Imam Khomeini International Airport, while talks remain stalled amid continued U.S. blockade pressure and Hormuz tensions. For cumulative totals, the clearest confirmed figures found were 3,468 Iranian deaths from an Iranian official toll reported April 20, 13 U.S. service members killed per Pentagon/CENTCOM data, 26 Israeli deaths and 28 Gulf-state deaths from Al Jazeera\u2019s April 21 live tracker, and more than 13,000 U.S. strikes/combat flights from CENTCOM reporting. Many weapons-expended subfields such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptor totals could not be verified from named official or wire-source reporting and are left null."
     },
     {
       "date": "2026-04-24",
