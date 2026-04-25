@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-04-25T20:57:21Z",
+  "lastUpdated": "2026-04-25T21:53:17Z",
   "dayCount": 56,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,414+",
-    "cost": "$35.9B+"
+    "killed": "1,749+",
+    "cost": "$37.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "35",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.9 billion+",
-    "dailyBurnRate": "~$641M/day",
+    "totalCost": "$37.2 billion+",
+    "dailyBurnRate": "~$664M/day",
     "daysOfOps": 56,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -184,8 +184,8 @@
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-04-24",
-          "source": "LLM-verified (Axios on Apr. 1, 2026 and Independent report on Mar. 27, 2026 both report more than/about 850 Tomahawk missiles fired)"
+          "lastUpdated": "2026-04-25",
+          "source": "LLM-verified (The National, April 7, 2026, citing CSIS figures compiled from U.S. Department of Defense data: 850 Tomahawk missiles fired.)"
         },
         {
           "id": "jdam",
@@ -205,7 +205,7 @@
           "id": "jassm",
           "category": "AGM-158 JASSM/JASSM-ER (Standoff Missiles)",
           "unitCost": 1500000,
-          "quantity": 200,
+          "quantity": 1000,
           "keywords": [
             "JASSM",
             "AGM-158",
@@ -213,8 +213,8 @@
             "cruise missile",
             "air-launched missile"
           ],
-          "lastUpdated": "2026-03-05",
-          "source": "Air Force, Lockheed Martin unit cost"
+          "lastUpdated": "2026-04-25",
+          "source": "LLM-verified (SOF News, April 24, 2026, citing CSIS April 21, 2026 munitions report: U.S. used 1,000 JASSMs.)"
         },
         {
           "id": "sdb",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet lists 13,000+ combat flights; this is the closest confirmed official cumulative sorties figure retrieved)"
+          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026: 'Combat Flights: 13,000+'.)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 1720,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-04-19",
-          "source": "LLM-verified (White House April 8, 2026 recap states over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted, totaling over 1,700 intercepts.)"
+          "lastUpdated": "2026-04-25",
+          "source": "LLM-verified (SOF News, April 24, 2026, citing CSIS April 21, 2026 munitions report: 290 THAAD interceptors plus up to 1,430 Patriot missiles used; no confirmed SM-3 figure found, so subtotal only.)"
         },
         {
           "id": "prestrike_buildup",
@@ -378,8 +378,8 @@
       },
       {
         "category": "AGM-158 JASSM/JASSM-ER (Standoff Missiles)",
-        "detail": "200 \u00d7 $1,500,000 each",
-        "cost": "$300,000,000"
+        "detail": "1,000 \u00d7 $1,500,000 each",
+        "cost": "$1,500,000,000"
       },
       {
         "category": "Small Diameter Bombs (SDB/SDB II)",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "1,720 \u00d7 $4,000,000 each",
+        "cost": "$6,880,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Regional instability persists, including continued maritime/security concerns around the Strait of Hormuz and renewed Israeli strikes in Lebanon after the April 8 truce announcement.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Flights resumed at Tehran's Imam Khomeini airport during the ceasefire, indicating reduced immediate strike activity but not a formal end to the war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire remains fragile after U.S.-Iran talks in Pakistan collapsed, with AP reporting uncertainty after the truce was due to expire on April 22, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 25, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Israel says it is prepared to resume attacks if it gets a US green light",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The Strait of Hormuz confrontation and blockade tensions remain unresolved",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian Foreign Minister Abbas Araghchi is in Islamabad, but no US-Iran meeting has been confirmed",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "US envoys Steve Witkoff and Jared Kushner are traveling to Pakistan as diplomacy with Iran remains uncertain",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,18 @@
   ],
   "developments": [
     {
+      "time": "2026-04-25T20:55:54Z",
+      "text": "<strong>How serious is the rift in NATO?</strong> -- Trump fury over Europeans&amp;#039; refusal to join Iran war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/4/25/how-serious-is-the-rift-in-nato?traffic_source=rss"
+    },
+    {
       "time": "2026-04-25T19:54:57Z",
-      "text": "<strong>Iran\u2019s authorities project hardened stance with more talks on horizon</strong> -- Abbas Araghchi met senior Pakistani officials in Islamabad and left for Oman to be later bound for Russia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Trump puts onus on Iran\u2019s authorities as they project hardened stance</strong> -- Some officials say Tehran must not even entertain any more talks on the nuclear issue amid the threats and blockade. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/25/irans-authorities-project-hardened-stance-with-more-talks-on-horizon?traffic_source=rss"
     },
     {
       "time": "2026-04-25T18:16:34Z",
-      "text": "<strong>Trump cancels US envoys\u2019 trip after Iran\u2019s Araghchi leaves Pakistan</strong> -- Trump later suggests that next talks will be over phone, saying &amp;#039;If they want to talk, all they have to do is call!!!&amp;#039; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Trump cancels US envoys\u2019 trip after Iran\u2019s Araghchi leaves Pakistan</strong> -- Iranian state media reports foreign minister expected to return to Islamabad on Sunday night. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/25/trump-cancels-envoys-trip-to-pakistan-after-irans-araghchi-leaves-country?traffic_source=rss"
     },
     {
@@ -846,11 +851,6 @@
       "time": "2026-04-25T00:00:00Z",
       "text": "<strong>Iran war live: Tehran\u2019s FM in Islamabad; US says envoys to travel for talks</strong> -- Israeli air strikes, tank shelling in Gaza killed at least 12 Palestinians, including six police officers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/4/25/iran-war-live-tehrans-fm-in-islamabad-us-says-envoys-to-travel-for-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-24T20:54:28Z",
-      "text": "<strong>US sending envoys to Pakistan, raising hopes of talks with Iran\u2019s Araghchi</strong> -- Iranian Foreign Minister Abbas Araghchi arrives in Islamabad, but Tehran yet to commit to more talks with US delegation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/24/us-envoys-head-to-pakistan-raising-hopes-of-peace-talks-with-irans-araghchi?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,24 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran\u2019s authorities project hardened stance with more talks on horizon",
-      "description": "Abbas Araghchi met senior Pakistani officials in Islamabad and left for Oman to be later bound for Russia.",
+      "title": "Trump cancels US envoys' trip to Pakistan for talks on Iran war",
+      "description": "Iran had earlier said there were no plans for a direct meeting with a US delegation led by Steve Witkoff and Jared Kushner.",
+      "link": "https://www.bbc.com/news/articles/c4g6nyvl29po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-25T21:34:12Z",
+      "tier": 2
+    },
+    {
+      "title": "How serious is the rift in NATO?",
+      "description": "Trump fury over Europeans&#039; refusal to join Iran war.",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/4/25/how-serious-is-the-rift-in-nato?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-25T20:55:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump puts onus on Iran\u2019s authorities as they project hardened stance",
+      "description": "Some officials say Tehran must not even entertain any more talks on the nuclear issue amid the threats and blockade.",
       "link": "https://www.aljazeera.com/news/2026/4/25/irans-authorities-project-hardened-stance-with-more-talks-on-horizon?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-25T19:54:57Z",
@@ -1222,7 +1238,7 @@
     },
     {
       "title": "Trump cancels US envoys\u2019 trip after Iran\u2019s Araghchi leaves Pakistan",
-      "description": "Trump later suggests that next talks will be over phone, saying &#039;If they want to talk, all they have to do is call!!!&#039;",
+      "description": "Iranian state media reports foreign minister expected to return to Islamabad on Sunday night.",
       "link": "https://www.aljazeera.com/news/2026/4/25/trump-cancels-envoys-trip-to-pakistan-after-irans-araghchi-leaves-country?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-04-25T18:16:34Z",
@@ -1333,12 +1349,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of Saturday, April 25, 2026, the most recent confirmed reporting retrieved shows Iran\u2019s officially reported toll at 3,375 dead and more than 26,500 wounded, Israel at 26 dead, and the U.S. at 13 military deaths; Gulf-state deaths remain listed at 28 in Al Jazeera\u2019s April 21 tracker, while CENTCOM figures carried by Military Times on April 8 said U.S. forces had supported more than 13,000 strikes and the region still held more than 50,000 U.S. personnel. Today\u2019s key development is diplomatic rather than battlefield: AP reports the latest U.S.-Iran talks in Pakistan appeared to fail before they began after Foreign Minister Abbas Araghchi left Islamabad and President Trump said he had told U.S. envoys not to go, even as the ceasefire largely held and Tehran airport resumed flights.",
+  "summary": "As of Saturday, April 25, 2026, confirmed reporting indicates the U.S.-Iran ceasefire is still holding in practice but remains fragile after talks in Pakistan failed and President Donald Trump cancelled a planned envoy trip; AP reported the truce had been due to expire on April 22, while Al Jazeera reported commercial flights had resumed at Tehran airport. Official U.S. military fact sheets remain the clearest source for operational scale, listing 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1. Reliable accessible sourcing for several casualty and deployment fields remains incomplete, so those entries are left null rather than estimated.",
   "briefings": [
     {
       "date": "2026-04-25",
       "day": 56,
-      "summary": "As of Saturday, April 25, 2026, the most recent confirmed reporting retrieved shows Iran\u2019s officially reported toll at 3,375 dead and more than 26,500 wounded, Israel at 26 dead, and the U.S. at 13 military deaths; Gulf-state deaths remain listed at 28 in Al Jazeera\u2019s April 21 tracker, while CENTCOM figures carried by Military Times on April 8 said U.S. forces had supported more than 13,000 strikes and the region still held more than 50,000 U.S. personnel. Today\u2019s key development is diplomatic rather than battlefield: AP reports the latest U.S.-Iran talks in Pakistan appeared to fail before they began after Foreign Minister Abbas Araghchi left Islamabad and President Trump said he had told U.S. envoys not to go, even as the ceasefire largely held and Tehran airport resumed flights."
+      "summary": "As of Saturday, April 25, 2026, confirmed reporting indicates the U.S.-Iran ceasefire is still holding in practice but remains fragile after talks in Pakistan failed and President Donald Trump cancelled a planned envoy trip; AP reported the truce had been due to expire on April 22, while Al Jazeera reported commercial flights had resumed at Tehran airport. Official U.S. military fact sheets remain the clearest source for operational scale, listing 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1. Reliable accessible sourcing for several casualty and deployment fields remains incomplete, so those entries are left null rather than estimated."
     },
     {
       "date": "2026-04-24",
