@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-26T03:56:08Z",
+  "lastUpdated": "2026-04-26T06:19:47Z",
   "dayCount": 57,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,442+",
-    "cost": "$37.2B+"
+    "killed": "3,451+",
+    "cost": "$37.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "35",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$37.2 billion+",
-    "dailyBurnRate": "~$653M/day",
+    "totalCost": "$37.6 billion+",
+    "dailyBurnRate": "~$660M/day",
     "daysOfOps": 57,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-26",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; no newer fighter/attack-aircraft sortie figure found, so 9000 is the latest confirmed minimum located)"
+          "source": "LLM-verified (DoD/CENTCOM fact sheet dated April 1, 2026 listed 13,000+ combat flights; used here as the latest confirmed official cumulative sorties figure located)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reporting on April 26, 2026 said protests took place in Tel Aviv amid fears the US-Israeli war on Iran could resume",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israel ordered renewed strikes on Hezbollah in southern Lebanon on April 26, 2026, after projectile launches into northern Israel, increasing risk of broader regional escalation despite the April 8 ceasefire",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US-Iran peace talks stalled after President Trump canceled the planned US envoys' trip to Pakistan on April 26, 2026, after the Iranian delegation left Islamabad, according to Reuters-reported updates carried by Jerusalem Post",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 25, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "US pressure on Iran is expanding beyond kinetic operations, including a reported $344 million cryptocurrency asset freeze and new sanctions enforcement tied to Iranian oil revenues",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The Strait of Hormuz remains under severe tension, with Iran accusing Washington of violating the April 8 ceasefire via continued naval blockade and ship seizures",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera also reported continuing maritime tension tied to the Strait of Hormuz blockade and vessel seizures, indicating the naval confrontation remains a live escalation risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on April 25, 2026 that Iranian Foreign Minister Abbas Araghchi was in Islamabad while U.S. envoys were set to travel there, signaling active diplomatic maneuvering around the war.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1333,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in current searches shows no clear casualty update beyond widely cited tracker figures of 3,375 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 13 U.S. combat-related deaths. CENTCOM\u2019s latest easily retrievable fact sheet still gives a cumulative operational floor of 13,000+ targets struck, while its March 23 fact sheet lists 9,000+ combat flights. The main April 26 development is diplomatic rather than military: AP, BBC, and Al Jazeera reporting indicate Pakistan-mediated efforts to restart U.S.-Iran talks have stalled, Trump canceled a planned envoy trip, and tensions remain elevated amid maritime attacks in the Strait of Hormuz and protests in Tel Aviv over fears the war could resume.",
+  "summary": "As of Sunday, April 26, 2026, the most recent confirmed publicly available figures located in official and major-media reporting still show 3,375 people killed in Iran according to Iranian authorities carried by Al Jazeera\u2019s April 21 tracker, 13 US military deaths confirmed by CENTCOM/Pentagon reporting, 35 Israeli deaths according to Jerusalem Post\u2019s April 26 live update, 28 deaths in Gulf states, and 13,000-plus US targets or strikes in CENTCOM\u2019s April 6 fact sheet. Diplomatically, the key development today is that the planned US envoy trip to Pakistan for talks was canceled after the Iranian delegation departed Islamabad, while on the military side Israel ordered fresh attacks on Hezbollah positions in southern Lebanon after projectile fire into northern Israel, underscoring that the April 8 ceasefire remains fragile and the risk of renewed wider war is still high.",
   "briefings": [
     {
       "date": "2026-04-26",
       "day": 57,
-      "summary": "Confirmed reporting available in current searches shows no clear casualty update beyond widely cited tracker figures of 3,375 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 13 U.S. combat-related deaths. CENTCOM\u2019s latest easily retrievable fact sheet still gives a cumulative operational floor of 13,000+ targets struck, while its March 23 fact sheet lists 9,000+ combat flights. The main April 26 development is diplomatic rather than military: AP, BBC, and Al Jazeera reporting indicate Pakistan-mediated efforts to restart U.S.-Iran talks have stalled, Trump canceled a planned envoy trip, and tensions remain elevated amid maritime attacks in the Strait of Hormuz and protests in Tel Aviv over fears the war could resume."
+      "summary": "As of Sunday, April 26, 2026, the most recent confirmed publicly available figures located in official and major-media reporting still show 3,375 people killed in Iran according to Iranian authorities carried by Al Jazeera\u2019s April 21 tracker, 13 US military deaths confirmed by CENTCOM/Pentagon reporting, 35 Israeli deaths according to Jerusalem Post\u2019s April 26 live update, 28 deaths in Gulf states, and 13,000-plus US targets or strikes in CENTCOM\u2019s April 6 fact sheet. Diplomatically, the key development today is that the planned US envoy trip to Pakistan for talks was canceled after the Iranian delegation departed Islamabad, while on the military side Israel ordered fresh attacks on Hezbollah positions in southern Lebanon after projectile fire into northern Israel, underscoring that the April 8 ceasefire remains fragile and the risk of renewed wider war is still high."
     },
     {
       "date": "2026-04-25",
