@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-28T04:06:51Z",
+  "lastUpdated": "2026-04-28T06:45:08Z",
   "dayCount": 59,
   "banner": {
-    "strikes": "~13,000",
+    "strikes": "~12,300",
     "killed": "3,439+",
-    "cost": "$38.1B+"
+    "cost": "$38.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$38.1 billion+",
-    "dailyBurnRate": "~$646M/day",
+    "totalCost": "$38.5 billion+",
+    "dailyBurnRate": "~$653M/day",
     "daysOfOps": 59,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-04-27",
-          "source": "LLM-verified (Official imagery/pages show USS Abraham Lincoln and USS Tripoli operating in support of Operation Epic Fury in CENTCOM area as of early April 2026)"
+          "lastUpdated": "2026-04-28",
+          "source": "LLM-verified (war.gov April 24, 2026 Pentagon briefing transcript states 'a second aircraft carrier will join the blockade in just a few days,' and Operation Epic Fury fact sheets list nuclear-powered aircraft carriers among deployed assets; user context says currently 2 and the official briefing indicates 2 in theater/assigned to the operation phase.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-04-28",
-          "source": "LLM-verified (Latest explicit official cumulative flight figure found in searched sources is CENTCOM/DoD fact sheet dated March 23, 2026 listing 'Combat Flights: 9,000+'; no newer official sortie figure located)"
+          "source": "LLM-verified (U.S. Department of War Operation Epic Fury Fact Sheet: April 1, 2026 lists 'Combat Flights: 13,000+'.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Apr 28, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. blockade is expanding, and the April 24 Pentagon briefing said a second aircraft carrier would join it within days.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 28, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Senate Democrats plan another War Powers vote as the conflict reaches roughly 60 days, according to Al Jazeera live reporting on April 28, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Apr 28, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran proposed reopening the Strait of Hormuz in exchange for deferral of nuclear talks, but oil prices still rose and the UN warned prolonged disruption risks a wider food emergency, according to Al Jazeera live reporting on April 28, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Apr 28, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "U.S.-Iran talks remain stalled, with President Trump canceling a planned envoy trip to Pakistan on April 26, 2026 according to Al Jazeera and BBC reporting provided in the user prompt",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC reported Netanyahu ordered the army to 'vigorously attack' Hezbollah, indicating continued regional escalation outside the US-Iran ceasefire framework.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Iran has shifted economic policy toward essentials and is drawing on sovereign resources amid war uncertainty.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Apr 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and BBC reported Islamabad talks remain stalled while the US-Iran ceasefire stays fragile.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-04-28T05:13:33Z",
+      "text": "<strong>Oil prices rise despite Iran\u2019s proposal to reopen Strait of Hormuz</strong> -- Brent crude rises\u00a0more than\u00a01 percent despite Iran&amp;#039;s offer to reopen waterway in exchange for deferral of nuclear talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/28/oil-prices-rise-despite-irans-proposal-to-reopen-strait-of-hormuz?traffic_source=rss"
+    },
+    {
       "time": "2026-04-28T02:01:30Z",
       "text": "<strong>14 killed in South Sudan plane crash near capital Juba</strong> -- A passenger plane crashed southwest of South Sudan\u2019s capital Juba, killing all 14 people on board. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/28/14-killed-in-south-sudan-plane-crash-near-capital-juba?traffic_source=rss"
@@ -788,11 +793,6 @@
       "link": "https://www.aljazeera.com/news/2026/4/27/hezbollah-and-israel-swap-threats-and-strikes-across-lebanons-border?traffic_source=rss"
     },
     {
-      "time": "2026-04-27T19:12:41Z",
-      "text": "<strong>Iraqi president names Shia bloc candidate Ali al-Zaidi as PM-designate</strong> -- Choice of al-Zaidi breaks a months-long deadlock after Trump opposed appointment of pro-Iran former PM al-Maliki. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/4/27/iraqi-president-names-shia-bloc-candidate-ali-al-zaidi-as-pm-designate?traffic_source=rss"
-    },
-    {
       "time": "2026-04-27T16:54:13Z",
       "text": "<strong>Pakistan accused of attacking Afghan university</strong> -- Air attacks on the province of Kunar have killed at least seven people and injured 75, sources tell the BBC. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cvg0gxrgklro?at_medium=RSS&at_campaign=rss"
@@ -801,6 +801,11 @@
       "time": "2026-04-27T11:42:59Z",
       "text": "<strong>Colombia offers record $1.4m-reward for rebel it blames for deadly bomb attack</strong> -- Officials say a rebel leader known as &quot;Marlon&quot; ordered the attack in which 20 people were killed. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cwyjykv4j9do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-04-27T19:12:41Z",
+      "text": "<strong>Iraqi president names Shia bloc candidate Ali al-Zaidi as PM-designate</strong> -- Choice of al-Zaidi breaks a months-long deadlock after Trump opposed appointment of pro-Iran former PM al-Maliki. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/4/27/iraqi-president-names-shia-bloc-candidate-ali-al-zaidi-as-pm-designate?traffic_source=rss"
     },
     {
       "time": "2026-04-27T17:27:54Z",
@@ -846,11 +851,6 @@
       "time": "2026-04-27T12:47:24Z",
       "text": "<strong>Have US-Iran talks failed? Why no deal yet doesn\u2019t mean diplomacy is dead</strong> -- US-Iran diplomacy in a deadlock, but analysts say both sides are unlikely to return to fighting. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/4/27/have-us-iran-talks-failed-why-no-deal-yet-doesnt-mean-diplomacy-is-dead?traffic_source=rss"
-    },
-    {
-      "time": "2026-04-27T12:44:30Z",
-      "text": "<strong>Lebanon cannot be bombed into sovereignty</strong> -- A sovereign Lebanon and a demilitarised Hezbollah cannot be achieved without a credible political transition. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/4/27/lebanon-cannot-be-bombed-into-sovereignty?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Oil prices rise despite Iran\u2019s proposal to reopen Strait of Hormuz",
+      "description": "Brent crude rises\u00a0more than\u00a01 percent despite Iran&#039;s offer to reopen waterway in exchange for deferral of nuclear talks.",
+      "link": "https://www.aljazeera.com/news/2026/4/28/oil-prices-rise-despite-irans-proposal-to-reopen-strait-of-hormuz?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-04-28T05:13:33Z",
+      "tier": 2
+    },
+    {
       "title": "14 killed in South Sudan plane crash near capital Juba",
       "description": "A passenger plane crashed southwest of South Sudan\u2019s capital Juba, killing all 14 people on board.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/4/28/14-killed-in-south-sudan-plane-crash-near-capital-juba?traffic_source=rss",
@@ -1269,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Iraqi president names Shia bloc candidate Ali al-Zaidi as PM-designate",
-      "description": "Choice of al-Zaidi breaks a months-long deadlock after Trump opposed appointment of pro-Iran former PM al-Maliki.",
-      "link": "https://www.aljazeera.com/news/2026/4/27/iraqi-president-names-shia-bloc-candidate-ali-al-zaidi-as-pm-designate?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-04-27T19:12:41Z",
-      "tier": 2
-    },
-    {
       "title": "Pakistan accused of attacking Afghan university",
       "description": "Air attacks on the province of Kunar have killed at least seven people and injured 75, sources tell the BBC.",
       "link": "https://www.bbc.com/news/articles/cvg0gxrgklro?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on April 28, 2026 indicates diplomacy is active but unresolved: Al Jazeera reported that the Trump administration is reviewing an Iranian peace proposal linked to reopening the Strait of Hormuz, while Iran says it is considering a new U.S. request to restart talks. On the military side, the latest widely visible official U.S. strike total in searched sources remains CENTCOM\u2019s April 6 fact sheet showing more than 13,000 targets struck, while Al Jazeera\u2019s April 27 casualty tracker, citing Iranian and regional official ministries, lists 3,375 killed and 26,500+ wounded in Iran, 13 U.S. military dead, 26 killed in Israel, and 25 deaths across the Gulf states listed here.",
+  "summary": "Confirmed reporting available today remains patchy for several cumulative totals. The clearest official operational figures still accessible are from U.S. Department of War fact sheets, which listed 12,300+ targets struck and 13,000+ combat flights as of April 1, while Al Jazeera\u2019s April 28 live coverage said the UN is pressing for the Strait of Hormuz to reopen as Iran signals a proposal tied to delaying nuclear talks. The April 24 Pentagon briefing also said the U.S. blockade is growing and that a second aircraft carrier would join it within days, while U.S. confirmed fatal losses identifiable through war.gov casualty releases sum to 13 service members.",
   "briefings": [
     {
       "date": "2026-04-28",
       "day": 59,
-      "summary": "Confirmed reporting on April 28, 2026 indicates diplomacy is active but unresolved: Al Jazeera reported that the Trump administration is reviewing an Iranian peace proposal linked to reopening the Strait of Hormuz, while Iran says it is considering a new U.S. request to restart talks. On the military side, the latest widely visible official U.S. strike total in searched sources remains CENTCOM\u2019s April 6 fact sheet showing more than 13,000 targets struck, while Al Jazeera\u2019s April 27 casualty tracker, citing Iranian and regional official ministries, lists 3,375 killed and 26,500+ wounded in Iran, 13 U.S. military dead, 26 killed in Israel, and 25 deaths across the Gulf states listed here."
+      "summary": "Confirmed reporting available today remains patchy for several cumulative totals. The clearest official operational figures still accessible are from U.S. Department of War fact sheets, which listed 12,300+ targets struck and 13,000+ combat flights as of April 1, while Al Jazeera\u2019s April 28 live coverage said the UN is pressing for the Strait of Hormuz to reopen as Iran signals a proposal tied to delaying nuclear talks. The April 24 Pentagon briefing also said the U.S. blockade is growing and that a second aircraft carrier would join it within days, while U.S. confirmed fatal losses identifiable through war.gov casualty releases sum to 13 service members."
     },
     {
       "date": "2026-04-27",
