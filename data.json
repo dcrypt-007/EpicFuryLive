@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-05-01T22:06:23Z",
+  "lastUpdated": "2026-05-01T23:09:01Z",
   "dayCount": 62,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,435+",
-    "cost": "$39.9B+"
+    "killed": "3,434+",
+    "cost": "$39.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "44",
+    "israeliDeaths": "23",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "3",
+    "gulfCasualties": "23",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "2362",
+    "civilianDeaths": "1500",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.9 billion+",
-    "dailyBurnRate": "~$644M/day",
+    "totalCost": "$39.1 billion+",
+    "dailyBurnRate": "~$630M/day",
     "daysOfOps": 62,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-01",
-          "source": "LLM-verified (CENTCOM imagery shows USS Abraham Lincoln operating in theater on April 16/2, 2026 and USS George H.W. Bush entering CENTCOM AOR on April 23, 2026, indicating two carrier strike groups in theater.)"
+          "source": "LLM-verified (AP, April 29, 2026, reports three American aircraft carriers deployed to the Middle East after USS George H.W. Bush arrived)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-01",
-          "source": "LLM-verified (U.S. Central Command figure cited by Air Force Times on April 8, 2026: 'The U.S. military has more than 50,000 personnel in the region.' Stored as 50000 minimum confirmed figure.)"
+          "source": "LLM-verified (Reuters, March 20, 2026, says additional deployments would add to the 50,000 U.S. troops already in the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 1000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-01",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1 and April 6, 2026: 13,000+ combat flights; used as best confirmed official proxy for cumulative sorties)"
+          "source": "LLM-verified (IDF live update on March 2, 2026, says the Israeli Air Force had carried out approximately 1,000 combat sorties in the skies of Iran; no later official cumulative sorties figure found)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1720,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (SOF News, April 24, 2026, citing CSIS April 21, 2026 munitions report: 290 THAAD interceptors plus up to 1,430 Patriot missiles used; no confirmed SM-3 figure found, so subtotal only.)"
+          "lastUpdated": "2026-05-01",
+          "source": "LLM-verified (Reuters video transcript of Pentagon briefing on April 8, 2026 quotes Gen. Dan Caine saying the U.S. and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 62 days",
-        "cost": "$868,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 62 days",
+        "cost": "$1,302,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "1,000 \u00d7 $100,000 each",
+        "cost": "$100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,720 \u00d7 $4,000,000 each",
-        "cost": "$6,880,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports USS Ford is leaving but three U.S. carrier strike groups were in the Middle East as of April 29, signaling sustained deterrence capacity despite the ceasefire",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC headline reporting say the Trump administration is weighing tougher terms on Iran while warning shippers against Strait of Hormuz toll payments",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Reuters/AP reporting indicates a fragile ceasefire remains in place but U.S. officials are considering new military options and maintaining a large regional posture",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 1, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported May 1, 2026 that although the administration says hostilities terminated, the U.S. Navy is still maintaining a blockade to prevent Iranian oil tankers from exiting while the ceasefire that began April 7 remains in effect",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on May 1, 2026 reported continued Israeli military activity in Lebanon, including wounded Israeli soldiers and high Lebanese casualties, risking wider ceasefire breakdown.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on May 1, 2026 reported Iranian air defenses were activated over Tehran against small aircraft and drones.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on May 1, 2026 reported Trump said the US 'might need' to restart the war while Iran called the US naval siege of its ports 'intolerable'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-01T22:54:30Z",
+      "text": "<strong>US said to be withdrawing 5,000 troops from Germany over Iran war spat</strong> -- President Donald Trump has feuded with European allies over their reluctance to step up support for war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/1/us-said-to-be-withdrawing-5000-troops-from-germany-over-iran-war-spat?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-01T22:27:26Z",
+      "text": "<strong>Trump considering option to \u2018blast the hell out of\u2019 Iran</strong> -- US President Donald Trump said he is &amp;quot;not happy&amp;quot; with the latest peace proposal from Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/1/trump-considering-option-to-blast-the-hell-out-of-iran?traffic_source=rss"
+    },
+    {
       "time": "2026-05-01T21:10:15Z",
       "text": "<strong>At least 12 killed in latest Israeli attacks on Lebanon</strong> -- Israel&amp;#039;s strikes continue, with more than 2,600 killed since March 2, despite an ongoing ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/1/at-least-12-killed-in-latest-israeli-attacks-on-lebanon?traffic_source=rss"
@@ -786,6 +796,11 @@
       "time": "2026-05-01T15:57:09Z",
       "text": "<strong>Pentagon announces deal with seven AI companies for classified systems</strong> -- Most recent instance of department integrating with AI comes amid Anthropic standoff, concern over use in Iran war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/1/pentagon-announces-deal-with-seven-ai-companies-for-classified-systems?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-01T22:35:07Z",
+      "text": "<strong>US to cut troop levels in Germany by 5,000 amid Trump spat with Merz</strong> -- The decision to reduce the US deployment to Germany comes amid a row between the two allies over Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c0729d374mxo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-01T13:26:44Z",
@@ -836,21 +851,6 @@
       "time": "2026-05-01T09:49:28Z",
       "text": "<strong>More than 40 Iranian seafarers killed during US-Israeli war: Union leader</strong> -- The Iranian Merchant Mariners Syndicate blamed US and Israeli attacks on Iran&amp;#039;s ports and commercial fleet for deaths. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/1/more-than-40-iranian-seafarers-killed-during-us-israeli-war-union?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-01T09:33:21Z",
-      "text": "<strong>Rallies under way as workers gather for International Labour Day</strong> -- Labour Day marches are being held as Iran war and rising energy prices threaten the global economy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/5/1/rallies-under-way-as-workers-gather-for-international-labour-day?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-01T08:47:09Z",
-      "text": "<strong>Commercial flights from Tehran\u2019s main airport resume amid cautious normalcy</strong> -- Flights are gradually back in the air, but uncertainty on the ground still lingers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/1/commercial-flights-from-tehrans-main-airport-resume-amid-cautious-normalcy?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-01T07:32:57Z",
-      "text": "<strong>Iran vows \u2018long, painful\u2019 response if US renews attacks</strong> -- Diplomatic efforts to resolve the conflict have hit an impasse, with a ceasefire in place since April 8. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/1/iran-vows-long-painful-response-if-us-renews-attacks?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "US said to be withdrawing 5,000 troops from Germany over Iran war spat",
+      "description": "President Donald Trump has feuded with European allies over their reluctance to step up support for war on Iran.",
+      "link": "https://www.aljazeera.com/news/2026/5/1/us-said-to-be-withdrawing-5000-troops-from-germany-over-iran-war-spat?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-01T22:54:30Z",
+      "tier": 2
+    },
+    {
+      "title": "US to cut troop levels in Germany by 5,000 amid Trump spat with Merz",
+      "description": "The decision to reduce the US deployment to Germany comes amid a row between the two allies over Iran.",
+      "link": "https://www.bbc.com/news/articles/c0729d374mxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-01T22:35:07Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump considering option to \u2018blast the hell out of\u2019 Iran",
+      "description": "US President Donald Trump said he is &quot;not happy&quot; with the latest peace proposal from Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/1/trump-considering-option-to-blast-the-hell-out-of-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-01T22:27:26Z",
+      "tier": 2
+    },
+    {
       "title": "At least 12 killed in latest Israeli attacks on Lebanon",
       "description": "Israel&#039;s strikes continue, with more than 2,600 killed since March 2, despite an ongoing ceasefire.",
       "link": "https://www.aljazeera.com/news/2026/5/1/at-least-12-killed-in-latest-israeli-attacks-on-lebanon?traffic_source=rss",
@@ -1285,22 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "Woman killed, children injured as Israel attacks Lebanon",
-      "description": "Israel&#039;s assault, which has displaced more than one people in Lebanon, escalates despite US brokered &#039;ceasefire&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/5/1/woman-killed-children-injured-as-israel-attacks-lebanon?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-01T13:26:44Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump\u2019s threat: Why cutting US troops in Europe won\u2019t be easy",
-      "description": "Amid transatlantic tensions over the Iran war, Trump has threatened to reduce troops in Germany.",
-      "link": "https://www.aljazeera.com/news/2026/5/1/trumps-threat-why-cutting-us-troops-in-europe-wont-be-easy?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-01T13:25:46Z",
-      "tier": 2
-    },
-    {
       "title": "Billions of meals at risk due to Iran war, says fertiliser boss",
       "description": "A shortage of fertiliser due to the Iran conflict could reduce crop yields and push prices higher, says the boss of Yara.",
       "link": "https://www.bbc.com/news/articles/cpwp50v4ye7o?at_medium=RSS&at_campaign=rss",
@@ -1341,22 +1349,6 @@
       "tier": 2
     },
     {
-      "title": "Israel intercepts Gaza flotilla near Crete and detains 175 activists",
-      "description": "Pro-Palestinian activists say 22 boats carrying aid for Gaza were illegally intercepted in international waters near the Greek island.",
-      "link": "https://www.bbc.com/news/articles/c4g4lk9m77vo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-30T20:34:26Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump says US studying troop cuts in Germany, as spat with Merz intensifies",
-      "description": "His remarks come after the German chancellor criticised the US approach to the war in Iran.",
-      "link": "https://www.bbc.com/news/articles/clyplg23l30o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-04-30T20:15:20Z",
-      "tier": 2
-    },
-    {
       "title": "Belgium plans to nationalise nuclear power plants",
       "description": "Prime Minister Bart De Wever said the move would see \"less dependence on fossil fuel imports and more control over our own supply\".",
       "link": "https://www.bbc.com/news/articles/c4g05jg87wko?at_medium=RSS&at_campaign=rss",
@@ -1371,14 +1363,22 @@
       "source": "BBC World",
       "time": "2026-04-30T18:05:26Z",
       "tier": 2
+    },
+    {
+      "title": "'Attacked 28 times in a day' - BBC visits heavily targeted US-UK base in Iraq",
+      "description": "Before the fragile ceasefire in the region, this was one of the most heavily targeted US and UK military bases in the Middle East.",
+      "link": "https://www.bbc.com/news/videos/c5y9wdprpyyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-04-30T01:46:52Z",
+      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available on May 1, 2026 still points to an Iranian official death toll of 3,375 and Reuters-reported Iranian wounded of 26,500 through early-to-mid April, while WHO cited Iran Ministry of Health data showing 2,362 civilian deaths as of April 7. CENTCOM\u2019s April 6 fact sheet remains the clearest official operations summary located, listing 13,000+ targets struck but not publishing current counts for carriers, destroyers, personnel, drones, or weapon expenditures. AP reported today, May 1, that President Trump said hostilities had 'terminated' for War Powers purposes, but also said he was not satisfied with Iran\u2019s latest peace proposal and that the U.S. retains further options, suggesting the ceasefire remains fragile.",
+  "summary": "Confirmed reporting available today shows no clear official updates above the latest widely cited cumulative figures for most casualty and weapons-use fields. The strongest current official numbers remain CENTCOM\u2019s April 6 fact sheet citing 13,000+ targets struck and the April 8 Pentagon briefing citing 1,700 intercepted missiles and drones, while Reuters\u2019 March 26 factbox still provides the clearest cross-theater casualty baseline with 13 U.S. service members killed, 23 Israeli deaths, and 23 deaths in Gulf states. AP reported on April 29 that three U.S. carrier strike groups were deployed to the Middle East during the fragile ceasefire, and Reuters reported on March 20 that about 50,000 U.S. troops were already in the region before further reinforcements.",
   "briefings": [
     {
       "date": "2026-05-01",
       "day": 62,
-      "summary": "Confirmed reporting available on May 1, 2026 still points to an Iranian official death toll of 3,375 and Reuters-reported Iranian wounded of 26,500 through early-to-mid April, while WHO cited Iran Ministry of Health data showing 2,362 civilian deaths as of April 7. CENTCOM\u2019s April 6 fact sheet remains the clearest official operations summary located, listing 13,000+ targets struck but not publishing current counts for carriers, destroyers, personnel, drones, or weapon expenditures. AP reported today, May 1, that President Trump said hostilities had 'terminated' for War Powers purposes, but also said he was not satisfied with Iran\u2019s latest peace proposal and that the U.S. retains further options, suggesting the ceasefire remains fragile."
+      "summary": "Confirmed reporting available today shows no clear official updates above the latest widely cited cumulative figures for most casualty and weapons-use fields. The strongest current official numbers remain CENTCOM\u2019s April 6 fact sheet citing 13,000+ targets struck and the April 8 Pentagon briefing citing 1,700 intercepted missiles and drones, while Reuters\u2019 March 26 factbox still provides the clearest cross-theater casualty baseline with 13 U.S. service members killed, 23 Israeli deaths, and 23 deaths in Gulf states. AP reported on April 29 that three U.S. carrier strike groups were deployed to the Middle East during the fragile ceasefire, and Reuters reported on March 20 that about 50,000 U.S. troops were already in the region before further reinforcements."
     },
     {
       "date": "2026-04-30",
