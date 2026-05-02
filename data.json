@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-05-02T19:18:03Z",
+  "lastUpdated": "2026-05-02T21:00:10Z",
   "dayCount": 63,
   "banner": {
     "strikes": "~12,300",
-    "killed": "3,408+",
-    "cost": "$39.0B+"
+    "killed": "3,645+",
+    "cost": "$39.5B+"
   },
   "humanCost": {
-    "iranDeaths": "3,375",
+    "iranDeaths": "1,937",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "5",
+    "usKIA": "6",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "28",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1255",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.0 billion+",
-    "dailyBurnRate": "~$619M/day",
+    "totalCost": "$39.5 billion+",
+    "dailyBurnRate": "~$626M/day",
     "daysOfOps": 63,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-02",
-          "source": "LLM-verified (Al Jazeera day-64 update on May 2, 2026 says USS Gerald R Ford left and two other aircraft carriers remain in region: USS Abraham Lincoln and USS George H.W. Bush)"
+          "source": "LLM-verified (AP, Apr. 29, 2026: arrival of USS George H.W. Bush meant three U.S. aircraft carriers were deployed to the Middle East during the Iran-war ceasefire: https://apnews.com/article/61a40739b7792c24ac1476c110b0c9cc)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-02",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 13,000+ combat flights; used here as closest official confirmed cumulative sorties figure)"
+          "source": "LLM-verified (U.S. Department of Defense / CENTCOM Operation Epic Fury Fact Sheet lists 13,000+ combat flights as of Apr. 1, 2026: https://media.defense.gov/2026/Apr/01/2003905658/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-APRIL-1-UPDATE.PDF)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 63 days",
-        "cost": "$882,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 63 days",
+        "cost": "$1,323,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported on May 1 that Trump said Washington might need to restart the war, while Israel\u2019s defense minister warned Israel may have to act again against Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 1 that the White House told Congress hostilities that began on February 28 had 'terminated' for War Powers purposes, even as Trump said the threat from Iran remains significant.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 2 that the U.S. is warning shipping firms against paying Iran for Strait of Hormuz transit and said CENTCOM reported 48 commercial ships had been told to turn back amid the naval blockade.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 2, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "The U.S. naval blockade/sanctions pressure around Strait of Hormuz remains a live escalation risk",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump rejected Iran's latest peace proposal on May 2, 2026, saying it includes demands he 'can't agree to'",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. warned shippers that paying tolls or other fees to Iran for transit through the Strait of Hormuz could expose them to U.S. sanctions, according to Al Jazeera's May 2 live blog.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "President Trump said on May 2, 2026 that he was unhappy with Iran's latest peace proposal and opposed an 'early' end to the conflict, according to Al Jazeera's live reporting.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-05-02T20:28:12Z",
+      "text": "<strong>Spirit Airlines collapses amid rising fuel costs from war on Iran</strong> -- US budget carrier Spirit Airlines shuts down after talks for a government bailout failed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/spirit-airlines-collapses-amid-rising-fuel-costs-from-war-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-02T19:59:16Z",
+      "text": "<strong>Khartoum drone strike kills five Sudan NGO reports</strong> -- The attack, the second in a week, follows months of relative calm in the city after government forces regained control. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/2/khartoum-drone-strike-kills-five-sudan-ngo-reports?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-02T19:54:30Z",
+      "text": "<strong>Ukraine eyes Belarus border activities as Russian strikes persist</strong> -- The role of Belarus in Russia&amp;#039;s war on Ukraine has provoked sanctions from Kyiv, which says it is ready to respond. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/2/ukraine-eyes-belarus-border-activities-as-russian-strikes-persist?traffic_source=rss"
+    },
+    {
       "time": "2026-05-02T18:05:05Z",
       "text": "<strong>Devastation of Southern Lebanon continues under \u2018ceasefire\u2019</strong> -- At least 41 people killed as Israel launches 50 airstrikes on southern Lebanon in 24 hours. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/devastation-of-southern-lebanon-continues-under?traffic_source=rss"
@@ -773,16 +788,6 @@
       "link": "https://www.aljazeera.com/news/2026/5/2/trump-says-us-navy-acting-like-pirates-to-enforce-iran-blockade?traffic_source=rss"
     },
     {
-      "time": "2026-05-02T07:37:49Z",
-      "text": "<strong>China\u2019s UN Envoy: Hormuz closure will dominate Trump-Xi talks</strong> -- China&amp;#039;s UN Ambassador Fu Cong says maintaining the ceasefire and reopening the Strait of Hormuz are \u201curgent\u201d priorities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/chinas-un-envoy-hormuz-closure-will-dominate-trump-xi-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-02T06:47:18Z",
-      "text": "<strong>China urges reversal of UNIFIL departure from Lebanon as conflict escalates</strong> -- The UNIFIL mission has faced a growing number of casualties as Israel and Hezbollah continue to fight. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/2/china-urges-reversal-of-unifil-departure-from-lebanon-as-conflict-escalates?traffic_source=rss"
-    },
-    {
       "time": "2026-05-02T14:18:14Z",
       "text": "<strong>US threatens shipping firms with sanctions if they pay Iran tolls</strong> -- The warning comes as President Donald Trump said he was &quot;not excited&quot; by Iran&#x27;s latest proposal for a peace deal. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c3v2l2qq9qlo?at_medium=RSS&at_campaign=rss"
@@ -796,6 +801,16 @@
       "time": "2026-05-02T16:29:06Z",
       "text": "<strong>Trump tells Congress ceasefire means he does not need their approval for Iran war</strong> -- The president writes that hostilities &quot;have terminated&quot; because of the ceasefire, arguing he does not need congressional authorisation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-02T07:37:49Z",
+      "text": "<strong>China\u2019s UN Envoy: Hormuz closure will dominate Trump-Xi talks</strong> -- China&amp;#039;s UN Ambassador Fu Cong says maintaining the ceasefire and reopening the Strait of Hormuz are \u201curgent\u201d priorities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/chinas-un-envoy-hormuz-closure-will-dominate-trump-xi-talks?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-02T06:47:18Z",
+      "text": "<strong>China urges reversal of UNIFIL departure from Lebanon as conflict escalates</strong> -- The UNIFIL mission has faced a growing number of casualties as Israel and Hezbollah continue to fight. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/2/china-urges-reversal-of-unifil-departure-from-lebanon-as-conflict-escalates?traffic_source=rss"
     },
     {
       "time": "2026-05-01T13:12:10Z",
@@ -836,21 +851,6 @@
       "time": "2026-05-02T00:41:43Z",
       "text": "<strong>Trump tells Congress ceasefire means he does not need their approval for Iran war</strong> -- The president writes that hostilities &quot;have terminated&quot; because of the ceasefire, arguing he does not need congressional authorisation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-01T22:54:30Z",
-      "text": "<strong>US to withdraw 5,000 troops from Germany over Iran war spat</strong> -- President Donald Trump has feuded with European allies over their reluctance to step up support for war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/1/us-said-to-be-withdrawing-5000-troops-from-germany-over-iran-war-spat?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-01T22:27:26Z",
-      "text": "<strong>Trump considering option to \u2018blast the hell out of\u2019 Iran</strong> -- US President Donald Trump said he is &amp;quot;not happy&amp;quot; with the latest peace proposal from Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/1/trump-considering-option-to-blast-the-hell-out-of-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-01T21:10:15Z",
-      "text": "<strong>At least 12 killed in latest Israeli attacks on Lebanon</strong> -- Israel&amp;#039;s strikes continue, with more than 2,600 killed since March 2, despite an ongoing ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/1/at-least-12-killed-in-latest-israeli-attacks-on-lebanon?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Spirit Airlines collapses amid rising fuel costs from war on Iran",
+      "description": "US budget carrier Spirit Airlines shuts down after talks for a government bailout failed.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/spirit-airlines-collapses-amid-rising-fuel-costs-from-war-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-02T20:28:12Z",
+      "tier": 2
+    },
+    {
+      "title": "Khartoum drone strike kills five Sudan NGO reports",
+      "description": "The attack, the second in a week, follows months of relative calm in the city after government forces regained control.",
+      "link": "https://www.aljazeera.com/news/2026/5/2/khartoum-drone-strike-kills-five-sudan-ngo-reports?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-02T19:59:16Z",
+      "tier": 2
+    },
+    {
+      "title": "Ukraine eyes Belarus border activities as Russian strikes persist",
+      "description": "The role of Belarus in Russia&#039;s war on Ukraine has provoked sanctions from Kyiv, which says it is ready to respond.",
+      "link": "https://www.aljazeera.com/news/2026/5/2/ukraine-eyes-belarus-border-activities-as-russian-strikes-persist?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-02T19:54:30Z",
+      "tier": 2
+    },
+    {
       "title": "Devastation of Southern Lebanon continues under \u2018ceasefire\u2019",
       "description": "At least 41 people killed as Israel launches 50 airstrikes on southern Lebanon in 24 hours.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/devastation-of-southern-lebanon-continues-under?traffic_source=rss",
@@ -1269,22 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "China\u2019s UN Envoy: Hormuz closure will dominate Trump-Xi talks",
-      "description": "China&#039;s UN Ambassador Fu Cong says maintaining the ceasefire and reopening the Strait of Hormuz are \u201curgent\u201d priorities.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/2/chinas-un-envoy-hormuz-closure-will-dominate-trump-xi-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-02T07:37:49Z",
-      "tier": 2
-    },
-    {
-      "title": "China urges reversal of UNIFIL departure from Lebanon as conflict escalates",
-      "description": "The UNIFIL mission has faced a growing number of casualties as Israel and Hezbollah continue to fight.",
-      "link": "https://www.aljazeera.com/news/2026/5/2/china-urges-reversal-of-unifil-departure-from-lebanon-as-conflict-escalates?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-02T06:47:18Z",
-      "tier": 2
-    },
-    {
       "title": "Israeli police arrest man after nun attacked in Jerusalem",
       "description": "The French nun was pushed over and kicked in the apparently unprovoked assault, amid a rise in harassment of Christians in the city by Jewish extremists.",
       "link": "https://www.bbc.com/news/articles/cy02gnzlvkko?at_medium=RSS&at_campaign=rss",
@@ -1333,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of May 2, 2026, the latest accessible confirmed cumulative figures found were 3,375 dead in Iran and 28 killed in Gulf states from Al Jazeera\u2019s AJLabs tracker last updated April 27, while official U.S. casualty notices on defense.gov support at least 5 U.S. service members killed in Operation Epic Fury. CENTCOM\u2019s latest accessible fact sheet dated April 1 reported 12,300+ targets struck and 13,000+ combat flights. No newer official publicly accessible confirmations were found for a current Israeli cumulative death total, Iranian civilian-only deaths, or most weapons expenditure and deployment subfields, so those remain null.",
+  "summary": "Confirmed reporting located today shows no reliable basis to raise most military-expense subcounts beyond existing official fact sheets: CENTCOM\u2019s April 1 Operation Epic Fury update remains the clearest official aggregate, listing 12,300+ targets struck and 13,000+ combat flights, while AP reported on April 29 that three U.S. aircraft carriers were deployed to the Middle East during the current ceasefire period. For casualties, CENTCOM publicly confirmed 6 U.S. service members killed in action on March 2; Al Jazeera on March 27 cited Iranian Deputy Health Minister Ali Jafarian saying at least 1,937 people had been killed and almost 25,000 injured in Iran; and Al Jazeera on May 1 cited HRANA saying at least 1,701 civilians had been killed. AP and Al Jazeera both reported continued coercive pressure despite the ceasefire, including a U.S. naval blockade posture around Iranian shipping and warnings from both Washington and Israel that fighting could resume.",
   "briefings": [
     {
       "date": "2026-05-02",
       "day": 63,
-      "summary": "As of May 2, 2026, the latest accessible confirmed cumulative figures found were 3,375 dead in Iran and 28 killed in Gulf states from Al Jazeera\u2019s AJLabs tracker last updated April 27, while official U.S. casualty notices on defense.gov support at least 5 U.S. service members killed in Operation Epic Fury. CENTCOM\u2019s latest accessible fact sheet dated April 1 reported 12,300+ targets struck and 13,000+ combat flights. No newer official publicly accessible confirmations were found for a current Israeli cumulative death total, Iranian civilian-only deaths, or most weapons expenditure and deployment subfields, so those remain null."
+      "summary": "Confirmed reporting located today shows no reliable basis to raise most military-expense subcounts beyond existing official fact sheets: CENTCOM\u2019s April 1 Operation Epic Fury update remains the clearest official aggregate, listing 12,300+ targets struck and 13,000+ combat flights, while AP reported on April 29 that three U.S. aircraft carriers were deployed to the Middle East during the current ceasefire period. For casualties, CENTCOM publicly confirmed 6 U.S. service members killed in action on March 2; Al Jazeera on March 27 cited Iranian Deputy Health Minister Ali Jafarian saying at least 1,937 people had been killed and almost 25,000 injured in Iran; and Al Jazeera on May 1 cited HRANA saying at least 1,701 civilians had been killed. AP and Al Jazeera both reported continued coercive pressure despite the ceasefire, including a U.S. naval blockade posture around Iranian shipping and warnings from both Washington and Israel that fighting could resume."
     },
     {
       "date": "2026-05-01",
