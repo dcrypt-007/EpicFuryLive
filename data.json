@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-02T21:59:00Z",
+  "lastUpdated": "2026-05-02T23:03:11Z",
   "dayCount": 63,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,585+",
-    "cost": "$41.2B+"
+    "strikes": "~13,000",
+    "killed": "3,593+",
+    "cost": "$40.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,531",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "29",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "12",
+    "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "20,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$41.2 billion+",
-    "dailyBurnRate": "~$653M/day",
+    "totalCost": "$40.7 billion+",
+    "dailyBurnRate": "~$646M/day",
     "daysOfOps": 63,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-02",
-          "source": "LLM-verified (CENTCOM / Stars and Stripes, April 24, 2026: USS Gerald R. Ford, USS Abraham Lincoln, and USS George H.W. Bush operating in CENTCOM)"
+          "source": "LLM-verified (U.S. Department of War transcript, April 24, 2026: blockade active and 'a second aircraft carrier will join the blockade in just a few days')"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-02",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet: April 1, 2026, media.defense.gov lists Combat Flights: 13,000+; used as closest confirmed sorties figure found)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 63 days",
-        "cost": "$1,323,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 63 days",
+        "cost": "$882,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Ceasefire remained fragile in April, with Al Jazeera and BBC reporting ongoing regional tensions and Israeli strikes in Lebanon despite the April 8 ceasefire",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran attacked five merchant vessels and seized two, according to the April 24, 2026 U.S. Department of War briefing",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US-enforced blockade of Iranian ports continues; 34 ships had turned around as of April 24, 2026, and a second US aircraft carrier was set to join the blockade",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 2, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Trump said on May 1, 2026 he was 'not satisfied' with Iran's latest proposal and that the U.S. still has 'options', indicating risk of renewed military action.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on May 2, 2026 that 14 soldiers were killed in Zanjan province while defusing unexploded ordnance, underscoring continuing post-ceasefire hazards inside Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 1, 2026 that the White House argues hostilities that began February 28, 2026 had 'terminated' for War Powers purposes because the ceasefire began April 7, 2026, even as the US Navy continues its blockade.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said on May 1, 2026 that Iran's latest peace proposal included terms he 'can't agree to' and warned against ending the conflict too early.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1333,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting located today still points to the last widely published cumulative casualty baseline from early April: Reuters on April 4 cited HRANA at 3,531 deaths in Iran, including 1,607 civilians, while the International Federation of Red Cross and Red Crescent Societies put Iran's wounded at 20,000. U.S. military fatalities rose to 13 by April 8 according to CENTCOM/Pentagon data reported by Military Times. CENTCOM's April 1 fact sheet still provides the clearest official operational totals, listing 12,300+ targets struck and 13,000+ combat flights. On force posture, CENTCOM-backed reporting on April 24 said three carrier strike groups, about 16 destroyers, and a regional U.S. personnel footprint above 60,000 were in theater, though Al Jazeera reported on May 2 that the USS Gerald R. Ford had departed, suggesting the carrier count may now be lower; because that newer report did not provide a fresh destroyer/personnel total from the same official source set, only clearly confirmed figures are retained above.",
+  "summary": "The latest confirmed figures found remain largely those reported in early to late April: Reuters on April 4 cited HRANA at 3,531 killed in Iran, including 1,607 civilians, and cited the IFRC/Red Crescent at at least 20,000 injured; Reuters also reported 13 U.S. service members killed and 29 Israeli deaths. Al Jazeera\u2019s tracker updated April 27 listed 26 killed in Israel, 13 U.S. soldiers killed, and Gulf-state fatalities including 3 in Bahrain, 3 in Oman, 3 in Saudi Arabia, and 12 in the UAE. Official U.S. fact sheets found list 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1, but I could not find confirmed current cumulative totals for specific munitions, destroyers, personnel, drone units, B-2 sorties, bunker busters, or interceptors.",
   "briefings": [
     {
       "date": "2026-05-02",
       "day": 63,
-      "summary": "Confirmed reporting located today still points to the last widely published cumulative casualty baseline from early April: Reuters on April 4 cited HRANA at 3,531 deaths in Iran, including 1,607 civilians, while the International Federation of Red Cross and Red Crescent Societies put Iran's wounded at 20,000. U.S. military fatalities rose to 13 by April 8 according to CENTCOM/Pentagon data reported by Military Times. CENTCOM's April 1 fact sheet still provides the clearest official operational totals, listing 12,300+ targets struck and 13,000+ combat flights. On force posture, CENTCOM-backed reporting on April 24 said three carrier strike groups, about 16 destroyers, and a regional U.S. personnel footprint above 60,000 were in theater, though Al Jazeera reported on May 2 that the USS Gerald R. Ford had departed, suggesting the carrier count may now be lower; because that newer report did not provide a fresh destroyer/personnel total from the same official source set, only clearly confirmed figures are retained above."
+      "summary": "The latest confirmed figures found remain largely those reported in early to late April: Reuters on April 4 cited HRANA at 3,531 killed in Iran, including 1,607 civilians, and cited the IFRC/Red Crescent at at least 20,000 injured; Reuters also reported 13 U.S. service members killed and 29 Israeli deaths. Al Jazeera\u2019s tracker updated April 27 listed 26 killed in Israel, 13 U.S. soldiers killed, and Gulf-state fatalities including 3 in Bahrain, 3 in Oman, 3 in Saudi Arabia, and 12 in the UAE. Official U.S. fact sheets found list 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1, but I could not find confirmed current cumulative totals for specific munitions, destroyers, personnel, drone units, B-2 sorties, bunker busters, or interceptors."
     },
     {
       "date": "2026-05-01",
