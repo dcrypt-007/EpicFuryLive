@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-05-03T21:03:10Z",
+  "lastUpdated": "2026-05-03T22:01:23Z",
   "dayCount": 64,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,442+",
-    "cost": "$40.3B+"
+    "killed": "3,595+",
+    "cost": "$41.1B+"
   },
   "humanCost": {
-    "iranDeaths": "3,375",
+    "iranDeaths": "3,531",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "29",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "22",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "20,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "3375",
+    "civilianDeaths": "1607",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$40.3 billion+",
-    "dailyBurnRate": "~$629M/day",
+    "totalCost": "$41.1 billion+",
+    "dailyBurnRate": "~$642M/day",
     "daysOfOps": 64,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-03",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury pages and imagery show USS Abraham Lincoln and USS Nimitz operating in support of Epic Fury in April 2026, confirming two carrier strike groups in/theater support.)"
+          "source": "LLM-verified (Al Jazeera, April 15, 2026, citing Washington Post reporting that the number of U.S. carriers in the region would reach three with USS George H.W. Bush)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-03",
-          "source": "LLM-verified (Congressional Research Service report dated March 26, 2026 states an estimated 50,000 U.S. service members were deployed 'in and around the Middle East'.)"
+          "source": "LLM-verified (Al Jazeera, April 15, 2026: roughly 50,000 U.S. troops had been involved in operations since February 28)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-03",
-          "source": "LLM-verified (CENTCOM fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; stored as 9000 because exact higher figure was not provided. An April 8 Reuters transcript only said 'tens of thousands of sorties, refuelings and strikes' without a precise fighter-sortie count.)"
+          "source": "LLM-verified (U.S. Defense/CENTCOM fact sheet dated April 1, 2026 lists 13,000+ combat flights; used as closest confirmed cumulative sorties figure)"
         },
         {
           "id": "interceptors",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-05-03",
-          "source": "LLM-verified (Gen. Dan Caine said on April 8, 2026 in Pentagon remarks carried by Reuters that the U.S. and Gulf partners had 'thus far intercepted 1,700 ballistic missiles and one-way attack drones'.)"
+          "source": "LLM-verified (Pentagon briefing reported by Reuters, April 8, 2026: 1,700 ballistic missiles and one-way attack drones intercepted with Gulf partners)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 64 days",
-        "cost": "$896,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 64 days",
+        "cost": "$1,344,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC headline on May 3, 2026 said Iran claimed the U.S. had responded to its latest peace proposal, while formal U.S. confirmation was not indicated in the headline text.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline on May 3, 2026 said UKMTO reported a bulk carrier attacked by multiple small craft 11 nautical miles west of Sirik, Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline on May 3, 2026 said an Iranian lawmaker stated the Strait of Hormuz will not return to its pre-war status.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 3, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported the U.S. Navy blockade of Iranian shipping and Iran\u2019s continued chokehold on the Strait of Hormuz remain unresolved despite the ceasefire.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on May 1-2, 2026 reported the three-week ceasefire was still holding but fragile, while Trump reviewed a new Iranian proposal and said military options remained on the table.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Ceasefire remained fragile in April, with Al Jazeera and BBC reporting ongoing regional tensions and Israeli strikes in Lebanon despite the April 8 ceasefire",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran attacked five merchant vessels and seized two, according to the April 24, 2026 U.S. Department of War briefing",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-05-03T20:51:57Z",
+      "text": "<strong>Iran lawmaker says Strait of Hormuz will not return to pre\u2011war state</strong> -- Iran says the Strait of Hormuz will never return to the status quo that existed before the US-Israel war on Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/3/iran-lawmaker-says-strait-of-hormuz-will-not-return-to-pre%e2%80%91war-state?traffic_source=rss"
+    },
+    {
       "time": "2026-05-03T20:07:00Z",
       "text": "<strong>World Press Freedom Day marked in Gaza as journalist death toll rises</strong> -- Palestinian journalists in Gaza marked World Press Freedom Day by honouring colleagues killed and targeted by Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/3/world-press-freedom-day-marked-in-gaza-as-journalist-death-toll-rises?traffic_source=rss"
@@ -788,6 +793,16 @@
       "link": "https://www.aljazeera.com/news/2026/5/3/was-the-iran-war-the-final-blow-in-the-collapse-of-spirit-airlines?traffic_source=rss"
     },
     {
+      "time": "2026-05-03T21:28:09Z",
+      "text": "<strong>Iran says US has responded to its latest peace proposal</strong> -- The US is yet to formally confirm it has responded. However, Trump reportedly told Israel&#x27;s Kan News it was unacceptable. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cn0px2x53k2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-02T23:19:27Z",
+      "text": "<strong>The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?</strong> -- President Zelensky has been visiting the Gulf to demonstrate his country&#x27;s military nous. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-03T12:59:12Z",
       "text": "<strong>OPEC+ announces symbolic oil output rise during Strait of Hormuz closure</strong> -- Seven major producers will add 188,000 barrels per day to their total production quota for June, OPEC+ says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/3/opec-announces-symbolic-oil-output-rise-during-strait-of-hormuz-closure?traffic_source=rss"
@@ -796,11 +811,6 @@
       "time": "2026-05-03T20:25:25Z",
       "text": "<strong>Iran says US has responded to its latest peace proposal</strong> -- The US is yet to formally confirm it has responded. However, Trump reportedly told Israel&#x27;s Kan News it was unacceptable. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cn0px2x53k2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-02T23:19:27Z",
-      "text": "<strong>The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?</strong> -- President Zelensky has been visiting the Gulf to demonstrate his country&#x27;s military nous. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-03T11:10:48Z",
@@ -841,16 +851,6 @@
       "time": "2026-05-02T16:51:18Z",
       "text": "<strong>Thirteen killed in Israeli strikes on southern Lebanon, health ministry says</strong> -- Four women and a child are among the dead, as fighting between Israel and Iran-backed Hezbollah continues despite a ceasefire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cd7pn0zywggo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-02T17:55:06Z",
-      "text": "<strong>Concern for jailed Iranian Nobel laureate as family say health deteriorating</strong> -- On Friday her family said the 54-year-old had been taken from prison to a local hospital after a sharp deterioration in her health. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c362pd8epw9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-02T23:03:03Z",
-      "text": "<strong>Trump tells Congress ceasefire means he does not need their approval for Iran war</strong> -- The president writes that hostilities &quot;have terminated&quot; because of the ceasefire, arguing he does not need congressional authorisation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1217,7 +1217,15 @@
       "description": "The US is yet to formally confirm it has responded. However, Trump reportedly told Israel's Kan News it was unacceptable.",
       "link": "https://www.bbc.com/news/articles/cn0px2x53k2o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-05-03T20:25:25Z",
+      "time": "2026-05-03T21:28:09Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran lawmaker says Strait of Hormuz will not return to pre\u2011war state",
+      "description": "Iran says the Strait of Hormuz will never return to the status quo that existed before the US-Israel war on Tehran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/3/iran-lawmaker-says-strait-of-hormuz-will-not-return-to-pre%e2%80%91war-state?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-03T20:51:57Z",
       "tier": 2
     },
     {
@@ -1285,14 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "OPEC+ announces symbolic oil output rise during Strait of Hormuz closure",
-      "description": "Seven major producers will add 188,000 barrels per day to their total production quota for June, OPEC+ says.",
-      "link": "https://www.aljazeera.com/news/2026/5/3/opec-announces-symbolic-oil-output-rise-during-strait-of-hormuz-closure?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-03T12:59:12Z",
-      "tier": 2
-    },
-    {
       "title": "The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?",
       "description": "President Zelensky has been visiting the Gulf to demonstrate his country's military nous.",
       "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&at_campaign=rss",
@@ -1349,12 +1349,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of May 3, 2026 indicates that the war\u2019s declared air campaign has paused under an early-April ceasefire, but maritime tensions remain elevated: AP reported on May 1 that the Trump administration says the hostilities that began on February 28 terminated with the ceasefire, even as the US Navy continues a blockade linked to Iran\u2019s ongoing chokehold on the Strait of Hormuz. The latest confirmed cumulative casualty figures located were from Al Jazeera\u2019s AJLabs tracker updated April 27, citing Iran\u2019s Ministry of Health and other official sources: 3,375 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 US military combat-related deaths, and 28 deaths in Gulf states. For strike totals, the latest official CENTCOM fact sheet found states that more than 13,000 targets had been struck as of April 6.",
+  "summary": "Confirmed reporting still supports 13 U.S. service members killed. Reuters\u2019 April 4 casualty factbox put deaths in Iran at 3,531 according to HRANA, including 1,607 civilians, while the International Federation of Red Cross and Red Crescent Societies said 20,000 had been injured in Iran. Reuters\u2019 April 8 Pentagon-briefing coverage said U.S. and joint fires had struck more than 13,000 targets and intercepted 1,700 ballistic missiles and one-way attack drones. For Israel, the latest Reuters factbox reviewed gave 29 total deaths tied to the war theater count used here, and Reuters-reported Gulf-state deaths for the requested UAE/Saudi/Kuwait/Bahrain set total 22. I did not find newer confirmed cumulative figures for most weapons-expended fields, so those remain null.",
   "briefings": [
     {
       "date": "2026-05-03",
       "day": 64,
-      "summary": "Confirmed reporting as of May 3, 2026 indicates that the war\u2019s declared air campaign has paused under an early-April ceasefire, but maritime tensions remain elevated: AP reported on May 1 that the Trump administration says the hostilities that began on February 28 terminated with the ceasefire, even as the US Navy continues a blockade linked to Iran\u2019s ongoing chokehold on the Strait of Hormuz. The latest confirmed cumulative casualty figures located were from Al Jazeera\u2019s AJLabs tracker updated April 27, citing Iran\u2019s Ministry of Health and other official sources: 3,375 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 US military combat-related deaths, and 28 deaths in Gulf states. For strike totals, the latest official CENTCOM fact sheet found states that more than 13,000 targets had been struck as of April 6."
+      "summary": "Confirmed reporting still supports 13 U.S. service members killed. Reuters\u2019 April 4 casualty factbox put deaths in Iran at 3,531 according to HRANA, including 1,607 civilians, while the International Federation of Red Cross and Red Crescent Societies said 20,000 had been injured in Iran. Reuters\u2019 April 8 Pentagon-briefing coverage said U.S. and joint fires had struck more than 13,000 targets and intercepted 1,700 ballistic missiles and one-way attack drones. For Israel, the latest Reuters factbox reviewed gave 29 total deaths tied to the war theater count used here, and Reuters-reported Gulf-state deaths for the requested UAE/Saudi/Kuwait/Bahrain set total 22. I did not find newer confirmed cumulative figures for most weapons-expended fields, so those remain null."
     },
     {
       "date": "2026-05-02",
