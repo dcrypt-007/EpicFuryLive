@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-03T10:16:23Z",
+  "lastUpdated": "2026-05-03T11:58:01Z",
   "dayCount": 64,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,442+",
-    "cost": "$41.2B+"
+    "cost": "$36.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$41.2 billion+",
-    "dailyBurnRate": "~$643M/day",
+    "totalCost": "$36.6 billion+",
+    "dailyBurnRate": "~$573M/day",
     "daysOfOps": 64,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-03",
-          "source": "LLM-verified (CENTCOM/official media confirms USS Abraham Lincoln in theater and USS Tripoli amphibious assault ship operating in CENTCOM AOR; however only one named aircraft carrier strike group was clearly confirmed in accessible latest sources, so returning 2 would overstate aircraft carriers. Unable to confirm 2 carrier strike groups currently deployed; value remains null if strict CSG definition required.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page shows Gerald R. Ford and Dwight D. Eisenhower carrier strike groups operating in support)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 16,
+          "quantity": 4,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,14 +90,14 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-05-02",
-          "source": "LLM-verified (Stars and Stripes citing CENTCOM, April 24, 2026: 'about 16 destroyers in the region')"
+          "lastUpdated": "2026-05-03",
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page explicitly lists USS Ramage, USS Paul Ignatius, USS Gravely, and USS Mason with the two carrier strike groups; no higher current confirmed count found)"
         },
         {
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 60000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-05-02",
-          "source": "LLM-verified (Stars and Stripes, April 24, 2026: broader U.S. surge to bring total personnel in region above 60,000)"
+          "lastUpdated": "2026-05-03",
+          "source": "LLM-verified (Military Times on April 8, 2026, citing U.S. military/CENTCOM: more than 50,000 personnel in the region)"
         },
         {
           "id": "intel_cyber",
@@ -184,8 +184,8 @@
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-05-02",
-          "source": "LLM-verified (Reuters report carried by Navy Times on March 27, 2026 said the US had fired over 850 Tomahawk cruise missiles)"
+          "lastUpdated": "2026-05-03",
+          "source": "LLM-verified (Washington Post figure relayed in JINSA March 27, 2026 update: United States launched over 850 Tomahawk cruise missiles in the war)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-03",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights)"
+          "source": "LLM-verified (IDF article dated April 1, 2026: more than 800 Israeli Air Force strike sorties carried out since launch of Operation Roaring Lion; no current combined U.S.-Israeli fighter sortie total officially confirmed found)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 1000,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-05-01",
-          "source": "LLM-verified (Reuters video transcript of Pentagon briefing on April 8, 2026 quotes Gen. Dan Caine saying the U.S. and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
+          "lastUpdated": "2026-05-03",
+          "source": "LLM-verified (JINSA March 27, 2026 update citing Washington Post: U.S. launched over 1,000 interceptor missiles in the war)"
         },
         {
           "id": "prestrike_buildup",
@@ -333,13 +333,13 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "16 \u00d7 $240,000/day \u00d7 64 days",
-        "cost": "$245,760,000"
+        "detail": "4 \u00d7 $240,000/day \u00d7 64 days",
+        "cost": "$61,440,000"
       },
       {
         "category": "Deployed Personnel",
-        "detail": "60,000 \u00d7 $500/day \u00d7 64 days",
-        "cost": "$1,920,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 64 days",
+        "cost": "$1,600,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "1,000 \u00d7 $4,000,000 each",
+        "cost": "$4,000,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump argued on May 1, 2026 that hostilities had 'terminated' for War Powers purposes, signaling the administration is treating the conflict as paused rather than fully resolved.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The roughly three-week ceasefire that began April 8 appears to be holding, but AP reported ongoing ship interceptions/captures and Al Jazeera reported continued rhetoric and accusations of violations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran submitted a new 14-point proposal via Pakistan on May 2-3, 2026, but President Trump said on May 2 he is skeptical and not sure it would be acceptable.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 3, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported the White House told Congress on May 1, 2026 that hostilities that began on February 28, 2026 had 'terminated,' even as U.S. forces remain in the region.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The three-week ceasefire was reported as largely holding, but the U.S.-Iran standoff over the Strait of Hormuz continues.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said on May 1, 2026 he was not satisfied with Iran's latest peace proposal and said the U.S. still has 'options' if talks fail.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian media reported 14 soldiers were killed in Zanjan province while defusing unexploded ordnance on May 2, 2026 (Al Jazeera day-64 update).",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-03T11:10:48Z",
+      "text": "<strong>What\u2019s Iran\u2019s 14-point proposal to end the war? And will Trump accept it?</strong> -- Trump is reviewing Iran&amp;#039;s latest proposal to end the war, but the mistrust between the two sides is a big obstacle. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/3/whats-irans-14-point-proposal-to-end-the-war-and-will-trump-accept-it?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-03T10:36:49Z",
+      "text": "<strong>Strait of Hormuz blockade and other major naval sieges in modern times</strong> -- Naval blockades are among the oldest weapons of war, using sea control to cut supplies and force an enemy\u2019s surrender. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/3/strait-of-hormuz-blockade-and-other-major-naval-sieges-in-modern-times?traffic_source=rss"
+    },
+    {
       "time": "2026-05-03T09:57:31Z",
       "text": "<strong>Ukraine drone attack hits Russian Baltic port, governor says</strong> -- Ukrainian forces also strike two shadow fleet tankers near port of Novorossiysk, President Volodymyr Zelenskyy says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/3/ukraine-drone-attack-hits-russian-baltic-port-governor-says?traffic_source=rss"
@@ -778,6 +788,21 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/3/millions-of-jobs-lost-as-iranians-battle-operation-economic?traffic_source=rss"
     },
     {
+      "time": "2026-05-02T23:19:27Z",
+      "text": "<strong>The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?</strong> -- President Zelensky has been visiting the Gulf to demonstrate his country&#x27;s military nous. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-02T23:17:17Z",
+      "text": "<strong>The clandestine network smuggling Starlink tech into Iran to beat internet blackout</strong> -- Sahand tells the BBC World Service he sends satellite internet terminals into Iran to help show &quot;the real picture&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cvgzk91leweo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-02T17:55:06Z",
+      "text": "<strong>Concern for jailed Iranian Nobel laureate as family say health deteriorating</strong> -- On Friday her family said the 54-year-old had been taken from prison to a local hospital after a sharp deterioration in her health. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c362pd8epw9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-03T03:29:44Z",
       "text": "<strong>UAE lifts all air traffic restrictions introduced since Iran war</strong> -- UAE aviation authority&amp;#039;s announcement is the latest sign of the travel sector&amp;#039;s recovery across the Middle East. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/3/uae-lifts-all-air-traffic-restrictions-introduced-since-iran-war?traffic_source=rss"
@@ -791,16 +816,6 @@
       "time": "2026-05-03T00:00:00Z",
       "text": "<strong>Iran war live: Trump to review 14-point plan; Israel pounds Lebanon</strong> -- US president says he will &amp;#039;soon be reviewing the plan Iran has just sent to us&amp;#039;, but doesn&amp;#039;t think he can make a deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/5/3/iran-war-live-trump-says-reviewing-14-point-plan-israel-pounds-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-02T23:19:27Z",
-      "text": "<strong>The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?</strong> -- President Zelensky has been visiting the Gulf to demonstrate his country&#x27;s military nous. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-02T23:17:17Z",
-      "text": "<strong>The clandestine network smuggling Starlink tech into Iran to beat internet blackout</strong> -- Sahand tells the BBC World Service he sends satellite internet terminals into Iran to help show &quot;the real picture&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cvgzk91leweo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-02T20:28:12Z",
@@ -836,21 +851,6 @@
       "time": "2026-05-02T14:18:14Z",
       "text": "<strong>US threatens shipping firms with sanctions if they pay Iran tolls</strong> -- The warning comes as President Donald Trump said he was &quot;not excited&quot; by Iran&#x27;s latest proposal for a peace deal. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c3v2l2qq9qlo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-02T16:51:18Z",
-      "text": "<strong>Thirteen killed in Israeli strikes on southern Lebanon, health ministry says</strong> -- Four women and a child are among the dead, as fighting between Israel and Iran-backed Hezbollah continues despite a ceasefire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cd7pn0zywggo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-02T23:03:03Z",
-      "text": "<strong>Trump tells Congress ceasefire means he does not need their approval for Iran war</strong> -- The president writes that hostilities &quot;have terminated&quot; because of the ceasefire, arguing he does not need congressional authorisation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-01T13:12:10Z",
-      "text": "<strong>Billions of meals at risk due to Iran war, says fertiliser boss</strong> -- A shortage of fertiliser due to the Iran conflict could reduce crop yields and push prices higher, says the boss of Yara. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cpwp50v4ye7o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "What\u2019s Iran\u2019s 14-point proposal to end the war? And will Trump accept it?",
+      "description": "Trump is reviewing Iran&#039;s latest proposal to end the war, but the mistrust between the two sides is a big obstacle.",
+      "link": "https://www.aljazeera.com/news/2026/5/3/whats-irans-14-point-proposal-to-end-the-war-and-will-trump-accept-it?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-03T11:10:48Z",
+      "tier": 2
+    },
+    {
+      "title": "Strait of Hormuz blockade and other major naval sieges in modern times",
+      "description": "Naval blockades are among the oldest weapons of war, using sea control to cut supplies and force an enemy\u2019s surrender.",
+      "link": "https://www.aljazeera.com/news/2026/5/3/strait-of-hormuz-blockade-and-other-major-naval-sieges-in-modern-times?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-03T10:36:49Z",
+      "tier": 2
+    },
+    {
       "title": "Ukraine drone attack hits Russian Baltic port, governor says",
       "description": "Ukrainian forces also strike two shadow fleet tankers near port of Novorossiysk, President Volodymyr Zelenskyy says.",
       "link": "https://www.aljazeera.com/news/2026/5/3/ukraine-drone-attack-hits-russian-baltic-port-governor-says?traffic_source=rss",
@@ -1250,30 +1266,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/3/millions-of-jobs-lost-as-iranians-battle-operation-economic?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-03T04:35:26Z",
-      "tier": 2
-    },
-    {
-      "title": "UAE lifts all air traffic restrictions introduced since Iran war",
-      "description": "UAE aviation authority&#039;s announcement is the latest sign of the travel sector&#039;s recovery across the Middle East.",
-      "link": "https://www.aljazeera.com/news/2026/5/3/uae-lifts-all-air-traffic-restrictions-introduced-since-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-03T03:29:44Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump expresses doubt that Iran\u2019s peace proposal is \u2018acceptable\u2019",
-      "description": "US president says he is considering the 14-point peace plan, but warns strikes could resume if Tehran &#039;misbehaves&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/5/3/trump-reviews-iranian-peace-proposal-warns-strikes-could-resume?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-03T02:37:38Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Trump to review 14-point plan; Israel pounds Lebanon",
-      "description": "US president says he will &#039;soon be reviewing the plan Iran has just sent to us&#039;, but doesn&#039;t think he can make a deal.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/3/iran-war-live-trump-says-reviewing-14-point-plan-israel-pounds-lebanon?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-03T00:00:00Z",
       "tier": 2
     },
     {
@@ -1349,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on May 3, 2026 indicates the U.S.-Iran ceasefire remains fragile while President Donald Trump reviews a new 14-point Iranian proposal and says air strikes could resume if Tehran 'misbehaves'. The latest confirmed cumulative casualty figures located were 3,375 killed and more than 26,500 injured in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s April 27 tracker; 26 killed in Israel; 13 U.S. combat-related deaths; and 28 deaths in Gulf states. On the military side, the latest official CENTCOM fact sheet located says Operation Epic Fury had struck 13,000+ targets by April 6, and listed 13,000+ combat flights by April 1, but it did not provide confirmed current counts for carrier groups, destroyers, deployed personnel, drones, or cumulative missile and bomb expenditures.",
+  "summary": "Confirmed reporting on May 2-3, 2026 indicates the April 8 ceasefire is still broadly holding, but the war remains unsettled: AP reported President Donald Trump is reviewing a new Iranian 14-point proposal sent via Pakistan while expressing skepticism, and the administration maintains that the hostilities that began on February 28, 2026 have 'terminated' for War Powers purposes even as maritime coercion and mutual accusations continue. The latest confirmed casualty figures I found remain 3,375 dead and more than 26,500 wounded in Iran, 13 U.S. military dead, 26 Israelis dead, and 28 killed in Gulf states; the latest official operations baseline remains CENTCOM's April 6 fact sheet showing 13,000+ targets struck and 155+ Iranian vessels damaged or destroyed.",
   "briefings": [
     {
       "date": "2026-05-03",
       "day": 64,
-      "summary": "Confirmed reporting on May 3, 2026 indicates the U.S.-Iran ceasefire remains fragile while President Donald Trump reviews a new 14-point Iranian proposal and says air strikes could resume if Tehran 'misbehaves'. The latest confirmed cumulative casualty figures located were 3,375 killed and more than 26,500 injured in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s April 27 tracker; 26 killed in Israel; 13 U.S. combat-related deaths; and 28 deaths in Gulf states. On the military side, the latest official CENTCOM fact sheet located says Operation Epic Fury had struck 13,000+ targets by April 6, and listed 13,000+ combat flights by April 1, but it did not provide confirmed current counts for carrier groups, destroyers, deployed personnel, drones, or cumulative missile and bomb expenditures."
+      "summary": "Confirmed reporting on May 2-3, 2026 indicates the April 8 ceasefire is still broadly holding, but the war remains unsettled: AP reported President Donald Trump is reviewing a new Iranian 14-point proposal sent via Pakistan while expressing skepticism, and the administration maintains that the hostilities that began on February 28, 2026 have 'terminated' for War Powers purposes even as maritime coercion and mutual accusations continue. The latest confirmed casualty figures I found remain 3,375 dead and more than 26,500 wounded in Iran, 13 U.S. military dead, 26 Israelis dead, and 28 killed in Gulf states; the latest official operations baseline remains CENTCOM's April 6 fact sheet showing 13,000+ targets struck and 155+ Iranian vessels damaged or destroyed."
     },
     {
       "date": "2026-05-02",
