@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-05-04T12:56:05Z",
+  "lastUpdated": "2026-05-04T15:22:29Z",
   "dayCount": 65,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,410+",
-    "cost": "$39.9B+"
+    "killed": "3,412+",
+    "cost": "$41.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,375",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "9",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "20,000+",
+    "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.9 billion+",
-    "dailyBurnRate": "~$614M/day",
+    "totalCost": "$41.1 billion+",
+    "dailyBurnRate": "~$632M/day",
     "daysOfOps": 65,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-04",
-          "source": "LLM-verified (Pentagon transcript (accessible via Department of War transcript) states on April 16, 2026 that a second aircraft carrier would join the blockade in a few days; latest official accessible confirmation supports 2 carriers, not 3)"
+          "source": "LLM-verified (Army/Pentagon briefing on March 3, 2026 says USS Abraham Lincoln and USS Gerald R. Ford carrier strike groups were in the region; April 24 Pentagon briefing says a second aircraft carrier would join blockade operations)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-05-03",
-          "source": "LLM-verified (Current confirmed number not explicitly found in searched official sources; database value not independently verifiable from latest named source)"
+          "lastUpdated": "2026-05-04",
+          "source": "LLM-verified (null - searched sources in this pass confirmed named destroyers in theater but not a current total count of destroyers/escorts as of May 4, 2026)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-04",
-          "source": "LLM-verified (IDF article dated April 1, 2026: more than 800 Israeli Air Force strike sorties since launch of Operation Roaring Lion)"
+          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet lists Combat Flights: 13,000+; this is combat flights, not explicitly fighter-only sorties, so use with caution)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Pentagon briefing on April 24 said Iran had attacked five merchant vessels and seized two attempting to transit the strait",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran warned the U.S. to stay out of the Strait of Hormuz and says such moves violate the ceasefire",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "U.S. announced a Hormuz escort mission ('Project Freedom') beginning May 4, 2026, to guide stranded ships through restricted waterways",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 4, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "BBC reported Iran says the U.S. responded to its latest peace proposal, but no accepted settlement was confirmed",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "UKMTO reported a bulk carrier was attacked by multiple small craft 11 nautical miles west of Sirik, Iran, indicating continued maritime risk near the Strait of Hormuz",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Recent AP and Al Jazeera reporting describe a shaky ceasefire still under strain and continued diplomatic friction over Iran's proposal to end the war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "May 1-2 reporting indicates the Pentagon is withdrawing about 5,000 U.S. troops from Germany amid disputes with Berlin over the Iran war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-05-04T14:56:22Z",
+      "text": "<strong>Does Trump hold \u2018all the cards\u2019 against Iran in the Strait of Hormuz?</strong> -- Trump signals confidence in Iran standoff as tensions rise in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/4/does-trump-hold-all-the-cards-against-iran-in-the-strait-of-hormuz?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-04T13:41:50Z",
+      "text": "<strong>Russian strikes kill at least eight in Ukraine, while drones hit Moscow</strong> -- Kharkiv and Kherson targeted by missiles, while Russian capital suffers a rare hit from drones. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/4/five-people-killed-in-russian-missile-attack-on-ukraines-kharkiv-region?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-04T13:25:15Z",
+      "text": "<strong>What is hantavirus, suspected in deaths of three people on cruise ship?</strong> -- World Health Organization says risk to the general public remains low despite suspected outbreak on the MV Hondius. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/4/what-is-hantavirus-suspected-in-deaths-of-three-people-on-cruise-ship?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-04T13:12:52Z",
+      "text": "<strong>War preparations under way in Iran as Hormuz tensions with US escalate</strong> -- Amid stalled talks and sparring over key waterway, Iranian media say US warship struck, but Washington denies incident. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/4/war-preparations-under-way-in-iran-as-hormuz-tensions-with-us-escalate?traffic_source=rss"
+    },
+    {
       "time": "2026-05-04T10:55:19Z",
       "text": "<strong>Iran says it fired missiles at US warship to prevent it entering Hormuz</strong> -- Iranian state media says two missiles have struck a US navy destroyer to prevent it entering the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/4/iran-says-it-fired-missiles-at-us-warship-to-prevent-it-entering-hormuz?traffic_source=rss"
@@ -779,7 +799,7 @@
     },
     {
       "time": "2026-05-04T08:20:54Z",
-      "text": "<strong>Iran warns US to stay out of Hormuz after Trump says US will \u2018guide\u2019 ships</strong> -- President Trump says the US will begin Project Freedom on Monday to guide stranded ships through Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran warns US to stay out of Hormuz after Trump says US will \u2018guide\u2019 ships</strong> -- President Trump says the US will begin &amp;#039;Project Freedom&amp;#039; on Monday to guide stranded ships through Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/4/iran-warns-us-to-stay-out-of-hormuz-after-trump-says-us-will-guide-ships?traffic_source=rss"
     },
     {
@@ -831,26 +851,6 @@
       "time": "2026-05-02T23:17:17Z",
       "text": "<strong>The clandestine network smuggling Starlink tech into Iran to beat internet blackout</strong> -- Sahand tells the BBC World Service he sends satellite internet terminals into Iran to help show &quot;the real picture&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cvgzk91leweo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-03T14:44:04Z",
-      "text": "<strong>Concern for jailed Iranian Nobel laureate as brother fears she is dying</strong> -- Her family said the 54-year-old had been taken from prison to a local hospital after a sharp deterioration in her health. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c362pd8epw9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-03T16:54:08Z",
-      "text": "<strong>Manchester United beat Liverpool to secure Champions League qualification</strong> -- Kobbie Mainoo&amp;#039;s late strike earns a thrilling victory after bitter rivals Liverpool had fought back from two goals down. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/5/3/man-united-beat-liverpool-3-2-to-secure-champions-league-qualification?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-03T16:47:24Z",
-      "text": "<strong>Bulk carrier attacked by multiple small craft off Iran, UKMTO says</strong> -- Crew is safe and no environmental impact has been reported after the incident 11 nautical miles (20km) west of Sirik. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/3/bulk-carrier-attacked-by-multiple-small-craft-off-iran-ukmto-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-03T14:06:20Z",
-      "text": "<strong>On World Press Freedom Day, Pope honours journalists killed in war zones</strong> -- Pope Leo XIV asks faithful to remember journalists who have lost their lives pursuing the truth. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/3/pope-honors-journalists-killed-in-war-zones-on-world-press-freedom-day?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Does Trump hold \u2018all the cards\u2019 against Iran in the Strait of Hormuz?",
+      "description": "Trump signals confidence in Iran standoff as tensions rise in the Strait of Hormuz.",
+      "link": "https://www.aljazeera.com/news/2026/5/4/does-trump-hold-all-the-cards-against-iran-in-the-strait-of-hormuz?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-04T14:56:22Z",
+      "tier": 2
+    },
+    {
+      "title": "Russian strikes kill at least eight in Ukraine, while drones hit Moscow",
+      "description": "Kharkiv and Kherson targeted by missiles, while Russian capital suffers a rare hit from drones.",
+      "link": "https://www.aljazeera.com/news/2026/5/4/five-people-killed-in-russian-missile-attack-on-ukraines-kharkiv-region?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-04T13:41:50Z",
+      "tier": 2
+    },
+    {
+      "title": "What is hantavirus, suspected in deaths of three people on cruise ship?",
+      "description": "World Health Organization says risk to the general public remains low despite suspected outbreak on the MV Hondius.",
+      "link": "https://www.aljazeera.com/news/2026/5/4/what-is-hantavirus-suspected-in-deaths-of-three-people-on-cruise-ship?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-04T13:25:15Z",
+      "tier": 2
+    },
+    {
+      "title": "War preparations under way in Iran as Hormuz tensions with US escalate",
+      "description": "Amid stalled talks and sparring over key waterway, Iranian media say US warship struck, but Washington denies incident.",
+      "link": "https://www.aljazeera.com/news/2026/5/4/war-preparations-under-way-in-iran-as-hormuz-tensions-with-us-escalate?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-04T13:12:52Z",
+      "tier": 2
+    },
+    {
       "title": "Iran says it fired missiles at US warship to prevent it entering Hormuz",
       "description": "Iranian state media says two missiles have struck a US navy destroyer to prevent it entering the Strait of Hormuz.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/4/iran-says-it-fired-missiles-at-us-warship-to-prevent-it-entering-hormuz?traffic_source=rss",
@@ -1254,7 +1286,7 @@
     },
     {
       "title": "Iran warns US to stay out of Hormuz after Trump says US will \u2018guide\u2019 ships",
-      "description": "President Trump says the US will begin Project Freedom on Monday to guide stranded ships through Strait of Hormuz.",
+      "description": "President Trump says the US will begin &#039;Project Freedom&#039; on Monday to guide stranded ships through Strait of Hormuz.",
       "link": "https://www.aljazeera.com/news/2026/5/4/iran-warns-us-to-stay-out-of-hormuz-after-trump-says-us-will-guide-ships?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-04T08:20:54Z",
@@ -1266,38 +1298,6 @@
       "link": "https://www.aljazeera.com/news/2026/5/4/seized-iranian-ships-crew-repatriated-to-pakistan-says-foreign-ministry?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-04T07:36:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Japan PM says Iran war oil crisis having \u2018enormous impact\u2019 in Asia Pacific",
-      "description": "Sanae Takaichi makes comments during a visit to Australia, where she signs agreements on energy supplies.",
-      "link": "https://www.aljazeera.com/news/2026/5/4/japan-pm-says-iran-war-oil-crisis-having-enormous-impact-in-asia-pacific?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-04T06:45:13Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump says US to begin \u2018guiding\u2019 ships in Strait of Hormuz",
-      "description": "US President Donald Trump has announced a naval mission to &#039;guide&#039; stranded ships through the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/4/trump-says-us-to-begin-escorting-ships-in-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-04T03:47:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Oil prices flat as Trump\u2019s plan for Strait of Hormuz fails to calm market",
-      "description": "Brent crude is largely unmoved by Trump&#039;s announcement of the operation, dubbed &#039;Project Freedom&#039;.",
-      "link": "https://www.aljazeera.com/economy/2026/5/4/oil-prices-flat-as-trumps-plan-for-strait-of-hormuz-fails-to-move-markets?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-04T03:37:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: US denies frigate hit by missiles in Hormuz Strait",
-      "description": "Reported incident comes after Trump announced &#039;Project Freedom&#039; to free stranded ships from the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/4/iran-war-live-tehran-says-trumps-hormuz-mission-violates-ceasefire?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-04T00:00:00Z",
       "tier": 2
     },
     {
@@ -1341,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on May 4, 2026 shows the war remains in a tense post-ceasefire maritime phase: AP reports the United States has begun guiding commercial ships through the Strait of Hormuz, while the U.S. military denied Iranian state media claims that missiles struck a U.S. Navy destroyer. The latest accessible official U.S. operations fact sheet still lists 13,000+ targets struck as of April 6. For casualties, the newest confirmed Iran-wide death figure I found remains the April 20 Iranian forensic estimate of at least 3,375 killed, while Reuters\u2019 April 4 factbox still provides the clearest sourced figures for seven U.S. troops killed in action, at least 20,000 wounded in Iran, and 28 deaths across the specified Gulf states.",
+  "summary": "Confirmed reporting indicates the war remains in a fragile ceasefire-and-blockade phase rather than full termination. AP reported on May 1 that the White House told Congress hostilities that began on February 28, 2026, had 'terminated,' but also acknowledged the threat from Iran remains significant. AP reported on May 3 that Trump ordered U.S. forces to begin guiding stranded ships out of the Strait of Hormuz starting Monday, May 4. Al Jazeera and Pentagon/CENTCOM materials continue to show substantial cumulative war costs: AJLabs lists 3,375 dead in Iran and 28 killed in Gulf states as of its April 27 update, while CENTCOM's April 6 fact sheet lists 13,000+ targets struck. A Pentagon briefing on April 24 also said the U.S. blockade was expanding and that Iran had attacked five merchant vessels and seized two.",
   "briefings": [
     {
       "date": "2026-05-04",
       "day": 65,
-      "summary": "Confirmed reporting on May 4, 2026 shows the war remains in a tense post-ceasefire maritime phase: AP reports the United States has begun guiding commercial ships through the Strait of Hormuz, while the U.S. military denied Iranian state media claims that missiles struck a U.S. Navy destroyer. The latest accessible official U.S. operations fact sheet still lists 13,000+ targets struck as of April 6. For casualties, the newest confirmed Iran-wide death figure I found remains the April 20 Iranian forensic estimate of at least 3,375 killed, while Reuters\u2019 April 4 factbox still provides the clearest sourced figures for seven U.S. troops killed in action, at least 20,000 wounded in Iran, and 28 deaths across the specified Gulf states."
+      "summary": "Confirmed reporting indicates the war remains in a fragile ceasefire-and-blockade phase rather than full termination. AP reported on May 1 that the White House told Congress hostilities that began on February 28, 2026, had 'terminated,' but also acknowledged the threat from Iran remains significant. AP reported on May 3 that Trump ordered U.S. forces to begin guiding stranded ships out of the Strait of Hormuz starting Monday, May 4. Al Jazeera and Pentagon/CENTCOM materials continue to show substantial cumulative war costs: AJLabs lists 3,375 dead in Iran and 28 killed in Gulf states as of its April 27 update, while CENTCOM's April 6 fact sheet lists 13,000+ targets struck. A Pentagon briefing on April 24 also said the U.S. blockade was expanding and that Iran had attacked five merchant vessels and seized two."
     },
     {
       "date": "2026-05-03",
