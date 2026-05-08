@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-08T20:16:39Z",
+  "lastUpdated": "2026-05-08T22:11:33Z",
   "dayCount": 69,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,535+",
-    "cost": "$39.0B+"
+    "cost": "$38.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.0 billion+",
-    "dailyBurnRate": "~$565M/day",
+    "totalCost": "$38.9 billion+",
+    "dailyBurnRate": "~$563M/day",
     "daysOfOps": 69,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-08",
-          "source": "LLM-verified (U.S. Department of War briefing transcript, April 24, 2026: second aircraft carrier to join blockade in just a few days; confirms 2 carrier strike groups in theater/blockade phase)"
+          "source": "LLM-verified (CENTCOM imagery and press releases show USS Abraham Lincoln (CVN 72) and USS Gerald R. Ford (CVN 78) supporting Operation Epic Fury in March 2026; May 8 press release also shows USS George H.W. Bush (CVN 77) operating in blockade enforcement, creating ambiguity over current theater carrier count, so 2 remains the last clearly confirmed Epic Fury count.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 9,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-05-08",
-          "source": "LLM-verified (Breaking Defense citing CENTCOM: three carrier strike groups include at least nine destroyers (turn6view2))"
+          "source": "LLM-verified (CENTCOM May 7, 2026 press release names three guided-missile destroyers transiting Hormuz: USS Truxtun, USS Rafael Peralta, and USS Mason. This is a confirmed active subset, not a full theater total.)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-08",
-          "source": "LLM-verified (Breaking Defense citing CENTCOM: three carrier groups include over 15,000 sailors and marines (turn6view2))"
+          "source": "LLM-verified (CENTCOM May 3, 2026 press release on Project Freedom says U.S. military support includes '15,000 service members.')"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-08",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; stored here as 13000 confirmed floor.)"
         },
         {
           "id": "interceptors",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "9 \u00d7 $240,000/day \u00d7 69 days",
-        "cost": "$149,040,000"
+        "detail": "3 \u00d7 $240,000/day \u00d7 69 days",
+        "cost": "$49,680,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Expanded U.S. maritime enforcement under Project Freedom and blockade operations in the Strait of Hormuz/Gulf of Oman, including disabling non-compliant vessels on May 6 and May 8, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian attacks on U.S. destroyers transiting the Strait of Hormuz on May 7, 2026, involving missiles, drones, and small boats, followed by U.S. self-defense strikes.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 8, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Al Jazeera reported Iran said it attacked U.S. Navy ships after they targeted an Iranian tanker; U.S. military said it intercepted and responded",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian state media and Al Jazeera reported air defence activations and explosions over western Tehran on May 8, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 7, 2026 that Iran created a new agency to vet and tax vessels seeking passage through the Strait of Hormuz, underscoring continuing maritime risk despite ceasefire talks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1309,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in accessible sources remains limited. CENTCOM\u2019s latest accessible Operation Epic Fury fact sheets list more than 13,000 targets struck as of April 6, 2026 and more than 13,000 combat flights as of April 1, while Al Jazeera\u2019s May 5, 2026 live tracker, citing named official sources including Iran\u2019s Ministry of Health and Israeli and U.S. authorities, reports 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 U.S. combat-related deaths, and 28 deaths in Gulf states. I did not find current named-source confirmed totals for civilian-only Iranian deaths, U.S. deployed personnel, current carrier/destroyer counts, UAV unit counts, or cumulative weapons-use counts for Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or interceptors in accessible official or wire-service reporting.",
+  "summary": "As of May 8, 2026, the clearest newly confirmed U.S. developments are maritime: CENTCOM said U.S. forces began supporting Project Freedom on May 4 with guided-missile destroyers, over 100 land- and sea-based aircraft, multi-domain unmanned platforms, and 15,000 service members, and on May 7 said Iranian forces attacked USS Truxtun, USS Rafael Peralta, and USS Mason in the Strait of Hormuz with missiles, drones, and small boats, prompting U.S. self-defense strikes; on May 8 CENTCOM also said U.S. forces disabled two more Iranian-flagged tankers in the Gulf of Oman, while the latest accessible official Epic Fury fact sheet still lists 13,000+ targets struck and 13,000+ combat flights, and the latest accessible Pentagon casualty reporting still shows 13 U.S. troops killed.",
   "briefings": [
     {
       "date": "2026-05-08",
       "day": 69,
-      "summary": "Confirmed reporting available in accessible sources remains limited. CENTCOM\u2019s latest accessible Operation Epic Fury fact sheets list more than 13,000 targets struck as of April 6, 2026 and more than 13,000 combat flights as of April 1, while Al Jazeera\u2019s May 5, 2026 live tracker, citing named official sources including Iran\u2019s Ministry of Health and Israeli and U.S. authorities, reports 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 U.S. combat-related deaths, and 28 deaths in Gulf states. I did not find current named-source confirmed totals for civilian-only Iranian deaths, U.S. deployed personnel, current carrier/destroyer counts, UAV unit counts, or cumulative weapons-use counts for Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or interceptors in accessible official or wire-service reporting."
+      "summary": "As of May 8, 2026, the clearest newly confirmed U.S. developments are maritime: CENTCOM said U.S. forces began supporting Project Freedom on May 4 with guided-missile destroyers, over 100 land- and sea-based aircraft, multi-domain unmanned platforms, and 15,000 service members, and on May 7 said Iranian forces attacked USS Truxtun, USS Rafael Peralta, and USS Mason in the Strait of Hormuz with missiles, drones, and small boats, prompting U.S. self-defense strikes; on May 8 CENTCOM also said U.S. forces disabled two more Iranian-flagged tankers in the Gulf of Oman, while the latest accessible official Epic Fury fact sheet still lists 13,000+ targets struck and 13,000+ combat flights, and the latest accessible Pentagon casualty reporting still shows 13 U.S. troops killed."
     },
     {
       "date": "2026-05-07",
