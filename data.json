@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-05-08T06:10:04Z",
+  "lastUpdated": "2026-05-08T07:58:20Z",
   "dayCount": 69,
   "banner": {
     "strikes": "~13,000",
-    "killed": "10+",
-    "cost": "$40.5B+"
+    "killed": "3,502+",
+    "cost": "$41.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "5",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "10",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$40.5 billion+",
-    "dailyBurnRate": "~$586M/day",
+    "totalCost": "$41.3 billion+",
+    "dailyBurnRate": "~$598M/day",
     "daysOfOps": 69,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-08",
-          "source": "LLM-verified (AP March 2, 2026 reported Gen. Dan Caine said 'two U.S. carrier strike groups' began moving toward launching points for Operation Epic Fury.)"
+          "source": "LLM-verified (Pentagon/Army news March 3, 2026 said two carrier strike groups moved toward launch points; Stars and Stripes on April 24, 2026 reported a second carrier would join the blockade, confirming current theater total at 2)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-08",
-          "source": "LLM-verified (IDF article dated April 1, 2026 said 'more than 800 Israeli Air Force strike sorties' had been carried out over the past month.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; no newer official cumulative sortie figure retrieved)"
         },
         {
           "id": "interceptors",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-05-06",
-          "source": "LLM-verified (Reuters video transcript of Pentagon briefing, April 8, 2026: Gen. Dan Caine said 'we've thus far intercepted 1,700 ballistic missiles and one-way attack drones')"
+          "lastUpdated": "2026-05-08",
+          "source": "LLM-verified (Pentagon briefing reported by Reuters Connect / GlobalSecurity on April 8, 2026: U.S. and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Reuters/AP/Al Jazeera reporting indicates the Hormuz shipping confrontation remains the main escalation trigger, with commercial navigation and energy markets still exposed.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the UAE came under attack during the U.S. push to reopen the Strait of Hormuz, signaling broader regional spillover risk despite the ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 7-8, 2026 that U.S. forces intercepted Iranian attacks on three Navy ships in the Strait of Hormuz amid renewed ceasefire tensions.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 8, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera and BBC headline reporting indicate renewed tension around Hormuz and diplomacy that could either stabilize or unravel the ceasefire.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported ongoing U.S. efforts around the Strait of Hormuz remained in flux, with ship-protection operations paused pending talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 6, 2026 that President Trump warned bombing could resume if Tehran does not agree to U.S. terms.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 6, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Israel struck Beirut's southern suburbs on May 6 for the first time since the April 17 ceasefire, signaling renewed regional escalation risk beyond Iran proper.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-08T07:11:41Z",
+      "text": "<strong>Southeast Asia\u2019s leaders confront fallout from Iran war at ASEAN summit</strong> -- Bloc is expected to call for deeper energy cooperation and reopening of the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/5/8/southeast-asias-leaders-confront-fallout-from-iran-war-at-asean-summit?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-08T06:32:57Z",
+      "text": "<strong>Iran war day 70: US, Iran trade fire in Hormuz amid ceasefire tensions</strong> -- Iran accuses US of breaching ceasefire near Hormuz as CENTCOM says forces responded to Iranian attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/8/iran-war-day-70-us-iran-trade-fire-in-hormuz-amid-ceasefire-tensions?traffic_source=rss"
+    },
+    {
       "time": "2026-05-08T04:25:03Z",
       "text": "<strong>Trump says ceasefire still in effect, but Iran \u2018better sign agreement fast\u2019</strong> -- US President Donald Trump says the ceasefire with Iran is still in effect, despite clashes in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/8/trump-says-ceasefire-still-in-effect-but-iran-better-sign-agreement?traffic_source=rss"
@@ -769,7 +779,7 @@
     },
     {
       "time": "2026-05-08T00:00:00Z",
-      "text": "<strong>Iran war live: UAE says intercepted attacks after Iran, US trade blows</strong> -- Iran says US violated ceasefire by targeting vessels, ports, but Trump insists ceasefire still in effect. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: UAE says it responded to attacks after Iran, US trade blows</strong> -- Iran says US violated ceasefire by targeting vessels, ports, but Trump insists ceasefire still in effect. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/5/8/iran-war-live-trump-says-ceasefire-still-in-effect-as-iran-us-clash?traffic_source=rss"
     },
     {
@@ -788,14 +798,14 @@
       "link": "https://www.aljazeera.com/news/2026/5/7/explosions-heard-in-iran-as-state-media-reports-clashes-with-us-navy?traffic_source=rss"
     },
     {
-      "time": "2026-05-07T20:10:54Z",
-      "text": "<strong>Palestinian boy mourns father killed in Israeli strike on security post</strong> -- A Palestinian boy mourns his father, one of three people killed in an Israeli strike on a security post in Gaza. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/palestinian-boy-mourns-father-killed-in-israeli-strike-on-security-post?traffic_source=rss"
-    },
-    {
       "time": "2026-05-08T05:57:08Z",
       "text": "<strong>Trump says US-Iran ceasefire still in place after exchange of fire in Strait of Hormuz</strong> -- Iran accuses the US of violating the truce, alleging it targeted an oil tanker and carried out attacks on coastal areas. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c626zyywxjno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-07T20:10:54Z",
+      "text": "<strong>Palestinian boy mourns father killed in Israeli strike on security post</strong> -- A Palestinian boy mourns his father, one of three people killed in an Israeli strike on a security post in Gaza. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/palestinian-boy-mourns-father-killed-in-israeli-strike-on-security-post?traffic_source=rss"
     },
     {
       "time": "2026-05-07T18:13:11Z",
@@ -841,16 +851,6 @@
       "time": "2026-05-07T17:36:05Z",
       "text": "<strong>Why has the US sanctioned Iraq\u2019s deputy oil minister for helping Iran?</strong> -- The US accuses Ali Maarij al-Bahadly of helping Iran avoid sanctions and export its oil through Iraq. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/7/why-has-the-us-sanctioned-iraqs-deputy-oil-minister-for-helping-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-07T16:22:40Z",
-      "text": "<strong>Lebanon Latest Israeli strikes Beirut despite \u2018ceasefire\u2019</strong> -- Israel has carried out its first airstrike on Beirut\u2019s southern suburbs since the April 16 US-brokered ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/lebanon-latest-israeli-strikes-beirut-despite?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-07T16:18:04Z",
-      "text": "<strong>Iran\u2019s president says he has spoken to the country\u2019s Supreme Leader</strong> -- Iranian President Masoud Pezeshkian says he has met with Iranian Supreme Leader Mojtaba Khamenei. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/irans-president-says-he-has-spoken-to-the-countrys-supreme-leader?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Southeast Asia\u2019s leaders confront fallout from Iran war at ASEAN summit",
+      "description": "Bloc is expected to call for deeper energy cooperation and reopening of the Strait of Hormuz.",
+      "link": "https://www.aljazeera.com/economy/2026/5/8/southeast-asias-leaders-confront-fallout-from-iran-war-at-asean-summit?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-08T07:11:41Z",
+      "tier": 2
+    },
+    {
+      "title": "Oil prices rise after US and Iran exchange fire in Hormuz strait",
+      "description": "US President Donald Trump says the ceasefire between Washington and Tehran is still in place.",
+      "link": "https://www.bbc.com/news/articles/c86dp85g59xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-08T07:04:24Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war day 70: US, Iran trade fire in Hormuz amid ceasefire tensions",
+      "description": "Iran accuses US of breaching ceasefire near Hormuz as CENTCOM says forces responded to Iranian attacks.",
+      "link": "https://www.aljazeera.com/news/2026/5/8/iran-war-day-70-us-iran-trade-fire-in-hormuz-amid-ceasefire-tensions?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-08T06:32:57Z",
+      "tier": 2
+    },
+    {
       "title": "Trump says US-Iran ceasefire still in place after exchange of fire in Strait of Hormuz",
       "description": "Iran accuses the US of violating the truce, alleging it targeted an oil tanker and carried out attacks on coastal areas.",
       "link": "https://www.bbc.com/news/articles/c626zyywxjno?at_medium=RSS&at_campaign=rss",
@@ -1253,7 +1277,7 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: UAE says intercepted attacks after Iran, US trade blows",
+      "title": "Iran war live: UAE says it responded to attacks after Iran, US trade blows",
       "description": "Iran says US violated ceasefire by targeting vessels, ports, but Trump insists ceasefire still in effect.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/5/8/iran-war-live-trump-says-ceasefire-still-in-effect-as-iran-us-clash?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1293,11 +1317,11 @@
       "tier": 2
     },
     {
-      "title": "Palestinian boy mourns father killed in Israeli strike on security post",
-      "description": "A Palestinian boy mourns his father, one of three people killed in an Israeli strike on a security post in Gaza.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/palestinian-boy-mourns-father-killed-in-israeli-strike-on-security-post?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-07T20:10:54Z",
+      "title": "Marco Rubio meets Pope Leo amid tensions with Trump over Iran war",
+      "description": "Leo, the first American pontiff, drew Trump's ire after becoming a firm critic of the war and the administration's hardline immigration policies.",
+      "link": "https://www.bbc.com/news/videos/cq8py99p2jzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-07T19:06:43Z",
       "tier": 2
     },
     {
@@ -1315,22 +1339,14 @@
       "source": "BBC World",
       "time": "2026-05-07T14:22:20Z",
       "tier": 2
-    },
-    {
-      "title": "Watch: The Lebanese neighbourhoods shattered by Israel's ten minute bombing raid",
-      "description": "The BBC\u2019s Nawal Al-Maghafi has been piecing together what happened on 8 April 2026, after one of the deadliest chapters in the country\u2019s recent history.",
-      "link": "https://www.bbc.com/news/videos/c0l2z28d6elo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-06T06:39:27Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on May 7-8, 2026 indicates the April 8 ceasefire remains formally in place but is under severe strain after Iran launched missiles and drones at three US Navy ships in the Strait of Hormuz and the US said it intercepted the attacks and struck Iranian military facilities in response; the UAE also reported a new missile and drone attack, while CENTCOM\u2019s May 3 Project Freedom release said the mission uses guided-missile destroyers, over 100 aircraft, multi-domain unmanned platforms, and 15,000 service members, and the latest accessible CENTCOM cumulative strike figure remains 13,000+ targets struck as of the April 6 Operation Epic Fury fact sheet.",
+  "summary": "Confirmed reporting on May 7-8, 2026 shows the ceasefire remains fragile as U.S. and Iranian forces exchanged fire around the Strait of Hormuz, with AP reporting that U.S. forces intercepted attacks on three Navy ships and that the UAE had also come under attack during efforts to reopen the waterway. The most current confirmed casualty figures retrieved remain 3,468 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s May 5 tracker, 26 killed in Israel via the same tracker citing Israeli authorities, and 5 confirmed U.S. military dead from official Pentagon casualty notices. On the operational side, the newest official cumulative strike figure retrieved is CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while the latest confirmed interceptor total found is 1,700 from the April 8 Pentagon briefing.",
   "briefings": [
     {
       "date": "2026-05-08",
       "day": 69,
-      "summary": "Confirmed reporting on May 7-8, 2026 indicates the April 8 ceasefire remains formally in place but is under severe strain after Iran launched missiles and drones at three US Navy ships in the Strait of Hormuz and the US said it intercepted the attacks and struck Iranian military facilities in response; the UAE also reported a new missile and drone attack, while CENTCOM\u2019s May 3 Project Freedom release said the mission uses guided-missile destroyers, over 100 aircraft, multi-domain unmanned platforms, and 15,000 service members, and the latest accessible CENTCOM cumulative strike figure remains 13,000+ targets struck as of the April 6 Operation Epic Fury fact sheet."
+      "summary": "Confirmed reporting on May 7-8, 2026 shows the ceasefire remains fragile as U.S. and Iranian forces exchanged fire around the Strait of Hormuz, with AP reporting that U.S. forces intercepted attacks on three Navy ships and that the UAE had also come under attack during efforts to reopen the waterway. The most current confirmed casualty figures retrieved remain 3,468 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s May 5 tracker, 26 killed in Israel via the same tracker citing Israeli authorities, and 5 confirmed U.S. military dead from official Pentagon casualty notices. On the operational side, the newest official cumulative strike figure retrieved is CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while the latest confirmed interceptor total found is 1,700 from the April 8 Pentagon briefing."
     },
     {
       "date": "2026-05-07",
