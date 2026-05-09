@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-05-09T19:33:27Z",
+  "lastUpdated": "2026-05-09T21:03:46Z",
   "dayCount": 70,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,504+",
-    "cost": "$43.3B+"
+    "strikes": "~9,000",
+    "killed": "3,517+",
+    "cost": "$41.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "23",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "10",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$43.3 billion+",
-    "dailyBurnRate": "~$619M/day",
+    "totalCost": "$41.7 billion+",
+    "dailyBurnRate": "~$596M/day",
     "daysOfOps": 70,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -91,13 +91,13 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-05-09",
-          "source": "LLM-verified (Reuters reporting on May 7, 2026 identified three U.S. destroyers involved in Hormuz operations: USS Truxtun, USS Peralta, and USS Mason.)"
+          "source": "LLM-verified (CENTCOM press release May 7, 2026 names USS Truxtun, USS Rafael Peralta, and USS Mason transiting Hormuz)"
         },
         {
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 15000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-09",
-          "source": "LLM-verified (CENTCOM commander update circulated by the White House in March 2026 said more than 50,000 U.S. troops were participating in Operation Epic Fury; no newer official total located.)"
+          "source": "LLM-verified (CENTCOM press release on Project Freedom, May 3, 2026: mission support includes 15,000 service members)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-09",
-          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet: 'Combat Flights: 13,000+'; stored as 13000 minimum confirmed floor)"
+          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; no newer official cumulative fighter/attack sortie total found in reviewed sources)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 70 days",
-        "cost": "$1,750,000,000"
+        "detail": "15,000 \u00d7 $500/day \u00d7 70 days",
+        "cost": "$525,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "May 5, 2026: Iran accused the U.S. military of killing five civilians in attacks on passenger boats in the Strait of Hormuz, a claim disputed by CENTCOM",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "May 5-8, 2026: Hormuz security crisis continued despite ceasefire claims, with renewed U.S.-Iran maritime clashes reported by CENTCOM and Al Jazeera",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "May 7, 2026: CENTCOM said Iranian forces launched missiles, drones, and small boats at U.S. destroyers transiting the Strait of Hormuz; no U.S. assets were struck",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 9, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on May 7 that the U.S. military intercepted Iranian attacks on three Navy ships in the Strait of Hormuz.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Pentagon released footage of U.S. strikes on two Iranian oil tankers in the Strait of Hormuz, indicating continued maritime escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Expanded U.S. maritime enforcement under Project Freedom and blockade operations in the Strait of Hormuz/Gulf of Oman, including disabling non-compliant vessels on May 6 and May 8, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian attacks on U.S. destroyers transiting the Strait of Hormuz on May 7, 2026, involving missiles, drones, and small boats, followed by U.S. self-defense strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-05-09T20:29:37Z",
+      "text": "<strong>Three police officers killed in car bomb attack in northwest Pakistan</strong> -- Bomber and several fighters detonate explosives-laden vehicle near security post in Bannu, Khyber Pakhtunkhwa. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/9/three-police-officers-killed-in-car-bomb-attack-in-northwest-pakistan?traffic_source=rss"
+    },
+    {
       "time": "2026-05-09T17:21:33Z",
       "text": "<strong>\u201cNowhere left to go\u201d: Gaza residents return to rubble after Israeli strike</strong> -- Al Jazeera\u2019s Tareq Abu Azzoum reports from Al-Shati Refugee Camp after overnight Israeli airstrikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/9/nowhere-left-to-go-gaza-residents-return-to-rubble-after-israeli-strike?traffic_source=rss"
@@ -771,6 +776,11 @@
       "time": "2026-05-09T12:40:04Z",
       "text": "<strong>Iran says it will play at 2026 World Cup if hosts address \u2018concerns\u2019</strong> -- Iran&amp;#039;s presence at the tournament has been shrouded in uncertainty since the US and Israel launched war on the country. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/5/9/iran-says-it-will-play-at-2026-world-cup-if-hosts-address-concerns?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-09T19:49:49Z",
+      "text": "<strong>Lebanon says Israeli strikes killed 39</strong> -- Israel and Hezbollah have continued to trade fire despite a ceasefire deal being announced last month. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cn4pjegk358o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-09T06:13:30Z",
@@ -841,16 +851,6 @@
       "time": "2026-05-08T17:18:33Z",
       "text": "<strong>More than a dozen reported killed in Israeli attacks on south Lebanon</strong> -- Israeli air raids on southern Lebanon escalate ahead of new round of talks expected next week in Washington, DC. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/8/more-than-a-dozen-reported-killed-in-israeli-attacks-on-south-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-08T15:33:12Z",
-      "text": "<strong>Rubio says Iranian boats firing at Americans will be \u2018blown up\u2019</strong> -- US Secretary of State Marco Rubio defended the US military\u2019s actions in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/8/rubio-says-iranian-boats-firing-at-americans-will-be-blown?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-09T03:30:52Z",
-      "text": "<strong>Iran accuses US of &#x27;reckless military adventure&#x27;</strong> -- Abbas Araghchi says the US attacks each time there is a diplomatic solution on the table. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Three police officers killed in car bomb attack in northwest Pakistan",
+      "description": "Bomber and several fighters detonate explosives-laden vehicle near security post in Bannu, Khyber Pakhtunkhwa.",
+      "link": "https://www.aljazeera.com/news/2026/5/9/three-police-officers-killed-in-car-bomb-attack-in-northwest-pakistan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-09T20:29:37Z",
+      "tier": 2
+    },
+    {
+      "title": "Lebanon says Israeli strikes killed 39",
+      "description": "Israel and Hezbollah have continued to trade fire despite a ceasefire deal being announced last month.",
+      "link": "https://www.bbc.com/news/articles/cn4pjegk358o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-09T19:49:49Z",
+      "tier": 2
+    },
+    {
       "title": "Iran demands guarantees for World Cup participation",
       "description": "The Iranian Football Federation (FFIRI) has presented Fifa with 10 conditions for participation at the World Cup in the US, Mexico and Canada.",
       "link": "https://www.bbc.com/news/articles/ckgpxg03v57o?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in accessible sources indicates no clear authoritative update above the previously logged major casualty totals for Iran and the United States, while Pentagon-linked reporting still supports 13 U.S. military deaths and Reuters carried Gen. Dan Caine\u2019s statement that coalition forces struck more than 13,000 targets and intercepted 1,700 missiles and one-way attack drones. The main new development on May 7-9, 2026 is the shift to maritime confrontation around the Strait of Hormuz: Reuters and AP reported U.S. retaliatory strikes after attacks on U.S. destroyers, with three named destroyers active in transit and escort operations, underscoring that the ceasefire remains highly unstable even as Washington says it is still in force.",
+  "summary": "Confirmed reporting reviewed shows the clearest current casualty baseline remains Al Jazeera\u2019s May 5, 2026 live tracker: Iran 3,468 killed and more than 26,500 injured per Iran\u2019s Ministry of Health, Israel 26 killed, and the U.S. military confirming 13 combat-related deaths. In the Gulf states, confirmed deaths identified were Bahrain 3 and Kuwait 7. Official U.S. military reporting reviewed this week focused on the Strait of Hormuz maritime security mission rather than publishing updated warwide strike or weapons-use totals: CENTCOM said on May 3 that Project Freedom would involve guided-missile destroyers, over 100 aircraft, multi-domain unmanned platforms, and 15,000 service members, and on May 7 it named three destroyers involved in a Hormuz transit under Iranian attack. No newer official confirmed totals were found for carrier groups, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or cumulative interceptor launches.",
   "briefings": [
     {
       "date": "2026-05-09",
       "day": 70,
-      "summary": "Confirmed reporting available in accessible sources indicates no clear authoritative update above the previously logged major casualty totals for Iran and the United States, while Pentagon-linked reporting still supports 13 U.S. military deaths and Reuters carried Gen. Dan Caine\u2019s statement that coalition forces struck more than 13,000 targets and intercepted 1,700 missiles and one-way attack drones. The main new development on May 7-9, 2026 is the shift to maritime confrontation around the Strait of Hormuz: Reuters and AP reported U.S. retaliatory strikes after attacks on U.S. destroyers, with three named destroyers active in transit and escort operations, underscoring that the ceasefire remains highly unstable even as Washington says it is still in force."
+      "summary": "Confirmed reporting reviewed shows the clearest current casualty baseline remains Al Jazeera\u2019s May 5, 2026 live tracker: Iran 3,468 killed and more than 26,500 injured per Iran\u2019s Ministry of Health, Israel 26 killed, and the U.S. military confirming 13 combat-related deaths. In the Gulf states, confirmed deaths identified were Bahrain 3 and Kuwait 7. Official U.S. military reporting reviewed this week focused on the Strait of Hormuz maritime security mission rather than publishing updated warwide strike or weapons-use totals: CENTCOM said on May 3 that Project Freedom would involve guided-missile destroyers, over 100 aircraft, multi-domain unmanned platforms, and 15,000 service members, and on May 7 it named three destroyers involved in a Hormuz transit under Iranian attack. No newer official confirmed totals were found for carrier groups, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or cumulative interceptor launches."
     },
     {
       "date": "2026-05-08",
