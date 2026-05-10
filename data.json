@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-10T22:05:28Z",
+  "lastUpdated": "2026-05-10T23:09:20Z",
   "dayCount": 71,
   "banner": {
-    "strikes": "~13,000",
+    "strikes": "~12,300",
     "killed": "3,529+",
-    "cost": "$42.1B+"
+    "cost": "$42.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$42.1 billion+",
-    "dailyBurnRate": "~$592M/day",
+    "totalCost": "$42.5 billion+",
+    "dailyBurnRate": "~$599M/day",
     "daysOfOps": 71,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-10",
-          "source": "LLM-verified (CENTCOM/Defense imagery confirms USS Abraham Lincoln and USS Gerald R. Ford supporting Operation Epic Fury; no newer official count found)"
+          "source": "LLM-verified (Department of War/CENTCOM operation pages and fact sheets list 'Nuclear-Powered Aircraft Carriers' in plural and operation media show USS Abraham Lincoln and USS Gerald R. Ford supporting Epic Fury.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-10",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' page, published April 20, 2026, reports over 8,500 aircraft sorties for the Israeli campaign; no official combined U.S.-Israeli fighter/attack sortie total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. blockade of Iranian ports has continued since April 13 and that on May 8 U.S. forces struck two Iranian oil tankers they said were trying to breach the blockade.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 10 that a drone ignited a small fire on a ship off Qatar while the UAE said it shot down two drones and Kuwait reported drones in its airspace; no casualties were reported.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 10 that Iran rejected the latest U.S. ceasefire proposal via Pakistani mediators and Trump called the response 'totally unacceptable,' raising the risk of renewed hostilities.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 10, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Iran continues reviewing a U.S. proposal to end the war, with Tehran's nuclear program and the Strait of Hormuz reported as key sticking points.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Israel continued strikes in Lebanon while Tehran had not yet replied to a U.S. proposal to end the war, according to Al Jazeera headline for day 72",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Ceasefire remained fragile with reported U.S.-Iran tensions in the Strait of Hormuz on May 8, 2026, according to Al Jazeera headline",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran military warned on May 10, 2026 that if attacked again it would use 'surprising' new methods of warfare, according to Al Jazeera headline",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1365,12 +1365,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting remains sparse for many operational-cost fields. The clearest current casualty figures located are from Al Jazeera's live tracker updated May 5, 2026, citing Iran's Ministry of Health: 3,468 killed and more than 26,500 injured in Iran, with 26 killed in Israel and 28 killed in Gulf states. For U.S. fatalities, the latest accessible CENTCOM KIA confirmation found is 7 killed in action as of March 8, 2026; AP separately reported total U.S. deaths reached 13 after a non-combat KC-135 crash, but those crash deaths were excluded from usKIA per your rule. On operations, CENTCOM's April 6 fact sheet reports 13,000+ targets struck, while the IDF's April 20 'Operation Roaring Lion: The Numbers' page reports approximately 10,800 strikes and over 8,500 aircraft sorties for Israel's side of the campaign. Many requested deployment and weapons-expended totals could not be confirmed from accessible primary sources, so they are left null.",
+  "summary": "Confirmed reporting on May 10 indicates diplomacy remains stalled: AP reported that Iran sent a response to the latest U.S. ceasefire proposal through Pakistani mediators, but President Trump rejected it as 'totally unacceptable.' AP also reported fresh regional drone incidents affecting shipping and Gulf airspace with no casualties reported, while the U.S. blockade of Iranian ports remains in effect. For operational totals, the latest official numeric fact sheet located in this search session was CENTCOM\u2019s April 1, 2026 update, which listed 12,300+ targets struck and 13,000+ combat flights; I did not find newer confirmed official cumulative counts for the other requested casualty and weapons-use fields.",
   "briefings": [
     {
       "date": "2026-05-10",
       "day": 71,
-      "summary": "Confirmed reporting remains sparse for many operational-cost fields. The clearest current casualty figures located are from Al Jazeera's live tracker updated May 5, 2026, citing Iran's Ministry of Health: 3,468 killed and more than 26,500 injured in Iran, with 26 killed in Israel and 28 killed in Gulf states. For U.S. fatalities, the latest accessible CENTCOM KIA confirmation found is 7 killed in action as of March 8, 2026; AP separately reported total U.S. deaths reached 13 after a non-combat KC-135 crash, but those crash deaths were excluded from usKIA per your rule. On operations, CENTCOM's April 6 fact sheet reports 13,000+ targets struck, while the IDF's April 20 'Operation Roaring Lion: The Numbers' page reports approximately 10,800 strikes and over 8,500 aircraft sorties for Israel's side of the campaign. Many requested deployment and weapons-expended totals could not be confirmed from accessible primary sources, so they are left null."
+      "summary": "Confirmed reporting on May 10 indicates diplomacy remains stalled: AP reported that Iran sent a response to the latest U.S. ceasefire proposal through Pakistani mediators, but President Trump rejected it as 'totally unacceptable.' AP also reported fresh regional drone incidents affecting shipping and Gulf airspace with no casualties reported, while the U.S. blockade of Iranian ports remains in effect. For operational totals, the latest official numeric fact sheet located in this search session was CENTCOM\u2019s April 1, 2026 update, which listed 12,300+ targets struck and 13,000+ combat flights; I did not find newer confirmed official cumulative counts for the other requested casualty and weapons-use fields."
     },
     {
       "date": "2026-05-09",
