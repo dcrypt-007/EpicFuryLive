@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-05-11T08:36:34Z",
+  "lastUpdated": "2026-05-11T12:22:40Z",
   "dayCount": 72,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,513+",
-    "cost": "$42.9B+"
+    "strikes": "~13,000",
+    "killed": "8+",
+    "cost": "$42.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "4",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "6",
+    "gulfCasualties": "4",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$42.9 billion+",
-    "dailyBurnRate": "~$596M/day",
+    "totalCost": "$42.5 billion+",
+    "dailyBurnRate": "~$591M/day",
     "daysOfOps": 72,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-11",
-          "source": "LLM-verified (Operation Epic Fury Fact Sheet, U.S. Department of Defense/CENTCOM, April 1, 2026: 'Combat Flights: 13,000+'; used as best confirmed sortie figure available)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; this is the latest accessible official cumulative flight/sortie-style figure found, stored as 9000 minimum confirmed figure.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Operation status is politically contested: Al Jazeera reported May 6, 2026 that Rubio said Operation Epic Fury had concluded, while subsequent Trump remarks suggested it would end only if Iran accepted terms.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Strait of Hormuz disruption remains central: BBC and Al Jazeera headline context both describe continued blockade/shipping disruption and oil-price pressure.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Diplomatic breakdown persists: Reuters/AP-accessible search did not surface fresher casualty tables, while Al Jazeera and BBC headline context indicates Trump rejected Iran's latest peace response as 'totally unacceptable' on May 11, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 11, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera reported Iranian military warnings of 'surprising' methods of warfare if attacked again, indicating continued deterrent signaling and escalation risk.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported renewed drone-related incidents affecting Gulf shipping and regional states, signaling continued risk to maritime traffic and Gulf infrastructure despite negotiations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and BBC both reported on May 10, 2026 that Iran sent a response via Pakistan to a U.S. ceasefire proposal, indicating diplomacy is active but the ceasefire remains fragile.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The Hormuz ceasefire remains fragile after clashes near the strait, including reported injuries in Fujairah and Iran's allegation that five civilians were killed in a U.S. boat attack.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-05-11T10:37:19Z",
+      "text": "<strong>Former Qatar PM: Netanyahu using Iran war to reshape Middle East</strong> -- Sheikh Hamad bin Jassim warns Strait of Hormuz crisis is most dangerous fallout of war on Iran, calls for &amp;#039;Gulf NATO&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/11/former-qatar-pm-netanyahu-using-iran-war-to-reshape-middle-east?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-11T10:20:23Z",
+      "text": "<strong>Iran says US making \u2018unreasonable\u2019 demands in negotiations to end war</strong> -- Foreign ministry spokesman Esmaeil Baghaei says Iran&amp;#039;s proposal to end conflict, unblock Strait of Hormuz is generous. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/11/iran-says-us-making-unreasonable-demands-in-negotiations-to-end-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-11T09:26:43Z",
+      "text": "<strong>Narendra Modi urges Indians to conserve fuel amid war on Iran</strong> -- Narendra Modi urges Indians to conserve fuel amid war on Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/11/narendra-modi-urges-indians-to-conserve-fuel-amid-war-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-11T08:16:37Z",
+      "text": "<strong>Iran war day 73: Trump and Tehran clash over latest peace proposals</strong> -- Brent crude rises amid a continuing deadlock as Trump describes Iran&amp;#039;s response as &amp;#039;totally unacceptable&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/5/11/iran-war-day-73-trump-and-tehran-clash-over-latest-peace-proposals?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-11T08:09:40Z",
+      "text": "<strong>Ex-Israeli PM: Hezbollah is the enemy of Lebanon and must be disarmed</strong> -- Former Israeli PM Ehud Olmert speaks to Redi Tlhabi on Lebanon, the 2006 war, Hezbollah, and the US-Israeli war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/upfront/2026/5/11/ex-israeli-pm-hezbollah-is-the-enemy-of-lebanon-and-must-be-disarmed?traffic_source=rss"
+    },
+    {
       "time": "2026-05-11T04:58:03Z",
       "text": "<strong>Trump calls Iran response \u201ctotally unacceptable\u201d</strong> -- Report on the latest developments after US President Donald Trump rejected Iran\u2019s response to the US peace proposal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/11/aje-onl-nf_tv-pkg_trump-rejects-iran-response-110526?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-11T01:55:13Z",
+      "text": "<strong>Trump calls Iran response to US proposal to end war &#x27;totally unacceptable&#x27;</strong> -- Iran is reported to want lifting of the US naval blockade, recognition of Iranian sovereignty over the Strait of Hormuz and compensation for war damage. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-11T10:16:50Z",
+      "text": "<strong>Ailing Iranian Nobel laureate given bail and hospital transfer</strong> -- Iranian authorities granted human rights activist Narges Mohammadi bail amid growing concern over her poor health in prison. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c1j257w87neo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-10T21:01:17Z",
+      "text": "<strong>Iran activists tell BBC how threat of war intensifies trauma of repression</strong> -- A dissident in Tehran says she feels helpless and under immense psychological pressure. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c1m2ee3jxvro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-11T09:01:41Z",
+      "text": "<strong>Oil prices jump after Trump dismisses Iran proposal to end war</strong> -- The Strait of Hormuz waterway remains effectively shut, severely disrupting global energy shipments. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/ckgp4ev4yg4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-11T00:00:00Z",
@@ -783,19 +828,9 @@
       "link": "https://www.aljazeera.com/news/2026/5/10/trump-says-us-will-not-allow-iran-to-reach-enriched-uranium?traffic_source=rss"
     },
     {
-      "time": "2026-05-11T01:55:13Z",
-      "text": "<strong>Trump calls Iran response to US proposal to end war &#x27;totally unacceptable&#x27;</strong> -- Iran is reported to want lifting of the US naval blockade, recognition of Iranian sovereignty over the Strait of Hormuz and compensation for war damage. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-05-11T00:40:45Z",
       "text": "<strong>Ailing Iran Nobel laureate given bail and hospital transfer</strong> -- Iranian authorities granted human rights activist Narges Mohammadi bail amid growing concern over her poor health in prison. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c1j257w87neo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-10T21:01:17Z",
-      "text": "<strong>Iran activists tell BBC how threat of war intensifies trauma of repression</strong> -- A dissident in Tehran says she feels helpless and under immense psychological pressure. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c1m2ee3jxvro?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-11T01:12:30Z",
@@ -816,41 +851,6 @@
       "time": "2026-05-10T13:52:07Z",
       "text": "<strong>Stories of those killed in a single day of Israeli strikes on Lebanon</strong> -- Israeli strikes have killed at least 39 people in a single day of attacks across Lebanon during a so-called \u2018ceasefire.\u2019 <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/10/stories-of-those-killed-in-a-single-day-of-israeli-strikes-on-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-10T13:11:10Z",
-      "text": "<strong>Can Asian economies cope with the fallout from the Iran war?</strong> -- Fuel costs, inflation and debt pressures are testing Asian economies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/5/10/can-asian-economies-cope-with-the-fallout-from-the-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-10T12:40:50Z",
-      "text": "<strong>Iran replies to US proposal to end war, Trump finds response \u2018unacceptable\u2019</strong> -- In his first remarks since the development, US President Donald Trump has accused Iran of &amp;#039;playing games&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/10/iran-sends-response-to-us-proposal-to-end-war-via-mediator-pakistan?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-10T20:57:22Z",
-      "text": "<strong>Trump calls Iran response to US proposal to end war &#x27;totally unacceptable&#x27;</strong> -- No details have been released of Iran&#x27;s response - or the US proposals - designed to bring the war to an end. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-10T12:16:51Z",
-      "text": "<strong>US-Iran ceasefire under strain as Gulf states report drone attacks</strong> -- Drone hits cargo ship off Qatar\u2019s coast, while Kuwait and the United Arab Emirates repel attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/10/us-iran-ceasefire-under-strain-as-gulf-states-report-drone-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-10T17:20:52Z",
-      "text": "<strong>Iran sends response to US proposals to end war</strong> -- No details have been released of Iran&#x27;s response - or the US proposals - designed to bring the war to an end. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-10T10:56:07Z",
-      "text": "<strong>Why is Iran taking time to respond to the US proposal to end the war?</strong> -- Iran continues to review the proposal as Tehran&amp;#039;s nuclear programme and Strait of Hormuz remain main sticking points. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/10/why-is-iran-taking-time-to-respond-to-the-us-proposal-to-end-the-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-10T10:10:03Z",
-      "text": "<strong>Iran military warns of \u2018surprising\u2019 methods of warfare if attacked again</strong> -- Iran\u2019s army spokesman says if the \u2018enemy\u2019 were to attack again, they would face new methods of warfare. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/10/iran-military-warns-of-surprising-methods-of-warfare-if-attacked-again?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,62 @@
   ],
   "newsFeed": [
     {
+      "title": "Former Qatar PM: Netanyahu using Iran war to reshape Middle East",
+      "description": "Sheikh Hamad bin Jassim warns Strait of Hormuz crisis is most dangerous fallout of war on Iran, calls for &#039;Gulf NATO&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/5/11/former-qatar-pm-netanyahu-using-iran-war-to-reshape-middle-east?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-11T10:37:19Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran says US making \u2018unreasonable\u2019 demands in negotiations to end war",
+      "description": "Foreign ministry spokesman Esmaeil Baghaei says Iran&#039;s proposal to end conflict, unblock Strait of Hormuz is generous.",
+      "link": "https://www.aljazeera.com/news/2026/5/11/iran-says-us-making-unreasonable-demands-in-negotiations-to-end-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-11T10:20:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Ailing Iranian Nobel laureate given bail and hospital transfer",
+      "description": "Iranian authorities granted human rights activist Narges Mohammadi bail amid growing concern over her poor health in prison.",
+      "link": "https://www.bbc.com/news/articles/c1j257w87neo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-11T10:16:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Narendra Modi urges Indians to conserve fuel amid war on Iran",
+      "description": "Narendra Modi urges Indians to conserve fuel amid war on Iran",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/11/narendra-modi-urges-indians-to-conserve-fuel-amid-war-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-11T09:26:43Z",
+      "tier": 2
+    },
+    {
+      "title": "Oil prices jump after Trump dismisses Iran proposal to end war",
+      "description": "The Strait of Hormuz waterway remains effectively shut, severely disrupting global energy shipments.",
+      "link": "https://www.bbc.com/news/articles/ckgp4ev4yg4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-11T09:01:41Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war day 73: Trump and Tehran clash over latest peace proposals",
+      "description": "Brent crude rises amid a continuing deadlock as Trump describes Iran&#039;s response as &#039;totally unacceptable&#039;.",
+      "link": "https://www.aljazeera.com/economy/2026/5/11/iran-war-day-73-trump-and-tehran-clash-over-latest-peace-proposals?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-11T08:16:37Z",
+      "tier": 2
+    },
+    {
+      "title": "Ex-Israeli PM: Hezbollah is the enemy of Lebanon and must be disarmed",
+      "description": "Former Israeli PM Ehud Olmert speaks to Redi Tlhabi on Lebanon, the 2006 war, Hezbollah, and the US-Israeli war on Iran.",
+      "link": "https://www.aljazeera.com/video/upfront/2026/5/11/ex-israeli-pm-hezbollah-is-the-enemy-of-lebanon-and-must-be-disarmed?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-11T08:09:40Z",
+      "tier": 2
+    },
+    {
       "title": "Modi urges Indians to work from home and limit foreign travel as Iran war continues",
       "description": "He said the austerity measures would reduce India's fuel use and help save foreign exchange.",
       "link": "https://www.bbc.com/news/articles/c8r8e2ne1v6o?at_medium=RSS&at_campaign=rss",
@@ -1237,30 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "Oil prices jump after Trump dismisses Iran proposal to end war",
-      "description": "The Strait of Hormuz waterway remains effectively shut, severely disrupting global energy shipments.",
-      "link": "https://www.bbc.com/news/articles/ckgp4ev4yg4o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-11T01:12:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Ailing Iran Nobel laureate given bail and hospital transfer",
-      "description": "Iranian authorities granted human rights activist Narges Mohammadi bail amid growing concern over her poor health in prison.",
-      "link": "https://www.bbc.com/news/articles/c1j257w87neo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-11T00:40:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Tehran says US continues to have \u2018unreasonable demands\u2019",
-      "description": "Iran\u2019s Foreign Ministry spokesperson says the United States continues to have \u201cunreasonable demands\u201d",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/11/iran-war-live-trump-slams-tehrans-reply-israel-kills-2-medics-in-lebanon?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-11T00:00:00Z",
-      "tier": 2
-    },
-    {
       "title": "Why Eurovision's fallout over Israel may change the competition forever",
       "description": "With Eurovision facing its biggest boycott in 70 years, questions are growing over the competition's future.",
       "link": "https://www.bbc.com/news/articles/cgkpgm6vk48o?at_medium=RSS&at_campaign=rss",
@@ -1277,43 +1309,11 @@
       "tier": 2
     },
     {
-      "title": "Trump to discuss Iran with Xi Jinping during China visit: Officials",
-      "description": "US president will likely &#039;apply pressure&#039; to China for buying Iranian oil during war.",
-      "link": "https://www.aljazeera.com/news/2026/5/10/trump-to-discuss-iran-with-xi-jinping-during-china-visit-officials?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-10T21:12:50Z",
-      "tier": 2
-    },
-    {
       "title": "Iran activists tell BBC how threat of war intensifies trauma of repression",
       "description": "A dissident in Tehran says she feels helpless and under immense psychological pressure.",
       "link": "https://www.bbc.com/news/articles/c1m2ee3jxvro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-05-10T21:01:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Medics among 51 killed in Israeli attacks on Lebanon",
-      "description": "Israeli attacks are intensifying in southern Lebanon, with 552 killed since the &#039;ceasefire&#039; started on April 16.",
-      "link": "https://www.aljazeera.com/news/2026/5/10/medics-among-51-killed-in-israeli-attacks-on-lebanon-in-past-24-hours?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-10T19:01:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran may \u2018give assurances on the use of nuclear facilities\u2019",
-      "description": "Iran may negotiate on nuclear facilities, but it &#039;won&#039;t destroy uranium or allow it to be moved&#039;",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/10/iran-may-give-assurances-on-the-use-of-nuclear?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-10T17:29:35Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump says US will not allow Iran to reach enriched uranium",
-      "description": "US president says Washington has the nuclear material in Iran &#039;surveilled&#039; and will &#039;blow up&#039; anyone who gets near it.",
-      "link": "https://www.aljazeera.com/news/2026/5/10/trump-says-us-will-not-allow-iran-to-reach-enriched-uranium?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-10T17:22:18Z",
       "tier": 2
     },
     {
@@ -1341,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Latest accessible confirmed casualty reporting still shows 3,468 killed and more than 26,500 wounded in Iran according to Iran's Ministry of Health as cited by Al Jazeera, with 13 U.S. military deaths confirmed by the U.S. military and 26 Israelis reported killed. Official U.S. operational figures accessible from the April 1 Department of Defense/CENTCOM Operation Epic Fury fact sheet remain 12,300+ targets struck and 13,000+ combat flights. In the latest developments, Reuters, BBC, Al Jazeera and CBS report that the ceasefire is under heavy strain after President Trump rejected Iran's latest peace response, while naval clashes around the Strait of Hormuz involving three U.S. destroyers underscore continuing escalation risk.",
+  "summary": "Accessible confirmed reporting remains sparse and inconsistent on May 11, 2026. The clearest official cumulative figures found were CENTCOM fact sheets listing at least 13,000 targets struck by April 6, 2026 and 9,000+ combat flights by March 23, 2026, while the only clearly confirmed U.S. fatality count located in accessible primary-source text was a March 3 U.S. Army Reserve Command release confirming four soldiers killed in Kuwait. No current confirmed cumulative totals were found in accessible sources for Iranian deaths, Iranian wounded, Israeli deaths, civilian deaths, major weapon expenditures, or current deployed force counts. Headline-level reporting indicates negotiations remain deadlocked, the Strait of Hormuz crisis continues to drive global energy disruption, and U.S. officials have sent mixed signals over whether Operation Epic Fury has actually ended.",
   "briefings": [
     {
       "date": "2026-05-11",
       "day": 72,
-      "summary": "Latest accessible confirmed casualty reporting still shows 3,468 killed and more than 26,500 wounded in Iran according to Iran's Ministry of Health as cited by Al Jazeera, with 13 U.S. military deaths confirmed by the U.S. military and 26 Israelis reported killed. Official U.S. operational figures accessible from the April 1 Department of Defense/CENTCOM Operation Epic Fury fact sheet remain 12,300+ targets struck and 13,000+ combat flights. In the latest developments, Reuters, BBC, Al Jazeera and CBS report that the ceasefire is under heavy strain after President Trump rejected Iran's latest peace response, while naval clashes around the Strait of Hormuz involving three U.S. destroyers underscore continuing escalation risk."
+      "summary": "Accessible confirmed reporting remains sparse and inconsistent on May 11, 2026. The clearest official cumulative figures found were CENTCOM fact sheets listing at least 13,000 targets struck by April 6, 2026 and 9,000+ combat flights by March 23, 2026, while the only clearly confirmed U.S. fatality count located in accessible primary-source text was a March 3 U.S. Army Reserve Command release confirming four soldiers killed in Kuwait. No current confirmed cumulative totals were found in accessible sources for Iranian deaths, Iranian wounded, Israeli deaths, civilian deaths, major weapon expenditures, or current deployed force counts. Headline-level reporting indicates negotiations remain deadlocked, the Strait of Hormuz crisis continues to drive global energy disruption, and U.S. officials have sent mixed signals over whether Operation Epic Fury has actually ended."
     },
     {
       "date": "2026-05-10",
