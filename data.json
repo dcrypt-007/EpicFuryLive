@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-11T20:03:45Z",
+  "lastUpdated": "2026-05-11T21:41:46Z",
   "dayCount": 72,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,507+",
-    "cost": "$41.7B+"
+    "strikes": "~12,300",
+    "killed": "3,522+",
+    "cost": "$44.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$41.7 billion+",
-    "dailyBurnRate": "~$579M/day",
+    "totalCost": "$44.2 billion+",
+    "dailyBurnRate": "~$614M/day",
     "daysOfOps": 72,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-11",
-          "source": "LLM-verified (U.S. DoW briefing materials identify USS Abraham Lincoln and USS Gerald R. Ford carrier strike groups in Operation Epic Fury)"
+          "source": "LLM-verified (Official DOD/CENTCOM materials list two nuclear-powered aircraft carriers in Operation Epic Fury; DOD spotlight shows USS Abraham Lincoln and USS Gerald R. Ford operating in support: https://www.war.gov/Spotlights/Operation-Epic-Fury/hl/en-GB/ and Iran International summary of CENTCOM statement reports 'two aircraft carriers': https://www.iranintl.com/en/202603043156)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-05-10",
-          "source": "LLM-verified (Pentagon/Department of War briefing transcript, May 5, 2026: 'These forces are comprised of over 15,000 American service members' for Project Freedom.)"
+          "lastUpdated": "2026-05-11",
+          "source": "LLM-verified (CENTCOM statement as reported by Iran International on March 4, 2026: 'More than 50,000 troops' participating: https://www.iranintl.com/en/202603043156)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-11",
-          "source": "LLM-verified (IDF April 1, 2026 operational update: more than 800 Israeli Air Force strike sorties carried out in Operation Roaring Lion)"
+          "source": "LLM-verified (U.S. Department of War Operation Epic Fury fact sheet, April 1, 2026: 'Combat Flights: 13,000+': https://media.defense.gov/2026/Apr/01/2003905658/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-APRIL-1-UPDATE.PDF)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 72 days",
-        "cost": "$540,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 72 days",
+        "cost": "$1,800,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "May 5, 2026: UAE reported new Iranian missile/drone attacks, marking the first such strike on the UAE since the April 8 ceasefire, according to Al Jazeera.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "May 8, 2026: Al Jazeera reported renewed US-Iran clashes around the Strait of Hormuz despite the April 8 ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "May 11, 2026: President Trump said the Iran ceasefire is 'on life support' after rejecting Tehran's latest proposal, according to AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 11, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Pentagon said on May 5, 2026 that since the April 7 ceasefire announcement Iran had fired at commercial vessels nine times, seized two container ships, and attacked U.S. forces more than ten times below the threshold for restarting major combat operations.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Pentagon briefing on May 5, 2026 said Project Freedom began to reopen the Strait of Hormuz and described it as separate from Operation Epic Fury.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 10, 2026 that Iran sent a response to the latest U.S. ceasefire proposal via Pakistani mediators, and Trump publicly rejected it as 'totally unacceptable'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Israeli attacks in Lebanon killed dozens over the past 24 hours, underscoring continued Israel-Hezbollah escalation linked to the wider war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -788,6 +788,21 @@
       "link": "https://www.aljazeera.com/news/2026/5/11/iran-war-effect-why-is-modi-asking-indians-to-avoid-foreign-trips-gold?traffic_source=rss"
     },
     {
+      "time": "2026-05-11T18:17:34Z",
+      "text": "<strong>Trump says Iran ceasefire is on &#x27;massive life support&#x27;</strong> -- The US president criticises an Iranian counteroffer to end the war, and says the month-long ceasefire is &quot;unbelievably weak&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cvgznxn18zgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-11T14:22:07Z",
+      "text": "<strong>Whales could be harmed by diverted ships avoiding Middle East, scientists warn</strong> -- Ships have rerouted around the Cape of Good Hope since 2023 to avoid conflicts in the Middle East. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cz02dkkd9j9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-11T01:55:13Z",
+      "text": "<strong>Trump calls Iran response to US proposal to end war &#x27;totally unacceptable&#x27;</strong> -- Iran is reported to want lifting of the US naval blockade, recognition of Iranian sovereignty over the Strait of Hormuz and compensation for war damage. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-11T14:28:21Z",
       "text": "<strong>Is the US empire in the middle of a long decline?</strong> -- Iran war has put the US in a situation where \u2018it\u2019s not in control but can\u2019t walk away\u2019, argues economist Richard Wolff. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/the-bottom-line/2026/5/11/is-the-us-empire-in-the-middle-of-a-long-decline?traffic_source=rss"
@@ -823,11 +838,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/11/narendra-modi-urges-indians-to-conserve-fuel-amid-war-on-iran?traffic_source=rss"
     },
     {
-      "time": "2026-05-11T14:22:07Z",
-      "text": "<strong>Whales could be harmed by diverted ships avoiding Middle East, scientists warn</strong> -- Ships have rerouted around the Cape of Good Hope since 2023 to avoid conflicts in the Middle East. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cz02dkkd9j9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-05-11T08:16:37Z",
       "text": "<strong>Iran war day 73: Trump and Tehran clash over latest peace proposals</strong> -- Brent crude rises amid a continuing deadlock as Trump describes Iran&amp;#039;s response as &amp;#039;totally unacceptable&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/5/11/iran-war-day-73-trump-and-tehran-clash-over-latest-peace-proposals?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-05-11T04:58:03Z",
       "text": "<strong>Trump calls Iran response \u201ctotally unacceptable\u201d</strong> -- Report on the latest developments after US President Donald Trump rejected Iran\u2019s response to the US peace proposal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/11/aje-onl-nf_tv-pkg_trump-rejects-iran-response-110526?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-11T01:55:13Z",
-      "text": "<strong>Trump calls Iran response to US proposal to end war &#x27;totally unacceptable&#x27;</strong> -- Iran is reported to want lifting of the US naval blockade, recognition of Iranian sovereignty over the Strait of Hormuz and compensation for war damage. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-11T10:16:50Z",
-      "text": "<strong>Ailing Iranian Nobel laureate given bail and hospital transfer</strong> -- Iranian authorities granted human rights activist Narges Mohammadi bail amid growing concern over her poor health in prison. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c1j257w87neo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1277,35 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Is the US empire in the middle of a long decline?",
-      "description": "Iran war has put the US in a situation where \u2018it\u2019s not in control but can\u2019t walk away\u2019, argues economist Richard Wolff.",
-      "link": "https://www.aljazeera.com/video/the-bottom-line/2026/5/11/is-the-us-empire-in-the-middle-of-a-long-decline?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-11T14:28:21Z",
-      "tier": 2
-    },
-    {
-      "title": "Lebanese civil defence worker captures moment of Israeli strike",
-      "description": "A Lebanese civil defence worker captured the moment an Israeli strike hit a rescue operation in southern Lebanon.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/11/lebanese-civil-defence-worker-captures-moment-of-israeli-strike?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-11T14:25:51Z",
-      "tier": 2
-    },
-    {
       "title": "Whales could be harmed by diverted ships avoiding Middle East, scientists warn",
       "description": "Ships have rerouted around the Cape of Good Hope since 2023 to avoid conflicts in the Middle East.",
       "link": "https://www.bbc.com/news/articles/cz02dkkd9j9o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-05-11T14:22:07Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018Unacceptable\u2019: What\u2019s Iran\u2019s peace proposal that Trump has rejected?",
-      "description": "On Sunday, Tehran sent a response to an earlier US proposal to end the war through mediator Pakistan.",
-      "link": "https://www.aljazeera.com/news/2026/5/11/unacceptable-whats-irans-peace-proposal-that-trump-has-rejected?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-11T13:09:12Z",
       "tier": 2
     },
     {
@@ -1365,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of May 11, 2026, the most recent confirmed casualty totals available in major reporting remain those compiled by Al Jazeera\u2019s live tracker updated May 5: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 US combat deaths, and 28 killed across Gulf states; CENTCOM\u2019s latest readily available official fact sheet dated April 6 reported 13,000+ targets struck. Diplomatically, the main confirmed development today is that President Trump said the Iran ceasefire is 'on life support' after rejecting Tehran\u2019s latest proposal, while reporting over the past several days indicates continued incidents in the Strait of Hormuz and ongoing Israeli strikes in Lebanon despite ceasefire efforts.",
+  "summary": "As of Monday, May 11, 2026, confirmed reporting indicates the April 8 ceasefire is under severe strain: AP reported President Donald Trump said it is 'on life support' after rejecting Iran\u2019s latest proposal, while Al Jazeera reported renewed US-Iran exchanges around the Strait of Hormuz and fresh Iranian missile/drone attacks on the UAE in recent days. The most recent accessible cumulative casualty figures found were 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, and 28 killed in Gulf states, all from Al Jazeera\u2019s live tracker updated May 5, 2026. On the military side, the latest accessible official DOD fact sheet located during search gave 12,300+ targets struck and 13,000+ combat flights as of April 1, while official materials continued to show two carrier groups in the theater; however, no newer official cumulative totals were found for US KIA, destroyers, missile expenditures, bomber sorties, or interceptor launches.",
   "briefings": [
     {
       "date": "2026-05-11",
       "day": 72,
-      "summary": "As of May 11, 2026, the most recent confirmed casualty totals available in major reporting remain those compiled by Al Jazeera\u2019s live tracker updated May 5: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 US combat deaths, and 28 killed across Gulf states; CENTCOM\u2019s latest readily available official fact sheet dated April 6 reported 13,000+ targets struck. Diplomatically, the main confirmed development today is that President Trump said the Iran ceasefire is 'on life support' after rejecting Tehran\u2019s latest proposal, while reporting over the past several days indicates continued incidents in the Strait of Hormuz and ongoing Israeli strikes in Lebanon despite ceasefire efforts."
+      "summary": "As of Monday, May 11, 2026, confirmed reporting indicates the April 8 ceasefire is under severe strain: AP reported President Donald Trump said it is 'on life support' after rejecting Iran\u2019s latest proposal, while Al Jazeera reported renewed US-Iran exchanges around the Strait of Hormuz and fresh Iranian missile/drone attacks on the UAE in recent days. The most recent accessible cumulative casualty figures found were 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, and 28 killed in Gulf states, all from Al Jazeera\u2019s live tracker updated May 5, 2026. On the military side, the latest accessible official DOD fact sheet located during search gave 12,300+ targets struck and 13,000+ combat flights as of April 1, while official materials continued to show two carrier groups in the theater; however, no newer official cumulative totals were found for US KIA, destroyers, missile expenditures, bomber sorties, or interceptor launches."
     },
     {
       "date": "2026-05-10",
