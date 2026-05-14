@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-05-14T08:03:59Z",
+  "lastUpdated": "2026-05-14T10:34:28Z",
   "dayCount": 75,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,522+",
-    "cost": "$44.7B+"
+    "killed": "3,504+",
+    "cost": "$45.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "23",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$44.7 billion+",
-    "dailyBurnRate": "~$596M/day",
+    "totalCost": "$45.6 billion+",
+    "dailyBurnRate": "~$608M/day",
     "daysOfOps": 75,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-05-13",
-          "source": "LLM-verified (U.S. Department of War photos and coverage show USS Abraham Lincoln carrier operations in theater in mid-April; no later official source found confirming more than one active carrier strike group)"
+          "lastUpdated": "2026-05-14",
+          "source": "LLM-verified (CENTCOM imagery/homepage on May 14, 2026 shows USS Abraham Lincoln (CVN-72) operating during Epic Fury and USS George H.W. Bush (CVN-77) entering the CENTCOM AOR on April 23, 2026.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-14",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 9,000+ combat flights; later Reuters Connect April 8 says tens of thousands of sorties/refuelings/strikes but without a precise fighter-only total)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 listed 13,000+ combat flights; April 6 fact sheet lists 13,000+ targets struck but not a newer combat-flight figure.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 75 days",
-        "cost": "$525,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 75 days",
+        "cost": "$1,050,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported ongoing concern over attacks in and around the Strait of Hormuz, with U.S. naval forces still intercepting Iranian attacks and enforcing maritime security.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "JD Vance said on May 14, 2026 that progress was being made in talks with Iran, but Iran also said its forces remain at the highest readiness level, suggesting ceasefire fragility persists.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "UAE said one of its main gas processing complexes hit in the war will not return to full capacity until next year, underscoring continued Gulf energy infrastructure risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Ceasefire remains fragile; Al Jazeera on May 8 reported U.S.-Iran exchanges near the Strait of Hormuz and Iranian accusations of U.S. ceasefire breaches.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC reports the EU agreed sanctions on Israeli settlers over West Bank violence, indicating wider regional political fallout",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reports escalating Israeli strikes in southern Lebanon as residents say they will not flee again",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Ceasefire appears fragile on May 12, 2026, with major outlets reporting President Trump called it on 'life support' after rejecting Iran's latest proposal",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-14T09:28:05Z",
+      "text": "<strong>Could Iran war trigger a hunger crisis?</strong> -- The UN warns disruptions in the Strait of Hormuz could drive up food and fertiliser costs, and worsen global hunger. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/5/14/could-iran-war-trigger-a-hunger-crisis?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-14T08:49:02Z",
+      "text": "<strong>Japanese snacks go black-and-white: Why Iran war is driving up ink prices</strong> -- Calbee says it would temporarily use only black and white colours on 14 of its products due to a lack of printing ink. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/14/japanese-snacks-go-black-and-white-why-iran-war-is-driving-up-ink-prices?traffic_source=rss"
+    },
+    {
       "time": "2026-05-14T07:00:12Z",
       "text": "<strong>Iran war day 76: Vance says progress made in talks; Israel pounds Lebanon</strong> -- US Vice President Vance says progress is being made in talks with Iran as President Trump begins his trip to China. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/14/iran-war-day-76-vance-says-progress-made-in-talks-israel-pounds-lebanon?traffic_source=rss"
@@ -776,6 +786,21 @@
       "time": "2026-05-14T03:00:33Z",
       "text": "<strong>Iran war: Why the BRICS foreign ministers meeting in India matters</strong> -- The foreign ministers meeting is taking place before the 2026 BRICS summit in India in September. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/14/iran-war-why-the-brics-foreign-ministers-meeting-in-india-matters?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-13T17:00:12Z",
+      "text": "<strong>Trade, Iran and Taiwan on the agenda as Trump arrives in China for high-stakes talks with Xi</strong> -- The US president says his first request to Xi would be to  &quot;open up&quot; China, while Beijing is expected to press Trump on the status of Taiwan. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c1w28qw1e0xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-13T21:14:45Z",
+      "text": "<strong>Israeli strikes in southern Lebanon kill 22 people, health ministry says</strong> -- Eight children are among those reported dead after a series of air strikes hit the south of Beirut. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c1k2zekj8y9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-12T20:00:05Z",
+      "text": "<strong>Lebanon says two paramedics among 13 killed in Israeli strikes</strong> -- Lebanon&#x27;s health ministry says the paramedics were carrying out a rescue mission in Nabatieh in response to an earlier attack that killed one person. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cx21j3xl72zo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-14T00:00:00Z",
@@ -808,16 +833,6 @@
       "link": "https://www.aljazeera.com/news/2026/5/13/netanyahu-visited-uae-in-secret-during-us-israel-war-on-iran-office-says?traffic_source=rss"
     },
     {
-      "time": "2026-05-13T17:00:12Z",
-      "text": "<strong>Trade, Iran and Taiwan on the agenda as Trump arrives in China for high-stakes talks with Xi</strong> -- The US president says his first request to Xi would be to  &quot;open up&quot; China, while Beijing is expected to press Trump on the status of Taiwan. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c1w28qw1e0xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-13T21:14:45Z",
-      "text": "<strong>Israeli strikes in southern Lebanon kill 22 people, health ministry says</strong> -- Eight children are among those reported dead after a series of air strikes hit the south of Beirut. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c1k2zekj8y9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-05-13T16:39:28Z",
       "text": "<strong>Deadly Russian drone attacks on Ukraine resume after ceasefire expires</strong> -- Six people have been killed after Zelensky warned of &quot;more waves&quot; of Russian strikes through Wednesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/ce3pj85depzo?at_medium=RSS&at_campaign=rss"
@@ -833,24 +848,9 @@
       "link": "https://www.aljazeera.com/news/2026/5/13/trump-xi-summit-chinas-help-in-iran-may-require-us-concessions?traffic_source=rss"
     },
     {
-      "time": "2026-05-12T20:00:05Z",
-      "text": "<strong>Lebanon says two paramedics among 13 killed in Israeli strikes</strong> -- Lebanon&#x27;s health ministry says the paramedics were carrying out a rescue mission in Nabatieh in response to an earlier attack that killed one person. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cx21j3xl72zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-05-13T17:08:23Z",
       "text": "<strong>Church leaders killed in latest ethnic violence in India\u2019s Manipur</strong> -- Protests were held after three church leaders were killed and three others injured in India\u2019s Manipur state. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/13/church-leaders-killed-in-latest-ethnic-violence-in-indias-manipur?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-13T17:03:22Z",
-      "text": "<strong>Russia places UK ex-Defence Minister Ben Wallace on wanted list</strong> -- Wallace last year recommended helping Ukraine carry out a strike on the bridge linking Russia to annexed Crimea. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/13/russia-places-uk-former-minister-ben-wallace-on-wanted-list?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-13T17:22:49Z",
-      "text": "<strong>Israeli strikes on cars in southern Lebanon kill 12, health ministry says</strong> -- Two children are among those reported dead after seven cars were struck in separate attacks south of Beirut. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c1k2zekj8y9o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Could Iran war trigger a hunger crisis?",
+      "description": "The UN warns disruptions in the Strait of Hormuz could drive up food and fertiliser costs, and worsen global hunger.",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/5/14/could-iran-war-trigger-a-hunger-crisis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-14T09:28:05Z",
+      "tier": 2
+    },
+    {
+      "title": "Japanese snacks go black-and-white: Why Iran war is driving up ink prices",
+      "description": "Calbee says it would temporarily use only black and white colours on 14 of its products due to a lack of printing ink.",
+      "link": "https://www.aljazeera.com/news/2026/5/14/japanese-snacks-go-black-and-white-why-iran-war-is-driving-up-ink-prices?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-14T08:49:02Z",
+      "tier": 2
+    },
+    {
       "title": "Iran war day 76: Vance says progress made in talks; Israel pounds Lebanon",
       "description": "US Vice President Vance says progress is being made in talks with Iran as President Trump begins his trip to China.",
       "link": "https://www.aljazeera.com/news/2026/5/14/iran-war-day-76-vance-says-progress-made-in-talks-israel-pounds-lebanon?traffic_source=rss",
@@ -1253,22 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran slams \u2018collusion\u2019 as Netanyahu \u2018secretly\u2019 visits UAE",
-      "description": "Iranian first vice president said Tehran&#039;s &#039;right&#039; to the Strait of Hormuz is &#039;established and the matter is closed&#039;.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/14/iran-war-live-tehran-slams-collusion-as-netanyahu-secretly-visits-uae?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-14T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump-Xi summit live: US, China leaders holding talks on trade, tech, Iran",
-      "description": "Trump and Xi&#039;s summit comes at a crucial moment for the global economy, as the war on Iran continues to disrupt trade.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/14/trump-xi-summit-live-us-china-leaders-to-hold-talks-on-trade-tech-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-14T00:00:00Z",
-      "tier": 2
-    },
-    {
       "title": "Hezbollah support endures in south Lebanon as ceasefire fails to stop war with Israel",
       "description": "Despite continuing Israeli attacks and occupation, many people in the south still believe the armed group is the only force capable of defending them.",
       "link": "https://www.bbc.com/news/articles/c9d3g6deljyo?at_medium=RSS&at_campaign=rss",
@@ -1277,35 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Funeral held for two Lebanese paramedics killed in Israeli attack",
-      "description": "Hundreds of mourners gathered for the funeral of two Lebanese paramedics killed by an Israeli strike",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/13/funeral-held-for-two-lebanese-paramedics-killed-in-israeli-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-13T21:15:59Z",
-      "tier": 2
-    },
-    {
       "title": "Israeli strikes in southern Lebanon kill 22 people, health ministry says",
       "description": "Eight children are among those reported dead after a series of air strikes hit the south of Beirut.",
       "link": "https://www.bbc.com/news/articles/c1k2zekj8y9o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-05-13T21:14:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Crowds gather in Tehran to send off Iran\u2019s World Cup team",
-      "description": "Huge crowds gathered in Tehran\u2019s Revolution Square to celebrate and send off Iran\u2019s national football team.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/13/crowds-gather-in-tehran-to-send-off-irans-world-cup-team?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-13T20:54:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Republicans break ranks, but Senate fails to curb Trump\u2019s Iran war powers",
-      "description": "The bill falls short, but vote shows cracks are growing in the Republican support for the US-Israel war on Iran.",
-      "link": "https://www.aljazeera.com/news/2026/5/13/three-republicans-break-ranks-but-senate-fails-to-curb-trumps-war-powers?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-13T19:53:31Z",
       "tier": 2
     },
     {
@@ -1357,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed accessible reporting still supports 3,468 killed and more than 26,500 wounded in Iran, 13 confirmed U.S. military combat deaths, 26 deaths in Israel, and 28 deaths in Gulf states. CENTCOM and Pentagon-linked reporting continue to describe Operation Epic Fury as having struck more than 13,000 targets, while Gen. Dan Caine said 1,700 ballistic missiles and one-way attack drones had been intercepted with Gulf partners. On May 14, 2026, Al Jazeera reported Vice President Vance saying progress had been made in talks with Iran even as Israel continued military action in Lebanon.",
+  "summary": "Confirmed reporting on May 13-14, 2026 indicates the war remains in a fragile post-ceasefire phase: Vice President JD Vance said progress is being made in talks with Iran, while Iranian officials said their forces remain at maximum readiness; AP and Al Jazeera reporting also points to continued maritime tension around the Strait of Hormuz and infrastructure disruption in the Gulf, including damage affecting a major UAE gas facility. No newer official cumulative casualty or munitions-use figures more authoritative than the sources noted above were found for several requested fields, so those remain null.",
   "briefings": [
     {
       "date": "2026-05-14",
       "day": 75,
-      "summary": "Confirmed accessible reporting still supports 3,468 killed and more than 26,500 wounded in Iran, 13 confirmed U.S. military combat deaths, 26 deaths in Israel, and 28 deaths in Gulf states. CENTCOM and Pentagon-linked reporting continue to describe Operation Epic Fury as having struck more than 13,000 targets, while Gen. Dan Caine said 1,700 ballistic missiles and one-way attack drones had been intercepted with Gulf partners. On May 14, 2026, Al Jazeera reported Vice President Vance saying progress had been made in talks with Iran even as Israel continued military action in Lebanon."
+      "summary": "Confirmed reporting on May 13-14, 2026 indicates the war remains in a fragile post-ceasefire phase: Vice President JD Vance said progress is being made in talks with Iran, while Iranian officials said their forces remain at maximum readiness; AP and Al Jazeera reporting also points to continued maritime tension around the Strait of Hormuz and infrastructure disruption in the Gulf, including damage affecting a major UAE gas facility. No newer official cumulative casualty or munitions-use figures more authoritative than the sources noted above were found for several requested fields, so those remain null."
     },
     {
       "date": "2026-05-13",
