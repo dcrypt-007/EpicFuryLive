@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-16T22:05:40Z",
+  "lastUpdated": "2026-05-16T23:08:31Z",
   "dayCount": 77,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,522+",
-    "cost": "$46.3B+"
+    "killed": "1,352+",
+    "cost": "$45.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -15,9 +15,9 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "879",
+    "civilianDeaths": "1348",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$46.3 billion+",
-    "dailyBurnRate": "~$601M/day",
+    "totalCost": "$45.3 billion+",
+    "dailyBurnRate": "~$588M/day",
     "daysOfOps": 77,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-16",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026): 'Two carrier strike groups' in Operation Epic Fury theater)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026, states 'Two carrier strike groups' in Operation Epic Fury.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-16",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet: 'Combat Flights: 11,000+' as of March 28, 2026; no newer confirmed fighter/attack-only sorties total found, so this is best available sorties figure but includes broader combat flights)"
+          "source": "LLM-verified (IDF reported on April 1, 2026 that more than 800 IAF strike sorties had been conducted since launch of Operation Roaring Lion; no current combined U.S.-Israeli cumulative fighter sortie total found.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera day-78 coverage reported continued Israeli strikes in Lebanon and rising regional tension around the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera on May 16, 2026 reported the US-Iran ceasefire had been extended indefinitely while a naval blockade remains in place and diplomacy continues.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera on May 16, 2026 reported Iran signaling readiness for renewed war if talks fail.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 16, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera headline on May 15 said BRICS divisions over the Iran war are deepening while Iran seeks diplomatic backing.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on May 9 reported U.S. forces disabled two Iranian oil tankers after an exchange of fire in the Strait of Hormuz, indicating ceasefire fragility around maritime traffic.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on May 15 reported Iran says mistrust remains the main obstacle in talks to end the war with the United States.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Reuters on May 6, 2026 reported France deployed its carrier strike group toward the Red Sea for a possible Hormuz security mission, highlighting continued maritime risk around the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -788,7 +788,7 @@
       "link": "https://www.bbc.com/news/articles/cy72p2kpd03o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-05-15T23:59:07Z",
+      "time": "2026-05-16T22:27:44Z",
       "text": "<strong>Lebanon says six killed in Israeli strike as US announces ceasefire extension</strong> -- President Trump announced the truce last month, but Israel and Hezbollah have continued to exchange fire since then. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss"
     },
@@ -801,6 +801,11 @@
       "time": "2026-05-15T11:41:41Z",
       "text": "<strong>Why is Ireland not taking part in this year&#x27;s Eurovision?</strong> -- Ireland&#x27;s boycott is the latest in a series of moves that has seen the country at odds with Israel over its war in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c0e2g5y9wyeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-15T23:59:07Z",
+      "text": "<strong>Lebanon says six killed in Israeli strike as US announces ceasefire extension</strong> -- President Trump announced the truce last month, but Israel and Hezbollah have continued to exchange fire since then. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-16T12:21:55Z",
@@ -846,11 +851,6 @@
       "time": "2026-05-16T07:04:36Z",
       "text": "<strong>Man killed by 13ft great white shark in Western Australia</strong> -- The man was bitten just before 10:00 (03:00 BST) at Horseshoe Reef - north-west of the popular Rottnest Island near the city of Perth, local police said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c1m2xy3dr20o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-16T03:37:28Z",
-      "text": "<strong>Israel launches deadly air strikes on Gaza City apartment building</strong> -- At least seven Palestinians were killed when Israeli air strikes hit a residential building and a vehicle in Gaza City. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/16/israel-launches-deadly-air-strikes-on-gaza-city-apartment-building?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Lebanon says six killed in Israeli strike as US announces ceasefire extension",
+      "description": "President Trump announced the truce last month, but Israel and Hezbollah have continued to exchange fire since then.",
+      "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-16T22:27:44Z",
+      "tier": 2
+    },
+    {
       "title": "Two presidential campaign staffers killed in Colombia as elections near",
       "description": "Rights office says the violence could hinder &#039;exercise of political rights&#039; ahead of May vote to replace Gustavo Petro.",
       "link": "https://www.aljazeera.com/news/2026/5/16/two-presidential-campaign-staffers-killed-in-colombia-as-elections-near?traffic_source=rss",
@@ -1277,14 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "Lebanon says six killed in Israeli strike as US announces ceasefire extension",
-      "description": "President Trump announced the truce last month, but Israel and Hezbollah have continued to exchange fire since then.",
-      "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-15T23:59:07Z",
-      "tier": 2
-    },
-    {
       "title": "Why is Ireland not taking part in this year's Eurovision?",
       "description": "Ireland's boycott is the latest in a series of moves that has seen the country at odds with Israel over its war in Gaza.",
       "link": "https://www.bbc.com/news/articles/c0e2g5y9wyeo?at_medium=RSS&at_campaign=rss",
@@ -1293,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting located today indicates that the most current clearly sourced casualty figures remain the May 5, 2026 Al Jazeera live-tracker totals: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the latest official fact sheet found from the U.S. Department of War/CENTCOM dated April 6 states that more than 13,000 targets had been struck in Operation Epic Fury. The most recent Pentagon briefing located, from May 5, says Project Freedom is separate from Epic Fury and describes continuing Iranian attacks on shipping after the ceasefire, including nine attacks on commercial vessels, two seized container ships, and more than ten attacks on U.S. forces, but it does not provide updated cumulative weapons-expended or deployment totals for most cost-model fields.",
+  "summary": "Confirmed reporting available today remains sparse on updated cumulative war metrics. The clearest official figure found is CENTCOM\u2019s April 6 fact sheet listing more than 13,000 targets struck in Operation Epic Fury. Pentagon reporting cited by Reuters still puts confirmed U.S. military deaths at four. The latest accessible Iranian casualty figures located in major media are older: Iran\u2019s UN envoy said at least 1,348 civilians were killed by March 12, and Iran\u2019s deputy health minister told Al Jazeera by March 27 that almost 25,000 people had been injured. On May 16, Al Jazeera reported that the U.S.-Iran ceasefire had been extended indefinitely amid a continuing naval blockade, while Iranian officials warned they were ready for renewed conflict if talks collapse.",
   "briefings": [
     {
       "date": "2026-05-16",
       "day": 77,
-      "summary": "Confirmed reporting located today indicates that the most current clearly sourced casualty figures remain the May 5, 2026 Al Jazeera live-tracker totals: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the latest official fact sheet found from the U.S. Department of War/CENTCOM dated April 6 states that more than 13,000 targets had been struck in Operation Epic Fury. The most recent Pentagon briefing located, from May 5, says Project Freedom is separate from Epic Fury and describes continuing Iranian attacks on shipping after the ceasefire, including nine attacks on commercial vessels, two seized container ships, and more than ten attacks on U.S. forces, but it does not provide updated cumulative weapons-expended or deployment totals for most cost-model fields."
+      "summary": "Confirmed reporting available today remains sparse on updated cumulative war metrics. The clearest official figure found is CENTCOM\u2019s April 6 fact sheet listing more than 13,000 targets struck in Operation Epic Fury. Pentagon reporting cited by Reuters still puts confirmed U.S. military deaths at four. The latest accessible Iranian casualty figures located in major media are older: Iran\u2019s UN envoy said at least 1,348 civilians were killed by March 12, and Iran\u2019s deputy health minister told Al Jazeera by March 27 that almost 25,000 people had been injured. On May 16, Al Jazeera reported that the U.S.-Iran ceasefire had been extended indefinitely amid a continuing naval blockade, while Iranian officials warned they were ready for renewed conflict if talks collapse."
     },
     {
       "date": "2026-05-15",
