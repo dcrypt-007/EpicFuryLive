@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-17T17:15:02Z",
+  "lastUpdated": "2026-05-17T18:13:27Z",
   "dayCount": 78,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "3,522+",
-    "cost": "$45.4B+"
+    "strikes": "~13,000",
+    "killed": "3,532+",
+    "cost": "$45.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "25",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$45.4 billion+",
-    "dailyBurnRate": "~$582M/day",
+    "totalCost": "$45.2 billion+",
+    "dailyBurnRate": "~$579M/day",
     "daysOfOps": 78,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-17",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet: The First 29 Days, March 28, 2026: 11,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM fact sheet dated March 23, 2026 reported 'Combat Flights: 9,000+'; no newer official cumulative sorties figure found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC reported fresh Israeli strikes in Lebanon despite the ceasefire/ceasefire extension.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Iranian civilian defence training sessions with light weapons in mosques in several cities.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 17, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Iranian harassment of commercial shipping in and around the Strait of Hormuz remains active",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Regional shipping risk remains elevated around the Strait of Hormuz amid blockade and continued military signaling, according to Al Jazeera and Reuters-attributed reporting.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran on May 16 said it remains ready to resume direct military conflict with the United States if negotiations fail, according to Al Jazeera reporting from Tehran.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1317,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today does not materially change the core cumulative Iran-war casualty figures visible in accessible major-source trackers: Al Jazeera\u2019s May 5 tracker still lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the clearest official cumulative operational figure remains CENTCOM\u2019s March 28 fact sheet showing 11,000+ targets struck and 11,000+ combat flights. More recent official CENTCOM releases confirm at least two U.S. carriers in theater, three named destroyers active in Hormuz on May 7, and 15,000 service members assigned to Project Freedom support as of May 3. Today\u2019s headline developments point to renewed regional risk rather than a clean end-state, including reported Iranian civil-defence mobilization, a strike near the UAE\u2019s Barakah nuclear site, and ongoing Israeli strikes in Lebanon despite the ceasefire extension.",
+  "summary": "As of confirmed reporting available today, the clearest updated cumulative figures remain Iran Ministry of Health's 3,468 killed and more than 26,500 injured in Iran, Israel Ministry of Health's 26 killed in Israel, and U.S. military confirmation of 13 combat-related American deaths; Al Jazeera's May 5 regional casualty tracker also supports 25 deaths across the specified Gulf states, while CENTCOM's latest accessible operation fact sheet dated April 6 lists 13,000+ targets struck and an earlier March 23 fact sheet lists 9,000+ combat flights. I could not verify newer official counts for civilian-only Iranian deaths, current deployed carrier/destroyer/personnel totals, or cumulative weapons-use figures such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, B-2 sorties, or interceptor launches, so those remain null.",
   "briefings": [
     {
       "date": "2026-05-17",
       "day": 78,
-      "summary": "Confirmed reporting available today does not materially change the core cumulative Iran-war casualty figures visible in accessible major-source trackers: Al Jazeera\u2019s May 5 tracker still lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the clearest official cumulative operational figure remains CENTCOM\u2019s March 28 fact sheet showing 11,000+ targets struck and 11,000+ combat flights. More recent official CENTCOM releases confirm at least two U.S. carriers in theater, three named destroyers active in Hormuz on May 7, and 15,000 service members assigned to Project Freedom support as of May 3. Today\u2019s headline developments point to renewed regional risk rather than a clean end-state, including reported Iranian civil-defence mobilization, a strike near the UAE\u2019s Barakah nuclear site, and ongoing Israeli strikes in Lebanon despite the ceasefire extension."
+      "summary": "As of confirmed reporting available today, the clearest updated cumulative figures remain Iran Ministry of Health's 3,468 killed and more than 26,500 injured in Iran, Israel Ministry of Health's 26 killed in Israel, and U.S. military confirmation of 13 combat-related American deaths; Al Jazeera's May 5 regional casualty tracker also supports 25 deaths across the specified Gulf states, while CENTCOM's latest accessible operation fact sheet dated April 6 lists 13,000+ targets struck and an earlier March 23 fact sheet lists 9,000+ combat flights. I could not verify newer official counts for civilian-only Iranian deaths, current deployed carrier/destroyer/personnel totals, or cumulative weapons-use figures such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, B-2 sorties, or interceptor launches, so those remain null."
     },
     {
       "date": "2026-05-16",
