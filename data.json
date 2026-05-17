@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-17T15:17:29Z",
+  "lastUpdated": "2026-05-17T17:15:02Z",
   "dayCount": 78,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,535+",
-    "cost": "$46.9B+"
+    "strikes": "~11,000",
+    "killed": "3,522+",
+    "cost": "$45.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$46.9 billion+",
-    "dailyBurnRate": "~$602M/day",
+    "totalCost": "$45.4 billion+",
+    "dailyBurnRate": "~$582M/day",
     "daysOfOps": 78,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-17",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supporting Operation Epic Fury over five weeks)"
+          "source": "LLM-verified (CENTCOM May 8, 2026 press release references USS George H.W. Bush (CVN 77) and USS Abraham Lincoln (CVN 72) operating in theater)"
         },
         {
           "id": "destroyers",
@@ -90,14 +90,14 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-05-16",
-          "source": "LLM-verified (CENTCOM press release of May 7, 2026 identified three guided-missile destroyers transiting the Strait of Hormuz: USS Truxtun, USS Rafael Peralta, and USS Mason.)"
+          "lastUpdated": "2026-05-17",
+          "source": "LLM-verified (CENTCOM May 7, 2026 press release names USS Truxtun, USS Rafael Peralta, and USS Mason transiting Hormuz)"
         },
         {
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 15000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-17",
-          "source": "LLM-verified (U.S. Department of War 'This Week in DOW' on March 13, 2026: more than 50,000 service members supporting Operation Epic Fury)"
+          "source": "LLM-verified (CENTCOM May 3, 2026 Project Freedom press release: support will include 15,000 service members)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-17",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury fact sheet dated April 1, 2026 lists Combat Flights: 13,000+)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet: The First 29 Days, March 28, 2026: 11,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 78 days",
-        "cost": "$1,950,000,000"
+        "detail": "15,000 \u00d7 $500/day \u00d7 78 days",
+        "cost": "$585,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC reported continued Israeli strikes in Lebanon despite the ceasefire extension.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC reported a drone strike/fire near the UAE's Barakah nuclear power plant, with UAE authorities saying radiation levels were normal and operations unaffected.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Iranian civilian defence training with light weapons in mosques in several cities on May 17, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 17, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran on May 16 said it remains ready to resume direct military conflict with the United States if negotiations fail, according to Al Jazeera reporting from Tehran.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "CBS News reported on May 14, 2026 that CENTCOM says Iran's ability to threaten commerce in the Strait of Hormuz has been dramatically degraded, but some capabilities remain.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 15, 2026 that Iran says lack of trust is impeding negotiations, with tensions around the Strait of Hormuz still threatening a return to open warfare.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on May 16, 2026 that Iran intensified warnings of readiness for renewed war while the naval blockade continues and ceasefire talks remain stalled.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-17T16:31:20Z",
+      "text": "<strong>Three community kitchen workers among five killed by Israel in Gaza</strong> -- Israeli attacks on Gaza have killed at least 871 Palestinians since the so-called ceasefire started last year. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/17/three-community-kitchen-workers-among-five-killed-by-israel-in-gaza?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-17T16:08:46Z",
+      "text": "<strong>Iranian civilians get defence training</strong> -- Defence training sessions on light weapons were held for Iranian men and women in mosques in several cities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/17/iranian-civilians-get-defence-training?traffic_source=rss"
+    },
+    {
       "time": "2026-05-17T14:07:07Z",
       "text": "<strong>Drone strike sparks fire on perimeter of UAE\u2019s Barakah nuclear power plant</strong> -- Authorities say radiation levels remain normal, operations not affected. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/17/drone-strike-sparks-fire-at-uaes-barakah-nuclear-power-plant?traffic_source=rss"
@@ -778,6 +788,21 @@
       "link": "https://www.aljazeera.com/opinions/2026/5/17/the-strike-that-changed-the-geometry-of-war?traffic_source=rss"
     },
     {
+      "time": "2026-05-17T13:00:26Z",
+      "text": "<strong>WHO declares Ebola outbreak in DR Congo an international emergency</strong> -- The agency added that the outbreak, with around 246 cases and 80 deaths, does not meet the criteria of pandemic emergency. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c2l2p0wwzzdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-17T16:25:38Z",
+      "text": "<strong>UAE reports strike near Abu Dhabi nuclear power plant</strong> -- The country is investigating the source of the strike, which it calls a &quot;dangerous escalation&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cwy27pkj1l1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-16T23:10:19Z",
+      "text": "<strong>Hezbollah drone strike videos show evolving tactics against Israel</strong> -- BBC Verify has examined dozens of videos of fibre-optic drone attacks carried out by the Lebanese armed group. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c1j2zwe9g5no?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-17T09:14:31Z",
       "text": "<strong>Ukrainian drone attacks on Russia kill at least five</strong> -- Russian authorities say three people killed in the Moscow region and one in Belgorod in Ukrainian attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/17/at-least-four-killed-in-ukrainian-drone-attacks-on-russia?traffic_source=rss"
@@ -791,16 +816,6 @@
       "time": "2026-05-17T08:40:52Z",
       "text": "<strong>Sardar Azmoun left out as Iran announce World Cup 2026 squad</strong> -- Veteran striker Azmoun was not named in the 30-man squad, which will be trimmed to 26 by June 1. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/5/17/sardar-azmoun-left-out-as-iran-announce-world-cup-2026-squad?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-17T13:00:26Z",
-      "text": "<strong>WHO declares Ebola outbreak in DR Congo an international emergency</strong> -- The agency added that the outbreak, with around 246 cases and 80 deaths, does not meet the criteria of pandemic emergency. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c2l2p0wwzzdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-16T23:10:19Z",
-      "text": "<strong>Hezbollah drone strike videos show evolving tactics against Israel</strong> -- BBC Verify has examined dozens of videos of fibre-optic drone attacks carried out by the Lebanese armed group. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c1j2zwe9g5no?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-17T07:19:53Z",
@@ -836,21 +851,6 @@
       "time": "2026-05-16T21:42:04Z",
       "text": "<strong>Two presidential campaign staffers killed in Colombia as elections near</strong> -- Rights office says the violence could hinder &amp;#039;exercise of political rights&amp;#039; ahead of May vote to replace Gustavo Petro. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/16/two-presidential-campaign-staffers-killed-in-colombia-as-elections-near?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-17T07:08:26Z",
-      "text": "<strong>WHO declares Ebola outbreak in DR Congo a global health emergency</strong> -- The agency added that the outbreak, with around 246 cases and 80 deaths, does not meet the criteria of pandemic emergency. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c2l2p0wwzzdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-14T20:51:47Z",
-      "text": "<strong>BBC on the ground during march through Jerusalem&#x27;s Old City</strong> -- Tens of thousands of Israeli celebrants have marched through the area captured by Israel in the 1967 Arab-Israeli war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/videos/cdxp0143q0po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-16T16:59:26Z",
-      "text": "<strong>Al Jazeera\u2019s exclusive report from the Strait of Hormuz</strong> -- Heavy ship traffic and rising regional tensions over one of the world\u2019s most critical energy routes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/16/al-jazeeras-exclusive-report-from-the-strait-of-hormuz?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Three community kitchen workers among five killed by Israel in Gaza",
+      "description": "Israeli attacks on Gaza have killed at least 871 Palestinians since the so-called ceasefire started last year.",
+      "link": "https://www.aljazeera.com/news/2026/5/17/three-community-kitchen-workers-among-five-killed-by-israel-in-gaza?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-17T16:31:20Z",
+      "tier": 2
+    },
+    {
+      "title": "UAE reports strike near Abu Dhabi nuclear power plant",
+      "description": "The country is investigating the source of the strike, which it calls a \"dangerous escalation\".",
+      "link": "https://www.bbc.com/news/articles/cwy27pkj1l1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-17T16:25:38Z",
+      "tier": 2
+    },
+    {
+      "title": "Iranian civilians get defence training",
+      "description": "Defence training sessions on light weapons were held for Iranian men and women in mosques in several cities.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/17/iranian-civilians-get-defence-training?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-17T16:08:46Z",
+      "tier": 2
+    },
+    {
       "title": "Drone strike sparks fire on perimeter of UAE\u2019s Barakah nuclear power plant",
       "description": "Authorities say radiation levels remain normal, operations not affected.",
       "link": "https://www.aljazeera.com/news/2026/5/17/drone-strike-sparks-fire-at-uaes-barakah-nuclear-power-plant?traffic_source=rss",
@@ -1261,30 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "Ukrainian drone attacks on Russia kill at least five",
-      "description": "Russian authorities say three people killed in the Moscow region and one in Belgorod in Ukrainian attacks.",
-      "link": "https://www.aljazeera.com/news/2026/5/17/at-least-four-killed-in-ukrainian-drone-attacks-on-russia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-17T09:14:31Z",
-      "tier": 2
-    },
-    {
-      "title": "Al Jazeera reports from Strait of Hormuz on Iran\u2019s plan to manage shipping",
-      "description": "Al Jazeera\u2019s Tohid Asadi reports from the strait and explains Tehran\u2019s newest plan to manage shipping.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/17/al-jazeera-reports-from-strait-of-hormuz-on-irans-plan-to-manage-shipping?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-17T08:56:46Z",
-      "tier": 2
-    },
-    {
-      "title": "Sardar Azmoun left out as Iran announce World Cup 2026 squad",
-      "description": "Veteran striker Azmoun was not named in the 30-man squad, which will be trimmed to 26 by June 1.",
-      "link": "https://www.aljazeera.com/sports/2026/5/17/sardar-azmoun-left-out-as-iran-announce-world-cup-2026-squad?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-17T08:40:52Z",
-      "tier": 2
-    },
-    {
       "title": "Hezbollah drone strike videos show evolving tactics against Israel",
       "description": "BBC Verify has examined dozens of videos of fibre-optic drone attacks carried out by the Lebanese armed group.",
       "link": "https://www.bbc.com/news/articles/c1j2zwe9g5no?at_medium=RSS&at_campaign=rss",
@@ -1317,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in searched sources remains fragmentary. The clearest current casualty update located is Al Jazeera\u2019s May 5, 2026 live tracker, which reports 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 confirmed US combat-related deaths, and 28 deaths in Gulf states. On the operations side, CENTCOM\u2019s April 6 fact sheet still provides the most concrete official aggregate strike count at 13,000+ targets struck, while a DoD/CENTCOM April 1 fact sheet lists 13,000+ combat flights. More granular munitions-use and deployment totals such as Tomahawks, JDAMs, JASSMs, interceptors, destroyer count, and operation-specific troop totals were not confirmed in the official and major-media sources searched, so they are left null.",
+  "summary": "Confirmed reporting available today does not materially change the core cumulative Iran-war casualty figures visible in accessible major-source trackers: Al Jazeera\u2019s May 5 tracker still lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the clearest official cumulative operational figure remains CENTCOM\u2019s March 28 fact sheet showing 11,000+ targets struck and 11,000+ combat flights. More recent official CENTCOM releases confirm at least two U.S. carriers in theater, three named destroyers active in Hormuz on May 7, and 15,000 service members assigned to Project Freedom support as of May 3. Today\u2019s headline developments point to renewed regional risk rather than a clean end-state, including reported Iranian civil-defence mobilization, a strike near the UAE\u2019s Barakah nuclear site, and ongoing Israeli strikes in Lebanon despite the ceasefire extension.",
   "briefings": [
     {
       "date": "2026-05-17",
       "day": 78,
-      "summary": "Confirmed reporting available in searched sources remains fragmentary. The clearest current casualty update located is Al Jazeera\u2019s May 5, 2026 live tracker, which reports 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 confirmed US combat-related deaths, and 28 deaths in Gulf states. On the operations side, CENTCOM\u2019s April 6 fact sheet still provides the most concrete official aggregate strike count at 13,000+ targets struck, while a DoD/CENTCOM April 1 fact sheet lists 13,000+ combat flights. More granular munitions-use and deployment totals such as Tomahawks, JDAMs, JASSMs, interceptors, destroyer count, and operation-specific troop totals were not confirmed in the official and major-media sources searched, so they are left null."
+      "summary": "Confirmed reporting available today does not materially change the core cumulative Iran-war casualty figures visible in accessible major-source trackers: Al Jazeera\u2019s May 5 tracker still lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the military side, the clearest official cumulative operational figure remains CENTCOM\u2019s March 28 fact sheet showing 11,000+ targets struck and 11,000+ combat flights. More recent official CENTCOM releases confirm at least two U.S. carriers in theater, three named destroyers active in Hormuz on May 7, and 15,000 service members assigned to Project Freedom support as of May 3. Today\u2019s headline developments point to renewed regional risk rather than a clean end-state, including reported Iranian civil-defence mobilization, a strike near the UAE\u2019s Barakah nuclear site, and ongoing Israeli strikes in Lebanon despite the ceasefire extension."
     },
     {
       "date": "2026-05-16",
