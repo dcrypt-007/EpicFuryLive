@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-18T16:33:04Z",
+  "lastUpdated": "2026-05-18T19:03:25Z",
   "dayCount": 79,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,522+",
-    "cost": "$47.1B+"
+    "killed": "3,526+",
+    "cost": "$47.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "4",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$47.1 billion+",
-    "dailyBurnRate": "~$596M/day",
+    "totalCost": "$47.4 billion+",
+    "dailyBurnRate": "~$600M/day",
     "daysOfOps": 79,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-18",
-          "source": "LLM-verified (May 2026 U.S. Navy Shipbuilding Plan states two carrier strike groups were deployed in Operation Epic Fury)"
+          "source": "LLM-verified (CENTCOM/official reporting cited by Iran International on March 4, 2026: two aircraft carriers participating; no newer official change found)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-18",
-          "source": "LLM-verified (Pentagon/CENTCOM figures reported by DefenseScoop on March 31, 2026 and Military Times on April 8, 2026: operation involved at least/more than 50,000 U.S. personnel in the region.)"
+          "source": "LLM-verified (CENTCOM commander statement reported March 4, 2026: more than 50,000 troops participating; no newer official total found)"
         },
         {
           "id": "intel_cyber",
@@ -260,14 +260,14 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-04-17",
-          "source": "LLM-verified (U.S. Department of Defense press conference transcript on Operation Midnight Hammer states 14 GBU-57 Massive Ordnance Penetrators were used; this is the only confirmed MOP figure found in accessible official reporting)"
+          "lastUpdated": "2026-05-18",
+          "source": "LLM-verified (DoD transcript on Operation Midnight Hammer / Iran strikes: total of 14 MOPs dropped against two nuclear target areas)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10200,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-18",
-          "source": "LLM-verified (White House April 8, 2026 reported over 10,200 total air sorties flown; CENTCOM fact sheets separately reported combat flights, but this is the clearest official cumulative sorties figure found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights; used as best available confirmed sortie figure)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,200 \u00d7 $100,000 each",
-        "cost": "$1,020,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Lebanon war spillover worsened, with Lebanon's health ministry reporting the death toll from Israeli strikes had passed 3,000 by May 18, 2026, according to AP and Al Jazeera",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran and the US exchanged new proposals through Pakistan on May 18, 2026, while Trump warned that the 'clock is ticking', according to Al Jazeera/BBC headline context",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "UAE reported a drone strike and fire near the Barakah nuclear plant on May 17, 2026, according to AP",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported a drone strike caused a fire on the perimeter of the UAE's Barakah nuclear power plant on May 17, 2026; UAE said there were no injuries or radiological release.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and BBC reported fresh Israeli strikes in Lebanon despite the ceasefire/ceasefire extension.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Iranian civilian defence training sessions with light weapons in mosques in several cities.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and BBC reported continued Israeli strikes in Lebanon despite the ceasefire extension.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-18T18:10:29Z",
+      "text": "<strong>Belarus dismisses concerns as it launches joint nuclear drills with Russia</strong> -- Strong reactions from Ukraine and NATO allies as Belarusian and Russian forces train to use nuclear weapons. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/18/belarus-dismisses-concerns-as-it-launches-joint-nuclear-drills-with-russia?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-18T17:42:26Z",
+      "text": "<strong>Iran\u2019s World Cup team arrives in Turkiye amid US visa uncertainty</strong> -- Iran\u2019s national football team has arrived in Turkiye for a pre-World Cup training camp, amid US visa uncertainty. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/irans-world-cup-team-arrives-in-turkiye-amid-us-visa-uncertainty?traffic_source=rss"
+    },
+    {
       "time": "2026-05-18T16:09:05Z",
       "text": "<strong>Pakistan\u2019s mediation faces limits as Iran-US tensions deepen</strong> -- Tehran and Washington exchange proposals via Pakistan as military escalation increasingly shadows diplomatic efforts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/18/pakistans-mediation-faces-limits-as-iran-us-tensions-deepen?traffic_source=rss"
@@ -776,6 +786,21 @@
       "time": "2026-05-18T13:03:06Z",
       "text": "<strong>Iran eyes challenging stock market reopening after lengthy war closure</strong> -- The capital market is not Iranian economy&amp;#039;s main financing engine, but it still matters politically and psychologically. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/5/18/iran-eyes-challenging-stock-market-reopening-after-lengthy-war-closure?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-18T16:20:30Z",
+      "text": "<strong>At least 100 deaths reported in Ebola outbreak in DR Congo as six Americans exposed</strong> -- One of the six Americans is experiencing symptoms, according to media reports. One province in Congo reports 390 cases. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cq6pz60p996o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-18T16:16:38Z",
+      "text": "<strong>Death toll from Israeli strikes on Lebanon passes 3,000, officials say</strong> -- It marks a grim milestone in the conflict between Israel and the Lebanese armed group Hezbollah since March, despite a nominal ceasefire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cqjpglyjwjeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-18T16:49:45Z",
+      "text": "<strong>Four killed in protests during Kenyan strikes over high fuel prices</strong> -- Thousands of commuters are stranded, with key roads in the capital Nairobi largely empty due to the protests over fuel costs. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cm2p0n44drvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-18T12:49:59Z",
@@ -826,31 +851,6 @@
       "time": "2026-05-18T07:51:58Z",
       "text": "<strong>Mali drone strikes kill at least 10 civilians at wedding</strong> -- Mali&amp;#039;s military carries out strikes after attacks last month by al-Qaeda-linked fighters and Tuareg separatists. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/18/mali-drone-strikes-kill-at-least-10-civilians-at-wedding?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-18T07:24:18Z",
-      "text": "<strong>Iran war day 80: Trump issues warning; Tehran \u2018ready\u2019 to confront attacks</strong> -- The fear of renewed US strikes in Iran looms while Israeli attacks continue in Lebanon despite extended &amp;#039;ceasefire&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/18/iran-war-day-80-trump-issues-warning-tehran-ready-to-confront-aggression?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-18T09:58:35Z",
-      "text": "<strong>Trump warns &#x27;clock is ticking&#x27; for Iran as peace progress stalls</strong> -- On Monday Iran said it had responded to the latest US proposal and that exchanges with Washington were continuing. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cd0p4y9y48xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-18T01:59:07Z",
-      "text": "<strong>Israel launches strikes on southern Lebanon despite extending \u2018ceasefire\u2019</strong> -- Al Jazeera\u2019s Obaida Hitto reports from Tyre in southern Lebanon on the latest Israeli strikes in the region. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/israel-launches-strikes-on-southern-lebanon-despite-extending?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-18T00:00:00Z",
-      "text": "<strong>Iran war live: Tehran says talks ongoing through Pakistan</strong> -- Iran&amp;#039;s Foreign Ministry spokesperson says Iran responds to US proposal through Pakistan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/18/iran-war-live-trump-warns-clock-ticking-saudi-uae-report-drone-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-17T23:28:25Z",
-      "text": "<strong>Pakistan interior minister holds talks with Iranian president in Tehran</strong> -- Pakistan Interior Minister Mohsin Naqvi met Iranian President Masoud Pezeshkian in Tehran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/17/pakistan-interior-minister-holds-talks-with-iranian-president-in-tehran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Belarus dismisses concerns as it launches joint nuclear drills with Russia",
+      "description": "Strong reactions from Ukraine and NATO allies as Belarusian and Russian forces train to use nuclear weapons.",
+      "link": "https://www.aljazeera.com/news/2026/5/18/belarus-dismisses-concerns-as-it-launches-joint-nuclear-drills-with-russia?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-18T18:10:29Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran\u2019s World Cup team arrives in Turkiye amid US visa uncertainty",
+      "description": "Iran\u2019s national football team has arrived in Turkiye for a pre-World Cup training camp, amid US visa uncertainty.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/irans-world-cup-team-arrives-in-turkiye-amid-us-visa-uncertainty?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-18T17:42:26Z",
+      "tier": 2
+    },
+    {
+      "title": "Four killed in protests during Kenyan strikes over high fuel prices",
+      "description": "Thousands of commuters are stranded, with key roads in the capital Nairobi largely empty due to the protests over fuel costs.",
+      "link": "https://www.bbc.com/news/articles/cm2p0n44drvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-18T16:49:45Z",
+      "tier": 2
+    },
+    {
       "title": "At least 100 deaths reported in Ebola outbreak in DR Congo as six Americans exposed",
       "description": "One of the six Americans is experiencing symptoms, according to media reports. One province in Congo reports 390 cases.",
       "link": "https://www.bbc.com/news/articles/cq6pz60p996o?at_medium=RSS&at_campaign=rss",
@@ -1277,67 +1301,11 @@
       "tier": 2
     },
     {
-      "title": "The Gulf does not have to choose Iran or Israel",
-      "description": "It has to choose stability or permanent war.",
-      "link": "https://www.aljazeera.com/opinions/2026/5/18/the-gulf-does-not-have-to-choose-iran-or-israel?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T12:49:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran sends response to US proposal to end war via mediator Pakistan",
-      "description": "Iran demands the release of assets frozen abroad, the lifting of sanctions and control over the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/2026/5/18/iran-sends-response-to-us-proposal-to-end-war-via-mediator-pakistan-2?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T12:44:20Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran plans to offer insurance for Hormuz transit: Will it work?",
-      "description": "Iran proposes Bitcoin-based ship insurance for the Strait of Hormuz, a move likely to raise global maritime concerns.",
-      "link": "https://www.aljazeera.com/news/2026/5/18/iran-plans-to-offer-insurance-for-hormuz-transit-will-it-work?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T11:57:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says nuclear enrichment rights cannot be \u2018negotiated\u2019",
-      "description": "Iran\u2019s nuclear enrichment is a right that \u2018already exists\u2019, foreign ministry spokesman Esmaeil Baghaei said.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/iran-says-nuclear-enrichment-rights-cannot-be-negotiated?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T11:24:19Z",
-      "tier": 2
-    },
-    {
-      "title": "Russian drone hits Chinese ship off Ukraine before Putin meets Xi Jinping",
-      "description": "Ukraine says its territory is attacked overnight with 524 drones and 22 missiles.",
-      "link": "https://www.aljazeera.com/news/2026/5/18/russian-drone-hits-chinese-ship-off-ukraine-before-putin-visits-xi-jinping?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T10:52:23Z",
-      "tier": 2
-    },
-    {
       "title": "Trump warns 'clock is ticking' for Iran as peace progress stalls",
       "description": "On Monday Iran said it had responded to the latest US proposal and that exchanges with Washington were continuing.",
       "link": "https://www.bbc.com/news/articles/cd0p4y9y48xo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-05-18T09:58:35Z",
-      "tier": 2
-    },
-    {
-      "title": "Video: US calls on G7 to impose US-led sanctions on Iran",
-      "description": "The US Treasury Secretary says he\u2019s calling \u2018the world\u2019 to join the US in imposing sanctions on Iran.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/video-us-calls-on-g7-to-impose-us-led-sanctions-on-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T09:46:00Z",
-      "tier": 2
-    },
-    {
-      "title": "US military carries out more strikes against ISIL fighters in Nigeria",
-      "description": "Attacks conducted days after US and Nigeria say they killed deputy ISIL leader.",
-      "link": "https://www.aljazeera.com/news/2026/5/18/us-military-carries-out-more-strikes-against-isil-fighters-in-nigeria?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T09:39:54Z",
       "tier": 2
     },
     {
@@ -1363,22 +1331,14 @@
       "source": "BBC World",
       "time": "2026-05-16T23:10:19Z",
       "tier": 2
-    },
-    {
-      "title": "BBC on the ground during march through Jerusalem's Old City",
-      "description": "Tens of thousands of Israeli celebrants have marched through the area captured by Israel in the 1967 Arab-Israeli war.",
-      "link": "https://www.bbc.com/news/videos/cdxp0143q0po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-14T20:51:47Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates that by early May Iran\u2019s Health Ministry had reported 3,468 dead and more than 26,500 wounded in Iran, Al Jazeera\u2019s tracker listed 26 killed in Israel and 28 killed in Gulf states, and CENTCOM\u2019s latest clearly searchable official casualty update confirmed 7 U.S. service members killed in action as of March 8, 2026. Official U.S. summaries put Operation Epic Fury at 13,000+ targets struck and over 10,200 air sorties by April 8, while the White House also reported more than 1,700 combined drone and ballistic missile intercepts. On May 6, Secretary of State Rubio said Operation Epic Fury had concluded, but reporting on May 16-18 shows negotiations via Pakistan continue and regional escalation risks persist, especially around the Gulf and Lebanon fronts.",
+  "summary": "Confirmed reporting available today still points to Iran\u2019s Ministry of Health toll of 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 28 killed in Gulf states, and 4 confirmed U.S. military deaths from the March 12 KC-135 crash in Iraq per CENTCOM. Official U.S. operation tallies located remain the April 6 CENTCOM fact sheet showing 13,000+ targets struck and the March 4 CENTCOM commander statement that more than 50,000 troops and two aircraft carriers were participating. On May 18, diplomacy remained active through Pakistani mediation, but regional risk stayed high after a reported drone strike near the UAE\u2019s Barakah nuclear plant and continued instability around Lebanon and the Gulf.",
   "briefings": [
     {
       "date": "2026-05-18",
       "day": 79,
-      "summary": "Confirmed reporting indicates that by early May Iran\u2019s Health Ministry had reported 3,468 dead and more than 26,500 wounded in Iran, Al Jazeera\u2019s tracker listed 26 killed in Israel and 28 killed in Gulf states, and CENTCOM\u2019s latest clearly searchable official casualty update confirmed 7 U.S. service members killed in action as of March 8, 2026. Official U.S. summaries put Operation Epic Fury at 13,000+ targets struck and over 10,200 air sorties by April 8, while the White House also reported more than 1,700 combined drone and ballistic missile intercepts. On May 6, Secretary of State Rubio said Operation Epic Fury had concluded, but reporting on May 16-18 shows negotiations via Pakistan continue and regional escalation risks persist, especially around the Gulf and Lebanon fronts."
+      "summary": "Confirmed reporting available today still points to Iran\u2019s Ministry of Health toll of 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 28 killed in Gulf states, and 4 confirmed U.S. military deaths from the March 12 KC-135 crash in Iraq per CENTCOM. Official U.S. operation tallies located remain the April 6 CENTCOM fact sheet showing 13,000+ targets struck and the March 4 CENTCOM commander statement that more than 50,000 troops and two aircraft carriers were participating. On May 18, diplomacy remained active through Pakistani mediation, but regional risk stayed high after a reported drone strike near the UAE\u2019s Barakah nuclear plant and continued instability around Lebanon and the Gulf."
     },
     {
       "date": "2026-05-17",
