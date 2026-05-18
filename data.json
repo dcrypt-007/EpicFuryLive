@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-18T20:45:47Z",
+  "lastUpdated": "2026-05-18T22:14:23Z",
   "dayCount": 79,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "6,450+",
-    "cost": "$46.9B+"
+    "strikes": "~12,300",
+    "killed": "3,642+",
+    "cost": "$47.4B+"
   },
   "humanCost": {
-    "iranDeaths": "3,469",
+    "iranDeaths": "3,636",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "6",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "32,314+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "2447",
+    "civilianDeaths": "1332",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$46.9 billion+",
-    "dailyBurnRate": "~$594M/day",
+    "totalCost": "$47.4 billion+",
+    "dailyBurnRate": "~$600M/day",
     "daysOfOps": 79,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-18",
-          "source": "LLM-verified (CENTCOM/DoW reporting on Operation Epic Fury states two aircraft carriers were participating; no newer official source found showing a different current deployed carrier count for Epic Fury theater operations.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026, states 'Two carrier strike groups' supported Operation Epic Fury.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-18",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' published April 20, 2026 states over 8,500 aircraft sorties in Iran operations. This is the latest clearly sourced sortie figure found, but it is IDF campaign-side and may not include all U.S. sorties.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; used as the best confirmed cumulative sorties figure.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 18, 2026 that Lebanon's health ministry said the death toll in Israel-Hezbollah fighting had surpassed 3,000, showing continued regional escalation despite the truce.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Reuters- and AP-carried reporting on May 17-18, 2026 said a drone strike caused a fire outside the Barakah nuclear power plant in Abu Dhabi; UAE authorities reported no injuries and no radiological impact.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and BBC reported on May 18, 2026 that President Donald Trump said he called off a planned U.S. strike on Iran that had been scheduled for Tuesday to allow 'serious negotiations'.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iranian civilians reportedly receiving defense/light-weapons training in mosques in several cities",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Reported strike/fire near the UAE's Barakah nuclear power plant remains under investigation; UAE says radiation levels normal, per BBC and Al Jazeera headlines",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Iranian civilians receiving defence training in mosques in several cities",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump threatened on May 17, 2026 that there 'won\u2019t be anything left' of Iran if no deal is reached, according to Al Jazeera live reporting",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-05-18T21:11:48Z",
+      "text": "<strong>Trump pauses possible Iran strike after Gulf intervention</strong> -- US President Donald Trump has announced that he is delaying a planned attack on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/trump-pauses-possible-iran-strike-after-gulf-intervention?traffic_source=rss"
+    },
+    {
       "time": "2026-05-18T20:12:45Z",
       "text": "<strong>Trump delays \u2018scheduled attack\u2019 on Iran, crediting \u2018serious negotiations\u2019</strong> -- Gulf states push Donald Trump to avoid any escalation in the US-Israel war on Iran, which prompted regional attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/18/trump-delays-scheduled-attack-on-iran-crediting-serious-negotiations?traffic_source=rss"
@@ -778,6 +783,26 @@
       "link": "https://www.aljazeera.com/news/2026/5/18/iranian-nobel-laureate-narges-mohammadi-returns-home-after-hospital-release?traffic_source=rss"
     },
     {
+      "time": "2026-05-18T22:13:08Z",
+      "text": "<strong>Trump says he called off new Iran attack at request of Gulf states</strong> -- The US president says he is holding off on a US attack planned for Tuesday as &quot;serious negotiations are now taking place&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c7079e55zjro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-18T16:16:38Z",
+      "text": "<strong>Death toll from Israeli strikes on Lebanon passes 3,000, officials say</strong> -- It marks a grim milestone in the conflict between Israel and the Lebanese armed group Hezbollah since March, despite a nominal ceasefire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cqjpglyjwjeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-18T16:49:45Z",
+      "text": "<strong>Four killed in protests during Kenyan strikes over high fuel prices</strong> -- Thousands of commuters are stranded, with key roads in the capital Nairobi largely empty due to the protests over fuel costs. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cm2p0n44drvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-18T15:30:30Z",
+      "text": "<strong>Israeli forces board Gaza-bound flotilla near Cyprus, activists say</strong> -- Live broadcasts from the Global Sumud flotilla show commandos boarding several boats trying to breach the Gaza maritime blockade. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c142vz80553o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-18T18:10:29Z",
       "text": "<strong>Belarus dismisses concerns as it launches joint nuclear drills with Russia</strong> -- Strong reactions from Ukraine and NATO allies as Belarusian and Russian forces train to use nuclear weapons. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/18/belarus-dismisses-concerns-as-it-launches-joint-nuclear-drills-with-russia?traffic_source=rss"
@@ -791,16 +816,6 @@
       "time": "2026-05-18T20:25:42Z",
       "text": "<strong>Trump says he called off new Iran attack at request of Gulf states</strong> -- The US president says he is holding off on a US attack planned for Tuesday as &quot;serious negotiations are now taking place&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c7079e55zjro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-18T16:16:38Z",
-      "text": "<strong>Death toll from Israeli strikes on Lebanon passes 3,000, officials say</strong> -- It marks a grim milestone in the conflict between Israel and the Lebanese armed group Hezbollah since March, despite a nominal ceasefire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cqjpglyjwjeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-18T16:49:45Z",
-      "text": "<strong>Four killed in protests during Kenyan strikes over high fuel prices</strong> -- Thousands of commuters are stranded, with key roads in the capital Nairobi largely empty due to the protests over fuel costs. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cm2p0n44drvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-18T16:09:05Z",
@@ -836,21 +851,6 @@
       "time": "2026-05-18T12:49:59Z",
       "text": "<strong>The Gulf does not have to choose Iran or Israel</strong> -- It has to choose stability or permanent war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/opinions/2026/5/18/the-gulf-does-not-have-to-choose-iran-or-israel?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-18T12:44:20Z",
-      "text": "<strong>Iran sends response to US proposal to end war via mediator Pakistan</strong> -- Iran demands the release of assets frozen abroad, the lifting of sanctions and control over the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/18/iran-sends-response-to-us-proposal-to-end-war-via-mediator-pakistan-2?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-18T11:57:45Z",
-      "text": "<strong>Iran plans to offer insurance for Hormuz transit: Will it work?</strong> -- Iran proposes Bitcoin-based ship insurance for the Strait of Hormuz, a move likely to raise global maritime concerns. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/18/iran-plans-to-offer-insurance-for-hormuz-transit-will-it-work?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-18T11:24:19Z",
-      "text": "<strong>Iran says nuclear enrichment rights cannot be \u2018negotiated\u2019</strong> -- Iran\u2019s nuclear enrichment is a right that \u2018already exists\u2019, foreign ministry spokesman Esmaeil Baghaei said. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/iran-says-nuclear-enrichment-rights-cannot-be-negotiated?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1217,7 +1217,15 @@
       "description": "The US president says he is holding off on a US attack planned for Tuesday as \"serious negotiations are now taking place\".",
       "link": "https://www.bbc.com/news/articles/c7079e55zjro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-05-18T20:25:42Z",
+      "time": "2026-05-18T22:13:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump pauses possible Iran strike after Gulf intervention",
+      "description": "US President Donald Trump has announced that he is delaying a planned attack on Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/trump-pauses-possible-iran-strike-after-gulf-intervention?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-18T21:11:48Z",
       "tier": 2
     },
     {
@@ -1258,22 +1266,6 @@
       "link": "https://www.aljazeera.com/news/2026/5/18/iranian-nobel-laureate-narges-mohammadi-returns-home-after-hospital-release?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-18T19:14:08Z",
-      "tier": 2
-    },
-    {
-      "title": "Belarus dismisses concerns as it launches joint nuclear drills with Russia",
-      "description": "Strong reactions from Ukraine and NATO allies as Belarusian and Russian forces train to use nuclear weapons.",
-      "link": "https://www.aljazeera.com/news/2026/5/18/belarus-dismisses-concerns-as-it-launches-joint-nuclear-drills-with-russia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T18:10:29Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran\u2019s World Cup team arrives in Turkiye amid US visa uncertainty",
-      "description": "Iran\u2019s national football team has arrived in Turkiye for a pre-World Cup training camp, amid US visa uncertainty.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/18/irans-world-cup-team-arrives-in-turkiye-amid-us-visa-uncertainty?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-18T17:42:26Z",
       "tier": 2
     },
     {
@@ -1333,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of May 18, 2026, the most solid cross-checked casualty data found remains WHO\u2019s May 14 situation report, which put Iran at 3,469 dead and 32,314 injured and Israel at 26 dead, while Al Jazeera\u2019s May 5 tracker listed 28 killed in Gulf states and Iran\u2019s Ministry of Health figure of 3,468 killed and 26,500-plus injured. On the military side, the clearest official U.S. campaign metric still publicly available is the Department of War\u2019s April 6 fact sheet listing 13,000-plus targets struck, while IDF\u2019s April 20 summary reported about 10,800 strikes and more than 8,500 aircraft sorties in Iran. Today\u2019s confirmed reporting indicates the war has shifted into a tense pause: Trump said he delayed a scheduled new strike because negotiations are under way, while U.S. forces continue defensive maritime operations tied to Project Freedom in the Strait of Hormuz.",
+  "summary": "Confirmed reporting on May 18, 2026 indicates the war remains active but may be at a diplomatic inflection point: AP and BBC reported that President Donald Trump said he halted a planned U.S. strike on Iran scheduled for Tuesday to allow renewed negotiations, while Reuters- and AP-carried reports said a drone strike caused a fire outside the Barakah nuclear plant in the UAE with no injuries or radiological impact. On the military side, the latest accessible official CENTCOM fact sheet dated April 1, 2026 still provides the clearest confirmed cumulative operational totals for Operation Epic Fury at 12,300+ targets struck and 13,000+ combat flights, while the latest accessible named-source casualty total for Iran remains 3,636 killed from HRANA via Reuters and CENTCOM's latest confirmed U.S. death toll remains six service members killed in the March 12 KC-135 crash.",
   "briefings": [
     {
       "date": "2026-05-18",
       "day": 79,
-      "summary": "As of May 18, 2026, the most solid cross-checked casualty data found remains WHO\u2019s May 14 situation report, which put Iran at 3,469 dead and 32,314 injured and Israel at 26 dead, while Al Jazeera\u2019s May 5 tracker listed 28 killed in Gulf states and Iran\u2019s Ministry of Health figure of 3,468 killed and 26,500-plus injured. On the military side, the clearest official U.S. campaign metric still publicly available is the Department of War\u2019s April 6 fact sheet listing 13,000-plus targets struck, while IDF\u2019s April 20 summary reported about 10,800 strikes and more than 8,500 aircraft sorties in Iran. Today\u2019s confirmed reporting indicates the war has shifted into a tense pause: Trump said he delayed a scheduled new strike because negotiations are under way, while U.S. forces continue defensive maritime operations tied to Project Freedom in the Strait of Hormuz."
+      "summary": "Confirmed reporting on May 18, 2026 indicates the war remains active but may be at a diplomatic inflection point: AP and BBC reported that President Donald Trump said he halted a planned U.S. strike on Iran scheduled for Tuesday to allow renewed negotiations, while Reuters- and AP-carried reports said a drone strike caused a fire outside the Barakah nuclear plant in the UAE with no injuries or radiological impact. On the military side, the latest accessible official CENTCOM fact sheet dated April 1, 2026 still provides the clearest confirmed cumulative operational totals for Operation Epic Fury at 12,300+ targets struck and 13,000+ combat flights, while the latest accessible named-source casualty total for Iran remains 3,636 killed from HRANA via Reuters and CENTCOM's latest confirmed U.S. death toll remains six service members killed in the March 12 KC-135 crash."
     },
     {
       "date": "2026-05-17",
