@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-20T18:32:26Z",
+  "lastUpdated": "2026-05-20T21:13:42Z",
   "dayCount": 81,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,528+",
-    "cost": "$47.7B+"
+    "killed": "3,507+",
+    "cost": "$48.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$47.7 billion+",
-    "dailyBurnRate": "~$589M/day",
+    "totalCost": "$48.3 billion+",
+    "dailyBurnRate": "~$596M/day",
     "daysOfOps": 81,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-20",
-          "source": "LLM-verified (CENTCOM imagery/video pages show USS Abraham Lincoln conducting Epic Fury flight ops in theater; other carrier groups shown on unrelated deployments, not confirmed in Epic Fury theater as of latest accessible source)"
+          "source": "LLM-verified (US Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury over five weeks)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-20",
-          "source": "LLM-verified (Department of War/CENTCOM fact sheet dated April 1, 2026 lists 13,000+ combat flights; closest confirmed official cumulative sortie figure found)"
+          "source": "LLM-verified (DoD Operation Epic Fury fact sheet dated April 1, 2026 reports 13,000+ combat flights; used as latest confirmed cumulative sorties figure found)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 81 days",
-        "cost": "$567,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 81 days",
+        "cost": "$1,134,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "President Trump said on May 20, 2026 the US military may have to strike Iran 'even harder' if needed, while saying a peace deal is in the final stages, according to Al Jazeera live reporting",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran\u2019s chief negotiator accused the United States on May 20, 2026 of overt and covert moves indicating preparations for a new attack, according to Al Jazeera live reporting",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran warned on May 20, 2026 that the war would spread far beyond the region if US-Israeli attacks resume, according to Al Jazeera live reporting",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 20, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Israeli strikes in Lebanon continue despite a nominal ceasefire extension; Lebanon's health ministry said the cumulative toll reached 3,020 killed and 9,273 wounded by May 18, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and BBC reporting indicate Iran says it will not 'surrender' while diplomacy continues through intermediaries, keeping the risk of renewed direct strikes high.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said on May 19, 2026 he postponed a scheduled new US attack on Iran at the request of Gulf allies amid ongoing negotiations, indicating the war could re-escalate quickly if talks fail.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline cited in user-provided RSS says the UAE is investigating a strike near the Abu Dhabi nuclear power plant, indicating ongoing regional escalation risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -778,6 +778,16 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/20/families-demand-justice-for-victims-killed-in-israeli-strikes-on-beirut?traffic_source=rss"
     },
     {
+      "time": "2026-05-20T20:17:51Z",
+      "text": "<strong>Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists</strong> -- France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-20T15:18:12Z",
+      "text": "<strong>Ebola vaccine could take nine months as death toll rises further, WHO warns</strong> -- In its latest update, the World Health Organization says there have now been 139 suspected deaths and 600 cases. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cwy2g197dp8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-20T13:11:42Z",
       "text": "<strong>New York City hotels avert labour strike threat before FIFA World Cup</strong> -- Hotel operators avoid a &amp;#039;very real threat&amp;#039; by signing a deal with 25,000 workers as the city hosts the 2026 tournament. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/5/20/new-york-city-hotels-avert-labour-strike-threat-before-fifa-world-cup?traffic_source=rss"
@@ -791,11 +801,6 @@
       "time": "2026-05-20T17:58:07Z",
       "text": "<strong>Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists</strong> -- France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-20T15:18:12Z",
-      "text": "<strong>Ebola vaccine could take nine months as death toll rises further, WHO warns</strong> -- In its latest update, the World Health Organization says there have now been 139 suspected deaths and 600 cases. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwy2g197dp8o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-20T11:40:29Z",
@@ -846,11 +851,6 @@
       "time": "2026-05-20T11:46:44Z",
       "text": "<strong>More die of suspected Ebola as WHO warns that numbers will rise further</strong> -- In its latest update, the World Health Organization says there have now been 139 suspected deaths and 600 cases. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cwy2g197dp8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-20T02:33:18Z",
-      "text": "<strong>Nigeria says joint US strikes kill 175 ISIL fighters in country\u2019s northeast</strong> -- Nigerian Army lauds joint US operation as part of ongoing military campaign to &amp;#039;hunt down and kill terrorists anywhere&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/20/nigeria-says-joint-us-strikes-kill-175-isil-fighters-in-countrys-northeast?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1217,7 +1217,7 @@
       "description": "France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port.",
       "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-05-20T17:58:07Z",
+      "time": "2026-05-20T20:17:51Z",
       "tier": 2
     },
     {
@@ -1267,30 +1267,14 @@
       "source": "BBC World",
       "time": "2026-05-20T15:18:12Z",
       "tier": 2
-    },
-    {
-      "title": "New York City hotels avert labour strike threat before FIFA World Cup",
-      "description": "Hotel operators avoid a &#039;very real threat&#039; by signing a deal with 25,000 workers as the city hosts the 2026 tournament.",
-      "link": "https://www.aljazeera.com/sports/2026/5/20/new-york-city-hotels-avert-labour-strike-threat-before-fifa-world-cup?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-20T13:11:42Z",
-      "tier": 2
-    },
-    {
-      "title": "WHO says 600 suspected cases, 139 deaths in growing Ebola outbreak",
-      "description": "Numbers are expected to rise, the WHO warns, as European officials emphasise the risk of a European outbreak is low.",
-      "link": "https://www.aljazeera.com/news/2026/5/20/who-says-600-cases-139-suspected-deaths-in-growing-ebola-outbreak?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-20T13:09:24Z",
-      "tier": 2
     }
   ],
-  "summary": "As of May 20, 2026, the latest clearly confirmed cumulative figures located in major-source and official reporting remain 3,468 killed and more than 26,500 wounded in Iran according to Iran's Ministry of Health as cited by Al Jazeera's May 5 tracker, 26 Israelis killed according to Israeli health reporting cited there, 28 deaths in Gulf states from the same tracker, and 13,000-plus targets struck according to the April 6 CENTCOM/Department of War fact sheet; official U.S. fatality reporting located in search confirms six U.S. airmen killed on March 12 in a KC-135 crash supporting the operation, while later official searched material did not provide a higher Pentagon/CENTCOM-confirmed KIA total.",
+  "summary": "As of May 20, 2026, the clearest current confirmed casualty figures found are 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 13 confirmed US combat-related deaths across the region, while CENTCOM/DoD materials continue to cite more than 13,000 targets struck or combat flights in Operation Epic Fury. Official military documents confirm the use of two carrier strike groups, guided-missile destroyers, MQ-9 drones, Patriot and THAAD defenses, and B-2 bombers, but the searched official and major-media reporting did not yield current precise cumulative totals for most weapons-expended fields. Today\u2019s confirmed reporting also indicates renewed concern over escalation, with Iranian officials warning of wider war if strikes resume and US leaders publicly saying further strikes remain possible.",
   "briefings": [
     {
       "date": "2026-05-20",
       "day": 81,
-      "summary": "As of May 20, 2026, the latest clearly confirmed cumulative figures located in major-source and official reporting remain 3,468 killed and more than 26,500 wounded in Iran according to Iran's Ministry of Health as cited by Al Jazeera's May 5 tracker, 26 Israelis killed according to Israeli health reporting cited there, 28 deaths in Gulf states from the same tracker, and 13,000-plus targets struck according to the April 6 CENTCOM/Department of War fact sheet; official U.S. fatality reporting located in search confirms six U.S. airmen killed on March 12 in a KC-135 crash supporting the operation, while later official searched material did not provide a higher Pentagon/CENTCOM-confirmed KIA total."
+      "summary": "As of May 20, 2026, the clearest current confirmed casualty figures found are 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 13 confirmed US combat-related deaths across the region, while CENTCOM/DoD materials continue to cite more than 13,000 targets struck or combat flights in Operation Epic Fury. Official military documents confirm the use of two carrier strike groups, guided-missile destroyers, MQ-9 drones, Patriot and THAAD defenses, and B-2 bombers, but the searched official and major-media reporting did not yield current precise cumulative totals for most weapons-expended fields. Today\u2019s confirmed reporting also indicates renewed concern over escalation, with Iranian officials warning of wider war if strikes resume and US leaders publicly saying further strikes remain possible."
     },
     {
       "date": "2026-05-19",
