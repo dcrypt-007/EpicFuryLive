@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-05-21T05:19:32Z",
+  "lastUpdated": "2026-05-21T10:03:17Z",
   "dayCount": 82,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,507+",
-    "cost": "$47.3B+"
+    "strikes": "~11,000",
+    "killed": "3,508+",
+    "cost": "$48.5B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,469",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$47.3 billion+",
-    "dailyBurnRate": "~$576M/day",
+    "totalCost": "$48.5 billion+",
+    "dailyBurnRate": "~$592M/day",
     "daysOfOps": 82,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-21",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026) says Operation Epic Fury involved 'Two carrier strike groups'.)"
+          "source": "LLM-verified (War.gov Operation Epic Fury materials and CENTCOM-linked reporting identify two nuclear-powered aircraft carriers in theater.)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-21",
-          "source": "LLM-verified (Al Jazeera/Reuters, May 4, 2026: CENTCOM said it would support the Hormuz mission with 15,000 military personnel. This is a confirmed current deployment figure tied to the ongoing operation in theater.)"
+          "source": "LLM-verified (CRS report citing CENTCOM says an estimated 50,000 U.S. service members were deployed 'in and around the Middle East' as of March 26, 2026.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-21",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; using the confirmed floor only.)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet dated March 28, 2026 lists 11,000+ combat flights.)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 82 days",
-        "cost": "$615,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 82 days",
+        "cost": "$2,050,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Project Freedom, begun May 5, 2026, is now the active U.S. defensive mission focused on reopening the Strait of Hormuz rather than continuing Epic Fury strike operations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Since the ceasefire, Iran has continued low-level attacks on commercial shipping and U.S. forces while staying below the threshold of renewed major combat operations, according to the May 5 Pentagon briefing.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran is reviewing a new U.S. proposal to end the war, according to current AP and Al Jazeera reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 21, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Reuters reporting on March 28, 2026 said Yemen's Houthis entered the war with a missile launch toward Israel, widening regional escalation risk",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC reported on May 19, 2026 that President Trump said he called off a new Iran attack at the request of Gulf states because negotiations were underway",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC/Al Jazeera headlines May 19, 2026: Trump said he called off a planned new Iran attack amid serious negotiations, indicating ceasefire remains fragile.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP May 19, 2026: UAE said drones that struck the Barakah nuclear power plant perimeter came from Iraqi territory; no injuries or radiological release reported.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-05-21T09:54:51Z",
+      "text": "<strong>What options do the US and Iran have left to bring war to an end?</strong> -- What options do the US and Iran have left to bring war to an end? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/what-options-do-the-us-and-iran-have-left-to-bring-war-to-an-end?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T09:26:51Z",
+      "text": "<strong>Iran reviews US proposal to end war as Pakistan steps up mediation efforts</strong> -- Pakistan military chief Asim Munir to travel to Tehran for talks, according to Iranian media reports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/iran-reviews-us-proposal-to-end-war-as-pakistan-steps-up-mediation-efforts?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T09:26:36Z",
+      "text": "<strong>\u2018Iron brothers\u2019: How China and Pakistan built an unlikely 75-year bond</strong> -- From secret nuclear exchanges to a key diplomatic deal, Pakistan and China have long helped each other. What&amp;#039;s next? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/5/21/iron-brothers-how-china-and-pakistan-built-an-unlikely-75-year-bond?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T09:02:25Z",
+      "text": "<strong>The crises caused by the Iran war will hit the world in four waves</strong> -- The impact of the conflict will not stop at energy price hikes. It will spread to various sectors and last years. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/5/21/the-crises-caused-by-the-iran-war-will-hit-the-world-in-four-waves?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T07:59:56Z",
+      "text": "<strong>Israel pushes for war amid US ceasefire, but its options may be limited</strong> -- Israeli officials and media indicate renewed conflict with Iran is being actively considered despite a shaky deadlock. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/israel-pushes-for-war-amid-us-ceasefire-but-its-options-may-be-limited?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T06:59:10Z",
+      "text": "<strong>Iran war day 83: Tehran \u2018reviewing\u2019 latest US response to end conflict</strong> -- Iran says diplomacy with the US remains open as Hormuz tensions deepen and outrage grows over Israel\u2019s flotilla arrests. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/iran-war-day-83-tehran-reviewing-latest-us-response-to-end-conflict?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T06:54:01Z",
+      "text": "<strong>South Korea\u2019s stock market soars as Samsung union calls off planned strike</strong> -- Benchmark KOSPI rises more than 8 percent following deal to avert strike at top memory chip maker. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/5/21/south-koreas-stock-market-soars-as-samsung-union-calls-off-planned-strike?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T09:56:24Z",
+      "text": "<strong>DR Congo cancels World Cup training camp over Ebola outbreak</strong> -- The outbreak, caused by a rare Ebola species, is thought to have caused 139 deaths so far. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c8d80856q2go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-21T08:48:00Z",
+      "text": "<strong>Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists</strong> -- France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-20T23:47:01Z",
+      "text": "<strong>Ebola vaccine could take nine months as death toll rises further, WHO warns</strong> -- In its latest update, the World Health Organization says there have now been 139 suspected deaths and 600 cases. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cwy2g197dp8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-21T00:00:00Z",
       "text": "<strong>Iran war live: Tehran says no surrender to US, diplomacy \u2018wiser\u2019 than war</strong> -- Israeli attacks have killed 3,073 people across Lebanon since March, according to the Lebanese Health Ministry. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/5/21/iran-war-live-tehran-says-no-surrender-to-us-diplomacy-wiser-than-war?traffic_source=rss"
@@ -761,11 +811,6 @@
       "time": "2026-05-20T23:28:28Z",
       "text": "<strong>Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists</strong> -- France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-20T23:47:01Z",
-      "text": "<strong>Ebola vaccine could take nine months as death toll rises further, WHO warns</strong> -- In its latest update, the World Health Organization says there have now been 139 suspected deaths and 600 cases. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwy2g197dp8o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-20T17:18:12Z",
@@ -806,51 +851,6 @@
       "time": "2026-05-20T13:11:42Z",
       "text": "<strong>New York City hotels avert labour strike threat before FIFA World Cup</strong> -- Hotel operators avoid a &amp;#039;very real threat&amp;#039; by signing a deal with 25,000 workers as the city hosts the 2026 tournament. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/5/20/new-york-city-hotels-avert-labour-strike-threat-before-fifa-world-cup?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-20T13:09:24Z",
-      "text": "<strong>WHO says 600 suspected cases, 139 deaths in growing Ebola outbreak</strong> -- Numbers are expected to rise, the WHO warns, as European officials emphasise the risk of a European outbreak is low. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/20/who-says-600-cases-139-suspected-deaths-in-growing-ebola-outbreak?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-20T17:58:07Z",
-      "text": "<strong>Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists</strong> -- France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-20T11:40:29Z",
-      "text": "<strong>Why are nearly 50,000 Samsung workers about to strike in South Korea?</strong> -- Workers&amp;#039; union says protest over bonuses will continue for 18 days. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/20/why-are-nearly-50000-samsung-workers-about-to-strike-in-south-korea?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-20T10:27:25Z",
-      "text": "<strong>US and Israel planned to install Ahmadinejad as Iranian leader, NYT says</strong> -- The &amp;#039;audacious plan&amp;#039; quickly unravelled and Ahmadinejad&amp;#039;s whereabouts are unknown, US officials told the newspaper <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/20/us-and-israel-planned-to-install-ahmadinejad-as-iranian-leader-nyt-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-20T09:28:16Z",
-      "text": "<strong>Kenya transport strike paused after deadly protests</strong> -- Transport operators halt strike over fuel price hikes after several killed and mass arrests. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/gallery/2026/5/20/kenya-transport-strike-paused-after-deadly-protests?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-20T15:23:17Z",
-      "text": "<strong>Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists</strong> -- France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-19T23:26:13Z",
-      "text": "<strong>Father-of-eight killed in San Diego mosque shooting hailed as hero</strong> -- Security guard Amin Abdullah, one of three killed in the attack, was described as &quot;a shining light&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clyp3gkrwg9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-20T08:36:58Z",
-      "text": "<strong>At least 87 Gaza aid flotilla activists abducted by Israel on hunger strike</strong> -- The protest comes after Israeli forces intercepted the last remaining vessel sailing towards the besieged Gaza Strip. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/20/at-least-87-gaza-aid-flotilla-activists-abducted-by-israel-on-hunger-strike?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-20T07:47:55Z",
-      "text": "<strong>Chinese supertankers exit Hormuz as Trump and Vance talk up Iran deal</strong> -- Oil prices eased after the White House remarks as Iran warned it would expand the war in response to any new attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/20/chinese-supertankers-exit-hormuz-as-trump-vance-talk-up-iran-deal?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,75 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran war live: Tehran says no surrender to US, diplomacy \u2018wiser\u2019 than war",
-      "description": "Israeli attacks have killed 3,073 people across Lebanon since March, according to the Lebanese Health Ministry.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/21/iran-war-live-tehran-says-no-surrender-to-us-diplomacy-wiser-than-war?traffic_source=rss",
+      "title": "DR Congo cancels World Cup training camp over Ebola outbreak",
+      "description": "The outbreak, caused by a rare Ebola species, is thought to have caused 139 deaths so far.",
+      "link": "https://www.bbc.com/news/articles/c8d80856q2go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-21T09:56:24Z",
+      "tier": 2
+    },
+    {
+      "title": "What options do the US and Iran have left to bring war to an end?",
+      "description": "What options do the US and Iran have left to bring war to an end?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/what-options-do-the-us-and-iran-have-left-to-bring-war-to-an-end?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-05-21T00:00:00Z",
+      "time": "2026-05-21T09:54:51Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran reviews US proposal to end war as Pakistan steps up mediation efforts",
+      "description": "Pakistan military chief Asim Munir to travel to Tehran for talks, according to Iranian media reports.",
+      "link": "https://www.aljazeera.com/news/2026/5/21/iran-reviews-us-proposal-to-end-war-as-pakistan-steps-up-mediation-efforts?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T09:26:51Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018Iron brothers\u2019: How China and Pakistan built an unlikely 75-year bond",
+      "description": "From secret nuclear exchanges to a key diplomatic deal, Pakistan and China have long helped each other. What&#039;s next?",
+      "link": "https://www.aljazeera.com/features/2026/5/21/iron-brothers-how-china-and-pakistan-built-an-unlikely-75-year-bond?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T09:26:36Z",
+      "tier": 2
+    },
+    {
+      "title": "The crises caused by the Iran war will hit the world in four waves",
+      "description": "The impact of the conflict will not stop at energy price hikes. It will spread to various sectors and last years.",
+      "link": "https://www.aljazeera.com/opinions/2026/5/21/the-crises-caused-by-the-iran-war-will-hit-the-world-in-four-waves?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T09:02:25Z",
+      "tier": 2
+    },
+    {
+      "title": "Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists",
+      "description": "France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port.",
+      "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-21T08:48:00Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel pushes for war amid US ceasefire, but its options may be limited",
+      "description": "Israeli officials and media indicate renewed conflict with Iran is being actively considered despite a shaky deadlock.",
+      "link": "https://www.aljazeera.com/news/2026/5/21/israel-pushes-for-war-amid-us-ceasefire-but-its-options-may-be-limited?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T07:59:56Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war day 83: Tehran \u2018reviewing\u2019 latest US response to end conflict",
+      "description": "Iran says diplomacy with the US remains open as Hormuz tensions deepen and outrage grows over Israel\u2019s flotilla arrests.",
+      "link": "https://www.aljazeera.com/news/2026/5/21/iran-war-day-83-tehran-reviewing-latest-us-response-to-end-conflict?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T06:59:10Z",
+      "tier": 2
+    },
+    {
+      "title": "South Korea\u2019s stock market soars as Samsung union calls off planned strike",
+      "description": "Benchmark KOSPI rises more than 8 percent following deal to avert strike at top memory chip maker.",
+      "link": "https://www.aljazeera.com/economy/2026/5/21/south-koreas-stock-market-soars-as-samsung-union-calls-off-planned-strike?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T06:54:01Z",
       "tier": 2
     },
     {
@@ -1229,20 +1293,20 @@
       "tier": 2
     },
     {
-      "title": "Far-right Israeli minister condemned for taunting handcuffed Gaza flotilla activists",
-      "description": "France and Italy are among the countries that have criticised a video showing Itamar Ben-Gvir taunting dozens of activists detained at an Israeli port.",
-      "link": "https://www.bbc.com/news/articles/clyp32weyn8o?at_medium=RSS&at_campaign=rss",
+      "title": "New video captures engine ripping off cargo plane in deadly Kentucky crash",
+      "description": "As part of the ongoing investigation into the crash that killed 14 people, officials released footage showing the engine detaching during takeoff.",
+      "link": "https://www.bbc.com/news/videos/crmplvm3vreo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-05-20T23:28:28Z",
+      "time": "2026-05-20T18:27:37Z",
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available on May 21, 2026 shows that publicly verifiable official data remain sparse: CENTCOM\u2019s April 1 fact sheet said Operation Epic Fury had struck 12,300-plus targets and flown 13,000-plus combat flights, while Al Jazeera and Reuters reported on May 4 that CENTCOM was supporting the Hormuz mission with 15,000 personnel and more than 100 aircraft, ships and drones. For casualties, the clearest confirmed U.S. total in accessible reporting remains 13 troops killed as cited by Navy Times from U.S. military data on April 8. Several other requested cumulative figures, including current Iranian death and wounded totals, Israeli deaths, Gulf death totals, and detailed munitions counts, could not be confirmed from named official or major-wire sources in the available search results, so they are left null rather than estimated.",
+  "summary": "Confirmed reporting available on May 21, 2026 indicates that no newer official Pentagon/CENTCOM fatality total has displaced the previously confirmed 13 U.S. troops killed in Operation Epic Fury, while broader humanitarian reporting still points to roughly 3,469 deaths in Iran, 26 deaths in Israel, and 26,500 wounded in Iran. Official U.S. operation summaries located through War Department/CENTCOM-linked material still show 11,000+ targets struck and 11,000+ combat flights in the campaign, with about 50,000 U.S. personnel and two carrier groups tied to the theater at the campaign\u2019s peak. Current confirmed headlines focus less on new strike totals and more on diplomacy, with Iran reviewing a fresh U.S. proposal as the post-ceasefire maritime security mission in the Strait of Hormuz continues.",
   "briefings": [
     {
       "date": "2026-05-21",
       "day": 82,
-      "summary": "Confirmed reporting available on May 21, 2026 shows that publicly verifiable official data remain sparse: CENTCOM\u2019s April 1 fact sheet said Operation Epic Fury had struck 12,300-plus targets and flown 13,000-plus combat flights, while Al Jazeera and Reuters reported on May 4 that CENTCOM was supporting the Hormuz mission with 15,000 personnel and more than 100 aircraft, ships and drones. For casualties, the clearest confirmed U.S. total in accessible reporting remains 13 troops killed as cited by Navy Times from U.S. military data on April 8. Several other requested cumulative figures, including current Iranian death and wounded totals, Israeli deaths, Gulf death totals, and detailed munitions counts, could not be confirmed from named official or major-wire sources in the available search results, so they are left null rather than estimated."
+      "summary": "Confirmed reporting available on May 21, 2026 indicates that no newer official Pentagon/CENTCOM fatality total has displaced the previously confirmed 13 U.S. troops killed in Operation Epic Fury, while broader humanitarian reporting still points to roughly 3,469 deaths in Iran, 26 deaths in Israel, and 26,500 wounded in Iran. Official U.S. operation summaries located through War Department/CENTCOM-linked material still show 11,000+ targets struck and 11,000+ combat flights in the campaign, with about 50,000 U.S. personnel and two carrier groups tied to the theater at the campaign\u2019s peak. Current confirmed headlines focus less on new strike totals and more on diplomacy, with Iran reviewing a fresh U.S. proposal as the post-ceasefire maritime security mission in the Strait of Hormuz continues."
     },
     {
       "date": "2026-05-20",
