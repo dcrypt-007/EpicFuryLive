@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-21T19:17:28Z",
+  "lastUpdated": "2026-05-21T21:49:02Z",
   "dayCount": 82,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,528+",
-    "cost": "$48.7B+"
+    "killed": "3,529+",
+    "cost": "$46.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$48.7 billion+",
-    "dailyBurnRate": "~$594M/day",
+    "totalCost": "$46.9 billion+",
+    "dailyBurnRate": "~$572M/day",
     "daysOfOps": 82,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 15000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-21",
-          "source": "LLM-verified (CRS report 'U.S. Conflict with Iran' cites DoD/CENTCOM estimate of 50,000 U.S. service members deployed in and around the Middle East as of March 25, 2026)"
+          "source": "LLM-verified (Gen. Dan Caine, U.S. Department of War May 5, 2026 briefing on Project Freedom: 'These forces are comprised of over 15,000 American service members' for current Strait/Hormuz defensive operation)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-21",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; IDF 'Operation Roaring Lion: The Numbers' on April 20 lists 8,500+ aircraft sorties for IDF, but to avoid mixing methodologies, only confirmed CENTCOM combat-flights figure entered)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet: The First 24 Days, March 23, 2026, lists 9,000+ combat flights; no newer confirmed cumulative fighter/attack-aircraft sortie count found)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 82 days",
-        "cost": "$2,050,000,000"
+        "detail": "15,000 \u00d7 $500/day \u00d7 82 days",
+        "cost": "$615,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran has published a map claiming armed-forces oversight across more than 22,000 square kilometers of the Strait of Hormuz, according to BBC headline context provided by user",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran also attacked Oman once and the UAE three times on May 4, 2026, including an attack on Fujairah oil terminal that U.S. officials said was successfully defeated",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran continued low-level attacks on commercial shipping after the ceasefire, including nine firings at commercial vessels and seizure of two container ships, according to Gen. Dan Caine on May 5, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 21, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "BBC reported on May 19, 2026 that President Donald Trump said he called off a planned new U.S. attack on Iran at the request of Gulf states because negotiations were underway.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on May 18, 2026 that Saudi Arabia said it intercepted three drones and that a drone struck the UAE's Barakah Nuclear Energy Plant area, causing a fire outside the inner perimeter with no injuries reported.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline on May 20 reported the U.S. Senate advanced a War Powers resolution to curb presidential power to wage war on Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline on May 20 reported Trump said he called off a planned new Iran attack at the request of Gulf states as negotiations proceed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-21T20:09:10Z",
+      "text": "<strong>US sanctions elected Hezbollah MPs and Lebanese security officials</strong> -- Hezbollah says the sanctions will have &amp;#039;absolutely no effect&amp;#039; on its strategy amid ongoing Israeli attacks on Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/us-sanctions-elected-hezbollah-mps-and-lebanese-security-officials?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T19:11:17Z",
+      "text": "<strong>Trump shifts between diplomacy and threats in Iran standoff</strong> -- Supporters say unpredictable Trump approach deal-making strength, others see reflection of strategic dilemma. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff?traffic_source=rss"
+    },
+    {
       "time": "2026-05-21T18:19:25Z",
       "text": "<strong>Iran\u2019s World Cup hopes hit US visa hurdles</strong> -- Players from Iran\u2019s national football team are in Turkey applying for US visas for the 2026 World Cup. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/irans-world-cup-hopes-hit-us-visa-hurdles?traffic_source=rss"
@@ -768,21 +778,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/lingering-shock-from-tragedy-weeks-after-minab-school-bombing?traffic_source=rss"
     },
     {
-      "time": "2026-05-21T16:07:02Z",
-      "text": "<strong>Putin and Lukashenko monitor joint Russia-Belarus nuclear exercises</strong> -- Moscow and Minsk hold strategic nuclear drills with the two countries&amp;#039; leaders participating via video conference. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/21/putin-and-lukashenko-monitor-joint-russia-belarus-nuclear-exercises?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T15:32:26Z",
-      "text": "<strong>Russia rehearses \u2018use of nuclear forces\u2019 in drills with Belarus</strong> -- Russia delivered nuclear warheads to sites in Belarus as part of a three-day military exercise involving both countries. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/russia-rehearses-use-of-nuclear-forces-in-drills-with-belarus?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T15:10:12Z",
-      "text": "<strong>US-Iran diplomacy picks up: What\u2019s the latest?</strong> -- Iranian media reported that the Pakistani interior minister is in Iran to help the US and Iran reach a peace deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/21/us-iran-diplomacy-picks-up-whats-the-latest?traffic_source=rss"
-    },
-    {
       "time": "2026-05-21T14:37:29Z",
       "text": "<strong>Iran steps up claim to control Strait of Hormuz</strong> -- Iran publishes a map claiming &quot;armed forces oversight&quot; across more than 22,000 sq km of the waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cq5py64gvwzo?at_medium=RSS&at_campaign=rss"
@@ -796,6 +791,26 @@
       "time": "2026-05-21T15:58:46Z",
       "text": "<strong>Air France and Airbus found guilty of manslaughter over 2009 plane crash</strong> -- The companies were found guilty by a French court over an air disaster which killed 228 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/czd2qmdvmq6o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-20T18:27:37Z",
+      "text": "<strong>New video captures engine ripping off cargo plane in deadly Kentucky crash</strong> -- As part of the ongoing investigation into the crash that killed 14 people, officials released footage showing the engine detaching during takeoff. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/videos/crmplvm3vreo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-21T16:07:02Z",
+      "text": "<strong>Putin and Lukashenko monitor joint Russia-Belarus nuclear exercises</strong> -- Moscow and Minsk hold strategic nuclear drills with the two countries&amp;#039; leaders participating via video conference. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/putin-and-lukashenko-monitor-joint-russia-belarus-nuclear-exercises?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T15:32:26Z",
+      "text": "<strong>Russia rehearses \u2018use of nuclear forces\u2019 in drills with Belarus</strong> -- Russia delivered nuclear warheads to sites in Belarus as part of a three-day military exercise involving both countries. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/russia-rehearses-use-of-nuclear-forces-in-drills-with-belarus?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T15:10:12Z",
+      "text": "<strong>US-Iran diplomacy picks up: What\u2019s the latest?</strong> -- Iranian media reported that the Pakistani interior minister is in Iran to help the US and Iran reach a peace deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/us-iran-diplomacy-picks-up-whats-the-latest?traffic_source=rss"
     },
     {
       "time": "2026-05-21T17:54:40Z",
@@ -836,21 +851,6 @@
       "time": "2026-05-21T09:54:51Z",
       "text": "<strong>What options do the US and Iran have left to bring war to an end?</strong> -- What options do the US and Iran have left to bring war to an end? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/what-options-do-the-us-and-iran-have-left-to-bring-war-to-an-end?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T09:26:51Z",
-      "text": "<strong>Iran reviews US proposal to end war as Pakistan steps up mediation efforts</strong> -- Pakistan military chief Asim Munir to travel to Tehran for talks, according to Iranian media reports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/21/iran-reviews-us-proposal-to-end-war-as-pakistan-steps-up-mediation-efforts?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T09:26:36Z",
-      "text": "<strong>\u2018Iron brothers\u2019: How China and Pakistan built an unlikely 75-year bond</strong> -- From secret nuclear exchanges to a key diplomatic deal, Pakistan and China have long helped each other. What&amp;#039;s next? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/features/2026/5/21/iron-brothers-how-china-and-pakistan-built-an-unlikely-75-year-bond?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T09:02:25Z",
-      "text": "<strong>The economic shock of the Iran war will hit the world in four waves</strong> -- The impact of the conflict will not stop at energy price hikes. It will spread to various sectors and last years. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/5/21/the-crises-caused-by-the-iran-war-will-hit-the-world-in-four-waves?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,27 @@
   ],
   "newsFeed": [
     {
+      "title": "US sanctions elected Hezbollah MPs and Lebanese security officials",
+      "description": "Hezbollah says the sanctions will have &#039;absolutely no effect&#039; on its strategy amid ongoing Israeli attacks on Lebanon.",
+      "link": "https://www.aljazeera.com/news/2026/5/21/us-sanctions-elected-hezbollah-mps-and-lebanese-security-officials?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T20:09:10Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump shifts between diplomacy and threats in Iran standoff",
+      "description": "Supporters say unpredictable Trump approach deal-making strength, others see reflection of strategic dilemma.",
+      "link": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-21T19:11:17Z",
+      "tier": 2
+    },
+    {
       "title": "Iran\u2019s World Cup hopes hit US visa hurdles",
       "description": "Players from Iran\u2019s national football team are in Turkey applying for US visas for the 2026 World Cup.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/irans-world-cup-hopes-hit-us-visa-hurdles?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-21T18:19:25Z",
-      "tier": 2
-    },
-    {
-      "title": "DR Congo cancels World Cup training camp over Ebola outbreak",
-      "description": "The outbreak, caused by a rare Ebola species, is thought to have caused 139 deaths so far.",
-      "link": "https://www.bbc.com/news/articles/c8d80856q2go?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-21T17:54:40Z",
       "tier": 2
     },
     {
@@ -1253,35 +1261,11 @@
       "tier": 2
     },
     {
-      "title": "Putin and Lukashenko monitor joint Russia-Belarus nuclear exercises",
-      "description": "Moscow and Minsk hold strategic nuclear drills with the two countries&#039; leaders participating via video conference.",
-      "link": "https://www.aljazeera.com/news/2026/5/21/putin-and-lukashenko-monitor-joint-russia-belarus-nuclear-exercises?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-21T16:07:02Z",
-      "tier": 2
-    },
-    {
       "title": "Air France and Airbus found guilty of manslaughter over 2009 plane crash",
       "description": "The companies were found guilty by a French court over an air disaster which killed 228 people.",
       "link": "https://www.bbc.com/news/articles/czd2qmdvmq6o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-05-21T15:58:46Z",
-      "tier": 2
-    },
-    {
-      "title": "Russia rehearses \u2018use of nuclear forces\u2019 in drills with Belarus",
-      "description": "Russia delivered nuclear warheads to sites in Belarus as part of a three-day military exercise involving both countries.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/russia-rehearses-use-of-nuclear-forces-in-drills-with-belarus?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-21T15:32:26Z",
-      "tier": 2
-    },
-    {
-      "title": "US-Iran diplomacy picks up: What\u2019s the latest?",
-      "description": "Iranian media reported that the Pakistani interior minister is in Iran to help the US and Iran reach a peace deal.",
-      "link": "https://www.aljazeera.com/news/2026/5/21/us-iran-diplomacy-picks-up-whats-the-latest?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-21T15:10:12Z",
       "tier": 2
     },
     {
@@ -1293,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Ebola vaccine could take nine months as death toll rises further, WHO warns",
-      "description": "In its latest update, the World Health Organization says there have now been 139 suspected deaths and 600 cases.",
-      "link": "https://www.bbc.com/news/articles/cwy2g197dp8o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-20T23:47:01Z",
-      "tier": 2
-    },
-    {
       "title": "New video captures engine ripping off cargo plane in deadly Kentucky crash",
       "description": "As part of the ongoing investigation into the crash that killed 14 people, officials released footage showing the engine detaching during takeoff.",
       "link": "https://www.bbc.com/news/videos/crmplvm3vreo?at_medium=RSS&at_campaign=rss",
@@ -1309,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of Thursday, May 21, 2026, I found confirmed cumulative casualty figures from publicly accessible named sources for Iran, Israel, Gulf states and U.S. losses, but very limited current official disclosure for several military cost-model fields. Iran\u2019s Ministry of Health figure carried by Al Jazeera\u2019s May 5 live tracker remains 3,468 killed and more than 26,500 wounded in U.S.-Israeli attacks; the same tracker lists 26 killed in Israel and 28 killed in Gulf states. CENTCOM\u2019s April 6 fact sheet still publicly shows 13,000+ targets struck, while its March 13 press release confirms six U.S. deaths in the KC-135 crash, which CENTCOM said was not caused by hostile fire. I did not find newer publicly confirmed Pentagon, CENTCOM, IDF, Reuters or AP totals for civilian-only Iranian deaths or for most deployment/munitions-use fields, so those are left null rather than estimated.",
+  "summary": "Confirmed reporting still shows Iran\u2019s official Health Ministry death toll at 3,468 killed and more than 26,500 wounded, while Israel\u2019s reported death toll stands at 26 and Gulf-state deaths at 28 in Al Jazeera\u2019s May 5 tracker. The latest U.S. official operational figure found is Gen. Dan Caine\u2019s April 8 statement that American forces struck more than 13,000 targets during 38 days of combat, followed by a May 5 Pentagon briefing shifting to the defensive 'Project Freedom' phase in the Strait of Hormuz, where U.S. commanders said over 15,000 personnel and significant naval and air assets are protecting shipping amid continued Iranian harassment below the threshold of renewed major combat operations.",
   "briefings": [
     {
       "date": "2026-05-21",
       "day": 82,
-      "summary": "As of Thursday, May 21, 2026, I found confirmed cumulative casualty figures from publicly accessible named sources for Iran, Israel, Gulf states and U.S. losses, but very limited current official disclosure for several military cost-model fields. Iran\u2019s Ministry of Health figure carried by Al Jazeera\u2019s May 5 live tracker remains 3,468 killed and more than 26,500 wounded in U.S.-Israeli attacks; the same tracker lists 26 killed in Israel and 28 killed in Gulf states. CENTCOM\u2019s April 6 fact sheet still publicly shows 13,000+ targets struck, while its March 13 press release confirms six U.S. deaths in the KC-135 crash, which CENTCOM said was not caused by hostile fire. I did not find newer publicly confirmed Pentagon, CENTCOM, IDF, Reuters or AP totals for civilian-only Iranian deaths or for most deployment/munitions-use fields, so those are left null rather than estimated."
+      "summary": "Confirmed reporting still shows Iran\u2019s official Health Ministry death toll at 3,468 killed and more than 26,500 wounded, while Israel\u2019s reported death toll stands at 26 and Gulf-state deaths at 28 in Al Jazeera\u2019s May 5 tracker. The latest U.S. official operational figure found is Gen. Dan Caine\u2019s April 8 statement that American forces struck more than 13,000 targets during 38 days of combat, followed by a May 5 Pentagon briefing shifting to the defensive 'Project Freedom' phase in the Strait of Hormuz, where U.S. commanders said over 15,000 personnel and significant naval and air assets are protecting shipping amid continued Iranian harassment below the threshold of renewed major combat operations."
     },
     {
       "date": "2026-05-20",
