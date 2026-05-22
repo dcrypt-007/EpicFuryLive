@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-22T04:35:57Z",
+  "lastUpdated": "2026-05-22T08:32:01Z",
   "dayCount": 83,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,535+",
-    "cost": "$47.2B+"
+    "killed": "3,526+",
+    "cost": "$47.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "4",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$47.2 billion+",
-    "dailyBurnRate": "~$569M/day",
+    "totalCost": "$47.3 billion+",
+    "dailyBurnRate": "~$570M/day",
     "daysOfOps": 83,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-22",
-          "source": "LLM-verified (US Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury theater)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-22",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' dated April 20, 2026: 'Over 8,500 aircraft sorties' in Iran campaign)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026: 9,000+ combat flights; used as confirmed lower-bound proxy for fighter/attack sortie total only because no newer fighter-specific cumulative figure was found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US munitions strain from the Iran war is affecting other commitments, including a reported pause in a $14 billion Taiwan arms sale cited by Reuters and Al Jazeera.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Tensions around the Strait of Hormuz remain unresolved, with Iran pressing sovereignty claims and the US/regional states opposing them.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US-Iran mediated talks advanced on May 21-22, 2026, with draft proposals reportedly under review, while Washington maintained 'peak readiness' and blockade posture.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 22, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Ceasefire strain persists in the wider theater, with Israeli air attacks continuing in southern Lebanon and reported deaths there, according to Al Jazeera headline context",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Controlled reopening of Iran's stock market excludes some firms hit by US and Israeli strikes, signaling continued economic disruption, according to Al Jazeera headline context",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran claims it coordinated passage of 26 vessels out of Hormuz in 24 hours amid ongoing US blockade pressure, according to Al Jazeera headline context for May 20, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on May 20, 2026 reported Tehran warned of 'many more surprises' if conflict resumes",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-22T06:55:08Z",
+      "text": "<strong>Iran war day 84: US-Iran talks advance amid mediation push</strong> -- US and Iran continue mediated talks, exchanging draft proposals aimed at reaching a formal agreement. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/22/iran-war-day-84-us-iran-talks-advance-amid-mediation-push?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-22T04:58:04Z",
+      "text": "<strong>Thousands attend funeral prayers for San Diego mosque attack victims</strong> -- More than 2,000 people gathered for Islamic funeral prayers in San Diego for three men killed in mosque attack <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/22/thousands-attend-funeral-prayers-for-san-diego-mosque-attack-victims?traffic_source=rss"
+    },
+    {
       "time": "2026-05-22T03:45:22Z",
       "text": "<strong>US pausing $14bn arms sale to Taiwan due to Iran war, navy chief says</strong> -- Acting Navy Secretary Hung Cao&amp;#039;s remarks come as US President Donald Trump gives mixed signals on the sale. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/22/us-pausing-14bn-arms-sale-to-taiwan-due-to-iran-war-navy-chief-says?traffic_source=rss"
@@ -778,14 +788,9 @@
       "link": "https://www.aljazeera.com/news/2026/5/21/us-sanctions-elected-hezbollah-mps-and-lebanese-security-officials?traffic_source=rss"
     },
     {
-      "time": "2026-05-21T19:11:17Z",
-      "text": "<strong>Trump shifts between diplomacy and threats in Iran standoff</strong> -- Supporters say unpredictable Trump approach deal-making strength, others see reflection of strategic dilemma. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T18:19:25Z",
-      "text": "<strong>Iran\u2019s World Cup hopes hit US visa hurdles</strong> -- Players from Iran\u2019s national football team are in Turkey applying for US visas for the 2026 World Cup. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/irans-world-cup-hopes-hit-us-visa-hurdles?traffic_source=rss"
+      "time": "2026-05-22T08:12:47Z",
+      "text": "<strong>US navy chief says $14bn arms sale to Taiwan paused due to Iran war</strong> -- Hung Cao told a Senate hearing they were &quot;doing a pause&quot; on the sale to make sure they had munitions for the Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c232z4yk437o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-21T14:37:29Z",
@@ -796,6 +801,16 @@
       "time": "2026-05-22T00:21:24Z",
       "text": "<strong>Gaza flotilla activists deported from Israel as backlash over treatment grows</strong> -- A video showing a far-right Israeli minister taunting activists who were kneeling with their hands tied behind their backs has been widely condemned. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c9d3v2d6p1eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-21T19:11:17Z",
+      "text": "<strong>Trump shifts between diplomacy and threats in Iran standoff</strong> -- Supporters say unpredictable Trump approach deal-making strength, others see reflection of strategic dilemma. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-21T18:19:25Z",
+      "text": "<strong>Iran\u2019s World Cup hopes hit US visa hurdles</strong> -- Players from Iran\u2019s national football team are in Turkey applying for US visas for the 2026 World Cup. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/irans-world-cup-hopes-hit-us-visa-hurdles?traffic_source=rss"
     },
     {
       "time": "2026-05-21T15:58:46Z",
@@ -836,21 +851,6 @@
       "time": "2026-05-21T15:10:12Z",
       "text": "<strong>US-Iran diplomacy picks up: What\u2019s the latest?</strong> -- Iranian media reported that the Pakistani interior minister is in Iran to help the US and Iran reach a peace deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/21/us-iran-diplomacy-picks-up-whats-the-latest?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T17:54:40Z",
-      "text": "<strong>DR Congo cancels World Cup training camp over Ebola outbreak</strong> -- The outbreak, caused by a rare Ebola species, is thought to have caused 139 deaths so far. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c8d80856q2go?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-21T13:31:11Z",
-      "text": "<strong>Maths behind Hormuz toll: Is paying Iran for transit cheaper than blockade?</strong> -- Economics of Hormuz closure are skewed towards Iran, so why won&amp;#039;t the vessels just pay Tehran and sail away? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/features/2026/5/21/maths-behind-hormuz-toll-is-paying-iran-for-transit-cheaper-than-blockade?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-21T13:01:38Z",
-      "text": "<strong>Iran World Cup squad members apply for US, Canada visas in Turkiye</strong> -- A number of players submitted visa applications in person at the US embassy in Ankara ahead of their training camp. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/5/21/iran-world-cup-squad-members-apply-for-us-canada-visas-in-turkiye?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "US navy chief says $14bn arms sale to Taiwan paused due to Iran war",
+      "description": "Hung Cao told a Senate hearing they were \"doing a pause\" on the sale to make sure they had munitions for the Iran war.",
+      "link": "https://www.bbc.com/news/articles/c232z4yk437o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-22T08:12:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war day 84: US-Iran talks advance amid mediation push",
+      "description": "US and Iran continue mediated talks, exchanging draft proposals aimed at reaching a formal agreement.",
+      "link": "https://www.aljazeera.com/news/2026/5/22/iran-war-day-84-us-iran-talks-advance-amid-mediation-push?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-22T06:55:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Thousands attend funeral prayers for San Diego mosque attack victims",
+      "description": "More than 2,000 people gathered for Islamic funeral prayers in San Diego for three men killed in mosque attack",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/22/thousands-attend-funeral-prayers-for-san-diego-mosque-attack-victims?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-22T04:58:04Z",
+      "tier": 2
+    },
+    {
       "title": "US pausing $14bn arms sale to Taiwan due to Iran war, navy chief says",
       "description": "Acting Navy Secretary Hung Cao&#039;s remarks come as US President Donald Trump gives mixed signals on the sale.",
       "link": "https://www.aljazeera.com/news/2026/5/22/us-pausing-14bn-arms-sale-to-taiwan-due-to-iran-war-navy-chief-says?traffic_source=rss",
@@ -1261,22 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "Trump shifts between diplomacy and threats in Iran standoff",
-      "description": "Supporters say unpredictable Trump approach deal-making strength, others see reflection of strategic dilemma.",
-      "link": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-21T19:11:17Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran\u2019s World Cup hopes hit US visa hurdles",
-      "description": "Players from Iran\u2019s national football team are in Turkey applying for US visas for the 2026 World Cup.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/21/irans-world-cup-hopes-hit-us-visa-hurdles?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-21T18:19:25Z",
-      "tier": 2
-    },
-    {
       "title": "Air France and Airbus found guilty of manslaughter over 2009 plane crash",
       "description": "The companies were found guilty by a French court over an air disaster which killed 228 people.",
       "link": "https://www.bbc.com/news/articles/czd2qmdvmq6o?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of May 22, 2026 shows the Iran death toll at 3,468 and injuries above 26,500 according to Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s tracker updated May 20; Israeli deaths stand at 26 and Pentagon/CENTCOM-confirmed US combat deaths at 13. Official US material remains sparse on many cost-model quantities, but CENTCOM\u2019s April 6 fact sheet still lists 13,000+ targets struck, while a May 2026 Navy report says two carrier strike groups supported the operation. On the diplomatic front, multiple outlets report tentative movement toward a US-Iran deal even as tensions remain high around the Strait of Hormuz and US force-posture pressures continue.",
+  "summary": "As of Friday, May 22, 2026, the latest confirmed publicly sourced figures I could verify remain largely unchanged from earlier May reporting: Iran\u2019s Ministry of Health figure carried by Al Jazeera remains 3,468 killed and more than 26,500 wounded in Iran, Israel\u2019s confirmed death toll remains 26, Gulf-state deaths remain 28, and CENTCOM\u2019s latest accessible official operation fact sheet still lists 13,000+ targets struck; the only Pentagon/CENTCOM-confirmed US deaths I could verify are the four personnel killed in the March 12 KC-135 loss over Iraq. Today\u2019s confirmed reporting focuses less on new casualty updates and more on diplomacy, with US-Iran mediated talks reportedly advancing through exchanged draft proposals even as US forces stay at peak readiness and Hormuz tensions continue.",
   "briefings": [
     {
       "date": "2026-05-22",
       "day": 83,
-      "summary": "Confirmed reporting as of May 22, 2026 shows the Iran death toll at 3,468 and injuries above 26,500 according to Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s tracker updated May 20; Israeli deaths stand at 26 and Pentagon/CENTCOM-confirmed US combat deaths at 13. Official US material remains sparse on many cost-model quantities, but CENTCOM\u2019s April 6 fact sheet still lists 13,000+ targets struck, while a May 2026 Navy report says two carrier strike groups supported the operation. On the diplomatic front, multiple outlets report tentative movement toward a US-Iran deal even as tensions remain high around the Strait of Hormuz and US force-posture pressures continue."
+      "summary": "As of Friday, May 22, 2026, the latest confirmed publicly sourced figures I could verify remain largely unchanged from earlier May reporting: Iran\u2019s Ministry of Health figure carried by Al Jazeera remains 3,468 killed and more than 26,500 wounded in Iran, Israel\u2019s confirmed death toll remains 26, Gulf-state deaths remain 28, and CENTCOM\u2019s latest accessible official operation fact sheet still lists 13,000+ targets struck; the only Pentagon/CENTCOM-confirmed US deaths I could verify are the four personnel killed in the March 12 KC-135 loss over Iraq. Today\u2019s confirmed reporting focuses less on new casualty updates and more on diplomacy, with US-Iran mediated talks reportedly advancing through exchanged draft proposals even as US forces stay at peak readiness and Hormuz tensions continue."
     },
     {
       "date": "2026-05-21",
