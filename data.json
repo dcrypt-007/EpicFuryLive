@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-05-23T14:02:31Z",
+  "lastUpdated": "2026-05-23T15:20:12Z",
   "dayCount": 84,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,567+",
-    "cost": "$49.0B+"
+    "strikes": "~13,000",
+    "killed": "3,501+",
+    "cost": "$49.6B+"
   },
   "humanCost": {
-    "iranDeaths": "3,531",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "6",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "19",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "4",
+    "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "20,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1607",
+    "civilianDeaths": "879",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$49.0 billion+",
-    "dailyBurnRate": "~$583M/day",
+    "totalCost": "$49.6 billion+",
+    "dailyBurnRate": "~$590M/day",
     "daysOfOps": 84,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-23",
-          "source": "LLM-verified (CENTCOM imagery shows USS George H.W. Bush operating in Arabian Sea on May 10, 2026, while AP reported USS Gerald R. Ford returned home May 16, 2026; only one currently confirmed carrier strike group in theater. https://www.centcom.mil/OPERATIONS-AND-EXERCISES/EPIC-FURY/?dvpTag=Sailor&dvpmoduleid=41413&videoid=1007391 ; https://apnews.com/article/ecb685f08110eec315a1dddb13e2bca4)"
+          "source": "LLM-verified (U.S. Department of War Operation Epic Fury media page shows both USS Abraham Lincoln and USS Gerald R. Ford conducting flight operations in support of Operation Epic Fury in March 2026; no newer official source found showing a different current carrier count)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-23",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet, April 1, 2026, U.S. Department of War / media.defense.gov: 'Combat Flights: 13,000+'; used as minimum confirmed sortie count 13000)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 84 days",
-        "cost": "$588,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 84 days",
+        "cost": "$1,176,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported today that Iran and the U.S. signaled some progress in talks, but Tehran says ending the war remains a prerequisite before nuclear issues are discussed, suggesting hostilities may continue absent a deal.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported today that Israeli attacks on Lebanon have pushed the Lebanon death toll since March 2 above 3,111, indicating continued risk of regional spillover beyond Iran proper.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported today that Iran has stepped up claims of control over the Strait of Hormuz, publishing a map asserting 'armed forces oversight' across more than 22,000 sq km of the waterway.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 23, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera reported on May 21, 2026 that U.S.-Iran diplomacy is picking up, with Pakistani mediation efforts reportedly underway.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Project Freedom, begun May 5, 2026, is now the active U.S. defensive mission focused on reopening the Strait of Hormuz rather than continuing Epic Fury strike operations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Since the ceasefire, Iran has continued low-level attacks on commercial shipping and U.S. forces while staying below the threshold of renewed major combat operations, according to the May 5 Pentagon briefing.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran is reviewing a new U.S. proposal to end the war, according to current AP and Al Jazeera reporting.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-05-23T15:00:30Z",
+      "text": "<strong>Five police officers, 13 year-old boy killed in Israeli attack on Gaza</strong> -- Attack on a police post in northern Gaza comes as dozens of people were wounded in Israeli attacks in the past 48 hours. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/23/five-police-officers-13-year-old-boy-killed-in-israeli-attack-on-gaza?traffic_source=rss"
+    },
+    {
       "time": "2026-05-23T12:54:34Z",
       "text": "<strong>Israeli air strike pounds southern Lebanon leaving many injured</strong> -- An Israeli air strike has hit the Al-Baqbouq area north of Tyre in southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/23/israeli-air-strike-pounds-southern-lebanon-leaving-many-injured?traffic_source=rss"
@@ -768,13 +773,8 @@
       "link": "https://www.aljazeera.com/features/2026/5/23/missiles-to-munitions-does-the-us-risk-running-out-of-key-weapons?traffic_source=rss"
     },
     {
-      "time": "2026-05-23T08:16:38Z",
-      "text": "<strong>Diplomacy intensifies to seek peace deal between US and Iran</strong> -- A visit by Pakistan\u2019s army chief to Tehran is seen as a sign of significant progress in negotiations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/23/iran-weighs-us-peace-proposal-despite-deep-and-significant-disagreements?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-23T13:40:31Z",
-      "text": "<strong>At least 90 killed in Chinese coal mine explosion, state media reports</strong> -- The blast in Shanxi province constitutes the country&#x27;s worst mining disaster in 16 years. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "time": "2026-05-23T15:18:40Z",
+      "text": "<strong>At least 82 killed in Chinese coal mine explosion, state media reports</strong> -- The blast in Shanxi province constitutes the country&#x27;s worst mining disaster in 16 years. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c5y0ve18qlko?at_medium=RSS&at_campaign=rss"
     },
     {
@@ -791,6 +791,16 @@
       "time": "2026-05-21T14:37:29Z",
       "text": "<strong>Iran steps up claim to control Strait of Hormuz</strong> -- Iran publishes a map claiming &quot;armed forces oversight&quot; across more than 22,000 sq km of the waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cq5py64gvwzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-23T08:16:38Z",
+      "text": "<strong>Diplomacy intensifies to seek peace deal between US and Iran</strong> -- A visit by Pakistan\u2019s army chief to Tehran is seen as a sign of significant progress in negotiations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/23/iran-weighs-us-peace-proposal-despite-deep-and-significant-disagreements?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-23T13:40:31Z",
+      "text": "<strong>At least 90 killed in Chinese coal mine explosion, state media reports</strong> -- The blast in Shanxi province constitutes the country&#x27;s worst mining disaster in 16 years. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c5y0ve18qlko?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-23T06:51:45Z",
@@ -841,16 +851,6 @@
       "time": "2026-05-22T18:49:40Z",
       "text": "<strong>\u2018I always hear them before I see them\u2019: Drones strike fear in Colombia</strong> -- Armed groups have taken the conflict to the skies by making greater use of cheap, widely available drone technology. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/longform/2026/5/22/i-always-hear-them-before-i-see-them-drones-strike-fear-in-colombia?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-22T17:04:08Z",
-      "text": "<strong>Video shows Israeli strike on Lebanese child and paramedics</strong> -- Video shows an Israeli air strike hitting paramedics responding to an earlier attack in southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/22/video-shows-israeli-strike-on-lebanese-child-and-paramedics?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-22T15:44:22Z",
-      "text": "<strong>Economic confidence plummets in US amid Iran war, poll shows</strong> -- As petrol prices rise, new survey suggests economic confidence in the US is at -45, the worst since 2022. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/22/economic-confidence-plummets-in-us-amid-iran-war-poll-shows?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,19 @@
   ],
   "newsFeed": [
     {
-      "title": "At least 90 killed in Chinese coal mine explosion, state media reports",
+      "title": "At least 82 killed in Chinese coal mine explosion, state media reports",
       "description": "The blast in Shanxi province constitutes the country's worst mining disaster in 16 years.",
       "link": "https://www.bbc.com/news/articles/c5y0ve18qlko?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-05-23T13:40:31Z",
+      "time": "2026-05-23T15:18:40Z",
+      "tier": 2
+    },
+    {
+      "title": "Five police officers, 13 year-old boy killed in Israeli attack on Gaza",
+      "description": "Attack on a police post in northern Gaza comes as dozens of people were wounded in Israeli attacks in the past 48 hours.",
+      "link": "https://www.aljazeera.com/news/2026/5/23/five-police-officers-13-year-old-boy-killed-in-israeli-attack-on-gaza?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-23T15:00:30Z",
       "tier": 2
     },
     {
@@ -1253,14 +1261,6 @@
       "tier": 2
     },
     {
-      "title": "Diplomacy intensifies to seek peace deal between US and Iran",
-      "description": "A visit by Pakistan\u2019s army chief to Tehran is seen as a sign of significant progress in negotiations.",
-      "link": "https://www.aljazeera.com/news/2026/5/23/iran-weighs-us-peace-proposal-despite-deep-and-significant-disagreements?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-23T08:16:38Z",
-      "tier": 2
-    },
-    {
       "title": "Gaza flotilla activists allege abuse by Israeli forces while detained",
       "description": "The detainees say they were slapped, hit, humiliated and even subjected to sexual violence, but Israel's prison service says the allegations are false.",
       "link": "https://www.bbc.com/news/articles/cglp5z63k9no?at_medium=RSS&at_campaign=rss",
@@ -1277,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting remains fragmentary and often stale: the latest solid cumulative figures I found are HRANA via Reuters reporting 3,531 people killed in Iran, including 1,607 civilians, and the Red Cross/Red Crescent federation reporting 20,000 injured in Iran as of April 4, while a CRS report citing official U.S. reporting said 13 U.S. personnel, 19 Israelis, and at least 4 GCC soldiers had been killed by March 23; on the military side, the latest official DoD fact sheet I found said the U.S. had struck 12,300+ targets and flown 13,000+ combat flights by April 1, and more recent May reporting from Reuters and AP confirms the war remains active with renewed U.S. strikes, Hormuz escort/combat operations, and fresh drone attacks on the UAE, but I could not find named-source confirmed current totals for most munitions-use fields or current deployed carrier/destroyer counts.",
+  "summary": "Confirmed reporting remains patchy today. The clearest casualty update still available from a named public tracker is Al Jazeera\u2019s May 5 compilation citing Iran\u2019s Ministry of Health, which put Iranian deaths at 3,468 and injuries at more than 26,500, while Israel\u2019s death toll stood at 26. On the U.S. side, the only clearly confirmed Pentagon/Department of War fatality figure I found is six airmen killed in a March 12 KC-135 crash supporting Operation Epic Fury. Official U.S. military fact sheets still provide the best confirmed operations total, listing 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1, but they do not disclose cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, interceptors, B-2 sorties, or MOP bunker busters. Today\u2019s wider confirmed reporting points to continued regional instability, with Al Jazeera reporting intensified Israeli strikes in Lebanon and Iranian claims of expanded oversight in the Strait of Hormuz, even as AP says Tehran and Washington signaled limited progress in talks.",
   "briefings": [
     {
       "date": "2026-05-23",
       "day": 84,
-      "summary": "Confirmed reporting remains fragmentary and often stale: the latest solid cumulative figures I found are HRANA via Reuters reporting 3,531 people killed in Iran, including 1,607 civilians, and the Red Cross/Red Crescent federation reporting 20,000 injured in Iran as of April 4, while a CRS report citing official U.S. reporting said 13 U.S. personnel, 19 Israelis, and at least 4 GCC soldiers had been killed by March 23; on the military side, the latest official DoD fact sheet I found said the U.S. had struck 12,300+ targets and flown 13,000+ combat flights by April 1, and more recent May reporting from Reuters and AP confirms the war remains active with renewed U.S. strikes, Hormuz escort/combat operations, and fresh drone attacks on the UAE, but I could not find named-source confirmed current totals for most munitions-use fields or current deployed carrier/destroyer counts."
+      "summary": "Confirmed reporting remains patchy today. The clearest casualty update still available from a named public tracker is Al Jazeera\u2019s May 5 compilation citing Iran\u2019s Ministry of Health, which put Iranian deaths at 3,468 and injuries at more than 26,500, while Israel\u2019s death toll stood at 26. On the U.S. side, the only clearly confirmed Pentagon/Department of War fatality figure I found is six airmen killed in a March 12 KC-135 crash supporting Operation Epic Fury. Official U.S. military fact sheets still provide the best confirmed operations total, listing 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1, but they do not disclose cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, interceptors, B-2 sorties, or MOP bunker busters. Today\u2019s wider confirmed reporting points to continued regional instability, with Al Jazeera reporting intensified Israeli strikes in Lebanon and Iranian claims of expanded oversight in the Strait of Hormuz, even as AP says Tehran and Washington signaled limited progress in talks."
     },
     {
       "date": "2026-05-22",
