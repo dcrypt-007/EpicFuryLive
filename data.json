@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-05-24T15:33:29Z",
+  "lastUpdated": "2026-05-24T17:16:19Z",
   "dayCount": 85,
   "banner": {
     "strikes": "~13,000",
-    "killed": "4,921+",
-    "cost": "$49.6B+"
+    "killed": "3,535+",
+    "cost": "$50.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "10",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$49.6 billion+",
-    "dailyBurnRate": "~$584M/day",
+    "totalCost": "$50.0 billion+",
+    "dailyBurnRate": "~$589M/day",
     "daysOfOps": 85,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-24",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan May 2026 states two carrier strike groups supported Operation Epic Fury)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: two carrier strike groups supporting Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-24",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 23, 2026 lists 9,000+ combat flights; used lowest confirmed floor only)"
+          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet reported 13,000+ combat flights; used as nearest confirmed sortie-type operational total, though not fighter-only)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Recent Gulf drone incidents, including attacks affecting the UAE and Saudi Arabia, indicate escalation risk remains despite the ceasefire framework.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump said on May 24 that negotiators should not rush into a deal and that the U.S. blockade would remain until a final agreement is signed.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Peace talks remain fragile despite Trump saying a memorandum of understanding is largely negotiated and could reopen the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 24, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Israeli attacks on Lebanon continue, with Lebanon Health Ministry death toll reported by Al Jazeera at 3,111 since March 2",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "EU sanctions over the Hormuz blockade are moving forward, according to reported mediation/diplomatic coverage",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran continues to assert control over the Strait of Hormuz while diplomacy remains unresolved",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "CBS News, citing Adm. Brad Cooper's May 14, 2026 Senate testimony, said the April 7 ceasefire remains in effect but the U.S. Navy blockade of Iranian ports continues and there were exchanges of fire last week.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-05-24T16:40:39Z",
+      "text": "<strong>Iran team trains through World Cup uncertainty</strong> -- Al Jazeera exclusive footage follows Iran\u2019s national football team as they train for the World Cup in Turkiye. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/24/iran-team-trains-through-world-cup-uncertainty?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-24T16:18:19Z",
+      "text": "<strong>Iran recounts historic battles in response to Trump\u2019s talk of agreement</strong> -- Iran cites battles from history in response to Trump&amp;#039;s latest comments on an imminent deal between the US and Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/24/iran-recounts-historic-battles-in-response-to-trumps-talk-of-agreement?traffic_source=rss"
+    },
+    {
       "time": "2026-05-24T14:16:50Z",
       "text": "<strong>Bahrain jails nine defendants for life for \u2018cooperating\u2019 with Iran\u2019s IRGC</strong> -- Convictions come amid an intensified crackdown by Bahraini authorities on individuals accused of having ties to Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/24/bahrain-jails-nine-defendants-for-life-for-cooperating-with-irans-irgc?traffic_source=rss"
@@ -784,7 +794,7 @@
     },
     {
       "time": "2026-05-24T10:01:44Z",
-      "text": "<strong>Trump says no rush on Iran deal as Tehran asserts Hormuz \u2018legal right\u2019</strong> -- US blockade remains until final deal; Iran says Washington leaking false memorandum details. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Trump: No rush on Iran deal, as Netanyahu demands end to nuclear threat</strong> -- US blockade remains until final deal, as officials on both sides say obstacles remain <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/24/marco-rubio-says-significant-progress-made-in-us-iran-talks-to-end-war?traffic_source=rss"
     },
     {
@@ -841,16 +851,6 @@
       "time": "2026-05-23T19:18:02Z",
       "text": "<strong>Iran move World Cup base from US to Mexico with FIFA approval</strong> -- Iran were expected to fly from Turkiye to Arizona to continue World Cup 2026 preparations but will switch to Mexico. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/5/23/iran-move-world-cup-base-from-us-to-mexico-with-fifa-approval?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-23T18:37:37Z",
-      "text": "<strong>Pakistan army chief visits Tehran to push for end to US-Israeli war on Iran</strong> -- Munir met senior Iranian officials on Saturday as Islamabad and Doha push to finalise a memorandum to end the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/23/pakistan-army-chief-visits-tehran-to-push-for-end-to-us-israeli-war-on-iran-2?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-23T17:56:27Z",
-      "text": "<strong>\u2018United States of the Middle East?\u2019: Trump posts US flag covering Iran</strong> -- Latest Truth Social post comes amid &amp;#039;delicate diplomacy&amp;#039;, expert says, as US and Iran indicate progress in talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/23/united-states-of-the-middle-east-trump-posts-us-flag-covering-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran team trains through World Cup uncertainty",
+      "description": "Al Jazeera exclusive footage follows Iran\u2019s national football team as they train for the World Cup in Turkiye.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/24/iran-team-trains-through-world-cup-uncertainty?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-24T16:40:39Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran recounts historic battles in response to Trump\u2019s talk of agreement",
+      "description": "Iran cites battles from history in response to Trump&#039;s latest comments on an imminent deal between the US and Iran.",
+      "link": "https://www.aljazeera.com/news/2026/5/24/iran-recounts-historic-battles-in-response-to-trumps-talk-of-agreement?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-24T16:18:19Z",
+      "tier": 2
+    },
+    {
       "title": "Man killed in shark attack off Australia's north-east coast",
       "description": "The 39-year-old was fatally injured at a shoal off the Cassowary Coast in Queensland, apparently while spearfishing.",
       "link": "https://www.bbc.com/news/articles/cn9pq5l2d14o?at_medium=RSS&at_campaign=rss",
@@ -1293,8 +1309,8 @@
       "tier": 2
     },
     {
-      "title": "Trump says no rush on Iran deal as Tehran asserts Hormuz \u2018legal right\u2019",
-      "description": "US blockade remains until final deal; Iran says Washington leaking false memorandum details.",
+      "title": "Trump: No rush on Iran deal, as Netanyahu demands end to nuclear threat",
+      "description": "US blockade remains until final deal, as officials on both sides say obstacles remain",
       "link": "https://www.aljazeera.com/news/2026/5/24/marco-rubio-says-significant-progress-made-in-us-iran-talks-to-end-war?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-24T10:01:44Z",
@@ -1322,22 +1338,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/24/trump-says-us-and-iran-deal-to-end-war-is-largely?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-24T09:10:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Rubio says \u2018significant progress\u2019 made in US-Iran negotiations",
-      "description": "US Secretary of State Marco Rubio says \u2018significant progress\u2019 made in US-Iran negotiations.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/24/rubio-says-significant-progress-made-in-us-iran-negotiations?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-24T08:51:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Russian attacks on Ukraine\u2019s Kyiv kill at least four people",
-      "description": "Two \u200bpeople are killed in \u2060the \u200bcapital itself and two \u2060in the Kyiv region while 40 locations are damaged.",
-      "link": "https://www.aljazeera.com/news/2026/5/24/russian-attacks-on-ukraines-kyiv-kill-at-least-four-people?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-24T08:22:40Z",
       "tier": 2
     },
     {
@@ -1373,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of Sunday, May 24, 2026, AP reports the United States and Iran are close to a deal that would end the war and reopen the Strait of Hormuz, with Trump saying the framework is largely negotiated and regional officials telling AP that details and timelines remain to be worked out. On the military side, the latest authoritative operation figures found remain older official releases: CENTCOM\u2019s March 23 fact sheet listed 9,000+ targets struck and 9,000+ combat flights in the first 24 days, while the Navy\u2019s May 2026 shipbuilding plan said naval aviation had helped strike over 13,000 targets within Iran over five weeks and that two carrier strike groups supported the mission. For casualties, the latest confirmed U.S. military death total found from CENTCOM-linked releases is 10, while the latest confirmed Iran civilian toll found was HRANA\u2019s 1,443 and the latest Iran official wounded figure found was 26,500.",
+  "summary": "As of Sunday, May 24, 2026, confirmed reporting indicates diplomacy is advancing but remains unstable: President Donald Trump said a memorandum of understanding with Iran has been largely negotiated and could reopen the Strait of Hormuz soon, yet he also said the United States should not rush into a final deal and would keep its blockade posture until an agreement is formally certified and signed. The latest confirmed casualty figures located were 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 U.S. combat deaths, and 28 deaths in Gulf states, while the latest official U.S. operational figure found was more than 13,000 targets struck in Iran, with two carrier strike groups confirmed in theater.",
   "briefings": [
     {
       "date": "2026-05-24",
       "day": 85,
-      "summary": "As of Sunday, May 24, 2026, AP reports the United States and Iran are close to a deal that would end the war and reopen the Strait of Hormuz, with Trump saying the framework is largely negotiated and regional officials telling AP that details and timelines remain to be worked out. On the military side, the latest authoritative operation figures found remain older official releases: CENTCOM\u2019s March 23 fact sheet listed 9,000+ targets struck and 9,000+ combat flights in the first 24 days, while the Navy\u2019s May 2026 shipbuilding plan said naval aviation had helped strike over 13,000 targets within Iran over five weeks and that two carrier strike groups supported the mission. For casualties, the latest confirmed U.S. military death total found from CENTCOM-linked releases is 10, while the latest confirmed Iran civilian toll found was HRANA\u2019s 1,443 and the latest Iran official wounded figure found was 26,500."
+      "summary": "As of Sunday, May 24, 2026, confirmed reporting indicates diplomacy is advancing but remains unstable: President Donald Trump said a memorandum of understanding with Iran has been largely negotiated and could reopen the Strait of Hormuz soon, yet he also said the United States should not rush into a final deal and would keep its blockade posture until an agreement is formally certified and signed. The latest confirmed casualty figures located were 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 U.S. combat deaths, and 28 deaths in Gulf states, while the latest official U.S. operational figure found was more than 13,000 targets struck in Iran, with two carrier strike groups confirmed in theater."
     },
     {
       "date": "2026-05-23",
