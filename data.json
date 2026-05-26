@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-05-26T16:52:27Z",
+  "lastUpdated": "2026-05-26T19:28:04Z",
   "dayCount": 87,
   "banner": {
     "strikes": "~13,000",
-    "killed": "53+",
-    "cost": "$49.4B+"
+    "killed": "3,649+",
+    "cost": "$50.7B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,636",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1598",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$49.4 billion+",
-    "dailyBurnRate": "~$568M/day",
+    "totalCost": "$50.7 billion+",
+    "dailyBurnRate": "~$583M/day",
     "daysOfOps": 87,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-26",
-          "source": "LLM-verified (CENTCOM Project Freedom press release May 3, 2026 and Adm. Brad Cooper transcript May 4, 2026: operation support includes '15,000 service members'.)"
+          "source": "LLM-verified (Pentagon leaders said Operation Epic Fury involved at least 50,000 U.S. troops so far, per DefenseScoop report citing March 31, 2026 Pentagon briefing)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-26",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; used as confirmed floor for sorties)"
+          "source": "LLM-verified (CENTCOM fact sheet dated March 28, 2026 reported 11,000+ combat flights; later accessible April 6 fact sheet reports targets struck but not updated combat flights)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 87 days",
-        "cost": "$652,500,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 87 days",
+        "cost": "$2,175,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC reported internet access beginning to return in Iran after months-long wartime blackout",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC also reported intensifying Israeli operations against Hezbollah in Lebanon, raising risk of wider regional spillover despite broader Iran-war diplomacy",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC reported new U.S. strikes on Iranian boats and missile sites during or near Doha peace talks, with Tehran calling them a gross violation and saying it was prepared to respond",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 26, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera reported continued friction around Hormuz and ceasefire compliance through May 23, 2026, indicating ongoing risk of renewed maritime and missile escalation despite talks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP/BBC-confirmed diplomacy push: on May 23-24, 2026, Trump said a deal with Iran and reopening the Strait of Hormuz were 'largely negotiated', while Iran said major gaps remain and nuclear issues are outside the current framework.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Israeli strikes in southern Lebanon continue despite the ceasefire track, with AP reporting Lebanon's war death toll passed 3,000 on May 18, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Fresh Gulf security incidents continued in mid-May, including reported drone attacks on UAE and Saudi targets, raising risk of renewed escalation despite the April 8 ceasefire.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-05-26T17:08:31Z",
+      "text": "<strong>Lebanon latest: Netanyahu vows escalation against Hezbollah</strong> -- Al Jazeera\u2019s Obaida Hitto brings you the latest from southern Lebanon amidst increasing Israeli attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/26/lebanon-latest-netanyahu-vows-escalation-against-hezbollah?traffic_source=rss"
+    },
+    {
       "time": "2026-05-26T16:13:58Z",
       "text": "<strong>Iranian fishermen struggle to survive amid Hormuz blockade</strong> -- The livelihoods of Iranian fishermen have taken a hit amid the US blockade on Iran\u2019s ports in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/26/iranian-fishermen-struggle-to-survive-amid-hormuz-blockade?traffic_source=rss"
@@ -773,14 +778,29 @@
       "link": "https://www.aljazeera.com/economy/2026/5/26/india-us-strike-critical-minerals-deal-whats-in-it-why-does-it-matter?traffic_source=rss"
     },
     {
-      "time": "2026-05-26T12:34:20Z",
-      "text": "<strong>Israeli air attacks kill seven Palestinians in Gaza</strong> -- At least five Palestinians killed in Israeli attack on a refugee camp in central Gaza, officials said. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/26/israeli-air-attacks-kill-seven-palestinians-in-gaza?traffic_source=rss"
-    },
-    {
       "time": "2026-05-26T15:15:29Z",
       "text": "<strong>Iran condemns US strikes as &#x27;gross violation&#x27; of ceasefire</strong> -- The attacks took place while Iranian and Qatari negotiators were in Doha for peace talks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-26T17:11:24Z",
+      "text": "<strong>Four killed as school minibus collides with train in Belgium</strong> -- Two schoolchildren, their chaperone and the minibus driver were killed in the crash, says a Belgian minister. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c70vvd17rg7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-26T17:29:50Z",
+      "text": "<strong>Eleven killed in Lebanon village as Israel intensifies strikes</strong> -- Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to &quot;crush&quot; Hezbollah. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-26T16:38:05Z",
+      "text": "<strong>Internet starts coming back in Iran after months-long blackout</strong> -- Internet access has been cut off in the country since the start of the war in late February. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c1w22y1n74do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-26T12:34:20Z",
+      "text": "<strong>Israeli air attacks kill seven Palestinians in Gaza</strong> -- At least five Palestinians killed in Israeli attack on a refugee camp in central Gaza, officials said. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/26/israeli-air-attacks-kill-seven-palestinians-in-gaza?traffic_source=rss"
     },
     {
       "time": "2026-05-26T16:15:42Z",
@@ -831,26 +851,6 @@
       "time": "2026-05-26T00:57:07Z",
       "text": "<strong>US military launches strikes on southern Iran amid talks in Qatar</strong> -- US Central Command announces &amp;#039;self-defence&amp;#039; strikes as Tehran&amp;#039;s top negotiators gather in Qatar for talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/26/us-military-launches-strikes-on-southern-iran-amid-talks-in-qatar?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-26T00:00:00Z",
-      "text": "<strong>Iran war live: US drone shot down as tensions surge during peace talks</strong> -- Attacks threaten US-Iran peace negotiations as Tehran says US Reaper drone &amp;#039;downed&amp;#039; over its territory. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/26/iran-war-live-israel-pounds-lebanon-iranian-officials-in-qatar-for-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-25T20:49:28Z",
-      "text": "<strong>Israel to intensify Lebanon offensive to \u2018crush\u2019 Hezbollah</strong> -- Prime Minister Netanyahu&amp;#039;s order comes despite &amp;#039;ceasefire&amp;#039; agreed with Lebanon last month, which was recently extended. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/25/israel-to-intensify-lebanon-offensive-in-bid-to-crush-hezbollah?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-25T20:24:40Z",
-      "text": "<strong>Trump pays tribute to US troops killed in war on Iran on Memorial Day</strong> -- US President Donald Trump marked Memorial Day at Arlington National Cemetery, paying tribute to US troops killed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/25/trump-pays-tribute-to-us-troops-killed-in-war-on-iran-on-memorial-day?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-26T05:45:58Z",
-      "text": "<strong>US launches new strikes on Iran, targeting missile sites and boats</strong> -- US Central Command says the strikes were taken in &quot;self-defense&quot;. It comes as senior Iranian negotiators are in Qatar for talks to end the war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cvgzzn4y1n8o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,35 @@
   ],
   "newsFeed": [
     {
+      "title": "Eleven killed in Lebanon village as Israel intensifies strikes",
+      "description": "Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to \"crush\" Hezbollah.",
+      "link": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-26T17:29:50Z",
+      "tier": 2
+    },
+    {
       "title": "Four killed as school minibus collides with train in Belgium",
       "description": "Two schoolchildren, their chaperone and the minibus driver were killed in the crash, says a Belgian minister.",
       "link": "https://www.bbc.com/news/articles/c70vvd17rg7o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-05-26T16:15:42Z",
+      "time": "2026-05-26T17:11:24Z",
+      "tier": 2
+    },
+    {
+      "title": "Lebanon latest: Netanyahu vows escalation against Hezbollah",
+      "description": "Al Jazeera\u2019s Obaida Hitto brings you the latest from southern Lebanon amidst increasing Israeli attacks.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/26/lebanon-latest-netanyahu-vows-escalation-against-hezbollah?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-26T17:08:31Z",
+      "tier": 2
+    },
+    {
+      "title": "Internet starts coming back in Iran after months-long blackout",
+      "description": "Internet access has been cut off in the country since the start of the war in late February.",
+      "link": "https://www.bbc.com/news/articles/c1w22y1n74do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-26T16:38:05Z",
       "tier": 2
     },
     {
@@ -1259,54 +1283,14 @@
       "source": "Al Jazeera",
       "time": "2026-05-26T14:36:33Z",
       "tier": 2
-    },
-    {
-      "title": "Eleven killed in Lebanon village as Israel intensifies strikes",
-      "description": "Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to \"crush\" Hezbollah.",
-      "link": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-26T12:44:57Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli air attacks kill seven Palestinians in Gaza",
-      "description": "At least five Palestinians killed in Israeli attack on a refugee camp in central Gaza, officials said.",
-      "link": "https://www.aljazeera.com/news/2026/5/26/israeli-air-attacks-kill-seven-palestinians-in-gaza?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-26T12:34:20Z",
-      "tier": 2
-    },
-    {
-      "title": "Netanyahu says Israel will intensify strikes against Hezbollah",
-      "description": "The Israeli military hits targets in eastern Lebanon after the prime minister announces further strikes.",
-      "link": "https://www.bbc.com/news/articles/cewppdk1187o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-26T10:48:55Z",
-      "tier": 2
-    },
-    {
-      "title": "More than 1.5m foreign pilgrims begin Hajj despite Iran war fears",
-      "description": "Saudi Arabia says that is 11,000 more than the number of Muslims who travelled to the Gulf kingdom last year.",
-      "link": "https://www.bbc.com/news/articles/cwy22jx03ryo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-25T20:11:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Three killed in Uganda after crashing into elephant",
-      "description": "Four people were also injured in the incident inside Murchison Falls National Park, officials say.",
-      "link": "https://www.bbc.com/news/articles/clyppgvd3qzo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-25T11:54:07Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting accessible in current search results shows the U.S. carried out additional strikes in southern Iran on May 25, 2026, which AP said the U.S. military described as defensive strikes on missile launch sites and minelaying boats during a ceasefire period. The only directly confirmed cumulative operational figure found in an official source was CENTCOM\u2019s April 6, 2026 Operation Epic Fury fact sheet listing 13,000+ targets struck. I could not independently verify current confirmed casualty totals or detailed weapons-usage/deployment counts from accessible named-source reporting, so those fields remain null.",
+  "summary": "Confirmed reporting available in accessible searches still supports 3,636 total deaths in Iran, including 1,701 civilians, from HRANA\u2019s last widely cited cumulative update through April 7, 2026, while Pentagon casualty reporting still shows 13 U.S. troops killed. CENTCOM\u2019s latest easily accessible public fact sheet located was dated April 6, 2026 and listed 13,000+ targets struck. New May 26 reporting from Al Jazeera and BBC indicates fresh U.S. strikes on Iranian boats and missile sites amid peace contacts and escalating Israeli-Hezbollah fighting in Lebanon, but I did not find newer fully confirmed cumulative casualty or weapons-expended totals from Pentagon, CENTCOM, IDF, Iran MOH, Reuters, or AP for most of the requested military cost-model fields.",
   "briefings": [
     {
       "date": "2026-05-26",
       "day": 87,
-      "summary": "Confirmed reporting accessible in current search results shows the U.S. carried out additional strikes in southern Iran on May 25, 2026, which AP said the U.S. military described as defensive strikes on missile launch sites and minelaying boats during a ceasefire period. The only directly confirmed cumulative operational figure found in an official source was CENTCOM\u2019s April 6, 2026 Operation Epic Fury fact sheet listing 13,000+ targets struck. I could not independently verify current confirmed casualty totals or detailed weapons-usage/deployment counts from accessible named-source reporting, so those fields remain null."
+      "summary": "Confirmed reporting available in accessible searches still supports 3,636 total deaths in Iran, including 1,701 civilians, from HRANA\u2019s last widely cited cumulative update through April 7, 2026, while Pentagon casualty reporting still shows 13 U.S. troops killed. CENTCOM\u2019s latest easily accessible public fact sheet located was dated April 6, 2026 and listed 13,000+ targets struck. New May 26 reporting from Al Jazeera and BBC indicates fresh U.S. strikes on Iranian boats and missile sites amid peace contacts and escalating Israeli-Hezbollah fighting in Lebanon, but I did not find newer fully confirmed cumulative casualty or weapons-expended totals from Pentagon, CENTCOM, IDF, Iran MOH, Reuters, or AP for most of the requested military cost-model fields."
     },
     {
       "date": "2026-05-25",
