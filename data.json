@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-27T12:32:13Z",
+  "lastUpdated": "2026-05-27T16:46:16Z",
   "dayCount": 88,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,535+",
-    "cost": "$51.4B+"
+    "cost": "$50.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1443",
+    "civilianDeaths": "879",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$51.4 billion+",
-    "dailyBurnRate": "~$584M/day",
+    "totalCost": "$50.1 billion+",
+    "dailyBurnRate": "~$569M/day",
     "daysOfOps": 88,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-27",
-          "source": "LLM-verified (Military Times on April 8, 2026: U.S. military has more than 50,000 personnel in the region.)"
+          "source": "LLM-verified (Al Jazeera live casualty tracker, updated May 20, 2026, citing Council on Foreign Relations baseline: as of mid-2025 there were 40,000 to 50,000 US soldiers in the Middle East; no newer operation-specific official total found, so exact current deployed figure for Epic Fury not confirmed)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-05-26",
-          "source": "LLM-verified (Reuters, March 27, 2026: US military had fired over 850 Tomahawk cruise missiles in four weeks of war)"
+          "lastUpdated": "2026-05-27",
+          "source": "LLM-verified (AP report published May 27, 2026 on CSIS analysis: the US fired 1,000-plus Tomahawk missiles at Iran; Reuters on March 27 had earlier reported over 850 in first four weeks)"
         },
         {
           "id": "jdam",
@@ -286,7 +286,7 @@
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 1290,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-05-23",
-          "source": "LLM-verified (Reuters video transcript of April 8, 2026 Pentagon briefing quotes Gen. Dan Caine saying the U.S. and Gulf partners had 'thus far intercepted 1,700 ballistic missiles and one-way attack drones')"
+          "lastUpdated": "2026-05-27",
+          "source": "LLM-verified (AP report published May 27, 2026 on CSIS analysis: as many as 290 THAAD interceptors and more than 1,000 Patriot interceptors used against Iranian drones and missiles; combined confirmed minimum reflected here as 1,290, excluding any unconfirmed SM-3 totals)"
         },
         {
           "id": "prestrike_buildup",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "1,290 \u00d7 $4,000,000 each",
+        "cost": "$5,160,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Talks remain in flux despite continued ceasefire diplomacy, with AP reporting Iran denounced the latest US strikes as bad faith",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported May 26-27 that US forces carried out new 'self-defense' strikes in southern Iran during the ceasefire, targeting missile launch sites and boats laying mines",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 27, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported May 20, 2026 that U.S. forces boarded an Iranian-flagged oil tanker in the Gulf of Oman suspected of violating the blockade, showing continued maritime escalation risk despite ceasefire diplomacy.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported May 25, 2026 that U.S. and Iran appear close to a deal that could end the war and reopen the Strait of Hormuz, though details and timelines remain unresolved.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Despite ceasefire diplomacy since April 8, Israel has continued attacks, according to Al Jazeera reporting on May 25, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,44 @@
   ],
   "developments": [
     {
+      "time": "2026-05-27T14:48:09Z",
+      "text": "<strong>Family mourn \u2018Hamas leader\u2019 killed in Israeli attack</strong> -- A funeral has been held for Mohammed Odeh, believed to be the leader of Hamas\u2019s military wing. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/family-mourn-hamas-leader-killed-in-israeli-attack?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-27T13:53:13Z",
+      "text": "<strong>Bangladesh seeks IMF aid: How badly has Iran war hit its economy?</strong> -- The International Monetary Fund warns that Iran war could trigger a spike in global debt levels. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/5/27/bangladesh-seeks-imf-aid-how-badly-has-iran-war-hit-its-economy?traffic_source=rss"
+    },
+    {
       "time": "2026-05-27T10:47:55Z",
       "text": "<strong>US, Iran have launched multiple attacks during ceasefire: A timeline</strong> -- Washington carried out new strikes on southern Iran, while Tehran downed a US drone and fired at a fighter jet. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/27/us-iran-have-launched-multiple-attacks-during-ceasefire-a-timeline?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-27T15:16:13Z",
+      "text": "<strong>Israel orders evacuation of Lebanese city as conflict with Hezbollah escalates</strong> -- Israel&#x27;s military tells residents of Tyre it will &quot;act forcefully&quot; against the armed group, after another wave of strikes in south and east Lebanon. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cj3pgrpmlklo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-27T13:15:26Z",
+      "text": "<strong>Israeli strike in Gaza City kills new head of Hamas&#x27;s military wing</strong> -- Hamas says Mohammed Odeh was killed alongside his wife and two children in a strike on a residential building. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cjwppj1yn7go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-27T03:02:27Z",
+      "text": "<strong>One killed and nine missing after chemical explosion at US paper mill</strong> -- Nine others were injured and another nine are missing after a tank ruptured at a paper mill in Longview, Washington. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cj9ppm94xw9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-26T15:15:29Z",
+      "text": "<strong>Iran condemns US strikes as &#x27;gross violation&#x27; of ceasefire</strong> -- The attacks took place while Iranian and Qatari negotiators were in Doha for peace talks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-27T15:59:57Z",
+      "text": "<strong>Almost 500,000 Russian soldiers killed in Ukraine war, GCHQ says</strong> -- GCHQ&#x27;s director Anne Keast-Butler set out the threats facing the UK in her inaugural public speech. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c4g44gprnnvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-27T10:12:24Z",
@@ -776,16 +811,6 @@
       "time": "2026-05-27T04:07:27Z",
       "text": "<strong>Dozens killed in Lebanon as Israel intensifies strikes</strong> -- Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to &quot;crush&quot; the Iran-backed group. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-27T03:02:27Z",
-      "text": "<strong>One killed and nine missing after chemical explosion at US paper mill</strong> -- Nine others were injured and another nine are missing after a tank ruptured at a paper mill in Longview, Washington. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cj9ppm94xw9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-26T15:15:29Z",
-      "text": "<strong>Iran condemns US strikes as &#x27;gross violation&#x27; of ceasefire</strong> -- The attacks took place while Iranian and Qatari negotiators were in Doha for peace talks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-27T06:52:44Z",
@@ -826,31 +851,6 @@
       "time": "2026-05-26T21:22:47Z",
       "text": "<strong>Aftermath of deadly Israeli strikes in southern Lebanon</strong> -- New videos show widespread destruction in Maarakeh following deadly Israeli strikes across southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/26/aftermath-of-deadly-israeli-strikes-in-southern-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-26T21:02:39Z",
-      "text": "<strong>Four people killed after minibus collides with train in Belgium</strong> -- The minibus, carrying nine people, drove through closed crossing barriers during the morning rush hour. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/26/four-people-killed-after-minibus-collides-with-train-in-belgium?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-26T20:33:56Z",
-      "text": "<strong>US picks potential partners for using Cold War-era plutonium as fuel</strong> -- Trump gov&amp;#039;t plans to make about 20 tonnes of plutonium from dismantled nuclear warheads available to US power firms. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/5/26/us-picks-potential-partners-for-using-cold-war-era-plutonium-as-fuel?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-26T20:33:10Z",
-      "text": "<strong>Trump-led push to redraw Congress maps faces setbacks in Southern states</strong> -- State lawmakers reject a new map in South Carolina as judges strike down newly drawn US House districts one in Alabama. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/26/trump-led-push-to-redraw-congress-maps-faces-setbacks-in-southern-states?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-26T19:50:51Z",
-      "text": "<strong>Did Trump oversell a broken Iran ceasefire deal?</strong> -- The US and Iran appear closer to a broader agreement, but disputes over sanctions relief remain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/the-take-2/2026/5/26/aje-onl-irn_mou_av_v3-260526?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-26T17:08:31Z",
-      "text": "<strong>Lebanon latest: Netanyahu vows escalation against Hezbollah</strong> -- Al Jazeera\u2019s Obaida Hitto brings you the latest from southern Lebanon amidst increasing Israeli attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/26/lebanon-latest-netanyahu-vows-escalation-against-hezbollah?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,43 +1213,51 @@
   ],
   "newsFeed": [
     {
+      "title": "Almost 500,000 Russian soldiers killed in Ukraine war, GCHQ says",
+      "description": "GCHQ's director Anne Keast-Butler set out the threats facing the UK in her inaugural public speech.",
+      "link": "https://www.bbc.com/news/articles/c4g44gprnnvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-27T15:59:57Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel orders evacuation of Lebanese city as conflict with Hezbollah escalates",
+      "description": "Israel's military tells residents of Tyre it will \"act forcefully\" against the armed group, after another wave of strikes in south and east Lebanon.",
+      "link": "https://www.bbc.com/news/articles/cj3pgrpmlklo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-27T15:16:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Family mourn \u2018Hamas leader\u2019 killed in Israeli attack",
+      "description": "A funeral has been held for Mohammed Odeh, believed to be the leader of Hamas\u2019s military wing.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/family-mourn-hamas-leader-killed-in-israeli-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-27T14:48:09Z",
+      "tier": 2
+    },
+    {
+      "title": "Bangladesh seeks IMF aid: How badly has Iran war hit its economy?",
+      "description": "The International Monetary Fund warns that Iran war could trigger a spike in global debt levels.",
+      "link": "https://www.aljazeera.com/economy/2026/5/27/bangladesh-seeks-imf-aid-how-badly-has-iran-war-hit-its-economy?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-27T13:53:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli strike in Gaza City kills new head of Hamas's military wing",
+      "description": "Hamas says Mohammed Odeh was killed alongside his wife and two children in a strike on a residential building.",
+      "link": "https://www.bbc.com/news/articles/cjwppj1yn7go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-27T13:15:26Z",
+      "tier": 2
+    },
+    {
       "title": "US, Iran have launched multiple attacks during ceasefire: A timeline",
       "description": "Washington carried out new strikes on southern Iran, while Tehran downed a US drone and fired at a fighter jet.",
       "link": "https://www.aljazeera.com/news/2026/5/27/us-iran-have-launched-multiple-attacks-during-ceasefire-a-timeline?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-27T10:47:55Z",
-      "tier": 2
-    },
-    {
-      "title": "US strike on alleged drug boat in Pacific kills one",
-      "description": "Dozens of attacks since September have killed at least 194 people in US operation dubbed &#039;Southern Spear&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/5/27/us-strike-on-alleged-drug-boat-in-pacific-kills-one?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-27T10:12:24Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli strike in Gaza City kills new head of Hamas's military wing",
-      "description": "At least three people were killed in the attack, which came despite a ceasefire with Hamas being in place.",
-      "link": "https://www.bbc.com/news/articles/cjwppj1yn7go?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-27T09:55:11Z",
-      "tier": 2
-    },
-    {
-      "title": "Israel claims head of Hamas military wing killed in Gaza strike",
-      "description": "There was no immediate response from the Palestinian group after Israel claimed Mohammed Odeh killed.",
-      "link": "https://www.aljazeera.com/news/2026/5/27/israel-claims-head-of-hamas-military-wing-killed-in-gaza-strike?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-27T08:51:25Z",
-      "tier": 2
-    },
-    {
-      "title": "Dozens killed in Lebanon as Israel intensifies strikes",
-      "description": "Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to \"crush\" the Iran-backed group.",
-      "link": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-27T04:07:27Z",
       "tier": 2
     },
     {
@@ -1269,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates the ceasefire remains fragile on May 27, 2026. AP reported that U.S. forces carried out defensive strikes in southern Iran on May 26 targeting missile launch sites and minelaying boats, while Iran condemned the action as a ceasefire violation and claimed it downed at least one U.S. drone. The latest accessible casualty tracker from Al Jazeera, updated May 20, lists 3,468 killed and more than 26,500 injured in Iran, 13 confirmed U.S. combat deaths, 26 Israeli deaths, and 28 deaths across Gulf states. On the military side, the latest accessible official U.S. fact sheets still show 13,000+ targets struck and 13,000+ combat flights, while official sources continue to confirm two carrier strike groups in the operation but do not provide current confirmed totals for most munitions categories.",
+  "summary": "Confirmed reporting as of May 27, 2026 shows no verified increase over the previously reported core casualty totals for Iran, the US, Israel, and Gulf states in the sources reviewed. Al Jazeera\u2019s May 20 tracker, citing Iran\u2019s Ministry of Health and other official sources, still lists 3,468 killed and more than 26,500 injured in Iran, 13 confirmed US combat deaths, 26 Israelis killed, and 28 killed across Gulf states. AP reported on May 26-27 that US forces carried out new 'self-defense' strikes in southern Iran during the fragile ceasefire, while Iran said it downed at least one drone. On weapons expenditure, AP\u2019s May 27 report on a CSIS analysis says the US has fired 1,000-plus Tomahawks and used as many as 290 THAAD plus more than 1,000 Patriot interceptors in the war.",
   "briefings": [
     {
       "date": "2026-05-27",
       "day": 88,
-      "summary": "Confirmed reporting indicates the ceasefire remains fragile on May 27, 2026. AP reported that U.S. forces carried out defensive strikes in southern Iran on May 26 targeting missile launch sites and minelaying boats, while Iran condemned the action as a ceasefire violation and claimed it downed at least one U.S. drone. The latest accessible casualty tracker from Al Jazeera, updated May 20, lists 3,468 killed and more than 26,500 injured in Iran, 13 confirmed U.S. combat deaths, 26 Israeli deaths, and 28 deaths across Gulf states. On the military side, the latest accessible official U.S. fact sheets still show 13,000+ targets struck and 13,000+ combat flights, while official sources continue to confirm two carrier strike groups in the operation but do not provide current confirmed totals for most munitions categories."
+      "summary": "Confirmed reporting as of May 27, 2026 shows no verified increase over the previously reported core casualty totals for Iran, the US, Israel, and Gulf states in the sources reviewed. Al Jazeera\u2019s May 20 tracker, citing Iran\u2019s Ministry of Health and other official sources, still lists 3,468 killed and more than 26,500 injured in Iran, 13 confirmed US combat deaths, 26 Israelis killed, and 28 killed across Gulf states. AP reported on May 26-27 that US forces carried out new 'self-defense' strikes in southern Iran during the fragile ceasefire, while Iran said it downed at least one drone. On weapons expenditure, AP\u2019s May 27 report on a CSIS analysis says the US has fired 1,000-plus Tomahawks and used as many as 290 THAAD plus more than 1,000 Patriot interceptors in the war."
     },
     {
       "date": "2026-05-26",
