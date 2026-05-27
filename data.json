@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-27T19:33:04Z",
+  "lastUpdated": "2026-05-27T22:11:25Z",
   "dayCount": 88,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,535+",
-    "cost": "$50.1B+"
+    "cost": "$50.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "879",
+    "civilianDeaths": "1598",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$50.1 billion+",
-    "dailyBurnRate": "~$569M/day",
+    "totalCost": "$50.0 billion+",
+    "dailyBurnRate": "~$568M/day",
     "daysOfOps": 88,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-27",
-          "source": "LLM-verified (U.S. Department of War briefing March 2, 2026 said USS Abraham Lincoln and USS Gerald R. Ford carrier strike groups were in the operation; no newer contrary official count found)"
+          "source": "LLM-verified (Breaking Defense reported three US carriers operating in the Middle East for the first time since 2003, citing CENTCOM, April 24, 2026)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-27",
-          "source": "LLM-verified (Al Jazeera live casualty tracker, updated May 20, 2026, citing Council on Foreign Relations baseline: as of mid-2025 there were 40,000 to 50,000 US soldiers in the Middle East; no newer operation-specific official total found, so exact current deployed figure for Epic Fury not confirmed)"
+          "source": "LLM-verified (Admiral Brad Cooper said approximately 50,000 US military personnel are deployed in support of Operation Epic Fury, as cited by Army Recognition from CENTCOM reporting)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-27",
-          "source": "LLM-verified (U.S. Department of War Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (CENTCOM reported more than 6,000 combat sorties since the start of Operation Epic Fury, cited by Army Recognition from CENTCOM data)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 88 days",
-        "cost": "$1,232,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 88 days",
+        "cost": "$1,848,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,000 \u00d7 $100,000 each",
+        "cost": "$600,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US-Iran negotiations continue with no final deal and conflicting public statements from Washington and Tehran",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian and Gulf maritime/infrastructure risks remain elevated, including prior refinery and shipping incidents in the UAE and continued threats around Hormuz",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "May 26-27 ceasefire strains after US self-defense strikes in southern Iran near the Strait of Hormuz during ongoing Qatar-mediated talks",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 27, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "U.S.-Iran diplomacy appears active but unresolved; BBC and Al Jazeera reporting indicate talks continue while military posturing remains in place.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Israel's prime minister said Israel will intensify operations against Hezbollah in Lebanon despite the extended ceasefire, increasing risk of a broader regional spillover.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported May 25, 2026 that Trump said the U.S. is not in a rush to sign a deal, tempering expectations of an immediate settlement.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported May 20, 2026 that U.S. forces boarded an Iranian-flagged oil tanker in the Gulf of Oman suspected of violating the blockade, showing continued maritime escalation risk despite ceasefire diplomacy.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-05-27T21:14:12Z",
+      "text": "<strong>Markets rally amid hopes of US-Iran deal</strong> -- Markets betting a deal will reopen the Strait of Hormuz and soothe the deep global economic uncertainty. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/27/markets-rally-amid-hopes-of-us-iran-deal?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-27T20:56:30Z",
+      "text": "<strong>Why is Israel ramping up attacks in Lebanon despite a ceasefire?</strong> -- Intensification comes while US-Iran indirect talks continue. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/5/27/why-is-israel-ramping-up-attacks-in-lebanon-despite-a-ceasefire?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-27T20:56:08Z",
+      "text": "<strong>Trump says no one will control Strait of Hormuz</strong> -- Donald Trump says he won\u2019t allow Iran to control \u2060the Strait of \u2060Hormuz under the terms of any deal reached with Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/trump-says-no-one-will-control-strait-of-hormuz?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-27T20:38:11Z",
+      "text": "<strong>Trump appears to threaten Oman over Strait of Hormuz impasse</strong> -- The US president warns that Oman, a US ally, &amp;#039;will behave just like everybody else, or we will have to blow them up&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/27/trump-appears-to-threaten-oman-with-bombing-over-strait-of-hormuz-impasse?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-27T19:04:05Z",
+      "text": "<strong>Iran government sells subsidised meat for Eid al-Adha under blockade</strong> -- Iranians are seeing the price of meat, and other basics, escalate due to the US blockade and sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/5/27/iran-government-sells-subsidised-meat-for-eid-al-adha-under-blockade?traffic_source=rss"
+    },
+    {
       "time": "2026-05-27T18:19:33Z",
       "text": "<strong>US, Iran issue conflicting reports on deal as Trump says no sanction relief</strong> -- US president says Iran can&amp;#039;t &amp;#039;out-wait&amp;#039; him, suggesting that Washington is not satisfied with Tehran&amp;#039;s offers for deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/27/us-iran-issue-conflicting-reports-on-deal-as-trump-says-no-sanction-relief?traffic_source=rss"
@@ -763,13 +788,8 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/family-mourn-hamas-leader-killed-in-israeli-attack?traffic_source=rss"
     },
     {
-      "time": "2026-05-27T13:53:13Z",
-      "text": "<strong>Bangladesh seeks IMF aid: How badly has Iran war hit its economy?</strong> -- The International Monetary Fund warns that Iran war could trigger a spike in global debt levels. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/5/27/bangladesh-seeks-imf-aid-how-badly-has-iran-war-hit-its-economy?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-27T17:12:49Z",
-      "text": "<strong>Israel strikes Tyre after ordering evacuation of south Lebanon city</strong> -- Israel&#x27;s military says it struck Hezbollah targets after telling residents it would &quot;act forcefully&quot; against the group. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "time": "2026-05-27T20:26:03Z",
+      "text": "<strong>Israel issues evacuation order for swathes of southern Lebanon</strong> -- The military says areas south of the Zahrani River are now &quot;combat zones&quot; as it threatens Hezbollah with fresh strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cj3pgrpmlklo?at_medium=RSS&at_campaign=rss"
     },
     {
@@ -781,6 +801,16 @@
       "time": "2026-05-27T13:15:26Z",
       "text": "<strong>Israeli strike in Gaza City kills new head of Hamas&#x27;s military wing</strong> -- Hamas says Mohammed Odeh was killed alongside his wife and two children in a strike on a residential building. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cjwppj1yn7go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-27T13:53:13Z",
+      "text": "<strong>Bangladesh seeks IMF aid: How badly has Iran war hit its economy?</strong> -- The International Monetary Fund warns that Iran war could trigger a spike in global debt levels. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/5/27/bangladesh-seeks-imf-aid-how-badly-has-iran-war-hit-its-economy?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-27T17:12:49Z",
+      "text": "<strong>Israel strikes Tyre after ordering evacuation of south Lebanon city</strong> -- Israel&#x27;s military says it struck Hezbollah targets after telling residents it would &quot;act forcefully&quot; against the group. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cj3pgrpmlklo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-27T03:02:27Z",
@@ -821,36 +851,6 @@
       "time": "2026-05-27T09:55:11Z",
       "text": "<strong>Israeli strike in Gaza City kills new head of Hamas&#x27;s military wing</strong> -- At least three people were killed in the attack, which came despite a ceasefire with Hamas being in place. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cjwppj1yn7go?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-27T04:07:27Z",
-      "text": "<strong>Dozens killed in Lebanon as Israel intensifies strikes</strong> -- Israel says it struck 100 Hezbollah infrastructure sites and fighters in Lebanon, after PM Benjamin Netanyahu vows to &quot;crush&quot; the Iran-backed group. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cx211rgngp0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-27T06:52:44Z",
-      "text": "<strong>How badly is Europe affected by fertiliser shortages due to the Iran war?</strong> -- EU launches fertiliser plan as Strait of Hormuz disruption fuels food security fears. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/27/how-badly-is-europe-affected-by-fertiliser-shortages-due-to-the-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-27T06:48:51Z",
-      "text": "<strong>Iran war day 89: Lebanon strikes kill 31 as ceasefire tensions rise</strong> -- Israeli strikes kill 31 in Lebanon as attacks intensify and displacement orders spread. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/27/iran-war-day-89-lebanon-strikes-kill-31-as-ceasefire-tensions-rise?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-27T06:03:41Z",
-      "text": "<strong>\u2018Deep suspicion\u2019 of US lingers as Iran ponders agreement to end war</strong> -- Iranian officials said the latest US strikes only validated their scepticism and resolve to stand firm on demands. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/27/deep-suspicion-of-us-lingers-as-iran-ponders-agreement-to-end-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-27T04:25:40Z",
-      "text": "<strong>Israel \u2018intensifies\u2019 attacks in Lebanon killing at least 31 people</strong> -- At least 31 people have been killed in Israeli attacks across southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/israel-intensifies-attacks-in-lebanon-killing-at-least-31-people?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-27T00:28:03Z",
-      "text": "<strong>How decision-making happens in Iran</strong> -- Iran\u2019s negotiators follow a mandate set by the Supreme National Security Council and approved by the Supreme Leader. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/aje-onl-nf_draft-3-dnrexp-260526-hashema-iran_decision_making-260526?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,54 @@
   ],
   "newsFeed": [
     {
+      "title": "Markets rally amid hopes of US-Iran deal",
+      "description": "Markets betting a deal will reopen the Strait of Hormuz and soothe the deep global economic uncertainty.",
+      "link": "https://www.aljazeera.com/news/2026/5/27/markets-rally-amid-hopes-of-us-iran-deal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-27T21:14:12Z",
+      "tier": 2
+    },
+    {
+      "title": "Why is Israel ramping up attacks in Lebanon despite a ceasefire?",
+      "description": "Intensification comes while US-Iran indirect talks continue.",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/5/27/why-is-israel-ramping-up-attacks-in-lebanon-despite-a-ceasefire?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-27T20:56:30Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump says no one will control Strait of Hormuz",
+      "description": "Donald Trump says he won\u2019t allow Iran to control \u2060the Strait of \u2060Hormuz under the terms of any deal reached with Tehran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/trump-says-no-one-will-control-strait-of-hormuz?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-27T20:56:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump appears to threaten Oman over Strait of Hormuz impasse",
+      "description": "The US president warns that Oman, a US ally, &#039;will behave just like everybody else, or we will have to blow them up&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/5/27/trump-appears-to-threaten-oman-with-bombing-over-strait-of-hormuz-impasse?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-27T20:38:11Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel issues evacuation order for swathes of southern Lebanon",
+      "description": "The military says areas south of the Zahrani River are now \"combat zones\" as it threatens Hezbollah with fresh strikes.",
+      "link": "https://www.bbc.com/news/articles/cj3pgrpmlklo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-27T20:26:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran government sells subsidised meat for Eid al-Adha under blockade",
+      "description": "Iranians are seeing the price of meat, and other basics, escalate due to the US blockade and sanctions.",
+      "link": "https://www.aljazeera.com/economy/2026/5/27/iran-government-sells-subsidised-meat-for-eid-al-adha-under-blockade?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-27T19:04:05Z",
+      "tier": 2
+    },
+    {
       "title": "US, Iran issue conflicting reports on deal as Trump says no sanction relief",
       "description": "US president says Iran can&#039;t &#039;out-wait&#039; him, suggesting that Washington is not satisfied with Tehran&#039;s offers for deal.",
       "link": "https://www.aljazeera.com/news/2026/5/27/us-iran-issue-conflicting-reports-on-deal-as-trump-says-no-sanction-relief?traffic_source=rss",
@@ -1229,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Israel strikes Tyre after ordering evacuation of south Lebanon city",
-      "description": "Israel's military says it struck Hezbollah targets after telling residents it would \"act forcefully\" against the group.",
-      "link": "https://www.bbc.com/news/articles/cj3pgrpmlklo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-27T17:12:49Z",
-      "tier": 2
-    },
-    {
       "title": "Almost 500,000 Russian soldiers killed in Ukraine war, GCHQ says",
       "description": "GCHQ's director Anne Keast-Butler set out the threats facing the UK in her inaugural public speech.",
       "link": "https://www.bbc.com/news/articles/c4g44gprnnvo?at_medium=RSS&at_campaign=rss",
@@ -1250,14 +1290,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/27/family-mourn-hamas-leader-killed-in-israeli-attack?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-27T14:48:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Bangladesh seeks IMF aid: How badly has Iran war hit its economy?",
-      "description": "The International Monetary Fund warns that Iran war could trigger a spike in global debt levels.",
-      "link": "https://www.aljazeera.com/economy/2026/5/27/bangladesh-seeks-imf-aid-how-badly-has-iran-war-hit-its-economy?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-27T13:53:13Z",
       "tier": 2
     },
     {
@@ -1285,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of May 27, 2026 shows no verified increase over the previously reported core casualty totals for Iran, the US, Israel, and Gulf states in the sources reviewed. Al Jazeera\u2019s May 20 tracker, citing Iran\u2019s Ministry of Health and other official sources, still lists 3,468 killed and more than 26,500 injured in Iran, 13 confirmed US combat deaths, 26 Israelis killed, and 28 killed across Gulf states. AP reported on May 26-27 that US forces carried out new 'self-defense' strikes in southern Iran during the fragile ceasefire, while Iran said it downed at least one drone. On weapons expenditure, AP\u2019s May 27 report on a CSIS analysis says the US has fired 1,000-plus Tomahawks and used as many as 290 THAAD plus more than 1,000 Patriot interceptors in the war.",
+  "summary": "Confirmed reporting on May 26-27, 2026 shows the April 8 ceasefire remains fragile: AP reported the US carried out what it called self-defense strikes in southern Iran on May 25, while Al Jazeera and AP both reported ongoing indirect talks aimed at ending the war. Al Jazeera\u2019s latest tracker still lists 3,468 people killed and more than 26,500 injured in Iran, 26 Israelis killed, and 13 US combat-related deaths. CENTCOM\u2019s most recent publicly cited operational figures indicate the campaign has exceeded 13,000 strikes on Iranian targets, while separate Senate testimony said more than 1,450 strikes hit weapons-manufacturing facilities and that three carrier strike groups were operating in the theater by late April.",
   "briefings": [
     {
       "date": "2026-05-27",
       "day": 88,
-      "summary": "Confirmed reporting as of May 27, 2026 shows no verified increase over the previously reported core casualty totals for Iran, the US, Israel, and Gulf states in the sources reviewed. Al Jazeera\u2019s May 20 tracker, citing Iran\u2019s Ministry of Health and other official sources, still lists 3,468 killed and more than 26,500 injured in Iran, 13 confirmed US combat deaths, 26 Israelis killed, and 28 killed across Gulf states. AP reported on May 26-27 that US forces carried out new 'self-defense' strikes in southern Iran during the fragile ceasefire, while Iran said it downed at least one drone. On weapons expenditure, AP\u2019s May 27 report on a CSIS analysis says the US has fired 1,000-plus Tomahawks and used as many as 290 THAAD plus more than 1,000 Patriot interceptors in the war."
+      "summary": "Confirmed reporting on May 26-27, 2026 shows the April 8 ceasefire remains fragile: AP reported the US carried out what it called self-defense strikes in southern Iran on May 25, while Al Jazeera and AP both reported ongoing indirect talks aimed at ending the war. Al Jazeera\u2019s latest tracker still lists 3,468 people killed and more than 26,500 injured in Iran, 26 Israelis killed, and 13 US combat-related deaths. CENTCOM\u2019s most recent publicly cited operational figures indicate the campaign has exceeded 13,000 strikes on Iranian targets, while separate Senate testimony said more than 1,450 strikes hit weapons-manufacturing facilities and that three carrier strike groups were operating in the theater by late April."
     },
     {
       "date": "2026-05-26",
