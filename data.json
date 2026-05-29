@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-29T22:04:33Z",
+  "lastUpdated": "2026-05-29T23:41:33Z",
   "dayCount": 90,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,532+",
-    "cost": "$50.7B+"
+    "killed": "3,535+",
+    "cost": "$52.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "10",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$50.7 billion+",
-    "dailyBurnRate": "~$563M/day",
+    "totalCost": "$52.0 billion+",
+    "dailyBurnRate": "~$578M/day",
     "daysOfOps": 90,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-29",
-          "source": "LLM-verified (Department of the Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury: https://media.defense.gov/2026/May/11/2003928909/-1/-1/1/NAVY%20SHIPBUILDING%20PLAN%20MAY%202026.PDF)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-29",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 13,000+ combat flights)"
+          "source": "LLM-verified (White House release dated April 8, 2026 says 'Over 10,200 total air sorties flown': https://www.whitehouse.gov/releases/2026/04/peace-through-strength-operation-epic-fury-crushes-iranian-threat-as-ceasefire-takes-hold/)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1300,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-05-29",
-          "source": "LLM-verified (Washington Post reporting cited May 21, 2026: more than 200 THAAD plus more than 100 SM-3/SM-6; CSIS/AP-linked reporting also cited more than 1,200 Patriot interceptors used. Combined confirmed minimum exceeds 1,300, but exact all-system total not officially released.)"
+          "source": "LLM-verified (White House release dated April 8, 2026 says over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted, for 1,700+ combined intercepts: https://www.whitehouse.gov/releases/2026/04/peace-through-strength-operation-epic-fury-crushes-iranian-threat-as-ceasefire-takes-hold/)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,300 \u00d7 $4,000,000 each",
-        "cost": "$5,200,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC and Al Jazeera both reported no final deal announced after Trump\u2019s Situation Room deliberations, indicating risk of renewed escalation remains high.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported continued ceasefire fragility this week, including US defensive strikes in southern Iran and Kuwaiti interceptions of missiles/drones.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian Foreign Ministry said on May 29 that any US ceasefire/deal was not finalised yet, despite US statements about progress.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 29, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "A tentative US-Iran memorandum of understanding for a 60-day truce extension reportedly awaits President Trump's approval.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported ongoing U.S.-Iran negotiations remain active despite the latest exchange of strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Kuwait's air defenses confronted hostile missiles and drones on May 28, 2026, but no confirmed casualty figure was provided.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported fresh U.S. strikes near Bandar Abbas / southern Iran on May 25-28, 2026, framed by the U.S. as self-defense and by Iran as ceasefire violations.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "No deal announced after Trump meeting to make 'final determination' on Iran",
+      "description": "The US president met his advisers, after officials confirmed the US and Iran had agreed a framework of a deal.",
+      "link": "https://www.bbc.com/news/articles/c0r2d40r91qo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-29T23:30:33Z",
+      "tier": 2
+    },
+    {
       "title": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides",
       "description": "Kenneth Law admitted charges relating to Canadian victims - but families say he should also be charged in the UK over 79 deaths in Britain.",
       "link": "https://www.bbc.com/news/articles/c70vg7glglyo?at_medium=RSS&at_campaign=rss",
@@ -1242,14 +1250,6 @@
       "link": "https://www.aljazeera.com/news/2026/5/29/polish-president-threatens-to-strip-ukraines-zelenskyy-of-top-state-honour?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-29T20:56:38Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump holds meeting to make 'final determination' on Iran deal",
-      "description": "The US president met his advisers, after officials confirmed the US and Iran had agreed a framework of a deal.",
-      "link": "https://www.bbc.com/news/articles/c0r2d40r91qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-29T19:32:24Z",
       "tier": 2
     },
     {
@@ -1331,22 +1331,14 @@
       "source": "BBC World",
       "time": "2026-05-28T16:20:50Z",
       "tier": 2
-    },
-    {
-      "title": "Duterte ICC trial to start on 30 November: What you need to know",
-      "description": "Duterte is facing charges relating to a long and bloody war on drugs in which thousands were killed.",
-      "link": "https://www.bbc.com/news/articles/c363xd6p1gxo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-05-28T03:14:56Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on May 28-29, 2026 shows diplomacy remains fluid rather than settled: AP reported U.S. and Iranian negotiators reached a tentative 60-day ceasefire extension framework on May 28, but Iran had not immediately confirmed it, while Al Jazeera\u2019s May 29 headlines said Tehran denied any agreement was finalized. On the military side, official U.S. materials still point to the last clearly confirmed cumulative strike totals from early April: CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck, and the Navy\u2019s May 2026 shipbuilding plan said two carrier strike groups supported the operation and naval aviation helped strike over 13,000 targets within Iran over five weeks. For casualties, the newest clearly sourced cumulative figures found were Al Jazeera\u2019s May 5 tracker citing Iran\u2019s Ministry of Health at 3,468 killed and more than 26,500 injured in Iran, 26 Israelis killed, and 28 killed in Gulf states; official U.S. sources confirm 10 U.S. deaths tied to the war that I could verify.",
+  "summary": "Confirmed reporting indicates the war has not fully stabilized despite active diplomacy: Iran said on May 29 that no final agreement with the US had been finalized, while AP reported this week that US forces carried out additional 'self-defense' strikes in southern Iran and that Kuwait intercepted new missiles and drones amid a fragile ceasefire process. The most recent widely cited cumulative casualty figures located remain Al Jazeera\u2019s May 20 tracker totals of 3,468 killed and more than 26,500 injured in Iran, 13 US service members killed, 26 Israelis killed, and 28 killed across Gulf states. On the military activity side, the latest official aggregate figures found were CENTCOM/White House early-April tallies of 13,000+ targets struck, over 10,200 air sorties flown, and 1,700+ combined drone and ballistic-missile intercepts, with two carrier strike groups confirmed in theater.",
   "briefings": [
     {
       "date": "2026-05-29",
       "day": 90,
-      "summary": "Confirmed reporting on May 28-29, 2026 shows diplomacy remains fluid rather than settled: AP reported U.S. and Iranian negotiators reached a tentative 60-day ceasefire extension framework on May 28, but Iran had not immediately confirmed it, while Al Jazeera\u2019s May 29 headlines said Tehran denied any agreement was finalized. On the military side, official U.S. materials still point to the last clearly confirmed cumulative strike totals from early April: CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck, and the Navy\u2019s May 2026 shipbuilding plan said two carrier strike groups supported the operation and naval aviation helped strike over 13,000 targets within Iran over five weeks. For casualties, the newest clearly sourced cumulative figures found were Al Jazeera\u2019s May 5 tracker citing Iran\u2019s Ministry of Health at 3,468 killed and more than 26,500 injured in Iran, 26 Israelis killed, and 28 killed in Gulf states; official U.S. sources confirm 10 U.S. deaths tied to the war that I could verify."
+      "summary": "Confirmed reporting indicates the war has not fully stabilized despite active diplomacy: Iran said on May 29 that no final agreement with the US had been finalized, while AP reported this week that US forces carried out additional 'self-defense' strikes in southern Iran and that Kuwait intercepted new missiles and drones amid a fragile ceasefire process. The most recent widely cited cumulative casualty figures located remain Al Jazeera\u2019s May 20 tracker totals of 3,468 killed and more than 26,500 injured in Iran, 13 US service members killed, 26 Israelis killed, and 28 killed across Gulf states. On the military activity side, the latest official aggregate figures found were CENTCOM/White House early-April tallies of 13,000+ targets struck, over 10,200 air sorties flown, and 1,700+ combined drone and ballistic-missile intercepts, with two carrier strike groups confirmed in theater."
     },
     {
       "date": "2026-05-28",
