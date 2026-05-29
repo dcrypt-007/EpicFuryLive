@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-05-29T12:26:48Z",
+  "lastUpdated": "2026-05-29T16:53:28Z",
   "dayCount": 90,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "18+",
-    "cost": "$50.3B+"
+    "strikes": "~12,300",
+    "killed": "5+",
+    "cost": "$50.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,519",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "3",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "30",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "5",
+    "gulfCasualties": "2",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "20,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$50.3 billion+",
-    "dailyBurnRate": "~$559M/day",
+    "totalCost": "$50.7 billion+",
+    "dailyBurnRate": "~$563M/day",
     "daysOfOps": 90,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-29",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026) states that over five weeks of Operation Epic Fury, 'Two carrier strike groups' were involved (turn7view1).)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supporting Operation Epic Fury.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-29",
-          "source": "LLM-verified (Operation Epic Fury fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+' (turn7view0). Stored as 9000 as minimum confirmed floor.)"
+          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; used as minimum confirmed sortie count 13000.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Lebanon front remains active, with Israeli ground advances and strikes continuing ahead of Pentagon-hosted security talks, raising spillover risk beyond Iran proper.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera/BBC headline reporting on May 29, 2026 indicates Washington and Tehran are close to a ceasefire-extension or 60-day deal, but no final agreement is confirmed yet.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 26, 2026 that the U.S. conducted fresh 'defensive' strikes in southern Iran against missile launch sites and minelaying boats despite the weekslong ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 29, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Kuwait's military said air defenses were battling hostile missiles and drones on May 28, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera/BBC headline reporting indicates renewed Israeli operations in southern Lebanon while U.S.-Iran indirect talks continue, raising regional spillover risk",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran's Revolutionary Guard said on May 26 it shot down at least one drone and deterred another drone and a fighter jet, underscoring continued escalation risk despite talks",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported U.S. 'self-defense' strikes in southern Iran on May 25, 2026 targeting missile launch sites and minelaying boats during the ceasefire/negotiation period",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,19 +753,29 @@
   ],
   "developments": [
     {
+      "time": "2026-05-29T16:31:23Z",
+      "text": "<strong>Vance says US, Iran have made \u201ca lot of progress\u201d towards deal</strong> -- US Vice President JD Vance says Washington and Tehran have made \u201ca lot of progress\u201d towards ceasefire <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/vance-says-us-iran-have-made-a-lot-of-progress-towards-deal?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-29T15:59:26Z",
+      "text": "<strong>Five killed in Lebanon as Israeli forces advance across key Litani River</strong> -- Attacks come ahead of security talks between Lebanese and Israeli military delegations at the Pentagon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/29/five-killed-in-lebanon-as-israeli-forces-advance-across-key-litani-river?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-29T15:50:40Z",
+      "text": "<strong>Israel strikes building in Gaza\u2019s Shati refugee camp</strong> -- Israel strikes building in Gaza\u2019s Shati refugee camp. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/israel-strikes-building-in-gazas-shati-refugee-camp?traffic_source=rss"
+    },
+    {
       "time": "2026-05-29T10:23:16Z",
       "text": "<strong>US-Iran 60-day proposal: What we know</strong> -- US-Iran memorandum of understanding reportedly covers Strait of Hormuz, sanctions relief and enriched uranium limits. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/29/us-iran-60-day-proposal-what-we-know?traffic_source=rss"
     },
     {
-      "time": "2026-05-29T10:05:14Z",
-      "text": "<strong>How the end of the nuclear file could reshape Iran, and the region</strong> -- A generation of nuclear ambition shaped the Islamic republic. Its end could undo the damage. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/5/29/how-the-end-of-the-nuclear-file-could-reshape-iran-and-the-region?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-29T07:04:00Z",
-      "text": "<strong>What\u2019s happening on Iran war day 91 as US, Iran near 60-day deal</strong> -- US and Iran near a 60-day MoU aimed at reopening the Hormuz strait with talks slated on nuclear and other differences. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/29/whats-happening-on-iran-war-day-91-as-us-iran-near-60-day-deal?traffic_source=rss"
+      "time": "2026-05-29T15:29:12Z",
+      "text": "<strong>&#x27;Poison seller&#x27; who sold toxic chemicals online to people across world admits aiding suicides</strong> -- Kenneth Law admitted charges relating to Canadian victims - but families say he should also be charged in the UK over 79 deaths in Britain. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c70vg7glglyo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-29T09:17:35Z",
@@ -791,6 +801,16 @@
       "time": "2026-05-28T16:39:30Z",
       "text": "<strong>Learning from Ukraine war, Hezbollah is now using fibre-optic drones to hit Israel</strong> -- Fibre-optic drones are now Hezbollah&#x27;s primary weapon against Israel&#x27;s soldiers and civilians. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c0r2ydlvk41o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-29T10:05:14Z",
+      "text": "<strong>How the end of the nuclear file could reshape Iran, and the region</strong> -- A generation of nuclear ambition shaped the Islamic republic. Its end could undo the damage. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/5/29/how-the-end-of-the-nuclear-file-could-reshape-iran-and-the-region?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-29T07:04:00Z",
+      "text": "<strong>What\u2019s happening on Iran war day 91 as US, Iran near 60-day deal</strong> -- US and Iran near a 60-day MoU aimed at reopening the Hormuz strait with talks slated on nuclear and other differences. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/29/whats-happening-on-iran-war-day-91-as-us-iran-near-60-day-deal?traffic_source=rss"
     },
     {
       "time": "2026-05-28T03:14:56Z",
@@ -831,26 +851,6 @@
       "time": "2026-05-28T18:36:50Z",
       "text": "<strong>Rebuilding US weapons stockpile may \u2018take years\u2019 post-Iran war</strong> -- Restoring pre-war stockpiles of critical US munitions will take at least two years, according to CSIS report. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/28/us-weapon-stockpile-rebuilding-to-take-years-post-iran-war-says-report?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-28T18:25:32Z",
-      "text": "<strong>US, Iran reach MoU on 60-day truce, Trump\u2019s approval pending</strong> -- US and Iranian negotiators have reached a memorandum of understanding on a proposed 60-day ceasefire extension. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/28/us-iran-reach-mou-on-60-day-truce-trumps-approval-pending?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-28T18:21:14Z",
-      "text": "<strong>US and Iran reach tentative deal for 60-day truce extension, officials say</strong> -- The memorandum of understanding, which would enable further negotiations, still requires Donald Trump&amp;#039;s final approval. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/28/us-and-iran-reach-tentative-deal-for-60-day-truce-extension-officials-say?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-28T16:54:57Z",
-      "text": "<strong>US inflation surges to three-year high amid tensions with Iran</strong> -- Heightened petrol prices led the inflationary pressures, with prices that jumped 5.5 percent in April. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/5/28/us-inflation-surges-to-three-year-high-amid-tensions-with-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-28T16:42:41Z",
-      "text": "<strong>Smoke rises over Beirut after Israeli strike</strong> -- Footage shows smoke billowing over south Beirut following an Israeli attack on the Lebanese capital. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/28/smoke-rises-over-beirut-after-israeli-strike?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Vance says US, Iran have made \u201ca lot of progress\u201d towards deal",
+      "description": "US Vice President JD Vance says Washington and Tehran have made \u201ca lot of progress\u201d towards ceasefire",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/vance-says-us-iran-have-made-a-lot-of-progress-towards-deal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-29T16:31:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Five killed in Lebanon as Israeli forces advance across key Litani River",
+      "description": "Attacks come ahead of security talks between Lebanese and Israeli military delegations at the Pentagon.",
+      "link": "https://www.aljazeera.com/news/2026/5/29/five-killed-in-lebanon-as-israeli-forces-advance-across-key-litani-river?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-29T15:59:26Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel strikes building in Gaza\u2019s Shati refugee camp",
+      "description": "Israel strikes building in Gaza\u2019s Shati refugee camp.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/israel-strikes-building-in-gazas-shati-refugee-camp?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-29T15:50:40Z",
+      "tier": 2
+    },
+    {
+      "title": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides",
+      "description": "Kenneth Law admitted charges relating to Canadian victims - but families say he should also be charged in the UK over 79 deaths in Britain.",
+      "link": "https://www.bbc.com/news/articles/c70vg7glglyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-05-29T15:29:12Z",
+      "tier": 2
+    },
+    {
       "title": "US-Iran 60-day proposal: What we know",
       "description": "US-Iran memorandum of understanding reportedly covers Strait of Hormuz, sanctions relief and enriched uranium limits.",
       "link": "https://www.aljazeera.com/news/2026/5/29/us-iran-60-day-proposal-what-we-know?traffic_source=rss",
@@ -1221,27 +1253,11 @@
       "tier": 2
     },
     {
-      "title": "How the end of the nuclear file could reshape Iran, and the region",
-      "description": "A generation of nuclear ambition shaped the Islamic republic. Its end could undo the damage.",
-      "link": "https://www.aljazeera.com/opinions/2026/5/29/how-the-end-of-the-nuclear-file-could-reshape-iran-and-the-region?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-29T10:05:14Z",
-      "tier": 2
-    },
-    {
       "title": "US and Iran 'very close' to deal but 'not there yet', Vance says",
       "description": "US officials earlier told the BBC that the framework of a ceasefire extension deal had been agreed, pending the approval of Trump and Iran's leadership.",
       "link": "https://www.bbc.com/news/articles/c87qng40wz9o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-05-29T09:17:35Z",
-      "tier": 2
-    },
-    {
-      "title": "What\u2019s happening on Iran war day 91 as US, Iran near 60-day deal",
-      "description": "US and Iran near a 60-day MoU aimed at reopening the Hormuz strait with talks slated on nuclear and other differences.",
-      "link": "https://www.aljazeera.com/news/2026/5/29/whats-happening-on-iran-war-day-91-as-us-iran-near-60-day-deal?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-29T07:04:00Z",
       "tier": 2
     },
     {
@@ -1285,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on May 28-29, 2026 indicates the ceasefire remains fragile but diplomacy is advancing: Al Jazeera reported that Washington and Tehran are nearing a 60-day truce-extension memorandum aimed at reopening the Strait of Hormuz and launching broader talks, even as the U.S. conducted new strikes near Bandar Abbas on May 28 with Iranian media reporting no casualties. Official U.S. materials still provide the clearest operational totals available in search results, with CENTCOM\u2019s April 6 fact sheet listing more than 13,000 targets struck and the Pentagon previously saying more than 50,000 U.S. personnel were supporting Operation Epic Fury, while Reuters reported in late March that U.S. forces had already fired over 850 Tomahawk missiles.",
+  "summary": "Confirmed reporting available in retrieved official and major-media sources remains sparse for many cumulative fields. The strongest current official figures found are from U.S. sources: CENTCOM\u2019s March 1 update confirmed 3 U.S. service members killed in action, and the April 1 DoD/CENTCOM fact sheet reported 12,300+ targets struck and 13,000+ combat flights; the May 2026 U.S. Navy Shipbuilding Plan also confirmed two carrier strike groups supporting the operation. AP reported on May 26 that the U.S. carried out new defensive strikes in southern Iran despite the ceasefire, while May 29 headline reporting from Al Jazeera and BBC says U.S.-Iran talks have made progress toward a ceasefire extension, though no final deal is confirmed.",
   "briefings": [
     {
       "date": "2026-05-29",
       "day": 90,
-      "summary": "Confirmed reporting on May 28-29, 2026 indicates the ceasefire remains fragile but diplomacy is advancing: Al Jazeera reported that Washington and Tehran are nearing a 60-day truce-extension memorandum aimed at reopening the Strait of Hormuz and launching broader talks, even as the U.S. conducted new strikes near Bandar Abbas on May 28 with Iranian media reporting no casualties. Official U.S. materials still provide the clearest operational totals available in search results, with CENTCOM\u2019s April 6 fact sheet listing more than 13,000 targets struck and the Pentagon previously saying more than 50,000 U.S. personnel were supporting Operation Epic Fury, while Reuters reported in late March that U.S. forces had already fired over 850 Tomahawk missiles."
+      "summary": "Confirmed reporting available in retrieved official and major-media sources remains sparse for many cumulative fields. The strongest current official figures found are from U.S. sources: CENTCOM\u2019s March 1 update confirmed 3 U.S. service members killed in action, and the April 1 DoD/CENTCOM fact sheet reported 12,300+ targets struck and 13,000+ combat flights; the May 2026 U.S. Navy Shipbuilding Plan also confirmed two carrier strike groups supporting the operation. AP reported on May 26 that the U.S. carried out new defensive strikes in southern Iran despite the ceasefire, while May 29 headline reporting from Al Jazeera and BBC says U.S.-Iran talks have made progress toward a ceasefire extension, though no final deal is confirmed."
     },
     {
       "date": "2026-05-28",
