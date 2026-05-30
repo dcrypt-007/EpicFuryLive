@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-30T14:47:25Z",
+  "lastUpdated": "2026-05-30T16:16:06Z",
   "dayCount": 91,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,495+",
-    "cost": "$51.0B+"
+    "killed": "3,522+",
+    "cost": "$51.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,469",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "4",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$51.0 billion+",
-    "dailyBurnRate": "~$560M/day",
+    "totalCost": "$51.4 billion+",
+    "dailyBurnRate": "~$565M/day",
     "daysOfOps": 91,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (CENTCOM statement reported by Iran International on March 4, 2026: 'two aircraft carriers' participating in Operation Epic Fury.)"
+          "source": "LLM-verified (Pentagon/Reuters reporting on March 2, 2026 said deployment included the Lincoln and Ford carrier strike groups.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (U.S. Department of Defense fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'.)"
+          "source": "LLM-verified (Defense Department fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; stored as 13000 confirmed floor.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported renewed Hezbollah rocket barrages and Israeli strikes in southern Lebanon on May 30, 2026, indicating continued regional spillover despite the Iran ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and Reuters reported on May 30, 2026 that no final Iran deal had been announced after Trump met advisers to make a 'final determination'.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Reuters/CENTCOM reported U.S. strikes on May 25, 2026 against mine-laying boats and missile launch sites in southern Iran during the ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 30, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera reported on May 28-29, 2026 that U.S. and Iran were nearing a 60-day memorandum of understanding to extend the ceasefire and open negotiations.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "U.S. carried out new strikes near Bandar Abbas on May 28, 2026, amid renewed tensions around the Strait of Hormuz, though Iranian media said there were no casualties or damage.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Hezbollah drone attacks on northern Israel and Israeli troops in Lebanon continue despite the broader Iran ceasefire track.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Missile-defense stockpile depletion remains a strategic concern, especially Patriot and THAAD inventories.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -778,19 +778,9 @@
       "link": "https://www.aljazeera.com/news/2026/5/30/iran-war-what-is-happening-on-day-92-as-trump-weighs-iran-deal?traffic_source=rss"
     },
     {
-      "time": "2026-05-30T06:29:07Z",
-      "text": "<strong>Rwanda-Russia nuclear deal underscores Africa\u2019s shifting power balance</strong> -- Rwanda turns to Russia for nuclear training and research, advancing ambitions in technology, healthcare and diplomacy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/30/rwanda-russia-nuclear-deal-underscores-africas-shifting-power-balance?traffic_source=rss"
-    },
-    {
       "time": "2026-05-30T11:39:32Z",
       "text": "<strong>No deal announced after Trump meeting to make &#x27;final determination&#x27; on Iran</strong> -- The US president met his advisers, after officials confirmed the US and Iran had agreed a framework of a deal. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c0r2d40r91qo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-05-29T21:40:45Z",
-      "text": "<strong>&#x27;Poison seller&#x27; who sold toxic chemicals online to people across world admits aiding suicides</strong> -- Kenneth Law admitted charges relating to Canadian victims - but families say he should also be charged in the UK over 79 deaths in Britain. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c70vg7glglyo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-05-29T18:41:36Z",
@@ -798,9 +788,24 @@
       "link": "https://www.bbc.com/news/articles/cx21le869n1o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-05-29T21:40:45Z",
+      "text": "<strong>&#x27;Poison seller&#x27; who sold toxic chemicals online to people across world admits aiding suicides</strong> -- Kenneth Law admitted charges relating to Canadian victims - but families say he should also be charged in the UK over 79 deaths in Britain. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c70vg7glglyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-29T02:24:52Z",
       "text": "<strong>Netanyahu says he has directed IDF to increase control of Gaza to 70%</strong> -- The expansion in control by Israel would contradict the terms of the ceasefire  Israel and Hamas agreed to in October 2025. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/ceqpelq5reqo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-28T16:39:30Z",
+      "text": "<strong>Learning from Ukraine war, Hezbollah is now using fibre-optic drones to hit Israel</strong> -- Fibre-optic drones are now Hezbollah&#x27;s primary weapon against Israel&#x27;s soldiers and civilians. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c0r2ydlvk41o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-30T06:29:07Z",
+      "text": "<strong>Rwanda-Russia nuclear deal underscores Africa\u2019s shifting power balance</strong> -- Rwanda turns to Russia for nuclear training and research, advancing ambitions in technology, healthcare and diplomacy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/30/rwanda-russia-nuclear-deal-underscores-africas-shifting-power-balance?traffic_source=rss"
     },
     {
       "time": "2026-05-30T00:00:00Z",
@@ -846,11 +851,6 @@
       "time": "2026-05-29T18:15:07Z",
       "text": "<strong>Israeli fighter jets strike village in south Lebanon</strong> -- Video shows the moment Israeli fighter jets struck a residential building in Ain Qana village in southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/israeli-fighter-jets-strike-village-in-south-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-29T17:10:10Z",
-      "text": "<strong>Trump says \u2018final determination\u2019 to be made on possible Iran deal</strong> -- Deep mistrust remains between Washington and Tehran as Iran says &amp;#039;no final agreement&amp;#039; reached with US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/29/trump-says-final-determination-to-be-made-on-possible-iran-deal?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1261,14 +1261,6 @@
       "tier": 2
     },
     {
-      "title": "Rwanda-Russia nuclear deal underscores Africa\u2019s shifting power balance",
-      "description": "Rwanda turns to Russia for nuclear training and research, advancing ambitions in technology, healthcare and diplomacy.",
-      "link": "https://www.aljazeera.com/news/2026/5/30/rwanda-russia-nuclear-deal-underscores-africas-shifting-power-balance?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-30T06:29:07Z",
-      "tier": 2
-    },
-    {
       "title": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides",
       "description": "Kenneth Law admitted charges relating to Canadian victims - but families say he should also be charged in the UK over 79 deaths in Britain.",
       "link": "https://www.bbc.com/news/articles/c70vg7glglyo?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of Saturday, May 30, 2026, confirmed reporting indicates the war remains in a tense partial-ceasefire phase: AP reported this week that U.S. forces conducted fresh 'self-defense' strikes in southern Iran against missile launch sites and minelaying boats, while Al Jazeera and Reuters reported today that Washington is still weighing next steps on a possible deal and Tehran says no final agreement exists. For cumulative figures, the strongest current sourced totals found were WHO's May 14 situation report listing 3,469 deaths and 32,314 injuries in Iran and 26 deaths in Israel, while CENTCOM's April 6 fact sheet said 13,000+ targets had been struck, and AP on May 27 cited a CSIS estimate that the U.S. had fired 1,000-plus Tomahawk missiles and at least 1,290 Patriot/THAAD interceptors.",
+  "summary": "Confirmed accessible reporting indicates the war remains in a fragile ceasefire phase but not conclusively over: Reuters/CENTCOM said U.S. forces struck mine-laying boats and missile launch sites in southern Iran on May 25 in what they described as defensive actions during the ceasefire, while Al Jazeera and Reuters reported on May 30 that Trump was weighing next steps on an Iran deal and no final agreement had been announced. For cumulative figures I could confirm only a limited set from named sources: CENTCOM still publicly confirms 4 U.S. service members killed in action, Al Jazeera\u2019s May 5 tracker lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states, and Defense Department/CENTCOM fact sheets list 13,000+ targets struck and 13,000+ combat flights by early April.",
   "briefings": [
     {
       "date": "2026-05-30",
       "day": 91,
-      "summary": "As of Saturday, May 30, 2026, confirmed reporting indicates the war remains in a tense partial-ceasefire phase: AP reported this week that U.S. forces conducted fresh 'self-defense' strikes in southern Iran against missile launch sites and minelaying boats, while Al Jazeera and Reuters reported today that Washington is still weighing next steps on a possible deal and Tehran says no final agreement exists. For cumulative figures, the strongest current sourced totals found were WHO's May 14 situation report listing 3,469 deaths and 32,314 injuries in Iran and 26 deaths in Israel, while CENTCOM's April 6 fact sheet said 13,000+ targets had been struck, and AP on May 27 cited a CSIS estimate that the U.S. had fired 1,000-plus Tomahawk missiles and at least 1,290 Patriot/THAAD interceptors."
+      "summary": "Confirmed accessible reporting indicates the war remains in a fragile ceasefire phase but not conclusively over: Reuters/CENTCOM said U.S. forces struck mine-laying boats and missile launch sites in southern Iran on May 25 in what they described as defensive actions during the ceasefire, while Al Jazeera and Reuters reported on May 30 that Trump was weighing next steps on an Iran deal and no final agreement had been announced. For cumulative figures I could confirm only a limited set from named sources: CENTCOM still publicly confirms 4 U.S. service members killed in action, Al Jazeera\u2019s May 5 tracker lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states, and Defense Department/CENTCOM fact sheets list 13,000+ targets struck and 13,000+ combat flights by early April."
     },
     {
       "date": "2026-05-29",
