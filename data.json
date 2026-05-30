@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-30T16:16:06Z",
+  "lastUpdated": "2026-05-30T18:14:57Z",
   "dayCount": 91,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,522+",
-    "cost": "$51.4B+"
+    "killed": "3,526+",
+    "cost": "$51.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,469",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "32,314+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1443",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$51.4 billion+",
-    "dailyBurnRate": "~$565M/day",
+    "totalCost": "$51.2 billion+",
+    "dailyBurnRate": "~$563M/day",
     "daysOfOps": 91,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (Pentagon/Reuters reporting on March 2, 2026 said deployment included the Lincoln and Ford carrier strike groups.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026) states 'Two carrier strike groups' supported Operation Epic Fury.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (Defense Department fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; stored as 13000 confirmed floor.)"
+          "source": "LLM-verified (DoD Operation Epic Fury fact sheet dated March 28, 2026 lists 'Combat Flights: 11,000+'; latest accessible official cumulative combat-flight number found today. Stored as 11000 because exact higher figure not confirmed.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Today's RSS context indicates Hezbollah rocket barrages into northern Israel and renewed Israeli strikes in southern Lebanon, signaling persistent regional spillover risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on May 26 also reported Iran's Revolutionary Guard said it shot down at least one drone and deterred another drone and a fighter jet entering its airspace.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on May 26 reported a fresh U.S. defensive strike in southern Iran targeting missile launch sites and minelaying boats despite the ceasefire framework.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 30, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera/BBC headline reporting on May 29, 2026 indicates Washington and Tehran are close to a ceasefire-extension or 60-day deal, but no final agreement is confirmed yet.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 26, 2026 that the U.S. conducted fresh 'defensive' strikes in southern Iran against missile launch sites and minelaying boats despite the weekslong ceasefire.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "CENTCOM commander Adm. Brad Cooper told senators on May 14, 2026 that Iran still retains some ability to threaten shipping despite major degradation of naval and industrial capacity.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on May 28-29, 2026 that U.S. and Iran were nearing a 60-day memorandum of understanding to extend the ceasefire and open negotiations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-05-30T17:04:03Z",
+      "text": "<strong>Palestinian doctor killed, three people injured in Israeli attack on Gaza</strong> -- Israeli settlers attacked Palestinian homes and property across the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/30/palestinian-doctor-killed-three-people-injured-in-israeli-attack-on-gaza?traffic_source=rss"
+    },
+    {
       "time": "2026-05-30T12:49:20Z",
       "text": "<strong>The Iran war is dividing Muslims in the Philippines</strong> -- Divisive foreign political narratives are being wrongly cast as religious discourse within our Muslim communities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/opinions/2026/5/30/how-the-iran-war-is-dividing-muslims-in-the-philippines?traffic_source=rss"
@@ -766,16 +771,6 @@
       "time": "2026-05-30T10:13:16Z",
       "text": "<strong>Damage seen in northern Israel after Hezbollah launches rocket barrages</strong> -- Israel says it has intercepted an air attack from Hezbollah on Saturday, May 30th. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/30/damage-seen-in-northern-israel-after-hezbollah-launches-rocket-barrages?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-30T08:54:31Z",
-      "text": "<strong>Ukraine drones strike Russian oil facility, as Kyiv and Moscow trade blows</strong> -- Strikes have seen 13,000 residents without power in Zaporizhzhia as Russia and Ukraine trade drone attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/30/ukraine-drones-strike-russian-oil-facility-as-kyiv-and-moscow-trade-blows?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-30T07:30:15Z",
-      "text": "<strong>Iran war: What is happening on day 92 as Trump weighs Iran deal</strong> -- Trump weighs next steps on Iran deal as Tehran insists negotiations are continuing and no final agreement exists. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/30/iran-war-what-is-happening-on-day-92-as-trump-weighs-iran-deal?traffic_source=rss"
     },
     {
       "time": "2026-05-30T11:39:32Z",
@@ -801,6 +796,16 @@
       "time": "2026-05-28T16:39:30Z",
       "text": "<strong>Learning from Ukraine war, Hezbollah is now using fibre-optic drones to hit Israel</strong> -- Fibre-optic drones are now Hezbollah&#x27;s primary weapon against Israel&#x27;s soldiers and civilians. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c0r2ydlvk41o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-30T08:54:31Z",
+      "text": "<strong>Ukraine drones strike Russian oil facility, as Kyiv and Moscow trade blows</strong> -- Strikes have seen 13,000 residents without power in Zaporizhzhia as Russia and Ukraine trade drone attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/30/ukraine-drones-strike-russian-oil-facility-as-kyiv-and-moscow-trade-blows?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-30T07:30:15Z",
+      "text": "<strong>Iran war: What is happening on day 92 as Trump weighs Iran deal</strong> -- Trump weighs next steps on Iran deal as Tehran insists negotiations are continuing and no final agreement exists. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/30/iran-war-what-is-happening-on-day-92-as-trump-weighs-iran-deal?traffic_source=rss"
     },
     {
       "time": "2026-05-30T06:29:07Z",
@@ -846,11 +851,6 @@
       "time": "2026-05-29T18:18:03Z",
       "text": "<strong>Romania to expel Russian consul after residential drone strike</strong> -- Romanian President Nicusor Dan says that the Russian consul in the southeastern city of Constanta will be expelled. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/romania-to-expel-russian-consul-after-residential-drone-strike?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-29T18:15:07Z",
-      "text": "<strong>Israeli fighter jets strike village in south Lebanon</strong> -- Video shows the moment Israeli fighter jets struck a residential building in Ain Qana village in southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/israeli-fighter-jets-strike-village-in-south-lebanon?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Palestinian doctor killed, three people injured in Israeli attack on Gaza",
+      "description": "Israeli settlers attacked Palestinian homes and property across the occupied West Bank.",
+      "link": "https://www.aljazeera.com/news/2026/5/30/palestinian-doctor-killed-three-people-injured-in-israeli-attack-on-gaza?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-30T17:04:03Z",
+      "tier": 2
+    },
+    {
       "title": "The Iran war is dividing Muslims in the Philippines",
       "description": "Divisive foreign political narratives are being wrongly cast as religious discourse within our Muslim communities.",
       "link": "https://www.aljazeera.com/opinions/2026/5/30/how-the-iran-war-is-dividing-muslims-in-the-philippines?traffic_source=rss",
@@ -1242,22 +1250,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/30/damage-seen-in-northern-israel-after-hezbollah-launches-rocket-barrages?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-05-30T10:13:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Ukraine drones strike Russian oil facility, as Kyiv and Moscow trade blows",
-      "description": "Strikes have seen 13,000 residents without power in Zaporizhzhia as Russia and Ukraine trade drone attacks.",
-      "link": "https://www.aljazeera.com/news/2026/5/30/ukraine-drones-strike-russian-oil-facility-as-kyiv-and-moscow-trade-blows?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-30T08:54:31Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war: What is happening on day 92 as Trump weighs Iran deal",
-      "description": "Trump weighs next steps on Iran deal as Tehran insists negotiations are continuing and no final agreement exists.",
-      "link": "https://www.aljazeera.com/news/2026/5/30/iran-war-what-is-happening-on-day-92-as-trump-weighs-iran-deal?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-30T07:30:15Z",
       "tier": 2
     },
     {
@@ -1293,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed accessible reporting indicates the war remains in a fragile ceasefire phase but not conclusively over: Reuters/CENTCOM said U.S. forces struck mine-laying boats and missile launch sites in southern Iran on May 25 in what they described as defensive actions during the ceasefire, while Al Jazeera and Reuters reported on May 30 that Trump was weighing next steps on an Iran deal and no final agreement had been announced. For cumulative figures I could confirm only a limited set from named sources: CENTCOM still publicly confirms 4 U.S. service members killed in action, Al Jazeera\u2019s May 5 tracker lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states, and Defense Department/CENTCOM fact sheets list 13,000+ targets struck and 13,000+ combat flights by early April.",
+  "summary": "As of Saturday, May 30, 2026, the clearest confirmed cumulative figures available in accessible named-source reporting remain largely unchanged: CENTCOM still publicly confirms four U.S. deaths from the March 12 KC-135 crash, Al Jazeera\u2019s May 5 live tracker citing Iran\u2019s Ministry of Health reported 3,468 killed and more than 26,500 wounded in Iran, and the same tracker listed 26 Israelis killed and 28 deaths in Gulf states. Official U.S. military reporting continues to show at least 13,000 targets struck and, in the latest accessible DoD fact sheet with a flight total, at least 11,000 combat flights. AP reported on May 26 that the ceasefire remains fragile after a new U.S. defensive strike in southern Iran, while today\u2019s headline flow also points to continued Hezbollah-Israel exchanges in the north and Israeli strikes in Lebanon, underscoring ongoing regional escalation risks even as diplomacy continues.",
   "briefings": [
     {
       "date": "2026-05-30",
       "day": 91,
-      "summary": "Confirmed accessible reporting indicates the war remains in a fragile ceasefire phase but not conclusively over: Reuters/CENTCOM said U.S. forces struck mine-laying boats and missile launch sites in southern Iran on May 25 in what they described as defensive actions during the ceasefire, while Al Jazeera and Reuters reported on May 30 that Trump was weighing next steps on an Iran deal and no final agreement had been announced. For cumulative figures I could confirm only a limited set from named sources: CENTCOM still publicly confirms 4 U.S. service members killed in action, Al Jazeera\u2019s May 5 tracker lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states, and Defense Department/CENTCOM fact sheets list 13,000+ targets struck and 13,000+ combat flights by early April."
+      "summary": "As of Saturday, May 30, 2026, the clearest confirmed cumulative figures available in accessible named-source reporting remain largely unchanged: CENTCOM still publicly confirms four U.S. deaths from the March 12 KC-135 crash, Al Jazeera\u2019s May 5 live tracker citing Iran\u2019s Ministry of Health reported 3,468 killed and more than 26,500 wounded in Iran, and the same tracker listed 26 Israelis killed and 28 deaths in Gulf states. Official U.S. military reporting continues to show at least 13,000 targets struck and, in the latest accessible DoD fact sheet with a flight total, at least 11,000 combat flights. AP reported on May 26 that the ceasefire remains fragile after a new U.S. defensive strike in southern Iran, while today\u2019s headline flow also points to continued Hezbollah-Israel exchanges in the north and Israeli strikes in Lebanon, underscoring ongoing regional escalation risks even as diplomacy continues."
     },
     {
       "date": "2026-05-29",
