@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-30T21:14:57Z",
+  "lastUpdated": "2026-05-30T22:16:04Z",
   "dayCount": 91,
   "banner": {
     "strikes": "~13,000",
-    "killed": "1,449+",
-    "cost": "$51.4B+"
+    "killed": "3,521+",
+    "cost": "$49.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,469",
@@ -13,9 +13,9 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "32,314+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1443",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$51.4 billion+",
-    "dailyBurnRate": "~$565M/day",
+    "totalCost": "$49.9 billion+",
+    "dailyBurnRate": "~$549M/day",
     "daysOfOps": 91,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (CENTCOM imagery/pages in May 2026 show USS George H.W. Bush and USS Abraham Lincoln operating in the Arabian Sea / 5th Fleet area during Epic Fury.)"
+          "source": "LLM-verified (CENTCOM commander Adm. Brad Cooper said on May 4, 2026 that U.S. forces had 'two carrier strike groups' in theater; https://www.centcom.mil/MEDIA/Transcripts/Article/4477143/adm-brad-cooper-centcom-commander-conducts-a-media-conference-call/)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 15000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (CENTCOM statement reported by Iran International on March 4, 2026: 'More than 50,000 troops' participating in Operation Epic Fury.)"
+          "source": "LLM-verified (CENTCOM said on May 23, 2026 that 'more than 15,000 Soldiers, Sailors, Marines and Airmen' were supporting the blockade mission; this is confirmed for blockade support, not total war-theater personnel. Source: https://www.centcom.mil/MEDIA/PRESS-RELEASES/Press-Release-View/Article/4499878/us-blockade-of-iran-reaches-milestone-of-redirecting-100-ships/)"
         },
         {
           "id": "intel_cyber",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (AP report on May 27, 2026 citing CSIS says the U.S. fired '1,000-plus Tomahawk missiles'; using minimum confirmed floor 1,000)"
+          "source": "LLM-verified (CSIS report published Apr. 21, 2026 says Wall Street Journal reported updated Tomahawk expenditure of 'more than 1,000'; recorded as 1000 minimum confirmed baseline. Source: https://www.csis.org/analysis/last-rounds-status-key-munitions-iran-war-ceasefire)"
         },
         {
           "id": "jdam",
@@ -205,7 +205,7 @@
           "id": "jassm",
           "category": "AGM-158 JASSM/JASSM-ER (Standoff Missiles)",
           "unitCost": 1500000,
-          "quantity": 1000,
+          "quantity": 1100,
           "keywords": [
             "JASSM",
             "AGM-158",
@@ -213,8 +213,8 @@
             "cruise missile",
             "air-launched missile"
           ],
-          "lastUpdated": "2026-04-25",
-          "source": "LLM-verified (SOF News, April 24, 2026, citing CSIS April 21, 2026 munitions report: U.S. used 1,000 JASSMs.)"
+          "lastUpdated": "2026-05-30",
+          "source": "LLM-verified (CSIS report published Apr. 21, 2026 says around 1,100 JASSM-ERs had been used, citing New York Times reporting; https://www.csis.org/analysis/last-rounds-status-key-munitions-iran-war-ceasefire)"
         },
         {
           "id": "sdb",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 91 days",
-        "cost": "$2,275,000,000"
+        "detail": "15,000 \u00d7 $500/day \u00d7 91 days",
+        "cost": "$682,500,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -378,8 +378,8 @@
       },
       {
         "category": "AGM-158 JASSM/JASSM-ER (Standoff Missiles)",
-        "detail": "1,000 \u00d7 $1,500,000 each",
-        "cost": "$1,500,000,000"
+        "detail": "1,100 \u00d7 $1,500,000 each",
+        "cost": "$1,650,000,000"
       },
       {
         "category": "Small Diameter Bombs (SDB/SDB II)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Kuwait reported fresh interceptions of Iranian missiles and drones this week, underscoring ongoing regional air-defense risk despite truce talks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The ceasefire remains fragile, with recent U.S. self-defense strikes in southern Iran and continued maritime confrontation around Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran reasserted control over the Strait of Hormuz while U.S. officials warned they could restart operations if negotiations fail.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 30, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP on May 25 reported new U.S. self-defense strikes in southern Iran on missile launch sites and minelaying boats",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Possible ceasefire-extension decision pending in Washington on May 29, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Lebanon front remains active, with Israeli ground advances and strikes continuing ahead of Pentagon-hosted security talks, raising spillover risk beyond Iran proper.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera/BBC headline reporting on May 29, 2026 indicates Washington and Tehran are close to a ceasefire-extension or 60-day deal, but no final agreement is confirmed yet.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1261,12 +1261,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of May 30, 2026, accessible confirmed reporting indicates the war remains in a tense post-ceasefire phase centered on the Strait of Hormuz rather than a clearly expanding new ground campaign. Al Jazeera reports Iran has reasserted control over Hormuz as U.S.-Iran deal talks remain unresolved, while Defense Secretary Pete Hegseth said the United States could restart combat if necessary. On the data side, the strongest currently accessible official operation metrics remain CENTCOM\u2019s Epic Fury fact sheets, which reported 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1. For casualties, the latest accessible named-source civilian figure found was HRANA\u2019s 1,443 civilians killed in Iran, while CENTCOM-confirmed U.S. deaths total 6 from the March attacks and KC-135 loss; other cumulative fields could not be updated today without relying on unconfirmed or stale figures.",
+  "summary": "As of Saturday, May 30, 2026, the ceasefire is still holding but remains unstable: AP and Al Jazeera report that U.S. and Iranian negotiators reached only a tentative framework to extend the ceasefire and pursue broader talks, while Iran has reasserted control around the Strait of Hormuz and U.S. Defense Secretary Pete Hegseth says Washington is prepared to resume operations if diplomacy fails. Recent confirmed U.S. actions include self-defense strikes on missile launch sites and drone infrastructure in southern Iran, while CENTCOM continues enforcing the maritime blockade with two carrier strike groups and more than 15,000 personnel supporting that mission.",
   "briefings": [
     {
       "date": "2026-05-30",
       "day": 91,
-      "summary": "As of May 30, 2026, accessible confirmed reporting indicates the war remains in a tense post-ceasefire phase centered on the Strait of Hormuz rather than a clearly expanding new ground campaign. Al Jazeera reports Iran has reasserted control over Hormuz as U.S.-Iran deal talks remain unresolved, while Defense Secretary Pete Hegseth said the United States could restart combat if necessary. On the data side, the strongest currently accessible official operation metrics remain CENTCOM\u2019s Epic Fury fact sheets, which reported 13,000+ targets struck by April 6 and 13,000+ combat flights by April 1. For casualties, the latest accessible named-source civilian figure found was HRANA\u2019s 1,443 civilians killed in Iran, while CENTCOM-confirmed U.S. deaths total 6 from the March attacks and KC-135 loss; other cumulative fields could not be updated today without relying on unconfirmed or stale figures."
+      "summary": "As of Saturday, May 30, 2026, the ceasefire is still holding but remains unstable: AP and Al Jazeera report that U.S. and Iranian negotiators reached only a tentative framework to extend the ceasefire and pursue broader talks, while Iran has reasserted control around the Strait of Hormuz and U.S. Defense Secretary Pete Hegseth says Washington is prepared to resume operations if diplomacy fails. Recent confirmed U.S. actions include self-defense strikes on missile launch sites and drone infrastructure in southern Iran, while CENTCOM continues enforcing the maritime blockade with two carrier strike groups and more than 15,000 personnel supporting that mission."
     },
     {
       "date": "2026-05-29",
