@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-05-30T12:15:56Z",
+  "lastUpdated": "2026-05-30T14:47:25Z",
   "dayCount": 91,
   "banner": {
-    "strikes": "~9,000",
-    "killed": "3,527+",
-    "cost": "$52.3B+"
+    "strikes": "~13,000",
+    "killed": "3,495+",
+    "cost": "$51.0B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,469",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "12,000+",
+    "iranWounded": "32,314+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1443",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$52.3 billion+",
-    "dailyBurnRate": "~$575M/day",
+    "totalCost": "$51.0 billion+",
+    "dailyBurnRate": "~$560M/day",
     "daysOfOps": 91,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-05-29",
-          "source": "LLM-verified (Reuters report on March 27, 2026 said the U.S. military had fired 'over 850 Tomahawk cruise missiles' in four weeks of war with Iran (turn5search0 / turn5search8 / turn5search11). Stored as 850 as minimum confirmed floor.)"
+          "lastUpdated": "2026-05-30",
+          "source": "LLM-verified (AP report on May 27, 2026 citing CSIS says the U.S. fired '1,000-plus Tomahawk missiles'; using minimum confirmed floor 1,000)"
         },
         {
           "id": "jdam",
@@ -286,7 +286,7 @@
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 1290,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-05-29",
-          "source": "LLM-verified (White House release dated April 8, 2026 says over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted, for 1,700+ combined intercepts: https://www.whitehouse.gov/releases/2026/04/peace-through-strength-operation-epic-fury-crushes-iranian-threat-as-ceasefire-takes-hold/)"
+          "lastUpdated": "2026-05-30",
+          "source": "LLM-verified (AP report on May 27, 2026 citing CSIS says as many as 290 THAAD and more than 1,000 Patriot interceptors were used; using conservative confirmed minimum sum 1,290 and excluding unspecified SM-3s)"
         },
         {
           "id": "prestrike_buildup",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "1,290 \u00d7 $4,000,000 each",
+        "cost": "$5,160,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and Reuters reported on May 30, 2026 that Trump was weighing next steps on a possible Iran deal while Tehran said no final agreement exists, leaving the conflict unresolved.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iran's Revolutionary Guard said it shot down at least one drone and deterred another drone and a fighter jet, signaling continued air-defense activity despite ongoing negotiations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 25-26, 2026 that U.S. forces carried out renewed 'self-defense' strikes in southern Iran, including missile launch sites and minelaying boats, indicating the ceasefire remains fragile.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 30, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Missile-defense stockpile depletion remains a strategic concern, especially Patriot and THAAD inventories.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran claims it shot down or engaged U.S. drones/aircraft near its airspace on May 26.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "U.S. conducted self-defense strikes in southern Iran on May 25-26 despite ceasefire talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Potential 60-day U.S.-Iran ceasefire extension remains unfinalized as of May 29, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-05-30T12:49:20Z",
+      "text": "<strong>The Iran war is dividing Muslims in the Philippines</strong> -- Divisive foreign political narratives are being wrongly cast as religious discourse within our Muslim communities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/5/30/how-the-iran-war-is-dividing-muslims-in-the-philippines?traffic_source=rss"
+    },
+    {
       "time": "2026-05-30T10:57:48Z",
       "text": "<strong>Israel launches more than 10 strikes across southern Lebanon</strong> -- Videos show the aftermath of renewed Israeli strikes on southern Lebanon that killed at least three people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/30/israel-launches-more-than-10-strikes-across-southern-lebanon?traffic_source=rss"
@@ -778,16 +783,6 @@
       "link": "https://www.aljazeera.com/news/2026/5/30/rwanda-russia-nuclear-deal-underscores-africas-shifting-power-balance?traffic_source=rss"
     },
     {
-      "time": "2026-05-30T00:00:00Z",
-      "text": "<strong>Iran war live: Supreme leader\u2019s adviser blames US blockade for stalled deal</strong> -- Israel issues three rounds of forced displacement orders for southern Lebanon towns as forces push deeper into country. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/30/iran-war-live-trump-due-to-make-final-determination-on-deal-with-tehran?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-29T23:41:25Z",
-      "text": "<strong>Trump pledges to withdraw from Kennedy Center after court strikes his name</strong> -- Judge Christopher Cooper ruled against Trump&amp;#039;s bid to add his name to the building and close the theatre for two years. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/5/29/trump-pledges-to-withdraw-from-kennedy-center-after-court-strikes-his-name?traffic_source=rss"
-    },
-    {
       "time": "2026-05-30T11:39:32Z",
       "text": "<strong>No deal announced after Trump meeting to make &#x27;final determination&#x27; on Iran</strong> -- The US president met his advisers, after officials confirmed the US and Iran had agreed a framework of a deal. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c0r2d40r91qo?at_medium=RSS&at_campaign=rss"
@@ -801,6 +796,21 @@
       "time": "2026-05-29T18:41:36Z",
       "text": "<strong>Israel put on UN sexual violence in warzones blacklist for first time</strong> -- Israel says it rejects allegations in a new report by the office of the UN secretary general. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cx21le869n1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-29T02:24:52Z",
+      "text": "<strong>Netanyahu says he has directed IDF to increase control of Gaza to 70%</strong> -- The expansion in control by Israel would contradict the terms of the ceasefire  Israel and Hamas agreed to in October 2025. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/ceqpelq5reqo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-05-30T00:00:00Z",
+      "text": "<strong>Iran war live: Supreme leader\u2019s adviser blames US blockade for stalled deal</strong> -- Israel issues three rounds of forced displacement orders for southern Lebanon towns as forces push deeper into country. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/5/30/iran-war-live-trump-due-to-make-final-determination-on-deal-with-tehran?traffic_source=rss"
+    },
+    {
+      "time": "2026-05-29T23:41:25Z",
+      "text": "<strong>Trump pledges to withdraw from Kennedy Center after court strikes his name</strong> -- Judge Christopher Cooper ruled against Trump&amp;#039;s bid to add his name to the building and close the theatre for two years. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/5/29/trump-pledges-to-withdraw-from-kennedy-center-after-court-strikes-his-name?traffic_source=rss"
     },
     {
       "time": "2026-05-29T21:10:54Z",
@@ -841,16 +851,6 @@
       "time": "2026-05-29T17:10:10Z",
       "text": "<strong>Trump says \u2018final determination\u2019 to be made on possible Iran deal</strong> -- Deep mistrust remains between Washington and Tehran as Iran says &amp;#039;no final agreement&amp;#039; reached with US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/29/trump-says-final-determination-to-be-made-on-possible-iran-deal?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-29T16:31:23Z",
-      "text": "<strong>Vance says US, Iran have made \u201ca lot of progress\u201d towards deal</strong> -- US Vice President JD Vance says Washington and Tehran have made \u201ca lot of progress\u201d towards ceasefire <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/vance-says-us-iran-have-made-a-lot-of-progress-towards-deal?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-29T15:50:40Z",
-      "text": "<strong>Israel strikes building in Gaza\u2019s Shati refugee camp</strong> -- Israel strikes building in Gaza\u2019s Shati refugee camp. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/29/israel-strikes-building-in-gazas-shati-refugee-camp?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "The Iran war is dividing Muslims in the Philippines",
+      "description": "Divisive foreign political narratives are being wrongly cast as religious discourse within our Muslim communities.",
+      "link": "https://www.aljazeera.com/opinions/2026/5/30/how-the-iran-war-is-dividing-muslims-in-the-philippines?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-05-30T12:49:20Z",
+      "tier": 2
+    },
+    {
       "title": "No deal announced after Trump meeting to make 'final determination' on Iran",
       "description": "The US president met his advisers, after officials confirmed the US and Iran had agreed a framework of a deal.",
       "link": "https://www.bbc.com/news/articles/c0r2d40r91qo?at_medium=RSS&at_campaign=rss",
@@ -1261,22 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Supreme leader\u2019s adviser blames US blockade for stalled deal",
-      "description": "Israel issues three rounds of forced displacement orders for southern Lebanon towns as forces push deeper into country.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/5/30/iran-war-live-trump-due-to-make-final-determination-on-deal-with-tehran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-30T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump pledges to withdraw from Kennedy Center after court strikes his name",
-      "description": "Judge Christopher Cooper ruled against Trump&#039;s bid to add his name to the building and close the theatre for two years.",
-      "link": "https://www.aljazeera.com/news/2026/5/29/trump-pledges-to-withdraw-from-kennedy-center-after-court-strikes-his-name?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-29T23:41:25Z",
-      "tier": 2
-    },
-    {
       "title": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides",
       "description": "Kenneth Law admitted charges relating to Canadian victims - but families say he should also be charged in the UK over 79 deaths in Britain.",
       "link": "https://www.bbc.com/news/articles/c70vg7glglyo?at_medium=RSS&at_campaign=rss",
@@ -1309,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of May 30, 2026 indicates the war remains in a fragile post-ceasefire phase rather than full major combat: AP and Al Jazeera reported fresh U.S. 'self-defense' strikes in southern Iran this week, while BBC said no final Iran deal was announced after President Trump met advisers on May 30. In the wider theater, Al Jazeera and AP reported intensified Israeli strikes in southern Lebanon and continued Hezbollah rocket and drone fire into northern Israel. For cumulative war metrics, the most recent clearly sourced figures found were more than 12,000 wounded in Iran from the Iranian health minister via Al Jazeera, 28 killed in Gulf states from Al Jazeera's May 5 live tracker, more than 50,000 U.S. troops and two carrier groups participating from a March 4 CENTCOM statement, and 9,000-plus targets struck and 9,000-plus combat flights from the Pentagon's March 23 fact sheet; I did not find a current May 30 named-source confirmation for several other requested totals, so those remain null.",
+  "summary": "As of Saturday, May 30, 2026, confirmed reporting indicates the war remains in a tense partial-ceasefire phase: AP reported this week that U.S. forces conducted fresh 'self-defense' strikes in southern Iran against missile launch sites and minelaying boats, while Al Jazeera and Reuters reported today that Washington is still weighing next steps on a possible deal and Tehran says no final agreement exists. For cumulative figures, the strongest current sourced totals found were WHO's May 14 situation report listing 3,469 deaths and 32,314 injuries in Iran and 26 deaths in Israel, while CENTCOM's April 6 fact sheet said 13,000+ targets had been struck, and AP on May 27 cited a CSIS estimate that the U.S. had fired 1,000-plus Tomahawk missiles and at least 1,290 Patriot/THAAD interceptors.",
   "briefings": [
     {
       "date": "2026-05-30",
       "day": 91,
-      "summary": "Confirmed reporting as of May 30, 2026 indicates the war remains in a fragile post-ceasefire phase rather than full major combat: AP and Al Jazeera reported fresh U.S. 'self-defense' strikes in southern Iran this week, while BBC said no final Iran deal was announced after President Trump met advisers on May 30. In the wider theater, Al Jazeera and AP reported intensified Israeli strikes in southern Lebanon and continued Hezbollah rocket and drone fire into northern Israel. For cumulative war metrics, the most recent clearly sourced figures found were more than 12,000 wounded in Iran from the Iranian health minister via Al Jazeera, 28 killed in Gulf states from Al Jazeera's May 5 live tracker, more than 50,000 U.S. troops and two carrier groups participating from a March 4 CENTCOM statement, and 9,000-plus targets struck and 9,000-plus combat flights from the Pentagon's March 23 fact sheet; I did not find a current May 30 named-source confirmation for several other requested totals, so those remain null."
+      "summary": "As of Saturday, May 30, 2026, confirmed reporting indicates the war remains in a tense partial-ceasefire phase: AP reported this week that U.S. forces conducted fresh 'self-defense' strikes in southern Iran against missile launch sites and minelaying boats, while Al Jazeera and Reuters reported today that Washington is still weighing next steps on a possible deal and Tehran says no final agreement exists. For cumulative figures, the strongest current sourced totals found were WHO's May 14 situation report listing 3,469 deaths and 32,314 injuries in Iran and 26 deaths in Israel, while CENTCOM's April 6 fact sheet said 13,000+ targets had been struck, and AP on May 27 cited a CSIS estimate that the U.S. had fired 1,000-plus Tomahawk missiles and at least 1,290 Patriot/THAAD interceptors."
     },
     {
       "date": "2026-05-29",
