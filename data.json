@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-31T22:14:23Z",
+  "lastUpdated": "2026-05-31T23:32:34Z",
   "dayCount": 92,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,519+",
-    "cost": "$51.7B+"
+    "strikes": "~13,000",
+    "killed": "3,535+",
+    "cost": "$51.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "25",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$51.7 billion+",
-    "dailyBurnRate": "~$562M/day",
+    "totalCost": "$51.5 billion+",
+    "dailyBurnRate": "~$560M/day",
     "daysOfOps": 92,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-05-31",
-          "source": "LLM-verified (CENTCOM/DoD fact sheets list nuclear-powered aircraft carriers employed; concurrent reporting around operation repeatedly described two carriers in theater, including CENTCOM-linked reporting on March 4, 2026.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 11, 2026: two carrier strike groups supported Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-05-31",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 reports 11,000+ combat flights; latest official cumulative sorties/flight figure found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "May 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported on May 31, 2026 that Israel expanded ground operations in Lebanon, including claiming seizure of a strategic castle in southern Lebanon.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 29, 2026 that Kuwait intercepted missiles fired from Iran after a new flare-up threatened the ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "May 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on May 26, 2026 that Iran began restoring internet access while condemning recent US strikes as a ceasefire violation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "May 31, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera reported this week that Iran has reasserted control measures in and around the Strait of Hormuz, while Qatar described temporary shipping charges as negotiable, indicating persistent maritime-security and energy-market risk.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on May 31, 2026 that Hezbollah rocket fire triggered panic on a beach in Nahariya, Israel, underscoring continued northern-front escalation risk despite focus on U.S.-Iran diplomacy.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on May 31, 2026 that U.S.-Iran deal talks remain unresolved, with President Trump meeting advisers for a 'final determination' and Defense Secretary Pete Hegseth saying the U.S. is capable of restarting the war if needed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Kuwait reported fresh interceptions of Iranian missiles and drones this week, underscoring ongoing regional air-defense risk despite truce talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -763,6 +763,11 @@
       "link": "https://www.aljazeera.com/news/2026/5/31/iran-%e2%81%a0says-some-gas-production-restored-at-south-pars-facility?traffic_source=rss"
     },
     {
+      "time": "2026-05-31T22:39:12Z",
+      "text": "<strong>Israel seizes castle in Lebanon as it expands ground offensive</strong> -- Prime Minister Benjamin Netanyahu calls the capture of the strategic fortress a &quot;decisive shift&quot; in Israel&#x27;s campaign against Hezbollah, as European governments criticise the escalation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cdep04kzz5wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-05-31T15:09:43Z",
       "text": "<strong>Iran reinstates some internet access but restrictions remain for most</strong> -- Not all data centres are back online while internet protocols remain blocked, restricted or &amp;#039;whitelisted&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/5/31/iran-reinstates-some-internet-access-but-restrictions-remain-for-most?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-05-30T18:42:26Z",
       "text": "<strong>Qatar says temporary charges \u2018negotiable\u2019</strong> -- Qatar rejects a set Strait of Hormuz toll, says temporary charges &amp;#039;negotiable&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/30/qatar-says-temporary-charges-negotiable?traffic_source=rss"
-    },
-    {
-      "time": "2026-05-30T18:06:29Z",
-      "text": "<strong>22 killed as truck carrying refugees overturns in Afghanistan</strong> -- 22 people have been killed and 36 others injured when a truck carrying recently returned Afghan refugees overturned <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/30/22-killed-as-truck-carrying-refugees-overturns-in-afghanistan?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1214,10 +1214,10 @@
   "newsFeed": [
     {
       "title": "Israel seizes castle in Lebanon as it expands ground offensive",
-      "description": "Prime Minister Benjamin Netanyahu describes the capture of the strategic fortress as a \"decisive shift\" in its military campaign against Hezbollah.",
+      "description": "Prime Minister Benjamin Netanyahu calls the capture of the strategic fortress a \"decisive shift\" in Israel's campaign against Hezbollah, as European governments criticise the escalation.",
       "link": "https://www.bbc.com/news/articles/cdep04kzz5wo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-05-31T20:26:11Z",
+      "time": "2026-05-31T22:39:12Z",
       "tier": 2
     },
     {
@@ -1235,22 +1235,14 @@
       "source": "Al Jazeera",
       "time": "2026-05-31T16:38:31Z",
       "tier": 2
-    },
-    {
-      "title": "Iran reinstates some internet access but restrictions remain for most",
-      "description": "Not all data centres are back online while internet protocols remain blocked, restricted or &#039;whitelisted&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/5/31/iran-reinstates-some-internet-access-but-restrictions-remain-for-most?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-05-31T15:09:43Z",
-      "tier": 2
     }
   ],
-  "summary": "Latest confirmed accessible totals still align closely with early-May tracker figures rather than showing a new officially sourced casualty revision: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 injured, Israel\u2019s reported toll remains 26 killed, and the US military\u2019s confirmed combat-related dead remain 13. Official CENTCOM/DoD fact sheets continue to provide the clearest strike metrics, with 12,300+ targets struck and 13,000+ combat flights as of April 1, 2026, while newer late-May reporting focuses on ceasefire violations, renewed limited US strikes near Bandar Abbas, partial restoration of Iranian internet and South Pars gas production, and Israel\u2019s widening Lebanon offensive rather than publishing updated official cumulative weapons-use counts.",
+  "summary": "Confirmed reporting still supports 3,468 killed and more than 26,500 wounded in Iran, 26 Israelis killed, 28 killed in Gulf states, and 13 US combat-related deaths. Official US materials located do not provide fresh confirmed cumulative counts for many weapons-expended fields, but the latest official broad strike figure found is over 13,000 targets hit in Iran, while the latest official sortie-style figure found is 11,000+ combat flights from a March 28 CENTCOM fact sheet. Reporting over the last week indicates the ceasefire remains fragile, with new US-Iran exchanges around the Gulf and continued Israeli escalation in Lebanon.",
   "briefings": [
     {
       "date": "2026-05-31",
       "day": 92,
-      "summary": "Latest confirmed accessible totals still align closely with early-May tracker figures rather than showing a new officially sourced casualty revision: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 injured, Israel\u2019s reported toll remains 26 killed, and the US military\u2019s confirmed combat-related dead remain 13. Official CENTCOM/DoD fact sheets continue to provide the clearest strike metrics, with 12,300+ targets struck and 13,000+ combat flights as of April 1, 2026, while newer late-May reporting focuses on ceasefire violations, renewed limited US strikes near Bandar Abbas, partial restoration of Iranian internet and South Pars gas production, and Israel\u2019s widening Lebanon offensive rather than publishing updated official cumulative weapons-use counts."
+      "summary": "Confirmed reporting still supports 3,468 killed and more than 26,500 wounded in Iran, 26 Israelis killed, 28 killed in Gulf states, and 13 US combat-related deaths. Official US materials located do not provide fresh confirmed cumulative counts for many weapons-expended fields, but the latest official broad strike figure found is over 13,000 targets hit in Iran, while the latest official sortie-style figure found is 11,000+ combat flights from a March 28 CENTCOM fact sheet. Reporting over the last week indicates the ceasefire remains fragile, with new US-Iran exchanges around the Gulf and continued Israeli escalation in Lebanon."
     },
     {
       "date": "2026-05-30",
