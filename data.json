@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-03T07:13:00Z",
+  "lastUpdated": "2026-06-03T12:12:56Z",
   "dayCount": 95,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,529+",
-    "cost": "$53.0B+"
+    "strikes": "~7,000",
+    "killed": "3,503+",
+    "cost": "$52.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -15,9 +15,9 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "17,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1443",
+    "civilianDeaths": "1300",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$53.0 billion+",
-    "dailyBurnRate": "~$558M/day",
+    "totalCost": "$52.3 billion+",
+    "dailyBurnRate": "~$551M/day",
     "daysOfOps": 95,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-06-02",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury.)"
+          "lastUpdated": "2026-06-03",
+          "source": "LLM-verified (Admiral Brad Cooper statement reported March 4, 2026: more than 50,000 troops, 200 fighters, and two aircraft carriers participating)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-06-02",
-          "source": "LLM-verified (Admiral Brad Cooper statement reported by Iran International/CENTCOM on March 4, 2026: 'More than 50,000 troops' participating; no newer official current deployment total found)"
+          "lastUpdated": "2026-06-03",
+          "source": "LLM-verified (Admiral Brad Cooper statement reported March 4, 2026: more than 50,000 US troops participating in Operation Epic Fury)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-03",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'. Using confirmed floor value only. Source: DoD/CENTCOM fact sheet.)"
+          "source": "LLM-verified (CENTCOM/Pentagon fact sheet dated March 16, 2026 lists 6,500+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC reporting referenced continued Israel-Hezbollah fighting in southern Lebanon despite a partial truce",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP reported renewed US strikes on Iran's Qeshm Island and continued missile/drone exchanges involving Kuwait and Bahrain",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on June 3, 2026 that Iranian drones heavily damaged Kuwait International Airport, killing one person and wounding dozens",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 3, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera headline says Iran reinstated some internet access but restrictions and whitelisting remain",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline says Iran restored some gas production at South Pars after Israeli attacks",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 25, 2026 that Kuwait intercepted missiles fired from Iran during the latest ceasefire flare-up",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "May 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on May 25, 2026 that U.S. forces conducted new 'self-defense' strikes in southern Iran during the ceasefire, targeting missile launch sites and minelaying boats",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-06-03T11:42:59Z",
+      "text": "<strong>Iran, Kuwait, Bahrain hit: Is the war in the Gulf escalating again?</strong> -- Secretary of State Rubio tells US lawmakers the war on Iran is over, amid recent attacks on Iran and Gulf countries. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/3/iran-kuwait-bahrain-hit-is-the-war-in-the-gulf-escalating-again?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-03T09:22:45Z",
+      "text": "<strong>Hezbollah video shows attack on Israeli troops at Lebanon\u2019s Beaufort Castle</strong> -- Hezbollah has released drone video showing attacks targeting Israeli forces occupying Beaufort Castle <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/hezbollah-video-shows-attack-on-israeli-troops-at-lebanons-beaufort-castle?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-03T08:56:28Z",
+      "text": "<strong>US \u2018disables\u2019 ship allegedly bound for Iranian port</strong> -- US Central Command released video of it targeting a tanker that it says was en route to Iran\u2019s Kharg Island in the Gulf. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/us-disables-ship-allegedly-bound-for-iranian-port?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-03T08:39:47Z",
+      "text": "<strong>Iranian drone attack kills one in Kuwait after US strikes Qeshm Island</strong> -- Gulf country&amp;#039;s airport is hit as clashes go on with diplomacy between Washington and Tehran showing little progress. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/3/iranian-drone-hits-kuwaits-main-airport-after-us-strikes-qeshm-island?traffic_source=rss"
+    },
+    {
       "time": "2026-06-03T05:26:04Z",
       "text": "<strong>What\u2019s happening on day 96 of Iran war as US, Iran engage in new attacks</strong> -- Rubio says the US will lift sanctions on Iran only if it gives up enriched uranium, rejecting a Hormuz-linked deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/3/whats-happening-on-day-96-of-iran-war-as-us-iran-engage-in-new-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-03T11:17:08Z",
+      "text": "<strong>US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones</strong> -- Kuwait says one person is dead after drones hit civilian buildings including its international airport. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-02T21:51:20Z",
+      "text": "<strong>Israel strikes southern Lebanon but partial truce with Hezbollah appears to hold</strong> -- Israel continues its campaign in the south, though has not struck Beirut after a deal announced by the US. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c936zvne0l6o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-03T12:08:09Z",
+      "text": "<strong>Eight killed after drone hits bus in Russia-controlled part of Ukraine</strong> -- The bus was travelling between Moscow and Simferopol, in Russian-controlled Crimea, an official says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cp3peyykxd5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-03T11:54:25Z",
+      "text": "<strong>Foreign nationals among at least 21 killed in Delhi fire</strong> -- Many victims were South Asians who had travelled to India for treatment or to accompany relatives. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/czd29327qzvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-02T16:04:18Z",
+      "text": "<strong>British couple lose Iran jail sentence appeal, family says</strong> -- Lindsay and Craig Foreman were arrested in January 2025 during a global motorbike journey. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cjrpwxe82ypo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-03T05:06:31Z",
@@ -788,11 +833,6 @@
       "link": "https://www.aljazeera.com/news/2026/6/2/trump-berated-netanyahu-scepticism-abounds-about-us-israel-feud-rumour?traffic_source=rss"
     },
     {
-      "time": "2026-06-02T21:51:20Z",
-      "text": "<strong>Israel strikes southern Lebanon but partial truce with Hezbollah appears to hold</strong> -- Israel continues its campaign in the south, though has not struck Beirut after a deal announced by the US. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c936zvne0l6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-06-03T06:54:14Z",
       "text": "<strong>US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones</strong> -- Kuwait says its international airport has been badly damaged by Iranian drones, and traffic is suspended. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss"
@@ -811,46 +851,6 @@
       "time": "2026-06-02T19:05:13Z",
       "text": "<strong>US says Iran\u2019s new supreme leader alive and \u2018increasingly engaging\u2019</strong> -- US Secretary of State Marco Rubio says Iran\u2019s Supreme Leader Mojtaba Khamenei is increasingly engaging in negotiations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/2/us-says-irans-new-supreme-leader-alive-and-increasingly-engaging?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-03T01:18:19Z",
-      "text": "<strong>US launches &#x27;self-defense&#x27; strikes on Iranian island and targets commercial oil tanker</strong> -- The US military said strikes on Qeshm Island, in the Strait of Hormuz, were &quot;in response to attempted attacks by Iran across the Middle East&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-02T16:04:18Z",
-      "text": "<strong>British couple lose Iran jail sentence appeal, family says</strong> -- Lindsay and Craig Foreman were arrested in January 2025 during a global motorbike journey. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cjrpwxe82ypo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-02T18:58:10Z",
-      "text": "<strong>Two arrested after four migrant farm workers killed in Italy minivan fire</strong> -- CCTV images showed two people blocking the van&#x27;s doors from the outside and throwing liquid inside to start a fire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cvgzr2zxedno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-02T17:53:14Z",
-      "text": "<strong>Iran\u2019s supreme leader appears more active as talks continue: US\u2019s Rubio</strong> -- Tehran has agreed to discuss previously off-limits aspects of its nuclear file, US State Secretary tells lawmakers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/2/irans-supreme-leader-appears-more-active-as-talks-continue-uss-rubio?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-02T17:07:15Z",
-      "text": "<strong>Scene of damaged hospital after Israeli strike in southern Lebanon</strong> -- Al Jazeera\u2019s Obaida Hitto is at the scene of Jabal Amel Hospital, which was \u2018significantly damaged\u2019 in Israeli attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/2/scene-of-damaged-hospital-after-israeli-strike-in-southern-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-02T21:49:00Z",
-      "text": "<strong>US says it fired missile at Iran-bound oil tanker</strong> -- The US military says the vessel&#x27;s engine room was hit after the crew &quot;ignored repeated warnings&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-02T14:51:55Z",
-      "text": "<strong>South Africa police investigate killing of two Mozambican men</strong> -- The deaths come after a day of violent protests against illegal migration in the town of Mossel Bay. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/clyp4e87dq6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-02T16:11:05Z",
-      "text": "<strong>Israel strikes southern Lebanon but partial truce with Hezbollah appears to hold</strong> -- Israel continues its campaign in the south, though has not struck Beirut after a deal announced by the US. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c936zvne0l6o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,59 @@
   ],
   "newsFeed": [
     {
-      "title": "US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones",
-      "description": "Kuwait says its international airport has been badly damaged by Iranian drones, and traffic is suspended.",
-      "link": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss",
+      "title": "Eight killed after drone hits bus in Russia-controlled part of Ukraine",
+      "description": "The bus was travelling between Moscow and Simferopol, in Russian-controlled Crimea, an official says.",
+      "link": "https://www.bbc.com/news/articles/cp3peyykxd5o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-06-03T06:54:14Z",
+      "time": "2026-06-03T12:08:09Z",
       "tier": 2
     },
     {
-      "title": "Seven killed after drone hits bus in Russia-controlled part of Ukraine",
-      "description": "The bus was travelling between Moscow and Simferopol, in Russian-occupied Crimea, an official says.",
-      "link": "https://www.bbc.com/news/articles/cp3peyykxd5o?at_medium=RSS&at_campaign=rss",
+      "title": "Foreign nationals among at least 21 killed in Delhi fire",
+      "description": "Many victims were South Asians who had travelled to India for treatment or to accompany relatives.",
+      "link": "https://www.bbc.com/news/articles/czd29327qzvo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-06-03T06:30:51Z",
+      "time": "2026-06-03T11:54:25Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran, Kuwait, Bahrain hit: Is the war in the Gulf escalating again?",
+      "description": "Secretary of State Rubio tells US lawmakers the war on Iran is over, amid recent attacks on Iran and Gulf countries.",
+      "link": "https://www.aljazeera.com/news/2026/6/3/iran-kuwait-bahrain-hit-is-the-war-in-the-gulf-escalating-again?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-03T11:42:59Z",
+      "tier": 2
+    },
+    {
+      "title": "US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones",
+      "description": "Kuwait says one person is dead after drones hit civilian buildings including its international airport.",
+      "link": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-03T11:17:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Hezbollah video shows attack on Israeli troops at Lebanon\u2019s Beaufort Castle",
+      "description": "Hezbollah has released drone video showing attacks targeting Israeli forces occupying Beaufort Castle",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/hezbollah-video-shows-attack-on-israeli-troops-at-lebanons-beaufort-castle?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-03T09:22:45Z",
+      "tier": 2
+    },
+    {
+      "title": "US \u2018disables\u2019 ship allegedly bound for Iranian port",
+      "description": "US Central Command released video of it targeting a tanker that it says was en route to Iran\u2019s Kharg Island in the Gulf.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/us-disables-ship-allegedly-bound-for-iranian-port?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-03T08:56:28Z",
+      "tier": 2
+    },
+    {
+      "title": "Iranian drone attack kills one in Kuwait after US strikes Qeshm Island",
+      "description": "Gulf country&#039;s airport is hit as clashes go on with diplomacy between Washington and Tehran showing little progress.",
+      "link": "https://www.aljazeera.com/news/2026/6/3/iranian-drone-hits-kuwaits-main-airport-after-us-strikes-qeshm-island?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-03T08:39:47Z",
       "tier": 2
     },
     {
@@ -1237,59 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Kyiv residents seek shelter during renewed Russian attacks",
-      "description": "Residents in Kyiv took shelter as Russian attacks continued into the daytime hours after overnight strikes.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/kyiv-residents-seek-shelter-during-renewed-russian-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-03T05:06:31Z",
-      "tier": 2
-    },
-    {
-      "title": "Accident on Kuwait motorway as Iranian missiles fly overhead",
-      "description": "Video shows a car accident occurring on a road in Kuwait City as missiles flew overhead.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/accident-on-kuwait-motorway-as-iranian-missiles-fly-overhead?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-03T04:33:22Z",
-      "tier": 2
-    },
-    {
-      "title": "US says it attacked Iran\u2019s Qeshm Island; Tehran targets Kuwait, Bahrain",
-      "description": "The US military says it carried out \u2018self-defence\u2019 strikes on Iran\u2019s Qeshm Island.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/3/us-says-it-attacked-irans-qeshm-island-tehran-targets-kuwait-bahrain?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-03T01:26:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Strikes shut down Kuwait airport with several wounded",
-      "description": "The US military earlier said all Iranian drones and missiles failed to strike their intended targets.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/3/iran-war-live-us-strikes-irans-qeshm-says-tehran-attacks-kuwait-bahrain?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-03T00:00:00Z",
-      "tier": 2
-    },
-    {
       "title": "Sailors stressed and exhausted after months trapped by Strait of Hormuz blockade",
       "description": "The uncertainty has weighed heavily on the 20,000 seafarers trapped in the Iran war zone.",
       "link": "https://www.bbc.com/news/articles/cy02rz27l32o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-02T23:40:27Z",
-      "tier": 2
-    },
-    {
-      "title": "Rania al\u2011Abbasi\u2019s children: The truth revealed",
-      "description": "Syrian commission confirms the deaths of Rania al-Abbasi\u2019s six children, missing under Bashar al-Assad\u2019s rule.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/2/rania-al%e2%80%91abbasis-children-the-truth-revealed?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-02T23:35:37Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump berated Netanyahu? Analysts question US-Israel feud rumours",
-      "description": "Analysts say &#039;strategic leaks&#039; aim to influence public perceptions amid diplomatic impasse in US-Israel war on Iran.",
-      "link": "https://www.aljazeera.com/news/2026/6/2/trump-berated-netanyahu-scepticism-abounds-about-us-israel-feud-rumour?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-02T21:59:47Z",
       "tier": 2
     },
     {
@@ -1323,30 +1315,14 @@
       "source": "BBC World",
       "time": "2026-06-02T14:51:55Z",
       "tier": 2
-    },
-    {
-      "title": "Missing lab worker found dead in New Mexico nearly a year after disappearing",
-      "description": "Melissa Casias' case was part of debunked speculations about recent deaths and disappearances in the US scientific community.",
-      "link": "https://www.bbc.com/news/articles/c0723mr8j3po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-02T02:07:28Z",
-      "tier": 2
-    },
-    {
-      "title": "Bowen: Trump needs this war to end but Iran is not backing down",
-      "description": "Under pressure from the polls and Gulf allies, the White House is pushing for a deal but Iran wants concessions, writes BBC's international editor.",
-      "link": "https://www.bbc.com/news/articles/cedp3lee059o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-01T21:50:52Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of June 3, 2026 shows the war\u2019s publicly cited cumulative toll still at 3,468 dead and more than 26,500 wounded in Iran according to Iran\u2019s Health Ministry via Al Jazeera\u2019s June 1 tracker, with 26 killed in Israel, 28 killed in Gulf states, and 7 U.S. service members killed in action per CENTCOM\u2019s March 8 statement. AP reported on June 2 that Iran fired missiles toward Kuwait and Bahrain and that the United States responded with strikes on an Iranian facility, underscoring that the ceasefire remains highly unstable. For military activity, the best confirmed official aggregate still found was CENTCOM\u2019s April 6 fact sheet stating 13,000+ targets struck, while a Reuters report from March 27 said the United States had fired over 850 Tomahawk missiles in the first four weeks of the war.",
+  "summary": "Confirmed reporting on June 3, 2026 shows the ceasefire remains fragile: AP reported Iranian drones struck Kuwait International Airport, killing one person and wounding dozens, while Al Jazeera and AP said the US carried out new strikes on Iran's Qeshm Island after attacks affecting Kuwait and Bahrain. The latest broadly cited cumulative casualty tracker available today from Al Jazeera still lists 3,468 dead in Iran and 28 killed in Gulf states. I found no newer confirmed Pentagon/CENTCOM update changing the US KIA total from 7, and no reliably sourced current cumulative Israeli death total in the materials found, so that field remains null.",
   "briefings": [
     {
       "date": "2026-06-03",
       "day": 95,
-      "summary": "Confirmed reporting as of June 3, 2026 shows the war\u2019s publicly cited cumulative toll still at 3,468 dead and more than 26,500 wounded in Iran according to Iran\u2019s Health Ministry via Al Jazeera\u2019s June 1 tracker, with 26 killed in Israel, 28 killed in Gulf states, and 7 U.S. service members killed in action per CENTCOM\u2019s March 8 statement. AP reported on June 2 that Iran fired missiles toward Kuwait and Bahrain and that the United States responded with strikes on an Iranian facility, underscoring that the ceasefire remains highly unstable. For military activity, the best confirmed official aggregate still found was CENTCOM\u2019s April 6 fact sheet stating 13,000+ targets struck, while a Reuters report from March 27 said the United States had fired over 850 Tomahawk missiles in the first four weeks of the war."
+      "summary": "Confirmed reporting on June 3, 2026 shows the ceasefire remains fragile: AP reported Iranian drones struck Kuwait International Airport, killing one person and wounding dozens, while Al Jazeera and AP said the US carried out new strikes on Iran's Qeshm Island after attacks affecting Kuwait and Bahrain. The latest broadly cited cumulative casualty tracker available today from Al Jazeera still lists 3,468 dead in Iran and 28 killed in Gulf states. I found no newer confirmed Pentagon/CENTCOM update changing the US KIA total from 7, and no reliably sourced current cumulative Israeli death total in the materials found, so that field remains null."
     },
     {
       "date": "2026-06-02",
