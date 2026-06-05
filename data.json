@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-05T08:52:28Z",
+  "lastUpdated": "2026-06-05T12:19:23Z",
   "dayCount": 97,
   "banner": {
-    "strikes": "~11,000",
+    "strikes": "~13,000",
     "killed": "3,535+",
-    "cost": "$53.7B+"
+    "cost": "$53.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1607",
+    "civilianDeaths": "1348",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$53.7 billion+",
-    "dailyBurnRate": "~$554M/day",
+    "totalCost": "$53.9 billion+",
+    "dailyBurnRate": "~$556M/day",
     "daysOfOps": 97,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-06-05",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury.)"
+          "source": "LLM-verified (Department of War Operation Epic Fury materials show USS Abraham Lincoln and USS Gerald R. Ford conducting operations in support of Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-06-04",
-          "source": "LLM-verified (No current official cumulative in-theater destroyer count confirmed in searched sources; database value not independently re-confirmed)"
+          "lastUpdated": "2026-06-05",
+          "source": "LLM-verified (Department of War Operation Epic Fury materials explicitly show at least four guided-missile destroyers supporting the operation: USS Milius, USS Pinckney, USS John Finn, and USS Bainbridge; no newer official total found)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-06-05",
-          "source": "LLM-verified (CENTCOM reporting cited by Iran International on March 4, 2026: more than 50,000 troops participating in Operation Epic Fury)"
+          "source": "LLM-verified (Al Jazeera live tracker updated June 1, 2026, citing Council on Foreign Relations background that as of mid-2025 there were 40,000 to 50,000 US soldiers in the Middle East; no newer official Operation Epic Fury-specific deployed total found, using upper bound only with caution)"
         },
         {
           "id": "intel_cyber",
@@ -184,8 +184,8 @@
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-06-03",
-          "source": "LLM-verified (Reuters report carried by Defense News on March 27, 2026: U.S. military had fired 'over 850' Tomahawk cruise missiles in four weeks.)"
+          "lastUpdated": "2026-06-05",
+          "source": "LLM-verified (Reuters report on March 27, 2026, summarized by Investing/Washington Post: over 850 Tomahawk cruise missiles fired in four weeks)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-05",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet: The First 29 Days, March 28, 2026: 11,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM/Department of War Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; latest official flight total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports the IAEA has been unable to inspect Iranian nuclear facilities affected by the war, increasing uncertainty around nuclear-site conditions",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports continued strain on the US-Iran ceasefire and renewed risk that Israel-Hezbollah fighting in Lebanon could undermine diplomacy",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "June 2-4 reporting from AP/Al Jazeera says Iran launched missiles and drones toward Kuwait and Bahrain, with most or all intercepted or failing to hit targets",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 4, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran warned that continued Israeli attacks in Lebanon could halt negotiations with the US and lead to direct confrontation, according to Al Jazeera live reporting on June 2, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Lebanon front remained active on June 2, 2026 despite a reported emerging truce arrangement; Al Jazeera said Lebanon\u2019s Health Ministry death toll since March reached 3,433 with 10,395 injured.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on May 7, 2026 reported Iranian attacks on three U.S. Navy destroyers transiting the Strait of Hormuz and ensuing U.S. self-defense strikes",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on May 27, 2026 reported CENTCOM shot down four Iranian one-way attack drones near the Strait of Hormuz and struck a ground control station in Bandar Abbas",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-06-05T11:21:14Z",
+      "text": "<strong>US-Iran war pushing millions into food crisis, warns UN</strong> -- WFP warns that the war is causing substantial increases in food prices in a number of countries. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/5/us-iran-war-pushing-millions-into-food-crisis-warns-un?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-05T11:01:37Z",
+      "text": "<strong>IAEA brokers Ukraine ceasefire to allow nuclear plant repairs</strong> -- Concerns over the safety of the Zaporizhzhia plant, Europe&amp;#039;s largest, have been rife throughout Russia&amp;#039;s war on Ukraine. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/5/iaea-brokers-ukraine-ceasefire-to-allow-nuclear-plant-repairs?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-05T10:19:17Z",
+      "text": "<strong>How the world failed a mother\u2019s children, killed in Israeli strikes on Gaza</strong> -- How the world failed a mother\u2019s children, killed in Israeli strikes on Gaza <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/5/how-the-world-failed-a-mothers-children-killed-in-israeli-strikes-on-gaza?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-05T09:44:10Z",
+      "text": "<strong>US visa rejections, war on Iran keep fans away from World Cup</strong> -- High visa application fees, equally high rejection rates, an unwelcoming America, and the war combine to deter fans. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/6/5/us-visa-rejections-war-on-iran-keep-fans-away-from-world-cup?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-05T09:25:11Z",
+      "text": "<strong>Iran beat Mali in final warm-up before heading to World Cup</strong> -- Iran beat Mali in their final competitive match before departing for their Mexico base for the 2026 World Cup. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/6/5/iran-beat-mali-in-final-warm-up-before-heading-to-world-cup?traffic_source=rss"
+    },
+    {
       "time": "2026-06-05T08:28:09Z",
       "text": "<strong>French-Iranian Persepolis author Marjane Satrapi dies of \u2018sadness\u2019</strong> -- Satrapi&amp;#039;s autobiographical novel was born from her experiences of Iran&amp;#039;s Islamic revolution and war with Iraq. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/5/french-iranian-persepolis-author-marjane-satrapi-dies-of-sadness?traffic_source=rss"
@@ -764,8 +789,18 @@
     },
     {
       "time": "2026-06-05T00:00:00Z",
-      "text": "<strong>Iran war live: Hezbollah rejects truce as Israel continues Lebanon strikes</strong> -- Israel&amp;#039;s supreme court annuls government ban on international Red Cross visiting Palestinian prisoners in Israeli jails. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Israel continues strikes, forced displacement in Lebanon</strong> -- Israel has ordered the displacement of at least nine Lebanese towns, killed at least six in south area today. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/6/5/iran-war-live-hezbollah-rejects-truce-as-israel-continues-lebanon-strikes?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-05T08:03:23Z",
+      "text": "<strong>Zelensky proposes face-to-face talks in open letter to Putin</strong> -- Ukraine&#x27;s president tells the Russian leader that only &quot;direct engagement&quot; between the two countries could end the war, with the US focused on Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cwy2ypyp4x4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-05T01:44:16Z",
+      "text": "<strong>Hezbollah rejects renewed ceasefire agreed by Israel and Lebanon</strong> -- The United States announced the ceasefire agreement on Wednesday night following a fresh round of talks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c052343r812o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-04T21:40:08Z",
@@ -781,16 +816,6 @@
       "time": "2026-06-04T18:59:43Z",
       "text": "<strong>Russia kills 12 in Ukraine as Kyiv mourns 707 children killed since 2022</strong> -- Russia&amp;#039;s latest attacks come as Ukraine commemorates the children killed by Russia over the course of the all-out war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/4/twelve-people-killed-scores-wounded-in-russian-attacks-on-ukraine?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-05T08:03:23Z",
-      "text": "<strong>Zelensky proposes face-to-face talks in open letter to Putin</strong> -- Ukraine&#x27;s president tells the Russian leader that only &quot;direct engagement&quot; between the two countries could end the war, with the US focused on Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwy2ypyp4x4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-05T01:44:16Z",
-      "text": "<strong>Hezbollah rejects renewed ceasefire agreed by Israel and Lebanon</strong> -- The United States announced the ceasefire agreement on Wednesday night following a fresh round of talks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c052343r812o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-04T14:46:36Z",
@@ -826,31 +851,6 @@
       "time": "2026-06-04T20:37:46Z",
       "text": "<strong>Hezbollah rejects renewed ceasefire agreed by Israel and Lebanon</strong> -- The United States announced the ceasefire agreement on Wednesday night following a fresh round of talks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c052343r812o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-04T14:13:24Z",
-      "text": "<strong>Iran footballers describe how war with US-Israel affects their World Cup</strong> -- Iran national players Saeid Ezatolahi and Mohammad Ghorbani talk about how war is overshadowing a World Cup dream. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/6/4/iran-footballers-describe-how-war-with-us-israel-affects-their-world-cup?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-04T21:34:14Z",
-      "text": "<strong>Zelensky proposes face-to-face talks in open letter to Putin</strong> -- Ukraine&#x27;s president tells the Russian leader that only &quot;direct engagement&quot; between the two countries could end the war, with the US focused on Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwy2ypyp4x4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-04T17:54:06Z",
-      "text": "<strong>Hezbollah rejects renewed ceasefire agreed by Israel and Lebanon</strong> -- The United States announced the ceasefire agreement on Wednesday night following a fresh round of talks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c052343r812o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-03T20:05:58Z",
-      "text": "<strong>One killed and dozens injured in Iranian drone strikes on Kuwait airport</strong> -- Iran says the attack on Kuwait was in retaliation for earlier US strikes on an Iranian oil tanker and island. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-03T11:54:25Z",
-      "text": "<strong>Foreign nationals among at least 21 killed in Delhi fire</strong> -- Many victims were South Asians who had travelled to India for treatment or to accompany relatives. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/czd29327qzvo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "US-Iran war pushing millions into food crisis, warns UN",
+      "description": "WFP warns that the war is causing substantial increases in food prices in a number of countries.",
+      "link": "https://www.aljazeera.com/news/2026/6/5/us-iran-war-pushing-millions-into-food-crisis-warns-un?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-05T11:21:14Z",
+      "tier": 2
+    },
+    {
+      "title": "IAEA brokers Ukraine ceasefire to allow nuclear plant repairs",
+      "description": "Concerns over the safety of the Zaporizhzhia plant, Europe&#039;s largest, have been rife throughout Russia&#039;s war on Ukraine.",
+      "link": "https://www.aljazeera.com/news/2026/6/5/iaea-brokers-ukraine-ceasefire-to-allow-nuclear-plant-repairs?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-05T11:01:37Z",
+      "tier": 2
+    },
+    {
+      "title": "How the world failed a mother\u2019s children, killed in Israeli strikes on Gaza",
+      "description": "How the world failed a mother\u2019s children, killed in Israeli strikes on Gaza",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/5/how-the-world-failed-a-mothers-children-killed-in-israeli-strikes-on-gaza?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-05T10:19:17Z",
+      "tier": 2
+    },
+    {
+      "title": "US visa rejections, war on Iran keep fans away from World Cup",
+      "description": "High visa application fees, equally high rejection rates, an unwelcoming America, and the war combine to deter fans.",
+      "link": "https://www.aljazeera.com/sports/2026/6/5/us-visa-rejections-war-on-iran-keep-fans-away-from-world-cup?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-05T09:44:10Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran beat Mali in final warm-up before heading to World Cup",
+      "description": "Iran beat Mali in their final competitive match before departing for their Mexico base for the 2026 World Cup.",
+      "link": "https://www.aljazeera.com/sports/2026/6/5/iran-beat-mali-in-final-warm-up-before-heading-to-world-cup?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-05T09:25:11Z",
+      "tier": 2
+    },
+    {
       "title": "French-Iranian Persepolis author Marjane Satrapi dies of \u2018sadness\u2019",
       "description": "Satrapi&#039;s autobiographical novel was born from her experiences of Iran&#039;s Islamic revolution and war with Iraq.",
       "link": "https://www.aljazeera.com/news/2026/6/5/french-iranian-persepolis-author-marjane-satrapi-dies-of-sadness?traffic_source=rss",
@@ -1245,35 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Hezbollah rejects truce as Israel continues Lebanon strikes",
-      "description": "Israel&#039;s supreme court annuls government ban on international Red Cross visiting Palestinian prisoners in Israeli jails.",
+      "title": "Iran war live: Israel continues strikes, forced displacement in Lebanon",
+      "description": "Israel has ordered the displacement of at least nine Lebanese towns, killed at least six in south area today.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/6/5/iran-war-live-hezbollah-rejects-truce-as-israel-continues-lebanon-strikes?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-06-05T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Lebanon latest: Hezbollah rejects US plan as Israel continues attacks",
-      "description": "Al Jazeera\u2019s Obaida Hitto has the latest from Lebanon where a new diplomatic push has done little to quell violence.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/4/lebanon-latest-hezbollah-rejects-us-plan-as-israel-continues-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-04T21:40:08Z",
-      "tier": 2
-    },
-    {
-      "title": "Hezbollah rejects US-brokered ceasefire deal between Israel and Lebanon",
-      "description": "Hezbollah has condemned a US-brokered ceasefire framework accepted by Israel and Lebanon",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/4/hezbollah-rejects-us-brokered-ceasefire-deal-between-israel-and-lebanon?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-04T21:07:18Z",
-      "tier": 2
-    },
-    {
-      "title": "Russia kills 12 in Ukraine as Kyiv mourns 707 children killed since 2022",
-      "description": "Russia&#039;s latest attacks come as Ukraine commemorates the children killed by Russia over the course of the all-out war.",
-      "link": "https://www.aljazeera.com/news/2026/6/4/twelve-people-killed-scores-wounded-in-russian-attacks-on-ukraine?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-04T18:59:43Z",
       "tier": 2
     },
     {
@@ -1317,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains limited and uneven. The clearest accessible cumulative casualty update is Al Jazeera\u2019s June 1, 2026 live tracker, which cites Iran\u2019s Ministry of Health for 3,468 killed and more than 26,500 injured in Iran, Israel\u2019s Ministry of Health for 26 Israelis killed, and U.S. military confirmation of 13 U.S. combat-related deaths. The same tracker lists 28 deaths across Gulf states. For military activity, the most recent accessible official U.S. fact sheet still found was CENTCOM\u2019s March 28 summary reporting 11,000-plus targets struck and 11,000-plus combat flights in the first 29 days, but it did not provide updated current counts for carriers, destroyers, drones, or specific munition types.",
+  "summary": "Confirmed reporting through June 4-5, 2026 shows the war remains in a fragile ceasefire phase rather than a full stop in hostilities: AP and Al Jazeera reported new Iranian missile and drone launches toward Kuwait and Bahrain, followed by US self-defense strikes on Iranian targets, while diplomacy continues with little sign of a durable agreement. The latest confirmed cumulative casualty figures I found remain Iran 3,468 killed and more than 26,500 injured, Israel 26 killed, US military 13 killed in action, and Gulf states 28 killed. On the military side, the latest official CENTCOM fact sheet still lists 13,000+ targets struck, while the best confirmed Tomahawk total remains over 850 from Reuters reporting in late March; I could not confirm newer official cumulative counts for JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, active drone units, or interceptor launches.",
   "briefings": [
     {
       "date": "2026-06-05",
       "day": 97,
-      "summary": "Confirmed reporting available today remains limited and uneven. The clearest accessible cumulative casualty update is Al Jazeera\u2019s June 1, 2026 live tracker, which cites Iran\u2019s Ministry of Health for 3,468 killed and more than 26,500 injured in Iran, Israel\u2019s Ministry of Health for 26 Israelis killed, and U.S. military confirmation of 13 U.S. combat-related deaths. The same tracker lists 28 deaths across Gulf states. For military activity, the most recent accessible official U.S. fact sheet still found was CENTCOM\u2019s March 28 summary reporting 11,000-plus targets struck and 11,000-plus combat flights in the first 29 days, but it did not provide updated current counts for carriers, destroyers, drones, or specific munition types."
+      "summary": "Confirmed reporting through June 4-5, 2026 shows the war remains in a fragile ceasefire phase rather than a full stop in hostilities: AP and Al Jazeera reported new Iranian missile and drone launches toward Kuwait and Bahrain, followed by US self-defense strikes on Iranian targets, while diplomacy continues with little sign of a durable agreement. The latest confirmed cumulative casualty figures I found remain Iran 3,468 killed and more than 26,500 injured, Israel 26 killed, US military 13 killed in action, and Gulf states 28 killed. On the military side, the latest official CENTCOM fact sheet still lists 13,000+ targets struck, while the best confirmed Tomahawk total remains over 850 from Reuters reporting in late March; I could not confirm newer official cumulative counts for JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, active drone units, or interceptor launches."
     },
     {
       "date": "2026-06-04",
