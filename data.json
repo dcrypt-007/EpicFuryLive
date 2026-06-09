@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-09T16:13:20Z",
+  "lastUpdated": "2026-06-09T18:22:28Z",
   "dayCount": 101,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "7,129+",
-    "cost": "$57.1B+"
+    "strikes": "~13,000",
+    "killed": "3,565+",
+    "cost": "$57.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$57.1 billion+",
-    "dailyBurnRate": "~$566M/day",
+    "totalCost": "$57.0 billion+",
+    "dailyBurnRate": "~$565M/day",
     "daysOfOps": 101,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-06-09",
-          "source": "LLM-verified (Admiral Brad Cooper/CENTCOM as reported March 4, 2026: 'More than 50,000 troops' participating in the operation.)"
+          "source": "LLM-verified (Reuters via TBS News, June 3, 2026: CENTCOM oversees 'roughly 50,000 US troops in the Middle East'.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-09",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 28, 2026 reports 11,000+ combat flights; no newer official cumulative sortie total found)"
+          "source": "LLM-verified (White House release, April 8, 2026: 'Over 10,200 total air sorties flown.' This is total air sorties, not explicitly fighter-only, so use with caution.)"
         },
         {
           "id": "interceptors",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-06-09",
-          "source": "LLM-verified (White House release dated April 8, 2026: 'Over 1,000 incoming attack drone threats intercepted' and 'Over 700 ballistic missile threats intercepted' (combined minimum confirmed total 1,700).)"
+          "source": "LLM-verified (White House release, April 8, 2026: 'Over 1,000 incoming attack drone threats intercepted' and 'Over 700 ballistic missile threats intercepted'.)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera/BBC reporting June 6-9, 2026 indicates renewed Israel-Hezbollah fighting in southern Lebanon despite the April ceasefire, increasing risk of broader regional escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP, June 6, 2026: Iran launched missiles and drones toward Bahrain and Kuwait; intercepts were reported, indicating renewed Gulf spillover risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP, June 9, 2026: Trump said Iran shot down a US Army Apache helicopter near the Strait of Hormuz; both aviators were rescued.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 9, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Ceasefire conditions remain fragile despite the April 8, 2026 truce; sporadic attacks and failed talks continue, according to Al Jazeera's day-100 reporting.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on June 7, 2026 that Iranian missiles were again launched toward Israel and debris/interceptions were reported over Jordan.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on June 8, 2026 that Israel and Iran traded strikes, raising the risk of a return to full-scale war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the U.S. conducted responsive strikes on Iranian radar/surveillance sites near the Strait of Hormuz after attempted attacks, signaling continued risk of Gulf escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,14 @@
   ],
   "developments": [
     {
-      "time": "2026-06-09T14:48:48Z",
-      "text": "<strong>Did Netanyahu really \u2018defy\u2019 Trump in bombing Iran?</strong> -- Experts say the latest confrontation has laid bare growing divisions between the two leaders. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/9/did-netanyahu-really-defy-trump-in-bombing-iran?traffic_source=rss"
+      "time": "2026-06-09T17:59:23Z",
+      "text": "<strong>\u2018Anything but normal\u2019: Uncertainty as Iranians try to get by amid US war</strong> -- War damage and blockade have worsened economic conditions for many struggling Iranians. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/9/anything-but-normal-uncertainty-as-iranians-try-to-get-by-amid-us-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-09T16:54:15Z",
+      "text": "<strong>Trump says Iran shot down US helicopter over Hormuz, vows to respond</strong> -- US president says although the pilots were rescued, Washington &amp;#039;must, of necessity, respond to this attack&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/9/trump-says-iran-shot-down-us-helicopters-over-hormuz-vows-to-respond?traffic_source=rss"
     },
     {
       "time": "2026-06-09T13:41:52Z",
@@ -766,6 +771,41 @@
       "time": "2026-06-09T12:05:19Z",
       "text": "<strong>Video captures Russian attack in Ukraine\u2019s Zaporizhzhia</strong> -- Surveillance camera video captured the moment a Russian drone strike caused a blast in Zaporizhzhia, Ukraine. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/9/video-captures-russian-attack-in-ukraines-zaporizhzhia?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-09T18:18:27Z",
+      "text": "<strong>Trump says Iran shot down US helicopter and vows to respond</strong> -- Two crew members of the Apache helicopter that crashed following the attack were rescued by an American sea drone. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cze9359gglyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-09T17:47:41Z",
+      "text": "<strong>Israeli air strikes hit Lebanese city of Tyre despite Iranian warning to stop attacks</strong> -- Iran warned Israel on Monday that it could resume hostilities if attacks on its Lebanese ally Hezbollah do not stop. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c36y16nkr5no?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-09T16:44:23Z",
+      "text": "<strong>Two reportedly killed as women take part in rare protest in Afghanistan</strong> -- The demonstration, in the western city of Herat, was broken up after police are alleged to have opened fire. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c992vdk3g3yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-09T10:09:04Z",
+      "text": "<strong>Man accused of killing mother-in-law with poison-laced satay</strong> -- Indonesia police allege the man killed the woman as he felt disrespected by her. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/crkvd376jxno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-09T17:50:37Z",
+      "text": "<strong>Fifa working to resolve revoked Iran tickets</strong> -- Fifa has said it is working to &quot;maximise opportunities for Iranian supporters to attend matches&quot; after the country&#x27;s World Cup group-stage ticket allocation was revoked just days before the tournament <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/sport/football/articles/c9q2vrdx0ewo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-08T20:54:29Z",
+      "text": "<strong>Stock market jitters remain amid tech fears and renewed Middle East attacks</strong> -- Markets in Asia are hit by a tech sell-off, and oil is volatile as Iran and Israel launch attacks on each other. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c78yd5g9qx0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-09T14:48:48Z",
+      "text": "<strong>Did Netanyahu really \u2018defy\u2019 Trump in bombing Iran?</strong> -- Experts say the latest confrontation has laid bare growing divisions between the two leaders. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/9/did-netanyahu-really-defy-trump-in-bombing-iran?traffic_source=rss"
     },
     {
       "time": "2026-06-09T09:17:42Z",
@@ -783,19 +823,9 @@
       "link": "https://www.bbc.com/news/articles/c36y16nkr5no?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-06-09T10:09:04Z",
-      "text": "<strong>Man accused of killing mother-in-law with poison-laced satay</strong> -- Indonesia police allege the man killed the woman as he felt disrespected by her. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/crkvd376jxno?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-06-09T10:15:49Z",
       "text": "<strong>Tickets for Iran fans revoked, says federation</strong> -- Iran&#x27;s football federation says its allocation of tickets for the group stage of the World Cup has been revoked just days before the tournament. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/sport/football/articles/c9q2vrdx0ewo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-08T20:54:29Z",
-      "text": "<strong>Stock market jitters remain amid tech fears and renewed Middle East attacks</strong> -- Markets in Asia are hit by a tech sell-off, and oil is volatile as Iran and Israel launch attacks on each other. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c78yd5g9qx0o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-09T05:07:44Z",
@@ -821,36 +851,6 @@
       "time": "2026-06-08T22:34:25Z",
       "text": "<strong>Trump tells BBC Netanyahu did not defy him</strong> -- In a call with the US president, the BBC\u2019s Sarah Smith asked Trump about the war in Iran and his relationship with the Israeli leader. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/videos/cd958e7j8q9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-09T06:20:33Z",
-      "text": "<strong>Nuclear weapons spending surges to record high of $119bn, report says</strong> -- International Campaign to Abolish Nuclear Weapons says states spent an extra $16.8bn on their nuclear arsenals in 2025. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/6/9/nuclear-weapons-spending-surges-to-record-high-of-119bn-report-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-09T04:34:45Z",
-      "text": "<strong>Israel kills 14 in southern Lebanon after trading fire with Iran</strong> -- Killings come as Iran warned of &amp;#039;crushing blows&amp;#039; if Israeli attacks continued in Lebanon, including in the south. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/9/israel-kills-14-in-southern-lebanon-after-trading-fire-with-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-09T04:24:18Z",
-      "text": "<strong>Israel intensifies strikes in southern Lebanon killing 12 people</strong> -- Al Jazeera\u2019s Obaida Hitto reports on the strikes he witnessed in and around Tyre. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/9/aje-onl-nf_israel-strikes-lebanon-moments-before-on-air-090626?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-09T02:41:11Z",
-      "text": "<strong>Trump says US in \u2018final throes\u2019 of Iran deal, Hormuz strait to open in days</strong> -- The president warned Netanyahu he would be on his own if attacks continue after Israel and Iran paused fighting <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/9/trump-warns-netanyahu-youll-be-on-your-own-if-attacks-on-iran-continue?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-09T00:41:51Z",
-      "text": "<strong>Israel continues strikes on Lebanon despite halting attacks on Iran</strong> -- Israeli PM Benjamin Netanyahu acknowledged a halt in fighting with Iran but will continue operations against Hezbollah. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/9/aje-onl-nf_israel-continues-strikes-on-lebanon-halts-on-iran-080626?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-09T00:00:00Z",
-      "text": "<strong>Iran war live: Trump warns Netanyahu as Israel, Tehran halt fighting</strong> -- Israeli strikes have killed 3,637 people in Lebanon since March, with 11,188 wounded, the Health Ministry says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/9/iran-war-live-trump-warns-netanyahu-as-israel-tehran-halt?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,51 @@
   ],
   "newsFeed": [
     {
+      "title": "Trump says Iran shot down US helicopter and vows to respond",
+      "description": "Two crew members of the Apache helicopter that crashed following the attack were rescued by an American sea drone.",
+      "link": "https://www.bbc.com/news/articles/cze9359gglyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-09T18:18:27Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018Anything but normal\u2019: Uncertainty as Iranians try to get by amid US war",
+      "description": "War damage and blockade have worsened economic conditions for many struggling Iranians.",
+      "link": "https://www.aljazeera.com/news/2026/6/9/anything-but-normal-uncertainty-as-iranians-try-to-get-by-amid-us-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-09T17:59:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Fifa working to resolve revoked Iran tickets",
+      "description": "Fifa has said it is working to \"maximise opportunities for Iranian supporters to attend matches\" after the country's World Cup group-stage ticket allocation was revoked just days before the tournament.",
+      "link": "https://www.bbc.com/sport/football/articles/c9q2vrdx0ewo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-09T17:50:37Z",
+      "tier": 2
+    },
+    {
       "title": "Israeli air strikes hit Lebanese city of Tyre despite Iranian warning to stop attacks",
       "description": "Iran warned Israel on Monday that it could resume hostilities if attacks on its Lebanese ally Hezbollah do not stop.",
       "link": "https://www.bbc.com/news/articles/c36y16nkr5no?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-06-09T15:15:29Z",
+      "time": "2026-06-09T17:47:41Z",
       "tier": 2
     },
     {
-      "title": "Did Netanyahu really \u2018defy\u2019 Trump in bombing Iran?",
-      "description": "Experts say the latest confrontation has laid bare growing divisions between the two leaders.",
-      "link": "https://www.aljazeera.com/news/2026/6/9/did-netanyahu-really-defy-trump-in-bombing-iran?traffic_source=rss",
+      "title": "Trump says Iran shot down US helicopter over Hormuz, vows to respond",
+      "description": "US president says although the pilots were rescued, Washington &#039;must, of necessity, respond to this attack&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/6/9/trump-says-iran-shot-down-us-helicopters-over-hormuz-vows-to-respond?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-06-09T14:48:48Z",
+      "time": "2026-06-09T16:54:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Two reportedly killed as women take part in rare protest in Afghanistan",
+      "description": "The demonstration, in the western city of Herat, was broken up after police are alleged to have opened fire.",
+      "link": "https://www.bbc.com/news/articles/c992vdk3g3yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-09T16:44:23Z",
       "tier": 2
     },
     {
@@ -1245,35 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Tickets for Iran fans revoked, says federation",
-      "description": "Iran's football federation says its allocation of tickets for the group stage of the World Cup has been revoked just days before the tournament.",
-      "link": "https://www.bbc.com/sport/football/articles/c9q2vrdx0ewo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-09T10:15:49Z",
-      "tier": 2
-    },
-    {
       "title": "Man accused of killing mother-in-law with poison-laced satay",
       "description": "Indonesia police allege the man killed the woman as he felt disrespected by her.",
       "link": "https://www.bbc.com/news/articles/crkvd376jxno?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-09T10:09:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran conflict: Why has oil stayed near $100 a barrel?",
-      "description": "The worst-case oil scenario has been avoided, but inflation and slower growth continue to weigh on the global economy.",
-      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/6/9/iran-conflict-why-has-oil-stayed-near-100-a-barrel?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-09T09:17:42Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says US has revoked World Cup ticket allocation for their supporters",
-      "description": "Iranian players and support staff got US visas and landed in Mexico on Sunday for the World Cup, but now fans in doubt.",
-      "link": "https://www.aljazeera.com/sports/2026/6/9/iran-says-us-have-revoked-world-cup-ticket-allocation-for-their-supporters?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-09T08:58:20Z",
       "tier": 2
     },
     {
@@ -1325,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of June 9, 2026 shows the war remains unstable despite repeated ceasefire efforts: Al Jazeera\u2019s June 7 100-day roundup reports 3,468 confirmed deaths in Iran, 29 in Gulf states, 26 in Israel and 13 US soldiers killed, while Lebanon\u2019s toll has risen to 3,593. Al Jazeera\u2019s June 9 live coverage says Trump warned Netanyahu he would be on his own if attacks continue after Israel and Iran paused fighting, underscoring continuing volatility rather than a durable settlement. On the military side, the latest accessible official US cumulative figures remain CENTCOM\u2019s March 28 fact sheet listing 11,000+ targets struck and 11,000+ combat flights, with official imagery/pages still showing two carrier strike groups involved but no newer confirmed public totals for most weapons-expended fields.",
+  "summary": "Confirmed reporting on June 5-9, 2026 shows the April 8 ceasefire is fraying: AP reported fresh Iranian missile and drone launches toward Gulf states and a June 9 helicopter shootdown claim by Trump, while Al Jazeera and Reuters reported continued Israeli-Hezbollah fighting in southern Lebanon. The clearest official cumulative U.S. operational totals still publicly available remain the White House\u2019s April 8 figures of over 13,000 targets struck, over 10,200 air sorties, and more than 1,700 combined intercepts. For casualties, I found current confirmed figures for 13 U.S. troops killed (Reuters), 26 Israelis killed (Israel Ministry of Health via Al Jazeera), and 3,526 killed in Lebanon (Lebanon Health Ministry via Al Jazeera/Reuters), but I could not verify a current named-source cumulative Iranian death or wounded total with enough confidence to update those fields.",
   "briefings": [
     {
       "date": "2026-06-09",
       "day": 101,
-      "summary": "Confirmed reporting as of June 9, 2026 shows the war remains unstable despite repeated ceasefire efforts: Al Jazeera\u2019s June 7 100-day roundup reports 3,468 confirmed deaths in Iran, 29 in Gulf states, 26 in Israel and 13 US soldiers killed, while Lebanon\u2019s toll has risen to 3,593. Al Jazeera\u2019s June 9 live coverage says Trump warned Netanyahu he would be on his own if attacks continue after Israel and Iran paused fighting, underscoring continuing volatility rather than a durable settlement. On the military side, the latest accessible official US cumulative figures remain CENTCOM\u2019s March 28 fact sheet listing 11,000+ targets struck and 11,000+ combat flights, with official imagery/pages still showing two carrier strike groups involved but no newer confirmed public totals for most weapons-expended fields."
+      "summary": "Confirmed reporting on June 5-9, 2026 shows the April 8 ceasefire is fraying: AP reported fresh Iranian missile and drone launches toward Gulf states and a June 9 helicopter shootdown claim by Trump, while Al Jazeera and Reuters reported continued Israeli-Hezbollah fighting in southern Lebanon. The clearest official cumulative U.S. operational totals still publicly available remain the White House\u2019s April 8 figures of over 13,000 targets struck, over 10,200 air sorties, and more than 1,700 combined intercepts. For casualties, I found current confirmed figures for 13 U.S. troops killed (Reuters), 26 Israelis killed (Israel Ministry of Health via Al Jazeera), and 3,526 killed in Lebanon (Lebanon Health Ministry via Al Jazeera/Reuters), but I could not verify a current named-source cumulative Iranian death or wounded total with enough confidence to update those fields."
     },
     {
       "date": "2026-06-08",
