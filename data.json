@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-06-10T18:09:27Z",
+  "lastUpdated": "2026-06-10T20:45:06Z",
   "dayCount": 102,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,535+",
-    "cost": "$49.9B+"
+    "killed": "3,525+",
+    "cost": "$50.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "6",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "51",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$49.9 billion+",
-    "dailyBurnRate": "~$489M/day",
+    "totalCost": "$50.3 billion+",
+    "dailyBurnRate": "~$493M/day",
     "daysOfOps": 102,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-10",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 9,000+ combat flights; this is the latest official sortie-like cumulative figure found, but it is not fighter-only)"
+          "source": "LLM-verified (Official April 1, 2026 Operation Epic Fury fact sheet lists 'Combat Flights: 13,000+'; used as the latest confirmed cumulative sortie-style operational count found, though it is broader than fighter-only sorties.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. military also struck the engine room of the Palau-flagged tanker M/T Settebello as it allegedly attempted to breach the blockade with Iranian oil.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iran fired at Bahrain, Kuwait and Jordan on June 10, 2026, while Jordan said it shot down five incoming missiles and Bahrain/Kuwait said they intercepted incoming fire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on June 10, 2026 that Trump said the U.S. would 'hit them again hard today' after new U.S. strikes on Iranian military sites.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 10, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera/BBC reporting June 6-9, 2026 indicates renewed Israel-Hezbollah fighting in southern Lebanon despite the April ceasefire, increasing risk of broader regional escalation.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, June 6, 2026: Iran launched missiles and drones toward Bahrain and Kuwait; intercepts were reported, indicating renewed Gulf spillover risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, June 9, 2026: Trump said Iran shot down a US Army Apache helicopter near the Strait of Hormuz; both aviators were rescued.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on June 3, 2026 reported an Iranian drone strike on Kuwait airport killed one person, underscoring continued spillover risk to Gulf states despite the ceasefire.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-06-10T19:23:23Z",
+      "text": "<strong>Israeli strike on a car kills two in Sidon, Lebanon</strong> -- An Israeli strike on a vehicle in the southern Lebanese city of Sidon killed two people and sparked a fire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/israeli-strike-on-a-car-kills-two-in-sidon-lebanon?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-10T18:54:40Z",
+      "text": "<strong>Why Lebanon remains caught up in the Israel-Iran conflict</strong> -- The Israel-Iran ceasefire may be holding, but for many in Lebanon, the war continues. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/the-take-2/2026/6/10/aje-onl-aj_tt_irn_next100day-100626?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-10T18:38:23Z",
+      "text": "<strong>Iran says it will \u2018not hesitate\u2019 to defend itself after latest clashes</strong> -- Iran\u2019s Foreign Ministry said overnight clashes in the Gulf between Tehran and Washington showed how Iran will respond. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/iran-says-it-will-not-hesitate-to-defend-itself-after-latest-clashes?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-10T18:22:13Z",
+      "text": "<strong>Trump warns of more attacks on Iran after US Apache helicopter downing</strong> -- Trump warns of more attacks on Iran after US Apache helicopter downing <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/trump-warns-of-more-attacks-on-iran-after-us-apache-helicopter-downing?traffic_source=rss"
+    },
+    {
       "time": "2026-06-10T15:53:21Z",
       "text": "<strong>Trump hardens tone against Iran, says \u2018may keep going\u2019 with strikes</strong> -- US president claims Iran is &amp;#039;completely defeated&amp;#039; and renews threats to bomb the country&amp;#039;s civilian infrastructure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/10/trump-hardens-tone-against-iran-says-may-keep-going-with-strikes?traffic_source=rss"
@@ -761,6 +781,26 @@
       "time": "2026-06-10T13:27:27Z",
       "text": "<strong>US bombs Iran\u2019s water facilities: Why that\u2019s so significant</strong> -- The US struck several sites in Iran, saying it retaliated against the downing of a US helicopter in the Strait of Hormuz <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/10/us-bombs-irans-water-facilities-why-thats-so-significant?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-10T17:33:22Z",
+      "text": "<strong>Trump says US will hit Iran &#x27;hard&#x27; again today</strong> -- The US president warns Iran &quot;will have to pay the price&quot; for taking too long to agree a deal, after Tehran vows retaliation to any attacks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/ce371kw2ex2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-10T14:44:49Z",
+      "text": "<strong>Israeli strikes in southern Lebanon kill 17, reports say</strong> -- Nine of them were killed in a series of attacks in the town of Tayr Debba, according to Lebanon&#x27;s state news agency. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cpq3d44l907o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-10T10:26:54Z",
+      "text": "<strong>Manhunt under way in South Africa after 12 killed in mass shooting in Johannesburg</strong> -- Another nine people were injured at an informal settlement in Cleveland late on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c79yzqw0z0wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-09T17:47:41Z",
+      "text": "<strong>Israeli air strikes hit Lebanese city of Tyre despite Iranian warning to stop attacks</strong> -- Iran warned Israel on Monday that it could resume hostilities if attacks on its Lebanese ally Hezbollah do not stop. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c36y16nkr5no?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-10T12:44:09Z",
@@ -788,21 +828,6 @@
       "link": "https://www.aljazeera.com/sports/2026/6/10/whats-happening-at-the-world-cup-one-day-before-tournament-starts?traffic_source=rss"
     },
     {
-      "time": "2026-06-10T17:33:22Z",
-      "text": "<strong>Trump says US will hit Iran &#x27;hard&#x27; again today</strong> -- The US president warns Iran &quot;will have to pay the price&quot; for taking too long to agree a deal, after Tehran vows retaliation to any attacks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/ce371kw2ex2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-10T14:44:49Z",
-      "text": "<strong>Israeli strikes in southern Lebanon kill 17, reports say</strong> -- Nine of them were killed in a series of attacks in the town of Tayr Debba, according to Lebanon&#x27;s state news agency. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cpq3d44l907o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-10T10:26:54Z",
-      "text": "<strong>Manhunt under way in South Africa after 12 killed in mass shooting in Johannesburg</strong> -- Another nine people were injured at an informal settlement in Cleveland late on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/c79yzqw0z0wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-06-10T10:09:41Z",
       "text": "<strong>A four-year-old\u2019s recovery from the trauma of war in Lebanon</strong> -- Four-year-old Malika was seriously wounded in an Israeli attack that killed her mother. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/a-four-year-olds-recovery-from-the-trauma-of-war-in-lebanon?traffic_source=rss"
@@ -826,31 +851,6 @@
       "time": "2026-06-10T07:40:53Z",
       "text": "<strong>Explosion in Bahrain as Iran attacks US bases</strong> -- CCTV footage shows an explosion in Bahrain\u2019s capital Manama after what authorities say was an Iranian missile strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/explosion-in-bahrain-as-iran-attacks-us-bases?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-10T07:22:22Z",
-      "text": "<strong>Ukrainian drones strike Sevastopol museum and key Russian oil refineries</strong> -- The multiday campaign has killed a rail worker, closed the bombed Chongar road bridge and caused a fuel crisis <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/10/ukrainian-drones-strike-sevastopol-museum-and-key-russian-oil-refineries?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-10T07:16:39Z",
-      "text": "<strong>Iran war day 103: US strikes after helicopter shot down, Tehran hits back</strong> -- Analysts warn of further escalation after tit-for-tat attacks between Tehran and Washington. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/10/iran-war-day-103-us-strikes-after-helicopter-shot-down-tehran-hits-back?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-10T05:38:16Z",
-      "text": "<strong>Trita Parsi: Iran is pursuing a doctrine of swift retaliation</strong> -- Iran has abandoned strategic patience for a new doctrine: swift, severe retaliation against any US attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/aje-onl-nf_trita-parsi_iran-doctrine-of-swift-retaliation-100626?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-10T05:04:26Z",
-      "text": "<strong>Pakistan claims killing 26 Afghan fighters; Taliban says civilians killed</strong> -- Pakistan targets TTP fighters across Afghan border, as the Taliban says 11 children among those killed in air attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/10/afghanistan-says-pakistan-air-raids-killed-13-people-including-children?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-10T09:39:35Z",
-      "text": "<strong>US strikes Iran in response to downing of military helicopter</strong> -- President Donald Trump earlier accused Iran of shooting down the US helicopter over the Strait of Hormuz and vowed to respond. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cze9359gglyo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Israeli strike on a car kills two in Sidon, Lebanon",
+      "description": "An Israeli strike on a vehicle in the southern Lebanese city of Sidon killed two people and sparked a fire.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/israeli-strike-on-a-car-kills-two-in-sidon-lebanon?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-10T19:23:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Why Lebanon remains caught up in the Israel-Iran conflict",
+      "description": "The Israel-Iran ceasefire may be holding, but for many in Lebanon, the war continues.",
+      "link": "https://www.aljazeera.com/video/the-take-2/2026/6/10/aje-onl-aj_tt_irn_next100day-100626?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-10T18:54:40Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran says it will \u2018not hesitate\u2019 to defend itself after latest clashes",
+      "description": "Iran\u2019s Foreign Ministry said overnight clashes in the Gulf between Tehran and Washington showed how Iran will respond.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/iran-says-it-will-not-hesitate-to-defend-itself-after-latest-clashes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-10T18:38:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump warns of more attacks on Iran after US Apache helicopter downing",
+      "description": "Trump warns of more attacks on Iran after US Apache helicopter downing",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/trump-warns-of-more-attacks-on-iran-after-us-apache-helicopter-downing?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-10T18:22:13Z",
+      "tier": 2
+    },
+    {
       "title": "Trump says US will hit Iran 'hard' again today",
       "description": "The US president warns Iran \"will have to pay the price\" for taking too long to agree a deal, after Tehran vows retaliation to any attacks.",
       "link": "https://www.bbc.com/news/articles/ce371kw2ex2o?at_medium=RSS&at_campaign=rss",
@@ -1245,51 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Ukraine-made \u2018Flamingo\u2019 missile hits target 900 km inside Russia",
-      "description": "Video shows a Ukrainian-made \u2018FP-5 Flamingo\u2019 cruise missile flying deep inside Russia.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/10/ukraine-made-flamingo-missile-hits-target-900-km-inside-russia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-10T12:44:09Z",
-      "tier": 2
-    },
-    {
       "title": "Air India crash pilot's father vows to defend son's reputation",
       "description": "Investigators are expected to soon release an update on the crash, which killed 260 people last year.",
       "link": "https://www.bbc.com/news/articles/cj0gj911060o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-10T12:37:19Z",
-      "tier": 2
-    },
-    {
-      "title": "Pakistan military helicopter crashes in Kashmir, all on board killed",
-      "description": "There has been a heavy security presence in Muzaffarabad amid protests in Pakistan-administered Kashmir in recent days.",
-      "link": "https://www.aljazeera.com/news/2026/6/10/pakistan-military-helicopter-crashes-in-kashmir-all-on-board-killed?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-10T12:30:19Z",
-      "tier": 2
-    },
-    {
-      "title": "Netanyahu caught between the US, Lebanon war, and Iran ceasefire",
-      "description": "As elections near, Israel&#039;s PM finds himself squeezed between his voters, his allies, and his opponents.",
-      "link": "https://www.aljazeera.com/news/2026/6/10/netanyahu-caught-between-the-us-lebanon-war-and-iran-ceasefire?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-10T11:57:49Z",
-      "tier": 2
-    },
-    {
-      "title": "Apache down, fighting up: What the latest US-Iran attacks mean",
-      "description": "Analysts say Iran seeks to deter US patrols on the Strait of Hormuz by attacking its assets across the Gulf.",
-      "link": "https://www.aljazeera.com/news/2026/6/10/apache-down-fighting-up-what-the-latest-us-iran-attacks-mean?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-10T11:50:48Z",
-      "tier": 2
-    },
-    {
-      "title": "What\u2019s happening at the World Cup one day before tournament starts?",
-      "description": "Political issues continue to dominate the build-up, with the US-Israel war on Iran overshadowing the World Cup.",
-      "link": "https://www.aljazeera.com/sports/2026/6/10/whats-happening-at-the-world-cup-one-day-before-tournament-starts?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-10T11:40:15Z",
       "tier": 2
     },
     {
@@ -1365,12 +1357,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on June 10, 2026 shows the war escalating again after US self-defense strikes near the Strait of Hormuz following the reported downing of a US helicopter. President Trump publicly threatened additional attacks the same day, while AP and Reuters reported Iranian retaliatory fire toward regional states hosting US forces. The latest widely cited cumulative casualty figures found today are 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 US combat deaths, and 28 deaths in Gulf states. On the military-activity side, the newest official CENTCOM fact sheet located still lists 13,000+ targets struck as of April 6 and 9,000+ combat flights as of March 23, but current official breakdowns for weapons expended, carriers, destroyers, personnel, and drone units were not found in confirmed public reporting.",
+  "summary": "On June 10, 2026, confirmed reporting from AP showed the war escalated again: the United States launched new strikes on Iranian military sites, President Trump publicly threatened additional attacks the same day, and Iran responded with fire toward Bahrain, Kuwait and Jordan, testing the already fragile early-April ceasefire. Officially sourced cumulative figures remain sparse; the clearest current confirmed totals located were Iran Ministry of Health\u2019s 3,468 killed and 26,500+ wounded, CENTCOM\u2019s last confirmed U.S. KIA total of 6, Al Jazeera/compiled reporting showing 51 Israelis killed across the conflict, and CENTCOM fact sheets listing 13,000+ targets struck / 13,000+ combat flights in the main campaign.",
   "briefings": [
     {
       "date": "2026-06-10",
       "day": 102,
-      "summary": "Confirmed reporting on June 10, 2026 shows the war escalating again after US self-defense strikes near the Strait of Hormuz following the reported downing of a US helicopter. President Trump publicly threatened additional attacks the same day, while AP and Reuters reported Iranian retaliatory fire toward regional states hosting US forces. The latest widely cited cumulative casualty figures found today are 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 US combat deaths, and 28 deaths in Gulf states. On the military-activity side, the newest official CENTCOM fact sheet located still lists 13,000+ targets struck as of April 6 and 9,000+ combat flights as of March 23, but current official breakdowns for weapons expended, carriers, destroyers, personnel, and drone units were not found in confirmed public reporting."
+      "summary": "On June 10, 2026, confirmed reporting from AP showed the war escalated again: the United States launched new strikes on Iranian military sites, President Trump publicly threatened additional attacks the same day, and Iran responded with fire toward Bahrain, Kuwait and Jordan, testing the already fragile early-April ceasefire. Officially sourced cumulative figures remain sparse; the clearest current confirmed totals located were Iran Ministry of Health\u2019s 3,468 killed and 26,500+ wounded, CENTCOM\u2019s last confirmed U.S. KIA total of 6, Al Jazeera/compiled reporting showing 51 Israelis killed across the conflict, and CENTCOM fact sheets listing 13,000+ targets struck / 13,000+ combat flights in the main campaign."
     },
     {
       "date": "2026-06-09",
