@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-06-12T14:15:17Z",
+  "lastUpdated": "2026-06-12T17:41:47Z",
   "dayCount": 104,
   "banner": {
     "strikes": "~13,000",
-    "killed": "59+",
-    "cost": "$50.7B+"
+    "killed": "7,130+",
+    "cost": "$50.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "3",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "56",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$50.7 billion+",
-    "dailyBurnRate": "~$487M/day",
+    "totalCost": "$50.3 billion+",
+    "dailyBurnRate": "~$484M/day",
     "daysOfOps": 104,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 49,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-06-08",
-          "source": "LLM-verified (Reuters report March 27, 2026: U.S. military fired over 850 Tomahawk cruise missiles in four weeks of war)"
+          "lastUpdated": "2026-06-12",
+          "source": "LLM-verified (Al Jazeera day-104 report citing Trump on Fox News, June 11, 2026: US 'fired 49 Tomahawk missiles' in the latest strikes; no higher confirmed cumulative total found in accessible official reporting)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-12",
-          "source": "LLM-verified (IDF article dated April 1, 2026: 'more than 800 Israeli Air Force strike sorties' since launch of Operation Roaring Lion. This is Israeli strike sorties only, not confirmed combined US fighter/attack sorties.)"
+          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; used here as the closest official cumulative sortie metric)"
         },
         {
           "id": "interceptors",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-06-12",
-          "source": "LLM-verified (AP reporting on June 5, 2026 citing CENTCOM says U.S. forces intercepted six of seven Iranian ballistic missiles fired toward Kuwait and Bahrain.)"
+          "source": "LLM-verified (AP, June 5, 2026, citing CENTCOM: 7 ballistic missiles fired toward Kuwait and Bahrain, with US forces intercepting 6)"
         },
         {
           "id": "prestrike_buildup",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "49 \u00d7 $2,000,000 each",
+        "cost": "$98,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,42 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP reporting indicate renewed Iranian missile/drone attacks toward Gulf states and Israel in early June despite the fragile ceasefire",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC headline context indicates Iran says a deal to end fighting with the US has 'never been closer'",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump says leaked ceasefire terms are fake, according to Al Jazeera headline context provided by user",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Pakistan says final ceasefire text has been agreed, according to Al Jazeera headline context provided by user",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 12, 2026",
       "severity": "high",
@@ -623,42 +659,6 @@
       "text": "Iranian officials announced closure of the Strait of Hormuz after renewed US strikes, according to Al Jazeera and BBC headline reporting provided by user.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Iran's IRGC claimed attacks on US-linked targets in Bahrain, Kuwait and Jordan in retaliation for US strikes in the Gulf.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Bahrain, Kuwait and Jordan came under Iranian fire hours before the second day of renewed US strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported renewed US strikes on Iran on June 10, 2026 after the downing of a US Apache helicopter near the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the U.S. military also struck the engine room of the Palau-flagged tanker M/T Settebello as it allegedly attempted to breach the blockade with Iranian oil.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-06-12T16:38:40Z",
+      "text": "<strong>Pakistan says \u2018final, agreed upon\u2019 text of Iran war ceasefire deal reached</strong> -- This is a breaking news story. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/12/pakistan-says-final-agreed-upon-text-of-iran-war-ceasefire-deal-reached?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-12T14:24:03Z",
+      "text": "<strong>\u2018Dishonorable\u2019: Trump says leaked Iran ceasefire terms fake</strong> -- Trump decries &amp;#039;dishonorable people&amp;#039; after reports Iran made few concessions in deal US has said could be soon signed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/12/dishonorable-trump-says-leaked-iran-ceasefire-terms-fake?traffic_source=rss"
+    },
+    {
       "time": "2026-06-12T13:16:30Z",
       "text": "<strong>Are Iran, US really close to a breakthrough \u2018deal\u2019?</strong> -- Trump says a deal with Iran could be signed in Europe over the weekend. Tehran cautions against speculation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/features/2026/6/12/are-iran-us-really-close-to-a-breakthrough-deal?traffic_source=rss"
@@ -773,6 +783,26 @@
       "link": "https://www.aljazeera.com/news/2026/6/12/nigeria-killed-more-than-13000-terrorists-in-past-year-president-says?traffic_source=rss"
     },
     {
+      "time": "2026-06-12T17:13:30Z",
+      "text": "<strong>Iran says deal to end fighting with US has &#x27;never been closer&#x27;</strong> -- Both Iran and Pakistan say a deal has never been closer - echoing US President Donald Trump&#x27;s statement on Thursday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/c39y02x98k8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-12T05:01:48Z",
+      "text": "<strong>&#x27;They destroyed the future&#x27;: Palestinian anger at rise in Israeli demolitions in East Jerusalem</strong> -- Palestinian homes are being pulled down in occupied East Jerusalem to make way for a park. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cewpwjr9rj4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-12T08:52:36Z",
+      "text": "<strong>&#x27;I will come home safely&#x27;: Indian sailor&#x27;s last words to wife before a US strike killed him</strong> -- Patnala Suresh and his wife were looking forward to celebrating their 15th wedding anniversary this month. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cx24vlj2nvyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-11T23:37:15Z",
+      "text": "<strong>More than 50 Iranian military bases damaged in US strikes since start of war, satellite images show</strong> -- Bases across Iran have been hit by US strikes, with experts identifying damage to jets and warships. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cd6p6z7pq9wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-06-12T09:51:11Z",
       "text": "<strong>Family mourn Indian sailor killed in US strike on oil tanker</strong> -- The wife and family of an Indian sailor killed in a US strike on a tanker off Oman this week have gathered in mourning. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/12/family-mourn-indian-sailor-killed-in-us-strike-on-oil-tanker?traffic_source=rss"
@@ -786,11 +816,6 @@
       "time": "2026-06-12T08:09:37Z",
       "text": "<strong>Tehran says &#x27;nothing&#x27; finalised after Trump claims deal to end Iran war near</strong> -- Iran says reports of a deal are &quot;speculative&quot; after the US president says a &quot;great settlement&quot; to end the conflict has been reached. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c78y6w78828o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-12T05:01:48Z",
-      "text": "<strong>&#x27;They destroyed the future&#x27;: Palestinian anger at rise in Israeli demolitions in East Jerusalem</strong> -- Palestinian homes are being pulled down in occupied East Jerusalem to make way for a park. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cewpwjr9rj4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-11T15:02:34Z",
@@ -826,31 +851,6 @@
       "time": "2026-06-12T04:45:50Z",
       "text": "<strong>Iran weighs proposed deal but remains wary of US intentions</strong> -- Iran says a proposed agreement is under review by its highest leadership and could be closer than ever before. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/12/iran-weighs-proposed-deal-but-remains-wary-of-us-intentions?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-11T20:22:16Z",
-      "text": "<strong>Flip flop or deliberate? - Unpacking Trump\u2019s strategy on Iran</strong> -- The BBC&#x27;s Gary O&#x27;Donoghue looks at the US president&#x27;s mixed messaging over the war and the questions it raises. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/videos/cz9lg5ywzvpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-12T01:44:15Z",
-      "text": "<strong>Stock markets surge as Trump calls off strikes on Iran, touts peace deal</strong> -- Wall Street and Asian markets rally on hopes for an end to the US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/6/12/stocks-markets-surge-as-trump-calls-off-strikes-on-iran-touts-peace-deal?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-12T01:40:13Z",
-      "text": "<strong>Iran World Cup captain reveals Mexico cartel robbery story</strong> -- Iran&amp;#039;s World Cup captain says he\u2019s heard Mexican cartels love Iranians and revealed his own brush with an armed group. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/12/iran-world-cup-captain-reveals-mexico-cartel-robbery-story?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-12T01:11:34Z",
-      "text": "<strong>Israel launches overnight strikes across Gaza</strong> -- Videos shared by Palestinian activists show powerful Israeli airstrikes across Gaza Strip overnight. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/12/israel-launches-overnight-strikes-across-gaza?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-12T00:00:00Z",
-      "text": "<strong>Iran war live: Trump claims Tehran deal \u2018approved\u2019, cancels new strikes</strong> -- The International Rescue Committee warns that people displaced by Israeli attacks in Lebanon are at &amp;#039;breaking point&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/12/iran-war-live-trump-claims-tehran-deal-approved-cancels-new-strikes?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran says deal to end fighting with US has 'never been closer'",
+      "description": "Both Iran and Pakistan say a deal has never been closer - echoing US President Donald Trump's statement on Thursday.",
+      "link": "https://www.bbc.com/news/articles/c39y02x98k8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-12T17:13:30Z",
+      "tier": 2
+    },
+    {
+      "title": "Pakistan says \u2018final, agreed upon\u2019 text of Iran war ceasefire deal reached",
+      "description": "This is a breaking news story.",
+      "link": "https://www.aljazeera.com/news/2026/6/12/pakistan-says-final-agreed-upon-text-of-iran-war-ceasefire-deal-reached?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-12T16:38:40Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018Dishonorable\u2019: Trump says leaked Iran ceasefire terms fake",
+      "description": "Trump decries &#039;dishonorable people&#039; after reports Iran made few concessions in deal US has said could be soon signed.",
+      "link": "https://www.aljazeera.com/news/2026/6/12/dishonorable-trump-says-leaked-iran-ceasefire-terms-fake?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-12T14:24:03Z",
+      "tier": 2
+    },
+    {
       "title": "Are Iran, US really close to a breakthrough \u2018deal\u2019?",
       "description": "Trump says a deal with Iran could be signed in Europe over the weekend. Tehran cautions against speculation.",
       "link": "https://www.aljazeera.com/features/2026/6/12/are-iran-us-really-close-to-a-breakthrough-deal?traffic_source=rss",
@@ -1245,27 +1269,11 @@
       "tier": 2
     },
     {
-      "title": "Family mourn Indian sailor killed in US strike on oil tanker",
-      "description": "The wife and family of an Indian sailor killed in a US strike on a tanker off Oman this week have gathered in mourning.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/12/family-mourn-indian-sailor-killed-in-us-strike-on-oil-tanker?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-12T09:51:11Z",
-      "tier": 2
-    },
-    {
-      "title": "Video: What Iran\u2019s football fans think about the World Cup",
-      "description": "What\u2019s it like supporting your team in a World Cup hosted by a country that\u2019s at war with yours?",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/12/video-what-irans-football-fans-think-about-the-world-cup?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-12T09:34:33Z",
-      "tier": 2
-    },
-    {
-      "title": "Tehran says 'nothing' finalised after Trump claims deal to end Iran war near",
-      "description": "Iran says reports of a deal are \"speculative\" after the US president says a \"great settlement\" to end the conflict has been reached.",
-      "link": "https://www.bbc.com/news/articles/c78y6w78828o?at_medium=RSS&at_campaign=rss",
+      "title": "'I will come home safely': Indian sailor's last words to wife before a US strike killed him",
+      "description": "Patnala Suresh and his wife were looking forward to celebrating their 15th wedding anniversary this month.",
+      "link": "https://www.bbc.com/news/articles/cx24vlj2nvyo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-06-12T08:09:37Z",
+      "time": "2026-06-12T08:52:36Z",
       "tier": 2
     },
     {
@@ -1291,46 +1299,14 @@
       "source": "BBC World",
       "time": "2026-06-11T20:22:16Z",
       "tier": 2
-    },
-    {
-      "title": "Four days of extreme rain killed 7% of world's rarest orangutans, study says",
-      "description": "Climate change-induced weather events are pushing orangutan populations to extinction, says a study.",
-      "link": "https://www.bbc.com/news/articles/ce8jde20v83o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-11T15:02:34Z",
-      "tier": 2
-    },
-    {
-      "title": "Vance says Israeli PM Netanyahu 'has got some things wrong'",
-      "description": "The US vice-president says the Israeli leader \"aggressively asserts\" his country's interests, but they do not always align with those of the US.",
-      "link": "https://www.bbc.com/news/articles/c9q2lq3vv7zo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-11T10:26:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli strikes in southern Lebanon kill 17, reports say",
-      "description": "Nine of them were killed in a series of attacks in the town of Tayr Debba, according to Lebanon's state news agency.",
-      "link": "https://www.bbc.com/news/articles/cpq3d44l907o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-10T14:44:49Z",
-      "tier": 2
-    },
-    {
-      "title": "Air India crash pilot's father vows to defend son's reputation",
-      "description": "Investigators are expected to soon release an update on the crash, which killed 260 people last year.",
-      "link": "https://www.bbc.com/news/articles/cj0gj911060o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-10T12:37:19Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available via web search remains patchy. CENTCOM\u2019s March 1 update still provides the clearest official U.S. fatality figure found, confirming 3 U.S. service members killed in action. A June 1 JINSA war update reported that at least 56 people had been killed in Israel and that 13 U.S. service members had died overall, but because your rule requires Pentagon/CENTCOM confirmation for usKIA, only the CENTCOM-confirmed 3 was used. For force posture, reporting citing CENTCOM described more than 50,000 U.S. troops and two aircraft carriers participating. I could not verify current confirmed cumulative Iranian death, Iranian civilian death, Iranian wounded, Gulf-state death, combined strike, or weapons-expenditure totals from the named primary or major-wire sources requested, so those fields are left null.",
+  "summary": "Confirmed reporting indicates the war remains highly volatile despite intensified ceasefire diplomacy. Al Jazeera and AP reported renewed Iranian missile and drone attacks in early June against Gulf targets and Israel, while Al Jazeera\u2019s June 7 by-the-numbers update put the confirmed death toll at 3,468 in Iran, 13 US troops, 26 Israelis, 29 in Gulf states, and at least 3,593 in Lebanon. CENTCOM\u2019s latest accessible official fact sheet still lists more than 13,000 targets struck, while the latest clearly attributed weapons-use figure found in current reporting was Trump\u2019s June 11 statement that US forces fired 49 Tomahawk missiles in the newest round of strikes.",
   "briefings": [
     {
       "date": "2026-06-12",
       "day": 104,
-      "summary": "Confirmed reporting available via web search remains patchy. CENTCOM\u2019s March 1 update still provides the clearest official U.S. fatality figure found, confirming 3 U.S. service members killed in action. A June 1 JINSA war update reported that at least 56 people had been killed in Israel and that 13 U.S. service members had died overall, but because your rule requires Pentagon/CENTCOM confirmation for usKIA, only the CENTCOM-confirmed 3 was used. For force posture, reporting citing CENTCOM described more than 50,000 U.S. troops and two aircraft carriers participating. I could not verify current confirmed cumulative Iranian death, Iranian civilian death, Iranian wounded, Gulf-state death, combined strike, or weapons-expenditure totals from the named primary or major-wire sources requested, so those fields are left null."
+      "summary": "Confirmed reporting indicates the war remains highly volatile despite intensified ceasefire diplomacy. Al Jazeera and AP reported renewed Iranian missile and drone attacks in early June against Gulf targets and Israel, while Al Jazeera\u2019s June 7 by-the-numbers update put the confirmed death toll at 3,468 in Iran, 13 US troops, 26 Israelis, 29 in Gulf states, and at least 3,593 in Lebanon. CENTCOM\u2019s latest accessible official fact sheet still lists more than 13,000 targets struck, while the latest clearly attributed weapons-use figure found in current reporting was Trump\u2019s June 11 statement that US forces fired 49 Tomahawk missiles in the newest round of strikes."
     },
     {
       "date": "2026-06-11",
