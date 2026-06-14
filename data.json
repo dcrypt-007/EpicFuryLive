@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-06-14T10:31:53Z",
+  "lastUpdated": "2026-06-14T13:03:35Z",
   "dayCount": 106,
   "banner": {
     "strikes": "~13,000",
-    "killed": "7,132+",
-    "cost": "$55.8B+"
+    "killed": "6,906+",
+    "cost": "$55.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1255",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$55.8 billion+",
-    "dailyBurnRate": "~$527M/day",
+    "totalCost": "$55.6 billion+",
+    "dailyBurnRate": "~$525M/day",
     "daysOfOps": 106,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -184,8 +184,8 @@
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-06-13",
-          "source": "LLM-verified (Al Jazeera live update for June 11, 2026, citing Trump's statement to Fox News that the US fired 49 Tomahawk missiles at targets inside Iran.)"
+          "lastUpdated": "2026-06-14",
+          "source": "LLM-verified (President Trump said the US fired 49 Tomahawk missiles at targets inside Iran, as reported by Al Jazeera on June 11, 2026)"
         },
         {
           "id": "jdam",
@@ -235,7 +235,7 @@
           "id": "b2_sorties",
           "category": "B-2 Bomber Sorties",
           "unitCost": 5500000,
-          "quantity": 18,
+          "quantity": 7,
           "keywords": [
             "B-2 sortie",
             "B2 bomber sortie",
@@ -243,8 +243,8 @@
             "B-2 Spirit sortie",
             "bomber sortie"
           ],
-          "lastUpdated": "2026-05-12",
-          "source": "LLM-verified (Gen. Dan Caine, Pentagon briefing transcript, April 8, 2026: 18 bomber missions flew round trip from the United States; B-2-specific sortie count not separately confirmed)"
+          "lastUpdated": "2026-06-14",
+          "source": "LLM-verified (Operation Midnight Hammer used seven B-2 bombers on the June 2026 strike, per Defense Department transcript; cumulative B-2 sorties for entire operation not found)"
         },
         {
           "id": "mop_bunker_busters",
@@ -260,14 +260,14 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-05-18",
-          "source": "LLM-verified (DoD transcript on Operation Midnight Hammer / Iran strikes: total of 14 MOPs dropped against two nuclear target areas)"
+          "lastUpdated": "2026-06-14",
+          "source": "LLM-verified (Defense Department transcript: total of 14 GBU-57 Massive Ordnance Penetrators dropped against two Iranian nuclear target areas)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10200,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-14",
-          "source": "LLM-verified (White House release dated April 8, 2026: 'Over 10,200 total air sorties flown')"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists Combat Flights: 9,000+; no newer cumulative fighter-only sortie total found)"
         },
         {
           "id": "interceptors",
@@ -388,8 +388,8 @@
       },
       {
         "category": "B-2 Bomber Sorties",
-        "detail": "18 \u00d7 $5,500,000 each",
-        "cost": "$99,000,000"
+        "detail": "7 \u00d7 $5,500,000 each",
+        "cost": "$38,500,000"
       },
       {
         "category": "GBU-57 MOP Bunker Busters",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,200 \u00d7 $100,000 each",
-        "cost": "$1,020,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Recent Iran-Israel exchanges on June 7-9, 2026 showed the ceasefire remains highly unstable and could unravel with further Lebanon-related escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump said a first-stage US-Iran deal could be signed as early as Sunday, June 14, 2026, but Tehran disputed the timing, leaving uncertainty over whether hostilities will pause.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israeli strikes hit Beirut's southern suburbs on June 14, 2026, with Israel saying it targeted Hezbollah infrastructure, threatening the already fragile regional ceasefire talks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Reuters- and Al Jazeera-cited reporting indicates active ceasefire negotiations are nearing a final text, but the truce remains fragile after renewed Iran-Israel fire on June 7-8",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and AP reporting indicate renewed Iranian missile/drone attacks toward Gulf states and Israel in early June despite the fragile ceasefire",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline context indicates Iran says a deal to end fighting with the US has 'never been closer'",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump says leaked ceasefire terms are fake, according to Al Jazeera headline context provided by user",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-06-14T11:15:23Z",
+      "text": "<strong>Israel attacks Beirut on same day Trump says Iran deal to be signed</strong> -- Israel has bombed the southern suburbs of Beirut, saying it targeted Hezbollah \u2018infrastructure\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/14/israel-attacks-beirut-on-same-day-trump-says-iran-deal-to-be-signed?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-14T10:25:45Z",
+      "text": "<strong>Israel attacks southern Beirut after alleged Hezbollah drone fire</strong> -- Israel warns of attacks as Iran insists Lebanon must be included in any peace deal with the United States. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/14/israel-issues-forced-displacement-orders-for-29-towns-in-southern-lebanon?traffic_source=rss"
+    },
+    {
       "time": "2026-06-14T09:18:22Z",
       "text": "<strong>Will the US-Iran deal be signed on Sunday? What we know so far</strong> -- US says a deal to stop the war on Iran could be signed as early as Sunday. Tehran, however, disputes the timeline. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/14/will-the-us-iran-deal-be-signed-on-sunday-what-we-know-so-far?traffic_source=rss"
@@ -786,6 +796,11 @@
       "time": "2026-06-14T00:56:36Z",
       "text": "<strong>Why is the price of gold trending down?</strong> -- Gold has been under pressure since the US and Israel launched a war against Iran in late February. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/6/14/why-is-the-price-of-gold-trending-down?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-14T11:23:36Z",
+      "text": "<strong>Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing</strong> -- The US president&#x27;s comments come as Iran says an exact date has not been decided. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cvglmn49xz0o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-14T00:00:00Z",
@@ -836,21 +851,6 @@
       "time": "2026-06-13T18:39:26Z",
       "text": "<strong>Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing</strong> -- The US president&#x27;s comments come as Iran says an exact date has not been decided, but it &quot;will not be tomorrow&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cvglmn49xz0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-13T04:09:07Z",
-      "text": "<strong>US kills leader of Venezuela&#x27;s Tren de Aragua gang in airstrike, Trump says</strong> -- Ni\u00f1o Guerrero was killed in a &quot;swift and lethal kinetic strike,&quot; the US President wrote in a social media post. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cp36z37knlko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-11T20:22:16Z",
-      "text": "<strong>Flip flop or deliberate? - Unpacking Trump\u2019s strategy on Iran</strong> -- The BBC&#x27;s Gary O&#x27;Donoghue looks at the US president&#x27;s mixed messaging over the war and the questions it raises. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/videos/cz9lg5ywzvpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-13T16:01:15Z",
-      "text": "<strong>Israeli attacks kill three in Gaza as post-\u2018ceasefire\u2019 deaths hit 983</strong> -- One person killed in central Gaza\u2019s Bureij refugee camp, and two others in Khan Younis in the south. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/13/gaza-post-ceasefire-deaths-hit-983-as-israeli-attack-targets-refugee-camp?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+      "description": "The US president's comments come as Iran says an exact date has not been decided.",
+      "link": "https://www.bbc.com/news/articles/cvglmn49xz0o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-14T11:23:36Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel attacks Beirut on same day Trump says Iran deal to be signed",
+      "description": "Israel has bombed the southern suburbs of Beirut, saying it targeted Hezbollah \u2018infrastructure\u2019.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/14/israel-attacks-beirut-on-same-day-trump-says-iran-deal-to-be-signed?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-14T11:15:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Israel attacks southern Beirut after alleged Hezbollah drone fire",
+      "description": "Israel warns of attacks as Iran insists Lebanon must be included in any peace deal with the United States.",
+      "link": "https://www.aljazeera.com/news/2026/6/14/israel-issues-forced-displacement-orders-for-29-towns-in-southern-lebanon?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-14T10:25:45Z",
+      "tier": 2
+    },
+    {
       "title": "Will the US-Iran deal be signed on Sunday? What we know so far",
       "description": "US says a deal to stop the war on Iran could be signed as early as Sunday. Tehran, however, disputes the timeline.",
       "link": "https://www.aljazeera.com/news/2026/6/14/will-the-us-iran-deal-be-signed-on-sunday-what-we-know-so-far?traffic_source=rss",
@@ -1226,14 +1250,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/14/signing-of-us-iran-deal-not-on-trumps-public-schedule?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-06-14T07:56:10Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
-      "description": "The US president's comments come as Iran says an exact date has not been decided.",
-      "link": "https://www.bbc.com/news/articles/cvglmn49xz0o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-14T07:55:16Z",
       "tier": 2
     },
     {
@@ -1285,14 +1301,6 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Trump says deal to be signed today; Tehran disputes timing",
-      "description": "US and Iran appear close to signing the first stage of a peace deal, the two sides differ on when it will be signed.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/14/iran-war-live-trump-says-deal-to-be-signed-today-as-tehran-urges-caution?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-14T00:00:00Z",
-      "tier": 2
-    },
-    {
       "title": "Russian families use AI to 'resurrect' loved ones killed in Ukraine",
       "description": "The highly controversial trend lies at the intersection of Russia's war on Ukraine, new AI technologies and grief.",
       "link": "https://www.bbc.com/news/articles/cwy24v72n19o?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting accessible in this search indicates that as of Sunday, June 14, 2026, diplomacy rather than major new battlefield escalation is the main development: AP reported Qatari mediators were in Tehran for final touches on a possible U.S.-Iran deal, while Al Jazeera reported Trump had already canceled planned follow-on strikes on June 12 amid claimed negotiating progress. On the military side, the latest accessible official CENTCOM cumulative figure remained 13,000+ targets struck as of the April 6, 2026 fact sheet, and the latest accessible confirmed U.S. fatality count tied to Operation Epic Fury was six service members killed in the March 12 KC-135 crash over Iraq, which CENTCOM said was not due to hostile or friendly fire.",
+  "summary": "Confirmed reporting available as of June 14, 2026 still points to 3,468 people killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health, while Al Jazeera\u2019s June 10 tracker lists 26 Israelis killed, 13 US combat deaths, and 28 deaths in Gulf states. CENTCOM\u2019s latest publicly located operation fact sheet still gives 13,000+ targets struck as of April 6, with no newer official cumulative strike count found. On June 14, major confirmed developments were diplomatic uncertainty over a possible US-Iran deal and renewed Israeli strikes on Beirut\u2019s southern suburbs tied to Hezbollah, underscoring that the broader conflict remains volatile despite ongoing negotiations.",
   "briefings": [
     {
       "date": "2026-06-14",
       "day": 106,
-      "summary": "Confirmed reporting accessible in this search indicates that as of Sunday, June 14, 2026, diplomacy rather than major new battlefield escalation is the main development: AP reported Qatari mediators were in Tehran for final touches on a possible U.S.-Iran deal, while Al Jazeera reported Trump had already canceled planned follow-on strikes on June 12 amid claimed negotiating progress. On the military side, the latest accessible official CENTCOM cumulative figure remained 13,000+ targets struck as of the April 6, 2026 fact sheet, and the latest accessible confirmed U.S. fatality count tied to Operation Epic Fury was six service members killed in the March 12 KC-135 crash over Iraq, which CENTCOM said was not due to hostile or friendly fire."
+      "summary": "Confirmed reporting available as of June 14, 2026 still points to 3,468 people killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health, while Al Jazeera\u2019s June 10 tracker lists 26 Israelis killed, 13 US combat deaths, and 28 deaths in Gulf states. CENTCOM\u2019s latest publicly located operation fact sheet still gives 13,000+ targets struck as of April 6, with no newer official cumulative strike count found. On June 14, major confirmed developments were diplomatic uncertainty over a possible US-Iran deal and renewed Israeli strikes on Beirut\u2019s southern suburbs tied to Hezbollah, underscoring that the broader conflict remains volatile despite ongoing negotiations."
     },
     {
       "date": "2026-06-13",
