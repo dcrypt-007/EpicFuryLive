@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-17T18:34:48Z",
+  "lastUpdated": "2026-06-17T21:21:43Z",
   "dayCount": 109,
   "banner": {
-    "strikes": "~10,800",
-    "killed": "5,191+",
-    "cost": "$57.6B+"
+    "strikes": "~7,800",
+    "killed": "5,188+",
+    "cost": "$58.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1700",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$57.6 billion+",
-    "dailyBurnRate": "~$528M/day",
+    "totalCost": "$58.3 billion+",
+    "dailyBurnRate": "~$535M/day",
     "daysOfOps": 109,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,14 +73,14 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-06-16",
-          "source": "LLM-verified (Lead IG report to Congress, published May 21, 2026, says Operation Epic Fury required reprioritization including the USS Gerald R. Ford carrier strike group)"
+          "lastUpdated": "2026-06-17",
+          "source": "LLM-verified (U.S. Department of War said on March 2, 2026 that two carrier strike groups began moving toward launching points for Operation Epic Fury)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 3,
+          "quantity": 4,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-06-17",
-          "source": "LLM-verified (CENTCOM June 10, 2026 materials show USS Michael Murphy (DDG 112), USS Delbert D. Black (DDG 119), and USS Rafael Peralta operating in theater)"
+          "source": "LLM-verified (Named U.S. destroyers/escorts visibly tied to Operation Epic Fury on official U.S. Department of War spotlight page: USS Spruance, USS Pinckney, USS Milius, USS Bainbridge; no newer official theater-wide total found)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-06-17",
-          "source": "LLM-verified (U.S. Congressional Research Service report dated March 26, 2026 citing estimated 50,000 U.S. service members deployed in and around the Middle East)"
+          "source": "LLM-verified (U.S. Department of War Weekly Sitrep, March 13, 2026: 'More than 50,000 service members are supporting Operation Epic Fury')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-17",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' page published April 20, 2026 reporting over 8,500 aircraft sorties)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 18, 2026 lists 8,000+ combat flights; no newer official sorties total found)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 109 days",
-        "cost": "$763,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 109 days",
+        "cost": "$1,526,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "3 \u00d7 $240,000/day \u00d7 109 days",
-        "cost": "$78,480,000"
+        "detail": "4 \u00d7 $240,000/day \u00d7 109 days",
+        "cost": "$104,640,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported June 16, 2026 that Iran says any final deal must include an Israeli withdrawal from Lebanon, a condition Israel has rejected and which could derail the ceasefire extension.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported June 7-8, 2026 that Iran launched missiles at Israel for the first time since the early-April ceasefire, showing risk of renewed direct fighting despite ongoing diplomacy.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported June 17, 2026 that a tentative US-Iran agreement to reopen the Strait of Hormuz and extend the ceasefire may be signed Friday in Switzerland, but Trump said the signing could still fall through.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 16, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on June 14, 2026 that Qatari mediators traveled to Tehran to finalize a possible U.S.-Iran deal to end the war.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Diplomatic reporting on June 14 says Washington claims a deal could be signed Sunday, while Tehran disputes the timing, leaving ceasefire durability uncertain.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "May 27 Iranian ceasefire violation cited by CENTCOM included a ballistic missile toward Kuwait and multiple one-way attack drones near the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "June 11-12 reporting indicates renewed U.S. strikes on multiple Iranian targets despite ongoing peace talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,33 @@
   ],
   "developments": [
     {
+      "time": "2026-06-17T20:05:45Z",
+      "text": "<strong>Read the US account of unreleased 14-point Iran ceasefire memorandum</strong> -- US official gives clearest account yet of deal set to be signed by US and Iran Friday; Iran has not confirmed text. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/17/read-the-us-account-of-unreleased-14-point-iran-ceasefire-memorandum?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-17T19:14:45Z",
+      "text": "<strong>Trump eyes US-Iran \u2018peace deal\u2019 signing</strong> -- An US-Iran agreement aimed at ending hostilities and reopening the Strait of Hormuz is set to be signed Friday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/trump-eyes-us-iran-peace-deal-signing?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-17T19:04:55Z",
+      "text": "<strong>Ukrainian rescuers killed in Russian secondary strike laid to rest</strong> -- Mourners gathered at a cemetery in Kharkiv as three Ukrainian rescuers were laid to rest. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/ukrainian-rescuers-killed-in-russian-secondary-strike-laid-to-rest?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-17T18:53:38Z",
+      "text": "<strong>Tehran says considering plan for Iran, US presidents to sign deal</strong> -- Trump says he expects the agreement with Iran to be signed &amp;#039;shortly&amp;#039; without specifying the exact date. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/17/tehran-says-considering-plan-for-iran-us-presidents-to-sign-deal?traffic_source=rss"
+    },
+    {
       "time": "2026-06-17T18:08:12Z",
       "text": "<strong>Trump: World will \u2018find out pretty soon\u2019 if Iran MOU signing will happen</strong> -- Trump suggests deal signing on Friday could still fall through, vows to bomb Iran if they don&amp;#039;t &amp;#039;behave&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/17/trump-world-will-find-out-pretty-soon-if-iran-mou-signing-will-happen?traffic_source=rss"
     },
     {
       "time": "2026-06-17T18:07:19Z",
-      "text": "<strong>US Federal Reserve holds rates steady under new chair Warsh</strong> -- Heightened energy prices because of the US-Israel war with Iran has pushed US inflation to a three-year high. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>US Federal Reserve holds rates steady under new chair Warsh</strong> -- Heightened energy prices because of the US-Israel war with Iran have pushed US inflation to a three-year high. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/6/17/us-federal-reserve-holds-rates-steady-under-new-chair-warsh?traffic_source=rss"
     },
     {
@@ -771,6 +791,16 @@
       "time": "2026-06-17T16:30:29Z",
       "text": "<strong>Trump: \u2018Very strong\u2019 Iran deal is a \u2018wall to a nuclear weapon\u2019</strong> -- US President Donald Trump claimed that the scheduled signing of his Iran \u201cpeace deal\u201d in Geneva on Friday would be succe <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/trump-very-strong-iran-deal-is-a-wall-to-a-nuclear?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-17T13:27:47Z",
+      "text": "<strong>Iran sends tankers loaded with oil past US military blockade</strong> -- Three Iranian tankers loaded with crude oil have passed the US blockade line in the Gulf of Oman, ship-tracking data shows. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cpq37yxexd9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-17T09:13:34Z",
+      "text": "<strong>Status quo at Jerusalem&#x27;s holiest site under threat as Israeli nationalists flout rules</strong> -- Israeli nationalists are increasingly flouting a convention on how faiths share the al-Aqsa mosque compound. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cwy0nlv90jno?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-17T15:23:08Z",
@@ -791,16 +821,6 @@
       "time": "2026-06-17T13:21:19Z",
       "text": "<strong>Trump accuses Obama of \u2018bribing\u2019 Iran in 2015 nuclear deal at G7 summit</strong> -- US President Donald Trump has accused his predecessor Barack Obama of \u2018bribing\u2019 Iran to agree to the 2015 nuclear deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/trump-accuses-obama-of-bribing-iran-in-2015-nuclear-deal-at-g7-summit?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-17T13:27:47Z",
-      "text": "<strong>Iran sends tankers loaded with oil past US military blockade</strong> -- Three Iranian tankers loaded with crude oil have passed the US blockade line in the Gulf of Oman, ship-tracking data shows. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cpq37yxexd9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-17T09:13:34Z",
-      "text": "<strong>Status quo at Jerusalem&#x27;s holiest site under threat as Israeli nationalists flout rules</strong> -- Israeli nationalists are increasingly flouting a convention on how faiths share the al-Aqsa mosque compound. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwy0nlv90jno?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-17T13:15:42Z",
@@ -831,26 +851,6 @@
       "time": "2026-06-17T07:44:52Z",
       "text": "<strong>Oil prices continue slide amid hopes for peace, opening of Strait of Hormuz</strong> -- Brent crude drops to lowest price since early March, before signing of framework deal to end US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/6/17/oil-prices-continue-slide-amid-hopes-for-peace-opening-of-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-17T07:24:12Z",
-      "text": "<strong>Iran war day 110: Tehran says Israeli attacks on Lebanon threaten US deal</strong> -- Iran warns of a &amp;#039;harsh response&amp;#039; as Lebanon attacks test the US deal and strain Trump-Netanyahu ties. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/17/iran-war-day-110-tehran-says-israeli-attacks-on-lebanon-threaten-us-deal?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-17T03:02:05Z",
-      "text": "<strong>Russian drone strikes residential building in Ukraine</strong> -- A suspected Russian drone attack on a residential building in Ukraine has injured at least seven people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/russian-drone-strikes-residential-building-in-ukraine?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-16T15:31:24Z",
-      "text": "<strong>Tehran selling deal with US as victory \u2013 but for Iranians it was necessity</strong> -- For many Iranians, the question is not whether the deal means victory, but whether it lowers prices and reduces fear of another war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cn4rwzxvl8ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-16T04:25:59Z",
-      "text": "<strong>Iranian-Americans protest against Iran team at World Cup</strong> -- The BBC\u2019s Shaimaa Khalil was outside the Iran v New Zealand opening round match as protesters called for an end to Tehran\u2019s clerical regime. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/videos/cm20yglrgjlo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "Initial US-Iran agreement leaves many key issues to be negotiated",
+      "description": "Trump has insisted the deal ensures that Iran will never buy, develop or produce a nuclear weapon. But text of the agreement falls short of that.",
+      "link": "https://www.bbc.com/news/articles/cgmd8dgklzzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-17T20:23:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Read the US account of unreleased 14-point Iran ceasefire memorandum",
+      "description": "US official gives clearest account yet of deal set to be signed by US and Iran Friday; Iran has not confirmed text.",
+      "link": "https://www.aljazeera.com/news/2026/6/17/read-the-us-account-of-unreleased-14-point-iran-ceasefire-memorandum?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-17T20:05:45Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump eyes US-Iran \u2018peace deal\u2019 signing",
+      "description": "An US-Iran agreement aimed at ending hostilities and reopening the Strait of Hormuz is set to be signed Friday.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/trump-eyes-us-iran-peace-deal-signing?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-17T19:14:45Z",
+      "tier": 2
+    },
+    {
+      "title": "Ukrainian rescuers killed in Russian secondary strike laid to rest",
+      "description": "Mourners gathered at a cemetery in Kharkiv as three Ukrainian rescuers were laid to rest.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/ukrainian-rescuers-killed-in-russian-secondary-strike-laid-to-rest?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-17T19:04:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Tehran says considering plan for Iran, US presidents to sign deal",
+      "description": "Trump says he expects the agreement with Iran to be signed &#039;shortly&#039; without specifying the exact date.",
+      "link": "https://www.aljazeera.com/news/2026/6/17/tehran-says-considering-plan-for-iran-us-presidents-to-sign-deal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-17T18:53:38Z",
+      "tier": 2
+    },
+    {
       "title": "Trump: World will \u2018find out pretty soon\u2019 if Iran MOU signing will happen",
       "description": "Trump suggests deal signing on Friday could still fall through, vows to bomb Iran if they don&#039;t &#039;behave&#039;.",
       "link": "https://www.aljazeera.com/news/2026/6/17/trump-world-will-find-out-pretty-soon-if-iran-mou-signing-will-happen?traffic_source=rss",
@@ -1222,7 +1262,7 @@
     },
     {
       "title": "US Federal Reserve holds rates steady under new chair Warsh",
-      "description": "Heightened energy prices because of the US-Israel war with Iran has pushed US inflation to a three-year high.",
+      "description": "Heightened energy prices because of the US-Israel war with Iran have pushed US inflation to a three-year high.",
       "link": "https://www.aljazeera.com/economy/2026/6/17/us-federal-reserve-holds-rates-steady-under-new-chair-warsh?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-06-17T18:07:19Z",
@@ -1253,43 +1293,11 @@
       "tier": 2
     },
     {
-      "title": "Why Israel could still derail the Iran-US deal",
-      "description": "Trump called it a historic deal. But with nuclear talks and Israel all unresolved, what did either side actually win?",
-      "link": "https://www.aljazeera.com/video/the-take-2/2026/6/17/why-israel-could-still-derail-the-iran-us-deal?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-17T15:23:08Z",
-      "tier": 2
-    },
-    {
-      "title": "Tehran War Diary: Shooting war at home",
-      "description": "An internationally acclaimed photojournalist in Iran turns his lens on his own city, as Tehran comes under bombardment.",
-      "link": "https://www.aljazeera.com/video/witness/2026/6/17/tehran-war-diary-shooting-war-at-home?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-17T14:53:20Z",
-      "tier": 2
-    },
-    {
-      "title": "Strait of Hormuz reopens: But can ships\u2019 safety be assured?",
-      "description": "Shipping operators and insurers prefer to wait and watch from a distance for now.",
-      "link": "https://www.aljazeera.com/features/2026/6/17/strait-of-hormuz-reopens-how-will-safe-passage-for-ships-be-ensured?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-17T14:07:25Z",
-      "tier": 2
-    },
-    {
       "title": "Iran sends tankers loaded with oil past US military blockade",
       "description": "Three Iranian tankers loaded with crude oil have passed the US blockade line in the Gulf of Oman, ship-tracking data shows.",
       "link": "https://www.bbc.com/news/articles/cpq37yxexd9o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-17T13:27:47Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump accuses Obama of \u2018bribing\u2019 Iran in 2015 nuclear deal at G7 summit",
-      "description": "US President Donald Trump has accused his predecessor Barack Obama of \u2018bribing\u2019 Iran to agree to the 2015 nuclear deal.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/trump-accuses-obama-of-bribing-iran-in-2015-nuclear-deal-at-g7-summit?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-17T13:21:19Z",
       "tier": 2
     },
     {
@@ -1333,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on June 17, 2026 focused on diplomacy rather than major new battlefield totals: AP reported Trump said the U.S. would resume bombing if Iran violated a pending agreement, while Al Jazeera and AP said negotiations over a broader U.S.-Iran deal remained fragile and could still be derailed by regional fighting. For casualty and strike data, the newest clearly attributable confirmed figures I found were older official or widely cited totals rather than fresh June 17 battlefield updates.",
+  "summary": "Confirmed reporting on June 17, 2026 indicates diplomacy rather than major new battlefield data is driving developments: AP and Al Jazeera say the United States and Iran are working toward a possible Friday agreement in Switzerland to reopen the Strait of Hormuz and extend the ceasefire, though Trump cautioned on June 17 that the signing could still collapse. On casualties, the latest clearly sourced cumulative figures I found remain Iran government reporting of 3,468 total deaths and more than 26,500 wounded, with HRANA-documented Iranian civilian deaths around 1,701; Pentagon-linked reporting still shows 13 U.S. troops killed. I could not verify newer official cumulative totals for Israeli deaths, Gulf-state deaths, drone units, or detailed weapons expenditure counts, so those remain null.",
   "briefings": [
     {
       "date": "2026-06-17",
       "day": 109,
-      "summary": "Confirmed reporting on June 17, 2026 focused on diplomacy rather than major new battlefield totals: AP reported Trump said the U.S. would resume bombing if Iran violated a pending agreement, while Al Jazeera and AP said negotiations over a broader U.S.-Iran deal remained fragile and could still be derailed by regional fighting. For casualty and strike data, the newest clearly attributable confirmed figures I found were older official or widely cited totals rather than fresh June 17 battlefield updates."
+      "summary": "Confirmed reporting on June 17, 2026 indicates diplomacy rather than major new battlefield data is driving developments: AP and Al Jazeera say the United States and Iran are working toward a possible Friday agreement in Switzerland to reopen the Strait of Hormuz and extend the ceasefire, though Trump cautioned on June 17 that the signing could still collapse. On casualties, the latest clearly sourced cumulative figures I found remain Iran government reporting of 3,468 total deaths and more than 26,500 wounded, with HRANA-documented Iranian civilian deaths around 1,701; Pentagon-linked reporting still shows 13 U.S. troops killed. I could not verify newer official cumulative totals for Israeli deaths, Gulf-state deaths, drone units, or detailed weapons expenditure counts, so those remain null."
     },
     {
       "date": "2026-06-16",
