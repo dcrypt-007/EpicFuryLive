@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-06-20T14:32:43Z",
+  "lastUpdated": "2026-06-20T16:51:19Z",
   "dayCount": 112,
   "banner": {
     "strikes": "~13,000",
-    "killed": "14+",
-    "cost": "$56.5B+"
+    "killed": "3,536+",
+    "cost": "$56.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "10",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "4",
+    "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$56.5 billion+",
-    "dailyBurnRate": "~$505M/day",
+    "totalCost": "$56.3 billion+",
+    "dailyBurnRate": "~$503M/day",
     "daysOfOps": 112,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-20",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; this is the closest verified official cumulative sorties figure accessible, though it includes combat flights broadly rather than only fighter/attack sorties.)"
+          "source": "LLM-verified (Operation Epic Fury fact sheet dated March 28, 2026: 11,000+ combat flights; later April 6 fact sheet listed targets struck but did not provide a newer combat-flights number)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S.-Iran memorandum has taken effect but reporting indicates key nuclear and enforcement questions remain unresolved, leaving risk of renewed hostilities.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israel-Hezbollah fighting continued despite ceasefire arrangements, creating ongoing risk of wider escalation affecting the Iran war settlement.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran said on June 20 it had closed the Strait of Hormuz, citing Israeli attacks in Lebanon and alleged U.S. bad faith, according to AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 20, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "June 10-11, 2026: CENTCOM confirmed new U.S. self-defense strikes in Iran after the downing/loss of a U.S. helicopter and subsequent Iranian attacks on regional bases.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Reuters on June 13 reported a draft deal text was agreed, but signing and implementation remained pending.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported new US-Iran exchanges as recently as June 10 around Bahrain, Kuwait and Jordan, showing ceasefire fragility near the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and other major outlets reported the tentative US-Iran deal could collapse over Israel's refusal to commit to withdrawal from Lebanon.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-06-20T16:39:03Z",
+      "text": "<strong>Israeli strike kills children in Gaza despite ceasefire claims</strong> -- Israeli strike kills children in Gaza despite ceasefire claims <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/20/israeli-strike-kills-children-in-gaza-despite-ceasefire-claims?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-20T16:38:26Z",
+      "text": "<strong>\u2018You could\u2019ve been the greatest\u2019: Trump faces Israeli anger over Iran deal</strong> -- Public outrage in Israel mounts over MoU, with many feeling betrayed by the US in its deal with Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/20/you-could-have-been-the-greatest-trump-faces-israeli-anger-over-iran-deal?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-20T15:58:55Z",
+      "text": "<strong>Trump insists Italy\u2019s Meloni sought photos with him to boost popularity</strong> -- Comments escalate a row between the once-close leaders that has emerged during the conflict with Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/20/trump-insists-italys-meloni-sought-photos-with-him-to-boost?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-20T15:10:37Z",
+      "text": "<strong>Iran warns of \u2018reciprocal action\u2019 if US doesn\u2019t honour MOU commitments</strong> -- Iran warns of \u2018reciprocal action\u2019 if US doesn\u2019t honour MOU commitments. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/20/iran-warns-of-reciprocal-action-if-us-doesnt-honour-mou-commitments?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-20T14:50:46Z",
+      "text": "<strong>Nine left in critical condition after UK train collision that killed driver</strong> -- More than 80 people received treatment after the crash and 28 remain in hospital. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/20/nine-left-in-critical-condition-after-uk-train-collision-that-killed-driver?traffic_source=rss"
+    },
+    {
       "time": "2026-06-20T13:05:19Z",
       "text": "<strong>Where do Iran\u2019s political factions stand on the US peace deal?</strong> -- Iran&amp;#039;s rival political camps are locking horns over a memorandum of understanding with the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/20/where-do-irans-political-factions-stand-on-the-us-peace-deal?traffic_source=rss"
@@ -768,6 +793,16 @@
       "link": "https://www.aljazeera.com/video/the-listening-post/2026/6/20/trumps-iran-deal-israels-meltdown?traffic_source=rss"
     },
     {
+      "time": "2026-06-20T16:07:44Z",
+      "text": "<strong>Iran says Strait of Hormuz will be closed over Israel attacks on Lebanon</strong> -- Iran said Israel&#x27;s continued attacks in Lebanon are a breach of Tehran&#x27;s agreement with the US to end the war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cwyekkwm1mmo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-20T13:23:40Z",
+      "text": "<strong>Israel and Hezbollah continue strikes despite ceasefire agreement</strong> -- At least 20 people have reportedly been killed by Israeli air strikes as the Israeli military said Hezbollah had fired at Israeli troops in southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cx240k9l112o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-06-20T08:18:01Z",
       "text": "<strong>Parents and two daughters killed in Israeli strike in Gaza</strong> -- Israel has repeatedly violated the October ceasefire brokered by the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/20/family-including-two-daughters-killed-in-israeli-strikes-on-gaza?traffic_source=rss"
@@ -781,11 +816,6 @@
       "time": "2026-06-20T05:58:49Z",
       "text": "<strong>Iran war day 113: Tehran presses US over Lebanon ceasefire</strong> -- Iran presses US over Lebanon as Israeli strikes test fragile ceasefire and broader peace efforts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/20/iran-war-day-113-tehran-presses-us-over-lebanon-ceasefire?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-20T13:23:40Z",
-      "text": "<strong>Israel and Hezbollah continue strikes despite ceasefire agreement</strong> -- Deaths are reported in southern Lebanon, with the IDF saying it hit Hezbollah targets after the group fired over 50 projectiles at Israeli forces. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cx240k9l112o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-19T04:12:07Z",
@@ -821,36 +851,6 @@
       "time": "2026-06-19T19:27:12Z",
       "text": "<strong>Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported</strong> -- The agreement followed concerns that continued clashes would undermine the deal to end the war between the US and Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/cwyk7kkygj5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-19T21:10:56Z",
-      "text": "<strong>Does Trump have to submit the Iran memorandum of understanding to Congress?</strong> -- A 2015 law requiring congressional approval for any Iran nuclear deal is in the spotlight after this week&amp;#039;s memo. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/19/does-trump-have-to-submit-the-iran-memorandum-of-understanding-to-congress?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-19T21:02:25Z",
-      "text": "<strong>US announces new round of Israel-Lebanon talks in Washington next week</strong> -- Talks come as Hezbollah, Israel say new ceasefire has been reached in wake of US-Iran memorandum to end war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/19/us-announces-new-round-of-israel-lebanon-talks-in-washington-next-week?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-19T20:50:50Z",
-      "text": "<strong>Israel kills \u2018a child a day\u2019 on average in Gaza despite ceasefire, UN says</strong> -- &amp;#039;No ceasefire can be considered meaningful while children continue to be killed&amp;#039; says UNICEF. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/19/israel-kills-a-child-a-day-on-average-in-gaza-despite-ceasefire-un-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-19T20:03:18Z",
-      "text": "<strong>Iran deputy FM says \u2018ready to move forward\u2019 in deal with US</strong> -- Deputy FM Khatibzadeh tells Al Jazeera diplomacy is way forward, but US must ensure Israel stops attacks on Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/19/iran-deputy-fm-says-ready-to-move-forward-in-deal-with-us?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-19T19:05:08Z",
-      "text": "<strong>Iran war: Success or disaster? Mehdi Hasan and David Des Roches</strong> -- Mehdi Hasan goes Head to Head with former Pentagon official David Des Roches on the Iran war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/head-to-head/2026/6/19/iran-war-success-or-disaster-mehdi-hasan-and-david-des-roches?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-19T18:49:52Z",
-      "text": "<strong>How is the Iran-US agreement being viewed in Israel?</strong> -- Washington rebukes right-wing Israeli ministers for criticism. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/6/19/how-is-the-iran-us-agreement-being-viewed-in-israel?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,64 @@
   ],
   "newsFeed": [
     {
+      "title": "Israeli strike kills children in Gaza despite ceasefire claims",
+      "description": "Israeli strike kills children in Gaza despite ceasefire claims",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/20/israeli-strike-kills-children-in-gaza-despite-ceasefire-claims?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-20T16:39:03Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018You could\u2019ve been the greatest\u2019: Trump faces Israeli anger over Iran deal",
+      "description": "Public outrage in Israel mounts over MoU, with many feeling betrayed by the US in its deal with Iran",
+      "link": "https://www.aljazeera.com/news/2026/6/20/you-could-have-been-the-greatest-trump-faces-israeli-anger-over-iran-deal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-20T16:38:26Z",
+      "tier": 2
+    },
+    {
+      "title": "BBC sees destroyed villages in Israeli-occupied southern Lebanon",
+      "description": "Travelling with a humanitarian convoy, BBC's Hugo Bachega has been given rare access to a part of Lebanon under Israeli occupation.",
+      "link": "https://www.bbc.com/news/videos/c8r2pyv3e2po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-20T16:37:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran says Strait of Hormuz will be closed over Israel attacks on Lebanon",
+      "description": "Iran said Israel's continued attacks in Lebanon are a breach of Tehran's agreement with the US to end the war.",
+      "link": "https://www.bbc.com/news/articles/cwyekkwm1mmo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-20T16:07:44Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump insists Italy\u2019s Meloni sought photos with him to boost popularity",
+      "description": "Comments escalate a row between the once-close leaders that has emerged during the conflict with Iran.",
+      "link": "https://www.aljazeera.com/news/2026/6/20/trump-insists-italys-meloni-sought-photos-with-him-to-boost?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-20T15:58:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran warns of \u2018reciprocal action\u2019 if US doesn\u2019t honour MOU commitments",
+      "description": "Iran warns of \u2018reciprocal action\u2019 if US doesn\u2019t honour MOU commitments.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/20/iran-warns-of-reciprocal-action-if-us-doesnt-honour-mou-commitments?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-20T15:10:37Z",
+      "tier": 2
+    },
+    {
+      "title": "Nine left in critical condition after UK train collision that killed driver",
+      "description": "More than 80 people received treatment after the crash and 28 remain in hospital.",
+      "link": "https://www.aljazeera.com/news/2026/6/20/nine-left-in-critical-condition-after-uk-train-collision-that-killed-driver?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-20T14:50:46Z",
+      "tier": 2
+    },
+    {
       "title": "Israel and Hezbollah continue strikes despite ceasefire agreement",
-      "description": "Deaths are reported in southern Lebanon, with the IDF saying it hit Hezbollah targets after the group fired over 50 projectiles at Israeli forces.",
+      "description": "At least 20 people have reportedly been killed by Israeli air strikes as the Israeli military said Hezbollah had fired at Israeli troops in southern Lebanon.",
       "link": "https://www.bbc.com/news/articles/cx240k9l112o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-20T13:23:40Z",
@@ -1242,30 +1298,6 @@
       "link": "https://www.aljazeera.com/video/the-listening-post/2026/6/20/trumps-iran-deal-israels-meltdown?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-06-20T09:45:56Z",
-      "tier": 2
-    },
-    {
-      "title": "Parents and two daughters killed in Israeli strike in Gaza",
-      "description": "Israel has repeatedly violated the October ceasefire brokered by the US.",
-      "link": "https://www.aljazeera.com/news/2026/6/20/family-including-two-daughters-killed-in-israeli-strikes-on-gaza?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-20T08:18:01Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli strikes kill 32 in Lebanon, putting US-Iran peace talks in peril",
-      "description": "US \u2060Vice \u2060President JD Vance and other envoys travelling to Switzerland after talks with Iran were postponed.",
-      "link": "https://www.aljazeera.com/news/2026/6/20/us-envoy-headed-for-switzerland-israeli-strikes-on-lebanon-threaten-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-20T07:02:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war day 113: Tehran presses US over Lebanon ceasefire",
-      "description": "Iran presses US over Lebanon as Israeli strikes test fragile ceasefire and broader peace efforts.",
-      "link": "https://www.aljazeera.com/news/2026/6/20/iran-war-day-113-tehran-presses-us-over-lebanon-ceasefire?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-20T05:58:49Z",
       "tier": 2
     },
     {
@@ -1325,14 +1357,6 @@
       "tier": 2
     },
     {
-      "title": "Moment Trump signs US-Iran agreement at Palace of Versailles",
-      "description": "The 14-point Memorandum of Understanding was signed at a post-G7 dinner in France.",
-      "link": "https://www.bbc.com/news/videos/crm03y1xx2no?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-18T01:59:38Z",
-      "tier": 2
-    },
-    {
       "title": "US-Iran deal leaves core sticking points unresolved - and a $300bn question",
       "description": "Trump has insisted the deal ensures that Iran will never buy, develop or produce a nuclear weapon. But text of the agreement falls short of that.",
       "link": "https://www.bbc.com/news/articles/cgmd8dgklzzo?at_medium=RSS&at_campaign=rss",
@@ -1349,12 +1373,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting accessible today shows the most concrete update remains the fragile US-Iran peace framework reached in mid-June 2026, while AP and Al Jazeera report that continued Israeli operations in Lebanon and at least one renewed Iranian missile attack on Israel since the early-April ceasefire are testing that arrangement. On the military side, the latest accessible official CENTCOM fact sheet found was dated April 6, 2026 and reported 13,000+ targets struck, 155+ Iranian vessels damaged or destroyed, and 13,000+ combat flights in Operation Epic Fury. For U.S. fatalities, the best verified cumulative total from accessible Pentagon/CENTCOM sources is 10 confirmed dead: four Army Reserve soldiers killed in Kuwait on March 1 and six KC-135 crew members confirmed dead after the March 12 aircraft loss over Iraq.",
+  "summary": "Confirmed reporting on June 20, 2026 shows the U.S.-Iran memorandum is in force but remains fragile: AP reports Iran says it has closed the Strait of Hormuz over Israeli attacks in Lebanon and alleged U.S. noncompliance, while AP and other reporting indicate Israel remains deeply opposed to the agreement and cross-border fighting involving Lebanon continues. Accessible official U.S. military documentation still supports 13,000+ targets struck by April 6 and at least 13 confirmed U.S. military deaths across Operation Epic Fury-related incidents, while Al Jazeera\u2019s June 7 tracker lists 3,468 killed in Iran, 26 Israelis killed, and 29 killed in Gulf states.",
   "briefings": [
     {
       "date": "2026-06-20",
       "day": 112,
-      "summary": "Confirmed reporting accessible today shows the most concrete update remains the fragile US-Iran peace framework reached in mid-June 2026, while AP and Al Jazeera report that continued Israeli operations in Lebanon and at least one renewed Iranian missile attack on Israel since the early-April ceasefire are testing that arrangement. On the military side, the latest accessible official CENTCOM fact sheet found was dated April 6, 2026 and reported 13,000+ targets struck, 155+ Iranian vessels damaged or destroyed, and 13,000+ combat flights in Operation Epic Fury. For U.S. fatalities, the best verified cumulative total from accessible Pentagon/CENTCOM sources is 10 confirmed dead: four Army Reserve soldiers killed in Kuwait on March 1 and six KC-135 crew members confirmed dead after the March 12 aircraft loss over Iraq."
+      "summary": "Confirmed reporting on June 20, 2026 shows the U.S.-Iran memorandum is in force but remains fragile: AP reports Iran says it has closed the Strait of Hormuz over Israeli attacks in Lebanon and alleged U.S. noncompliance, while AP and other reporting indicate Israel remains deeply opposed to the agreement and cross-border fighting involving Lebanon continues. Accessible official U.S. military documentation still supports 13,000+ targets struck by April 6 and at least 13 confirmed U.S. military deaths across Operation Epic Fury-related incidents, while Al Jazeera\u2019s June 7 tracker lists 3,468 killed in Iran, 26 Israelis killed, and 29 killed in Gulf states."
     },
     {
       "date": "2026-06-19",
