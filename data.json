@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-06-22T21:13:14Z",
+  "lastUpdated": "2026-06-22T22:56:35Z",
   "dayCount": 114,
   "banner": {
     "strikes": "~13,000",
     "killed": "7,230+",
-    "cost": "$63.0B+"
+    "cost": "$63.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$63.0 billion+",
-    "dailyBurnRate": "~$552M/day",
+    "totalCost": "$63.3 billion+",
+    "dailyBurnRate": "~$555M/day",
     "daysOfOps": 114,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-06-22",
-          "source": "LLM-verified (CENTCOM statement reported more than 50,000 troops participating in Operation Epic Fury)"
+          "source": "LLM-verified (Reuters reporting cited by GMA News: additional deployments would add to the 50,000 U.S. troops already in the Middle East.)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-06-20",
-          "source": "LLM-verified (Reuters, March 27, 2026: U.S. military had fired over 850 Tomahawk cruise missiles in four weeks of war)"
+          "lastUpdated": "2026-06-22",
+          "source": "LLM-verified (CSIS 'Last Rounds?' updated April 24, 2026, citing Wall Street Journal reporting that updated Tomahawk expenditure was 'more than 1,000'; rounded here to 1000 as the lowest confirmed floor.)"
         },
         {
           "id": "jdam",
@@ -213,8 +213,8 @@
             "cruise missile",
             "air-launched missile"
           ],
-          "lastUpdated": "2026-05-30",
-          "source": "LLM-verified (CSIS report published Apr. 21, 2026 says around 1,100 JASSM-ERs had been used, citing New York Times reporting; https://www.csis.org/analysis/last-rounds-status-key-munitions-iran-war-ceasefire)"
+          "lastUpdated": "2026-06-22",
+          "source": "LLM-verified (CSIS 'Last Rounds?' updated April 24, 2026, citing New York Times reporting that around 1,100 JASSM-ERs had been used.)"
         },
         {
           "id": "sdb",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Reuters-linked June 7-8 reporting described a fresh Iran-Israel exchange of fire that risked upsetting negotiations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "CENTCOM chief Brad Cooper said on May 14 that Iran still retains some ability to threaten shipping in the Strait of Hormuz despite severe degradation of mine and military capabilities.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "June 5 and June 14-15 reporting indicates a ceasefire/tentative deal framework exists but remains fragile, with exchanges of fire continuing even after earlier ceasefires.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 22, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "US officials have warned military operations could resume if the memorandum of understanding with Iran breaks down.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Israel continued strikes in Lebanon after the June 14 US-Iran deal, raising risk that fighting with Hezbollah could still destabilize the ceasefire framework.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran has again claimed closure of the Strait of Hormuz ahead of new US-Iran technical talks in Switzerland on June 21, 2026, though US military reporting disputes full closure.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The Israel-Hezbollah ceasefire remained fragile on June 19-20, 2026, with AP reporting the truce was not immediately confirmed by both sides and recent fighting had threatened the broader U.S.-Iran deal.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-06-22T21:21:37Z",
+      "text": "<strong>Czech public media staff strike, citing government threat to independence</strong> -- Plan to put funding under direct control has sparked widespread opposition, with critics fearing political interference. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/22/czech-public-media-staff-strike-citing-government-threat-to-independence?traffic_source=rss"
+    },
+    {
       "time": "2026-06-22T20:26:57Z",
       "text": "<strong>15 killed after a fire ignited in a coaching centre in Lucknow, India</strong> -- 15 killed after a fire ignited in a coaching centre in Lucknow, India. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/22/15-killed-after-a-fire-ignited-in-a-coaching-centre-in-lucknow-india?traffic_source=rss"
@@ -773,16 +778,6 @@
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/6/22/will-a-us-iran-deal-transform-the-iranian-economy?traffic_source=rss"
     },
     {
-      "time": "2026-06-22T17:04:35Z",
-      "text": "<strong>Marco Rubio heads to Middle East to address Iran MoU, Hormuz</strong> -- Rubio to visit UAE, Kuwait and Bahrain for talks on Iran and Hormuz priorities from June 23 to June 25. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/22/marco-rubio-heads-to-middle-east-to-address-iran-mou-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-22T15:38:23Z",
-      "text": "<strong>US partially lifts Iran oil sanctions amid \u2018encouraging\u2019 talks</strong> -- The move, expected under the MoU, comes as Vice President JD Vance says there&amp;#039;s a &amp;#039;good foundation&amp;#039; for a final deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/22/us-partially-lifts-iran-oil-sanctions-amid-encouraging-talks?traffic_source=rss"
-    },
-    {
       "time": "2026-06-22T14:18:19Z",
       "text": "<strong>Vance says Iran will allow nuclear inspectors back into the country</strong> -- The US vice-president says a great deal of progress has been made after the first round of talks between the US and Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c3vy3nr63gxo?at_medium=RSS&at_campaign=rss"
@@ -801,6 +796,21 @@
       "time": "2026-06-20T21:57:36Z",
       "text": "<strong>Israeli strikes kill six people in Gaza including Al Jazeera cameraman, officials say</strong> -- The Israeli military accused Ahmed Wishah of being a &quot;Hamas sniper operative&quot;, without providing evidence. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.com/news/articles/c4gy26p6pwzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-19T05:33:59Z",
+      "text": "<strong>Thousands killed in US-Israeli war on Iran - but experts say true total may never be known</strong> -- Experts say internet, media and government restrictions have all hampered casualty reporting across the region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.com/news/articles/cy735xlv50ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-22T17:04:35Z",
+      "text": "<strong>Marco Rubio heads to Middle East to address Iran MoU, Hormuz</strong> -- Rubio to visit UAE, Kuwait and Bahrain for talks on Iran and Hormuz priorities from June 23 to June 25. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/22/marco-rubio-heads-to-middle-east-to-address-iran-mou-hormuz?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-22T15:38:23Z",
+      "text": "<strong>US partially lifts Iran oil sanctions amid \u2018encouraging\u2019 talks</strong> -- The move, expected under the MoU, comes as Vice President JD Vance says there&amp;#039;s a &amp;#039;good foundation&amp;#039; for a final deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/22/us-partially-lifts-iran-oil-sanctions-amid-encouraging-talks?traffic_source=rss"
     },
     {
       "time": "2026-06-22T14:43:55Z",
@@ -841,16 +851,6 @@
       "time": "2026-06-22T07:27:52Z",
       "text": "<strong>60-day US-Iran talks will be \u2018really hard\u2019</strong> -- 60-day US-Iran talks will be \u2018really hard\u2019 <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/quotable/2026/6/22/60-day-us-iran-talks-will-be-really?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-22T10:46:45Z",
-      "text": "<strong>First round of US-Iran talks ends with encouraging progress, mediators say</strong> -- The US-Iran talks began on Sunday in Switzerland, after last week&#x27;s agreement, which includes a commitment to reach a final deal within 60 days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwy0q41v1lzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-20T17:40:43Z",
-      "text": "<strong>Lebanese turtle conservationist Mona Khalil killed by Israeli strike</strong> -- Mona Khalil, who had refused to leave the beach she had spent years protecting, died after several days in hospital, an environmental group said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.com/news/articles/cwylx1vq18zo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Czech public media staff strike, citing government threat to independence",
+      "description": "Plan to put funding under direct control has sparked widespread opposition, with critics fearing political interference.",
+      "link": "https://www.aljazeera.com/news/2026/6/22/czech-public-media-staff-strike-citing-government-threat-to-independence?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-22T21:21:37Z",
+      "tier": 2
+    },
+    {
       "title": "15 killed after a fire ignited in a coaching centre in Lucknow, India",
       "description": "15 killed after a fire ignited in a coaching centre in Lucknow, India.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/22/15-killed-after-a-fire-ignited-in-a-coaching-centre-in-lucknow-india?traffic_source=rss",
@@ -1242,22 +1250,6 @@
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/6/22/will-a-us-iran-deal-transform-the-iranian-economy?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-06-22T17:06:53Z",
-      "tier": 2
-    },
-    {
-      "title": "Marco Rubio heads to Middle East to address Iran MoU, Hormuz",
-      "description": "Rubio to visit UAE, Kuwait and Bahrain for talks on Iran and Hormuz priorities from June 23 to June 25.",
-      "link": "https://www.aljazeera.com/news/2026/6/22/marco-rubio-heads-to-middle-east-to-address-iran-mou-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-22T17:04:35Z",
-      "tier": 2
-    },
-    {
-      "title": "US partially lifts Iran oil sanctions amid \u2018encouraging\u2019 talks",
-      "description": "The move, expected under the MoU, comes as Vice President JD Vance says there&#039;s a &#039;good foundation&#039; for a final deal.",
-      "link": "https://www.aljazeera.com/news/2026/6/22/us-partially-lifts-iran-oil-sanctions-amid-encouraging-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-22T15:38:23Z",
       "tier": 2
     },
     {
@@ -1341,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on June 22, 2026 indicates diplomacy has become the main development: AP reported that Vice President JD Vance said US-Iran talks in Switzerland created a 'good foundation' for a permanent deal, while technical negotiations continue. The most recent broadly cited casualty totals I could verify remain 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 29 killed in Gulf states, and 7 US troops killed as confirmed by CENTCOM. On the military side, the latest official CENTCOM fact sheet I found is dated April 6, 2026 and reported 13,000+ targets struck, with B-2s, carriers, destroyers, MQ-9s, and other assets employed, but it did not provide confirmed cumulative counts for most specific munitions categories.",
+  "summary": "Confirmed reporting indicates the war has moved into a ceasefire-and-negotiation phase rather than full-scale daily bombardment: Al Jazeera reported a preliminary U.S.-Iran framework by late May and a tentative deal announced on June 15, while CBS on May 14 said CENTCOM assessed Operation Epic Fury had achieved its main military objectives and damaged or destroyed more than 85% of Iran\u2019s ballistic-missile, drone, and naval industrial base. Accessible current hard numbers remain sparse, but CENTCOM\u2019s April 6 fact sheet still provides the clearest official strike total at 13,000+ targets struck, and outside analysis citing major U.S. press reports put U.S. Tomahawk use above 1,000 and JASSM use around 1,100; however, I could not verify newer official cumulative casualty totals for Iran, U.S. KIA, Gulf-state deaths, or civilian/wounded counts from accessible named-source reporting.",
   "briefings": [
     {
       "date": "2026-06-22",
       "day": 114,
-      "summary": "Confirmed reporting on June 22, 2026 indicates diplomacy has become the main development: AP reported that Vice President JD Vance said US-Iran talks in Switzerland created a 'good foundation' for a permanent deal, while technical negotiations continue. The most recent broadly cited casualty totals I could verify remain 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 29 killed in Gulf states, and 7 US troops killed as confirmed by CENTCOM. On the military side, the latest official CENTCOM fact sheet I found is dated April 6, 2026 and reported 13,000+ targets struck, with B-2s, carriers, destroyers, MQ-9s, and other assets employed, but it did not provide confirmed cumulative counts for most specific munitions categories."
+      "summary": "Confirmed reporting indicates the war has moved into a ceasefire-and-negotiation phase rather than full-scale daily bombardment: Al Jazeera reported a preliminary U.S.-Iran framework by late May and a tentative deal announced on June 15, while CBS on May 14 said CENTCOM assessed Operation Epic Fury had achieved its main military objectives and damaged or destroyed more than 85% of Iran\u2019s ballistic-missile, drone, and naval industrial base. Accessible current hard numbers remain sparse, but CENTCOM\u2019s April 6 fact sheet still provides the clearest official strike total at 13,000+ targets struck, and outside analysis citing major U.S. press reports put U.S. Tomahawk use above 1,000 and JASSM use around 1,100; however, I could not verify newer official cumulative casualty totals for Iran, U.S. KIA, Gulf-state deaths, or civilian/wounded counts from accessible named-source reporting."
     },
     {
       "date": "2026-06-21",
