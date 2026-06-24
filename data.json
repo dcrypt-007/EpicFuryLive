@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-06-24T08:33:09Z",
+  "lastUpdated": "2026-06-24T12:01:00Z",
   "dayCount": 116,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,527+",
-    "cost": "$62.3B+"
+    "killed": "5,176+",
+    "cost": "$61.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "4",
+    "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1443",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$62.3 billion+",
-    "dailyBurnRate": "~$537M/day",
+    "totalCost": "$61.1 billion+",
+    "dailyBurnRate": "~$527M/day",
     "daysOfOps": 116,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-24",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; used as closest confirmed official sortie figure)"
+          "source": "LLM-verified (IDF article published April 1, 2026: 'Over 800 strike sorties' over the first month of Operation Roaring Lion; no newer official combined US-Israeli cumulative sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The US-Iran interim deal signed last week opened a 60-day negotiation window, according to AP on June 22",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "IAEA access remains disputed: AP reported June 24 that UN nuclear inspectors will visit Iranian sites only after a final deal, according to Tehran",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US Senate approved a war powers resolution aimed at curbing the White House's freedom of action in Iran, according to Al Jazeera and BBC headlines provided by the user",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 24, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported congressional pressure for overdue Pentagon civilian-harm investigations, including the Feb. 28 Minab school strike, creating political risk around renewed operations",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and AP reporting indicate a fragile interim U.S.-Iran deal remains in place after the June 14-17 ceasefire/signing period, but implementation and verification disputes continue",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported June 23 that the Pentagon is seeking roughly $80 billion more from Congress for the Iran war, citing munitions depletion, repair, and continued force-deployment costs",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Reuters-linked June 7-8 reporting described a fresh Iran-Israel exchange of fire that risked upsetting negotiations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-06-24T11:25:40Z",
+      "text": "<strong>US Senate approves Iran war powers resolution: What that means for Trump</strong> -- Four Republicans cross party lines to vote in favour of the measure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/24/us-senate-approves-iran-war-powers-resolution-what-that-means-for-trump?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-24T11:24:15Z",
+      "text": "<strong>North Korea commissions warship as Kim eyes nuclear navy</strong> -- Kim Jong Un vows to equip North Korea&amp;#039;s navy with nuclear weapons, signaling a strategic shift in military capabilities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/gallery/2026/6/24/north-korea-commissions-warship-as-kim-eyes-nuclear-navy?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-24T08:32:05Z",
+      "text": "<strong>Ukraine strikes strategic Russian bridge in Crimea</strong> -- Ukraine strikes strategic Russian bridge in Crimea <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/ukraine-strikes-strategic-russian-bridge-in-crimea?traffic_source=rss"
+    },
+    {
       "time": "2026-06-24T07:04:05Z",
       "text": "<strong>Iran war day 117: Nuclear inspections dispute as US Senate curbs war powers</strong> -- Iran and the US clash over nuclear inspections and Hormuz as negotiators push for a final deal within 60 days. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/24/iran-war-day-117-nuclear-inspections-dispute-as-us-senate-curbs-war-powers?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-24T03:57:59Z",
+      "text": "<strong>Congress passes war powers measure for first time, breaking with Trump over Iran</strong> -- The resolution passed on Tuesday was largely symbolic, but it adds to pressure on the White House to end the conflict once and for all. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ce8j6g3v3r4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-23T21:04:11Z",
+      "text": "<strong>UN says it will evacuate sailors stranded in Strait of Hormuz, as Rubio warns against tolls</strong> -- US Secretary of State Marco Rubio warned Iran that no country can charge fees for ships to travel through the strait. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c24yr796emzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-24T05:07:55Z",
+      "text": "<strong>Clean sweep for Mamdani-backed candidates in New York&#x27;s Democratic primary</strong> -- Brad Lander unseats Dan Goldman in a race that laid bare the city&#x27;s divisions over the Israel-Gaza war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/clye652m41po?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-24T04:06:51Z",
+      "text": "<strong>Bondi Beach shooting hero pleads not guilty to alleged assault on his father</strong> -- Ahmed al Ahmed tackled one of the gunmen who killed 15 people at a Jewish event in December. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn8q33gdgjjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-23T14:55:31Z",
+      "text": "<strong>Dozens of ships head through Strait of Hormuz after US-Iran deal</strong> -- Traffic in the waterway has risen since the US and Iran signed a deal aimed at ending the war, including 42 ships on Saturday alone. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx23rnzdgl8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-23T16:47:45Z",
+      "text": "<strong>Israeli troops kill two in south Lebanon after lull in fighting, authorities say</strong> -- Israel&#x27;s military says the two men were Hezbollah operatives, but the Iran-backed group accuses it of a ceasefire violation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c36ykpw0yego?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-24T01:57:54Z",
@@ -778,29 +823,9 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/23/un-begins-evacuation-of-11000-sailors-stranded-in-strait-of-hormuz?traffic_source=rss"
     },
     {
-      "time": "2026-06-24T03:57:59Z",
-      "text": "<strong>Congress passes war powers measure for first time, breaking with Trump over Iran</strong> -- The resolution passed on Tuesday was largely symbolic, but it adds to pressure on the White House to end the conflict once and for all. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ce8j6g3v3r4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-06-23T16:27:17Z",
       "text": "<strong>Drowning deaths soar in France as Europe buckles in peak of heatwave</strong> -- Forty people have drowned in heatwave-related deaths in France since last Thursday, Prime Minister S\u00e9bastien Lecornu says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c79yvw3j114o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-23T21:04:11Z",
-      "text": "<strong>UN says it will evacuate sailors stranded in Strait of Hormuz, as Rubio warns against tolls</strong> -- US Secretary of State Marco Rubio warned Iran that no country can charge fees for ships to travel through the strait. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c24yr796emzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-24T05:07:55Z",
-      "text": "<strong>Clean sweep for Mamdani-backed candidates in New York&#x27;s Democratic primary</strong> -- Brad Lander unseats Dan Goldman in a race that laid bare the city&#x27;s divisions over the Israel-Gaza war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/clye652m41po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-23T14:55:31Z",
-      "text": "<strong>Dozens of ships head through Strait of Hormuz after US-Iran deal</strong> -- Traffic in the waterway has risen since the US and Iran signed a deal aimed at ending the war, including 42 ships on Saturday alone. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx23rnzdgl8o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-23T21:19:35Z",
@@ -826,31 +851,6 @@
       "time": "2026-06-23T19:57:01Z",
       "text": "<strong>Iran\u2019s president arrives in Pakistan for peace talks</strong> -- Iran\u2019s president arrives in Pakistan for peace talks <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/23/irans-president-arrives-in-pakistan-for-peace-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-23T19:50:29Z",
-      "text": "<strong>US Senate votes to pass Iran war powers resolution in blow to Trump</strong> -- The resolution is the first to pass both the Senate and the House, though it is likely to face a presidential veto. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/23/us-senate-votes-to-halt-iran-war-bucking-trump?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-23T19:45:31Z",
-      "text": "<strong>US says Iran can stay for two days before Egypt World Cup game</strong> -- Iran&amp;#039;s team will still need to leave the US shortly after their third group-stage match against Egypt on Friday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/6/23/us-says-iran-can-stay-for-two-days-before-egypt-world-cup-game?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-23T19:04:20Z",
-      "text": "<strong>Displaced Lebanese return south under fragile ceasefire deal</strong> -- Displaced Lebanese are heading back south after a US-Iran backed ceasefire halted months of Israeli bombardment. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/23/displaced-lebanese-return-south-under-fragile-ceasefire-deal?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-23T16:29:28Z",
-      "text": "<strong>Missile strike kills three in Ukraine as Russia feels war\u2019s economic strain</strong> -- Kyiv has previously accused Moscow of using cluster munitions, which, when dropped, scatter into smaller munitions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/23/missile-strike-kills-three-in-ukraine-as-russia-feels-wars-economic-strain?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-23T13:12:18Z",
-      "text": "<strong>What the US and Iran agreed \u2013 and disagreed \u2013 on first day of talks</strong> -- Leaders from Iran and the US have lauded progress on day one of Switzerland talks but disagree about crucial aspects. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/23/what-the-us-and-iran-agreed-and-disagreed-on-first-day-of-talks?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "US Senate approves Iran war powers resolution: What that means for Trump",
+      "description": "Four Republicans cross party lines to vote in favour of the measure.",
+      "link": "https://www.aljazeera.com/news/2026/6/24/us-senate-approves-iran-war-powers-resolution-what-that-means-for-trump?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-24T11:25:40Z",
+      "tier": 2
+    },
+    {
+      "title": "North Korea commissions warship as Kim eyes nuclear navy",
+      "description": "Kim Jong Un vows to equip North Korea&#039;s navy with nuclear weapons, signaling a strategic shift in military capabilities.",
+      "link": "https://www.aljazeera.com/gallery/2026/6/24/north-korea-commissions-warship-as-kim-eyes-nuclear-navy?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-24T11:24:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Ukraine strikes strategic Russian bridge in Crimea",
+      "description": "Ukraine strikes strategic Russian bridge in Crimea",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/ukraine-strikes-strategic-russian-bridge-in-crimea?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-24T08:32:05Z",
+      "tier": 2
+    },
+    {
       "title": "Iran war day 117: Nuclear inspections dispute as US Senate curbs war powers",
       "description": "Iran and the US clash over nuclear inspections and Hormuz as negotiators push for a final deal within 60 days.",
       "link": "https://www.aljazeera.com/news/2026/6/24/iran-war-day-117-nuclear-inspections-dispute-as-us-senate-curbs-war-powers?traffic_source=rss",
@@ -1245,38 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "Syrians reject Trump\u2019s call for Syria to combat Hezbollah in Lebanon",
-      "description": "Residents in Damascus rejected US President Donald Trump&#039;s suggestion that Syria should confront Hezbollah in Lebanon.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/syrians-reject-trumps-call-for-syria-to-combat-hezbollah-in-lebanon?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-24T01:57:54Z",
-      "tier": 2
-    },
-    {
-      "title": "US Senate votes to pause Iran war in rare rebuke to Trump",
-      "description": "US Senate votes to pause Iran war in rare rebuke to Trump",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/us-senate-votes-to-pause-iran-war-in-rare-rebuke-to-trump?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-24T01:29:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Trump, Tehran disagree over nuclear inspections, Hormuz",
-      "description": "US and Iran offer conflicting statements as negotiators push towards reaching a final, comprehensive deal.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/24/iran-war-live-trump-tehran-at-odds-over-nuclear-inspections-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-24T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "UN begins evacuation of 11,000 sailors stranded in Strait of Hormuz",
-      "description": "The UN&#039;s maritime agency launched an operation to evacuate more than 11,000 sailors stranded in the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/23/un-begins-evacuation-of-11000-sailors-stranded-in-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-23T23:49:00Z",
-      "tier": 2
-    },
-    {
       "title": "UN says it will evacuate sailors stranded in Strait of Hormuz, as Rubio warns against tolls",
       "description": "US Secretary of State Marco Rubio warned Iran that no country can charge fees for ships to travel through the strait.",
       "link": "https://www.bbc.co.uk/news/articles/c24yr796emzo?at_medium=RSS&at_campaign=rss",
@@ -1293,43 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Drowning deaths soar in France as Europe buckles in peak of heatwave",
-      "description": "Forty people have drowned in heatwave-related deaths in France since last Thursday, Prime Minister S\u00e9bastien Lecornu says.",
-      "link": "https://www.bbc.co.uk/news/articles/c79yvw3j114o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-23T16:27:17Z",
-      "tier": 2
-    },
-    {
       "title": "Dozens of ships head through Strait of Hormuz after US-Iran deal",
       "description": "Traffic in the waterway has risen since the US and Iran signed a deal aimed at ending the war, including 42 ships on Saturday alone.",
       "link": "https://www.bbc.co.uk/news/articles/cx23rnzdgl8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-23T14:55:31Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says no new commitments on nuclear sites after Vance says inspectors to be invited back",
-      "description": "Iran's foreign ministry says it made \"no new commitments\" on nuclear inspections after talks in Switzerland.",
-      "link": "https://www.bbc.co.uk/news/articles/c3vy3nr63gxo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-23T12:14:58Z",
-      "tier": 2
-    },
-    {
-      "title": "UN commission of inquiry says Israel committing genocide in Gaza by deliberately targeting children",
-      "description": "Israel rejects the new report by the three-member expert panel, calling it a \"libellous sham\".",
-      "link": "https://www.bbc.co.uk/news/articles/c0jy96w6pw2o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-23T11:10:06Z",
-      "tier": 2
-    },
-    {
-      "title": "Montreal shooting leaves officer, civilian and suspect dead",
-      "description": "It was the first time in 24 years that a Montreal police officer was  killed in the line of duty, the city's police chief said.",
-      "link": "https://www.bbc.co.uk/news/articles/c5yz3lv015qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-23T08:36:38Z",
       "tier": 2
     },
     {
@@ -1341,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today points to diplomacy and maritime access\u2014not major new battlefield metrics\u2014as the main developments. AP reported on June 24, 2026 that the IAEA chief expects inspectors to visit Iranian nuclear sites under the interim U.S.-Iran deal, while separate AP reporting says Washington and Tehran still dispute whether Iran has formally agreed to those inspections. CENTCOM\u2019s latest accessible official fact sheet remains dated April 6, 2026 and lists 13,000+ targets struck; no newer official public cumulative weapons-use or deployment totals were found in accessible current reporting. For casualties, the most recent accessible named cumulative figures found were Al Jazeera\u2019s June 7 and June 10 trackers, which put deaths in Iran at 3,468, Israeli deaths at 26, and Gulf-state deaths at 29.",
+  "summary": "Confirmed reporting on June 24, 2026 indicates the war has shifted from active large-scale strikes to a fragile post-ceasefire negotiation phase: AP reported that the interim US-Iran deal signed last week created a 60-day window for a final settlement, while a dispute over IAEA inspections persists and Tehran says site visits can happen only after a final agreement. Al Jazeera and BBC headlines indicate the US Senate passed a largely symbolic war powers measure, adding political pressure on the White House. For hard numbers, the newest clearly attributable official strike total found remains CENTCOM's April 6 fact sheet listing 13,000+ targets struck, while the latest clearly sourced Iranian casualty figures found were 3,468 total deaths and 26,500+ wounded from Iran's Health Ministry as cited in a June 6 military situation update, with HRANA documenting 1,701 civilian deaths through April 8.",
   "briefings": [
     {
       "date": "2026-06-24",
       "day": 116,
-      "summary": "Confirmed reporting available today points to diplomacy and maritime access\u2014not major new battlefield metrics\u2014as the main developments. AP reported on June 24, 2026 that the IAEA chief expects inspectors to visit Iranian nuclear sites under the interim U.S.-Iran deal, while separate AP reporting says Washington and Tehran still dispute whether Iran has formally agreed to those inspections. CENTCOM\u2019s latest accessible official fact sheet remains dated April 6, 2026 and lists 13,000+ targets struck; no newer official public cumulative weapons-use or deployment totals were found in accessible current reporting. For casualties, the most recent accessible named cumulative figures found were Al Jazeera\u2019s June 7 and June 10 trackers, which put deaths in Iran at 3,468, Israeli deaths at 26, and Gulf-state deaths at 29."
+      "summary": "Confirmed reporting on June 24, 2026 indicates the war has shifted from active large-scale strikes to a fragile post-ceasefire negotiation phase: AP reported that the interim US-Iran deal signed last week created a 60-day window for a final settlement, while a dispute over IAEA inspections persists and Tehran says site visits can happen only after a final agreement. Al Jazeera and BBC headlines indicate the US Senate passed a largely symbolic war powers measure, adding political pressure on the White House. For hard numbers, the newest clearly attributable official strike total found remains CENTCOM's April 6 fact sheet listing 13,000+ targets struck, while the latest clearly sourced Iranian casualty figures found were 3,468 total deaths and 26,500+ wounded from Iran's Health Ministry as cited in a June 6 military situation update, with HRANA documenting 1,701 civilian deaths through April 8."
     },
     {
       "date": "2026-06-23",
