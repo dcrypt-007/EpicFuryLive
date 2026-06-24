@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-24T15:12:28Z",
+  "lastUpdated": "2026-06-24T17:20:38Z",
   "dayCount": 116,
   "banner": {
     "strikes": "~13,000",
-    "killed": "5,176+",
-    "cost": "$63.9B+"
+    "killed": "40+",
+    "cost": "$62.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "7",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$63.9 billion+",
-    "dailyBurnRate": "~$551M/day",
+    "totalCost": "$62.4 billion+",
+    "dailyBurnRate": "~$538M/day",
     "daysOfOps": 116,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 49,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-06-22",
-          "source": "LLM-verified (CSIS 'Last Rounds?' updated April 24, 2026, citing Wall Street Journal reporting that updated Tomahawk expenditure was 'more than 1,000'; rounded here to 1000 as the lowest confirmed floor.)"
+          "lastUpdated": "2026-06-24",
+          "source": "LLM-verified (Al Jazeera June 11, 2026, reporting Trump's statement that the US fired 49 Tomahawk missiles at targets inside Iran; latest confirmed cumulative figure found in retrieved sources.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-24",
-          "source": "LLM-verified (IDF Operation Roaring Lion: The Numbers, published April 20, 2026, states over 8,500 aircraft sorties)"
+          "source": "LLM-verified (DoD/CENTCOM April 1, 2026 Operation Epic Fury fact sheet lists 'Combat Flights: 13,000+'; using confirmed floor value only.)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "49 \u00d7 $2,000,000 each",
+        "cost": "$98,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "IAEA access to Iranian sites is under negotiation as part of the postwar deal process, per BBC headline context.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US domestic political pressure increased after Senate approval of an Iran war powers resolution, according to today's reported headlines.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Post-ceasefire maritime insecurity in the Strait of Hormuz remains active, with demining discussions and resumed but fragile shipping traffic.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 24, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera RSS says technical talks in Switzerland concluded successfully and Iran says an agreement was reached to release $12bn in frozen assets",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera RSS says Iran made a Lebanon ceasefire a key condition in ongoing negotiations with the US",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline says a Qatar LNG facility explosion killed at least 13; cause described as a technical accident, but it adds regional energy-security stress.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline says the U.S. eased oil sanctions while Iran denied Vance's claim on nuclear inspectors, suggesting postwar compliance disputes remain unresolved.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-06-24T16:50:57Z",
+      "text": "<strong>Has the worst of the Hormuz crisis passed?</strong> -- Ships are moving again through the Strait of Hormuz, with oil prices falling. But relief for consumers may take longer. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/6/24/has-the-worst-of-the-hormuz-crisis-passed?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-24T15:21:59Z",
+      "text": "<strong>Israeli attacks on Gaza and occupied West Bank kill two, including child</strong> -- Health officials at Nasser Medical Complex tell Al Jazeera a 12-year-old child was killed in al-Mawasi, Gaza. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/24/israeli-attacks-on-gaza-and-occupied-west-bank-kill-two-including-child?traffic_source=rss"
+    },
+    {
       "time": "2026-06-24T14:27:55Z",
       "text": "<strong>Rubio says Iran cannot charge tolls in Hormuz: What we know</strong> -- Tehran says the strait &amp;#039;will never return&amp;#039; to its prewar conditions and claims it can charge fees for services. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/24/rubio-says-iran-cannot-charge-tolls-in-hormuz-what-we-know?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-06-24T01:57:54Z",
       "text": "<strong>Syrians reject Trump\u2019s call for Syria to combat Hezbollah in Lebanon</strong> -- Residents in Damascus rejected US President Donald Trump&amp;#039;s suggestion that Syria should confront Hezbollah in Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/syrians-reject-trumps-call-for-syria-to-combat-hezbollah-in-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-24T01:29:51Z",
-      "text": "<strong>US Senate votes to pause Iran war in rare rebuke to Trump</strong> -- US Senate votes to pause Iran war in rare rebuke to Trump <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/us-senate-votes-to-pause-iran-war-in-rare-rebuke-to-trump?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-24T00:00:00Z",
-      "text": "<strong>Iran war live: Trump, Tehran disagree over nuclear inspections, Hormuz</strong> -- US and Iran offer conflicting statements as negotiators push towards reaching a final, comprehensive deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/24/iran-war-live-trump-tehran-at-odds-over-nuclear-inspections-hormuz?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,24 @@
   ],
   "newsFeed": [
     {
+      "title": "Has the worst of the Hormuz crisis passed?",
+      "description": "Ships are moving again through the Strait of Hormuz, with oil prices falling. But relief for consumers may take longer.",
+      "link": "https://www.aljazeera.com/video/counting-the-cost/2026/6/24/has-the-worst-of-the-hormuz-crisis-passed?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-24T16:50:57Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli attacks on Gaza and occupied West Bank kill two, including child",
+      "description": "Health officials at Nasser Medical Complex tell Al Jazeera a 12-year-old child was killed in al-Mawasi, Gaza.",
+      "link": "https://www.aljazeera.com/news/2026/6/24/israeli-attacks-on-gaza-and-occupied-west-bank-kill-two-including-child?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-24T15:21:59Z",
+      "tier": 2
+    },
+    {
       "title": "Congress passes war powers measure for first time, breaking with Trump over Iran",
-      "description": "The resolution passed on Tuesday was largely symbolic, but it adds to pressure on the White House to end the conflict once and for all.",
+      "description": "Experts say Trump is likely to ignore it, but that even though it carries little power, it is politically significant.",
       "link": "https://www.bbc.co.uk/news/articles/ce8j6g3v3r4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-24T14:57:21Z",
@@ -1301,14 +1317,6 @@
       "tier": 2
     },
     {
-      "title": "Ukraine strikes strategic Russian bridge in Crimea",
-      "description": "Ukraine strikes strategic Russian bridge in Crimea",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/ukraine-strikes-strategic-russian-bridge-in-crimea?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-24T08:32:05Z",
-      "tier": 2
-    },
-    {
       "title": "Bondi Beach shooting hero pleads not guilty to alleged assault on his father",
       "description": "Ahmed al Ahmed tackled one of the gunmen who killed 15 people at a Jewish event in December.",
       "link": "https://www.bbc.co.uk/news/articles/cn8q33gdgjjo?at_medium=RSS&at_campaign=rss",
@@ -1333,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates the war remains in a fragile post-ceasefire phase: Al Jazeera and BBC report that a US-Iran memorandum of understanding signed around June 16-18, 2026 is in effect and tied to reopening the Strait of Hormuz, though Tehran continues to assert leverage over shipping terms. On the military side, the most recent official cumulative figures located in searched primary and major-media sources remain limited: CENTCOM last publicly confirmed 7 US troops killed in action on March 8, 2026 and an April 6 CENTCOM fact sheet listed 13,000+ targets struck; separately, Adm. Brad Cooper told reporters on March 5 that more than 50,000 US troops and two carrier strike groups were participating, while IDF\u2019s April 20 operational summary cited approximately 10,800 strikes in Iran and over 8,500 aircraft sorties. Searched sources did not yield current confirmed cumulative totals for Iranian deaths, Iranian wounded, Israeli deaths, Gulf-state deaths, or key weapons-expended counts.",
+  "summary": "Confirmed reporting available in retrieved sources remains patchy for several database fields. CENTCOM\u2019s latest clearly retrievable casualty update still puts US KIA at 7 as of March 8, 2026, while a CENTCOM fact sheet dated April 6 lists 13,000+ targets struck; an April 1 DoD/CENTCOM fact sheet separately lists 13,000+ combat flights. Al Jazeera\u2019s live tracker reports 26 Israelis killed and 7 deaths in Kuwait, and on June 11 reported Trump\u2019s statement that 49 Tomahawks were fired in renewed US strikes. Today\u2019s headline context indicates the war has shifted into a fragile post-ceasefire phase focused on Hormuz shipping, Gulf reassurance, and negotiations over inspections and war powers, but I did not locate current confirmed Iran-wide death or wounded totals from a named source robust enough to update those fields safely.",
   "briefings": [
     {
       "date": "2026-06-24",
       "day": 116,
-      "summary": "Confirmed reporting indicates the war remains in a fragile post-ceasefire phase: Al Jazeera and BBC report that a US-Iran memorandum of understanding signed around June 16-18, 2026 is in effect and tied to reopening the Strait of Hormuz, though Tehran continues to assert leverage over shipping terms. On the military side, the most recent official cumulative figures located in searched primary and major-media sources remain limited: CENTCOM last publicly confirmed 7 US troops killed in action on March 8, 2026 and an April 6 CENTCOM fact sheet listed 13,000+ targets struck; separately, Adm. Brad Cooper told reporters on March 5 that more than 50,000 US troops and two carrier strike groups were participating, while IDF\u2019s April 20 operational summary cited approximately 10,800 strikes in Iran and over 8,500 aircraft sorties. Searched sources did not yield current confirmed cumulative totals for Iranian deaths, Iranian wounded, Israeli deaths, Gulf-state deaths, or key weapons-expended counts."
+      "summary": "Confirmed reporting available in retrieved sources remains patchy for several database fields. CENTCOM\u2019s latest clearly retrievable casualty update still puts US KIA at 7 as of March 8, 2026, while a CENTCOM fact sheet dated April 6 lists 13,000+ targets struck; an April 1 DoD/CENTCOM fact sheet separately lists 13,000+ combat flights. Al Jazeera\u2019s live tracker reports 26 Israelis killed and 7 deaths in Kuwait, and on June 11 reported Trump\u2019s statement that 49 Tomahawks were fired in renewed US strikes. Today\u2019s headline context indicates the war has shifted into a fragile post-ceasefire phase focused on Hormuz shipping, Gulf reassurance, and negotiations over inspections and war powers, but I did not locate current confirmed Iran-wide death or wounded totals from a named source robust enough to update those fields safely."
     },
     {
       "date": "2026-06-23",
