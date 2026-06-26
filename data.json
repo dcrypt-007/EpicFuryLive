@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-26T16:27:40Z",
+  "lastUpdated": "2026-06-26T19:03:44Z",
   "dayCount": 118,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "3,505+",
-    "cost": "$33.0B+"
+    "strikes": "~13,000",
+    "killed": "3,496+",
+    "cost": "$33.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.0 billion+",
-    "dailyBurnRate": "~$280M/day",
+    "totalCost": "$33.2 billion+",
+    "dailyBurnRate": "~$281M/day",
     "daysOfOps": 118,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-26",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury Fact Sheet dated March 28, 2026: 11,000+ combat flights in first 29 days; no newer confirmed cumulative sorties total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; stored here as 13000 because output requires a number.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Iran rejected U.S.-GCC pressure over missiles, the Strait of Hormuz, and regional armed groups, indicating continued escalation risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC also reported June 26, 2026 that President Trump accused Iran of breaching the ceasefire after the Strait of Hormuz attack.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC reported on June 26, 2026 that a Singapore-flagged ship was struck in the Strait of Hormuz, prompting a pause in a planned evacuation of sailors.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 26, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "US domestic political pressure increased after Senate approval of an Iran war powers resolution, according to today's reported headlines.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Post-ceasefire maritime insecurity in the Strait of Hormuz remains active, with demining discussions and resumed but fragile shipping traffic.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports Israel and Hezbollah agreed to halt heavy fighting in southern Lebanon on June 19, 2026 after exchanges that killed 47 in Lebanon and 4 Israeli soldiers",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and BBC report the US-Iran ceasefire/MoU remains fragile while Strait of Hormuz security and toll disputes continue",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,19 @@
   ],
   "developments": [
     {
-      "time": "2026-06-26T16:15:56Z",
-      "text": "<strong>Why did these World Cup ads strike a nerve in Egypt?</strong> -- Why did these World Cup ads strike a nerve in Egypt? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/26/why-did-these-world-cup-ads-strike-a-nerve-in-egypt?traffic_source=rss"
+      "time": "2026-06-26T17:55:06Z",
+      "text": "<strong>Why did these World Cup ads strike a nerve in Egypt?</strong> -- A viral World Cup campaign tapped into a familiar conversation among Egyptian football fans, prompting debate. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/26/why-did-these-world-cup-ads-strike-a-nerve-in-egypt-2?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-26T17:40:36Z",
+      "text": "<strong>Nine people killed in building collapse in Lagos, Nigeria</strong> -- Twenty seven people were rescued with injuries of varying severity; governor orders safety checks on surrounding area. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/26/nine-people-killed-in-building-collapse-in-lagos-nigeria?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-26T16:27:13Z",
+      "text": "<strong>Hezbollah: Israel must \u2018unconditionally\u2019 leave Lebanon</strong> -- Hezbollah says Israel has &amp;quot;no option&amp;quot; but to \u201cunconditionally\u201d withdraw from southern Lebanon and other occupied areas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/26/aje-onl-nf_hezbollah_israel-must-unconditionally-leave-lebanon-260626?traffic_source=rss"
     },
     {
       "time": "2026-06-26T14:59:15Z",
@@ -769,8 +779,33 @@
     },
     {
       "time": "2026-06-26T13:28:34Z",
-      "text": "<strong>Hezbollah demands Israel leave Lebanon \u2018unconditionally\u2019 as US talks extend</strong> -- As Lebanon-Israel strive for agreement, Hezbollah chief Naim Qassem accepts &amp;#039;no normalisation&amp;#039; and &amp;#039;no gains for Israel&amp;#039; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Hezbollah demands Israel leave Lebanon \u2018unconditionally\u2019 amid talks in US</strong> -- As Lebanon-Israel reach an agreement, Hezbollah chief Naim Qassem accepts &amp;#039;no normalisation&amp;#039; and &amp;#039;no gains for Israel&amp;#039; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/26/hezbollah-demands-israel-leave-lebanon-unconditionally-as-us-talks-extend?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-26T18:36:32Z",
+      "text": "<strong>Mother dies saving daughter in Venezuela earthquakes</strong> -- H\u00e9ctor Bello wrote on social media that &quot;you gave your own life for our daughter&quot; in the quakes which killed at least 920 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c0jydyz8z6jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-26T18:03:32Z",
+      "text": "<strong>Trump accuses Iran of ceasefire breach after Strait of Hormuz attack</strong> -- A Singapore-flagged ship was struck crossing the waterway on Thursday, prompting a large-scale evacuation to be paused. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckg54g0ry0vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-26T10:49:11Z",
+      "text": "<strong>Christmas market attacker jailed for life for murdering six in Germany</strong> -- A nine-year-old and five women were killed when Taleb Al-Abdulmohsen drove into the market in 2024. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cy06y63y6lno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-25T09:06:59Z",
+      "text": "<strong>Trump asks Congress for billions for Iran war, after tension with Republicans</strong> -- But the budget faces an uphill battle as the president spars with some members of his own party over the issue. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1eydwldzdjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-26T16:15:56Z",
+      "text": "<strong>Why did these World Cup ads strike a nerve in Egypt?</strong> -- Why did these World Cup ads strike a nerve in Egypt? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/26/why-did-these-world-cup-ads-strike-a-nerve-in-egypt?traffic_source=rss"
     },
     {
       "time": "2026-06-26T11:25:13Z",
@@ -791,16 +826,6 @@
       "time": "2026-06-26T11:27:59Z",
       "text": "<strong>UN pauses Strait of Hormuz evacuation plan after cargo ship attacked</strong> -- The ship was reportedly struck by an &quot;unknown projectile&quot; near Oman but no casualties were reported. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cjwg9np904qo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-26T10:49:11Z",
-      "text": "<strong>Christmas market attacker jailed for life for murdering six in Germany</strong> -- A nine-year-old and five women were killed when Taleb Al-Abdulmohsen drove into the market in 2024. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cy06y63y6lno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-25T09:06:59Z",
-      "text": "<strong>Trump asks Congress for billions for Iran war, after tension with Republicans</strong> -- But the budget faces an uphill battle as the president spars with some members of his own party over the issue. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1eydwldzdjo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-26T07:07:47Z",
@@ -826,31 +851,6 @@
       "time": "2026-06-26T04:04:29Z",
       "text": "<strong>Egypt coach offers support for Iranian team before crucial World Cup match</strong> -- Hossam Hassan invokes FIFA&amp;#039;s &amp;#039;respect and fair play&amp;#039; rules amid US restrictions on Iran, whom Egypt face in Seattle. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/26/egypt-coach-offers-support-for-iranian-team-before-crucial-world-cup-match?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-26T02:35:10Z",
-      "text": "<strong>Oil prices ease after spiking over halt to Strait of Hormuz evacuation plan</strong> -- Brent crude subsides after attack in waterway prompted jump in prices. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/6/26/oil-prices-climb-after-attack-in-strait-of-hormuz-halts-evacuation-plan?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-26T06:49:22Z",
-      "text": "<strong>UN pauses Strait of Hormuz evacuation plan after cargo ship attacked</strong> -- The ship was reportedly struck by an &quot;unknown projectile&quot; near Oman but no casualties were reported. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cjwg9np904qo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-24T13:03:35Z",
-      "text": "<strong>Clean sweep for Mamdani-backed candidates in New York&#x27;s Democratic primary</strong> -- Brad Lander unseats Dan Goldman in a race that laid bare the city&#x27;s divisions over the Israel-Gaza war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/clye652m41po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-26T00:00:09Z",
-      "text": "<strong>Iran war live: Israel attacks Lebanon as Netanyahu says troops to stay</strong> -- Israeli leader says military to stay in occupied areas of southern Lebanon &amp;#039;as long as necessary&amp;#039;, despite US-Iran deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/26/iran-war-live-israel-attacks-lebanon-as-netanyahu-says-troops-to-stay?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-26T00:28:02Z",
-      "text": "<strong>UN pauses Strait of Hormuz evacuation plan after cargo ship attacked</strong> -- The ship was reportedly struck by an &quot;unknown projectile&quot; near Oman but no casualties were reported. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cjwg9np904qo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,43 @@
   ],
   "newsFeed": [
     {
+      "title": "Mother dies saving daughter in Venezuela earthquakes",
+      "description": "H\u00e9ctor Bello wrote on social media that \"you gave your own life for our daughter\" in the quakes which killed at least 920 people.",
+      "link": "https://www.bbc.co.uk/news/articles/c0jydyz8z6jo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-26T18:36:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump accuses Iran of ceasefire breach after Strait of Hormuz attack",
+      "description": "A Singapore-flagged ship was struck crossing the waterway on Thursday, prompting a large-scale evacuation to be paused.",
+      "link": "https://www.bbc.co.uk/news/articles/ckg54g0ry0vo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-26T18:03:32Z",
+      "tier": 2
+    },
+    {
       "title": "Why did these World Cup ads strike a nerve in Egypt?",
-      "description": "Why did these World Cup ads strike a nerve in Egypt?",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/26/why-did-these-world-cup-ads-strike-a-nerve-in-egypt?traffic_source=rss",
+      "description": "A viral World Cup campaign tapped into a familiar conversation among Egyptian football fans, prompting debate.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/26/why-did-these-world-cup-ads-strike-a-nerve-in-egypt-2?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-06-26T16:15:56Z",
+      "time": "2026-06-26T17:55:06Z",
+      "tier": 2
+    },
+    {
+      "title": "Nine people killed in building collapse in Lagos, Nigeria",
+      "description": "Twenty seven people were rescued with injuries of varying severity; governor orders safety checks on surrounding area.",
+      "link": "https://www.aljazeera.com/news/2026/6/26/nine-people-killed-in-building-collapse-in-lagos-nigeria?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-26T17:40:36Z",
+      "tier": 2
+    },
+    {
+      "title": "Hezbollah: Israel must \u2018unconditionally\u2019 leave Lebanon",
+      "description": "Hezbollah says Israel has &quot;no option&quot; but to \u201cunconditionally\u201d withdraw from southern Lebanon and other occupied areas.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/26/aje-onl-nf_hezbollah_israel-must-unconditionally-leave-lebanon-260626?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-26T16:27:13Z",
       "tier": 2
     },
     {
@@ -1237,27 +1269,11 @@
       "tier": 2
     },
     {
-      "title": "Hezbollah demands Israel leave Lebanon \u2018unconditionally\u2019 as US talks extend",
-      "description": "As Lebanon-Israel strive for agreement, Hezbollah chief Naim Qassem accepts &#039;no normalisation&#039; and &#039;no gains for Israel&#039;",
+      "title": "Hezbollah demands Israel leave Lebanon \u2018unconditionally\u2019 amid talks in US",
+      "description": "As Lebanon-Israel reach an agreement, Hezbollah chief Naim Qassem accepts &#039;no normalisation&#039; and &#039;no gains for Israel&#039;",
       "link": "https://www.aljazeera.com/news/2026/6/26/hezbollah-demands-israel-leave-lebanon-unconditionally-as-us-talks-extend?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-06-26T13:28:34Z",
-      "tier": 2
-    },
-    {
-      "title": "UN pauses Strait of Hormuz evacuation plan after cargo ship attacked",
-      "description": "The ship was reportedly struck by an \"unknown projectile\" near Oman but no casualties were reported.",
-      "link": "https://www.bbc.co.uk/news/articles/cjwg9np904qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-26T11:27:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Egypt vs Iran at World Cup 2026 \u2013 Salah, prediction, lineups, how to watch",
-      "description": "Mohamed Salah&#039;s Egypt and Mehdi Taremi&#039;s Iran are both in the hunt for the FIFA World Cup knockouts in Group G.",
-      "link": "https://www.aljazeera.com/sports/2026/6/26/egypt-vs-iran-world-cup-2026-prediction-kickoff-schedule-teams?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-26T11:25:13Z",
       "tier": 2
     },
     {
@@ -1266,22 +1282,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cy06y63y6lno?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-26T10:49:11Z",
-      "tier": 2
-    },
-    {
-      "title": "IAEA demands verification of Iran nuclear ambitions amid \u2018statement war\u2019",
-      "description": "Watchdog&#039;s call for &#039;strong system&#039; comes as US and Iran issue conflicting claims over ceasefire negotiations.",
-      "link": "https://www.aljazeera.com/news/2026/6/26/iaea-demands-strong-verification-of-irans-nuclear-programme?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-26T10:38:38Z",
-      "tier": 2
-    },
-    {
-      "title": "Who has profited most from the war on Iran?",
-      "description": "Defence contractors, energy companies and investment banks saw profits soar as war and uncertainty upended markets.",
-      "link": "https://www.aljazeera.com/news/2026/6/26/who-has-profited-most-from-the-war-on-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-26T10:25:20Z",
       "tier": 2
     },
     {
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed publicly reported cumulative figures remain sparse as of June 26, 2026. The most solid casualty numbers still trace to earlier named sources: Iran's Health Ministry figure of 3,468 killed and more than 26,500 wounded, HRANA's roughly 1,701 documented civilian deaths in Iran, Pentagon-confirmed U.S. KIA at 13, and IDF/Home Front reporting of 24 Israeli deaths. On the operations side, the latest official numeric benchmark located was the U.S. Defense Department's March 28 fact sheet listing 11,000+ targets struck and 11,000+ combat flights in the first 29 days; I could not verify newer official cumulative totals for missiles, bombs, interceptors, deployed troop strength, or current naval force counts.",
+  "summary": "Confirmed reporting available today remains fragmentary. Al Jazeera\u2019s June 10, 2026 live casualty tracker put the Iran death toll at 3,468, Iranian wounded at 26,500+, and Gulf-state deaths at 28. The most recent official operational aggregate found from CENTCOM was its April 6 fact sheet listing 13,000+ targets struck, while its April 1 fact sheet listed 13,000+ combat flights. Current official cumulative U.S. KIA, Israeli deaths, civilian-only Iranian deaths, and most weapons expenditure counts could not be verified from named official or major-wire sources in the available search results. Today\u2019s confirmed developments from BBC and Al Jazeera point to renewed maritime risk around the Strait of Hormuz, including a ship strike and U.S. accusations that Iran breached the ceasefire.",
   "briefings": [
     {
       "date": "2026-06-26",
       "day": 118,
-      "summary": "Confirmed publicly reported cumulative figures remain sparse as of June 26, 2026. The most solid casualty numbers still trace to earlier named sources: Iran's Health Ministry figure of 3,468 killed and more than 26,500 wounded, HRANA's roughly 1,701 documented civilian deaths in Iran, Pentagon-confirmed U.S. KIA at 13, and IDF/Home Front reporting of 24 Israeli deaths. On the operations side, the latest official numeric benchmark located was the U.S. Defense Department's March 28 fact sheet listing 11,000+ targets struck and 11,000+ combat flights in the first 29 days; I could not verify newer official cumulative totals for missiles, bombs, interceptors, deployed troop strength, or current naval force counts."
+      "summary": "Confirmed reporting available today remains fragmentary. Al Jazeera\u2019s June 10, 2026 live casualty tracker put the Iran death toll at 3,468, Iranian wounded at 26,500+, and Gulf-state deaths at 28. The most recent official operational aggregate found from CENTCOM was its April 6 fact sheet listing 13,000+ targets struck, while its April 1 fact sheet listed 13,000+ combat flights. Current official cumulative U.S. KIA, Israeli deaths, civilian-only Iranian deaths, and most weapons expenditure counts could not be verified from named official or major-wire sources in the available search results. Today\u2019s confirmed developments from BBC and Al Jazeera point to renewed maritime risk around the Strait of Hormuz, including a ship strike and U.S. accusations that Iran breached the ceasefire."
     },
     {
       "date": "2026-06-25",
