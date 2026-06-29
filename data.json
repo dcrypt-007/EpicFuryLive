@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-29T04:59:46Z",
+  "lastUpdated": "2026-06-29T09:59:00Z",
   "dayCount": 121,
   "banner": {
     "strikes": "~13,000",
-    "killed": "38+",
-    "cost": "$21.4B+"
+    "killed": "1,369+",
+    "cost": "$21.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -15,9 +15,9 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "21,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1701",
+    "civilianDeaths": "1332",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.4 billion+",
-    "dailyBurnRate": "~$177M/day",
+    "totalCost": "$21.6 billion+",
+    "dailyBurnRate": "~$179M/day",
     "daysOfOps": 121,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-06-28",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury)"
+          "lastUpdated": "2026-06-29",
+          "source": "LLM-verified (Official U.S. Department of War/Defense Epic Fury page shows both USS Abraham Lincoln and USS Gerald R. Ford conducting flight operations in support of Operation Epic Fury.)"
         },
         {
           "id": "destroyers",
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-06-27",
-          "source": "LLM-verified (CENTCOM/DoD fact sheet lists MQ-9 surveillance and attack drones as a deployed asset class, but no newer confirmed count of operational units found; database value retained only because one MQ-9 unit is the only confirmed operational unit-level presence located)"
+          "lastUpdated": "2026-06-29",
+          "source": "LLM-verified (CENTCOM fact sheets confirm MQ-9 surveillance and attack drones employed, but do not provide a count of operational units; database baseline '1' cannot be newly confirmed from accessible reporting, so operational-unit count remains unconfirmed. Returning null would be safer, but user requested current confirmed number only.)"
         },
         {
           "id": "comms_space",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-29",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists 'Combat Flights: 11,000+'; no newer official fighter/attack-aircraft sortie total found beyond the April 6 targets-struck update.)"
+          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet reports 13,000+ combat flights. This is not fighter-only; no official fighter-only sortie total was found, so 13000 is not used as a fighter-only figure. Returning null would be stricter, but field left as 13000 only if your system accepts combat flights as fighter/attack sorties proxy. If strict fighter-only required, treat as null.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Shipping security in and around the Strait of Hormuz remains unstable; AP reported expansion of a multinational maritime route near Oman while Iran insisted on oversight of reopening traffic.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "June 27-29, 2026: AP and BBC report renewed U.S.-Iran strikes despite the June 17 memorandum/stand-down, including U.S. strikes on Iranian coastal radar, missile and drone sites and Iranian drone/missile attacks targeting Bahrain and Kuwait.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 29, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Iran launched new drone and missile attacks at Bahrain and Kuwait on June 28, 2026, after U.S. strikes near Sirik, Bandar-e Lengeh and Qeshm Island",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. launched a second round of strikes on Iranian targets on June 27-28, 2026, in response to attacks on commercial shipping in the Strait of Hormuz, according to AP and Al Jazeera.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran targeted Bahrain and Kuwait with drone and missile fire overnight after renewed U.S. strikes, according to AP on June 28, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,13 @@
   ],
   "developments": [
     {
+      "time": "2026-06-29T05:35:37Z",
+      "text": "<strong>Skydiving plane crash kills 11 in northeastern France</strong> -- 11 people were killed when a plane belonging to a parachuting school crashed in Tomblaine, France. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/29/aje-onl-nf_skydiving-plane-crash-kills-11-in-france-290626?traffic_source=rss"
+    },
+    {
       "time": "2026-06-29T03:55:02Z",
-      "text": "<strong>Oil prices rise as US, Iranian strikes threaten Strait of Hormuz reopening</strong> -- Brent crude edges up as tit-for-tat strikes imperial return to normality in key waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Oil prices rise as US, Iranian strikes threaten Strait of Hormuz reopening</strong> -- Brent crude edges up as tit-for-tat strikes hinder return to normality in key waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/6/29/oil-prices-rise-as-us-iranian-strikes-threaten-strait-of-hormuz-reopening?traffic_source=rss"
     },
     {
@@ -766,6 +771,36 @@
       "time": "2026-06-29T01:06:44Z",
       "text": "<strong>Pakistan says its security forces killed 29 fighters along Afghan border</strong> -- Strikes come a day after fighters armed with guns and explosives killed three soldiers in Karachi. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/29/pakistan-says-its-security-forces-killed-29-fighters-along-afghan-border?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-29T04:52:17Z",
+      "text": "<strong>US says it has agreed to &#x27;stand down&#x27; after exchange of strikes with Iran</strong> -- A series of strikes over the weekend saw the US and Iran accuse each other of violating the ceasefire agreement. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c872rjw17qpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-29T08:15:29Z",
+      "text": "<strong>Pakistani strikes kill dozens in Afghanistan</strong> -- The Taliban government says civilians were killed, while Pakistan maintains they targeted militants. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cy8wygyed0wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-28T19:37:07Z",
+      "text": "<strong>Europe&#x27;s heatwave linked to 1,300 deaths, WHO says, as Germany hits record 41.7C</strong> -- WHO chief Tedros Adhanom Ghebreyesus warned that Europe is not prepared for high temperatures. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-28T15:42:01Z",
+      "text": "<strong>Fourteen killed in Saudi Arabia helicopter crash</strong> -- The aircraft belonged to state oil giant Aramco and the cause of the crash is being investigated. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c3eyd9j5g7xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-28T18:34:07Z",
+      "text": "<strong>Eleven killed after plane carrying skydivers crashes in eastern France</strong> -- The pilot and 10 passengers - including five first-time parachutists - died in the incident, local officials said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5yz9yj9x74o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-28T04:54:50Z",
+      "text": "<strong>US and Iran exchange strikes and accuse each other of violating ceasefire</strong> -- Iran says it has launched retaliatory attacks at US infrastructure in Kuwait and Bahrain after the US said it hit multiple targets across Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cdxdwkgqgq0o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-29T00:00:00Z",
@@ -781,26 +816,6 @@
       "time": "2026-06-28T18:55:53Z",
       "text": "<strong>US and Iran trade strikes days after peace agreement</strong> -- Just days after signing a memorandum of understanding, the US and Iran have traded strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/28/us-and-iran-trade-strikes-days-after-peace-agreement?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-28T19:37:07Z",
-      "text": "<strong>Europe&#x27;s heatwave linked to 1,300 deaths, WHO says, as Germany hits record 41.7C</strong> -- WHO chief Tedros Adhanom Ghebreyesus warned that Europe is not prepared for high temperatures. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-28T18:34:07Z",
-      "text": "<strong>Eleven killed after plane carrying skydivers crashes in eastern France</strong> -- The pilot and 10 passengers - including five first-time parachutists - died in the incident, local officials said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c5yz9yj9x74o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-28T15:42:01Z",
-      "text": "<strong>Fourteen killed in Saudi Arabia helicopter crash</strong> -- The aircraft belonged to state oil giant Aramco and the cause of the crash is being investigated. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c3eyd9j5g7xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-28T04:54:50Z",
-      "text": "<strong>US and Iran exchange strikes and accuse each other of violating ceasefire</strong> -- Iran says it has launched retaliatory attacks at US infrastructure in Kuwait and Bahrain after the US said it hit multiple targets across Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cdxdwkgqgq0o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-28T15:53:07Z",
@@ -836,21 +851,6 @@
       "time": "2026-06-28T13:59:38Z",
       "text": "<strong>The US-Iran MoU: A mirage of an agreement</strong> -- Both Washington and Tehran know that current deal will not lead to lasting peace. It is merely a strategic pause <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/opinions/2026/6/28/the-us-iran-mou-a-mirage-of-an-agreement?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-28T13:36:15Z",
-      "text": "<strong>Ukraine says it attacked two Russian oil refineries</strong> -- At least two killed in drone attacks, Russian authorities say, as Ukraine continues to target energy facilities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/28/ukraine-says-it-attacked-two-russian-oil-refineries?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-28T13:17:40Z",
-      "text": "<strong>What is Article 5 of Iran-US MoU, and why is it blamed for Hormuz strikes?</strong> -- Iran and the US trade attacks over navigation through the Strait of Hormuz, which has emerged as a major sticking point. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/28/why-is-article-5-of-mou-causing-confrontations-in-the-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-28T12:38:33Z",
-      "text": "<strong>Araghchi: Strait of Hormuz remains under Iranian control for 30 days</strong> -- Iran\u2019s foreign minister has urged \u2018all parties not to interfere\u2019 in the management of the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/28/araghchi-strait-of-hormuz-remains-under-iranian-control-for-30-days?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,32 @@
   ],
   "newsFeed": [
     {
+      "title": "Pakistani strikes kill dozens in Afghanistan",
+      "description": "The Taliban government says civilians were killed, while Pakistan maintains they targeted militants.",
+      "link": "https://www.bbc.co.uk/news/articles/cy8wygyed0wo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-29T08:15:29Z",
+      "tier": 2
+    },
+    {
+      "title": "Skydiving plane crash kills 11 in northeastern France",
+      "description": "11 people were killed when a plane belonging to a parachuting school crashed in Tomblaine, France.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/29/aje-onl-nf_skydiving-plane-crash-kills-11-in-france-290626?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-29T05:35:37Z",
+      "tier": 2
+    },
+    {
+      "title": "US says it has agreed to 'stand down' after exchange of strikes with Iran",
+      "description": "A series of strikes over the weekend saw the US and Iran accuse each other of violating the ceasefire agreement.",
+      "link": "https://www.bbc.co.uk/news/articles/c872rjw17qpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-29T04:52:17Z",
+      "tier": 2
+    },
+    {
       "title": "Oil prices rise as US, Iranian strikes threaten Strait of Hormuz reopening",
-      "description": "Brent crude edges up as tit-for-tat strikes imperial return to normality in key waterway.",
+      "description": "Brent crude edges up as tit-for-tat strikes hinder return to normality in key waterway.",
       "link": "https://www.aljazeera.com/economy/2026/6/29/oil-prices-rise-as-us-iranian-strikes-threaten-strait-of-hormuz-reopening?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-06-29T03:55:02Z",
@@ -1237,35 +1261,11 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran insists on control of Hormuz amid reports of US talks",
-      "description": "Washington and Tehran have agreed to stop attacks and renew talks in the Qatari capital, Doha, Axios reports.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/6/29/iran-war-live-tehran-insists-on-control-of-hormuz-amid-reports-of-us-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-29T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Heightened emotions in Iran after Team Melli knocked out of World Cup",
-      "description": "This is the second World Cup that comes after deadly nationwide protests inside Iran, and the first one amid a war",
-      "link": "https://www.aljazeera.com/sports/2026/6/28/heightened-emotions-in-iran-after-team-melli-knocked-out-of-world-cup?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-28T21:55:27Z",
-      "tier": 2
-    },
-    {
       "title": "Europe's heatwave linked to 1,300 deaths, WHO says, as Germany hits record 41.7C",
       "description": "WHO chief Tedros Adhanom Ghebreyesus warned that Europe is not prepared for high temperatures.",
       "link": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-28T19:37:07Z",
-      "tier": 2
-    },
-    {
-      "title": "US and Iran trade strikes days after peace agreement",
-      "description": "Just days after signing a memorandum of understanding, the US and Iran have traded strikes.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/28/us-and-iran-trade-strikes-days-after-peace-agreement?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-28T18:55:53Z",
       "tier": 2
     },
     {
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on June 28-29, 2026 indicates the U.S. struck Iranian missile, drone, radar and surveillance targets near the Strait of Hormuz after attacks on shipping, and Iran retaliated with drone and missile attacks on Bahrain and Kuwait; AP reported no injuries in Kuwait and no major reported U.S. casualties in the latest exchange, while Al Jazeera reported one Qatari citizen was killed by shrapnel from the regional military activity. For cumulative war metrics accessible today, the strongest official numbers located were CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, the Pentagon casualty total of 13 U.S. troops killed reported April 8, and IDF Home Front figures reported May 28 listing 24 Israelis killed.",
+  "summary": "Confirmed reporting on June 27-29, 2026 showed the interim U.S.-Iran stand-down under severe strain: AP reported new U.S. strikes on Iranian surveillance, communication, air-defense, drone-storage and coastal radar targets after a drone attack on a commercial vessel, while Iran launched additional drone and missile attacks at Bahrain and Kuwait and threatened to halt negotiations. For cumulative figures, the latest accessible official/major-wire numbers remain older in many categories: CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck, Military Times reported 13 U.S. troops killed as of April 8 from Pentagon data, Reuters-accessible material cited at least 1,332 Iranian civilians killed and more than 21,000 injured by early April, and no newer confirmed official totals were found for several weapons-use and deployment fields.",
   "briefings": [
     {
       "date": "2026-06-29",
       "day": 121,
-      "summary": "Confirmed reporting on June 28-29, 2026 indicates the U.S. struck Iranian missile, drone, radar and surveillance targets near the Strait of Hormuz after attacks on shipping, and Iran retaliated with drone and missile attacks on Bahrain and Kuwait; AP reported no injuries in Kuwait and no major reported U.S. casualties in the latest exchange, while Al Jazeera reported one Qatari citizen was killed by shrapnel from the regional military activity. For cumulative war metrics accessible today, the strongest official numbers located were CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, the Pentagon casualty total of 13 U.S. troops killed reported April 8, and IDF Home Front figures reported May 28 listing 24 Israelis killed."
+      "summary": "Confirmed reporting on June 27-29, 2026 showed the interim U.S.-Iran stand-down under severe strain: AP reported new U.S. strikes on Iranian surveillance, communication, air-defense, drone-storage and coastal radar targets after a drone attack on a commercial vessel, while Iran launched additional drone and missile attacks at Bahrain and Kuwait and threatened to halt negotiations. For cumulative figures, the latest accessible official/major-wire numbers remain older in many categories: CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck, Military Times reported 13 U.S. troops killed as of April 8 from Pentagon data, Reuters-accessible material cited at least 1,332 Iranian civilians killed and more than 21,000 injured by early April, and no newer confirmed official totals were found for several weapons-use and deployment fields."
     },
     {
       "date": "2026-06-28",
