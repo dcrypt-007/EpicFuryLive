@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-30T12:23:43Z",
+  "lastUpdated": "2026-06-30T15:40:43Z",
   "dayCount": 122,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,535+",
-    "cost": "$19.6B+"
+    "cost": "$26.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$19.6 billion+",
-    "dailyBurnRate": "~$161M/day",
+    "totalCost": "$26.1 billion+",
+    "dailyBurnRate": "~$214M/day",
     "daysOfOps": 122,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-06-29",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: two carrier strike groups supported Operation Epic Fury)"
+          "lastUpdated": "2026-06-30",
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-06-30",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; used as best confirmed cumulative sorties figure available, though it includes all combat flights and may not map exactly to fighter/attack-only sorties.)"
+          "source": "LLM-verified (White House April 8, 2026: 'Over 10,200 total air sorties flown' during 38 days of major combat operations in Operation Epic Fury)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 16,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-06-28",
-          "source": "LLM-verified (Confirmed minimum cumulative interceptor events from accessible CENTCOM releases only: May 28 intercept of 5 drones; June 5 shoot-down of 4 drones plus interception of 6 ballistic missiles plus 1 additional missile failing to reach target. Using only confirmed fired/intercepted missile-defense engagements gives at least 16 successful intercepts explicitly described by CENTCOM; this is a floor, not a full cumulative total)"
+          "lastUpdated": "2026-06-30",
+          "source": "LLM-verified (White House April 8, 2026: over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "16 \u00d7 $4,000,000 each",
-        "cost": "$64,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jun 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on June 30 reported indirect U.S.-Iran talks in Doha via Qatari mediators focused on implementing the interim deal and release of frozen Iranian assets, with no direct high-level U.S.-Iran meeting scheduled.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jun 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on June 27 reported Iran struck Bahrain and Kuwait, underscoring renewed Gulf spillover risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jun 30, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP and Al Jazeera reported fresh Iranian drone and missile attacks on Bahrain and Kuwait on June 28, 2026, after new U.S. strikes, indicating the ceasefire/memorandum remains unstable.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Strait of Hormuz tensions have again jeopardized the interim Iran-US deal, according to AP and Al Jazeera.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 28, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. launched another round of strikes on Iranian missile, drone, and radar sites on June 27-28, 2026, according to AP and Reuters.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-06-30T14:57:21Z",
+      "text": "<strong>Iran to hold talks with Qatar on MoU deal with US, frozen assets</strong> -- Iran says it will hold indirect talks with mediator Qatar, to discuss implementing its MoU deal with the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/30/iran-to-hold-talks-with-qatar-on-mou-deal-with-us-frozen-assets?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-30T13:25:21Z",
+      "text": "<strong>US envoys in Doha for indirect talks with Iranian technical delegation</strong> -- Iran says it has sent an expert delegation to Doha to follow up on the release of frozen Iranian funds. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/30/us-envoys-in-doha-for-indirect-talks-with-iranian-technical-delegation?traffic_source=rss"
+    },
+    {
       "time": "2026-06-30T11:57:22Z",
       "text": "<strong>Are US and Iranian negotiators meeting in Doha? What we know about talks</strong> -- Trump says Iran wants to meet in Qatar after attacks, but Tehran says it is sending a delegation only over frozen funds. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/30/are-us-and-iranian-negotiators-meeting-in-doha-what-we-know-about-talks?traffic_source=rss"
@@ -768,24 +778,14 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/6/30/video-at-least-two-killed-and-hundreds-displaced-in-israeli-attack-on-gaza?traffic_source=rss"
     },
     {
-      "time": "2026-06-30T07:32:54Z",
-      "text": "<strong>DR Congo says 1,307 Ebola cases confirmed, including 377 deaths</strong> -- Outbreak spreads to a fourth province, Haut-Uele, bordering South Sudan and the CAR, according to a media report. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/30/dr-congo-says-1307-ebola-cases-confirmed-including-377-deaths?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-29T14:52:10Z",
-      "text": "<strong>US says it has agreed to &#x27;stand down&#x27; after exchange of strikes with Iran</strong> -- A series of strikes over the weekend saw the US and Iran accuse each other of violating the ceasefire agreement. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c872rjw17qpo?at_medium=RSS&at_campaign=rss"
+      "time": "2026-06-30T13:51:52Z",
+      "text": "<strong>US envoys in Doha to meet mediators but not Iranians, Qatar says</strong> -- Qatar&#x27;s foreign ministry spokesman says no high-level meetings or direct talks between the US and Iran are scheduled. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cpd38x1dy4no?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-28T19:37:07Z",
       "text": "<strong>Europe&#x27;s heatwave linked to 1,300 deaths, WHO says, as Germany hits record 41.7C</strong> -- WHO chief Tedros Adhanom Ghebreyesus warned that Europe is not prepared for high temperatures. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-06-28T18:34:07Z",
-      "text": "<strong>Eleven killed after plane carrying skydivers crashes in eastern France</strong> -- The pilot and 10 passengers - including five first-time parachutists - died in the incident, local officials said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c5yz9yj9x74o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-29T20:22:13Z",
@@ -796,6 +796,21 @@
       "time": "2026-06-30T00:17:27Z",
       "text": "<strong>What do we know about the shooting in Stade, Germany?</strong> -- The BBC&#x27;s Jessica Parker reports from the scene of the shooting that killed six people in northern Germany. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/cdx7j0wn9lvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-30T07:32:54Z",
+      "text": "<strong>DR Congo says 1,307 Ebola cases confirmed, including 377 deaths</strong> -- Outbreak spreads to a fourth province, Haut-Uele, bordering South Sudan and the CAR, according to a media report. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/6/30/dr-congo-says-1307-ebola-cases-confirmed-including-377-deaths?traffic_source=rss"
+    },
+    {
+      "time": "2026-06-29T14:52:10Z",
+      "text": "<strong>US says it has agreed to &#x27;stand down&#x27; after exchange of strikes with Iran</strong> -- A series of strikes over the weekend saw the US and Iran accuse each other of violating the ceasefire agreement. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c872rjw17qpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-06-28T18:34:07Z",
+      "text": "<strong>Eleven killed after plane carrying skydivers crashes in eastern France</strong> -- The pilot and 10 passengers - including five first-time parachutists - died in the incident, local officials said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5yz9yj9x74o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-06-30T06:33:28Z",
@@ -836,21 +851,6 @@
       "time": "2026-06-29T19:30:28Z",
       "text": "<strong>Deadly heatwave grips Italy and Balkans as wildfire fears grow</strong> -- Older people remain most at risk as the heatwave drives up excess deaths across Europe. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/6/29/deadly-heatwave-grips-italy-and-balkans-as-wildfire-fears-grow?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-29T18:44:34Z",
-      "text": "<strong>Pakistani strikes kill dozens of Afghan villagers</strong> -- Afghan villagers inspected destroyed homes after overnight Pakistani strikes targeting Taliban-allied fighters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/29/pakistani-strikes-kill-dozens-of-afghan-villagers?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-29T16:15:35Z",
-      "text": "<strong>Afghan families mourn loved ones as border tensions with Pakistan rise</strong> -- Afghan officials say Pakistani attacks killed at least 36 civilians, while Pakistan says its forces killed 29 fighters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/6/29/afghan-families-mourn-loved-ones-as-border-tensions-with-pakistan-rise?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-29T16:01:07Z",
-      "text": "<strong>US petrol prices ease despite ongoing uncertainties with Iran</strong> -- US\u2013Iran peace talks ease market volatility, but uncertainty keeps oil prices hovering, complicating recovery efforts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/6/29/us-petrol-prices-ease-despite-ongoing-uncertainties-with-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran to hold talks with Qatar on MoU deal with US, frozen assets",
+      "description": "Iran says it will hold indirect talks with mediator Qatar, to discuss implementing its MoU deal with the US.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/30/iran-to-hold-talks-with-qatar-on-mou-deal-with-us-frozen-assets?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-30T14:57:21Z",
+      "tier": 2
+    },
+    {
+      "title": "US envoys in Doha to meet mediators but not Iranians, Qatar says",
+      "description": "Qatar's foreign ministry spokesman says no high-level meetings or direct talks between the US and Iran are scheduled.",
+      "link": "https://www.bbc.co.uk/news/articles/cpd38x1dy4no?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-06-30T13:51:52Z",
+      "tier": 2
+    },
+    {
+      "title": "US envoys in Doha for indirect talks with Iranian technical delegation",
+      "description": "Iran says it has sent an expert delegation to Doha to follow up on the release of frozen Iranian funds.",
+      "link": "https://www.aljazeera.com/news/2026/6/30/us-envoys-in-doha-for-indirect-talks-with-iranian-technical-delegation?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-06-30T13:25:21Z",
+      "tier": 2
+    },
+    {
       "title": "Are US and Iranian negotiators meeting in Doha? What we know about talks",
       "description": "Trump says Iran wants to meet in Qatar after attacks, but Tehran says it is sending a delegation only over frozen funds.",
       "link": "https://www.aljazeera.com/news/2026/6/30/are-us-and-iranian-negotiators-meeting-in-doha-what-we-know-about-talks?traffic_source=rss",
@@ -1237,14 +1261,6 @@
       "tier": 2
     },
     {
-      "title": "DR Congo says 1,307 Ebola cases confirmed, including 377 deaths",
-      "description": "Outbreak spreads to a fourth province, Haut-Uele, bordering South Sudan and the CAR, according to a media report.",
-      "link": "https://www.aljazeera.com/news/2026/6/30/dr-congo-says-1307-ebola-cases-confirmed-including-377-deaths?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-06-30T07:32:54Z",
-      "tier": 2
-    },
-    {
       "title": "What do we know about the shooting in Stade, Germany?",
       "description": "The BBC's Jessica Parker reports from the scene of the shooting that killed six people in northern Germany.",
       "link": "https://www.bbc.co.uk/news/videos/cdx7j0wn9lvo?at_medium=RSS&at_campaign=rss",
@@ -1261,36 +1277,20 @@
       "tier": 2
     },
     {
-      "title": "US says it has agreed to 'stand down' after exchange of strikes with Iran",
-      "description": "A series of strikes over the weekend saw the US and Iran accuse each other of violating the ceasefire agreement.",
-      "link": "https://www.bbc.co.uk/news/articles/c872rjw17qpo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-29T14:52:10Z",
-      "tier": 2
-    },
-    {
       "title": "Europe's heatwave linked to 1,300 deaths, WHO says, as Germany hits record 41.7C",
       "description": "WHO chief Tedros Adhanom Ghebreyesus warned that Europe is not prepared for high temperatures.",
       "link": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-06-28T19:37:07Z",
       "tier": 2
-    },
-    {
-      "title": "Eleven killed after plane carrying skydivers crashes in eastern France",
-      "description": "The pilot and 10 passengers - including five first-time parachutists - died in the incident, local officials said.",
-      "link": "https://www.bbc.co.uk/news/articles/c5yz9yj9x74o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-06-28T18:34:07Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting currently supports 3,468 deaths in Iran and more than 26,500 wounded according to Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s June 10, 2026 live tracker; the same tracker lists 26 killed in Israel, 13 US combat-related military deaths, and 28 deaths in Gulf states. CENTCOM\u2019s April 6, 2026 Operation Epic Fury fact sheet remains the latest official strike-count document found in this search, listing 13,000-plus targets struck, but I did not find current confirmed official totals for carrier groups, destroyers, troop levels, drone units, missile expenditures, bomber sorties, or interceptor launches, so those fields remain null.",
+  "summary": "Confirmed reporting on June 30 indicates U.S. envoys are in Doha for indirect talks via Qatari mediators over implementing the interim U.S.-Iran understanding and releasing $6 billion in frozen Iranian assets, while Qatar says no direct high-level U.S.-Iran meeting is scheduled. The latest widely cited casualty tracker from Al Jazeera, updated June 10 using Iran\u2019s Health Ministry and military/government sources, lists 3,468 killed in Iran, more than 26,500 injured, 26 killed in Israel, 13 U.S. combat-related military deaths, and 28 killed in Gulf states. For the military cost model, the newest official operation-wide number located remains the White House\u2019s April 8 tally of over 13,000 targets struck and over 10,200 air sorties flown during 38 days of major combat, while the May 2026 Navy shipbuilding plan confirms two carrier strike groups supported Operation Epic Fury.",
   "briefings": [
     {
       "date": "2026-06-30",
       "day": 122,
-      "summary": "Confirmed reporting currently supports 3,468 deaths in Iran and more than 26,500 wounded according to Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s June 10, 2026 live tracker; the same tracker lists 26 killed in Israel, 13 US combat-related military deaths, and 28 deaths in Gulf states. CENTCOM\u2019s April 6, 2026 Operation Epic Fury fact sheet remains the latest official strike-count document found in this search, listing 13,000-plus targets struck, but I did not find current confirmed official totals for carrier groups, destroyers, troop levels, drone units, missile expenditures, bomber sorties, or interceptor launches, so those fields remain null."
+      "summary": "Confirmed reporting on June 30 indicates U.S. envoys are in Doha for indirect talks via Qatari mediators over implementing the interim U.S.-Iran understanding and releasing $6 billion in frozen Iranian assets, while Qatar says no direct high-level U.S.-Iran meeting is scheduled. The latest widely cited casualty tracker from Al Jazeera, updated June 10 using Iran\u2019s Health Ministry and military/government sources, lists 3,468 killed in Iran, more than 26,500 injured, 26 killed in Israel, 13 U.S. combat-related military deaths, and 28 killed in Gulf states. For the military cost model, the newest official operation-wide number located remains the White House\u2019s April 8 tally of over 13,000 targets struck and over 10,200 air sorties flown during 38 days of major combat, while the May 2026 Navy shipbuilding plan confirms two carrier strike groups supported Operation Epic Fury."
     },
     {
       "date": "2026-06-29",
