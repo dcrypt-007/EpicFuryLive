@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-02T19:52:03Z",
+  "lastUpdated": "2026-07-02T21:33:09Z",
   "dayCount": 124,
   "banner": {
-    "strikes": "~14,000",
-    "killed": "3,056+",
-    "cost": "$28.4B+"
+    "strikes": "~13,000",
+    "killed": "4,332+",
+    "cost": "$27.6B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,000",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -15,9 +15,9 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "24",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "6,000+",
+    "iranWounded": "20,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1348",
+    "civilianDeaths": "1332",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.4 billion+",
-    "dailyBurnRate": "~$229M/day",
+    "totalCost": "$27.6 billion+",
+    "dailyBurnRate": "~$222M/day",
     "daysOfOps": 124,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-02",
-          "source": "LLM-verified (Iran International summary of CENTCOM reporting on March 4, 2026 said 'two aircraft carriers' participating; DoD/CENTCOM fact sheets list nuclear-powered aircraft carriers but not a current later count. No newer confirmed count found in accessible official reporting.)"
+          "source": "LLM-verified (Iran International report on CENTCOM briefing, Mar. 4, 2026: more than 50,000 troops and two aircraft carriers participating)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-02",
-          "source": "LLM-verified (CRS 'U.S. Conflict with Iran' (March 26, 2026) says there were an estimated 50,000 U.S. service members deployed 'in and around the Middle East,' citing CENTCOM March 11 update.)"
+          "source": "LLM-verified (Iran International report on CENTCOM briefing, Mar. 4, 2026: more than 50,000 troops participating)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-02",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 reported 'Combat Flights: 9,000+'; used here as the latest accessible official cumulative sorties figure, though it is combat flights rather than fighter-only sorties.)"
+          "source": "LLM-verified (IDF article states 'Over 800 Strike Sorties' since launch of Operation Roaring Lion; this is Israeli strike sorties, not a combined U.S.-Israeli fighter/attack aircraft total)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported U.S. forces shot down Iranian ballistic missiles and drones over the Strait of Hormuz and Gulf Arab approaches on June 5 and later exchanges continued in late June.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported renewed Iranian drone and missile attacks targeting Bahrain and Kuwait on June 27-29, 2026, after new U.S. strikes, indicating the ceasefire remained fragile.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 2, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Shipping security in and around the Strait of Hormuz remains unstable; AP reported expansion of a multinational maritime route near Oman while Iran insisted on oversight of reopening traffic.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "June 27-29, 2026: AP and BBC report renewed U.S.-Iran strikes despite the June 17 memorandum/stand-down, including U.S. strikes on Iranian coastal radar, missile and drone sites and Iranian drone/missile attacks targeting Bahrain and Kuwait.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Axios saying Washington and Tehran agreed to halt attacks and meet in Doha on Tuesday, June 30, 2026, though the ceasefire/de-escalation remains fragile.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -779,7 +779,7 @@
     },
     {
       "time": "2026-07-02T17:22:36Z",
-      "text": "<strong>What\u2019s behind the deadly bombing of a crowded Damascus cafe?</strong> -- The blast near Damascus&amp;#039;s main courthouse killed five and wounded 16 as Syria&amp;#039;s new state battles to enforce security. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>What\u2019s behind the deadly bombing of a crowded Damascus cafe?</strong> -- The blast near Damascus&amp;#039;s main courthouse killed nine and wounded 22 as Syria&amp;#039;s new state battles to enforce security. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/2/whats-behind-the-deadly-bombing-of-a-crowded-damascus-cafe?traffic_source=rss"
     },
     {
@@ -788,19 +788,24 @@
       "link": "https://www.aljazeera.com/news/2026/7/2/us-wants-intervention-syria-signals-diplomacy-after-fm-lebanon-trip?traffic_source=rss"
     },
     {
-      "time": "2026-07-02T14:15:42Z",
-      "text": "<strong>Who is Iranian oil tycoon Shamkhani whose ship is stranded in Hormuz?</strong> -- Iranian oil shipping magnate Mohammad Hossein Shamkhani has been sanctioned by the West over his shadow fleet. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/2/who-is-iranian-oil-tycoon-shamkhani-whose-ship-is-stranded-in-hormuz?traffic_source=rss"
-    },
-    {
       "time": "2026-07-02T13:11:16Z",
       "text": "<strong>South Africa and Ghana in diplomatic row over alleged killing of migrant</strong> -- South Africa denies claims that a Ghanaian citizen was killed in anti-migrant protests in Cape Town. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c982k1j3d70o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-07-02T21:21:36Z",
+      "text": "<strong>Ebola treatments trial begins in the Democratic Republic of Congo</strong> -- According to WHO data, there have been 1,406 confirmed cases of the disease in DRC, with 301 suspected cases and 438 deaths. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c75ykve4zzxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-07-02T03:07:39Z",
       "text": "<strong>Canadian boy, 11, dies of rabies after waking to bat on his face</strong> -- Rabies infections are rare in Canada. There have been 28 human deaths due to rabies in the country since 1924. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c982m1m95q9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-02T14:15:42Z",
+      "text": "<strong>Who is Iranian oil tycoon Shamkhani whose ship is stranded in Hormuz?</strong> -- Iranian oil shipping magnate Mohammad Hossein Shamkhani has been sanctioned by the West over his shadow fleet. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/2/who-is-iranian-oil-tycoon-shamkhani-whose-ship-is-stranded-in-hormuz?traffic_source=rss"
     },
     {
       "time": "2026-07-02T13:39:09Z",
@@ -846,11 +851,6 @@
       "time": "2026-07-02T08:06:59Z",
       "text": "<strong>\u2018The crisis is deep\u2019: The view from Russia as fuel shortages worsen</strong> -- Officials are rationing fuel as Ukrainian strikes on refineries imperil supply. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/2/the-crisis-is-deep-the-view-from-russia-as-fuel-shortages-worsen?traffic_source=rss"
-    },
-    {
-      "time": "2026-06-29T20:22:13Z",
-      "text": "<strong>Rescuers keep up search for survivors at collapsed La Guaira building</strong> -- At least 1,700 people are known to have been killed in the disaster but hope remains that others can continue to be found alive. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cz75y2rggppo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Ebola treatments trial begins in the Democratic Republic of Congo",
+      "description": "According to WHO data, there have been 1,406 confirmed cases of the disease in DRC, with 301 suspected cases and 438 deaths.",
+      "link": "https://www.bbc.co.uk/news/articles/c75ykve4zzxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-02T21:21:36Z",
+      "tier": 2
+    },
+    {
       "title": "Nine Buddhist monks killed by child driving truck in Thailand",
       "description": "Nine Buddhist monks were killed  after a truck driven by an 11-year-old boy struck a pilgrimage procession in Thailand.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/2/nine-buddhist-monks-killed-by-child-driving-truck-in-thailand?traffic_source=rss",
@@ -1254,7 +1262,7 @@
     },
     {
       "title": "What\u2019s behind the deadly bombing of a crowded Damascus cafe?",
-      "description": "The blast near Damascus&#039;s main courthouse killed five and wounded 16 as Syria&#039;s new state battles to enforce security.",
+      "description": "The blast near Damascus&#039;s main courthouse killed nine and wounded 22 as Syria&#039;s new state battles to enforce security.",
       "link": "https://www.aljazeera.com/news/2026/7/2/whats-behind-the-deadly-bombing-of-a-crowded-damascus-cafe?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-02T17:22:36Z",
@@ -1274,14 +1282,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c1wy4d5p4pxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-02T15:13:29Z",
-      "tier": 2
-    },
-    {
-      "title": "Who is Iranian oil tycoon Shamkhani whose ship is stranded in Hormuz?",
-      "description": "Iranian oil shipping magnate Mohammad Hossein Shamkhani has been sanctioned by the West over his shadow fleet.",
-      "link": "https://www.aljazeera.com/news/2026/7/2/who-is-iranian-oil-tycoon-shamkhani-whose-ship-is-stranded-in-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-02T14:15:42Z",
       "tier": 2
     },
     {
@@ -1309,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Accessible confirmed reporting still points to largely older official cumulative figures rather than fresh July 2 battlefield tallies. The most solid official numbers available remain 13 U.S. troops killed, 19 total Israeli deaths, roughly 50,000 U.S. personnel deployed, and at least 9,000 U.S. targets struck by March 23, with the IDF separately reporting more than 4,000 Iranian targets struck by April 1. More recent AP reporting confirms renewed Iranian attacks on Bahrain and Kuwait on June 28 and revisits the high-casualty Minab school strike, but I could not verify newer authoritative cumulative totals for Iranian deaths, Iranian civilian deaths, Tomahawks, JDAMs, JASSMs, SDBs, MOPs, destroyers, or interceptor launches from accessible Pentagon/CENTCOM/IDF/Reuters/AP/Al Jazeera material, so those fields are left null where confirmation was insufficient.",
+  "summary": "Confirmed reporting available in accessible sources remains patchy and in several cases outdated. The clearest official cumulative numbers found were the U.S. Department of War\u2019s April 6 fact sheet listing 13,000-plus targets struck, a Reuters April 9 report citing Iran\u2019s forensic chief saying more than 3,000 people were killed throughout Iran, and a Reuters March 7 report citing Iran\u2019s UN ambassador saying at least 1,332 Iranian civilians had died, while a Reuters April 4 factbox cited the Red Cross/Red Crescent federation as reporting at least 20,000 injured in Iran. Recent AP reporting from June 27-29 showed the conflict\u2019s ceasefire remained unstable, with renewed U.S. strikes on Iran and retaliatory Iranian attacks toward Bahrain and Kuwait.",
   "briefings": [
     {
       "date": "2026-07-02",
       "day": 124,
-      "summary": "Accessible confirmed reporting still points to largely older official cumulative figures rather than fresh July 2 battlefield tallies. The most solid official numbers available remain 13 U.S. troops killed, 19 total Israeli deaths, roughly 50,000 U.S. personnel deployed, and at least 9,000 U.S. targets struck by March 23, with the IDF separately reporting more than 4,000 Iranian targets struck by April 1. More recent AP reporting confirms renewed Iranian attacks on Bahrain and Kuwait on June 28 and revisits the high-casualty Minab school strike, but I could not verify newer authoritative cumulative totals for Iranian deaths, Iranian civilian deaths, Tomahawks, JDAMs, JASSMs, SDBs, MOPs, destroyers, or interceptor launches from accessible Pentagon/CENTCOM/IDF/Reuters/AP/Al Jazeera material, so those fields are left null where confirmation was insufficient."
+      "summary": "Confirmed reporting available in accessible sources remains patchy and in several cases outdated. The clearest official cumulative numbers found were the U.S. Department of War\u2019s April 6 fact sheet listing 13,000-plus targets struck, a Reuters April 9 report citing Iran\u2019s forensic chief saying more than 3,000 people were killed throughout Iran, and a Reuters March 7 report citing Iran\u2019s UN ambassador saying at least 1,332 Iranian civilians had died, while a Reuters April 4 factbox cited the Red Cross/Red Crescent federation as reporting at least 20,000 injured in Iran. Recent AP reporting from June 27-29 showed the conflict\u2019s ceasefire remained unstable, with renewed U.S. strikes on Iran and retaliatory Iranian attacks toward Bahrain and Kuwait."
     },
     {
       "date": "2026-07-01",
