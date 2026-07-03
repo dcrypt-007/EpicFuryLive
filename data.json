@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-07-03T21:31:44Z",
+  "lastUpdated": "2026-07-03T23:18:22Z",
   "dayCount": 125,
   "banner": {
     "strikes": "~13,000",
-    "killed": "9+",
-    "cost": "$27.6B+"
+    "killed": "3,507+",
+    "cost": "$28.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,519",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "29",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "2",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "20,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1598",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$27.6 billion+",
-    "dailyBurnRate": "~$221M/day",
+    "totalCost": "$28.9 billion+",
+    "dailyBurnRate": "~$231M/day",
     "daysOfOps": 125,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-03",
-          "source": "LLM-verified (CENTCOM imagery/pages confirm USS George H.W. Bush deployed to U.S. 5th Fleet area of operations in the Middle East in June 2026; no accessible current confirmation of a second carrier strike group in theater on July 3, 2026.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury over five weeks)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-03",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' dated April 20, 2026 states 'Over 8,500 aircraft sorties'; using confirmed floor only.)"
+          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet lists 'Combat Flights: 13,000+')"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 125 days",
-        "cost": "$875,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 125 days",
+        "cost": "$1,750,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on June 28, 2026 that Iran again launched drone and missile attacks targeting Bahrain and Kuwait after new US airstrikes, showing the interim de-escalation remains fragile.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran held state funeral ceremonies for Ali Khamenei in Tehran on July 3, 2026 amid warnings from Iranian officials against any new US or Israeli attack.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 3, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP on June 30 reported indirect U.S.-Iran talks in Doha via Qatari mediators focused on implementing the interim deal and release of frozen Iranian assets, with no direct high-level U.S.-Iran meeting scheduled.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on June 27 reported Iran struck Bahrain and Kuwait, underscoring renewed Gulf spillover risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "US and Iranian negotiators were expected in Doha, but Tehran publicly denied plans for talks on June 30, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -768,6 +768,41 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/3/world-leaders-pay-tribute-to-irans-late-leader-khamenei-in-tehran?traffic_source=rss"
     },
     {
+      "time": "2026-07-03T10:23:32Z",
+      "text": "<strong>France records 2,025 excess deaths at peak of heatwave as Europe braces for more extreme weather</strong> -- Forecasters are warning of further extreme temperatures on the continent in the next few days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c3ry307rxqro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-03T19:03:45Z",
+      "text": "<strong>Iran begins public mourning for Ayatollah killed in February</strong> -- Ali Khamenei&#x27;s body will lie in state in Tehran&#x27;s Grand Mosalla from Friday ahead of days-long funeral events. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-03T10:11:14Z",
+      "text": "<strong>Ebola treatments trial begins in DR Congo</strong> -- According to WHO data, there have been 1,406 confirmed cases of the disease in DRC, with 301 suspected cases and 438 deaths. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c75ykve4zzxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-02T03:07:39Z",
+      "text": "<strong>Canadian boy, 11, dies of rabies after waking to bat on his face</strong> -- Rabies infections are rare in Canada. There have been 28 human deaths due to rabies in the country since 1924. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c982m1m95q9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-02T11:43:40Z",
+      "text": "<strong>Nine Thai monks killed after 11-year-old driver collides with procession</strong> -- The group of 35 monks and five lay followers were walking by the roadside when the truck ploughed into them. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c23y90lygpzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-02T13:11:16Z",
+      "text": "<strong>South Africa and Ghana in diplomatic row over alleged killing of migrant</strong> -- South Africa denies claims that a Ghanaian citizen was killed in anti-migrant protests in Cape Town. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c982k1j3d70o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-02T15:13:29Z",
+      "text": "<strong>Residents of Ethiopian town forced to kill hundreds of their own dogs after rabies deaths</strong> -- Some residents reluctantly hung their dogs to avoid being arrested or fined, locals tell the BBC. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1wy4d5p4pxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-07-03T15:54:14Z",
       "text": "<strong>Hottest June on record in France as heatwave deaths rise to alarming levels</strong> -- The average temperatures on June 24 and 25 this year were the highest ever recorded in the country. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/3/hottest-june-on-record-in-france-as-heatwave-deaths-rise-to-alarming-levels?traffic_source=rss"
@@ -786,21 +821,6 @@
       "time": "2026-07-03T14:43:21Z",
       "text": "<strong>Gaza sports community pledges to continue legacy of killed goalkeeper</strong> -- Slain seeking cooking gas, Gaza goalkeeper Saleem al-Ashqar joins more than 1,000 Palestinian athletes killed in war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/7/3/gaza-sports-community-pledges-to-continue-legacy-of-killed-goalkeeper?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-03T10:23:32Z",
-      "text": "<strong>France records 2,025 excess deaths at peak of heatwave as Europe braces for more extreme weather</strong> -- Forecasters are warning of further extreme temperatures on the continent in the next few days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c3ry307rxqro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-03T19:03:45Z",
-      "text": "<strong>Iran begins public mourning for Ayatollah killed in February</strong> -- Ali Khamenei&#x27;s body will lie in state in Tehran&#x27;s Grand Mosalla from Friday ahead of days-long funeral events. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-03T10:11:14Z",
-      "text": "<strong>Ebola treatments trial begins in DR Congo</strong> -- According to WHO data, there have been 1,406 confirmed cases of the disease in DRC, with 301 suspected cases and 438 deaths. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c75ykve4zzxo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-03T13:57:24Z",
@@ -828,29 +848,9 @@
       "link": "https://www.bbc.co.uk/news/articles/cvg53ngvvpxo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-07-02T03:07:39Z",
-      "text": "<strong>Canadian boy, 11, dies of rabies after waking to bat on his face</strong> -- Rabies infections are rare in Canada. There have been 28 human deaths due to rabies in the country since 1924. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c982m1m95q9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-07-03T09:26:27Z",
       "text": "<strong>Five killed in Ukraine a day after deadliest Russian attacks this year</strong> -- Separately, at least 10 people killed in Ukrainian attacks on Russia and Russian-controlled areas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/3/four-killed-in-ukraine-a-day-after-deadliest-russian-attacks-this-year?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-03T08:04:08Z",
-      "text": "<strong>Iran\u2019s Khamenei funeral: Which world leaders are attending?</strong> -- Several heads of state and other government officials will gather in Tehran for supreme leader&amp;#039;s state funeral. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/3/irans-khamenei-funeral-which-world-leaders-are-attending?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-02T11:43:40Z",
-      "text": "<strong>Nine Thai monks killed after 11-year-old driver collides with procession</strong> -- The group of 35 monks and five lay followers were walking by the roadside when the truck ploughed into them. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c23y90lygpzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-03T07:48:26Z",
-      "text": "<strong>Ukraine strike hits Belgorod, causing fire and power outages</strong> -- Ukraine strike hits Belgorod, causing fire and power outages <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/3/ukraine-strike-hits-belgorod-causing-fire-and-power-outages?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1245,38 +1245,6 @@
       "tier": 2
     },
     {
-      "title": "Hottest June on record in France as heatwave deaths rise to alarming levels",
-      "description": "The average temperatures on June 24 and 25 this year were the highest ever recorded in the country.",
-      "link": "https://www.aljazeera.com/news/2026/7/3/hottest-june-on-record-in-france-as-heatwave-deaths-rise-to-alarming-levels?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-03T15:54:14Z",
-      "tier": 2
-    },
-    {
-      "title": "Yemen\u2019s Houthis threaten Saudi Arabia after alleged airspace intrusion",
-      "description": "Houthis say they confronted Saudi planes \u2060\u2060allegedly trying to \u2060\u2060stop Iranian civilian \u200baircraft from landing in Sanaa.",
-      "link": "https://www.aljazeera.com/news/2026/7/3/yemens-houthis-threaten-saudi-arabia-after-alleged-airspace-intrusion?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-03T15:44:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Why is the UK mired in a maternity and neonatal deaths scandal?",
-      "description": "An inquiry found that more than 500 mothers and babies either came to harm or died due to poor care.",
-      "link": "https://www.aljazeera.com/news/2026/7/3/why-is-the-uk-mired-in-a-maternity-and-neonatal-deaths-scandal?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-03T14:51:52Z",
-      "tier": 2
-    },
-    {
-      "title": "Gaza sports community pledges to continue legacy of killed goalkeeper",
-      "description": "Slain seeking cooking gas, Gaza goalkeeper Saleem al-Ashqar joins more than 1,000 Palestinian athletes killed in war.",
-      "link": "https://www.aljazeera.com/sports/2026/7/3/gaza-sports-community-pledges-to-continue-legacy-of-killed-goalkeeper?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-03T14:43:21Z",
-      "tier": 2
-    },
-    {
       "title": "France records 2,025 excess deaths at peak of heatwave as Europe braces for more extreme weather",
       "description": "Forecasters are warning of further extreme temperatures on the continent in the next few days.",
       "link": "https://www.bbc.co.uk/news/articles/c3ry307rxqro?at_medium=RSS&at_campaign=rss",
@@ -1333,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 3, 2026 shows Iran has begun a seven-day state funeral for former Supreme Leader Ali Khamenei in Tehran, with AP/Reuters-reported coverage via Al Jazeera saying more than 100 foreign delegations are attending under a fragile ceasefire. On the hard numbers available from accessible official sources, CENTCOM\u2019s latest clearly confirmed U.S. fatality count remains 7 killed in action, while CENTCOM\u2019s April 6 fact sheet still provides the most accessible official combined-strike figure at 13,000+ targets struck. Accessible current reporting did not yield updated confirmed cumulative totals for overall Iranian deaths, Iranian civilian deaths, Iranian wounded, or Israeli deaths, so those fields remain null rather than estimated.",
+  "summary": "Confirmed reporting available today is still sparse on many military-quantity fields. The most solid accessible official data remain CENTCOM\u2019s April fact sheets showing 13,000+ targets struck and 13,000+ combat flights, while Al Jazeera\u2019s June 10 tracker citing named authorities reports 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 confirmed US combat deaths, and 28 killed in Gulf states. Today\u2019s confirmed coverage is dominated by the start of Ayatollah Ali Khamenei\u2019s funeral ceremonies in Tehran, while AP\u2019s June 28 reporting indicates Iran was still launching attacks on Bahrain and Kuwait after renewed US strikes, underscoring continued regional risk.",
   "briefings": [
     {
       "date": "2026-07-03",
       "day": 125,
-      "summary": "Confirmed reporting on July 3, 2026 shows Iran has begun a seven-day state funeral for former Supreme Leader Ali Khamenei in Tehran, with AP/Reuters-reported coverage via Al Jazeera saying more than 100 foreign delegations are attending under a fragile ceasefire. On the hard numbers available from accessible official sources, CENTCOM\u2019s latest clearly confirmed U.S. fatality count remains 7 killed in action, while CENTCOM\u2019s April 6 fact sheet still provides the most accessible official combined-strike figure at 13,000+ targets struck. Accessible current reporting did not yield updated confirmed cumulative totals for overall Iranian deaths, Iranian civilian deaths, Iranian wounded, or Israeli deaths, so those fields remain null rather than estimated."
+      "summary": "Confirmed reporting available today is still sparse on many military-quantity fields. The most solid accessible official data remain CENTCOM\u2019s April fact sheets showing 13,000+ targets struck and 13,000+ combat flights, while Al Jazeera\u2019s June 10 tracker citing named authorities reports 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 confirmed US combat deaths, and 28 killed in Gulf states. Today\u2019s confirmed coverage is dominated by the start of Ayatollah Ali Khamenei\u2019s funeral ceremonies in Tehran, while AP\u2019s June 28 reporting indicates Iran was still launching attacks on Bahrain and Kuwait after renewed US strikes, underscoring continued regional risk."
     },
     {
       "date": "2026-07-02",
