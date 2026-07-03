@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-03T19:49:44Z",
+  "lastUpdated": "2026-07-03T21:31:44Z",
   "dayCount": 125,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,585+",
-    "cost": "$28.7B+"
+    "killed": "9+",
+    "cost": "$27.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,519",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "29",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "25",
+    "gulfCasualties": "2",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "20,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.7 billion+",
-    "dailyBurnRate": "~$230M/day",
+    "totalCost": "$27.6 billion+",
+    "dailyBurnRate": "~$221M/day",
     "daysOfOps": 125,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-03",
-          "source": "LLM-verified (U.S. Department of War Operation Epic Fury pages and imagery show USS Abraham Lincoln and USS Gerald R. Ford both conducting flight operations in support of Operation Epic Fury.)"
+          "source": "LLM-verified (CENTCOM imagery/pages confirm USS George H.W. Bush deployed to U.S. 5th Fleet area of operations in the Middle East in June 2026; no accessible current confirmation of a second carrier strike group in theater on July 3, 2026.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-03",
-          "source": "LLM-verified (Admiral Brad Cooper statement reported by Iran International from CENTCOM briefing on March 4, 2026: more than 50,000 troops participating)"
+          "source": "LLM-verified (AP, March 24, 2026: U.S. prepared to send 1,000 more troops 'to supplement some 50,000 troops already in the Mideast.' No newer confirmed official total found.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-03",
-          "source": "LLM-verified (CENTCOM Fact Sheet dated March 28, 2026: 'Combat Flights: 11,000+'; recorded as 11000 confirmed floor)"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' dated April 20, 2026 states 'Over 8,500 aircraft sorties'; using confirmed floor only.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 125 days",
-        "cost": "$1,750,000,000"
+        "detail": "$7,000,000/day \u00d7 125 days",
+        "cost": "$875,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "An Iranian military commander warned the U.S. and Israel on July 2 against any attack during funeral preparations, according to Al Jazeera reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran began a seven-day state funeral for Ali Khamenei in Tehran on July 3, 2026 under a tense ceasefire, with more than 100 foreign delegations arriving, according to AP/Reuters reporting carried by Al Jazeera.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 3, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "US and Iranian negotiators were expected in Doha, but Tehran publicly denied plans for talks on June 30, 2026",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian strikes/attempted strikes on Bahrain and Kuwait further strained the June 17 ceasefire framework",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jun 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "June 27-29, 2026: renewed US-Iran exchange of strikes after attacks on commercial shipping near the Strait of Hormuz",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -788,11 +788,6 @@
       "link": "https://www.aljazeera.com/sports/2026/7/3/gaza-sports-community-pledges-to-continue-legacy-of-killed-goalkeeper?traffic_source=rss"
     },
     {
-      "time": "2026-07-03T13:57:24Z",
-      "text": "<strong>Russia\u2019s advance collapses in Ukraine, \u201840,000\u2019 troops killed in June</strong> -- Ukraine&amp;#039;s long-range strikes hit targets in Russia, where anxiety is rising. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/3/russian-advance-collapses-in-ukraine-as-anxiety-rises-in-moscow?traffic_source=rss"
-    },
-    {
       "time": "2026-07-03T10:23:32Z",
       "text": "<strong>France records 2,025 excess deaths at peak of heatwave as Europe braces for more extreme weather</strong> -- Forecasters are warning of further extreme temperatures on the continent in the next few days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c3ry307rxqro?at_medium=RSS&at_campaign=rss"
@@ -801,6 +796,16 @@
       "time": "2026-07-03T19:03:45Z",
       "text": "<strong>Iran begins public mourning for Ayatollah killed in February</strong> -- Ali Khamenei&#x27;s body will lie in state in Tehran&#x27;s Grand Mosalla from Friday ahead of days-long funeral events. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-03T10:11:14Z",
+      "text": "<strong>Ebola treatments trial begins in DR Congo</strong> -- According to WHO data, there have been 1,406 confirmed cases of the disease in DRC, with 301 suspected cases and 438 deaths. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c75ykve4zzxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-03T13:57:24Z",
+      "text": "<strong>Russia\u2019s advance collapses in Ukraine, \u201840,000\u2019 troops killed in June</strong> -- Ukraine&amp;#039;s long-range strikes hit targets in Russia, where anxiety is rising. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/3/russian-advance-collapses-in-ukraine-as-anxiety-rises-in-moscow?traffic_source=rss"
     },
     {
       "time": "2026-07-03T12:00:44Z",
@@ -821,11 +826,6 @@
       "time": "2026-07-02T23:15:22Z",
       "text": "<strong>On the Strait of Hormuz, BBC finds seized ships and shark fishermen as uneasy calm returns</strong> -- The BBC travels to the city of Bandar Abbas - the first international journalists to visit the Iranian side of the strait. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cvg53ngvvpxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-03T10:11:14Z",
-      "text": "<strong>Ebola treatments trial begins in DR Congo</strong> -- According to WHO data, there have been 1,406 confirmed cases of the disease in DRC, with 301 suspected cases and 438 deaths. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c75ykve4zzxo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-02T03:07:39Z",
@@ -1277,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Russia\u2019s advance collapses in Ukraine, \u201840,000\u2019 troops killed in June",
-      "description": "Ukraine&#039;s long-range strikes hit targets in Russia, where anxiety is rising.",
-      "link": "https://www.aljazeera.com/news/2026/7/3/russian-advance-collapses-in-ukraine-as-anxiety-rises-in-moscow?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-03T13:57:24Z",
-      "tier": 2
-    },
-    {
       "title": "France records 2,025 excess deaths at peak of heatwave as Europe braces for more extreme weather",
       "description": "Forecasters are warning of further extreme temperatures on the continent in the next few days.",
       "link": "https://www.bbc.co.uk/news/articles/c3ry307rxqro?at_medium=RSS&at_campaign=rss",
@@ -1341,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today does not materially update most hard-count war metrics beyond spring 2026 figures already on record. AP reported on July 3, 2026 that Iran has begun public mourning and funeral events for Supreme Leader Ali Khamenei, who was killed on February 28, 2026 at the start of the U.S.-Israeli war, during what AP described as an uneasy ceasefire period after an interim deal with the United States. For cumulative figures, the newest confirmed casualty total found for Iran remains Reuters\u2019 April 1, 2026 factbox citing HRANA at 3,519 dead and 1,598 civilians killed, while Reuters also cited at least 20,000 injured in Iran; CENTCOM\u2019s April 6, 2026 fact sheet still listed 13,000+ targets struck.",
+  "summary": "Confirmed reporting on July 3, 2026 shows Iran has begun a seven-day state funeral for former Supreme Leader Ali Khamenei in Tehran, with AP/Reuters-reported coverage via Al Jazeera saying more than 100 foreign delegations are attending under a fragile ceasefire. On the hard numbers available from accessible official sources, CENTCOM\u2019s latest clearly confirmed U.S. fatality count remains 7 killed in action, while CENTCOM\u2019s April 6 fact sheet still provides the most accessible official combined-strike figure at 13,000+ targets struck. Accessible current reporting did not yield updated confirmed cumulative totals for overall Iranian deaths, Iranian civilian deaths, Iranian wounded, or Israeli deaths, so those fields remain null rather than estimated.",
   "briefings": [
     {
       "date": "2026-07-03",
       "day": 125,
-      "summary": "Confirmed reporting available today does not materially update most hard-count war metrics beyond spring 2026 figures already on record. AP reported on July 3, 2026 that Iran has begun public mourning and funeral events for Supreme Leader Ali Khamenei, who was killed on February 28, 2026 at the start of the U.S.-Israeli war, during what AP described as an uneasy ceasefire period after an interim deal with the United States. For cumulative figures, the newest confirmed casualty total found for Iran remains Reuters\u2019 April 1, 2026 factbox citing HRANA at 3,519 dead and 1,598 civilians killed, while Reuters also cited at least 20,000 injured in Iran; CENTCOM\u2019s April 6, 2026 fact sheet still listed 13,000+ targets struck."
+      "summary": "Confirmed reporting on July 3, 2026 shows Iran has begun a seven-day state funeral for former Supreme Leader Ali Khamenei in Tehran, with AP/Reuters-reported coverage via Al Jazeera saying more than 100 foreign delegations are attending under a fragile ceasefire. On the hard numbers available from accessible official sources, CENTCOM\u2019s latest clearly confirmed U.S. fatality count remains 7 killed in action, while CENTCOM\u2019s April 6 fact sheet still provides the most accessible official combined-strike figure at 13,000+ targets struck. Accessible current reporting did not yield updated confirmed cumulative totals for overall Iranian deaths, Iranian civilian deaths, Iranian wounded, or Israeli deaths, so those fields remain null rather than estimated."
     },
     {
       "date": "2026-07-02",
