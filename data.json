@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-07-04T22:13:28Z",
+  "lastUpdated": "2026-07-04T23:15:47Z",
   "dayCount": 126,
   "banner": {
     "strikes": "~13,000",
-    "killed": "5,226+",
-    "cost": "$28.6B+"
+    "killed": "5,535+",
+    "cost": "$29.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "51",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.6 billion+",
-    "dailyBurnRate": "~$227M/day",
+    "totalCost": "$29.0 billion+",
+    "dailyBurnRate": "~$231M/day",
     "daysOfOps": 126,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-04",
-          "source": "LLM-verified (Military Times on April 8, 2026, citing CENTCOM context: 'The U.S. military has more than 50,000 personnel in the region.' Stored as 50000.)"
+          "source": "LLM-verified (Al Jazeera live tracker citing Council on Foreign Relations: as of mid-2025 there were 40,000 to 50,000 U.S. soldiers in the Middle East; no operation-specific current confirmed Epic Fury total found)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-04",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated 23 Mar 2026 lists 'Combat Flights: 9,000+'; numeric floor used.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; this is combat flights, not explicitly fighter-only sorties)"
         },
         {
           "id": "interceptors",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-07-02",
-          "source": "LLM-verified (White House release dated April 8, 2026 lists over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted; combined confirmed minimum total = 1,700; source: https://www.whitehouse.gov/releases/2026/04/peace-through-strength-operation-epic-fury-crushes-iranian-threat-as-ceasefire-takes-hold/?query-11-page=3)"
+          "lastUpdated": "2026-07-04",
+          "source": "LLM-verified (White House Operation Epic Fury update of April 8, 2026: over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian officials have issued renewed warnings over outside naval activity in the Strait of Hormuz, increasing shipping and escalation risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran is using Khamenei\u2019s funeral period to harden public messaging around revenge and continuity while negotiations over a permanent end to the war remain stalled.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 4, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Iran is conducting a seven-day funeral period for Ali Khamenei from July 3-9, increasing regional security sensitivity during mass gatherings (AP, July 3, 2026).",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian military command warned ships in the Strait of Hormuz to use routes designated by Iranian armed forces or face a 'forceful response' (Al Jazeera live blog, July 3, 2026).",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Tehran publicly accused the U.S. of contempt for regional peace ahead of Ali Khamenei funeral ceremonies, according to Al Jazeera on July 3, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -793,6 +793,11 @@
       "link": "https://www.bbc.co.uk/news/articles/c3ry307rxqro?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-07-04T21:46:43Z",
+      "text": "<strong>Funeral of Iran&#x27;s former supreme leader &#x27;intensely political moment&#x27;</strong> -- Authorities expect up to 20 million people to attend ceremonies across Iran and Iraq over the coming days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c23y22z4ppxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-07-04T16:49:36Z",
       "text": "<strong>BBC in Tehran as mourners gather for former supreme leader&#x27;s funeral</strong> -- Iranian authorities say they expect millions of people to take part in funeral commemorations for Ayatollah Ali Khamenei. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/c5yz9jn0xkko?at_medium=RSS&at_campaign=rss"
@@ -846,11 +851,6 @@
       "time": "2026-07-03T18:39:31Z",
       "text": "<strong>Iran begins week of funeral ceremonies for slain Supreme Leader Khamenei</strong> -- Top Iranian officials and foreign dignitaries pay respects to late leader killed in joint US-Israeli strike in February. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/3/iran-begins-week-of-funeral-ceremonies-for-slain-supreme-leader-khamenei?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-03T19:03:45Z",
-      "text": "<strong>Iran begins public mourning for Ayatollah killed in February</strong> -- Ali Khamenei&#x27;s body will lie in state in Tehran&#x27;s Grand Mosalla from Friday ahead of days-long funeral events. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2k4k7jqeno?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Funeral of Iran's former supreme leader 'intensely political moment'",
+      "description": "Authorities expect up to 20 million people to attend ceremonies across Iran and Iraq over the coming days.",
+      "link": "https://www.bbc.co.uk/news/videos/c23y22z4ppxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-04T21:46:43Z",
+      "tier": 2
+    },
+    {
       "title": "Masses of Iranians defy heatwave on second day of Khamenei\u2019s funeral",
       "description": "Iran has marked the second day of funeral processions for its late Supreme Leader Ali Khamenei.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/4/masses-of-iranians-defy-heatwave-on-second-day-of-khameneis-funeral?traffic_source=rss",
@@ -1285,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 4, 2026 centers on the start of Ayatollah Ali Khamenei\u2019s funeral in Tehran, with AP and Al Jazeera reporting massive crowds and renewed calls for revenge against the United States and Israel. AP also reports U.S.-Iran talks in Qatar are to resume only after the funeral period, while concern persists over possible renewed Israeli action and Iran\u2019s continued use of the Strait of Hormuz as leverage. On the war-data side, the most recent confirmed cumulative baselines I found remain the Iran Ministry of Health\u2019s 3,468 dead and 26,500+ wounded, HRANA\u2019s 1,701 Iranian civilian deaths, CENTCOM\u2019s 6 U.S. dead from the KC-135 loss, Al Jazeera\u2019s 51 Israeli deaths, and CENTCOM\u2019s 13,000+ targets struck / 9,000+ combat flights; I did not find newer official confirmed totals for Gulf deaths or most weapons-expended categories.",
+  "summary": "Confirmed reporting on July 4, 2026, shows Iran has begun the delayed funeral for Supreme Leader Ali Khamenei, who was killed in the opening February 28 airstrike, with AP reporting huge crowds in Tehran and continued rhetoric of revenge as talks on a permanent end to the war appear paused. The most recent widely cited cumulative casualty figures I found remain Al Jazeera\u2019s June 10 tracker: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 U.S. combat deaths, and 28 deaths across Gulf states. For operations, the latest official top-line U.S. strike total I found is the White House\u2019s April 8 statement of over 13,000 targets struck, while the April 1 CENTCOM fact sheet listed 13,000+ combat flights. I could not verify current confirmed counts for carrier groups, destroyers, drone units, or specific munitions totals such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, or MOP drops from named official or major-wire sources, so those are left null.",
   "briefings": [
     {
       "date": "2026-07-04",
       "day": 126,
-      "summary": "Confirmed reporting on July 4, 2026 centers on the start of Ayatollah Ali Khamenei\u2019s funeral in Tehran, with AP and Al Jazeera reporting massive crowds and renewed calls for revenge against the United States and Israel. AP also reports U.S.-Iran talks in Qatar are to resume only after the funeral period, while concern persists over possible renewed Israeli action and Iran\u2019s continued use of the Strait of Hormuz as leverage. On the war-data side, the most recent confirmed cumulative baselines I found remain the Iran Ministry of Health\u2019s 3,468 dead and 26,500+ wounded, HRANA\u2019s 1,701 Iranian civilian deaths, CENTCOM\u2019s 6 U.S. dead from the KC-135 loss, Al Jazeera\u2019s 51 Israeli deaths, and CENTCOM\u2019s 13,000+ targets struck / 9,000+ combat flights; I did not find newer official confirmed totals for Gulf deaths or most weapons-expended categories."
+      "summary": "Confirmed reporting on July 4, 2026, shows Iran has begun the delayed funeral for Supreme Leader Ali Khamenei, who was killed in the opening February 28 airstrike, with AP reporting huge crowds in Tehran and continued rhetoric of revenge as talks on a permanent end to the war appear paused. The most recent widely cited cumulative casualty figures I found remain Al Jazeera\u2019s June 10 tracker: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 U.S. combat deaths, and 28 deaths across Gulf states. For operations, the latest official top-line U.S. strike total I found is the White House\u2019s April 8 statement of over 13,000 targets struck, while the April 1 CENTCOM fact sheet listed 13,000+ combat flights. I could not verify current confirmed counts for carrier groups, destroyers, drone units, or specific munitions totals such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, or MOP drops from named official or major-wire sources, so those are left null."
     },
     {
       "date": "2026-07-03",
