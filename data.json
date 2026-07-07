@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-07T08:43:39Z",
+  "lastUpdated": "2026-07-07T12:09:27Z",
   "dayCount": 129,
   "banner": {
     "strikes": "~12,300",
-    "killed": "3,507+",
-    "cost": "$30.3B+"
+    "killed": "1,456+",
+    "cost": "$29.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1255",
+    "civilianDeaths": "1443",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$30.3 billion+",
-    "dailyBurnRate": "~$235M/day",
+    "totalCost": "$29.4 billion+",
+    "dailyBurnRate": "~$228M/day",
     "daysOfOps": 129,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-07",
-          "source": "LLM-verified (AP, April 29, 2026: arrival of USS George H.W. Bush meant three US aircraft carriers were deployed to the Middle East)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page shows Gerald R. Ford and Dwight D. Eisenhower carrier strike groups operating in support; no third current CSG confirmation found in this search session.)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-07-06",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page identifies four escorts with the two carrier groups: USS Ramage, USS Paul Ignatius, USS McFaul, USS Carney.)"
+          "lastUpdated": "2026-07-07",
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page lists USS Ramage, USS Paul Ignatius, USS Gravely, and USS Mason with the two CSGs.)"
         },
         {
           "id": "personnel",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-07",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; used as confirmed minimum for sorties.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 129 days",
-        "cost": "$2,709,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 129 days",
+        "cost": "$1,806,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "CENTCOM commander Adm. Brad Cooper said on May 14 that threats in and around the Strait of Hormuz remain despite major degradation of Iranian capabilities, according to CBS News reporting on his Senate testimony.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian officials and crowds at Ali Khamenei's July 4-7 funeral ceremonies have publicly called for revenge against the United States and Israel, according to AP and Al Jazeera reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 7, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Iran continues to use its leverage over the Strait of Hormuz in negotiations, with reporting indicating threats to shipping and proposed new transit fees",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian funeral crowds and officials publicly called for revenge over the February 28 strike, according to AP and Al Jazeera reporting on July 4-5, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Mass funeral ceremonies for Ayatollah Ali Khamenei are drawing huge crowds in Tehran and officials have appeared publicly, with mourners and state messaging emphasizing revenge and continued confrontation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-07-07T08:31:05Z",
+      "text": "<strong>After Iran war upheaval, global shipping eyes return to status quo</strong> -- Industry known for its resilience is likely to emerge from war relatively unchanged, analysts say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/7/7/after-iran-war-upheaval-global-shipping-eyes-return-to-status-quo?traffic_source=rss"
+    },
+    {
       "time": "2026-07-07T05:48:37Z",
       "text": "<strong>Palestine weekly: One thousand days of genocide in Gaza</strong> -- Gaza marks 1,000 days of Israel&amp;#039;s genocidal war, with at least 1,072 killed since October &amp;#039;ceasefire&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/7/palestine-weekly-one-thousand-days-of-genocide-in-gaza?traffic_source=rss"
@@ -763,11 +768,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/7/aje-onl-nf_khameneis-coffin-arrives-in-holy-city-of-qom-070726?traffic_source=rss"
     },
     {
-      "time": "2026-07-07T04:06:03Z",
-      "text": "<strong>Tanker on fire in Strait of Hormuz after being hit by projectile off Oman</strong> -- Iranian television said the liquefied natural gas tanker came under attack after ignoring warnings. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/7/tanker-on-fire-off-coast-of-oman-after-being-hit-by-projectile?traffic_source=rss"
-    },
-    {
       "time": "2026-07-07T00:46:03Z",
       "text": "<strong>Resistance and revenge - Iran wanted to send a message with its farewell to Khamenei</strong> -- Three days of public mourning in Tehran was a political spectacle Iran&#x27;s leaders wanted the world to see, writes the BBC&#x27;s international correspondent Lyse Doucet. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c07yy3j3nljo?at_medium=RSS&at_campaign=rss"
@@ -776,6 +776,11 @@
       "time": "2026-07-06T16:23:44Z",
       "text": "<strong>&#x27;The spectacle Iran wants the world to see&#x27;: Lyse Doucet in Tehran</strong> -- Huge crowds have lined the streets of Tehran for the funeral procession of Iran&#x27;s late supreme leader, Ayatollah Ali Khamenei. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/c78yyyl2ev4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-07T04:06:03Z",
+      "text": "<strong>Tanker on fire in Strait of Hormuz after being hit by projectile off Oman</strong> -- Iranian television said the liquefied natural gas tanker came under attack after ignoring warnings. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/7/tanker-on-fire-off-coast-of-oman-after-being-hit-by-projectile?traffic_source=rss"
     },
     {
       "time": "2026-07-07T00:00:00Z",
@@ -846,11 +851,6 @@
       "time": "2026-07-06T13:07:55Z",
       "text": "<strong>Refugees killed in landslides at Rohingya camps in Bangladesh</strong> -- Refugees killed in landslides at Rohingya camps in Bangladesh <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/6/refugees-killed-in-landslides-at-rohingya-camps-in-bangladesh?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-06T10:52:55Z",
-      "text": "<strong>Huge crowd joins funeral procession for Iran\u2019s Supreme Leader Khamenei</strong> -- Enormous crowds gather in Tehran for third day to mourn amid calls for revenge against the US and Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/6/huge-crowd-joins-funeral-procession-for-irans-supreme-leader-khamenei?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "After Iran war upheaval, global shipping eyes return to status quo",
+      "description": "Industry known for its resilience is likely to emerge from war relatively unchanged, analysts say.",
+      "link": "https://www.aljazeera.com/economy/2026/7/7/after-iran-war-upheaval-global-shipping-eyes-return-to-status-quo?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-07T08:31:05Z",
+      "tier": 2
+    },
+    {
       "title": "Palestine weekly: One thousand days of genocide in Gaza",
       "description": "Gaza marks 1,000 days of Israel&#039;s genocidal war, with at least 1,072 killed since October &#039;ceasefire&#039;.",
       "link": "https://www.aljazeera.com/news/2026/7/7/palestine-weekly-one-thousand-days-of-genocide-in-gaza?traffic_source=rss",
@@ -1226,14 +1234,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/7/aje-onl-nf_khameneis-coffin-arrives-in-holy-city-of-qom-070726?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-07T04:52:37Z",
-      "tier": 2
-    },
-    {
-      "title": "Tanker on fire in Strait of Hormuz after being hit by projectile off Oman",
-      "description": "Iranian television said the liquefied natural gas tanker came under attack after ignoring warnings.",
-      "link": "https://www.aljazeera.com/news/2026/7/7/tanker-on-fire-off-coast-of-oman-after-being-hit-by-projectile?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-07T04:06:03Z",
       "tier": 2
     },
     {
@@ -1253,12 +1253,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 7, 2026, centers on Iran\u2019s state-backed funeral ceremonies for Ali Khamenei, with AP and Al Jazeera describing mass processions in Tehran and Qom and renewed calls for revenge against the United States and Israel. For cumulative war figures, the most recent broadly published casualty tracker located was Al Jazeera\u2019s June 10 update, which listed 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 confirmed US combat deaths, and 28 deaths across Gulf states. For operational totals, the latest official CENTCOM fact sheet I found was dated April 1, 2026, stating 12,300+ targets struck and 13,000+ combat flights; I could not verify newer official cumulative counts for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP bunker busters, or interceptor launches.",
+  "summary": "Confirmed reporting on July 7, 2026 centers on the ongoing state funeral for Ali Khamenei, with AP and Al Jazeera describing massive crowds in Tehran and Qom and repeated public calls for revenge against the United States and Israel after Khamenei was killed in the February 28 opening strike of the war. On the military side, the latest official quantitative U.S. data located in this search session remains the April 1 CENTCOM/DoD Operation Epic Fury fact sheet showing 12,300+ targets struck and 13,000+ combat flights, while the most recent casualty confirmation found for U.S. forces is 13 killed in action from the Pentagon database as reported by Military.com. Several other requested cumulative totals could not be updated because no current confirmed figures from named official or major wire sources were found in this search session.",
   "briefings": [
     {
       "date": "2026-07-07",
       "day": 129,
-      "summary": "Confirmed reporting on July 7, 2026, centers on Iran\u2019s state-backed funeral ceremonies for Ali Khamenei, with AP and Al Jazeera describing mass processions in Tehran and Qom and renewed calls for revenge against the United States and Israel. For cumulative war figures, the most recent broadly published casualty tracker located was Al Jazeera\u2019s June 10 update, which listed 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 confirmed US combat deaths, and 28 deaths across Gulf states. For operational totals, the latest official CENTCOM fact sheet I found was dated April 1, 2026, stating 12,300+ targets struck and 13,000+ combat flights; I could not verify newer official cumulative counts for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP bunker busters, or interceptor launches."
+      "summary": "Confirmed reporting on July 7, 2026 centers on the ongoing state funeral for Ali Khamenei, with AP and Al Jazeera describing massive crowds in Tehran and Qom and repeated public calls for revenge against the United States and Israel after Khamenei was killed in the February 28 opening strike of the war. On the military side, the latest official quantitative U.S. data located in this search session remains the April 1 CENTCOM/DoD Operation Epic Fury fact sheet showing 12,300+ targets struck and 13,000+ combat flights, while the most recent casualty confirmation found for U.S. forces is 13 killed in action from the Pentagon database as reported by Military.com. Several other requested cumulative totals could not be updated because no current confirmed figures from named official or major wire sources were found in this search session."
     },
     {
       "date": "2026-07-06",
