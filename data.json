@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-07-07T21:45:07Z",
+  "lastUpdated": "2026-07-07T23:14:30Z",
   "dayCount": 129,
   "banner": {
     "strikes": "~13,000",
-    "killed": "5,172+",
-    "cost": "$29.4B+"
+    "killed": "3,714+",
+    "cost": "$29.2B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,636",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "3",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "34",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "31",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "20,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.4 billion+",
-    "dailyBurnRate": "~$228M/day",
+    "totalCost": "$29.2 billion+",
+    "dailyBurnRate": "~$227M/day",
     "daysOfOps": 129,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-07",
-          "source": "LLM-verified (March 2, 2026 Pentagon briefing said 'two carrier strike groups began to move towards their launching points'; war.gov imagery shows USS Gerald R. Ford and USS Abraham Lincoln supporting Operation Epic Fury. No newer official current-theater count was found.)"
+          "source": "LLM-verified (US Navy Shipbuilding Plan, May 2026: two carrier strike groups in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-07",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; this is the latest official cumulative sortie figure found in reviewed sources)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet dated March 28, 2026 lists 11,000+ combat flights; used as best confirmed official cumulative sorties figure found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "July 7, 2026: Reuters reported two tankers were hit in the Strait of Hormuz, with a US official saying initial indications pointed to Iranian fire at two commercial vessels",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "July 7, 2026: AP reported new US strikes on Iran after three merchant ships were hit in the Strait of Hormuz",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 7, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Al Jazeera's July 5 live coverage says the U.S. and Iran are observing a fragile ceasefire after signing a preliminary deal to halt the conflict, indicating the conflict remains unstable despite reduced fighting.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Large funeral mobilization for Ayatollah Ali Khamenei began July 3-5 in Tehran and other cities, with millions expected to attend according to Al Jazeera/Reuters reporting, raising the risk of mass political mobilization and retaliatory rhetoric.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Ceasefire remains fragile; U.S. Navy blockade of Iranian ports and recent exchanges of fire were noted in CBS reporting on CENTCOM testimony",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,13 @@
   ],
   "developments": [
     {
+      "time": "2026-07-07T22:53:35Z",
+      "text": "<strong>Russian missile strikes hit Ukraine\u2019s capital Kyiv for third time in a week</strong> -- The attack has triggered fires in two districts of Kyiv according to the city&amp;#039;s mayor. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/7/russian-missile-strikes-hit-ukraines-capital-kyiv-for-third-time-in-a-week?traffic_source=rss"
+    },
+    {
       "time": "2026-07-07T21:21:16Z",
-      "text": "<strong>US says strikes launched as explosions heard in southern Iran</strong> -- This is a breaking news story. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>US says strikes launched as explosions heard in southern Iran</strong> -- US strikes in Iran come a day after Qatari, Saudi tankers hit in attacks in Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/7/us-says-strikes-launched-as-explosions-heard-in-southern-iran?traffic_source=rss"
     },
     {
@@ -766,6 +771,11 @@
       "time": "2026-07-07T19:16:05Z",
       "text": "<strong>Trump criticises NATO allies over Iran conflict support</strong> -- US President Donald Trump criticised NATO allies for refusing to back the United States during its conflict with Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/7/trump-criticises-nato-allies-over-iran-conflict-support?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-07T22:48:45Z",
+      "text": "<strong>US launches strikes on Iran after tankers hit in Strait of Hormuz</strong> -- The US says the strikes are intended to impose &quot;heavy costs&quot;, while Iran warns it will &quot;take decisive measures&quot; in response. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cwykq59jwpvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-07T16:10:14Z",
@@ -841,16 +851,6 @@
       "time": "2026-07-06T21:02:37Z",
       "text": "<strong>Ukraine warns of interceptor missile shortage as 23 killed in Kyiv region</strong> -- President Zelensky says Sunday&#x27;s &quot;massive Russian attack&quot; on Kyiv consisted of 68 missiles and 351 strike drones. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cewqqnd7zdwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-05T17:54:47Z",
-      "text": "<strong>Emotion and politics merge in Tehran at funeral of former supreme leader</strong> -- The BBC&#x27;s chief international correspondent Lyse Doucet is in Tehran, where funeral events are taking place in honour of Iran&#x27;s former leader, Ayatollah Ali Khamenei. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/c4gyye3rplno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-06T18:28:38Z",
-      "text": "<strong>Iran reappoints a familiar face to powerful post during Khamenei funeral</strong> -- The judiciary chief has emphasised the need to avenge Supreme Leader Ali Khamenei and prosecute foreign &amp;#039;aggressors&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/6/iran-reappoints-a-familiar-face-to-powerful-post-during-khamenei-funeral?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,24 @@
   ],
   "newsFeed": [
     {
+      "title": "Russian missile strikes hit Ukraine\u2019s capital Kyiv for third time in a week",
+      "description": "The attack has triggered fires in two districts of Kyiv according to the city&#039;s mayor.",
+      "link": "https://www.aljazeera.com/news/2026/7/7/russian-missile-strikes-hit-ukraines-capital-kyiv-for-third-time-in-a-week?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-07T22:53:35Z",
+      "tier": 2
+    },
+    {
+      "title": "US launches strikes on Iran after tankers hit in Strait of Hormuz",
+      "description": "The US says the strikes are intended to impose \"heavy costs\", while Iran warns it will \"take decisive measures\" in response.",
+      "link": "https://www.bbc.co.uk/news/articles/cwykq59jwpvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-07T22:48:45Z",
+      "tier": 2
+    },
+    {
       "title": "US says strikes launched as explosions heard in southern Iran",
-      "description": "This is a breaking news story.",
+      "description": "US strikes in Iran come a day after Qatari, Saudi tankers hit in attacks in Strait of Hormuz.",
       "link": "https://www.aljazeera.com/news/2026/7/7/us-says-strikes-launched-as-explosions-heard-in-southern-iran?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-07T21:21:16Z",
@@ -1261,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting reviewed today shows no new official casualty revision from Iran\u2019s Health Ministry beyond 3,468 killed and more than 26,500 wounded, while CENTCOM\u2019s latest reviewed official strike summary still lists 13,000+ targets struck and 13,000+ combat flights as of early April. CENTCOM confirms 3 U.S. troops were killed in action on March 1, while the six KC-135 deaths on March 12-13 were explicitly described as non-hostile aircraft-loss fatalities rather than KIA. Reuters reporting on July 7 says two tankers were hit near the Strait of Hormuz, underscoring renewed maritime escalation even as Iran\u2019s leadership funeral events continue and negotiations remain stalled.",
+  "summary": "Confirmed reporting on July 7, 2026 showed renewed escalation around the Strait of Hormuz: AP reported the US launched new strikes against Iran after three merchant ships were hit, while Reuters separately reported that two tankers were struck and a US official said initial indications pointed to Iranian fire. For cumulative war totals, the latest clearly sourced casualty figures I found remain the Reuters factbox figures updated in early April: HRANA reported 3,636 deaths in Iran including 1,701 civilians, the IFRC said 20,000 were injured in Iran, US Central Command said 13 US service members had been killed, and Reuters' latest compiled Israel death figure was 34. For military activity, the best official cumulative strike figure found was the US Navy's May 2026 shipbuilding plan stating that Navy and Marine Corps aircraft contributed to striking over 13,000 targets in Iran, while official documents also confirmed two carrier strike groups were involved.",
   "briefings": [
     {
       "date": "2026-07-07",
       "day": 129,
-      "summary": "Confirmed reporting reviewed today shows no new official casualty revision from Iran\u2019s Health Ministry beyond 3,468 killed and more than 26,500 wounded, while CENTCOM\u2019s latest reviewed official strike summary still lists 13,000+ targets struck and 13,000+ combat flights as of early April. CENTCOM confirms 3 U.S. troops were killed in action on March 1, while the six KC-135 deaths on March 12-13 were explicitly described as non-hostile aircraft-loss fatalities rather than KIA. Reuters reporting on July 7 says two tankers were hit near the Strait of Hormuz, underscoring renewed maritime escalation even as Iran\u2019s leadership funeral events continue and negotiations remain stalled."
+      "summary": "Confirmed reporting on July 7, 2026 showed renewed escalation around the Strait of Hormuz: AP reported the US launched new strikes against Iran after three merchant ships were hit, while Reuters separately reported that two tankers were struck and a US official said initial indications pointed to Iranian fire. For cumulative war totals, the latest clearly sourced casualty figures I found remain the Reuters factbox figures updated in early April: HRANA reported 3,636 deaths in Iran including 1,701 civilians, the IFRC said 20,000 were injured in Iran, US Central Command said 13 US service members had been killed, and Reuters' latest compiled Israel death figure was 34. For military activity, the best official cumulative strike figure found was the US Navy's May 2026 shipbuilding plan stating that Navy and Marine Corps aircraft contributed to striking over 13,000 targets in Iran, while official documents also confirmed two carrier strike groups were involved."
     },
     {
       "date": "2026-07-06",
