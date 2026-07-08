@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-08T18:45:57Z",
+  "lastUpdated": "2026-07-08T20:37:33Z",
   "dayCount": 130,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,530+",
-    "cost": "$29.6B+"
+    "strikes": "~9,080",
+    "killed": "26+",
+    "cost": "$22.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "7",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.6 billion+",
-    "dailyBurnRate": "~$228M/day",
+    "totalCost": "$22.4 billion+",
+    "dailyBurnRate": "~$172M/day",
     "daysOfOps": 130,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-08",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists Combat Flights: 13,000+: https://www.centcom.mil/Portals/6/Documents/Publications/260401-Fact%20Sheet.pdf)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 23, 2026 reported 9,000+ combat flights. This is the latest confirmed sortie-type total found in searched official material, but it is not a complete updated cumulative through July 8.)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 10,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-07-04",
-          "source": "LLM-verified (White House Operation Epic Fury update of April 8, 2026: over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted)"
+          "lastUpdated": "2026-07-08",
+          "source": "LLM-verified (CENTCOM June 5, 2026 public release confirmed 6 intercepted Iranian ballistic missiles and 4 Iranian one-way attack drones shot down in the same incident. This is a confirmed event-based count from searched official material, not a full war-to-date cumulative total.)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "10 \u00d7 $4,000,000 each",
+        "cost": "$40,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP reporting indicate renewed maritime escalation around the Strait of Hormuz following the apparent collapse of the ceasefire.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported President Trump threatened additional strikes on July 8, 2026, while also signaling the latest exchange might not become a renewed full-scale war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "CENTCOM said U.S. forces hit over 80 Iranian targets on July 7, 2026, after Iran attacked three commercial vessels in the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 8, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iranian officials and crowds at Ali Khamenei's July 4-7 funeral ceremonies have publicly called for revenge against the United States and Israel, according to AP and Al Jazeera reporting.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline reports a tanker was on fire in the Strait of Hormuz after being hit by a projectile off Oman",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and AP report large funeral processions for slain Iranian Supreme Leader Ali Khamenei in Tehran and Qom, with crowds chanting for revenge against the US and Israel",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC reported large crowds in Tehran and described the funeral as a political spectacle intended to project resistance and revenge.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-07-08T19:06:35Z",
+      "text": "<strong>Five key takeaways from the NATO summit in Ankara</strong> -- Trump dominates summit with anti-Europe and Iran diatribes as NATO pledges to expand defence budgets and Ukraine support <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/8/five-key-takeaways-from-the-nato-summit-in-ankara?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-08T18:52:13Z",
+      "text": "<strong>Trump says US \u2018may take over Kharg Island\u2019: Here\u2019s what you need to know</strong> -- Kharg Island, pivotal to Iran&amp;#039;s oil exports, becomes focal point as Trump renews threats amid rising Gulf tensions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/8/trump-says-us-may-take-over-kharg-island-heres-what-you-need-to-know?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-08T18:51:32Z",
+      "text": "<strong>War on Gaza draws large crowds to Khamenei\u2019s funeral in Iraq</strong> -- More than a million mourners packed streets in Najaf, Iraq for Iranian Supreme Leader Ali Khamenei\u2019s funeral procession. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/war-on-gaza-draws-large-crowds-to-khameneis-funeral-in-iraq?traffic_source=rss"
+    },
+    {
       "time": "2026-07-08T18:35:11Z",
       "text": "<strong>Israeli air strikes in Gaza kill eight, including two children</strong> -- Medics report 12 injuries alongside eight deaths in Gaza as Israeli air strikes target civilians and displaced families. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/8/israeli-air-strikes-in-gaza-kill-eight-including-two-children?traffic_source=rss"
@@ -836,21 +851,6 @@
       "time": "2026-07-08T09:42:40Z",
       "text": "<strong>Why have US-Iran strikes resumed and what does it mean for peace?</strong> -- Both sides have accused each other of violating the memorandum of understanding signed in June. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/8/why-have-us-iran-strikes-resumed-and-what-does-it-mean-for-peace-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-08T09:14:50Z",
-      "text": "<strong>Trump says MoU with \u2018vicious, violent\u2019 Iran is over</strong> -- Trump says MoU with &amp;#039;vicious, violent&amp;#039; Iran is over <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/trump-says-mou-with-vicious-violent-iran-is-over?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-08T08:54:58Z",
-      "text": "<strong>The Iranian Striker: The journey of Mehdi Taremi | Al Jazeera Originals</strong> -- From Bushehr to the world stage, Mehdi Taremi reflects on football, sacrifice and representing Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/al-jazeera-documentaries/2026/7/8/aje-onl-aj_or_irn_football-080726?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-08T08:27:43Z",
-      "text": "<strong>Funeral events for Iran\u2019s slain Supreme Leader Khamenei under way in Iraq</strong> -- Khamenei&amp;#039;s coffin made its way through the streets of Najaf to the shrine of Imam Ali, Prophet Muhammad&amp;#039;s son-in-law. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/8/funeral-events-for-irans-slain-supreme-leader-khamenei-under-way-in-iraq?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Five key takeaways from the NATO summit in Ankara",
+      "description": "Trump dominates summit with anti-Europe and Iran diatribes as NATO pledges to expand defence budgets and Ukraine support",
+      "link": "https://www.aljazeera.com/news/2026/7/8/five-key-takeaways-from-the-nato-summit-in-ankara?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-08T19:06:35Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump says US \u2018may take over Kharg Island\u2019: Here\u2019s what you need to know",
+      "description": "Kharg Island, pivotal to Iran&#039;s oil exports, becomes focal point as Trump renews threats amid rising Gulf tensions.",
+      "link": "https://www.aljazeera.com/news/2026/7/8/trump-says-us-may-take-over-kharg-island-heres-what-you-need-to-know?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-08T18:52:13Z",
+      "tier": 2
+    },
+    {
+      "title": "War on Gaza draws large crowds to Khamenei\u2019s funeral in Iraq",
+      "description": "More than a million mourners packed streets in Najaf, Iraq for Iranian Supreme Leader Ali Khamenei\u2019s funeral procession.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/war-on-gaza-draws-large-crowds-to-khameneis-funeral-in-iraq?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-08T18:51:32Z",
+      "tier": 2
+    },
+    {
       "title": "Israeli air strikes in Gaza kill eight, including two children",
       "description": "Medics report 12 injuries alongside eight deaths in Gaza as Israeli air strikes target civilians and displaced families.",
       "link": "https://www.aljazeera.com/news/2026/7/8/israeli-air-strikes-in-gaza-kill-eight-including-two-children?traffic_source=rss",
@@ -1285,14 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "Zelenskyy seeks NATO support as Russia continues attacks",
-      "description": "At the NATO summit, Ukrainian President Volodymyr Zelenskyy had urged European allies to build missiles.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/zelenskyy-seeks-nato-support-as-russia-continues-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-08T15:18:30Z",
-      "tier": 2
-    },
-    {
       "title": "Khamenei's coffin carried through Shia shrines as ceremonies held in Iraq",
       "description": "The remains of Iran's late supreme leader are transported to Najaf and Karbala, as funeral ceremonies continue for a fifth day.",
       "link": "https://www.bbc.co.uk/news/articles/cp9le3kjj8eo?at_medium=RSS&at_campaign=rss",
@@ -1301,27 +1317,11 @@
       "tier": 2
     },
     {
-      "title": "Trump on Iran: \u2018We\u2019ll probably hit them hard again tonight\u2019",
-      "description": "US President Donald Trump says the US will \u2018probably\u2019 carry out another round of strikes on Iran on Wednesday night.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/trump-on-iran-well-probably-hit-them-hard-again?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-08T14:20:03Z",
-      "tier": 2
-    },
-    {
       "title": "Eight killed after landslide hits girls' school in Bangladesh",
       "description": "Rescuers pull bodies from the mud after heavy monsoon rains batter the south-eastern coast.",
       "link": "https://www.bbc.co.uk/news/articles/cx2wkzww20ro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-08T14:02:54Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran\u2019s supreme leader\u2019s coffin arrives in Najaf",
-      "description": "Thousands of mourners thronged Najaf as the coffin of the late supreme leader moved through the city.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/irans-supreme-leaders-coffin-arrives-in-najaf?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-08T13:11:57Z",
       "tier": 2
     },
     {
@@ -1349,12 +1349,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 8, 2026 shows the conflict remains volatile despite prior ceasefire efforts: AP reports the U.S. launched fresh strikes on Iran after attacks on three ships in the Strait of Hormuz, targeting Iranian air defenses, radars and more than 60 IRGC small boats, while Bahrain sounded missile alert sirens. For cumulative war metrics, the newest confirmed figures found in this search were 3,468 dead in Iran, 26 Israelis killed, 29 killed in Gulf states, and 7 U.S. service members killed in action; CENTCOM\u2019s latest readily found official fact sheet still lists 12,300+ targets struck and 13,000+ combat flights as of April 1, 2026. Many weapons-usage and force-deployment fields could not be updated because current confirmed official totals were not found in named-source reporting during this search.",
+  "summary": "Confirmed reporting on July 7-8, 2026 shows the war has re-escalated at sea and in southern Iran after Iran attacked three commercial vessels in the Strait of Hormuz; CENTCOM said U.S. forces then struck over 80 Iranian targets, while AP reported President Trump threatened more strikes even as he suggested the exchange might remain limited. In the searched official and major-media material, the clearest confirmed cumulative figures available were 13 U.S. combat-related deaths, 13 deaths in Gulf states visible in Al Jazeera\u2019s tracker, a March 23 CENTCOM floor of 9,000+ targets struck and 9,000+ combat flights, and a June 5 CENTCOM event count of 10 intercept actions in one engagement; many other requested cumulative totals could not be verified from named current sources and were therefore left null.",
   "briefings": [
     {
       "date": "2026-07-08",
       "day": 130,
-      "summary": "Confirmed reporting on July 8, 2026 shows the conflict remains volatile despite prior ceasefire efforts: AP reports the U.S. launched fresh strikes on Iran after attacks on three ships in the Strait of Hormuz, targeting Iranian air defenses, radars and more than 60 IRGC small boats, while Bahrain sounded missile alert sirens. For cumulative war metrics, the newest confirmed figures found in this search were 3,468 dead in Iran, 26 Israelis killed, 29 killed in Gulf states, and 7 U.S. service members killed in action; CENTCOM\u2019s latest readily found official fact sheet still lists 12,300+ targets struck and 13,000+ combat flights as of April 1, 2026. Many weapons-usage and force-deployment fields could not be updated because current confirmed official totals were not found in named-source reporting during this search."
+      "summary": "Confirmed reporting on July 7-8, 2026 shows the war has re-escalated at sea and in southern Iran after Iran attacked three commercial vessels in the Strait of Hormuz; CENTCOM said U.S. forces then struck over 80 Iranian targets, while AP reported President Trump threatened more strikes even as he suggested the exchange might remain limited. In the searched official and major-media material, the clearest confirmed cumulative figures available were 13 U.S. combat-related deaths, 13 deaths in Gulf states visible in Al Jazeera\u2019s tracker, a March 23 CENTCOM floor of 9,000+ targets struck and 9,000+ combat flights, and a June 5 CENTCOM event count of 10 intercept actions in one engagement; many other requested cumulative totals could not be verified from named current sources and were therefore left null."
     },
     {
       "date": "2026-07-07",
