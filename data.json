@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-09T05:06:06Z",
+  "lastUpdated": "2026-07-09T08:44:37Z",
   "dayCount": 131,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "5,020+",
-    "cost": "$22.7B+"
+    "strikes": "~13,000",
+    "killed": "3,505+",
+    "cost": "$22.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,637",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "11",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$22.7 billion+",
-    "dailyBurnRate": "~$173M/day",
+    "totalCost": "$22.9 billion+",
+    "dailyBurnRate": "~$175M/day",
     "daysOfOps": 131,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-09",
-          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet: The First 29 Days, March 28, 2026: 11,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; latest official cumulative sorties-style figure found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iran's Health Ministry said the latest two days of US airstrikes killed at least 14 and wounded 78 in Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran claimed attacks on Bahrain, Kuwait and Qatar on July 9, but AP reported no immediate word of damage in those three Gulf states.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on July 9, 2026 reported intensified Iran-US exchanges across the Persian Gulf.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 9, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reporting indicate the interim ceasefire/MoU is under severe strain or effectively over as of July 8, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 8, 2026 that the U.S. struck Iran after attacks on three ships in the Strait of Hormuz, and Iran retaliated with strikes on Bahrain and Kuwait.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Fragile interim truce at risk during Khamenei funeral period and before planned follow-on negotiations",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian retaliatory fire toward Bahrain and Kuwait with Kuwaiti air defenses reportedly engaging incoming threats",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -779,8 +779,28 @@
     },
     {
       "time": "2026-07-09T00:00:06Z",
-      "text": "<strong>Iran war live: Tehran attacks Bahrain, Kuwait after deadly US raids</strong> -- US attacks kill at least one person in the city of Iranshahr and cause widespread power outages in Chabahar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Tehran hits Bahrain, Kuwait, Qatar after deadly US strikes</strong> -- Iranian official says US strikes over the past two days have killed at least 14 people and wounded 78. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/9/iran-war-live-one-killed-as-us-bombs-bushehr-chabahar-bandar-abbas-jask?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-09T05:21:29Z",
+      "text": "<strong>US launches more strikes on Iran with blasts reported in south of country</strong> -- Trump says the attacks are &quot;retribution for yesterday&#x27;s bombing of ships by Iran&quot;. Iran earlier promised strong retaliation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-08T14:02:54Z",
+      "text": "<strong>Eight killed after landslide hits girls&#x27; school in Bangladesh</strong> -- Rescuers pull bodies from the mud after heavy monsoon rains batter the south-eastern coast. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2wkzww20ro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-08T14:56:24Z",
+      "text": "<strong>Khamenei&#x27;s coffin carried through Shia shrines as ceremonies held in Iraq</strong> -- The remains of Iran&#x27;s late supreme leader are transported to Najaf and Karbala, as funeral ceremonies continue for a fifth day. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cp9le3kjj8eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-07T16:10:14Z",
+      "text": "<strong>Lawyer says detained Gaza doctor was severely beaten in Israeli jail</strong> -- The lawyer for Dr Hussam Abu Safiya tells the BBC his client was so badly beaten he could not recognise him during a visit last week. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c07yy3pgrlmo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-08T22:52:48Z",
@@ -798,11 +818,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-07-08T14:02:54Z",
-      "text": "<strong>Eight killed after landslide hits girls&#x27; school in Bangladesh</strong> -- Rescuers pull bodies from the mud after heavy monsoon rains batter the south-eastern coast. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2wkzww20ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-07-08T21:12:50Z",
       "text": "<strong>Deadly strikes in Gaza leave 5 dead, children wounded</strong> -- Israeli strikes in Khan Yunis and Gaza City killed five people and wounded others, including children. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/deadly-strikes-in-gaza-leave-5-dead-children-wounded?traffic_source=rss"
@@ -811,11 +826,6 @@
       "time": "2026-07-08T20:40:14Z",
       "text": "<strong>US says conducting new wave of strikes on Iran as ceasefire falters</strong> -- Second night of strikes comes after Trump says ceasefire &amp;#039;over&amp;#039;, suggests talks for lasting peace will continue. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/8/us-says-conducting-new-wave-of-strikes-on-iran-as-ceasefire-falters-2?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-08T14:56:24Z",
-      "text": "<strong>Khamenei&#x27;s coffin carried through Shia shrines as ceremonies held in Iraq</strong> -- The remains of Iran&#x27;s late supreme leader are transported to Najaf and Karbala, as funeral ceremonies continue for a fifth day. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cp9le3kjj8eo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-08T19:06:35Z",
@@ -841,16 +851,6 @@
       "time": "2026-07-08T18:33:08Z",
       "text": "<strong>Trump says he \u2018may be gone\u2019 as he declares himself Iran\u2019s No. 1 target</strong> -- US President Donald Trump declared himself Iran\u2019s \u2018No. 1 target\u2019 after claiming their leaders have been eliminated <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/trump-says-he-may-be-gone-as-he-declares-himself-irans-no-1-target?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-08T17:24:45Z",
-      "text": "<strong>NATO pledges 70 billion euros for Ukraine as Trump praises peace \u2018progress\u2019</strong> -- Trump says US will &amp;#039;show&amp;#039; Ukraine how to produce Patriot missile systems during a friendly appearance with Zelenskyy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/8/nato-pledges-70-billion-euros-for-ukraine-as-trump-praises-peace-progress?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-08T21:40:40Z",
-      "text": "<strong>US launches more strikes on Iran with blasts reported in south of country</strong> -- Trump says the attacks are &quot;retribution for yesterday&#x27;s bombing of ships by Iran&quot;. Iran earlier promised strong retaliation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1217,7 +1217,7 @@
       "description": "Trump says the attacks are \"retribution for yesterday's bombing of ships by Iran\". Iran earlier promised strong retaliation.",
       "link": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-07-09T03:58:23Z",
+      "time": "2026-07-09T05:21:29Z",
       "tier": 2
     },
     {
@@ -1261,27 +1261,11 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran attacks Bahrain, Kuwait after deadly US raids",
-      "description": "US attacks kill at least one person in the city of Iranshahr and cause widespread power outages in Chabahar.",
+      "title": "Iran war live: Tehran hits Bahrain, Kuwait, Qatar after deadly US strikes",
+      "description": "Iranian official says US strikes over the past two days have killed at least 14 people and wounded 78.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/9/iran-war-live-one-killed-as-us-bombs-bushehr-chabahar-bandar-abbas-jask?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-09T00:00:06Z",
-      "tier": 2
-    },
-    {
-      "title": "US expands military strikes on Iran after Trump says he\u2019ll \u2018hit them hard\u2019",
-      "description": "US forces have expanded their military strikes on Iran, after blaming Tehran for breaking the MoU to end the war.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/8/aje-onl-nf_us-expands-military-strike-on-iran-080726?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-08T22:52:48Z",
-      "tier": 2
-    },
-    {
-      "title": "Family demands investigation after US man killed by ICE agent in Texas",
-      "description": "Calls for answers after Lorenzo Salgado Araujo fatally shot during traffic stop in Houston in latest ICE killing.",
-      "link": "https://www.aljazeera.com/news/2026/7/8/family-demands-investigation-after-us-man-killed-by-ice-agent-in-texas?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-08T21:42:41Z",
       "tier": 2
     },
     {
@@ -1325,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 9, 2026 shows the war has re-escalated: AP reported that U.S. forces launched a new wave of strikes hitting about 90 targets across Iran, while Tehran responded with attacks involving Bahrain, Kuwait and Qatar, further endangering the interim ceasefire framework. The latest confirmed cumulative casualty figures I found remain Iran Ministry of Health's 3,637 dead and more than 26,500 wounded in Iran, 26 Israelis killed, 29 deaths in Gulf states, and 6 U.S. service members killed in action per CENTCOM; official public data for several weapons-expended categories beyond Tomahawks and broad combat-flight totals was not clearly confirmed in current source material, so those fields remain null.",
+  "summary": "Confirmed reporting on July 9, 2026 shows the war re-intensifying in the Gulf: AP reported that Iran claimed attacks on Bahrain, Kuwait and Qatar, while there was no immediate confirmed damage in those three states, and Iran\u2019s Health Ministry said the latest two days of US airstrikes killed at least 14 people and wounded 78. For cumulative war totals, the latest broadly cited confirmed figures still found were Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Health Ministry and other official sources: 3,468 killed and more than 26,500 injured in Iran, 13 US military combat deaths, 26 Israelis killed, and at least 10 confirmed deaths in Bahrain and Kuwait from earlier Gulf attacks. CENTCOM\u2019s latest official Operation Epic Fury fact sheet publicly located lists 13,000+ targets struck and 13,000+ combat flights, but it does not provide current July theater counts for carriers, destroyers, troop strength, missile expenditure, or interceptor use.",
   "briefings": [
     {
       "date": "2026-07-09",
       "day": 131,
-      "summary": "Confirmed reporting on July 9, 2026 shows the war has re-escalated: AP reported that U.S. forces launched a new wave of strikes hitting about 90 targets across Iran, while Tehran responded with attacks involving Bahrain, Kuwait and Qatar, further endangering the interim ceasefire framework. The latest confirmed cumulative casualty figures I found remain Iran Ministry of Health's 3,637 dead and more than 26,500 wounded in Iran, 26 Israelis killed, 29 deaths in Gulf states, and 6 U.S. service members killed in action per CENTCOM; official public data for several weapons-expended categories beyond Tomahawks and broad combat-flight totals was not clearly confirmed in current source material, so those fields remain null."
+      "summary": "Confirmed reporting on July 9, 2026 shows the war re-intensifying in the Gulf: AP reported that Iran claimed attacks on Bahrain, Kuwait and Qatar, while there was no immediate confirmed damage in those three states, and Iran\u2019s Health Ministry said the latest two days of US airstrikes killed at least 14 people and wounded 78. For cumulative war totals, the latest broadly cited confirmed figures still found were Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Health Ministry and other official sources: 3,468 killed and more than 26,500 injured in Iran, 13 US military combat deaths, 26 Israelis killed, and at least 10 confirmed deaths in Bahrain and Kuwait from earlier Gulf attacks. CENTCOM\u2019s latest official Operation Epic Fury fact sheet publicly located lists 13,000+ targets struck and 13,000+ combat flights, but it does not provide current July theater counts for carriers, destroyers, troop strength, missile expenditure, or interceptor use."
     },
     {
       "date": "2026-07-08",
