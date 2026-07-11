@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-11T13:54:31Z",
+  "lastUpdated": "2026-07-11T15:15:39Z",
   "dayCount": 133,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "3,304+",
-    "cost": "$29.4B+"
+    "strikes": "~13,000",
+    "killed": "9+",
+    "cost": "$30.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,300",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "4",
+    "usKIA": "6",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "30,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.4 billion+",
-    "dailyBurnRate": "~$221M/day",
+    "totalCost": "$30.2 billion+",
+    "dailyBurnRate": "~$227M/day",
     "daysOfOps": 133,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-11",
-          "source": "LLM-verified (AP on March 31, 2026 reported USS Abraham Lincoln already in region and USS George H.W. Bush deploying to the Middle East, implying 2 U.S. carrier strike groups in theater.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury over five weeks.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-11",
-          "source": "LLM-verified (AP, March 24, 2026: region 'already has about 50,000 troops.' No newer official total found.)"
+          "source": "LLM-verified (AP, March 24, 2026: the U.S. was preparing to send at least 1,000 more troops 'to supplement some 50,000 troops already in the Mideast.' No newer confirmed theater-wide troop figure was found in reachable reporting.)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-07-11",
-          "source": "LLM-verified (Reuters report cited March 27, 2026: U.S. military fired over 850 Tomahawk cruise missiles in four weeks of war)"
+          "source": "LLM-verified (AP analysis, May 27, 2026, citing CSIS estimates: 'The U.S. fired 1,000-plus Tomahawk missiles at Iran.' Because the source stated 1,000-plus rather than an exact number, value recorded conservatively as 1000.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-11",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 18, 2026 lists 'Combat Flights: 8,000+'; used as the latest confirmed official sorties figure found.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 'Combat Flights: 13,000+'; recorded conservatively as 13,000 as the latest official reachable cumulative flight/sortie figure.)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported July 9-11, 2026 exchanges of U.S. strikes on Iran and Iranian attacks targeting U.S.-allied Gulf states, threatening the interim deal meant to end the war and raising renewed Strait of Hormuz risks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on July 11, 2026 that President Donald Trump warned the U.S. would 'decimate' Iran if attacks continue, while Iran's Supreme Leader Mojtaba Khamenei vowed continued vengeance over his father's death.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 11, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported on July 9, 2026 that Iran said two days of new U.S. airstrikes killed 14 and wounded 78, while Tehran retaliated against Bahrain, Kuwait and Qatar.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 10, 2026 that unclaimed airstrikes again hit Iran after new U.S. attacks, raising concern that the ceasefire framework is fraying.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the renewed exchanges are straining the interim ceasefire and raising risks to shipping and regional energy flows.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -773,6 +773,21 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/11/are-the-us-and-iran-at-war-again?traffic_source=rss"
     },
     {
+      "time": "2026-07-11T14:08:07Z",
+      "text": "<strong>US wants Iran to pledge to stop shooting at ships in Strait of Hormuz</strong> -- US media say Iran has told US officials an attack on ships crossing the strait early this week was &quot;a mistake&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/crelyq79x71o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-11T15:03:45Z",
+      "text": "<strong>Spain battles to contain one of its deadliest wildfires as at least 12 killed</strong> -- At least four Britons are believed to be among the victims of the blaze, which left another 23 people missing. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1wyv383j2xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-11T13:44:03Z",
+      "text": "<strong>Indian tourists among 15 killed as speedboat capsizes in Vietnam</strong> -- Local media say 21 people were saved after the boat overturned in rough seas near an island in south Vietnam. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cwyd7x22lp1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-07-11T13:14:19Z",
       "text": "<strong>US wants Iran to pledge to stop shooting at ships in Strait of Hormuz</strong> -- Vice-President JD Vance is among US officials expected to take part in negotiations resuming on Saturday in Oman. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/crelyq79x71o?at_medium=RSS&at_campaign=rss"
@@ -781,11 +796,6 @@
       "time": "2026-07-11T09:01:15Z",
       "text": "<strong>Spain battles to contain one of its deadliest wildfires as at least 12 killed</strong> -- At least four Britons are believed to be among the victims of the blaze, which left another 23 people missing. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c1wyv383j2xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-11T13:44:03Z",
-      "text": "<strong>Indian tourists among 15 killed as speedboat capsizes in Vietnam</strong> -- Local media say 21 people were saved after the boat overturned in rough seas near an island in south Vietnam. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cwyd7x22lp1o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-11T03:54:17Z",
@@ -841,16 +851,6 @@
       "time": "2026-07-11T01:24:49Z",
       "text": "<strong>US wants Iran to pledge to stop shooting at ships in Strait of Hormuz</strong> -- Vice-President JD Vance is among US officials expected to take part in negotiations resuming on Saturday in Oman. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/crelyq79x71o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-10T17:21:35Z",
-      "text": "<strong>Russian attacks kill five as Ukraine continues to target oil infrastructure</strong> -- Ukrainian officials say Russia&amp;#039;s attack on Kramatorsk kills four, while a strike on Zaporizhzhia kills one. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/10/russian-attacks-kill-four-as-ukraine-continues-to-target-oil-infrastructure?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-10T16:30:19Z",
-      "text": "<strong>Trump hints at further Iran negotiations after exchange of fire over Hormuz</strong> -- Iran denies it requested new talks with US as new attacks threaten the full resumption of war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/10/trump-says-us-has-agreed-to-continue-iran-talks-but-ceasefire-over?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,27 +1213,27 @@
   ],
   "newsFeed": [
     {
+      "title": "Spain battles to contain one of its deadliest wildfires as at least 12 killed",
+      "description": "At least four Britons are believed to be among the victims of the blaze, which left another 23 people missing.",
+      "link": "https://www.bbc.co.uk/news/articles/c1wyv383j2xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-11T15:03:45Z",
+      "tier": 2
+    },
+    {
+      "title": "US wants Iran to pledge to stop shooting at ships in Strait of Hormuz",
+      "description": "US media say Iran has told US officials an attack on ships crossing the strait early this week was \"a mistake\".",
+      "link": "https://www.bbc.co.uk/news/articles/crelyq79x71o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-11T14:08:07Z",
+      "tier": 2
+    },
+    {
       "title": "Indian tourists among 15 killed as speedboat capsizes in Vietnam",
       "description": "Local media say 21 people were saved after the boat overturned in rough seas near an island in south Vietnam.",
       "link": "https://www.bbc.co.uk/news/articles/cwyd7x22lp1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-11T13:44:03Z",
-      "tier": 2
-    },
-    {
-      "title": "US wants Iran to pledge to stop shooting at ships in Strait of Hormuz",
-      "description": "Vice-President JD Vance is among US officials expected to take part in negotiations resuming on Saturday in Oman.",
-      "link": "https://www.bbc.co.uk/news/articles/crelyq79x71o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-11T13:14:19Z",
-      "tier": 2
-    },
-    {
-      "title": "Spain battles to contain one of its deadliest wildfires as at least 12 killed",
-      "description": "At least four Britons are believed to be among the victims of the blaze, which left another 23 people missing.",
-      "link": "https://www.bbc.co.uk/news/articles/c1wyv383j2xo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-11T09:01:15Z",
       "tier": 2
     },
     {
@@ -1269,12 +1269,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 11 indicates the interim U.S.-Iran deal is fraying, with AP reporting fresh threats from both sides after renewed exchanges of fire. AP reported on July 9 that Iran responded to new U.S. strikes by targeting Bahrain, Kuwait, Jordan and Qatar, while Iran\u2019s Health Ministry said the latest two days of U.S. airstrikes killed at least 14 people and wounded 78 inside Iran. For cumulative figures, the strongest currently found named-source totals were AP\u2019s April warwide figure of 3,300 killed and 30,000 wounded in the conflict, CENTCOM\u2019s March 13 confirmation of 4 deceased U.S. service members in the KC-135 loss over Iraq, and CENTCOM\u2019s March 18 fact sheet showing 7,800+ targets struck and 8,000+ combat flights; no newer confirmed official totals were found for Israeli deaths, Gulf-state deaths, carrier groups, destroyers, drone units, or specific munitions counts.",
+  "summary": "Confirmed reporting on July 11, 2026 indicates the interim arrangement remains highly unstable: AP reported that recent U.S. strikes in Iran killed 17 and wounded 115 over two days, while Washington and Tehran exchanged new threats and cross-border attacks that again endangered Gulf shipping and regional de-escalation efforts. For cumulative military metrics, the latest reachable official U.S. figures remain older: the May 2026 Navy Shipbuilding Plan said two carrier strike groups supported operations and that U.S. Navy and Marine Corps aircraft had struck over 13,000 targets in Iran over five weeks, while AP\u2019s March 24 reporting still appears to be the latest reachable named-source troop total at about 50,000 U.S. troops in the region. Many of the requested cumulative casualty and weapons-expended totals could not be confirmed from reachable current named-source reporting and were left null accordingly.",
   "briefings": [
     {
       "date": "2026-07-11",
       "day": 133,
-      "summary": "Confirmed reporting on July 11 indicates the interim U.S.-Iran deal is fraying, with AP reporting fresh threats from both sides after renewed exchanges of fire. AP reported on July 9 that Iran responded to new U.S. strikes by targeting Bahrain, Kuwait, Jordan and Qatar, while Iran\u2019s Health Ministry said the latest two days of U.S. airstrikes killed at least 14 people and wounded 78 inside Iran. For cumulative figures, the strongest currently found named-source totals were AP\u2019s April warwide figure of 3,300 killed and 30,000 wounded in the conflict, CENTCOM\u2019s March 13 confirmation of 4 deceased U.S. service members in the KC-135 loss over Iraq, and CENTCOM\u2019s March 18 fact sheet showing 7,800+ targets struck and 8,000+ combat flights; no newer confirmed official totals were found for Israeli deaths, Gulf-state deaths, carrier groups, destroyers, drone units, or specific munitions counts."
+      "summary": "Confirmed reporting on July 11, 2026 indicates the interim arrangement remains highly unstable: AP reported that recent U.S. strikes in Iran killed 17 and wounded 115 over two days, while Washington and Tehran exchanged new threats and cross-border attacks that again endangered Gulf shipping and regional de-escalation efforts. For cumulative military metrics, the latest reachable official U.S. figures remain older: the May 2026 Navy Shipbuilding Plan said two carrier strike groups supported operations and that U.S. Navy and Marine Corps aircraft had struck over 13,000 targets in Iran over five weeks, while AP\u2019s March 24 reporting still appears to be the latest reachable named-source troop total at about 50,000 U.S. troops in the region. Many of the requested cumulative casualty and weapons-expended totals could not be confirmed from reachable current named-source reporting and were left null accordingly."
     },
     {
       "date": "2026-07-10",
