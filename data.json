@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-11T22:08:05Z",
+  "lastUpdated": "2026-07-11T23:11:05Z",
   "dayCount": 133,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,522+",
-    "cost": "$30.2B+"
+    "strikes": "~1,450",
+    "killed": "3,535+",
+    "cost": "$30.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$30.2 billion+",
-    "dailyBurnRate": "~$227M/day",
+    "totalCost": "$30.0 billion+",
+    "dailyBurnRate": "~$226M/day",
     "daysOfOps": 133,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-11",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: two carrier strike groups in Operation Epic Fury theater)"
+          "source": "LLM-verified (AP reported March 2, 2026 that the operation included the Lincoln and Ford carrier strike groups)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-11",
-          "source": "LLM-verified (Pentagon Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (DoD Operation Epic Fury fact sheet dated March 28, 2026 lists 11,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline says Hormuz shipping remains in focus as Iran-US rhetoric heats up and analysts say diplomacy remains possible",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC headline says Mojtaba Khamenei called revenge for his father's killing 'inevitable' on July 11, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 11, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Al Jazeera on July 8, 2026 reported the U.S. launched new strikes after attacks on vessels and said sporadic fire and failed talks continue.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 9, 2026 reported renewed U.S.-Iran exchanges of fire across the Middle East, threatening the ceasefire framework.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 10-11, 2026 reports U.S. officials demanded Iran publicly guarantee the Strait of Hormuz is open and stop attacks on shipping, while Trump said the ceasefire is 'over'.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1261,12 +1261,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting shows the war has re-escalated after the fragile ceasefire: AP reported new U.S. strikes on Iran on July 8-9 and Iranian retaliatory fire toward Bahrain, Kuwait and Qatar, while AP\u2019s July 8 timeline and Al Jazeera\u2019s June 10 casualty tracker remain the clearest named-source baselines I found for cumulative totals. The most solid official operation metrics still trace back to Pentagon and Navy materials from late March through May, which put Operation Epic Fury at over 13,000 targets struck, 13,000+ combat flights, two carrier strike groups in theater, and more than 50,000 U.S. personnel involved; I did not find fresh official cumulative weapons-expended totals for Tomahawks, JDAMs, JASSMs, SDBs, MOPs, B-2 sorties, or total interceptors by July 11, 2026.",
+  "summary": "Confirmed reporting available in current search results remains sparse and mostly stale. The most recent solid casualty totals found are Al Jazeera\u2019s June 10, 2026 live tracker figures of 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. For the U.S., AP reported on March 18, 2026 that a KC-135 crash raised the confirmed Operation Epic Fury death toll to at least 13 service members; CENTCOM public releases located in search confirmed only earlier milestones of 3 KIA by March 1 and 7 KIA by March 8. On operations, the best confirmed aggregate strike figure found was Adm. Brad Cooper\u2019s May 14 Senate testimony reported by CBS News that Operation Epic Fury had conducted more than 1,450 strikes on weapons-manufacturing facilities, while a March 28 DoD fact sheet listed 11,000+ combat flights. Today\u2019s headline environment indicates renewed escalation risk around Hormuz and renewed revenge rhetoric from Mojtaba Khamenei, but no newer fully sourced casualty or weapons-expenditure totals were found.",
   "briefings": [
     {
       "date": "2026-07-11",
       "day": 133,
-      "summary": "Confirmed reporting shows the war has re-escalated after the fragile ceasefire: AP reported new U.S. strikes on Iran on July 8-9 and Iranian retaliatory fire toward Bahrain, Kuwait and Qatar, while AP\u2019s July 8 timeline and Al Jazeera\u2019s June 10 casualty tracker remain the clearest named-source baselines I found for cumulative totals. The most solid official operation metrics still trace back to Pentagon and Navy materials from late March through May, which put Operation Epic Fury at over 13,000 targets struck, 13,000+ combat flights, two carrier strike groups in theater, and more than 50,000 U.S. personnel involved; I did not find fresh official cumulative weapons-expended totals for Tomahawks, JDAMs, JASSMs, SDBs, MOPs, B-2 sorties, or total interceptors by July 11, 2026."
+      "summary": "Confirmed reporting available in current search results remains sparse and mostly stale. The most recent solid casualty totals found are Al Jazeera\u2019s June 10, 2026 live tracker figures of 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. For the U.S., AP reported on March 18, 2026 that a KC-135 crash raised the confirmed Operation Epic Fury death toll to at least 13 service members; CENTCOM public releases located in search confirmed only earlier milestones of 3 KIA by March 1 and 7 KIA by March 8. On operations, the best confirmed aggregate strike figure found was Adm. Brad Cooper\u2019s May 14 Senate testimony reported by CBS News that Operation Epic Fury had conducted more than 1,450 strikes on weapons-manufacturing facilities, while a March 28 DoD fact sheet listed 11,000+ combat flights. Today\u2019s headline environment indicates renewed escalation risk around Hormuz and renewed revenge rhetoric from Mojtaba Khamenei, but no newer fully sourced casualty or weapons-expenditure totals were found."
     },
     {
       "date": "2026-07-10",
