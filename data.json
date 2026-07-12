@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-12T22:07:26Z",
+  "lastUpdated": "2026-07-12T23:09:10Z",
   "dayCount": 134,
   "banner": {
     "strikes": "~13,000",
-    "killed": "29+",
-    "cost": "$29.4B+"
+    "killed": "5,182+",
+    "cost": "$27.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1444",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.4 billion+",
-    "dailyBurnRate": "~$220M/day",
+    "totalCost": "$27.2 billion+",
+    "dailyBurnRate": "~$203M/day",
     "daysOfOps": 134,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-12",
-          "source": "LLM-verified (AP on March 31, 2026 reported USS George H.W. Bush carrier strike group deploying to the Middle East; no later authoritative report found confirming a different current total)"
+          "source": "LLM-verified (U.S. Navy, July 7, 2026: search effort in Arabian Sea involved ships and aircraft from two carrier strike groups)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 3,
+          "quantity": 5,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,13 +91,13 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-07-12",
-          "source": "LLM-verified (AP on March 31, 2026 reported the USS George H.W. Bush deployed with three destroyers; no later authoritative report found confirming a different current total)"
+          "source": "LLM-verified (U.S. Navy, July 7, 2026: USS Ross, USS Donald Cook, USS Higgins, USS Mason, and USS John Finn involved in current Middle East operations)"
         },
         {
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 5000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-12",
-          "source": "LLM-verified (AP on March 24, 2026 reported some 50,000 U.S. troops already in the Middle East)"
+          "source": "LLM-verified (U.S. Navy, March 31, 2026: more than 5,000 personnel assigned to the George H.W. Bush Carrier Strike Group; no current total theater-wide confirmed figure found)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-12",
-          "source": "LLM-verified (DoD Operation Epic Fury fact sheet, April 1, 2026: 'Combat Flights: 13,000+'; used as closest confirmed official sorties figure)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 28, 2026: 11,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -328,18 +328,18 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 134 days",
-        "cost": "$938,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 134 days",
+        "cost": "$1,876,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "3 \u00d7 $240,000/day \u00d7 134 days",
-        "cost": "$96,480,000"
+        "detail": "5 \u00d7 $240,000/day \u00d7 134 days",
+        "cost": "$160,800,000"
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 134 days",
-        "cost": "$3,350,000,000"
+        "detail": "5,000 \u00d7 $500/day \u00d7 134 days",
+        "cost": "$335,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Qeshm Island and Bandar Abbas were reported hit again on July 12, 2026, but officials cited by AP said there were no casualties on Qeshm.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran responded with attacks against Gulf states including Bahrain and Kuwait, according to AP and Reuters.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Reuters reported renewed U.S. strikes on Iran on July 7-12, 2026 tied to Iranian attacks on commercial shipping in the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 12, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iranian retaliatory attacks against U.S.-allied Gulf states and continued threats to shipping in/near the Strait of Hormuz.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Fresh U.S. strikes on Iran on July 12 after an attack on a commercial vessel in the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP timeline on July 8-11, 2026 reported the ceasefire had effectively collapsed after Iran was accused of striking three ships in the strait and the U.S. answered with dozens of strikes in Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 11, 2026 reported Iranian Health Ministry spokesman Hossein Kermanpour said the latest two days of strikes killed 17 people and wounded 115.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -783,12 +783,12 @@
       "link": "https://www.aljazeera.com/news/2026/7/12/concern-for-renewed-war-in-iran-as-us-attacks-military-civilian-targets?traffic_source=rss"
     },
     {
-      "time": "2026-07-12T20:13:14Z",
-      "text": "<strong>At least 27 killed in Bangkok bar fire</strong> -- Firefighters arrived at the scene in the Chatuchak district to find patrons running through blasting flames to escape. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "time": "2026-07-12T22:57:20Z",
+      "text": "<strong>At least 27 killed in Bangkok bar fire</strong> -- Firefighters arrived at the scene in the Chatuchak district to find patrons running through flames to escape. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-07-12T16:46:24Z",
+      "time": "2026-07-12T22:17:40Z",
       "text": "<strong>US insists Strait of Hormuz is open as it exchanges strikes with Iran</strong> -- Iranian forces earlier said the Strait was closed and launched wide-ranging attacks at US allies and bases in the region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss"
     },
@@ -801,6 +801,16 @@
       "time": "2026-07-11T18:00:09Z",
       "text": "<strong>US Democrat Ro Khanna says he was detained by armed Israeli settlers</strong> -- Khanna, 49, was visiting the occupied West Bank when he was held for 90 minutes, he says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c0qyk9jwq9no?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-12T20:13:14Z",
+      "text": "<strong>At least 27 killed in Bangkok bar fire</strong> -- Firefighters arrived at the scene in the Chatuchak district to find patrons running through blasting flames to escape. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-12T16:46:24Z",
+      "text": "<strong>US insists Strait of Hormuz is open as it exchanges strikes with Iran</strong> -- Iranian forces earlier said the Strait was closed and launched wide-ranging attacks at US allies and bases in the region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-12T16:34:17Z",
@@ -841,16 +851,6 @@
       "time": "2026-07-12T07:53:41Z",
       "text": "<strong>Missiles and drones fired at Gulf states after night of US strikes on Iran</strong> -- Three people injured by falling shrapnel in Qatar as attacks also reported in UAE, Kuwait, Bahrain, Oman and Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/12/missiles-and-drones-fired-at-gulf-states-after-night-of-us-strikes-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-12T06:49:46Z",
-      "text": "<strong>US launches fresh strikes as Iran closes Strait of Hormuz</strong> -- The strikes follow an attack on a Cyprus -flagged vessel travelling through the critical waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-12T07:08:20Z",
-      "text": "<strong>IRGC vows \u2018crushing response\u2019 to any further US attacks</strong> -- IRGC vows \u2018crushing response\u2019 to any further US attacks <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/irgc-vows-crushing-response-to-any-further-us-attacks?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,27 @@
   ],
   "newsFeed": [
     {
+      "title": "At least 27 killed in Bangkok bar fire",
+      "description": "Firefighters arrived at the scene in the Chatuchak district to find patrons running through flames to escape.",
+      "link": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-12T22:57:20Z",
+      "tier": 2
+    },
+    {
+      "title": "US insists Strait of Hormuz is open as it exchanges strikes with Iran",
+      "description": "Iranian forces earlier said the Strait was closed and launched wide-ranging attacks at US allies and bases in the region.",
+      "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-12T22:17:40Z",
+      "tier": 2
+    },
+    {
       "title": "Deadly Israeli strikes pound Gaza",
       "description": "Israel\u2019s military has attacked several places across Gaza.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/deadly-israeli-strikes-pound-gaza?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-12T21:33:10Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 27 killed in Bangkok bar fire",
-      "description": "Firefighters arrived at the scene in the Chatuchak district to find patrons running through blasting flames to escape.",
-      "link": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-12T20:13:14Z",
       "tier": 2
     },
     {
@@ -1269,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "US insists Strait of Hormuz is open as it exchanges strikes with Iran",
-      "description": "Iranian forces earlier said the Strait was closed and launched wide-ranging attacks at US allies and bases in the region.",
-      "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-12T16:46:24Z",
-      "tier": 2
-    },
-    {
       "title": "At least two killed in Toronto street festival shooting",
       "description": "Police say there was an exchange of gunfire between two individuals at the festival, and two firearms had been recovered from the scene.",
       "link": "https://www.bbc.co.uk/news/articles/ce3e66e1x3go?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 12, 2026 shows the U.S.-Iran ceasefire has further deteriorated: AP reported that the United States launched several new waves of strikes on Iran after an attack on a container ship in the Strait of Hormuz, with CENTCOM saying about 140 targets were hit in the latest round, while Iran retaliated against Bahrain, Kuwait, Qatar, Jordan and Oman and Iranian officials reported projectiles near Qeshm Island and Bandar Abbas. For cumulative database fields, the latest clearly confirmed numbers I could verify were 13 U.S. service members killed in action, 16 deaths in Israel, and at least 13,000 targets/strikes recorded by CENTCOM as of its April 6 fact sheet; I could not verify newer confirmed cumulative totals for overall Iranian deaths, Iranian wounded, civilian deaths, Gulf-state deaths, or the requested military cost-model quantities from named official or wire-service reporting, so those remain null.",
+  "summary": "Confirmed reporting on July 12, 2026 shows the U.S.-Iran ceasefire is deteriorating as U.S. forces launched fresh strikes after Iranian attacks on commercial shipping in the Strait of Hormuz, with AP citing about 140 targets hit in Sunday\u2019s wave and Reuters reporting more than 80 targets hit in the July 7 round. U.S. Navy reporting indicates two carrier strike groups and at least five destroyers are active in the theater, while the most recent clearly sourced cumulative war figures I could verify remain 3,468 Iranian deaths from Iran\u2019s Martyrs Foundation, 1,701 Iranian civilians killed per HRANA, 13 U.S. service members killed per Reuters, and over 13,000 targets struck in Iran per the May 2026 U.S. Navy shipbuilding plan.",
   "briefings": [
     {
       "date": "2026-07-12",
       "day": 134,
-      "summary": "Confirmed reporting on July 12, 2026 shows the U.S.-Iran ceasefire has further deteriorated: AP reported that the United States launched several new waves of strikes on Iran after an attack on a container ship in the Strait of Hormuz, with CENTCOM saying about 140 targets were hit in the latest round, while Iran retaliated against Bahrain, Kuwait, Qatar, Jordan and Oman and Iranian officials reported projectiles near Qeshm Island and Bandar Abbas. For cumulative database fields, the latest clearly confirmed numbers I could verify were 13 U.S. service members killed in action, 16 deaths in Israel, and at least 13,000 targets/strikes recorded by CENTCOM as of its April 6 fact sheet; I could not verify newer confirmed cumulative totals for overall Iranian deaths, Iranian wounded, civilian deaths, Gulf-state deaths, or the requested military cost-model quantities from named official or wire-service reporting, so those remain null."
+      "summary": "Confirmed reporting on July 12, 2026 shows the U.S.-Iran ceasefire is deteriorating as U.S. forces launched fresh strikes after Iranian attacks on commercial shipping in the Strait of Hormuz, with AP citing about 140 targets hit in Sunday\u2019s wave and Reuters reporting more than 80 targets hit in the July 7 round. U.S. Navy reporting indicates two carrier strike groups and at least five destroyers are active in the theater, while the most recent clearly sourced cumulative war figures I could verify remain 3,468 Iranian deaths from Iran\u2019s Martyrs Foundation, 1,701 Iranian civilians killed per HRANA, 13 U.S. service members killed per Reuters, and over 13,000 targets struck in Iran per the May 2026 U.S. Navy shipbuilding plan."
     },
     {
       "date": "2026-07-11",
