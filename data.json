@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-07-12T06:46:16Z",
+  "lastUpdated": "2026-07-12T09:15:53Z",
   "dayCount": 134,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "1,473+",
-    "cost": "$28.0B+"
+    "strikes": "~10,800",
+    "killed": "3,511+",
+    "cost": "$26.6B+"
   },
   "humanCost": {
-    "iranDeaths": "3,300",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "4",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "25",
+    "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "12,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1443",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.0 billion+",
-    "dailyBurnRate": "~$209M/day",
+    "totalCost": "$26.6 billion+",
+    "dailyBurnRate": "~$199M/day",
     "daysOfOps": 134,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-12",
-          "source": "LLM-verified (CENTCOM commander media call on May 4, 2026 said forces included 'two carrier strike groups'; later CENTCOM release on May 23 also named Abraham Lincoln CSG and George H.W. Bush CSG. Source: centcom.mil)"
+          "source": "LLM-verified (U.S. Naval Forces Central Command statement dated March 12, 2026 says Gerald R. Ford Carrier Strike Group is operating in the Red Sea in support of Operation Epic Fury; no newer official confirmation of a second carrier strike group in theater found)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-12",
-          "source": "LLM-verified (CENTCOM/DoD fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+' and April 6 update confirms 'Targets Struck: 13,000+'; using 13,000 as minimum confirmed cumulative combat-flight/sortie floor. Source: media.defense.gov / centcom.mil)"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' dated April 20, 2026 reports over 8,500 aircraft sorties in the Iran campaign)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 134 days",
-        "cost": "$1,876,000,000"
+        "detail": "$7,000,000/day \u00d7 134 days",
+        "cost": "$938,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Strait of Hormuz security remains the immediate escalation driver, with U.S. strikes framed as responses to attacks on commercial shipping and Iran continuing to threaten or disrupt regional maritime traffic",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran launched retaliatory attacks toward Bahrain, Kuwait, Qatar and Oman on July 12, 2026 according to AP; recent rounds also involved Gulf-state air defense activations and at least one reported injury in Kuwait",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported a third U.S./CENTCOM strike round on Iran on July 12, 2026 after an Iranian attack on a vessel in the Strait of Hormuz",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 12, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on July 11, 2026 that President Donald Trump warned the U.S. would 'decimate' Iran if attacks continue, while Iran's Supreme Leader Mojtaba Khamenei vowed continued vengeance over his father's death.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 9 reported the latest two days of American airstrikes killed at least 14 and wounded 78 in Iran, according to Iran's Health Ministry.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 9 reported Iran targeted Bahrain, Kuwait, Jordan and Qatar after renewed U.S. strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 11 reported U.S. and Iranian leaders traded fresh threats as the interim deal buckles.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-07-12T07:58:48Z",
+      "text": "<strong>US CENTCOM completes third round of strikes on Iran</strong> -- US CENTCOM completes third round of strikes on Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/us-centcom-completes-third-round-of-strikes-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-12T07:53:41Z",
+      "text": "<strong>Missiles and drones fired at Gulf states after night of US strikes on Iran</strong> -- Three people injured by falling shrapnel in Qatar as attacks also reported in UAE, Kuwait, Bahrain, Oman and Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/12/missiles-and-drones-fired-at-gulf-states-after-night-of-us-strikes-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-12T07:08:20Z",
+      "text": "<strong>IRGC vows \u2018crushing response\u2019 to any further US attacks</strong> -- IRGC vows \u2018crushing response\u2019 to any further US attacks <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/irgc-vows-crushing-response-to-any-further-us-attacks?traffic_source=rss"
+    },
+    {
       "time": "2026-07-12T05:07:10Z",
       "text": "<strong>US forces launch new strikes on Iran; Tehran closes Strait of Hormuz</strong> -- US forces have launched a third round of strikes on Iran in a week. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/us-forces-launch-new-strikes-on-iran-tehran-closes-strait-of-hormuz?traffic_source=rss"
@@ -769,13 +784,23 @@
     },
     {
       "time": "2026-07-12T00:00:00Z",
-      "text": "<strong>Iran war live: Tehran attacks Jordan, Gulf states after US bombardment</strong> -- Iran targets Jordan and Gulf states after US bombs Iranian cities including Bandar Abbas, Sirik and Chabahar <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Tehran attacks Jordan, Gulf states after US bombardment</strong> -- Fears grow of further US-Iran escalation after largest tit-for-tat attacks yet during the ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/12/iran-war-live-irgc-declares-strait-of-hormuz-closed-over-us-interference?traffic_source=rss"
     },
     {
       "time": "2026-07-11T23:35:23Z",
       "text": "<strong>Indian tourists killed after speedboat capsizes in Vietnam</strong> -- Fifteen Indian tourists have died after their speedboat capsized off Vietnam\u2019s Phu Quoc Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/11/indian-tourists-killed-after-speedboat-capsizes-in-vietnam?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-12T06:49:46Z",
+      "text": "<strong>US launches fresh strikes as Iran closes Strait of Hormuz</strong> -- The strikes follow an attack on a Cyprus -flagged vessel travelling through the critical waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-12T03:56:02Z",
+      "text": "<strong>At least two killed in Toronto street festival shooting</strong> -- Police say there was an exchange of gunfire between two individuals at the festival, and two firearms had been recovered from the scene. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ce3e66e1x3go?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-11T19:25:59Z",
@@ -786,11 +811,6 @@
       "time": "2026-07-12T04:39:18Z",
       "text": "<strong>US launches fresh strikes as Iran closes Strait of Hormuz</strong> -- The strikes follow an attack on a Cyprus -flagged vessel travelling through the critical waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-12T03:56:02Z",
-      "text": "<strong>At least two killed in Toronto street festival shooting</strong> -- Police say there was an exchange of gunfire between two individuals at the festival, and two firearms had been recovered from the scene. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ce3e66e1x3go?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-11T15:03:45Z",
@@ -831,26 +851,6 @@
       "time": "2026-07-11T16:55:57Z",
       "text": "<strong>Iran must pledge to stop shooting at ships in Strait of Hormuz, US officials say</strong> -- US media say Iran has told US officials an attack on ships crossing the strait early this week was &quot;a mistake&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/crelyq79x71o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-11T08:53:23Z",
-      "text": "<strong>Russian missile and drone barrage kills six and wounds dozens in Ukraine</strong> -- In the latest salvo in one of the war&amp;#039;s deadliest months, Russia hits Kyiv with ballistic missiles and 121 drones. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/11/russian-missile-attacks-wound-11-in-kyiv?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-11T08:25:11Z",
-      "text": "<strong>Russian overnight strikes on Kyiv injure ten</strong> -- Russian overnight strikes on Kyiv injure ten <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/11/russian-overnight-strikes-on-kyiv-injure-ten?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-11T08:04:57Z",
-      "text": "<strong>Trump trades threats with Iran\u2019s leader as mediators struggle to save talks</strong> -- US president warns the US will decimate Iran amid alleged assassination plots as regional mediators try to save MoU. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/11/trump-threatens-iran-after-chants-for-his-death-erupted-at-khamenei-funeral?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-11T04:51:20Z",
-      "text": "<strong>Are the US and Iran at war again?</strong> -- Iranian leaders say they\u2019ll never surrender and US President Donald Trump says the ceasefire is \u2018over&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/11/are-the-us-and-iran-at-war-again?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "US CENTCOM completes third round of strikes on Iran",
+      "description": "US CENTCOM completes third round of strikes on Iran",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/us-centcom-completes-third-round-of-strikes-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-12T07:58:48Z",
+      "tier": 2
+    },
+    {
+      "title": "Missiles and drones fired at Gulf states after night of US strikes on Iran",
+      "description": "Three people injured by falling shrapnel in Qatar as attacks also reported in UAE, Kuwait, Bahrain, Oman and Jordan.",
+      "link": "https://www.aljazeera.com/news/2026/7/12/missiles-and-drones-fired-at-gulf-states-after-night-of-us-strikes-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-12T07:53:41Z",
+      "tier": 2
+    },
+    {
+      "title": "IRGC vows \u2018crushing response\u2019 to any further US attacks",
+      "description": "IRGC vows \u2018crushing response\u2019 to any further US attacks",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/irgc-vows-crushing-response-to-any-further-us-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-12T07:08:20Z",
+      "tier": 2
+    },
+    {
+      "title": "US launches fresh strikes as Iran closes Strait of Hormuz",
+      "description": "The strikes follow an attack on a Cyprus -flagged vessel travelling through the critical waterway.",
+      "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-12T06:49:46Z",
+      "tier": 2
+    },
+    {
       "title": "US forces launch new strikes on Iran; Tehran closes Strait of Hormuz",
       "description": "US forces have launched a third round of strikes on Iran in a week.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/us-forces-launch-new-strikes-on-iran-tehran-closes-strait-of-hormuz?traffic_source=rss",
@@ -1226,14 +1258,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/12/iran-launches-attacks-across-the-gulf-after-more-us-strikes?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-12T04:59:27Z",
-      "tier": 2
-    },
-    {
-      "title": "US launches fresh strikes as Iran closes Strait of Hormuz",
-      "description": "The strikes follow an attack on a Cyprus -flagged vessel travelling through the critical waterway.",
-      "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-12T04:39:18Z",
       "tier": 2
     },
     {
@@ -1254,7 +1278,7 @@
     },
     {
       "title": "Iran war live: Tehran attacks Jordan, Gulf states after US bombardment",
-      "description": "Iran targets Jordan and Gulf states after US bombs Iranian cities including Bandar Abbas, Sirik and Chabahar",
+      "description": "Fears grow of further US-Iran escalation after largest tit-for-tat attacks yet during the ceasefire.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/12/iran-war-live-irgc-declares-strait-of-hormuz-closed-over-us-interference?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-12T00:00:00Z",
@@ -1266,14 +1290,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/11/indian-tourists-killed-after-speedboat-capsizes-in-vietnam?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-11T23:35:23Z",
-      "tier": 2
-    },
-    {
-      "title": "Thousands gather in Srebrenica to mark 31 years since genocide",
-      "description": "Ten newly identified victims were buried as the more than 8,000 Bosnian Muslim men and boys killed were remembered.",
-      "link": "https://www.aljazeera.com/news/2026/7/11/thousands-gather-in-srebrenica-to-mark-31-years-since-genocide?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-11T19:25:59Z",
       "tier": 2
     },
     {
@@ -1301,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 12, 2026 shows the United States launched another round of strikes on Iran after an attack on a commercial vessel in the Strait of Hormuz, while Iran continued retaliatory action across the Gulf and mediators pushed urgent talks to prevent a broader escalation. For cumulative data, the clearest confirmed official baselines still available are CENTCOM\u2019s minimum 13,000+ targets/combats flights from early April, CENTCOM-confirmed 6 U.S. dead in the KC-135 loss, IDF Home Front\u2019s 24 Israelis killed as of the April 7 ceasefire, and HRANA\u2019s documented 1,443 Iranian civilian deaths; several other requested fields could not be updated without guessing because no current named-source cumulative totals were found.",
+  "summary": "Confirmed reporting on July 12, 2026 shows the U.S. launched another round of strikes on Iran after an Iranian attack on a commercial vessel in the Strait of Hormuz, while Iran responded with attacks toward several Gulf states including Bahrain, Kuwait, Qatar and Oman, according to AP and Al Jazeera. For cumulative figures, the most recent named-source casualty totals I could verify remain the June 10, 2026 Iran Ministry of Health figures relayed by Al Jazeera of 3,468 dead and more than 26,500 wounded in Iran, plus 26 Israeli deaths. CENTCOM\u2019s official Operation Epic Fury materials still publicly confirm four U.S. dead from the KC-135 loss, and official U.S. fact sheets/IDF materials confirm large-scale continuing operations but do not provide up-to-date public cumulative counts for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, interceptor expenditure, troop totals, or destroyer count.",
   "briefings": [
     {
       "date": "2026-07-12",
       "day": 134,
-      "summary": "Confirmed reporting on July 12, 2026 shows the United States launched another round of strikes on Iran after an attack on a commercial vessel in the Strait of Hormuz, while Iran continued retaliatory action across the Gulf and mediators pushed urgent talks to prevent a broader escalation. For cumulative data, the clearest confirmed official baselines still available are CENTCOM\u2019s minimum 13,000+ targets/combats flights from early April, CENTCOM-confirmed 6 U.S. dead in the KC-135 loss, IDF Home Front\u2019s 24 Israelis killed as of the April 7 ceasefire, and HRANA\u2019s documented 1,443 Iranian civilian deaths; several other requested fields could not be updated without guessing because no current named-source cumulative totals were found."
+      "summary": "Confirmed reporting on July 12, 2026 shows the U.S. launched another round of strikes on Iran after an Iranian attack on a commercial vessel in the Strait of Hormuz, while Iran responded with attacks toward several Gulf states including Bahrain, Kuwait, Qatar and Oman, according to AP and Al Jazeera. For cumulative figures, the most recent named-source casualty totals I could verify remain the June 10, 2026 Iran Ministry of Health figures relayed by Al Jazeera of 3,468 dead and more than 26,500 wounded in Iran, plus 26 Israeli deaths. CENTCOM\u2019s official Operation Epic Fury materials still publicly confirm four U.S. dead from the KC-135 loss, and official U.S. fact sheets/IDF materials confirm large-scale continuing operations but do not provide up-to-date public cumulative counts for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, interceptor expenditure, troop totals, or destroyer count."
     },
     {
       "date": "2026-07-11",
