@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-14T21:15:02Z",
+  "lastUpdated": "2026-07-14T22:16:23Z",
   "dayCount": 136,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$27.0B+"
+    "killed": "3,511+",
+    "cost": "$31.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$27.0 billion+",
-    "dailyBurnRate": "~$199M/day",
+    "totalCost": "$31.0 billion+",
+    "dailyBurnRate": "~$228M/day",
     "daysOfOps": 136,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-14",
-          "source": "LLM-verified (Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; used as the nearest confirmed cumulative sortie figure)"
+          "source": "LLM-verified (IDF article published April 1, 2026: more than 800 Israeli Air Force strike sorties since launch of Operation Roaring Lion; no newer combined U.S.-Israeli confirmed fighter-sortie total found)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 3000,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-07-11",
-          "source": "LLM-verified (Reuters Connect / Hegseth statement, April 2026: U.S. and Gulf partners intercepted 1,700 ballistic missiles and one-way attack drones)"
+          "lastUpdated": "2026-07-14",
+          "source": "LLM-verified (CENTCOM posture statement, June 2026: integrated architecture intercepted over 6,000 one-way attack drones and more than 1,500 ballistic missiles aimed at U.S. forces, Israel, and Arab partners)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "3,000 \u00d7 $4,000,000 each",
+        "cost": "$12,000,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Disputes over control of the Strait of Hormuz are driving renewed escalation after the interim ceasefire framework began to fray, according to BBC and Al Jazeera reporting on July 13-14, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. resumed strikes on Iranian military targets and moved to reinstate a blockade on Iranian ports, according to Al Jazeera and Reuters-attributed reporting on July 12-13, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian state media and the IRGC said Tehran targeted U.S. facilities in Bahrain and other Gulf sites after renewed U.S. strikes, according to Al Jazeera reporting on July 12-13, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Trump threatened possible attack on Iran's heavily fortified 'Pickaxe Mountain' nuclear facility, according to Al Jazeera headline on July 14, 2026",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported U.S. strikes on an Iranian ship facility using unmanned surface vessels and additional attacks near Kish, Qeshm and Bandar Abbas.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported renewed U.S. strikes on Iran and continued exchange of fire around the Strait of Hormuz on July 13-14, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported July 13, 2026 that Iran targeted UAE-linked tankers in the Strait of Hormuz, killing one mariner and wounding eight others.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -769,7 +769,7 @@
     },
     {
       "time": "2026-07-14T20:12:06Z",
-      "text": "<strong>Senate Democrats block defence bill over Iran war, Israel integration</strong> -- The Senate voted 50-46 to block debate on the annual defence bill over war funding and defence cooperation with Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>US Senate Democrats block defence bill over Iran war, Israel integration</strong> -- The Senate votes 50-46 to block debate on the annual defence bill over war funding and defence cooperation with Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/14/senate-democrats-block-defence-bill-over-iran-war-israel-provisions?traffic_source=rss"
     },
     {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Watch: The clash between US and Iran for control of the Strait of Hormuz",
+      "description": "The BBC's Barbara Plett Usher examines the latest tensions over the key international shipping channel.",
+      "link": "https://www.bbc.co.uk/news/videos/cx2425dmpl3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-14T21:13:12Z",
+      "tier": 2
+    },
+    {
       "title": "Sirens blare in Bahrain as Iran launches barrage of missiles, drones",
       "description": "Iranian state media is reporting that Tehran has targeted a US naval support base in Bahrain\u2019s capital.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/sirens-blare-in-bahrain-as-iran-launches-barrage-of-missiles-drones?traffic_source=rss",
@@ -1237,8 +1245,8 @@
       "tier": 2
     },
     {
-      "title": "Senate Democrats block defence bill over Iran war, Israel integration",
-      "description": "The Senate voted 50-46 to block debate on the annual defence bill over war funding and defence cooperation with Israel.",
+      "title": "US Senate Democrats block defence bill over Iran war, Israel integration",
+      "description": "The Senate votes 50-46 to block debate on the annual defence bill over war funding and defence cooperation with Israel.",
       "link": "https://www.aljazeera.com/news/2026/7/14/senate-democrats-block-defence-bill-over-iran-war-israel-provisions?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-14T20:12:06Z",
@@ -1325,22 +1333,6 @@
       "tier": 2
     },
     {
-      "title": "Mexico begins legal action in US over deaths of its citizens in ICE custody",
-      "description": "Mexico files complaints and sends cease-and-desist letters over the deaths of 17 nationals in ICE custody or raids.",
-      "link": "https://www.aljazeera.com/news/2026/7/14/mexico-begins-legal-action-in-us-over-deaths-of-its-citizens-in-ice-custody?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-14T16:04:54Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli attack on north Gaza police station kills eight",
-      "description": "Gaza&#039;s interior ministry denounces &#039;horrific massacre&#039; that killed station chief, other police personnel and a civilian.",
-      "link": "https://www.aljazeera.com/news/2026/7/14/israeli-attack-on-north-gaza-police-station-kills-eight?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-14T16:02:54Z",
-      "tier": 2
-    },
-    {
       "title": "Yemen's Houthis launch missiles at Saudi Arabia after strikes on Sanaa airport",
       "description": "The Iran-backed Houthis blame Saudi Arabia for the attack in Yemen's capital and say they targeted Abha airport in response.",
       "link": "https://www.bbc.co.uk/news/articles/cp9ldle3d3xo?at_medium=RSS&at_campaign=rss",
@@ -1365,12 +1357,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 14, 2026 shows the war remains unstable despite the earlier ceasefire framework: the U.S. has reimposed its blockade of Iranian ports after attacks on commercial shipping in the Strait of Hormuz, while AP reported the official U.S. military death toll has risen to 14 and wounded to 414. For cumulative war totals, the latest accessible confirmed Iran-wide casualty figures remain the Iran Ministry of Health numbers carried by Al Jazeera\u2019s June 10 tracker: 3,468 killed and more than 26,500 injured in Iran, with 26 Israelis killed and 28 people killed in Gulf states.",
+  "summary": "Confirmed reporting as of July 14, 2026 shows the war\u2019s last clearly sourced cumulative casualty baseline still comes largely from June 10 figures: Iran\u2019s Ministry of Health said 3,468 people were killed and more than 26,500 injured, while Israeli deaths stood at 26. The latest confirmed U.S. military fatality count rose to 14, according to AP on July 13. Since July 12-14, confirmed reporting from Al Jazeera citing CENTCOM, Reuters-attributed material, and Iranian statements indicates the conflict has re-escalated around the Strait of Hormuz, with renewed U.S. strikes on Iranian military targets, Iranian missile and drone attacks toward Bahrain and other Gulf locations, and U.S. moves to restore a blockade on Iranian ports, but I could not find newer fully confirmed cumulative totals for most military cost-model fields.",
   "briefings": [
     {
       "date": "2026-07-14",
       "day": 136,
-      "summary": "Confirmed reporting on July 14, 2026 shows the war remains unstable despite the earlier ceasefire framework: the U.S. has reimposed its blockade of Iranian ports after attacks on commercial shipping in the Strait of Hormuz, while AP reported the official U.S. military death toll has risen to 14 and wounded to 414. For cumulative war totals, the latest accessible confirmed Iran-wide casualty figures remain the Iran Ministry of Health numbers carried by Al Jazeera\u2019s June 10 tracker: 3,468 killed and more than 26,500 injured in Iran, with 26 Israelis killed and 28 people killed in Gulf states."
+      "summary": "Confirmed reporting as of July 14, 2026 shows the war\u2019s last clearly sourced cumulative casualty baseline still comes largely from June 10 figures: Iran\u2019s Ministry of Health said 3,468 people were killed and more than 26,500 injured, while Israeli deaths stood at 26. The latest confirmed U.S. military fatality count rose to 14, according to AP on July 13. Since July 12-14, confirmed reporting from Al Jazeera citing CENTCOM, Reuters-attributed material, and Iranian statements indicates the conflict has re-escalated around the Strait of Hormuz, with renewed U.S. strikes on Iranian military targets, Iranian missile and drone attacks toward Bahrain and other Gulf locations, and U.S. moves to restore a blockade on Iranian ports, but I could not find newer fully confirmed cumulative totals for most military cost-model fields."
     },
     {
       "date": "2026-07-13",
