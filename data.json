@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-14T09:17:08Z",
+  "lastUpdated": "2026-07-14T11:44:47Z",
   "dayCount": 136,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "3,509+",
-    "cost": "$27.6B+"
+    "strikes": "~13,000",
+    "killed": "3,536+",
+    "cost": "$26.8B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$27.6 billion+",
-    "dailyBurnRate": "~$203M/day",
+    "totalCost": "$26.8 billion+",
+    "dailyBurnRate": "~$197M/day",
     "daysOfOps": 136,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-14",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026): 'Two carrier strike groups' in Operation Epic Fury)"
+          "source": "LLM-verified (U.S. Naval Forces Central Command statement, March 12, 2026: Gerald R. Ford Carrier Strike Group operating in the Red Sea in support of Operation Epic Fury; no newer official source found confirming a second carrier currently in theater)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 5,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-07-12",
-          "source": "LLM-verified (U.S. Navy, July 7, 2026: USS Ross, USS Donald Cook, USS Higgins, USS Mason, and USS John Finn involved in current Middle East operations)"
+          "lastUpdated": "2026-07-14",
+          "source": "LLM-verified (U.S. Navy photo release dated February 6, 2026 shows USS Michael Murphy (DDG 112) and USS Frank E. Petersen Jr. (DDG 121) with USS Abraham Lincoln in the U.S. 5th Fleet area; no newer official theater-wide destroyer count found)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-14",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury fact sheet dated March 18, 2026: 8,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026: 'Combat Flights: 11,000+'; latest official cumulative combat-flight/sortie figure found)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 136 days",
-        "cost": "$1,904,000,000"
+        "detail": "$7,000,000/day \u00d7 136 days",
+        "cost": "$952,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "5 \u00d7 $240,000/day \u00d7 136 days",
-        "cost": "$163,200,000"
+        "detail": "2 \u00d7 $240,000/day \u00d7 136 days",
+        "cost": "$65,280,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headlines on July 14, 2026 also indicate U.S. threats against Iran's heavily fortified 'Pickaxe Mountain' nuclear site.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headlines on July 14, 2026 indicate rising concern over Yemen/Houthi escalation and possible pressure on Bab al-Mandeb shipping lanes.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on July 14, 2026 reported renewed U.S. strikes on Iranian coastal defense, missile, drone, and maritime targets and renewed Iranian retaliation against Bahrain and other U.S. partners.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "BBC headline context indicates Trump is reinstating a naval blockade of Iranian ports",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "President Trump said the US will 'take over' or become 'guardian' of the Strait of Hormuz and collect tolls, according to Al Jazeera and BBC headline context provided by user",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "UK designated Iran\u2019s IRGC as a terrorist organisation, according to Al Jazeera headline context provided by user",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and Reuters-described reporting on July 8-9, 2026 said the U.S. and Iran exchanged new strikes, including U.S. strikes on Iranian military targets and reported drone/missile incidents affecting regional shipping and infrastructure.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,36 @@
   ],
   "developments": [
     {
+      "time": "2026-07-14T11:22:29Z",
+      "text": "<strong>How new Yemen tensions could complicate the global energy crisis</strong> -- If the fighting in Yemen expands, and the Houthis try to block the Bab al-Mandeb, the world economy faces a new shock. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/7/14/how-new-yemen-tensions-could-complicate-the-global-energy-crisis?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T10:59:02Z",
+      "text": "<strong>Can Gulf countries defend themselves against renewed Iranian attacks?</strong> -- Expensive interceptor missiles are facing mounting pressure from Iran&amp;#039;s cheaply produced drones. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/14/can-gulf-countries-defend-themselves-against-renewed-iranian-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T10:53:40Z",
+      "text": "<strong>Dozens of healthcare workers in DRC strike amid Ebola outbreak</strong> -- Healthcare workers at an Ebola treatment centre in the Democratic Republic of the Congo have gone on strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/dozens-of-healthcare-workers-in-drc-strike-amid-ebola-outbreak?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T10:34:14Z",
+      "text": "<strong>Schumer slams Trump over Iran war</strong> -- Schumer slams Trump over Iran war <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/schumer-slams-trump-over-iran-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T10:11:22Z",
+      "text": "<strong>What is Iran\u2019s Pickaxe Mountain, the mystery site Trump warns he\u2019ll attack?</strong> -- Tensions escalate as the US president threatens to destroy Iran&amp;#039;s fortified nuclear site in the south of Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/14/what-is-irans-pickaxe-mountain-the-mystery-site-trump-warns-hell-attack?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T09:34:55Z",
+      "text": "<strong>ICE kills 26-year-old in Maine: What happened, and who else has ICE killed?</strong> -- More than 60 people have died in ICE shootings or while in detention since Donald Trump returned to power. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/14/ice-kills-26-year-old-in-maine-what-happened-and-who-else-has-ice-killed?traffic_source=rss"
+    },
+    {
       "time": "2026-07-14T08:52:22Z",
       "text": "<strong>US bombs Iran again, Tehran strikes Gulf, tankers: What\u2019s the latest?</strong> -- While Trump has threatened to hit targets in Iran including Pickaxe Mountain, he has said a deal is possible. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/14/us-bombs-iran-again-tehran-strikes-gulf-tankers-whats-the-latest?traffic_source=rss"
@@ -769,7 +799,7 @@
     },
     {
       "time": "2026-07-14T05:15:40Z",
-      "text": "<strong>Trump threatens to attack \u2018Pickaxe Mountain\u2019 a nuclear facility inside Ira</strong> -- US President Donald Trump is threatening to attack a heavily-fortified underground nuclear facility in Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Trump threatens to attack \u2018Pickaxe Mountain\u2019 a nuclear facility inside Iran</strong> -- US President Donald Trump is threatening to attack a heavily-fortified underground nuclear facility in Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/trump-threatens-to-attack-pickaxe-mountain-a-nuclear-facility-inside-ira?traffic_source=rss"
     },
     {
@@ -821,36 +851,6 @@
       "time": "2026-07-13T21:04:56Z",
       "text": "<strong>Lindsey Graham\u2019s legacy: Israel advocate, Trump ally, Iran war supporter</strong> -- Late US senator backed invasion of Iraq, war on Iran and approach of &amp;#039;more for Israel&amp;#039; as he became a Trump confidant. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/13/lindsey-grahams-legacy-israel-advocate-trump-ally-iran-war-supporter?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T20:48:18Z",
-      "text": "<strong>US strikes Iranian ship with drone boats in first-of-its-kind attack</strong> -- US CENTCOM has published a video it says shows three Corsair unmanned surface vessels striking an Iranian ship facility <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/us-strikes-iranian-ship-with-drone-boats-in-first-of-its-kind-attack?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T20:41:27Z",
-      "text": "<strong>Kyiv attacked after Ukraine launches coalition to tackle Russia missiles</strong> -- Russia has escalated attacks in recent weeks, taking advantage of Ukraine\u2019s critical shortage of air defences. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/13/ukraine-and-allies-launch-coalition-to-tackle-russias-ballistic-missiles?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T20:40:07Z",
-      "text": "<strong>Iran military warns US against Strait of Hormuz \u2018interference\u2019</strong> -- Iran&amp;#039;s military has warned it will not allow the United States to \u2018interfere\u2019 in the management of the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/iran-military-warns-us-against-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T20:35:50Z",
-      "text": "<strong>Artist sews names of Gaza children killed by Israel into gown</strong> -- Welsh artist Diana Williams stitched the names of 300 babies killed by Israel\u2019s genocidal war on Gaza into a gown. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/artist-sews-names-of-gaza-children-killed-by-israel-into-gown?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T20:23:27Z",
-      "text": "<strong>US keeping the Strait of Hormuz open is \u2018a massive force problem\u2019</strong> -- Former NATO analyst says Trump&amp;#039;s push for a naval blockade in the Strait of Hormuz would mean a huge military operation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/us-keeping-the-strait-of-hormuz-open-is-a-massive-force?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T18:57:57Z",
-      "text": "<strong>UK designates IRGC as terrorist organisation</strong> -- The UK government has designated Iran\u2019s Revolutionary Guard Corps (IRGC) as a terrorist organisation under new powers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/uk-designates-irgc-as-terrorist-organisation?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,70 @@
   ],
   "newsFeed": [
     {
+      "title": "How new Yemen tensions could complicate the global energy crisis",
+      "description": "If the fighting in Yemen expands, and the Houthis try to block the Bab al-Mandeb, the world economy faces a new shock.",
+      "link": "https://www.aljazeera.com/economy/2026/7/14/how-new-yemen-tensions-could-complicate-the-global-energy-crisis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T11:22:29Z",
+      "tier": 2
+    },
+    {
+      "title": "Colombian national killed by ICE agent during operation in Maine",
+      "description": "It comes less than a week after an undocumented migrant was fatally shot in Houston by an immigration agent.",
+      "link": "https://www.bbc.co.uk/news/articles/c2ly580kxnko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-14T11:09:02Z",
+      "tier": 2
+    },
+    {
+      "title": "Can Gulf countries defend themselves against renewed Iranian attacks?",
+      "description": "Expensive interceptor missiles are facing mounting pressure from Iran&#039;s cheaply produced drones.",
+      "link": "https://www.aljazeera.com/news/2026/7/14/can-gulf-countries-defend-themselves-against-renewed-iranian-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T10:59:02Z",
+      "tier": 2
+    },
+    {
+      "title": "Dozens of healthcare workers in DRC strike amid Ebola outbreak",
+      "description": "Healthcare workers at an Ebola treatment centre in the Democratic Republic of the Congo have gone on strike.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/dozens-of-healthcare-workers-in-drc-strike-amid-ebola-outbreak?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T10:53:40Z",
+      "tier": 2
+    },
+    {
+      "title": "Schumer slams Trump over Iran war",
+      "description": "Schumer slams Trump over Iran war",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/schumer-slams-trump-over-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T10:34:14Z",
+      "tier": 2
+    },
+    {
+      "title": "What is Iran\u2019s Pickaxe Mountain, the mystery site Trump warns he\u2019ll attack?",
+      "description": "Tensions escalate as the US president threatens to destroy Iran&#039;s fortified nuclear site in the south of Tehran.",
+      "link": "https://www.aljazeera.com/news/2026/7/14/what-is-irans-pickaxe-mountain-the-mystery-site-trump-warns-hell-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T10:11:22Z",
+      "tier": 2
+    },
+    {
+      "title": "Yemen's Houthis launch missiles at Saudi Arabia after strikes on Sanaa airport",
+      "description": "The Iran-backed Houthis blame Saudi Arabia for the attack in Yemen's capital and say they targeted Abha airport in response.",
+      "link": "https://www.bbc.co.uk/news/articles/cp9ldle3d3xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-14T10:02:43Z",
+      "tier": 2
+    },
+    {
+      "title": "ICE kills 26-year-old in Maine: What happened, and who else has ICE killed?",
+      "description": "More than 60 people have died in ICE shootings or while in detention since Donald Trump returned to power.",
+      "link": "https://www.aljazeera.com/news/2026/7/14/ice-kills-26-year-old-in-maine-what-happened-and-who-else-has-ice-killed?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T09:34:55Z",
+      "tier": 2
+    },
+    {
       "title": "US bombs Iran again, Tehran strikes Gulf, tankers: What\u2019s the latest?",
       "description": "While Trump has threatened to hit targets in Iran including Pickaxe Mountain, he has said a deal is possible.",
       "link": "https://www.aljazeera.com/news/2026/7/14/us-bombs-iran-again-tehran-strikes-gulf-tankers-whats-the-latest?traffic_source=rss",
@@ -1237,7 +1301,7 @@
       "tier": 2
     },
     {
-      "title": "Trump threatens to attack \u2018Pickaxe Mountain\u2019 a nuclear facility inside Ira",
+      "title": "Trump threatens to attack \u2018Pickaxe Mountain\u2019 a nuclear facility inside Iran",
       "description": "US President Donald Trump is threatening to attack a heavily-fortified underground nuclear facility in Iran",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/trump-threatens-to-attack-pickaxe-mountain-a-nuclear-facility-inside-ira?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1253,51 +1317,11 @@
       "tier": 2
     },
     {
-      "title": "Houthis: Saudi airport targeted in retaliation for strikes on Sanaa airport",
-      "description": "Yemen&#039;s Houthis say they struck Saudi Arabia&#039;s Abha airport in retaliation for a strike on Sanaa\u2019s international airport",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/aje-onl-nf_houthis-target-saudi-for-strikes-on-sanaa-130726?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-14T04:10:13Z",
-      "tier": 2
-    },
-    {
       "title": "Bangkok fire investigation finds locked doors and flammable decor as deaths climb to 30",
       "description": "Survivors and first responders reported locked doors and a lack of signage marking emergency exits.",
       "link": "https://www.bbc.co.uk/news/articles/clyxyzlp9p2o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-14T03:47:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Oil prices hit 1-month high as US-Iran attacks dim Strait of Hormuz outlook",
-      "description": "Brent crude nears $85 a barrel amid renewed hostilities between Washington and Tehran.",
-      "link": "https://www.aljazeera.com/economy/2026/7/14/oil-hits-1-month-high-as-us-iran-fighting-clouds-strait-of-hormuz-outlook?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-14T03:38:22Z",
-      "tier": 2
-    },
-    {
-      "title": "Colombian national killed by ICE agent during operation in Maine",
-      "description": "It comes less than a week after an undocumented migrant was fatally shot in Houston by an immigration agent.",
-      "link": "https://www.bbc.co.uk/news/articles/c2ly580kxnko?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-14T01:50:48Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump demands payment to protect Gulf nations from Iranian attacks",
-      "description": "US President Donald Trump says the US should be paid by \u2018rich\u2019 oil-producing Gulf nations to secure the Strait of Hormuz",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/trump-demands-payment-to-protect-gulf-nations-from-iranian-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-14T01:37:48Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: India summons Iran envoy over dead sailor amid more strikes",
-      "description": "Tehran claims retaliatory strikes on Kuwait, Bahrain and Jordan, as well as two oil tankers in the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/7/14/iran-war-live-us-launches-more-attacks-trump-orders-blockade-in-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-14T00:00:00Z",
       "tier": 2
     },
     {
@@ -1309,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 14, 2026 shows a renewed escalation: AP reported that U.S. forces launched another round of strikes on Iranian coastal defense, missile, drone and maritime targets, while Iran retaliated by attacking two UAE tankers in the Strait of Hormuz, killing one mariner and wounding eight others according to the UAE Defense Ministry. The latest confirmed U.S. military death toll is 14, per AP citing Pentagon figures. For broader cumulative war casualties, the newest clearly attributed figures found in reviewed sources remain Iran Ministry of Health numbers carried by Al Jazeera on June 10 of 3,468 killed and more than 26,500 wounded in Iran, and 26 killed in Israel; no newer named-source cumulative official totals for several requested military quantity fields were found, so those remain null.",
+  "summary": "Confirmed reporting on July 14, 2026 shows the war has re-escalated: AP reported fresh U.S. strikes on Iranian coastal defense, missile, drone and maritime targets, followed by renewed Iranian retaliation against Bahrain and other regional partners. The clearest currently confirmed cumulative casualty figures I found remain 3,468 dead in Iran, 26 dead in Israel, 28 dead in Gulf states, and 14 U.S. service members killed; I did not find a newer confirmed Iranian civilian-only or wounded total from a named authoritative source in the search results. For military totals, the latest official CENTCOM fact sheets located give 13,000+ targets struck as of April 6 and 11,000+ combat flights as of March 28, but I did not find current confirmed cumulative counts for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, personnel, or interceptors.",
   "briefings": [
     {
       "date": "2026-07-14",
       "day": 136,
-      "summary": "Confirmed reporting on July 14, 2026 shows a renewed escalation: AP reported that U.S. forces launched another round of strikes on Iranian coastal defense, missile, drone and maritime targets, while Iran retaliated by attacking two UAE tankers in the Strait of Hormuz, killing one mariner and wounding eight others according to the UAE Defense Ministry. The latest confirmed U.S. military death toll is 14, per AP citing Pentagon figures. For broader cumulative war casualties, the newest clearly attributed figures found in reviewed sources remain Iran Ministry of Health numbers carried by Al Jazeera on June 10 of 3,468 killed and more than 26,500 wounded in Iran, and 26 killed in Israel; no newer named-source cumulative official totals for several requested military quantity fields were found, so those remain null."
+      "summary": "Confirmed reporting on July 14, 2026 shows the war has re-escalated: AP reported fresh U.S. strikes on Iranian coastal defense, missile, drone and maritime targets, followed by renewed Iranian retaliation against Bahrain and other regional partners. The clearest currently confirmed cumulative casualty figures I found remain 3,468 dead in Iran, 26 dead in Israel, 28 dead in Gulf states, and 14 U.S. service members killed; I did not find a newer confirmed Iranian civilian-only or wounded total from a named authoritative source in the search results. For military totals, the latest official CENTCOM fact sheets located give 13,000+ targets struck as of April 6 and 11,000+ combat flights as of March 28, but I did not find current confirmed cumulative counts for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, personnel, or interceptors."
     },
     {
       "date": "2026-07-13",
