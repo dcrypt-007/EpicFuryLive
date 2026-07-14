@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-14T03:34:00Z",
+  "lastUpdated": "2026-07-14T06:25:05Z",
   "dayCount": 136,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,537+",
-    "cost": "$28.1B+"
+    "killed": "3,536+",
+    "cost": "$27.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.1 billion+",
-    "dailyBurnRate": "~$206M/day",
+    "totalCost": "$27.9 billion+",
+    "dailyBurnRate": "~$205M/day",
     "daysOfOps": 136,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-14",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026) states Operation Epic Fury used 'Two carrier strike groups': https://media.defense.gov/2026/May/11/2003928909/-1/-1/1/NAVY%20SHIPBUILDING%20PLAN%20MAY%202026.PDF)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026): 'Two carrier strike groups' in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-14",
-          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet lists 'Combat Flights: 13,000+': https://media.defense.gov/2026/Apr/01/2003905658/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-APRIL-1-UPDATE.PDF)"
+          "source": "LLM-verified (Pentagon/CENTCOM Operation Epic Fury fact sheet dated March 28, 2026: 11,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported renewed U.S.-Iran attacks around the Strait of Hormuz and a UAE-reported tanker strike fatality in its July 14, 2026 live coverage",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump threatened possible attack on Iran's heavily fortified 'Pickaxe Mountain' nuclear facility, according to Al Jazeera headline on July 14, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 14, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported on July 13, 2026 that both the US and Iran asserted control over the Strait of Hormuz after a weekend of attacks, with Trump also saying the US would blockade the strait and charge ships for safe passage",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and AP reported renewed Iranian attacks on Gulf states in late June and early July, with Bahrain, Kuwait and Jordan among repeated targets.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported US strikes hit 90 targets across Iran on July 9, 2026 as ceasefire arrangements continued to erode.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,33 @@
   ],
   "developments": [
     {
+      "time": "2026-07-14T05:15:40Z",
+      "text": "<strong>Trump threatens to attack \u2018Pickaxe Mountain\u2019 a nuclear facility inside Ira</strong> -- US President Donald Trump is threatening to attack a heavily-fortified underground nuclear facility in Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/trump-threatens-to-attack-pickaxe-mountain-a-nuclear-facility-inside-ira?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T04:15:28Z",
+      "text": "<strong>Mexico\u2019s Sheinbaum announces criminal charges request in US over ICE deaths</strong> -- Mexico to formally ask prosecutors to file cases in US courts over its citizens&amp;#039; deaths in immigration operations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/14/mexicos-sheinbaum-announces-criminal-charges-request-in-us-over-ice-deaths?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T04:10:13Z",
+      "text": "<strong>Houthis: Saudi airport targeted in retaliation for strikes on Sanaa airport</strong> -- Yemen&amp;#039;s Houthis say they struck Saudi Arabia&amp;#039;s Abha airport in retaliation for a strike on Sanaa\u2019s international airport <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/aje-onl-nf_houthis-target-saudi-for-strikes-on-sanaa-130726?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-14T03:38:22Z",
+      "text": "<strong>Oil prices hit 1-month high as US-Iran attacks dim Strait of Hormuz outlook</strong> -- Brent crude nears $85 a barrel amid renewed hostiles between Washington and Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/7/14/oil-hits-1-month-high-as-us-iran-fighting-clouds-strait-of-hormuz-outlook?traffic_source=rss"
+    },
+    {
       "time": "2026-07-14T01:37:48Z",
       "text": "<strong>Trump demands payment to protect Gulf nations from Iranian attacks</strong> -- US President Donald Trump says the US should be paid by \u2018rich\u2019 oil-producing Gulf nations to secure the Strait of Hormuz <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/trump-demands-payment-to-protect-gulf-nations-from-iranian-attacks?traffic_source=rss"
     },
     {
       "time": "2026-07-14T00:00:00Z",
-      "text": "<strong>Iran war live: US launches more attacks; UAE says 1 killed in tanker strike</strong> -- US has carried out more attacks on Iran, with Iranian media reporting explosions in Kish, Qeshm and Bandar Abbas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: US launches more attacks; UAE says 1 killed in tanker strike</strong> -- Tehran claims retaliatory strikes on Kuwait, Bahrain and Jordan, as well as two oil tankers in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/14/iran-war-live-us-launches-more-attacks-trump-orders-blockade-in-hormuz?traffic_source=rss"
     },
     {
@@ -831,26 +851,6 @@
       "time": "2026-07-13T17:33:53Z",
       "text": "<strong>Staff at DR Congo Ebola centre strike as virus continues spreading</strong> -- Walkout over late payments comes as public health officials confirm that the virus has reached two more provinces. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/13/staff-at-congo-ebola-centre-strike-as-virus-continues-spreading?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T20:57:08Z",
-      "text": "<strong>Trump reinstates Iran port blockade and vows 20% charge on cargo passing through Hormuz</strong> -- The US president also says Washington will impose a 20% charge on all cargo shipped through the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c8d2vn38dy1o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-13T16:11:38Z",
-      "text": "<strong>Person killed in shooting involving ICE agents in US state of Maine</strong> -- State lawmaker says one person was killed by immigration agents in Biddeford, days after another ICE shooting in Texas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/13/person-killed-in-shooting-involving-ice-agents-in-us-state-of-maine?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T15:41:07Z",
-      "text": "<strong>Trump: US will \u2018take over\u2019 Strait of Hormuz</strong> -- President Donald Trump has said the US will \u2018take over\u2019 the Strait of Hormuz, accusing Iran of breaking the deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/trump-us-will-take-over-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-13T15:25:56Z",
-      "text": "<strong>Iraqi PM arrives in US seeking balance between security and economy</strong> -- PM Ali al-Zaidi to hold talks with Trump, with energy investment and role of pro-Iran groups likely to dominate agenda. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/13/iraqi-pm-heads-to-us-seeking-balance-between-security-and-economy?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,35 @@
   ],
   "newsFeed": [
     {
-      "title": "UAE condemns Iran's 'brazen' attack on tankers as US launches fresh strikes",
-      "description": "The third consecutive night of US strikes on Iran came as Trump announced a 20% charge as part of a new blockade on the strait.",
-      "link": "https://www.bbc.co.uk/news/articles/c8d2vn38dy1o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-14T03:33:05Z",
+      "title": "Trump threatens to attack \u2018Pickaxe Mountain\u2019 a nuclear facility inside Ira",
+      "description": "US President Donald Trump is threatening to attack a heavily-fortified underground nuclear facility in Iran",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/trump-threatens-to-attack-pickaxe-mountain-a-nuclear-facility-inside-ira?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T05:15:40Z",
+      "tier": 2
+    },
+    {
+      "title": "Mexico\u2019s Sheinbaum announces criminal charges request in US over ICE deaths",
+      "description": "Mexico to formally ask prosecutors to file cases in US courts over its citizens&#039; deaths in immigration operations.",
+      "link": "https://www.aljazeera.com/news/2026/7/14/mexicos-sheinbaum-announces-criminal-charges-request-in-us-over-ice-deaths?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T04:15:28Z",
+      "tier": 2
+    },
+    {
+      "title": "Houthis: Saudi airport targeted in retaliation for strikes on Sanaa airport",
+      "description": "Yemen&#039;s Houthis say they struck Saudi Arabia&#039;s Abha airport in retaliation for a strike on Sanaa\u2019s international airport",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/14/aje-onl-nf_houthis-target-saudi-for-strikes-on-sanaa-130726?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T04:10:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Oil prices hit 1-month high as US-Iran attacks dim Strait of Hormuz outlook",
+      "description": "Brent crude nears $85 a barrel amid renewed hostiles between Washington and Tehran.",
+      "link": "https://www.aljazeera.com/economy/2026/7/14/oil-hits-1-month-high-as-us-iran-fighting-clouds-strait-of-hormuz-outlook?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-14T03:38:22Z",
       "tier": 2
     },
     {
@@ -1238,7 +1262,7 @@
     },
     {
       "title": "Iran war live: US launches more attacks; UAE says 1 killed in tanker strike",
-      "description": "US has carried out more attacks on Iran, with Iranian media reporting explosions in Kish, Qeshm and Bandar Abbas.",
+      "description": "Tehran claims retaliatory strikes on Kuwait, Bahrain and Jordan, as well as two oil tankers in the Strait of Hormuz.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/14/iran-war-live-us-launches-more-attacks-trump-orders-blockade-in-hormuz?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-14T00:00:00Z",
@@ -1277,38 +1301,6 @@
       "tier": 2
     },
     {
-      "title": "US strikes Iranian ship with drone boats in first-of-its-kind attack",
-      "description": "US CENTCOM has published a video it says shows three Corsair unmanned surface vessels striking an Iranian ship facility",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/us-strikes-iranian-ship-with-drone-boats-in-first-of-its-kind-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-13T20:48:18Z",
-      "tier": 2
-    },
-    {
-      "title": "Kyiv attacked after Ukraine launches coalition to tackle Russia missiles",
-      "description": "Russia has escalated attacks in recent weeks, taking advantage of Ukraine\u2019s critical shortage of air defences.",
-      "link": "https://www.aljazeera.com/news/2026/7/13/ukraine-and-allies-launch-coalition-to-tackle-russias-ballistic-missiles?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-13T20:41:27Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran military warns US against Strait of Hormuz \u2018interference\u2019",
-      "description": "Iran&#039;s military has warned it will not allow the United States to \u2018interfere\u2019 in the management of the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/iran-military-warns-us-against-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-13T20:40:07Z",
-      "tier": 2
-    },
-    {
-      "title": "Artist sews names of Gaza children killed by Israel into gown",
-      "description": "Welsh artist Diana Williams stitched the names of 300 babies killed by Israel\u2019s genocidal war on Gaza into a gown.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/13/artist-sews-names-of-gaza-children-killed-by-israel-into-gown?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-13T20:35:50Z",
-      "tier": 2
-    },
-    {
       "title": "At least 28 killed, 25 critically injured after fire engulfs Bangkok bar",
       "description": "Firefighters arrived at the scene in the Chatuchak district to find patrons running through flames to escape.",
       "link": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting shows the official U.S. military death toll rose to 14 as of July 13, 2026, after a non-hostile Navy helicopter crash death, while the latest widely cited cumulative regional casualty baselines remain older tracker figures: 3,468 dead and more than 26,500 wounded in Iran, 26 dead in Israel, and 29 killed in Gulf states. AP and Al Jazeera both reported renewed U.S.-Iran exchanges around the Strait of Hormuz over the past several days, including attacks on shipping and Gulf-linked targets, but I did not find newer fully confirmed cumulative casualty or weapons-use totals beyond the official/major-source figures returned above.",
+  "summary": "Confirmed reporting as of July 14, 2026 shows the official U.S. military death toll in the Iran war has risen to 14 after a Navy pilot died in a non-hostile helicopter crash, according to AP citing the Pentagon/CENTCOM. The latest widely cited confirmed Iranian casualty figures still appear to be Iran Ministry of Health numbers carried by Al Jazeera\u2019s tracker on June 10: 3,468 killed and more than 26,500 wounded. The same tracker lists 26 killed in Israel and 28 killed across Gulf states. On the military side, the clearest official aggregate strike figure located is the U.S. Navy\u2019s May 2026 shipbuilding plan stating that Operation Epic Fury struck over 13,000 targets in Iran and involved two carrier strike groups; however, current official totals for destroyers, personnel, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptor expenditures were not confirmed in accessible official or major-wire reporting.",
   "briefings": [
     {
       "date": "2026-07-14",
       "day": 136,
-      "summary": "Confirmed reporting shows the official U.S. military death toll rose to 14 as of July 13, 2026, after a non-hostile Navy helicopter crash death, while the latest widely cited cumulative regional casualty baselines remain older tracker figures: 3,468 dead and more than 26,500 wounded in Iran, 26 dead in Israel, and 29 killed in Gulf states. AP and Al Jazeera both reported renewed U.S.-Iran exchanges around the Strait of Hormuz over the past several days, including attacks on shipping and Gulf-linked targets, but I did not find newer fully confirmed cumulative casualty or weapons-use totals beyond the official/major-source figures returned above."
+      "summary": "Confirmed reporting as of July 14, 2026 shows the official U.S. military death toll in the Iran war has risen to 14 after a Navy pilot died in a non-hostile helicopter crash, according to AP citing the Pentagon/CENTCOM. The latest widely cited confirmed Iranian casualty figures still appear to be Iran Ministry of Health numbers carried by Al Jazeera\u2019s tracker on June 10: 3,468 killed and more than 26,500 wounded. The same tracker lists 26 killed in Israel and 28 killed across Gulf states. On the military side, the clearest official aggregate strike figure located is the U.S. Navy\u2019s May 2026 shipbuilding plan stating that Operation Epic Fury struck over 13,000 targets in Iran and involved two carrier strike groups; however, current official totals for destroyers, personnel, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptor expenditures were not confirmed in accessible official or major-wire reporting."
     },
     {
       "date": "2026-07-13",
