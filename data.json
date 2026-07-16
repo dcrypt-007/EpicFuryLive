@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-16T16:41:47Z",
+  "lastUpdated": "2026-07-16T18:19:17Z",
   "dayCount": 138,
   "banner": {
-    "strikes": "~1,450",
-    "killed": "3,509+",
-    "cost": "$35.3B+"
+    "strikes": "~1,250",
+    "killed": "3,526+",
+    "cost": "$33.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "18",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.3 billion+",
-    "dailyBurnRate": "~$256M/day",
+    "totalCost": "$33.7 billion+",
+    "dailyBurnRate": "~$244M/day",
     "daysOfOps": 138,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-07-15",
-          "source": "LLM-verified (Defense Department paper 'Small Drones, Big Problems' says a dedicated counter-UAS task force/unit was stood up after Operation Epic Fury; no clearer official current count of MQ-9 or UAV operational units found)"
+          "lastUpdated": "2026-07-16",
+          "source": "LLM-verified (CENTCOM first-48-hours fact sheet confirms MQ-9 Reapers employed; only one confirmed drone unit-type found, not a current unit-count briefing)"
         },
         {
           "id": "comms_space",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 24,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-07-16",
-          "source": "LLM-verified (Defense News, March 27, 2026, citing Washington Post/Pentagon context: U.S. military had fired 'over 850 Tomahawk cruise missiles' in the first four weeks.)"
+          "source": "LLM-verified (U.S. Department of Defense transcript on Operation Midnight Hammer: 'more than two dozen' Tomahawk land attack cruise missiles; minimum confirmed count 24)"
         },
         {
           "id": "jdam",
@@ -235,7 +235,7 @@
           "id": "b2_sorties",
           "category": "B-2 Bomber Sorties",
           "unitCost": 5500000,
-          "quantity": 1,
+          "quantity": 7,
           "keywords": [
             "B-2 sortie",
             "B2 bomber sortie",
@@ -243,8 +243,8 @@
             "B-2 Spirit sortie",
             "bomber sortie"
           ],
-          "lastUpdated": "2026-07-07",
-          "source": "LLM-verified (March 2, 2026 Pentagon briefing confirmed B-2 bombers flew a 37-hour roundtrip sortie from the continental U.S. in the opening phase. No later cumulative sortie total was found.)"
+          "lastUpdated": "2026-07-16",
+          "source": "LLM-verified (DoD/CENTCOM reporting on Operation Midnight Hammer confirms seven B-2 Spirits in the June 21 strike package; no cumulative sorties total found)"
         },
         {
           "id": "mop_bunker_busters",
@@ -260,8 +260,8 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-07-13",
-          "source": "LLM-verified (DoD press briefing transcript states 14 GBU-57 Massive Ordnance Penetrators were used)"
+          "lastUpdated": "2026-07-16",
+          "source": "LLM-verified (U.S. Department of Defense transcript on Operation Midnight Hammer: total of 14 GBU-57 MOPs dropped)"
         },
         {
           "id": "fighter_sorties",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "24 \u00d7 $2,000,000 each",
+        "cost": "$48,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -388,8 +388,8 @@
       },
       {
         "category": "B-2 Bomber Sorties",
-        "detail": "Lump sum",
-        "cost": "$5,500,000"
+        "detail": "7 \u00d7 $5,500,000 each",
+        "cost": "$38,500,000"
       },
       {
         "category": "GBU-57 MOP Bunker Busters",
@@ -435,6 +435,42 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS headline says U.S. Vice President Vance accused the Israeli campaign of trying to sway U.S. opinion against Iran diplomacy.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS headline says the U.S. approved a nearly $2bn weapons sale to Saudi Arabia to bolster air defenses amid escalation risk from Iran-backed Houthis.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported a U.S. strike hit an Iranian 388th Mechanized Infantry Brigade barracks in Sistan and Baluchestan, with no immediate casualty figure acknowledged.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on July 16, 2026 that the interim ceasefire collapsed and the U.S. and Iran resumed back-and-forth strikes tied to the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 16, 2026",
       "severity": "high",
@@ -623,42 +659,6 @@
       "text": "AP reported Iran's Revolutionary Guard threatened to halt all Middle East energy exports if the blockade remains in effect.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 15, 2026 that the U.S. reimposed a blockade on Iranian ports and CENTCOM launched new waves of strikes, including overnight, daylight, and late-Wednesday attacks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline context says Iran unveiled a billboard in Tehran depicting President Trump in a coffin, underscoring escalatory rhetoric.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline context says President Masoud Pezeshkian vowed Iran would defend 'every inch' of its territory.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline context says Trump threatened strikes on Iranian bridges and power plants next week if Tehran does not return to talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-07-16T17:22:09Z",
+      "text": "<strong>US approves nearly $2bn in weapons sale to Saudi Arabia</strong> -- The sale intends to bolster Saudi air defence systems as the kingdom risks escalation with the Iran-backed Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/16/us-approves-nearly-2bn-in-weapons-sale-to-saudi-arabia?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-16T16:56:54Z",
+      "text": "<strong>Eleven killed in Algeria orphanage fire</strong> -- Eleven people were killed and 19 injured after a fire tore through an orphanage in Algiers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/eleven-killed-in-algeria-orphanage-fire?traffic_source=rss"
+    },
+    {
       "time": "2026-07-16T16:13:25Z",
       "text": "<strong>Vance says Israeli campaign tried to sway US opinion against Iran diplomacy</strong> -- The US vice-president also said he faced &amp;#039;vicious&amp;#039; personal attacks over his diplomatic outreach to end war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/16/vance-says-israeli-campaign-tried-to-sway-us-opinion-against-iran-diplomacy?traffic_source=rss"
@@ -773,6 +783,26 @@
       "link": "https://www.aljazeera.com/news/2026/7/16/us-or-iran-who-needs-a-new-truce-deal?traffic_source=rss"
     },
     {
+      "time": "2026-07-16T17:22:31Z",
+      "text": "<strong>Italian officials handed jail terms for Genoa bridge disaster that killed 43</strong> -- The ex-head of Italy&#x27;s motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-16T11:48:49Z",
+      "text": "<strong>Iran targets military bases as US launches wave of strikes</strong> -- Explosions were heard across Iran overnight, shortly after neighbouring Gulf states began to report attacks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c2lq1ed28jxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-16T17:56:47Z",
+      "text": "<strong>At least one dead in Texas floods ravaging same area where campers died</strong> -- The same area devastated by floods last year - causing more than 130 deaths, including those at Camp Mystic - is once again being hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-15T21:21:19Z",
+      "text": "<strong>Russian attacks kill 14 as Ukraine hits Black Sea oil tankers</strong> -- Civilian casualties are reported in a number of Ukrainian regions, while Kyiv hits 20 Russian vessels in the Black Sea. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c8929jv8kdzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-07-16T12:31:08Z",
       "text": "<strong>Palestinians in Gaza search through homes destroyed by Israeli strikes</strong> -- Palestinians are inspecting the damage in Nuseirat after Israeli strikes reduced their homes to rubble. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/palestinians-in-gaza-search-through-homes-destroyed-by-israeli-strikes?traffic_source=rss"
@@ -791,16 +821,6 @@
       "time": "2026-07-16T16:10:40Z",
       "text": "<strong>Italian officials handed jail terms for Genoa bridge disaster that killed 43</strong> -- The ex-head of Italy&#x27;s motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-16T11:48:49Z",
-      "text": "<strong>Iran targets military bases as US launches wave of strikes</strong> -- Explosions were heard across Iran overnight, shortly after neighbouring Gulf states began to report attacks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c2lq1ed28jxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-15T21:21:19Z",
-      "text": "<strong>Russian attacks kill 14 as Ukraine hits Black Sea oil tankers</strong> -- Civilian casualties are reported in a number of Ukrainian regions, while Kyiv hits 20 Russian vessels in the Black Sea. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c8929jv8kdzo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-16T10:27:59Z",
@@ -831,26 +851,6 @@
       "time": "2026-07-16T08:26:24Z",
       "text": "<strong>US releases video of strikes on Iran</strong> -- US releases video of strikes on Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/us-releases-video-of-strikes-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-16T08:23:40Z",
-      "text": "<strong>US strikes Iran, tanker, as Tehran hits Kuwait, Jordan: What\u2019s the latest</strong> -- Strikes have hit closer to Tehran for the first time since the latest wave of attacks started. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/16/us-strikes-iran-tanker-as-tehran-hits-kuwait-jordan-whats-the-latest?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-16T08:18:23Z",
-      "text": "<strong>US launches new attacks on Iran as Tehran targets Gulf sites</strong> -- Iran&amp;#039;s Health Ministry has said at least 35 people have been killed and more than 300 injured since fighting resumed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/16/us-launches-new-attacks-on-iran-as-tehran-targets-gulf-sites?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-16T04:18:22Z",
-      "text": "<strong>Former US Ambassador says Iran miscalculated Trump\u2019s resolve</strong> -- Nightly strikes between the US and Iran have been the heaviest since the Memorandum of Understanding (MOU) agreement. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/former-us-ambassador-says-iran-miscalculated-trumps-resolve?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-15T23:35:39Z",
-      "text": "<strong>A Cold War bunker gets a luxury makeover as &#x27;doomsday&#x27; condos</strong> -- A former Canadian government nuclear bomb shelter in rural Nova Scotia may soon be home to the country\u2019s first large-scale luxury survival shelter. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn4d3lpjkggo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,11 @@
   ],
   "newsFeed": [
     {
-      "title": "Vance says Israeli campaign tried to sway US opinion against Iran diplomacy",
-      "description": "The US vice-president also said he faced &#039;vicious&#039; personal attacks over his diplomatic outreach to end war.",
-      "link": "https://www.aljazeera.com/news/2026/7/16/vance-says-israeli-campaign-tried-to-sway-us-opinion-against-iran-diplomacy?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-16T16:13:25Z",
+      "title": "At least one dead in Texas floods ravaging same area where campers died",
+      "description": "The same area devastated by floods last year - causing more than 130 deaths, including those at Camp Mystic - is once again being hit.",
+      "link": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-16T17:56:47Z",
       "tier": 2
     },
     {
@@ -1225,7 +1225,31 @@
       "description": "The ex-head of Italy's motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse.",
       "link": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-07-16T16:10:40Z",
+      "time": "2026-07-16T17:22:31Z",
+      "tier": 2
+    },
+    {
+      "title": "US approves nearly $2bn in weapons sale to Saudi Arabia",
+      "description": "The sale intends to bolster Saudi air defence systems as the kingdom risks escalation with the Iran-backed Houthis.",
+      "link": "https://www.aljazeera.com/news/2026/7/16/us-approves-nearly-2bn-in-weapons-sale-to-saudi-arabia?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-16T17:22:09Z",
+      "tier": 2
+    },
+    {
+      "title": "Eleven killed in Algeria orphanage fire",
+      "description": "Eleven people were killed and 19 injured after a fire tore through an orphanage in Algiers.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/eleven-killed-in-algeria-orphanage-fire?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-16T16:56:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Vance says Israeli campaign tried to sway US opinion against Iran diplomacy",
+      "description": "The US vice-president also said he faced &#039;vicious&#039; personal attacks over his diplomatic outreach to end war.",
+      "link": "https://www.aljazeera.com/news/2026/7/16/vance-says-israeli-campaign-tried-to-sway-us-opinion-against-iran-diplomacy?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-16T16:13:25Z",
       "tier": 2
     },
     {
@@ -1253,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Palestinians in Gaza search through homes destroyed by Israeli strikes",
-      "description": "Palestinians are inspecting the damage in Nuseirat after Israeli strikes reduced their homes to rubble.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/palestinians-in-gaza-search-through-homes-destroyed-by-israeli-strikes?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-16T12:31:08Z",
-      "tier": 2
-    },
-    {
       "title": "US strikes first tanker with missiles as it enforces new blockade",
       "description": "The US military targeted an unladen oil tanker which it said was heading for the key Iranian oil terminal on Kharg island.",
       "link": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&at_campaign=rss",
@@ -1269,27 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Iran claims strikes on US bases, warns of wider attacks on region",
-      "description": "Iran claims strikes on US bases, warns of wider attacks on region",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/iran-claims-strikes-on-us-bases-warns-of-wider-attacks-on-region?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-16T12:00:45Z",
-      "tier": 2
-    },
-    {
       "title": "Iran targets military bases as US launches wave of strikes",
       "description": "Explosions were heard across Iran overnight, shortly after neighbouring Gulf states began to report attacks.",
       "link": "https://www.bbc.co.uk/news/articles/c2lq1ed28jxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-16T11:48:49Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018Destroyed my whole life\u2019: Lebanese families wiped out in Israeli attacks",
-      "description": "Hussein Saleh describes an Israeli air attack in Tyre that killed his family, including his wife and his only child.",
-      "link": "https://www.aljazeera.com/features/2026/7/16/destroyed-my-whole-life-lebanese-families-wiped-out-in-israeli?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-16T11:40:05Z",
       "tier": 2
     },
     {
@@ -1309,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 16, 2026 shows the interim arrangement to contain the war is under severe strain: AP reports the U.S. carried out another large wave of strikes and blockade-related actions against Iran, while Iran responded with missile and drone fire toward Bahrain and Kuwait, with no immediate confirmed Gulf fatalities from those latest attacks. The latest firmly sourced cumulative casualty figures I found remain 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as carried by Al Jazeera\u2019s tracker, 14 U.S. service members killed per AP/Pentagon reporting, 26 Israelis killed per Al Jazeera\u2019s tracker, and 1 confirmed Gulf fatality from AP\u2019s March 24 reporting. For military activity, the strongest official cumulative strike figure located is CENTCOM commander Brad Cooper\u2019s May 14 testimony citing more than 1,450 strikes, while official March 23 and Navy May 2026 fact sheets confirm at least 9,000 combat flights and the involvement of two carrier strike groups.",
+  "summary": "Confirmed reporting available today is sparse on fresh cumulative totals. The clearest updated figure is the U.S. military death toll, which AP reported on July 13, 2026 had risen to 14 service members based on the official Pentagon/CENTCOM tally. For broader war casualties, the most specific named-source cumulative figures still readily available are Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Ministry of Health at 3,468 killed and more than 26,500 injured in Iran, and 26 killed in Israel. AP also reported on July 16 that the interim ceasefire had collapsed and that U.S.-Iran strikes had resumed around the Strait of Hormuz, but it did not provide newer confirmed cumulative casualty or strike totals.",
   "briefings": [
     {
       "date": "2026-07-16",
       "day": 138,
-      "summary": "Confirmed reporting on July 16, 2026 shows the interim arrangement to contain the war is under severe strain: AP reports the U.S. carried out another large wave of strikes and blockade-related actions against Iran, while Iran responded with missile and drone fire toward Bahrain and Kuwait, with no immediate confirmed Gulf fatalities from those latest attacks. The latest firmly sourced cumulative casualty figures I found remain 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as carried by Al Jazeera\u2019s tracker, 14 U.S. service members killed per AP/Pentagon reporting, 26 Israelis killed per Al Jazeera\u2019s tracker, and 1 confirmed Gulf fatality from AP\u2019s March 24 reporting. For military activity, the strongest official cumulative strike figure located is CENTCOM commander Brad Cooper\u2019s May 14 testimony citing more than 1,450 strikes, while official March 23 and Navy May 2026 fact sheets confirm at least 9,000 combat flights and the involvement of two carrier strike groups."
+      "summary": "Confirmed reporting available today is sparse on fresh cumulative totals. The clearest updated figure is the U.S. military death toll, which AP reported on July 13, 2026 had risen to 14 service members based on the official Pentagon/CENTCOM tally. For broader war casualties, the most specific named-source cumulative figures still readily available are Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Ministry of Health at 3,468 killed and more than 26,500 injured in Iran, and 26 killed in Israel. AP also reported on July 16 that the interim ceasefire had collapsed and that U.S.-Iran strikes had resumed around the Strait of Hormuz, but it did not provide newer confirmed cumulative casualty or strike totals."
     },
     {
       "date": "2026-07-15",
