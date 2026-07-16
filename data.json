@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-16T20:11:52Z",
+  "lastUpdated": "2026-07-16T21:17:52Z",
   "dayCount": 138,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "5,238+",
-    "cost": "$33.7B+"
+    "strikes": "~12,300",
+    "killed": "3,536+",
+    "cost": "$22.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.7 billion+",
-    "dailyBurnRate": "~$244M/day",
+    "totalCost": "$22.1 billion+",
+    "dailyBurnRate": "~$160M/day",
     "daysOfOps": 138,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-16",
-          "source": "LLM-verified (Department of War briefing March 2, 2026: two carrier strike groups moved toward launch points for Operation Epic Fury. No newer official source found in retrieved set changing the deployed carrier count.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury pages show Abraham Lincoln CSG and George H.W. Bush CSG in theater. Example sources: https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4499878/us-blockade-of-iran-reaches-milestone-of-redirecting-100-ships/ and https://www.centcom.mil/OPERATIONS-AND-EXERCISES/EPIC-FURY/?dvpTag=GSF&dvpmoduleid=41413)"
         },
         {
           "id": "destroyers",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-07-16",
-          "source": "LLM-verified (U.S. Department of Defense transcript on Operation Midnight Hammer: 'more than two dozen' Tomahawk land attack cruise missiles; minimum confirmed count 24)"
+          "source": "LLM-verified (DoD transcript on strike details said a U.S. submarine launched more than two dozen Tomahawk land attack cruise missiles. Using 24 as the confirmed floor would understate; because field requires a number and current database is 24, confirmed reference is 'more than two dozen' from DoD transcript: https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-16",
-          "source": "LLM-verified (CENTCOM Fact Sheet dated March 23, 2026: 'Combat Flights: 9,000+'; no newer confirmed cumulative sorties total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights. https://www.centcom.mil/Portals/6/Documents/Publications/260401-Fact%20Sheet.pdf)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 3000,
+          "quantity": 9,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-07-14",
-          "source": "LLM-verified (CENTCOM posture statement, June 2026: integrated architecture intercepted over 6,000 one-way attack drones and more than 1,500 ballistic missiles aimed at U.S. forces, Israel, and Arab partners)"
+          "lastUpdated": "2026-07-16",
+          "source": "LLM-verified (Confirmed visible count from June 2 and June 5 CENTCOM releases: 3 Bahrain intercepts on June 2 plus 6 interceptions on June 5 = 9. This is only a confirmed minimum, not a full war-to-date total. Sources: https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4507109/us-partner-forces-defend-against-aggressive-iranian-behavior/ and https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4510668/centcom-forces-defeat-missiles-drones-launched-by-iran/)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "3,000 \u00d7 $4,000,000 each",
-        "cost": "$12,000,000,000"
+        "detail": "9 \u00d7 $4,000,000 each",
+        "cost": "$36,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran has broadened maritime pressure, with renewed attacks tied to commercial shipping in and near the Strait of Hormuz, prompting additional U.S. strikes and blockade enforcement actions per CENTCOM releases of June 26-27, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran resumed missile and drone attacks against U.S. military assets in Kuwait, Bahrain, and Jordan, according to Al Jazeera citing CENTCOM and Iranian statements on July 16, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 16, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Renewed U.S. strikes on Iranian targets around the Strait of Hormuz after attacks on commercial shipping.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on Jul. 13 reported U.S. wounded in the war reached 414, with most traumatic brain injuries, though this field was not requested for database update.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on Jul. 14 reported Iran struck shipping and launched attacks toward Kuwait, Bahrain and Jordan as the interim peace deal unraveled.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-07-16T20:40:53Z",
+      "text": "<strong>The hardest party to manage in the Iran talks isn\u2019t Iran</strong> -- Washington&amp;#039;s spoiler problem sits inside its own alliance, and the spoiler playbook was never written for friends. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/7/16/the-hardest-party-to-manage-in-the-iran-talks-isnt-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-16T20:30:29Z",
+      "text": "<strong>Syria says it foiled Hezbollah weapons shipment</strong> -- Syrian authorities say they intercepted a shipment of missiles and drones allegedly destined for Hezbollah in Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/syria-says-it-foiled-hezbollah-weapons-shipment?traffic_source=rss"
+    },
+    {
       "time": "2026-07-16T20:03:58Z",
       "text": "<strong>Syria seizes advanced weapons it says were bound for Lebanon\u2019s Hezbollah</strong> -- Hezbollah denies activity in Syria after interception of arms shipment including missiles, rockets and drones via Iraq. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/16/syria-seizes-advanced-weapons-it-says-were-bound-for-lebanons-hezbollah?traffic_source=rss"
@@ -841,16 +851,6 @@
       "time": "2026-07-16T16:10:40Z",
       "text": "<strong>Italian officials handed jail terms for Genoa bridge disaster that killed 43</strong> -- The ex-head of Italy&#x27;s motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-16T10:27:59Z",
-      "text": "<strong>\u2018Safe passage\u2019: The fatal ambiguity at the heart of the Hormuz MoU</strong> -- The vague language of the US-Iran MoU made the present escalation in the Strait of Hormuz all but inevitable. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/7/16/safe-passage-the-fatal-ambiguity-at-the-heart-of-the-hormuz-mou?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-16T09:36:38Z",
-      "text": "<strong>Yemen is edging closer to renewed confrontation</strong> -- The Iranian aircraft incident has exposed a fragile calm that may not survive a wider regional escalation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/7/16/yemen-is-edging-closer-to-renewed-confrontation?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "The hardest party to manage in the Iran talks isn\u2019t Iran",
+      "description": "Washington&#039;s spoiler problem sits inside its own alliance, and the spoiler playbook was never written for friends.",
+      "link": "https://www.aljazeera.com/opinions/2026/7/16/the-hardest-party-to-manage-in-the-iran-talks-isnt-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-16T20:40:53Z",
+      "tier": 2
+    },
+    {
+      "title": "Syria says it foiled Hezbollah weapons shipment",
+      "description": "Syrian authorities say they intercepted a shipment of missiles and drones allegedly destined for Hezbollah in Lebanon.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/syria-says-it-foiled-hezbollah-weapons-shipment?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-16T20:30:29Z",
+      "tier": 2
+    },
+    {
       "title": "Syria seizes advanced weapons it says were bound for Lebanon\u2019s Hezbollah",
       "description": "Hezbollah denies activity in Syria after interception of arms shipment including missiles, rockets and drones via Iraq.",
       "link": "https://www.aljazeera.com/news/2026/7/16/syria-seizes-advanced-weapons-it-says-were-bound-for-lebanons-hezbollah?traffic_source=rss",
@@ -1301,14 +1317,6 @@
       "tier": 2
     },
     {
-      "title": "Data breach reportedly targets India\u2019s Kudankulam nuclear power plant",
-      "description": "Purported blueprints of parts of India&#039;s largest plant exposed by World Leaks ransomware group, Reuters reports.",
-      "link": "https://www.aljazeera.com/news/2026/7/16/data-breach-reportedly-targets-indias-kudankulam-nuclear-power-plant?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-16T14:46:12Z",
-      "tier": 2
-    },
-    {
       "title": "US strikes first tanker with missiles as it enforces new blockade",
       "description": "The US military targeted an unladen oil tanker which it said was heading for the key Iranian oil terminal on Kharg island.",
       "link": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&at_campaign=rss",
@@ -1333,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 15-16, 2026 shows the war has re-escalated around the Strait of Hormuz: Reuters and AP reported fresh U.S. strike waves on Iranian coastal defense, missile, command and surveillance targets including Bandar Abbas and Greater Tunb, while Iran threatened wider retaliation against regional infrastructure and maritime traffic. The most current confirmed U.S. fatality figure is 14 service members killed, per AP citing the official Pentagon/CENTCOM tally on July 13. For broader cumulative war totals, the latest confirmed figures I could verify in retrieved sources remain the established baselines from earlier official or major-media trackers: 3,468 Iranian deaths and more than 26,500 wounded from Iranian official reporting, 26 Israeli deaths and 29 Gulf-state deaths from Al Jazeera\u2019s June 7 tracker, and at least 13,000 targets struck from CENTCOM\u2019s April 6 Operation Epic Fury fact sheet.",
+  "summary": "Confirmed reporting as of July 16, 2026 shows the war has re-escalated after the late-June ceasefire frayed: AP reports the official U.S. military death toll has risen to 14, while Al Jazeera\u2019s June 10 casualty tracker still lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states; Al Jazeera also reported today that Iran\u2019s Health Ministry says at least 35 people have been killed and more than 300 injured since fighting resumed last week, but that figure appears to describe only the renewed phase rather than the full cumulative war total. CENTCOM\u2019s latest public releases confirm additional U.S. strikes on Iran on June 26, June 27, June 10, and June 9 in response to attacks on shipping and U.S. assets, while the April 1 Operation Epic Fury fact sheet remains the clearest official aggregate operations snapshot, listing 12,300+ targets struck and 13,000+ combat flights.",
   "briefings": [
     {
       "date": "2026-07-16",
       "day": 138,
-      "summary": "Confirmed reporting on July 15-16, 2026 shows the war has re-escalated around the Strait of Hormuz: Reuters and AP reported fresh U.S. strike waves on Iranian coastal defense, missile, command and surveillance targets including Bandar Abbas and Greater Tunb, while Iran threatened wider retaliation against regional infrastructure and maritime traffic. The most current confirmed U.S. fatality figure is 14 service members killed, per AP citing the official Pentagon/CENTCOM tally on July 13. For broader cumulative war totals, the latest confirmed figures I could verify in retrieved sources remain the established baselines from earlier official or major-media trackers: 3,468 Iranian deaths and more than 26,500 wounded from Iranian official reporting, 26 Israeli deaths and 29 Gulf-state deaths from Al Jazeera\u2019s June 7 tracker, and at least 13,000 targets struck from CENTCOM\u2019s April 6 Operation Epic Fury fact sheet."
+      "summary": "Confirmed reporting as of July 16, 2026 shows the war has re-escalated after the late-June ceasefire frayed: AP reports the official U.S. military death toll has risen to 14, while Al Jazeera\u2019s June 10 casualty tracker still lists 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states; Al Jazeera also reported today that Iran\u2019s Health Ministry says at least 35 people have been killed and more than 300 injured since fighting resumed last week, but that figure appears to describe only the renewed phase rather than the full cumulative war total. CENTCOM\u2019s latest public releases confirm additional U.S. strikes on Iran on June 26, June 27, June 10, and June 9 in response to attacks on shipping and U.S. assets, while the April 1 Operation Epic Fury fact sheet remains the clearest official aggregate operations snapshot, listing 12,300+ targets struck and 13,000+ combat flights."
     },
     {
       "date": "2026-07-15",
