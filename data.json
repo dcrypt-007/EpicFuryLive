@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-17T11:41:05Z",
+  "lastUpdated": "2026-07-17T14:03:26Z",
   "dayCount": 139,
   "banner": {
-    "strikes": "~1,450",
+    "strikes": "~23,800",
     "killed": "3,509+",
-    "cost": "$21.4B+"
+    "cost": "$23.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.4 billion+",
-    "dailyBurnRate": "~$154M/day",
+    "totalCost": "$23.4 billion+",
+    "dailyBurnRate": "~$168M/day",
     "daysOfOps": 139,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-17",
-          "source": "LLM-verified (No current confirmed official cumulative deployment figure found beyond older surge reporting; retaining database value is unsupported, so null would be stricter, but accessible reporting only confirms thousands plus tens of thousands already in region without operation-specific total)"
+          "source": "LLM-verified (Adm. Brad Cooper testimony to Senate Armed Services Committee, May 14, 2026: '50,000-plus service men and women deployed to the Central Region.' This is regional deployment, not operation-specific only.)"
         },
         {
           "id": "intel_cyber",
@@ -243,8 +243,8 @@
             "B-2 Spirit sortie",
             "bomber sortie"
           ],
-          "lastUpdated": "2026-07-16",
-          "source": "LLM-verified (DoD/CENTCOM reporting on Operation Midnight Hammer confirms seven B-2 Spirits in the June 21 strike package; no cumulative sorties total found)"
+          "lastUpdated": "2026-07-17",
+          "source": "LLM-verified (CENTCOM-hosted Operation Midnight Hammer video states the June 21 operation included seven B-2 Spirits; no larger cumulative Epic Fury B-2 sortie total confirmed in accessible reporting.)"
         },
         {
           "id": "mop_bunker_busters",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-17",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' reports over 8,500 aircraft sorties. This is an Israeli official figure and not U.S.-only fighter sorties.)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 139 days",
-        "cost": "$1,042,500,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 139 days",
+        "cost": "$3,475,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported satellite imagery showing damage inside Bushehr nuclear power plant from strikes between July 7 and July 12.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran launched retaliatory missile and drone attacks at Gulf states including Qatar and Kuwait; AP reported damage to a Kuwaiti power and desalination facility.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 17, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported continued U.S. strikes on southern Iran on July 17, including bridges, port infrastructure, and energy-related sites.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 17, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "A drone targeted a tanker in the Persian Gulf off Basra on July 16, 2026, indicating continued maritime risk in Gulf shipping lanes, according to AP.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. continued strikes around the Strait of Hormuz and enforced a renewed blockade of Iranian ports, with Bandar Abbas and Greater Tunb among reported targets, according to Reuters/AP.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran threatened broader attacks on regional infrastructure if the U.S. strikes bridges and power plants, according to AP reporting on July 16, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera RSS headline says U.S. Vice President Vance accused the Israeli campaign of trying to sway U.S. opinion against Iran diplomacy.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-07-17T13:16:57Z",
+      "text": "<strong>UN urges probe into deaths in Pakistani-administered Kashmir unrest</strong> -- Kashmir clashes have killed 31 since June, leading UN rights chief Volker Turk to appeal for calm. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/17/un-urges-probe-into-deaths-in-pakistani-administered-kashmir-unrest?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-17T13:10:50Z",
+      "text": "<strong>Satellite images show damage inside Iran\u2019s Bushehr nuclear power plant</strong> -- Satellite images reveal strikes between July 7 and 12 on Iran\u2019s largest nuclear power plant. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/17/satellite-images-show-damage-inside-irans-bushehr-nuclear-power-plant?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-17T11:26:39Z",
+      "text": "<strong>Why is the US attacking southern Iran\u2019s civilian infrastructure?</strong> -- Analysts say the goals range from targeting Iran&amp;#039;s supply lines to curbing its influence in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/17/why-is-the-us-attacking-southern-irans-civilian-infrastructure?traffic_source=rss"
+    },
+    {
       "time": "2026-07-17T08:57:56Z",
       "text": "<strong>US strikes destroy key bridges, tower in southern Iran</strong> -- US strikes destroy key bridges, tower in southern Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/17/us-strikes-destroy-key-bridges-tower-in-southern-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-17T10:57:50Z",
+      "text": "<strong>Iran accuses US of hitting civilian infrastructure</strong> -- The US military says its attacks were intended to &quot;further degrade Iranian military capabilities&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-17T13:45:02Z",
+      "text": "<strong>Uganda suspends school trips after 20 pupils die in bus crash</strong> -- Thousands are killed on Uganda&#x27;s roads each year but this is one of its deadliest accidents involving children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c151gegwqv1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-17T05:09:14Z",
+      "text": "<strong>Olympic cyclist admits to driving despite ban after crash that killed wife</strong> -- Rohan Dennis pleaded guilty to driving while disqualified after police pulled him over last month. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c62q3ywep1ro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-16T17:22:31Z",
+      "text": "<strong>Italian officials handed jail terms for Genoa bridge disaster that killed 43</strong> -- The ex-head of Italy&#x27;s motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-16T21:22:09Z",
+      "text": "<strong>JD Vance accuses Israel of &#x27;manipulating&#x27; US public opinion to prolong Iran war</strong> -- The US vice president says he thinks some Israeli politicians are trying to detail efforts to end the conflict. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1m107yj327o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-16T22:08:13Z",
+      "text": "<strong>At least one dead in Texas floods ravaging same area where campers died</strong> -- The same area devastated by floods last year&#x27;s floods, which caused more than 130 deaths, is once again being hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-17T08:18:13Z",
@@ -783,26 +828,6 @@
       "link": "https://www.aljazeera.com/news/2026/7/17/iea-chief-warns-strait-of-hormuz-crisis-threatens-global-energy-security?traffic_source=rss"
     },
     {
-      "time": "2026-07-17T10:57:50Z",
-      "text": "<strong>US launches new strikes as Iran says civilian infrastructure hit</strong> -- Tehran says the US strikes hit bridges, while the US boards a ship in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-17T05:09:14Z",
-      "text": "<strong>Olympic cyclist admits to driving despite ban after crash that killed wife</strong> -- Rohan Dennis pleaded guilty to driving while disqualified after police pulled him over last month. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c62q3ywep1ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-16T17:22:31Z",
-      "text": "<strong>Italian officials handed jail terms for Genoa bridge disaster that killed 43</strong> -- The ex-head of Italy&#x27;s motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-16T21:22:09Z",
-      "text": "<strong>JD Vance accuses Israel of &#x27;manipulating&#x27; US public opinion to prolong Iran war</strong> -- The US vice president says he thinks some Israeli politicians are trying to detail efforts to end the conflict. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1m107yj327o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-07-17T00:50:09Z",
       "text": "<strong>Falling debris from intercepted Iranian strikes sparks fires in Kuwait</strong> -- Moment a projectile struck a border area between Kuwait and Iraq, sparking a fire and sending thick smoke into the sky. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/17/falling-debris-from-intercepted-iranian-strikes-sparks-fires-in-kuwait?traffic_source=rss"
@@ -826,31 +851,6 @@
       "time": "2026-07-16T21:02:11Z",
       "text": "<strong>Iran says seven killed in latest US strikes, warns war \u2018will spread\u2019</strong> -- Reported attacks on bridges, rail and communications infrastructure come as both sides harden their positions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/16/us-mounts-sixth-straight-night-of-attacks-as-iran-warns-of-wider-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-17T06:21:58Z",
-      "text": "<strong>US launches new strikes as Iran says civilian infrastructure hit</strong> -- Tehran says the US strikes hit bridges, while the US boards a ship in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-16T20:40:53Z",
-      "text": "<strong>The hardest party to manage in the Iran talks isn\u2019t Iran</strong> -- Washington&amp;#039;s spoiler problem sits inside its own alliance, and the spoiler playbook was never written for friends. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/7/16/the-hardest-party-to-manage-in-the-iran-talks-isnt-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-16T20:30:29Z",
-      "text": "<strong>Syria says it foiled Hezbollah weapons shipment</strong> -- Syrian authorities say they intercepted a shipment of missiles and drones allegedly destined for Hezbollah in Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/16/syria-says-it-foiled-hezbollah-weapons-shipment?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-16T20:03:58Z",
-      "text": "<strong>Syria seizes advanced weapons it says were bound for Lebanon\u2019s Hezbollah</strong> -- Hezbollah denies activity in Syria after interception of arms shipment including missiles, rockets and drones via Iraq. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/16/syria-seizes-advanced-weapons-it-says-were-bound-for-lebanons-hezbollah?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-17T03:21:07Z",
-      "text": "<strong>US launches new wave of strikes on Iran as tensions escalate over Strait of Hormuz</strong> -- Iran says US strikes hit bridges in the country in an apparent escalation, while the US boards a ship in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,40 @@
   ],
   "newsFeed": [
     {
-      "title": "US launches new strikes as Iran says civilian infrastructure hit",
-      "description": "Tehran says the US strikes hit bridges, while the US boards a ship in the Strait of Hormuz.",
+      "title": "Uganda suspends school trips after 20 pupils die in bus crash",
+      "description": "Thousands are killed on Uganda's roads each year but this is one of its deadliest accidents involving children.",
+      "link": "https://www.bbc.co.uk/news/articles/c151gegwqv1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-17T13:45:02Z",
+      "tier": 2
+    },
+    {
+      "title": "UN urges probe into deaths in Pakistani-administered Kashmir unrest",
+      "description": "Kashmir clashes have killed 31 since June, leading UN rights chief Volker Turk to appeal for calm.",
+      "link": "https://www.aljazeera.com/news/2026/7/17/un-urges-probe-into-deaths-in-pakistani-administered-kashmir-unrest?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-17T13:16:57Z",
+      "tier": 2
+    },
+    {
+      "title": "Satellite images show damage inside Iran\u2019s Bushehr nuclear power plant",
+      "description": "Satellite images reveal strikes between July 7 and 12 on Iran\u2019s largest nuclear power plant.",
+      "link": "https://www.aljazeera.com/news/2026/7/17/satellite-images-show-damage-inside-irans-bushehr-nuclear-power-plant?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-17T13:10:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Why is the US attacking southern Iran\u2019s civilian infrastructure?",
+      "description": "Analysts say the goals range from targeting Iran&#039;s supply lines to curbing its influence in the Strait of Hormuz.",
+      "link": "https://www.aljazeera.com/news/2026/7/17/why-is-the-us-attacking-southern-irans-civilian-infrastructure?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-17T11:26:39Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran accuses US of hitting civilian infrastructure",
+      "description": "The US military says its attacks were intended to \"further degrade Iranian military capabilities\".",
       "link": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-17T10:57:50Z",
@@ -1229,51 +1261,11 @@
       "tier": 2
     },
     {
-      "title": "Gulf states come under Iranian fire as US strikes intensify",
-      "description": "Tehran targets multiple countries across the region as the wave of US strikes on Iran steps up.",
-      "link": "https://www.aljazeera.com/news/2026/7/17/gulf-states-come-under-iranian-fire-as-us-strikes-intensify?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-17T08:18:13Z",
-      "tier": 2
-    },
-    {
-      "title": "US attacks southern Iran, as Tehran hits Gulf countries: What\u2019s the latest?",
-      "description": "Iran struck Bahrain, Qatar, Oman, Jordan and Syria in retaliation for US strikes.",
-      "link": "https://www.aljazeera.com/news/2026/7/17/us-attacks-southern-iran-as-tehran-hits-gulf-countries-whats-the-latest?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-17T07:56:06Z",
-      "tier": 2
-    },
-    {
       "title": "Olympic cyclist admits to driving despite ban after crash that killed wife",
       "description": "Rohan Dennis pleaded guilty to driving while disqualified after police pulled him over last month.",
       "link": "https://www.bbc.co.uk/news/articles/c62q3ywep1ro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-17T05:09:14Z",
-      "tier": 2
-    },
-    {
-      "title": "US bombards Iran in sixth-straight night of attacks",
-      "description": "The US has made good on threats to bomb civilian infrastructure in Iran in its sixth-straight night of attacks.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/17/us-bombards-iran-in-sixth-straight-night-of-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-17T04:57:08Z",
-      "tier": 2
-    },
-    {
-      "title": "Iranian sources say US strikes hit civilian infrastructure",
-      "description": "Iranian social media accounts, and local sources allege that US strikes caused casualties and hit infrastructure.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/17/aje-onl-nf_iranian-sources-say-us-strikes-hit-infrastructure-160726?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-17T02:35:55Z",
-      "tier": 2
-    },
-    {
-      "title": "IEA chief warns Strait of Hormuz crisis threatens global energy security",
-      "description": "Fatih Birol says &#039;oil security is still a critical issue&#039; and world should be &#039;worried&#039; if situation does not improve.",
-      "link": "https://www.aljazeera.com/news/2026/7/17/iea-chief-warns-strait-of-hormuz-crisis-threatens-global-energy-security?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-17T02:25:55Z",
       "tier": 2
     },
     {
@@ -1317,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 17, 2026 shows the U.S. expanded its renewed air campaign into a sixth straight night of strikes, hitting bridges, energy infrastructure and collapsing a tower at Iran\u2019s Chabahar port, while Iran retaliated with missile attacks on regional states including Qatar and caused damage to a Kuwaiti desalination facility. The latest accessible confirmed cumulative tallies remain 3,468 killed and more than 26,500 injured in Iran per Iran\u2019s Health Ministry via Al Jazeera\u2019s June 10 tracker, 26 Israelis killed, and 14 U.S. military deaths per AP\u2019s July 13 report citing the official Pentagon tally. For operational metrics, accessible confirmed official-style reporting supports 2 U.S. carrier strike groups and 3 destroyers in theater, and CENTCOM commander Brad Cooper said by May 14 the campaign had involved more than 1,450 strikes.",
+  "summary": "Confirmed reporting on July 17, 2026 shows the U.S. expanding its renewed campaign in southern Iran with strikes on bridges, port infrastructure and other sites, while Iran retaliated with missile and drone attacks across the Gulf; AP reported damage to a Kuwaiti power and desalination plant, and Al Jazeera reported satellite evidence of strike damage inside Bushehr nuclear facilities. The most recent accessible confirmed cumulative casualty figures remain 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera\u2019s June 10 tracker, 14 U.S. military deaths by the Pentagon tally cited by AP on July 13, 26 Israeli deaths from Israeli health authorities as cited by Al Jazeera, and one Gulf fatality reported by AP in attacks on UAE-associated shipping.",
   "briefings": [
     {
       "date": "2026-07-17",
       "day": 139,
-      "summary": "Confirmed reporting on July 17, 2026 shows the U.S. expanded its renewed air campaign into a sixth straight night of strikes, hitting bridges, energy infrastructure and collapsing a tower at Iran\u2019s Chabahar port, while Iran retaliated with missile attacks on regional states including Qatar and caused damage to a Kuwaiti desalination facility. The latest accessible confirmed cumulative tallies remain 3,468 killed and more than 26,500 injured in Iran per Iran\u2019s Health Ministry via Al Jazeera\u2019s June 10 tracker, 26 Israelis killed, and 14 U.S. military deaths per AP\u2019s July 13 report citing the official Pentagon tally. For operational metrics, accessible confirmed official-style reporting supports 2 U.S. carrier strike groups and 3 destroyers in theater, and CENTCOM commander Brad Cooper said by May 14 the campaign had involved more than 1,450 strikes."
+      "summary": "Confirmed reporting on July 17, 2026 shows the U.S. expanding its renewed campaign in southern Iran with strikes on bridges, port infrastructure and other sites, while Iran retaliated with missile and drone attacks across the Gulf; AP reported damage to a Kuwaiti power and desalination plant, and Al Jazeera reported satellite evidence of strike damage inside Bushehr nuclear facilities. The most recent accessible confirmed cumulative casualty figures remain 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera\u2019s June 10 tracker, 14 U.S. military deaths by the Pentagon tally cited by AP on July 13, 26 Israeli deaths from Israeli health authorities as cited by Al Jazeera, and one Gulf fatality reported by AP in attacks on UAE-associated shipping."
     },
     {
       "date": "2026-07-16",
