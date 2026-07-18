@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-18T13:49:40Z",
+  "lastUpdated": "2026-07-18T15:15:07Z",
   "dayCount": 140,
   "banner": {
-    "strikes": "~8,450",
-    "killed": "3,557+",
-    "cost": "$19.6B+"
+    "strikes": "~13,000",
+    "killed": "65+",
+    "cost": "$20.7B+"
   },
   "humanCost": {
     "iranDeaths": "50",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "3468",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$19.6 billion+",
-    "dailyBurnRate": "~$140M/day",
+    "totalCost": "$20.7 billion+",
+    "dailyBurnRate": "~$148M/day",
     "daysOfOps": 140,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-18",
-          "source": "LLM-verified (IDF, April 1, 2026: more than 800 Israeli Air Force strike sorties had been carried out in Operation Roaring Lion.)"
+          "source": "LLM-verified (DoD/CENTCOM fact sheet dated March 28, 2026: 'Combat Flights: 11,000+'. This is the closest official cumulative sorties-style metric found, but includes all combat flights, not just fighters.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran said on July 18, 2026 that it was suspending commitments under the interim deal with the U.S., signaling higher risk of further escalation, per AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian strikes on Gulf-state infrastructure expanded in mid-July 2026, including reported attacks affecting desalination and power/water facilities in Kuwait and Bahrain, per AP/Al Jazeera accessible reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 18, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Al Jazeera/BBC July 16-17, 2026: U.S. strikes expanded to southern Iran and satellite imagery/reporting indicated damage inside Bushehr nuclear power plant.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP July 17, 2026: A water desalination plant in Kuwait was damaged in the latest Iranian strike wave.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP July 17, 2026: Iran launched missiles into Qatar and Kuwait and also targeted Bahrain and Kuwait after expanded U.S. strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-07-18T14:23:33Z",
+      "text": "<strong>Iraq signs 48 deals with US companies during PM\u2019s visit to Washington</strong> -- The deals include rebuilding the long-defunct Iraq-Syria crude oil pipeline, which could bypass the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/18/iraq-signs-48-deals-with-us-companies-during-pms-visit-to-washington?traffic_source=rss"
+    },
+    {
       "time": "2026-07-18T12:59:26Z",
       "text": "<strong>Iran accuses US of striking critical infrastructure as war intensifies</strong> -- The conflict has been escalating since US President Donald Trump declared 10 days ago the peace deal with Iran is over. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/18/iran-accuses-us-of-striking-critical-infrastructure-as-war-intensifies?traffic_source=rss"
@@ -778,12 +783,7 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/a-seventh-night-of-us-strikes-cuts-water-to-villages-in-irans-south?traffic_source=rss"
     },
     {
-      "time": "2026-07-18T03:49:08Z",
-      "text": "<strong>At least 14 dead after minibus rolls off mountain road in Peru</strong> -- At least 14 people have been killed and five injured after a minibus in the Peruvian Andes lost control on a curve. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/at-least-14-dead-after-minibus-rolls-off-mountain-road-in-peru?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-18T11:48:44Z",
+      "time": "2026-07-18T15:04:25Z",
       "text": "<strong>US strikes hit Iran for seventh consecutive night</strong> -- Iran has retaliated against US allies in the region, with Kuwait reporting that a power and water plant had been hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss"
     },
@@ -801,6 +801,16 @@
       "time": "2026-07-17T23:56:08Z",
       "text": "<strong>What this desert city can teach the world about tackling heat deaths</strong> -- Maricopa County in Arizona has some of the hottest temperatures, but it has reduced the number of heat-related deaths. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cgl3lnpxy6no?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-18T03:49:08Z",
+      "text": "<strong>At least 14 dead after minibus rolls off mountain road in Peru</strong> -- At least 14 people have been killed and five injured after a minibus in the Peruvian Andes lost control on a curve. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/at-least-14-dead-after-minibus-rolls-off-mountain-road-in-peru?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-18T11:48:44Z",
+      "text": "<strong>US strikes hit Iran for seventh consecutive night</strong> -- Iran has retaliated against US allies in the region, with Kuwait reporting that a power and water plant had been hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-18T02:09:00Z",
@@ -841,16 +851,6 @@
       "time": "2026-07-17T14:56:26Z",
       "text": "<strong>At least two dead in Texas floods ravaging same area where campers died</strong> -- The same area devastated by floods last year&#x27;s floods, which caused more than 130 deaths, is once again being hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-18T00:00:00Z",
-      "text": "<strong>Iran war live: Kuwait, Bahrain and Jordan under attack from Iran</strong> -- Intense fighting between the two sides as US attacks shift further into Iran\u2019s interior. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/7/18/iran-war-live-us-and-iran-exchange-attacks-for-7th-consecutive-night?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-17T22:11:12Z",
-      "text": "<strong>US launches seventh straight night of strikes on Iran</strong> -- The US military says it&amp;#039;s degrading Iran&amp;#039;s military but has been accused by Tehran of targeting civilian infrastructure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/17/us-launches-seventh-straight-night-of-strikes-on-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "US strikes hit Iran for seventh consecutive night",
+      "description": "Iran has retaliated against US allies in the region, with Kuwait reporting that a power and water plant had been hit.",
+      "link": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-18T15:04:25Z",
+      "tier": 2
+    },
+    {
+      "title": "Iraq signs 48 deals with US companies during PM\u2019s visit to Washington",
+      "description": "The deals include rebuilding the long-defunct Iraq-Syria crude oil pipeline, which could bypass the Strait of Hormuz.",
+      "link": "https://www.aljazeera.com/news/2026/7/18/iraq-signs-48-deals-with-us-companies-during-pms-visit-to-washington?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-18T14:23:33Z",
+      "tier": 2
+    },
+    {
       "title": "Iran accuses US of striking critical infrastructure as war intensifies",
       "description": "The conflict has been escalating since US President Donald Trump declared 10 days ago the peace deal with Iran is over.",
       "link": "https://www.aljazeera.com/news/2026/7/18/iran-accuses-us-of-striking-critical-infrastructure-as-war-intensifies?traffic_source=rss",
@@ -1226,14 +1242,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/ukrainian-strikes-hit-russian-logistics-center?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-18T12:57:21Z",
-      "tier": 2
-    },
-    {
-      "title": "US strikes hit Iran for seventh consecutive night",
-      "description": "Iran has retaliated against US allies in the region, with Kuwait reporting that a power and water plant had been hit.",
-      "link": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-18T11:48:44Z",
       "tier": 2
     },
     {
@@ -1269,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "At least 14 dead after minibus rolls off mountain road in Peru",
-      "description": "At least 14 people have been killed and five injured after a minibus in the Peruvian Andes lost control on a curve.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/at-least-14-dead-after-minibus-rolls-off-mountain-road-in-peru?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-18T03:49:08Z",
-      "tier": 2
-    },
-    {
       "title": "What this desert city can teach the world about tackling heat deaths",
       "description": "Maricopa County in Arizona has some of the hottest temperatures, but it has reduced the number of heat-related deaths.",
       "link": "https://www.bbc.co.uk/news/articles/cgl3lnpxy6no?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 18, 2026 shows the U.S. and Iran exchanging attacks for a seventh straight night centered on the Strait of Hormuz. AP reported that Iranian authorities now say at least 50 people have been killed and more than 500 wounded in recent U.S. strikes, while the official U.S. military death toll remains 14. Kuwait reported damage and injuries from Iranian strikes on a desalination plant and oil infrastructure, underscoring the widening regional risk. Official historical baselines available in public briefings still show more than 1,450 U.S. strikes by mid-May and more than 800 Israeli Air Force strike sorties and over 7,000 objectives hit in IDF reporting from early April, but current official cumulative counts for several weapons categories and present-force deployments were not publicly confirmed in accessible sources today.",
+  "summary": "Confirmed reporting on July 18, 2026 indicates the war has re-escalated sharply after the collapse of the interim U.S.-Iran arrangement. AP reported that Iranian authorities now say at least 50 people have been killed and more than 500 wounded in U.S. strikes over the past three weeks, while the U.S. military\u2019s official death toll stands at 14 service members. Regional spillover is increasing, with recent Iranian strikes reported against Gulf-state infrastructure and maritime targets. On the military activity side, the latest accessible official CENTCOM fact sheet still provides the clearest cumulative strike metric, listing 13,000+ targets struck as of April 6, 2026; more granular current munitions-use counts were not confirmed in accessible official reporting.",
   "briefings": [
     {
       "date": "2026-07-18",
       "day": 140,
-      "summary": "Confirmed reporting on July 18, 2026 shows the U.S. and Iran exchanging attacks for a seventh straight night centered on the Strait of Hormuz. AP reported that Iranian authorities now say at least 50 people have been killed and more than 500 wounded in recent U.S. strikes, while the official U.S. military death toll remains 14. Kuwait reported damage and injuries from Iranian strikes on a desalination plant and oil infrastructure, underscoring the widening regional risk. Official historical baselines available in public briefings still show more than 1,450 U.S. strikes by mid-May and more than 800 Israeli Air Force strike sorties and over 7,000 objectives hit in IDF reporting from early April, but current official cumulative counts for several weapons categories and present-force deployments were not publicly confirmed in accessible sources today."
+      "summary": "Confirmed reporting on July 18, 2026 indicates the war has re-escalated sharply after the collapse of the interim U.S.-Iran arrangement. AP reported that Iranian authorities now say at least 50 people have been killed and more than 500 wounded in U.S. strikes over the past three weeks, while the U.S. military\u2019s official death toll stands at 14 service members. Regional spillover is increasing, with recent Iranian strikes reported against Gulf-state infrastructure and maritime targets. On the military activity side, the latest accessible official CENTCOM fact sheet still provides the clearest cumulative strike metric, listing 13,000+ targets struck as of April 6, 2026; more granular current munitions-use counts were not confirmed in accessible official reporting."
     },
     {
       "date": "2026-07-17",
