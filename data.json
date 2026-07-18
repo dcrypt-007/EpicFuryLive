@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-18T19:31:43Z",
+  "lastUpdated": "2026-07-18T21:06:26Z",
   "dayCount": 140,
   "banner": {
-    "strikes": "~9,000",
-    "killed": "65+",
-    "cost": "$21.6B+"
+    "strikes": "~13,000",
+    "killed": "89+",
+    "cost": "$21.8B+"
   },
   "humanCost": {
     "iranDeaths": "50",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "30",
+    "civilianDeaths": "168",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.6 billion+",
-    "dailyBurnRate": "~$154M/day",
+    "totalCost": "$21.8 billion+",
+    "dailyBurnRate": "~$156M/day",
     "daysOfOps": 140,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-18",
-          "source": "LLM-verified (USNI News Fleet and Marine Tracker, June 29, 2026: Abraham Lincoln Carrier Strike Group operating in the Arabian Sea in support of Operation Epic Fury. No second U.S. carrier in theater confirmed in searched July sources.)"
+          "source": "LLM-verified (AP, Jan. 26, 2026: USS Abraham Lincoln carrier strike group deployed to Middle East; no newer confirmed count found today \u2014 https://apnews.com/article/58e6da912f9167df94f913d7dafe5af4)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-07-18",
-          "source": "LLM-verified (CENTCOM press release, May 7, 2026, named USS Truxtun, USS Rafael Peralta, and USS Mason transiting/operating in the Hormuz area; no newer official theater-wide destroyer count found.)"
+          "source": "LLM-verified (AP, Jan. 26, 2026: carrier deployed with three destroyers; no newer confirmed count found today \u2014 https://apnews.com/article/58e6da912f9167df94f913d7dafe5af4)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-18",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet dated Mar. 23, 2026: 'Combat Flights: 9,000+'; using 9000 as minimum confirmed cumulative figure.)"
+          "source": "LLM-verified (DoD Operation Epic Fury Fact Sheet, Mar. 28, 2026: Combat Flights 11,000+ \u2014 https://media.defense.gov/2026/Mar/29/2003904283/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-THE-FIRST-29-DAYS.PDF?stream=top)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. blockade/enforcement campaign in and around the Strait of Hormuz is continuing, increasing risks to commercial shipping and regional infrastructure.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported the U.S.-Iran interim ceasefire has collapsed, with a seventh straight night of U.S. strikes and Iranian attacks on Bahrain, Kuwait, Qatar, Jordan and shipping linked to Gulf states.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Jul. 18 that two U.S. service members were killed and one was missing after an Iranian attack on a base in Jordan, signaling renewed direct risk to U.S. ground forces.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported the U.S. reimposed a naval blockade on Iranian ports and said the conflict is increasingly focused on control of the Strait of Hormuz.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iranian attacks on Qatar, Bahrain and Kuwait, including damage to a Kuwaiti desalination plant and injury reports in Qatar and Kuwait.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported continued U.S.-Iran escalation around the Strait of Hormuz, including a seventh straight night of U.S. strikes and Iranian missile/drone attacks on Gulf states.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported at least nine people killed in an apparent strike on the Iranian Kurdish dissident group Komala in northern Iraq on July 17, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -793,6 +793,16 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/ukrainian-strikes-hit-russian-logistics-center?traffic_source=rss"
     },
     {
+      "time": "2026-07-18T20:33:06Z",
+      "text": "<strong>Two US troops killed and one missing after Iranian attack in Jordan</strong> -- Iran and the US have traded strikes as hostilities re-escalated this week, with Tehran targeting US military facilities across the Gulf region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-18T11:10:20Z",
+      "text": "<strong>Laos says it can&#x27;t determine cause of  tourist deaths linked to methanol</strong> -- Officials say they have no evidence of poisoning over the 2024 deaths because autopsies were not conducted. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cdx8rj99endo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-07-18T11:10:09Z",
       "text": "<strong>Ukrainian drone attacks on Russia kill at least 8, wound dozens</strong> -- Russian officials say strikes on retailer&amp;#039;s warehouses caused civilian casualties; Kyiv says sites used to make drones. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/18/ukrainian-drone-attacks-on-russia-kill-at-least-8-wound-dozens?traffic_source=rss"
@@ -806,11 +816,6 @@
       "time": "2026-07-18T16:56:34Z",
       "text": "<strong>US strikes hit Iran for seventh consecutive night</strong> -- Iran has retaliated against US allies in the region, with Kuwait reporting that a power and water plant had been hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-18T11:10:20Z",
-      "text": "<strong>Laos says it can&#x27;t determine cause of  tourist deaths linked to methanol</strong> -- Officials say they have no evidence of poisoning over the 2024 deaths because autopsies were not conducted. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cdx8rj99endo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-17T05:09:14Z",
@@ -846,11 +851,6 @@
       "time": "2026-07-18T02:09:00Z",
       "text": "<strong>Iranian official says the policy of negotiating during war is over</strong> -- Mohsen Rezaee has warned that if the US continues bombing Iran, Tehran will escalate its response into full-scale war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/iranian-official-says-the-policy-of-negotiating-during-war-is-over?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-16T18:52:01Z",
-      "text": "<strong>Watch: What to know as Genoa bridge disaster trial ends</strong> -- More than 50 defendants have been on trial in Italy over the 2018 bridge collapse which killed 43 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cgewd07ee3go?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1214,10 +1214,10 @@
   "newsFeed": [
     {
       "title": "Two US troops killed and one missing after Iranian attack in Jordan",
-      "description": "The announcement comes after Jordan said it intercepted 10 Iranian missiles fired into its airspace overnight into Saturday.",
+      "description": "Iran and the US have traded strikes as hostilities re-escalated this week, with Tehran targeting US military facilities across the Gulf region.",
       "link": "https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-07-18T19:14:09Z",
+      "time": "2026-07-18T20:33:06Z",
       "tier": 2
     },
     {
@@ -1293,22 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "Ukrainian drone attacks on Russia kill at least 8, wound dozens",
-      "description": "Russian officials say strikes on retailer&#039;s warehouses caused civilian casualties; Kyiv says sites used to make drones.",
-      "link": "https://www.aljazeera.com/news/2026/7/18/ukrainian-drone-attacks-on-russia-kill-at-least-8-wound-dozens?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-18T11:10:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Indian police forcibly hospitalise activist after 20-day hunger strike",
-      "description": "Police said protesters tried to stop them from seizing Sonam Wangchuk, causing a &#039;slight commotion&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/7/18/indian-police-forcibly-hospitalise-activist-after-20-day-hunger-strike?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-18T10:48:09Z",
-      "tier": 2
-    },
-    {
       "title": "What this desert city can teach the world about tackling heat deaths",
       "description": "Maricopa County in Arizona has some of the hottest temperatures, but it has reduced the number of heat-related deaths.",
       "link": "https://www.bbc.co.uk/news/articles/cgl3lnpxy6no?at_medium=RSS&at_campaign=rss",
@@ -1333,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 18, 2026 shows the June ceasefire framework has effectively collapsed: AP reported Iranian authorities say at least 50 people have been killed and more than 500 wounded in U.S. strikes over the past three weeks, while the Pentagon\u2019s previously reported official U.S. death toll stood at 14 before AP reported two more U.S. troops killed and one missing in Jordan on July 18. U.S. strikes have expanded to bridges, coastal military sites and other infrastructure in and around the Strait of Hormuz, while Iran has retaliated with missile, drone and maritime attacks affecting Jordan and multiple Gulf states, including an AP-confirmed Gulf fatality of one mariner.",
+  "summary": "Confirmed reporting on July 18, 2026 shows a sharp renewed escalation: AP reported that two U.S. troops were killed and one was missing after an Iranian attack on a base in Jordan, while Iranian authorities said U.S. strikes over the past three weeks have killed at least 50 people and wounded more than 500. AP and Al Jazeera both reported that the interim U.S.-Iran ceasefire has effectively collapsed, with CENTCOM describing a seventh straight night of strikes and Iran retaliating across Gulf states and against shipping tied to the UAE. For cumulative war metrics, the newest official U.S. strike total I found remains CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while the latest widely cited Israeli death figure located was 24 killed from Times of Israel\u2019s war-in-numbers roundup.",
   "briefings": [
     {
       "date": "2026-07-18",
       "day": 140,
-      "summary": "Confirmed reporting on July 18, 2026 shows the June ceasefire framework has effectively collapsed: AP reported Iranian authorities say at least 50 people have been killed and more than 500 wounded in U.S. strikes over the past three weeks, while the Pentagon\u2019s previously reported official U.S. death toll stood at 14 before AP reported two more U.S. troops killed and one missing in Jordan on July 18. U.S. strikes have expanded to bridges, coastal military sites and other infrastructure in and around the Strait of Hormuz, while Iran has retaliated with missile, drone and maritime attacks affecting Jordan and multiple Gulf states, including an AP-confirmed Gulf fatality of one mariner."
+      "summary": "Confirmed reporting on July 18, 2026 shows a sharp renewed escalation: AP reported that two U.S. troops were killed and one was missing after an Iranian attack on a base in Jordan, while Iranian authorities said U.S. strikes over the past three weeks have killed at least 50 people and wounded more than 500. AP and Al Jazeera both reported that the interim U.S.-Iran ceasefire has effectively collapsed, with CENTCOM describing a seventh straight night of strikes and Iran retaliating across Gulf states and against shipping tied to the UAE. For cumulative war metrics, the newest official U.S. strike total I found remains CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while the latest widely cited Israeli death figure located was 24 killed from Times of Israel\u2019s war-in-numbers roundup."
     },
     {
       "date": "2026-07-17",
