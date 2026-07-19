@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-19T03:55:31Z",
+  "lastUpdated": "2026-07-19T06:42:48Z",
   "dayCount": 141,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "1,530+",
-    "cost": "$22.1B+"
+    "strikes": "~13,000",
+    "killed": "3,510+",
+    "cost": "$23.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "24",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "500+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1464",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$22.1 billion+",
-    "dailyBurnRate": "~$157M/day",
+    "totalCost": "$23.1 billion+",
+    "dailyBurnRate": "~$164M/day",
     "daysOfOps": 141,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-19",
-          "source": "LLM-verified (CENTCOM imagery/operation page shows USS Abraham Lincoln carrier operations in support of Operation Epic Fury; no newer confirmed count of more than one carrier strike group found.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury over five weeks)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-19",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'.)"
+          "source": "LLM-verified (DoD/CENTCOM fact sheet lists 13,000+ combat flights/targets struck in early April reporting; no newer official cumulative sortie figure found)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 141 days",
-        "cost": "$987,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 141 days",
+        "cost": "$1,974,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -753,19 +753,34 @@
   ],
   "developments": [
     {
+      "time": "2026-07-19T05:08:20Z",
+      "text": "<strong>US bombs Iran for eighth-straight night</strong> -- The US has launched a new wave of strikes on Iran after two American soldiers were killed by Iranian strikes in Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/us-bombs-iran-for-eighth-straight-night?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-19T04:36:47Z",
+      "text": "<strong>Moment Iranian missiles hit airbase in Jordan killing US soldiers</strong> -- A video captures the moment an Iranian missile struck Jordan\u2019s Muwaffaq Salti Airbase, killing two US service members. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/moment-iranian-missiles-hit-airbase-in-jordan-killing-us-soldiers?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-19T04:32:28Z",
+      "text": "<strong>At least one killed as Russian ballistic missiles hit Kyiv</strong> -- Russian missiles struck Kyiv and the surrounding region early on Sunday, killing at least one person and injuring nine. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/at-least-one-killed-as-russian-ballistic-missiles-hit-kyiv?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-19T04:16:08Z",
+      "text": "<strong>US hits Iran for eighth consecutive night, Iran returns fire on Gulf bases</strong> -- Sirik and Hajiabad areas in Iran&amp;#039;s Hormozgan province targeted as US says revenge for killing of two soldiers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/19/us-launches-eighth-consecutive-night-of-attacks-on-iran?traffic_source=rss"
+    },
+    {
       "time": "2026-07-19T00:00:00Z",
-      "text": "<strong>Iran war live: US launches new strikes; Trump mourns killed soldiers</strong> -- US president says death of soldiers in Jordan a &amp;#039;sad thing&amp;#039; as US forces attack Iran for the eighth consecutive night. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: US bombs Iran; Trump says soldiers killed \u2018a sad thing\u2019</strong> -- US forces attack Iran for the eighth consecutive night as Iran says MoU &amp;#039;suspended&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/19/iran-war-live-us-launches-new-strikes-trump-mourns-killed-soldiers?traffic_source=rss"
     },
     {
-      "time": "2026-07-18T18:55:05Z",
-      "text": "<strong>Iran supreme leader warns of \u2018unforgettable lessons\u2019 if US attacks continue</strong> -- Mojtaba Khamenei says Trump&amp;#039;s signature is &amp;#039;worthless&amp;#039; and that &amp;#039;bullying&amp;#039; is a core element of US foreign policy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/18/iran-supreme-leader-warns-of-unforgettable-lessons-if-us-attacks-continue?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-19T00:18:47Z",
-      "text": "<strong>Two US troops killed and one missing after Iranian attack in Jordan</strong> -- Iran and the US have traded strikes as hostilities re-escalated this week, with Tehran targeting US military facilities across the Gulf region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&at_campaign=rss"
+      "time": "2026-07-19T05:10:57Z",
+      "text": "<strong>US and Iran exchange strikes after two US deaths in Jordan attack</strong> -- US forces target Iranian sites for the eighth night in a row, while Iran says it fired drones at the US military in Kuwait. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-18T11:10:20Z",
@@ -781,6 +796,16 @@
       "time": "2026-07-16T18:52:01Z",
       "text": "<strong>Watch: What to know as Genoa bridge disaster trial ends</strong> -- More than 50 defendants have been on trial in Italy over the 2018 bridge collapse which killed 43 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/cgewd07ee3go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-18T18:55:05Z",
+      "text": "<strong>Iran supreme leader warns of \u2018unforgettable lessons\u2019 if US attacks continue</strong> -- Mojtaba Khamenei says Trump&amp;#039;s signature is &amp;#039;worthless&amp;#039; and that &amp;#039;bullying&amp;#039; is a core element of US foreign policy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/18/iran-supreme-leader-warns-of-unforgettable-lessons-if-us-attacks-continue?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-19T00:18:47Z",
+      "text": "<strong>Two US troops killed and one missing after Iranian attack in Jordan</strong> -- Iran and the US have traded strikes as hostilities re-escalated this week, with Tehran targeting US military facilities across the Gulf region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-18T18:09:15Z",
@@ -826,31 +851,6 @@
       "time": "2026-07-18T12:57:21Z",
       "text": "<strong>Ukrainian strikes hit Russian logistics center</strong> -- Ukrainian strikes hit Russian logistics center <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/18/ukrainian-strikes-hit-russian-logistics-center?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-18T20:33:06Z",
-      "text": "<strong>Two US troops killed and one missing after Iranian attack in Jordan</strong> -- Iran and the US have traded strikes as hostilities re-escalated this week, with Tehran targeting US military facilities across the Gulf region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-18T11:10:09Z",
-      "text": "<strong>Ukrainian drone attacks on Russia kill at least 8, wound dozens</strong> -- Russian officials say strikes on retailer&amp;#039;s warehouses caused civilian casualties; Kyiv says sites used to make drones. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/18/ukrainian-drone-attacks-on-russia-kill-at-least-8-wound-dozens?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-18T10:48:09Z",
-      "text": "<strong>Indian police forcibly hospitalise activist after 20-day hunger strike</strong> -- Police said protesters tried to stop them from seizing Sonam Wangchuk, causing a &amp;#039;slight commotion&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/18/indian-police-forcibly-hospitalise-activist-after-20-day-hunger-strike?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-18T16:56:34Z",
-      "text": "<strong>US strikes hit Iran for seventh consecutive night</strong> -- Iran has retaliated against US allies in the region, with Kuwait reporting that a power and water plant had been hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-18T15:04:25Z",
-      "text": "<strong>US strikes hit Iran for seventh consecutive night</strong> -- Iran has retaliated against US allies in the region, with Kuwait reporting that a power and water plant had been hit. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,27 +1213,51 @@
   ],
   "newsFeed": [
     {
-      "title": "Two US troops killed and one missing after Iranian attack in Jordan",
-      "description": "Iran and the US have traded strikes as hostilities re-escalated this week, with Tehran targeting US military facilities across the Gulf region.",
-      "link": "https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&at_campaign=rss",
+      "title": "US and Iran exchange strikes after two US deaths in Jordan attack",
+      "description": "US forces target Iranian sites for the eighth night in a row, while Iran says it fired drones at the US military in Kuwait.",
+      "link": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-07-19T00:18:47Z",
+      "time": "2026-07-19T05:10:57Z",
       "tier": 2
     },
     {
-      "title": "Iran war live: US launches new strikes; Trump mourns killed soldiers",
-      "description": "US president says death of soldiers in Jordan a &#039;sad thing&#039; as US forces attack Iran for the eighth consecutive night.",
+      "title": "US bombs Iran for eighth-straight night",
+      "description": "The US has launched a new wave of strikes on Iran after two American soldiers were killed by Iranian strikes in Jordan.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/us-bombs-iran-for-eighth-straight-night?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-19T05:08:20Z",
+      "tier": 2
+    },
+    {
+      "title": "Moment Iranian missiles hit airbase in Jordan killing US soldiers",
+      "description": "A video captures the moment an Iranian missile struck Jordan\u2019s Muwaffaq Salti Airbase, killing two US service members.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/moment-iranian-missiles-hit-airbase-in-jordan-killing-us-soldiers?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-19T04:36:47Z",
+      "tier": 2
+    },
+    {
+      "title": "At least one killed as Russian ballistic missiles hit Kyiv",
+      "description": "Russian missiles struck Kyiv and the surrounding region early on Sunday, killing at least one person and injuring nine.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/at-least-one-killed-as-russian-ballistic-missiles-hit-kyiv?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-19T04:32:28Z",
+      "tier": 2
+    },
+    {
+      "title": "US hits Iran for eighth consecutive night, Iran returns fire on Gulf bases",
+      "description": "Sirik and Hajiabad areas in Iran&#039;s Hormozgan province targeted as US says revenge for killing of two soldiers.",
+      "link": "https://www.aljazeera.com/news/2026/7/19/us-launches-eighth-consecutive-night-of-attacks-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-19T04:16:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war live: US bombs Iran; Trump says soldiers killed \u2018a sad thing\u2019",
+      "description": "US forces attack Iran for the eighth consecutive night as Iran says MoU &#039;suspended&#039;.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/19/iran-war-live-us-launches-new-strikes-trump-mourns-killed-soldiers?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-19T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran supreme leader warns of \u2018unforgettable lessons\u2019 if US attacks continue",
-      "description": "Mojtaba Khamenei says Trump&#039;s signature is &#039;worthless&#039; and that &#039;bullying&#039; is a core element of US foreign policy.",
-      "link": "https://www.aljazeera.com/news/2026/7/18/iran-supreme-leader-warns-of-unforgettable-lessons-if-us-attacks-continue?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-18T18:55:05Z",
       "tier": 2
     },
     {
@@ -1261,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 18-19, 2026 shows a renewed escalation: CENTCOM/AP said two additional U.S. service members were killed in Jordan, bringing the official U.S. military death toll in the Iran war to 16, while the U.S. launched fresh strikes on Iran for an eighth consecutive night after the Jordan attack. Iranian authorities, as cited by AP and Al Jazeera, say recent U.S. strikes over the past three weeks have killed at least 50 people and wounded more than 500. For cumulative operational metrics, the latest official accessible CENTCOM fact sheet still lists 12,300+ targets struck and 13,000+ combat flights as of April 1, 2026; I did not find newer confirmed official totals for carrier groups, destroyers, troop strength, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptors.",
+  "summary": "Confirmed reporting on July 19, 2026 shows the war has sharply re-escalated after two additional U.S. service members were killed in Jordan, bringing the Pentagon/CENTCOM-confirmed U.S. death toll to 16, while AP reports the U.S. has launched new retaliatory strikes on Iran for an eighth straight night. For cumulative war totals still supported by named sources, Iran\u2019s Health Ministry figure carried by Al Jazeera remains 3,468 killed and more than 26,500 wounded in Iran, while Al Jazeera\u2019s tracker lists 26 Israelis killed. I could not verify newer official cumulative totals for Iranian civilian-only deaths, Gulf-state deaths, U.S. personnel deployed, destroyers currently in theater, or cumulative munitions expenditure beyond official confirmation that Tomahawks and other systems were used.",
   "briefings": [
     {
       "date": "2026-07-19",
       "day": 141,
-      "summary": "Confirmed reporting on July 18-19, 2026 shows a renewed escalation: CENTCOM/AP said two additional U.S. service members were killed in Jordan, bringing the official U.S. military death toll in the Iran war to 16, while the U.S. launched fresh strikes on Iran for an eighth consecutive night after the Jordan attack. Iranian authorities, as cited by AP and Al Jazeera, say recent U.S. strikes over the past three weeks have killed at least 50 people and wounded more than 500. For cumulative operational metrics, the latest official accessible CENTCOM fact sheet still lists 12,300+ targets struck and 13,000+ combat flights as of April 1, 2026; I did not find newer confirmed official totals for carrier groups, destroyers, troop strength, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptors."
+      "summary": "Confirmed reporting on July 19, 2026 shows the war has sharply re-escalated after two additional U.S. service members were killed in Jordan, bringing the Pentagon/CENTCOM-confirmed U.S. death toll to 16, while AP reports the U.S. has launched new retaliatory strikes on Iran for an eighth straight night. For cumulative war totals still supported by named sources, Iran\u2019s Health Ministry figure carried by Al Jazeera remains 3,468 killed and more than 26,500 wounded in Iran, while Al Jazeera\u2019s tracker lists 26 Israelis killed. I could not verify newer official cumulative totals for Iranian civilian-only deaths, Gulf-state deaths, U.S. personnel deployed, destroyers currently in theater, or cumulative munitions expenditure beyond official confirmation that Tomahawks and other systems were used."
     },
     {
       "date": "2026-07-18",
