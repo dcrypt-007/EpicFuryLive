@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-07-19T21:07:22Z",
+  "lastUpdated": "2026-07-19T22:09:01Z",
   "dayCount": 141,
   "banner": {
-    "strikes": "~13,100",
-    "killed": "66+",
-    "cost": "$25.6B+"
+    "strikes": "~7,000",
+    "killed": "67+",
+    "cost": "$24.9B+"
   },
   "humanCost": {
     "iranDeaths": "50",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "16",
+    "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "500+",
+    "iranWounded": "517+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "2362",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$25.6 billion+",
-    "dailyBurnRate": "~$181M/day",
+    "totalCost": "$24.9 billion+",
+    "dailyBurnRate": "~$177M/day",
     "daysOfOps": 141,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -159,7 +159,7 @@
             "Global Hawk"
           ],
           "lastUpdated": "2026-07-19",
-          "source": "LLM-verified (CENTCOM March 28, 2026 fact sheet confirms MQ-9 surveillance and attack drones in use, but no current theater unit count beyond confirmation of at least one operational drone element was found.)"
+          "source": "LLM-verified (CENTCOM fact sheet confirms MQ-9 surveillance and attack drones were employed; only one named active drone type/unit category confirmed in official material (turn5view0).)"
         },
         {
           "id": "comms_space",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-19",
-          "source": "LLM-verified (CENTCOM fact sheet, April 1, 2026: 13,000+ combat flights in Operation Epic Fury (https://www.centcom.mil/Portals/6/Documents/Publications/260401-Fact%20Sheet.pdf))"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; latest official sorties-style figure found (turn1view3/turn5view0).)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP reported renewed U.S. strikes around the Strait of Hormuz, indicating ongoing escalation around shipping and energy infrastructure.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on July 18 reported Kuwait intercepted Iranian missiles, showing continued danger to Gulf infrastructure and bases.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on July 19 reported Iran fired missiles toward Jordan, risking broader regional spillover.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 19, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iranian strike in Jordan killed two U.S. service members, left one missing, and prompted new U.S. punitive strikes.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported continued U.S. strikes on Iranian infrastructure and maritime-related targets tied to the Strait of Hormuz crisis, alongside renewed blockade enforcement.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Recent AP and Al Jazeera reporting indicates the interim ceasefire has collapsed and the U.S. resumed punitive strikes while Iran continued missile/drone attacks across Jordan, Kuwait, Bahrain and nearby Gulf areas.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 18 reported two additional U.S. service members killed in Jordan in an Iranian ballistic missile and drone attack, with one service member missing and four hospitalized.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -778,11 +778,6 @@
       "link": "https://www.aljazeera.com/news/2026/7/19/lebanons-president-joseph-aoun-meets-rubio-ahead-of-trump-talks?traffic_source=rss"
     },
     {
-      "time": "2026-07-19T14:27:53Z",
-      "text": "<strong>Iran attacks US Gulf allies, causing a fire at Kuwait power plant</strong> -- Kuwait and Bahrain report several rounds of Iranian missile, drone attacks; sirens reportedly sound in Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/19/kuwaiti-power-plant-ablaze-as-iran-hits-us-gulf-allies?traffic_source=rss"
-    },
-    {
       "time": "2026-07-19T19:45:12Z",
       "text": "<strong>US soldier killed and one injured after Iranian attack in Iraq</strong> -- The US military reports another death a day after two of its soldiers were killed in Jordan. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss"
@@ -801,6 +796,11 @@
       "time": "2026-07-16T18:52:01Z",
       "text": "<strong>Watch: What to know as Genoa bridge disaster trial ends</strong> -- More than 50 defendants have been on trial in Italy over the 2018 bridge collapse which killed 43 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/cgewd07ee3go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-19T14:27:53Z",
+      "text": "<strong>Iran attacks US Gulf allies, causing a fire at Kuwait power plant</strong> -- Kuwait and Bahrain report several rounds of Iranian missile, drone attacks; sirens reportedly sound in Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/19/kuwaiti-power-plant-ablaze-as-iran-hits-us-gulf-allies?traffic_source=rss"
     },
     {
       "time": "2026-07-19T17:22:23Z",
@@ -1261,14 +1261,6 @@
       "tier": 2
     },
     {
-      "title": "Iran attacks US Gulf allies, causing a fire at Kuwait power plant",
-      "description": "Kuwait and Bahrain report several rounds of Iranian missile, drone attacks; sirens reportedly sound in Jordan.",
-      "link": "https://www.aljazeera.com/news/2026/7/19/kuwaiti-power-plant-ablaze-as-iran-hits-us-gulf-allies?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-19T14:27:53Z",
-      "tier": 2
-    },
-    {
       "title": "Laos says it can't determine cause of  tourist deaths linked to methanol",
       "description": "Officials say they have no evidence of poisoning over the 2024 deaths because autopsies were not conducted.",
       "link": "https://www.bbc.co.uk/news/articles/cdx8rj99endo?at_medium=RSS&at_campaign=rss",
@@ -1293,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 18-19, 2026 shows the war re-intensifying after an Iranian attack in Jordan killed two U.S. service members, bringing the Pentagon-confirmed U.S. death toll to 16, while AP reported Iranian authorities saying at least 50 people were killed and more than 500 wounded in U.S. strikes over the past three weeks. Iran continued missile and drone attacks against Gulf states including Kuwait and Bahrain, with AP also reporting missiles fired toward Jordan, underscoring growing regional spillover. On the force-posture side, the latest official material I found still supports two U.S. carrier groups in the broader theater, while firm current cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, interceptors, and total U.S. personnel deployed were not confirmed in the latest named-source reporting searched.",
+  "summary": "Confirmed reporting on July 19, 2026 shows the conflict intensifying again around the Strait of Hormuz: AP reported Iran says the latest U.S. strikes killed at least 50 people and wounded 517, while the U.S. military said another service member was killed, raising total confirmed U.S. military deaths in the war to 17. AP and Al Jazeera also reported Iranian missile activity against neighboring states including Jordan and Kuwait, underscoring the risk of wider regional spillover. The most recent official operational volume figure found remains CENTCOM\u2019s March 16 fact sheet listing 7,000+ targets struck and 6,500+ combat flights.",
   "briefings": [
     {
       "date": "2026-07-19",
       "day": 141,
-      "summary": "Confirmed reporting on July 18-19, 2026 shows the war re-intensifying after an Iranian attack in Jordan killed two U.S. service members, bringing the Pentagon-confirmed U.S. death toll to 16, while AP reported Iranian authorities saying at least 50 people were killed and more than 500 wounded in U.S. strikes over the past three weeks. Iran continued missile and drone attacks against Gulf states including Kuwait and Bahrain, with AP also reporting missiles fired toward Jordan, underscoring growing regional spillover. On the force-posture side, the latest official material I found still supports two U.S. carrier groups in the broader theater, while firm current cumulative totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, interceptors, and total U.S. personnel deployed were not confirmed in the latest named-source reporting searched."
+      "summary": "Confirmed reporting on July 19, 2026 shows the conflict intensifying again around the Strait of Hormuz: AP reported Iran says the latest U.S. strikes killed at least 50 people and wounded 517, while the U.S. military said another service member was killed, raising total confirmed U.S. military deaths in the war to 17. AP and Al Jazeera also reported Iranian missile activity against neighboring states including Jordan and Kuwait, underscoring the risk of wider regional spillover. The most recent official operational volume figure found remains CENTCOM\u2019s March 16 fact sheet listing 7,000+ targets struck and 6,500+ combat flights."
     },
     {
       "date": "2026-07-18",
