@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-20T00:13:34Z",
+  "lastUpdated": "2026-07-20T04:07:33Z",
   "dayCount": 142,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "97+",
-    "cost": "$25.7B+"
+    "strikes": "~13,500",
+    "killed": "67+",
+    "cost": "$25.1B+"
   },
   "humanCost": {
     "iranDeaths": "50",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "6",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "500+",
+    "iranWounded": "517+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1607",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$25.7 billion+",
-    "dailyBurnRate": "~$181M/day",
+    "totalCost": "$25.1 billion+",
+    "dailyBurnRate": "~$177M/day",
     "daysOfOps": 142,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-07-19",
-          "source": "LLM-verified (CENTCOM fact sheet confirms MQ-9 surveillance and attack drones were employed; only one named active drone type/unit category confirmed in official material (turn5view0).)"
+          "lastUpdated": "2026-07-20",
+          "source": "LLM-verified (CENTCOM commander written testimony, May 14, 2026: established one one-way attack UAS squadron, Task Force Scorpion Strike.)"
         },
         {
           "id": "comms_space",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-07-19",
-          "source": "LLM-verified (AP, May 27, 2026: CSIS analysis said the U.S. fired 1,000-plus Tomahawk missiles at Iran.)"
+          "lastUpdated": "2026-07-20",
+          "source": "LLM-verified (Defense News, March 27, 2026, citing Washington Post reporting and Pentagon context: U.S. had fired over 850 Tomahawk cruise missiles in four weeks of war.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,8 +279,8 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-07-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights.)"
+          "lastUpdated": "2026-07-20",
+          "source": "LLM-verified (CENTCOM commander written testimony, May 14, 2026: 'more than 10,200 sorties' in 38 days of major combat operations.)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/Al Jazeera reported another U.S. service member was killed in Iraq during controlled detonation of a downed Iranian drone, with one additional U.S. service member injured.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported renewed U.S. strikes on Iranian infrastructure and continued Hormuz escalation after the collapse of the interim deal.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on July 20, 2026 that Iran launched an attack targeting Bahrain, home of the U.S. Navy's 5th Fleet.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 19, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera/BBC reporting indicates Iranian attacks and alerts have expanded again across Jordan and Gulf states, sustaining regional spillover risk.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian authorities say U.S. strikes over the past three weeks have killed at least 50 and wounded more than 500, indicating hostilities have re-escalated after the June diplomacy window collapsed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera report the U.S. launched another round of strikes on Iran, marking the eighth consecutive night of U.S. attacks in the latest escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Two U.S. service members were killed and one remains missing after an Iranian ballistic missile/drone attack on a U.S. base in Jordan, according to AP/CENTCOM.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-07-20T02:11:53Z",
+      "text": "<strong>US service member killed during detonation of Iranian drone in Iraq</strong> -- A US soldier has been killed in northern Iraq during a controlled detonation of an Iranian downed drone. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/20/aje-onl-nf_us-soldier-killed-detonation-of-iranian-drone-iraq-190726?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-20T01:48:59Z",
+      "text": "<strong>US bombs Iran for ninth consecutive night as Hormuz tensions escalate</strong> -- Iranian media report blasts in cities in the far north and far south, including Tabriz and Chabahar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/20/us-bombs-iran-for-ninth-consecutive-night-as-hormuz-tensions-escalate?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-20T00:00:00Z",
+      "text": "<strong>Iran war live: US military completes ninth night of strikes on Iran</strong> -- US forces attack Iran for ninth consecutive night as one US soldier killed in northern Iraq. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/20/iran-war-live-us-military-carries-out-another-wave-of-strikes-on-iran?traffic_source=rss"
+    },
+    {
       "time": "2026-07-19T23:49:30Z",
       "text": "<strong>US soldier killed in Iraq during \u2018controlled detonation\u2019 of Iranian drone</strong> -- The death brings the number of US soldiers killed since the start of the US-Israel war on Iran to 17. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/19/us-soldier-killed-in-iraq-during-controlled-detonation-of-iranian-drone?traffic_source=rss"
@@ -766,21 +781,6 @@
       "time": "2026-07-19T20:05:31Z",
       "text": "<strong>The UK gets its seventh prime minister in 10 years</strong> -- Incoming PM Andy Burnham will immediately face foreign policy challenges, including the conflicts in Ukraine and Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/inside-story/2026/7/19/the-uk-gets-its-seventh-prime-minister-in-10-years?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-19T18:29:47Z",
-      "text": "<strong>\u2018Sacred unity\u2019: Iran\u2019s supreme leader calls for calm amid political divides</strong> -- Decree comes after hardline backers of the Iranian government accused officials of treason for signing an MoU with US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/19/sacred-unity-irans-supreme-leader-calls-for-calm-amid-political-divides?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-19T18:27:58Z",
-      "text": "<strong>At least 50 Malian soldiers killed in attack on military convoy</strong> -- At least 50 Malian soldiers were killed after a joint Malian army and Russia&amp;#039;s Africa Corps convoy was ambushed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/at-least-50-malian-soldiers-killed-in-attack-on-military-convoy?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-19T18:24:33Z",
-      "text": "<strong>Lebanon\u2019s President Joseph Aoun meets Rubio ahead of Trump talks</strong> -- Aoun is expected to meet Donald Trump on Tuesday, as Beirut seeks US backing to end Israel-Hezbollah fighting. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/19/lebanons-president-joseph-aoun-meets-rubio-ahead-of-trump-talks?traffic_source=rss"
     },
     {
       "time": "2026-07-19T19:45:12Z",
@@ -801,6 +801,21 @@
       "time": "2026-07-16T18:52:01Z",
       "text": "<strong>Watch: What to know as Genoa bridge disaster trial ends</strong> -- More than 50 defendants have been on trial in Italy over the 2018 bridge collapse which killed 43 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/cgewd07ee3go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-19T18:29:47Z",
+      "text": "<strong>\u2018Sacred unity\u2019: Iran\u2019s supreme leader calls for calm amid political divides</strong> -- Decree comes after hardline backers of the Iranian government accused officials of treason for signing an MoU with US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/19/sacred-unity-irans-supreme-leader-calls-for-calm-amid-political-divides?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-19T18:27:58Z",
+      "text": "<strong>At least 50 Malian soldiers killed in attack on military convoy</strong> -- At least 50 Malian soldiers were killed after a joint Malian army and Russia&amp;#039;s Africa Corps convoy was ambushed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/at-least-50-malian-soldiers-killed-in-attack-on-military-convoy?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-19T18:24:33Z",
+      "text": "<strong>Lebanon\u2019s President Joseph Aoun meets Rubio ahead of Trump talks</strong> -- Aoun is expected to meet Donald Trump on Tuesday, as Beirut seeks US backing to end Israel-Hezbollah fighting. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/19/lebanons-president-joseph-aoun-meets-rubio-ahead-of-trump-talks?traffic_source=rss"
     },
     {
       "time": "2026-07-19T14:27:53Z",
@@ -836,21 +851,6 @@
       "time": "2026-07-19T08:49:56Z",
       "text": "<strong>US launches new Iran strikes after two soldiers killed: What\u2019s the latest?</strong> -- US strikes target Iran&amp;#039;s IRGC after two of its soldiers were killed in Jordan, as Tehran attacks Kuwait and Bahrain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/19/us-launches-new-iran-strikes-after-two-soldiers-killed-whats-the-latest?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-19T13:10:57Z",
-      "text": "<strong>US and Iran trade fire after two US soldiers killed in Jordan</strong> -- Kuwait says an electricity and water plant is on fire after the second such attack in two days. Iran says US strikes hit an under-construction nuclear power plant. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-19T07:28:08Z",
-      "text": "<strong>Russia launches largest ballistic missile attack on Kyiv since start of war</strong> -- Ukraine is particularly vulnerable to ballistic missile attacks due to a shortage of Patriot air defence munitions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/19/russia-launches-largest-ballistic-missile-attack-on-kyiv-since-start-of-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-19T05:08:20Z",
-      "text": "<strong>US bombs Iran for eighth-straight night</strong> -- The US has launched a new wave of strikes on Iran after two American soldiers were killed by Iranian strikes in Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/us-bombs-iran-for-eighth-straight-night?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "US service member killed during detonation of Iranian drone in Iraq",
+      "description": "A US soldier has been killed in northern Iraq during a controlled detonation of an Iranian downed drone.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/20/aje-onl-nf_us-soldier-killed-detonation-of-iranian-drone-iraq-190726?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-20T02:11:53Z",
+      "tier": 2
+    },
+    {
+      "title": "US bombs Iran for ninth consecutive night as Hormuz tensions escalate",
+      "description": "Iranian media report blasts in cities in the far north and far south, including Tabriz and Chabahar.",
+      "link": "https://www.aljazeera.com/news/2026/7/20/us-bombs-iran-for-ninth-consecutive-night-as-hormuz-tensions-escalate?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-20T01:48:59Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war live: US military completes ninth night of strikes on Iran",
+      "description": "US forces attack Iran for ninth consecutive night as one US soldier killed in northern Iraq.",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/20/iran-war-live-us-military-carries-out-another-wave-of-strikes-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-20T00:00:00Z",
+      "tier": 2
+    },
+    {
       "title": "US soldier killed in Iraq during \u2018controlled detonation\u2019 of Iranian drone",
       "description": "The death brings the number of US soldiers killed since the start of the US-Israel war on Iran to 17.",
       "link": "https://www.aljazeera.com/news/2026/7/19/us-soldier-killed-in-iraq-during-controlled-detonation-of-iranian-drone?traffic_source=rss",
@@ -1245,30 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "\u2018Sacred unity\u2019: Iran\u2019s supreme leader calls for calm amid political divides",
-      "description": "Decree comes after hardline backers of the Iranian government accused officials of treason for signing an MoU with US.",
-      "link": "https://www.aljazeera.com/news/2026/7/19/sacred-unity-irans-supreme-leader-calls-for-calm-amid-political-divides?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-19T18:29:47Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 50 Malian soldiers killed in attack on military convoy",
-      "description": "At least 50 Malian soldiers were killed after a joint Malian army and Russia&#039;s Africa Corps convoy was ambushed.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/19/at-least-50-malian-soldiers-killed-in-attack-on-military-convoy?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-19T18:27:58Z",
-      "tier": 2
-    },
-    {
-      "title": "Lebanon\u2019s President Joseph Aoun meets Rubio ahead of Trump talks",
-      "description": "Aoun is expected to meet Donald Trump on Tuesday, as Beirut seeks US backing to end Israel-Hezbollah fighting.",
-      "link": "https://www.aljazeera.com/news/2026/7/19/lebanons-president-joseph-aoun-meets-rubio-ahead-of-trump-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-19T18:24:33Z",
-      "tier": 2
-    },
-    {
       "title": "Laos says it can't determine cause of  tourist deaths linked to methanol",
       "description": "Officials say they have no evidence of poisoning over the 2024 deaths because autopsies were not conducted.",
       "link": "https://www.bbc.co.uk/news/articles/cdx8rj99endo?at_medium=RSS&at_campaign=rss",
@@ -1293,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 19-20, 2026 shows the war intensifying again: CENTCOM announced another U.S. service member was killed in Iraq during a controlled detonation of a downed Iranian drone, bringing official U.S. deaths in the war to 17, while AP reported Iranian authorities say at least 50 people have been killed and more than 500 wounded in recent U.S. strikes. AP also reported the United States resumed another round of strikes as Iran fired toward Jordan and continued attacks affecting Gulf states; however, I did not find current confirmed official totals for several force-deployment and weapons-expended fields, so those remain null.",
+  "summary": "Confirmed reporting on July 20, 2026 shows the war has re-escalated sharply: AP reported the U.S. conducted another round of strikes on Iran after CENTCOM announced a 17th U.S. service member death, caused during the controlled detonation of a downed Iranian drone in Iraq, while Iran responded with attacks including one targeting Bahrain. Iranian authorities cited by AP said the latest rounds of U.S. strikes have killed at least 50 people and wounded 517. For operational totals, the newest official cumulative figure located remains CENTCOM commander Adm. Brad Cooper\u2019s May 14, 2026 Senate testimony reporting more than 10,200 sorties and over 13,500 strikes in the first 38 days of major combat operations; I could not confirm newer official cumulative numbers today for Israeli deaths, current carrier/destroyer counts, total personnel, or several weapons-expended fields, so those remain null.",
   "briefings": [
     {
       "date": "2026-07-20",
       "day": 142,
-      "summary": "Confirmed reporting on July 19-20, 2026 shows the war intensifying again: CENTCOM announced another U.S. service member was killed in Iraq during a controlled detonation of a downed Iranian drone, bringing official U.S. deaths in the war to 17, while AP reported Iranian authorities say at least 50 people have been killed and more than 500 wounded in recent U.S. strikes. AP also reported the United States resumed another round of strikes as Iran fired toward Jordan and continued attacks affecting Gulf states; however, I did not find current confirmed official totals for several force-deployment and weapons-expended fields, so those remain null."
+      "summary": "Confirmed reporting on July 20, 2026 shows the war has re-escalated sharply: AP reported the U.S. conducted another round of strikes on Iran after CENTCOM announced a 17th U.S. service member death, caused during the controlled detonation of a downed Iranian drone in Iraq, while Iran responded with attacks including one targeting Bahrain. Iranian authorities cited by AP said the latest rounds of U.S. strikes have killed at least 50 people and wounded 517. For operational totals, the newest official cumulative figure located remains CENTCOM commander Adm. Brad Cooper\u2019s May 14, 2026 Senate testimony reporting more than 10,200 sorties and over 13,500 strikes in the first 38 days of major combat operations; I could not confirm newer official cumulative numbers today for Israeli deaths, current carrier/destroyer counts, total personnel, or several weapons-expended fields, so those remain null."
     },
     {
       "date": "2026-07-19",
