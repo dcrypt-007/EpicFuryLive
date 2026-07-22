@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-07-22T09:38:51Z",
+  "lastUpdated": "2026-07-22T12:03:11Z",
   "dayCount": 144,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,540+",
-    "cost": "$22.7B+"
+    "strikes": "~12,300",
+    "killed": "38+",
+    "cost": "$25.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$22.7 billion+",
-    "dailyBurnRate": "~$158M/day",
+    "totalCost": "$25.7 billion+",
+    "dailyBurnRate": "~$179M/day",
     "daysOfOps": 144,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-22",
-          "source": "LLM-verified (CENTCOM Project Freedom release, May 3, 2026: support includes 15,000 service members)"
+          "source": "LLM-verified (Senate Armed Services Committee transcript, May 14, 2026: CENTCOM commander testified on behalf of '50,000-plus service men and women deployed to the Central Region')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-22",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' page (April 20, 2026) states 'Over 8,500 aircraft sorties' in the Iran campaign.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+')"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 144 days",
-        "cost": "$1,080,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 144 days",
+        "cost": "$3,600,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/BBC/Al Jazeera reported Defense Secretary Pete Hegseth told senators the war has cost the US $37.5 billion so far.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera on Jul. 21-22 reported CENTCOM completed a 10th and then 11th consecutive night of US strikes on Iran focused on command centers, maritime capabilities, missile/drone launch sites and air defenses.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Jul. 22 reported the US and Iran exchanged fire again across the Middle East, with diplomacy under renewed strain.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 22, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera and BBC reporting indicate Iranian pressure on Gulf shipping and broader regional spillover, including attacks or threats affecting Bahrain, Jordan, Saudi-linked maritime traffic, and Hormuz transit",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and BBC reporting indicate renewed U.S. strikes on Iran after additional U.S. troop deaths and continued contest over the Strait of Hormuz",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian retaliatory missile/drone attacks on Gulf-state targets and nearby waters",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Renewed US strikes after the July 18 death of a US soldier",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-07-22T11:05:39Z",
+      "text": "<strong>US Secretary of State say Iran is in \u2018a lot of trouble\u2019</strong> -- US Secretary of State say Iran is in \u2018a lot of trouble\u2019 <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/us-secretary-of-state-say-iran-is-in-a-lot-of?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-22T09:30:59Z",
+      "text": "<strong>Russia reports injuries after top online retailer Wildberries hit again</strong> -- Company CEO says logistics centres in Krasnodar and Nevinnomyssk evacuated days after workers killed in earlier attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/22/russia-reports-injuries-after-top-online-retailer-wildberries-hit-again?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-22T09:30:08Z",
+      "text": "<strong>Ossoff challenges Hegseth on cost and duration of Iran war</strong> -- Ossoff challenges Hegseth on cost and duration of Iran war <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/ossoff-challenges-hegseth-on-cost-and-duration-of-iran-war?traffic_source=rss"
+    },
+    {
       "time": "2026-07-22T08:43:26Z",
       "text": "<strong>Iran, Gulf hit as Hormuz, Bab al-Mandeb close: What\u2019s the latest?</strong> -- Defense Secretary Pete Hegseth tells US senators that the war has cost the US $37.5bn so far. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/22/iran-gulf-hit-as-hormuz-bab-al-mandeb-close-whats-the-latest?traffic_source=rss"
@@ -778,14 +793,19 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/us-expands-strikes-on-11th-straight-night-of-attacks?traffic_source=rss"
     },
     {
-      "time": "2026-07-22T05:02:51Z",
-      "text": "<strong>Hegseth called a \u2018failure\u2019 over Iran as he reveals $37b cost of war</strong> -- US Defense Secretary Pete Hegseth gets into a heated exchange after being called a failed leader by Michigan Senator. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hegseth-called-a-failure-over-iran-as-he-reveals-37b-cost-of-war?traffic_source=rss"
-    },
-    {
       "time": "2026-07-22T02:15:05Z",
       "text": "<strong>Iran war has cost US $37.5bn so far, Hegseth says, as Pentagon seeks billions more</strong> -- The hearing was disrupted by protests and a shouting match as Hegseth testified at a pivotal time in the war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c70gek2kqyno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-22T10:15:03Z",
+      "text": "<strong>US renews strikes on Iran as Trump threatens to attack underground nuclear site</strong> -- The US president&#x27;s threat to target a key Iranian nuclear site came ahead of the 11th consecutive night of attacks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-22T05:02:51Z",
+      "text": "<strong>Hegseth called a \u2018failure\u2019 over Iran as he reveals $37b cost of war</strong> -- US Defense Secretary Pete Hegseth gets into a heated exchange after being called a failed leader by Michigan Senator. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hegseth-called-a-failure-over-iran-as-he-reveals-37b-cost-of-war?traffic_source=rss"
     },
     {
       "time": "2026-07-22T03:05:08Z",
@@ -831,26 +851,6 @@
       "time": "2026-07-21T20:48:18Z",
       "text": "<strong>Daytime Russian strike kills three in Zaporizhzhia</strong> -- A Russian guided aerial bomb attack on Zaporizhzhia, Ukraine, killed at least three people and injured 13 others. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/21/daytime-russian-strike-kills-three-in-zaporizhzhia?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-21T20:06:57Z",
-      "text": "<strong>Kuwaitis ration electricity after Iranian strikes hit power grid</strong> -- Kuwaitis are rationing electricity after Iranian strikes on power infrastructure are raising fears of outages <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/21/kuwaitis-ration-electricity-after-iranian-strikes-hit-power-grid?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-21T16:10:56Z",
-      "text": "<strong>US launches fresh strikes on Iran, as Trump warns of retaliation for deaths of soldiers</strong> -- Iran says it has hit two ships in the Strait of Hormuz as well as targets in Bahrain and Jordan. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx25wg2x26do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-20T21:30:19Z",
-      "text": "<strong>Yemen&#x27;s Houthis announce &#x27;maritime embargo&#x27; on Saudi Arabia</strong> -- The Houthis say the embargo begins immediately and is a response to a Saudi blockade of ports and airports in Yemen. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cm2gmddx1ldo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-21T19:27:26Z",
-      "text": "<strong>Can mediators broker a truce between the US and Iran?</strong> -- With every new round of attacks raising political cost of compromise, analysts warn the window for peace may be closing. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/21/can-mediators-broker-a-truce-between-the-us-and-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "US Secretary of State say Iran is in \u2018a lot of trouble\u2019",
+      "description": "US Secretary of State say Iran is in \u2018a lot of trouble\u2019",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/us-secretary-of-state-say-iran-is-in-a-lot-of?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-22T11:05:39Z",
+      "tier": 2
+    },
+    {
+      "title": "US renews strikes on Iran as Trump threatens to attack underground nuclear site",
+      "description": "The US president's threat to target a key Iranian nuclear site came ahead of the 11th consecutive night of attacks.",
+      "link": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-22T10:15:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Russia reports injuries after top online retailer Wildberries hit again",
+      "description": "Company CEO says logistics centres in Krasnodar and Nevinnomyssk evacuated days after workers killed in earlier attack.",
+      "link": "https://www.aljazeera.com/news/2026/7/22/russia-reports-injuries-after-top-online-retailer-wildberries-hit-again?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-22T09:30:59Z",
+      "tier": 2
+    },
+    {
+      "title": "Ossoff challenges Hegseth on cost and duration of Iran war",
+      "description": "Ossoff challenges Hegseth on cost and duration of Iran war",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/ossoff-challenges-hegseth-on-cost-and-duration-of-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-22T09:30:08Z",
+      "tier": 2
+    },
+    {
       "title": "Iran, Gulf hit as Hormuz, Bab al-Mandeb close: What\u2019s the latest?",
       "description": "Defense Secretary Pete Hegseth tells US senators that the war has cost the US $37.5bn so far.",
       "link": "https://www.aljazeera.com/news/2026/7/22/iran-gulf-hit-as-hormuz-bab-al-mandeb-close-whats-the-latest?traffic_source=rss",
@@ -1253,22 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "Hegseth called a \u2018failure\u2019 over Iran as he reveals $37b cost of war",
-      "description": "US Defense Secretary Pete Hegseth gets into a heated exchange after being called a failed leader by Michigan Senator.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hegseth-called-a-failure-over-iran-as-he-reveals-37b-cost-of-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-22T05:02:51Z",
-      "tier": 2
-    },
-    {
-      "title": "US renews strikes on Iran as Trump threatens to attack underground nuclear site",
-      "description": "The US president's threat to target a key Iranian nuclear site came ahead of the 11th consecutive night of attacks.",
-      "link": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-22T03:05:08Z",
-      "tier": 2
-    },
-    {
       "title": "Iran war has cost US $37.5bn so far, Hegseth says, as Pentagon seeks billions more",
       "description": "The hearing was disrupted by protests and a shouting match as Hegseth testified at a pivotal time in the war.",
       "link": "https://www.bbc.co.uk/news/articles/c70gek2kqyno?at_medium=RSS&at_campaign=rss",
@@ -1285,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 21-22, 2026, shows the war has sharply re-escalated after the unraveling of the June ceasefire framework: AP reported the U.S. military carried out an 11th straight night of strikes on Iran, while Defense Secretary Pete Hegseth told senators the war has cost the United States about $37.5 billion so far. AP also reported the confirmed U.S. military death toll has risen to 18 service members. The latest widely cited cumulative casualty figures still accessible for Iran and Israel remain the June 10 Al Jazeera tracker totals of 3,468 killed and more than 26,500 wounded in Iran, and 26 killed in Israel; that same tracker listed 28 deaths across Gulf states. For force posture, official CENTCOM and U.S. Navy materials still support 15,000 U.S. personnel involved in the Hormuz mission and two carrier strike groups in the theater, but I could not verify newer official totals for destroyers, drone units, missiles expended, bomber sorties, or interceptors fired.",
+  "summary": "Confirmed reporting on July 21-22, 2026 shows the war has intensified again after the Pentagon confirmed an 18th U.S. military death following the Jordan base attack, while CENTCOM and media reports said the United States carried out at least a 10th and then 11th consecutive night of strikes on Iranian targets tied to shipping threats and military infrastructure. Defense Secretary Pete Hegseth told senators the war has cost the United States $37.5 billion so far. I found no current confirmed cumulative official totals today for overall Iranian deaths, Iranian wounded, Gulf-state deaths, Tomahawk/JDAM/JASSM/SDB expenditure, B-2 sorties, MOP drops, interceptors, carrier groups, destroyers, or active drone units that met your sourcing rule, so those fields remain null.",
   "briefings": [
     {
       "date": "2026-07-22",
       "day": 144,
-      "summary": "Confirmed reporting on July 21-22, 2026, shows the war has sharply re-escalated after the unraveling of the June ceasefire framework: AP reported the U.S. military carried out an 11th straight night of strikes on Iran, while Defense Secretary Pete Hegseth told senators the war has cost the United States about $37.5 billion so far. AP also reported the confirmed U.S. military death toll has risen to 18 service members. The latest widely cited cumulative casualty figures still accessible for Iran and Israel remain the June 10 Al Jazeera tracker totals of 3,468 killed and more than 26,500 wounded in Iran, and 26 killed in Israel; that same tracker listed 28 deaths across Gulf states. For force posture, official CENTCOM and U.S. Navy materials still support 15,000 U.S. personnel involved in the Hormuz mission and two carrier strike groups in the theater, but I could not verify newer official totals for destroyers, drone units, missiles expended, bomber sorties, or interceptors fired."
+      "summary": "Confirmed reporting on July 21-22, 2026 shows the war has intensified again after the Pentagon confirmed an 18th U.S. military death following the Jordan base attack, while CENTCOM and media reports said the United States carried out at least a 10th and then 11th consecutive night of strikes on Iranian targets tied to shipping threats and military infrastructure. Defense Secretary Pete Hegseth told senators the war has cost the United States $37.5 billion so far. I found no current confirmed cumulative official totals today for overall Iranian deaths, Iranian wounded, Gulf-state deaths, Tomahawk/JDAM/JASSM/SDB expenditure, B-2 sorties, MOP drops, interceptors, carrier groups, destroyers, or active drone units that met your sourcing rule, so those fields remain null."
     },
     {
       "date": "2026-07-21",
