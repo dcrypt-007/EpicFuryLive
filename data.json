@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-22T14:22:02Z",
+  "lastUpdated": "2026-07-22T16:46:29Z",
   "dayCount": 144,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,485+",
-    "cost": "$25.7B+"
+    "strikes": "~11,000",
+    "killed": "3,514+",
+    "cost": "$25.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "20",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$25.7 billion+",
-    "dailyBurnRate": "~$179M/day",
+    "totalCost": "$25.5 billion+",
+    "dailyBurnRate": "~$177M/day",
     "daysOfOps": 144,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-22",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026) states Operation Epic Fury operated with 'Two carrier strike groups'.)"
+          "source": "LLM-verified (CENTCOM/DoD materials indicate two carrier strike groups operating in theater)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-07-22",
-          "source": "LLM-verified (U.S. Navy, July 7, 2026 article lists five destroyers involved in Arabian Sea operations tied to the two carrier strike groups: USS Ross, USS Donald Cook, USS Higgins, USS Mason, USS John Finn.)"
+          "source": "LLM-verified (CENTCOM imagery/tagged deployment pages identify USS Gravely, USS Gonzalez, USS Bainbridge, USS Mason, USS Ramage as destroyers in theater alongside carrier groups)"
         },
         {
           "id": "personnel",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-07-22",
-          "source": "LLM-verified (Defense News/Washington Post reporting on March 27, 2026 said the US had fired over 850 Tomahawks in four weeks; no newer confirmed cumulative total found)"
+          "source": "LLM-verified (Reuters report published by Defense News on March 27, 2026 said the U.S. had fired over 850 Tomahawk cruise missiles in four weeks of war)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-22",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury Fact Sheet: The First 29 Days, March 28, 2026, listed 11,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The breakdown of the interim U.S.-Iran memorandum and recent Iranian missile/drone attacks on U.S. positions in Jordan have increased risk of further escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran activated air defense systems across Tehran during the 11th night of renewed U.S. strikes, according to Al Jazeera headline reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump threatened to target Iranian bridges and power plants if attacks on shipping persist, according to BBC and Al Jazeera reporting on July 21-22, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 22, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran continued strikes on U.S.-linked sites in Bahrain, Kuwait and Jordan on July 21, 2026, while a tanker in the Strait of Hormuz was reportedly hit, according to Reuters/AP reporting.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Houthis announced a naval blockade on Saudi Arabia on July 20, 2026, opening a potential new front and disrupting Red Sea shipping, according to Reuters reporting on July 21, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said the U.S. will strike Iran's Pickaxe Mountain 'very soon,' per AP/Axios reporting on July 21, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran struck targets in Bahrain and Jordan and hit two ships in the Strait of Hormuz, per BBC headline context provided by user.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-07-22T15:52:54Z",
+      "text": "<strong>War on Iran: Hegseth wants $70B more to keep fighting</strong> -- Iran activated air defence systems across Tehran on the 11th night of US strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/war-on-iran-hegseth-wants-70b-more-to-keep-fighting?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-22T15:46:56Z",
+      "text": "<strong>Proposed US-Saudi nuclear energy deal: What we know so far</strong> -- Reports suggest \u200cthe Trump administration backs a pact with Saudi Arabia allowing it to enrich uranium. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/22/proposed-us-saudi-nuclear-energy-deal-what-we-know-so-far?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-22T15:24:13Z",
+      "text": "<strong>Trump threatens to bomb Iranian bridges, power plants over ship attacks</strong> -- Iranian official says Tehran would retaliate by targeting &amp;#039;energy facilities in which the United States has interests&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/22/trump-threatens-to-bomb-iranian-bridges-power-plants-over-ship-attacks?traffic_source=rss"
+    },
+    {
       "time": "2026-07-22T13:41:33Z",
       "text": "<strong>UK\u2019s Miliband, Streeting: What are their foreign policy, defence records?</strong> -- Miliband, Trump critic who once opposed strikes on Syria, joins Streeting, defence novice with shifting Israel views. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/22/uks-miliband-streeting-what-are-their-foreign-policy-defence-records?traffic_source=rss"
@@ -771,6 +786,21 @@
       "time": "2026-07-22T12:05:12Z",
       "text": "<strong>Iran war\u2019s $37bn price tag: Why does the Pentagon want $67bn more?</strong> -- The US must rapidly replenish its stockpiles of weapons as the war on Iran rages on. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/22/iran-wars-37bn-price-tag-why-does-trump-want-67bn-more?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-22T14:49:12Z",
+      "text": "<strong>US to announce deal allowing Saudi Arabia a nuclear programme</strong> -- The agreement would fulfil a long-held Saudi ambition but could attract concern in Israel and from some US lawmakers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj03r59z73po?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-22T10:15:03Z",
+      "text": "<strong>Trump threatens to target Iran&#x27;s bridges and power plants if Hormuz attacks persist</strong> -- Donald Trump says the US will respond any time Iranian forces shoot at a ship in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-22T14:42:49Z",
+      "text": "<strong>Tankers make sharp U-turns after Houthi shipping threat</strong> -- All of the ships were travelling to or from Saudi ports before changing course, ship-tracking data shows. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn0n127lpzgo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-22T11:05:39Z",
@@ -798,11 +828,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c70gek2kqyno?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-07-22T10:15:03Z",
-      "text": "<strong>US &#x27;will target Iran&#x27;s bridges and power plants&#x27; if Hormuz attacks persist</strong> -- Donald Trump says the US will respond any time Iranian forces shoot at a ship in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-07-22T08:43:26Z",
       "text": "<strong>Iran, Gulf hit as Hormuz, Bab al-Mandeb close: What\u2019s the latest?</strong> -- Defense Secretary Pete Hegseth tells US senators that the war has cost the US $37.5bn so far. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/22/iran-gulf-hit-as-hormuz-bab-al-mandeb-close-whats-the-latest?traffic_source=rss"
@@ -826,31 +851,6 @@
       "time": "2026-07-22T05:05:25Z",
       "text": "<strong>US expands strikes on 11th straight night of attacks</strong> -- The US military\u2019s 11th consecutive night of strikes extended to Iranian provinces not previously hit. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/us-expands-strikes-on-11th-straight-night-of-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-22T05:02:51Z",
-      "text": "<strong>Hegseth called a \u2018failure\u2019 over Iran as he reveals $37b cost of war</strong> -- US Defense Secretary Pete Hegseth gets into a heated exchange after being called a failed leader by Michigan Senator. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hegseth-called-a-failure-over-iran-as-he-reveals-37b-cost-of-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-22T03:05:08Z",
-      "text": "<strong>US renews strikes on Iran as Trump threatens to attack underground nuclear site</strong> -- The US president&#x27;s threat to target a key Iranian nuclear site came ahead of the 11th consecutive night of attacks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-21T14:36:47Z",
-      "text": "<strong>Why Iran is risking so much over the Strait of Hormuz</strong> -- None of the choices facing Iran\u2019s leaders offer a clear path to victory, as the conflict with the US continues. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cwymx3eevpjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-22T00:00:15Z",
-      "text": "<strong>Iran war live: US launches new attacks; Hegseth says war has cost $37.5bn</strong> -- Trump threatens to bomb a suspected Iranian nuclear site called Pickaxe Mountain &amp;#039;very heavily&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/7/22/iran-war-live-us-launches-new-attacks-hegseth-says-war-has-cost-37-5bn?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-21T23:46:00Z",
-      "text": "<strong>US attacks Iran for 11th consecutive night</strong> -- Explosions reported in northwestern Iran&amp;#039;s Tabriz, capital Tehran and across southern Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/21/explosions-in-iran-as-us-launches-new-strikes?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,62 @@
   ],
   "newsFeed": [
     {
+      "title": "Mamdani walks back pledge to arrest Netanyahu citing lack of authority",
+      "description": "The New York City mayor instead called on US authorities to act on International Criminal Court's arrest warrant against the Israeli prime minister.",
+      "link": "https://www.bbc.co.uk/news/articles/c204p64pqzno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-22T16:29:28Z",
+      "tier": 2
+    },
+    {
+      "title": "War on Iran: Hegseth wants $70B more to keep fighting",
+      "description": "Iran activated air defence systems across Tehran on the 11th night of US strikes.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/war-on-iran-hegseth-wants-70b-more-to-keep-fighting?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-22T15:52:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Wreckage of Pan Am plane that shaped aviation safety found 74 years on",
+      "description": "The deaths of 52 people on the Clipper Endeavor led to the introduction of mandatory pre-flight safety briefings.",
+      "link": "https://www.bbc.co.uk/news/articles/cdrvyllxj71o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-22T15:50:17Z",
+      "tier": 2
+    },
+    {
+      "title": "Proposed US-Saudi nuclear energy deal: What we know so far",
+      "description": "Reports suggest \u200cthe Trump administration backs a pact with Saudi Arabia allowing it to enrich uranium.",
+      "link": "https://www.aljazeera.com/news/2026/7/22/proposed-us-saudi-nuclear-energy-deal-what-we-know-so-far?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-22T15:46:56Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump threatens to bomb Iranian bridges, power plants over ship attacks",
+      "description": "Iranian official says Tehran would retaliate by targeting &#039;energy facilities in which the United States has interests&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/7/22/trump-threatens-to-bomb-iranian-bridges-power-plants-over-ship-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-22T15:24:13Z",
+      "tier": 2
+    },
+    {
+      "title": "US to announce deal allowing Saudi Arabia a nuclear programme",
+      "description": "The agreement would fulfil a long-held Saudi ambition but could attract concern in Israel and from some US lawmakers.",
+      "link": "https://www.bbc.co.uk/news/articles/cj03r59z73po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-22T14:49:12Z",
+      "tier": 2
+    },
+    {
+      "title": "Tankers make sharp U-turns after Houthi shipping threat",
+      "description": "All of the ships were travelling to or from Saudi ports before changing course, ship-tracking data shows.",
+      "link": "https://www.bbc.co.uk/news/articles/cn0n127lpzgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-22T14:42:49Z",
+      "tier": 2
+    },
+    {
       "title": "UK\u2019s Miliband, Streeting: What are their foreign policy, defence records?",
       "description": "Miliband, Trump critic who once opposed strikes on Syria, joins Streeting, defence novice with shifting Israel views.",
       "link": "https://www.aljazeera.com/news/2026/7/22/uks-miliband-streeting-what-are-their-foreign-policy-defence-records?traffic_source=rss",
@@ -1226,14 +1282,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/israeli-strike-leaves-two-palestinians-burnt-beyond-recognition?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-22T13:23:49Z",
-      "tier": 2
-    },
-    {
-      "title": "US to announce deal allowing Saudi Arabia a nuclear programme, reports say",
-      "description": "The agreement would fulfil a long-held Saudi ambition but could attract concern in Israel and from some US lawmakers.",
-      "link": "https://www.bbc.co.uk/news/articles/cj03r59z73po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-22T12:40:46Z",
       "tier": 2
     },
     {
@@ -1253,35 +1301,11 @@
       "tier": 2
     },
     {
-      "title": "US Secretary of State say Iran is in \u2018a lot of trouble\u2019",
-      "description": "US Secretary of State say Iran is in \u2018a lot of trouble\u2019",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/us-secretary-of-state-say-iran-is-in-a-lot-of?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-22T11:05:39Z",
-      "tier": 2
-    },
-    {
-      "title": "US 'will target Iran's bridges and power plants' if Hormuz attacks persist",
+      "title": "Trump threatens to target Iran's bridges and power plants if Hormuz attacks persist",
       "description": "Donald Trump says the US will respond any time Iranian forces shoot at a ship in the Strait of Hormuz.",
       "link": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-22T10:15:03Z",
-      "tier": 2
-    },
-    {
-      "title": "Russia reports injuries after top online retailer Wildberries hit again",
-      "description": "Company CEO says logistics centres in Krasnodar and Nevinnomyssk evacuated days after workers killed in earlier attack.",
-      "link": "https://www.aljazeera.com/news/2026/7/22/russia-reports-injuries-after-top-online-retailer-wildberries-hit-again?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-22T09:30:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Ossoff challenges Hegseth on cost and duration of Iran war",
-      "description": "Ossoff challenges Hegseth on cost and duration of Iran war",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/22/ossoff-challenges-hegseth-on-cost-and-duration-of-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-22T09:30:08Z",
       "tier": 2
     },
     {
@@ -1301,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 21-22, 2026 shows the Iran war has re-escalated, with AP and Reuters reporting fresh U.S. strikes after additional attacks on commercial shipping in the Strait of Hormuz. AP says the Pentagon-confirmed U.S. military death toll has risen to 17, while Iran\u2019s Health Ministry reported 53 killed and nearly 600 wounded in the latest 11 days of U.S. strikes; for the full war total, the latest accessible cumulative figure remains 3,468 Iranian deaths cited by Al Jazeera for the period from February 28 to the June MoU. CENTCOM\u2019s April 6 fact sheet still provides the clearest official strikes total accessible here at 13,000+ targets struck, while current accessible official material confirms two U.S. carrier strike groups were employed in theater but does not provide updated confirmed totals for most weapons-expended categories.",
+  "summary": "Confirmed reporting available today shows the Pentagon\u2019s acknowledged U.S. death toll has risen to 17 service members, while Defense Secretary Pete Hegseth said the war has cost the United States about $37.5 billion so far. For Iranian and Israeli casualty totals, the latest clearly sourced cumulative figures I found remain Al Jazeera\u2019s June 10, 2026 tracker citing Iran\u2019s Health Ministry at 3,468 killed and more than 26,500 wounded in Iran, and 26 killed in Israel. No newer fully sourced cumulative official totals were found in the search results for several military-use fields, so those remain null.",
   "briefings": [
     {
       "date": "2026-07-22",
       "day": 144,
-      "summary": "Confirmed reporting on July 21-22, 2026 shows the Iran war has re-escalated, with AP and Reuters reporting fresh U.S. strikes after additional attacks on commercial shipping in the Strait of Hormuz. AP says the Pentagon-confirmed U.S. military death toll has risen to 17, while Iran\u2019s Health Ministry reported 53 killed and nearly 600 wounded in the latest 11 days of U.S. strikes; for the full war total, the latest accessible cumulative figure remains 3,468 Iranian deaths cited by Al Jazeera for the period from February 28 to the June MoU. CENTCOM\u2019s April 6 fact sheet still provides the clearest official strikes total accessible here at 13,000+ targets struck, while current accessible official material confirms two U.S. carrier strike groups were employed in theater but does not provide updated confirmed totals for most weapons-expended categories."
+      "summary": "Confirmed reporting available today shows the Pentagon\u2019s acknowledged U.S. death toll has risen to 17 service members, while Defense Secretary Pete Hegseth said the war has cost the United States about $37.5 billion so far. For Iranian and Israeli casualty totals, the latest clearly sourced cumulative figures I found remain Al Jazeera\u2019s June 10, 2026 tracker citing Iran\u2019s Health Ministry at 3,468 killed and more than 26,500 wounded in Iran, and 26 killed in Israel. No newer fully sourced cumulative official totals were found in the search results for several military-use fields, so those remain null."
     },
     {
       "date": "2026-07-21",
