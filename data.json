@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-07-24T09:34:03Z",
+  "lastUpdated": "2026-07-24T11:55:48Z",
   "dayCount": 146,
   "banner": {
     "strikes": "~13,000",
-    "killed": "94+",
-    "cost": "$26.0B+"
+    "killed": "256+",
+    "cost": "$23.0B+"
   },
   "humanCost": {
-    "iranDeaths": "53",
+    "iranDeaths": "55",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "17",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "27",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "592+",
+    "iranWounded": "600+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "9",
+    "civilianDeaths": "156",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$26.0 billion+",
-    "dailyBurnRate": "~$178M/day",
+    "totalCost": "$23.0 billion+",
+    "dailyBurnRate": "~$157M/day",
     "daysOfOps": 146,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-24",
-          "source": "LLM-verified (AP, March 2, 2026 Pentagon briefing: Lincoln and Ford carrier strike groups and their embarked air wings were part of the operation)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page shows Gerald R. Ford CSG and Dwight D. Eisenhower CSG operating in area (centcom.mil/OPERATIONS-AND-EXERCISES/EPIC-FURY/))"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 5,
+          "quantity": 4,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,14 +90,14 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-07-22",
-          "source": "LLM-verified (CENTCOM imagery/tagged deployment pages identify USS Gravely, USS Gonzalez, USS Bainbridge, USS Mason, USS Ramage as destroyers in theater alongside carrier groups)"
+          "lastUpdated": "2026-07-24",
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page lists destroyers USS Ramage, USS Paul Ignatius, USS Gravely, and USS Mason with the two carrier strike groups (centcom.mil/OPERATIONS-AND-EXERCISES/EPIC-FURY/))"
         },
         {
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 15000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-24",
-          "source": "LLM-verified (AP, March 24, 2026: some 50,000 troops already in the Mideast before additional deployments)"
+          "source": "LLM-verified (CENTCOM press release, May 23, 2026: 'Over the past six weeks, more than 15,000 Soldiers, Sailors, Marines and Airmen have redirected 100 vessels...' while enforcing blockade against Iran (centcom.mil/MEDIA/PRESS-RELEASES/Article/4499878/us-blockade-of-iran-reaches-milestone-of-redirecting-100-ships/))"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-24",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 13,000+ combat flights; no newer confirmed cumulative sortie total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+' (media.defense.gov/2026/Mar/23/2003902061/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-THE-FIRST-24-DAYS.PDF))"
         },
         {
           "id": "interceptors",
@@ -333,13 +333,13 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "5 \u00d7 $240,000/day \u00d7 146 days",
-        "cost": "$175,200,000"
+        "detail": "4 \u00d7 $240,000/day \u00d7 146 days",
+        "cost": "$140,160,000"
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 146 days",
-        "cost": "$3,650,000,000"
+        "detail": "15,000 \u00d7 $500/day \u00d7 146 days",
+        "cost": "$1,095,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC and Al Jazeera report rising shipping and energy disruption, including oil hitting $100 and reduced tanker crossings in the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports drones targeted Irbil in Iraq and sirens sounded in Bahrain as the conflict widened regionally.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports the U.S. military completed a 13th consecutive night of strikes on Iran on July 24, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 24, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reporting from July 18-20, 2026 indicate the ceasefire/interim deal has effectively collapsed and the U.S. resumed strikes after additional U.S. troop deaths and Iranian attacks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Axios reported on July 23, 2026 that President Trump said he is seriously considering restarting major combat operations in Iran, potentially larger than the earlier Operation Epic Fury strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian state media reported two people were killed in a U.S. missile strike in Shalamcheh near the Iraqi border during the latest overnight attacks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the U.S. carried out a 12th consecutive night of strikes on Iran as diplomatic efforts continued to deteriorate.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-07-24T09:35:39Z",
+      "text": "<strong>Four Palestinians killed as Israeli settlers raid occupied West Bank town</strong> -- One Israeli was also killed near town of Tal in Nablus, according to Israel&amp;#039;s Magen David Adom rescue services. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/24/four-palestinians-killed-as-israeli-settlers-raid-occupied-west-bank-town?traffic_source=rss"
+    },
+    {
       "time": "2026-07-24T08:42:07Z",
       "text": "<strong>Major fire after Ukrainian strike on St Petersburg warehouse</strong> -- A major fire broke out at a Wildberries e-commerce warehouse in St Petersburg after a Ukrainian drone attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/24/major-fire-after-ukrainian-strike-on-st-petersburg-warehouse?traffic_source=rss"
@@ -781,6 +786,21 @@
       "time": "2026-07-24T03:34:10Z",
       "text": "<strong>As oil soars, experts watch Red Sea tankers for clarity on Houthi blockade</strong> -- Houthi attacks for now are shaping who moves Saudi crude, not whether it moves, analysts say, even as oil prices soar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/7/24/as-oil-soars-experts-watch-red-sea-tankers-for-clarity-on-houthi-blockade?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-24T09:20:07Z",
+      "text": "<strong>US and Iran trade more strikes in Gulf as fears of escalation mount</strong> -- It comes as Iran condemned the US plan to use frozen Iranian assets to pay for war damages. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-23T15:31:00Z",
+      "text": "<strong>Oil prices hit $100 for the first time since May</strong> -- The price of Brent crude rose more than 6% on Thursday as the war in the Middle East continues to escalate. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2djnzrqk2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-23T17:58:02Z",
+      "text": "<strong>Saudis must recognise Israel for nuclear deal, says Trump</strong> -- The US president says the landmark agreement to help Saudis develop nuclear energy is dependent on it joining the Abraham Accords. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cwye71yq8wwo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-24T03:08:49Z",
@@ -831,26 +851,6 @@
       "time": "2026-07-23T22:04:23Z",
       "text": "<strong>US war on Iran: The $110 billion price tag</strong> -- America&amp;#039;s war on Iran has cost the US nearly $110 billion. Now, the Trump administration wants another $67 billion. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/23/us-war-on-iran-the-110-billion-price-tag?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-23T21:43:28Z",
-      "text": "<strong>Trump warns of largest strikes on Iran yet as Tehran lashes out across Gulf</strong> -- The US president&amp;#039;s threat comes after another day of Iranian attacks on Bahrain, Kuwait and Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/23/trump-warns-of-biggest-strikes-yet-on-iran-as-tehran-lashes-out-across-gulf?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-23T21:41:25Z",
-      "text": "<strong>US-Saudi nuclear deal hinges on normalisation with Israel</strong> -- President Trump said a proposed US-Saudi civilian nuclear deal is subject to Saudi Arabia joining the Abraham Accords <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/23/us-saudi-nuclear-deal-hinges-on-normalisation-with-israel?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-23T19:58:34Z",
-      "text": "<strong>Indian activist Wangchuk ends 26-day hunger strike over exam paper leaks</strong> -- \u2060Sonam \u2060Wangchuk says he ended his fast to demand education minister&amp;#039;s resignation &amp;#039;in view of possible violence&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/23/indian-activist-wangchuk-ends-26-day-hunger-strike-over-exam-paper-leaks?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-23T19:50:30Z",
-      "text": "<strong>Minnesota man who killed Democratic lawmaker sentenced to life in US prison</strong> -- Judge says that long sentence is merited for slaying of state Democratic lawmaker Melissa Hortman and her husband Mark. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/23/minnesota-man-who-killed-democratic-lawmaker-sentenced-to-life-in-us-prison?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Four Palestinians killed as Israeli settlers raid occupied West Bank town",
+      "description": "One Israeli was also killed near town of Tal in Nablus, according to Israel&#039;s Magen David Adom rescue services.",
+      "link": "https://www.aljazeera.com/news/2026/7/24/four-palestinians-killed-as-israeli-settlers-raid-occupied-west-bank-town?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-24T09:35:39Z",
+      "tier": 2
+    },
+    {
+      "title": "US and Iran trade more strikes in Gulf as fears of escalation mount",
+      "description": "It comes as Iran condemned the US plan to use frozen Iranian assets to pay for war damages.",
+      "link": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-24T09:20:07Z",
+      "tier": 2
+    },
+    {
       "title": "Major fire after Ukrainian strike on St Petersburg warehouse",
       "description": "A major fire broke out at a Wildberries e-commerce warehouse in St Petersburg after a Ukrainian drone attack.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/24/major-fire-after-ukrainian-strike-on-st-petersburg-warehouse?traffic_source=rss",
@@ -1261,51 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "What are the Abraham Accords?",
-      "description": "US President Donald Trump has seemingly backpedalled on a nuclear deal with Saudi Arabia.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/24/what-are-the-abraham-accords-3?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-24T03:08:49Z",
-      "tier": 2
-    },
-    {
-      "title": "US launches 13th night of strikes as Iran warns of escalation in the Gulf",
-      "description": "Al Jazeera\u2019s Tohid Asadi reports from Tehran as the US launches strikes for the 13th consecutive night.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/24/us-launches-13th-night-of-strikes-as-iran-warns-of-escalation-in-the-gulf?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-24T02:25:41Z",
-      "tier": 2
-    },
-    {
       "title": "Houthi attacks raise fears of wider Middle East conflict and more global economic damage",
       "description": "The Iran-backed group in Yemen has threatened to target Saudi vessels in a vital shipping route.",
       "link": "https://www.bbc.co.uk/news/articles/cvgve0vxy1yo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-24T01:59:49Z",
-      "tier": 2
-    },
-    {
-      "title": "Ukraine\u2019s Zelenskyy meets with far-right US activist Laura Loomer",
-      "description": "Pro-Israel Trump ally sits down with Ukrainian president as she says Russia is helping Iran kill US soldiers.",
-      "link": "https://www.aljazeera.com/news/2026/7/24/ukraine-zelenskyy-meets-with-trump-ally-laura-loomer?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-24T01:49:27Z",
-      "tier": 2
-    },
-    {
-      "title": "Mike Waltz pressed over Al Jazeera video during congressional hearing",
-      "description": "Ted Lieu challenges UN Ambassador Mike Waltz after playing Al Jazeera footage of Iranian strikes in Jordan.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/24/aje-onl-nf_mike-waltz-pressed-over-al-jazeera-video-congress-230726?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-24T01:24:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Analyst: voting against Iran war funding a tough sell for Congress",
-      "description": "The US says it has spent more than $37.5 billion on the Iran war so far.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/24/analyst-voting-against-iran-war-funding-a-tough-sell-for-congress?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-24T00:30:43Z",
       "tier": 2
     },
     {
@@ -1365,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 23-24, 2026 shows the war has re-escalated sharply: AP and Reuters reported the U.S. completed its 13th consecutive night of strikes on Iran, while Iran continued retaliatory activity around Gulf-state bases and shipping routes. Iran\u2019s Health Ministry said on July 22 that recent U.S. strikes since the renewed fighting killed 53 people and wounded 592. AP, citing the U.S. military, reported 17 confirmed U.S. service members killed since the war began. The latest accessible official U.S. strike benchmark remains CENTCOM\u2019s April 6 fact sheet showing 13,000+ targets struck, while the latest accessible Israeli official home-front toll located was 24 killed as of the April 7 ceasefire.",
+  "summary": "Confirmed reporting on July 24, 2026 shows the U.S. has completed a 13th consecutive night of strikes on Iran, while regional spillover continues with drone threats in Iraq and alerts in Bahrain. AP reports Iran's Health Ministry says 55 people have been killed and more than 600 wounded in recent weeks of strikes, and AP separately reports the U.S. military death toll has risen to 18 service members. CENTCOM's latest accessible official Epic Fury fact sheets still show 13,000+ targets struck as of April 6 and confirm two carrier strike groups in theater, but I could not find current official confirmed totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptor expenditure.",
   "briefings": [
     {
       "date": "2026-07-24",
       "day": 146,
-      "summary": "Confirmed reporting on July 23-24, 2026 shows the war has re-escalated sharply: AP and Reuters reported the U.S. completed its 13th consecutive night of strikes on Iran, while Iran continued retaliatory activity around Gulf-state bases and shipping routes. Iran\u2019s Health Ministry said on July 22 that recent U.S. strikes since the renewed fighting killed 53 people and wounded 592. AP, citing the U.S. military, reported 17 confirmed U.S. service members killed since the war began. The latest accessible official U.S. strike benchmark remains CENTCOM\u2019s April 6 fact sheet showing 13,000+ targets struck, while the latest accessible Israeli official home-front toll located was 24 killed as of the April 7 ceasefire."
+      "summary": "Confirmed reporting on July 24, 2026 shows the U.S. has completed a 13th consecutive night of strikes on Iran, while regional spillover continues with drone threats in Iraq and alerts in Bahrain. AP reports Iran's Health Ministry says 55 people have been killed and more than 600 wounded in recent weeks of strikes, and AP separately reports the U.S. military death toll has risen to 18 service members. CENTCOM's latest accessible official Epic Fury fact sheets still show 13,000+ targets struck as of April 6 and confirm two carrier strike groups in theater, but I could not find current official confirmed totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptor expenditure."
     },
     {
       "date": "2026-07-23",
