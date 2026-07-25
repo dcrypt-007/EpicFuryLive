@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-25T17:16:00Z",
+  "lastUpdated": "2026-07-25T19:34:32Z",
   "dayCount": 147,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,478+",
-    "cost": "$36.9B+"
+    "strikes": "~10,800",
+    "killed": "3,479+",
+    "cost": "$25.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,434",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "10",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.9 billion+",
-    "dailyBurnRate": "~$251M/day",
+    "totalCost": "$25.7 billion+",
+    "dailyBurnRate": "~$175M/day",
     "daysOfOps": 147,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-25",
-          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' published April 20, 2026 states over 8,500 aircraft sorties in the Iran campaign: https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/operation-roaring-lion-the-numbers/)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 3000,
+          "quantity": 304,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-07-25",
-          "source": "LLM-verified (CENTCOM/SASC posture statement: integrated architecture intercepted over 6,000 one-way attack drones and more than 1,500 ballistic missiles during Operation Epic Fury)"
+          "source": "LLM-verified (Bahrain reported intercepting 114 missiles and 190 drones since Feb. 28, 2026, as cited by Al Jazeera on March 13, 2026; this is the only clearly confirmed cumulative interceptor-related tally found in searched sources, but it is incomplete theater-wide: https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "3,000 \u00d7 $4,000,000 each",
-        "cost": "$12,000,000,000"
+        "detail": "304 \u00d7 $4,000,000 each",
+        "cost": "$1,216,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Bahrain condemned Iranian drone strikes targeting its air traffic systems, indicating continuing risk to Gulf civilian infrastructure and aviation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian attacks in July have focused on Gulf shipping, ports, and U.S.-allied Arab states, while AP reported Israel had not been targeted in the latest round as of July 24, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran\u2019s government and military publicly warned the U.S. and Israel against any renewed attack during continuing diplomatic efforts and the post-funeral period for Ayatollah Ali Khamenei.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 25, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported US strikes continued for a 13th consecutive night on July 24, 2026, including targets on Qeshm Island, Isfahan, Khuzestan and Fars.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported continued Iranian attacks on US-linked targets in Kuwait, Bahrain and Jordan on July 24, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, July 24, 2026: Netanyahu is expected to travel to Washington next week as Israel signaled willingness to rejoin the conflict more directly.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, July 24, 2026: Iran's Revolutionary Guard advised residents of neighboring countries to stay away from bases with U.S. troops amid continued exchanges of strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-07-25T19:22:30Z",
+      "text": "<strong>At least 35 killed after two buses collide in eastern Syria</strong> -- At least 35 killed after two buses collide in eastern Syria <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/at-least-35-killed-after-two-buses-collide-in-eastern-syria?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-25T18:28:09Z",
+      "text": "<strong>Ebola deaths in DRC surge past 1,300 as virus \u2018spreading like a wildfire\u2019</strong> -- The outbreak is spreading at the fastest rate ever recorded and threatens to become the worst in history. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/25/ebola-deaths-in-drc-surge-past-1300-as-virus-spreading-like-a-wildfire?traffic_source=rss"
+    },
+    {
       "time": "2026-07-25T16:39:16Z",
       "text": "<strong>Iran\u2019s government spars with state TV as mediators push talks with US</strong> -- Gov&amp;#039;t accuses IRIB of &amp;#039;censorship&amp;#039; after parts of president&amp;#039;s speech not aired; station rejects &amp;#039;improper attributions&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/25/irans-government-spars-with-state-tv-as-mediators-push-talks-with-us?traffic_source=rss"
@@ -769,7 +779,7 @@
     },
     {
       "time": "2026-07-25T12:41:02Z",
-      "text": "<strong>At least 11 killed in Ukrainian and Russian strikes as holiday camp hit</strong> -- Separately, at least eight people killed in Ukrainian attacks on a Russian-controlled area. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>At least 15 killed in Ukrainian and Russian strikes as holiday camp hit</strong> -- Five children among 12 killed in Russian-held resort, while Russian drone kills three Ukrainian drivers at courier firm. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/25/at-least-11-killed-in-ukrainian-and-russian-strikes-as-holiday-camp-hit?traffic_source=rss"
     },
     {
@@ -841,16 +851,6 @@
       "time": "2026-07-24T18:13:02Z",
       "text": "<strong>US and Iran trade more strikes in Gulf as fears of escalation mount</strong> -- It comes as Iran condemned the US plan to use frozen Iranian assets to pay for war damages. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-24T18:15:01Z",
-      "text": "<strong>Oman talking with Tehran on Hormuz as US and Iran continue strikes</strong> -- Omani delegation in Iran to discuss managing traffic in the strait, which has become the main focus of the US conflict. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/24/oman-talking-with-tehran-on-hormuz-as-us-and-iran-continue-strikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-24T18:11:26Z",
-      "text": "<strong>Trump\u2019s Israel condition on Saudi nuclear deal</strong> -- Trump\u2019s Israel condition on Saudi nuclear deal <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/24/trumps-israel-condition-on-saudi-nuclear-deal?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "At least 35 killed after two buses collide in eastern Syria",
+      "description": "At least 35 killed after two buses collide in eastern Syria",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/at-least-35-killed-after-two-buses-collide-in-eastern-syria?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-25T19:22:30Z",
+      "tier": 2
+    },
+    {
+      "title": "Ebola deaths in DRC surge past 1,300 as virus \u2018spreading like a wildfire\u2019",
+      "description": "The outbreak is spreading at the fastest rate ever recorded and threatens to become the worst in history.",
+      "link": "https://www.aljazeera.com/news/2026/7/25/ebola-deaths-in-drc-surge-past-1300-as-virus-spreading-like-a-wildfire?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-25T18:28:09Z",
+      "tier": 2
+    },
+    {
       "title": "Iran\u2019s government spars with state TV as mediators push talks with US",
       "description": "Gov&#039;t accuses IRIB of &#039;censorship&#039; after parts of president&#039;s speech not aired; station rejects &#039;improper attributions&#039;.",
       "link": "https://www.aljazeera.com/news/2026/7/25/irans-government-spars-with-state-tv-as-mediators-push-talks-with-us?traffic_source=rss",
@@ -1237,8 +1253,8 @@
       "tier": 2
     },
     {
-      "title": "At least 11 killed in Ukrainian and Russian strikes as holiday camp hit",
-      "description": "Separately, at least eight people killed in Ukrainian attacks on a Russian-controlled area.",
+      "title": "At least 15 killed in Ukrainian and Russian strikes as holiday camp hit",
+      "description": "Five children among 12 killed in Russian-held resort, while Russian drone kills three Ukrainian drivers at courier firm.",
       "link": "https://www.aljazeera.com/news/2026/7/25/at-least-11-killed-in-ukrainian-and-russian-strikes-as-holiday-camp-hit?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-25T12:41:02Z",
@@ -1285,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 25, 2026 indicates a pause in overnight U.S. strikes into Iran after nearly two weeks of consecutive attacks, even as tensions remain high over the Strait of Hormuz and regional spillover risks are increasing. AP, citing Iran\u2019s Health Ministry, reported 3,434 people killed in Iran since the war began, while AP also reported 18 confirmed U.S. service member deaths as of July 21. The latest widely cited Israeli death figure available from named reporting remains 26. CENTCOM\u2019s latest official fact sheet publicly available still lists 13,000+ targets struck as of April 6, and I could not verify newer official cumulative totals for strike counts or most weapons-expended fields.",
+  "summary": "Confirmed reporting on July 24-25, 2026 indicates Iran\u2019s Health Ministry death toll since the start of the war stands at 3,434, while the confirmed U.S. military death toll has risen to 18 after AP reported Pentagon-confirmed identification of a third service member tied to the recent Jordan attack. AP also reported that the renewed July escalation has killed at least 50 and wounded more than 500 in Iran in recent weeks, while current fighting has concentrated on U.S.-Iran exchanges around the Gulf and Strait of Hormuz rather than new Israeli strikes. For strike totals, the clearest official cumulative figure found remains the IDF\u2019s April 20 assessment of approximately 10,800 strikes and over 8,500 aircraft sorties in the Iran campaign; no newer official cumulative counts for missiles, bomb types, carriers, destroyers, troop levels, or drone units were confirmed in the searched sources.",
   "briefings": [
     {
       "date": "2026-07-25",
       "day": 147,
-      "summary": "Confirmed reporting on July 25, 2026 indicates a pause in overnight U.S. strikes into Iran after nearly two weeks of consecutive attacks, even as tensions remain high over the Strait of Hormuz and regional spillover risks are increasing. AP, citing Iran\u2019s Health Ministry, reported 3,434 people killed in Iran since the war began, while AP also reported 18 confirmed U.S. service member deaths as of July 21. The latest widely cited Israeli death figure available from named reporting remains 26. CENTCOM\u2019s latest official fact sheet publicly available still lists 13,000+ targets struck as of April 6, and I could not verify newer official cumulative totals for strike counts or most weapons-expended fields."
+      "summary": "Confirmed reporting on July 24-25, 2026 indicates Iran\u2019s Health Ministry death toll since the start of the war stands at 3,434, while the confirmed U.S. military death toll has risen to 18 after AP reported Pentagon-confirmed identification of a third service member tied to the recent Jordan attack. AP also reported that the renewed July escalation has killed at least 50 and wounded more than 500 in Iran in recent weeks, while current fighting has concentrated on U.S.-Iran exchanges around the Gulf and Strait of Hormuz rather than new Israeli strikes. For strike totals, the clearest official cumulative figure found remains the IDF\u2019s April 20 assessment of approximately 10,800 strikes and over 8,500 aircraft sorties in the Iran campaign; no newer official cumulative counts for missiles, bomb types, carriers, destroyers, troop levels, or drone units were confirmed in the searched sources."
     },
     {
       "date": "2026-07-24",
