@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-25T14:02:02Z",
+  "lastUpdated": "2026-07-25T15:19:42Z",
   "dayCount": 147,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,540+",
-    "cost": "$36.5B+"
+    "strikes": "~12,300",
+    "killed": "3,462+",
+    "cost": "$36.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,434",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "10",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.5 billion+",
-    "dailyBurnRate": "~$248M/day",
+    "totalCost": "$36.9 billion+",
+    "dailyBurnRate": "~$251M/day",
     "daysOfOps": 147,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-25",
-          "source": "LLM-verified (AP News, March 2, 2026: operation included the Lincoln and Ford carrier strike groups; U.S. Navy Shipbuilding Plan, May 2026, says 'Two carrier strike groups' were deployed in Operation Epic Fury.)"
+          "source": "LLM-verified (Gen. Dan Caine via AP, March 2, 2026: operation included the Lincoln and Ford carrier strike groups)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-25",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers', April 20, 2026: 'Over 8,500 aircraft sorties' (https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/operation-roaring-lion-the-numbers/))"
+          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+')"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran-backed Houthis claimed a missile attack on Saudi Arabia, raising risk of wider regional spillover, according to BBC World headline context provided by user.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump said he was still weighing a possible major strike on Iran while 'serious' negotiations continue, according to AP reporting published July 24, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran said there were no new US strikes overnight into Saturday and both sides confirmed ongoing talks over the Hormuz crisis, according to Al Jazeera RSS headline context provided by user.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 25, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP on July 24 reported Iran claimed a strike on the Udairi base in Kuwait, underscoring continued risk to Gulf-hosting U.S. facilities.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 24 reported drones targeted Irbil/Erbil in northern Iraq where U.S. forces are based, while Bahrain sounded sirens during the 13th night of U.S. strikes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Reuters/AP reported Trump is considering a larger renewed attack while Iran has fired at neighboring Arab countries hosting U.S. bases",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported sirens in Bahrain after CENTCOM completed a 13th consecutive night of U.S. strikes on Iran",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1285,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today still relies heavily on previously published official tallies rather than fresh full-war updates: the latest named cumulative casualty figures found were Iran\u2019s Ministry of Health numbers carried by Al Jazeera on June 10, listing 3,468 dead and more than 26,500 injured in Iran, alongside 26 killed in Israel and 28 killed in Gulf states, while AP reported on July 21 that U.S. military deaths had risen to 18. On the operations side, CENTCOM\u2019s April 6 fact sheet remains the clearest official strike total at 13,000+ targets struck, and a Reuters report from March 27 said the U.S. had already fired over 850 Tomahawks. Today\u2019s confirmed developments point to renewed U.S. strikes deeper inside Iran and continued maritime-focused operations around the Strait of Hormuz, even as Al Jazeera and AP report ongoing talks and Iran\u2019s claim of no new overnight U.S. strikes into Saturday.",
+  "summary": "Confirmed reporting on July 24-25, 2026 indicates the US continued striking deeper inside Iran after nearly two weeks of renewed fighting around the Strait of Hormuz, but Iranian officials also reported no new US strikes overnight into Saturday as talks continued. AP reported the Iranian Health Ministry's cumulative war death toll at 3,434 and the Pentagon-confirmed US military death toll at 18. No current confirmed Israeli cumulative death figure was found in the search results, and no newer official cumulative figure was found for several military cost-model categories such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP use, destroyers, personnel, drone units, or interceptors.",
   "briefings": [
     {
       "date": "2026-07-25",
       "day": 147,
-      "summary": "Confirmed reporting available today still relies heavily on previously published official tallies rather than fresh full-war updates: the latest named cumulative casualty figures found were Iran\u2019s Ministry of Health numbers carried by Al Jazeera on June 10, listing 3,468 dead and more than 26,500 injured in Iran, alongside 26 killed in Israel and 28 killed in Gulf states, while AP reported on July 21 that U.S. military deaths had risen to 18. On the operations side, CENTCOM\u2019s April 6 fact sheet remains the clearest official strike total at 13,000+ targets struck, and a Reuters report from March 27 said the U.S. had already fired over 850 Tomahawks. Today\u2019s confirmed developments point to renewed U.S. strikes deeper inside Iran and continued maritime-focused operations around the Strait of Hormuz, even as Al Jazeera and AP report ongoing talks and Iran\u2019s claim of no new overnight U.S. strikes into Saturday."
+      "summary": "Confirmed reporting on July 24-25, 2026 indicates the US continued striking deeper inside Iran after nearly two weeks of renewed fighting around the Strait of Hormuz, but Iranian officials also reported no new US strikes overnight into Saturday as talks continued. AP reported the Iranian Health Ministry's cumulative war death toll at 3,434 and the Pentagon-confirmed US military death toll at 18. No current confirmed Israeli cumulative death figure was found in the search results, and no newer official cumulative figure was found for several military cost-model categories such as Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP use, destroyers, personnel, drone units, or interceptors."
     },
     {
       "date": "2026-07-24",
