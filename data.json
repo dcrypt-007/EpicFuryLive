@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-07-26T07:45:45Z",
+  "lastUpdated": "2026-07-26T10:12:37Z",
   "dayCount": 148,
   "banner": {
     "strikes": "~12,300",
-    "killed": "3,452+",
-    "cost": "$23.7B+"
+    "killed": "3,512+",
+    "cost": "$22.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,434",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "16",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "629+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "496",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$23.7 billion+",
-    "dailyBurnRate": "~$160M/day",
+    "totalCost": "$22.9 billion+",
+    "dailyBurnRate": "~$155M/day",
     "daysOfOps": 148,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-26",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups... supporting the Joint Force mission' in Operation Epic Fury (media.defense.gov/2026/May/11/2003928909/-1/-1/1/NAVY%20SHIPBUILDING%20PLAN%20MAY%202026.PDF))"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 4,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,14 +90,14 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-07-24",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page lists destroyers USS Ramage, USS Paul Ignatius, USS Gravely, and USS Mason with the two carrier strike groups (centcom.mil/OPERATIONS-AND-EXERCISES/EPIC-FURY/))"
+          "lastUpdated": "2026-07-26",
+          "source": "LLM-verified (George H.W. Bush Carrier Strike Group deployment release, March 31, 2026: USS Ross, USS Donald Cook, USS Mason. No newer official current theater-wide destroyer total found.)"
         },
         {
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 5000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-07-25",
-          "source": "LLM-verified (CENTCOM press release, May 23, 2026: 'Over the past six weeks, more than 15,000 Soldiers, Sailors, Marines and Airmen' supported the blockade/operation.)"
+          "lastUpdated": "2026-07-26",
+          "source": "LLM-verified (U.S. Navy release on George H.W. Bush CSG, March 31, 2026: 'More than 5,000 personnel are assigned to the George H.W. Bush Carrier Strike Group.' No current operation-wide official troop total found.)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-26",
-          "source": "LLM-verified (CENTCOM fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; IDF separately reported 800+ Israeli strike sorties by April 1, but to avoid double counting this field uses the official CENTCOM cumulative combat-flights figure (media.defense.gov/2026/Apr/01/2003905658/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-APRIL-1-UPDATE.PDF))"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -333,13 +333,13 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "4 \u00d7 $240,000/day \u00d7 148 days",
-        "cost": "$142,080,000"
+        "detail": "3 \u00d7 $240,000/day \u00d7 148 days",
+        "cost": "$106,560,000"
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 148 days",
-        "cost": "$1,110,000,000"
+        "detail": "5,000 \u00d7 $500/day \u00d7 148 days",
+        "cost": "$370,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. military disabled a tanker accused of attempting to break the Iran blockade, indicating continued maritime escalation around Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthis claimed missile/drone attacks on Saudi oil facilities and tankers, widening spillover risk in the Red Sea.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 26, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Al Jazeera headline context provided by user says Iran reported no new U.S. strikes overnight into Saturday for the first time in two weeks while both sides confirmed ongoing talks",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline context provided by user says Iran-backed Houthis claimed a missile attack on Saudi Arabia and the U.S. military said it disabled a tanker attempting to evade the American blockade on Iranian ports",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 23 that the U.S. announced a 13th consecutive night of strikes against Iran focused on degrading threats to commercial shipping through the Strait of Hormuz",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -774,18 +774,13 @@
     },
     {
       "time": "2026-07-26T00:00:25Z",
-      "text": "<strong>Iran war live: Tehran slams Ukraine attack; West Bank unrest continues</strong> -- Tehran says the Ukranian attack killed at least one sailor and wounded another. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Baghaei says progress made in Oman talks on Strait of Hormuz</strong> -- Tehran says the Ukrainian attack killed at least one sailor and wounded another. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/26/iran-war-live-tehran-summons-ukraine-diplomats-over-caspian-sea-attack?traffic_source=rss"
     },
     {
       "time": "2026-07-25T23:16:45Z",
       "text": "<strong>Iran accuses Ukraine of deadly attack on Caspian commercial vessel</strong> -- Iran accuses Ukraine of attacking a Caspian vessel, killing one sailor and injuring another, calling it a criminal act. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/25/iran-accuses-ukraine-of-deadly-attack-on-caspian-commercial-vessel?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-25T22:07:36Z",
-      "text": "<strong>Israeli forces target Gaza\u2019s Al-Aqsa hospital</strong> -- At least one person was killed and several injured when Israeli drones hit a group of Palestinians near Al-Aqsa hospital <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/israeli-forces-target-gazas-al-aqsa-hospital?traffic_source=rss"
     },
     {
       "time": "2026-07-25T06:34:40Z",
@@ -801,6 +796,11 @@
       "time": "2026-07-24T22:49:59Z",
       "text": "<strong>Four Palestinians and two Israelis killed in West Bank shooting</strong> -- Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-25T22:07:36Z",
+      "text": "<strong>Israeli forces target Gaza\u2019s Al-Aqsa hospital</strong> -- At least one person was killed and several injured when Israeli drones hit a group of Palestinians near Al-Aqsa hospital <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/israeli-forces-target-gazas-al-aqsa-hospital?traffic_source=rss"
     },
     {
       "time": "2026-07-25T22:31:19Z",
@@ -1245,8 +1245,8 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran slams Ukraine attack; West Bank unrest continues",
-      "description": "Tehran says the Ukranian attack killed at least one sailor and wounded another.",
+      "title": "Iran war live: Baghaei says progress made in Oman talks on Strait of Hormuz",
+      "description": "Tehran says the Ukrainian attack killed at least one sailor and wounded another.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/26/iran-war-live-tehran-summons-ukraine-diplomats-over-caspian-sea-attack?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-26T00:00:25Z",
@@ -1258,14 +1258,6 @@
       "link": "https://www.aljazeera.com/news/2026/7/25/iran-accuses-ukraine-of-deadly-attack-on-caspian-commercial-vessel?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-25T23:16:45Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli forces target Gaza\u2019s Al-Aqsa hospital",
-      "description": "At least one person was killed and several injured when Israeli drones hit a group of Palestinians near Al-Aqsa hospital",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/israeli-forces-target-gazas-al-aqsa-hospital?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-25T22:07:36Z",
       "tier": 2
     },
     {
@@ -1293,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 24-26, 2026 indicates the war remains active despite a pause in some U.S. airstrikes: AP reported Iran\u2019s Health Ministry death toll at 3,434 since the war began, while the Pentagon-confirmed U.S. military death toll reached 18 after the July 18 Jordan attack. Regional escalation continued with Houthi missile attacks on Saudi oil infrastructure, U.S. maritime enforcement actions against a tanker accused of violating the Iran blockade, and Iranian accusations that Ukraine struck an Iranian commercial vessel in the Caspian Sea. Official campaign-scale figures accessible from CENTCOM remain the April 1 fact sheet totals of 12,300+ targets struck and 13,000+ combat flights, while no newer confirmed official cumulative totals were found for several requested subcategories.",
+  "summary": "Confirmed reporting as of July 26, 2026 shows U.S. airstrikes on Iran have paused after nearly two weeks of renewed bombing while diplomacy advances, but the maritime conflict remains active: the U.S. has enforced its blockade by disabling at least one merchant vessel, and Houthi attacks on Saudi-linked energy shipping have raised the risk of wider regional escalation. The latest Pentagon/AP reporting puts U.S. military deaths at 18, while the best clearly sourced cumulative Iranian casualty figure located is Iran Health Ministry\u2019s June 10 tally of 3,468 killed and more than 26,500 wounded; the latest clearly sourced Israeli death toll located is 26 killed.",
   "briefings": [
     {
       "date": "2026-07-26",
       "day": 148,
-      "summary": "Confirmed reporting on July 24-26, 2026 indicates the war remains active despite a pause in some U.S. airstrikes: AP reported Iran\u2019s Health Ministry death toll at 3,434 since the war began, while the Pentagon-confirmed U.S. military death toll reached 18 after the July 18 Jordan attack. Regional escalation continued with Houthi missile attacks on Saudi oil infrastructure, U.S. maritime enforcement actions against a tanker accused of violating the Iran blockade, and Iranian accusations that Ukraine struck an Iranian commercial vessel in the Caspian Sea. Official campaign-scale figures accessible from CENTCOM remain the April 1 fact sheet totals of 12,300+ targets struck and 13,000+ combat flights, while no newer confirmed official cumulative totals were found for several requested subcategories."
+      "summary": "Confirmed reporting as of July 26, 2026 shows U.S. airstrikes on Iran have paused after nearly two weeks of renewed bombing while diplomacy advances, but the maritime conflict remains active: the U.S. has enforced its blockade by disabling at least one merchant vessel, and Houthi attacks on Saudi-linked energy shipping have raised the risk of wider regional escalation. The latest Pentagon/AP reporting puts U.S. military deaths at 18, while the best clearly sourced cumulative Iranian casualty figure located is Iran Health Ministry\u2019s June 10 tally of 3,468 killed and more than 26,500 wounded; the latest clearly sourced Israeli death toll located is 26 killed."
     },
     {
       "date": "2026-07-25",
