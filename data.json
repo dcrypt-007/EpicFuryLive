@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-26T15:29:21Z",
+  "lastUpdated": "2026-07-26T17:16:00Z",
   "dayCount": 148,
   "banner": {
-    "strikes": "~1,450",
-    "killed": "3,515+",
-    "cost": "$21.7B+"
+    "strikes": "~13,000",
+    "killed": "3,512+",
+    "cost": "$23.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$21.7 billion+",
-    "dailyBurnRate": "~$147M/day",
+    "totalCost": "$23.2 billion+",
+    "dailyBurnRate": "~$157M/day",
     "daysOfOps": 148,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-26",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan May 2026: two carrier strike groups supporting Operation Epic Fury)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: two carrier strike groups supporting Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-07-26",
-          "source": "LLM-verified (Defense News/Reuters, March 27, 2026: over 850 Tomahawk cruise missiles fired)"
+          "source": "LLM-verified (AP, May 27, 2026, citing CSIS analysis: U.S. fired 1,000-plus Tomahawk missiles at Iran)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-26",
-          "source": "LLM-verified (IDF, July 2026: 'Over 800 strike sorties' for Operation Roaring Lion; Israeli sorties only, not combined US fighter sorties)"
+          "source": "LLM-verified (CENTCOM/DoD fact sheets reported 13,000+ combat flights by April 1, 2026; this is combat flights overall, not fighter-only sorties, so fighter-only total not separately confirmed)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC headline reporting indicates Iran is warning the war could expand if U.S. strikes continue, ahead of Netanyahu's Washington visit",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported continuing U.S.-Iran confrontation around the Strait of Hormuz through July 26, 2026, though AP also reported a second straight day of paused strikes and ongoing Oman-mediated technical talks",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 26, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported the U.S. campaign has expanded to deeper strikes on Iranian infrastructure and bridges in the south.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran-backed Houthis claimed missile and drone attacks on Saudi Arabia, raising risk of wider regional spillover.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 25 that there were no new U.S. strikes overnight in Iran for the first time in nearly two weeks, though tensions remain high around the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -778,16 +778,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/irans-army-issues-warning-ahead-of-netanyahus-us-visit?traffic_source=rss"
     },
     {
-      "time": "2026-07-26T11:28:24Z",
-      "text": "<strong>Malaysia to host rescheduled Bahrain Grand Prix F1 race in October</strong> -- The race in Bahrain was rescheduled in April amid the US-Israel war on Iran and will now be held in Malaysia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/7/26/malaysia-to-host-rescheduled-bahrain-grand-prix-f1-race-in-october?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-26T11:18:00Z",
-      "text": "<strong>Anti-war protesters demand end to US use of UK airbase to strike Iran</strong> -- Anti-war activists have protested outside a UK airbase over US forces using it to bomb Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/anti-war-protesters-demand-end-to-us-use-of-uk-airbase-to-strike-iran?traffic_source=rss"
-    },
-    {
       "time": "2026-07-26T10:26:05Z",
       "text": "<strong>Israeli settlers set fire to mosques, cars and farm land in West Bank, Palestinians say</strong> -- The latest attacks come two days after a clash between settlers and Palestinians near the village of Tell, which left four Palestinians and two Israelis dead. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cjrv77gl4deo?at_medium=RSS&at_campaign=rss"
@@ -803,14 +793,24 @@
       "link": "https://www.bbc.co.uk/news/articles/cj9d27v70j1o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-07-26T10:45:23Z",
-      "text": "<strong>After Strait of Hormuz and Red Sea, has Iran war now reached Caspian Sea?</strong> -- Iran condemns what it calls a &amp;#039;hostile and criminal&amp;#039; Ukrainian attack on commercial vessel. How will it affect the war? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/26/after-strait-of-hormuz-and-red-sea-has-iran-war-now-reached-caspian-sea?traffic_source=rss"
-    },
-    {
       "time": "2026-07-24T22:49:59Z",
       "text": "<strong>Four Palestinians and two Israelis killed in West Bank shooting</strong> -- Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-26T11:28:24Z",
+      "text": "<strong>Malaysia to host rescheduled Bahrain Grand Prix F1 race in October</strong> -- The race in Bahrain was rescheduled in April amid the US-Israel war on Iran and will now be held in Malaysia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/7/26/malaysia-to-host-rescheduled-bahrain-grand-prix-f1-race-in-october?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-26T11:18:00Z",
+      "text": "<strong>Anti-war protesters demand end to US use of UK airbase to strike Iran</strong> -- Anti-war activists have protested outside a UK airbase over US forces using it to bomb Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/anti-war-protesters-demand-end-to-us-use-of-uk-airbase-to-strike-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-26T10:45:23Z",
+      "text": "<strong>After Strait of Hormuz and Red Sea, has Iran war now reached Caspian Sea?</strong> -- Iran condemns what it calls a &amp;#039;hostile and criminal&amp;#039; Ukrainian attack on commercial vessel. How will it affect the war? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/26/after-strait-of-hormuz-and-red-sea-has-iran-war-now-reached-caspian-sea?traffic_source=rss"
     },
     {
       "time": "2026-07-26T04:40:17Z",
@@ -1253,22 +1253,6 @@
       "tier": 2
     },
     {
-      "title": "Malaysia to host rescheduled Bahrain Grand Prix F1 race in October",
-      "description": "The race in Bahrain was rescheduled in April amid the US-Israel war on Iran and will now be held in Malaysia.",
-      "link": "https://www.aljazeera.com/sports/2026/7/26/malaysia-to-host-rescheduled-bahrain-grand-prix-f1-race-in-october?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-26T11:28:24Z",
-      "tier": 2
-    },
-    {
-      "title": "Anti-war protesters demand end to US use of UK airbase to strike Iran",
-      "description": "Anti-war activists have protested outside a UK airbase over US forces using it to bomb Iran",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/anti-war-protesters-demand-end-to-us-use-of-uk-airbase-to-strike-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-26T11:18:00Z",
-      "tier": 2
-    },
-    {
       "title": "Israeli settlers set fire to mosques, cars and farm land in West Bank, Palestinians say",
       "description": "The latest attacks come two days after a clash between settlers and Palestinians near the village of Tell, which left four Palestinians and two Israelis dead.",
       "link": "https://www.bbc.co.uk/news/articles/cjrv77gl4deo?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "As of Sunday, July 26, 2026, AP reported that the United States paused attacks on Iran for a second straight day while Tehran also said it had paused operations, even as ceasefire efforts remained fragile and Prime Minister Netanyahu prepared for a Washington visit. For cumulative war figures, the clearest current casualty total found was Al Jazeera\u2019s live tracker citing Iran\u2019s Ministry of Health: 3,468 killed and more than 26,500 injured in Iran, alongside 26 Israelis killed and 3 deaths in Bahrain. AP reported on July 21 that the Pentagon-confirmed US military death toll had risen to 18. On military activity, the most specific official strike total found was CENTCOM commander Brad Cooper\u2019s May 14 Senate testimony, reported by CBS News, stating Operation Epic Fury had carried out more than 1,450 strikes on weapons-manufacturing facilities; Defense News/Reuters also reported in March that the US had fired over 850 Tomahawk missiles. No newer confirmed official figures were found for current carrier groups, destroyers, deployed personnel, UAV units, JDAM, JASSM, SDB, B-2 sorties, MOPs, or total interceptors fired.",
+  "summary": "Confirmed reporting on July 26, 2026 indicates a fragile lull after recent renewed U.S.-Iran strikes tied to the Strait of Hormuz, with AP reporting a second straight day of paused attacks and ongoing Oman-mediated talks, while Al Jazeera reports Iran has warned the conflict could widen if U.S. strikes resume. The best confirmed cumulative figures located today remain 3,468 Iranian deaths from Iran\u2019s Health Ministry as cited by Al Jazeera, 18 U.S. service members killed per Pentagon/AP reporting, and 26 Israeli deaths per Al Jazeera\u2019s May 27 timeline. Official U.S. military materials still publicly confirm two carrier strike groups and 13,000+ targets struck/combat flights in the early phase of Operation Epic Fury, but many detailed weapons-usage totals and current deployment counts could not be newly confirmed from named official sources.",
   "briefings": [
     {
       "date": "2026-07-26",
       "day": 148,
-      "summary": "As of Sunday, July 26, 2026, AP reported that the United States paused attacks on Iran for a second straight day while Tehran also said it had paused operations, even as ceasefire efforts remained fragile and Prime Minister Netanyahu prepared for a Washington visit. For cumulative war figures, the clearest current casualty total found was Al Jazeera\u2019s live tracker citing Iran\u2019s Ministry of Health: 3,468 killed and more than 26,500 injured in Iran, alongside 26 Israelis killed and 3 deaths in Bahrain. AP reported on July 21 that the Pentagon-confirmed US military death toll had risen to 18. On military activity, the most specific official strike total found was CENTCOM commander Brad Cooper\u2019s May 14 Senate testimony, reported by CBS News, stating Operation Epic Fury had carried out more than 1,450 strikes on weapons-manufacturing facilities; Defense News/Reuters also reported in March that the US had fired over 850 Tomahawk missiles. No newer confirmed official figures were found for current carrier groups, destroyers, deployed personnel, UAV units, JDAM, JASSM, SDB, B-2 sorties, MOPs, or total interceptors fired."
+      "summary": "Confirmed reporting on July 26, 2026 indicates a fragile lull after recent renewed U.S.-Iran strikes tied to the Strait of Hormuz, with AP reporting a second straight day of paused attacks and ongoing Oman-mediated talks, while Al Jazeera reports Iran has warned the conflict could widen if U.S. strikes resume. The best confirmed cumulative figures located today remain 3,468 Iranian deaths from Iran\u2019s Health Ministry as cited by Al Jazeera, 18 U.S. service members killed per Pentagon/AP reporting, and 26 Israeli deaths per Al Jazeera\u2019s May 27 timeline. Official U.S. military materials still publicly confirm two carrier strike groups and 13,000+ targets struck/combat flights in the early phase of Operation Epic Fury, but many detailed weapons-usage totals and current deployment counts could not be newly confirmed from named official sources."
     },
     {
       "date": "2026-07-25",
