@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-26T04:42:16Z",
+  "lastUpdated": "2026-07-26T07:45:45Z",
   "dayCount": 148,
   "banner": {
-    "strikes": "~9,000",
-    "killed": "73+",
-    "cost": "$23.3B+"
+    "strikes": "~12,300",
+    "killed": "3,452+",
+    "cost": "$23.7B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,434",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$23.3 billion+",
-    "dailyBurnRate": "~$157M/day",
+    "totalCost": "$23.7 billion+",
+    "dailyBurnRate": "~$160M/day",
     "daysOfOps": 148,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-26",
-          "source": "LLM-verified (Department of the Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury over five weeks.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups... supporting the Joint Force mission' in Operation Epic Fury (media.defense.gov/2026/May/11/2003928909/-1/-1/1/NAVY%20SHIPBUILDING%20PLAN%20MAY%202026.PDF))"
         },
         {
           "id": "destroyers",
@@ -260,14 +260,14 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-07-25",
-          "source": "LLM-verified (Defense Department transcript for Operation Midnight Hammer: 'a total of 14 MOPs dropped against two nuclear target areas.')"
+          "lastUpdated": "2026-07-26",
+          "source": "LLM-verified (DoD transcript on Operation Midnight Hammer: '14 30,000-pound GBU-57 Massive Ordnance Penetrators' were employed (defense.gov/News/Transcripts/Transcript/Article/4222543/...))"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-26",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 23, 2026: 'Combat Flights: 9,000+'; used here as the nearest confirmed official sorties figure found.)"
+          "source": "LLM-verified (CENTCOM fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; IDF separately reported 800+ Israeli strike sorties by April 1, but to avoid double counting this field uses the official CENTCOM cumulative combat-flights figure (media.defense.gov/2026/Apr/01/2003905658/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-APRIL-1-UPDATE.PDF))"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran accused Ukraine of a deadly attack on an Iranian commercial vessel in the Caspian Sea, opening an additional international front/tension point.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. military said it disabled a tanker accused of breaching the Iran blockade, indicating escalation in maritime interdiction.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthis claimed missile attacks on Saudi oil facilities along the Red Sea, broadening the regional spillover reported by AP, BBC and Al Jazeera.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 26, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on July 23 that the U.S. announced a 13th consecutive night of strikes against Iran focused on degrading threats to commercial shipping through the Strait of Hormuz",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 24-25 that the U.S. struck deeper into Iran, including bridges and infrastructure in the south and targets near Tehran, while President Trump said the U.S. was 'locked and loaded' as negotiations continued",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP July 25: Saudi-led coalition struck Houthi-held Hodeida after Houthi attacks on Saudi tankers, raising wider regional escalation risks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera live updates July 20: Kuwait said its air defenses were activated against Iranian missile and drone attacks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-07-26T04:40:17Z",
+      "text": "<strong>New front in US-Iran war escalates as Houthis fire at Saudi oil facilities</strong> -- Conflict also spreads to Caspian Sea as Tehran accuses Ukraine of a deadly attack on an Iranian vessel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/26/new-front-in-us-iran-war-escalates-as-houthis-fire-at-saudi-oil-facilities?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-26T04:33:16Z",
+      "text": "<strong>US military disables tanker accused of breaking the Iran blockade</strong> -- The US military has released footage it says shows forces boarding one tanker. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/us-military-disables-tanker-accused-of-breaking-the-iran-blockade?traffic_source=rss"
+    },
+    {
       "time": "2026-07-26T03:49:29Z",
       "text": "<strong>Tehran summons Ukrainian diplomat after Kyiv bombs an Iranian ship</strong> -- Iran has condemned a Ukrainian attack on one of its commercial vessels. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/tehran-summons-ukrainian-diplomat-after-kyiv-bombs-an-iranian-ship?traffic_source=rss"
@@ -764,7 +774,7 @@
     },
     {
       "time": "2026-07-26T00:00:25Z",
-      "text": "<strong>Iran war live: Tehran summons Ukraine diplomats over Caspian Sea attack</strong> -- Tehran says the Ukranian attack killed at least one sailor and wounded another. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Tehran slams Ukraine attack; West Bank unrest continues</strong> -- Tehran says the Ukranian attack killed at least one sailor and wounded another. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/26/iran-war-live-tehran-summons-ukraine-diplomats-over-caspian-sea-attack?traffic_source=rss"
     },
     {
@@ -773,14 +783,29 @@
       "link": "https://www.aljazeera.com/news/2026/7/25/iran-accuses-ukraine-of-deadly-attack-on-caspian-commercial-vessel?traffic_source=rss"
     },
     {
-      "time": "2026-07-25T22:31:19Z",
-      "text": "<strong>One dead, 16 injured as car strikes crowd at Berlin LGBTQ event</strong> -- German police say a white car drove into Tiergarten Park, near the route of a Pride march, hitting several people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/25/one-dead-14-injured-as-car-reportedly-strikes-crowd-at-berlin-lgbtq-event?traffic_source=rss"
-    },
-    {
       "time": "2026-07-25T22:07:36Z",
       "text": "<strong>Israeli forces target Gaza\u2019s Al-Aqsa hospital</strong> -- At least one person was killed and several injured when Israeli drones hit a group of Palestinians near Al-Aqsa hospital <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/israeli-forces-target-gazas-al-aqsa-hospital?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-25T06:34:40Z",
+      "text": "<strong>Iran-backed Houthis claim missile attack on Saudi Arabia</strong> -- US military says it disabled a tanker that was attempting to evade the American blockade on Iranian ports. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj9d27v70j1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-25T00:06:53Z",
+      "text": "<strong>Ten killed in Russian attack on drone exhibition near Kyiv</strong> -- The event, attended by prominent members of the Ukrainian defence industry, was hit by ballistic missiles in the middle of the day. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-24T22:49:59Z",
+      "text": "<strong>Four Palestinians and two Israelis killed in West Bank shooting</strong> -- Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-25T22:31:19Z",
+      "text": "<strong>One dead, 16 injured as car strikes crowd at Berlin LGBTQ event</strong> -- German police say a white car drove into Tiergarten Park, near the route of a Pride march, hitting several people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/25/one-dead-14-injured-as-car-reportedly-strikes-crowd-at-berlin-lgbtq-event?traffic_source=rss"
     },
     {
       "time": "2026-07-25T20:00:43Z",
@@ -813,24 +838,9 @@
       "link": "https://www.aljazeera.com/news/2026/7/25/iran-blames-us-for-hormuz-dispute-as-both-sides-confirm-ongoing-talks?traffic_source=rss"
     },
     {
-      "time": "2026-07-25T06:34:40Z",
-      "text": "<strong>Iran-backed Houthis claim missile attack on Saudi Arabia</strong> -- US military says it disabled a tanker that was attempting to evade the American blockade on Iranian ports. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj9d27v70j1o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-07-25T12:41:02Z",
       "text": "<strong>At least 15 killed in Ukrainian and Russian strikes as holiday camp hit</strong> -- Five children among 12 killed in Russian-held resort, while Russian drone kills three Ukrainian drivers at courier firm. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/25/at-least-11-killed-in-ukrainian-and-russian-strikes-as-holiday-camp-hit?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-25T00:06:53Z",
-      "text": "<strong>Ten killed in Russian attack on drone exhibition near Kyiv</strong> -- The event, attended by prominent members of the Ukrainian defence industry, was hit by ballistic missiles in the middle of the day. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-24T22:49:59Z",
-      "text": "<strong>Four Palestinians and two Israelis killed in West Bank shooting</strong> -- Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-25T09:10:01Z",
@@ -841,16 +851,6 @@
       "time": "2026-07-24T01:59:49Z",
       "text": "<strong>Houthi attacks raise fears of wider Middle East conflict and more global economic damage</strong> -- The Iran-backed group in Yemen has threatened to target Saudi vessels in a vital shipping route. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cvgve0vxy1yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-25T04:29:17Z",
-      "text": "<strong>Funerals held for four Palestinians killed in deadly West Bank shooting</strong> -- Overnight funerals were held for four Palestinians killed near Nablus. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/funerals-held-for-four-palestinians-killed-in-deadly-west-bank-shooting?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-25T01:30:20Z",
-      "text": "<strong>Sons of immigrant killed by ICE in Texas share grief, demand accountability</strong> -- Lorenzo Salgado Araujo&amp;#039;s sons tell lawmakers their father worked hard &amp;#039;to protect and provide&amp;#039; for his family. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/25/sons-of-immigrant-killed-by-ice-in-texas-share-grief-demand-accountability?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "New front in US-Iran war escalates as Houthis fire at Saudi oil facilities",
+      "description": "Conflict also spreads to Caspian Sea as Tehran accuses Ukraine of a deadly attack on an Iranian vessel.",
+      "link": "https://www.aljazeera.com/news/2026/7/26/new-front-in-us-iran-war-escalates-as-houthis-fire-at-saudi-oil-facilities?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-26T04:40:17Z",
+      "tier": 2
+    },
+    {
+      "title": "US military disables tanker accused of breaking the Iran blockade",
+      "description": "The US military has released footage it says shows forces boarding one tanker.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/us-military-disables-tanker-accused-of-breaking-the-iran-blockade?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-26T04:33:16Z",
+      "tier": 2
+    },
+    {
       "title": "Tehran summons Ukrainian diplomat after Kyiv bombs an Iranian ship",
       "description": "Iran has condemned a Ukrainian attack on one of its commercial vessels.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/26/tehran-summons-ukrainian-diplomat-after-kyiv-bombs-an-iranian-ship?traffic_source=rss",
@@ -1229,7 +1245,7 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran summons Ukraine diplomats over Caspian Sea attack",
+      "title": "Iran war live: Tehran slams Ukraine attack; West Bank unrest continues",
       "description": "Tehran says the Ukranian attack killed at least one sailor and wounded another.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/26/iran-war-live-tehran-summons-ukraine-diplomats-over-caspian-sea-attack?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1245,51 +1261,11 @@
       "tier": 2
     },
     {
-      "title": "One dead, 16 injured as car strikes crowd at Berlin LGBTQ event",
-      "description": "German police say a white car drove into Tiergarten Park, near the route of a Pride march, hitting several people.",
-      "link": "https://www.aljazeera.com/news/2026/7/25/one-dead-14-injured-as-car-reportedly-strikes-crowd-at-berlin-lgbtq-event?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-25T22:31:19Z",
-      "tier": 2
-    },
-    {
       "title": "Israeli forces target Gaza\u2019s Al-Aqsa hospital",
       "description": "At least one person was killed and several injured when Israeli drones hit a group of Palestinians near Al-Aqsa hospital",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/israeli-forces-target-gazas-al-aqsa-hospital?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-25T22:07:36Z",
-      "tier": 2
-    },
-    {
-      "title": "Head of police in northern Gaza killed in Israeli strike",
-      "description": "Gaza\u2019s Interior Ministry says Israel is targeting police personnel with the aim of &#039;spreading chaos&#039; in the Gaza Strip.",
-      "link": "https://www.aljazeera.com/news/2026/7/25/head-of-hamas-led-police-in-northern-gaza-killed-by-israeli-strike?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-25T20:00:43Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 35 killed after two buses collide in eastern Syria",
-      "description": "At least 35 killed after two buses collide in eastern Syria",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/25/at-least-35-killed-after-two-buses-collide-in-eastern-syria?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-25T19:22:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Ebola deaths in DRC surge past 1,300 as virus \u2018spreading like a wildfire\u2019",
-      "description": "Outbreak is spreading at the fastest rate ever recorded as confirmed cases in DRC surpass 3,000.",
-      "link": "https://www.aljazeera.com/news/2026/7/25/ebola-deaths-in-drc-surge-past-1300-as-virus-spreading-like-a-wildfire?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-25T18:28:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran\u2019s government spars with state TV as mediators push talks with US",
-      "description": "Gov&#039;t accuses IRIB of &#039;censorship&#039; after parts of president&#039;s speech not aired; station rejects &#039;improper attributions&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/7/25/irans-government-spars-with-state-tv-as-mediators-push-talks-with-us?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-25T16:39:16Z",
       "tier": 2
     },
     {
@@ -1317,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains fragmentary. The clearest updated figure is that 18 U.S. service members have been killed since the war began, according to AP reporting on July 21, 2026, citing the U.S. military. For Iran, AP reported on July 23, 2026, citing Iran\u2019s Health Ministry, that 55 people had been killed and 629 wounded since renewed U.S. airstrikes began on June 27, but a current all-war cumulative Iranian death toll could not be independently confirmed from named official or major wire sources. The latest official strike-scale figure found was CENTCOM\u2019s March 23 fact sheet listing 9,000+ targets struck and 9,000+ combat flights in the first 24 days. Headline context provided for today also indicates fresh regional spillover risks involving an alleged Ukrainian strike on an Iranian vessel in the Caspian and claimed Houthi attacks on Saudi oil facilities.",
+  "summary": "Confirmed reporting on July 24-26, 2026 indicates the war remains active despite a pause in some U.S. airstrikes: AP reported Iran\u2019s Health Ministry death toll at 3,434 since the war began, while the Pentagon-confirmed U.S. military death toll reached 18 after the July 18 Jordan attack. Regional escalation continued with Houthi missile attacks on Saudi oil infrastructure, U.S. maritime enforcement actions against a tanker accused of violating the Iran blockade, and Iranian accusations that Ukraine struck an Iranian commercial vessel in the Caspian Sea. Official campaign-scale figures accessible from CENTCOM remain the April 1 fact sheet totals of 12,300+ targets struck and 13,000+ combat flights, while no newer confirmed official cumulative totals were found for several requested subcategories.",
   "briefings": [
     {
       "date": "2026-07-26",
       "day": 148,
-      "summary": "Confirmed reporting available today remains fragmentary. The clearest updated figure is that 18 U.S. service members have been killed since the war began, according to AP reporting on July 21, 2026, citing the U.S. military. For Iran, AP reported on July 23, 2026, citing Iran\u2019s Health Ministry, that 55 people had been killed and 629 wounded since renewed U.S. airstrikes began on June 27, but a current all-war cumulative Iranian death toll could not be independently confirmed from named official or major wire sources. The latest official strike-scale figure found was CENTCOM\u2019s March 23 fact sheet listing 9,000+ targets struck and 9,000+ combat flights in the first 24 days. Headline context provided for today also indicates fresh regional spillover risks involving an alleged Ukrainian strike on an Iranian vessel in the Caspian and claimed Houthi attacks on Saudi oil facilities."
+      "summary": "Confirmed reporting on July 24-26, 2026 indicates the war remains active despite a pause in some U.S. airstrikes: AP reported Iran\u2019s Health Ministry death toll at 3,434 since the war began, while the Pentagon-confirmed U.S. military death toll reached 18 after the July 18 Jordan attack. Regional escalation continued with Houthi missile attacks on Saudi oil infrastructure, U.S. maritime enforcement actions against a tanker accused of violating the Iran blockade, and Iranian accusations that Ukraine struck an Iranian commercial vessel in the Caspian Sea. Official campaign-scale figures accessible from CENTCOM remain the April 1 fact sheet totals of 12,300+ targets struck and 13,000+ combat flights, while no newer confirmed official cumulative totals were found for several requested subcategories."
     },
     {
       "date": "2026-07-25",
