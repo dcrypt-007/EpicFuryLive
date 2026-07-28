@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-28T20:34:21Z",
+  "lastUpdated": "2026-07-28T22:19:57Z",
   "dayCount": 150,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$28.2B+"
+    "killed": "3,502+",
+    "cost": "$28.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,434",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.2 billion+",
-    "dailyBurnRate": "~$188M/day",
+    "totalCost": "$28.9 billion+",
+    "dailyBurnRate": "~$193M/day",
     "daysOfOps": 150,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-07-28",
-          "source": "LLM-verified (U.S. Navy, July 2026: Carrier Strike Group 10 / USS George H.W. Bush currently deployed in the Middle East. No second currently deployed carrier strike group confirmed in latest official sources found.)"
+          "source": "LLM-verified (U.S. Navy press release, July 7, 2026, described search efforts involving two carrier strike groups; Navy Shipbuilding Plan May 2026 also states two carrier strike groups supported Operation Epic Fury.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 8,
+          "quantity": 5,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-07-27",
-          "source": "LLM-verified (USNI Fleet Tracker, July 7, 2026: 8 guided-missile destroyers listed with Abraham Lincoln CSG in Arabian Sea; excludes DDGs in Red Sea/Eastern Med/Indian Ocean)"
+          "lastUpdated": "2026-07-28",
+          "source": "LLM-verified (U.S. Navy press release, July 7, 2026, explicitly named five destroyers involved in Middle East operations/search: USS Ross, USS Donald Cook, USS Higgins, USS Mason, USS John Finn.)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-28",
-          "source": "LLM-verified (CENTCOM / Defense Department Operation Epic Fury fact sheet dated April 1, 2026 reported 'Combat Flights: 13,000+'; used here as closest confirmed official sorties-type metric)"
+          "source": "LLM-verified (DoD Operation Epic Fury fact sheet dated March 28, 2026: 11,000+ combat flights. No newer official cumulative sorties figure located.)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 150 days",
-        "cost": "$1,050,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 150 days",
+        "cost": "$2,100,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "8 \u00d7 $240,000/day \u00d7 150 days",
-        "cost": "$288,000,000"
+        "detail": "5 \u00d7 $240,000/day \u00d7 150 days",
+        "cost": "$180,000,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-07-28T21:24:20Z",
+      "text": "<strong>Israeli airstrike destroys Gaza City mosque near displacement camp</strong> -- Video footage captures an Israeli airstrike hitting Al-Muttaqin Mosque in Gaza City, next to Yarmouk Stadium <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/israeli-airstrike-destroys-gaza-city-mosque-near-displacement-camp?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-28T21:01:19Z",
+      "text": "<strong>Iran and Oman exchange proposals to manage Strait of Hormuz</strong> -- Omani proposal is based on the Strait of Malacca model, where ships that use the strait provide voluntary fees. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/28/iran-and-oman-exchange-proposals-to-manage-strait-of-hormuz?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-28T20:36:48Z",
+      "text": "<strong>Many feared dead from 7.1-magnitude quake in Kumamoto, Japan</strong> -- A powerful 7.1-magnitude earthquake struck Kumamoto, Japan, causing widespread damage, injuries and fears of deaths. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/aje-onl-nf_many-feared-dead-from-7-280726?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-28T20:29:42Z",
+      "text": "<strong>Kyiv warns Iran against escalation after Ukraine\u2019s Caspian Sea attack</strong> -- Kyiv claims its Caspian Sea strike targeted Russian warships, denying intent to harm civilian vessels or individuals. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/28/kyiv-warns-iran-against-escalation-after-ukraines-caspian-sea-attack?traffic_source=rss"
+    },
+    {
       "time": "2026-07-28T18:01:03Z",
       "text": "<strong>Lindsey Graham \u2018almost cried\u2019 tears of joy over war on Iran, footage shows</strong> -- Excerpts from a planned documentary show the hawkish senator claiming credit for persuading Donald Trump to attack Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/28/lindsey-graham-almost-cried-tears-of-joy-over-war-on-iran-footage-shows?traffic_source=rss"
@@ -768,16 +788,6 @@
       "link": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-hails-good-meeting-with-trump-at-white-house?traffic_source=rss"
     },
     {
-      "time": "2026-07-28T15:28:33Z",
-      "text": "<strong>Iran rejects Trump frozen funds plan, warns ships of Hormuz transit ban</strong> -- Iran rejected Trump\u2019s claim that ships damaged by Iran in the Gulf would be compensated from frozen Iranian funds. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/iran-rejects-trump-frozen-funds-plan-warns-ships-of-hormuz-transit-ban?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-28T15:21:43Z",
-      "text": "<strong>Trump expresses frustration with Netanyahu before White House meeting</strong> -- Israeli leader hails &amp;#039;excellent&amp;#039; talk as Trump admin offers few details on Oval Office meeting amid Iran war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/28/trump-expresses-frustration-with-netanyahu-before-white-house-meeting?traffic_source=rss"
-    },
-    {
       "time": "2026-07-28T16:37:02Z",
       "text": "<strong>Mysterious deaths of 14 elephants in Kenya prompts urgent inquiry</strong> -- It is the highest number of elephant deaths to be recorded in this area of southern Kenya in decades. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c3w0d7yeqlxo?at_medium=RSS&at_campaign=rss"
@@ -791,6 +801,16 @@
       "time": "2026-07-28T08:50:20Z",
       "text": "<strong>Zoo staff rescue near-extinct snails from remote rock</strong> -- Just 21 Madeiran land snails were found clinging to a rock on Portugal&#x27;s Bugio Island, say conservationists. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cwyq7e5d1gko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-28T15:28:33Z",
+      "text": "<strong>Iran rejects Trump frozen funds plan, warns ships of Hormuz transit ban</strong> -- Iran rejected Trump\u2019s claim that ships damaged by Iran in the Gulf would be compensated from frozen Iranian funds. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/iran-rejects-trump-frozen-funds-plan-warns-ships-of-hormuz-transit-ban?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-28T15:21:43Z",
+      "text": "<strong>Trump expresses frustration with Netanyahu before White House meeting</strong> -- Israeli leader hails &amp;#039;excellent&amp;#039; talk as Trump admin offers few details on Oval Office meeting amid Iran war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/28/trump-expresses-frustration-with-netanyahu-before-white-house-meeting?traffic_source=rss"
     },
     {
       "time": "2026-07-27T21:06:42Z",
@@ -831,26 +851,6 @@
       "time": "2026-07-28T02:47:55Z",
       "text": "<strong>Trump says Iran talks taking place during pause in US military strikes</strong> -- US President Donald Trump says talks with Iran are continuing during a pause in US military strikes <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/trump-says-iran-talks-taking-place-during-pause-in-us-military-strikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-28T02:33:05Z",
-      "text": "<strong>Ebola response workers strike in DR Congo as death toll spikes</strong> -- Healthcare workers at an Ebola treatment centre in Bunia, Democratic Republic of Congo, have gone on strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/ebola-response-workers-strike-in-dr-congo-as-death-toll-spikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-28T01:18:24Z",
-      "text": "<strong>Former senior ICE official says rush for numbers is causing deaths</strong> -- Fmr. Acting Chief of Staff at ICE: a rush to hire officers and a focus on detention numbers is causing fatal mistakes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/aje-onl-nf_former-ice-official-rush-for-numbers-causing-deaths-270726?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-28T00:51:50Z",
-      "text": "<strong>Houthis want to copy Iran\u2019s Hormuz control in the Red Sea: Yemeni FM</strong> -- Speaking in Riyadh, Yemen&amp;#039;s internationally recognised government warns global complacency has emboldened the Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-27T21:10:56Z",
-      "text": "<strong>Trump says Iran war talks taking place during lull in strikes</strong> -- The US president says &quot;there is a good chance that something could happen&quot;, as Iran denies direct talks are taking place. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c62xn4vzmnpo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Israeli airstrike destroys Gaza City mosque near displacement camp",
+      "description": "Video footage captures an Israeli airstrike hitting Al-Muttaqin Mosque in Gaza City, next to Yarmouk Stadium",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/israeli-airstrike-destroys-gaza-city-mosque-near-displacement-camp?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-28T21:24:20Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran and Oman exchange proposals to manage Strait of Hormuz",
+      "description": "Omani proposal is based on the Strait of Malacca model, where ships that use the strait provide voluntary fees.",
+      "link": "https://www.aljazeera.com/news/2026/7/28/iran-and-oman-exchange-proposals-to-manage-strait-of-hormuz?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-28T21:01:19Z",
+      "tier": 2
+    },
+    {
+      "title": "Many feared dead from 7.1-magnitude quake in Kumamoto, Japan",
+      "description": "A powerful 7.1-magnitude earthquake struck Kumamoto, Japan, causing widespread damage, injuries and fears of deaths.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/aje-onl-nf_many-feared-dead-from-7-280726?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-28T20:36:48Z",
+      "tier": 2
+    },
+    {
+      "title": "Kyiv warns Iran against escalation after Ukraine\u2019s Caspian Sea attack",
+      "description": "Kyiv claims its Caspian Sea strike targeted Russian warships, denying intent to harm civilian vessels or individuals.",
+      "link": "https://www.aljazeera.com/news/2026/7/28/kyiv-warns-iran-against-escalation-after-ukraines-caspian-sea-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-28T20:29:42Z",
+      "tier": 2
+    },
+    {
       "title": "Lindsey Graham \u2018almost cried\u2019 tears of joy over war on Iran, footage shows",
       "description": "Excerpts from a planned documentary show the hawkish senator claiming credit for persuading Donald Trump to attack Iran.",
       "link": "https://www.aljazeera.com/news/2026/7/28/lindsey-graham-almost-cried-tears-of-joy-over-war-on-iran-footage-shows?traffic_source=rss",
@@ -1242,22 +1274,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c3w0d7yeqlxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-28T16:37:02Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran rejects Trump frozen funds plan, warns ships of Hormuz transit ban",
-      "description": "Iran rejected Trump\u2019s claim that ships damaged by Iran in the Gulf would be compensated from frozen Iranian funds.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/iran-rejects-trump-frozen-funds-plan-warns-ships-of-hormuz-transit-ban?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-28T15:28:33Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump expresses frustration with Netanyahu before White House meeting",
-      "description": "Israeli leader hails &#039;excellent&#039; talk as Trump admin offers few details on Oval Office meeting amid Iran war.",
-      "link": "https://www.aljazeera.com/news/2026/7/28/trump-expresses-frustration-with-netanyahu-before-white-house-meeting?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-28T15:21:43Z",
       "tier": 2
     },
     {
@@ -1293,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 26-28, 2026 indicates the war's casualty accounting remains contested but the Pentagon's official Operation Epic Fury tally stands at 14 U.S. military dead, while four additional July deaths are now counted separately under 'Overseas Operations.' The most recent clearly sourced cumulative Iran and Israel casualty figures I found remain the June 10 Al Jazeera tracker totals citing Iran's Ministry of Health and Israeli figures: 3,468 killed in Iran, more than 26,500 injured there, and 26 killed in Israel. Gulf-state deaths remain 28 in that same tracker. For operations, the newest official cumulative strike figure I found is still CENTCOM's April 6 fact sheet listing 13,000+ targets struck; I could not verify newer confirmed totals for specific munitions, sorties, deployments, or interceptor counts from primary official sources, so those fields are left null.",
+  "summary": "Confirmed reporting as of July 28, 2026 shows the Pentagon\u2019s official Iran-war death toll at 14 U.S. service members, after four July deaths were shifted into a separate 'Overseas Operations' category rather than the main Iran-war count. Iran\u2019s Health Ministry figure reported by AP on July 24 put total Iranian deaths at 3,434 since the war began, while Al Jazeera\u2019s latest accessible cumulative tracker still listed 26 Israeli deaths, 28 deaths in Gulf states, and 26,500+ wounded in Iran. On the military side, the latest accessible official U.S. operation totals remain older: CENTCOM\u2019s April 6 fact sheet said 13,000+ targets had been struck, and a March 28 fact sheet said 11,000+ combat flights. Current naval reporting confirms two carrier strike groups operating in the theater, but several cost-model fields such as total deployed personnel, UAV units, missile expenditures, bomber sorties, and interceptor counts could not be updated with confirmed cumulative numbers from accessible named sources.",
   "briefings": [
     {
       "date": "2026-07-28",
       "day": 150,
-      "summary": "Confirmed reporting on July 26-28, 2026 indicates the war's casualty accounting remains contested but the Pentagon's official Operation Epic Fury tally stands at 14 U.S. military dead, while four additional July deaths are now counted separately under 'Overseas Operations.' The most recent clearly sourced cumulative Iran and Israel casualty figures I found remain the June 10 Al Jazeera tracker totals citing Iran's Ministry of Health and Israeli figures: 3,468 killed in Iran, more than 26,500 injured there, and 26 killed in Israel. Gulf-state deaths remain 28 in that same tracker. For operations, the newest official cumulative strike figure I found is still CENTCOM's April 6 fact sheet listing 13,000+ targets struck; I could not verify newer confirmed totals for specific munitions, sorties, deployments, or interceptor counts from primary official sources, so those fields are left null."
+      "summary": "Confirmed reporting as of July 28, 2026 shows the Pentagon\u2019s official Iran-war death toll at 14 U.S. service members, after four July deaths were shifted into a separate 'Overseas Operations' category rather than the main Iran-war count. Iran\u2019s Health Ministry figure reported by AP on July 24 put total Iranian deaths at 3,434 since the war began, while Al Jazeera\u2019s latest accessible cumulative tracker still listed 26 Israeli deaths, 28 deaths in Gulf states, and 26,500+ wounded in Iran. On the military side, the latest accessible official U.S. operation totals remain older: CENTCOM\u2019s April 6 fact sheet said 13,000+ targets had been struck, and a March 28 fact sheet said 11,000+ combat flights. Current naval reporting confirms two carrier strike groups operating in the theater, but several cost-model fields such as total deployed personnel, UAV units, missile expenditures, bomber sorties, and interceptor counts could not be updated with confirmed cumulative numbers from accessible named sources."
     },
     {
       "date": "2026-07-27",
