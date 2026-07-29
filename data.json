@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-07-29T06:45:00Z",
+  "lastUpdated": "2026-07-29T09:49:25Z",
   "dayCount": 151,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$28.4B+"
+    "strikes": "~13,500",
+    "killed": "3,537+",
+    "cost": "$29.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "27",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.4 billion+",
-    "dailyBurnRate": "~$188M/day",
+    "totalCost": "$29.0 billion+",
+    "dailyBurnRate": "~$192M/day",
     "daysOfOps": 151,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-29",
-          "source": "LLM-verified (Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; numeric floor used)"
+          "source": "LLM-verified (Gen. Brad Cooper prepared Senate testimony / White House April 8, 2026: over 10,200 total air sorties flown during Operation Epic Fury)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1500,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-07-29",
-          "source": "LLM-verified (USCENTCOM 2026 SASC Posture Statement says the integrated architecture intercepted more than 1,500 ballistic missiles; does not include a confirmed breakout for all SM-3/THAAD/Patriot shots, so ballistic-missile floor used)"
+          "source": "LLM-verified (White House April 8, 2026: over 1,000 incoming attack drone threats intercepted and over 700 ballistic missile threats intercepted)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,500 \u00d7 $4,000,000 each",
-        "cost": "$6,000,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Iran rejected or challenged Oman-linked Hormuz management proposals while the Strait confrontation continues, sustaining maritime escalation risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP, BBC, and Al Jazeera reported joint U.S.-Saudi strikes on Iran-aligned militias in Iraq on July 28, 2026, marking a widening regional spillover beyond Iran itself.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported renewed Iranian missile attacks on U.S. forces in Jordan on July 28, 2026, with CENTCOM saying multiple ballistic missiles were intercepted.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 29, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported the broader wartime death toll had reached 18 U.S. service members before the Pentagon accounting change, indicating renewed recent fighting in Jordan and Iraq",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the Pentagon's casualty system created a new 'Overseas Operations' category listing 4 additional Army deaths and 207 wounded, while the official Iran-war count fell back to 14 dead and 420 wounded as of July 26, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera/AFP on July 26, 2026 reported Iran also halted retaliatory Gulf strikes during the pause",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on July 27, 2026 reported U.S. strikes have been paused since July 24 amid reports of depleted U.S. weapons stocks and a renewed diplomatic push",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-07-29T08:33:39Z",
+      "text": "<strong>US and Saudi Arabia strike \u2018Iran-aligned\u2019 groups in Iraq</strong> -- The US and Saudi Arabia launched joint air strikes on Iraq, targeting \u2018Iran-aligned\u2019 groups. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/29/us-and-saudi-arabia-strike-iran-aligned-groups-in-iraq?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-29T08:16:06Z",
+      "text": "<strong>Iran and Oman swap proposals to manage Strait of Hormuz: What we know</strong> -- Iran is proposing a deal that would see it have significantly more control than Oman. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/29/iran-and-oman-swap-proposals-to-manage-strait-of-hormuz-what-we-know?traffic_source=rss"
+    },
+    {
       "time": "2026-07-29T05:43:03Z",
       "text": "<strong>Iran attacks US bases in Middle East as Trump meets Netanyahu</strong> -- Iran has also struck three ships in the Strait of Hormuz and rejected Oman\u2019s proposal on managing the waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/29/iran-attacks-us-bases-in-middle-east-as-trump-meets-netanyahu?traffic_source=rss"
@@ -769,13 +779,28 @@
     },
     {
       "time": "2026-07-29T01:37:23Z",
-      "text": "<strong>Iraqi armed groups condemn \u201cdangerous escalation\u201d after US-Saudi strikes</strong> -- Riyadh says its targeted attacks were done in coordination with the US military. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iraqi armed groups condemn \u2018dangerous escalation\u2019 after US-Saudi strikes</strong> -- Riyadh says its targeted attacks were done in coordination with the US military. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/29/saudi-arabia-us-carry-out-strikes-on-iran-backed-groups-in-iraq?traffic_source=rss"
     },
     {
       "time": "2026-07-29T00:00:00Z",
-      "text": "<strong>Iran war live: US, Saudi forces attack Iraq; IRGC fires missiles at Jordan</strong> -- Attacks come as Saudi Arabia intercepts drones and Iran warns of &amp;#039;any action&amp;#039; to maintain its control of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: 20 killed in US-Saudi attack on Iraq; IRGC targets Jordan</strong> -- Attacks come as Saudi Arabia intercepts drones and Iran warns of &amp;#039;any action&amp;#039; to maintain its control of Hormuz Strait. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-29T06:10:19Z",
+      "text": "<strong>Japan in a \u2018race against time\u2019 to rescue people trapped beneath rubble after quake</strong> -- At least 13 people have been killed after the earthquake struck the island of Kyushu on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c3r0pg0dgrgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-29T09:39:56Z",
+      "text": "<strong>Saudi Arabia joins US in strikes on Iran-backed militias in Iraq</strong> -- US Central Command says proxy groups launched attacks against US bases and Saudi energy infrastructure. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c70g6y24d76o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-29T02:24:03Z",
+      "text": "<strong>Zelensky and Netanyahu meet Trump as wars in Ukraine and Iran drag on</strong> -- The two leaders sound encouraged after holding back-to-back bilaterals at the White House. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj4k2z8z45ro?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-28T23:16:44Z",
@@ -826,31 +851,6 @@
       "time": "2026-07-28T17:12:56Z",
       "text": "<strong>Ukraine\u2019s Zelenskyy hails \u2018good meeting\u2019 with Trump at White House</strong> -- Discussions included joint production of Patriot missiles in Ukraine to bolster defence against Russian aerial attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/28/ukraines-zelenskyy-hails-good-meeting-with-trump-at-white-house?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-28T16:37:02Z",
-      "text": "<strong>Mysterious deaths of 14 elephants in Kenya prompts urgent inquiry</strong> -- It is the highest number of elephant deaths to be recorded in this area of southern Kenya in decades. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c3w0d7yeqlxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-28T11:50:59Z",
-      "text": "<strong>&#x27;A lover of life&#x27; - Seattle pays tribute to food festival shooting victims</strong> -- Families grieved on Monday as they remembered the three people killed in a shooting at a food festival. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cvgv7m5z4n0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-28T08:50:20Z",
-      "text": "<strong>Zoo staff rescue near-extinct snails from remote rock</strong> -- Just 21 Madeiran land snails were found clinging to a rock on Portugal&#x27;s Bugio Island, say conservationists. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cwyq7e5d1gko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-28T15:28:33Z",
-      "text": "<strong>Iran rejects Trump frozen funds plan, warns ships of Hormuz transit ban</strong> -- Iran rejected Trump\u2019s claim that ships damaged by Iran in the Gulf would be compensated from frozen Iranian funds. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/iran-rejects-trump-frozen-funds-plan-warns-ships-of-hormuz-transit-ban?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-28T15:21:43Z",
-      "text": "<strong>Trump expresses frustration with Netanyahu before White House meeting</strong> -- Israeli leader hails &amp;#039;excellent&amp;#039; talk as Trump admin offers few details on Oval Office meeting amid Iran war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/28/trump-expresses-frustration-with-netanyahu-before-white-house-meeting?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Saudi Arabia joins US in strikes on Iran-backed militias in Iraq",
+      "description": "US Central Command says proxy groups launched attacks against US bases and Saudi energy infrastructure.",
+      "link": "https://www.bbc.co.uk/news/articles/c70g6y24d76o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-07-29T09:39:56Z",
+      "tier": 2
+    },
+    {
+      "title": "US and Saudi Arabia strike \u2018Iran-aligned\u2019 groups in Iraq",
+      "description": "The US and Saudi Arabia launched joint air strikes on Iraq, targeting \u2018Iran-aligned\u2019 groups.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/29/us-and-saudi-arabia-strike-iran-aligned-groups-in-iraq?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-29T08:33:39Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran and Oman swap proposals to manage Strait of Hormuz: What we know",
+      "description": "Iran is proposing a deal that would see it have significantly more control than Oman.",
+      "link": "https://www.aljazeera.com/news/2026/7/29/iran-and-oman-swap-proposals-to-manage-strait-of-hormuz-what-we-know?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-29T08:16:06Z",
+      "tier": 2
+    },
+    {
       "title": "Japan in a \u2018race against time\u2019 to rescue people trapped beneath rubble after quake",
       "description": "At least 13 people have been killed after the earthquake struck the island of Kyushu on Tuesday.",
       "link": "https://www.bbc.co.uk/news/videos/c3r0pg0dgrgo?at_medium=RSS&at_campaign=rss",
@@ -1245,14 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "Iran and US trade strikes, shattering brief lull in fighting",
-      "description": "US Central Command says it intercepted \"multiple\" ballistic missiles fired by Iran.",
-      "link": "https://www.bbc.co.uk/news/articles/c70g6y24d76o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-29T04:30:08Z",
-      "tier": 2
-    },
-    {
       "title": "Iran missiles target US forces in Jordan after a five-day pause in war",
       "description": "The US military says it has successfully intercepted a barrage of missiles fired by Iran at its troops in Jordan.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/29/iran-missiles-target-us-forces-in-jordan-after-a-five-day-pause-in-war?traffic_source=rss",
@@ -1269,7 +1285,7 @@
       "tier": 2
     },
     {
-      "title": "Iraqi armed groups condemn \u201cdangerous escalation\u201d after US-Saudi strikes",
+      "title": "Iraqi armed groups condemn \u2018dangerous escalation\u2019 after US-Saudi strikes",
       "description": "Riyadh says its targeted attacks were done in coordination with the US military.",
       "link": "https://www.aljazeera.com/news/2026/7/29/saudi-arabia-us-carry-out-strikes-on-iran-backed-groups-in-iraq?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1277,19 +1293,11 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: US, Saudi forces attack Iraq; IRGC fires missiles at Jordan",
-      "description": "Attacks come as Saudi Arabia intercepts drones and Iran warns of &#039;any action&#039; to maintain its control of Hormuz.",
+      "title": "Iran war live: 20 killed in US-Saudi attack on Iraq; IRGC targets Jordan",
+      "description": "Attacks come as Saudi Arabia intercepts drones and Iran warns of &#039;any action&#039; to maintain its control of Hormuz Strait.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-29T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Yemen\u2019s Houthis claim missile attack on Saudi Arabia oil tanker",
-      "description": "The Houthis recently declared a naval blockade on Saudi Arabia in the Red Sea, targeting several tankers.",
-      "link": "https://www.aljazeera.com/news/2026/7/28/yemens-houthis-claim-missile-attack-on-saudi-arabia-oil-tanker?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-28T23:16:44Z",
       "tier": 2
     },
     {
@@ -1301,38 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "Israeli airstrike destroys Gaza City mosque near displacement camp",
-      "description": "Video footage captures an Israeli airstrike hitting Al-Muttaqin Mosque in Gaza City, next to Yarmouk Stadium",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/israeli-airstrike-destroys-gaza-city-mosque-near-displacement-camp?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-28T21:24:20Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran and Oman exchange proposals to manage Strait of Hormuz",
-      "description": "Omani proposal is based on the Strait of Malacca model, where ships that use the strait provide voluntary fees.",
-      "link": "https://www.aljazeera.com/news/2026/7/28/iran-and-oman-exchange-proposals-to-manage-strait-of-hormuz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-28T21:01:19Z",
-      "tier": 2
-    },
-    {
-      "title": "Many feared dead from 7.1-magnitude quake in Kumamoto, Japan",
-      "description": "A powerful 7.1-magnitude earthquake struck Kumamoto, Japan, causing widespread damage, injuries and fears of deaths.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/28/aje-onl-nf_many-feared-dead-from-7-280726?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-28T20:36:48Z",
-      "tier": 2
-    },
-    {
-      "title": "Kyiv warns Iran against escalation after Ukraine\u2019s Caspian Sea attack",
-      "description": "Kyiv claims its Caspian Sea strike targeted Russian warships, denying intent to harm civilian vessels or individuals.",
-      "link": "https://www.aljazeera.com/news/2026/7/28/kyiv-warns-iran-against-escalation-after-ukraines-caspian-sea-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-28T20:29:42Z",
-      "tier": 2
-    },
-    {
       "title": "Why Netanyahu's visit with Trump at the White House is high-stakes",
       "description": "The meeting comes amid signs of friction between the two leaders and decreasing public support for Israel in the US.",
       "link": "https://www.bbc.co.uk/news/videos/c98v94dmmz0o?at_medium=RSS&at_campaign=rss",
@@ -1341,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 28-29, 2026 shows a renewed escalation after a brief lull: CENTCOM said all Iranian ballistic missiles fired at US forces in the Middle East were intercepted, Jordan said it shot down five additional missiles launched from Iran early on July 29, and AP reported the US worked with Saudi Arabia to strike militia sites in Iraq linked to recent attacks. The Pentagon also said Operation Epic Fury has formally ended for casualty-accounting purposes, with four more recent US deaths placed in a separate post-operation category, while concerns are growing that repeated defensive engagements are depleting US interceptor stockpiles.",
+  "summary": "Confirmed reporting on July 28-29, 2026 shows the war\u2019s accounting remains muddled as the Pentagon moved four recent U.S. deaths from the Operation Epic Fury category into a new 'Overseas Operations' bucket, while AP said the official Epic Fury tally stands at 14 killed and 642 wounded across categories. CENTCOM said it intercepted multiple Iranian ballistic missiles fired at U.S. troops in Jordan, and AP, BBC, and Al Jazeera all reported new joint U.S.-Saudi strikes against Iran-aligned militias in Iraq, indicating the conflict is again expanding regionally even though Operation Epic Fury was previously described by U.S. officials as concluded.",
   "briefings": [
     {
       "date": "2026-07-29",
       "day": 151,
-      "summary": "Confirmed reporting on July 28-29, 2026 shows a renewed escalation after a brief lull: CENTCOM said all Iranian ballistic missiles fired at US forces in the Middle East were intercepted, Jordan said it shot down five additional missiles launched from Iran early on July 29, and AP reported the US worked with Saudi Arabia to strike militia sites in Iraq linked to recent attacks. The Pentagon also said Operation Epic Fury has formally ended for casualty-accounting purposes, with four more recent US deaths placed in a separate post-operation category, while concerns are growing that repeated defensive engagements are depleting US interceptor stockpiles."
+      "summary": "Confirmed reporting on July 28-29, 2026 shows the war\u2019s accounting remains muddled as the Pentagon moved four recent U.S. deaths from the Operation Epic Fury category into a new 'Overseas Operations' bucket, while AP said the official Epic Fury tally stands at 14 killed and 642 wounded across categories. CENTCOM said it intercepted multiple Iranian ballistic missiles fired at U.S. troops in Jordan, and AP, BBC, and Al Jazeera all reported new joint U.S.-Saudi strikes against Iran-aligned militias in Iraq, indicating the conflict is again expanding regionally even though Operation Epic Fury was previously described by U.S. officials as concluded."
     },
     {
       "date": "2026-07-28",
