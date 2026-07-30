@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-30T20:34:41Z",
+  "lastUpdated": "2026-07-30T22:18:54Z",
   "dayCount": 152,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "19+",
-    "cost": "$35.1B+"
+    "strikes": "~1,450",
+    "killed": "3,541+",
+    "cost": "$34.8B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.1 billion+",
-    "dailyBurnRate": "~$231M/day",
+    "totalCost": "$34.8 billion+",
+    "dailyBurnRate": "~$229M/day",
     "daysOfOps": 152,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-07-30",
-          "source": "LLM-verified (CENTCOM May 4, 2026 media call said 15,000 service members were employed for the Strait defensive umbrella)"
+          "source": "LLM-verified (Al Jazeera, July 22, 2026, citing analyst estimate that some 50,000 US forces are operating from regional bases; not a Pentagon/CENTCOM official total)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 24,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-07-30",
-          "source": "LLM-verified (Air & Space Forces 2026 Almanac, citing U.S. officials, says Operation Epic Fury involved 'more than 1,000 Tomahawk cruise missiles'; no newer official cumulative figure found.)"
+          "source": "LLM-verified (DoD transcript: Gen. Dan Caine said a US submarine launched more than two dozen Tomahawk missiles against Esfahan; no higher confirmed cumulative total found)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-30",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists 'Combat Flights: 11,000+'; no newer official cumulative sortie count found in available results.)"
+          "source": "LLM-verified (IDF article on Operation Roaring Lion states over 800 strike sorties; no combined current US-Israeli official cumulative fighter/attack sortie total found)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 152 days",
-        "cost": "$1,140,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 152 days",
+        "cost": "$3,800,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "24 \u00d7 $2,000,000 each",
+        "cost": "$48,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Iran said at least 50 people were killed and more than 500 injured in US strikes since July 6, indicating continued escalation after the interim deal broke down.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported renewed fighting followed Iranian attacks on shipping in the Strait of Hormuz and subsequent US interceptions of ballistic missiles aimed at American troops.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 30, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the Pentagon split renewed July US-Iran fighting casualties into a new 'Overseas Operations' category after saying Operation Epic Fury had ended.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 30, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported diplomacy remains stalled while renewed attacks around Jordan, Iraq, and the Strait of Hormuz raise risks of broader escalation.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and BBC headline reporting indicate Saudi Arabia joined the U.S. in strikes on Iran-backed militias in Iraq, widening the regional dimension of the conflict.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 29-30, 2026 that the U.S. launched a heavy wave of strikes on Iran after intercepting an Iranian missile attack on a U.S. base in Jordan.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 29, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports CENTCOM intercepted multiple ballistic missiles fired at American troops in the region on July 28, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-07-30T21:00:28Z",
+      "text": "<strong>Will Saudi Arabia be dragged further into the war in Iran?</strong> -- Anger in Iraq after US-Saudi strikes on paramilitary group with ties to Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/7/30/will-saudi-arabia-be-dragged-further-into-the-war-in-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-30T20:39:38Z",
+      "text": "<strong>Security camera shows \u2018Russian missile\u2019 exploding in Poland</strong> -- Security camera video shows the moment a suspected Russian missile exploded inside Poland. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/security-camera-shows-russian-missile-exploding-in-poland?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-30T20:35:18Z",
+      "text": "<strong>Father of Georgia Apalachee school shooter sentenced to 15 years in prison</strong> -- Colin Gray, 55, was convicted of second-degree murder after his son Colt carried out a school shooting that killed four. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/30/father-of-georgia-apalachee-school-shooter-sentenced-to-15-years-in-prison?traffic_source=rss"
+    },
+    {
       "time": "2026-07-30T16:28:51Z",
       "text": "<strong>NATO jets scramble as Russian missile detonates in Poland</strong> -- The growing series of NATO airspace violations is raising concern that Russia&amp;#039;s war on Ukraine could escalate. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/30/nato-jets-scramble-as-russian-missile-detonates-in-poland?traffic_source=rss"
@@ -761,21 +776,6 @@
       "time": "2026-07-30T16:06:08Z",
       "text": "<strong>IRGC video of retaliatory strikes on US targets in Jordan</strong> -- The IRGC released a video of what they say were missiles launched by their naval forces targeting US aircraft in Jordan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/irgc-video-of-retaliatory-strikes-on-us-targets-in-jordan?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T15:08:58Z",
-      "text": "<strong>Is Pakistan \u2018using India\u2019s playbook\u2019 in Kashmir?</strong> -- Pakistan is facing accusations that its forces have killed unarmed protesters in Pakistan-administered Kashmir <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/is-pakistan-using-indias-playbook-in-kashmir?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T14:58:41Z",
-      "text": "<strong>Smoke rises over southern Iran after renewed US attacks</strong> -- A large plume of smoke was seen rising over the southwestern Iranian city of Ahvaz following renewed US strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/smoke-rises-over-southern-iran-after-renewed-us-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T14:56:59Z",
-      "text": "<strong>War on Iran: Phase II: Day 19</strong> -- The US resumes bombing Iran, with a family of three killed in Qeshm Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/war-on-iran-phase-ii-day-19?traffic_source=rss"
     },
     {
       "time": "2026-07-30T10:49:14Z",
@@ -801,6 +801,21 @@
       "time": "2026-07-30T12:14:00Z",
       "text": "<strong>Cyanide in tomato pesticide killed 15 elephants, Kenyan officials suspect</strong> -- Foul play is ruled out in the record number of elephant deaths for decades in this area of southern Kenya. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cp9e0v5xmdyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-30T15:08:58Z",
+      "text": "<strong>Is Pakistan \u2018using India\u2019s playbook\u2019 in Kashmir?</strong> -- Pakistan is facing accusations that its forces have killed unarmed protesters in Pakistan-administered Kashmir <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/is-pakistan-using-indias-playbook-in-kashmir?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-30T14:58:41Z",
+      "text": "<strong>Smoke rises over southern Iran after renewed US attacks</strong> -- A large plume of smoke was seen rising over the southwestern Iranian city of Ahvaz following renewed US strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/smoke-rises-over-southern-iran-after-renewed-us-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-30T14:56:59Z",
+      "text": "<strong>War on Iran: Phase II: Day 19</strong> -- The US resumes bombing Iran, with a family of three killed in Qeshm Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/war-on-iran-phase-ii-day-19?traffic_source=rss"
     },
     {
       "time": "2026-07-30T11:32:30Z",
@@ -836,21 +851,6 @@
       "time": "2026-07-30T09:49:29Z",
       "text": "<strong>US hits multiple targets in Iran as IRGC pledges retaliation: What we know</strong> -- Jordan said it intercepted missiles shortly after the US struck Iranian sites including Qeshm and Bushehr. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/30/us-hits-multiple-targets-in-iran-as-irgc-pledges-retaliation-what-we-know?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T09:10:07Z",
-      "text": "<strong>Photos: Zelenskyy urges \u2018protection of life\u2019 amid deadly Russian attacks</strong> -- Russia launches more than 70 missiles and 280 drones in a major attack on Ukraine that kills at least eight people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/gallery/2026/7/30/photos-zelenskyy-urges-protection-of-life-amid-deadly-russian-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T07:24:55Z",
-      "text": "<strong>US strikes cause extensive damage on Iran\u2019s Qeshm Island</strong> -- Video from Iran&amp;#039;s Qeshm Island shows widespread damage following US attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/us-strikes-cause-extensive-damage-on-irans-qeshm-island?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T07:02:42Z",
-      "text": "<strong>In the waters off Malaysia, Iranian oil sales continue despite blockade</strong> -- A large anchorage area off the coast of Malaysia is a major marketplace for sanctioned oil. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/30/in-the-waters-off-malaysia-iranian-oil-sales-continue-despite-blockade?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Will Saudi Arabia be dragged further into the war in Iran?",
+      "description": "Anger in Iraq after US-Saudi strikes on paramilitary group with ties to Tehran.",
+      "link": "https://www.aljazeera.com/video/inside-story/2026/7/30/will-saudi-arabia-be-dragged-further-into-the-war-in-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-30T21:00:28Z",
+      "tier": 2
+    },
+    {
+      "title": "Security camera shows \u2018Russian missile\u2019 exploding in Poland",
+      "description": "Security camera video shows the moment a suspected Russian missile exploded inside Poland.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/security-camera-shows-russian-missile-exploding-in-poland?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-30T20:39:38Z",
+      "tier": 2
+    },
+    {
+      "title": "Father of Georgia Apalachee school shooter sentenced to 15 years in prison",
+      "description": "Colin Gray, 55, was convicted of second-degree murder after his son Colt carried out a school shooting that killed four.",
+      "link": "https://www.aljazeera.com/news/2026/7/30/father-of-georgia-apalachee-school-shooter-sentenced-to-15-years-in-prison?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-30T20:35:18Z",
+      "tier": 2
+    },
+    {
       "title": "Danube's record low levels force shutdown of Hungary's only nuclear plant",
       "description": "Romania, Bulgaria and Serbia are also grappling with the effects of a series of prolonged heatwaves and low rainfall.",
       "link": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss",
@@ -1250,30 +1274,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-30T15:20:19Z",
-      "tier": 2
-    },
-    {
-      "title": "Is Pakistan \u2018using India\u2019s playbook\u2019 in Kashmir?",
-      "description": "Pakistan is facing accusations that its forces have killed unarmed protesters in Pakistan-administered Kashmir",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/is-pakistan-using-indias-playbook-in-kashmir?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-30T15:08:58Z",
-      "tier": 2
-    },
-    {
-      "title": "Smoke rises over southern Iran after renewed US attacks",
-      "description": "A large plume of smoke was seen rising over the southwestern Iranian city of Ahvaz following renewed US strikes.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/smoke-rises-over-southern-iran-after-renewed-us-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-30T14:58:41Z",
-      "tier": 2
-    },
-    {
-      "title": "War on Iran: Phase II: Day 19",
-      "description": "The US resumes bombing Iran, with a family of three killed in Qeshm Island.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/war-on-iran-phase-ii-day-19?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-30T14:56:59Z",
       "tier": 2
     },
     {
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 29-30, 2026 shows the conflict widening again after a brief pause: AP says Iran fired missiles that Jordan intercepted for a second straight day, Kuwait reported one death from a strike on a building in its north, and the U.S. and Saudi Arabia struck Iran-backed militias in Iraq before the U.S. launched a new 'heavy wave of strikes' on Iran. AP also reports the officially confirmed U.S. military death toll for the war stands at 18, while the Pentagon has shifted four recent deaths from the Operation Epic Fury category into a new 'Overseas Operations' bucket. On the operations side, the latest official cumulative figures I could verify remain CENTCOM's March 28 fact sheet totals of 11,000+ targets struck and 11,000+ combat flights; I could not verify newer official cumulative weapons-expended or force-posture totals from Pentagon/CENTCOM/Reuters/AP in the available search results.",
+  "summary": "Confirmed reporting indicates the war has re-escalated in July after the earlier ceasefire and interim deal unraveled. AP reported on July 28 that the Pentagon moved casualties from the renewed fighting into a new 'Overseas Operations' category, while the official US military death toll across the conflict stands at 18 in Al Jazeera\u2019s July 22 reporting. For cumulative totals, the most recent named-source aggregate figure found for Iranian deaths remains Al Jazeera\u2019s June 7 tracker at 3,468 killed, alongside 26 Israelis and 29 people in Gulf states killed. CENTCOM commander Brad Cooper testified in May that Operation Epic Fury had involved more than 1,450 strikes, but current official totals for several cost-model weapons categories were not confirmed in the reporting located.",
   "briefings": [
     {
       "date": "2026-07-30",
       "day": 152,
-      "summary": "Confirmed reporting on July 29-30, 2026 shows the conflict widening again after a brief pause: AP says Iran fired missiles that Jordan intercepted for a second straight day, Kuwait reported one death from a strike on a building in its north, and the U.S. and Saudi Arabia struck Iran-backed militias in Iraq before the U.S. launched a new 'heavy wave of strikes' on Iran. AP also reports the officially confirmed U.S. military death toll for the war stands at 18, while the Pentagon has shifted four recent deaths from the Operation Epic Fury category into a new 'Overseas Operations' bucket. On the operations side, the latest official cumulative figures I could verify remain CENTCOM's March 28 fact sheet totals of 11,000+ targets struck and 11,000+ combat flights; I could not verify newer official cumulative weapons-expended or force-posture totals from Pentagon/CENTCOM/Reuters/AP in the available search results."
+      "summary": "Confirmed reporting indicates the war has re-escalated in July after the earlier ceasefire and interim deal unraveled. AP reported on July 28 that the Pentagon moved casualties from the renewed fighting into a new 'Overseas Operations' category, while the official US military death toll across the conflict stands at 18 in Al Jazeera\u2019s July 22 reporting. For cumulative totals, the most recent named-source aggregate figure found for Iranian deaths remains Al Jazeera\u2019s June 7 tracker at 3,468 killed, alongside 26 Israelis and 29 people in Gulf states killed. CENTCOM commander Brad Cooper testified in May that Operation Epic Fury had involved more than 1,450 strikes, but current official totals for several cost-model weapons categories were not confirmed in the reporting located."
     },
     {
       "date": "2026-07-29",
