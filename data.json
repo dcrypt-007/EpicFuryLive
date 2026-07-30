@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-30T03:29:24Z",
+  "lastUpdated": "2026-07-30T06:41:38Z",
   "dayCount": 152,
   "banner": {
     "strikes": "~9,000",
-    "killed": "3,522+",
-    "cost": "$28.7B+"
+    "killed": "66+",
+    "cost": "$32.3B+"
   },
   "humanCost": {
     "iranDeaths": "55",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "22",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.7 billion+",
-    "dailyBurnRate": "~$189M/day",
+    "totalCost": "$32.3 billion+",
+    "dailyBurnRate": "~$213M/day",
     "daysOfOps": 152,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-07-29",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury)"
+          "lastUpdated": "2026-07-30",
+          "source": "LLM-verified (Army/Pentagon coverage of March 3, 2026 briefing says 'two carrier strike groups began to move towards their launching points'; no later official current-theater count found, so current confirmed value remains unavailable beyond earlier official reporting. Using latest accessible official named count found.)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 5700,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-07-28",
-          "source": "LLM-verified (Navy Times/Reuters on Feb. 26, 2026 reported the added strike group brought roughly 5,700 additional service members to the region. No newer official Operation Epic Fury personnel total was verified.)"
+          "lastUpdated": "2026-07-30",
+          "source": "LLM-verified (Current deployed total reported as 'over 50,000 American service members are currently deployed to the Middle East' in July 30, 2026 reporting citing CENTCOM statements; no more precise official figure found.)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-07-29",
-          "source": "LLM-verified (Reuters report republished by Defense News on March 27, 2026 said the U.S. military had fired over 850 Tomahawk cruise missiles in four weeks of war with Iran.)"
+          "lastUpdated": "2026-07-30",
+          "source": "LLM-verified (Air & Space Forces 2026 Almanac, citing U.S. officials, says Operation Epic Fury involved 'more than 1,000 Tomahawk cruise missiles'; no newer official cumulative figure found.)"
         },
         {
           "id": "jdam",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-30",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 states 9,000+ combat flights in the first 24 days (turn3view1). No later official cumulative fighter/attack sortie total found in accessible sources.)"
+          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet dated March 23, 2026 states 'Combat Flights: 9,000+'; no newer official cumulative fighter/attack sortie count found.)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "5,700 \u00d7 $500/day \u00d7 152 days",
-        "cost": "$433,200,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 152 days",
+        "cost": "$3,800,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -753,24 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-07-30T04:55:36Z",
+      "text": "<strong>US launches \u2018powerful\u2019 strikes on Iran after Jordan attack</strong> -- The US has bombed multiple cities across southern Iran in what Central Command described as a \u2018heavy wave of strikes\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/us-launches-powerful-strikes-on-iran-after-jordan-attack?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-30T03:56:07Z",
+      "text": "<strong>US launches another round of attacks on Iran</strong> -- Targets across southern Iran hit, including on strategic Qeshm Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/30/us-launches-another-round-of-attacks-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-30T03:49:25Z",
+      "text": "<strong>Israeli strikes leave buildings burning in Gaza City</strong> -- Israeli strikes have displaced dozens of families in Gaza City&amp;#039;s Shati refugee camp. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/israeli-strikes-leave-buildings-burning-in-gaza-city?traffic_source=rss"
+    },
+    {
       "time": "2026-07-30T01:42:30Z",
       "text": "<strong>Japan turns to Canadian crude as Asia feels Hormuz supply pinch</strong> -- Uncertainty over crude oil supplies via the Strait of Hormuz is pushing Asian states towards Canada&amp;#039;s TMX crude oil. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/30/japan-turns-to-canadian-crude-as-asia-feels-hormuz-supply-pinch?traffic_source=rss"
     },
     {
       "time": "2026-07-30T00:23:13Z",
-      "text": "<strong>One killed in Russian missile strikes on Kyiv, day after Zelenskyy warning</strong> -- Returning from the US, Zelenskyy says Ukraine&amp;#039;s safety depends on allies\u2019 willingness to provide anti-missile defences. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>At least 14 killed as Russia strikes Ukraine a day after Zelenskyy warning</strong> -- Returning from the US, Zelenskyy says Ukraine&amp;#039;s safety depends on allies\u2019 willingness to provide anti-missile defences. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/30/russia-ballistic-missile-strikes-on-kyiv-come-after-zelenskyys-warning?traffic_source=rss"
     },
     {
       "time": "2026-07-30T00:00:00Z",
-      "text": "<strong>Iran war live: US launches \u2018powerful\u2019 strikes after IRGC attack on Jordan</strong> -- Threat comes as Iranian media report that four Iranians were killed in joint US-Saudi attacks in Iraq. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: US attack kills Iranian couple, toddler on Qeshm Island</strong> -- US strike hits residential building on Qeshm, killing an Iranian couple and their two year old child. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/30/iran-war-live-trump-threatens-to-hit-back-hard-over-strikes-on-jordan?traffic_source=rss"
     },
     {
       "time": "2026-07-29T23:34:26Z",
       "text": "<strong>Saudi Arabia seeks international coalition against Houthis in Red Sea</strong> -- Riyadh seeks partners to safeguard shipping in Red Sea as strikes on energy tankers expand, pushing oil prices higher. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/7/29/saudi-arabia-seeks-international-coalition-against-houthis-in-red-sea?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-30T05:36:27Z",
+      "text": "<strong>US launches &#x27;heavy&#x27; strikes on Iran after attempted attack on American troops</strong> -- After a short period of relative calm when hostilities were paused, both sides have now restarted missile attacks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-29T18:41:31Z",
+      "text": "<strong>Saudi Arabia&#x27;s dilemma as it tries to stay out of US-Iran war</strong> -- The kingdom faces a choice of whether to keep hitting back as a deterrent or to try to de-escalate the situation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/clyx83l8jv8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-29T22:15:33Z",
+      "text": "<strong>Salman Rushdie attacker convicted of terror offences</strong> -- Hadi Matar, 28, was convicted of attempting to help Hezbollah by attacking the British-Indian author. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-29T21:18:24Z",
@@ -791,16 +821,6 @@
       "time": "2026-07-30T01:58:28Z",
       "text": "<strong>US launches &#x27;powerful&#x27; strikes on Iran after attempted attack on American troops</strong> -- The US military called the strikes &quot;a powerful response&quot; to Tuesday&#x27;s firing by Iran on US bases in Jordan. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-29T18:41:31Z",
-      "text": "<strong>Saudi Arabia&#x27;s dilemma as it tries to stay out of US-Iran war</strong> -- The kingdom faces a choice of whether to keep hitting back as a deterrent or to try to de-escalate the situation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/clyx83l8jv8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-29T22:15:33Z",
-      "text": "<strong>Salman Rushdie attacker convicted of terror offences</strong> -- Hadi Matar, 28, was convicted of attempting to help Hezbollah by attacking the British-Indian author. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-29T17:45:27Z",
@@ -831,26 +851,6 @@
       "time": "2026-07-29T16:43:37Z",
       "text": "<strong>Is the world at risk of another energy shock?</strong> -- Disruptions across Strait of Hormuz, Bab al-Mandeb and the Black Sea threaten supplies and raise costs for consumers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/7/29/is-the-world-at-risk-of-another-energy-shock?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-29T15:43:05Z",
-      "text": "<strong>Trump says US to deliver \u2018beating\u2019 to Iran after bases again targeted</strong> -- US president promises major escalation a day after new Iran attacks and his White House meeting with Netanyahu. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/29/trump-says-us-to-deliver-beating-to-iran-after-bases-again-targeted?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-29T14:27:45Z",
-      "text": "<strong>US and Israeli leaders expected \u2018swift outcome\u2019 in Iran</strong> -- New details are emerging of how US and Israeli officials believed the war on Iran would be straightforward and short. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/29/us-and-israeli-leaders-expected-swift-outcome-in-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-29T14:09:09Z",
-      "text": "<strong>\u2018There is no ceasefire\u2019 say Palestinians in Gaza after new Israeli strikes</strong> -- &amp;#039;There is no ceasefire&amp;#039; say Palestinians in Gaza after new Israeli strikes <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/29/there-is-no-ceasefire-say-palestinians-in-gaza-after-new-israeli-strikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-29T12:27:19Z",
-      "text": "<strong>F1 season to end in Europe if Qatar, Abu Dhabi unable to host due to war</strong> -- F1 sets a mid-September deadline to decide whether final rounds in Middle East can be held due to US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/7/29/f1-season-to-end-in-europe-if-qatar-abu-dhabi-unable-to-host-due-to-us-iran-war?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,35 @@
   ],
   "newsFeed": [
     {
-      "title": "US launches 'powerful' strikes on Iran after attempted attack on American troops",
-      "description": "The US military called the strikes \"a powerful response\" to Tuesday's firing by Iran on US bases in Jordan.",
+      "title": "US launches 'heavy' strikes on Iran after attempted attack on American troops",
+      "description": "After a short period of relative calm when hostilities were paused, both sides have now restarted missile attacks.",
       "link": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-07-30T01:58:28Z",
+      "time": "2026-07-30T05:36:27Z",
+      "tier": 2
+    },
+    {
+      "title": "US launches \u2018powerful\u2019 strikes on Iran after Jordan attack",
+      "description": "The US has bombed multiple cities across southern Iran in what Central Command described as a \u2018heavy wave of strikes\u2019.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/us-launches-powerful-strikes-on-iran-after-jordan-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-30T04:55:36Z",
+      "tier": 2
+    },
+    {
+      "title": "US launches another round of attacks on Iran",
+      "description": "Targets across southern Iran hit, including on strategic Qeshm Island.",
+      "link": "https://www.aljazeera.com/news/2026/7/30/us-launches-another-round-of-attacks-on-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-30T03:56:07Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli strikes leave buildings burning in Gaza City",
+      "description": "Israeli strikes have displaced dozens of families in Gaza City&#039;s Shati refugee camp.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/israeli-strikes-leave-buildings-burning-in-gaza-city?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-30T03:49:25Z",
       "tier": 2
     },
     {
@@ -1229,7 +1253,7 @@
       "tier": 2
     },
     {
-      "title": "One killed in Russian missile strikes on Kyiv, day after Zelenskyy warning",
+      "title": "At least 14 killed as Russia strikes Ukraine a day after Zelenskyy warning",
       "description": "Returning from the US, Zelenskyy says Ukraine&#039;s safety depends on allies\u2019 willingness to provide anti-missile defences.",
       "link": "https://www.aljazeera.com/news/2026/7/30/russia-ballistic-missile-strikes-on-kyiv-come-after-zelenskyys-warning?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1237,8 +1261,8 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: US launches \u2018powerful\u2019 strikes after IRGC attack on Jordan",
-      "description": "Threat comes as Iranian media report that four Iranians were killed in joint US-Saudi attacks in Iraq.",
+      "title": "Iran war live: US attack kills Iranian couple, toddler on Qeshm Island",
+      "description": "US strike hits residential building on Qeshm, killing an Iranian couple and their two year old child.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/7/30/iran-war-live-trump-threatens-to-hit-back-hard-over-strikes-on-jordan?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-07-30T00:00:00Z",
@@ -1258,30 +1282,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-07-29T22:15:33Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump threatens Iran strikes after attack on US base in Jordan",
-      "description": "\u201dIt\u2019s our turn.\u201d President Donald Trump says the US will hit Iran \u201cvery hard\u201d following an attack on US forces in Jordan",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/29/trump-threatens-iran-strikes-after-attack-on-us-base-in-jordan?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-29T21:18:24Z",
-      "tier": 2
-    },
-    {
-      "title": "Videos show aftermath of US-Saudi strikes on Iraq PMF bases",
-      "description": "US and Saudi forces launched coordinated airstrikes targeting Iran-backed Popular Mobilisation Forces (PMF) bases",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/29/videos-show-aftermath-of-us-saudi-strikes-on-iraq-pmf-bases?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-29T20:31:10Z",
-      "tier": 2
-    },
-    {
-      "title": "New investigation shows how an Israeli settler escaped justice",
-      "description": "A Palestinian rights&#039; group found that an Israeli settler killed Awdah Hathaleen but is still escaping justice.",
-      "link": "https://www.aljazeera.com/news/2026/7/29/new-investigation-shows-how-an-israeli-settler-escaped-justice?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-29T19:55:31Z",
       "tier": 2
     },
     {
@@ -1333,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 29-30, 2026 shows the conflict has re-escalated: the U.S. said it intercepted an Iranian missile attack on American forces in Jordan and then carried out a heavy wave of retaliatory strikes on Iranian targets, while Saudi Arabia joined U.S. strikes on Iran-backed militias in Iraq. AP reporting on Pentagon casualty accounting indicates the cumulative U.S. military death toll tied to the war and renewed fighting is now 18. The latest broadly published cumulative regional casualty tracker still accessible is Al Jazeera\u2019s June 10 update, which listed 3,468 killed and more than 26,500 injured in Iran, 26 Israelis killed, and 28 killed in Gulf states; accessible official/major-wire sources reviewed did not provide newer fully confirmed cumulative totals for most other requested fields.",
+  "summary": "Confirmed reporting on July 30, 2026 shows the war has re-escalated sharply: AP reported the U.S. carried out a new 'heavy wave of strikes' across southern Iran after an Iranian attack on a U.S. base in Jordan, while Jordan said it shot down five Iranian missiles. Pentagon casualty accounting reviewed by AP indicates total U.S. military deaths tied to the war have reached 18 when the four July deaths now shifted into a separate 'Overseas Operations' category are included. For Israel, the latest accessible Al Jazeera tracker lists 26 killed. On the military side, the latest accessible official CENTCOM fact sheet still provides the clearest cumulative strike/output numbers, listing 9,000+ targets struck and 9,000+ combat flights, while current July reporting says more than 50,000 U.S. personnel are now deployed in the broader Middle East theater.",
   "briefings": [
     {
       "date": "2026-07-30",
       "day": 152,
-      "summary": "Confirmed reporting on July 29-30, 2026 shows the conflict has re-escalated: the U.S. said it intercepted an Iranian missile attack on American forces in Jordan and then carried out a heavy wave of retaliatory strikes on Iranian targets, while Saudi Arabia joined U.S. strikes on Iran-backed militias in Iraq. AP reporting on Pentagon casualty accounting indicates the cumulative U.S. military death toll tied to the war and renewed fighting is now 18. The latest broadly published cumulative regional casualty tracker still accessible is Al Jazeera\u2019s June 10 update, which listed 3,468 killed and more than 26,500 injured in Iran, 26 Israelis killed, and 28 killed in Gulf states; accessible official/major-wire sources reviewed did not provide newer fully confirmed cumulative totals for most other requested fields."
+      "summary": "Confirmed reporting on July 30, 2026 shows the war has re-escalated sharply: AP reported the U.S. carried out a new 'heavy wave of strikes' across southern Iran after an Iranian attack on a U.S. base in Jordan, while Jordan said it shot down five Iranian missiles. Pentagon casualty accounting reviewed by AP indicates total U.S. military deaths tied to the war have reached 18 when the four July deaths now shifted into a separate 'Overseas Operations' category are included. For Israel, the latest accessible Al Jazeera tracker lists 26 killed. On the military side, the latest accessible official CENTCOM fact sheet still provides the clearest cumulative strike/output numbers, listing 9,000+ targets struck and 9,000+ combat flights, while current July reporting says more than 50,000 U.S. personnel are now deployed in the broader Middle East theater."
     },
     {
       "date": "2026-07-29",
