@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-31T00:15:14Z",
+  "lastUpdated": "2026-07-31T04:41:37Z",
   "dayCount": 153,
   "banner": {
-    "strikes": "~1,450",
-    "killed": "3,515+",
-    "cost": "$29.7B+"
+    "strikes": "~16,300",
+    "killed": "3,479+",
+    "cost": "$30.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,434",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.7 billion+",
-    "dailyBurnRate": "~$194M/day",
+    "totalCost": "$30.9 billion+",
+    "dailyBurnRate": "~$202M/day",
     "daysOfOps": 153,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,8 +279,8 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-07-30",
-          "source": "LLM-verified (IDF article on Operation Roaring Lion states over 800 strike sorties; no combined current US-Israeli official cumulative fighter/attack sortie total found)"
+          "lastUpdated": "2026-07-31",
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline provided by user says IDF reported using 700 tonnes of explosives against Hezbollah tunnels in southern Lebanon",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP reporting in late July indicate renewed attacks tied to fighting around the Strait of Hormuz and Gulf facilities",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on July 30 reported continued U.S.-Iran missile exchanges and an Iranian strike in Kuwait that killed one worker",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 31, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Reuters July 21, 2026 reported CENTCOM completed 11 consecutive days of strikes aimed at degrading Iran's ability to threaten shipping in the Strait of Hormuz.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP July 30, 2026 reported IRNA saying three people were killed and two wounded in a strike on Qeshm Island.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP July 30, 2026 reported renewed U.S.-Iran missile exchanges, Jordan intercepting Iranian missiles for a second consecutive day, and Kuwait reporting one death from a strike.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported continued U.S. strikes on Qeshm Island and other southern Iranian sites during July 2026, with localized Iranian casualty reports but no updated cumulative national death toll confirmed in the searched sources.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-07-31T04:09:08Z",
+      "text": "<strong>Southern Lebanese towns near Beaufort Castle hit by Israeli strikes</strong> -- IDF said it used 700 tonnes of explosives to destroy parts of a Hezbollah tunnel network in southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/aje-onl-nf_south-lebanon-towns-beaufort-hit-by-israeli-strike-300726?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-31T04:03:10Z",
+      "text": "<strong>Death toll from Japan earthquake climbs to 34</strong> -- The magnitude 7.1 quake has killed 34 people and left six more seriously injured. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/31/death-toll-from-japan-earthquake-climbs?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-31T01:13:31Z",
+      "text": "<strong>Nepal\u2019s PM urges calm as three people killed after Hindu-Muslim unrest</strong> -- Three dead in violence in Nepal, as authorities enforce curfews and pledge to restore &amp;#039;peace and unity&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/7/31/nepals-pm-urges-calm-as-three-people-killed-after-hindu-muslim-unrest?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-31T00:08:12Z",
+      "text": "<strong>US Escalation with Iran is \u2018pointless\u2019, warns former US diplomat</strong> -- As US-Iran clashes escalate, former US Ambassador to UAE Barbara Leaf warns escalation is \u2018fairly pointless\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/us-escalation-with-iran-is-pointless-warns-former-us-diplomat?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-31T00:03:58Z",
+      "text": "<strong>Iran war live: Gaza Board of Peace lauds \u2018historic\u2019 disarmament agreement</strong> -- Hamas member told Al Jazeera all implementation would be conditioned on Israel implementing its part of deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/31/iran-war-live-trump-says-hamas-to-disarm-israel-to-leave-gaza-gradually?traffic_source=rss"
+    },
+    {
+      "time": "2026-07-31T03:24:14Z",
+      "text": "<strong>Hamas says it has agreed to disarm after Trump announces Board of Peace plan</strong> -- A senior Hamas official has told the BBC they have agreed to the Board of Peace&#x27;s plan. Israel has not commented. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj03m512r4go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-30T15:20:19Z",
+      "text": "<strong>At least five members of same family killed in Russian missile attack, Zelensky says</strong> -- A six-year-old girl and two boys, aged 11 and 17, were among six killed in a village near the central city of Kryvyi Rih. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-30T17:26:01Z",
+      "text": "<strong>Why limited war with the US may suit Iran better than peace</strong> -- Iran may believe it can control its conflict carefully enough to keep pressure on the US while avoiding an all-out war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c78gnyq3wvdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-30T17:55:24Z",
+      "text": "<strong>Danube&#x27;s record low levels force shutdown of Hungary&#x27;s only nuclear plant</strong> -- Romania, Bulgaria and Serbia are also grappling with the effects of a series of prolonged heatwaves and low rainfall. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-30T12:14:00Z",
+      "text": "<strong>Cyanide in tomato pesticide killed 15 elephants, Kenyan officials suspect</strong> -- Foul play is ruled out in the record number of elephant deaths for decades in this area of southern Kenya. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cp9e0v5xmdyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-07-30T21:00:28Z",
       "text": "<strong>Will Saudi Arabia be dragged further into the war in Iran?</strong> -- Anger in Iraq after US-Saudi strikes on paramilitary group with ties to Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/inside-story/2026/7/30/will-saudi-arabia-be-dragged-further-into-the-war-in-iran?traffic_source=rss"
@@ -778,26 +828,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-07-30T17:26:01Z",
-      "text": "<strong>Why limited war with the US may suit Iran better than peace</strong> -- Iran may believe it can control its conflict carefully enough to keep pressure on the US while avoiding an all-out war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c78gnyq3wvdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-30T15:20:19Z",
-      "text": "<strong>At least five members of same family killed in Russian missile attack, Zelensky says</strong> -- A six-year-old girl and two boys, aged 11 and 17, were among six killed in a village near the central city of Kryvyi Rih. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-30T17:55:24Z",
-      "text": "<strong>Danube&#x27;s record low levels force shutdown of Hungary&#x27;s only nuclear plant</strong> -- Romania, Bulgaria and Serbia are also grappling with the effects of a series of prolonged heatwaves and low rainfall. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-30T12:14:00Z",
-      "text": "<strong>Cyanide in tomato pesticide killed 15 elephants, Kenyan officials suspect</strong> -- Foul play is ruled out in the record number of elephant deaths for decades in this area of southern Kenya. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cp9e0v5xmdyo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-07-29T22:15:33Z",
       "text": "<strong>Salman Rushdie attacker convicted of terror offences</strong> -- Hadi Matar, 28, was convicted of attempting to help Hezbollah by attacking the British-Indian author. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&at_campaign=rss"
@@ -821,36 +851,6 @@
       "time": "2026-07-30T14:58:41Z",
       "text": "<strong>Smoke rises over southern Iran after renewed US attacks</strong> -- A large plume of smoke was seen rising over the southwestern Iranian city of Ahvaz following renewed US strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/smoke-rises-over-southern-iran-after-renewed-us-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T14:56:59Z",
-      "text": "<strong>War on Iran: Phase II: Day 19</strong> -- The US resumes bombing Iran, with a family of three killed in Qeshm Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/war-on-iran-phase-ii-day-19?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T11:32:30Z",
-      "text": "<strong>Israeli strikes kill at least four, including children, across Gaza Strip</strong> -- Bombings take place as Hamas officials meet with Qatari, Egyptian and Turkish mediators in Cairo to discuss truce. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/30/israeli-strikes-kill-at-least-four-including-children-across-gaza-strip?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T10:21:02Z",
-      "text": "<strong>Attack on northwest Pakistan police post kills 11 officers</strong> -- Fifteen attackers were also killed during the hours-long raid in Pakistan&amp;#039;s northwestern Hangu district. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/30/attack-on-northwest-pakistan-police-post-kills-11-officers?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T10:20:19Z",
-      "text": "<strong>Several children killed and wounded in Israeli attacks across Gaza</strong> -- Israeli strikes hit multiple areas across Gaza overnight, including tents sheltering displaced families in al-Mawasi. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/several-children-killed-and-wounded-in-israeli-attacks-across-gaza?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-29T18:41:31Z",
-      "text": "<strong>Saudi Arabia&#x27;s dilemma as it tries to stay out of US-Iran war</strong> -- The kingdom faces a choice of whether to keep hitting back as a deterrent or to try to de-escalate the situation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/clyx83l8jv8o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-30T10:18:53Z",
-      "text": "<strong>Why is Saudi Arabia forming a coalition to protect the Red Sea?</strong> -- The alliance aims to defend shipping from attacks by Iran-backed Houthis in Yemen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/30/why-is-saudi-arabia-forming-a-coalition-to-protect-the-red-sea?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,35 +1213,51 @@
   ],
   "newsFeed": [
     {
+      "title": "Southern Lebanese towns near Beaufort Castle hit by Israeli strikes",
+      "description": "IDF said it used 700 tonnes of explosives to destroy parts of a Hezbollah tunnel network in southern Lebanon.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/aje-onl-nf_south-lebanon-towns-beaufort-hit-by-israeli-strike-300726?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-31T04:09:08Z",
+      "tier": 2
+    },
+    {
+      "title": "Death toll from Japan earthquake climbs to 34",
+      "description": "The magnitude 7.1 quake has killed 34 people and left six more seriously injured.",
+      "link": "https://www.aljazeera.com/news/2026/7/31/death-toll-from-japan-earthquake-climbs?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-07-31T04:03:10Z",
+      "tier": 2
+    },
+    {
       "title": "Hamas says it has agreed to disarm after Trump announces Board of Peace plan",
       "description": "A senior Hamas official has told the BBC they have agreed to the Board of Peace's plan. Israel has not commented.",
       "link": "https://www.bbc.co.uk/news/articles/cj03m512r4go?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-07-31T00:07:17Z",
+      "time": "2026-07-31T03:24:14Z",
       "tier": 2
     },
     {
-      "title": "Will Saudi Arabia be dragged further into the war in Iran?",
-      "description": "Anger in Iraq after US-Saudi strikes on paramilitary group with ties to Tehran.",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/7/30/will-saudi-arabia-be-dragged-further-into-the-war-in-iran?traffic_source=rss",
+      "title": "Nepal\u2019s PM urges calm as three people killed after Hindu-Muslim unrest",
+      "description": "Three dead in violence in Nepal, as authorities enforce curfews and pledge to restore &#039;peace and unity&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/7/31/nepals-pm-urges-calm-as-three-people-killed-after-hindu-muslim-unrest?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-07-30T21:00:28Z",
+      "time": "2026-07-31T01:13:31Z",
       "tier": 2
     },
     {
-      "title": "Security camera shows \u2018Russian missile\u2019 exploding in Poland",
-      "description": "Security camera video shows the moment a suspected Russian missile exploded inside Poland.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/30/security-camera-shows-russian-missile-exploding-in-poland?traffic_source=rss",
+      "title": "US Escalation with Iran is \u2018pointless\u2019, warns former US diplomat",
+      "description": "As US-Iran clashes escalate, former US Ambassador to UAE Barbara Leaf warns escalation is \u2018fairly pointless\u2019.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/us-escalation-with-iran-is-pointless-warns-former-us-diplomat?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-07-30T20:39:38Z",
+      "time": "2026-07-31T00:08:12Z",
       "tier": 2
     },
     {
-      "title": "Father of Georgia Apalachee school shooter sentenced to 15 years in prison",
-      "description": "Colin Gray, 55, was convicted of second-degree murder after his son Colt carried out a school shooting that killed four.",
-      "link": "https://www.aljazeera.com/news/2026/7/30/father-of-georgia-apalachee-school-shooter-sentenced-to-15-years-in-prison?traffic_source=rss",
+      "title": "Iran war live: Gaza Board of Peace lauds \u2018historic\u2019 disarmament agreement",
+      "description": "Hamas member told Al Jazeera all implementation would be conditioned on Israel implementing its part of deal.",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/7/31/iran-war-live-trump-says-hamas-to-disarm-israel-to-leave-gaza-gradually?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-07-30T20:35:18Z",
+      "time": "2026-07-31T00:03:58Z",
       "tier": 2
     },
     {
@@ -1277,14 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "US launches 'heavy' strikes on Iran after attempted attack on American troops",
-      "description": "After a short period of relative calm when hostilities were paused, both sides have now restarted missile attacks.",
-      "link": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-30T10:49:14Z",
-      "tier": 2
-    },
-    {
       "title": "Salman Rushdie attacker convicted of terror offences",
       "description": "Hadi Matar, 28, was convicted of attempting to help Hezbollah by attacking the British-Indian author.",
       "link": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&at_campaign=rss",
@@ -1307,22 +1315,14 @@
       "source": "BBC World",
       "time": "2026-07-29T15:33:14Z",
       "tier": 2
-    },
-    {
-      "title": "More than 100 aftershocks hit Japan after powerful quake that killed 13",
-      "description": "People are being urged to stay alert, with earthquake aftershocks potentially reaching magnitude 7, officials say",
-      "link": "https://www.bbc.co.uk/news/articles/cgk43y21j0do?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-07-29T11:47:05Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on July 30-31, 2026 shows the brief pause in fighting has ended: AP reported CENTCOM carried out a 'heavy wave' of strikes against dozens of IRGC targets in Iran after an Iranian attack on a U.S. base in Jordan, while additional Iranian missile and drone attacks hit or threatened Gulf states, including a fatal strike in Kuwait. AP also confirmed the Pentagon casualty dispute now reflects 18 total U.S. military deaths connected to the war when the four July deaths are added to the 14 previously listed under Operation Epic Fury, though the Pentagon has moved those latest deaths into a separate category. I did not find enough current confirmed official sourcing to safely update several military quantity fields or the current cumulative Israeli death total, so those remain null.",
+  "summary": "Confirmed reporting as of July 31, 2026 shows the war\u2019s official U.S. death toll at 18 service members, while AP on July 24 cited Iran\u2019s Health Ministry saying 3,434 people have been killed in Iran since the war began. Al Jazeera\u2019s casualty tracker continues to list 26 Israelis killed and more than 26,500 people wounded in Iran. In the Gulf, AP reported an Iranian strike in Kuwait on July 30 killed one worker. On the military activity side, the latest searchable official cumulative strike figures located were older but still official: CENTCOM\u2019s April 1 fact sheet listed 12,300+ U.S. targets struck and 13,000+ combat flights, while the IDF\u2019s April 1 update said more than 4,000 targets had been struck in Operation Roaring Lion. I did not find current confirmed official totals for carrier groups, destroyers, personnel, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or fired interceptors, so those remain null.",
   "briefings": [
     {
       "date": "2026-07-31",
       "day": 153,
-      "summary": "Confirmed reporting on July 30-31, 2026 shows the brief pause in fighting has ended: AP reported CENTCOM carried out a 'heavy wave' of strikes against dozens of IRGC targets in Iran after an Iranian attack on a U.S. base in Jordan, while additional Iranian missile and drone attacks hit or threatened Gulf states, including a fatal strike in Kuwait. AP also confirmed the Pentagon casualty dispute now reflects 18 total U.S. military deaths connected to the war when the four July deaths are added to the 14 previously listed under Operation Epic Fury, though the Pentagon has moved those latest deaths into a separate category. I did not find enough current confirmed official sourcing to safely update several military quantity fields or the current cumulative Israeli death total, so those remain null."
+      "summary": "Confirmed reporting as of July 31, 2026 shows the war\u2019s official U.S. death toll at 18 service members, while AP on July 24 cited Iran\u2019s Health Ministry saying 3,434 people have been killed in Iran since the war began. Al Jazeera\u2019s casualty tracker continues to list 26 Israelis killed and more than 26,500 people wounded in Iran. In the Gulf, AP reported an Iranian strike in Kuwait on July 30 killed one worker. On the military activity side, the latest searchable official cumulative strike figures located were older but still official: CENTCOM\u2019s April 1 fact sheet listed 12,300+ U.S. targets struck and 13,000+ combat flights, while the IDF\u2019s April 1 update said more than 4,000 targets had been struck in Operation Roaring Lion. I did not find current confirmed official totals for carrier groups, destroyers, personnel, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or fired interceptors, so those remain null."
     },
     {
       "date": "2026-07-30",
