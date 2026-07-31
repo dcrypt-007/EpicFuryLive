@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-31T21:27:52Z",
+  "lastUpdated": "2026-07-31T23:15:42Z",
   "dayCount": 153,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,418+",
-    "cost": "$34.7B+"
+    "killed": "3,683+",
+    "cost": "$33.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,400",
+    "iranDeaths": "3,637",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "7",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.7 billion+",
-    "dailyBurnRate": "~$227M/day",
+    "totalCost": "$33.9 billion+",
+    "dailyBurnRate": "~$221M/day",
     "daysOfOps": 153,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-07-31",
-          "source": "LLM-verified (CENTCOM Fact Sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'.)"
+          "source": "LLM-verified (IDF said more than 800 Israeli Air Force strike sorties in Operation Roaring Lion as of April 1, 2026; no newer combined US-Israeli official total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Jul 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP July 28, 2026: Pentagon said renewed U.S.-Iran fighting after July 7 is being tracked under a new 'Overseas Operations' casualty category, separate from Operation Epic Fury",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP July 29-30, 2026: CENTCOM reported a heavy wave of U.S. strikes against Iran after an Iranian missile attack on a U.S. base in Jordan",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Jul 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP July 30, 2026: Kuwait said a strike in northern Kuwait killed one person during renewed Iranian barrages",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Jul 31, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Houthi threats against Saudi shipping and oil infrastructure continue to expand the regional risk picture.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Drone strikes ignited fires on two gas vessels at Egypt's port of Damietta, though responsibility was not immediately clear.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. and Saudi Arabia struck Iran-backed militias in Iraq, widening the conflict footprint.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 30, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Kuwait reported a fatal strike in its north, indicating direct spillover into another Gulf state.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -768,11 +768,6 @@
       "link": "https://www.aljazeera.com/news/2026/7/31/western-allies-warn-north-korean-it-workers-funding-nuclear-arsenal?traffic_source=rss"
     },
     {
-      "time": "2026-07-31T15:30:15Z",
-      "text": "<strong>The promise I made to Ismail al-Ghoul</strong> -- He asked me to keep telling Gaza\u2019s story. Two years after Israel killed him, I have not stopped. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/7/31/the-promise-i-made-to-ismail-al-ghoul?traffic_source=rss"
-    },
-    {
       "time": "2026-07-31T15:18:31Z",
       "text": "<strong>Bowen: Plan for Hamas to disarm faces big obstacles, yet it offers rare hope for Gaza</strong> -- The realities of politics, war, zero trust, the deaths of thousands and the destruction of Gaza will make any agreement very complicated. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c2dkje4p4klo?at_medium=RSS&at_campaign=rss"
@@ -801,6 +796,16 @@
       "time": "2026-07-29T22:15:33Z",
       "text": "<strong>Salman Rushdie attacker convicted of terror offences</strong> -- Hadi Matar, 28, was convicted of attempting to help Hezbollah by attacking the British-Indian author. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-29T15:33:14Z",
+      "text": "<strong>Oscar-winning songwriter Glen Hansard killed in crash</strong> -- Hansard, who was 56, won the best song Oscar for the 2007 low-budget musical film Once. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c3ekn9d37qvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-07-31T15:30:15Z",
+      "text": "<strong>The promise I made to Ismail al-Ghoul</strong> -- He asked me to keep telling Gaza\u2019s story. Two years after Israel killed him, I have not stopped. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/7/31/the-promise-i-made-to-ismail-al-ghoul?traffic_source=rss"
     },
     {
       "time": "2026-07-31T14:22:51Z",
@@ -846,11 +851,6 @@
       "time": "2026-07-31T04:09:08Z",
       "text": "<strong>Southern Lebanese towns near Beaufort Castle hit by Israeli strikes</strong> -- IDF said it used 700 tonnes of explosives to destroy parts of a Hezbollah tunnel network in southern Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/aje-onl-nf_south-lebanon-towns-beaufort-hit-by-israeli-strike-300726?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-31T04:03:10Z",
-      "text": "<strong>Death toll from Japan earthquake climbs to 34</strong> -- The magnitude 7.1 quake has killed 34 people and left six more seriously injured. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/31/death-toll-from-japan-earthquake-climbs?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1245,14 +1245,6 @@
       "tier": 2
     },
     {
-      "title": "The promise I made to Ismail al-Ghoul",
-      "description": "He asked me to keep telling Gaza\u2019s story. Two years after Israel killed him, I have not stopped.",
-      "link": "https://www.aljazeera.com/opinions/2026/7/31/the-promise-i-made-to-ismail-al-ghoul?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-07-31T15:30:15Z",
-      "tier": 2
-    },
-    {
       "title": "Bowen: Plan for Hamas to disarm faces big obstacles, yet it offers rare hope for Gaza",
       "description": "The realities of politics, war, zero trust, the deaths of thousands and the destruction of Gaza will make any agreement very complicated.",
       "link": "https://www.bbc.co.uk/news/articles/c2dkje4p4klo?at_medium=RSS&at_campaign=rss",
@@ -1317,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of July 31, 2026 indicates Operation Epic Fury has formally ended for Pentagon casualty-accounting purposes, though renewed U.S.-Iran fighting continues under a separate 'Overseas Operations' category. AP reporting based on Pentagon data puts total confirmed U.S. military deaths linked to the Iran war at 18 and total wounded at 642 across both categories. For Iran, the latest broadly cited official figure located was more than 3,400 dead from the Iranian Health Ministry, while CENTCOM\u2019s latest available official campaign fact sheet still lists 13,000+ targets struck and earlier campaign materials list 9,000+ combat flights; more granular current totals for Israeli deaths and most weapons-expended categories were not confirmed from named official or major-wire sources in the available search results.",
+  "summary": "Confirmed reporting on July 31, 2026 indicates the war remains in a renewed exchange-of-fire phase after July fighting around the Strait of Hormuz and U.S. bases. AP reports the Pentagon now separates post-July 7 casualties from Operation Epic Fury, while the confirmed U.S. death total publicly acknowledged remains 18. The latest accessible confirmed Iranian nationwide death figure located was 3,637 killed from Iran\u2019s Health Ministry reported June 9, with more than 12,000 wounded previously reported by Iranian health officials. CENTCOM\u2019s latest accessible official operation fact sheet still lists 13,000-plus targets struck, but current official totals for specific weapons expended and current U.S. force deployments were not found in accessible named-source reporting.",
   "briefings": [
     {
       "date": "2026-07-31",
       "day": 153,
-      "summary": "Confirmed reporting as of July 31, 2026 indicates Operation Epic Fury has formally ended for Pentagon casualty-accounting purposes, though renewed U.S.-Iran fighting continues under a separate 'Overseas Operations' category. AP reporting based on Pentagon data puts total confirmed U.S. military deaths linked to the Iran war at 18 and total wounded at 642 across both categories. For Iran, the latest broadly cited official figure located was more than 3,400 dead from the Iranian Health Ministry, while CENTCOM\u2019s latest available official campaign fact sheet still lists 13,000+ targets struck and earlier campaign materials list 9,000+ combat flights; more granular current totals for Israeli deaths and most weapons-expended categories were not confirmed from named official or major-wire sources in the available search results."
+      "summary": "Confirmed reporting on July 31, 2026 indicates the war remains in a renewed exchange-of-fire phase after July fighting around the Strait of Hormuz and U.S. bases. AP reports the Pentagon now separates post-July 7 casualties from Operation Epic Fury, while the confirmed U.S. death total publicly acknowledged remains 18. The latest accessible confirmed Iranian nationwide death figure located was 3,637 killed from Iran\u2019s Health Ministry reported June 9, with more than 12,000 wounded previously reported by Iranian health officials. CENTCOM\u2019s latest accessible official operation fact sheet still lists 13,000-plus targets struck, but current official totals for specific weapons expended and current U.S. force deployments were not found in accessible named-source reporting."
     },
     {
       "date": "2026-07-30",
