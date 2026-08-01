@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-08-01T15:19:39Z",
+  "lastUpdated": "2026-08-01T17:14:56Z",
   "dayCount": 154,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,508+",
-    "cost": "$29.6B+"
+    "killed": "3,496+",
+    "cost": "$30.0B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,461",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$29.6 billion+",
-    "dailyBurnRate": "~$192M/day",
+    "totalCost": "$30.0 billion+",
+    "dailyBurnRate": "~$195M/day",
     "daysOfOps": 154,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-01",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury; later July Navy reporting still shows George H.W. Bush and Abraham Lincoln assets operating in Middle East search/rescue context)"
+          "source": "LLM-verified (CBS News March 5, 2026, citing CENTCOM/Pentagon briefing: two carrier strike groups participating.)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-07-31",
-          "source": "LLM-verified (CENTCOM Commander Adm. Brad Cooper said on May 4, 2026 that CENTCOM was employing '15,000 service members' to extend the defensive umbrella across the Strait of Hormuz.)"
+          "lastUpdated": "2026-08-01",
+          "source": "LLM-verified (CBS News May 5, 2026, citing Gen. Dan Caine/Pentagon briefing: operation's forces are comprised of 15,000 American service members.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-01",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 23, 2026: 'Combat Flights: 9,000+'; no newer confirmed cumulative sortie total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; used as nearest confirmed fighter/attack sortie proxy, but note the source says combat flights, not fighter-only sorties.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/ Pentagon reporting in late July 2026 shows renewed U.S.-Iran fighting is now being counted outside Operation Epic Fury in a new casualty category, complicating like-for-like war tallies.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera Aug. 1, 2026 headline reported Iran warned against 'flames of war' amid U.S. strike threats on energy sites.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP Aug. 1, 2026 reported Trump threatened more strikes on Iran and said there were no casualties in the latest episode.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 1, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on July 28-29 reported Saudi Arabia joining U.S. strikes on logistics and weapons sites used by Iranian-backed militias in eastern Iraq.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 29-30 reported renewed U.S.-Iran missile exchanges after Iran targeted U.S. forces in the Middle East and the U.S. responded with strikes on Iranian targets and Iran-backed militias in Iraq.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 29, 2026 reported U.S. and Saudi aircraft struck Iran-backed militia logistics and weapons sites in eastern Iraq",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 29-30, 2026 reported renewed U.S.-Iran exchanges after an Iranian missile attack on a U.S. base in Jordan",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-01T16:07:10Z",
+      "text": "<strong>Israeli strikes kill four across Gaza, destroy medical supply warehouse</strong> -- Attacks kill four as Gaza Health Ministry condemns &amp;#039;heinous&amp;#039; strike on medicine stores, days after disarmament deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/1/israeli-strikes-kill-four-across-gaza-destroy-medical-supply-warehouse?traffic_source=rss"
+    },
+    {
       "time": "2026-08-01T14:07:36Z",
       "text": "<strong>Israeli strike destroys Gaza hospital warehouse</strong> -- Israeli strike destroys medical supplies warehouse at Gaza&amp;#039;s Al-Aqsa Martyrs Hospital, staff say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/01-08-israel-strike-gaza-hospital-sv-mp4?traffic_source=rss"
@@ -778,17 +783,12 @@
       "link": "https://www.aljazeera.com/news/2026/8/1/iranian-kurdish-parties-in-iraq-face-a-delicate-balance-amid-iran-attacks?traffic_source=rss"
     },
     {
-      "time": "2026-08-01T03:33:38Z",
-      "text": "<strong>Yemen\u2019s Houthis deny plan to charge ships transiting Red Sea</strong> -- Houthis say Red Sea route remains free to use, pushing back on report of new shipping fees. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/1/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea?traffic_source=rss"
-    },
-    {
       "time": "2026-08-01T05:01:56Z",
       "text": "<strong>Israeli West Bank settler tells BBC attacks on Palestinians are justified as revenge</strong> -- Settler violence against Palestinians is on the rise in the West Bank, as settlements and outposts expand. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c4g4djgdyk2o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-01T14:11:40Z",
+      "time": "2026-08-01T15:25:30Z",
       "text": "<strong>Mountaineer Nirmal Purja killed in Pakistan avalanche, his company says</strong> -- The renowned mountaineer was known for scaling the world&#x27;s 14 highest peaks in just over six months in 2019. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&at_campaign=rss"
     },
@@ -796,6 +796,21 @@
       "time": "2026-08-01T13:35:39Z",
       "text": "<strong>Nine killed in strikes on Kyiv, as Ukraine sinks Russian container ship</strong> -- The attack comes as Moscow escalates deadly ballistic missile attacks on the Ukrainian capital. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/ce973yvk7pko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-01T16:16:16Z",
+      "text": "<strong>Current Ebola outbreak worst ever in DR Congo, WHO says</strong> -- The current strain has so far killed 1,587 people, and there is currently no approved vaccine or treatment. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-01T03:33:38Z",
+      "text": "<strong>Yemen\u2019s Houthis deny plan to charge ships transiting Red Sea</strong> -- Houthis say Red Sea route remains free to use, pushing back on report of new shipping fees. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/1/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-01T14:11:40Z",
+      "text": "<strong>Mountaineer Nirmal Purja killed in Pakistan avalanche, his company says</strong> -- The renowned mountaineer was known for scaling the world&#x27;s 14 highest peaks in just over six months in 2019. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-07-30T17:55:24Z",
@@ -836,21 +851,6 @@
       "time": "2026-07-31T20:12:32Z",
       "text": "<strong>At least 25 people killed, dozens injured in Algeria bus crash</strong> -- At least 25 people have been killed and dozens others injured in a bus crash in Algeria. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/at-least-25-people-killed-dozens-injured-in-algeria-bus-crash?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-31T15:18:31Z",
-      "text": "<strong>Bowen: Plan for Hamas to disarm faces big obstacles, yet it offers rare hope for Gaza</strong> -- The realities of politics, war, zero trust, the deaths of thousands and the destruction of Gaza will make any agreement very complicated. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c2dkje4p4klo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-31T19:48:17Z",
-      "text": "<strong>Poland protests to Russian ambassador over missile incursion</strong> -- Warsaw asserts missile recently made, illustrating Russia&amp;#039;s nightly barrage against Ukraine is draining arsenal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/7/31/poland-protests-to-russian-ambassador-over-missile-incursion?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T15:20:19Z",
-      "text": "<strong>At least five members of same family killed in Russian missile attack, Zelensky says</strong> -- A six-year-old girl and two boys, aged 11 and 17, were among six killed in a village near the central city of Kryvyi Rih. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,27 @@
   ],
   "newsFeed": [
     {
+      "title": "Current Ebola outbreak worst ever in DR Congo, WHO says",
+      "description": "The current strain has so far killed 1,587 people, and there is currently no approved vaccine or treatment.",
+      "link": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-01T16:16:16Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli strikes kill four across Gaza, destroy medical supply warehouse",
+      "description": "Attacks kill four as Gaza Health Ministry condemns &#039;heinous&#039; strike on medicine stores, days after disarmament deal.",
+      "link": "https://www.aljazeera.com/news/2026/8/1/israeli-strikes-kill-four-across-gaza-destroy-medical-supply-warehouse?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-01T16:07:10Z",
+      "tier": 2
+    },
+    {
       "title": "Mountaineer Nirmal Purja killed in Pakistan avalanche, his company says",
       "description": "The renowned mountaineer was known for scaling the world's 14 highest peaks in just over six months in 2019.",
       "link": "https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-08-01T14:11:40Z",
+      "time": "2026-08-01T15:25:30Z",
       "tier": 2
     },
     {
@@ -1277,14 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "Yemen\u2019s Houthis deny plan to charge ships transiting Red Sea",
-      "description": "Houthis say Red Sea route remains free to use, pushing back on report of new shipping fees.",
-      "link": "https://www.aljazeera.com/news/2026/8/1/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-01T03:33:38Z",
-      "tier": 2
-    },
-    {
       "title": "What's in the Gaza peace deal roadmap?",
       "description": "Hamas says it has accepted a disarmament plan for Gaza which will see it lay down its arms and Israeli troops withdraw from the territory.",
       "link": "https://www.bbc.co.uk/news/articles/c20e94k2ex5o?at_medium=RSS&at_campaign=rss",
@@ -1317,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today shows no authoritative newer casualty update for Iran or Israel beyond the June 10 Al Jazeera tracker figures of 3,468 dead and more than 26,500 wounded in Iran, and 26 dead in Israel. AP reporting this week says the Pentagon\u2019s official Operation Epic Fury tally now stands at 14 U.S. troops killed, with later July deaths shifted into a separate 'Overseas Operations' category rather than the Epic Fury count. On force posture, official U.S. Navy material indicates two carrier strike groups supported the campaign, and a July 7 Navy release placed five destroyers in Middle East operations alongside those carriers. AP also reported on August 1 that Trump threatened additional strikes, while Al Jazeera\u2019s headline reporting says Iran is warning of wider war and has prepared retaliation plans.",
+  "summary": "Confirmed reporting available today shows no authoritative public update above the last widely cited cumulative Operation Epic Fury figures for most headline metrics: the Pentagon/DCAS still supports 14 U.S. dead under Operation Epic Fury, while late-July AP reporting says subsequent renewed fighting is now tracked in a separate category; CENTCOM\u2019s latest easily accessible public fact sheet still lists 13,000+ targets struck; and the most durable cumulative Iran fatality figure located from a named source remains Reuters\u2019 March 29 factbox citing HRANA at 3,461 killed. Today\u2019s major development is renewed escalation risk rather than a clearly documented jump in the main cumulative war totals, with AP reporting Aug. 1 that Trump threatened more strikes and Al Jazeera reporting Iranian warnings over possible attacks on energy infrastructure.",
   "briefings": [
     {
       "date": "2026-08-01",
       "day": 154,
-      "summary": "Confirmed reporting available today shows no authoritative newer casualty update for Iran or Israel beyond the June 10 Al Jazeera tracker figures of 3,468 dead and more than 26,500 wounded in Iran, and 26 dead in Israel. AP reporting this week says the Pentagon\u2019s official Operation Epic Fury tally now stands at 14 U.S. troops killed, with later July deaths shifted into a separate 'Overseas Operations' category rather than the Epic Fury count. On force posture, official U.S. Navy material indicates two carrier strike groups supported the campaign, and a July 7 Navy release placed five destroyers in Middle East operations alongside those carriers. AP also reported on August 1 that Trump threatened additional strikes, while Al Jazeera\u2019s headline reporting says Iran is warning of wider war and has prepared retaliation plans."
+      "summary": "Confirmed reporting available today shows no authoritative public update above the last widely cited cumulative Operation Epic Fury figures for most headline metrics: the Pentagon/DCAS still supports 14 U.S. dead under Operation Epic Fury, while late-July AP reporting says subsequent renewed fighting is now tracked in a separate category; CENTCOM\u2019s latest easily accessible public fact sheet still lists 13,000+ targets struck; and the most durable cumulative Iran fatality figure located from a named source remains Reuters\u2019 March 29 factbox citing HRANA at 3,461 killed. Today\u2019s major development is renewed escalation risk rather than a clearly documented jump in the main cumulative war totals, with AP reporting Aug. 1 that Trump threatened more strikes and Al Jazeera reporting Iranian warnings over possible attacks on energy infrastructure."
     },
     {
       "date": "2026-07-31",
