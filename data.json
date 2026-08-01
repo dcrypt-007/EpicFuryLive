@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-08-01T18:14:02Z",
+  "lastUpdated": "2026-08-01T19:37:32Z",
   "dayCount": 154,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "1,298+",
-    "cost": "$30.0B+"
+    "strikes": "~9,000",
+    "killed": "1,289+",
+    "cost": "$29.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,461",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$30.0 billion+",
-    "dailyBurnRate": "~$195M/day",
+    "totalCost": "$29.6 billion+",
+    "dailyBurnRate": "~$192M/day",
     "daysOfOps": 154,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-01",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; used as nearest confirmed fighter/attack sortie proxy, but note the source says combat flights, not fighter-only sorties.)"
+          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet: The First 24 Days, March 23, 2026: 'Combat Flights: 9,000+'; used as the latest confirmed official cumulative sorties figure located.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,15 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 1, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported on August 1, 2026 that Iran warned against 'flames of war' amid reported US strike threats on Iranian energy sites.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 1, 2026",
       "severity": "high",
@@ -650,15 +659,6 @@
       "text": "AP July 28, 2026: Pentagon said renewed U.S.-Iran fighting after July 7 is being tracked under a new 'Overseas Operations' casualty category, separate from Operation Epic Fury",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Jul 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP July 29-30, 2026: CENTCOM reported a heavy wave of U.S. strikes against Iran after an Iranian missile attack on a U.S. base in Jordan",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-08-01T18:22:35Z",
+      "text": "<strong>At least three killed in explosion near cafe in Russia\u2019s Moscow</strong> -- \u2060Fifteen also \u200binjured \u200cin the blast in Kudrinskaya Square, authorities say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/1/russia-says-explosion-near-cafe-in-moscow-kills-three?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-01T17:45:26Z",
+      "text": "<strong>At least 9 people killed in Russian missile attacks on Kyiv</strong> -- At least 9 people have been killed and dozens injured in Russian missile strikes on Kyiv. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/at-least-9-people-killed-in-russian-missile-attacks-on-kyiv?traffic_source=rss"
+    },
+    {
       "time": "2026-08-01T16:07:10Z",
       "text": "<strong>Israeli strikes kill four across Gaza, destroy medical supply warehouse</strong> -- Attacks kill four as Gaza Health Ministry condemns &amp;#039;heinous&amp;#039; strike on medicine stores, days after disarmament deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/1/israeli-strikes-kill-four-across-gaza-destroy-medical-supply-warehouse?traffic_source=rss"
@@ -766,21 +776,6 @@
       "time": "2026-08-01T12:44:54Z",
       "text": "<strong>Iran warns against \u2018flames of war\u2019 amid US strike threats on energy sites</strong> -- Iranian media says retaliation plan ready after US media suggest potential imminent attacks against civilian sites. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/1/iran-warns-against-fire-of-war-amid-us-strike-threats-on-energy-sites?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-01T11:21:32Z",
-      "text": "<strong>Trump mimics sound of Patriot missile interceptions</strong> -- US President Donald Trump mimicked missile interceptions as he described the US military shooting down Iranian missiles. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/aje-onl-nf_01-08-trump-jordan-missiles-clip-010826?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-01T10:30:00Z",
-      "text": "<strong>Iran: The Making of a War</strong> -- From coup to conflict - how decades of rivalries and miscalculations have shaped one of today\u2019s most dangerous wars. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/featured-documentaries/2026/8/1/iran-the-making-of-a-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-01T09:47:39Z",
-      "text": "<strong>Iranian Kurdish parties in Iraq face a delicate balance amid Iran attacks</strong> -- Iranian Kurdish groups based in Iraq have been heavily attacked in the war, but most deny US assistance. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/1/iranian-kurdish-parties-in-iraq-face-a-delicate-balance-amid-iran-attacks?traffic_source=rss"
     },
     {
       "time": "2026-08-01T05:01:56Z",
@@ -803,6 +798,26 @@
       "link": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-07-30T17:55:24Z",
+      "text": "<strong>Danube&#x27;s record low levels force shutdown of Hungary&#x27;s only nuclear plant</strong> -- Romania, Bulgaria and Serbia are also grappling with the effects of a series of prolonged heatwaves and low rainfall. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-01T11:21:32Z",
+      "text": "<strong>Trump mimics sound of Patriot missile interceptions</strong> -- US President Donald Trump mimicked missile interceptions as he described the US military shooting down Iranian missiles. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/aje-onl-nf_01-08-trump-jordan-missiles-clip-010826?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-01T10:30:00Z",
+      "text": "<strong>Iran: The Making of a War</strong> -- From coup to conflict - how decades of rivalries and miscalculations have shaped one of today\u2019s most dangerous wars. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/featured-documentaries/2026/8/1/iran-the-making-of-a-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-01T09:47:39Z",
+      "text": "<strong>Iranian Kurdish parties in Iraq face a delicate balance amid Iran attacks</strong> -- Iranian Kurdish groups based in Iraq have been heavily attacked in the war, but most deny US assistance. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/1/iranian-kurdish-parties-in-iraq-face-a-delicate-balance-amid-iran-attacks?traffic_source=rss"
+    },
+    {
       "time": "2026-08-01T03:33:38Z",
       "text": "<strong>Yemen\u2019s Houthis deny plan to charge ships transiting Red Sea</strong> -- Houthis say Red Sea route remains free to use, pushing back on report of new shipping fees. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/1/yemens-houthis-deny-plan-to-charge-ships-transiting-red-sea?traffic_source=rss"
@@ -811,11 +826,6 @@
       "time": "2026-08-01T14:11:40Z",
       "text": "<strong>Mountaineer Nirmal Purja killed in Pakistan avalanche, his company says</strong> -- The renowned mountaineer was known for scaling the world&#x27;s 14 highest peaks in just over six months in 2019. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-30T17:55:24Z",
-      "text": "<strong>Danube&#x27;s record low levels force shutdown of Hungary&#x27;s only nuclear plant</strong> -- Romania, Bulgaria and Serbia are also grappling with the effects of a series of prolonged heatwaves and low rainfall. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-01T02:06:00Z",
@@ -841,16 +851,6 @@
       "time": "2026-07-31T23:30:54Z",
       "text": "<strong>Analyst: the US faces a strategic \u2018dead end\u2019 in Iran</strong> -- Washington has reached a strategic impasse with Iran, says a former analyst for the US Congress. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/analyst-the-us-faces-a-strategic-dead-end-in-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-07-30T12:14:00Z",
-      "text": "<strong>Cyanide in tomato pesticide killed 15 elephants, Kenyan officials suspect</strong> -- Foul play is ruled out in the record number of elephant deaths for decades in this area of southern Kenya. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cp9e0v5xmdyo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-07-31T20:12:32Z",
-      "text": "<strong>At least 25 people killed, dozens injured in Algeria bus crash</strong> -- At least 25 people have been killed and dozens others injured in a bus crash in Algeria. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/31/at-least-25-people-killed-dozens-injured-in-algeria-bus-crash?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "At least three killed in explosion near cafe in Russia\u2019s Moscow",
+      "description": "\u2060Fifteen also \u200binjured \u200cin the blast in Kudrinskaya Square, authorities say.",
+      "link": "https://www.aljazeera.com/news/2026/8/1/russia-says-explosion-near-cafe-in-moscow-kills-three?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-01T18:22:35Z",
+      "tier": 2
+    },
+    {
+      "title": "At least 9 people killed in Russian missile attacks on Kyiv",
+      "description": "At least 9 people have been killed and dozens injured in Russian missile strikes on Kyiv.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/at-least-9-people-killed-in-russian-missile-attacks-on-kyiv?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-01T17:45:26Z",
+      "tier": 2
+    },
+    {
       "title": "Current Ebola outbreak worst ever in DR Congo, WHO says",
       "description": "The current strain has so far killed 1,587 people, and there is currently no approved vaccine or treatment.",
       "link": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss",
@@ -1261,30 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Trump mimics sound of Patriot missile interceptions",
-      "description": "US President Donald Trump mimicked missile interceptions as he described the US military shooting down Iranian missiles.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/aje-onl-nf_01-08-trump-jordan-missiles-clip-010826?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-01T11:21:32Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran: The Making of a War",
-      "description": "From coup to conflict - how decades of rivalries and miscalculations have shaped one of today\u2019s most dangerous wars.",
-      "link": "https://www.aljazeera.com/video/featured-documentaries/2026/8/1/iran-the-making-of-a-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-01T10:30:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Iranian Kurdish parties in Iraq face a delicate balance amid Iran attacks",
-      "description": "Iranian Kurdish groups based in Iraq have been heavily attacked in the war, but most deny US assistance.",
-      "link": "https://www.aljazeera.com/news/2026/8/1/iranian-kurdish-parties-in-iraq-face-a-delicate-balance-amid-iran-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-01T09:47:39Z",
-      "tier": 2
-    },
-    {
       "title": "Israeli West Bank settler tells BBC attacks on Palestinians are justified as revenge",
       "description": "Settler violence against Palestinians is on the rise in the West Bank, as settlements and outposts expand.",
       "link": "https://www.bbc.co.uk/news/articles/c4g4djgdyk2o?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available on August 1, 2026 indicates renewed volatility rather than a settled ceasefire: AP reported President Trump threatened more strikes on Iran, while Kuwait said drones hit vital facilities in its north and AP also noted no current change to the Pentagon\u2019s official 14-death Operation Epic Fury KIA count after the later four July deaths were moved into a separate category. For cumulative war figures, the latest accessible named-source totals remain patchy: CENTCOM\u2019s April 6 fact sheet still lists 13,000+ targets struck, Al Jazeera\u2019s accessible tracker shows 26 Israelis killed and 3 killed in Bahrain, and the latest clearly sourced Iranian official casualty figures found in accessible reporting remain 1,255 killed and about 12,000 wounded, mostly civilians.",
+  "summary": "Confirmed reporting available today remains fragmentary. AP reported on July 28, 2026 that Operation Epic Fury has ended as a named operation and that the Pentagon\u2019s official tally still attributes 14 US troop deaths to the original campaign, while later deaths were moved into a new 'Overseas Operations' category. For Iranian casualties, the latest clearly attributable cumulative figure found in the searched sources was Iran\u2019s March 9 claim carried by Al Jazeera of 1,255 killed and 12,000 wounded, mostly civilians. The latest official strike total I found from DoD/CENTCOM remains the March 23, 2026 fact sheet listing 9,000+ targets struck and 9,000+ combat flights. I did not find newer confirmed official cumulative figures today for Iranian total deaths, Gulf-state deaths, current deployed force counts, or specific weapons-expended totals such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or interceptors, so those fields are left null.",
   "briefings": [
     {
       "date": "2026-08-01",
       "day": 154,
-      "summary": "Confirmed reporting available on August 1, 2026 indicates renewed volatility rather than a settled ceasefire: AP reported President Trump threatened more strikes on Iran, while Kuwait said drones hit vital facilities in its north and AP also noted no current change to the Pentagon\u2019s official 14-death Operation Epic Fury KIA count after the later four July deaths were moved into a separate category. For cumulative war figures, the latest accessible named-source totals remain patchy: CENTCOM\u2019s April 6 fact sheet still lists 13,000+ targets struck, Al Jazeera\u2019s accessible tracker shows 26 Israelis killed and 3 killed in Bahrain, and the latest clearly sourced Iranian official casualty figures found in accessible reporting remain 1,255 killed and about 12,000 wounded, mostly civilians."
+      "summary": "Confirmed reporting available today remains fragmentary. AP reported on July 28, 2026 that Operation Epic Fury has ended as a named operation and that the Pentagon\u2019s official tally still attributes 14 US troop deaths to the original campaign, while later deaths were moved into a new 'Overseas Operations' category. For Iranian casualties, the latest clearly attributable cumulative figure found in the searched sources was Iran\u2019s March 9 claim carried by Al Jazeera of 1,255 killed and 12,000 wounded, mostly civilians. The latest official strike total I found from DoD/CENTCOM remains the March 23, 2026 fact sheet listing 9,000+ targets struck and 9,000+ combat flights. I did not find newer confirmed official cumulative figures today for Iranian total deaths, Gulf-state deaths, current deployed force counts, or specific weapons-expended totals such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or interceptors, so those fields are left null."
     },
     {
       "date": "2026-07-31",
