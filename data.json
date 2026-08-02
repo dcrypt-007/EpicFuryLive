@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-02T06:45:06Z",
+  "lastUpdated": "2026-08-02T09:21:42Z",
   "dayCount": 155,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "4,767+",
-    "cost": "$23.0B+"
+    "strikes": "~7,800",
+    "killed": "4,795+",
+    "cost": "$25.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$23.0 billion+",
-    "dailyBurnRate": "~$148M/day",
+    "totalCost": "$25.6 billion+",
+    "dailyBurnRate": "~$165M/day",
     "daysOfOps": 155,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-02",
-          "source": "LLM-verified (CENTCOM press release May 23, 2026 said 'more than 15,000 Soldiers, Sailors, Marines and Airmen' were enforcing the blockade; no newer confirmed total operation-wide troop figure found)"
+          "source": "LLM-verified (AP on March 24, 2026 reported the U.S. was preparing to send at least 1,000 more troops to supplement some 50,000 troops already in the Mideast; no newer operation-specific confirmed troop total found)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-02",
-          "source": "LLM-verified (CENTCOM fact sheet dated March 23, 2026 reported 9,000+ combat flights; no newer official cumulative fighter/attack sortie total found)"
+          "source": "LLM-verified (U.S. Department of War Operation Epic Fury fact sheet dated March 18, 2026 lists 8,000+ combat flights; no newer confirmed cumulative fighter/attack sortie figure found)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 155 days",
-        "cost": "$1,162,500,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 155 days",
+        "cost": "$3,875,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on July 28, 2026 that all missiles fired by Iran at American forces were intercepted, but renewed fighting is drawing down Patriot and THAAD interceptor stockpiles",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on July 29, 2026 that CENTCOM said the U.S. carried out a heavy wave of strikes against Iran after intercepting an Iranian missile attack on a U.S. base in Jordan",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 2, 2026 that Trump said he would halt new U.S. strikes for now after claiming outlines of a deal to end the Iran war had been reached",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 2, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reports President Trump threatened additional strikes and said U.S. military action against Iran could continue for some time.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports a tanker was struck in the Strait of Hormuz on August 1, 2026, underscoring continued maritime risk and pressure on shipping despite recent pauses.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP/Al Jazeera report fresh Iranian drone attacks on Kuwait on August 1, 2026, with Kuwait saying vital facilities were targeted but no casualties reported.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Recent fighting remains centered on the Strait of Hormuz, with US-Iran exchanges and attacks on Gulf-hosting states raising maritime risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-02T08:43:15Z",
+      "text": "<strong>Trump \u2018cancels attack on Iran\u2019 saying deal is near</strong> -- US President Trump announced he was cancelling a planned attack on Iran with the \u2018perimeters of a deal\u2019 agreed to. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/2/trump-cancels-attack-on-iran-saying-deal-is-near?traffic_source=rss"
+    },
+    {
       "time": "2026-08-02T05:29:36Z",
       "text": "<strong>At least three dead in Idaho shopping mall mass shooting</strong> -- Police said at least three people were killed several others were wounded in a shooting at an In-N-Out Burger in Idaho. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/2/at-least-three-dead-in-idaho-shopping-mall-mass-shooting?traffic_source=rss"
@@ -786,6 +791,16 @@
       "time": "2026-08-01T22:34:36Z",
       "text": "<strong>Michigan joins Minnesota in reporting cyberattacks, with FBI investigating</strong> -- No culprit has been identified in any of the attacks, which comes after authorities warned of possible Iranian plot. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/1/michigan-joins-minnesota-in-reporting-cyber-attacks-with-fbi-investigating?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-02T09:10:51Z",
+      "text": "<strong>Trump cancels Iran strikes subject to deal being made &#x27;rapidly&#x27;</strong> -- The US president claims Iran and other Middle Eastern countries asked Washington to hold off on any attack as the &quot;perimeters&quot; of a deal had been agreed. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-02T05:40:42Z",
+      "text": "<strong>Three killed after bomb detonated at Moscow restaurant, state media say</strong> -- Security officials said a woman tried to enter the restaurant with explosives but was stopped by a security guard. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c86n4ljxp63o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-01T20:57:04Z",
@@ -836,21 +851,6 @@
       "time": "2026-08-01T16:16:16Z",
       "text": "<strong>Current Ebola outbreak worst ever in DR Congo, WHO says</strong> -- The current strain has so far killed 1,587 people, and there is currently no approved vaccine or treatment. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-02T00:02:18Z",
-      "text": "<strong>Three killed after bomb detonated at Moscow restaurant, state media say</strong> -- Security officials said a woman tried to enter the restaurant with explosives but was stopped by a security guard. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c86n4ljxp63o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-01T18:22:35Z",
-      "text": "<strong>At least three killed in explosion near cafe in Russia\u2019s Moscow</strong> -- More than 21 people also \u200binjured \u200cin the blast in Kudrinskaya Square, authorities say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/1/russia-says-explosion-near-cafe-in-moscow-kills-three?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-01T14:07:36Z",
-      "text": "<strong>Israeli strike destroys Gaza hospital warehouse</strong> -- Israeli strike destroys medical supplies warehouse at Gaza&amp;#039;s Al-Aqsa Martyrs Hospital, staff say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/01-08-israel-strike-gaza-hospital-sv-mp4?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,19 @@
   ],
   "newsFeed": [
     {
-      "title": "Trump says he is cancelling strikes on Iran subject to deal being made 'rapidly'",
+      "title": "Trump cancels Iran strikes subject to deal being made 'rapidly'",
       "description": "The US president claims Iran and other Middle Eastern countries asked Washington to hold off on any attack as the \"perimeters\" of a deal had been agreed.",
       "link": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-08-02T06:24:01Z",
+      "time": "2026-08-02T09:10:51Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump \u2018cancels attack on Iran\u2019 saying deal is near",
+      "description": "US President Trump announced he was cancelling a planned attack on Iran with the \u2018perimeters of a deal\u2019 agreed to.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/2/trump-cancels-attack-on-iran-saying-deal-is-near?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-02T08:43:15Z",
       "tier": 2
     },
     {
@@ -1293,35 +1301,11 @@
       "tier": 2
     },
     {
-      "title": "Peruvian plane crash kills 13, including European tourists",
-      "description": "Those killed include 11 passengers and two pilots flying over the famous archaeological site, recognised by UNESCO.",
-      "link": "https://www.aljazeera.com/news/2026/8/1/police-say-13-killed-as-small-plane-viewing-nazca-lines-in-peru-crashes?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-01T20:57:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Record-breaking climber Nirmal Purja among those killed in avalanche",
-      "description": "14 Peaks star Nirmal Purja has died in an avalanche while leading 10 climbers up Broad Peak mountain in Pakistan.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/1/record-record-breaking-climber-nirmal-purja-among-those-killed-in-avalanche?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-01T20:10:01Z",
-      "tier": 2
-    },
-    {
       "title": "Current Ebola outbreak worst ever in DR Congo, WHO says",
       "description": "The current strain has so far killed 1,587 people, and there is currently no approved vaccine or treatment.",
       "link": "https://www.bbc.co.uk/news/articles/cy07qe0knvzo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-01T16:16:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Nine killed in strikes on Kyiv, as Ukraine sinks Russian container ship",
-      "description": "The attack comes as Moscow escalates deadly ballistic missile attacks on the Ukrainian capital.",
-      "link": "https://www.bbc.co.uk/news/articles/ce973yvk7pko?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-01T13:35:39Z",
       "tier": 2
     },
     {
@@ -1341,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 1-2, 2026 indicates a possible de-escalation but not a settled peace: President Trump said he canceled or paused planned new US strikes on Iran after regional partners outlined parameters for a deal, according to AP, BBC and Al Jazeera. At the same time, AP reporting this week confirms renewed hostilities in late July, including an Iranian missile attack on a US base in Jordan, additional US strikes, and Pentagon acknowledgment that casualties from the renewed phase are now being tracked outside the original Operation Epic Fury category. I found current confirmed headline developments, but I did not find fresh official cumulative updates for most force-deployment and weapon-expenditure fields, so those remain null.",
+  "summary": "Confirmed reporting on August 2, 2026 indicates President Trump said he is canceling or pausing planned new U.S. strikes because the outlines of a deal to end the war may have been reached, according to AP. The most recent firm casualty updates found were 18 confirmed U.S. military deaths from AP, 3,468 dead and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s June 10 tracker, 26 killed in Israel from the same tracker, and 28 killed in Gulf states. Renewed late-July exchanges included intercepted Iranian missile attacks on U.S. forces and a subsequent heavy U.S. strike wave, but many military-usage totals requested here could not be updated from named confirmed sources and are left null.",
   "briefings": [
     {
       "date": "2026-08-02",
       "day": 155,
-      "summary": "Confirmed reporting on August 1-2, 2026 indicates a possible de-escalation but not a settled peace: President Trump said he canceled or paused planned new US strikes on Iran after regional partners outlined parameters for a deal, according to AP, BBC and Al Jazeera. At the same time, AP reporting this week confirms renewed hostilities in late July, including an Iranian missile attack on a US base in Jordan, additional US strikes, and Pentagon acknowledgment that casualties from the renewed phase are now being tracked outside the original Operation Epic Fury category. I found current confirmed headline developments, but I did not find fresh official cumulative updates for most force-deployment and weapon-expenditure fields, so those remain null."
+      "summary": "Confirmed reporting on August 2, 2026 indicates President Trump said he is canceling or pausing planned new U.S. strikes because the outlines of a deal to end the war may have been reached, according to AP. The most recent firm casualty updates found were 18 confirmed U.S. military deaths from AP, 3,468 dead and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health as cited by Al Jazeera\u2019s June 10 tracker, 26 killed in Israel from the same tracker, and 28 killed in Gulf states. Renewed late-July exchanges included intercepted Iranian missile attacks on U.S. forces and a subsequent heavy U.S. strike wave, but many military-usage totals requested here could not be updated from named confirmed sources and are left null."
     },
     {
       "date": "2026-08-01",
