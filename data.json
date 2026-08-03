@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-03T03:59:04Z",
+  "lastUpdated": "2026-08-03T07:46:31Z",
   "dayCount": 156,
   "banner": {
     "strikes": "~13,000",
-    "killed": "1,299+",
-    "cost": "$26.1B+"
+    "killed": "3,486+",
+    "cost": "$26.0B+"
   },
   "humanCost": {
-    "iranDeaths": "1,230",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$26.1 billion+",
-    "dailyBurnRate": "~$167M/day",
+    "totalCost": "$26.0 billion+",
+    "dailyBurnRate": "~$166M/day",
     "daysOfOps": 156,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-03",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page lists Gerald R. Ford and Dwight D. Eisenhower carrier strike groups supporting operations)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page lists two carrier strike groups operating in the area: Gerald R. Ford CSG and Dwight D. Eisenhower CSG.)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-08-03",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page names USS Ramage, USS Paul Ignatius, USS Gravely, and USS Mason as destroyers in the two listed CSGs)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page names four Arleigh Burke-class destroyers with the two carrier strike groups: USS Ramage, USS Paul Ignatius, USS Gravely, USS Mason.)"
         },
         {
           "id": "personnel",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-08-03",
-          "source": "LLM-verified (AP on May 27, 2026, citing CSIS estimates, reported the U.S. fired 1,000-plus Tomahawk missiles at Iran; using 1000 as confirmed floor)"
+          "source": "LLM-verified (Washington Post figure cited by Stars and Stripes on March 30, 2026: U.S. Navy had fired more than 850 Tomahawks since Feb. 28.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-03",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 23, 2026: Combat Flights 9,000+)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists Combat Flights: 11,000+.)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Reuters reporting from late July 2026 indicates renewed fighting has strained U.S. missile-interceptor and munition stockpiles, raising the prospect of reduced readiness if hostilities resume at scale.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on July 28, 2026 reported CENTCOM said it intercepted multiple ballistic missiles fired at American troops in the region during the renewed July fighting phase, underscoring continued risk to U.S. forces even amid ceasefire/diplomatic efforts.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported on August 2-3, 2026 that President Trump said he paused a planned new 'massive attack' on Iran pending talks beginning Monday, while Iranian officials publicly denied direct talks were underway and said Omani mediation continued.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 3, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported July 28, 2026 that the Pentagon created a new 'Overseas Operations' casualty category for renewed fighting after Operation Epic Fury formally ended, complicating public tracking of war casualties.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported July 28-30, 2026 that renewed US-Iran fighting involved an Iranian missile attack on a US base in Jordan, followed by US strikes and interception of multiple ballistic missiles, indicating escalation risk remains despite diplomacy.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and BBC reported on August 1-2, 2026 that Trump said planned new US strikes on Iran were canceled or paused after 'deal parameters/perimeters' were reached, but only conditionally and subject to a rapid agreement.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reporting indicate the renewed July fighting around the Strait of Hormuz remains unstable despite mediation efforts.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -759,7 +759,7 @@
     },
     {
       "time": "2026-08-03T00:00:15Z",
-      "text": "<strong>Iran war live: Trump says talks to resume; Tehran urges US to honour MoU</strong> -- US President Donald Trump says an agreement with Iran is imminent, with negotiations set to begin on Monday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Iranian FM says no current talks with US; Oman talks ongoing</strong> -- US President Donald Trump says an agreement with Iran is imminent, with negotiations set to begin on Monday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/3/iran-war-live-trump-says-talks-set-to-begin-tehran-urges-us-to-honour-mou?traffic_source=rss"
     },
     {
@@ -793,14 +793,19 @@
       "link": "https://www.aljazeera.com/video/the-bottom-line/2026/8/2/iron-fist-doesnt-work-with-iran-former-us-hostage-in-tehran?traffic_source=rss"
     },
     {
-      "time": "2026-08-02T17:57:01Z",
-      "text": "<strong>Fetus found among the ruins of a deadly Israeli strike on Gaza</strong> -- Residents searching through the rubble of an Israeli strike in western Gaza City recovered the body of an unborn baby. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/2/fetus-found-among-the-ruins-of-a-deadly-israeli-strike-on-gaza?traffic_source=rss"
+      "time": "2026-08-03T00:11:18Z",
+      "text": "<strong>Trump suggests new talks with Iran to begin on Monday</strong> -- Tehran has not responded to the suggestion that new talks are imminent. Trump has previously said a negotiated end to the war is close, only for strikes to resume. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-03T01:03:31Z",
       "text": "<strong>Two crew killed after firefighting helicopters collide in Greece, as British pilot survives</strong> -- One Danish and one Greek national died in the incident, while a British pilot and another Greek crew member survived. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c1417713ve6o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-02T17:57:01Z",
+      "text": "<strong>Fetus found among the ruins of a deadly Israeli strike on Gaza</strong> -- Residents searching through the rubble of an Israeli strike in western Gaza City recovered the body of an unborn baby. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/2/fetus-found-among-the-ruins-of-a-deadly-israeli-strike-on-gaza?traffic_source=rss"
     },
     {
       "time": "2026-08-02T17:15:56Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-02T17:14:04Z",
       "text": "<strong>Two crew killed as British pilot survives after firefighting helicopters collide in Greece</strong> -- One Danish and one Greek national died in the incident, while a British pilot and another Greek crew member survived. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c1417713ve6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-02T11:12:00Z",
-      "text": "<strong>Trump cancels Iran strikes subject to deal being made &#x27;rapidly&#x27;</strong> -- The US president claims Iran and other Middle Eastern countries asked Washington to hold off on any attack as the &quot;perimeters&quot; of a deal had been agreed. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1229,7 +1229,15 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Trump says talks to resume; Tehran urges US to honour MoU",
+      "title": "Trump suggests new talks with Iran to begin on Monday",
+      "description": "Tehran has not responded to the suggestion that new talks are imminent. Trump has previously said a negotiated end to the war is close, only for strikes to resume.",
+      "link": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-03T00:11:18Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war live: Iranian FM says no current talks with US; Oman talks ongoing",
       "description": "US President Donald Trump says an agreement with Iran is imminent, with negotiations set to begin on Monday.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/3/iran-war-live-trump-says-talks-set-to-begin-tehran-urges-us-to-honour-mou?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1285,14 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "Fetus found among the ruins of a deadly Israeli strike on Gaza",
-      "description": "Residents searching through the rubble of an Israeli strike in western Gaza City recovered the body of an unborn baby.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/2/fetus-found-among-the-ruins-of-a-deadly-israeli-strike-on-gaza?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-02T17:57:01Z",
-      "tier": 2
-    },
-    {
       "title": "At the scene of deadly Moscow bomb blast",
       "description": "Three people have been killed and 21 injured after an explosive device detonated at an Italian restaurant, Russian media reports.",
       "link": "https://www.bbc.co.uk/news/videos/c1719pk0xq8o?at_medium=RSS&at_campaign=rss",
@@ -1325,14 +1325,6 @@
       "tier": 2
     },
     {
-      "title": "Trump cancels Iran strikes subject to deal being made 'rapidly'",
-      "description": "The US president claims Iran and other Middle Eastern countries asked Washington to hold off on any attack as the \"perimeters\" of a deal had been agreed.",
-      "link": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-02T11:12:00Z",
-      "tier": 2
-    },
-    {
       "title": "Three killed after bomb detonated at Moscow restaurant, state media say",
       "description": "Security officials said a woman tried to enter the restaurant with explosives but was stopped by a security guard.",
       "link": "https://www.bbc.co.uk/news/articles/c86n4ljxp63o?at_medium=RSS&at_campaign=rss",
@@ -1341,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "On August 2-3, 2026, AP and Al Jazeera reported that President Donald Trump said he was pausing a planned new U.S. attack on Iran and that talks were set to resume on Monday, while the Strait of Hormuz remained the main flashpoint. The most recent source-backed cumulative figures I could confirm for your fields were 14 U.S. military dead from AP\u2019s July 13 Pentagon/CENTCOM tally, 1,230 Iranian dead from AP\u2019s March 3 report citing Iran\u2019s Foundation of Martyrs and Veterans Affairs, 26 Israeli dead and 29 Gulf-state deaths from Al Jazeera\u2019s June 7 tracker, and 13,000+ total targets struck from CENTCOM\u2019s April 6 fact sheet. I could not confirm current official cumulative totals for several weapons-use fields, Iranian civilian-only deaths, or active drone-unit counts, so those remain null.",
+  "summary": "Confirmed reporting as of Monday, August 3, 2026 indicates the war has entered another pause-and-talks phase: AP and Al Jazeera reported that President Donald Trump said he halted a planned new strike package and expected negotiations with Iran to begin on Monday, though Iranian officials said no direct talks with Washington were currently underway and pointed instead to Omani mediation. The most recent clearly confirmed cumulative U.S. military death toll located is 18, reported by Reuters on July 21 and echoed by Al Jazeera on July 22, while the safest currently confirmed cumulative Iranian death figure I could verify is 3,468, cited by Al Jazeera from Iran\u2019s Health Ministry for the war period up to the June memorandum phase. Official U.S. operational reporting still supports two carrier strike groups and four named destroyer escorts in theater, and earlier CENTCOM-linked reporting put the campaign at over 13,000 sites struck and 11,000-plus combat flights by early April, but many detailed weapon-usage counts remain unconfirmed in accessible primary-source reporting.",
   "briefings": [
     {
       "date": "2026-08-03",
       "day": 156,
-      "summary": "On August 2-3, 2026, AP and Al Jazeera reported that President Donald Trump said he was pausing a planned new U.S. attack on Iran and that talks were set to resume on Monday, while the Strait of Hormuz remained the main flashpoint. The most recent source-backed cumulative figures I could confirm for your fields were 14 U.S. military dead from AP\u2019s July 13 Pentagon/CENTCOM tally, 1,230 Iranian dead from AP\u2019s March 3 report citing Iran\u2019s Foundation of Martyrs and Veterans Affairs, 26 Israeli dead and 29 Gulf-state deaths from Al Jazeera\u2019s June 7 tracker, and 13,000+ total targets struck from CENTCOM\u2019s April 6 fact sheet. I could not confirm current official cumulative totals for several weapons-use fields, Iranian civilian-only deaths, or active drone-unit counts, so those remain null."
+      "summary": "Confirmed reporting as of Monday, August 3, 2026 indicates the war has entered another pause-and-talks phase: AP and Al Jazeera reported that President Donald Trump said he halted a planned new strike package and expected negotiations with Iran to begin on Monday, though Iranian officials said no direct talks with Washington were currently underway and pointed instead to Omani mediation. The most recent clearly confirmed cumulative U.S. military death toll located is 18, reported by Reuters on July 21 and echoed by Al Jazeera on July 22, while the safest currently confirmed cumulative Iranian death figure I could verify is 3,468, cited by Al Jazeera from Iran\u2019s Health Ministry for the war period up to the June memorandum phase. Official U.S. operational reporting still supports two carrier strike groups and four named destroyer escorts in theater, and earlier CENTCOM-linked reporting put the campaign at over 13,000 sites struck and 11,000-plus combat flights by early April, but many detailed weapon-usage counts remain unconfirmed in accessible primary-source reporting."
     },
     {
       "date": "2026-08-02",
