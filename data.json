@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-04T03:37:31Z",
+  "lastUpdated": "2026-08-04T06:40:46Z",
   "dayCount": 157,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,512+",
-    "cost": "$24.8B+"
+    "killed": "3,043+",
+    "cost": "$31.5B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,000",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$24.8 billion+",
-    "dailyBurnRate": "~$158M/day",
+    "totalCost": "$31.5 billion+",
+    "dailyBurnRate": "~$201M/day",
     "daysOfOps": 157,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-04",
-          "source": "LLM-verified (CENTCOM commander testimony to Senate Armed Services Committee on May 14, 2026: '50,000-plus service men and women deployed to the Central Region')"
+          "source": "LLM-verified (Senate Armed Services Committee transcript, May 14, 2026: Gen. Kurilla testified on behalf of '50,000-plus service men and women deployed to the Central Region')"
         },
         {
           "id": "intel_cyber",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-08-04",
-          "source": "LLM-verified (DoD press transcript states a U.S. submarine launched 'more than two dozen' Tomahawk land attack cruise missiles in the strike package; minimum confirmed numeric floor recorded as 24)"
+          "source": "LLM-verified (Defense Department transcript cited in official defense.gov search result: 'a U.S. submarine ... launched more than two dozen Tomahawk land attack cruise missiles')"
         },
         {
           "id": "jdam",
@@ -286,7 +286,7 @@
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 10,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-08-02",
-          "source": "LLM-verified (Confirmed minimum from named CENTCOM releases: June 5 release said 4 Iranian drones shot down and 6 of 7 ballistic missiles intercepted; no comprehensive cumulative total found, so confirmed floor recorded)"
+          "lastUpdated": "2026-08-04",
+          "source": "LLM-verified (Reuters Connect/Pentagon remarks summary, April 2026: 'along with our Gulf partners, we've thus far intercepted 1,700 ballistic missiles and one-way attack drones')"
         },
         {
           "id": "prestrike_buildup",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "10 \u00d7 $4,000,000 each",
-        "cost": "$40,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC/Al Jazeera headline context Aug. 4, 2026: tanker threat in the Middle East remains severe and blockade pressure around Hormuz persists",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP Aug. 2-3, 2026: fragile talks continue over ending the war and reopening the Strait of Hormuz, but no durable settlement is confirmed",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP July 28-30, 2026: renewed Iranian missile and drone attacks on U.S. forces and Saudi energy infrastructure via Iran-backed militias in Iraq",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 4, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on July 30, 2026 that Kuwait said an Iranian strike in the north of the country killed one person amid renewed cross-border attacks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 2, 2026 that Trump said Gulf allies and Tehran urged a delay in planned new U.S. strikes and that talks are to begin Monday.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Reuters on July 22 reported Trump threatened to destroy an Iranian bridge or power plant for each attack on shipping in the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported July 28 that CENTCOM intercepted multiple ballistic missiles fired at U.S. troops in the region.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,18 @@
   ],
   "developments": [
     {
+      "time": "2026-08-04T06:00:10Z",
+      "text": "<strong>Palestine weekly: Israel kills dozens in Gaza after Hamas disarmament deal</strong> -- Israeli strikes on Gaza only intensified in the days following a US-brokered agreement billed as a &amp;#039;breakthrough&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/4/palestine-weekly-israel-kills-dozens-in-gaza-after-hamas-disarmament-deal?traffic_source=rss"
+    },
+    {
       "time": "2026-08-04T02:56:26Z",
-      "text": "<strong>US stocks near record high, oil falls as Trump claims Iran talks under way</strong> -- Benchmark S&amp;amp;P500 approaches all-time peak as Washington, Tehran offer conflicting accounts of status of talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>US stocks near record high, oil falls as Trump claims Iran talks under way</strong> -- Benchmark S&amp;amp;P 500 approaches all-time peak as Washington, Tehran offer conflicting accounts of status of talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/4/us-stocks-near-record-high-oil-falls-as-trump-claims-iran-talks-underway?traffic_source=rss"
     },
     {
       "time": "2026-08-04T00:00:00Z",
-      "text": "<strong>Iran war live: Tehran denies US talks as Trump warns of \u2018last chance\u2019</strong> -- US president says talks with Iran are under way, warning the negotiations are Tehran&amp;#039;s &amp;#039;last chance&amp;#039; to secure a deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Tehran slams US blockade as Trump warns of \u2018last chance\u2019</strong> -- US president says talks with Iran are under way, warning the negotiations are Tehran&amp;#039;s &amp;#039;last chance&amp;#039; to secure a deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/4/iran-war-live-tehran-denies-us-talks-as-trump-warns-of-last-chance?traffic_source=rss"
     },
     {
@@ -773,12 +778,7 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/3/trump-says-talks-with-iran-are-last-chance-to-forge-a-deal?traffic_source=rss"
     },
     {
-      "time": "2026-08-03T18:35:09Z",
-      "text": "<strong>US announces first two deaths from cyclospora outbreak in Michigan</strong> -- Authorities in the Midwestern state of Michigan say that two people who died had underlying conditions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/3/us-announces-first-two-deaths-from-cyclospora-outbreak?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-04T03:36:36Z",
+      "time": "2026-08-04T03:37:14Z",
       "text": "<strong>Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach</strong> -- Three children were killed when the drone crashed at a popular resort on the Black Sea. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss"
     },
@@ -796,6 +796,21 @@
       "time": "2026-08-03T20:05:46Z",
       "text": "<strong>US reports first two deaths linked to  &#x27;explosive diarrhoea&#x27; outbreak</strong> -- The illness caused by parasitic infection that spreads through contaminated food or water is not generally life-threatening, health officials say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c2k7px317eeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-04T02:29:03Z",
+      "text": "<strong>Did Iran hack water systems in seven US states?</strong> -- While US President Donald Trump has said Iran is not to blame, cyber experts tell the BBC it likely the attack was at the hands of the Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c934dq95zpgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-03T18:35:09Z",
+      "text": "<strong>US announces first two deaths from cyclospora outbreak in Michigan</strong> -- Authorities in the Midwestern state of Michigan say that two people who died had underlying conditions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/3/us-announces-first-two-deaths-from-cyclospora-outbreak?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-04T03:36:36Z",
+      "text": "<strong>Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach</strong> -- Three children were killed when the drone crashed at a popular resort on the Black Sea. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-03T08:40:22Z",
@@ -836,21 +851,6 @@
       "time": "2026-08-03T17:41:27Z",
       "text": "<strong>Iran says it is in talks with Oman but not the US after Trump says negotiations to resume</strong> -- Iran&#x27;s remarks that there were no talks with the US prompts Donald Trump to issue a strong condemnation of its leadership. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-03T01:03:31Z",
-      "text": "<strong>Two crew killed after firefighting helicopters collide in Greece, as British pilot survives</strong> -- One Danish and one Greek national died in the incident, while a British pilot and another Greek crew member survived. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1417713ve6o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-03T12:11:03Z",
-      "text": "<strong>Who will shape post-war Iran?</strong> -- There are competing narratives in Tehran for its post-war recovery. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/8/3/who-will-shape-post-war-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-03T11:03:23Z",
-      "text": "<strong>Ukraine strikes Russia\u2019s biggest retailer again</strong> -- Ukraine has struck another warehouse belonging to Russian e-commerce giant Wildberries in a long-range drone attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/3/08-03-2026-ukraine-strikes-wildberies-russia?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,23 +1213,39 @@
   ],
   "newsFeed": [
     {
+      "title": "Palestine weekly: Israel kills dozens in Gaza after Hamas disarmament deal",
+      "description": "Israeli strikes on Gaza only intensified in the days following a US-brokered agreement billed as a &#039;breakthrough&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/8/4/palestine-weekly-israel-kills-dozens-in-gaza-after-hamas-disarmament-deal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-04T06:00:10Z",
+      "tier": 2
+    },
+    {
       "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
       "description": "Three children were killed when the drone crashed at a popular resort on the Black Sea.",
       "link": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-08-04T03:36:36Z",
+      "time": "2026-08-04T03:37:14Z",
       "tier": 2
     },
     {
       "title": "US stocks near record high, oil falls as Trump claims Iran talks under way",
-      "description": "Benchmark S&amp;P500 approaches all-time peak as Washington, Tehran offer conflicting accounts of status of talks.",
+      "description": "Benchmark S&amp;P 500 approaches all-time peak as Washington, Tehran offer conflicting accounts of status of talks.",
       "link": "https://www.aljazeera.com/economy/2026/8/4/us-stocks-near-record-high-oil-falls-as-trump-claims-iran-talks-underway?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-04T02:56:26Z",
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran denies US talks as Trump warns of \u2018last chance\u2019",
+      "title": "Did Iran hack water systems in seven US states?",
+      "description": "While US President Donald Trump has said Iran is not to blame, cyber experts tell the BBC it likely the attack was at the hands of the Iran.",
+      "link": "https://www.bbc.co.uk/news/articles/c934dq95zpgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-04T02:29:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war live: Tehran slams US blockade as Trump warns of \u2018last chance\u2019",
       "description": "US president says talks with Iran are under way, warning the negotiations are Tehran&#039;s &#039;last chance&#039; to secure a deal.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/4/iran-war-live-tehran-denies-us-talks-as-trump-warns-of-last-chance?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1269,35 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "US announces first two deaths from cyclospora outbreak in Michigan",
-      "description": "Authorities in the Midwestern state of Michigan say that two people who died had underlying conditions.",
-      "link": "https://www.aljazeera.com/news/2026/8/3/us-announces-first-two-deaths-from-cyclospora-outbreak?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-03T18:35:09Z",
-      "tier": 2
-    },
-    {
       "title": "Threat to oil tankers in Middle East  worst since start of Iran war, analysts say",
       "description": "Fresh attacks on alternative shipping routes have left tankers facing an increasingly complex situation, analysts say.",
       "link": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-03T15:57:27Z",
-      "tier": 2
-    },
-    {
-      "title": "Two workers killed in blast after re-entering quake-hit Japan mall on boss' order",
-      "description": "The two women's employer has apologised for sending them back to Aeon Mall to secure cash.",
-      "link": "https://www.bbc.co.uk/news/articles/c24mr09r99eo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-03T08:40:22Z",
-      "tier": 2
-    },
-    {
-      "title": "'Your legacy will live forever': Nepal mourns climber Nirmal Purja",
-      "description": "Tributes are pouring out across Nepal after an avalanche killed some of the country's best mountaineers.",
-      "link": "https://www.bbc.co.uk/news/articles/c07rvy4e7mno?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-03T05:31:55Z",
       "tier": 2
     },
     {
@@ -1309,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of August 4, 2026 shows no authoritative new casualty revision beyond the widely cited June 10 Iranian and Israeli totals in Al Jazeera\u2019s tracker, while U.S. casualty accounting has changed because the Pentagon moved renewed July fighting into a separate \u2018Overseas Operations\u2019 category after saying Operation Epic Fury had ended. AP reported four additional U.S. deaths in the July renewed fighting, bringing the official U.S. military death toll to 18 when combined with the 14 service members honored during Epic Fury. Politically, Trump has said Iran has a \u2018last chance\u2019 to make a deal and that talks are under way, but Iranian officials have publicly denied direct U.S. negotiations, leaving the ceasefire/diplomacy picture uncertain even as maritime security threats remain elevated.",
+  "summary": "Confirmed reporting indicates the conflict remains active but fluid: AP reported renewed U.S.-Iran exchanges in late July, including a Pentagon casualty-accounting change that still leaves 18 total U.S. military deaths confirmed across the war and renewed fighting. Trump said on August 2-3 that talks may offer Iran a 'last chance,' while AP and BBC headline reporting indicate no final settlement is yet confirmed and maritime risk around the Strait of Hormuz remains high. The latest clearly sourced cumulative war figures I could confirm today remain largely those established in April official and Reuters-reported tallies, including CENTCOM's 13,000+ targets struck and Iran's official figures of more than 3,000 killed and 26,500 wounded.",
   "briefings": [
     {
       "date": "2026-08-04",
       "day": 157,
-      "summary": "Confirmed reporting as of August 4, 2026 shows no authoritative new casualty revision beyond the widely cited June 10 Iranian and Israeli totals in Al Jazeera\u2019s tracker, while U.S. casualty accounting has changed because the Pentagon moved renewed July fighting into a separate \u2018Overseas Operations\u2019 category after saying Operation Epic Fury had ended. AP reported four additional U.S. deaths in the July renewed fighting, bringing the official U.S. military death toll to 18 when combined with the 14 service members honored during Epic Fury. Politically, Trump has said Iran has a \u2018last chance\u2019 to make a deal and that talks are under way, but Iranian officials have publicly denied direct U.S. negotiations, leaving the ceasefire/diplomacy picture uncertain even as maritime security threats remain elevated."
+      "summary": "Confirmed reporting indicates the conflict remains active but fluid: AP reported renewed U.S.-Iran exchanges in late July, including a Pentagon casualty-accounting change that still leaves 18 total U.S. military deaths confirmed across the war and renewed fighting. Trump said on August 2-3 that talks may offer Iran a 'last chance,' while AP and BBC headline reporting indicate no final settlement is yet confirmed and maritime risk around the Strait of Hormuz remains high. The latest clearly sourced cumulative war figures I could confirm today remain largely those established in April official and Reuters-reported tallies, including CENTCOM's 13,000+ targets struck and Iran's official figures of more than 3,000 killed and 26,500 wounded."
     },
     {
       "date": "2026-08-03",
