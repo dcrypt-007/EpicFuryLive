@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-05T09:49:03Z",
+  "lastUpdated": "2026-08-05T12:16:39Z",
   "dayCount": 158,
   "banner": {
-    "strikes": "~15,000",
-    "killed": "3,537+",
-    "cost": "$31.8B+"
+    "strikes": "~13,000",
+    "killed": "3,526+",
+    "cost": "$31.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "4",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$31.8 billion+",
-    "dailyBurnRate": "~$201M/day",
+    "totalCost": "$31.5 billion+",
+    "dailyBurnRate": "~$199M/day",
     "daysOfOps": 158,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-05",
-          "source": "LLM-verified (AP reporting on March 28, 2026 said U.S. force buildup included two aircraft carriers in the region)"
+          "source": "LLM-verified (AP and CENTCOM reporting identify Lincoln and Ford carrier strike groups in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11800,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-05",
-          "source": "LLM-verified (Official briefings show 11,000+ CENTCOM combat flights by March 28, 2026 plus 800+ Israeli Air Force strike sorties by April 1, 2026)"
+          "source": "LLM-verified (CENTCOM fact sheet dated March 23, 2026 lists 9,000+ combat flights; no newer confirmed fighter/attack sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,800 \u00d7 $100,000 each",
-        "cost": "$1,180,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline on August 5, 2026 says Iran, Oman and the US are 'close' to a Hormuz deal",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 3, 2026 and headline reporting indicate diplomacy is focused on reopening the Strait of Hormuz, with threats of renewed US strikes if talks fail",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 2, 2026 reported Trump said regional allies had outlined a deal to end the war and that the US would stop new strikes for now",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 5, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on Aug. 2-3, 2026 reported Gulf allies urged the U.S. to hold off on new strikes against Iran, showing regional concern about further escalation.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on Aug. 3, 2026 reported Trump said new Iran talks were the 'last chance' to reopen the Strait of Hormuz, indicating continued crisis risk despite mediation efforts.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC/Al Jazeera headline context Aug. 4, 2026: tanker threat in the Middle East remains severe and blockade pressure around Hormuz persists",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP Aug. 2-3, 2026: fragile talks continue over ending the war and reopening the Strait of Hormuz, but no durable settlement is confirmed",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-08-05T12:07:56Z",
+      "text": "<strong>Iran, Oman, US \u2018close\u2019 to Hormuz deal: What do they all want?</strong> -- An agreement could restore shipping through crucial waterway, paving way for peace talks between Tehran and Washington. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-05T11:01:32Z",
+      "text": "<strong>Lebanon and Israel still split over disarming Hezbollah at Rome talks</strong> -- Disagreements remain in second day of resumed talks over disarming Hezbollah and Israeli withdrawal from South Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/5/lebanon-and-israel-still-split-over-disarming-hezbollah-at-rome-talks?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-05T10:10:07Z",
+      "text": "<strong>India\u2019s severe monsoon season causes more than 100 deaths since July</strong> -- Monsoon downpours cause floods and landslides as climate change and El Nino disrupt rainfall patterns. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/5/indias-severe-monsoon-season-causes-more-than-100-deaths-since-july?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-05T09:16:39Z",
+      "text": "<strong>Russian attacks kill 17, exploiting Ukraine\u2019s lack of missile interceptors</strong> -- Ukrainian President Volodymyr Zelenskyy says Russian forces used 29 missiles and 115 drones during the assault. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/5/russian-attacks-kill-17-exploiting-ukraines-lack-of-missile-interceptors?traffic_source=rss"
+    },
+    {
       "time": "2026-08-05T09:05:46Z",
       "text": "<strong>Trump hails progress but warned Iran of \u2018hard hit\u2019 if no deal reached</strong> -- US President Donald Trump says progress with Iran has been made, but warned Iran of &amp;#039;hard hit&amp;#039; if no deal reached. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-clip-trump-iran-talks-sot?traffic_source=rss"
@@ -763,14 +783,14 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/japan-tests-us-tomahawk-missile-as-it-moves-away-from-post-wwii-status?traffic_source=rss"
     },
     {
-      "time": "2026-08-05T04:38:00Z",
-      "text": "<strong>Explosions across Kyiv as Russian missiles strike Ukraine\u2019s capital</strong> -- At least one person has been killed after a Russian ballistic missile attack on Ukraine\u2019s capital Wednesday morning. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/explosions-across-kyiv-as-russian-missiles-strike-ukraines-capital?traffic_source=rss"
+      "time": "2026-08-05T11:00:47Z",
+      "text": "<strong>Mexican influencer shot dead during livestream</strong> -- C\u00e9sar Gast\u00e9lum, who was known for comedy and lifestyle posts, was killed at close range by a man on a motorbike. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2kg709qd9o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-05T03:48:21Z",
-      "text": "<strong>North Korea\u2019s Kim Yo Jong issues military threat over Japan missile test</strong> -- The powerful sister of North Korean leader Kim Jong Un has accused Japan of moving beyond a defensive posture. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/5/north-koreas-kim-yo-jong-issues-military-threat-over-japan-missile-test?traffic_source=rss"
+      "time": "2026-08-05T11:30:39Z",
+      "text": "<strong>Record heatwave in South Korea as temperatures soar to 42.5C</strong> -- There have been at least 19 deaths related to the heatwave which has brought the country&#x27;s hottest day since records began. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-05T03:44:30Z",
@@ -781,6 +801,16 @@
       "time": "2026-08-04T15:07:52Z",
       "text": "<strong>Mass funeral in Gaza for 112 Palestinians killed in 2023 Israeli strike</strong> -- The bodies - belonging to members of two extended families - have only recently been recovered from under rubble in Gaza City. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cn0n99npjejo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-05T04:38:00Z",
+      "text": "<strong>Explosions across Kyiv as Russian missiles strike Ukraine\u2019s capital</strong> -- At least one person has been killed after a Russian ballistic missile attack on Ukraine\u2019s capital Wednesday morning. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/explosions-across-kyiv-as-russian-missiles-strike-ukraines-capital?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-05T03:48:21Z",
+      "text": "<strong>North Korea\u2019s Kim Yo Jong issues military threat over Japan missile test</strong> -- The powerful sister of North Korean leader Kim Jong Un has accused Japan of moving beyond a defensive posture. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/5/north-koreas-kim-yo-jong-issues-military-threat-over-japan-missile-test?traffic_source=rss"
     },
     {
       "time": "2026-08-04T22:09:50Z",
@@ -821,36 +851,6 @@
       "time": "2026-08-04T20:32:51Z",
       "text": "<strong>\u2018I wanted to hug whatever remained\u2019: Gaza families\u2019 3-year wait for funeral</strong> -- Thousands gather for mass funeral of 112 members of Abu Shreia and al-Hassaina families killed in 2023 Israeli attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/4/i-wanted-to-hug-whatever-remained-gaza-families-3-year-wait-for-funeral?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-04T20:20:11Z",
-      "text": "<strong>Argentina grain exports halt as maritime pilots strike over Milei decree</strong> -- More than 45 vessels have been affected by the strike at Argentinian ports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/4/argentina-grain-exports-halt-as-maritime-pilots-strike-over-milei-decree?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-04T18:34:48Z",
-      "text": "<strong>\u2018Maximum use\u2019: Iran boosts military strength during ceasefire with US</strong> -- IRGC spokesman Hossein Mohebbi said last month that Iran&amp;#039;s missile production rate increased during the ceasefire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/4/maximum-use-iran-boosts-military-strength-during-ceasefire-with-us?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-04T18:27:15Z",
-      "text": "<strong>Rubio: Progress made to reopen Strait of Hormuz</strong> -- Marco Rubio, US Secretary of State, said there has been progress in negotiations to reopen the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/4/rubio-progress-made-to-reopen-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-04T02:29:03Z",
-      "text": "<strong>Did Iran hack water systems in seven US states?</strong> -- While US President Donald Trump has said Iran is not to blame, cyber experts tell the BBC it likely the attack was at the hands of the Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c934dq95zpgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-04T17:03:24Z",
-      "text": "<strong>Gaza holds mass funeral for 112 people killed in Israel\u2019s 2023 Sabra attack</strong> -- Thousands join to bury remains after they were recovered from rubble of homes destroyed during Israel\u2019s genocidal war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/4/gaza-holds-mass-funeral-for-112-people-killed-in-israels-2023-sabra-attack?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-04T16:13:49Z",
-      "text": "<strong>War on Iran: Trump says Iran has one \u2018last chance\u2019</strong> -- US President Donald Trump says Iran has \u2018one last chance\u2019 to make a deal, but Tehran is in no hurry to take it. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/4/war-on-iran-trump-says-iran-has-one-last-chance?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,54 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran, Oman, US \u2018close\u2019 to Hormuz deal: What do they all want?",
+      "description": "An agreement could restore shipping through crucial waterway, paving way for peace talks between Tehran and Washington.",
+      "link": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-05T12:07:56Z",
+      "tier": 2
+    },
+    {
+      "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
+      "description": "There have been at least 19 deaths related to the heatwave which has brought the country's hottest day since records began.",
+      "link": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-05T11:30:39Z",
+      "tier": 2
+    },
+    {
+      "title": "Lebanon and Israel still split over disarming Hezbollah at Rome talks",
+      "description": "Disagreements remain in second day of resumed talks over disarming Hezbollah and Israeli withdrawal from South Lebanon.",
+      "link": "https://www.aljazeera.com/news/2026/8/5/lebanon-and-israel-still-split-over-disarming-hezbollah-at-rome-talks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-05T11:01:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Mexican influencer shot dead during livestream",
+      "description": "C\u00e9sar Gast\u00e9lum, who was known for comedy and lifestyle posts, was killed at close range by a man on a motorbike.",
+      "link": "https://www.bbc.co.uk/news/articles/cx2kg709qd9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-05T11:00:47Z",
+      "tier": 2
+    },
+    {
+      "title": "India\u2019s severe monsoon season causes more than 100 deaths since July",
+      "description": "Monsoon downpours cause floods and landslides as climate change and El Nino disrupt rainfall patterns.",
+      "link": "https://www.aljazeera.com/news/2026/8/5/indias-severe-monsoon-season-causes-more-than-100-deaths-since-july?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-05T10:10:07Z",
+      "tier": 2
+    },
+    {
+      "title": "Russian attacks kill 17, exploiting Ukraine\u2019s lack of missile interceptors",
+      "description": "Ukrainian President Volodymyr Zelenskyy says Russian forces used 29 missiles and 115 drones during the assault.",
+      "link": "https://www.aljazeera.com/news/2026/8/5/russian-attacks-kill-17-exploiting-ukraines-lack-of-missile-interceptors?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-05T09:16:39Z",
+      "tier": 2
+    },
+    {
       "title": "Trump hails progress but warned Iran of \u2018hard hit\u2019 if no deal reached",
       "description": "US President Donald Trump says progress with Iran has been made, but warned Iran of &#039;hard hit&#039; if no deal reached.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-clip-trump-iran-talks-sot?traffic_source=rss",
@@ -1226,22 +1274,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/japan-tests-us-tomahawk-missile-as-it-moves-away-from-post-wwii-status?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-05T08:37:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Explosions across Kyiv as Russian missiles strike Ukraine\u2019s capital",
-      "description": "At least one person has been killed after a Russian ballistic missile attack on Ukraine\u2019s capital Wednesday morning.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/explosions-across-kyiv-as-russian-missiles-strike-ukraines-capital?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-05T04:38:00Z",
-      "tier": 2
-    },
-    {
-      "title": "North Korea\u2019s Kim Yo Jong issues military threat over Japan missile test",
-      "description": "The powerful sister of North Korean leader Kim Jong Un has accused Japan of moving beyond a defensive posture.",
-      "link": "https://www.aljazeera.com/news/2026/8/5/north-koreas-kim-yo-jong-issues-military-threat-over-japan-missile-test?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-05T03:48:21Z",
       "tier": 2
     },
     {
@@ -1277,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 5, 2026 indicates diplomacy remains active: AP reported that Trump said a deal to reopen the Strait of Hormuz could come as early as Wednesday, while AP also reported that a cargo ship in the strait was struck by an unknown projectile during the talks. On casualties, the latest confirmed cumulative figures located in current reporting remain 3,468 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health as cited by Al Jazeera, 26 Israelis killed, 29 deaths in Gulf states, and 14 U.S. troops killed in the initial Operation Epic Fury phase per the Pentagon tally described by AP.",
+  "summary": "Confirmed reporting available today points to a possible diplomatic off-ramp rather than a verified escalation in combat metrics: AP reported on August 2 and August 3, 2026 that President Trump said outlines of a deal to end the Iran war were taking shape and that efforts were centered on reopening the Strait of Hormuz, while Al Jazeera\u2019s August 5 headline likewise said Iran, Oman and the US were close to a Hormuz deal. For hard cumulative numbers, the most recent clearly sourced casualty totals I found remain Al Jazeera\u2019s June 10, 2026 tracker citing Iran\u2019s Health Ministry at 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states; CENTCOM\u2019s published fact sheets confirm 13,000+ targets struck by April 6 and at least four US deaths tied to the KC-135 loss, but I did not find newer official cumulative totals for most weapons-use or deployment fields.",
   "briefings": [
     {
       "date": "2026-08-05",
       "day": 158,
-      "summary": "Confirmed reporting on August 5, 2026 indicates diplomacy remains active: AP reported that Trump said a deal to reopen the Strait of Hormuz could come as early as Wednesday, while AP also reported that a cargo ship in the strait was struck by an unknown projectile during the talks. On casualties, the latest confirmed cumulative figures located in current reporting remain 3,468 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health as cited by Al Jazeera, 26 Israelis killed, 29 deaths in Gulf states, and 14 U.S. troops killed in the initial Operation Epic Fury phase per the Pentagon tally described by AP."
+      "summary": "Confirmed reporting available today points to a possible diplomatic off-ramp rather than a verified escalation in combat metrics: AP reported on August 2 and August 3, 2026 that President Trump said outlines of a deal to end the Iran war were taking shape and that efforts were centered on reopening the Strait of Hormuz, while Al Jazeera\u2019s August 5 headline likewise said Iran, Oman and the US were close to a Hormuz deal. For hard cumulative numbers, the most recent clearly sourced casualty totals I found remain Al Jazeera\u2019s June 10, 2026 tracker citing Iran\u2019s Health Ministry at 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states; CENTCOM\u2019s published fact sheets confirm 13,000+ targets struck by April 6 and at least four US deaths tied to the KC-135 loss, but I did not find newer official cumulative totals for most weapons-use or deployment fields."
     },
     {
       "date": "2026-08-04",
