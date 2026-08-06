@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-06T06:46:08Z",
+  "lastUpdated": "2026-08-06T09:58:33Z",
   "dayCount": 159,
   "banner": {
     "strikes": "~13,000",
-    "killed": "104+",
-    "cost": "$31.8B+"
+    "killed": "1,311+",
+    "cost": "$32.0B+"
   },
   "humanCost": {
     "iranDeaths": "50",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "16",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "38",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$31.8 billion+",
-    "dailyBurnRate": "~$200M/day",
+    "totalCost": "$32.0 billion+",
+    "dailyBurnRate": "~$201M/day",
     "daysOfOps": 159,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-06",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026, Defense Department PDF): two carrier strike groups used in Operation Epic Fury)"
+          "source": "LLM-verified (AP, March 28, 2026: U.S. force buildup in region included two aircraft carriers.)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-08-05",
-          "source": "LLM-verified (AP reporting on March 24 and March 28, 2026 said about 50,000 U.S. troops were already in the Middle East)"
+          "lastUpdated": "2026-08-06",
+          "source": "LLM-verified (AP, March 24 and March 28, 2026: some 50,000 U.S. troops already in the Mideast, with more being considered/deployed.)"
         },
         {
           "id": "intel_cyber",
@@ -243,8 +243,8 @@
             "B-2 Spirit sortie",
             "bomber sortie"
           ],
-          "lastUpdated": "2026-08-04",
-          "source": "LLM-verified (AP described seven B-2 stealth bombers used in the bunker-buster strike package against Iranian nuclear sites; no newer confirmed cumulative sortie total located.)"
+          "lastUpdated": "2026-08-06",
+          "source": "LLM-verified (CENTCOM/Operation Epic Fury B-2 page notes the June 21 operation included seven B-2 Spirits; no larger confirmed cumulative sortie total found.)"
         },
         {
           "id": "mop_bunker_busters",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-06",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 28, 2026 lists 11,000+ combat flights)"
+          "source": "LLM-verified (Department of War Operation Epic Fury Fact Sheet dated April 1, 2026 lists 13,000+ combat flights; used here as best confirmed cumulative sorties figure available.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Two Israeli soldiers were killed in southern Lebanon on August 6, the first such deaths since the June truce there.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump said August 1 he would hold off on new U.S. strikes pending a possible deal, but regional tensions remain high.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Possible Iran-Oman Strait of Hormuz agreement reportedly in final drafting stage.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 6, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Recent AP reporting indicates renewed U.S.-Iran exchanges followed attacks on shipping and U.S. forces in Jordan, underscoring continued escalation risk despite talks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and AP report diplomacy around reopening the Strait of Hormuz is active, but the pause in strikes remains fragile and has repeatedly broken down.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported funerals and civilian casualty incidents tied to strikes on Qeshm Island and southern Iran, indicating continued danger to civilians and infrastructure around Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported in late July/August that recent U.S. troop deaths in Jordan pushed total U.S. fatalities to 18, underscoring continued risk to regional bases despite ceasefire diplomacy.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,36 @@
   ],
   "developments": [
     {
+      "time": "2026-08-06T09:17:56Z",
+      "text": "<strong>US-Israel war on Iran upends Europe\u2019s summer holiday travel patterns</strong> -- Holidaymakers are sticking closer to home as the conflict rages, while tourism operators adapt. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/6/how-the-middle-east-conflict-is-upending-european-travel?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-06T08:17:26Z",
+      "text": "<strong>Why is France developing a new nuclear strategy?</strong> -- As the US retreats from Europe and Russia adopts an aggressive posture, France plans to add weapons to its arsenal <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/project-force-2/2026/8/6/why-is-france-developing-a-new-nuclear-strategy?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-06T08:15:37Z",
+      "text": "<strong>Iran anthem protest: Female footballers \u2018proud\u2019 to become Australian</strong> -- Fatemeh Pasandideh and Atefeh Ramezanisadeh refused to sing Iran anthem at Asian Cup, now granted Australia citizenship. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/8/6/former-iranian-women-footballers-proud-to-become-australian-afc-cup-anthem-protest?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-06T07:36:56Z",
+      "text": "<strong>Russian strikes kill six in Ukraine as Moscow intercepts hundreds of drones</strong> -- Ukraine officials say three people killed in Kharkiv region and three in Sumy, as Russia says it intercepted 605 drones. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/6/russian-strikes-kill-six-in-ukraine-as-moscow-intercepts-hundreds-of-drones?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-06T06:51:27Z",
+      "text": "<strong>A US proposal for missile defense that\u2019s been tried before</strong> -- What is a Golden Dome, and why does Donald Trump want one? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/project-force-2/2026/8/6/a-us-proposal-for-missile-defense-thats-been-tried-before?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-06T06:40:18Z",
+      "text": "<strong>Ukraine escalates strikes on Russian shipping</strong> -- Striking hundreds of targets in a matter of weeks, Ukraine has found a new way to pressure Russia&amp;#039;s hold on Crimea <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/project-force-2/2026/8/6/ukraine-escalates-strikes-on-russian-shipping?traffic_source=rss"
+    },
+    {
       "time": "2026-08-06T05:05:06Z",
       "text": "<strong>Strait of Hormuz tolls would harm livelihoods worldwide, shipowners warn</strong> -- Eight leading shipping organisations sign letter opposing fees in critical waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/6/strait-of-hormuz-tolls-would-harm-livelihoods-worldwide-shipowners-warn?traffic_source=rss"
@@ -768,6 +798,11 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/6/lightning-strike-kills-thai-footballer-during-match?traffic_source=rss"
     },
     {
+      "time": "2026-08-06T01:19:59Z",
+      "text": "<strong>Iran says deal with Oman on Strait of Hormuz is in final stages</strong> -- Neither the US or Oman have commented on the proposed agreement on the vital waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-06T00:00:00Z",
       "text": "<strong>Iran war live: Trump denies munitions shortages; Tehran, Oman near deal</strong> -- Iran, Oman agree on shipping routes in the Strait of Hormuz, as Houthis attack Saudi tankers and Israel bombs Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/6/iran-war-live-tehran-oman-close-in-on-hormuz-deal-houthis-attack-tankers?traffic_source=rss"
@@ -781,11 +816,6 @@
       "time": "2026-08-05T22:00:00Z",
       "text": "<strong>US officials push back on reports of dangerously low munitions supplies</strong> -- Experts warn that low stockpiles of air defence interceptors as a result of the war on Iran leave the US vulnerable. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/5/us-officials-push-back-on-reports-of-dangerously-low-munitions-supplies?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-06T01:19:59Z",
-      "text": "<strong>Iran says deal with Oman on Strait of Hormuz is in final stages</strong> -- Neither the US or Oman have commented on the proposed agreement on the vital waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-05T20:03:36Z",
@@ -821,36 +851,6 @@
       "time": "2026-08-05T17:12:34Z",
       "text": "<strong>At least one Lebanese person, two Israeli soldiers killed in south Lebanon</strong> -- The violence comes amid talks between Lebanon and Israel as Beirut pushes for a phased Israeli troop withdrawal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/5/at-least-one-lebanese-person-two-israeli-soldiers-killed-in-south-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-05T16:42:24Z",
-      "text": "<strong>Russia kills 17 in ballistic missile attacks around Kyiv</strong> -- At least 17 people were killed after Russia launched an overnight ballistic missile and drone attack on Kyiv. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/5-8-sv-russia-attacks-kyiv-ua?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-05T21:21:51Z",
-      "text": "<strong>Iran says it has agreed Strait of Hormuz shipping route with Oman</strong> -- A foreign ministry spokesman did not give details but said an agreement with the Gulf nation was &quot;in the final stages&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-05T11:00:47Z",
-      "text": "<strong>Mexican influencer shot dead during livestream</strong> -- C\u00e9sar Gast\u00e9lum, who was known for comedy and lifestyle posts, was killed at close range by a man on a motorbike. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2kg709qd9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-05T15:12:34Z",
-      "text": "<strong>War on Iran: US-Iran deal edges closer</strong> -- A deal between the US and Iran could be signed within 48 hours, according to US officials. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/5/war-on-iran-us-iran-deal-edges-closer?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-05T13:48:22Z",
-      "text": "<strong>Why are US Republicans losing faith in War Secretary Pete Hegseth?</strong> -- The reasons for dissent are not unanimous, ranging from the war in Iran to an overhaul of military leadership. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/5/why-are-us-republicans-losing-faith-in-war-secretary-pete-hegseth?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-05T12:58:22Z",
-      "text": "<strong>UN rights chief says Iran executed at least 56 people since March</strong> -- Volker Turk warns of surge in Iran executions to suppress dissent after January uprising. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/5/un-rights-chief-says-iran-executed-at-least-56-people-since-march?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,70 @@
   ],
   "newsFeed": [
     {
+      "title": "US-Israel war on Iran upends Europe\u2019s summer holiday travel patterns",
+      "description": "Holidaymakers are sticking closer to home as the conflict rages, while tourism operators adapt.",
+      "link": "https://www.aljazeera.com/news/2026/8/6/how-the-middle-east-conflict-is-upending-european-travel?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T09:17:56Z",
+      "tier": 2
+    },
+    {
+      "title": "Iranian footballers who defied Tehran become Australian citizens",
+      "description": "They were among seven members of Iran's team to be granted humanitarian visas while in Australia for the Women's Asian Cup - but the other five changed their minds and returned home.",
+      "link": "https://www.bbc.co.uk/news/articles/cn5nlgxv6vdo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-06T09:04:17Z",
+      "tier": 2
+    },
+    {
+      "title": "Why is France developing a new nuclear strategy?",
+      "description": "As the US retreats from Europe and Russia adopts an aggressive posture, France plans to add weapons to its arsenal",
+      "link": "https://www.aljazeera.com/video/project-force-2/2026/8/6/why-is-france-developing-a-new-nuclear-strategy?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T08:17:26Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran anthem protest: Female footballers \u2018proud\u2019 to become Australian",
+      "description": "Fatemeh Pasandideh and Atefeh Ramezanisadeh refused to sing Iran anthem at Asian Cup, now granted Australia citizenship.",
+      "link": "https://www.aljazeera.com/sports/2026/8/6/former-iranian-women-footballers-proud-to-become-australian-afc-cup-anthem-protest?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T08:15:37Z",
+      "tier": 2
+    },
+    {
+      "title": "Russian strikes kill six in Ukraine as Moscow intercepts hundreds of drones",
+      "description": "Ukraine officials say three people killed in Kharkiv region and three in Sumy, as Russia says it intercepted 605 drones.",
+      "link": "https://www.aljazeera.com/news/2026/8/6/russian-strikes-kill-six-in-ukraine-as-moscow-intercepts-hundreds-of-drones?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T07:36:56Z",
+      "tier": 2
+    },
+    {
+      "title": "A US proposal for missile defense that\u2019s been tried before",
+      "description": "What is a Golden Dome, and why does Donald Trump want one?",
+      "link": "https://www.aljazeera.com/video/project-force-2/2026/8/6/a-us-proposal-for-missile-defense-thats-been-tried-before?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T06:51:27Z",
+      "tier": 2
+    },
+    {
+      "title": "Ukraine escalates strikes on Russian shipping",
+      "description": "Striking hundreds of targets in a matter of weeks, Ukraine has found a new way to pressure Russia&#039;s hold on Crimea",
+      "link": "https://www.aljazeera.com/video/project-force-2/2026/8/6/ukraine-escalates-strikes-on-russian-shipping?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T06:40:18Z",
+      "tier": 2
+    },
+    {
+      "title": "Outrage as Ugandan football captain beaten to death in street gang attack",
+      "description": "The 27-year-old was killed by suspected robbers after resisting an attempt to rob him, police say.",
+      "link": "https://www.bbc.co.uk/news/articles/cm2g0038yr8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-06T06:04:28Z",
+      "tier": 2
+    },
+    {
       "title": "Strait of Hormuz tolls would harm livelihoods worldwide, shipowners warn",
       "description": "Eight leading shipping organisations sign letter opposing fees in critical waterway.",
       "link": "https://www.aljazeera.com/economy/2026/8/6/strait-of-hormuz-tolls-would-harm-livelihoods-worldwide-shipowners-warn?traffic_source=rss",
@@ -1245,32 +1309,8 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Trump denies munitions shortages; Tehran, Oman near deal",
-      "description": "Iran, Oman agree on shipping routes in the Strait of Hormuz, as Houthis attack Saudi tankers and Israel bombs Lebanon.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/8/6/iran-war-live-tehran-oman-close-in-on-hormuz-deal-houthis-attack-tankers?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-06T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Mexican influencer shot dead during TikTok livestream",
-      "description": "Cesar Gastelum was killed as he sat in a car park with two others in Culiacan, the capital of Sinaloa state.",
-      "link": "https://www.aljazeera.com/news/2026/8/5/mexican-influencer-shot-dead-during-livestream?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-05T23:51:31Z",
-      "tier": 2
-    },
-    {
-      "title": "US officials push back on reports of dangerously low munitions supplies",
-      "description": "Experts warn that low stockpiles of air defence interceptors as a result of the war on Iran leave the US vulnerable.",
-      "link": "https://www.aljazeera.com/news/2026/8/5/us-officials-push-back-on-reports-of-dangerously-low-munitions-supplies?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-05T22:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Israel strikes south Lebanon after first evacuation warning in weeks",
-      "description": "Lebanon's health ministry says one person was killed in the strikes, which the Israeli military says were a response to a Hezbollah ceasefire violation.",
+      "title": "Israel strikes south Lebanon after two soldiers killed by explosion",
+      "description": "Lebanese authorities says one person was killed in the strikes, which came after the first Israeli military fatalities in Lebanon in more than a month.",
       "link": "https://www.bbc.co.uk/news/articles/c998711dyjvo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-05T20:03:36Z",
@@ -1301,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 6, 2026 indicates diplomacy around the Strait of Hormuz is advancing, with AP, BBC and Al Jazeera all reporting negotiations involving Iran and Oman, while military risk remains elevated after the July escalation. The clearest currently confirmed cumulative figures I could verify are 16 total confirmed US military deaths across the conflict when including the Pentagon\u2019s new Overseas Operations category reported by AP on July 28, 38 Israeli deaths reported by AP on August 1, and at least 50 killed and more than 500 wounded in Iran since July 6 according to Iran\u2019s Health Ministry as cited by Al Jazeera on July 18. Official U.S. military documents also support at least 13,000 targets struck in Iran and 2 carrier strike groups committed to the operation, but I could not verify newer confirmed totals for several other casualty or munitions fields without guessing.",
+  "summary": "Confirmed reporting today indicates diplomacy and volatility are advancing in parallel: AP and BBC report Iran says a Strait of Hormuz arrangement with Oman is in final-stage drafting, while AP also reports President Trump said on August 1 he would hold off on new U.S. strikes pending a possible deal. At the same time, Israel reported two soldiers killed in southern Lebanon on August 6, the first Israeli deaths there since the June truce, underscoring that the wider conflict environment remains unstable even as negotiations continue.",
   "briefings": [
     {
       "date": "2026-08-06",
       "day": 159,
-      "summary": "Confirmed reporting on August 6, 2026 indicates diplomacy around the Strait of Hormuz is advancing, with AP, BBC and Al Jazeera all reporting negotiations involving Iran and Oman, while military risk remains elevated after the July escalation. The clearest currently confirmed cumulative figures I could verify are 16 total confirmed US military deaths across the conflict when including the Pentagon\u2019s new Overseas Operations category reported by AP on July 28, 38 Israeli deaths reported by AP on August 1, and at least 50 killed and more than 500 wounded in Iran since July 6 according to Iran\u2019s Health Ministry as cited by Al Jazeera on July 18. Official U.S. military documents also support at least 13,000 targets struck in Iran and 2 carrier strike groups committed to the operation, but I could not verify newer confirmed totals for several other casualty or munitions fields without guessing."
+      "summary": "Confirmed reporting today indicates diplomacy and volatility are advancing in parallel: AP and BBC report Iran says a Strait of Hormuz arrangement with Oman is in final-stage drafting, while AP also reports President Trump said on August 1 he would hold off on new U.S. strikes pending a possible deal. At the same time, Israel reported two soldiers killed in southern Lebanon on August 6, the first Israeli deaths there since the June truce, underscoring that the wider conflict environment remains unstable even as negotiations continue."
     },
     {
       "date": "2026-08-05",
