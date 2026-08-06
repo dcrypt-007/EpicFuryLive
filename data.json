@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-06T03:38:31Z",
+  "lastUpdated": "2026-08-06T06:46:08Z",
   "dayCount": 159,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,548+",
-    "cost": "$32.0B+"
+    "strikes": "~13,000",
+    "killed": "104+",
+    "cost": "$31.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "50",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "16",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "38",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "33,806+",
+    "iranWounded": "500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$32.0 billion+",
-    "dailyBurnRate": "~$201M/day",
+    "totalCost": "$31.8 billion+",
+    "dailyBurnRate": "~$200M/day",
     "daysOfOps": 159,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-06",
-          "source": "LLM-verified (U.S. Navy May 2026 Shipbuilding Plan states Operation Epic Fury used 'Two carrier strike groups'.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026, Defense Department PDF): two carrier strike groups used in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-06",
-          "source": "LLM-verified (CENTCOM/DoD April 1, 2026 fact sheet lists 'Combat Flights: 13,000+'.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 28, 2026 lists 11,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Renewed regional spillover risk persists after July strikes and attacks affecting Jordan, Iraq, Kuwait and Gulf shipping",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Strait of Hormuz shipping dispute remains active; Iran and Oman said to be near a routing deal while major shipping groups warn new tolls would disrupt global trade",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 6, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported in late July/August that recent U.S. troop deaths in Jordan pushed total U.S. fatalities to 18, underscoring continued risk to regional bases despite ceasefire diplomacy.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera report U.S.-Iran/Oman diplomacy on reopening the Strait of Hormuz is advancing, but shipping remains vulnerable and war activity has resumed repeatedly after previous pause announcements.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran continued attacks or threats involving Gulf-state infrastructure and shipping routes in late July.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,23 @@
   ],
   "developments": [
     {
+      "time": "2026-08-06T05:05:06Z",
+      "text": "<strong>Strait of Hormuz tolls would harm livelihoods worldwide, shipowners warn</strong> -- Eight leading shipping organisations sign letter opposing fees in critical waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/8/6/strait-of-hormuz-tolls-would-harm-livelihoods-worldwide-shipowners-warn?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-06T03:43:14Z",
+      "text": "<strong>Could the Iran war derail Donald Trump\u2019s legacy?</strong> -- President Trump is looking to reframe the Iran war ahead of the 2026 midterm elections in November. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/6/could-the-iran-war-derail-donald-trumps-legacy?traffic_source=rss"
+    },
+    {
       "time": "2026-08-06T02:39:39Z",
       "text": "<strong>Lightning strike kills Thai footballer during match</strong> -- Footage shows the moment a lightning strike hit a football player in southern Thailand, during a semi-final match. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/6/lightning-strike-kills-thai-footballer-during-match?traffic_source=rss"
     },
     {
       "time": "2026-08-06T00:00:00Z",
-      "text": "<strong>Iran war live: Tehran, Oman close in on Hormuz deal; Houthis attack tankers</strong> -- Iran, Oman agree on shipping routes in the Strait of Hormuz, as Houthis attack Saudi tankers and Israel bombs Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Trump denies munitions shortages; Tehran, Oman near deal</strong> -- Iran, Oman agree on shipping routes in the Strait of Hormuz, as Houthis attack Saudi tankers and Israel bombs Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/6/iran-war-live-tehran-oman-close-in-on-hormuz-deal-houthis-attack-tankers?traffic_source=rss"
     },
     {
@@ -771,11 +781,6 @@
       "time": "2026-08-05T22:00:00Z",
       "text": "<strong>US officials push back on reports of dangerously low munitions supplies</strong> -- Experts warn that low stockpiles of air defence interceptors as a result of the war on Iran leave the US vulnerable. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/5/us-officials-push-back-on-reports-of-dangerously-low-munitions-supplies?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-05T20:55:52Z",
-      "text": "<strong>Iran says Hormuz talks with Oman in \u2018final\u2019 stages as route approved</strong> -- The geographical coordinates of the route in the waterway have been agreed upon with Oman, according to Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/5/iran-says-hormuz-talks-with-oman-in-final-stages-as-route-approved?traffic_source=rss"
     },
     {
       "time": "2026-08-06T01:19:59Z",
@@ -796,6 +801,11 @@
       "time": "2026-08-04T22:09:50Z",
       "text": "<strong>The avalanche that killed a climbing legend - and a generation of record-setting guides</strong> -- Their fellow guides say their deaths in Pakistan dealt a devastating blow to Nepal&#x27;s mountaineering community. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cm2ge4dnj80o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-05T20:55:52Z",
+      "text": "<strong>Iran says Hormuz talks with Oman in \u2018final\u2019 stages as route approved</strong> -- The geographical coordinates of the route in the waterway have been agreed upon with Oman, according to Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/5/iran-says-hormuz-talks-with-oman-in-final-stages-as-route-approved?traffic_source=rss"
     },
     {
       "time": "2026-08-05T11:30:39Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-05T12:58:22Z",
       "text": "<strong>UN rights chief says Iran executed at least 56 people since March</strong> -- Volker Turk warns of surge in Iran executions to suppress dissent after January uprising. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/5/un-rights-chief-says-iran-executed-at-least-56-people-since-march?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-05T03:44:30Z",
-      "text": "<strong>Trump says Iran will be &#x27;hit very hard&#x27; if Hormuz Strait not open soon as oil prices fall</strong> -- US Secretary of State Marco Rubio and Treasury Secretary Scott Bessent both announced talks had progressed to allow shipments to resume. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-04T23:13:04Z",
-      "text": "<strong>Mysterious elephant deaths in Kenya raise questions around pesticides</strong> -- A wave of Kenyan elephant deaths has been blamed on pesticides, but experts tell the BBC they are doubtful. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx27p32jzj2o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Strait of Hormuz tolls would harm livelihoods worldwide, shipowners warn",
+      "description": "Eight leading shipping organisations sign letter opposing fees in critical waterway.",
+      "link": "https://www.aljazeera.com/economy/2026/8/6/strait-of-hormuz-tolls-would-harm-livelihoods-worldwide-shipowners-warn?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T05:05:06Z",
+      "tier": 2
+    },
+    {
+      "title": "Could the Iran war derail Donald Trump\u2019s legacy?",
+      "description": "President Trump is looking to reframe the Iran war ahead of the 2026 midterm elections in November.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/6/could-the-iran-war-derail-donald-trumps-legacy?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-06T03:43:14Z",
+      "tier": 2
+    },
+    {
       "title": "Lightning strike kills Thai footballer during match",
       "description": "Footage shows the moment a lightning strike hit a football player in southern Thailand, during a semi-final match.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/6/lightning-strike-kills-thai-footballer-during-match?traffic_source=rss",
@@ -1229,7 +1245,7 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran, Oman close in on Hormuz deal; Houthis attack tankers",
+      "title": "Iran war live: Trump denies munitions shortages; Tehran, Oman near deal",
       "description": "Iran, Oman agree on shipping routes in the Strait of Hormuz, as Houthis attack Saudi tankers and Israel bombs Lebanon.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/6/iran-war-live-tehran-oman-close-in-on-hormuz-deal-houthis-attack-tankers?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1250,14 +1266,6 @@
       "link": "https://www.aljazeera.com/news/2026/8/5/us-officials-push-back-on-reports-of-dangerously-low-munitions-supplies?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-05T22:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says Hormuz talks with Oman in \u2018final\u2019 stages as route approved",
-      "description": "The geographical coordinates of the route in the waterway have been agreed upon with Oman, according to Tehran.",
-      "link": "https://www.aljazeera.com/news/2026/8/5/iran-says-hormuz-talks-with-oman-in-final-stages-as-route-approved?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-05T20:55:52Z",
       "tier": 2
     },
     {
@@ -1293,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 5-6, 2026 indicates diplomacy around the Strait of Hormuz is advancing, with AP reporting Iran and Oman say a draft deal is close, while regional shipping threats persist after Houthi claims of attacks on Saudi-linked tankers. U.S. strike activity had been paused in recent days amid debate over interceptor stockpiles, and the most recent Pentagon-accounted official U.S. KIA total for the Iran war remains 14 after a disputed reclassification reported by AP. For military activity, the latest official fact sheets still available from CENTCOM/DoD continue to support 12,300+ targets struck, 13,000+ combat flights, and the use of two carrier strike groups, but I could not verify newer official cumulative totals for several casualty and weapons-expended fields, so those are left null.",
+  "summary": "Confirmed reporting on August 6, 2026 indicates diplomacy around the Strait of Hormuz is advancing, with AP, BBC and Al Jazeera all reporting negotiations involving Iran and Oman, while military risk remains elevated after the July escalation. The clearest currently confirmed cumulative figures I could verify are 16 total confirmed US military deaths across the conflict when including the Pentagon\u2019s new Overseas Operations category reported by AP on July 28, 38 Israeli deaths reported by AP on August 1, and at least 50 killed and more than 500 wounded in Iran since July 6 according to Iran\u2019s Health Ministry as cited by Al Jazeera on July 18. Official U.S. military documents also support at least 13,000 targets struck in Iran and 2 carrier strike groups committed to the operation, but I could not verify newer confirmed totals for several other casualty or munitions fields without guessing.",
   "briefings": [
     {
       "date": "2026-08-06",
       "day": 159,
-      "summary": "Confirmed reporting on August 5-6, 2026 indicates diplomacy around the Strait of Hormuz is advancing, with AP reporting Iran and Oman say a draft deal is close, while regional shipping threats persist after Houthi claims of attacks on Saudi-linked tankers. U.S. strike activity had been paused in recent days amid debate over interceptor stockpiles, and the most recent Pentagon-accounted official U.S. KIA total for the Iran war remains 14 after a disputed reclassification reported by AP. For military activity, the latest official fact sheets still available from CENTCOM/DoD continue to support 12,300+ targets struck, 13,000+ combat flights, and the use of two carrier strike groups, but I could not verify newer official cumulative totals for several casualty and weapons-expended fields, so those are left null."
+      "summary": "Confirmed reporting on August 6, 2026 indicates diplomacy around the Strait of Hormuz is advancing, with AP, BBC and Al Jazeera all reporting negotiations involving Iran and Oman, while military risk remains elevated after the July escalation. The clearest currently confirmed cumulative figures I could verify are 16 total confirmed US military deaths across the conflict when including the Pentagon\u2019s new Overseas Operations category reported by AP on July 28, 38 Israeli deaths reported by AP on August 1, and at least 50 killed and more than 500 wounded in Iran since July 6 according to Iran\u2019s Health Ministry as cited by Al Jazeera on July 18. Official U.S. military documents also support at least 13,000 targets struck in Iran and 2 carrier strike groups committed to the operation, but I could not verify newer confirmed totals for several other casualty or munitions fields without guessing."
     },
     {
       "date": "2026-08-05",
