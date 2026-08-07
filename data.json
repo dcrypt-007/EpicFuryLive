@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-07T19:15:19Z",
+  "lastUpdated": "2026-08-07T20:58:51Z",
   "dayCount": 160,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,352+",
-    "cost": "$32.1B+"
+    "killed": "1,310+",
+    "cost": "$31.7B+"
   },
   "humanCost": {
-    "iranDeaths": "3,300",
+    "iranDeaths": "1,255",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "38",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "30,000+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$32.1 billion+",
-    "dailyBurnRate": "~$201M/day",
+    "totalCost": "$31.7 billion+",
+    "dailyBurnRate": "~$198M/day",
     "daysOfOps": 160,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-07",
-          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury fact sheet, Apr. 1, 2026: 'Combat Flights: 13,000+'; used as confirmed floor for sorties)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 reported 9,000+ combat flights; no newer official cumulative sorties total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 6, 2026 reported more than 10 civilians were injured in Saudi Arabia in Houthi attacks, underscoring ongoing regional spillover risks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP reporting in late June and July described renewed Iranian strikes against Gulf states including Bahrain, Kuwait and Qatar amid U.S. strikes near Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 2, 2026 reported Trump said he held off a planned major new U.S. attack on Iran after pressure from Gulf allies, indicating risk of renewed escalation remains.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 7, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP/Al Jazeera, August 2026: negotiations over reopening the Strait of Hormuz appear close but no finalized public agreement was confirmed in the reporting reviewed",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, August 2 and August 6, 2026: renewed Iranian drone attacks targeted Kuwait, including vital facilities, though officials said there were no casualties",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Israeli fatalities tied to the Lebanon front reached 38 by August 1, 2026, and two additional Israeli soldiers were killed in Lebanon on August 6 in a separate incident after the June truce.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the Pentagon moved four July US deaths and 207 wounded from the official 'Operation Epic Fury' bucket into a new 'Overseas Operations' category, complicating casualty tracking.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -778,16 +778,6 @@
       "link": "https://www.aljazeera.com/opinions/2026/8/7/irans-grip-on-trade-is-a-potent-weapon-but-it-has-an-expiry-date?traffic_source=rss"
     },
     {
-      "time": "2026-08-07T11:15:44Z",
-      "text": "<strong>Trump says war \u2018can\u2019t go much longer\u2019 \u2013 what\u2019s the latest on talks?</strong> -- Reports suggest that Tehran is discussing a bill barring US and Israeli vessels from passing the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/7/trump-says-war-cant-go-much-longer-whats-the-latest-on?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-07T11:11:10Z",
-      "text": "<strong>Houthi attacks on gov\u2019t forces hint that a major battle in Yemen is brewing</strong> -- Houthis&amp;#039; expansion of cross-border attacks means an even bloodier war may be imminent, analysts say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/7/houthi-attacks-on-govt-forces-hint-that-a-major-battle-in-yemen-is-brewing?traffic_source=rss"
-    },
-    {
       "time": "2026-08-07T15:51:16Z",
       "text": "<strong>Seven killed after Thai student opens fire at home and school</strong> -- Authorities say the 14-year-old killed his grandparents before gunning down five teachers at his school. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c980j3j578do?at_medium=RSS&at_campaign=rss"
@@ -798,9 +788,29 @@
       "link": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-08-07T20:40:56Z",
+      "text": "<strong>Kidnapped rare Serbian eagle freed into wild after rescue</strong> -- Feliks the eagle was abducted as he first flew the nest in Serbia and wound up in the Middle East with poachers who demanded a ransom. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cdewxgw69exo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-06T17:36:07Z",
       "text": "<strong>Thousands of migrants still in Ceuta after border crisis, local leader says</strong> -- The Spanish territory&#x27;s mayor-president also says 100 deaths occurred as a result of 78,000 migrants crossing from neighbouring Morocco. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c0ejdj22zq9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-06T18:37:12Z",
+      "text": "<strong>Israel charges settler over killing of Palestinian involved in Oscar-winning West Bank film</strong> -- Yinon Levy is charged with reckless manslaughter over the July 2025 shooting of Odeh Hathaleen. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn4n1e8159yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-07T11:15:44Z",
+      "text": "<strong>Trump says war \u2018can\u2019t go much longer\u2019 \u2013 what\u2019s the latest on talks?</strong> -- Reports suggest that Tehran is discussing a bill barring US and Israeli vessels from passing the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/7/trump-says-war-cant-go-much-longer-whats-the-latest-on?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-07T11:11:10Z",
+      "text": "<strong>Houthi attacks on gov\u2019t forces hint that a major battle in Yemen is brewing</strong> -- Houthis&amp;#039; expansion of cross-border attacks means an even bloodier war may be imminent, analysts say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/7/houthi-attacks-on-govt-forces-hint-that-a-major-battle-in-yemen-is-brewing?traffic_source=rss"
     },
     {
       "time": "2026-08-07T11:03:01Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-07T05:49:22Z",
       "text": "<strong>Bodies of climbers killed in avalanche retrieved from Broad Peak</strong> -- A search team has retrieved the remains of renowned climber Nirmal Purja and several members of his team. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/7/bodies-of-climbers-killed-in-avalanche-retrieved-from-broad-peak?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-07T04:23:52Z",
-      "text": "<strong>At least five killed in Thailand school shooting, police say</strong> -- Authorities say suspected gunman shot and \u2060killed his grandparents \u200bat their home before opening fire at the school. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/7/one-killed-four-injured-in-thailand-school-shooting-officials-say?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-07T01:17:13Z",
-      "text": "<strong>Brazil formally accuses 16 people over 2024 Voepass deadly plane crash</strong> -- Official says plane was irregularly cleared for departure before crash that killed 62 people outside Sao Paulo. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/7/brazil-formally-accuses-16-people-over-2024-voepass-deadly-plane-crash?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Kidnapped rare Serbian eagle freed into wild after rescue",
+      "description": "Feliks the eagle was abducted as he first flew the nest in Serbia and wound up in the Middle East with poachers who demanded a ransom.",
+      "link": "https://www.bbc.co.uk/news/articles/cdewxgw69exo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-07T20:40:56Z",
+      "tier": 2
+    },
+    {
       "title": "Several killed in attacks on Ukraine as Kyiv hits Russian e-commerce giant",
       "description": "Ukraine continues to strike warehouses and logistics hubs run by Wildberries, which it says aid Moscow&#039;s war efforts.",
       "link": "https://www.aljazeera.com/news/2026/8/7/several-killed-in-attacks-on-ukraine-as-kyiv-hits-russian-e-commerce-giant?traffic_source=rss",
@@ -1269,22 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Trump says war \u2018can\u2019t go much longer\u2019 \u2013 what\u2019s the latest on talks?",
-      "description": "Reports suggest that Tehran is discussing a bill barring US and Israeli vessels from passing the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/2026/8/7/trump-says-war-cant-go-much-longer-whats-the-latest-on?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-07T11:15:44Z",
-      "tier": 2
-    },
-    {
-      "title": "Houthi attacks on gov\u2019t forces hint that a major battle in Yemen is brewing",
-      "description": "Houthis&#039; expansion of cross-border attacks means an even bloodier war may be imminent, analysts say.",
-      "link": "https://www.aljazeera.com/news/2026/8/7/houthi-attacks-on-govt-forces-hint-that-a-major-battle-in-yemen-is-brewing?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-07T11:11:10Z",
-      "tier": 2
-    },
-    {
       "title": "Israel charges settler over killing of Palestinian involved in Oscar-winning West Bank film",
       "description": "Yinon Levy is charged with reckless manslaughter over the July 2025 shooting of Odeh Hathaleen.",
       "link": "https://www.bbc.co.uk/news/articles/cn4n1e8159yo?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of August 7, 2026 indicates the official U.S. Iran-war death toll remains 14 because four U.S. deaths from the July renewed fighting were shifted by the Pentagon into a separate 'Overseas Operations' category rather than the official Operation Epic Fury tally; AP also continues to cite 38 Israeli soldiers killed in the related northern/Lebanon theater, while available named-source casualty reporting for Iran still includes 3,300 killed and 30,000 wounded from a WHO-cited AP update and 1,255 killed mostly civilians from Iran\u2019s deputy health minister in March. On the military side, the latest accessible official U.S. fact sheets still publicly confirm 13,000+ targets struck/combat flights and the Midnight Hammer sub-operation\u2019s use of more than two dozen Tomahawks and 14 MOP bunker-busters, but current August theater counts for carriers, destroyers, troop strength, and most munition subtotals were not confirmed in accessible official or wire reporting.",
+  "summary": "Confirmed reporting as of August 7, 2026 indicates Operation Epic Fury formally ended on May 6, 2026 according to Secretary of State Marco Rubio, but AP reported on August 2 that President Trump recently paused a planned new round of major U.S. strikes after appeals from Gulf allies, showing the war remains in a volatile post-operation phase. The most recent official U.S. fatality count located is 14 killed in action or war-related incidents, per AP on July 13 citing the Pentagon\u2019s official tally. For Iran, the latest clearly sourced cumulative nationwide casualty figure found in the searched material remains Iran\u2019s March 9 Health Ministry figure of 1,255 killed, with more than 12,000 wounded reported March 11. No reliable current August official figures were found in the available search results for most weapons-expended and force-deployment fields, so those remain null rather than estimated.",
   "briefings": [
     {
       "date": "2026-08-07",
       "day": 160,
-      "summary": "Confirmed reporting as of August 7, 2026 indicates the official U.S. Iran-war death toll remains 14 because four U.S. deaths from the July renewed fighting were shifted by the Pentagon into a separate 'Overseas Operations' category rather than the official Operation Epic Fury tally; AP also continues to cite 38 Israeli soldiers killed in the related northern/Lebanon theater, while available named-source casualty reporting for Iran still includes 3,300 killed and 30,000 wounded from a WHO-cited AP update and 1,255 killed mostly civilians from Iran\u2019s deputy health minister in March. On the military side, the latest accessible official U.S. fact sheets still publicly confirm 13,000+ targets struck/combat flights and the Midnight Hammer sub-operation\u2019s use of more than two dozen Tomahawks and 14 MOP bunker-busters, but current August theater counts for carriers, destroyers, troop strength, and most munition subtotals were not confirmed in accessible official or wire reporting."
+      "summary": "Confirmed reporting as of August 7, 2026 indicates Operation Epic Fury formally ended on May 6, 2026 according to Secretary of State Marco Rubio, but AP reported on August 2 that President Trump recently paused a planned new round of major U.S. strikes after appeals from Gulf allies, showing the war remains in a volatile post-operation phase. The most recent official U.S. fatality count located is 14 killed in action or war-related incidents, per AP on July 13 citing the Pentagon\u2019s official tally. For Iran, the latest clearly sourced cumulative nationwide casualty figure found in the searched material remains Iran\u2019s March 9 Health Ministry figure of 1,255 killed, with more than 12,000 wounded reported March 11. No reliable current August official figures were found in the available search results for most weapons-expended and force-deployment fields, so those remain null rather than estimated."
     },
     {
       "date": "2026-08-06",
