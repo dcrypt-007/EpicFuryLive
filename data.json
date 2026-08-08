@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-08T09:54:11Z",
+  "lastUpdated": "2026-08-08T10:51:30Z",
   "dayCount": 161,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$32.3B+"
+    "strikes": "~11,000",
+    "killed": "3,535+",
+    "cost": "$32.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$32.3 billion+",
-    "dailyBurnRate": "~$200M/day",
+    "totalCost": "$32.1 billion+",
+    "dailyBurnRate": "~$199M/day",
     "daysOfOps": 161,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (DoD briefing described a U.S. submarine launching more than two dozen Tomahawk land attack cruise missiles against Iran at operation start; exact cumulative confirmed total not established beyond that, so database value retained only if interpreting 'more than two dozen' minimally would exceed 24; strict exact cumulative figure not confirmed)"
+          "source": "LLM-verified (DoD transcript cited in search results says a US submarine launched more than two dozen Tomahawk land attack cruise missiles; using confirmed floor of 24)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet lists 13,000+ combat flights; closest confirmed official cumulative sortie-type figure found, but not fighter-only)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists 11,000+ combat flights; using confirmed floor only)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reporting indicates the mid-June interim agreement had broken down within weeks, with Iran resuming attacks on shipping in the Strait of Hormuz before the latest push for a deal.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 2, 2026 reported Trump said he would hold off on new US strikes after claiming Mideast allies had outlined parameters for a deal to end the war and reopen the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 8, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP on August 6, 2026 reported more than 10 civilians were injured in Saudi Arabia in Houthi attacks, underscoring ongoing regional spillover risks.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and AP reporting in late June and July described renewed Iranian strikes against Gulf states including Bahrain, Kuwait and Qatar amid U.S. strikes near Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 2, 2026 reported Trump said he held off a planned major new U.S. attack on Iran after pressure from Gulf allies, indicating risk of renewed escalation remains.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -773,11 +773,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cdewx6rew04o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-07T14:20:27Z",
-      "text": "<strong>I was standing in front of my teacher when she was shot, Thai pupil says</strong> -- The student says she feared never seeing her mother again after the attack killed five teachers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c07rxz03034o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-07T17:42:54Z",
       "text": "<strong>Saudi Arabia, Turkey and Pakistan sign defence pact</strong> -- Pakistan says an attack on any of the three will amount to an attack against all, amid conflict in the Middle East. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss"
@@ -796,6 +791,11 @@
       "time": "2026-08-06T18:37:12Z",
       "text": "<strong>Israel charges settler over killing of Palestinian involved in Oscar-winning West Bank film</strong> -- Yinon Levy is charged with reckless manslaughter over the July 2025 shooting of Odeh Hathaleen. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cn4n1e8159yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-07T14:20:27Z",
+      "text": "<strong>I was standing in front of my teacher when she was shot, Thai pupil says</strong> -- The student says she feared never seeing her mother again after the attack killed five teachers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c07rxz03034o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-08T00:00:00Z",
@@ -1285,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still supports 3,468 Iranian deaths and more than 26,500 wounded from Iran\u2019s Ministry of Health, 26 Israeli deaths, 28 Gulf-state deaths, and a Pentagon-confirmed U.S. Iran-war death toll of 14 as of July 13, 2026; CENTCOM\u2019s latest accessible official Operation Epic Fury fact sheet still lists 13,000+ targets struck, while AP reported on August 2, 2026 that President Trump said he was holding off on new U.S. strikes because a possible deal framework was emerging, though no fully confirmed end-state or newer official cumulative weapons-use totals were found.",
+  "summary": "Confirmed accessible reporting remains sparse and mostly stale. The best-supported cumulative casualty figures still available are Al Jazeera\u2019s June 10, 2026 tracker citing Iran\u2019s Health Ministry at 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 US combat-related deaths, and 28 killed across Gulf states. For strike volume, the latest accessible official CENTCOM fact sheet found was dated March 28, 2026 and listed 11,000+ targets struck and 11,000+ combat flights. AP reported on August 2, 2026 that President Trump said he was canceling planned new strikes for now after claiming regional allies had outlined a possible deal to end the war and reopen the Strait of Hormuz.",
   "briefings": [
     {
       "date": "2026-08-08",
       "day": 161,
-      "summary": "Confirmed reporting still supports 3,468 Iranian deaths and more than 26,500 wounded from Iran\u2019s Ministry of Health, 26 Israeli deaths, 28 Gulf-state deaths, and a Pentagon-confirmed U.S. Iran-war death toll of 14 as of July 13, 2026; CENTCOM\u2019s latest accessible official Operation Epic Fury fact sheet still lists 13,000+ targets struck, while AP reported on August 2, 2026 that President Trump said he was holding off on new U.S. strikes because a possible deal framework was emerging, though no fully confirmed end-state or newer official cumulative weapons-use totals were found."
+      "summary": "Confirmed accessible reporting remains sparse and mostly stale. The best-supported cumulative casualty figures still available are Al Jazeera\u2019s June 10, 2026 tracker citing Iran\u2019s Health Ministry at 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 US combat-related deaths, and 28 killed across Gulf states. For strike volume, the latest accessible official CENTCOM fact sheet found was dated March 28, 2026 and listed 11,000+ targets struck and 11,000+ combat flights. AP reported on August 2, 2026 that President Trump said he was canceling planned new strikes for now after claiming regional allies had outlined a possible deal to end the war and reopen the Strait of Hormuz."
     },
     {
       "date": "2026-08-07",
