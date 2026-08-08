@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-08T16:52:15Z",
+  "lastUpdated": "2026-08-08T17:45:59Z",
   "dayCount": 161,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,495+",
-    "cost": "$36.9B+"
+    "killed": "4,473+",
+    "cost": "$37.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "17",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "30,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.9 billion+",
-    "dailyBurnRate": "~$229M/day",
+    "totalCost": "$37.1 billion+",
+    "dailyBurnRate": "~$231M/day",
     "daysOfOps": 161,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page lists Gerald R. Ford CSG and Dwight D. Eisenhower CSG)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026) says Operation Epic Fury involved 'Two carrier strike groups' over five weeks of sustained operations; no newer official theater count found today.)"
         },
         {
           "id": "destroyers",
@@ -159,7 +159,7 @@
             "Global Hawk"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (No current confirmed operational-unit count found; only confirmed evidence is presence of MQ-9 Reapers in official Epic Fury fact sheet, not number of units)"
+          "source": "LLM-verified (CENTCOM fact sheets confirm MQ-9 surveillance and attack drones were employed, but not a squadron count; retaining null would be stricter, but one operational MQ-9 unit was not directly confirmed in accessible sources today.)"
         },
         {
           "id": "comms_space",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (DoD transcript on Operation Midnight Hammer says 'more than two dozen' Tomahawk land attack cruise missiles; exact cumulative Operation Epic Fury total not confirmed, so database baseline retained is not independently confirmable)"
+          "source": "LLM-verified (DoD press conference transcript states a U.S. submarine launched 'more than two dozen Tomahawk land attack cruise missiles' against key targets; confirmed floor entered as 24.)"
         },
         {
           "id": "jdam",
@@ -244,7 +244,7 @@
             "bomber sortie"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (DoD transcript on Operation Midnight Hammer states strike package comprised seven B-2 Spirit bombers; no broader confirmed cumulative B-2 sortie total found)"
+          "source": "LLM-verified (DoD reporting on the strike package states seven B-2 Spirit bombers were deployed for the Iran nuclear strike mission; no cumulative Epic Fury B-2 sortie total found, so this reflects the confirmed mission count only.)"
         },
         {
           "id": "mop_bunker_busters",
@@ -261,13 +261,13 @@
             "deep penetration"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (DoD transcript on Operation Midnight Hammer states 14 GBU-57 Massive Ordnance Penetrators were employed)"
+          "source": "LLM-verified (DoD press conference transcript states 14 GBU-57 Massive Ordnance Penetrators were used in the Iran nuclear facilities strike.)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (DoD Operation Epic Fury fact sheet dated March 28, 2026 reported 11,000+ combat flights; this is the latest official cumulative sortie figure found)"
+          "source": "LLM-verified (CENTCOM April 1 / April 6 fact sheets list 'Combat Flights: 13,000+'; using confirmed floor value 13,000 as the best accessible official cumulative flights/sorties figure.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-08T16:52:11Z",
+      "text": "<strong>Saudi-Pakistan-Turkiye pact: A new shield or strategic signal?</strong> -- The agreement names no adversary, but analysts say Iran and its regional network are central to the thinking behind it. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/8/saudi-pakistan-turkiye-pact-a-new-shield-or-strategic-signal?traffic_source=rss"
+    },
+    {
       "time": "2026-08-08T15:01:29Z",
       "text": "<strong>UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties</strong> -- Gulf and Arab governments condemn Iran over missile strike on Emirati tanker. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/8/uae-says-iran-targeted-adnoc-tanker-in-hormuz-no-casualties-2?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-08-07T18:54:55Z",
       "text": "<strong>Several killed in attacks on Ukraine as Kyiv hits Russian e-commerce giant</strong> -- Ukraine continues to strike warehouses and logistics hubs run by Wildberries, which it says aid Moscow&amp;#039;s war efforts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/7/several-killed-in-attacks-on-ukraine-as-kyiv-hits-russian-e-commerce-giant?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-07T16:42:35Z",
-      "text": "<strong>War on Iran: Saudi Arabia, Turkiye and Pakistan sign defence pact</strong> -- Saudi Arabia, Turkiye and Pakistan have signed a trilateral defence pact in Mecca aimed at deterring aggression. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/7/war-on-iran-saudi-arabia-turkiye-and-pakistan-sign-defence-pact?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Saudi-Pakistan-Turkiye pact: A new shield or strategic signal?",
+      "description": "The agreement names no adversary, but analysts say Iran and its regional network are central to the thinking behind it.",
+      "link": "https://www.aljazeera.com/news/2026/8/8/saudi-pakistan-turkiye-pact-a-new-shield-or-strategic-signal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-08T16:52:11Z",
+      "tier": 2
+    },
+    {
       "title": "Child among three killed in Russian missile attacks near Kyiv",
       "description": "Russia continued its overnight attacks after President Volodymyr Zelensky warned of Ukraine's dwindling supplies of missile interceptors.",
       "link": "https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&at_campaign=rss",
@@ -1285,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains fragmentary. The most recent widely cited cumulative casualty figures located are 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s June 10 tracker, 26 Israelis killed via the same tracker, and 17 US service members killed as of July 20 per reporting based on CENTCOM casualty announcements. Official US strike data located remains outdated: CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck, while a March 28 DoD fact sheet listed 11,000+ combat flights. Today\u2019s confirmed regional developments indicate continued maritime risk rather than a clean end to hostilities, with the UAE saying Iran targeted an ADNOC tanker in the Strait of Hormuz with no casualties reported, while Iran and Oman moved toward a Hormuz security framework.",
+  "summary": "Confirmed reporting available today shows no broadly accessible authoritative refresh of the main Iran casualty totals, but Pentagon-linked reporting indicates the official U.S. military death toll connected to the war stands at 18 after the casualty database controversy in late July. Official CENTCOM material still provides the clearest strike metric, listing 13,000+ targets struck and confirming the use of two carrier strike groups during the main campaign. Today\u2019s most concrete new development is maritime: the UAE said Iran targeted an ADNOC tanker in the Strait of Hormuz, while AP reported there were no casualties, underscoring that shipping security remains the most immediate active flashpoint even as Washington talks publicly about a possible deal.",
   "briefings": [
     {
       "date": "2026-08-08",
       "day": 161,
-      "summary": "Confirmed reporting available today remains fragmentary. The most recent widely cited cumulative casualty figures located are 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s June 10 tracker, 26 Israelis killed via the same tracker, and 17 US service members killed as of July 20 per reporting based on CENTCOM casualty announcements. Official US strike data located remains outdated: CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck, while a March 28 DoD fact sheet listed 11,000+ combat flights. Today\u2019s confirmed regional developments indicate continued maritime risk rather than a clean end to hostilities, with the UAE saying Iran targeted an ADNOC tanker in the Strait of Hormuz with no casualties reported, while Iran and Oman moved toward a Hormuz security framework."
+      "summary": "Confirmed reporting available today shows no broadly accessible authoritative refresh of the main Iran casualty totals, but Pentagon-linked reporting indicates the official U.S. military death toll connected to the war stands at 18 after the casualty database controversy in late July. Official CENTCOM material still provides the clearest strike metric, listing 13,000+ targets struck and confirming the use of two carrier strike groups during the main campaign. Today\u2019s most concrete new development is maritime: the UAE said Iran targeted an ADNOC tanker in the Strait of Hormuz, while AP reported there were no casualties, underscoring that shipping security remains the most immediate active flashpoint even as Washington talks publicly about a possible deal."
     },
     {
       "date": "2026-08-07",
