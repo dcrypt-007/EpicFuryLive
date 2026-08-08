@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-08T07:15:59Z",
+  "lastUpdated": "2026-08-08T09:00:40Z",
   "dayCount": 161,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,590+",
-    "cost": "$32.3B+"
+    "strikes": "~13,000",
+    "killed": "3,535+",
+    "cost": "$31.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,518",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "17",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "27,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$32.3 billion+",
-    "dailyBurnRate": "~$200M/day",
+    "totalCost": "$31.8 billion+",
+    "dailyBurnRate": "~$198M/day",
     "daysOfOps": 161,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: Operation Epic Fury used two carrier strike groups)"
+          "source": "LLM-verified (US Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (Congressional Research Service report citing DOD/CENTCOM: estimated 50,000 U.S. service members deployed in and around the Middle East as of March 26, 2026)"
+          "source": "LLM-verified (AP, March 24, 2026: ceasefire-plan report says 1,000 more troops were being sent to supplement 'some 50,000 troops already in the Mideast')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' says over 8,500 aircraft sorties for its Iran campaign; no combined official US-Israeli fighter/attack sortie total found, so this is the confirmed Israeli figure only)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reporting indicates renewed militia/drone activity in Iraq and continued risk to Gulf shipping despite diplomacy.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reporting from August 2-7, 2026 says Trump paused planned new US strikes to allow negotiations over reopening the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS: Iran and Oman agreed on a Hormuz framework, but final approval is still pending from Tehran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 8, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iranian-linked attacks and counterstrikes continue to threaten Gulf facilities and Strait of Hormuz shipping, with Kuwait seen as especially vulnerable in recent AP reporting",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said the war 'can't go much longer' and AP reported he agreed to hold off on new U.S. strikes after Gulf allies pushed for restraint",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Saudi Arabia, Turkiye and Pakistan signed a trilateral defence pact in Mecca aimed at deterring aggression (reported by Al Jazeera/BBC headline context)",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Recent AP and Reuters reporting indicates the U.S. had prepared additional strikes and was moving more military aircraft into the region before Trump paused a planned escalation",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -764,13 +764,8 @@
     },
     {
       "time": "2026-08-08T00:00:00Z",
-      "text": "<strong>Iran war live: Trilateral Mecca defence pact signed, as Hormuz deal looms</strong> -- Saudi crown prince, Turkish president and Pakistani prime minister sign a joint defence agreement in Mecca. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: \u2018High-level\u2019 approval still pending from Tehran on Oman deal</strong> -- Iran, Oman agree on framework regarding Hormuz, with final approval still pending from Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/8/iran-war-live-trilateral-mecca-defence-pact-signed-as-hormuz-deal-looms?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-07T23:18:14Z",
-      "text": "<strong>Will Pakistan-Saudi-Turkiye alliance actually create a new regional order?</strong> -- The Mecca Joint Defence Pact brings together countries that sit between Iran and Israel, but will it be effective? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/7/new-regional-order-pakistan-turkiye-saudi-arabia?traffic_source=rss"
     },
     {
       "time": "2026-08-08T06:12:56Z",
@@ -803,14 +798,19 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ejdj22zq9o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-08T05:15:51Z",
-      "text": "<strong>Child among three killed in Russian missile attacks near Kyiv</strong> -- Russia continued its overnight attacks after President Volodymyr Zelensky warned of Ukraine&#x27;s dwindling supplies of missile interceptors. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-06T18:37:12Z",
       "text": "<strong>Israel charges settler over killing of Palestinian involved in Oscar-winning West Bank film</strong> -- Yinon Levy is charged with reckless manslaughter over the July 2025 shooting of Odeh Hathaleen. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cn4n1e8159yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-07T23:18:14Z",
+      "text": "<strong>Will Pakistan-Saudi-Turkiye alliance actually create a new regional order?</strong> -- The Mecca Joint Defence Pact brings together countries that sit between Iran and Israel, but will it be effective? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/7/new-regional-order-pakistan-turkiye-saudi-arabia?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-08T05:15:51Z",
+      "text": "<strong>Child among three killed in Russian missile attacks near Kyiv</strong> -- Russia continued its overnight attacks after President Volodymyr Zelensky warned of Ukraine&#x27;s dwindling supplies of missile interceptors. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-07T18:54:55Z",
@@ -1237,19 +1237,11 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Trilateral Mecca defence pact signed, as Hormuz deal looms",
-      "description": "Saudi crown prince, Turkish president and Pakistani prime minister sign a joint defence agreement in Mecca.",
+      "title": "Iran war live: \u2018High-level\u2019 approval still pending from Tehran on Oman deal",
+      "description": "Iran, Oman agree on framework regarding Hormuz, with final approval still pending from Tehran.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/8/iran-war-live-trilateral-mecca-defence-pact-signed-as-hormuz-deal-looms?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-08T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Will Pakistan-Saudi-Turkiye alliance actually create a new regional order?",
-      "description": "The Mecca Joint Defence Pact brings together countries that sit between Iran and Israel, but will it be effective?",
-      "link": "https://www.aljazeera.com/news/2026/8/7/new-regional-order-pakistan-turkiye-saudi-arabia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-07T23:18:14Z",
       "tier": 2
     },
     {
@@ -1301,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates the war remains active but may be nearing a diplomatic turning point: AP reported on August 1 and August 5, 2026 that the United States and Iran say a Strait of Hormuz deal is close, even as new Iranian drone and missile-related threats to regional shipping continued. The most recent accessible confirmed casualty reporting puts Iranian deaths at 3,518, including 50 additional deaths reported by Iran\u2019s Health Ministry in July after the June memorandum period, while US military deaths stand at 17 and Israeli deaths at 26. Official CENTCOM material still provides the clearest strike total, with 12,300+ targets struck and 13,000+ combat flights in Operation Epic Fury as of April 1, 2026.",
+  "summary": "Confirmed reporting indicates no major new officially announced casualty revision to the core Operation Epic Fury totals, while diplomacy around the Strait of Hormuz is the main development: AP reported on August 2-7, 2026 that President Donald Trump held off on new large US strikes to give negotiations more time, and Al Jazeera\u2019s live coverage says Iran and Oman reached a framework on Hormuz but Tehran\u2019s final approval remains pending. For the war totals available from named sources, Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Ministry of Health and Israel\u2019s Ministry of Health listed 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 28 killed in Gulf states, and 13 US military combat deaths confirmed during Operation Epic Fury, while CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck.",
   "briefings": [
     {
       "date": "2026-08-08",
       "day": 161,
-      "summary": "Confirmed reporting indicates the war remains active but may be nearing a diplomatic turning point: AP reported on August 1 and August 5, 2026 that the United States and Iran say a Strait of Hormuz deal is close, even as new Iranian drone and missile-related threats to regional shipping continued. The most recent accessible confirmed casualty reporting puts Iranian deaths at 3,518, including 50 additional deaths reported by Iran\u2019s Health Ministry in July after the June memorandum period, while US military deaths stand at 17 and Israeli deaths at 26. Official CENTCOM material still provides the clearest strike total, with 12,300+ targets struck and 13,000+ combat flights in Operation Epic Fury as of April 1, 2026."
+      "summary": "Confirmed reporting indicates no major new officially announced casualty revision to the core Operation Epic Fury totals, while diplomacy around the Strait of Hormuz is the main development: AP reported on August 2-7, 2026 that President Donald Trump held off on new large US strikes to give negotiations more time, and Al Jazeera\u2019s live coverage says Iran and Oman reached a framework on Hormuz but Tehran\u2019s final approval remains pending. For the war totals available from named sources, Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Ministry of Health and Israel\u2019s Ministry of Health listed 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 28 killed in Gulf states, and 13 US military combat deaths confirmed during Operation Epic Fury, while CENTCOM\u2019s April 6 fact sheet listed 13,000+ targets struck."
     },
     {
       "date": "2026-08-07",
