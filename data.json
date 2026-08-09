@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-09T17:47:13Z",
+  "lastUpdated": "2026-08-09T19:00:57Z",
   "dayCount": 162,
   "banner": {
     "strikes": "~13,000",
-    "killed": "4+",
-    "cost": "$28.9B+"
+    "killed": "3,540+",
+    "cost": "$29.5B+"
   },
   "humanCost": {
-    "iranDeaths": "3,300",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "4",
+    "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "30,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1250",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.9 billion+",
-    "dailyBurnRate": "~$178M/day",
+    "totalCost": "$29.5 billion+",
+    "dailyBurnRate": "~$182M/day",
     "daysOfOps": 162,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-09",
-          "source": "LLM-verified (IDF article of April 1, 2026 said 'more than 800 IAF strikes' had been conducted in the first month; no current combined U.S./Israeli confirmed sortie total found, so this is only the confirmed Israeli floor and may undercount total theater fighter sorties)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 16, 2026: 6,500+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports Trump ordered U.S. forces to hold off on new strikes while talks continue, but the war remains unresolved and shipping disruption risk persists",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran says the Strait of Hormuz will remain restricted unless U.S. demands are met, according to current AP and headline reporting",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 9, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Iran-Oman Strait of Hormuz draft agreement remains unresolved and contingent on implementation details, per AP and BBC-context headlines.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported two Israeli soldiers were killed in southern Lebanon on August 6, the first Israeli deaths since the June truce with Hezbollah",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported a vessel was targeted in or near the Strait of Hormuz on August 8, 2026, though ADNOC said there were no casualties",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1293,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in this search session shows the war remains in a fragile diplomatic phase rather than a clearly ended conflict: AP on August 9, 2026 reported Iran still tying wider Hormuz reopening to U.S. concessions, while earlier AP reporting said an interim June arrangement had reopened the strait partially and launched 60 days of talks. On the military data side, the most recent clearly attributable official quantitative figure I could verify was the U.S. Operation Epic Fury April 6 fact sheet listing 13,000+ targets struck; I could also verify four U.S. deaths from the KC-135 loss notices on the CENTCOM Epic Fury page, but I could not independently confirm most other cumulative casualty or weapons-use totals from named current sources.",
+  "summary": "Confirmed reporting on August 9, 2026 indicates the war remains in a tense negotiated phase rather than a full settlement: AP reports President Trump ordered U.S. forces to hold off on new strikes as talks continue over the Strait of Hormuz, while Iran insists the strait will remain restricted unless its demands are met. The most recent confirmed casualty totals located were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s June 10 tracker, 26 killed in Israel from the same tracker, 29 killed in Gulf states from Al Jazeera\u2019s June 7 by-the-numbers report, and 17 U.S. troops killed according to Reuters on July 20. On the operational side, the latest official cumulative U.S. strike figure found was CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while many requested weapons-expended fields could not be updated because no current confirmed official totals were found.",
   "briefings": [
     {
       "date": "2026-08-09",
       "day": 162,
-      "summary": "Confirmed reporting available in this search session shows the war remains in a fragile diplomatic phase rather than a clearly ended conflict: AP on August 9, 2026 reported Iran still tying wider Hormuz reopening to U.S. concessions, while earlier AP reporting said an interim June arrangement had reopened the strait partially and launched 60 days of talks. On the military data side, the most recent clearly attributable official quantitative figure I could verify was the U.S. Operation Epic Fury April 6 fact sheet listing 13,000+ targets struck; I could also verify four U.S. deaths from the KC-135 loss notices on the CENTCOM Epic Fury page, but I could not independently confirm most other cumulative casualty or weapons-use totals from named current sources."
+      "summary": "Confirmed reporting on August 9, 2026 indicates the war remains in a tense negotiated phase rather than a full settlement: AP reports President Trump ordered U.S. forces to hold off on new strikes as talks continue over the Strait of Hormuz, while Iran insists the strait will remain restricted unless its demands are met. The most recent confirmed casualty totals located were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s June 10 tracker, 26 killed in Israel from the same tracker, 29 killed in Gulf states from Al Jazeera\u2019s June 7 by-the-numbers report, and 17 U.S. troops killed according to Reuters on July 20. On the operational side, the latest official cumulative U.S. strike figure found was CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while many requested weapons-expended fields could not be updated because no current confirmed official totals were found."
     },
     {
       "date": "2026-08-08",
