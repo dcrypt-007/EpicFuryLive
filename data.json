@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-10T21:58:22Z",
+  "lastUpdated": "2026-08-10T22:56:10Z",
   "dayCount": 163,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,537+",
-    "cost": "$32.6B+"
+    "killed": "3,526+",
+    "cost": "$33.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "4",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$32.6 billion+",
-    "dailyBurnRate": "~$200M/day",
+    "totalCost": "$33.6 billion+",
+    "dailyBurnRate": "~$206M/day",
     "daysOfOps": 163,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-10",
-          "source": "LLM-verified (AP March 2, 2026 says the operation included the Lincoln and Ford carrier strike groups; May 2026 Navy shipbuilding plan also references two carrier strike groups in Operation Epic Fury.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: two carrier strike groups in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-10",
-          "source": "LLM-verified (IDF, 'Over 800 Strike Sorties, 16,000 Munitions' for Operation Roaring Lion. This is Israeli strike sorties only; no confirmed combined U.S. fighter-sortie total found, so this is the latest confirmed sortie figure available.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists 11,000+ combat flights; numeric floor recorded as 11,000)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headlines on August 10, 2026 indicate Iran is consolidating senior security leadership and Trump says he will seek compensation from Iran, signaling continued political escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 10, 2026 reports Houthi-Saudi fighting has intensified, threatening a wider regional spillover after the U.S.-Iran ceasefire collapse.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 10, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 10, 2026 reports a possible Strait of Hormuz deal remains unresolved, indicating continued maritime risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 10, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Saudi Arabia, Turkey and Pakistan have signed a defense pact, though analysts cited by Al Jazeera say Iran is not immediately threatened by it",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Oman says Hormuz talks are positive but no breakthrough is confirmed",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported that Qatar and Saudi Arabia continued reporting interceptions and fallout from Iranian missile and drone attacks during the latest exchange.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 9, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 9, 2026 that Iran continues to condition any reopening of the Strait of Hormuz on U.S. concessions and no renewed threats against Iran.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1261,12 +1261,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today does not show a new official upward revision to the core cumulative war tolls beyond figures already public in June and July: Al Jazeera's June 7 tracker still provides the clearest cross-theater totals with 3,468 killed in Iran, 26 Israelis killed, 29 Gulf-state deaths and 13 U.S. military deaths at that time, while AP later reported the Pentagon-confirmed U.S. military death toll rose to 14 on July 13, 2026. CENTCOM's latest readily accessible official strike total remains 13,000+ targets struck from its April 6 fact sheet, and public official sourcing for exact cumulative Tomahawk, JDAM, JASSM, SDB, B-2, MOP, interceptor and destroyer counts was not found, so those fields are left null rather than estimated.",
+  "summary": "Confirmed reporting available today still points to no broadly published official update beyond earlier benchmark casualty figures for Iran, Israel, and Gulf states: Al Jazeera\u2019s June 10 tracker remains the clearest named-source tally at 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. For U.S. fatalities, the latest clearly confirmed Pentagon/CENTCOM figure located remains four killed, tied to the KC-135 loss in March. On the military side, official U.S. documents confirm that Operation Epic Fury involved two carrier strike groups and over 13,000 targets struck within Iran, while recent AP reporting on August 9-10 says the war has significantly depleted U.S. interceptor stockpiles and that tensions around Hormuz and wider regional spillover remain active.",
   "briefings": [
     {
       "date": "2026-08-10",
       "day": 163,
-      "summary": "Confirmed reporting available today does not show a new official upward revision to the core cumulative war tolls beyond figures already public in June and July: Al Jazeera's June 7 tracker still provides the clearest cross-theater totals with 3,468 killed in Iran, 26 Israelis killed, 29 Gulf-state deaths and 13 U.S. military deaths at that time, while AP later reported the Pentagon-confirmed U.S. military death toll rose to 14 on July 13, 2026. CENTCOM's latest readily accessible official strike total remains 13,000+ targets struck from its April 6 fact sheet, and public official sourcing for exact cumulative Tomahawk, JDAM, JASSM, SDB, B-2, MOP, interceptor and destroyer counts was not found, so those fields are left null rather than estimated."
+      "summary": "Confirmed reporting available today still points to no broadly published official update beyond earlier benchmark casualty figures for Iran, Israel, and Gulf states: Al Jazeera\u2019s June 10 tracker remains the clearest named-source tally at 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. For U.S. fatalities, the latest clearly confirmed Pentagon/CENTCOM figure located remains four killed, tied to the KC-135 loss in March. On the military side, official U.S. documents confirm that Operation Epic Fury involved two carrier strike groups and over 13,000 targets struck within Iran, while recent AP reporting on August 9-10 says the war has significantly depleted U.S. interceptor stockpiles and that tensions around Hormuz and wider regional spillover remain active."
     },
     {
       "date": "2026-08-09",
