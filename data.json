@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-11T09:13:39Z",
+  "lastUpdated": "2026-08-11T10:13:19Z",
   "dayCount": 164,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,535+",
-    "cost": "$33.0B+"
+    "strikes": "~9,000",
+    "killed": "3,536+",
+    "cost": "$28.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.0 billion+",
-    "dailyBurnRate": "~$201M/day",
+    "totalCost": "$28.2 billion+",
+    "dailyBurnRate": "~$172M/day",
     "daysOfOps": 164,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-11",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury)"
+          "source": "LLM-verified (AP reported at least 19 U.S. warships in the Arabian Sea, including two aircraft carriers, on July 14, 2026)"
         },
         {
           "id": "destroyers",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-08-11",
-          "source": "LLM-verified (AP reported on May 27, 2026, citing CSIS estimates, that the U.S. fired 1,000-plus Tomahawk missiles at Iran)"
+          "source": "LLM-verified (AP citing CSIS analysis on May 27, 2026: U.S. fired 1,000-plus Tomahawk missiles at Iran)"
         },
         {
           "id": "jdam",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-11",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 reports 9,000+ combat flights; later April 6 fact sheet gives targets struck but not updated flight total)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; not fighter-only and no later fighter-only confirmed total found)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1490,
+          "quantity": 290,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-08-11",
-          "source": "LLM-verified (Derived from AP/CSIS stockpile changes, not a direct official fired-total: Patriot inventory fell by about 1,300 by April ceasefire and THAAD by about 190-220, implying roughly 1,490-1,520 expended by that point; using conservative 1,490 minimum inferred total)"
+          "source": "LLM-verified (AP citing CSIS analysis on May 27, 2026: as many as 290 THAAD interceptors used; no official combined SM-3/THAAD/Patriot cumulative total found)"
         },
         {
           "id": "prestrike_buildup",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,490 \u00d7 $4,000,000 each",
-        "cost": "$5,960,000,000"
+        "detail": "290 \u00d7 $4,000,000 each",
+        "cost": "$1,160,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "U.S.-Iran fighting remains unsettled despite proposed deal parameters, with AP reporting ongoing negotiations and uncertainty over blockade/withdrawal terms in early August 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthi attacks and broader regional spillover continue, with AP reporting renewed attacks in Yemen and continued risks to Gulf shipping as of August 11, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran continues to condition any reopening of the Strait of Hormuz on U.S. concessions, according to AP reporting on August 8-10, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 11, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reports President Trump rejected Iran's demand for war reparations while Iranian leaders continued public messaging around deterrence and pressure on U.S. forces.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reports Iran's leadership is consolidating, with an IRGC veteran tapped for a key security role and war commanders elevated into influential posts.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports the Pentagon now classifies post-Epic-Fury casualties from renewed US-Iran fighting under a separate 'Overseas Operations' category, complicating direct comparison with Operation Epic Fury totals.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reporting indicate renewed July-August 2026 fighting tied to the Strait of Hormuz, including Iranian missile and drone attacks on regional US positions and shipping-related escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-11T09:47:53Z",
+      "text": "<strong>Iraq\u2019s semi-autonomous Kurdish region suffers as US-Iran war drags on</strong> -- Kurdistan Regional Government says 70 percent of its trade has been cut by the regional conflict. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/11/iraqs-semi-autonomous-kurdish-region-suffers-as-us-iran-war-drags-on?traffic_source=rss"
+    },
+    {
       "time": "2026-08-11T08:26:28Z",
       "text": "<strong>Trump sends conflicting signals on Iran strategy</strong> -- Trump sends conflicting signals on Iran strategy <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/trump-sends-conflicting-signals-on-iran-strategy?traffic_source=rss"
@@ -778,6 +783,26 @@
       "link": "https://www.aljazeera.com/news/2026/8/11/yemens-houthis-launch-ballistic-missile-attacks-on-al-makha-and-marib?traffic_source=rss"
     },
     {
+      "time": "2026-08-11T09:58:45Z",
+      "text": "<strong>Trump hid in catering truck in secret plane swap over Iran threat, reports say</strong> -- The US president was moved from the old Air Force One to a military plane as he left a Nato summit in Turkey last month, US media say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cm2g90vvy62o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-11T09:39:58Z",
+      "text": "<strong>Russia using North Korean missiles to strike Ukraine, Zelensky says</strong> -- Ukraine&#x27;s president says strikes in Zaporizhzhia - which killed at least six and injured 19 - involved ballistic missiles from Russia&#x27;s ally. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c151dpzwnvxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-11T04:06:07Z",
+      "text": "<strong>At least 132 killed in Colombia&#x27;s largest  earthquake in years</strong> -- More than 480 people were injured in the quakes, with more feared trapped under collapsed buildings. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c20e360lx0vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-10T20:55:34Z",
+      "text": "<strong>Watch: Moment powerful earthquake shakes Colombia and crumbles buildings</strong> -- At least 111 people have been killed and dozens more injured after the 7.4 temblor hit the western part of the country, according to local officials. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cz6473llqpwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-11T04:09:10Z",
       "text": "<strong>Fire rages after drone strikes Libya\u2019s largest oil refinery</strong> -- A drone attack ignited gasoline at Libya&amp;#039;s Zawiya oil refinery, the country&amp;#039;s largest operational facility. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/fire-rages-after-drone-strikes-libyas-largest-oil-refinery?traffic_source=rss"
@@ -791,11 +816,6 @@
       "time": "2026-08-11T02:32:47Z",
       "text": "<strong>Trump demands compensation from Iran as talks on Strait of Hormuz continue</strong> -- US president seeks payment for &amp;#039;50 years&amp;#039; of alleged damages after Iran conditions opening of Hormuz on war reparations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/11/trump-demands-compensation-from-iran-as-talks-on-strait-of-hormuz-continue?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-11T04:06:07Z",
-      "text": "<strong>At least 132 killed in Colombia&#x27;s largest  earthquake in years</strong> -- More than 480 people were injured in the quakes, with more feared trapped under collapsed buildings. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c20e360lx0vo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-10T14:34:25Z",
@@ -823,11 +843,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cgmkl1j3dwvo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-10T20:55:34Z",
-      "text": "<strong>Watch: Moment powerful earthquake shakes Colombia and crumbles buildings</strong> -- At least 111 people have been killed and dozens more injured after the 7.4 temblor hit the western part of the country, according to local officials. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cz6473llqpwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-10T20:55:21Z",
       "text": "<strong>Trump to demand compensation for Tehran\u2019s \u2018conflicts\u2019</strong> -- President Donald Trump says he\u2019ll demand compensation from Iran for people killed or wounded in the US war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/10/trump-to-demand-compensation-for-tehrans?traffic_source=rss"
@@ -836,21 +851,6 @@
       "time": "2026-08-10T18:34:25Z",
       "text": "<strong>Iran hierarchy consolidation as IRGC veteran tapped for key security role</strong> -- The office of the supreme leader has named a new security chief and established war commanders in influential roles. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/10/iran-hierarchy-consolidation-as-irgc-veteran-tapped-for-key-security-role?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-11T01:59:40Z",
-      "text": "<strong>At least 132 killed in Colombia&#x27;s largest  earthquake in years</strong> -- The magnitude 7.4 quake had its epicentre in Choc\u00f3 province, near the Pacific Coast, but could be felt in cities hundreds of kilometres away. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c20e360lx0vo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-10T17:05:01Z",
-      "text": "<strong>Iran\u2019s president says Khamenei is in \u2018perfect health\u2019</strong> -- Iran\u2019s President Masoud Pezeshkian says Supreme Leader Ayatollah Mojtaba Khamenei had a message of \u201cunity and cohesion\u201d <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/10/irans-president-says-khamenei-is-in-perfect?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-10T14:07:04Z",
-      "text": "<strong>War on Iran: Phase II: Day 30</strong> -- Donald Trump says the US is only \u2018semi-negotiating\u2019 with Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/10/war-on-iran-phase-ii-day-30?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Trump hid in catering truck in secret plane swap over Iran threat, reports say",
+      "description": "The US president was moved from the old Air Force One to a military plane as he left a Nato summit in Turkey last month, US media say.",
+      "link": "https://www.bbc.co.uk/news/articles/cm2g90vvy62o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-11T09:58:45Z",
+      "tier": 2
+    },
+    {
+      "title": "Iraq\u2019s semi-autonomous Kurdish region suffers as US-Iran war drags on",
+      "description": "Kurdistan Regional Government says 70 percent of its trade has been cut by the regional conflict.",
+      "link": "https://www.aljazeera.com/news/2026/8/11/iraqs-semi-autonomous-kurdish-region-suffers-as-us-iran-war-drags-on?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-11T09:47:53Z",
+      "tier": 2
+    },
+    {
+      "title": "Russia using North Korean missiles to strike Ukraine, Zelensky says",
+      "description": "Ukraine's president says strikes in Zaporizhzhia - which killed at least six and injured 19 - involved ballistic missiles from Russia's ally.",
+      "link": "https://www.bbc.co.uk/news/articles/c151dpzwnvxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-11T09:39:58Z",
+      "tier": 2
+    },
+    {
       "title": "Trump sends conflicting signals on Iran strategy",
       "description": "Trump sends conflicting signals on Iran strategy",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/trump-sends-conflicting-signals-on-iran-strategy?traffic_source=rss",
@@ -1253,35 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Fire rages after drone strikes Libya\u2019s largest oil refinery",
-      "description": "A drone attack ignited gasoline at Libya&#039;s Zawiya oil refinery, the country&#039;s largest operational facility.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/fire-rages-after-drone-strikes-libyas-largest-oil-refinery?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-11T04:09:10Z",
-      "tier": 2
-    },
-    {
       "title": "At least 132 killed in Colombia's largest  earthquake in years",
       "description": "More than 480 people were injured in the quakes, with more feared trapped under collapsed buildings.",
       "link": "https://www.bbc.co.uk/news/articles/c20e360lx0vo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-11T04:06:07Z",
-      "tier": 2
-    },
-    {
-      "title": "Where did all the money go if the US is running out of weapons?",
-      "description": "The war on Iran is exposing shortages in US weapons stockpiles, raising questions about years of defence spending.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/where-did-all-the-money-go-if-the-us-is-running-out-of-weapons?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-11T03:32:57Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump demands compensation from Iran as talks on Strait of Hormuz continue",
-      "description": "US president seeks payment for &#039;50 years&#039; of alleged damages after Iran conditions opening of Hormuz on war reparations.",
-      "link": "https://www.aljazeera.com/news/2026/8/11/trump-demands-compensation-from-iran-as-talks-on-strait-of-hormuz-continue?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-11T02:32:47Z",
       "tier": 2
     },
     {
@@ -1291,38 +1291,14 @@
       "source": "BBC World",
       "time": "2026-08-10T20:55:34Z",
       "tier": 2
-    },
-    {
-      "title": "30 years later, a former gang member will stand trial for Tupac's murder",
-      "description": "It\u2019s been three decades since Tupac was killed, and since then, his reputation has only grown.",
-      "link": "https://www.bbc.co.uk/news/articles/cgmkl1j3dwvo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-10T16:52:47Z",
-      "tier": 2
-    },
-    {
-      "title": "Netanyahu's rejection of Trump's 15-point Gaza plan unlikely to be final word",
-      "description": "The Trump administration is said to be unbothered by the Israeli prime minister's rejection of the deal, viewing it as campaign rhetoric ahead of a general election.",
-      "link": "https://www.bbc.co.uk/news/articles/ce3q5282ep3o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-10T14:43:08Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 13 killed in Ukrainian drone strike deep into Russia",
-      "description": "Russian officials say another 75 people were injured by the attack - one of the deadliest Ukrainian drone attacks since Moscow's full-scale invasion.",
-      "link": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-10T14:34:25Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today still points mostly to the last widely published cumulative casualty and operations tallies from spring 2026 rather than newer official rollups. The clearest current development is strategic rather than numerical: AP reported on August 9-10, 2026 that the Pentagon is worried about depleted advanced interceptor stockpiles after the Iran war, while U.S.-Iran talks mediated by Oman continue over reopening the Strait of Hormuz and Iran is publicly threatening renewed casualties for U.S. forces if port blockades and sanctions are not lifted.",
+  "summary": "Confirmed reporting on August 11, 2026 indicates the war remains unresolved despite active diplomacy over the Strait of Hormuz. AP reports Iran is still tying any reopening of the waterway to major U.S. concessions, while regional spillover continues through Houthi attacks and maritime threats. No newer confirmed cumulative casualty figures were found for Iran, Israel, Gulf states, or total strike counts beyond the previously reported official and media-backed tallies used here; the most notable accounting change is on the U.S. side, where AP reported the Pentagon\u2019s official Iran-war death toll stood at 14 after later July deaths were shifted into a separate 'Overseas Operations' category rather than the core Iran-war tally.",
   "briefings": [
     {
       "date": "2026-08-11",
       "day": 164,
-      "summary": "Confirmed reporting available today still points mostly to the last widely published cumulative casualty and operations tallies from spring 2026 rather than newer official rollups. The clearest current development is strategic rather than numerical: AP reported on August 9-10, 2026 that the Pentagon is worried about depleted advanced interceptor stockpiles after the Iran war, while U.S.-Iran talks mediated by Oman continue over reopening the Strait of Hormuz and Iran is publicly threatening renewed casualties for U.S. forces if port blockades and sanctions are not lifted."
+      "summary": "Confirmed reporting on August 11, 2026 indicates the war remains unresolved despite active diplomacy over the Strait of Hormuz. AP reports Iran is still tying any reopening of the waterway to major U.S. concessions, while regional spillover continues through Houthi attacks and maritime threats. No newer confirmed cumulative casualty figures were found for Iran, Israel, Gulf states, or total strike counts beyond the previously reported official and media-backed tallies used here; the most notable accounting change is on the U.S. side, where AP reported the Pentagon\u2019s official Iran-war death toll stood at 14 after later July deaths were shifted into a separate 'Overseas Operations' category rather than the core Iran-war tally."
     },
     {
       "date": "2026-08-10",
