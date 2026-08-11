@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-11T06:03:59Z",
+  "lastUpdated": "2026-08-11T07:37:30Z",
   "dayCount": 164,
   "banner": {
-    "strikes": "~14,000",
-    "killed": "3,672+",
-    "cost": "$33.8B+"
+    "strikes": "~17,000",
+    "killed": "3,537+",
+    "cost": "$33.1B+"
   },
   "humanCost": {
-    "iranDeaths": "3,637",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "5",
+    "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "30",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "11,188+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1348",
+    "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.8 billion+",
-    "dailyBurnRate": "~$206M/day",
+    "totalCost": "$33.1 billion+",
+    "dailyBurnRate": "~$202M/day",
     "daysOfOps": 164,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-11",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026, states 'Two carrier strike groups' deployed naval forces supported operations in Operation Epic Fury)"
+          "source": "LLM-verified (Defense Secretary Pete Hegseth said on March 5, 2026 that more than 50,000 troops and two carrier strike groups were participating in Operation Epic Fury; no newer confirmed current count found)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-11",
-          "source": "LLM-verified (Military Times, April 8, 2026: U.S. military has more than 50,000 personnel in the region)"
+          "source": "LLM-verified (Defense Secretary Pete Hegseth said on March 5, 2026 that more than 50,000 U.S. troops were participating in Operation Epic Fury; no newer confirmed total found)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-08-09",
-          "source": "LLM-verified (Reuters report published March 27, 2026 said the U.S. had fired 'over 850' Tomahawk cruise missiles in four weeks; using confirmed floor only)"
+          "lastUpdated": "2026-08-11",
+          "source": "LLM-verified (AP reported on May 27, 2026, citing CSIS estimates, that the U.S. fired 1,000-plus Tomahawk missiles at Iran)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 9800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-11",
-          "source": "LLM-verified (CENTCOM fact sheet dated March 28, 2026 reported 11,000+ combat flights; used as the latest confirmed combat-flight/sortie-type cumulative figure located in official documents)"
+          "source": "LLM-verified (Combined confirmed official counts: CENTCOM fact sheet reported 9,000+ U.S. combat flights as of March 23, 2026, and IDF reported 800+ Israeli Air Force strike sorties as of April 1, 2026)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 1490,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-08-10",
-          "source": "LLM-verified (Reuters video item on Pentagon briefing about Operation Epic Fury says the U.S. and Gulf partners had 'thus far intercepted 1,700 ballistic missiles and one-way attack drones'.)"
+          "lastUpdated": "2026-08-11",
+          "source": "LLM-verified (Derived from AP/CSIS stockpile changes, not a direct official fired-total: Patriot inventory fell by about 1,300 by April ceasefire and THAAD by about 190-220, implying roughly 1,490-1,520 expended by that point; using conservative 1,490 minimum inferred total)"
         },
         {
           "id": "prestrike_buildup",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "9,800 \u00d7 $100,000 each",
+        "cost": "$980,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "1,490 \u00d7 $4,000,000 each",
+        "cost": "$5,960,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Strait of Hormuz diplomacy remains unstable, with Trump publicly demanding Iranian compensation while talks continue, according to headline reporting cited by the user",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Libya's Zawiya refinery was hit by drone strikes, according to Al Jazeera headline context provided by user",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthis launched ballistic missile attacks on al-Makha and Marib, according to Al Jazeera headline context provided by user",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 11, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera and AP report the U.S. is signaling a shift toward sanctions and naval pressure rather than immediate new large-scale strikes on Iran.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported August 10, 2026 that oil prices are rising as Iran says the Strait of Hormuz will not reopen without major U.S. concessions.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported August 10, 2026 that the U.S. is signaling a shift toward sanctions and naval blockade rather than immediate new strikes on Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 6, 2026 that two Israeli soldiers were killed in southern Lebanon, the first such Israeli deaths since the June truce with Hezbollah.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-11T06:05:07Z",
+      "text": "<strong>Yemen\u2019s Houthis launch ballistic missile attacks on al-Makha and Marib</strong> -- The latest attacks come just a day after Houthi rebels targeted al-Makha and its port, killing seven people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/11/yemens-houthis-launch-ballistic-missile-attacks-on-al-makha-and-marib?traffic_source=rss"
+    },
+    {
       "time": "2026-08-11T04:09:10Z",
       "text": "<strong>Fire rages after drone strikes Libya\u2019s largest oil refinery</strong> -- A drone attack ignited gasoline at Libya&amp;#039;s Zawiya oil refinery, the country&amp;#039;s largest operational facility. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/fire-rages-after-drone-strikes-libyas-largest-oil-refinery?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-08-10T12:32:26Z",
       "text": "<strong>Battle for Mali base has killed dozens of militants, army says</strong> -- The army says it was involved in fierce fighting but disputes that Islamists took control of the garrison. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cly8j7ygwvlo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-10T11:51:28Z",
-      "text": "<strong>\u2018Long-range sanctions\u2019: Ukraine hopes strikes cause Russia fear and losses</strong> -- Al Jazeera is given rare access to one of Ukraine&amp;#039;s long-range drone units tasked with targeting Russia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/10/long-range-sanctions-ukraine-hopes-strikes-cause-russia-fear-and-losses?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Yemen\u2019s Houthis launch ballistic missile attacks on al-Makha and Marib",
+      "description": "The latest attacks come just a day after Houthi rebels targeted al-Makha and its port, killing seven people.",
+      "link": "https://www.aljazeera.com/news/2026/8/11/yemens-houthis-launch-ballistic-missile-attacks-on-al-makha-and-marib?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-11T06:05:07Z",
+      "tier": 2
+    },
+    {
       "title": "Fire rages after drone strikes Libya\u2019s largest oil refinery",
       "description": "A drone attack ignited gasoline at Libya&#039;s Zawiya oil refinery, the country&#039;s largest operational facility.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/fire-rages-after-drone-strikes-libyas-largest-oil-refinery?traffic_source=rss",
@@ -1293,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates the latest named-source Iranian toll remains 3,637 killed and 11,188 wounded, based on an Iran Health Ministry figure carried by Al Jazeera on June 9, 2026. Israeli deaths from Iranian strikes were reported by The Times of Israel as 30 by June 16, 2026. U.S. military deaths confirmed in named-source reporting total 5: CENTCOM announced 3 killed on March 1, and AP later reported 2 more killed in Jordan in July. On the operations side, AP reported the Pentagon struck more than 14,000 targets in Iran, while official U.S. Navy material said two carrier strike groups supported Operation Epic Fury. Recent AP and CSIS reporting also highlights a major new risk: depleted U.S. interceptor stockpiles, especially Patriot and THAAD, as Hormuz tensions continue.",
+  "summary": "Confirmed reporting still points to the latest solid public casualty baseline from June and late July rather than new official August tallies: Iran\u2019s Health Ministry figure publicly available remains 3,468 killed and more than 26,500 wounded as of June 10; Israel\u2019s reported death toll remains 26; Gulf-state deaths were reported at 29 by June 7; and the Pentagon\u2019s official Operation Epic Fury death count stands at 14, even though AP reported additional July deaths were shifted into a separate 'Overseas Operations' category amid renewed fighting. On the military side, the best confirmed official totals remain 13,000+ U.S. targets struck by April 6, 4,000+ IDF targets struck by April 1, 9,000+ U.S. combat flights by March 23, and 800+ Israeli strike sorties by April 1, while AP/CSIS reporting says the U.S. fired 1,000-plus Tomahawks and severe Patriot/THAAD depletion indicates interceptor use on a very large scale.",
   "briefings": [
     {
       "date": "2026-08-11",
       "day": 164,
-      "summary": "Confirmed reporting indicates the latest named-source Iranian toll remains 3,637 killed and 11,188 wounded, based on an Iran Health Ministry figure carried by Al Jazeera on June 9, 2026. Israeli deaths from Iranian strikes were reported by The Times of Israel as 30 by June 16, 2026. U.S. military deaths confirmed in named-source reporting total 5: CENTCOM announced 3 killed on March 1, and AP later reported 2 more killed in Jordan in July. On the operations side, AP reported the Pentagon struck more than 14,000 targets in Iran, while official U.S. Navy material said two carrier strike groups supported Operation Epic Fury. Recent AP and CSIS reporting also highlights a major new risk: depleted U.S. interceptor stockpiles, especially Patriot and THAAD, as Hormuz tensions continue."
+      "summary": "Confirmed reporting still points to the latest solid public casualty baseline from June and late July rather than new official August tallies: Iran\u2019s Health Ministry figure publicly available remains 3,468 killed and more than 26,500 wounded as of June 10; Israel\u2019s reported death toll remains 26; Gulf-state deaths were reported at 29 by June 7; and the Pentagon\u2019s official Operation Epic Fury death count stands at 14, even though AP reported additional July deaths were shifted into a separate 'Overseas Operations' category amid renewed fighting. On the military side, the best confirmed official totals remain 13,000+ U.S. targets struck by April 6, 4,000+ IDF targets struck by April 1, 9,000+ U.S. combat flights by March 23, and 800+ Israeli strike sorties by April 1, while AP/CSIS reporting says the U.S. fired 1,000-plus Tomahawks and severe Patriot/THAAD depletion indicates interceptor use on a very large scale."
     },
     {
       "date": "2026-08-10",
