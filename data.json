@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-12T02:44:53Z",
+  "lastUpdated": "2026-08-12T05:02:48Z",
   "dayCount": 165,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "3,535+",
-    "cost": "$30.8B+"
+    "strikes": "~13,000",
+    "killed": "3,517+",
+    "cost": "$33.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "10",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$30.8 billion+",
-    "dailyBurnRate": "~$187M/day",
+    "totalCost": "$33.7 billion+",
+    "dailyBurnRate": "~$204M/day",
     "daysOfOps": 165,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-12",
-          "source": "LLM-verified (CENTCOM May 23, 2026 press release says more than 15,000 Soldiers, Sailors, Marines and Airmen were supporting the blockade mission over the prior six weeks; no broader current operation-wide troop total found.)"
+          "source": "LLM-verified (U.S. Department of War weekly sitrep said more than 50,000 service members are supporting Operation Epic Fury)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-12",
-          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet: The First 24 Days, March 23, 2026: 9,000+ combat flights; no newer official fighter/attack-aircraft-only cumulative total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 9,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 165 days",
-        "cost": "$1,237,500,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 165 days",
+        "cost": "$4,125,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports Iran is still conditioning any Hormuz reopening on U.S. concessions despite ongoing diplomacy",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and BBC report U.S. forces fired on a cargo vessel they said was attempting to break the blockade of Iranian ports",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera report six people were killed in a Houthi strike on a vessel in the Bab al-Mandeb, opening a possible new maritime front tied to the wider Iran war",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 12, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera and AP report renewed Gulf insecurity tied to the Iran conflict, including attacks or attempted attacks involving Bahrain and Kuwait in late June and July 2026",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "U.S.-Iran fighting remains unsettled despite proposed deal parameters, with AP reporting ongoing negotiations and uncertainty over blockade/withdrawal terms in early August 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Houthi attacks and broader regional spillover continue, with AP reporting renewed attacks in Yemen and continued risks to Gulf shipping as of August 11, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran continues to condition any reopening of the Strait of Hormuz on U.S. concessions, according to AP reporting on August 8-10, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-08-12T04:13:34Z",
+      "text": "<strong>Drone strikes power station near Libya\u2019s largest oil refinery</strong> -- A drone has struck a power station in Libya\u2019s western city of Zawiya <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/12/drone-strikes-power-station-near-libyas-largest-oil-refinery?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-12T03:41:42Z",
+      "text": "<strong>Oil prices rise as attacks dent hopes for Strait of Hormuz reopening</strong> -- Brent crude climbs as renewed violence dampens hopes for a return to stability in energy markets. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-12T03:09:06Z",
+      "text": "<strong>Six killed in Houthi attack on Bab al-Mandeb ship, Yemen\u2019s government says</strong> -- Deaths on Egyptian-owned Tihamah mark first shipping deaths linked to Houthis since the US-Israel war on Iran began. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-12T02:29:30Z",
+      "text": "<strong>Iran holds firm on Hormuz conditions as Pakistan\u2019s Naqvi visits Tehran</strong> -- Iran&amp;#039;s top security official says the Strait of Hormuz will not reopen unless the US meets its conditions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/12/iran-holds-firm-on-hormuz-conditions-as-pakistans-naqvi-visits-tehran?traffic_source=rss"
+    },
+    {
       "time": "2026-08-12T00:39:53Z",
       "text": "<strong>N Korea launches ballistic missile as S Korea, US plan military drills</strong> -- Pyongyang conducts second weapons test in less than a week as Seoul, Washington gear up for annual military exercises. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/12/n-korea-launches-ballistic-missile-as-s-korea-us-plan-military-drills?traffic_source=rss"
@@ -831,26 +851,6 @@
       "time": "2026-08-11T14:30:23Z",
       "text": "<strong>War on Iran: Mojtaba Khamenei is in \u2018perfect health\u2019, Iran says</strong> -- President Masoud Pezeshkian says Supreme Leader Mojtaba Khamenei is in \u2018perfect health\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/war-on-iran-mojtaba-khamenei-is-in-perfect-health-iran-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-11T14:06:09Z",
-      "text": "<strong>\u2018Only job I know\u2019: Philippine sailors return to sea despite wartime risks</strong> -- Despite risks in the Strait of Hormuz and Black Sea, seafarers from the Philippines are still competing for jobs. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/features/2026/8/11/only-job-i-know-philippine-sailors-return-to-sea-despite-wartime-risks?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-11T13:47:50Z",
-      "text": "<strong>What are Saudi Arabia, Turkiye and Pakistan\u2019s joint military capabilities?</strong> -- The Mecca defence pact combines a top oil exporter, NATO&amp;#039;s second-largest army and the only Muslim nuclear arsenal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/11/what-are-saudi-arabia-turkiye-and-pakistans-joint-military-capabilities?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-11T14:47:28Z",
-      "text": "<strong>Trump hid in catering truck in secret plane swap over Iran threat, reports say</strong> -- The US president was reportedly part of a ruse where reporters were falsely told he was with them on Air Force One leaving a Nato summit in Turkey. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cm2g90vvy62o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-11T15:41:13Z",
-      "text": "<strong>Houthis reportedly kill four in first deadly attack since start of Iran war</strong> -- The attack was reportedly carried out by Iranian proxy on a small cargo ship, as tensions in region over the US-Iran conflict remain high. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ckg9wpmzmlno?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Drone strikes power station near Libya\u2019s largest oil refinery",
+      "description": "A drone has struck a power station in Libya\u2019s western city of Zawiya",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/12/drone-strikes-power-station-near-libyas-largest-oil-refinery?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-12T04:13:34Z",
+      "tier": 2
+    },
+    {
+      "title": "Oil prices rise as attacks dent hopes for Strait of Hormuz reopening",
+      "description": "Brent crude climbs as renewed violence dampens hopes for a return to stability in energy markets.",
+      "link": "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-12T03:41:42Z",
+      "tier": 2
+    },
+    {
+      "title": "Six killed in Houthi attack on Bab al-Mandeb ship, Yemen\u2019s government says",
+      "description": "Deaths on Egyptian-owned Tihamah mark first shipping deaths linked to Houthis since the US-Israel war on Iran began.",
+      "link": "https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-12T03:09:06Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran holds firm on Hormuz conditions as Pakistan\u2019s Naqvi visits Tehran",
+      "description": "Iran&#039;s top security official says the Strait of Hormuz will not reopen unless the US meets its conditions.",
+      "link": "https://www.aljazeera.com/news/2026/8/12/iran-holds-firm-on-hormuz-conditions-as-pakistans-naqvi-visits-tehran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-12T02:29:30Z",
+      "tier": 2
+    },
+    {
       "title": "N Korea launches ballistic missile as S Korea, US plan military drills",
       "description": "Pyongyang conducts second weapons test in less than a week as Seoul, Washington gear up for annual military exercises.",
       "link": "https://www.aljazeera.com/news/2026/8/12/n-korea-launches-ballistic-missile-as-s-korea-us-plan-military-drills?traffic_source=rss",
@@ -1285,14 +1317,6 @@
       "tier": 2
     },
     {
-      "title": "South Africa mine collapse kills 14 suspected illegal miners",
-      "description": "At least 14 suspected illegal miners were killed and eight injured when a mine dump collapsed in South Africa.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/south-africa-mine-collapse-kills-14-suspected-illegal-miners?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-11T18:31:54Z",
-      "tier": 2
-    },
-    {
       "title": "Russia using North Korean missiles to strike Ukraine, Zelensky says",
       "description": "Ukraine's president says strikes in Zaporizhzhia - which killed seven people - involved ballistic missiles from Russia's ally.",
       "link": "https://www.bbc.co.uk/news/articles/c151dpzwnvxo?at_medium=RSS&at_campaign=rss",
@@ -1317,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still supports 3,468 deaths and more than 26,500 injuries in Iran, 13 U.S. deaths within the official Operation Epic Fury tally, 26 Israeli deaths, and 28 deaths in Gulf states, with CENTCOM\u2019s latest readily accessible official fact sheets showing at least 11,000 targets struck and 9,000-plus combat flights during the opening month of the campaign. Today\u2019s confirmed developments center on maritime escalation and diplomacy: U.S. and regional reporting say the United States fired on a cargo vessel it said was attempting to break the Iran blockade, Houthi-linked threats continue around the Bab al-Mandeb, and parallel mediation efforts involving Oman and regional states are focused on the future of shipping through the Strait of Hormuz.",
+  "summary": "Confirmed reporting on August 12, 2026 shows the wider conflict remains active despite the formal May declaration that Operation Epic Fury had concluded: Iran continues to keep the Strait of Hormuz effectively closed, diplomacy involving Oman and Pakistan is ongoing, and maritime spillover is worsening, with AP and Al Jazeera reporting six deaths in a Houthi attack on a vessel in the Bab al-Mandeb and additional U.S. action against a ship accused of trying to break the Iran blockade. The latest readily confirmed casualty totals available in named sources remain 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 13 U.S. troops killed.",
   "briefings": [
     {
       "date": "2026-08-12",
       "day": 165,
-      "summary": "Confirmed reporting still supports 3,468 deaths and more than 26,500 injuries in Iran, 13 U.S. deaths within the official Operation Epic Fury tally, 26 Israeli deaths, and 28 deaths in Gulf states, with CENTCOM\u2019s latest readily accessible official fact sheets showing at least 11,000 targets struck and 9,000-plus combat flights during the opening month of the campaign. Today\u2019s confirmed developments center on maritime escalation and diplomacy: U.S. and regional reporting say the United States fired on a cargo vessel it said was attempting to break the Iran blockade, Houthi-linked threats continue around the Bab al-Mandeb, and parallel mediation efforts involving Oman and regional states are focused on the future of shipping through the Strait of Hormuz."
+      "summary": "Confirmed reporting on August 12, 2026 shows the wider conflict remains active despite the formal May declaration that Operation Epic Fury had concluded: Iran continues to keep the Strait of Hormuz effectively closed, diplomacy involving Oman and Pakistan is ongoing, and maritime spillover is worsening, with AP and Al Jazeera reporting six deaths in a Houthi attack on a vessel in the Bab al-Mandeb and additional U.S. action against a ship accused of trying to break the Iran blockade. The latest readily confirmed casualty totals available in named sources remain 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 13 U.S. troops killed."
     },
     {
       "date": "2026-08-11",
