@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-13T18:10:10Z",
+  "lastUpdated": "2026-08-13T19:24:40Z",
   "dayCount": 166,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,510+",
-    "cost": "$28.5B+"
+    "cost": "$28.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.5 billion+",
-    "dailyBurnRate": "~$172M/day",
+    "totalCost": "$28.3 billion+",
+    "dailyBurnRate": "~$171M/day",
     "daysOfOps": 166,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (AP, May 27, 2026, citing CSIS analysis provided to AP: U.S. fired '1,000-plus Tomahawk missiles' at Iran.)"
+          "source": "LLM-verified (Washington Post reported more than 850 Tomahawk cruise missiles fired in the first four weeks of war; no newer official cumulative confirmed total found)"
         },
         {
           "id": "jdam",
@@ -250,7 +250,7 @@
           "id": "mop_bunker_busters",
           "category": "GBU-57 MOP Bunker Busters",
           "unitCost": 3500000,
-          "quantity": 14,
+          "quantity": 6,
           "keywords": [
             "MOP",
             "GBU-57",
@@ -260,14 +260,14 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-08-08",
-          "source": "LLM-verified (DoD press conference transcript states 14 GBU-57 Massive Ordnance Penetrators were used in the Iran nuclear facilities strike.)"
+          "lastUpdated": "2026-08-13",
+          "source": "LLM-verified (DoD transcript on strike package states all six weapons at each vent at Fordo went as intended; this is the only confirmed MOP employment count located, not necessarily full war cumulative if additional later drops occurred)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (Pentagon Operation Epic Fury fact sheet dated March 23, 2026 lists 9,000+ combat flights in first 24 days; this is the latest confirmed official cumulative sorties-style figure found, though it is combat flights not fighter-only sorties.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 reports 11,000+ combat flights; no newer official cumulative sortie total found)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -393,13 +393,13 @@
       },
       {
         "category": "GBU-57 MOP Bunker Busters",
-        "detail": "14 \u00d7 $3,500,000 each",
-        "cost": "$49,000,000"
+        "detail": "6 \u00d7 $3,500,000 each",
+        "cost": "$21,000,000"
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reporting indicate U.S. missile-interceptor stockpiles are under strain, potentially affecting force protection if hostilities intensify again.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports rising Houthi-government clashes in Yemen, raising the risk of a wider regional front connected to the Iran war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports Iran says the Strait of Hormuz remains under its control and rejects U.S. claims, underscoring ongoing maritime escalation risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 13, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "BBC headline on August 12, 2026 said US Central Command reported a helicopter fired missiles to disable a Panama-flagged cargo vessel allegedly breaking the Iran blockade in the Gulf of Oman.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 12, 2026 that bases in Iraq have regularly come under attack since the war began, even as the U.S. is drawing down forces there ahead of a September 30 withdrawal deadline.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 6, 2026 that two Israeli soldiers were killed in southern Lebanon, the first Israeli deaths since the June truce with Hezbollah, indicating continued spillover risk on the Lebanon front.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 11, 2026 that U.S. Central Command said an American helicopter fired missiles into the engine room of the Panama-flagged M/V Vela Nova in the Gulf of Oman after it allegedly tried to break the blockade of Iranian ports.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -783,19 +783,29 @@
       "link": "https://www.aljazeera.com/news/2026/8/13/falling-danube-flow-forces-shutdown-of-romanias-sole-nuclear-plant?traffic_source=rss"
     },
     {
-      "time": "2026-08-13T11:56:40Z",
-      "text": "<strong>US-Iran talks in deadlock \u2013 what\u2019s the latest?</strong> -- The US and Iran continue their standoff in the Strait of Hormuz as mediators try to coax talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/13/us-iran-talks-in-deadlock-whats-the-latest?traffic_source=rss"
-    },
-    {
       "time": "2026-08-13T16:20:41Z",
       "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-08-13T19:20:58Z",
+      "text": "<strong>Romania shuts only nuclear plant as heat causes huge drop in Danube River level</strong> -- The Cernavod\u0103 plant, which produces 20% of Romania&#x27;s electricity, is not expected to be restarted within the next 10 days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-13T01:31:21Z",
       "text": "<strong>Ebola outbreak on track to be deadliest ever, WHO chief says</strong> -- The outbreak, declared on 15 May, has caused more than 2,000 deaths, with thousands more reported cases. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cgk4pex4mn8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-12T16:14:08Z",
+      "text": "<strong>Israeli settlers besieging Palestinian families in West Bank village</strong> -- Israeli security forces have reportedly withdrawn and about a dozen settlers are said to remain at the site where two families have been besieged since Sunday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn0npjkqrleo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-13T11:56:40Z",
+      "text": "<strong>US-Iran talks in deadlock \u2013 what\u2019s the latest?</strong> -- The US and Iran continue their standoff in the Strait of Hormuz as mediators try to coax talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/13/us-iran-talks-in-deadlock-whats-the-latest?traffic_source=rss"
     },
     {
       "time": "2026-08-13T16:05:35Z",
@@ -811,11 +821,6 @@
       "time": "2026-08-13T15:40:31Z",
       "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-12T16:14:08Z",
-      "text": "<strong>Israeli settlers besieging Palestinian families in West Bank village</strong> -- Israeli security forces have reportedly withdrawn and about a dozen settlers are said to remain at the site where two families have been besieged since Sunday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn0npjkqrleo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-13T09:40:18Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-13T13:20:55Z",
       "text": "<strong>\u2018Justified\u2019 or \u2019no business being there\u2019? Tennessee munitions town loyal to Trump but divided on Iran</strong> -- Hear from voters in Kingsport, home to a munitions plant supplying the US military, as tensions over the Iran war spark debate. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/cgewp4ep9dro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-11T19:15:48Z",
-      "text": "<strong>In shattered Cali, residents search for loved ones and signs of hope</strong> -- Most deaths from the magnitude-7.4 quake were reported in Cali, Colombia\u2019s third-most populous city, as crews search collapsed buildings for those still trapped. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/ckge0e0g95no?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+      "description": "The Cernavod\u0103 plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
+      "link": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-13T19:20:58Z",
+      "tier": 2
+    },
+    {
       "title": "DR Congo Ebola outbreak spreads to a sixth province",
       "description": "Ebola outbreak has killed 2,128 people out of around 4,566 recorded cases in the DRC, according to government figures.",
       "link": "https://www.aljazeera.com/news/2026/8/13/dr-congo-ebola-outbreak-spreads-to-a-sixth-province?traffic_source=rss",
@@ -1242,14 +1250,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-13T16:20:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
-      "description": "The Cernavod\u0103 plant, which produces 20% of Romania's electricity, is not expected to be restarted within the next 10 days.",
-      "link": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-13T16:05:35Z",
       "tier": 2
     },
     {
@@ -1285,14 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "US-Iran talks in deadlock \u2013 what\u2019s the latest?",
-      "description": "The US and Iran continue their standoff in the Strait of Hormuz as mediators try to coax talks.",
-      "link": "https://www.aljazeera.com/news/2026/8/13/us-iran-talks-in-deadlock-whats-the-latest?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-13T11:56:40Z",
-      "tier": 2
-    },
-    {
       "title": "Ebola outbreak on track to be deadliest ever, WHO chief says",
       "description": "The outbreak, declared on 15 May, has caused more than 2,000 deaths, with thousands more reported cases.",
       "link": "https://www.bbc.co.uk/news/articles/cgk4pex4mn8o?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still points to the June 10, 2026 Al Jazeera tracker as the clearest named-source cumulative baseline for core war casualties during Operation Epic Fury: 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 confirmed US military combat-related deaths during Epic Fury, and 3 confirmed deaths in Bahrain. Official US Navy reporting in May said Operation Epic Fury struck over 13,000 targets in Iran and involved two carrier strike groups. Later July fighting did produce additional casualties, but AP reported that the Pentagon now tracks those deaths and wounds under a separate post-Epic-Fury category, so they should not automatically replace the original Epic Fury totals without a clearly merged official cumulative accounting.",
+  "summary": "Confirmed reporting available today did not produce many newer official cumulative totals beyond the previously established figures. The strongest current-source updates still support 3,468 deaths and more than 26,500 injuries in Iran from the Iran Ministry of Health as carried by Al Jazeera\u2019s June 10 tracker, 13 confirmed U.S. combat deaths, 26 deaths in Israel, and CENTCOM\u2019s last public strike tally of 13,000+ targets struck as of April 6. Today\u2019s confirmed developments instead center on strategic risk: AP and Al Jazeera report continued tension over the Strait of Hormuz, AP reports growing instability in Yemen involving the Houthis, and AP says the Pentagon is pushing industry to accelerate production as interceptor and precision-munition stocks have been heavily consumed by the war.",
   "briefings": [
     {
       "date": "2026-08-13",
       "day": 166,
-      "summary": "Confirmed reporting still points to the June 10, 2026 Al Jazeera tracker as the clearest named-source cumulative baseline for core war casualties during Operation Epic Fury: 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 confirmed US military combat-related deaths during Epic Fury, and 3 confirmed deaths in Bahrain. Official US Navy reporting in May said Operation Epic Fury struck over 13,000 targets in Iran and involved two carrier strike groups. Later July fighting did produce additional casualties, but AP reported that the Pentagon now tracks those deaths and wounds under a separate post-Epic-Fury category, so they should not automatically replace the original Epic Fury totals without a clearly merged official cumulative accounting."
+      "summary": "Confirmed reporting available today did not produce many newer official cumulative totals beyond the previously established figures. The strongest current-source updates still support 3,468 deaths and more than 26,500 injuries in Iran from the Iran Ministry of Health as carried by Al Jazeera\u2019s June 10 tracker, 13 confirmed U.S. combat deaths, 26 deaths in Israel, and CENTCOM\u2019s last public strike tally of 13,000+ targets struck as of April 6. Today\u2019s confirmed developments instead center on strategic risk: AP and Al Jazeera report continued tension over the Strait of Hormuz, AP reports growing instability in Yemen involving the Houthis, and AP says the Pentagon is pushing industry to accelerate production as interceptor and precision-munition stocks have been heavily consumed by the war."
     },
     {
       "date": "2026-08-12",
