@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-13T22:03:14Z",
+  "lastUpdated": "2026-08-13T23:02:59Z",
   "dayCount": 166,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,537+",
-    "cost": "$28.3B+"
+    "strikes": "~12,300",
+    "killed": "3,521+",
+    "cost": "$25.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.3 billion+",
-    "dailyBurnRate": "~$171M/day",
+    "totalCost": "$25.7 billion+",
+    "dailyBurnRate": "~$155M/day",
     "daysOfOps": 166,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (AP News, August 13, 2026: USS George Washington heading to replace USS Abraham Lincoln as one of two aircraft carriers stationed in the Middle East)"
+          "source": "LLM-verified (U.S. Navy photo release dated Feb. 6, 2026 confirms Abraham Lincoln Carrier Strike Group deployed to U.S. 5th Fleet area; no current official confirmation found for a second U.S. carrier strike group in theater)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (AP, March 31, 2026: USS George H.W. Bush deploying to the Middle East 'along with three destroyers')"
+          "source": "LLM-verified (U.S. Navy photo release dated Feb. 6, 2026 identifies USS Michael Murphy and USS Frank E. Petersen Jr. with Abraham Lincoln in 5th Fleet; no newer official theater-wide count found)"
         },
         {
           "id": "personnel",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 24,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (Washington Post reported more than 850 Tomahawk cruise missiles fired in the first four weeks of war; no newer official cumulative confirmed total found)"
+          "source": "LLM-verified (Pentagon press conference transcript cited by Defense.gov states a U.S. submarine launched 'more than two dozen' Tomahawk missiles in the strike package; no cumulative Epic Fury total found)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 reports 11,000+ combat flights; no newer official cumulative sortie total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+')"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 166 days",
-        "cost": "$2,324,000,000"
+        "detail": "$7,000,000/day \u00d7 166 days",
+        "cost": "$1,162,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "3 \u00d7 $240,000/day \u00d7 166 days",
-        "cost": "$119,520,000"
+        "detail": "2 \u00d7 $240,000/day \u00d7 166 days",
+        "cost": "$79,680,000"
       },
       {
         "category": "Deployed Personnel",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "24 \u00d7 $2,000,000 each",
+        "cost": "$48,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today does not materially update most Epic Fury cumulative database figures. AP reported on August 13, 2026 that the USS George Washington is heading toward the Middle East to replace the USS Abraham Lincoln as one of two US carriers in theater, while the US blockade around Iranian ports continues. For casualties, the latest confirmed Operation Epic Fury US KIA figure remains 14 in the official war tally cited by AP because later deaths in renewed fighting were reclassified by the Pentagon outside the Epic Fury category. The latest accessible cumulative Iran casualty figures still found were Iran Health Ministry figures carried by Al Jazeera: 3,468 killed and more than 26,500 injured, with Israel at 26 killed and Gulf states at 29 killed.",
+  "summary": "Confirmed cumulative figures located today remain broadly in line with your database for core war casualties through the latest clearly sourced tallies found: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, Israel\u2019s confirmed death toll remains 26, and the Pentagon/AP confirmed the Operation Epic Fury U.S. death toll at 14, though later renewed fighting was moved by the Pentagon into a separate 'Overseas Operations' casualty category after Epic Fury was deemed concluded. CENTCOM\u2019s latest accessible official fact sheet in the search results still lists 12,300+ targets struck and 13,000+ combat flights, while official current theater-wide totals for troops, interceptors, and most munition categories were not found in confirmable public reporting.",
   "briefings": [
     {
       "date": "2026-08-13",
       "day": 166,
-      "summary": "Confirmed reporting available today does not materially update most Epic Fury cumulative database figures. AP reported on August 13, 2026 that the USS George Washington is heading toward the Middle East to replace the USS Abraham Lincoln as one of two US carriers in theater, while the US blockade around Iranian ports continues. For casualties, the latest confirmed Operation Epic Fury US KIA figure remains 14 in the official war tally cited by AP because later deaths in renewed fighting were reclassified by the Pentagon outside the Epic Fury category. The latest accessible cumulative Iran casualty figures still found were Iran Health Ministry figures carried by Al Jazeera: 3,468 killed and more than 26,500 injured, with Israel at 26 killed and Gulf states at 29 killed."
+      "summary": "Confirmed cumulative figures located today remain broadly in line with your database for core war casualties through the latest clearly sourced tallies found: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, Israel\u2019s confirmed death toll remains 26, and the Pentagon/AP confirmed the Operation Epic Fury U.S. death toll at 14, though later renewed fighting was moved by the Pentagon into a separate 'Overseas Operations' casualty category after Epic Fury was deemed concluded. CENTCOM\u2019s latest accessible official fact sheet in the search results still lists 12,300+ targets struck and 13,000+ combat flights, while official current theater-wide totals for troops, interceptors, and most munition categories were not found in confirmable public reporting."
     },
     {
       "date": "2026-08-12",
