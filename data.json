@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-13T17:14:34Z",
+  "lastUpdated": "2026-08-13T18:10:10Z",
   "dayCount": 166,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,515+",
-    "cost": "$27.6B+"
+    "killed": "3,510+",
+    "cost": "$28.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$27.6 billion+",
-    "dailyBurnRate": "~$167M/day",
+    "totalCost": "$28.5 billion+",
+    "dailyBurnRate": "~$172M/day",
     "daysOfOps": 166,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page shows USS Abraham Lincoln and USS George H.W. Bush operating in theater; current accessible official evidence supports 2 carrier strike groups)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: two carrier strike groups supported Operation Epic Fury.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (IDF official 'Operation Roaring Lion' update: more than 800 Israeli Air Force strike sorties carried out)"
+          "source": "LLM-verified (Pentagon Operation Epic Fury fact sheet dated March 23, 2026 lists 9,000+ combat flights in first 24 days; this is the latest confirmed official cumulative sorties-style figure found, though it is combat flights not fighter-only sorties.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Recent July fighting produced additional Iranian casualties and new US fatalities outside the concluded Operation Epic Fury accounting category.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on July 28, 2026 that renewed US-Iran fighting after Operation Epic Fury is being tracked in a separate Pentagon casualty category, creating risk of tally confusion.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 13, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran says Strait of Hormuz is under its control and US-Iran talks remain deadlocked, according to Al Jazeera headline context provided by user.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 13, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on August 11, 2026 that U.S. Central Command said an American helicopter fired missiles into the engine room of the Panama-flagged M/V Vela Nova in the Gulf of Oman after it allegedly tried to break the blockade of Iranian ports.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and headline reporting indicate continued Houthi and regional proxy activity, raising risk to Red Sea and Gulf shipping.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline says a U.S. helicopter fired missiles to disable a Panama-flagged cargo vessel in the Gulf of Oman, showing blockade enforcement risk is still active.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP/BBC reporting indicates the Strait of Hormuz remains central to escalation risk, with Iran insisting it will not reopen fully until U.S. conditions are met.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-13T17:18:01Z",
+      "text": "<strong>DR Congo Ebola outbreak spreads to a sixth province</strong> -- Ebola outbreak has killed 2,128 people out of around 4,566 recorded cases in the DRC, according to government figures. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/13/dr-congo-ebola-outbreak-spreads-to-a-sixth-province?traffic_source=rss"
+    },
+    {
       "time": "2026-08-13T16:44:15Z",
       "text": "<strong>Reports of US sailors in Middle East trying to jump ship spark outcry</strong> -- US senators call for inquiry as USS Lincoln has record-long period without port stop amid war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/13/reports-of-us-sailors-in-middle-east-trying-to-jump-ship-spark-outcry?traffic_source=rss"
@@ -783,11 +788,6 @@
       "link": "https://www.aljazeera.com/news/2026/8/13/us-iran-talks-in-deadlock-whats-the-latest?traffic_source=rss"
     },
     {
-      "time": "2026-08-13T11:14:35Z",
-      "text": "<strong>Civilian deaths in Ukraine in July hit highest level since May 2022: UN</strong> -- At least 437 civilians were killed and 2,610 injured in Ukraine in July, the UN Human Rights Monitoring Mission said. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/13/civilian-deaths-in-ukraine-in-july-hit-highest-level-since-may-2022-un?traffic_source=rss"
-    },
-    {
       "time": "2026-08-13T16:20:41Z",
       "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
@@ -801,6 +801,11 @@
       "time": "2026-08-13T16:05:35Z",
       "text": "<strong>Romania shuts only nuclear plant as heat causes huge drop in Danube River level</strong> -- The Cernavod\u0103 plant, which produces 20% of Romania&#x27;s electricity, is not expected to be restarted within the next 10 days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-13T11:14:35Z",
+      "text": "<strong>Civilian deaths in Ukraine in July hit highest level since May 2022: UN</strong> -- At least 437 civilians were killed and 2,610 injured in Ukraine in July, the UN Human Rights Monitoring Mission said. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/13/civilian-deaths-in-ukraine-in-july-hit-highest-level-since-may-2022-un?traffic_source=rss"
     },
     {
       "time": "2026-08-13T15:40:31Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-11T19:15:48Z",
       "text": "<strong>In shattered Cali, residents search for loved ones and signs of hope</strong> -- Most deaths from the magnitude-7.4 quake were reported in Cali, Colombia\u2019s third-most populous city, as crews search collapsed buildings for those still trapped. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/ckge0e0g95no?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-11T15:53:53Z",
-      "text": "<strong>Watch: Why was Trump smuggled out of Air Force One in a catering truck?</strong> -- US media reports say the president secretly left via a catering truck to avoid a threat to his life from Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cj3672ljgzro?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "DR Congo Ebola outbreak spreads to a sixth province",
+      "description": "Ebola outbreak has killed 2,128 people out of around 4,566 recorded cases in the DRC, according to government figures.",
+      "link": "https://www.aljazeera.com/news/2026/8/13/dr-congo-ebola-outbreak-spreads-to-a-sixth-province?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-13T17:18:01Z",
+      "tier": 2
+    },
+    {
       "title": "Reports of US sailors in Middle East trying to jump ship spark outcry",
       "description": "US senators call for inquiry as USS Lincoln has record-long period without port stop amid war on Iran.",
       "link": "https://www.aljazeera.com/news/2026/8/13/reports-of-us-sailors-in-middle-east-trying-to-jump-ship-spark-outcry?traffic_source=rss",
@@ -1285,14 +1293,6 @@
       "tier": 2
     },
     {
-      "title": "Civilian deaths in Ukraine in July hit highest level since May 2022: UN",
-      "description": "At least 437 civilians were killed and 2,610 injured in Ukraine in July, the UN Human Rights Monitoring Mission said.",
-      "link": "https://www.aljazeera.com/news/2026/8/13/civilian-deaths-in-ukraine-in-july-hit-highest-level-since-may-2022-un?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-13T11:14:35Z",
-      "tier": 2
-    },
-    {
       "title": "Ebola outbreak on track to be deadliest ever, WHO chief says",
       "description": "The outbreak, declared on 15 May, has caused more than 2,000 deaths, with thousands more reported cases.",
       "link": "https://www.bbc.co.uk/news/articles/cgk4pex4mn8o?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today shows no clear refreshed official casualty overhaul from Pentagon, IDF, or Iran beyond figures already circulating in late July and tracker reporting: the U.S. military death toll remains 18 per AP\u2019s reporting on Pentagon/DCAS data, Al Jazeera\u2019s accessible cumulative Iran tracker still lists 3,468 killed and more than 26,500 injured, and CENTCOM\u2019s latest accessible Operation Epic Fury fact sheet still cites 13,000-plus targets struck. The main new development on August 13 is regional spillover risk, with AP reporting renewed Yemen fighting involving Iran-backed Houthis, while U.S.-Iran diplomacy over the Strait of Hormuz remains stalled.",
+  "summary": "Confirmed reporting still points to the June 10, 2026 Al Jazeera tracker as the clearest named-source cumulative baseline for core war casualties during Operation Epic Fury: 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 confirmed US military combat-related deaths during Epic Fury, and 3 confirmed deaths in Bahrain. Official US Navy reporting in May said Operation Epic Fury struck over 13,000 targets in Iran and involved two carrier strike groups. Later July fighting did produce additional casualties, but AP reported that the Pentagon now tracks those deaths and wounds under a separate post-Epic-Fury category, so they should not automatically replace the original Epic Fury totals without a clearly merged official cumulative accounting.",
   "briefings": [
     {
       "date": "2026-08-13",
       "day": 166,
-      "summary": "Confirmed reporting available today shows no clear refreshed official casualty overhaul from Pentagon, IDF, or Iran beyond figures already circulating in late July and tracker reporting: the U.S. military death toll remains 18 per AP\u2019s reporting on Pentagon/DCAS data, Al Jazeera\u2019s accessible cumulative Iran tracker still lists 3,468 killed and more than 26,500 injured, and CENTCOM\u2019s latest accessible Operation Epic Fury fact sheet still cites 13,000-plus targets struck. The main new development on August 13 is regional spillover risk, with AP reporting renewed Yemen fighting involving Iran-backed Houthis, while U.S.-Iran diplomacy over the Strait of Hormuz remains stalled."
+      "summary": "Confirmed reporting still points to the June 10, 2026 Al Jazeera tracker as the clearest named-source cumulative baseline for core war casualties during Operation Epic Fury: 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, 13 confirmed US military combat-related deaths during Epic Fury, and 3 confirmed deaths in Bahrain. Official US Navy reporting in May said Operation Epic Fury struck over 13,000 targets in Iran and involved two carrier strike groups. Later July fighting did produce additional casualties, but AP reported that the Pentagon now tracks those deaths and wounds under a separate post-Epic-Fury category, so they should not automatically replace the original Epic Fury totals without a clearly merged official cumulative accounting."
     },
     {
       "date": "2026-08-12",
