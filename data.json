@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-14T13:43:21Z",
+  "lastUpdated": "2026-08-14T15:07:05Z",
   "dayCount": 167,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,526+",
-    "cost": "$24.0B+"
+    "killed": "3,508+",
+    "cost": "$29.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "15",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "32,314+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1607",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$24.0 billion+",
-    "dailyBurnRate": "~$144M/day",
+    "totalCost": "$29.4 billion+",
+    "dailyBurnRate": "~$176M/day",
     "daysOfOps": 167,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (AP, August 13-14, 2026: USS Abraham Lincoln in theater and USS George Washington heading to replace it as one of two aircraft carriers now stationed in the Middle East.)"
+          "source": "LLM-verified (AP News on Aug. 13, 2026 reports George Washington is heading to replace Lincoln as one of the two aircraft carriers now stationed in the Middle East: https://apnews.com/article/aircraft-carriers-uss-abraham-lincoln-washington-iran-5366eba29f72b6b317416fde81d57a61)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; stored as 13000 confirmed minimum.)"
+          "source": "LLM-verified (White House April 8, 2026 summary says 'Over 10,200 total air sorties flown': https://www.whitehouse.gov/releases/2026/04/peace-through-strength-operation-epic-fury-crushes-iranian-threat-as-ceasefire-takes-hold/)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 290,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (AP, May 27, 2026, citing CSIS analysis: as many as 290 THAAD interceptors were used against incoming Iranian drones and missiles. No combined confirmed SM-3/THAAD/Patriot cumulative total found.)"
+          "lastUpdated": "2026-08-14",
+          "source": "LLM-verified (White House April 8, 2026 summary says 'Over 1,000 incoming attack drone threats intercepted' and 'Over 700 ballistic missile threats intercepted' for 1,700+ combined intercepts: https://www.whitehouse.gov/releases/2026/04/peace-through-strength-operation-epic-fury-crushes-iranian-threat-as-ceasefire-takes-hold/)"
         },
         {
           "id": "prestrike_buildup",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "290 \u00d7 $4,000,000 each",
-        "cost": "$1,160,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera on July 22 reported Iran\u2019s Health Ministry said renewed U.S. attacks since late June had killed 53 people and injured at least 590, while total U.S. personnel killed during the war had risen to 18 according to the U.S. military; however, AP later said the Pentagon split post-Epic Fury casualties into a separate category, so they are not included in the official Operation Epic Fury tally used above.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 13 reported Defense Secretary Pete Hegseth said the U.S. Navy can maintain the blockade on Iranian ports 'indefinitely,' while USS George Washington is moving toward the Middle East to replace USS Abraham Lincoln as one of two U.S. carriers in theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 14, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP reports rising Houthi-government clashes in Yemen, raising the risk of a wider regional front connected to the Iran war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reports Iran says the Strait of Hormuz remains under its control and rejects U.S. claims, underscoring ongoing maritime escalation risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Recent July fighting produced additional Iranian casualties and new US fatalities outside the concluded Operation Epic Fury accounting category.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1285,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today points to a continued maritime phase rather than a clearly updated full-war casualty picture. AP reported on August 14, 2026 that two UAE ADNOC tankers were hit by drones while transiting the Strait of Hormuz, with no casualties, underscoring ongoing danger to shipping. AP also reported that USS George Washington is heading toward the Middle East while USS Abraham Lincoln remains tied to Iran operations, indicating two U.S. carriers in or moving to theater. For current U.S. troop presence tied to the active shipping-protection mission, the Pentagon\u2019s May 5 Project Freedom briefing said the force comprised over 15,000 U.S. service members. For confirmed cumulative war baselines still visible in official material, CENTCOM\u2019s April 6 fact sheet listed 13,000-plus targets struck, and Reuters on July 22 said the war had caused 18 U.S. service-member deaths.",
+  "summary": "Confirmed reporting still supports 3,468 total deaths in Iran and 32,314 wounded from earlier Ministry of Health/WHO-based tallies, while the U.S. military\u2019s official Iran-war death toll stood at 14 in AP\u2019s July 13 reporting for Operation Epic Fury itself. AP reported on August 13 that two U.S. carrier groups remain associated with the theater as USS George Washington moves to replace USS Abraham Lincoln, and the White House\u2019s April 8 official summary remains the clearest confirmed cumulative operations count, listing over 13,000 targets struck, over 10,200 air sorties, and more than 1,700 combined drone and ballistic-missile intercepts. Several requested fields could not be updated because no current confirmed cumulative figure from named official or major-wire sources was found.",
   "briefings": [
     {
       "date": "2026-08-14",
       "day": 167,
-      "summary": "Confirmed reporting available today points to a continued maritime phase rather than a clearly updated full-war casualty picture. AP reported on August 14, 2026 that two UAE ADNOC tankers were hit by drones while transiting the Strait of Hormuz, with no casualties, underscoring ongoing danger to shipping. AP also reported that USS George Washington is heading toward the Middle East while USS Abraham Lincoln remains tied to Iran operations, indicating two U.S. carriers in or moving to theater. For current U.S. troop presence tied to the active shipping-protection mission, the Pentagon\u2019s May 5 Project Freedom briefing said the force comprised over 15,000 U.S. service members. For confirmed cumulative war baselines still visible in official material, CENTCOM\u2019s April 6 fact sheet listed 13,000-plus targets struck, and Reuters on July 22 said the war had caused 18 U.S. service-member deaths."
+      "summary": "Confirmed reporting still supports 3,468 total deaths in Iran and 32,314 wounded from earlier Ministry of Health/WHO-based tallies, while the U.S. military\u2019s official Iran-war death toll stood at 14 in AP\u2019s July 13 reporting for Operation Epic Fury itself. AP reported on August 13 that two U.S. carrier groups remain associated with the theater as USS George Washington moves to replace USS Abraham Lincoln, and the White House\u2019s April 8 official summary remains the clearest confirmed cumulative operations count, listing over 13,000 targets struck, over 10,200 air sorties, and more than 1,700 combined drone and ballistic-missile intercepts. Several requested fields could not be updated because no current confirmed cumulative figure from named official or major-wire sources was found."
     },
     {
       "date": "2026-08-13",
