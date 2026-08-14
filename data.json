@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-14T11:57:27Z",
+  "lastUpdated": "2026-08-14T13:43:21Z",
   "dayCount": 167,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,526+",
-    "cost": "$25.8B+"
+    "cost": "$24.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$25.8 billion+",
-    "dailyBurnRate": "~$154M/day",
+    "totalCost": "$24.0 billion+",
+    "dailyBurnRate": "~$144M/day",
     "daysOfOps": 167,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (AP, August 13, 2026: USS Abraham Lincoln is supporting the war against Iran; USS George Washington has begun heading toward the Middle East, indicating one carrier currently in theater and another en route)"
+          "source": "LLM-verified (AP, August 13-14, 2026: USS Abraham Lincoln in theater and USS George Washington heading to replace it as one of two aircraft carriers now stationed in the Middle East.)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 15000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (Congressional Research Service report dated March 26, 2026 says an estimated 50,000 U.S. service members were deployed 'in and around the Middle East')"
+          "source": "LLM-verified (DoD transcript, May 5, 2026 (Project Freedom): 'These forces are comprised of over 15,000 American service members' for the current Hormuz security operation. Epic Fury-era 'more than 50,000' was historical, not clearly current.)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; used as closest official cumulative fighter/attack sortie proxy, though source labels all combat flights rather than fighters only)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; stored as 13000 confirmed minimum.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 167 days",
-        "cost": "$1,169,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 167 days",
+        "cost": "$2,338,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 167 days",
-        "cost": "$4,175,000,000"
+        "detail": "15,000 \u00d7 $500/day \u00d7 167 days",
+        "cost": "$1,252,500,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "DoD May 5, 2026 Project Freedom briefing said Iran had fired at commercial vessels nine times since the ceasefire and attacked U.S. forces more than ten times below the threshold of renewed major combat operations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "DoD Apr. 24, 2026 briefing said the U.S. blockade was expanding and a second aircraft carrier would join within days; AP on Aug. 13-14 reported USS George Washington moving toward the Middle East while USS Abraham Lincoln remained in theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP Aug. 14, 2026: UAE blamed Iran for drone attacks on two ADNOC tankers transiting the Strait of Hormuz; no casualties reported.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Recent July fighting produced additional Iranian casualties and new US fatalities outside the concluded Operation Epic Fury accounting category.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on July 28, 2026 that renewed US-Iran fighting after Operation Epic Fury is being tracked in a separate Pentagon casualty category, creating risk of tally confusion.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran says Strait of Hormuz is under its control and US-Iran talks remain deadlocked, according to Al Jazeera headline context provided by user.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Talks over the Strait of Hormuz remain deadlocked, with Iran insisting on conditions for reopening and U.S. pressure continuing",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -778,16 +778,6 @@
       "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/8/14/what-is-a-ceasefire-supposed-to-achieve?traffic_source=rss"
     },
     {
-      "time": "2026-08-14T08:15:17Z",
-      "text": "<strong>Engine debris shattered Ryanair window, pulling passenger out, NTSB says</strong> -- Flight crews had recorded four suspected bird strikes involving the same engine during the previous year. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/14/engine-debris-shattered-ryanair-window-pulling-passenger-out-ntsb-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-14T05:40:45Z",
-      "text": "<strong>North Korea fumes over upcoming US-South Korea military drills</strong> -- Pyongyang has accused the US of pushing the world &amp;#039;to the brink of nuclear war&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/14/north-korea-fumes-over-upcoming-us-south-korea-military-drills?traffic_source=rss"
-    },
-    {
       "time": "2026-08-13T20:12:17Z",
       "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
@@ -806,6 +796,16 @@
       "time": "2026-08-13T13:20:55Z",
       "text": "<strong>\u2018Justified\u2019 or \u2019no business being there\u2019? Tennessee munitions town loyal to Trump but divided on Iran</strong> -- Hear from voters in Kingsport, home to a munitions plant supplying the US military, as tensions over the Iran war spark debate. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/cgewp4ep9dro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-14T08:15:17Z",
+      "text": "<strong>Engine debris shattered Ryanair window, pulling passenger out, NTSB says</strong> -- Flight crews had recorded four suspected bird strikes involving the same engine during the previous year. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/14/engine-debris-shattered-ryanair-window-pulling-passenger-out-ntsb-says?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-14T05:40:45Z",
+      "text": "<strong>North Korea fumes over upcoming US-South Korea military drills</strong> -- Pyongyang has accused the US of pushing the world &amp;#039;to the brink of nuclear war&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/14/north-korea-fumes-over-upcoming-us-south-korea-military-drills?traffic_source=rss"
     },
     {
       "time": "2026-08-14T01:09:44Z",
@@ -1253,27 +1253,11 @@
       "tier": 2
     },
     {
-      "title": "Engine debris shattered Ryanair window, pulling passenger out, NTSB says",
-      "description": "Flight crews had recorded four suspected bird strikes involving the same engine during the previous year.",
-      "link": "https://www.aljazeera.com/news/2026/8/14/engine-debris-shattered-ryanair-window-pulling-passenger-out-ntsb-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-14T08:15:17Z",
-      "tier": 2
-    },
-    {
       "title": "Teens who fled Venezuela after deadly quakes caught in another disaster in Colombia",
       "description": "Deivi Delf\u00edn and his brother moved to Colombia after a quake in Venezuela killed their mother, but were caught in another deadly disaster.",
       "link": "https://www.bbc.co.uk/news/articles/c9v42m3430vo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-14T08:02:35Z",
-      "tier": 2
-    },
-    {
-      "title": "North Korea fumes over upcoming US-South Korea military drills",
-      "description": "Pyongyang has accused the US of pushing the world &#039;to the brink of nuclear war&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/8/14/north-korea-fumes-over-upcoming-us-south-korea-military-drills?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-14T05:40:45Z",
       "tier": 2
     },
     {
@@ -1301,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still points to the last widely published cumulative war tolls from June: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while Al Jazeera\u2019s June 10 tracker lists 26 Israelis killed. AP\u2019s July 13 Pentagon-based casualty update kept the official Operation Epic Fury U.S. death tally at 14, and AP later reported on July 28 that four additional U.S. deaths from renewed fighting were shifted into a separate Pentagon 'Overseas Operations' category after Epic Fury was deemed ended. Official U.S. fact sheets from April 6 still provide the clearest strike total at 13,000+ targets struck. Today\u2019s key development is maritime escalation: AP reports two UAE-linked tankers were hit by drones in the Strait of Hormuz with no injuries, while Hegseth said the U.S. could sustain the blockade indefinitely.",
+  "summary": "Confirmed reporting available today points to a continued maritime phase rather than a clearly updated full-war casualty picture. AP reported on August 14, 2026 that two UAE ADNOC tankers were hit by drones while transiting the Strait of Hormuz, with no casualties, underscoring ongoing danger to shipping. AP also reported that USS George Washington is heading toward the Middle East while USS Abraham Lincoln remains tied to Iran operations, indicating two U.S. carriers in or moving to theater. For current U.S. troop presence tied to the active shipping-protection mission, the Pentagon\u2019s May 5 Project Freedom briefing said the force comprised over 15,000 U.S. service members. For confirmed cumulative war baselines still visible in official material, CENTCOM\u2019s April 6 fact sheet listed 13,000-plus targets struck, and Reuters on July 22 said the war had caused 18 U.S. service-member deaths.",
   "briefings": [
     {
       "date": "2026-08-14",
       "day": 167,
-      "summary": "Confirmed reporting still points to the last widely published cumulative war tolls from June: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while Al Jazeera\u2019s June 10 tracker lists 26 Israelis killed. AP\u2019s July 13 Pentagon-based casualty update kept the official Operation Epic Fury U.S. death tally at 14, and AP later reported on July 28 that four additional U.S. deaths from renewed fighting were shifted into a separate Pentagon 'Overseas Operations' category after Epic Fury was deemed ended. Official U.S. fact sheets from April 6 still provide the clearest strike total at 13,000+ targets struck. Today\u2019s key development is maritime escalation: AP reports two UAE-linked tankers were hit by drones in the Strait of Hormuz with no injuries, while Hegseth said the U.S. could sustain the blockade indefinitely."
+      "summary": "Confirmed reporting available today points to a continued maritime phase rather than a clearly updated full-war casualty picture. AP reported on August 14, 2026 that two UAE ADNOC tankers were hit by drones while transiting the Strait of Hormuz, with no casualties, underscoring ongoing danger to shipping. AP also reported that USS George Washington is heading toward the Middle East while USS Abraham Lincoln remains tied to Iran operations, indicating two U.S. carriers in or moving to theater. For current U.S. troop presence tied to the active shipping-protection mission, the Pentagon\u2019s May 5 Project Freedom briefing said the force comprised over 15,000 U.S. service members. For confirmed cumulative war baselines still visible in official material, CENTCOM\u2019s April 6 fact sheet listed 13,000-plus targets struck, and Reuters on July 22 said the war had caused 18 U.S. service-member deaths."
     },
     {
       "date": "2026-08-13",
