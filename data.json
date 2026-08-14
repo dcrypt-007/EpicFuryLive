@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-14T05:02:25Z",
+  "lastUpdated": "2026-08-14T06:42:27Z",
   "dayCount": 167,
   "banner": {
-    "strikes": "~9,000",
-    "killed": "5,139+",
-    "cost": "$26.6B+"
+    "strikes": "~13,000",
+    "killed": "3,507+",
+    "cost": "$27.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "1",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$26.6 billion+",
-    "dailyBurnRate": "~$159M/day",
+    "totalCost": "$27.0 billion+",
+    "dailyBurnRate": "~$162M/day",
     "daysOfOps": 167,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (U.S. Navy May 2026 Shipbuilding Plan: two carrier strike groups supported Operation Epic Fury.)"
+          "source": "LLM-verified (AP Aug. 13, 2026 reports USS Abraham Lincoln is in theater and USS George Washington has begun heading toward the Middle East; confirms 2 carrier strike groups involved/currently deploying to theater)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (Congressional Research Service report dated March 26, 2026 says an estimated 50,000 U.S. service members were deployed in and around the Middle East.)"
+          "source": "LLM-verified (No newer confirmed official troop total found; retaining existing confirmed reference level from prior database/war supplemental context only would be unsafe, but 50,000 remains the only established figure referenced in official budgeting context. No fresher named-source current troop count found)"
         },
         {
           "id": "intel_cyber",
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-08-13",
-          "source": "LLM-verified (CENTCOM fact sheet confirms MQ-9 surveillance/attack drones employed, but accessible reporting only supports at least one active drone unit)"
+          "lastUpdated": "2026-08-14",
+          "source": "LLM-verified (CENTCOM fact sheets confirm MQ-9 surveillance and attack drones employed, but no updated numeric count of operational UAV units found beyond existing single-unit model assumption)"
         },
         {
           "id": "comms_space",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury Fact Sheet dated March 23, 2026 lists 9,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; April 6 sheet omitted combat-flights line, so latest explicit cumulative sorties figure found is 13,000+)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline reports UAE accused Iran of attacks on two ADNOC vessels in the Strait of Hormuz",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports renewed concern that Yemen fighting could reopen another front in the wider regional war",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports the US is considering sustaining an indefinite naval blockade of Iran",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Recent AP reporting says Iranian attacks have continued to target U.S.-allied Gulf states and shipping, including a UAE ship reportedly targeted by missile on Aug. 8, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran continues to condition any reopening of the Strait of Hormuz on U.S. concessions, according to AP reporting on Aug. 8 and Aug. 10, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Houthi maritime escalation is worsening, with AP and Al Jazeera reporting renewed attacks and blockade threats affecting Red Sea and Saudi-linked shipping",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran continues to insist the Strait of Hormuz will not reopen until U.S. conditions are met, according to AP and Al Jazeera reporting in early to mid-August 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-14T05:40:45Z",
+      "text": "<strong>North Korea fumes over upcoming US-South Korea military drills</strong> -- Pyongyang has accused the US of pushing the world &amp;#039;to the brink of nuclear war&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/14/north-korea-fumes-over-upcoming-us-south-korea-military-drills?traffic_source=rss"
+    },
+    {
       "time": "2026-08-14T01:09:44Z",
       "text": "<strong>Norway\u2019s FM tells Al Jazeera the US war on Iran was not \u2018smart\u2019</strong> -- Norway\u2019s FM Espen Barth Eide says the Iran war failed to achieve its initial aims and strengthened hardliners in Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss"
@@ -778,11 +783,6 @@
       "link": "https://www.aljazeera.com/news/2026/8/13/gaza-city-police-chief-killed-as-israel-pushes-on-with-deadly-strikes?traffic_source=rss"
     },
     {
-      "time": "2026-08-13T21:10:47Z",
-      "text": "<strong>Israeli strikes in Gaza kill two, including police chief</strong> -- Israeli drone strikes killed at least 2 people and wounded several others in Gaza on Thursday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-strikes-in-gaza-kill-two-including-police-chief?traffic_source=rss"
-    },
-    {
       "time": "2026-08-13T20:12:17Z",
       "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
@@ -801,6 +801,11 @@
       "time": "2026-08-11T19:15:48Z",
       "text": "<strong>In shattered Cali, residents search for loved ones and signs of hope</strong> -- Most deaths from the magnitude-7.4 quake were reported in Cali, Colombia\u2019s third-most populous city, as crews search collapsed buildings for those still trapped. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/videos/ckge0e0g95no?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-13T21:10:47Z",
+      "text": "<strong>Israeli strikes in Gaza kill two, including police chief</strong> -- Israeli drone strikes killed at least 2 people and wounded several others in Gaza on Thursday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-strikes-in-gaza-kill-two-including-police-chief?traffic_source=rss"
     },
     {
       "time": "2026-08-12T16:14:08Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-13T12:30:08Z",
       "text": "<strong>Falling Danube flow forces shutdown of Romania\u2019s sole nuclear plant</strong> -- Romania had tried to avert a total shutdown of the plant, which usually generates a fifth of the country&amp;#039;s electricity. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/13/falling-danube-flow-forces-shutdown-of-romanias-sole-nuclear-plant?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-13T16:20:41Z",
-      "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "North Korea fumes over upcoming US-South Korea military drills",
+      "description": "Pyongyang has accused the US of pushing the world &#039;to the brink of nuclear war&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/8/14/north-korea-fumes-over-upcoming-us-south-korea-military-drills?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-14T05:40:45Z",
+      "tier": 2
+    },
+    {
       "title": "Norway\u2019s FM tells Al Jazeera the US war on Iran was not \u2018smart\u2019",
       "description": "Norway\u2019s FM Espen Barth Eide says the Iran war failed to achieve its initial aims and strengthened hardliners in Tehran.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/14/aje-onl-nf_norways-fm-us-war-on-iran-was-not-smart-130826?traffic_source=rss",
@@ -1253,14 +1261,6 @@
       "tier": 2
     },
     {
-      "title": "Israeli strikes in Gaza kill two, including police chief",
-      "description": "Israeli drone strikes killed at least 2 people and wounded several others in Gaza on Thursday.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-strikes-in-gaza-kill-two-including-police-chief?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-13T21:10:47Z",
-      "tier": 2
-    },
-    {
       "title": "Palestinians told to leave homes in village where Israeli settlers besieged houses",
       "description": "The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks.",
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss",
@@ -1293,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting remains patchy and much of the available sourced data is months old rather than current. The clearest official figure I found is a March 23, 2026 Pentagon fact sheet stating Operation Epic Fury had struck more than 9,000 targets and flown more than 9,000 combat flights by that date. For casualties, Reuters\u2019 April 4, 2026 factbox cited HRANA as reporting 3,531 killed in Iran, including 1,607 civilians, while the Red Cross/Red Crescent federation said at least 20,000 had been injured. For U.S. losses, I found one clearly confirmed Pentagon-linked death notice: Sgt. Benjamin N. Pennington, who died of wounds after the March 1 attack on Prince Sultan Air Base. Today\u2019s confirmed developments indicate the conflict is still regionally destabilizing: AP reports Yemen is sliding toward renewed war, Al Jazeera reports Hegseth says the U.S. blockade can be sustained indefinitely, and the UAE has accused Iran of attacking two ADNOC vessels in the Strait of Hormuz.",
+  "summary": "Confirmed reporting available today points to a still-active but politically unsettled conflict: AP reports the Pentagon now separates renewed July fighting from the original Operation Epic Fury casualty category, while the cumulative official US war death toll reported by AP and Al Jazeera stands at 18. Al Jazeera\u2019s running tracker still lists 3,468 killed in Iran and 26 killed in Israel, and the latest official CENTCOM fact sheet located gives 13,000+ targets struck and 13,000+ combat flights by early April. AP also reports USS George Washington is now heading toward the Middle East while USS Abraham Lincoln remains long deployed there, indicating continued heavy US naval commitment as blockade operations and regional spillover risks persist.",
   "briefings": [
     {
       "date": "2026-08-14",
       "day": 167,
-      "summary": "Confirmed reporting remains patchy and much of the available sourced data is months old rather than current. The clearest official figure I found is a March 23, 2026 Pentagon fact sheet stating Operation Epic Fury had struck more than 9,000 targets and flown more than 9,000 combat flights by that date. For casualties, Reuters\u2019 April 4, 2026 factbox cited HRANA as reporting 3,531 killed in Iran, including 1,607 civilians, while the Red Cross/Red Crescent federation said at least 20,000 had been injured. For U.S. losses, I found one clearly confirmed Pentagon-linked death notice: Sgt. Benjamin N. Pennington, who died of wounds after the March 1 attack on Prince Sultan Air Base. Today\u2019s confirmed developments indicate the conflict is still regionally destabilizing: AP reports Yemen is sliding toward renewed war, Al Jazeera reports Hegseth says the U.S. blockade can be sustained indefinitely, and the UAE has accused Iran of attacking two ADNOC vessels in the Strait of Hormuz."
+      "summary": "Confirmed reporting available today points to a still-active but politically unsettled conflict: AP reports the Pentagon now separates renewed July fighting from the original Operation Epic Fury casualty category, while the cumulative official US war death toll reported by AP and Al Jazeera stands at 18. Al Jazeera\u2019s running tracker still lists 3,468 killed in Iran and 26 killed in Israel, and the latest official CENTCOM fact sheet located gives 13,000+ targets struck and 13,000+ combat flights by early April. AP also reports USS George Washington is now heading toward the Middle East while USS Abraham Lincoln remains long deployed there, indicating continued heavy US naval commitment as blockade operations and regional spillover risks persist."
     },
     {
       "date": "2026-08-13",
