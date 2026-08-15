@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-15T11:33:40Z",
+  "lastUpdated": "2026-08-15T12:59:10Z",
   "dayCount": 168,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "3,523+",
-    "cost": "$28.6B+"
+    "strikes": "~13,000",
+    "killed": "3,536+",
+    "cost": "$27.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$28.6 billion+",
-    "dailyBurnRate": "~$170M/day",
+    "totalCost": "$27.4 billion+",
+    "dailyBurnRate": "~$163M/day",
     "daysOfOps": 168,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (AP, Aug. 13, 2026: USS George Washington to replace USS Abraham Lincoln as one of two U.S. carriers now stationed in the Middle East)"
+          "source": "LLM-verified (AP on August 15, 2026 reports USS Abraham Lincoln in the Middle East while USS George Washington is en route to replace it, implying 1 currently deployed carrier strike group in theater)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet: The First 29 Days, dated March 28, 2026, lists 11,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists 11,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 168 days",
-        "cost": "$2,352,000,000"
+        "detail": "$7,000,000/day \u00d7 168 days",
+        "cost": "$1,176,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 13-15, 2026 reports prolonged U.S. naval strain, with USS George Washington moving toward the Middle East to relieve the long-deployed USS Abraham Lincoln.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 14-15, 2026 reports renewed shipping-security risk in the Strait of Hormuz after drone attacks on two UAE ADNOC tankers.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 15, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Al Jazeera reported on August 14, 2026 that US Defense Secretary Pete Hegseth said the United States could sustain an 'indefinite' blockade against Iran.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on July 22 reported Iran\u2019s Health Ministry said renewed U.S. attacks since late June had killed 53 people and injured at least 590, while total U.S. personnel killed during the war had risen to 18 according to the U.S. military; however, AP later said the Pentagon split post-Epic Fury casualties into a separate category, so they are not included in the official Operation Epic Fury tally used above.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 13 reported Defense Secretary Pete Hegseth said the U.S. Navy can maintain the blockade on Iranian ports 'indefinitely,' while USS George Washington is moving toward the Middle East to replace USS Abraham Lincoln as one of two U.S. carriers in theater.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-15T11:30:00Z",
+      "text": "<strong>Is China seeking to copy Iran\u2019s Strait of Hormuz blockade around Taiwan?</strong> -- Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss"
+    },
+    {
       "time": "2026-08-15T11:19:56Z",
       "text": "<strong>Aftermath of deadly Indonesia earthquake</strong> -- Dozens of people have been killed after a 7.7-magnitude earthquake off Indonesia\u2019s Flores Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/15/aftermath-of-deadly-indonesia-earthquake?traffic_source=rss"
@@ -783,6 +788,16 @@
       "link": "https://www.aljazeera.com/news/2026/8/15/iran-says-no-decision-yet-on-a-return-to-talks-with-the-us?traffic_source=rss"
     },
     {
+      "time": "2026-08-15T12:25:11Z",
+      "text": "<strong>Eleven killed in Israeli strikes on southern Lebanon, authorities say</strong> -- Israel&#x27;s military said it had struck &quot;Hezbollah terror infrastructure&quot; in response to what it described as an earlier action against its soldiers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-14T17:03:17Z",
+      "text": "<strong>Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers</strong> -- Two families have been trapped in their homes in the occupied West Bank for several days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-15T03:52:08Z",
       "text": "<strong>Did the US really destroy Iran\u2019s ballistic missile capability?</strong> -- The US claims it destroyed Iran\u2019s missile capability, but a former White House adviser calls that a \u201cpipe dream&amp;quot;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss"
@@ -791,11 +806,6 @@
       "time": "2026-08-15T11:24:24Z",
       "text": "<strong>Seven killed in Israeli strike on southern Lebanon, country&#x27;s PM says</strong> -- Among those killed in the strike on Ansar included three children and two women, state media reports. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-14T17:03:17Z",
-      "text": "<strong>Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers</strong> -- Two families have been trapped in their homes in the occupied West Bank for several days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-15T02:25:09Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-13T20:12:17Z",
       "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-13T19:46:27Z",
-      "text": "<strong>Romania shuts only nuclear plant as heat causes huge drop in Danube River level</strong> -- The Cernavod\u0103 plant, which produces 20% of Romania&#x27;s electricity, is not expected to be restarted within the next 10 days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqlxpq5q799o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-14T08:02:35Z",
-      "text": "<strong>Teens who fled Venezuela after deadly quakes caught in another disaster in Colombia</strong> -- Deivi Delf\u00edn and his brother moved to Colombia after a quake in Venezuela killed their mother, but were caught in another deadly disaster. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c9v42m3430vo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,19 @@
   ],
   "newsFeed": [
     {
-      "title": "Seven killed in Israeli strike on southern Lebanon, country's PM says",
-      "description": "Among those killed in the strike on Ansar included three children and two women, state media reports.",
+      "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
+      "description": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as an earlier action against its soldiers.",
       "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-08-15T11:24:24Z",
+      "time": "2026-08-15T12:25:11Z",
+      "tier": 2
+    },
+    {
+      "title": "Is China seeking to copy Iran\u2019s Strait of Hormuz blockade around Taiwan?",
+      "description": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats.",
+      "link": "https://www.aljazeera.com/video/101-east/2026/8/15/is-china-seeking-to-copy-irans-strait-of-hormuz-blockade-around-taiwan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-15T11:30:00Z",
       "tier": 2
     },
     {
@@ -1269,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Did the US really destroy Iran\u2019s ballistic missile capability?",
-      "description": "The US claims it destroyed Iran\u2019s missile capability, but a former White House adviser calls that a \u201cpipe dream&quot;.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/15/08-11-2026-tia-us-iran-munitions-quotable?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-15T03:52:08Z",
-      "tier": 2
-    },
-    {
       "title": "Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers",
       "description": "Two families have been trapped in their homes in the occupied West Bank for several days.",
       "link": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss",
@@ -1285,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates the war remains active but somewhat less intense than in July: AP reported on August 13-15, 2026 that the USS George Washington is moving toward the Middle East to replace the long-deployed USS Abraham Lincoln while the U.S. continues enforcing a blockade on Iranian ports, and AP on August 1 reported Trump said he would pause planned strikes if talks advance. For casualties, the latest clearly retrievable named-source cumulative figures found were still the June 2026 Al Jazeera/official tallies of 3,468 killed and more than 26,500 wounded in Iran, 26 Israelis killed, and 29 killed in Gulf states; no newer directly sourced official cumulative replacement for those totals was found in the retrieved materials.",
+  "summary": "Confirmed reporting available on August 15, 2026 still points to the last widely published cumulative Operation Epic Fury casualty baseline from June: Iran\u2019s Health Ministry figure of 3,468 killed and more than 26,500 wounded, 26 Israelis killed, 29 deaths in Gulf states, and 13 U.S. troops killed during Operation Epic Fury itself; AP\u2019s July 28 reporting indicates later U.S. casualties from renewed fighting were shifted by the Pentagon into a separate 'Overseas Operations' category rather than added to the Epic Fury tally. On the military side, the latest official CENTCOM fact sheets located still list 13,000+ targets struck as of April 6 and 11,000+ combat flights as of March 28, while current AP reporting indicates one U.S. carrier is presently in theater with a second carrier en route as relief rather than already deployed.",
   "briefings": [
     {
       "date": "2026-08-15",
       "day": 168,
-      "summary": "Confirmed reporting indicates the war remains active but somewhat less intense than in July: AP reported on August 13-15, 2026 that the USS George Washington is moving toward the Middle East to replace the long-deployed USS Abraham Lincoln while the U.S. continues enforcing a blockade on Iranian ports, and AP on August 1 reported Trump said he would pause planned strikes if talks advance. For casualties, the latest clearly retrievable named-source cumulative figures found were still the June 2026 Al Jazeera/official tallies of 3,468 killed and more than 26,500 wounded in Iran, 26 Israelis killed, and 29 killed in Gulf states; no newer directly sourced official cumulative replacement for those totals was found in the retrieved materials."
+      "summary": "Confirmed reporting available on August 15, 2026 still points to the last widely published cumulative Operation Epic Fury casualty baseline from June: Iran\u2019s Health Ministry figure of 3,468 killed and more than 26,500 wounded, 26 Israelis killed, 29 deaths in Gulf states, and 13 U.S. troops killed during Operation Epic Fury itself; AP\u2019s July 28 reporting indicates later U.S. casualties from renewed fighting were shifted by the Pentagon into a separate 'Overseas Operations' category rather than added to the Epic Fury tally. On the military side, the latest official CENTCOM fact sheets located still list 13,000+ targets struck as of April 6 and 11,000+ combat flights as of March 28, while current AP reporting indicates one U.S. carrier is presently in theater with a second carrier en route as relief rather than already deployed."
     },
     {
       "date": "2026-08-14",
