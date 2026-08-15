@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-15T22:38:03Z",
+  "lastUpdated": "2026-08-15T23:34:07Z",
   "dayCount": 168,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "3,202+",
-    "cost": "$38.3B+"
+    "strikes": "~13,000",
+    "killed": "3,508+",
+    "cost": "$38.0B+"
   },
   "humanCost": {
-    "iranDeaths": "1,937",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "25,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1250",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$38.3 billion+",
-    "dailyBurnRate": "~$228M/day",
+    "totalCost": "$38.0 billion+",
+    "dailyBurnRate": "~$226M/day",
     "daysOfOps": 168,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (AP News on Aug. 13-15, 2026 reported USS George Washington is heading to the Middle East to relieve USS Abraham Lincoln, indicating two U.S. carrier strike groups are involved in theater during the transition.)"
+          "source": "LLM-verified (AP/Al Jazeera reporting indicates USS Washington is expected to relieve USS Abraham Lincoln, implying 2 U.S. carrier strike groups currently tied to theater presence)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (AP News on March 24, 2026 reported the U.S. military was preparing to send at least 1,000 more troops to supplement 'some 50,000 troops already in the Mideast'; AP on April 15 also said the military says some 50,000 are supporting the war effort.)"
+          "source": "LLM-verified (Reuters-reported figure referenced by Al Jazeera on March 19, 2026: CENTCOM oversees roughly 50,000 U.S. soldiers in the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury Fact Sheet: The First 29 Days, dated March 28, 2026, lists 'Combat Flights: 11,000+'.)"
+          "source": "LLM-verified (CENTCOM Fact Sheet dated March 18, 2026 lists 'Combat Flights: 8,000+'; later IDF figure is joint/Israeli and not cleanly U.S.-only)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Israel carried out deadly strikes in southern Lebanon on August 15, 2026, underscoring continuing regional spillover despite the June truce framework.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "A U.S. carrier transition is underway, with USS Washington expected to relieve USS Abraham Lincoln in the Middle East amid continuing Iran-war tensions.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 15, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP Aug. 13-15, 2026 reporting says the U.S. naval blockade of Iranian ports remains in place while carriers rotate, and regional escalation risk persists via Houthi attacks and possible Gulf energy/shipping retaliation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 14, 2026 reported the UAE blamed Iran for drone attacks on two state-linked tankers transiting the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 10, 2026 reported Iran said it will not reopen the Strait of Hormuz until US conditions are met.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1277,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting remains fragmented. The latest official Pentagon/DCAS figure tied specifically to Operation Epic Fury is 14 U.S. military deaths as of late July 2026, after four later July deaths were shifted into a separate 'Overseas Operations' category by the Pentagon. The best confirmed Iranian cumulative war figures I found remain older Ministry of Health statements relayed by Al Jazeera: 1,937 killed and almost 25,000 injured by March 27, with officials earlier saying most of 1,250 confirmed dead were civilians. For military activity, the latest official U.S. fact sheet located still lists 11,000+ targets struck and 11,000+ combat flights by March 28, while current naval reporting indicates a two-carrier transition as USS George Washington moves to relieve USS Abraham Lincoln in the Middle East. Several requested fields could not be updated because no current confirmed cumulative number from named official or major-wire sources was found.",
+  "summary": "Confirmed reporting available today still points to no authoritative public update beyond the main mid-war tallies for several database fields. The clearest confirmed cumulative numbers found were Iran Ministry of Health's 3,468 killed and more than 26,500 wounded in Iran, the Pentagon/AP official U.S. death toll of 14 for the original Operation Epic Fury casualty category, Israel Ministry of Health's 26 Israeli deaths, and CENTCOM's April 6 fact sheet showing 13,000+ targets struck. Today's credible headlines also confirm that Qatar denied detaining three Iranian pilots and that USS Washington is expected to relieve USS Abraham Lincoln in the Middle East, while Israel's strikes in southern Lebanon show the conflict's regional aftershocks continue.",
   "briefings": [
     {
       "date": "2026-08-15",
       "day": 168,
-      "summary": "Confirmed reporting remains fragmented. The latest official Pentagon/DCAS figure tied specifically to Operation Epic Fury is 14 U.S. military deaths as of late July 2026, after four later July deaths were shifted into a separate 'Overseas Operations' category by the Pentagon. The best confirmed Iranian cumulative war figures I found remain older Ministry of Health statements relayed by Al Jazeera: 1,937 killed and almost 25,000 injured by March 27, with officials earlier saying most of 1,250 confirmed dead were civilians. For military activity, the latest official U.S. fact sheet located still lists 11,000+ targets struck and 11,000+ combat flights by March 28, while current naval reporting indicates a two-carrier transition as USS George Washington moves to relieve USS Abraham Lincoln in the Middle East. Several requested fields could not be updated because no current confirmed cumulative number from named official or major-wire sources was found."
+      "summary": "Confirmed reporting available today still points to no authoritative public update beyond the main mid-war tallies for several database fields. The clearest confirmed cumulative numbers found were Iran Ministry of Health's 3,468 killed and more than 26,500 wounded in Iran, the Pentagon/AP official U.S. death toll of 14 for the original Operation Epic Fury casualty category, Israel Ministry of Health's 26 Israeli deaths, and CENTCOM's April 6 fact sheet showing 13,000+ targets struck. Today's credible headlines also confirm that Qatar denied detaining three Iranian pilots and that USS Washington is expected to relieve USS Abraham Lincoln in the Middle East, while Israel's strikes in southern Lebanon show the conflict's regional aftershocks continue."
     },
     {
       "date": "2026-08-14",
