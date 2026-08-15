@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-15T14:39:12Z",
+  "lastUpdated": "2026-08-15T15:34:31Z",
   "dayCount": 168,
   "banner": {
-    "strikes": "~13,000",
+    "strikes": "~12,300",
     "killed": "4,888+",
-    "cost": "$37.8B+"
+    "cost": "$38.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$37.8 billion+",
-    "dailyBurnRate": "~$225M/day",
+    "totalCost": "$38.5 billion+",
+    "dailyBurnRate": "~$229M/day",
     "daysOfOps": 168,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (AP, Aug. 14-15, 2026: USS Abraham Lincoln is one of two aircraft carriers currently deployed in the Middle East, with USS George Washington heading to replace it)"
+          "source": "LLM-verified (AP News (Aug. 14-15, 2026) reports two U.S. aircraft carriers currently deployed in the Middle East: USS Abraham Lincoln and USS George Washington replacing/alongside it.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 2,
+          "quantity": 11,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (War Department article on Ford CSG return says USS Bainbridge and USS Mahan joined the Ford Strike Group in Epic Fury)"
+          "source": "LLM-verified (AP News (April 16, 2026) reports the Navy had 16 warships in the Middle East, including 11 destroyers.)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (Senate Armed Services Committee hearing transcript, May 14, 2026: CENTCOM commander testified on behalf of '50,000-plus' service members deployed to the Central Region)"
+          "source": "LLM-verified (Congressional Research Service report 'U.S. Conflict with Iran' (Mar. 26, 2026) says an estimated 50,000 U.S. service members were deployed in and around the Middle East.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (AP, Aug. 13, 2026, citing Abraham Lincoln CSG social media: more than 10,000 aircraft flights by the strike group; not theater-wide fighter-only sorties, but this is the closest confirmed cumulative aviation activity figure found. Use with caution.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights.)"
         },
         {
           "id": "interceptors",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "2 \u00d7 $240,000/day \u00d7 168 days",
-        "cost": "$80,640,000"
+        "detail": "11 \u00d7 $240,000/day \u00d7 168 days",
+        "cost": "$443,520,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,000 \u00d7 $100,000 each",
-        "cost": "$1,000,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the USS George Washington is moving toward the Middle East to replace the long-deployed USS Abraham Lincoln, indicating sustained U.S. naval posture rather than de-escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. Navy currently has more than 15 warships, including two aircraft carriers and an amphibious assault ship, in the Arabian Sea enforcing the blockade.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 15 that a vessel owned by ADNOC was attacked in the Strait of Hormuz; no injuries were reported.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 15, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Trump said he will declare the Strait of Hormuz a US 'territory' amid ceasefire talks, according to today's Al Jazeera headline",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported today, August 14, 2026, that U.S.-Iran talks remain stalled and Washington is expanding diplomatic outreach to additional European intermediaries.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 11, 2026 that Houthi attacks in the Bab el-Mandeb killed six people, underscoring spillover risks to Red Sea shipping.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera on July 17 reported Iran said 38 additional civilians had been killed and more than 400 injured since fighting resumed after June 22, indicating continued risk despite the earlier ceasefire and claimed end of Operation Epic Fury.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -779,7 +779,7 @@
     },
     {
       "time": "2026-08-15T07:18:13Z",
-      "text": "<strong>Israeli strikes kill nine in southern Lebanon as attacks intensify</strong> -- Deadliest Israeli attack in Lebanon since June agreements significantly reduced hostilities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Israeli strikes kill 11 in southern Lebanon as attacks intensify</strong> -- Hezbollah has warned that Israel\u2019s attacks would be met with an &amp;#039;appropriate response&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss"
     },
     {
@@ -1261,8 +1261,8 @@
       "tier": 2
     },
     {
-      "title": "Israeli strikes kill nine in southern Lebanon as attacks intensify",
-      "description": "Deadliest Israeli attack in Lebanon since June agreements significantly reduced hostilities.",
+      "title": "Israeli strikes kill 11 in southern Lebanon as attacks intensify",
+      "description": "Hezbollah has warned that Israel\u2019s attacks would be met with an &#039;appropriate response&#039;.",
       "link": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-15T07:18:13Z",
@@ -1277,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today points to continued regional spillover rather than a newly published official cumulative war ledger. AP reported fresh maritime escalation in the Strait of Hormuz after the UAE blamed Iran for an attack on a bulk carrier, while the USS George Washington is heading to the Middle East to relieve the long-deployed USS Abraham Lincoln, leaving two U.S. carriers tied to the theater for now. For cumulative figures, the most solid accessible numbers remain earlier official and major-media tallies: CENTCOM's April 6 fact sheet said 13,000+ targets had been struck; AP reported on July 21 that the Pentagon death toll for U.S. forces had risen to 17; and Al Jazeera's June 7 tracker listed 3,468 deaths in Iran, 29 in Gulf states, and 26 Israelis killed.",
+  "summary": "Confirmed reporting indicates no authoritative newer casualty total has displaced the June 7 Al Jazeera benchmark of 3,468 deaths in Iran, 26 Israeli deaths and 29 Gulf-state deaths, while the official Pentagon/AP count for U.S. military deaths stands at 17 in the Iran war category. CENTCOM\u2019s latest official fact sheet located in this search remains the April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights. Today\u2019s confirmed developments center on maritime escalation rather than a new official casualty release: AP reports another vessel attack linked to the Hormuz crisis, continued U.S. blockade enforcement, and the movement of USS George Washington toward the theater while two U.S. carriers remain deployed.",
   "briefings": [
     {
       "date": "2026-08-15",
       "day": 168,
-      "summary": "Confirmed reporting available today points to continued regional spillover rather than a newly published official cumulative war ledger. AP reported fresh maritime escalation in the Strait of Hormuz after the UAE blamed Iran for an attack on a bulk carrier, while the USS George Washington is heading to the Middle East to relieve the long-deployed USS Abraham Lincoln, leaving two U.S. carriers tied to the theater for now. For cumulative figures, the most solid accessible numbers remain earlier official and major-media tallies: CENTCOM's April 6 fact sheet said 13,000+ targets had been struck; AP reported on July 21 that the Pentagon death toll for U.S. forces had risen to 17; and Al Jazeera's June 7 tracker listed 3,468 deaths in Iran, 29 in Gulf states, and 26 Israelis killed."
+      "summary": "Confirmed reporting indicates no authoritative newer casualty total has displaced the June 7 Al Jazeera benchmark of 3,468 deaths in Iran, 26 Israeli deaths and 29 Gulf-state deaths, while the official Pentagon/AP count for U.S. military deaths stands at 17 in the Iran war category. CENTCOM\u2019s latest official fact sheet located in this search remains the April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights. Today\u2019s confirmed developments center on maritime escalation rather than a new official casualty release: AP reports another vessel attack linked to the Hormuz crisis, continued U.S. blockade enforcement, and the movement of USS George Washington toward the theater while two U.S. carriers remain deployed."
     },
     {
       "date": "2026-08-14",
