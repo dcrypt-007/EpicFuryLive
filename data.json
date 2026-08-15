@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-08-15T12:59:10Z",
+  "lastUpdated": "2026-08-15T13:43:40Z",
   "dayCount": 168,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$27.4B+"
+    "strikes": "~13,500",
+    "killed": "56+",
+    "cost": "$34.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "39",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$27.4 billion+",
-    "dailyBurnRate": "~$163M/day",
+    "totalCost": "$34.9 billion+",
+    "dailyBurnRate": "~$208M/day",
     "daysOfOps": 168,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (AP on August 15, 2026 reports USS Abraham Lincoln in the Middle East while USS George Washington is en route to replace it, implying 1 currently deployed carrier strike group in theater)"
+          "source": "LLM-verified (CENTCOM transcript, May 4, 2026: 'two carrier strike groups' in/around the Strait; CENTCOM May 23 release names Abraham Lincoln CSG and George H.W. Bush CSG supporting mission.)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 50000,
+          "quantity": 15000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (AP reporting cites the U.S. military saying some 50,000 troops are supporting the war effort)"
+          "source": "LLM-verified (CENTCOM transcript, May 4, 2026: '15,000 service members' extending the defensive umbrella across the Strait of Hormuz.)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 24,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (Reuters, March 27, 2026, reported the US had fired over 850 Tomahawk cruise missiles in four weeks of war)"
+          "source": "LLM-verified (Defense Department transcript on initial major strike: submarine launched 'more than two dozen Tomahawk' missiles; using confirmed floor of 24 only.)"
         },
         {
           "id": "jdam",
@@ -235,7 +235,7 @@
           "id": "b2_sorties",
           "category": "B-2 Bomber Sorties",
           "unitCost": 5500000,
-          "quantity": 7,
+          "quantity": 37,
           "keywords": [
             "B-2 sortie",
             "B2 bomber sortie",
@@ -243,8 +243,8 @@
             "B-2 Spirit sortie",
             "bomber sortie"
           ],
-          "lastUpdated": "2026-08-14",
-          "source": "LLM-verified (Department of War briefing on strike on Iran nuclear sites described seven B-2 bombers participating; no confirmed cumulative sortie total found beyond this operation-linked figure)"
+          "lastUpdated": "2026-08-15",
+          "source": "LLM-verified (CENTCOM Operation Epic Fury page states B-2 team 'completed 37 sorties'.)"
         },
         {
           "id": "mop_bunker_busters",
@@ -261,13 +261,13 @@
             "deep penetration"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (DoD transcript on the U.S. strike on Fordow says the lead B-2 dropped two GBU-57 Massive Ordnance Penetrators; no newer cumulative total for Epic Fury was verified.)"
+          "source": "LLM-verified (Defense Department transcript: lead B-2 'dropped two GBU-57 Massive Ordnance Penetrator weapons' on Fordow.)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists 11,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM 2026 SASC Posture Statement: 'Across more than 10,200 sorties' during Operation Epic Fury.)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 300,
+          "quantity": 3000,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-08-15",
-          "source": "LLM-verified (Al Jazeera, May 23, 2026, citing Washington Post reporting: US launched 'more than 200' THAAD interceptors and 'more than 100' SM-3/SM-6 interceptors during the first 40 days; minimum confirmed combined total >300, so 300 used as conservative floor)"
+          "source": "LLM-verified (CENTCOM 2026 SASC Posture Statement: 'intercepted over 6,000 one-way attack drones and more than 1,500 ballistic missiles'; confirmed minimum combined total 7,500.)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 168 days",
-        "cost": "$1,176,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 168 days",
+        "cost": "$2,352,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "50,000 \u00d7 $500/day \u00d7 168 days",
-        "cost": "$4,200,000,000"
+        "detail": "15,000 \u00d7 $500/day \u00d7 168 days",
+        "cost": "$1,260,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "24 \u00d7 $2,000,000 each",
+        "cost": "$48,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -388,8 +388,8 @@
       },
       {
         "category": "B-2 Bomber Sorties",
-        "detail": "7 \u00d7 $5,500,000 each",
-        "cost": "$38,500,000"
+        "detail": "37 \u00d7 $5,500,000 each",
+        "cost": "$203,500,000"
       },
       {
         "category": "GBU-57 MOP Bunker Busters",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "300 \u00d7 $4,000,000 each",
-        "cost": "$1,200,000,000"
+        "detail": "3,000 \u00d7 $4,000,000 each",
+        "cost": "$12,000,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -783,6 +783,16 @@
       "link": "https://www.aljazeera.com/news/2026/8/15/israeli-strike-kills-seven-in-south-lebanon-as-attacks-intensify?traffic_source=rss"
     },
     {
+      "time": "2026-08-15T13:38:53Z",
+      "text": "<strong>Eleven killed in Israeli strikes on southern Lebanon, authorities say</strong> -- Israel&#x27;s military said it had struck &quot;Hezbollah terror infrastructure&quot; in response to what it described as an earlier action against its soldiers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-14T17:03:17Z",
+      "text": "<strong>Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers</strong> -- Two families have been trapped in their homes in the occupied West Bank for several days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-15T04:24:02Z",
       "text": "<strong>Iran says no decision yet on a return to talks with the US</strong> -- FM Abbas Araghchi says Iran is working with Oman on routes, but Hormuz shipping depends on US meeting conditions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/15/iran-says-no-decision-yet-on-a-return-to-talks-with-the-us?traffic_source=rss"
@@ -791,11 +801,6 @@
       "time": "2026-08-15T12:25:11Z",
       "text": "<strong>Eleven killed in Israeli strikes on southern Lebanon, authorities say</strong> -- Israel&#x27;s military said it had struck &quot;Hezbollah terror infrastructure&quot; in response to what it described as an earlier action against its soldiers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-14T17:03:17Z",
-      "text": "<strong>Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers</strong> -- Two families have been trapped in their homes in the occupied West Bank for several days. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-15T03:52:08Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-14T21:50:46Z",
       "text": "<strong>Trump says he will declare Strait of Hormuz a US \u2018territory\u2019 amid Iran war</strong> -- Control over the strait has been a sticking point in the ongoing ceasefire negotiations between the US and Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/14/trump-says-he-will-declare-strait-of-hormuz-a-us-territory?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-13T20:12:17Z",
-      "text": "<strong>Palestinians told to leave homes in village where Israeli settlers besieged houses</strong> -- The mayor of Qusra says Israeli troops have been telling families to leave their houses, using some as barracks. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1217,7 +1217,7 @@
       "description": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as an earlier action against its soldiers.",
       "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-08-15T12:25:11Z",
+      "time": "2026-08-15T13:38:53Z",
       "tier": 2
     },
     {
@@ -1269,14 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "Iran says no decision yet on a return to talks with the US",
-      "description": "FM Abbas Araghchi says Iran is working with Oman on routes, but Hormuz shipping depends on US meeting conditions.",
-      "link": "https://www.aljazeera.com/news/2026/8/15/iran-says-no-decision-yet-on-a-return-to-talks-with-the-us?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-15T04:24:02Z",
-      "tier": 2
-    },
-    {
       "title": "Activists try to deliver aid to Palestinians in homes besieged by Israeli settlers",
       "description": "Two families have been trapped in their homes in the occupied West Bank for several days.",
       "link": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss",
@@ -1285,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available on August 15, 2026 still points to the last widely published cumulative Operation Epic Fury casualty baseline from June: Iran\u2019s Health Ministry figure of 3,468 killed and more than 26,500 wounded, 26 Israelis killed, 29 deaths in Gulf states, and 13 U.S. troops killed during Operation Epic Fury itself; AP\u2019s July 28 reporting indicates later U.S. casualties from renewed fighting were shifted by the Pentagon into a separate 'Overseas Operations' category rather than added to the Epic Fury tally. On the military side, the latest official CENTCOM fact sheets located still list 13,000+ targets struck as of April 6 and 11,000+ combat flights as of March 28, while current AP reporting indicates one U.S. carrier is presently in theater with a second carrier en route as relief rather than already deployed.",
+  "summary": "Confirmed reporting indicates Operation Epic Fury as originally defined by CENTCOM has ended, though renewed U.S.-Iran fighting resumed in late July after the June truce collapsed. The clearest confirmed official cumulative operational figures located are CENTCOM's 'over 13,500 strikes' and 'more than 10,200 sorties,' plus 'over 6,000' drone intercepts and 'more than 1,500' ballistic-missile intercepts. AP's latest confirmed U.S. death toll is 17 service members, while AP reported Israel's war death toll at 39 in May. Current cumulative Iranian death, civilian-only death, wounded, and Gulf-state death totals could not be verified to the required standard from the sources reviewed, so those fields are left null.",
   "briefings": [
     {
       "date": "2026-08-15",
       "day": 168,
-      "summary": "Confirmed reporting available on August 15, 2026 still points to the last widely published cumulative Operation Epic Fury casualty baseline from June: Iran\u2019s Health Ministry figure of 3,468 killed and more than 26,500 wounded, 26 Israelis killed, 29 deaths in Gulf states, and 13 U.S. troops killed during Operation Epic Fury itself; AP\u2019s July 28 reporting indicates later U.S. casualties from renewed fighting were shifted by the Pentagon into a separate 'Overseas Operations' category rather than added to the Epic Fury tally. On the military side, the latest official CENTCOM fact sheets located still list 13,000+ targets struck as of April 6 and 11,000+ combat flights as of March 28, while current AP reporting indicates one U.S. carrier is presently in theater with a second carrier en route as relief rather than already deployed."
+      "summary": "Confirmed reporting indicates Operation Epic Fury as originally defined by CENTCOM has ended, though renewed U.S.-Iran fighting resumed in late July after the June truce collapsed. The clearest confirmed official cumulative operational figures located are CENTCOM's 'over 13,500 strikes' and 'more than 10,200 sorties,' plus 'over 6,000' drone intercepts and 'more than 1,500' ballistic-missile intercepts. AP's latest confirmed U.S. death toll is 17 service members, while AP reported Israel's war death toll at 39 in May. Current cumulative Iranian death, civilian-only death, wounded, and Gulf-state death totals could not be verified to the required standard from the sources reviewed, so those fields are left null."
     },
     {
       "date": "2026-08-14",
