@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-08-16T06:59:09Z",
+  "lastUpdated": "2026-08-16T07:45:13Z",
   "dayCount": 169,
   "banner": {
-    "strikes": "~13,000",
+    "strikes": "~12,300",
     "killed": "3,536+",
-    "cost": "$38.3B+"
+    "cost": "$38.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "12",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$38.3 billion+",
-    "dailyBurnRate": "~$227M/day",
+    "totalCost": "$38.6 billion+",
+    "dailyBurnRate": "~$228M/day",
     "daysOfOps": 169,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-16",
-          "source": "LLM-verified (AP on August 15, 2026 reported USS George Washington is heading to replace USS Abraham Lincoln in the Middle East, indicating two carrier strike groups in transition/support for theater operations.)"
+          "source": "LLM-verified (AP, March 2, 2026 background and AP reporting on Aug. 15, 2026 indicate two U.S. carrier strike groups were/are deployed for the Iran theater, with USS George Washington replacing USS Abraham Lincoln.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-16",
-          "source": "LLM-verified (AP on March 24-25, 2026 repeatedly reported about 50,000 U.S. troops already in the Middle East, before additional deployments.)"
+          "source": "LLM-verified (AP, March 24, 2026: ceasefire-plan reporting said the U.S. was sending 1,000 more troops to supplement 'some 50,000 troops already in the Mideast'.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10200,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-16",
-          "source": "LLM-verified (White House release, April 8, 2026: 'Over 10,200 total air sorties flown')"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet, U.S. Department of Defense/CENTCOM, April 1, 2026: 'Combat Flights: 13,000+')"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,200 \u00d7 $100,000 each",
-        "cost": "$1,020,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the Pentagon split renewed July U.S.-Iran casualties into a new 'Overseas Operations' category after declaring Operation Epic Fury concluded, complicating direct cumulative comparisons.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and BBC/Al Jazeera reported deadly Israeli strikes in southern Lebanon on August 15, 2026, underscoring regional spillover despite prior truce efforts.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported continued tensions around the Strait of Hormuz and ongoing diplomacy involving Iran and Oman.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 16, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera report the USS George Washington is moving to the Middle East to relieve USS Abraham Lincoln amid reported mental health and supply issues aboard Lincoln.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC and Al Jazeera headline reporting indicates Israel-Lebanon violence is continuing, raising risk of broader regional escalation alongside the Iran conflict.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 14-15, 2026 reports the U.S. has reimposed a blockade on Iranian ports in the Strait of Hormuz while rotating carriers, indicating the conflict remains active despite reduced direct hostilities.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran-backed Houthi attacks in the Bab el-Mandeb/Red Sea killed six on August 11, 2026, according to AP, highlighting widening maritime spillover risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -793,14 +793,19 @@
       "link": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-15T20:21:14Z",
-      "text": "<strong>Eleven killed in Israeli strikes on southern Lebanon, authorities say</strong> -- Israel&#x27;s military said it had struck &quot;Hezbollah terror infrastructure&quot; in response to what it described as earlier action against its soldiers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss"
+      "time": "2026-08-16T07:04:17Z",
+      "text": "<strong>Twelve killed as Polish bus veers off Hungarian motorway</strong> -- Dozens more are seriously injured after the tourist bus overturned in the early hours of Sunday morning. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-15T21:03:57Z",
       "text": "<strong>Qatar denies capturing three Iranian pilots after downing fighter jets</strong> -- Iran claims they have been held since Qatar downed two fighter jets at the start of the US-Iran war. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-15T20:21:14Z",
+      "text": "<strong>Eleven killed in Israeli strikes on southern Lebanon, authorities say</strong> -- Israel&#x27;s military said it had struck &quot;Hezbollah terror infrastructure&quot; in response to what it described as earlier action against its soldiers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-15T17:49:42Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-15T10:48:41Z",
       "text": "<strong>World Cup winner Ferran Torres joins Paris Saint-Germain from Barcelona</strong> -- The 26-year-old striker cost the Ligue 1 champions a reported 50 million euros ($58m) and has signed a five-year deal. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/8/15/world-cup-winner-ferran-torres-joins-paris-saint-germain-from-barcelona?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-15T10:18:40Z",
-      "text": "<strong>At scene of deadly Israeli strike on Lebanon home</strong> -- An overnight Israeli strike on a family home in Ansar, southern Lebanon, killed at least seven people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/15/at-scene-of-deadly-israeli-strike-on-lebanon-home?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Twelve killed as Polish bus veers off Hungarian motorway",
+      "description": "Dozens more are seriously injured after the tourist bus overturned in the early hours of Sunday morning.",
+      "link": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-16T07:04:17Z",
+      "tier": 2
+    },
+    {
       "title": "Russian strikes kill Ukrainian woman as NATO jet downs drone over Romania",
       "description": "Romania&#039;s Defence Ministry didn&#039;t specify origin of the drone but has previously blamed Russia for similar incidents.",
       "link": "https://www.aljazeera.com/news/2026/8/16/russian-strikes-kill-ukrainian-woman-as-nato-jet-downs-drone-over-romania?traffic_source=rss",
@@ -1293,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed publicly available figures remain largely unchanged from spring reporting: Iran\u2019s Health Ministry figure most recently surfaced in Al Jazeera\u2019s June 10 tracker at 3,468 killed and more than 26,500 wounded, AP reported on July 13 that the U.S. military death toll had risen to 14, and Al Jazeera\u2019s June 10 tracker listed 26 Israelis killed and 28 deaths in Gulf states. Official U.S. operational data located today remains sparse beyond the April 6 Pentagon fact sheet showing 13,000+ targets struck and a White House April 8 release citing more than 10,200 total air sorties. Today's confirmed developments are centered on the wider regional spillover rather than new warwide casualty totals: Israeli strikes killed 11 in southern Lebanon, Hormuz talks are continuing, and Qatar publicly denied holding three Iranian pilots.",
+  "summary": "Confirmed reporting available today is fragmentary. The clearest updated official figures I could verify are 14 U.S. military deaths in the Iran war from AP on July 13, 2026, and 12,300+ targets struck plus 13,000+ combat flights from the April 1, 2026 Operation Epic Fury fact sheet. AP also reported roughly 50,000 U.S. troops in the region in late March and continuing two-carrier presence, with USS George Washington moving to replace USS Abraham Lincoln as of August 15, 2026. Regional tensions remain active: AP, Al Jazeera, and BBC all reported deadly Israeli strikes in southern Lebanon on August 15, while talks over the Strait of Hormuz continue.",
   "briefings": [
     {
       "date": "2026-08-16",
       "day": 169,
-      "summary": "Confirmed publicly available figures remain largely unchanged from spring reporting: Iran\u2019s Health Ministry figure most recently surfaced in Al Jazeera\u2019s June 10 tracker at 3,468 killed and more than 26,500 wounded, AP reported on July 13 that the U.S. military death toll had risen to 14, and Al Jazeera\u2019s June 10 tracker listed 26 Israelis killed and 28 deaths in Gulf states. Official U.S. operational data located today remains sparse beyond the April 6 Pentagon fact sheet showing 13,000+ targets struck and a White House April 8 release citing more than 10,200 total air sorties. Today's confirmed developments are centered on the wider regional spillover rather than new warwide casualty totals: Israeli strikes killed 11 in southern Lebanon, Hormuz talks are continuing, and Qatar publicly denied holding three Iranian pilots."
+      "summary": "Confirmed reporting available today is fragmentary. The clearest updated official figures I could verify are 14 U.S. military deaths in the Iran war from AP on July 13, 2026, and 12,300+ targets struck plus 13,000+ combat flights from the April 1, 2026 Operation Epic Fury fact sheet. AP also reported roughly 50,000 U.S. troops in the region in late March and continuing two-carrier presence, with USS George Washington moving to replace USS Abraham Lincoln as of August 15, 2026. Regional tensions remain active: AP, Al Jazeera, and BBC all reported deadly Israeli strikes in southern Lebanon on August 15, while talks over the Strait of Hormuz continue."
     },
     {
       "date": "2026-08-15",
