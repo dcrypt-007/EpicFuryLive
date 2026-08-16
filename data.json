@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-16T13:44:52Z",
+  "lastUpdated": "2026-08-16T14:39:32Z",
   "dayCount": 169,
   "banner": {
     "strikes": "~12,300",
     "killed": "3,536+",
-    "cost": "$40.3B+"
+    "cost": "$39.1B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$40.3 billion+",
-    "dailyBurnRate": "~$238M/day",
+    "totalCost": "$39.1 billion+",
+    "dailyBurnRate": "~$231M/day",
     "daysOfOps": 169,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-16",
-          "source": "LLM-verified (AP on August 14, 2026 reported the USS Abraham Lincoln is one of two aircraft carriers currently deployed in the Middle East)"
+          "source": "LLM-verified (AP on August 16, 2026 reported USS Abraham Lincoln is in theater; AP on August 15, 2026 said USS George Washington is expected to replace Lincoln, implying one carrier strike group currently deployed in theater.)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-16",
-          "source": "LLM-verified (U.S. Department of Defense / CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet lists 'Combat Flights: 13,000+'; latest accessible official aggregate found, though not explicitly fighter-only.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 169 days",
-        "cost": "$2,366,000,000"
+        "detail": "$7,000,000/day \u00d7 169 days",
+        "cost": "$1,183,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reporting indicates continued strain around the Strait of Hormuz and ongoing U.S.-Iran diplomacy without a durable end to hostilities as of August 16, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and BBC/Al Jazeera reporting indicate continued Israeli strikes in southern Lebanon despite the June truce, with 11 killed on August 15, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthis launched new attacks on al-Makha and Marib, killing at least four and injuring eight, according to the Al Jazeera headline context provided.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 16, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Israel carried out deadly strikes in southern Lebanon on August 15, 2026, underscoring continuing regional spillover despite the June truce framework.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "A U.S. carrier transition is underway, with USS Washington expected to relieve USS Abraham Lincoln in the Middle East amid continuing Iran-war tensions.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported August 13-15, 2026 that USS George Washington is moving to the Middle East to relieve the long-deployed USS Abraham Lincoln amid concerns about crew strain and supply issues.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Qatar publicly denied Iran's claim that it is detaining three Iranian bomber pilots shot down in March, according to AP and Al Jazeera reporting on August 15, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1309,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in current searches did not establish newer official cumulative totals beyond the widely cited June 10, 2026 casualty tracker figures for Iran, Israel, Gulf-state deaths and Iranian wounded, while AP on July 13, 2026 raised the official U.S. military death toll to 14. The latest RSS headlines indicate the conflict remains regionally volatile, with new Houthi attacks in Yemen, continued U.S.-Iran tensions over the Strait of Hormuz, and renewed dispute involving Qatar and alleged Iranian pilots, but no newly confirmed official aggregate strike-usage or deployment totals were found for most cost-model fields.",
+  "summary": "As of August 16, 2026, the clearest confirmed official figures accessible in current reporting remain the Pentagon/DCAS tally of 14 U.S. troops killed in the Iran war and CENTCOM's April 1 Operation Epic Fury fact sheet listing 12,300+ targets struck and 13,000+ combat flights. AP also reports the USS Abraham Lincoln remains in theater while USS George Washington is expected to replace it, indicating one carrier strike group currently on station. Accessible searches did not yield up-to-date confirmed cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, Israeli deaths, Gulf-state deaths, or most weapons-expenditure fields, so those fields are left null rather than estimated.",
   "briefings": [
     {
       "date": "2026-08-16",
       "day": 169,
-      "summary": "Confirmed reporting available in current searches did not establish newer official cumulative totals beyond the widely cited June 10, 2026 casualty tracker figures for Iran, Israel, Gulf-state deaths and Iranian wounded, while AP on July 13, 2026 raised the official U.S. military death toll to 14. The latest RSS headlines indicate the conflict remains regionally volatile, with new Houthi attacks in Yemen, continued U.S.-Iran tensions over the Strait of Hormuz, and renewed dispute involving Qatar and alleged Iranian pilots, but no newly confirmed official aggregate strike-usage or deployment totals were found for most cost-model fields."
+      "summary": "As of August 16, 2026, the clearest confirmed official figures accessible in current reporting remain the Pentagon/DCAS tally of 14 U.S. troops killed in the Iran war and CENTCOM's April 1 Operation Epic Fury fact sheet listing 12,300+ targets struck and 13,000+ combat flights. AP also reports the USS Abraham Lincoln remains in theater while USS George Washington is expected to replace it, indicating one carrier strike group currently on station. Accessible searches did not yield up-to-date confirmed cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, Israeli deaths, Gulf-state deaths, or most weapons-expenditure fields, so those fields are left null rather than estimated."
     },
     {
       "date": "2026-08-15",
