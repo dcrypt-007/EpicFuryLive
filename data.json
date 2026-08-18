@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-18T15:46:18Z",
+  "lastUpdated": "2026-08-18T16:48:39Z",
   "dayCount": 171,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,524+",
-    "cost": "$34.2B+"
+    "strikes": "~12,300",
+    "killed": "3,537+",
+    "cost": "$35.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "28",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.2 billion+",
-    "dailyBurnRate": "~$200M/day",
+    "totalCost": "$35.6 billion+",
+    "dailyBurnRate": "~$208M/day",
     "daysOfOps": 171,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (AP Aug. 17, 2026 photo caption references USS Abraham Lincoln in theater; current confirmed count found for carrier strike groups in theater is one)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' deployed naval forces during Operation Epic Fury; no newer current official deployed count found)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (CENTCOM Fact Sheet dated March 28, 2026: 11,000+ combat flights; closest confirmed official sortie-style metric available)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 171 days",
-        "cost": "$1,197,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 171 days",
+        "cost": "$2,394,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Qatar publicly rejected Iranian claims about holding missing pilots, underscoring ongoing information warfare and regional diplomatic friction.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Recent AP/Al Jazeera reporting indicates renewed instability around the Strait of Hormuz and continued regional escalation risk despite prior ceasefire and MoU efforts.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported on August 18, 2026 that Iran says it could shift to offensive operations as Washington considers further sanctions.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reporting on August 17-18, 2026 indicates the June MoU deadline expired without a permanent deal, with disputes centered on the Strait of Hormuz and Iran claiming a role in controlling transit.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 17, 2026 that Washington sees few exit options and that further escalation would continue drawing down U.S. stocks of advanced missile interceptors.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 17, 2026 that the 60-day deadline in the June U.S.-Iran memorandum expired with the two sides farther apart, with no sign of compromise on reopening the Strait of Hormuz or progress on nuclear talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC headline reports Trump said the U.S. will reduce military drills with South Korea after it stayed out of the Iran war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-18T16:21:49Z",
+      "text": "<strong>Iran prepares to keep economy alive as US threatens further sanctions</strong> -- Iran\u2019s authorities say they could shift to offensive operations as Washington considers further sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/18/iran-prepares-to-keep-economy-alive-as-us-threatens-further-sanctions?traffic_source=rss"
+    },
+    {
       "time": "2026-08-18T15:14:17Z",
       "text": "<strong>Iran clubs face Qatar and UAE sides at neutral venues in Champions League</strong> -- Following the start of the US-Israel war on Iran, the first match of the Iranian league was played last week. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/8/18/iran-clubs-to-play-qatar-and-uae-champions-league-games-at-neutral-venues?traffic_source=rss"
@@ -783,6 +788,11 @@
       "link": "https://www.aljazeera.com/news/2026/8/18/why-has-trump-threatened-to-bomb-oman-for-a-second-time?traffic_source=rss"
     },
     {
+      "time": "2026-08-18T03:43:53Z",
+      "text": "<strong>Student killed in Philippines Catholic school shooting</strong> -- The alleged shooter, also a student, later took his own life. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-18T10:45:37Z",
       "text": "<strong>Putin\u2019s \u2018illusion of victory:\u2019 Russia ramps up missile attacks on Ukraine</strong> -- Deaths mount as Russia ramps up missile attacks on Ukraine, while Washington&amp;#039;s promises of support remain elusive. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/18/putins-illusion-of-victory-russia-ramps-up-missile-attacks-on-ukraine?traffic_source=rss"
@@ -791,11 +801,6 @@
       "time": "2026-08-18T10:11:53Z",
       "text": "<strong>Syria, US say Israel attacks airbase in Idlib</strong> -- Eight air strikes hit the Abu al-Duhur military base in Idlib&amp;#039;s eastern countryside. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/18/eight-air-strikes-hit-airbase-in-syrias-idlib?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-18T03:43:53Z",
-      "text": "<strong>Student killed in Philippines Catholic school shooting</strong> -- The alleged shooter, also a student, later took his own life. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-17T19:25:05Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-17T20:41:31Z",
       "text": "<strong>Trump\u2019s approval rating sinks to new low at 33 percent</strong> -- New poll found a majority of US citizens concerned about the US war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/17/trumps-approval-rating-sinks-to-new-low?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-17T19:22:54Z",
-      "text": "<strong>Photos: Indonesia earthquake rescue efforts continue as death toll hits 68</strong> -- At least 68 killed in eastern Indonesia as aftershocks and landslides hamper aid. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/gallery/2026/8/17/photos-search-for-indonesia-earthquake-victims-continues?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran prepares to keep economy alive as US threatens further sanctions",
+      "description": "Iran\u2019s authorities say they could shift to offensive operations as Washington considers further sanctions.",
+      "link": "https://www.aljazeera.com/news/2026/8/18/iran-prepares-to-keep-economy-alive-as-us-threatens-further-sanctions?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-18T16:21:49Z",
+      "tier": 2
+    },
+    {
       "title": "Iran clubs face Qatar and UAE sides at neutral venues in Champions League",
       "description": "Following the start of the US-Israel war on Iran, the first match of the Iranian league was played last week.",
       "link": "https://www.aljazeera.com/sports/2026/8/18/iran-clubs-to-play-qatar-and-uae-champions-league-games-at-neutral-venues?traffic_source=rss",
@@ -1261,44 +1269,20 @@
       "tier": 2
     },
     {
-      "title": "Putin\u2019s \u2018illusion of victory:\u2019 Russia ramps up missile attacks on Ukraine",
-      "description": "Deaths mount as Russia ramps up missile attacks on Ukraine, while Washington&#039;s promises of support remain elusive.",
-      "link": "https://www.aljazeera.com/news/2026/8/18/putins-illusion-of-victory-russia-ramps-up-missile-attacks-on-ukraine?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-18T10:45:37Z",
-      "tier": 2
-    },
-    {
-      "title": "Syria, US say Israel attacks airbase in Idlib",
-      "description": "Eight air strikes hit the Abu al-Duhur military base in Idlib&#039;s eastern countryside.",
-      "link": "https://www.aljazeera.com/news/2026/8/18/eight-air-strikes-hit-airbase-in-syrias-idlib?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-18T10:11:53Z",
-      "tier": 2
-    },
-    {
       "title": "Student killed in Philippines Catholic school shooting",
       "description": "The alleged shooter, also a student, later took his own life.",
       "link": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-18T03:43:53Z",
       "tier": 2
-    },
-    {
-      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-      "description": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires.",
-      "link": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-17T19:25:05Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 18, 2026 shows the Iran war remains unresolved after the 60-day peace deadline expired on August 17, with AP reporting no extension, no reopening of the Strait of Hormuz, and continued deadlock. The latest confirmed cumulative casualty figures still publicly trace to earlier official tallies: Iran\u2019s Health Ministry figure of 3,468 dead and more than 26,500 wounded, the Pentagon/DCAS official U.S. war toll of 14 dead, Israeli authorities\u2019 toll of 28 dead, Gulf-state fatalities tracked at 28 by Al Jazeera, and CENTCOM\u2019s last accessible official strike total of 13,000+ targets struck. I could not verify fresher official cumulative numbers for Iranian civilian-only deaths, U.S. troop totals in theater, destroyer count, or most weapons-expended fields, so those remain null.",
+  "summary": "Confirmed reporting still points to no major publicly released official revision of the core cumulative Iran-war casualty totals since the June trackers: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while the latest AP-confirmed official U.S. Operation Epic Fury death toll remains 14 because four later July deaths were administratively shifted into a separate Pentagon category after the operation was deemed ended. Operationally, the clearest official strike total located remains CENTCOM\u2019s April 1 fact sheet citing 12,300+ targets struck and 13,000+ combat flights, while IDF\u2019s later April summary cites about 10,800 Israeli strikes in Iran. Today\u2019s confirmed headlines suggest heightened risk of renewed escalation, with Iran warning it may move to offensive operations and Gulf diplomatic tensions persisting.",
   "briefings": [
     {
       "date": "2026-08-18",
       "day": 171,
-      "summary": "Confirmed reporting on August 18, 2026 shows the Iran war remains unresolved after the 60-day peace deadline expired on August 17, with AP reporting no extension, no reopening of the Strait of Hormuz, and continued deadlock. The latest confirmed cumulative casualty figures still publicly trace to earlier official tallies: Iran\u2019s Health Ministry figure of 3,468 dead and more than 26,500 wounded, the Pentagon/DCAS official U.S. war toll of 14 dead, Israeli authorities\u2019 toll of 28 dead, Gulf-state fatalities tracked at 28 by Al Jazeera, and CENTCOM\u2019s last accessible official strike total of 13,000+ targets struck. I could not verify fresher official cumulative numbers for Iranian civilian-only deaths, U.S. troop totals in theater, destroyer count, or most weapons-expended fields, so those remain null."
+      "summary": "Confirmed reporting still points to no major publicly released official revision of the core cumulative Iran-war casualty totals since the June trackers: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while the latest AP-confirmed official U.S. Operation Epic Fury death toll remains 14 because four later July deaths were administratively shifted into a separate Pentagon category after the operation was deemed ended. Operationally, the clearest official strike total located remains CENTCOM\u2019s April 1 fact sheet citing 12,300+ targets struck and 13,000+ combat flights, while IDF\u2019s later April summary cites about 10,800 Israeli strikes in Iran. Today\u2019s confirmed headlines suggest heightened risk of renewed escalation, with Iran warning it may move to offensive operations and Gulf diplomatic tensions persisting."
     },
     {
       "date": "2026-08-17",
