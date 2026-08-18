@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-18T04:52:24Z",
+  "lastUpdated": "2026-08-18T05:45:01Z",
   "dayCount": 171,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "46+",
-    "cost": "$34.2B+"
+    "strikes": "~10,800",
+    "killed": "185+",
+    "cost": "$32.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "500+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "168",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.2 billion+",
-    "dailyBurnRate": "~$200M/day",
+    "totalCost": "$32.4 billion+",
+    "dailyBurnRate": "~$189M/day",
     "daysOfOps": 171,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (AP, Aug. 15-16, 2026: USS George Washington is heading to replace USS Abraham Lincoln in the Middle East, indicating a single carrier strike group presence being maintained in theater rather than two simultaneously. Sources: AP reports on carrier rotation and Lincoln deployment.)"
+          "source": "LLM-verified (AP News on Aug. 15, 2026 reported USS George Washington is expected to replace USS Abraham Lincoln in the Middle East, indicating one U.S. carrier strike group currently on station/rotating in theater.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (Al Jazeera analysis, July 22, 2026, citing expert assessment: 'Some 50,000 US forces are operating')"
+          "source": "LLM-verified (AP News on Mar. 21, 2026 reported 'The military says some 50,000 are supporting the war effort.' No newer official total was found in accessible reporting.)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-08-16",
-          "source": "LLM-verified (Reuters report carried Mar. 27, 2026: U.S. military had fired 'over 850 Tomahawk cruise missiles' in four weeks of war)"
+          "lastUpdated": "2026-08-18",
+          "source": "LLM-verified (AP News on May 27, 2026, citing a CSIS analysis, reported the U.S. fired '1,000-plus Tomahawk missiles' at Iran. Returned as 1000 because the report did not provide a more precise confirmed number.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (U.S. Department of War Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+')"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' reports over 8,500 aircraft sorties. This is an official confirmed sortie figure for the Israeli campaign; no newer combined U.S.-Israeli fighter/attack sortie total was found.)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 1290,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-08-17",
-          "source": "LLM-verified (Reuters Connect summary of Pentagon briefing quoting Pete Hegseth: U.S. and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
+          "lastUpdated": "2026-08-18",
+          "source": "LLM-verified (AP News on May 27, 2026, citing CSIS analysis, said replacing as many as 290 THAAD interceptors and more than 1,000 Patriot interceptors used in the Iran war would take years. Confirmed minimum combined count from that report is 1,290; no precise all-system total including SM-3 was found.)"
         },
         {
           "id": "prestrike_buildup",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "1,290 \u00d7 $4,000,000 each",
+        "cost": "$5,160,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Recent AP and Al Jazeera reporting indicates hostilities had resumed in July after the interim deal, with missile attacks on U.S. forces and strikes on regional states underscoring continued escalation risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. still lacks a clear exit strategy while maintaining naval pressure around Iranian ports and rotating carriers under strain.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reporting on August 17-18, 2026 indicates the June MoU deadline expired without a permanent deal, with disputes centered on the Strait of Hormuz and Iran claiming a role in controlling transit.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 17, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported renewed U.S.-Iran exchanges after the June interim deal collapsed, with recent focus on Hormuz and attacks on regional states hosting U.S. forces.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 17, 2026 that the 60-day Versailles deadline expired without a deal and the Strait of Hormuz remains unresolved.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC and Al Jazeera headline reporting on August 17, 2026 indicates Iran is warning of a shift to a more offensive posture as a U.S. memorandum of understanding expires.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 11, 2026 reported Houthi attacks expanded pressure on Red Sea shipping, including a deadly Bab el-Mandeb vessel strike amid the wider Iran war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -754,7 +754,7 @@
   "developments": [
     {
       "time": "2026-08-18T02:51:22Z",
-      "text": "<strong>Two students killed in Philippines school shooting</strong> -- Mayor Khymer Adan Olaso says the casualties in Zamboanga were both students and included the gunman. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Two students killed in Philippine school shooting</strong> -- Mayor Khymer Adan Olaso says the casualties in Zamboanga were both students and included the gunman. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/18/two-killed-as-gunman-opens-fire-at-philippines-high-school-official-says?traffic_source=rss"
     },
     {
@@ -1213,7 +1213,7 @@
   ],
   "newsFeed": [
     {
-      "title": "Two students killed in Philippines school shooting",
+      "title": "Two students killed in Philippine school shooting",
       "description": "Mayor Khymer Adan Olaso says the casualties in Zamboanga were both students and included the gunman.",
       "link": "https://www.aljazeera.com/news/2026/8/18/two-killed-as-gunman-opens-fire-at-philippines-high-school-official-says?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates the June ceasefire framework has broken down further as the 60-day deadline expired on August 17, 2026, with the U.S. and Iran still deadlocked over the Strait of Hormuz. The latest clearly confirmed U.S. military death toll I found is 17 service members, while Iranian officials most recently publicly reported more than 500 wounded in July U.S. strikes. The Pentagon\u2019s latest readily accessible official Epic Fury fact sheet still lists 13,000+ targets struck, but I could not find current confirmed official totals for most weapons-expended fields or a current confirmed cumulative Iranian death total from a named primary source, so those remain null.",
+  "summary": "As of August 18, 2026, confirmed reporting indicates the June U.S.-Iran memorandum expired without a permanent settlement, leaving the war unresolved and the Strait of Hormuz dispute at the center of renewed tension. The most solid accessible official casualty figure for the U.S. side remains 17 troops killed in Operation Epic Fury, with later July deaths counted separately by the Pentagon after the operation was deemed ended. For military metrics, accessible official and major-wire reporting supports 50,000 U.S. personnel supporting the war effort, one carrier rotation in theater, 1,000-plus Tomahawks fired, at least 1,290 THAAD/Patriot interceptors expended, and Israeli official figures of about 10,800 strikes and over 8,500 aircraft sorties, while many other requested cumulative totals could not be confirmed to the required standard from named current sources.",
   "briefings": [
     {
       "date": "2026-08-18",
       "day": 171,
-      "summary": "Confirmed reporting indicates the June ceasefire framework has broken down further as the 60-day deadline expired on August 17, 2026, with the U.S. and Iran still deadlocked over the Strait of Hormuz. The latest clearly confirmed U.S. military death toll I found is 17 service members, while Iranian officials most recently publicly reported more than 500 wounded in July U.S. strikes. The Pentagon\u2019s latest readily accessible official Epic Fury fact sheet still lists 13,000+ targets struck, but I could not find current confirmed official totals for most weapons-expended fields or a current confirmed cumulative Iranian death total from a named primary source, so those remain null."
+      "summary": "As of August 18, 2026, confirmed reporting indicates the June U.S.-Iran memorandum expired without a permanent settlement, leaving the war unresolved and the Strait of Hormuz dispute at the center of renewed tension. The most solid accessible official casualty figure for the U.S. side remains 17 troops killed in Operation Epic Fury, with later July deaths counted separately by the Pentagon after the operation was deemed ended. For military metrics, accessible official and major-wire reporting supports 50,000 U.S. personnel supporting the war effort, one carrier rotation in theater, 1,000-plus Tomahawks fired, at least 1,290 THAAD/Patriot interceptors expended, and Israeli official figures of about 10,800 strikes and over 8,500 aircraft sorties, while many other requested cumulative totals could not be confirmed to the required standard from named current sources."
     },
     {
       "date": "2026-08-17",
