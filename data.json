@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-19T04:52:12Z",
+  "lastUpdated": "2026-08-19T05:46:32Z",
   "dayCount": 172,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,705+",
-    "cost": "$34.1B+"
+    "killed": "3,508+",
+    "cost": "$35.3B+"
   },
   "humanCost": {
-    "iranDeaths": "3,636",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "592+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.1 billion+",
-    "dailyBurnRate": "~$198M/day",
+    "totalCost": "$35.3 billion+",
+    "dailyBurnRate": "~$205M/day",
     "daysOfOps": 172,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (AP, Aug. 15, 2026: USS George Washington is heading to replace USS Abraham Lincoln in the Middle East; confirmed currently supporting carrier in theater is Lincoln, with George Washington en route.)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026): 'Two carrier strike groups' in Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -260,8 +260,8 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-08-16",
-          "source": "LLM-verified (Department of Defense transcript on Operation Midnight Hammer: 'a total of 14 MOPs dropped' against Iranian nuclear targets.)"
+          "lastUpdated": "2026-08-19",
+          "source": "LLM-verified (Defense Department transcript on Operation Midnight Hammer: first operational use of 14 GBU-57 Massive Ordnance Penetrators)"
         },
         {
           "id": "fighter_sorties",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 23, 2026: 9,000+ combat flights. This is combat flights, not specifically fighter-only sorties, so use with caution.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, March 23, 2026: 9,000+ combat flights; no newer confirmed official cumulative fighter/attack sortie total found)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 172 days",
-        "cost": "$1,204,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 172 days",
+        "cost": "$2,408,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported in late July that CENTCOM said it intercepted multiple ballistic missiles fired at American troops during renewed fighting after Operation Epic Fury formally ended.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports Trump says no U.S.-Iran talks are scheduled, while Tehran claims Washington is seeking negotiations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports the UAE has imposed an indefinite trade embargo on Iran over alleged missile attacks, while Iran denies responsibility.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 19, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera headline on August 18, 2026 reported Qatar denied Iran's claim that Doha is holding missing pilots, calling it a 'media ploy'.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline on August 18, 2026 reported Iran said it could shift to offensive operations as Washington considers further sanctions.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 8, 2026 reported Iran linked reopening of the Strait of Hormuz to the US 'correcting' its behavior, while the UAE said one of its ships had been targeted by an Iranian missile.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 2, 2026 reported Trump said he paused planned new strikes on Iran after pressure from Gulf leaders and to allow diplomacy more time.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -798,14 +798,14 @@
       "link": "https://www.aljazeera.com/news/2026/8/18/israeli-strike-reported-to-kill-at-least-six-in-gaza-city?traffic_source=rss"
     },
     {
-      "time": "2026-08-18T20:45:42Z",
-      "text": "<strong>Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant</strong> -- Concern over the security of Europe&amp;#039;s largest nuclear plant has been rife since Russia launched its full-scale war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/18/russia-reports-ukrainian-drone-strike-near-zaporizhzhia-nuclear-plant?traffic_source=rss"
-    },
-    {
       "time": "2026-08-19T03:12:06Z",
       "text": "<strong>Iranian academic writes of US detention &#x27;hell&#x27; over link to 1979 hostage crisis</strong> -- The immigration status of Maryam Tahmasebi was revoked because her husband is the son of a prominent figure in Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cgjeped6ewxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-18T20:45:42Z",
+      "text": "<strong>Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant</strong> -- Concern over the security of Europe&amp;#039;s largest nuclear plant has been rife since Russia launched its full-scale war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/18/russia-reports-ukrainian-drone-strike-near-zaporizhzhia-nuclear-plant?traffic_source=rss"
     },
     {
       "time": "2026-08-18T20:26:01Z",
@@ -1299,22 +1299,14 @@
       "source": "Al Jazeera",
       "time": "2026-08-18T21:03:04Z",
       "tier": 2
-    },
-    {
-      "title": "Russia reports Ukrainian drone strike near Zaporizhzhia nuclear plant",
-      "description": "Concern over the security of Europe&#039;s largest nuclear plant has been rife since Russia launched its full-scale war.",
-      "link": "https://www.aljazeera.com/news/2026/8/18/russia-reports-ukrainian-drone-strike-near-zaporizhzhia-nuclear-plant?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-18T20:45:42Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 19, 2026 indicates the war remains active at a lower but still dangerous tempo: AP reports the Pentagon\u2019s official Operation Epic Fury death toll stands at 14 U.S. service members for the original campaign, while renewed July fighting added additional deaths under a separate casualty category; HRANA\u2019s most comprehensive verified report still documents at least 3,636 deaths in Iran, including 1,701 civilians, and CENTCOM\u2019s latest accessible fact sheet continues to show 13,000+ targets struck during the operation. In the Gulf, tensions are rising again, with AP reporting new attacks on UAE-linked shipping in the Strait of Hormuz and a U.S. threat against Oman over a pending Hormuz arrangement with Iran, while USS George Washington is deploying to relieve the USS Abraham Lincoln after the latter\u2019s extended war cruise.",
+  "summary": "Confirmed reporting still points to the main Operation Epic Fury campaign having ended earlier in 2026, with the clearest accessible cumulative casualty figures remaining 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera, 14 U.S. service members killed in the official Pentagon/AP tally through July 13, and 26 Israelis killed in Israeli figures cited by Al Jazeera. Official military reporting accessible today provides no newer confirmed cumulative totals for most weapons-expended fields, though a Pentagon transcript confirms 14 GBU-57 bunker-busters were used in Operation Midnight Hammer, CENTCOM\u2019s March 23 fact sheet still shows 9,000+ combat flights, and the Navy\u2019s May 2026 shipbuilding plan says two carrier strike groups supported strikes on over 13,000 targets within Iran during the five-week campaign. Recent confirmed news indicates renewed tensions in July and August, including CENTCOM intercepting ballistic missiles aimed at U.S. troops and political friction over possible U.S.-Iran talks.",
   "briefings": [
     {
       "date": "2026-08-19",
       "day": 172,
-      "summary": "Confirmed reporting on August 19, 2026 indicates the war remains active at a lower but still dangerous tempo: AP reports the Pentagon\u2019s official Operation Epic Fury death toll stands at 14 U.S. service members for the original campaign, while renewed July fighting added additional deaths under a separate casualty category; HRANA\u2019s most comprehensive verified report still documents at least 3,636 deaths in Iran, including 1,701 civilians, and CENTCOM\u2019s latest accessible fact sheet continues to show 13,000+ targets struck during the operation. In the Gulf, tensions are rising again, with AP reporting new attacks on UAE-linked shipping in the Strait of Hormuz and a U.S. threat against Oman over a pending Hormuz arrangement with Iran, while USS George Washington is deploying to relieve the USS Abraham Lincoln after the latter\u2019s extended war cruise."
+      "summary": "Confirmed reporting still points to the main Operation Epic Fury campaign having ended earlier in 2026, with the clearest accessible cumulative casualty figures remaining 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera, 14 U.S. service members killed in the official Pentagon/AP tally through July 13, and 26 Israelis killed in Israeli figures cited by Al Jazeera. Official military reporting accessible today provides no newer confirmed cumulative totals for most weapons-expended fields, though a Pentagon transcript confirms 14 GBU-57 bunker-busters were used in Operation Midnight Hammer, CENTCOM\u2019s March 23 fact sheet still shows 9,000+ combat flights, and the Navy\u2019s May 2026 shipbuilding plan says two carrier strike groups supported strikes on over 13,000 targets within Iran during the five-week campaign. Recent confirmed news indicates renewed tensions in July and August, including CENTCOM intercepting ballistic missiles aimed at U.S. troops and political friction over possible U.S.-Iran talks."
     },
     {
       "date": "2026-08-18",
