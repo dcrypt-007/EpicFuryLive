@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-08-19T10:46:16Z",
+  "lastUpdated": "2026-08-19T11:41:04Z",
   "dayCount": 172,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "1,533+",
-    "cost": "$35.2B+"
+    "strikes": "~9,000",
+    "killed": "3,535+",
+    "cost": "$35.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "20",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.2 billion+",
-    "dailyBurnRate": "~$205M/day",
+    "totalCost": "$35.0 billion+",
+    "dailyBurnRate": "~$204M/day",
     "daysOfOps": 172,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page lists Gerald R. Ford CSG and Dwight D. Eisenhower CSG operating in theater. No newer official reduction/expansion confirmed in this search session.)"
+          "source": "LLM-verified (AP reporting on U.S. force posture said the buildup included two aircraft carriers; latest accessible posture still supports 2 and CENTCOM/Navy pages show USS Abraham Lincoln in theater and George H.W. Bush deployed in 2026)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury page explicitly names four Arleigh Burke destroyers with the two listed carrier strike groups: USS Ramage, USS Paul Ignatius, USS Gravely, USS Mason. This is a confirmed minimum named count from the source, not necessarily total theater destroyers.)"
+          "source": "LLM-verified (Confirmed individually from official pages: George H.W. Bush CSG deploys with 3 destroyers (USS Ross, USS Donald Cook, USS Mason) and CENTCOM imagery/public affairs shows USS Michael Murphy operating in blockade enforcement; no fuller current official theater-wide count found beyond these 4)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (AP, March 24/25, 2026: region already had 'about 50,000 troops' before additional deployments. No newer official troop total found in this search session.)"
+          "source": "LLM-verified (AP reporting repeatedly described about 50,000 U.S. troops in the region supporting the war effort)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 28, 2026: 'Combat Flights: 11,000+' Used as confirmed cumulative combat-flight/sortie figure available in this search session.)"
+          "source": "LLM-verified (CENTCOM/Pentagon Operation Epic Fury fact sheet dated March 23, 2026 reported 9,000+ combat flights; no newer official cumulative fighter/attack sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 19, 2026 reported the UAE suspended trade with Iran after renewed missile fire, indicating continued regional spillover risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 17-19, 2026 reported the 60-day peace deadline expired without a deal and renewed strain around Strait of Hormuz transit arrangements.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 19, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Trump said on August 18, 2026 that the US has no talks planned with Iran while tensions over reopening the Strait of Hormuz continue, according to AP.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported August 13-15, 2026 that USS George Washington is moving toward the Middle East to replace USS Abraham Lincoln, sustaining two-carrier operations",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported August 18, 2026 that a projectile struck a ship in the Strait of Hormuz amid continued maritime insecurity",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -773,11 +773,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss"
     },
     {
-      "time": "2026-08-19T03:34:40Z",
-      "text": "<strong>UAE imposes indefinite trade embargo on Iran over alleged missile attacks</strong> -- Iran denies launching missiles at the UAE, suggesting the incident was a &amp;#039;false flag operation&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss"
-    },
-    {
       "time": "2026-08-19T00:48:16Z",
       "text": "<strong>US condemns &#x27;unnecessary escalation&#x27; after Israeli airstrikes on Syrian airbase</strong> -- Damascus called the attacks &quot;an unjustified act of aggression&quot; that imperilled regional security. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c62vy3wl31lo?at_medium=RSS&at_campaign=rss"
@@ -796,6 +791,11 @@
       "time": "2026-08-18T22:18:50Z",
       "text": "<strong>The Indian activist jailed after taking on a luxury hotel plan</strong> -- An activist&#x27;s detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-19T03:34:40Z",
+      "text": "<strong>UAE imposes indefinite trade embargo on Iran over alleged missile attacks</strong> -- Iran denies launching missiles at the UAE, suggesting the incident was a &amp;#039;false flag operation&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss"
     },
     {
       "time": "2026-08-19T00:00:00Z",
@@ -1253,14 +1253,6 @@
       "tier": 2
     },
     {
-      "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
-      "description": "Iran denies launching missiles at the UAE, suggesting the incident was a &#039;false flag operation&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-19T03:34:40Z",
-      "tier": 2
-    },
-    {
       "title": "Iranian academic writes of US detention 'hell' over link to 1979 hostage crisis",
       "description": "The immigration status of Maryam Tahmasebi was revoked because her husband is the son of a prominent figure in Iran.",
       "link": "https://www.bbc.co.uk/news/articles/cgjeped6ewxo?at_medium=RSS&at_campaign=rss",
@@ -1285,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in this search session still leaves major data gaps. The clearest official figures are that Operation Epic Fury\u2019s Pentagon/DCAS death toll remained 13 U.S. troops as of July 28, 2026, while AP\u2019s corrected March reporting put Israel\u2019s war-related deaths at 20 and Iran\u2019s Health Ministry said more than 1,500 people had been killed in Iran by late March. CENTCOM\u2019s latest official operation fact sheet located here dated March 28 reported 11,000+ targets struck and 11,000+ combat flights, and CENTCOM materials confirmed two carrier strike groups in theater. More recent July reporting shows renewed U.S.-Iran hostilities after Epic Fury formally ended, including intercepted ballistic missiles and additional casualties counted in a separate Pentagon category, but this search session did not produce authoritative updated cumulative totals for Iranian deaths, wounded, civilian deaths, Gulf-state fatalities, or most weapons-expended fields.",
+  "summary": "Confirmed reporting available today does not show newer official cumulative casualty totals for Iran beyond the June 10 benchmark carried by Al Jazeera\u2019s tracker citing Iran\u2019s Ministry of Health and military sources. The clearest new confirmed development is strategic rather than numerical: AP reported on August 17-19, 2026 that the 60-day deadline for a U.S.-Iran deal expired without resolution, tensions around Strait of Hormuz transit remain unresolved, and the UAE suspended trade with Iran after renewed missile fire, underscoring that the war remains active despite earlier ceasefire frameworks.",
   "briefings": [
     {
       "date": "2026-08-19",
       "day": 172,
-      "summary": "Confirmed reporting available in this search session still leaves major data gaps. The clearest official figures are that Operation Epic Fury\u2019s Pentagon/DCAS death toll remained 13 U.S. troops as of July 28, 2026, while AP\u2019s corrected March reporting put Israel\u2019s war-related deaths at 20 and Iran\u2019s Health Ministry said more than 1,500 people had been killed in Iran by late March. CENTCOM\u2019s latest official operation fact sheet located here dated March 28 reported 11,000+ targets struck and 11,000+ combat flights, and CENTCOM materials confirmed two carrier strike groups in theater. More recent July reporting shows renewed U.S.-Iran hostilities after Epic Fury formally ended, including intercepted ballistic missiles and additional casualties counted in a separate Pentagon category, but this search session did not produce authoritative updated cumulative totals for Iranian deaths, wounded, civilian deaths, Gulf-state fatalities, or most weapons-expended fields."
+      "summary": "Confirmed reporting available today does not show newer official cumulative casualty totals for Iran beyond the June 10 benchmark carried by Al Jazeera\u2019s tracker citing Iran\u2019s Ministry of Health and military sources. The clearest new confirmed development is strategic rather than numerical: AP reported on August 17-19, 2026 that the 60-day deadline for a U.S.-Iran deal expired without resolution, tensions around Strait of Hormuz transit remain unresolved, and the UAE suspended trade with Iran after renewed missile fire, underscoring that the war remains active despite earlier ceasefire frameworks."
     },
     {
       "date": "2026-08-18",
