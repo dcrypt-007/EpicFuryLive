@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-19T17:40:59Z",
+  "lastUpdated": "2026-08-19T18:53:13Z",
   "dayCount": 172,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,508+",
-    "cost": "$33.9B+"
+    "cost": "$35.4B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "55",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "592+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "417",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.9 billion+",
-    "dailyBurnRate": "~$197M/day",
+    "totalCost": "$35.4 billion+",
+    "dailyBurnRate": "~$206M/day",
     "daysOfOps": 172,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (AP Aug. 16, 2026 reports USS Abraham Lincoln currently in theater; AP Aug. 15 says USS George Washington is departing Pacific and expected to replace Lincoln, not yet confirmed on station)"
+          "source": "LLM-verified (AP, August 13 and August 15, 2026: USS Abraham Lincoln was already in the Middle East and USS George Washington was heading to replace it; AP reported the Washington would replace Lincoln as one of the two aircraft carriers then stationed in the Middle East.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 3,
+          "quantity": 11,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (AP News March 31, 2026: USS George H.W. Bush deploying with three destroyers; could not confirm full current in-theater total from official source, so this reflects only newly identified accompanying destroyers)"
+          "source": "LLM-verified (AP, article on blockade operations: the Navy had 16 warships in the Middle East including 11 destroyers, three amphibious assault ships, one aircraft carrier and one littoral combat ship.)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (AP Mar. 24, 2026 reported at least 1,000 more troops were being sent to supplement some 50,000 troops already in the Mideast)"
+          "source": "LLM-verified (CENTCOM / Secretary Hegseth with Adm. Brad Cooper, March 5, 2026: Cooper said more than 50,000 men and women in uniform were executing Operation Epic Fury; Gen. Caine on April 8 also referred to more than 50,000 American warfighters deployed across CENTCOM, EUCOM and stateside.)"
         },
         {
           "id": "intel_cyber",
@@ -244,7 +244,7 @@
             "bomber sortie"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (Gen. Dan Caine said on April 8, 2026 that 18 bomber missions flew round trip from the United States; this is the closest confirmed official B-2 long-range sortie figure found, but not explicitly labeled all-B-2)"
+          "source": "LLM-verified (U.S. Department of War briefing, April 8, 2026: Gen. Dan Caine said the Joint Force flew 62 bomber missions, 18 of which flew round trip from the United States.)"
         },
         {
           "id": "mop_bunker_busters",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (AP Aug. 13, 2026 cites CENTCOM saying Abraham Lincoln Carrier Strike Group had conducted 10,000 aircraft flights)"
+          "source": "LLM-verified (U.S. Department of War briefing, April 8, 2026: Gen. Dan Caine said the Joint Force flew more than 10,000 missions; no cleaner current official fighter-only sortie total found.)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 172 days",
-        "cost": "$1,204,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 172 days",
+        "cost": "$2,408,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "3 \u00d7 $240,000/day \u00d7 172 days",
-        "cost": "$123,840,000"
+        "detail": "11 \u00d7 $240,000/day \u00d7 172 days",
+        "cost": "$454,080,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Reuters reported on August 6, 2026 that Iran warned Gulf states their oil, power and water plants could be hit unless they pressed Washington to halt strikes.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 17, 2026 that the U.S.-Iran interim peace deadline expired without resolution, with the Strait of Hormuz and blockade still unresolved.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 19, 2026 that the UAE suspended all trade with Iran after renewed missile fire from Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 19, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on August 18, 2026 that Iran-backed Houthi rebels claimed a drone attack on an oil refinery in Saudi Arabia.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 18, 2026 that a projectile hit a ship exiting the Strait of Hormuz amid continued disruption to shipping.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported in late July that CENTCOM said it intercepted multiple ballistic missiles fired at American troops during renewed fighting after Operation Epic Fury formally ended.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reports Trump says no U.S.-Iran talks are scheduled, while Tehran claims Washington is seeking negotiations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-08-19T18:21:37Z",
+      "text": "<strong>Iran\u2019s hardline parliament raises concerns with \u2018foreign infiltration\u2019 plan</strong> -- Citizens and entities would have to seek authorisation to contact universities or talk to foreign media. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/19/irans-hardline-parliament-raises-concerns-with-foreign-infiltration-plan?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-19T17:50:50Z",
+      "text": "<strong>NATO \u2018prepared\u2019 to defend allies amid report of Iranian strike plans</strong> -- NATO says it will &amp;#039;do what is necessary&amp;#039; amid media report Iran considered strikes against US targets in Europe. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/19/nato-prepared-to-defend-allies-amid-report-of-iranian-strike-plans?traffic_source=rss"
+    },
+    {
       "time": "2026-08-19T17:14:21Z",
       "text": "<strong>Hamas condemns \u2018new war crime\u2019 as Israel kills 10 in crowded Gaza hubs</strong> -- Israeli air strikes on Gaza kill 10 Palestinians, targeting police headquarters and a refugee camp in separate attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/19/hamas-condemns-new-war-crime-as-israel-kills-10-in-crowded-gaza-hubs?traffic_source=rss"
@@ -773,11 +783,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/us-war-on-iran-puts-cambodian-childrens-education-at-risk?traffic_source=rss"
     },
     {
-      "time": "2026-08-19T12:37:40Z",
-      "text": "<strong>UAE trade embargo could shut Iran\u2019s key economic escape route: Here\u2019s why</strong> -- The UAE announced the embargo, accusing Iran of launching missiles into its territory. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/19/uae-trade-embargo-could-shut-irans-key-economic-escape-route-heres-why?traffic_source=rss"
-    },
-    {
       "time": "2026-08-19T15:33:32Z",
       "text": "<strong>Israel confirms soldiers fired at car in which Hind Rajab was killed and opens criminal investigation</strong> -- The five-year old Gaza girl initially survived the attack and pleaded for help but her body was recovered later with those of six of her relatives. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/crl7yjlpx2po?at_medium=RSS&at_campaign=rss"
@@ -788,14 +793,24 @@
       "link": "https://www.bbc.co.uk/news/articles/cly50gn1e54o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-19T13:00:09Z",
-      "text": "<strong>Six tourists and pilot killed in Kenya helicopter crash</strong> -- The Aircraft Accident Investigation Department tells the BBC the nationalities are yet to be confirmed. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "time": "2026-08-19T18:43:11Z",
+      "text": "<strong>Ecuador intelligence chief and five Americans killed in Kenya helicopter crash</strong> -- Michele Sensi-Contugi, and his wife Stephany Hollihan among the seven people killed in the crash. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-19T09:48:16Z",
       "text": "<strong>US charges 17 Iranians over &#x27;massive&#x27; cyber theft campaign</strong> -- Many of the alleged cyber attacks were carried out for the Iranian government, the Department of Justice says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c1m14n4llvvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-19T12:37:40Z",
+      "text": "<strong>UAE trade embargo could shut Iran\u2019s key economic escape route: Here\u2019s why</strong> -- The UAE announced the embargo, accusing Iran of launching missiles into its territory. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/19/uae-trade-embargo-could-shut-irans-key-economic-escape-route-heres-why?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-19T13:00:09Z",
+      "text": "<strong>Six tourists and pilot killed in Kenya helicopter crash</strong> -- The Aircraft Accident Investigation Department tells the BBC the nationalities are yet to be confirmed. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-18T22:18:50Z",
@@ -836,21 +851,6 @@
       "time": "2026-08-19T12:41:46Z",
       "text": "<strong>Israeli army orders criminal investigation into killing of Palestinian girl Hind Rajab in Gaza</strong> -- The five-year-old spent hours on the phone to paramedics before her body was recovered days later in Gaza City in 2024. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/crl7yjlpx2po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-19T06:27:30Z",
-      "text": "<strong>South Africa to Australia: Why coal profits are surging during Iran war</strong> -- Coal companies are reporting a huge rise in profits, but analysts say global clean energy transition is still on track. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-19T04:25:26Z",
-      "text": "<strong>Attackers go \u2018house to house\u2019 killing 25 villagers in central Nigeria</strong> -- An attack on a village in Nigeria\u2019s central Plateau state has killed at least 25 people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-19T03:12:06Z",
-      "text": "<strong>Iranian academic writes of US detention &#x27;hell&#x27; over link to 1979 hostage crisis</strong> -- The immigration status of Maryam Tahmasebi was revoked because her husband is the son of a prominent figure in Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cgjeped6ewxo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Ecuador intelligence chief and five Americans killed in Kenya helicopter crash",
+      "description": "Michele Sensi-Contugi, and his wife Stephany Hollihan among the seven people killed in the crash.",
+      "link": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-19T18:43:11Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran\u2019s hardline parliament raises concerns with \u2018foreign infiltration\u2019 plan",
+      "description": "Citizens and entities would have to seek authorisation to contact universities or talk to foreign media.",
+      "link": "https://www.aljazeera.com/news/2026/8/19/irans-hardline-parliament-raises-concerns-with-foreign-infiltration-plan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-19T18:21:37Z",
+      "tier": 2
+    },
+    {
+      "title": "NATO \u2018prepared\u2019 to defend allies amid report of Iranian strike plans",
+      "description": "NATO says it will &#039;do what is necessary&#039; amid media report Iran considered strikes against US targets in Europe.",
+      "link": "https://www.aljazeera.com/news/2026/8/19/nato-prepared-to-defend-allies-amid-report-of-iranian-strike-plans?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-19T17:50:50Z",
+      "tier": 2
+    },
+    {
       "title": "Israel opens up bids for highly-sensitive West Bank settlement project",
       "description": "Israeli plans to build on the area east of Jerusalem - which would divide the occupied West Bank in two - have long been internationally condemned.",
       "link": "https://www.bbc.co.uk/news/articles/cly50gn1e54o?at_medium=RSS&at_campaign=rss",
@@ -1253,27 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Six tourists and pilot killed in Kenya helicopter crash",
-      "description": "The Aircraft Accident Investigation Department tells the BBC the nationalities are yet to be confirmed.",
-      "link": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-19T13:00:09Z",
-      "tier": 2
-    },
-    {
       "title": "US war on Iran puts Cambodian children\u2019s education at risk",
       "description": "US war on Iran puts Cambodian children\u2019s education at risk",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/us-war-on-iran-puts-cambodian-childrens-education-at-risk?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-19T12:56:52Z",
-      "tier": 2
-    },
-    {
-      "title": "UAE trade embargo could shut Iran\u2019s key economic escape route: Here\u2019s why",
-      "description": "The UAE announced the embargo, accusing Iran of launching missiles into its territory.",
-      "link": "https://www.aljazeera.com/news/2026/8/19/uae-trade-embargo-could-shut-irans-key-economic-escape-route-heres-why?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-19T12:37:40Z",
       "tier": 2
     },
     {
@@ -1293,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today does not show broad new official cumulative casualty updates beyond previously reported totals. The clearest currently confirmable figures remain 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera, 14 U.S. military dead in the official Pentagon/DCAS Iran-war tally as reported by AP in July, and 26 Israelis killed as listed by Al Jazeera\u2019s casualty tracker. In force posture, AP reporting this week indicates one U.S. carrier strike group, USS Abraham Lincoln, is presently in theater while USS George Washington is still en route as a replacement; AP also cites CENTCOM saying the Lincoln group has logged 10,000 aircraft flights and expended 1.5 million pounds of ordnance. I could not find current confirmed official totals for destroyers, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, total strikes, or Gulf-state deaths, so those are left null.",
+  "summary": "Confirmed reporting indicates the war remains active in a lower-intensity but unresolved phase: AP reported on August 17 that the 60-day U.S.-Iran peace deadline expired without agreement, and on August 19 that the UAE suspended trade with Iran after renewed missile fire. On the military side, AP reported the U.S. still has a large naval presence in theater, with two carriers in transition and 11 destroyers in the Middle East, while official U.S. briefings continue to cite Operation Epic Fury\u2019s concluded major-combat totals of more than 13,000 targets struck, more than 10,000 missions flown, and 13 U.S. troops killed during that operation.",
   "briefings": [
     {
       "date": "2026-08-19",
       "day": 172,
-      "summary": "Confirmed reporting available today does not show broad new official cumulative casualty updates beyond previously reported totals. The clearest currently confirmable figures remain 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera, 14 U.S. military dead in the official Pentagon/DCAS Iran-war tally as reported by AP in July, and 26 Israelis killed as listed by Al Jazeera\u2019s casualty tracker. In force posture, AP reporting this week indicates one U.S. carrier strike group, USS Abraham Lincoln, is presently in theater while USS George Washington is still en route as a replacement; AP also cites CENTCOM saying the Lincoln group has logged 10,000 aircraft flights and expended 1.5 million pounds of ordnance. I could not find current confirmed official totals for destroyers, drone units, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, total strikes, or Gulf-state deaths, so those are left null."
+      "summary": "Confirmed reporting indicates the war remains active in a lower-intensity but unresolved phase: AP reported on August 17 that the 60-day U.S.-Iran peace deadline expired without agreement, and on August 19 that the UAE suspended trade with Iran after renewed missile fire. On the military side, AP reported the U.S. still has a large naval presence in theater, with two carriers in transition and 11 destroyers in the Middle East, while official U.S. briefings continue to cite Operation Epic Fury\u2019s concluded major-combat totals of more than 13,000 targets struck, more than 10,000 missions flown, and 13 U.S. troops killed during that operation."
     },
     {
       "date": "2026-08-18",
