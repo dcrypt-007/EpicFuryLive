@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-19T08:54:27Z",
+  "lastUpdated": "2026-08-19T09:49:13Z",
   "dayCount": 172,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,038+",
-    "cost": "$32.7B+"
+    "strikes": "~7,000",
+    "killed": "3,952+",
+    "cost": "$32.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "15",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "23",
+    "civilianDeaths": "417",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$32.7 billion+",
-    "dailyBurnRate": "~$190M/day",
+    "totalCost": "$32.0 billion+",
+    "dailyBurnRate": "~$186M/day",
     "daysOfOps": 172,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026, page on Operation Epic Fury: 'Two carrier strike groups' supported the operation.)"
+          "source": "LLM-verified (AP on Aug. 13, 2026 reported USS George Washington would replace USS Abraham Lincoln as one of the two aircraft carriers now stationed in the Middle East)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (AP, April 13 and April 16, 2026: U.S. Navy had 11 destroyers in Middle East waters.)"
+          "lastUpdated": "2026-08-19",
+          "source": "LLM-verified (AP on Apr. 16, 2026 reported the Navy had 16 warships in the Middle East, including 11 destroyers)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; used here as best confirmed cumulative sorties figure found.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; no newer official fighter-sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,42 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports USS George Washington is heading to the Middle East to replace USS Abraham Lincoln, sustaining a two-carrier U.S. naval posture in theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports the June 17 U.S.-Iran interim agreement's 60-day negotiating period expired by Aug. 16-17 with no extension announced, leaving the war unresolved.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC reports U.S. condemned Israeli airstrikes on a Syrian airbase as an 'unnecessary escalation,' signaling regional spillover risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "UAE has imposed an indefinite trade embargo on Iran, according to today's Al Jazeera headline.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 19, 2026",
       "severity": "high",
@@ -623,42 +659,6 @@
       "text": "Al Jazeera headline says Trump said no talks are planned with Iran amid anger over the Iran-Oman Hormuz deal.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 17, 2026 that the June memorandum's 60-day deadline expired on August 17 without a broader peace deal, with disputes centered on reopening the Strait of Hormuz and Iran's claimed role there.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on July 15-18, 2026 that the renewed U.S. campaign expanded across southern Iranian infrastructure and coincided with Iranian retaliatory strikes on Gulf states and shipping.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on August 1, 2026 that Iran warned against renewed attacks on critical energy infrastructure as military strikes continued across the region.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 16, 2026 says the US naval blockade on Iranian ports remains in place and talks between the US and Iran have stalled while Iran talks with Oman about managing the Strait of Hormuz",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-19T08:40:54Z",
+      "text": "<strong>Aid workers faced record number of attacks in 2025, UN says</strong> -- Gaza remains the deadliest place for humanitarian workers for third consecutive year, with 186 killed in 2025. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/19/aid-workers-faced-record-number-of-attacks-in-2025-un-says?traffic_source=rss"
+    },
+    {
       "time": "2026-08-19T06:27:30Z",
       "text": "<strong>South Africa to Australia: Why coal profits are surging during Iran war</strong> -- Coal companies are reporting a huge rise in profits, but analysts say global clean energy transition is still on track. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss"
@@ -766,6 +771,21 @@
       "time": "2026-08-19T03:34:40Z",
       "text": "<strong>UAE imposes indefinite trade embargo on Iran over alleged missile attacks</strong> -- Iran denies launching missiles at the UAE, suggesting the incident was a &amp;#039;false flag operation&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-19T00:48:16Z",
+      "text": "<strong>US condemns &#x27;unnecessary escalation&#x27; after Israeli airstrikes on Syrian airbase</strong> -- Damascus called the attacks &quot;an unjustified act of aggression&quot; that imperilled regional security. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c62vy3wl31lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-19T03:12:06Z",
+      "text": "<strong>Iranian academic writes of US detention &#x27;hell&#x27; over link to 1979 hostage crisis</strong> -- The immigration status of Maryam Tahmasebi was revoked because her husband is the son of a prominent figure in Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cgjeped6ewxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-18T22:18:50Z",
+      "text": "<strong>The Indian activist jailed after taking on a luxury hotel plan</strong> -- An activist&#x27;s detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-19T00:00:00Z",
@@ -793,16 +813,6 @@
       "link": "https://www.aljazeera.com/news/2026/8/18/syria-opens-assad-era-nuclear-programme-to-un-probe?traffic_source=rss"
     },
     {
-      "time": "2026-08-19T00:48:16Z",
-      "text": "<strong>US condemns &#x27;unnecessary escalation&#x27; after Israeli airstrikes on Syrian airbase</strong> -- Damascus called the attacks &quot;an unjustified act of aggression&quot; that imperilled regional security. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c62vy3wl31lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-19T03:12:06Z",
-      "text": "<strong>Iranian academic writes of US detention &#x27;hell&#x27; over link to 1979 hostage crisis</strong> -- The immigration status of Maryam Tahmasebi was revoked because her husband is the son of a prominent figure in Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cgjeped6ewxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-18T21:03:59Z",
       "text": "<strong>Trump says no talks planned with Iran amid anger over Iran-Oman Hormuz deal</strong> -- US president hits out as states bordering the Strait of Hormuz continue talks on managing the strategic waterway. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/18/no-talks-with-iran-says-trump-as-us-president-stews-over-hormuz-deal?traffic_source=rss"
@@ -823,11 +833,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/18/russian-missile-strike-kills-10-civilians-in-kharkiv?traffic_source=rss"
     },
     {
-      "time": "2026-08-18T22:18:50Z",
-      "text": "<strong>The Indian activist jailed after taking on a luxury hotel plan</strong> -- An activist&#x27;s detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-18T18:32:24Z",
       "text": "<strong>Israeli strike on Gaza City cafe kills six, including child</strong> -- An Israeli strike hit a cafe in the port area west of Gaza City, killing six Palestinians, including a child. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-strike-on-gaza-city-cafe-kills-six-including-child?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-08-18T15:14:17Z",
       "text": "<strong>Iran clubs face Qatar and UAE sides at neutral venues in Champions League</strong> -- Following the start of the US-Israel war on Iran, the first match of the Iranian league was played last week. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/8/18/iran-clubs-to-play-qatar-and-uae-champions-league-games-at-neutral-venues?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-18T14:49:56Z",
-      "text": "<strong>Why is Russia threatening UK with \u2018consequences\u2019 over Ukraine drones?</strong> -- Russia is suffering attacks inside its own territory as long-range drones strike its strategic assets. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/18/why-is-russia-threatening-uk-with-consequences-over-ukraine-drones?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Aid workers faced record number of attacks in 2025, UN says",
+      "description": "Gaza remains the deadliest place for humanitarian workers for third consecutive year, with 186 killed in 2025.",
+      "link": "https://www.aljazeera.com/news/2026/8/19/aid-workers-faced-record-number-of-attacks-in-2025-un-says?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-19T08:40:54Z",
+      "tier": 2
+    },
+    {
       "title": "South Africa to Australia: Why coal profits are surging during Iran war",
       "description": "Coal companies are reporting a huge rise in profits, but analysts say global clean energy transition is still on track.",
       "link": "https://www.aljazeera.com/news/2026/8/19/south-africa-to-australia-why-coal-profits-are-surging-during-iran-war?traffic_source=rss",
@@ -1253,60 +1261,20 @@
       "tier": 2
     },
     {
-      "title": "Iran war live: Rubio discusses Hormuz security with UAE official",
-      "description": "Trump says no talks with Tehran scheduled; Iranian Foreign Minister Abbas Araghchi claims US &#039;begging&#039; for negotiations.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/8/19/iran-war-live-trump-denies-iran-talks-tehran-claims-us-begging?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-19T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Al Jazeera reports from Indonesia\u2019s quake zone, desperate for help",
-      "description": "Thousands are still displaced on Indonesia\u2019s Flores Island after a 7.7-magnitude earthquake killed at least 70 people.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/18/al-jazeera-reports-from-indonesias-quake-zone-desperate-for-help?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-18T23:59:43Z",
-      "tier": 2
-    },
-    {
-      "title": "Democrats call for USS Lincoln probe, question US Navy\u2019s readiness",
-      "description": "Lawmakers question whether conditions on the aircraft carrier indicate a &#039;pattern&#039; of poor planning amid the Iran war.",
-      "link": "https://www.aljazeera.com/news/2026/8/18/democrats-call-for-uss-lincoln-probe-question-us-navys-readiness?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-18T23:45:16Z",
-      "tier": 2
-    },
-    {
       "title": "The Indian activist jailed after taking on a luxury hotel plan",
       "description": "An activist's detention has brought under focus a larger battle over land and development around the famed Kaziranga National Park.",
       "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-18T22:18:50Z",
       "tier": 2
-    },
-    {
-      "title": "Why is the US ramping up Tomahawk production?",
-      "description": "The Pentagon has contracted a defence manufacturer to increase the output of cruise missiles.",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/8/18/why-is-the-us-ramping-up-tomahawk-production?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-18T21:26:07Z",
-      "tier": 2
-    },
-    {
-      "title": "Syria opens Assad-era nuclear programme to UN probe",
-      "description": "UN watchdog reports that it found large amounts of material at undisclosed sites in Syria.",
-      "link": "https://www.aljazeera.com/news/2026/8/18/syria-opens-assad-era-nuclear-programme-to-un-probe?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-18T21:25:06Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in accessible sources still points to Operation Epic Fury having ended by late spring or early summer 2026, with later U.S.-Iran fighting counted separately by the Pentagon. The best official strike total located remains the April 1, 2026 DoD/CENTCOM fact sheet listing 12,300+ targets struck and 13,000+ combat flights. AP reporting from March and April put the U.S. Epic Fury death toll at at least 13, Israel's toll at 23 civilians and 15 soldiers, and deaths in Iran at at least 3,000, but I could not verify newer confirmed cumulative Iran-specific death, wounded, Gulf-state fatality, or weapons-expenditure totals from accessible official or wire sources.",
+  "summary": "Confirmed reporting still supports Iran Ministry of Health's cumulative toll of 3,468 dead and more than 26,500 wounded in Iran as of the latest broadly cited tracker update, while the Pentagon's official Operation Epic Fury death count remains 13 because four U.S. deaths from renewed July fighting were moved by DCAS into a separate post-Epic-Fury category, according to AP. AP also reports two U.S. carriers are effectively assigned to the Middle East as USS George Washington moves to replace USS Abraham Lincoln, while no newer official public totals were found for troop levels or cumulative weapons expenditure such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or interceptors. Today's headlines indicate additional regional risk from the UAE's new embargo on Iran and Israeli strikes on Syria criticized by Washington.",
   "briefings": [
     {
       "date": "2026-08-19",
       "day": 172,
-      "summary": "Confirmed reporting available in accessible sources still points to Operation Epic Fury having ended by late spring or early summer 2026, with later U.S.-Iran fighting counted separately by the Pentagon. The best official strike total located remains the April 1, 2026 DoD/CENTCOM fact sheet listing 12,300+ targets struck and 13,000+ combat flights. AP reporting from March and April put the U.S. Epic Fury death toll at at least 13, Israel's toll at 23 civilians and 15 soldiers, and deaths in Iran at at least 3,000, but I could not verify newer confirmed cumulative Iran-specific death, wounded, Gulf-state fatality, or weapons-expenditure totals from accessible official or wire sources."
+      "summary": "Confirmed reporting still supports Iran Ministry of Health's cumulative toll of 3,468 dead and more than 26,500 wounded in Iran as of the latest broadly cited tracker update, while the Pentagon's official Operation Epic Fury death count remains 13 because four U.S. deaths from renewed July fighting were moved by DCAS into a separate post-Epic-Fury category, according to AP. AP also reports two U.S. carriers are effectively assigned to the Middle East as USS George Washington moves to replace USS Abraham Lincoln, while no newer official public totals were found for troop levels or cumulative weapons expenditure such as Tomahawks, JDAMs, JASSMs, SDBs, MOPs, or interceptors. Today's headlines indicate additional regional risk from the UAE's new embargo on Iran and Israeli strikes on Syria criticized by Washington."
     },
     {
       "date": "2026-08-18",
