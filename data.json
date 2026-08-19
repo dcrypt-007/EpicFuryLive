@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-19T03:59:41Z",
+  "lastUpdated": "2026-08-19T04:52:12Z",
   "dayCount": 172,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$35.0B+"
+    "killed": "3,705+",
+    "cost": "$34.1B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,636",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "29",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "592+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1464",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.0 billion+",
-    "dailyBurnRate": "~$204M/day",
+    "totalCost": "$34.1 billion+",
+    "dailyBurnRate": "~$198M/day",
     "daysOfOps": 172,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026): two carrier strike groups in Operation Epic Fury; no newer confirmed current official count found)"
+          "source": "LLM-verified (AP, Aug. 15, 2026: USS George Washington is heading to replace USS Abraham Lincoln in the Middle East; confirmed currently supporting carrier in theater is Lincoln, with George Washington en route.)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (AP March 24, 2026 reported some 50,000 troops already in the Middle East before an additional surge)"
+          "lastUpdated": "2026-08-19",
+          "source": "LLM-verified (AP, Mar. 24, 2026: U.S. military prepared to send at least 1,000 more troops to supplement some 50,000 troops already in the Mideast. No newer confirmed theater-wide total found.)"
         },
         {
           "id": "intel_cyber",
@@ -184,8 +184,8 @@
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-08-18",
-          "source": "LLM-verified (AP News on May 27, 2026, citing a CSIS analysis, reported the U.S. fired '1,000-plus Tomahawk missiles' at Iran. Returned as 1000 because the report did not provide a more precise confirmed number.)"
+          "lastUpdated": "2026-08-19",
+          "source": "LLM-verified (AP, May 27, 2026: U.S. fired 1,000-plus Tomahawk missiles at Iran, citing CSIS analysis.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists Combat Flights: 6,500+; no newer official sortie total located)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 23, 2026: 9,000+ combat flights. This is combat flights, not specifically fighter-only sorties, so use with caution.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 172 days",
-        "cost": "$2,408,000,000"
+        "detail": "$7,000,000/day \u00d7 172 days",
+        "cost": "$1,204,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 13-15, 2026 that USS George Washington is moving toward the Middle East to relieve the overextended USS Abraham Lincoln, signaling continued U.S. naval commitment to the theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 14-15, 2026 that UAE-linked vessels were again attacked in or near the Strait of Hormuz, with the UAE blaming Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 18, 2026 that President Trump threatened to bomb Oman over its work with Iran on a Strait of Hormuz shipping deal.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 19, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on August 2, 2026 reported Trump said he paused planned new strikes on Iran after pressure from Gulf leaders and to allow diplomacy more time.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported August 18, 2026, that Qatar rejected as a 'media ploy' Iran's claim that Doha is holding missing pilots, with Tehran yet to verify the allegation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported August 18, 2026, that Iran said it could shift to offensive operations as Washington considers further sanctions.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 18, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headlines on August 18, 2026 report President Trump has threatened to bomb Oman again over Hormuz amid deadlocked U.S.-Iran peace talks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-19T04:25:26Z",
+      "text": "<strong>Attackers go \u2018house to house\u2019 killing 25 villagers in central Nigeria</strong> -- An attack on a village in Nigeria\u2019s central Plateau state has killed at least 25 people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss"
+    },
+    {
       "time": "2026-08-19T03:34:40Z",
       "text": "<strong>UAE imposes indefinite trade embargo on Iran over alleged missile attacks</strong> -- Iran denies launching missiles at the UAE, suggesting the incident was a &amp;#039;false flag operation&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-08-18T13:12:56Z",
       "text": "<strong>Qatar: Iran\u2019s claim that Doha is holding missing pilots is a \u2018media ploy\u2019</strong> -- Qatar says Iran\u2019s claim it is holding missing aircrew is untrue and a \u201cmedia ploy\u201d, with Tehran yet to verify it. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/18/qatar-irans-claim-that-doha-is-holding-missing-pilots-is-a-media-ploy?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-18T12:39:43Z",
-      "text": "<strong>Qatar rejects Iran\u2019s \u2018false\u2019 claims about missing pilots</strong> -- Majed al-Ansari says the Iranian planes &amp;#039;violated Qatar\u2019s sovereignty&amp;#039; and were dealt with in accordance with the law. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/18/qatar-rejects-irans-false-claims-about-missing-pilots?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Attackers go \u2018house to house\u2019 killing 25 villagers in central Nigeria",
+      "description": "An attack on a village in Nigeria\u2019s central Plateau state has killed at least 25 people.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/attackers-go-house-to-house-killing-25-villagers-in-central-nigeria?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-19T04:25:26Z",
+      "tier": 2
+    },
+    {
       "title": "UAE imposes indefinite trade embargo on Iran over alleged missile attacks",
       "description": "Iran denies launching missiles at the UAE, suggesting the incident was a &#039;false flag operation&#039;.",
       "link": "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss",
@@ -1301,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today does not show newer casualty totals than the June 10, 2026 Al Jazeera tracker for Iran, Israel, and Gulf states, while Pentagon/DCAS data still supports 14 U.S. deaths under Operation Epic Fury as of July 17, 2026. AP reported in late July that renewed fighting after Epic Fury\u2019s conclusion caused additional U.S. casualties to be counted in a separate 'Overseas Operations' category rather than under Epic Fury. For military activity, the clearest official cumulative figure located remains the U.S. Navy\u2019s statement that over 13,000 targets in Iran were struck during the operation, with two carrier strike groups involved; no newer confirmed official totals were found for destroyers, personnel, specific munitions, sorties, or interceptor expenditure.",
+  "summary": "Confirmed reporting on August 19, 2026 indicates the war remains active at a lower but still dangerous tempo: AP reports the Pentagon\u2019s official Operation Epic Fury death toll stands at 14 U.S. service members for the original campaign, while renewed July fighting added additional deaths under a separate casualty category; HRANA\u2019s most comprehensive verified report still documents at least 3,636 deaths in Iran, including 1,701 civilians, and CENTCOM\u2019s latest accessible fact sheet continues to show 13,000+ targets struck during the operation. In the Gulf, tensions are rising again, with AP reporting new attacks on UAE-linked shipping in the Strait of Hormuz and a U.S. threat against Oman over a pending Hormuz arrangement with Iran, while USS George Washington is deploying to relieve the USS Abraham Lincoln after the latter\u2019s extended war cruise.",
   "briefings": [
     {
       "date": "2026-08-19",
       "day": 172,
-      "summary": "Confirmed reporting available today does not show newer casualty totals than the June 10, 2026 Al Jazeera tracker for Iran, Israel, and Gulf states, while Pentagon/DCAS data still supports 14 U.S. deaths under Operation Epic Fury as of July 17, 2026. AP reported in late July that renewed fighting after Epic Fury\u2019s conclusion caused additional U.S. casualties to be counted in a separate 'Overseas Operations' category rather than under Epic Fury. For military activity, the clearest official cumulative figure located remains the U.S. Navy\u2019s statement that over 13,000 targets in Iran were struck during the operation, with two carrier strike groups involved; no newer confirmed official totals were found for destroyers, personnel, specific munitions, sorties, or interceptor expenditure."
+      "summary": "Confirmed reporting on August 19, 2026 indicates the war remains active at a lower but still dangerous tempo: AP reports the Pentagon\u2019s official Operation Epic Fury death toll stands at 14 U.S. service members for the original campaign, while renewed July fighting added additional deaths under a separate casualty category; HRANA\u2019s most comprehensive verified report still documents at least 3,636 deaths in Iran, including 1,701 civilians, and CENTCOM\u2019s latest accessible fact sheet continues to show 13,000+ targets struck during the operation. In the Gulf, tensions are rising again, with AP reporting new attacks on UAE-linked shipping in the Strait of Hormuz and a U.S. threat against Oman over a pending Hormuz arrangement with Iran, while USS George Washington is deploying to relieve the USS Abraham Lincoln after the latter\u2019s extended war cruise."
     },
     {
       "date": "2026-08-18",
