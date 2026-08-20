@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-20T14:55:05Z",
+  "lastUpdated": "2026-08-20T15:48:50Z",
   "dayCount": 173,
   "banner": {
-    "strikes": "~9,000",
-    "killed": "3,541+",
-    "cost": "$35.6B+"
+    "strikes": "~12,300",
+    "killed": "3,536+",
+    "cost": "$35.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.6 billion+",
-    "dailyBurnRate": "~$206M/day",
+    "totalCost": "$35.9 billion+",
+    "dailyBurnRate": "~$207M/day",
     "daysOfOps": 173,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP, August 15, 2026 and August 13, 2026 reporting indicates USS Abraham Lincoln is in the Middle East and USS George Washington is heading there to replace it, implying two carrier strike groups in/entering theater during the transition.)"
+          "source": "LLM-verified (AP News Aug. 13, 2026: Wall Street Journal report cited by AP says George Washington would replace Lincoln as one of the two aircraft carriers now stationed in the Middle East)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 11,
+          "quantity": 8,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (AP, article on blockade operations: the Navy had 16 warships in the Middle East including 11 destroyers, three amphibious assault ships, one aircraft carrier and one littoral combat ship.)"
+          "lastUpdated": "2026-08-20",
+          "source": "LLM-verified (AP News March 13, 2026: Navy had 12 ships in Arabian Sea including USS Abraham Lincoln and eight destroyers; no newer confirmed total found)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP News March 24, 2026 and related AP reporting: about/some 50,000 U.S. troops already in the region)"
+          "source": "LLM-verified (AP News March 24, 2026: about 1,000 more troops to supplement some 50,000 troops already in the Mideast; later AP reports refer only to 'tens of thousands')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (CENTCOM / DoD fact sheet dated March 23, 2026 lists 'Combat Flights: 9,000+' in the first 24 days; no newer official cumulative sorties total found.)"
+          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "11 \u00d7 $240,000/day \u00d7 173 days",
-        "cost": "$456,720,000"
+        "detail": "8 \u00d7 $240,000/day \u00d7 173 days",
+        "cost": "$332,160,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 13, 2026 reported the Navy has reimposed a blockade on Iranian ports in the Strait of Hormuz while renewed hostilities have calmed but the war remains unresolved.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC and Al Jazeera reported on August 20, 2026 that President Trump announced a new economic campaign to isolate Iran after the 60-day ceasefire expired on Monday, with no clear diplomatic or military off-ramp.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 20, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported August 19, 2026 that the UAE suspended trade with Iran after renewed Iranian missile fire.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the UAE suspended trade with Iran on August 19, 2026 after renewed missile fire and said maritime trade that had partially resumed in late June has again been disrupted.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump announced new 'most crushing' economic sanctions against Iran after the 60-day peace deadline expired on Monday, August 17, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-20T14:55:47Z",
+      "text": "<strong>How China and Russia could hobble Trump\u2019s plans to isolate Iran</strong> -- Iran&amp;#039;s deep trade ties with Beijing and Moscow could prove difficult for the US to disrupt, say analysts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/20/how-china-and-russia-could-hobble-trumps-plans-to-isolate-iran?traffic_source=rss"
+    },
+    {
       "time": "2026-08-20T14:40:51Z",
       "text": "<strong>\u2018Tremendous costs\u2019: Can Trump stop other countries from trading with Iran?</strong> -- Iran&amp;#039;s foreign minister has dismissed Trump\u2019s latest threats, calling them a \u201cdiversion&amp;quot; from America\u2019s own crisis.&amp;quot; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/20/tremendous-costs-can-trump-stop-other-countries-from-trading-with-iran?traffic_source=rss"
@@ -768,16 +773,6 @@
       "link": "https://www.aljazeera.com/news/2026/8/20/gaza-holds-mass-funeral-for-50-palestinians-killed-in-israeli-genocidal-war?traffic_source=rss"
     },
     {
-      "time": "2026-08-20T09:20:17Z",
-      "text": "<strong>How conflict is making life more expensive for Iranians</strong> -- How conflict is making life more expensive for Iranians <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/how-conflict-is-making-life-more-expensive-for-iranians?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-20T08:43:17Z",
-      "text": "<strong>Are ships passing Hormuz more willing to defy Iran or US? What data shows</strong> -- Most ships are trying to mask identities while trying to cross the strait. But more seem scared of Iran than of the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/20/are-hormuz-ships-more-willing-to-defy-iran-or-the-us-what-data-shows?traffic_source=rss"
-    },
-    {
       "time": "2026-08-20T13:56:25Z",
       "text": "<strong>At least 15 killed in Kyiv as Ukraine grapples with air defence shortages</strong> -- Blocks of flats and warehouses were targeted in the &quot;massive attack&quot; on Thursday, Ukrainian officials say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
@@ -786,11 +781,6 @@
       "time": "2026-08-20T09:13:18Z",
       "text": "<strong>Trump vows tougher economic measures on Iran and supporting countries</strong> -- It comes after a 60-day ceasefire expired on Monday, with no sign of a diplomatic or military off-ramp to the conflict. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c2k7e83ynj4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-20T14:34:15Z",
-      "text": "<strong>At least 13 workers killed in landslide at Colombian gold mine</strong> -- Four members of an indigenous family are among the dead, witnesses said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/czxel9lz3vqo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-20T10:07:48Z",
@@ -803,6 +793,31 @@
       "link": "https://www.bbc.co.uk/news/articles/crl7yjlpx2po?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-08-20T07:33:11Z",
+      "text": "<strong>Australia &#x27;outraged&#x27; after Israel decides not to open criminal investigation into killing of aid worker in Gaza</strong> -- Australia&#x27;s foreign minister summoned the Israeli ambassador over &quot;insulting&quot; Zomi Frankcom decision. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cp87g29r718o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-19T17:46:01Z",
+      "text": "<strong>Multiple deadly Israeli strikes in Gaza in under 24 hours</strong> -- BBC Verify looks at footage from two deadly strikes in under 24 hours in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cp3rgxzk5x2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-20T09:20:17Z",
+      "text": "<strong>How conflict is making life more expensive for Iranians</strong> -- How conflict is making life more expensive for Iranians <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/how-conflict-is-making-life-more-expensive-for-iranians?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-20T08:43:17Z",
+      "text": "<strong>Are ships passing Hormuz more willing to defy Iran or US? What data shows</strong> -- Most ships are trying to mask identities while trying to cross the strait. But more seem scared of Iran than of the US. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/20/are-hormuz-ships-more-willing-to-defy-iran-or-the-us-what-data-shows?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-20T14:34:15Z",
+      "text": "<strong>At least 13 workers killed in landslide at Colombian gold mine</strong> -- Four members of an indigenous family are among the dead, witnesses said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/czxel9lz3vqo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-20T08:24:04Z",
       "text": "<strong>Heatwaves and energy crunch: Can Europe withstand a double shock?</strong> -- Heatwaves are squeezing growth and productivity while the Iran war drives up Europe&amp;#039;s energy costs. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/counting-the-cost/2026/8/20/heatwaves-and-energy-crunch-can-europe-withstand-a-double-shock?traffic_source=rss"
@@ -811,11 +826,6 @@
       "time": "2026-08-20T08:18:15Z",
       "text": "<strong>Video shows Russian missile strike on Ukrainian capital</strong> -- Ukrainian officials say at least 12 people were killed and dozens injured after Russian ballistic missiles struck Kyiv. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/video-shows-russian-missile-strike-on-ukrainian-capital?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-20T07:33:11Z",
-      "text": "<strong>Australia &#x27;outraged&#x27; after Israel decides not to open criminal investigation into killing of aid worker in Gaza</strong> -- Australia&#x27;s foreign minister summoned the Israeli ambassador over &quot;insulting&quot; Zomi Frankcom decision. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cp87g29r718o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-20T07:38:22Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-20T11:06:54Z",
       "text": "<strong>At least 15 killed in Kyiv as Ukraine grapples with air defence shortages</strong> -- Blocks of flats and warehouses were targeted in the &quot;massive attack&quot; on Thursday, Ukrainian officials say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-20T02:50:17Z",
-      "text": "<strong>Russian missile barrage kills at least 13 people in Ukraine\u2019s Kyiv</strong> -- Russian ballistic missile attacks hit at least three districts in Kyiv, collapsing buildings and causing fires. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/20/russian-strike-kills-3-in-ukraine-as-zelenskyy-faces-pressure-at-home?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-20T01:56:41Z",
-      "text": "<strong>Alarm in South Korea as Iran dispute with Trump shakes a 72-year alliance</strong> -- Trump&amp;#039;s order to scale back military drills rattles Seoul, reviving doubts over US security guarantees. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/20/alarm-in-south-korea-as-iran-dispute-with-trump-shakes-a-72-year-alliance?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,19 @@
   ],
   "newsFeed": [
     {
+      "title": "How China and Russia could hobble Trump\u2019s plans to isolate Iran",
+      "description": "Iran&#039;s deep trade ties with Beijing and Moscow could prove difficult for the US to disrupt, say analysts.",
+      "link": "https://www.aljazeera.com/news/2026/8/20/how-china-and-russia-could-hobble-trumps-plans-to-isolate-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-20T14:55:47Z",
+      "tier": 2
+    },
+    {
       "title": "\u2018Tremendous costs\u2019: Can Trump stop other countries from trading with Iran?",
       "description": "Iran&#039;s foreign minister has dismissed Trump\u2019s latest threats, calling them a \u201cdiversion&quot; from America\u2019s own crisis.&quot;",
       "link": "https://www.aljazeera.com/news/2026/8/20/tremendous-costs-can-trump-stop-other-countries-from-trading-with-iran?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-20T14:40:51Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 13 workers killed in landslide at Colombian gold mine",
-      "description": "Four members of an indigenous family are among the dead, witnesses said.",
-      "link": "https://www.bbc.co.uk/news/articles/czxel9lz3vqo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-20T14:34:15Z",
       "tier": 2
     },
     {
@@ -1253,14 +1253,6 @@
       "tier": 2
     },
     {
-      "title": "Ecuador intelligence chief and five Americans killed in Kenya helicopter crash",
-      "description": "Michele Sensi-Contugi and his wife Stephany Hollihan are among the seven people killed in the crash.",
-      "link": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-20T10:41:25Z",
-      "tier": 2
-    },
-    {
       "title": "Ex-Zambian minister killed in security raid on opposition",
       "description": "Police confirm Mutotwe Kafwaya's death after growing demands for information about his whereabouts.",
       "link": "https://www.bbc.co.uk/news/articles/cg5ljlzedd5o?at_medium=RSS&at_campaign=rss",
@@ -1269,27 +1261,11 @@
       "tier": 2
     },
     {
-      "title": "How conflict is making life more expensive for Iranians",
-      "description": "How conflict is making life more expensive for Iranians",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/how-conflict-is-making-life-more-expensive-for-iranians?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-20T09:20:17Z",
-      "tier": 2
-    },
-    {
       "title": "Trump vows tougher economic measures on Iran and supporting countries",
       "description": "It comes after a 60-day ceasefire expired on Monday, with no sign of a diplomatic or military off-ramp to the conflict.",
       "link": "https://www.bbc.co.uk/news/articles/c2k7e83ynj4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-20T09:13:18Z",
-      "tier": 2
-    },
-    {
-      "title": "Are ships passing Hormuz more willing to defy Iran or US? What data shows",
-      "description": "Most ships are trying to mask identities while trying to cross the strait. But more seem scared of Iran than of the US.",
-      "link": "https://www.aljazeera.com/news/2026/8/20/are-hormuz-ships-more-willing-to-defy-iran-or-the-us-what-data-shows?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-20T08:43:17Z",
       "tier": 2
     },
     {
@@ -1317,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 20, 2026 shows the war remains unresolved after the June ceasefire framework effectively broke down: AP says the 60-day deadline from the Versailles deal expired on August 17, 2026 without a final accord, Trump has now shifted toward harsher economic pressure on Iran, and the UAE has suspended all trade with Iran after renewed missile fire. On casualties, the latest clearly sourced cumulative figures found were 3,468 confirmed killed in Iran, 18 U.S. service members killed, 26 Israelis killed, and 29 killed in Gulf states; for operations, the latest official DoD fact sheet publicly found still gives 9,000+ targets struck and 9,000+ combat flights in the first 24 days, while recent AP carrier reporting indicates two U.S. carrier strike groups are in or entering the theater during the Abraham Lincoln-to-George Washington transition.",
+  "summary": "Confirmed reporting still points to the last widely published cumulative battlefield totals from June 10: Iran\u2019s Health Ministry said 3,468 people had been killed and more than 26,500 injured in Iran, while Al Jazeera listed 26 killed in Israel and 28 killed across Gulf states. For U.S. forces, the latest confirmed official tally reported by AP on July 13 was 14 military deaths in the Iran war, and AP on July 28 said four additional July deaths were shifted into a separate post-Operation Epic Fury casualty category after the Pentagon said Epic Fury had ended. On the military posture side, AP on August 13 reported two U.S. carriers are now stationed in the Middle East, while the best confirmed strike total remains the Pentagon\u2019s April 1 fact sheet listing 12,300+ targets struck and 13,000+ combat flights.",
   "briefings": [
     {
       "date": "2026-08-20",
       "day": 173,
-      "summary": "Confirmed reporting on August 20, 2026 shows the war remains unresolved after the June ceasefire framework effectively broke down: AP says the 60-day deadline from the Versailles deal expired on August 17, 2026 without a final accord, Trump has now shifted toward harsher economic pressure on Iran, and the UAE has suspended all trade with Iran after renewed missile fire. On casualties, the latest clearly sourced cumulative figures found were 3,468 confirmed killed in Iran, 18 U.S. service members killed, 26 Israelis killed, and 29 killed in Gulf states; for operations, the latest official DoD fact sheet publicly found still gives 9,000+ targets struck and 9,000+ combat flights in the first 24 days, while recent AP carrier reporting indicates two U.S. carrier strike groups are in or entering the theater during the Abraham Lincoln-to-George Washington transition."
+      "summary": "Confirmed reporting still points to the last widely published cumulative battlefield totals from June 10: Iran\u2019s Health Ministry said 3,468 people had been killed and more than 26,500 injured in Iran, while Al Jazeera listed 26 killed in Israel and 28 killed across Gulf states. For U.S. forces, the latest confirmed official tally reported by AP on July 13 was 14 military deaths in the Iran war, and AP on July 28 said four additional July deaths were shifted into a separate post-Operation Epic Fury casualty category after the Pentagon said Epic Fury had ended. On the military posture side, AP on August 13 reported two U.S. carriers are now stationed in the Middle East, while the best confirmed strike total remains the Pentagon\u2019s April 1 fact sheet listing 12,300+ targets struck and 13,000+ combat flights."
     },
     {
       "date": "2026-08-19",
