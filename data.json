@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-20T16:50:44Z",
+  "lastUpdated": "2026-08-20T17:45:44Z",
   "dayCount": 173,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,535+",
-    "cost": "$35.9B+"
+    "strikes": "~12,300",
+    "killed": "3,511+",
+    "cost": "$34.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.9 billion+",
-    "dailyBurnRate": "~$207M/day",
+    "totalCost": "$34.6 billion+",
+    "dailyBurnRate": "~$200M/day",
     "daysOfOps": 173,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP News Aug. 13, 2026: Wall Street Journal report cited by AP says George Washington would replace Lincoln as one of the two aircraft carriers now stationed in the Middle East)"
+          "source": "LLM-verified (AP, August 20, 2026: USS George Washington has arrived in the Middle East relieving USS Abraham Lincoln, indicating one US carrier strike group currently operating there)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP News March 24, 2026: about 1,000 more troops to supplement some 50,000 troops already in the Mideast; later AP reports refer only to 'tens of thousands')"
+          "source": "LLM-verified (AP, March 24, 2026 and March 21, 2026 reporting some 50,000 US troops already in the Middle East supporting the war effort; no newer confirmed official total found)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM / DoD Operation Epic Fury Fact Sheet, April 1, 2026: 'Combat Flights: 13,000+'; used here as closest confirmed fighter/attack sortie proxy but not broken out by fighter-only type)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 173 days",
-        "cost": "$2,422,000,000"
+        "detail": "$7,000,000/day \u00d7 173 days",
+        "cost": "$1,211,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 20, 2026 reported the USS George Washington is now in the Middle East relieving the USS Abraham Lincoln, sustaining US carrier presence in theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/BBC/Al Jazeera reported August 18-20, 2026 that the 60-day ceasefire/negotiation period expired without an off-ramp and the Trump administration announced a new campaign of economic isolation and secondary sanctions against Iran and trading partners.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 20, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "The 60-day ceasefire reportedly expired on Monday with no clear diplomatic or military off-ramp, per BBC headline provided by the user.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump announced new 'economic warfare' / 'most crushing' sanctions threats against countries helping or trading with Iran, according to Al Jazeera and BBC headlines provided by the user.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the USS George Washington is moving to replace the USS Abraham Lincoln in the Middle East, underscoring sustained U.S. naval commitment despite strain on crews and logistics.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-20T17:00:12Z",
+      "text": "<strong>North Korea fires ballistic missiles as US-South Korea drills near end</strong> -- South Korea convened an emergency security meeting following the launches, as Trump seeks to sway Pyongyang. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/20/north-korea-launches-ballistic-missiles-as-us-south-korea-drills-end?traffic_source=rss"
+    },
+    {
       "time": "2026-08-20T15:41:56Z",
       "text": "<strong>Deadly Russian missile barrage hits Kyiv in hours-long overnight attack</strong> -- Russia launched a hours-long overnight barrage of ballistic and cruise missiles and drones across Kyiv. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/deadly-russian-missile-barrage-hits-kyiv-in-hours-long-overnight-attack?traffic_source=rss"
@@ -773,13 +778,8 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/war-on-iran-trump-announces-a-new-campaign-to-isolate-iran-economically?traffic_source=rss"
     },
     {
-      "time": "2026-08-20T13:05:05Z",
-      "text": "<strong>Gaza holds mass funeral for 50 Palestinians killed in Israeli genocidal war</strong> -- Funerals take place weeks after the bodies of 112 Palestinians were buried in another mass funeral. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/20/gaza-holds-mass-funeral-for-50-palestinians-killed-in-israeli-genocidal-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-20T13:56:25Z",
-      "text": "<strong>At least 15 killed in Kyiv as Ukraine grapples with air defence shortages</strong> -- Blocks of flats and warehouses were targeted in the &quot;massive attack&quot; on Thursday, Ukrainian officials say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "time": "2026-08-20T17:14:55Z",
+      "text": "<strong>Russia &#x27;purposefully&#x27; hit critical infrastructure in latest strikes, Kyiv mayor says</strong> -- At least 17 people were killed in the &quot;massive attack&quot; overnight on Ukraine&#x27;s capital, as mayor Vitali Klitschko warns hot water supply has been disrupted. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
     },
     {
@@ -801,6 +801,16 @@
       "time": "2026-08-20T07:33:11Z",
       "text": "<strong>Australia &#x27;outraged&#x27; after Israel decides not to open criminal investigation into killing of aid worker in Gaza</strong> -- Australia&#x27;s foreign minister summoned the Israeli ambassador over &quot;insulting&quot; Zomi Frankcom decision. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cp87g29r718o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-20T13:05:05Z",
+      "text": "<strong>Gaza holds mass funeral for 50 Palestinians killed in Israeli genocidal war</strong> -- Funerals take place weeks after the bodies of 112 Palestinians were buried in another mass funeral. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/20/gaza-holds-mass-funeral-for-50-palestinians-killed-in-israeli-genocidal-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-20T13:56:25Z",
+      "text": "<strong>At least 15 killed in Kyiv as Ukraine grapples with air defence shortages</strong> -- Blocks of flats and warehouses were targeted in the &quot;massive attack&quot; on Thursday, Ukrainian officials say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-19T17:46:01Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-20T05:43:01Z",
       "text": "<strong>Australian anger as Israel drops World Central Kitchen deaths case</strong> -- Australia has summoned the Israeli ambassador in anger over the country\u2019s decision not to pursue criminal proceedings. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/australian-anger-as-israel-drops-world-central-kitchen-deaths-case?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-20T04:59:22Z",
-      "text": "<strong>At least 6 killed in multiple Russian missile strikes across Ukraine</strong> -- Russian ballistic missiles killed at least six people and \u2060injured over two dozen more in Kyiv early on Thursday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/at-least-6-killed-in-multiple-russian-missile-strikes-across-ukraine?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-20T04:31:10Z",
-      "text": "<strong>Trump vows \u2018economic warfare\u2019 on countries helping Iran</strong> -- US President Donald Trump has threatened \u2018economic D-Day\u2019 on any countries that help or do business with Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/trump-vows-economic-warfare-on-countries-helping-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Russia 'purposefully' hit critical infrastructure in latest strikes, Kyiv mayor says",
+      "description": "At least 17 people were killed in the \"massive attack\" overnight on Ukraine's capital, as mayor Vitali Klitschko warns hot water supply has been disrupted.",
+      "link": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-20T17:14:55Z",
+      "tier": 2
+    },
+    {
+      "title": "North Korea fires ballistic missiles as US-South Korea drills near end",
+      "description": "South Korea convened an emergency security meeting following the launches, as Trump seeks to sway Pyongyang.",
+      "link": "https://www.aljazeera.com/news/2026/8/20/north-korea-launches-ballistic-missiles-as-us-south-korea-drills-end?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-20T17:00:12Z",
+      "tier": 2
+    },
+    {
       "title": "Deadly Russian missile barrage hits Kyiv in hours-long overnight attack",
       "description": "Russia launched a hours-long overnight barrage of ballistic and cruise missiles and drones across Kyiv.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/deadly-russian-missile-barrage-hits-kyiv-in-hours-long-overnight-attack?traffic_source=rss",
@@ -1237,27 +1253,11 @@
       "tier": 2
     },
     {
-      "title": "At least 15 killed in Kyiv as Ukraine grapples with air defence shortages",
-      "description": "Blocks of flats and warehouses were targeted in the \"massive attack\" on Thursday, Ukrainian officials say.",
-      "link": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-20T13:56:25Z",
-      "tier": 2
-    },
-    {
       "title": "War on Iran: Trump announces a new campaign to isolate Iran economically",
       "description": "US President Donald Trump has announced a new campaign to isolate Iran and punish its trading partners.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/war-on-iran-trump-announces-a-new-campaign-to-isolate-iran-economically?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-20T13:14:14Z",
-      "tier": 2
-    },
-    {
-      "title": "Gaza holds mass funeral for 50 Palestinians killed in Israeli genocidal war",
-      "description": "Funerals take place weeks after the bodies of 112 Palestinians were buried in another mass funeral.",
-      "link": "https://www.aljazeera.com/news/2026/8/20/gaza-holds-mass-funeral-for-50-palestinians-killed-in-israeli-genocidal-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-20T13:05:05Z",
       "tier": 2
     },
     {
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed cumulative casualty figures available in accessible reporting remain broadly unchanged from the June 10, 2026 Al Jazeera tracker for Iran, Israel and Gulf-state deaths, while the best accessible official U.S. fatality count for Operation Epic Fury remains 13 from March 2026 official/Congressional reporting; AP reported in late July that the Pentagon created a separate casualty category after saying Operation Epic Fury had ended, so later renewed U.S.-Iran fighting was not being counted inside the Epic Fury tally. On August 20, 2026, BBC and Al Jazeera reported that Trump announced tougher economic measures and a new campaign to isolate Iran after the 60-day ceasefire expired.",
+  "summary": "Confirmed reporting on August 20, 2026 indicates the military front remains tense but the main new development is political-economic: after the 60-day ceasefire window expired earlier this week without a breakthrough, the Trump administration shifted toward intensified economic pressure and threatened secondary sanctions on countries and firms dealing with Iran. At the same time, AP reported the USS George Washington has arrived in the Middle East to relieve the long-deployed USS Abraham Lincoln, maintaining US naval strike capacity in theater. For cumulative war figures, the latest clearly attributable confirmed totals I could verify remain 3,468 killed and more than 26,500 wounded in Iran from Iran Ministry of Health figures carried by Al Jazeera, 26 killed in Israel from the same tracker, 17 US military dead per AP as of July 19, and 12,300+ targets struck plus 13,000+ combat flights from the April 1 CENTCOM/DoD Epic Fury fact sheet.",
   "briefings": [
     {
       "date": "2026-08-20",
       "day": 173,
-      "summary": "Confirmed cumulative casualty figures available in accessible reporting remain broadly unchanged from the June 10, 2026 Al Jazeera tracker for Iran, Israel and Gulf-state deaths, while the best accessible official U.S. fatality count for Operation Epic Fury remains 13 from March 2026 official/Congressional reporting; AP reported in late July that the Pentagon created a separate casualty category after saying Operation Epic Fury had ended, so later renewed U.S.-Iran fighting was not being counted inside the Epic Fury tally. On August 20, 2026, BBC and Al Jazeera reported that Trump announced tougher economic measures and a new campaign to isolate Iran after the 60-day ceasefire expired."
+      "summary": "Confirmed reporting on August 20, 2026 indicates the military front remains tense but the main new development is political-economic: after the 60-day ceasefire window expired earlier this week without a breakthrough, the Trump administration shifted toward intensified economic pressure and threatened secondary sanctions on countries and firms dealing with Iran. At the same time, AP reported the USS George Washington has arrived in the Middle East to relieve the long-deployed USS Abraham Lincoln, maintaining US naval strike capacity in theater. For cumulative war figures, the latest clearly attributable confirmed totals I could verify remain 3,468 killed and more than 26,500 wounded in Iran from Iran Ministry of Health figures carried by Al Jazeera, 26 killed in Israel from the same tracker, 17 US military dead per AP as of July 19, and 12,300+ targets struck plus 13,000+ combat flights from the April 1 CENTCOM/DoD Epic Fury fact sheet."
     },
     {
       "date": "2026-08-19",
