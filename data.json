@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-20T22:45:07Z",
+  "lastUpdated": "2026-08-20T23:41:09Z",
   "dayCount": 173,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$34.4B+"
+    "killed": "3,509+",
+    "cost": "$28.8B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "15",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.4 billion+",
-    "dailyBurnRate": "~$199M/day",
+    "totalCost": "$28.8 billion+",
+    "dailyBurnRate": "~$167M/day",
     "daysOfOps": 173,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln, indicating one U.S. carrier strike group currently in theater: https://apnews.com/article/ad0783da9f5c491ba6793ef801a9a11e)"
+          "source": "LLM-verified (AP, August 20, 2026: USS George Washington now operating in the Middle East relieving USS Abraham Lincoln)"
         },
         {
           "id": "destroyers",
@@ -185,7 +185,7 @@
             "TLAM"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP on May 27, 2026, citing CSIS analysis, reported the U.S. fired 1,000-plus Tomahawk missiles at Iran; exact cumulative figure not given beyond 1,000-plus)"
+          "source": "LLM-verified (AP analysis on U.S. stockpiles, June 2026: U.S. fired '1,000-plus Tomahawk missiles' at Iran)"
         },
         {
           "id": "jdam",
@@ -261,7 +261,7 @@
             "deep penetration"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (DoD transcript on the major B-2 strike states U.S. forces employed 14 GBU-57 Massive Ordnance Penetrators; no newer cumulative total found in retrieved reporting: https://www.defense.gov/News/Transcripts/Transcript/Article/4222543/secretary-of-defense-pete-hegseth-and-chairman-of-the-joint-chiefs-of-staff-gen/)"
+          "source": "LLM-verified (AP report on B-2 strike mission said 14 GBU-57 bunker busters were used in the Iran strike mission)"
         },
         {
           "id": "fighter_sorties",
@@ -286,7 +286,7 @@
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 290,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (Pentagon statement reported in Reuters Connect item quoting Hegseth: U.S. and Gulf partners had 'thus far intercepted 1,700 ballistic missiles and one-way attack drones.')"
+          "source": "LLM-verified (AP/CSIS stockpile analysis: as many as 290 THAAD interceptors were fired in the Iran war)"
         },
         {
           "id": "prestrike_buildup",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "290 \u00d7 $4,000,000 each",
+        "cost": "$1,160,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports Yemen is sliding back toward full-scale war, with Houthi-government attacks intensifying, raising regional spillover risk for Red Sea and Gulf security.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 20, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC both report new U.S. economic pressure threats against Iran on August 20, 2026, including Treasury Secretary Scott Bessent saying new measures could 'collapse' Iran's economy/regime.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 20, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported the June 17, 2026 interim U.S.-Iran negotiating period expired without an announced extension, indicating no clear diplomatic off-ramp.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 20, 2026 that President Trump threatened 'crushing economic measures' and 'Economic Warfare and Isolation on an unprecedented scale' against Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on July 28, 2026 reported renewed U.S.-Iran fighting this month after Iran attacked shipping in the Strait of Hormuz, with multiple ballistic missiles intercepted near U.S. troops.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-20T23:19:56Z",
+      "text": "<strong>Houthis and government trade attacks as Yemen slides back to full-scale war</strong> -- Gov&amp;#039;t forces carried out 81 attacks in the last 24 hours as Houthis claim to have hit two targets in Saudi Arabia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/20/houthis-and-government-trade-attacks-as-yemen-slides-back-to-full-scale-war?traffic_source=rss"
+    },
+    {
       "time": "2026-08-20T20:36:51Z",
       "text": "<strong>Landslide at illegal gold mine kills 13 people in Colombia</strong> -- At least 13 people have been killed and seven others injured in an unlicensed gold mine in southwest Colombia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/landslide-at-illegal-gold-mine-kills-13-people-in-colombia-2?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-08-20T09:13:18Z",
       "text": "<strong>Trump vows tougher economic measures on Iran and supporting countries</strong> -- It comes after a 60-day ceasefire expired on Monday, with no sign of a diplomatic or military off-ramp to the conflict. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c2k7e83ynj4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-20T13:05:05Z",
-      "text": "<strong>Gaza holds mass funeral for 50 Palestinians killed in Israeli genocidal war</strong> -- Funerals take place weeks after the bodies of 112 Palestinians were buried in another mass funeral. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/20/gaza-holds-mass-funeral-for-50-palestinians-killed-in-israeli-genocidal-war?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Houthis and government trade attacks as Yemen slides back to full-scale war",
+      "description": "Gov&#039;t forces carried out 81 attacks in the last 24 hours as Houthis claim to have hit two targets in Saudi Arabia.",
+      "link": "https://www.aljazeera.com/news/2026/8/20/houthis-and-government-trade-attacks-as-yemen-slides-back-to-full-scale-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-20T23:19:56Z",
+      "tier": 2
+    },
+    {
       "title": "Landslide at illegal gold mine kills 13 people in Colombia",
       "description": "At least 13 people have been killed and seven others injured in an unlicensed gold mine in southwest Colombia.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/landslide-at-illegal-gold-mine-kills-13-people-in-colombia-2?traffic_source=rss",
@@ -1293,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today did not materially change the main cumulative public casualty figures previously in wide circulation: Iran\u2019s Health Ministry figure remains 3,468 dead and more than 26,500 injured in Iran, Al Jazeera\u2019s last published cumulative tracker still lists 26 Israeli deaths and 28 Gulf-state deaths, and AP\u2019s latest confirmed official U.S. military death toll remains 14. Today\u2019s reporting focused more on the political and military aftermath, including U.S. Treasury pressure on Iran and AP\u2019s report that USS George Washington is now operating in the Middle East after relieving USS Abraham Lincoln.",
+  "summary": "Confirmed reporting on August 20, 2026 indicates the USS George Washington has arrived in the Middle East to relieve the long-deployed USS Abraham Lincoln, while public reporting continues to focus more on force posture, sanctions pressure, and regional spillover than on updated official cumulative casualty tables. CENTCOM's latest readily accessible fact sheet still lists 13,000+ targets struck, AP reporting continues to describe 1,000-plus Tomahawks and up to 290 THAAD interceptors used, and no newer clearly confirmed official cumulative totals were found today for several requested fields, so those remain null.",
   "briefings": [
     {
       "date": "2026-08-20",
       "day": 173,
-      "summary": "Confirmed reporting available today did not materially change the main cumulative public casualty figures previously in wide circulation: Iran\u2019s Health Ministry figure remains 3,468 dead and more than 26,500 injured in Iran, Al Jazeera\u2019s last published cumulative tracker still lists 26 Israeli deaths and 28 Gulf-state deaths, and AP\u2019s latest confirmed official U.S. military death toll remains 14. Today\u2019s reporting focused more on the political and military aftermath, including U.S. Treasury pressure on Iran and AP\u2019s report that USS George Washington is now operating in the Middle East after relieving USS Abraham Lincoln."
+      "summary": "Confirmed reporting on August 20, 2026 indicates the USS George Washington has arrived in the Middle East to relieve the long-deployed USS Abraham Lincoln, while public reporting continues to focus more on force posture, sanctions pressure, and regional spillover than on updated official cumulative casualty tables. CENTCOM's latest readily accessible fact sheet still lists 13,000+ targets struck, AP reporting continues to describe 1,000-plus Tomahawks and up to 290 THAAD interceptors used, and no newer clearly confirmed official cumulative totals were found today for several requested fields, so those remain null."
     },
     {
       "date": "2026-08-19",
