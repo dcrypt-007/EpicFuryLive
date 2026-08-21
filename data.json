@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-21T20:41:24Z",
+  "lastUpdated": "2026-08-21T21:39:10Z",
   "dayCount": 174,
   "banner": {
     "strikes": "~11,000",
-    "killed": "4,931+",
-    "cost": "$35.6B+"
+    "killed": "3,515+",
+    "cost": "$32.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "2",
+    "gulfCasualties": "3",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.6 billion+",
-    "dailyBurnRate": "~$205M/day",
+    "totalCost": "$32.5 billion+",
+    "dailyBurnRate": "~$187M/day",
     "daysOfOps": 174,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' deployed naval forces in Operation Epic Fury)"
+          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington joined USS George H.W. Bush in the Middle East, with Lincoln being relieved: https://apnews.com/article/aircraft-carrier-washington-lincoln-iran-war-trump-10ddf7b55104e0eeec2e9213e1021b98)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (AP on March 24, 2026 reported the US military was preparing to send at least 1,000 more troops to supplement some 50,000 troops already in the Mideast. No newer confirmed total found today: https://apnews.com/article/8bb5e79a98ea72fccc5c50b4931ad778)"
+          "source": "LLM-verified (AP on Mar. 24, 2026 reported 'some 50,000 troops already in the Mideast' for the operation; no newer confirmed total found in searched sources: https://apnews.com/article/8bb5e79a98ea72fccc5c50b4931ad778)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (AP analysis on U.S. weapons stockpiles said the U.S. fired '1,000-plus Tomahawk missiles' at Iran)"
+          "source": "LLM-verified (Washington Post reported more than 850 Tomahawk missiles fired in four weeks of war; later Aug. 8 report reiterated first month exceeded 850. No newer official cumulative total found: https://www.washingtonpost.com/national-security/2026/03/27/iran-war-tomahawk-missiles/ ; https://www.washingtonpost.com/technology/2026/08/08/pentagon-presses-defense-firms-build-weapons-iran-war-depletes-stocks/)"
         },
         {
           "id": "jdam",
@@ -286,7 +286,7 @@
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 1000,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (Reuters Connect/Hegseth remarks: U.S. and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
+          "source": "LLM-verified (Washington Post reported more than 1,000 Patriot and THAAD/interceptor missiles fired in the first month of war; no newer official cumulative total found: https://www.washingtonpost.com/national-security/2026/03/27/iran-war-tomahawk-missiles/ ; https://www.washingtonpost.com/technology/2026/08/08/pentagon-presses-defense-firms-build-weapons-iran-war-depletes-stocks/)"
         },
         {
           "id": "prestrike_buildup",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "1,000 \u00d7 $4,000,000 each",
+        "cost": "$4,000,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera on Aug. 1, 2026 reported Iran-backed strikes had hit or targeted regional energy infrastructure and shipping, with damage to vessels off Oman and drones intercepted by Kuwait.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Aug. 18, 2026 reported a projectile hit a ship in the strait and Yemen's Houthis claimed a drone attack on a Saudi oil refinery.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and CENTCOM reporting indicate the US naval blockade on Iranian ports remains in force in the Strait of Hormuz as of Aug. 20, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 21, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on August 20 reported the USS George Washington has entered the Middle East while the Navy continues enforcing the reimposed blockade on Iranian ports.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera and AP reporting indicate renewed sanctions pressure from Washington and continued fragility around the June ceasefire framework, but no new confirmed casualty total beyond the figures above was found.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 20, 2026 reported the Navy is enforcing a reimposed blockade on Iranian ports in the Strait of Hormuz while USS George Washington has relieved USS Abraham Lincoln in the Middle East.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reports Yemen is sliding back toward full-scale war, with Houthi-government attacks intensifying, raising regional spillover risk for Red Sea and Gulf security.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -778,8 +778,8 @@
       "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-21T19:22:05Z",
-      "text": "<strong>One killed in sword attack at Swedish school</strong> -- One person remains in a critical condition, while another suffered minor injuries in the attack. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "time": "2026-08-21T21:03:24Z",
+      "text": "<strong>One killed in sword attack at Swedish school</strong> -- Officials say another three people were injured, and an 18-year-old male suspect shot and arrested. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&at_campaign=rss"
     },
     {
@@ -801,6 +801,11 @@
       "time": "2026-08-20T23:16:45Z",
       "text": "<strong>How much could Trump&#x27;s &#x27;economic D-Day&#x27; hurt Iran?</strong> -- Iran has so far proved adept at finding ways around years of already punishing sanctions on its economy. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-21T19:22:05Z",
+      "text": "<strong>One killed in sword attack at Swedish school</strong> -- One person remains in a critical condition, while another suffered minor injuries in the attack. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-21T13:59:28Z",
@@ -846,11 +851,6 @@
       "time": "2026-08-21T11:15:54Z",
       "text": "<strong>Closure of al-Makha port leaves workers and traders fearing for the future</strong> -- Houthi attacks on al-Makha port forced it to suspend operations, leaving workers without jobs and traders concerned. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/21/houthi-attacks-on-mokha-port-forced-it-to-suspend-operations-leaving-workers-jobless?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-21T00:00:00Z",
-      "text": "<strong>Iran war live: Tehran says planned US sanctions threaten global economy</strong> -- Iran says Washington&amp;#039;s warning of an &amp;#039;economic D-Day&amp;#039; threatens the entire global economy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/8/21/iran-war-live-us-vows-toughest-iran-sanctions-urges-china-support?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "One killed in sword attack at Swedish school",
+      "description": "Officials say another three people were injured, and an 18-year-old male suspect shot and arrested.",
+      "link": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-21T21:03:24Z",
+      "tier": 2
+    },
+    {
       "title": "Western allies slam Israel for ending World Central Kitchen strike probe",
       "description": "UK, Australia and Canada call Israel\u2019s decision not to investigate deadly 2024 strike on a Gaza aid convoy &#039;shameful&#039;.",
       "link": "https://www.aljazeera.com/news/2026/8/21/western-allies-slam-israel-for-ending-world-central-kitchen-strike-probe?traffic_source=rss",
@@ -1226,14 +1234,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c2lq5g4dedpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-21T19:31:47Z",
-      "tier": 2
-    },
-    {
-      "title": "One killed in sword attack at Swedish school",
-      "description": "One person remains in a critical condition, while another suffered minor injuries in the attack.",
-      "link": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-21T19:22:05Z",
       "tier": 2
     },
     {
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 19-21, 2026 shows continued diplomatic and regional spillover rather than a new large battlefield shift: AP reported Iran rejecting new U.S. economic threats, France expelling two Iranian diplomats after a reciprocal dispute, Iran alleging Qatar is holding three pilots missing since March while Qatar denies it, and the UAE accusing Iran of another attack on one of its vessels in the Strait of Hormuz. On casualties, the clearest current confirmed figures located were AP\u2019s Pentagon-backed total of 18 U.S. service members killed and Al Jazeera\u2019s tracker citing Iran\u2019s Ministry of Health at 3,468 deaths in Iran; official U.S. fact sheets still provide the best confirmed strike total, with 11,000+ targets struck by March 28, while many cost-model weapons-use quantities could not be independently confirmed from named primary sources today.",
+  "summary": "As of Friday, August 21, 2026, the latest confirmed figures found in searched sources still show 3,468 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s continuously updated war tracker, 26 Israelis killed, and an official US military death toll of 18; AP reporting this week also says 757 US troops have been wounded since the war began, while the US has now rotated in the USS George Washington to join the USS George H.W. Bush in the Middle East, keeping two carrier strike groups in theater as the blockade of Iranian ports continues and shipping/security risks in and around the Strait of Hormuz remain active.",
   "briefings": [
     {
       "date": "2026-08-21",
       "day": 174,
-      "summary": "Confirmed reporting on August 19-21, 2026 shows continued diplomatic and regional spillover rather than a new large battlefield shift: AP reported Iran rejecting new U.S. economic threats, France expelling two Iranian diplomats after a reciprocal dispute, Iran alleging Qatar is holding three pilots missing since March while Qatar denies it, and the UAE accusing Iran of another attack on one of its vessels in the Strait of Hormuz. On casualties, the clearest current confirmed figures located were AP\u2019s Pentagon-backed total of 18 U.S. service members killed and Al Jazeera\u2019s tracker citing Iran\u2019s Ministry of Health at 3,468 deaths in Iran; official U.S. fact sheets still provide the best confirmed strike total, with 11,000+ targets struck by March 28, while many cost-model weapons-use quantities could not be independently confirmed from named primary sources today."
+      "summary": "As of Friday, August 21, 2026, the latest confirmed figures found in searched sources still show 3,468 killed and more than 26,500 wounded in Iran according to Iran\u2019s Ministry of Health via Al Jazeera\u2019s continuously updated war tracker, 26 Israelis killed, and an official US military death toll of 18; AP reporting this week also says 757 US troops have been wounded since the war began, while the US has now rotated in the USS George Washington to join the USS George H.W. Bush in the Middle East, keeping two carrier strike groups in theater as the blockade of Iranian ports continues and shipping/security risks in and around the Strait of Hormuz remain active."
     },
     {
       "date": "2026-08-20",
