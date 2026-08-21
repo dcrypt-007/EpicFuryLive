@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-21T07:07:48Z",
+  "lastUpdated": "2026-08-21T07:57:25Z",
   "dayCount": 174,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,507+",
-    "cost": "$26.7B+"
+    "cost": "$34.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$26.7 billion+",
-    "dailyBurnRate": "~$153M/day",
+    "totalCost": "$34.5 billion+",
+    "dailyBurnRate": "~$198M/day",
     "daysOfOps": 174,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (AP reported on Aug. 20, 2026 that USS George Washington arrived in the Middle East and 'joins the USS George H.W. Bush in the Middle East')"
+          "source": "LLM-verified (AP on August 20, 2026 reports USS George Washington is now operating in the Middle East relieving USS Abraham Lincoln; confirms one carrier currently operating there)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 15000,
+          "quantity": 50000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (CENTCOM commander media call said 15,000 service members were employed to extend the defensive umbrella across the Strait of Hormuz; this is the latest specific official figure found, but it may refer to blockade/umbrella forces rather than all theater personnel)"
+          "source": "LLM-verified (Gen. Dan Caine Pentagon briefing, April 8, 2026: 'more than 50,000 American warfighters deployed across CENTCOM, EUCOM and stateside' in support of Operation Epic Fury; no newer official deployed total found)"
         },
         {
           "id": "intel_cyber",
@@ -243,8 +243,8 @@
             "B-2 Spirit sortie",
             "bomber sortie"
           ],
-          "lastUpdated": "2026-08-19",
-          "source": "LLM-verified (U.S. Department of War briefing, April 8, 2026: Gen. Dan Caine said the Joint Force flew 62 bomber missions, 18 of which flew round trip from the United States.)"
+          "lastUpdated": "2026-08-21",
+          "source": "LLM-verified (Gen. Dan Caine Pentagon briefing, April 8, 2026: 18 bomber missions flew round trip from the United States)"
         },
         {
           "id": "mop_bunker_busters",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 10000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (Pentagon/CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; no newer confirmed combat-flight total found in searched official material)"
+          "source": "LLM-verified (Gen. Dan Caine Pentagon briefing, April 8, 2026: joint force flew more than 10,000 missions; no source found isolating fighter/attack sorties only, so this should be treated cautiously as missions rather than pure fighter sorties)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 290,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP/CSIS stockpile analysis: as many as 290 THAAD interceptors were fired in the Iran war)"
+          "lastUpdated": "2026-08-21",
+          "source": "LLM-verified (Gen. Dan Caine Pentagon briefing, April 8, 2026: US and Gulf partners intercepted 1,700 ballistic missiles and one-way attack drones)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 174 days",
-        "cost": "$2,436,000,000"
+        "detail": "$7,000,000/day \u00d7 174 days",
+        "cost": "$1,218,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "15,000 \u00d7 $500/day \u00d7 174 days",
-        "cost": "$1,305,000,000"
+        "detail": "50,000 \u00d7 $500/day \u00d7 174 days",
+        "cost": "$4,350,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "10,000 \u00d7 $100,000 each",
+        "cost": "$1,000,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "290 \u00d7 $4,000,000 each",
-        "cost": "$1,160,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -778,6 +778,11 @@
       "link": "https://www.aljazeera.com/news/2026/8/20/dr-congo-to-receive-70000-doses-of-ervebo-vaccine-as-ebola-infections-surge?traffic_source=rss"
     },
     {
+      "time": "2026-08-21T05:00:57Z",
+      "text": "<strong>Israel re-establishes closed West Bank settlement, defying growing international protests</strong> -- Thirty &quot;pioneer families&quot; have arrived on a wave of nationalism driven by Israel&#x27;s government, but the rapid change has left nearby Palestinian residents fearful. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-20T18:55:14Z",
       "text": "<strong>UK, France, Germany, Italy and Canada condemn Israel&#x27;s West Bank settlement project</strong> -- European countries and Canada pile on pressure over Israel&#x27;s plans to expand settlements in a strategically vital part of the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss"
@@ -846,11 +851,6 @@
       "time": "2026-08-20T14:55:47Z",
       "text": "<strong>How China and Russia could hobble Trump\u2019s plans to isolate Iran</strong> -- Iran&amp;#039;s deep trade ties with Beijing and Moscow could prove difficult for the US to disrupt, say analysts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/20/how-china-and-russia-could-hobble-trumps-plans-to-isolate-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-20T14:40:51Z",
-      "text": "<strong>\u2018Tremendous costs\u2019: Can Trump stop other countries from trading with Iran?</strong> -- Iran&amp;#039;s foreign minister has dismissed Trump\u2019s latest threats, calling them a \u201cdiversion&amp;quot; from America\u2019s own crisis.&amp;quot; <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/20/tremendous-costs-can-trump-stop-other-countries-from-trading-with-iran?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Israel re-establishes closed West Bank settlement, defying growing international protests",
+      "description": "Thirty \"pioneer families\" have arrived on a wave of nationalism driven by Israel's government, but the rapid change has left nearby Palestinian residents fearful.",
+      "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-21T05:00:57Z",
+      "tier": 2
+    },
+    {
       "title": "Japan executes man who killed five in Pachinko parlour fire",
       "description": "This is the first time since June 2025 that the country has enacted capital punishment.",
       "link": "https://www.bbc.co.uk/news/articles/cly8k232mn7o?at_medium=RSS&at_campaign=rss",
@@ -1293,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 20-21, 2026 shows the U.S. is sustaining pressure on Iran through a continued naval blockade and fresh economic threats rather than announcing a new official strike-total update. AP reported that the USS George Washington has arrived in the Middle East and now operates alongside the USS George H.W. Bush, while the long-deployed USS Abraham Lincoln is being relieved. Casualty figures publicly confirmed in named sources remain anchored to earlier official tallies: Iran\u2019s Health Ministry figure cited by Al Jazeera remains 3,468 killed and more than 26,500 injured in Iran, Israel\u2019s death toll remains 26, Gulf-state deaths remain 28, and CENTCOM\u2019s Operation Epic Fury fatality total remains 13 U.S. service members even as the Pentagon now tracks later U.S.-Iran fighting under a separate category.",
+  "summary": "Confirmed reporting available today still points mostly to the last official Operation Epic Fury totals rather than fresh comprehensive updates: Iran\u2019s Health Ministry figure publicly reflected by Al Jazeera remains 3,468 dead and more than 26,500 wounded in Iran, Israel\u2019s reported toll remains 26 dead, and the last official Pentagon/CENTCOM Epic Fury tally remains 13 US personnel killed in action during the operation itself, with later July fighting tracked by the Pentagon under a separate 'Overseas Operations' category after Epic Fury was declared over. AP also reported on August 20, 2026 that USS George Washington has entered the Middle East to relieve USS Abraham Lincoln, showing sustained US carrier presence while sanctions pressure on Iran is being increased.",
   "briefings": [
     {
       "date": "2026-08-21",
       "day": 174,
-      "summary": "Confirmed reporting on August 20-21, 2026 shows the U.S. is sustaining pressure on Iran through a continued naval blockade and fresh economic threats rather than announcing a new official strike-total update. AP reported that the USS George Washington has arrived in the Middle East and now operates alongside the USS George H.W. Bush, while the long-deployed USS Abraham Lincoln is being relieved. Casualty figures publicly confirmed in named sources remain anchored to earlier official tallies: Iran\u2019s Health Ministry figure cited by Al Jazeera remains 3,468 killed and more than 26,500 injured in Iran, Israel\u2019s death toll remains 26, Gulf-state deaths remain 28, and CENTCOM\u2019s Operation Epic Fury fatality total remains 13 U.S. service members even as the Pentagon now tracks later U.S.-Iran fighting under a separate category."
+      "summary": "Confirmed reporting available today still points mostly to the last official Operation Epic Fury totals rather than fresh comprehensive updates: Iran\u2019s Health Ministry figure publicly reflected by Al Jazeera remains 3,468 dead and more than 26,500 wounded in Iran, Israel\u2019s reported toll remains 26 dead, and the last official Pentagon/CENTCOM Epic Fury tally remains 13 US personnel killed in action during the operation itself, with later July fighting tracked by the Pentagon under a separate 'Overseas Operations' category after Epic Fury was declared over. AP also reported on August 20, 2026 that USS George Washington has entered the Middle East to relieve USS Abraham Lincoln, showing sustained US carrier presence while sanctions pressure on Iran is being increased."
     },
     {
       "date": "2026-08-20",
