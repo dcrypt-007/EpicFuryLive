@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-22T16:41:01Z",
+  "lastUpdated": "2026-08-22T17:36:01Z",
   "dayCount": 175,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,569+",
-    "cost": "$33.7B+"
+    "killed": "3,540+",
+    "cost": "$34.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "25",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "27,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.7 billion+",
-    "dailyBurnRate": "~$192M/day",
+    "totalCost": "$34.9 billion+",
+    "dailyBurnRate": "~$199M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (USS Abraham Lincoln Carrier Strike Group remained the deployed CSG and was returning home as part of planned rotation on Aug. 14, 2026; no newer official source found confirming a second CSG currently in theater)"
+          "source": "LLM-verified (AP reported on Aug. 20, 2026 that USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln, indicating one active US carrier in theater)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (IDF article 'What Has Happened Since the Launch of Operation Roaring Lion' says more than 800 Israeli Air Force strike sorties were carried out in the first month)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; used as closest official confirmed cumulative sorties figure)"
         },
         {
           "id": "interceptors",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (Pentagon statement reported by Reuters Connect said U.S. and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
+          "source": "LLM-verified (Pentagon statement reported by Reuters Connect in April 2026 said the US and Gulf partners had 'thus far intercepted 1,700 ballistic missiles and one-way attack drones')"
         },
         {
           "id": "prestrike_buildup",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on August 20, 2026 that USS George Washington replaced USS Abraham Lincoln in the Middle East, maintaining US carrier presence as talks remain fragile.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reporting in August indicates Iran says missile production continued during the ceasefire and accuracy improved using lessons from the war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported continued Israeli drone activity in Syria on August 22, 2026, with a strike on a civilian vehicle in southwest Syria injuring several people.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 22, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and CENTCOM reporting indicate the US naval blockade on Iranian ports remains in force in the Strait of Hormuz as of Aug. 20, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported August 19-21, 2026 that the UAE suspended all trade with Iran after renewed missile fire, while the Strait of Hormuz dispute remains unresolved and shipping security tensions persist.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on August 21, 2026 that Iran threatened Bulgaria, citing the presence of a US air base there, signaling possible rhetorical expansion of threats toward southeastern Europe.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP/Aug. 20: Pentagon data now show 757 U.S. troops wounded since the war began, underscoring continuing operational strain even after Operation Epic Fury formally ended as a casualty category.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -768,29 +768,19 @@
       "link": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss"
     },
     {
-      "time": "2026-08-22T09:51:50Z",
-      "text": "<strong>Former world champion boxer Zolani Tete shot and killed in South Africa</strong> -- Zolani Tete, who held WBF flyweight and WBO bantamweight world titles, killed at his home in Eastern Cape, South Africa. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/8/22/former-world-champion-boxer-zolani-tete-shot-and-killed-in-south-africa?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-22T09:14:09Z",
-      "text": "<strong>Iran says new US sanctions violate sovereignty of other states</strong> -- Foreign Ministry spokesman Esmaeil Baghaei slams Trump&amp;#039;s latest threat as a return to &amp;#039;full-scale classic colonialism&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/22/iran-says-new-us-sanctions-violate-sovereignty-of-other-states?traffic_source=rss"
-    },
-    {
       "time": "2026-08-22T13:48:06Z",
       "text": "<strong>Fourteen killed in strike on Myanmar monastery</strong> -- A rescue worker said the site had been struck twice as civilians gathered for a meditation retreat. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cqlxlvz01z1o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-21T05:00:57Z",
-      "text": "<strong>Israel re-establishes closed West Bank settlement, defying growing international protests</strong> -- Thirty &quot;pioneer families&quot; have arrived on a wave of nationalism driven by Israel&#x27;s government, but the rapid change has left nearby Palestinian residents fearful. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-22T13:13:16Z",
       "text": "<strong>Rescuers dig through Ukraine mall wreckage as Zelensky condemns &#x27;despicable&#x27; Russian strike</strong> -- Four people are still missing after Friday&#x27;s attack which killed 16 and left 130 injured, including a number of children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-21T05:00:57Z",
+      "text": "<strong>Israel re-establishes closed West Bank settlement, defying growing international protests</strong> -- Thirty &quot;pioneer families&quot; have arrived on a wave of nationalism driven by Israel&#x27;s government, but the rapid change has left nearby Palestinian residents fearful. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-21T21:03:24Z",
@@ -811,6 +801,16 @@
       "time": "2026-08-21T13:44:43Z",
       "text": "<strong>Ebola vaccine trial to start in DR Congo as warning issued over speed of infections</strong> -- About half of the 2,500 recorded deaths from Ebola happened in the last 20 days, the WHO says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/czxe9n0vxzdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-22T09:51:50Z",
+      "text": "<strong>Former world champion boxer Zolani Tete shot and killed in South Africa</strong> -- Zolani Tete, who held WBF flyweight and WBO bantamweight world titles, killed at his home in Eastern Cape, South Africa. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/8/22/former-world-champion-boxer-zolani-tete-shot-and-killed-in-south-africa?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-22T09:14:09Z",
+      "text": "<strong>Iran says new US sanctions violate sovereignty of other states</strong> -- Foreign Ministry spokesman Esmaeil Baghaei slams Trump&amp;#039;s latest threat as a return to &amp;#039;full-scale classic colonialism&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/iran-says-new-us-sanctions-violate-sovereignty-of-other-states?traffic_source=rss"
     },
     {
       "time": "2026-08-21T19:31:47Z",
@@ -1253,22 +1253,6 @@
       "tier": 2
     },
     {
-      "title": "Former world champion boxer Zolani Tete shot and killed in South Africa",
-      "description": "Zolani Tete, who held WBF flyweight and WBO bantamweight world titles, killed at his home in Eastern Cape, South Africa.",
-      "link": "https://www.aljazeera.com/sports/2026/8/22/former-world-champion-boxer-zolani-tete-shot-and-killed-in-south-africa?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-22T09:51:50Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says new US sanctions violate sovereignty of other states",
-      "description": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump&#039;s latest threat as a return to &#039;full-scale classic colonialism&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/8/22/iran-says-new-us-sanctions-violate-sovereignty-of-other-states?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-22T09:14:09Z",
-      "tier": 2
-    },
-    {
       "title": "Lindsay Clancy suffering 'command hallucination' when she killed children, court hears",
       "description": "The defence brought their final witness - a forensic psychiatrist - to the stand to testify about the effects of postpartum psychosis.",
       "link": "https://www.bbc.co.uk/news/articles/c62xpre63j2o?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 22, 2026 indicates no new officially confirmed strike casualty revisions inside Iran, while diplomatic tensions remain high: AP says the June interim deal has largely collapsed, Iran is still tying a full reopening of the Strait of Hormuz to U.S. concessions, and Washington has shifted toward intensified economic pressure with new sanctions. Pentagon-linked reporting continues to show 18 U.S. service members killed and 757 wounded since the war began, while the latest widely cited Iran tolls remain fragmented, with Al Jazeera reporting at least 3,527 killed and more than 27,000 wounded and HRANA still listing 1,701 civilian deaths within a broader 3,636-death accounting framework.",
+  "summary": "Confirmed reporting still does not show broad official updates for many of the cost-model weapons counts, so several fields remain null. The latest solid cumulative figures found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera\u2019s June 10 tracker; 26 Israelis killed from the same tracker; 18 US personnel killed during the war from later Al Jazeera reporting; and CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while an April 1 fact sheet listed 13,000+ combat flights. AP also confirmed on August 20 that USS George Washington is now the sole visible US carrier operating in the Middle East after relieving USS Abraham Lincoln.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed reporting on August 22, 2026 indicates no new officially confirmed strike casualty revisions inside Iran, while diplomatic tensions remain high: AP says the June interim deal has largely collapsed, Iran is still tying a full reopening of the Strait of Hormuz to U.S. concessions, and Washington has shifted toward intensified economic pressure with new sanctions. Pentagon-linked reporting continues to show 18 U.S. service members killed and 757 wounded since the war began, while the latest widely cited Iran tolls remain fragmented, with Al Jazeera reporting at least 3,527 killed and more than 27,000 wounded and HRANA still listing 1,701 civilian deaths within a broader 3,636-death accounting framework."
+      "summary": "Confirmed reporting still does not show broad official updates for many of the cost-model weapons counts, so several fields remain null. The latest solid cumulative figures found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera\u2019s June 10 tracker; 26 Israelis killed from the same tracker; 18 US personnel killed during the war from later Al Jazeera reporting; and CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while an April 1 fact sheet listed 13,000+ combat flights. AP also confirmed on August 20 that USS George Washington is now the sole visible US carrier operating in the Middle East after relieving USS Abraham Lincoln."
     },
     {
       "date": "2026-08-21",
