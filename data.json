@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-22T14:38:17Z",
+  "lastUpdated": "2026-08-22T15:34:52Z",
   "dayCount": 175,
   "banner": {
-    "strikes": "~13,000",
+    "strikes": "~9,000",
     "killed": "3,513+",
-    "cost": "$34.2B+"
+    "cost": "$34.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.2 billion+",
-    "dailyBurnRate": "~$196M/day",
+    "totalCost": "$34.5 billion+",
+    "dailyBurnRate": "~$197M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (AP reporting cites about/some 50,000 U.S. troops supporting the war effort in the region)"
+          "source": "LLM-verified (AP on March 24, 2026 reported at least 1,000 more troops were being sent to supplement some 50,000 already in the Mideast; no newer confirmed operation-specific total found)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (CENTCOM fact sheet dated March 16, 2026 lists 6,500+ combat flights; no newer confirmed cumulative fighter/attack sortie total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 23, 2026 lists 9,000+ combat flights; used as best confirmed cumulative sorties figure found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-22T14:37:40Z",
+      "text": "<strong>Israeli drone strike on \u2018civilian vehicle\u2019 injures several in Syria</strong> -- Syria condemns attack in southwest as a &amp;#039;flagrant violation of sovereignty&amp;#039; and a &amp;#039;blatant breach of international law&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss"
+    },
+    {
       "time": "2026-08-22T14:19:06Z",
       "text": "<strong>What did war with the US reveal about Iran\u2019s weapons capabilities?</strong> -- Iran says production is ongoing, but details will not be revealed during war conditions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/22/what-did-war-with-the-us-reveal-about-irans-weapons-capabilities?traffic_source=rss"
@@ -844,11 +849,6 @@
     },
     {
       "time": "2026-08-22T09:13:26Z",
-      "text": "<strong>Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall</strong> -- Nine people are still missing after the attack which left 130 injured, including a number of children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-22T06:40:30Z",
       "text": "<strong>Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall</strong> -- Nine people are still missing after the attack which left 130 injured, including a number of children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
     }
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Israeli drone strike on \u2018civilian vehicle\u2019 injures several in Syria",
+      "description": "Syria condemns attack in southwest as a &#039;flagrant violation of sovereignty&#039; and a &#039;blatant breach of international law&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-22T14:37:40Z",
+      "tier": 2
+    },
+    {
       "title": "What did war with the US reveal about Iran\u2019s weapons capabilities?",
       "description": "Iran says production is ongoing, but details will not be revealed during war conditions.",
       "link": "https://www.aljazeera.com/news/2026/8/22/what-did-war-with-the-us-reveal-about-irans-weapons-capabilities?traffic_source=rss",
@@ -1317,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains fragmentary. The most recent named-source casualty figures located show Iran\u2019s Ministry of Health total at 3,468 killed and more than 26,500 wounded as carried by Al Jazeera\u2019s cumulative tracker updated June 10, 2026, while AP and other reporting put the official U.S. military death toll at 18 after renewed fighting in July. CENTCOM\u2019s latest easily retrievable official fact sheet still lists 13,000+ targets struck by April 6, 2026, but I could not verify newer official cumulative strike, deployment, missile expenditure, or interceptor totals for August 22, 2026, so those fields are left null unless a named current source explicitly confirmed them.",
+  "summary": "Confirmed reporting available today did not materially change the core publicly sourced war totals in accessible named-source coverage: Iran\u2019s Ministry of Health figure remains 3,468 killed and more than 26,500 wounded in reporting carried by Al Jazeera, the official U.S. military death toll stands at 18, and Israel\u2019s reported death toll remains 26. AP reported on August 20 that 757 U.S. troops have been wounded since the war began, while CENTCOM\u2019s latest easily accessible official cumulative operations sheet still lists 9,000+ targets struck and 9,000+ combat flights as of March 23, 2026; no newer official public breakdowns for munitions expenditure or current force-package counts were found in accessible reporting.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed reporting available today remains fragmentary. The most recent named-source casualty figures located show Iran\u2019s Ministry of Health total at 3,468 killed and more than 26,500 wounded as carried by Al Jazeera\u2019s cumulative tracker updated June 10, 2026, while AP and other reporting put the official U.S. military death toll at 18 after renewed fighting in July. CENTCOM\u2019s latest easily retrievable official fact sheet still lists 13,000+ targets struck by April 6, 2026, but I could not verify newer official cumulative strike, deployment, missile expenditure, or interceptor totals for August 22, 2026, so those fields are left null unless a named current source explicitly confirmed them."
+      "summary": "Confirmed reporting available today did not materially change the core publicly sourced war totals in accessible named-source coverage: Iran\u2019s Ministry of Health figure remains 3,468 killed and more than 26,500 wounded in reporting carried by Al Jazeera, the official U.S. military death toll stands at 18, and Israel\u2019s reported death toll remains 26. AP reported on August 20 that 757 U.S. troops have been wounded since the war began, while CENTCOM\u2019s latest easily accessible official cumulative operations sheet still lists 9,000+ targets struck and 9,000+ combat flights as of March 23, 2026; no newer official public breakdowns for munitions expenditure or current force-package counts were found in accessible reporting."
     },
     {
       "date": "2026-08-21",
