@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-22T03:07:25Z",
+  "lastUpdated": "2026-08-22T03:56:22Z",
   "dayCount": 175,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,512+",
-    "cost": "$34.6B+"
+    "strikes": "~7,000",
+    "killed": "3,522+",
+    "cost": "$33.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "18",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.6 billion+",
-    "dailyBurnRate": "~$198M/day",
+    "totalCost": "$33.9 billion+",
+    "dailyBurnRate": "~$194M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (AP Mar. 24, 2026 said the U.S. already had about 50,000 troops in the region; no newer confirmed total found)"
+          "source": "LLM-verified (Al Jazeera backgrounder says as of mid-2025 there were 40,000 to 50,000 US soldiers in the Middle East; no operation-specific current confirmed total found, so using upper bound would be too inferential)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (Department of War fact sheet dated April 1, 2026 lists 13,000+ combat flights; no newer official cumulative total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 16, 2026 states 6,500+ combat flights; no newer confirmed official cumulative sortie count found in retrieved sources)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-22T03:19:58Z",
+      "text": "<strong>US judge strikes down Trump immigrant visa ban affecting 75 countries</strong> -- A federal judge in Manhattan ruled against the State Department&amp;#039;s suspension of immigrant visas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/us-judge-strikes-down-trump-immigrant-visa-ban-affecting-75-countries?traffic_source=rss"
+    },
+    {
       "time": "2026-08-22T00:59:37Z",
       "text": "<strong>Iranian president says time to end war with US from \u2018position of strength\u2019</strong> -- Omani and Iranian foreign ministers hold a call as Washington prepares economic sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/22/iranian-president-says-time-to-end-war-with-us-from-position-of?traffic_source=rss"
@@ -786,6 +791,11 @@
       "time": "2026-08-21T05:00:57Z",
       "text": "<strong>Israel re-establishes closed West Bank settlement, defying growing international protests</strong> -- Thirty &quot;pioneer families&quot; have arrived on a wave of nationalism driven by Israel&#x27;s government, but the rapid change has left nearby Palestinian residents fearful. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-22T03:17:29Z",
+      "text": "<strong>Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall</strong> -- Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-21T21:03:24Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-21T13:59:28Z",
       "text": "<strong>War on Iran: The US could focus on economically isolating Iran</strong> -- The US Treasury Secretary, has indicated a change in US strategy towards Iran, focusing on economic isolation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/21/war-on-iran-the-us-could-focus-on-economically-isolating-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-21T13:47:26Z",
-      "text": "<strong>Trump\u2019s \u2018economic D-Day\u2019 claims first victim: Not Iran, but US markets</strong> -- The US and Israel&amp;#039;s war on Iran has upended global financial and energy markets. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/21/trumps-economic-d-day-claims-first-victim-not-iran-but-us-markets?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-21T16:05:09Z",
-      "text": "<strong>Eight killed in plane crash at remote Alaskan military site, air force says</strong> -- It is unclear why the civilian-contracted plane was at the radar site on Alaska&#x27;s south-west coast. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj9dmw8183wo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "US judge strikes down Trump immigrant visa ban affecting 75 countries",
+      "description": "A federal judge in Manhattan ruled against the State Department&#039;s suspension of immigrant visas.",
+      "link": "https://www.aljazeera.com/news/2026/8/22/us-judge-strikes-down-trump-immigrant-visa-ban-affecting-75-countries?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-22T03:19:58Z",
+      "tier": 2
+    },
+    {
+      "title": "Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall",
+      "description": "Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall.",
+      "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-22T03:17:29Z",
+      "tier": 2
+    },
+    {
       "title": "Iranian president says time to end war with US from \u2018position of strength\u2019",
       "description": "Omani and Iranian foreign ministers hold a call as Washington prepares economic sanctions.",
       "link": "https://www.aljazeera.com/news/2026/8/22/iranian-president-says-time-to-end-war-with-us-from-position-of?traffic_source=rss",
@@ -1317,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of August 22, 2026 shows no clear new official casualty revision for the core Iran war totals carried by major trackers: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while the U.S. official KIA count remains 13 and Israel\u2019s reported death toll remains 26. AP\u2019s latest Pentagon-based reporting adds that 757 U.S. troops have been wounded since the war began. On force posture, AP confirmed on August 20 that the USS George Washington is now operating in the Middle East, replacing the long-deployed USS Abraham Lincoln, indicating at least one U.S. carrier strike group currently in theater. No newer named-source official cumulative totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, or MOP bunker busters.",
+  "summary": "Confirmed reporting available in retrieved sources remains sparse and often outdated for hard cumulative metrics. The clearest named-source totals still found are Iran\u2019s Ministry of Health count of 3,468 dead and more than 26,500 injured in Iran, 26 killed in Israel, and 13 U.S. service members killed in combat-related incidents; AP also reported on August 20, 2026 that 757 U.S. troops have been wounded since the war began. AP reported on August 17 that the June Versailles memorandum\u2019s 60-day deadline passed without a settlement, the Strait of Hormuz dispute remains unresolved, and further escalation could strain U.S. interceptor stockpiles. Today's headline reporting also indicates Tehran is publicly signaling interest in ending the war from what it calls a position of strength while Washington readies more sanctions.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed reporting as of August 22, 2026 shows no clear new official casualty revision for the core Iran war totals carried by major trackers: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while the U.S. official KIA count remains 13 and Israel\u2019s reported death toll remains 26. AP\u2019s latest Pentagon-based reporting adds that 757 U.S. troops have been wounded since the war began. On force posture, AP confirmed on August 20 that the USS George Washington is now operating in the Middle East, replacing the long-deployed USS Abraham Lincoln, indicating at least one U.S. carrier strike group currently in theater. No newer named-source official cumulative totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, or MOP bunker busters."
+      "summary": "Confirmed reporting available in retrieved sources remains sparse and often outdated for hard cumulative metrics. The clearest named-source totals still found are Iran\u2019s Ministry of Health count of 3,468 dead and more than 26,500 injured in Iran, 26 killed in Israel, and 13 U.S. service members killed in combat-related incidents; AP also reported on August 20, 2026 that 757 U.S. troops have been wounded since the war began. AP reported on August 17 that the June Versailles memorandum\u2019s 60-day deadline passed without a settlement, the Strait of Hormuz dispute remains unresolved, and further escalation could strain U.S. interceptor stockpiles. Today's headline reporting also indicates Tehran is publicly signaling interest in ending the war from what it calls a position of strength while Washington readies more sanctions."
     },
     {
       "date": "2026-08-21",
