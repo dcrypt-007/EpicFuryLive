@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-22T17:36:01Z",
+  "lastUpdated": "2026-08-22T18:49:14Z",
   "dayCount": 175,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,540+",
-    "cost": "$34.9B+"
+    "strikes": "~13,500",
+    "killed": "3,633+",
+    "cost": "$41.0B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "25",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "27,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.9 billion+",
-    "dailyBurnRate": "~$199M/day",
+    "totalCost": "$41.0 billion+",
+    "dailyBurnRate": "~$235M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (AP reported on Aug. 20, 2026 that USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln, indicating one active US carrier in theater)"
+          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington arrived in the Middle East and 'joins the USS George H.W. Bush in the Middle East'.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (AP on March 24, 2026 reported at least 1,000 more troops were being sent to supplement some 50,000 already in the Mideast; no newer confirmed operation-specific total found)"
+          "source": "LLM-verified (CENTCOM public release, July 16, 2026: 'More than 50,000 U.S. service members are operating across the Middle East.')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; used as closest official confirmed cumulative sorties figure)"
+          "source": "LLM-verified (CENTCOM SASC Posture Statement 2026: 'Across more than 10,200 sorties' during Operation Epic Fury. This is total sorties, not fighter-only; no fighter-only cumulative total was found.)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1700,
+          "quantity": 3000,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (Pentagon statement reported by Reuters Connect in April 2026 said the US and Gulf partners had 'thus far intercepted 1,700 ballistic missiles and one-way attack drones')"
+          "source": "LLM-verified (CENTCOM SASC Posture Statement 2026: integrated air defense 'intercepted over 6,000 one-way attack drones and more than 1,500 ballistic missiles' during OEF; combined minimum confirmed interceptor engagements = 7,500+.)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 175 days",
-        "cost": "$1,225,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 175 days",
+        "cost": "$2,450,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,700 \u00d7 $4,000,000 each",
-        "cost": "$6,800,000,000"
+        "detail": "3,000 \u00d7 $4,000,000 each",
+        "cost": "$12,000,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-22T17:34:28Z",
+      "text": "<strong>Seven killed, including two police officers, in UK \u2018wrong-side\u2019 car crash</strong> -- Accident follows similar crashes in Ireland where police highlighted social media trend driving in opposite direction. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/seven-killed-including-two-police-officers-in-uk-wrong-side-car-crash?traffic_source=rss"
+    },
+    {
       "time": "2026-08-22T14:37:40Z",
       "text": "<strong>Israeli drone strike on \u2018civilian vehicle\u2019 injures several in Syria</strong> -- Syria condemns attack in southwest as a &amp;#039;flagrant violation of sovereignty&amp;#039; and a &amp;#039;blatant breach of international law&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss"
@@ -764,7 +769,7 @@
     },
     {
       "time": "2026-08-22T12:09:09Z",
-      "text": "<strong>Russian strikes kill 6 people in Ukraine, day after shopping complex attack</strong> -- Meanwhile, Ukrainian drone hits home in southern Russia, killing two children and injuring their parents, officials say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Russian strikes kill seven in Ukraine, day after shopping complex attack</strong> -- Meanwhile, Ukrainian drone hits Russia&amp;#039;s Krasnodar region, killing three people, officials say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss"
     },
     {
@@ -846,11 +851,6 @@
       "time": "2026-08-22T00:00:00Z",
       "text": "<strong>Iran war live: Tehran says US sanctions \u2018declaration of war\u2019 on all nations</strong> -- US president says Iran &amp;#039;would love to make a deal, but they\u2019re not ready to make the right deal in my opinion&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/22/iran-war-live-trump-says-tehran-not-ready-to-make-right-deal-to-end-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-22T09:13:26Z",
-      "text": "<strong>Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall</strong> -- Nine people are still missing after the attack which left 130 injured, including a number of children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Seven killed, including two police officers, in UK \u2018wrong-side\u2019 car crash",
+      "description": "Accident follows similar crashes in Ireland where police highlighted social media trend driving in opposite direction.",
+      "link": "https://www.aljazeera.com/news/2026/8/22/seven-killed-including-two-police-officers-in-uk-wrong-side-car-crash?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-22T17:34:28Z",
+      "tier": 2
+    },
+    {
       "title": "Israeli drone strike on \u2018civilian vehicle\u2019 injures several in Syria",
       "description": "Syria condemns attack in southwest as a &#039;flagrant violation of sovereignty&#039; and a &#039;blatant breach of international law&#039;.",
       "link": "https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss",
@@ -1245,8 +1253,8 @@
       "tier": 2
     },
     {
-      "title": "Russian strikes kill 6 people in Ukraine, day after shopping complex attack",
-      "description": "Meanwhile, Ukrainian drone hits home in southern Russia, killing two children and injuring their parents, officials say.",
+      "title": "Russian strikes kill seven in Ukraine, day after shopping complex attack",
+      "description": "Meanwhile, Ukrainian drone hits Russia&#039;s Krasnodar region, killing three people, officials say.",
       "link": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-22T12:09:09Z",
@@ -1309,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still does not show broad official updates for many of the cost-model weapons counts, so several fields remain null. The latest solid cumulative figures found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera\u2019s June 10 tracker; 26 Israelis killed from the same tracker; 18 US personnel killed during the war from later Al Jazeera reporting; and CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while an April 1 fact sheet listed 13,000+ combat flights. AP also confirmed on August 20 that USS George Washington is now the sole visible US carrier operating in the Middle East after relieving USS Abraham Lincoln.",
+  "summary": "Confirmed reporting as of August 22, 2026 indicates the war remains active in strategic terms despite earlier claims that Operation Epic Fury had concluded: AP reports diplomatic efforts are underway to revive U.S.-Iran negotiations while Strait of Hormuz traffic remains sharply reduced, and the U.S. has reinforced its naval posture with USS George Washington joining USS George H.W. Bush in the Middle East. For cumulative war figures, Al Jazeera\u2019s August 12 reporting gives at least 3,527 killed and more than 27,000 wounded in Iran, at least 60 killed in Israel, and AP/Al Jazeera reporting supports 18 U.S. military deaths. CENTCOM\u2019s 2026 posture statement says Operation Epic Fury itself comprised more than 10,200 sorties and over 13,500 strikes, while the integrated regional air-defense network intercepted over 6,000 one-way attack drones and more than 1,500 ballistic missiles.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed reporting still does not show broad official updates for many of the cost-model weapons counts, so several fields remain null. The latest solid cumulative figures found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera\u2019s June 10 tracker; 26 Israelis killed from the same tracker; 18 US personnel killed during the war from later Al Jazeera reporting; and CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while an April 1 fact sheet listed 13,000+ combat flights. AP also confirmed on August 20 that USS George Washington is now the sole visible US carrier operating in the Middle East after relieving USS Abraham Lincoln."
+      "summary": "Confirmed reporting as of August 22, 2026 indicates the war remains active in strategic terms despite earlier claims that Operation Epic Fury had concluded: AP reports diplomatic efforts are underway to revive U.S.-Iran negotiations while Strait of Hormuz traffic remains sharply reduced, and the U.S. has reinforced its naval posture with USS George Washington joining USS George H.W. Bush in the Middle East. For cumulative war figures, Al Jazeera\u2019s August 12 reporting gives at least 3,527 killed and more than 27,000 wounded in Iran, at least 60 killed in Israel, and AP/Al Jazeera reporting supports 18 U.S. military deaths. CENTCOM\u2019s 2026 posture statement says Operation Epic Fury itself comprised more than 10,200 sorties and over 13,500 strikes, while the integrated regional air-defense network intercepted over 6,000 one-way attack drones and more than 1,500 ballistic missiles."
     },
     {
       "date": "2026-08-21",
