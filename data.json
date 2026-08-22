@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-22T01:50:11Z",
+  "lastUpdated": "2026-08-22T03:07:25Z",
   "dayCount": 175,
   "banner": {
-    "strikes": "~16,300",
-    "killed": "3,507+",
-    "cost": "$33.0B+"
+    "strikes": "~13,000",
+    "killed": "3,512+",
+    "cost": "$34.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "13",
+    "gulfCasualties": "18",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.0 billion+",
-    "dailyBurnRate": "~$189M/day",
+    "totalCost": "$34.6 billion+",
+    "dailyBurnRate": "~$198M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (US Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' in Operation Epic Fury)"
+          "source": "LLM-verified (AP reported Aug. 20, 2026 that USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (AP on Mar. 24, 2026 reported 'some 50,000 troops already in the Mideast' for the operation; no newer confirmed total found in searched sources: https://apnews.com/article/8bb5e79a98ea72fccc5c50b4931ad778)"
+          "lastUpdated": "2026-08-22",
+          "source": "LLM-verified (AP Mar. 24, 2026 said the U.S. already had about 50,000 troops in the region; no newer confirmed total found)"
         },
         {
           "id": "intel_cyber",
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (CENTCOM Aug. 13, 2026 says Task Force Scorpion Strike is the U.S. military's first dedicated one-way attack drone squadron in the Middle East; Falcon Strike announced as being established, not yet confirmed operational)"
+          "lastUpdated": "2026-08-22",
+          "source": "LLM-verified (CENTCOM reporting referenced a recently deployed one-way attack drone squadron in the Middle East; no newer count of active UAV units found)"
         },
         {
           "id": "comms_space",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (CENTCOM April 1, 2026 fact sheet reports 13,000+ combat flights)"
+          "source": "LLM-verified (Department of War fact sheet dated April 1, 2026 lists 13,000+ combat flights; no newer official cumulative total found)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1000,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (Washington Post reported more than 1,000 Patriot and THAAD/interceptor missiles fired in the first month of war; no newer official cumulative total found: https://www.washingtonpost.com/national-security/2026/03/27/iran-war-tomahawk-missiles/ ; https://www.washingtonpost.com/technology/2026/08/08/pentagon-presses-defense-firms-build-weapons-iran-war-depletes-stocks/)"
+          "lastUpdated": "2026-08-22",
+          "source": "LLM-verified (Pentagon statement reported by Reuters Connect said U.S. and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 175 days",
-        "cost": "$2,450,000,000"
+        "detail": "$7,000,000/day \u00d7 175 days",
+        "cost": "$1,225,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,000 \u00d7 $4,000,000 each",
-        "cost": "$4,000,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Aug. 20, 2026 that more than 757 U.S. service members have been wounded since the war began, indicating continued operational risk even after Operation Epic Fury formally ended.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Aug. 22, 2026 that President Trump said he views the Strait of Hormuz as 'American territory' and said Iran would like a deal but is not ready.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported Aug. 22, 2026 that Iran's president said it is time to end the war with the U.S. from a 'position of strength' as Washington prepares economic sanctions.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 22, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP and Al Jazeera report the Trump administration is shifting emphasis toward economic warfare and isolation of Iran as the six-month mark of the war approaches.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 20, 2026 reported Pentagon data showing 757 US troops wounded since the war began, with many injuries described as traumatic brain injuries: https://apnews.com/article/ad0783da9f5c491ba6793ef801a9a11e",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 21, 2026 reported the Trump administration is shifting emphasis toward an 'economic D-Day' campaign against Iran amid diminishing stockpiles of key weapons and pressure to reopen the Strait of Hormuz: https://apnews.com/article/84572c0f3497d4099dab35276dd20172",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline on Aug. 21, 2026 says U.S. allies in Asia are wary as Washington moves military assets for the Iran war, suggesting wider strategic strain.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1317,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed accessible reporting still does not show many newer official cumulative battlefield totals beyond spring 2026. The clearest named-source casualty figures remain Iran Ministry of Health totals of 3,468 killed and more than 26,500 wounded, Israel Ministry of Health totals of 26 killed, and US military-confirmed 13 combat-related deaths across the region. AP reported on August 20, 2026 that 757 US troops had been wounded since the war began, while Al Jazeera\u2019s August 22 live coverage said Washington was preparing additional sanctions as Omani-Iranian contacts continued and Trump made new comments about the Strait of Hormuz.",
+  "summary": "Confirmed reporting as of August 22, 2026 shows no clear new official casualty revision for the core Iran war totals carried by major trackers: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while the U.S. official KIA count remains 13 and Israel\u2019s reported death toll remains 26. AP\u2019s latest Pentagon-based reporting adds that 757 U.S. troops have been wounded since the war began. On force posture, AP confirmed on August 20 that the USS George Washington is now operating in the Middle East, replacing the long-deployed USS Abraham Lincoln, indicating at least one U.S. carrier strike group currently in theater. No newer named-source official cumulative totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, or MOP bunker busters.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed accessible reporting still does not show many newer official cumulative battlefield totals beyond spring 2026. The clearest named-source casualty figures remain Iran Ministry of Health totals of 3,468 killed and more than 26,500 wounded, Israel Ministry of Health totals of 26 killed, and US military-confirmed 13 combat-related deaths across the region. AP reported on August 20, 2026 that 757 US troops had been wounded since the war began, while Al Jazeera\u2019s August 22 live coverage said Washington was preparing additional sanctions as Omani-Iranian contacts continued and Trump made new comments about the Strait of Hormuz."
+      "summary": "Confirmed reporting as of August 22, 2026 shows no clear new official casualty revision for the core Iran war totals carried by major trackers: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded, while the U.S. official KIA count remains 13 and Israel\u2019s reported death toll remains 26. AP\u2019s latest Pentagon-based reporting adds that 757 U.S. troops have been wounded since the war began. On force posture, AP confirmed on August 20 that the USS George Washington is now operating in the Middle East, replacing the long-deployed USS Abraham Lincoln, indicating at least one U.S. carrier strike group currently in theater. No newer named-source official cumulative totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, or MOP bunker busters."
     },
     {
       "date": "2026-08-21",
