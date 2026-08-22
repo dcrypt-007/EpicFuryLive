@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-22T11:34:42Z",
+  "lastUpdated": "2026-08-22T13:00:50Z",
   "dayCount": 175,
   "banner": {
     "strikes": "~12,300",
-    "killed": "3,541+",
-    "cost": "$35.2B+"
+    "killed": "3,540+",
+    "cost": "$34.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.2 billion+",
-    "dailyBurnRate": "~$201M/day",
+    "totalCost": "$34.9 billion+",
+    "dailyBurnRate": "~$199M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (AP on Aug. 20, 2026 reported USS George Washington joined USS George H.W. Bush in the Middle East)"
+          "source": "LLM-verified (AP, August 20, 2026: USS George Washington now operating in the Middle East, relieving USS Abraham Lincoln; accessible reporting searched today confirms one active U.S. carrier in theater, not two.)"
         },
         {
           "id": "destroyers",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (Washington Post reported more than 850 Tomahawk missiles fired in four weeks of war; later Aug. 8 report reiterated first month exceeded 850. No newer official cumulative total found: https://www.washingtonpost.com/national-security/2026/03/27/iran-war-tomahawk-missiles/ ; https://www.washingtonpost.com/technology/2026/08/08/pentagon-presses-defense-firms-build-weapons-iran-war-depletes-stocks/)"
+          "lastUpdated": "2026-08-22",
+          "source": "LLM-verified (AP analysis citing CSIS, June 2026: U.S. fired '1,000-plus Tomahawk missiles' at Iran; using confirmed floor 1000.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 16, 2026 reported 6,500+ combat flights; no newer official cumulative fighter/attack sortie total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026: 'Combat Flights: 13,000+'; using confirmed floor 13000.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 175 days",
-        "cost": "$2,450,000,000"
+        "detail": "$7,000,000/day \u00d7 175 days",
+        "cost": "$1,225,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 20, 2026 reported the Pentagon says more than 750 U.S. troops have been wounded since the war began.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 22, 2026 reported Iran's president said the world has accepted Iran defeated the U.S., while the Strait of Hormuz remains effectively closed.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline today: Iran says new U.S. sanctions violate the sovereignty of other states.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 22, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reporting in July-August 2026 indicate renewed U.S. strikes since July 8 and repeated Iranian retaliatory attacks in the Gulf, raising the risk of further escalation despite earlier ceasefire claims.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 20, 2026 that Pentagon data now show 757 U.S. troops wounded since the war began, indicating continuing personnel attrition even after Operation Epic Fury was said to have concluded.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on August 10, 2026 that President Trump signaled a shift toward economic pressure and away from additional military strikes on Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports renewed Iranian fire at Gulf states this week, though the UAE said the latest attacks caused no injuries.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-22T12:09:09Z",
+      "text": "<strong>Russian strikes kill 6 people in Ukraine, day after shopping complex attack</strong> -- Meanwhile, Ukrainian drone hits home in southern Russia, killing two children and injuring their parents, officials say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss"
+    },
+    {
       "time": "2026-08-22T09:51:50Z",
       "text": "<strong>Former world champion boxer Zolani Tete shot and killed in South Africa</strong> -- Zolani Tete, who held WBF flyweight and WBO bantamweight world titles, killed at his home in Eastern Cape, South Africa. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/sports/2026/8/22/former-world-champion-boxer-zolani-tete-shot-and-killed-in-south-africa?traffic_source=rss"
@@ -768,19 +773,14 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss"
     },
     {
-      "time": "2026-08-22T03:19:58Z",
-      "text": "<strong>US judge strikes down Trump immigrant visa ban affecting 75 countries</strong> -- A federal judge in Manhattan ruled against the State Department&amp;#039;s suspension of immigrant visas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/22/us-judge-strikes-down-trump-immigrant-visa-ban-affecting-75-countries?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-22T00:59:37Z",
-      "text": "<strong>Iranian president says time to end war with US from \u2018position of strength\u2019</strong> -- Omani and Iranian foreign ministers hold a call as Washington prepares economic sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/22/iranian-president-says-time-to-end-war-with-us-from-position-of?traffic_source=rss"
-    },
-    {
       "time": "2026-08-21T05:00:57Z",
       "text": "<strong>Israel re-establishes closed West Bank settlement, defying growing international protests</strong> -- Thirty &quot;pioneer families&quot; have arrived on a wave of nationalism driven by Israel&#x27;s government, but the rapid change has left nearby Palestinian residents fearful. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-22T12:36:28Z",
+      "text": "<strong>Rescuers dig through Ukraine mall wreckage as Zelensky condemns &#x27;despicable&#x27; Russian strike</strong> -- Four people are still missing after Friday&#x27;s attack which killed 16 and left 130 injured, including a number of children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-21T21:03:24Z",
@@ -801,6 +801,16 @@
       "time": "2026-08-21T13:44:43Z",
       "text": "<strong>Ebola vaccine trial to start in DR Congo as warning issued over speed of infections</strong> -- About half of the 2,500 recorded deaths from Ebola happened in the last 20 days, the WHO says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/czxe9n0vxzdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-22T03:19:58Z",
+      "text": "<strong>US judge strikes down Trump immigrant visa ban affecting 75 countries</strong> -- A federal judge in Manhattan ruled against the State Department&amp;#039;s suspension of immigrant visas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/us-judge-strikes-down-trump-immigrant-visa-ban-affecting-75-countries?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-22T00:59:37Z",
+      "text": "<strong>Iranian president says time to end war with US from \u2018position of strength\u2019</strong> -- Omani and Iranian foreign ministers hold a call as Washington prepares economic sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/iranian-president-says-time-to-end-war-with-us-from-position-of?traffic_source=rss"
     },
     {
       "time": "2026-08-22T00:06:48Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-22T03:17:29Z",
       "text": "<strong>Russian strikes on Ukraine kill two, officials say, a day after deadly attack on mall</strong> -- Attacks come a day after at least 16 people were killed in a double-tap strike on a shopping mall. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-21T20:03:35Z",
-      "text": "<strong>Western allies slam Israel for ending World Central Kitchen strike probe</strong> -- UK, Australia and Canada call Israel\u2019s decision not to investigate deadly 2024 strike on a Gaza aid convoy &amp;#039;shameful&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/21/western-allies-slam-israel-for-ending-world-central-kitchen-strike-probe?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-21T18:40:11Z",
-      "text": "<strong>Drone strike on Ukraine shopping centre kills 14, over 100 injured</strong> -- A Russian drone strike hit a major shopping centre in Kryvyi Rih, Ukraine, killing 14 people and injuring over 100 <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/21/drone-strike-on-ukraine-shopping-centre-kills-six-injures-103?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Rescuers dig through Ukraine mall wreckage as Zelensky condemns 'despicable' Russian strike",
+      "description": "Four people are still missing after Friday's attack which killed 16 and left 130 injured, including a number of children.",
+      "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-22T12:36:28Z",
+      "tier": 2
+    },
+    {
+      "title": "Russian strikes kill 6 people in Ukraine, day after shopping complex attack",
+      "description": "Meanwhile, Ukrainian drone hits home in southern Russia, killing two children and injuring their parents, officials say.",
+      "link": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-22T12:09:09Z",
+      "tier": 2
+    },
+    {
       "title": "Former world champion boxer Zolani Tete shot and killed in South Africa",
       "description": "Zolani Tete, who held WBF flyweight and WBO bantamweight world titles, killed at his home in Eastern Cape, South Africa.",
       "link": "https://www.aljazeera.com/sports/2026/8/22/former-world-champion-boxer-zolani-tete-shot-and-killed-in-south-africa?traffic_source=rss",
@@ -1242,22 +1258,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c62xpre63j2o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-22T03:43:26Z",
-      "tier": 2
-    },
-    {
-      "title": "US judge strikes down Trump immigrant visa ban affecting 75 countries",
-      "description": "A federal judge in Manhattan ruled against the State Department&#039;s suspension of immigrant visas.",
-      "link": "https://www.aljazeera.com/news/2026/8/22/us-judge-strikes-down-trump-immigrant-visa-ban-affecting-75-countries?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-22T03:19:58Z",
-      "tier": 2
-    },
-    {
-      "title": "Iranian president says time to end war with US from \u2018position of strength\u2019",
-      "description": "Omani and Iranian foreign ministers hold a call as Washington prepares economic sanctions.",
-      "link": "https://www.aljazeera.com/news/2026/8/22/iranian-president-says-time-to-end-war-with-us-from-position-of?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-22T00:59:37Z",
       "tier": 2
     },
     {
@@ -1309,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 22, 2026 indicates the war remains unresolved despite diplomacy: AP reported Iranian President Masoud Pezeshkian said the conflict should end from what Tehran describes as a position of victory, while Hormuz remains effectively constrained. The Pentagon data reported by AP on August 20 shows 757 U.S. troops wounded since the war began, underscoring continuing operational costs. AP also confirmed that the USS George Washington has entered the Middle East and joined the USS George H.W. Bush, keeping two U.S. carrier strike groups in theater. For casualty baselines, no newer confirmed cumulative totals were found beyond widely cited figures of 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, and an official U.S. military death toll of 18.",
+  "summary": "Confirmed reporting available today shows no clearly newer public cumulative Iran casualty total than the June 10 Al Jazeera tracker citing Iran's Health Ministry, which listed 3,468 dead and more than 26,500 wounded; the Pentagon-linked U.S. death toll remains 18 service members killed, while Israel's reported death toll remains 26 and Gulf-state deaths 28. On the military side, the most recent clearly confirmed theater posture found in accessible reporting is one U.S. carrier currently operating in the Middle East after USS George Washington relieved USS Abraham Lincoln on August 20, while CENTCOM's latest easily retrievable official aggregate strike figures located were 12,300+ targets struck and 13,000+ combat flights from its April 1 fact sheet.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed reporting on August 22, 2026 indicates the war remains unresolved despite diplomacy: AP reported Iranian President Masoud Pezeshkian said the conflict should end from what Tehran describes as a position of victory, while Hormuz remains effectively constrained. The Pentagon data reported by AP on August 20 shows 757 U.S. troops wounded since the war began, underscoring continuing operational costs. AP also confirmed that the USS George Washington has entered the Middle East and joined the USS George H.W. Bush, keeping two U.S. carrier strike groups in theater. For casualty baselines, no newer confirmed cumulative totals were found beyond widely cited figures of 3,468 killed and more than 26,500 wounded in Iran, 26 killed in Israel, and an official U.S. military death toll of 18."
+      "summary": "Confirmed reporting available today shows no clearly newer public cumulative Iran casualty total than the June 10 Al Jazeera tracker citing Iran's Health Ministry, which listed 3,468 dead and more than 26,500 wounded; the Pentagon-linked U.S. death toll remains 18 service members killed, while Israel's reported death toll remains 26 and Gulf-state deaths 28. On the military side, the most recent clearly confirmed theater posture found in accessible reporting is one U.S. carrier currently operating in the Middle East after USS George Washington relieved USS Abraham Lincoln on August 20, while CENTCOM's latest easily retrievable official aggregate strike figures located were 12,300+ targets struck and 13,000+ combat flights from its April 1 fact sheet."
     },
     {
       "date": "2026-08-21",
