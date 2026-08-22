@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-22T22:38:45Z",
+  "lastUpdated": "2026-08-22T23:34:38Z",
   "dayCount": 175,
   "banner": {
-    "strikes": "~13,500",
+    "strikes": "~7,000",
     "killed": "3,576+",
-    "cost": "$39.8B+"
+    "cost": "$39.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.8 billion+",
-    "dailyBurnRate": "~$228M/day",
+    "totalCost": "$39.4 billion+",
+    "dailyBurnRate": "~$225M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (CENTCOM July 16, 2026 public release: 'More than 50,000 U.S. service members are operating across the Middle East')"
+          "source": "LLM-verified (AP reported on March 24, 2026 that the U.S. was supplementing some 50,000 troops already in the region; no newer confirmed operation-specific total found.)"
         },
         {
           "id": "intel_cyber",
@@ -260,14 +260,14 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-08-21",
-          "source": "LLM-verified (AP reporting on the B-2 strike package said seven B-2 bombers were used carrying two GBU-57 bunker-busters each, for 14 total dropped in that mission: https://apnews.com/article/4014575fca3923cf29772d1c0b876206)"
+          "lastUpdated": "2026-08-22",
+          "source": "LLM-verified (DoD transcript on major U.S. strike operation states 14 GBU-57 Massive Ordnance Penetrators were employed; no newer confirmed cumulative total found.)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10200,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (CENTCOM 2026 SASC Posture Statement reported 'more than 10,200 sorties' across Operation Epic Fury; this is all sorties, not fighter-only, so use with caution)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 6,500+ combat flights; no newer official cumulative fighter/attack sortie total found.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,200 \u00d7 $100,000 each",
-        "cost": "$1,020,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 22, 2026 reported Egypt is attempting to revive U.S.-Iran negotiations while France and Saudi Arabia discuss bypass options to the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 22, 2026 reported Iran\u2019s new Supreme National Security Council chief Mohsen Rezaei threatened to target alternative Gulf oil-shipping routes if neighboring states join new U.S. economic pressure on Tehran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 22, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Al Jazeera reported Aug. 22, 2026 that Iran's president said it is time to end the war with the U.S. from a 'position of strength' as Washington prepares economic sanctions.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on August 22, 2026 that Oman and Iran held talks as Iran's president said it is time to end the war with the US from a 'position of strength'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on August 22, 2026 that President Trump said he views the Strait of Hormuz as 'American territory' while Washington prepares additional economic sanctions on Iran.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1317,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 22, 2026 shows the war remains unresolved despite the June memorandum: AP reports Iran is threatening Gulf neighbors over new US economic pressure and still asserting control over Hormuz, while CENTCOM\u2019s latest authoritative aggregate figures remain the best confirmed operational baseline at more than 13,500 strikes and more than 10,200 sorties during the 38-day major combat phase of Operation Epic Fury. AP reported on August 20 that 757 US troops have been wounded since the war began, while Al Jazeera\u2019s latest clearly stated official US military death toll remains 18. For Iran-wide casualty totals, the newest clearly confirmed accessible cumulative figure I found remains Al Jazeera\u2019s June 7 tracker citing 3,468 deaths in Iran and 29 deaths in Gulf states; I could not verify newer nationwide cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, or Israeli deaths from named official/major-wire sources, so several fields remain null under the no-guessing rule.",
+  "summary": "Confirmed current reporting remains fragmentary. AP reported on August 20 that Pentagon data now shows 757 U.S. troops wounded since the Iran war began, while earlier official and media reporting put the U.S. military death toll at 18. AP also reported on August 22 that Iran\u2019s new security chief threatened regional states over participation in new U.S. economic measures and warned Iran could target alternative Gulf oil-shipping routes. For operational totals, the latest official cumulative figures located were still CENTCOM\u2019s March 16 fact sheet listing 7,000+ targets struck and 6,500+ combat flights, plus the DoD-confirmed use of 14 GBU-57 MOP bunker busters in the major U.S. strike operation.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed reporting on August 22, 2026 shows the war remains unresolved despite the June memorandum: AP reports Iran is threatening Gulf neighbors over new US economic pressure and still asserting control over Hormuz, while CENTCOM\u2019s latest authoritative aggregate figures remain the best confirmed operational baseline at more than 13,500 strikes and more than 10,200 sorties during the 38-day major combat phase of Operation Epic Fury. AP reported on August 20 that 757 US troops have been wounded since the war began, while Al Jazeera\u2019s latest clearly stated official US military death toll remains 18. For Iran-wide casualty totals, the newest clearly confirmed accessible cumulative figure I found remains Al Jazeera\u2019s June 7 tracker citing 3,468 deaths in Iran and 29 deaths in Gulf states; I could not verify newer nationwide cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, or Israeli deaths from named official/major-wire sources, so several fields remain null under the no-guessing rule."
+      "summary": "Confirmed current reporting remains fragmentary. AP reported on August 20 that Pentagon data now shows 757 U.S. troops wounded since the Iran war began, while earlier official and media reporting put the U.S. military death toll at 18. AP also reported on August 22 that Iran\u2019s new security chief threatened regional states over participation in new U.S. economic measures and warned Iran could target alternative Gulf oil-shipping routes. For operational totals, the latest official cumulative figures located were still CENTCOM\u2019s March 16 fact sheet listing 7,000+ targets struck and 6,500+ combat flights, plus the DoD-confirmed use of 14 GBU-57 MOP bunker busters in the major U.S. strike operation."
     },
     {
       "date": "2026-08-21",
