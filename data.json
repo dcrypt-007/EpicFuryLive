@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-22T08:47:43Z",
+  "lastUpdated": "2026-08-22T09:43:10Z",
   "dayCount": 175,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,522+",
-    "cost": "$33.9B+"
+    "killed": "19+",
+    "cost": "$35.8B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.9 billion+",
-    "dailyBurnRate": "~$194M/day",
+    "totalCost": "$35.8 billion+",
+    "dailyBurnRate": "~$205M/day",
     "daysOfOps": 175,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (AP on Aug. 20, 2026 reported USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln)"
+          "source": "LLM-verified (U.S. Department of War briefing on April 24, 2026 said a second aircraft carrier would join the blockade 'in just a few days'; latest clearly attributable deployment figure found in official reporting.)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 16, 2026 listed 6,500+ combat flights; later April 1 fact sheet listed 13,000+ combat flights but not specifically fighter/attack sorties, so no direct confirmed fighter-only update)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 13,000+ combat flights; latest official cumulative sorties-type figure found. This is combat flights, not specifically fighters only.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 175 days",
-        "cost": "$1,225,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 175 days",
+        "cost": "$2,450,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reporting this week says the UAE suspended trade with Iran after renewed missile fire, though AP said those latest attacks caused no injuries.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian officials on August 22, 2026 said new U.S. sanctions amount to a declaration of war on other states and President Masoud Pezeshkian said the war should end from a 'position of strength', according to same-day regional reporting highlighted in the provided headlines.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 22, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reports renewed Iranian fire at Gulf states this week, though the UAE said the latest attacks caused no injuries.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports the June interim deal has effectively collapsed, with renewed fighting centered on the Strait of Hormuz and continued risk to Gulf-hosting US bases.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera report the Trump administration is shifting emphasis toward economic warfare and isolation of Iran as the six-month mark of the war approaches.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-22T09:14:09Z",
+      "text": "<strong>Iran says new US sanctions violate sovereignty of other states</strong> -- Foreign Ministry spokesman Esmaeil Baghaei slams Trump&amp;#039;s latest threat as a return to &amp;#039;full-scale classic colonialism&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/iran-says-new-us-sanctions-violate-sovereignty-of-other-states?traffic_source=rss"
+    },
+    {
       "time": "2026-08-22T04:30:20Z",
       "text": "<strong>Palestinian teen shot and killed in West Bank attack, UN responds</strong> -- A 17-year-old Palestinian was killed and another person critically injured in a settler attack in the occupied West Bank <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss"
@@ -783,7 +788,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-08-22T06:40:30Z",
+      "time": "2026-08-22T09:13:26Z",
       "text": "<strong>Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall</strong> -- Nine people are still missing after the attack which left 130 injured, including a number of children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
     },
@@ -796,6 +801,11 @@
       "time": "2026-08-21T21:03:24Z",
       "text": "<strong>One killed in sword attack at Swedish school</strong> -- Officials say another three people were injured, and an 18-year-old male suspect shot and arrested. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-22T06:40:30Z",
+      "text": "<strong>Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall</strong> -- Nine people are still missing after the attack which left 130 injured, including a number of children. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-21T15:58:57Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-21T19:31:47Z",
       "text": "<strong>How Israel is expanding settlements in drive to reshape West Bank</strong> -- There has been a significant expansion of building and road construction on Palestinian land occupied by Israel in recent years. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c2lq5g4dedpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-20T23:16:45Z",
-      "text": "<strong>How much could Trump&#x27;s &#x27;economic D-Day&#x27; hurt Iran?</strong> -- Iran has so far proved adept at finding ways around years of already punishing sanctions on its economy. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-19T17:46:01Z",
-      "text": "<strong>Multiple deadly Israeli strikes in Gaza in under 24 hours</strong> -- BBC Verify looks at footage from two deadly strikes in under 24 hours in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cp3rgxzk5x2o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,19 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran says new US sanctions violate sovereignty of other states",
+      "description": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump&#039;s latest threat as a return to &#039;full-scale classic colonialism&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/8/22/iran-says-new-us-sanctions-violate-sovereignty-of-other-states?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-22T09:14:09Z",
+      "tier": 2
+    },
+    {
       "title": "Search for survivors after 16 killed by Russian double-tap strike on Ukraine mall",
       "description": "Nine people are still missing after the attack which left 130 injured, including a number of children.",
       "link": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-08-22T06:40:30Z",
+      "time": "2026-08-22T09:13:26Z",
       "tier": 2
     },
     {
@@ -1317,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still supports 3,468 dead and more than 26,500 wounded in Iran from the Iran Ministry of Health figures carried by Al Jazeera\u2019s June 10 tracker, while the U.S. military death toll rose to 18 by July 22 after the Jordan strike and Israel\u2019s reported cumulative deaths remained 26 in the same June 10 tracker. On the military side, the latest clearly attributable official strike total located was CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while no current authoritative public totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, interceptor usage, or current naval force package counts. Today\u2019s confirmed headlines indicate diplomacy and economic pressure are intensifying rather than resolving the conflict, with Tehran denouncing impending U.S. sanctions and signaling it wants any end to the war from what it calls a position of strength.",
+  "summary": "Latest confirmed reporting located shows the Pentagon-linked U.S. death toll at 18 service members killed since the war began, while AP also reported 757 U.S. troops wounded as of August 20, 2026. On the operations side, the latest official CENTCOM fact sheet located lists 13,000+ targets struck in Operation Epic Fury, and an April 24 U.S. Department of War briefing said a second aircraft carrier was about to join the blockade. For Gulf-state fatalities, the clearest confirmed figure found was AP\u2019s June 3 report of 1 person killed in Kuwait. I could not verify newer confirmed cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, Israeli deaths, or most weapons-expended categories from named official or major wire sources, so those fields are left null.",
   "briefings": [
     {
       "date": "2026-08-22",
       "day": 175,
-      "summary": "Confirmed reporting still supports 3,468 dead and more than 26,500 wounded in Iran from the Iran Ministry of Health figures carried by Al Jazeera\u2019s June 10 tracker, while the U.S. military death toll rose to 18 by July 22 after the Jordan strike and Israel\u2019s reported cumulative deaths remained 26 in the same June 10 tracker. On the military side, the latest clearly attributable official strike total located was CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck, while no current authoritative public totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, interceptor usage, or current naval force package counts. Today\u2019s confirmed headlines indicate diplomacy and economic pressure are intensifying rather than resolving the conflict, with Tehran denouncing impending U.S. sanctions and signaling it wants any end to the war from what it calls a position of strength."
+      "summary": "Latest confirmed reporting located shows the Pentagon-linked U.S. death toll at 18 service members killed since the war began, while AP also reported 757 U.S. troops wounded as of August 20, 2026. On the operations side, the latest official CENTCOM fact sheet located lists 13,000+ targets struck in Operation Epic Fury, and an April 24 U.S. Department of War briefing said a second aircraft carrier was about to join the blockade. For Gulf-state fatalities, the clearest confirmed figure found was AP\u2019s June 3 report of 1 person killed in Kuwait. I could not verify newer confirmed cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, Israeli deaths, or most weapons-expended categories from named official or major wire sources, so those fields are left null."
     },
     {
       "date": "2026-08-21",
