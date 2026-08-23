@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-23T07:01:03Z",
+  "lastUpdated": "2026-08-23T07:47:09Z",
   "dayCount": 176,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,514+",
-    "cost": "$41.1B+"
+    "strikes": "~12,300",
+    "killed": "3,522+",
+    "cost": "$41.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "2",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$41.1 billion+",
-    "dailyBurnRate": "~$233M/day",
+    "totalCost": "$41.6 billion+",
+    "dailyBurnRate": "~$236M/day",
     "daysOfOps": 176,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (AP reported on Aug. 20, 2026 that USS George Washington joined USS George H.W. Bush in the Middle East, while relieving USS Abraham Lincoln: https://apnews.com/article/10ddf7b55104e0eeec2e9213e1021b98)"
+          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington joined USS George H.W. Bush in the Middle East)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 8,
+          "quantity": 11,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-08-20",
-          "source": "LLM-verified (AP News March 13, 2026: Navy had 12 ships in Arabian Sea including USS Abraham Lincoln and eight destroyers; no newer confirmed total found)"
+          "lastUpdated": "2026-08-23",
+          "source": "LLM-verified (AP, blockade reporting: Navy has 16 warships in the Middle East including 11 destroyers)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (Al Jazeera analysis on July 22, 2026 says some 50,000 US forces are operating in the region)"
+          "source": "LLM-verified (AP reported some 50,000 US troops supporting the war effort / already in the region)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 23, 2026 lists 'Combat Flights: 9,000+': https://www.centcom.mil/Portals/6/Documents/Publications/260323-Operation%20Epic%20Fury%20Fact%20Sheet.pdf?ver=ezk_KiJvld1N84sCwrTJEg%3D%3D)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "8 \u00d7 $240,000/day \u00d7 176 days",
-        "cost": "$337,920,000"
+        "detail": "11 \u00d7 $240,000/day \u00d7 176 days",
+        "cost": "$464,640,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran and Oman say they are working on arrangements for ship transit through the Strait of Hormuz amid stalled US-Iran talks, according to AP reporting this week",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran threatened 'seismic' retaliation against neighbors that join new US economic measures, according to AP reporting on Aug. 22, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 23, 2026",
       "severity": "high",
@@ -639,24 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Al Jazeera reported continued Israeli drone activity in Syria on August 22, 2026, with a strike on a civilian vehicle in southwest Syria injuring several people.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports the June interim deal has effectively collapsed and renewed escalation remains possible if diplomacy fails.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The Trump administration announced new sanctions and threatened an 'economic D-Day' campaign against Iran, while Tehran said the sanctions violate sovereignty.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still supports the previously known core war totals more than newer higher figures for some categories: Iran\u2019s Ministry of Health death toll remains 3,468 killed and more than 26,500 wounded in the main war tally cited by Al Jazeera as of June 10, while later July reporting separately added at least 50 killed and 500 wounded in renewed US strikes but did not provide a clearly integrated cumulative total. The official US military death toll tied to the war stands at 18 according to July 22 reporting citing Pentagon figures, while AP later reported the Pentagon split some renewed-fighting casualties into a separate category after saying Operation Epic Fury had concluded. Israel\u2019s reported death toll remains 26 in the Al Jazeera tracker. The latest official Operation Epic Fury fact sheet publicly found says 13,000+ targets had been struck by April 6. I could not verify current confirmed public numbers for carriers, destroyers, drone units, missile expenditures, B-2 sorties, bunker busters, fighter sorties, or interceptor totals from named official or major-wire sources, so those remain null.",
+  "summary": "Confirmed reporting today indicates the war remains unresolved despite the June interim deal and the August 17 expiry of the 60-day peace deadline. AP reported on August 20 that the USS George Washington has arrived in the Middle East and joined the USS George H.W. Bush, keeping two US carrier strike groups in theater. AP also reported this week that Pentagon data now shows 757 US troops wounded since the war began, while earlier AP/Pentagon reporting and Al Jazeera\u2019s sourced casualty tracker continue to support 18 confirmed US military deaths, 3,468 deaths in Iran, 26 Israeli deaths, and 28 deaths in Gulf states from the conflict.",
   "briefings": [
     {
       "date": "2026-08-23",
       "day": 176,
-      "summary": "Confirmed reporting still supports the previously known core war totals more than newer higher figures for some categories: Iran\u2019s Ministry of Health death toll remains 3,468 killed and more than 26,500 wounded in the main war tally cited by Al Jazeera as of June 10, while later July reporting separately added at least 50 killed and 500 wounded in renewed US strikes but did not provide a clearly integrated cumulative total. The official US military death toll tied to the war stands at 18 according to July 22 reporting citing Pentagon figures, while AP later reported the Pentagon split some renewed-fighting casualties into a separate category after saying Operation Epic Fury had concluded. Israel\u2019s reported death toll remains 26 in the Al Jazeera tracker. The latest official Operation Epic Fury fact sheet publicly found says 13,000+ targets had been struck by April 6. I could not verify current confirmed public numbers for carriers, destroyers, drone units, missile expenditures, B-2 sorties, bunker busters, fighter sorties, or interceptor totals from named official or major-wire sources, so those remain null."
+      "summary": "Confirmed reporting today indicates the war remains unresolved despite the June interim deal and the August 17 expiry of the 60-day peace deadline. AP reported on August 20 that the USS George Washington has arrived in the Middle East and joined the USS George H.W. Bush, keeping two US carrier strike groups in theater. AP also reported this week that Pentagon data now shows 757 US troops wounded since the war began, while earlier AP/Pentagon reporting and Al Jazeera\u2019s sourced casualty tracker continue to support 18 confirmed US military deaths, 3,468 deaths in Iran, 26 Israeli deaths, and 28 deaths in Gulf states from the conflict."
     },
     {
       "date": "2026-08-22",
