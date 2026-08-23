@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-23T01:59:41Z",
+  "lastUpdated": "2026-08-23T03:15:30Z",
   "dayCount": 176,
   "banner": {
-    "strikes": "~23,800",
-    "killed": "3,514+",
-    "cost": "$39.8B+"
+    "strikes": "~13,000",
+    "killed": "3,525+",
+    "cost": "$39.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "2",
+    "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.8 billion+",
-    "dailyBurnRate": "~$226M/day",
+    "totalCost": "$39.0 billion+",
+    "dailyBurnRate": "~$222M/day",
     "daysOfOps": 176,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-08-22",
-          "source": "LLM-verified (AP Aug. 20, 2026: USS George Washington operating in Middle East relieving USS Abraham Lincoln; only one US carrier strike group explicitly confirmed currently in theater)"
+          "lastUpdated": "2026-08-23",
+          "source": "LLM-verified (AP reported on August 20, 2026 that USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (Al Jazeera on July 22, 2026 cited analysis stating some 50,000 US forces are operating from bases in the region)"
+          "source": "LLM-verified (AP reporting said the US already had about 50,000 troops in the region during the war buildup; no newer official theater-wide total found)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (IDF said Israeli Air Force fighter jets conducted some 8,500 sorties to Iran, reported by Times of Israel; no newer combined US-Israeli official sortie total found)"
+          "source": "LLM-verified (IDF reported on April 1, 2026 that over the past month it had conducted 'more than 800' strike sorties in Operation Roaring Lion; no newer confirmed combined US-Israeli fighter/attack sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US carrier presence shifted as USS George Washington entered the Middle East to relieve the long-deployed USS Abraham Lincoln, signaling continued US naval posture in-theater.",
+      "target": "",
+      "source": "AP, August 20, 2026"
+    },
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran says it is near finalizing an arrangement with Oman on ship transit through the Strait of Hormuz, while the broader US-Iran war-end talks remain stalled.",
+      "target": "",
+      "source": "AP, August 17, 2026"
+    },
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran warned neighboring states that any country joining the new US economic campaign would be treated as an enemy and face retaliatory action against its interests.",
+      "target": "",
+      "source": "AP / Al Jazeera, August 22-23, 2026"
+    },
     {
       "date": "Aug 23, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "Al Jazeera headline today: Iran says new U.S. sanctions violate the sovereignty of other states.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reporting this week says the UAE suspended trade with Iran after renewed missile fire, though AP said those latest attacks caused no injuries.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian officials on August 22, 2026 said new U.S. sanctions amount to a declaration of war on other states and President Masoud Pezeshkian said the war should end from a 'position of strength', according to same-day regional reporting highlighted in the provided headlines.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Aug. 20, 2026 that more than 757 U.S. service members have been wounded since the war began, indicating continued operational risk even after Operation Epic Fury formally ended.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1333,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 22-23, 2026 shows the conflict remains active politically and militarily even as Washington emphasizes economic pressure: AP reported Iran\u2019s new security chief Mohsen Rezaei warned neighboring states not to join the US economic campaign and threatened retaliation against their interests and regional shipping routes, while no authoritative newer casualty revision was found in searched sources for Iran\u2019s 3,468 dead and 26,500+ wounded, Israel\u2019s 26 dead, or the official US military death toll of 18. For military activity totals, the clearest confirmed cumulative figures located were 10,800 Israeli strikes and 13,000 US strikes on Iranian targets, for about 23,800 combined, while several weapons-use fields lacked current confirmed official totals.",
+  "summary": "Confirmed reporting on August 22-23, 2026 shows Iran publicly threatening retaliation against any neighboring state that joins the new US economic campaign, while diplomacy over Hormuz remains unsettled despite Iran saying it is close to finalizing a transit arrangement with Oman. AP also reported that the USS George Washington has entered the Middle East to relieve the long-deployed USS Abraham Lincoln, indicating sustained US carrier presence. On casualties, the latest confirmed figures I could verify remain 3,468 dead and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera; 18 US troops killed based on Pentagon-confirmed deaths reported by AP/Al Jazeera; 26 Israelis killed; and at least 13 Gulf-state deaths confirmed across Bahrain, Kuwait and Saudi Arabia.",
   "briefings": [
     {
       "date": "2026-08-23",
       "day": 176,
-      "summary": "Confirmed reporting on August 22-23, 2026 shows the conflict remains active politically and militarily even as Washington emphasizes economic pressure: AP reported Iran\u2019s new security chief Mohsen Rezaei warned neighboring states not to join the US economic campaign and threatened retaliation against their interests and regional shipping routes, while no authoritative newer casualty revision was found in searched sources for Iran\u2019s 3,468 dead and 26,500+ wounded, Israel\u2019s 26 dead, or the official US military death toll of 18. For military activity totals, the clearest confirmed cumulative figures located were 10,800 Israeli strikes and 13,000 US strikes on Iranian targets, for about 23,800 combined, while several weapons-use fields lacked current confirmed official totals."
+      "summary": "Confirmed reporting on August 22-23, 2026 shows Iran publicly threatening retaliation against any neighboring state that joins the new US economic campaign, while diplomacy over Hormuz remains unsettled despite Iran saying it is close to finalizing a transit arrangement with Oman. AP also reported that the USS George Washington has entered the Middle East to relieve the long-deployed USS Abraham Lincoln, indicating sustained US carrier presence. On casualties, the latest confirmed figures I could verify remain 3,468 dead and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera; 18 US troops killed based on Pentagon-confirmed deaths reported by AP/Al Jazeera; 26 Israelis killed; and at least 13 Gulf-state deaths confirmed across Bahrain, Kuwait and Saudi Arabia."
     },
     {
       "date": "2026-08-22",
