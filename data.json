@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-23T22:38:03Z",
+  "lastUpdated": "2026-08-23T23:35:33Z",
   "dayCount": 176,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,523+",
-    "cost": "$41.3B+"
+    "killed": "3,522+",
+    "cost": "$40.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "10",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$41.3 billion+",
-    "dailyBurnRate": "~$235M/day",
+    "totalCost": "$40.9 billion+",
+    "dailyBurnRate": "~$233M/day",
     "daysOfOps": 176,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (AP Aug. 20, 2026: USS George Washington operating in Middle East and joins USS George H.W. Bush in the Middle East)"
+          "source": "LLM-verified (US Navy Shipbuilding Plan May 2026: 'Two carrier strike groups' supported Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (Al Jazeera July 22, 2026 citing analyst description that some 50,000 U.S. forces are operating from bases in the region; no fresher official confirmed total found)"
+          "source": "LLM-verified (Al Jazeera July 22, 2026 reports 'Some 50,000 US forces are operating' in the regional war theater)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10200,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (CENTCOM posture statement: 'Across more than 10,200 sorties' during Operation Epic Fury; this is total sorties, not explicitly fighter-only, but is the best confirmed official cumulative sortie figure found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 6,500+ combat flights; no newer official cumulative combat-flight/sortie figure found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,200 \u00d7 $100,000 each",
-        "cost": "$1,020,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS headline says Trump announced new 'crushing' sanctions on Iran, signaling additional economic escalation",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP reporting indicate renewed July-August hostilities continued after Operation Epic Fury formally concluded, with Pentagon creating a new casualty category for subsequent fighting",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on August 17, 2026 reports the 60-day deadline in the June memorandum expired without a deal and the Strait of Hormuz dispute remains unresolved",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 23, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "The UAE suspended all trade with Iran on August 19, 2026 after renewed Iranian fire; AP said recent attacks caused no new injuries in the UAE, but tensions around Gulf shipping remain high.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S.-Iran June memorandum deadline expired on August 17, 2026 without a broader settlement; AP reports there is still no sign of compromise on reopening the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran warned neighboring states that joining the US economic campaign would make them enemies and that Tehran would target their interests in retaliation, according to AP and Al Jazeera reporting on August 22-23, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "US carrier presence shifted as USS George Washington entered the Middle East to relieve the long-deployed USS Abraham Lincoln, signaling continued US naval posture in-theater.",
-      "target": "",
-      "source": "AP, August 20, 2026"
     }
   ],
   "homelandThreats": [
@@ -1333,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 23, 2026 shows the war remains unresolved despite the June memorandum and later ceasefire attempts. AP reports Iran\u2019s security leadership warned that support for new U.S. sanctions would be treated as an 'act of war,' while AP also confirmed on August 20 that the USS George Washington arrived in the Middle East and joined the USS George H.W. Bush, keeping two U.S. carrier strike groups in theater. For cumulative casualties, the most recent clearly attributable confirmed figures found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera\u2019s June 10 tracker, 18 official U.S. military dead from AP/Al Jazeera reporting, 26 Israelis killed from the same Al Jazeera tracker, and 29 deaths across Gulf states from Reuters\u2019 April 2 factbox.",
+  "summary": "Confirmed reporting still leaves many military quantity fields undocumented. The best-supported casualty baseline remains Iran Ministry of Health figures carried by Al Jazeera on June 10 showing 3,468 killed and more than 26,500 wounded in Iran, alongside 26 killed in Israel. AP and Al Jazeera reporting in July-August indicate the official US military death toll reached 18, while the Pentagon has since split later casualties into a new 'Overseas Operations' category after saying Operation Epic Fury had concluded. Official US strike data has not been updated publicly beyond the April 6 CENTCOM fact sheet and May Navy document, both citing more than 13,000 targets struck, while AP on August 17 reported the June interim deal's 60-day deadline expired without a settlement and tensions around the Strait of Hormuz remain unresolved.",
   "briefings": [
     {
       "date": "2026-08-23",
       "day": 176,
-      "summary": "Confirmed reporting on August 23, 2026 shows the war remains unresolved despite the June memorandum and later ceasefire attempts. AP reports Iran\u2019s security leadership warned that support for new U.S. sanctions would be treated as an 'act of war,' while AP also confirmed on August 20 that the USS George Washington arrived in the Middle East and joined the USS George H.W. Bush, keeping two U.S. carrier strike groups in theater. For cumulative casualties, the most recent clearly attributable confirmed figures found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry via Al Jazeera\u2019s June 10 tracker, 18 official U.S. military dead from AP/Al Jazeera reporting, 26 Israelis killed from the same Al Jazeera tracker, and 29 deaths across Gulf states from Reuters\u2019 April 2 factbox."
+      "summary": "Confirmed reporting still leaves many military quantity fields undocumented. The best-supported casualty baseline remains Iran Ministry of Health figures carried by Al Jazeera on June 10 showing 3,468 killed and more than 26,500 wounded in Iran, alongside 26 killed in Israel. AP and Al Jazeera reporting in July-August indicate the official US military death toll reached 18, while the Pentagon has since split later casualties into a new 'Overseas Operations' category after saying Operation Epic Fury had concluded. Official US strike data has not been updated publicly beyond the April 6 CENTCOM fact sheet and May Navy document, both citing more than 13,000 targets struck, while AP on August 17 reported the June interim deal's 60-day deadline expired without a settlement and tensions around the Strait of Hormuz remain unresolved."
     },
     {
       "date": "2026-08-22",
