@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-23T03:15:30Z",
+  "lastUpdated": "2026-08-23T04:51:59Z",
   "dayCount": 176,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,525+",
-    "cost": "$39.0B+"
+    "killed": "3,512+",
+    "cost": "$41.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.0 billion+",
-    "dailyBurnRate": "~$222M/day",
+    "totalCost": "$41.5 billion+",
+    "dailyBurnRate": "~$236M/day",
     "daysOfOps": 176,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (AP reported on August 20, 2026 that USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln)"
+          "source": "LLM-verified (AP on August 20, 2026 reported USS George Washington operating in the Middle East and joining USS George H.W. Bush)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (AP reporting said the US already had about 50,000 troops in the region during the war buildup; no newer official theater-wide total found)"
+          "source": "LLM-verified (Pentagon Press Secretary weekly sitrep, reported by Department of War: 'More than 50,000 service members are supporting Operation Epic Fury')"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (IDF reported on April 1, 2026 that over the past month it had conducted 'more than 800' strike sorties in Operation Roaring Lion; no newer confirmed combined US-Israeli fighter/attack sortie total found)"
+          "source": "LLM-verified (Department of War Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; used here as closest confirmed cumulative sorties figure)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 176 days",
-        "cost": "$1,232,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 176 days",
+        "cost": "$2,464,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,15 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran warned neighboring states that joining the US economic campaign would make them enemies and that Tehran would target their interests in retaliation, according to AP and Al Jazeera reporting on August 22-23, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 23, 2026",
       "severity": "high",
@@ -650,15 +659,6 @@
       "text": "AP on August 22, 2026 reported Iran's president said the world has accepted Iran defeated the U.S., while the Strait of Hormuz remains effectively closed.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline today: Iran says new U.S. sanctions violate the sovereignty of other states.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -764,7 +764,7 @@
     },
     {
       "time": "2026-08-22T23:26:15Z",
-      "text": "<strong>Iran warns nearby nations against joining US \u2018economic war\u2019 efforts</strong> -- The warning comes as US President Donald Trump threatens to isolate Iran economically to weaken its government. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran warns of retaliation against countries joining US \u2018economic war\u2019</strong> -- The warning comes as US President Donald Trump threatens to isolate Iran economically to weaken its government. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/22/iran-warns-nearby-nations-against-joining-us-economic-war-efforts?traffic_source=rss"
     },
     {
@@ -781,11 +781,6 @@
       "time": "2026-08-22T19:18:02Z",
       "text": "<strong>Envoy says Israel did not give the US notice before strikes on Syrian base</strong> -- US official Tom Barrack has criticised Israel for failing to give his country adequate warning, a claim Tel Aviv denies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/22/envoy-says-israel-did-not-give-the-us-notice-before-strikes-on-syrian-base?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-22T17:34:28Z",
-      "text": "<strong>Seven killed, including two police officers, in UK \u2018wrong-side\u2019 car crash</strong> -- Accident follows similar crashes in Ireland where police highlighted social media trend driving in opposite direction. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/22/seven-killed-including-two-police-officers-in-uk-wrong-side-car-crash?traffic_source=rss"
     },
     {
       "time": "2026-08-22T13:13:16Z",
@@ -806,6 +801,11 @@
       "time": "2026-08-21T05:00:57Z",
       "text": "<strong>Israel re-establishes closed West Bank settlement, defying growing international protests</strong> -- Thirty &quot;pioneer families&quot; have arrived on a wave of nationalism driven by Israel&#x27;s government, but the rapid change has left nearby Palestinian residents fearful. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-22T17:34:28Z",
+      "text": "<strong>Seven killed, including two police officers, in UK \u2018wrong-side\u2019 car crash</strong> -- Accident follows similar crashes in Ireland where police highlighted social media trend driving in opposite direction. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/22/seven-killed-including-two-police-officers-in-uk-wrong-side-car-crash?traffic_source=rss"
     },
     {
       "time": "2026-08-21T21:03:24Z",
@@ -1229,7 +1229,7 @@
       "tier": 2
     },
     {
-      "title": "Iran warns nearby nations against joining US \u2018economic war\u2019 efforts",
+      "title": "Iran warns of retaliation against countries joining US \u2018economic war\u2019",
       "description": "The warning comes as US President Donald Trump threatens to isolate Iran economically to weaken its government.",
       "link": "https://www.aljazeera.com/news/2026/8/22/iran-warns-nearby-nations-against-joining-us-economic-war-efforts?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1266,14 +1266,6 @@
       "link": "https://www.aljazeera.com/news/2026/8/22/envoy-says-israel-did-not-give-the-us-notice-before-strikes-on-syrian-base?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-22T19:18:02Z",
-      "tier": 2
-    },
-    {
-      "title": "Seven killed, including two police officers, in UK \u2018wrong-side\u2019 car crash",
-      "description": "Accident follows similar crashes in Ireland where police highlighted social media trend driving in opposite direction.",
-      "link": "https://www.aljazeera.com/news/2026/8/22/seven-killed-including-two-police-officers-in-uk-wrong-side-car-crash?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-22T17:34:28Z",
       "tier": 2
     },
     {
@@ -1333,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 22-23, 2026 shows Iran publicly threatening retaliation against any neighboring state that joins the new US economic campaign, while diplomacy over Hormuz remains unsettled despite Iran saying it is close to finalizing a transit arrangement with Oman. AP also reported that the USS George Washington has entered the Middle East to relieve the long-deployed USS Abraham Lincoln, indicating sustained US carrier presence. On casualties, the latest confirmed figures I could verify remain 3,468 dead and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera; 18 US troops killed based on Pentagon-confirmed deaths reported by AP/Al Jazeera; 26 Israelis killed; and at least 13 Gulf-state deaths confirmed across Bahrain, Kuwait and Saudi Arabia.",
+  "summary": "Confirmed reporting today indicates the war remains in a volatile post-ceasefire phase: AP reported on August 20 that 757 US troops have been wounded since the war began, while AP on August 20 also reported the USS George Washington has entered the Middle East and joined the USS George H.W. Bush, increasing the current US carrier presence there to two strike groups. Iranian officials meanwhile warned neighboring countries against joining the new US economic pressure campaign, saying any such state would be treated as an enemy and face retaliation. No newer confirmed cumulative official totals were found for Iranian deaths, Israeli deaths, or several weapons-expended categories beyond the previously reported figures.",
   "briefings": [
     {
       "date": "2026-08-23",
       "day": 176,
-      "summary": "Confirmed reporting on August 22-23, 2026 shows Iran publicly threatening retaliation against any neighboring state that joins the new US economic campaign, while diplomacy over Hormuz remains unsettled despite Iran saying it is close to finalizing a transit arrangement with Oman. AP also reported that the USS George Washington has entered the Middle East to relieve the long-deployed USS Abraham Lincoln, indicating sustained US carrier presence. On casualties, the latest confirmed figures I could verify remain 3,468 dead and more than 26,500 wounded in Iran from Iran\u2019s Health Ministry as cited by Al Jazeera; 18 US troops killed based on Pentagon-confirmed deaths reported by AP/Al Jazeera; 26 Israelis killed; and at least 13 Gulf-state deaths confirmed across Bahrain, Kuwait and Saudi Arabia."
+      "summary": "Confirmed reporting today indicates the war remains in a volatile post-ceasefire phase: AP reported on August 20 that 757 US troops have been wounded since the war began, while AP on August 20 also reported the USS George Washington has entered the Middle East and joined the USS George H.W. Bush, increasing the current US carrier presence there to two strike groups. Iranian officials meanwhile warned neighboring countries against joining the new US economic pressure campaign, saying any such state would be treated as an enemy and face retaliation. No newer confirmed cumulative official totals were found for Iranian deaths, Israeli deaths, or several weapons-expended categories beyond the previously reported figures."
     },
     {
       "date": "2026-08-22",
