@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-24T17:46:57Z",
+  "lastUpdated": "2026-08-24T18:59:34Z",
   "dayCount": 177,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,605+",
-    "cost": "$35.9B+"
+    "killed": "3,522+",
+    "cost": "$35.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "11",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "27,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1598",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.9 billion+",
-    "dailyBurnRate": "~$203M/day",
+    "totalCost": "$35.6 billion+",
+    "dailyBurnRate": "~$201M/day",
     "daysOfOps": 177,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-24",
-          "source": "LLM-verified (AP News, Aug. 20, 2026: USS George Washington joined USS George H.W. Bush in the Middle East)"
+          "source": "LLM-verified (US Navy Shipbuilding Plan, May 2026: 'Two carrier strike groups' supported Operation Epic Fury. https://media.defense.gov/2026/May/11/2003928909/-1/-1/1/NAVY%20SHIPBUILDING%20PLAN%20MAY%202026.PDF)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-24",
-          "source": "LLM-verified (Gen. Dan Caine briefing, Apr. 8, 2026: joint force flew more than 10,000 missions)"
+          "source": "LLM-verified (Pentagon Operation Epic Fury Fact Sheet, March 16, 2026: 6,500+ combat flights. This is the latest official sortie-style total found in searched/opened primary sources, but it is not August-current. https://media.defense.gov/2026/Mar/16/2003899496/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET.PDF)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,000 \u00d7 $100,000 each",
-        "cost": "$1,000,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,15 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US announced intensified global economic sanctions against Iran on August 24, 2026, with AP and BBC reporting Tehran warned support for the measures would be treated as an 'act of war'.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 24, 2026",
       "severity": "high",
@@ -650,15 +659,6 @@
       "text": "Al Jazeera and AP reporting indicate renewed July-August hostilities continued after Operation Epic Fury formally concluded, with Pentagon creating a new casualty category for subsequent fighting",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 23, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on August 17, 2026 reports the 60-day deadline in the June memorandum expired without a deal and the Strait of Hormuz dispute remains unresolved",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,13 @@
   ],
   "developments": [
     {
+      "time": "2026-08-24T17:53:00Z",
+      "text": "<strong>Trump administration announces global economic war on Iran</strong> -- The US says it is targeting all of Iran\u2019s sources of revenue, including oil. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/trump-administration-announces-global-economic-war-on-iran-2?traffic_source=rss"
+    },
+    {
       "time": "2026-08-24T17:10:37Z",
-      "text": "<strong>Trump administration announces global economic war on Iran</strong> -- This is a breaking news story. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Trump administration announces \u2018economic D-day\u2019 sanctions on Iran</strong> -- Treasury Secretary Scott Bessent says US sanctions will intensify to choke off Iran&amp;#039;s revenues and isolate the country. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/24/trump-administration-announces-global-economic-war-on-iran?traffic_source=rss"
     },
     {
@@ -783,12 +788,7 @@
       "link": "https://www.aljazeera.com/sports/2026/8/24/four-arrested-over-fatal-shooting-of-south-african-boxer-zolani-tete?traffic_source=rss"
     },
     {
-      "time": "2026-08-24T12:28:26Z",
-      "text": "<strong>South Korea says US cancelled upcoming joint marine exercises over Iran war</strong> -- The cancellation follows Trump&amp;#039;s surprise order last week to scale back a separate annual joint military drill. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/24/south-korea-says-us-cancelled-upcoming-joint-marine-exercises-over-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-24T13:35:07Z",
+      "time": "2026-08-24T18:39:53Z",
       "text": "<strong>Iran faces &#x27;greatest financial offensive ever&#x27;, says US treasury secretary</strong> -- Scott Bessent says the US will sever all economic ties with the country and that any nation partnering with Iran financially will also be isolated. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
     },
@@ -801,6 +801,16 @@
       "time": "2026-08-24T11:08:27Z",
       "text": "<strong>Four arrested over suspected poisoning of elephants in Kenya</strong> -- An investigation is looking into whether the deaths were caused by pesticides sprayed on tomato crops. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c790w8wxv0do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-24T12:28:26Z",
+      "text": "<strong>South Korea says US cancelled upcoming joint marine exercises over Iran war</strong> -- The cancellation follows Trump&amp;#039;s surprise order last week to scale back a separate annual joint military drill. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/24/south-korea-says-us-cancelled-upcoming-joint-marine-exercises-over-iran-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-24T13:35:07Z",
+      "text": "<strong>Iran faces &#x27;greatest financial offensive ever&#x27;, says US treasury secretary</strong> -- Scott Bessent says the US will sever all economic ties with the country and that any nation partnering with Iran financially will also be isolated. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-24T10:23:11Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-24T06:30:37Z",
       "text": "<strong>Pakistan\u2019s army chief back in Iran: Can he break peace talks deadlock?</strong> -- Pakistan says it can offer a channel between Tehran and Washington, but analysts differ over how much influence it has. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/24/pakistans-army-chief-munir-returns-to-iran-can-he-break-us-war-deadlock?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-24T04:02:14Z",
-      "text": "<strong>\u2018We know this movie\u2019: Iran mocks latest US sanctions</strong> -- Abbas Araghchi said new US sanctions, likely to be unveiled Monday, are like watching the &amp;#039;same movie on repeat&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/we-know-this-movie-iran-mocks-latest-us-sanctions?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-24T03:56:59Z",
-      "text": "<strong>Syria, Israel hold US-mediated talks in Jordan to de-escalate tensions</strong> -- Syria&amp;#039;s foreign minister meets Israeli officials to de-escalate tensions after Israeli strike near Turkish border. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/24/syria-israel-hold-us-mediated-talks-in-jordan-to-de-escalate-tensions?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,24 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran faces 'greatest financial offensive ever', says US treasury secretary",
+      "description": "Scott Bessent says the US will sever all economic ties with the country and that any nation partnering with Iran financially will also be isolated.",
+      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-24T18:39:53Z",
+      "tier": 2
+    },
+    {
       "title": "Trump administration announces global economic war on Iran",
-      "description": "This is a breaking news story.",
+      "description": "The US says it is targeting all of Iran\u2019s sources of revenue, including oil.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/trump-administration-announces-global-economic-war-on-iran-2?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-24T17:53:00Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump administration announces \u2018economic D-day\u2019 sanctions on Iran",
+      "description": "Treasury Secretary Scott Bessent says US sanctions will intensify to choke off Iran&#039;s revenues and isolate the country.",
       "link": "https://www.aljazeera.com/news/2026/8/24/trump-administration-announces-global-economic-war-on-iran?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-24T17:10:37Z",
@@ -1261,27 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Iran faces 'greatest financial offensive ever', says US treasury secretary",
-      "description": "Scott Bessent says the US will sever all economic ties with the country and that any nation partnering with Iran financially will also be isolated.",
-      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-24T13:35:07Z",
-      "tier": 2
-    },
-    {
       "title": "Four arrested over fatal shooting of South African boxer Zolani Tete",
       "description": "Tete, who won world WBF flyweight and WBO bantamweight titles, was killed outside his home in Eastern Cape last week.",
       "link": "https://www.aljazeera.com/sports/2026/8/24/four-arrested-over-fatal-shooting-of-south-african-boxer-zolani-tete?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-24T12:48:53Z",
-      "tier": 2
-    },
-    {
-      "title": "South Korea says US cancelled upcoming joint marine exercises over Iran war",
-      "description": "The cancellation follows Trump&#039;s surprise order last week to scale back a separate annual joint military drill.",
-      "link": "https://www.aljazeera.com/news/2026/8/24/south-korea-says-us-cancelled-upcoming-joint-marine-exercises-over-iran-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-24T12:28:26Z",
       "tier": 2
     },
     {
@@ -1293,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 24, 2026 shows the conflict remains active politically and economically even as major combat under Operation Epic Fury ended in April: the Trump administration announced sweeping new sanctions and a broader economic campaign against Iran, while Iran warned that outside support for those measures would be considered an act of war. The latest confirmed cumulative casualty figures found in named reporting are 3,527 killed and more than 27,000 wounded in Iran, 18 U.S. service members killed since the war began, and at least 60 killed in Israel. Official U.S. military reporting still supports more than 13,000 targets struck during Epic Fury, with over 50,000 U.S. warfighters involved and 1,700 incoming threats intercepted with partners.",
+  "summary": "Confirmed reporting available in the searched sources remains sparse and often outdated for battlefield tallies. The clearest current development on August 24, 2026 is not a new casualty revision but a major escalation in economic pressure: the Trump administration announced sweeping new sanctions intended to sever Iran from global revenue streams, while Iranian officials warned that support for those measures would be viewed as an act of war. For war totals, the most clearly sourced figures found were AP\u2019s August 20 report that 757 US service members have been wounded since the war began, Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Health Ministry with 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 US combat deaths, and 28 killed in Gulf states, plus a May 2026 US Navy document stating that over 13,000 targets in Iran were struck during five weeks of sustained operations.",
   "briefings": [
     {
       "date": "2026-08-24",
       "day": 177,
-      "summary": "Confirmed reporting on August 24, 2026 shows the conflict remains active politically and economically even as major combat under Operation Epic Fury ended in April: the Trump administration announced sweeping new sanctions and a broader economic campaign against Iran, while Iran warned that outside support for those measures would be considered an act of war. The latest confirmed cumulative casualty figures found in named reporting are 3,527 killed and more than 27,000 wounded in Iran, 18 U.S. service members killed since the war began, and at least 60 killed in Israel. Official U.S. military reporting still supports more than 13,000 targets struck during Epic Fury, with over 50,000 U.S. warfighters involved and 1,700 incoming threats intercepted with partners."
+      "summary": "Confirmed reporting available in the searched sources remains sparse and often outdated for battlefield tallies. The clearest current development on August 24, 2026 is not a new casualty revision but a major escalation in economic pressure: the Trump administration announced sweeping new sanctions intended to sever Iran from global revenue streams, while Iranian officials warned that support for those measures would be viewed as an act of war. For war totals, the most clearly sourced figures found were AP\u2019s August 20 report that 757 US service members have been wounded since the war began, Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Health Ministry with 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, 13 US combat deaths, and 28 killed in Gulf states, plus a May 2026 US Navy document stating that over 13,000 targets in Iran were struck during five weeks of sustained operations."
     },
     {
       "date": "2026-08-23",
