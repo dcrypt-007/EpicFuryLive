@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-24T21:44:06Z",
+  "lastUpdated": "2026-08-24T22:44:39Z",
   "dayCount": 177,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,536+",
-    "cost": "$34.6B+"
+    "killed": "1,500+",
+    "cost": "$34.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.6 billion+",
-    "dailyBurnRate": "~$195M/day",
+    "totalCost": "$34.3 billion+",
+    "dailyBurnRate": "~$194M/day",
     "daysOfOps": 177,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-24",
-          "source": "LLM-verified (AP reported Aug. 20, 2026 that USS George Washington had arrived in the Middle East relieving USS Abraham Lincoln, indicating one U.S. carrier currently operating in theater)"
+          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln; confirmed current carrier strike group presence is 1.)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (AP, Apr. 2026: 'The Navy has 16 warships \u2014 11 destroyers, three amphibious assault ships, an aircraft carrier and a littoral combat ship \u2014 in the Middle East')"
+          "lastUpdated": "2026-08-24",
+          "source": "LLM-verified (AP, April 2026: 'The Navy has 16 warships - 11 destroyers ... in the Middle East.' No newer confirmed count found today.)"
         },
         {
           "id": "personnel",
@@ -260,14 +260,14 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-08-23",
-          "source": "LLM-verified (U.S. Department of War article on strike briefing says B-2s ultimately delivered 14 GBU-57 MOPs on Iranian targets: https://www.war.gov/News/News-Stories/Article/Article/4222533/hegseth-caine-laud-success-of-us-strike-on-iran-nuke-sites/)"
+          "lastUpdated": "2026-08-24",
+          "source": "LLM-verified (U.S. Department of Defense reporting on the Iran strike states B-2 bombers dropped 14 GBU-57 Massive Ordnance Penetrator bombs on Iranian targets.)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-24",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 23, 2026: 'Combat Flights: 9,000+'; no newer confirmed combat-flight/sortie total located)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; using confirmed floor value 6500 because no newer official cumulative sortie figure was found.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline, Aug. 24, 2026: Houthis reported an attack on a Saudi oil tanker in the Red Sea; Bahri said crew were safe.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP, Aug. 23, 2026: Iran's new security chief said support for new U.S. economic measures would be treated as an 'act of war.'",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP, Aug. 24, 2026: Iran warned expanded U.S. sanctions would bring 'consequences.'",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 24, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP reported August 23, 2026 that Iran's new top security official warned support for new U.S. economic measures would be treated as an 'act of war.'",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on August 24, 2026 that the U.S. is preparing new sanctions and calling them an 'economic D-Day,' while Tehran threatened Gulf oil exports in response.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported USS George Washington arrived in the Middle East on August 20, 2026, replacing USS Abraham Lincoln amid continued regional operations",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera report fresh US-Iran tension around the Strait of Hormuz and new US sanctions expected August 24, 2026",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1285,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of August 24, 2026 shows no verified increase in the main cumulative publicly cited Iran and Israel casualty totals located in the searched sources: Iran remains at 3,468 killed and more than 26,500 injured per Iran\u2019s Health Ministry as carried by Al Jazeera\u2019s June 10 tracker, while Israel remains at 26 killed. AP reporting indicates the Pentagon/CENTCOM official U.S. Iran-war death toll stands at 14, and more recent AP reporting says 757 U.S. troops have been wounded across Operation Epic Fury and the newer 'Overseas Operations' category. On the operational side, the most recent confirmed force-posture development found today is the arrival of the USS George Washington in the Middle East to relieve USS Abraham Lincoln, while AP and other searched sources also confirm the U.S. is continuing a naval blockade around Iran and Washington is launching a new sanctions offensive against Tehran.",
+  "summary": "Confirmed reporting available on August 24, 2026 shows the conflict is shifting toward economic coercion and maritime pressure rather than major new disclosed strike statistics: AP reported today that Iran warned expanded U.S. sanctions would have consequences, while AP on August 20 confirmed more than 750 U.S. troops have been wounded since the war began and AP on July 21 put the confirmed U.S. military death toll at 18. On the force-posture side, AP confirmed on August 20 that the USS George Washington arrived in the Middle East to relieve the USS Abraham Lincoln, leaving one confirmed U.S. carrier strike group in theater. Official accessible strike totals remain sparse; the latest directly viewable CENTCOM fact sheets still show 13,000+ targets struck as of April 6 and 6,500+ combat flights as of March 16, with no newer official cumulative public figures found today for munitions expenditure or total deployed personnel.",
   "briefings": [
     {
       "date": "2026-08-24",
       "day": 177,
-      "summary": "Confirmed reporting as of August 24, 2026 shows no verified increase in the main cumulative publicly cited Iran and Israel casualty totals located in the searched sources: Iran remains at 3,468 killed and more than 26,500 injured per Iran\u2019s Health Ministry as carried by Al Jazeera\u2019s June 10 tracker, while Israel remains at 26 killed. AP reporting indicates the Pentagon/CENTCOM official U.S. Iran-war death toll stands at 14, and more recent AP reporting says 757 U.S. troops have been wounded across Operation Epic Fury and the newer 'Overseas Operations' category. On the operational side, the most recent confirmed force-posture development found today is the arrival of the USS George Washington in the Middle East to relieve USS Abraham Lincoln, while AP and other searched sources also confirm the U.S. is continuing a naval blockade around Iran and Washington is launching a new sanctions offensive against Tehran."
+      "summary": "Confirmed reporting available on August 24, 2026 shows the conflict is shifting toward economic coercion and maritime pressure rather than major new disclosed strike statistics: AP reported today that Iran warned expanded U.S. sanctions would have consequences, while AP on August 20 confirmed more than 750 U.S. troops have been wounded since the war began and AP on July 21 put the confirmed U.S. military death toll at 18. On the force-posture side, AP confirmed on August 20 that the USS George Washington arrived in the Middle East to relieve the USS Abraham Lincoln, leaving one confirmed U.S. carrier strike group in theater. Official accessible strike totals remain sparse; the latest directly viewable CENTCOM fact sheets still show 13,000+ targets struck as of April 6 and 6,500+ combat flights as of March 16, with no newer official cumulative public figures found today for munitions expenditure or total deployed personnel."
     },
     {
       "date": "2026-08-23",
