@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-25T05:47:49Z",
+  "lastUpdated": "2026-08-25T07:08:11Z",
   "dayCount": 178,
   "banner": {
-    "strikes": "~11,000",
-    "killed": "3,537+",
-    "cost": "$35.7B+"
+    "strikes": "~13,000",
+    "killed": "3,503+",
+    "cost": "$36.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "8",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -17,7 +17,7 @@
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1598",
+    "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.7 billion+",
-    "dailyBurnRate": "~$201M/day",
+    "totalCost": "$36.0 billion+",
+    "dailyBurnRate": "~$202M/day",
     "daysOfOps": 178,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (AP Aug. 20, 2026 reports USS George Washington arrived in the Middle East to relieve USS Abraham Lincoln; USNI Aug. 22 says CENTCOM is maintaining a two-carrier presence. Sources: https://apnews.com/article/10ddf7b55104e0eeec2e9213e1021b98 ; https://news.usni.org/2026/08/22/uss-abraham-lincoln-leaves-the-middle-east-after-almost-7-months)"
+          "source": "LLM-verified (USNI Fleet and Marine Tracker, Aug. 24, 2026: George Washington CSG and George H.W. Bush CSG operating in Arabian Sea in support of Operation Epic Fury)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-08-24",
-          "source": "LLM-verified (AP, April 2026: 'The Navy has 16 warships - 11 destroyers ... in the Middle East.' No newer confirmed count found today.)"
+          "lastUpdated": "2026-08-25",
+          "source": "LLM-verified (USNI Fleet and Marine Tracker, Aug. 24, 2026: 1 with George Washington, 2 with Bush, and 8 additional independently deployed warships in region = 11 destroyers/escorts in theater)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (DoD Operation Epic Fury Fact Sheet, March 16, 2026, lists 'Combat Flights: 6,500+'. Using 6,500 as minimum confirmed figure. https://media.defense.gov/2026/Mar/16/2003899496/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET.PDF)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 lists 9,000+ combat flights; no newer official cumulative fighter/attack sortie figure found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "USNI on Aug. 24 confirms two U.S. carrier strike groups remain concentrated in the Arabian Sea, signaling sustained naval pressure",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera/BBC headline reporting indicates U.S. sanctions pressure is intensifying while talks over restoring the U.S.-Iran memorandum remain active",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Aug. 24-25 reports Iran's new security chief warned support for new U.S. sanctions would be treated as an 'act of war'",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 25, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "The Trump administration announced intensified global economic measures against Iran, described by U.S. officials and major outlets as a major sanctions escalation targeting Iran's revenue and outside financial ties.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "US announced intensified global economic sanctions against Iran on August 24, 2026, with AP and BBC reporting Tehran warned support for the measures would be treated as an 'act of war'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported the U.S. continues enforcing a reimposed blockade on Iranian ports despite reduced hostilities",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Iran warned support for the new U.S. economic measures would be treated as an act of war",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-25T06:37:32Z",
+      "text": "<strong>The Iran war is bringing cyberwarfare into critical infrastructure</strong> -- Recent attacks in the UK and the US demonstrate critical vulnerabilities that governments need to urgently address. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/8/25/the-iran-war-is-bringing-cyberwarfare-into-critical-infrastructure?traffic_source=rss"
+    },
+    {
       "time": "2026-08-25T05:19:24Z",
       "text": "<strong>Two US carrier groups in Middle East strain navy resources</strong> -- Deploying two US carrier strike groups to the Middle East represents a significant concentration of firepower <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/25/two-us-carrier-groups-in-middle-east-strain-navy-resources?traffic_source=rss"
@@ -788,6 +793,16 @@
       "link": "https://www.aljazeera.com/news/2026/8/24/us-public-support-for-iran-war-falls-as-trump-approval-at-record-low-poll?traffic_source=rss"
     },
     {
+      "time": "2026-08-25T06:54:46Z",
+      "text": "<strong>Iran says it is &#x27;fully prepared&#x27; to counter widened US economic sanctions</strong> -- The US calls its latest sanctions on Iran an &quot;economic D-Day&quot;, but Tehran says it has a plan to address them. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-24T13:56:22Z",
+      "text": "<strong>Israel warns of &#x27;forceful&#x27; response to kites flown from Gaza</strong> -- Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-24T21:12:06Z",
       "text": "<strong>Displaced Palestinians in Gaza face intensifying Israeli strikes</strong> -- Israel struck a makeshift tent sheltering displaced Palestinians in Deir al-Balah, killing one man. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/displaced-palestinians-in-gaza-face-intensifying-israeli-strikes?traffic_source=rss"
@@ -801,11 +816,6 @@
       "time": "2026-08-25T03:50:06Z",
       "text": "<strong>Iran says it is ready for what US calls &#x27;greatest financial offensive ever&#x27;</strong> -- The US calls its latest sanctions on Iran an &quot;economic D-Day&quot;, but Tehran says it has a plan to counter them. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-24T13:56:22Z",
-      "text": "<strong>Israel warns of &#x27;forceful&#x27; response to kites flown from Gaza</strong> -- Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-24T23:48:25Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-24T16:27:36Z",
       "text": "<strong>Israeli strike on Gaza shelter extends casualty list</strong> -- More than 1,200 Palestinians have been killed since the October 2025 ceasefire agreement. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/24/israeli-strike-on-gaza-shelter-extends-casualty-list?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-24T16:02:50Z",
-      "text": "<strong>What to expect as Iran braces for new US economic measures amid war</strong> -- Tehran may count on links with China and others to weather the storm, but average Iranian people will bear the brunt. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/8/24/what-to-expect-as-iran-braces-for-new-us-economic-measures-amid-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-24T15:17:36Z",
-      "text": "<strong>UK to help Ukraine build Storm Shadow long-range missiles: Why it matters</strong> -- The UK&amp;#039;s willingness to share classified missile-production knowledge sets a potentially important precedent. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/24/uk-to-help-ukraine-build-storm-shadow-long-range-missiles-why-it-matters?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,27 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran says it is 'fully prepared' to counter widened US economic sanctions",
+      "description": "The US calls its latest sanctions on Iran an \"economic D-Day\", but Tehran says it has a plan to address them.",
+      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-25T06:54:46Z",
+      "tier": 2
+    },
+    {
+      "title": "The Iran war is bringing cyberwarfare into critical infrastructure",
+      "description": "Recent attacks in the UK and the US demonstrate critical vulnerabilities that governments need to urgently address.",
+      "link": "https://www.aljazeera.com/opinions/2026/8/25/the-iran-war-is-bringing-cyberwarfare-into-critical-infrastructure?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-25T06:37:32Z",
+      "tier": 2
+    },
+    {
       "title": "Two US carrier groups in Middle East strain navy resources",
       "description": "Deploying two US carrier strike groups to the Middle East represents a significant concentration of firepower",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/25/two-us-carrier-groups-in-middle-east-strain-navy-resources?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-25T05:19:24Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran says it is ready for what US calls 'greatest financial offensive ever'",
-      "description": "The US calls its latest sanctions on Iran an \"economic D-Day\", but Tehran says it has a plan to counter them.",
-      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-25T03:50:06Z",
       "tier": 2
     },
     {
@@ -1277,22 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "Displaced Palestinians in Gaza face intensifying Israeli strikes",
-      "description": "Israel struck a makeshift tent sheltering displaced Palestinians in Deir al-Balah, killing one man.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/displaced-palestinians-in-gaza-face-intensifying-israeli-strikes?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-24T21:12:06Z",
-      "tier": 2
-    },
-    {
-      "title": "Video: Iran reacts to US \u2018economic D-Day\u2019 sanctions",
-      "description": "Iran\u2019s Minister of Economy Ali Madani-Zadeh has responded to the US announcement of a new economic pressure campaign.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/video-iran-reacts-to-us-economic-d-day-sanctions?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-24T20:48:21Z",
-      "tier": 2
-    },
-    {
       "title": "Israel warns of 'forceful' response to kites flown from Gaza",
       "description": "Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza.",
       "link": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss",
@@ -1309,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today is sparse on updated cumulative battlefield totals. The strongest current figures located are AP\u2019s official U.S. death toll of 14 service members as of July 13, 2026, AP\u2019s Pentagon figure of 757 U.S. wounded as of August 20, and Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Ministry of Health with 3,468 killed and more than 26,500 wounded in Iran, plus 26 killed in Israel; Al Jazeera\u2019s June 7 summary put Gulf-state deaths at 29. On force posture, AP on August 20 and USNI on August 22 confirmed a two-carrier U.S. naval presence tied to the Iran conflict, while no newer confirmed official cumulative totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, interceptor launches, current troop count, or destroyer total.",
+  "summary": "Confirmed reporting on August 24-25, 2026 shows the conflict remains active politically and militarily: AP reports Iran\u2019s new security chief threatened to treat support for fresh U.S. sanctions as an act of war, while mediation over the U.S.-Iran memorandum continues; USNI confirms two U.S. carrier strike groups are still operating in support of Operation Epic Fury in the Arabian Sea; for casualties, the most recent confirmed U.S. military death count identifiable from Pentagon/AP reporting is 8 total Pentagon-confirmed deaths tied to the war, while the latest confirmed Iran and Israel fatality baselines I could verify remain 3,468 killed in Iran and 26 killed in Israel, with over 26,500 wounded in Iran.",
   "briefings": [
     {
       "date": "2026-08-25",
       "day": 178,
-      "summary": "Confirmed reporting available today is sparse on updated cumulative battlefield totals. The strongest current figures located are AP\u2019s official U.S. death toll of 14 service members as of July 13, 2026, AP\u2019s Pentagon figure of 757 U.S. wounded as of August 20, and Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Ministry of Health with 3,468 killed and more than 26,500 wounded in Iran, plus 26 killed in Israel; Al Jazeera\u2019s June 7 summary put Gulf-state deaths at 29. On force posture, AP on August 20 and USNI on August 22 confirmed a two-carrier U.S. naval presence tied to the Iran conflict, while no newer confirmed official cumulative totals were found for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, interceptor launches, current troop count, or destroyer total."
+      "summary": "Confirmed reporting on August 24-25, 2026 shows the conflict remains active politically and militarily: AP reports Iran\u2019s new security chief threatened to treat support for fresh U.S. sanctions as an act of war, while mediation over the U.S.-Iran memorandum continues; USNI confirms two U.S. carrier strike groups are still operating in support of Operation Epic Fury in the Arabian Sea; for casualties, the most recent confirmed U.S. military death count identifiable from Pentagon/AP reporting is 8 total Pentagon-confirmed deaths tied to the war, while the latest confirmed Iran and Israel fatality baselines I could verify remain 3,468 killed in Iran and 26 killed in Israel, with over 26,500 wounded in Iran."
     },
     {
       "date": "2026-08-24",
