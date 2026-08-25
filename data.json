@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-25T09:51:40Z",
+  "lastUpdated": "2026-08-25T10:49:49Z",
   "dayCount": 178,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,526+",
-    "cost": "$36.7B+"
+    "strikes": "~11,000",
+    "killed": "18+",
+    "cost": "$36.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "4",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.7 billion+",
-    "dailyBurnRate": "~$206M/day",
+    "totalCost": "$36.5 billion+",
+    "dailyBurnRate": "~$205M/day",
     "daysOfOps": 178,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (AP reporting in mid-August 2026 said two U.S. aircraft carriers were currently deployed in the Middle East, with USS George Washington replacing USS Abraham Lincoln)"
+          "source": "LLM-verified (AP, August 20, 2026: USS George Washington joined USS George H.W. Bush in the Middle East; two carrier strike groups in theater.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (AP reported in March 2026 that the U.S. buildup for the Iran war included about 50,000 troops in the Middle East)"
+          "source": "LLM-verified (AP, March 24, 2026: some 50,000 US troops already in the Middle East; Al Jazeera, July 22, 2026 also refers to some 50,000 US forces operating in the region. No newer official total found.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (CENTCOM Fact Sheet dated April 1, 2026 reported 13,000+ combat flights; used here as the closest confirmed official sorties figure)"
+          "source": "LLM-verified (CENTCOM/DoD Operation Epic Fury Fact Sheet dated March 28, 2026 lists 'Combat Flights: 11,000+'; no newer official fighter/attack sortie total found.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Reuters reporting indicate the Strait of Hormuz confrontation and blockade remain active, with renewed missile alerts and shipping risk.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran and the US remain in confrontation over new US economic sanctions; BBC headline context says Iran is 'fully prepared' to counter widened sanctions.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Pakistan says significant progress was made in talks in Tehran, but Iranian security officials remain wary of Washington, according to Al Jazeera headline context.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 25, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Reported Houthi attack on a Saudi oil tanker in the Red Sea, with crew safe, per Al Jazeera RSS headline on August 24, 2026",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "New U.S. sanctions campaign targeting Iran's aviation, tech, shipping, and revenue sources reported by Al Jazeera and BBC on August 24, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline, Aug. 24, 2026: Houthis reported an attack on a Saudi oil tanker in the Red Sea; Bahri said crew were safe.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP, Aug. 23, 2026: Iran's new security chief said support for new U.S. economic measures would be treated as an 'act of war.'",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-25T10:22:00Z",
+      "text": "<strong>Can Pakistan\u2019s Asim Munir convince Iran military chiefs to return to talks?</strong> -- Pakistan says progress was made in Tehran, but Iran\u2019s security establishment remains wary of Washington. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/25/can-pakistans-asim-munir-convince-iran-military-chiefs-to-return-to-talks?traffic_source=rss"
+    },
+    {
       "time": "2026-08-25T09:34:25Z",
       "text": "<strong>Kremlin adviser warns UK drone factories could face attacks</strong> -- Russia says UK decision to share missile blueprints with Ukraine is evidence of direct military involvement in the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/25/kremlin-adviser-warns-uk-drone-factories-could-face-attacks?traffic_source=rss"
@@ -783,6 +788,16 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/25/two-us-carrier-groups-in-middle-east-strain-navy-resources?traffic_source=rss"
     },
     {
+      "time": "2026-08-25T08:08:26Z",
+      "text": "<strong>Iran says it is &#x27;fully prepared&#x27; to counter widened US economic sanctions</strong> -- The US calls its latest sanctions on Iran an &quot;economic D-Day&quot;, but Tehran says it has a plan to address them. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-24T13:56:22Z",
+      "text": "<strong>Israel warns of &#x27;forceful&#x27; response to kites flown from Gaza</strong> -- Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-25T02:54:40Z",
       "text": "<strong>Israel\u2019s Netanyahu claims Iran tried to kill one of his sons</strong> -- Netanyahu&amp;#039;s claim comes after US and Israel killed Iran&amp;#039;s supreme leader and four members of his family in Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/25/israels-netanyahu-claims-iran-tried-to-kill-one-of-his-sons?traffic_source=rss"
@@ -798,19 +813,9 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/8/25/brutal-gang-attack-on-strategic-haiti-hillside-leaves-at-least-30-dead?traffic_source=rss"
     },
     {
-      "time": "2026-08-25T08:08:26Z",
-      "text": "<strong>Iran says it is &#x27;fully prepared&#x27; to counter widened US economic sanctions</strong> -- The US calls its latest sanctions on Iran an &quot;economic D-Day&quot;, but Tehran says it has a plan to address them. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-25T00:00:00Z",
       "text": "<strong>Iran war live: Pakistan reports progress on restoring US-Iran MoU</strong> -- Pakistan\u2019s interior minister says significant progress made during talks with Iran&amp;#039;s president. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/25/iran-war-live-drat?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-24T13:56:22Z",
-      "text": "<strong>Israel warns of &#x27;forceful&#x27; response to kites flown from Gaza</strong> -- Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-24T11:08:27Z",
@@ -845,11 +850,6 @@
     {
       "time": "2026-08-25T03:50:06Z",
       "text": "<strong>Iran says it is ready for what US calls &#x27;greatest financial offensive ever&#x27;</strong> -- The US calls its latest sanctions on Iran an &quot;economic D-Day&quot;, but Tehran says it has a plan to counter them. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-24T23:48:25Z",
-      "text": "<strong>Iran faces &#x27;greatest financial offensive ever&#x27;, says US treasury secretary</strong> -- Scott Bessent says the US will sever all economic ties with the country and that any nation partnering with Iran financially will also be isolated. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss"
     }
   ],
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Can Pakistan\u2019s Asim Munir convince Iran military chiefs to return to talks?",
+      "description": "Pakistan says progress was made in Tehran, but Iran\u2019s security establishment remains wary of Washington.",
+      "link": "https://www.aljazeera.com/news/2026/8/25/can-pakistans-asim-munir-convince-iran-military-chiefs-to-return-to-talks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-25T10:22:00Z",
+      "tier": 2
+    },
+    {
       "title": "Kremlin adviser warns UK drone factories could face attacks",
       "description": "Russia says UK decision to share missile blueprints with Ukraine is evidence of direct military involvement in the war.",
       "link": "https://www.aljazeera.com/news/2026/8/25/kremlin-adviser-warns-uk-drone-factories-could-face-attacks?traffic_source=rss",
@@ -1269,52 +1277,20 @@
       "tier": 2
     },
     {
-      "title": "Israel\u2019s Netanyahu claims Iran tried to kill one of his sons",
-      "description": "Netanyahu&#039;s claim comes after US and Israel killed Iran&#039;s supreme leader and four members of his family in Tehran.",
-      "link": "https://www.aljazeera.com/news/2026/8/25/israels-netanyahu-claims-iran-tried-to-kill-one-of-his-sons?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-25T02:54:40Z",
-      "tier": 2
-    },
-    {
-      "title": "Man killed in world\u2019s largest annual bullfighting event in Mexico",
-      "description": "The world\u2019s largest open road bullfighting event turned deadly when a 29-year-old man was killed.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/25/man-killed-in-worlds-largest-annual-bullfighting-event-in-mexico?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-25T01:51:16Z",
-      "tier": 2
-    },
-    {
-      "title": "Brutal gang attack on strategic Haiti hillside leaves at least 30 dead",
-      "description": "At least 30 people have been killed in a gang attack on a hillside community that overlooks routes into Haiti&#039;s capital.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/25/brutal-gang-attack-on-strategic-haiti-hillside-leaves-at-least-30-dead?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-25T01:46:26Z",
-      "tier": 2
-    },
-    {
       "title": "Israel warns of 'forceful' response to kites flown from Gaza",
       "description": "Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza.",
       "link": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-24T13:56:22Z",
       "tier": 2
-    },
-    {
-      "title": "Four arrested over suspected poisoning of elephants in Kenya",
-      "description": "An investigation is looking into whether the deaths were caused by pesticides sprayed on tomato crops.",
-      "link": "https://www.bbc.co.uk/news/articles/c790w8wxv0do?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-24T11:08:27Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains sparse and in several categories outdated. The clearest verifiable figures found were Iran\u2019s Ministry of Health count of 3,468 dead and more than 26,500 wounded in Iran, 26 killed in Israel, and 28 killed in Gulf states, all carried by Al Jazeera\u2019s tracker last updated June 10, 2026. For U.S. losses, AP reported on July 28, 2026 that Pentagon casualty data showed four U.S. troops killed in the Iran fighting after those deaths were shifted into a new 'Overseas Operations' category, and on August 20 AP reported 757 U.S. troops wounded. On force posture, AP reported that two U.S. carrier strike groups were in the Middle East in mid-August and that the U.S. buildup had reached about 50,000 troops. CENTCOM\u2019s latest readily findable official fact sheets gave 13,000+ targets struck and 13,000+ combat flights, but no confirmed cumulative totals were found for destroyers, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, interceptor launches, or active drone units.",
+  "summary": "Confirmed reporting available on August 25, 2026 points to a war that remains active but lower in strike tempo than earlier in 2026: AP reported on August 20 that the Pentagon\u2019s official casualty data shows 18 US military personnel killed in the war and 757 wounded, while AP also confirmed that two US carrier groups are currently in the Middle East after USS George Washington joined USS George H.W. Bush. No newer official cumulative casualty totals for Iranian deaths, Iranian civilian deaths, Israeli deaths, Gulf-state deaths, or detailed cumulative weapons expenditure were found in accessible Pentagon, CENTCOM, Reuters, AP, or Al Jazeera reporting today, so those fields remain null under the no-estimation rule.",
   "briefings": [
     {
       "date": "2026-08-25",
       "day": 178,
-      "summary": "Confirmed reporting available today remains sparse and in several categories outdated. The clearest verifiable figures found were Iran\u2019s Ministry of Health count of 3,468 dead and more than 26,500 wounded in Iran, 26 killed in Israel, and 28 killed in Gulf states, all carried by Al Jazeera\u2019s tracker last updated June 10, 2026. For U.S. losses, AP reported on July 28, 2026 that Pentagon casualty data showed four U.S. troops killed in the Iran fighting after those deaths were shifted into a new 'Overseas Operations' category, and on August 20 AP reported 757 U.S. troops wounded. On force posture, AP reported that two U.S. carrier strike groups were in the Middle East in mid-August and that the U.S. buildup had reached about 50,000 troops. CENTCOM\u2019s latest readily findable official fact sheets gave 13,000+ targets struck and 13,000+ combat flights, but no confirmed cumulative totals were found for destroyers, Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOP drops, interceptor launches, or active drone units."
+      "summary": "Confirmed reporting available on August 25, 2026 points to a war that remains active but lower in strike tempo than earlier in 2026: AP reported on August 20 that the Pentagon\u2019s official casualty data shows 18 US military personnel killed in the war and 757 wounded, while AP also confirmed that two US carrier groups are currently in the Middle East after USS George Washington joined USS George H.W. Bush. No newer official cumulative casualty totals for Iranian deaths, Iranian civilian deaths, Israeli deaths, Gulf-state deaths, or detailed cumulative weapons expenditure were found in accessible Pentagon, CENTCOM, Reuters, AP, or Al Jazeera reporting today, so those fields remain null under the no-estimation rule."
     },
     {
       "date": "2026-08-24",
