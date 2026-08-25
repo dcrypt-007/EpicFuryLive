@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-25T04:02:09Z",
+  "lastUpdated": "2026-08-25T04:53:54Z",
   "dayCount": 178,
   "banner": {
-    "strikes": "~12,300",
+    "strikes": "~13,000",
     "killed": "3,540+",
-    "cost": "$35.1B+"
+    "cost": "$34.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.1 billion+",
-    "dailyBurnRate": "~$197M/day",
+    "totalCost": "$34.5 billion+",
+    "dailyBurnRate": "~$194M/day",
     "daysOfOps": 178,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington now operating in the Middle East, relieving USS Abraham Lincoln)"
+          "source": "LLM-verified (AP News, August 20, 2026: USS George Washington is now operating in the Middle East relieving USS Abraham Lincoln)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-08-24",
-          "source": "LLM-verified (Gen. Dan Caine briefing, Apr. 8, 2026: more than 50,000 American warfighters deployed across CENTCOM, EUCOM and stateside in support of Operation Epic Fury)"
+          "lastUpdated": "2026-08-25",
+          "source": "LLM-verified (AP News, March 24 and April 25, 2026: U.S. already had/about 50,000 troops in the region during the operation buildup)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 lists 13,000+ combat flights; used as nearest confirmed cumulative sorties figure)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet, March 16, 2026: 'Combat Flights: 6,500+'; no newer official cumulative sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported August 20, 2026 that USS George Washington arrived in the Middle East to relieve USS Abraham Lincoln, indicating sustained U.S. naval presence in theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Recent AP reporting says renewed U.S.-Iran hostilities in August led the Pentagon to move casualties from Operation Epic Fury into a new 'Overseas Operations' category, complicating official cumulative war totals.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and BBC reported new U.S. sanctions on Iran on August 20, 2026, with Washington warning countries trading with Tehran of consequences.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 25, 2026",
       "severity": "high",
@@ -630,33 +657,6 @@
       "actor": "unknown",
       "actorLabel": "UNKNOWN",
       "text": "AP reported on August 24, 2026 that Iran warned new U.S. sanctions would trigger consequences and that Tehran views regional support for those sanctions as an 'act of war'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP/Al Jazeera/BBC reported the U.S. was set to announce tougher sanctions on Iran on August 24, 2026, and Iranian officials warned countries supporting them could face retaliation or be treated as committing an 'act of war'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 20, 2026 that more than 750 U.S. troops have been wounded since the war began, showing the human toll is still rising in Pentagon accounting even after casualty categorization changes.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 20, 2026 that the USS George Washington has entered the Middle East to relieve the USS Abraham Lincoln, indicating continued U.S. carrier presence despite the end of Operation Epic Fury as a formal casualty category.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
     }
@@ -1301,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains sparse on updated cumulative battlefield metrics. AP reported on August 20 that more than 750 US troops have been wounded since the Iran war began, and AP reported on July 21 that the Pentagon-confirmed US military death toll since the war began stands at 18. For cumulative regional casualties, the most accessible named-source tracker still appears to be Al Jazeera\u2019s June 10 update citing Iran\u2019s Ministry of Health and Israeli figures: 3,468 killed in Iran, more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the operational side, the latest accessible official aggregate strike figure located was CENTCOM\u2019s April 1 fact sheet listing 12,300+ targets struck and 13,000+ combat flights; no newer confirmed official totals for carriers, destroyers, personnel, missiles, bomb types, B-2 sorties, or interceptor usage were found in accessible reporting today.",
+  "summary": "Confirmed reporting on August 20-25, 2026 shows the conflict remains active politically and militarily even though the Pentagon says Operation Epic Fury itself has concluded: the United States imposed a new sanctions package on Iran, AP reported Pentagon data showing 757 U.S. troops wounded since the war began, and AP also confirmed the USS George Washington is now operating in the Middle East after relieving USS Abraham Lincoln. For cumulative official-operation metrics, the latest clearly sourced Pentagon/CENTCOM figures I could verify were still the April 6, 2026 fact sheet listing 13,000+ targets struck, while current casualty totals for Iran and Israel were not found in up-to-date named-source reporting beyond older Al Jazeera tracker figures from June 10.",
   "briefings": [
     {
       "date": "2026-08-25",
       "day": 178,
-      "summary": "Confirmed reporting available today remains sparse on updated cumulative battlefield metrics. AP reported on August 20 that more than 750 US troops have been wounded since the Iran war began, and AP reported on July 21 that the Pentagon-confirmed US military death toll since the war began stands at 18. For cumulative regional casualties, the most accessible named-source tracker still appears to be Al Jazeera\u2019s June 10 update citing Iran\u2019s Ministry of Health and Israeli figures: 3,468 killed in Iran, more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the operational side, the latest accessible official aggregate strike figure located was CENTCOM\u2019s April 1 fact sheet listing 12,300+ targets struck and 13,000+ combat flights; no newer confirmed official totals for carriers, destroyers, personnel, missiles, bomb types, B-2 sorties, or interceptor usage were found in accessible reporting today."
+      "summary": "Confirmed reporting on August 20-25, 2026 shows the conflict remains active politically and militarily even though the Pentagon says Operation Epic Fury itself has concluded: the United States imposed a new sanctions package on Iran, AP reported Pentagon data showing 757 U.S. troops wounded since the war began, and AP also confirmed the USS George Washington is now operating in the Middle East after relieving USS Abraham Lincoln. For cumulative official-operation metrics, the latest clearly sourced Pentagon/CENTCOM figures I could verify were still the April 6, 2026 fact sheet listing 13,000+ targets struck, while current casualty totals for Iran and Israel were not found in up-to-date named-source reporting beyond older Al Jazeera tracker figures from June 10."
     },
     {
       "date": "2026-08-24",
