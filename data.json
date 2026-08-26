@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-26T07:08:49Z",
+  "lastUpdated": "2026-08-26T07:59:48Z",
   "dayCount": 179,
   "banner": {
     "strikes": "~7,800",
-    "killed": "3,557+",
-    "cost": "$36.1B+"
+    "killed": "43+",
+    "cost": "$34.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.1 billion+",
-    "dailyBurnRate": "~$202M/day",
+    "totalCost": "$34.9 billion+",
+    "dailyBurnRate": "~$195M/day",
     "daysOfOps": 179,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (AP March 2026 and multiple later backgrounders describe two US aircraft carriers in theater; no newer confirmed change found)"
+          "source": "LLM-verified (AP, Aug. 20 and Aug. 26, 2026: USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln, which departed for Thailand after lengthy deployment; current confirmed carrier strike groups in theater found via search: 1.)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (AP and Al Jazeera backgrounders repeatedly cite about/roughly 50,000 US troops in the Middle East supporting the war effort)"
+          "source": "LLM-verified (CENTCOM public release, July 17, 2026: 'More than 50,000 American service members are operating across the Middle East.')"
         },
         {
           "id": "intel_cyber",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 179 days",
-        "cost": "$2,506,000,000"
+        "detail": "$7,000,000/day \u00d7 179 days",
+        "cost": "$1,253,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran warns neighboring states against supporting US economic measures, calling such support an 'act of war' per AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran says Hormuz remains closed despite a new temporary routing arrangement with Oman reported by Al Jazeera.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US secondary-sanctions escalation against countries trading with Iran reported by Al Jazeera and BBC.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 26, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP/Aug. 24: Iran warned new U.S. sanctions would bring consequences and reiterated harsh retaliation threats.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Reuters reporting indicate the Strait of Hormuz confrontation and blockade remain active, with renewed missile alerts and shipping risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran and the US remain in confrontation over new US economic sanctions; BBC headline context says Iran is 'fully prepared' to counter widened sanctions.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Pakistan says significant progress was made in talks in Tehran, but Iranian security officials remain wary of Washington, according to Al Jazeera headline context.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-26T07:18:07Z",
+      "text": "<strong>Trump threatens Iran\u2019s partners: How do secondary sanctions work?</strong> -- The US has used threats of secondary sanctions, whereby countries trading with a sanctioned country also face sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/8/26/trump-threatens-irans-partners-how-do-secondary-sanctions-work?traffic_source=rss"
+    },
+    {
       "time": "2026-08-26T06:02:13Z",
       "text": "<strong>Top official says Iran, Oman have agreed new temporary route in Hormuz</strong> -- Deputy foreign minster says the route&amp;#039;s entry as well as part of the exit would run through Iranian territorial waters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/26/top-official-says-iran-oman-have-agreed-new-temporary-hormuz-route?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-08-25T14:17:06Z",
       "text": "<strong>Trump\u2019s latest wave of Iran sanctions: Which 60 entities are targeted?</strong> -- Dozens of groups in Iran and other countries face US sanctions over ties to Iranian oil, weapons and cyberoperations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/features/2026/8/25/trumps-latest-wave-of-iran-sanctions-which-60-entities-are-targeted?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-25T13:10:24Z",
-      "text": "<strong>Two killed, refinery on fire in Russia\u2019s Krasnodar after drone attack</strong> -- Ukraine hits Moscow&amp;#039;s Afipsky oil refinery and Russian-controlled Zaporizhzhia nuclear power plant <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/25/two-killed-refinery-on-fire-in-russias-krasnodar-after-drone-attack?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Trump threatens Iran\u2019s partners: How do secondary sanctions work?",
+      "description": "The US has used threats of secondary sanctions, whereby countries trading with a sanctioned country also face sanctions.",
+      "link": "https://www.aljazeera.com/economy/2026/8/26/trump-threatens-irans-partners-how-do-secondary-sanctions-work?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-26T07:18:07Z",
+      "tier": 2
+    },
+    {
       "title": "Top official says Iran, Oman have agreed new temporary route in Hormuz",
       "description": "Deputy foreign minster says the route&#039;s entry as well as part of the exit would run through Iranian territorial waters.",
       "link": "https://www.aljazeera.com/economy/2026/8/26/top-official-says-iran-oman-have-agreed-new-temporary-hormuz-route?traffic_source=rss",
@@ -1285,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 26, 2026 indicates the conflict remains active around the Strait of Hormuz: Al Jazeera reports Iran and Oman have agreed a temporary shipping route but Tehran says Hormuz is still closed, while BBC reports the United States has imposed new sanctions that China denounced. For cumulative war figures, the strongest current casualty numbers found were Al Jazeera\u2019s reports of at least 3,527 people killed and more than 27,000 wounded in Iran, plus 26 Israelis killed; AP-confirmed Gulf-state deaths found were four total earlier in the war. I could not verify a current Pentagon/CENTCOM-confirmed cumulative US KIA total or current official totals for most weapons-expended fields, so those remain null.",
+  "summary": "Confirmed reporting on August 26, 2026 shows the conflict has shifted toward economic coercion and maritime pressure: the United States is threatening broader secondary sanctions on Iran\u2019s trading partners, while Iran says the Strait of Hormuz remains closed despite an Oman routing arrangement reported by regional media. On the military side, AP reported the USS George Washington has relieved the USS Abraham Lincoln in the Middle East, indicating one confirmed US carrier strike group currently in theater, while CENTCOM\u2019s latest located force-posture release still says more than 50,000 US personnel are operating across the region. Pentagon casualty reporting located via AP shows 17 confirmed US military deaths tied to the war when combining the earlier official tally with four additional July deaths shifted into a new 'Overseas Operations' category.",
   "briefings": [
     {
       "date": "2026-08-26",
       "day": 179,
-      "summary": "Confirmed reporting on August 26, 2026 indicates the conflict remains active around the Strait of Hormuz: Al Jazeera reports Iran and Oman have agreed a temporary shipping route but Tehran says Hormuz is still closed, while BBC reports the United States has imposed new sanctions that China denounced. For cumulative war figures, the strongest current casualty numbers found were Al Jazeera\u2019s reports of at least 3,527 people killed and more than 27,000 wounded in Iran, plus 26 Israelis killed; AP-confirmed Gulf-state deaths found were four total earlier in the war. I could not verify a current Pentagon/CENTCOM-confirmed cumulative US KIA total or current official totals for most weapons-expended fields, so those remain null."
+      "summary": "Confirmed reporting on August 26, 2026 shows the conflict has shifted toward economic coercion and maritime pressure: the United States is threatening broader secondary sanctions on Iran\u2019s trading partners, while Iran says the Strait of Hormuz remains closed despite an Oman routing arrangement reported by regional media. On the military side, AP reported the USS George Washington has relieved the USS Abraham Lincoln in the Middle East, indicating one confirmed US carrier strike group currently in theater, while CENTCOM\u2019s latest located force-posture release still says more than 50,000 US personnel are operating across the region. Pentagon casualty reporting located via AP shows 17 confirmed US military deaths tied to the war when combining the earlier official tally with four additional July deaths shifted into a new 'Overseas Operations' category."
     },
     {
       "date": "2026-08-25",
