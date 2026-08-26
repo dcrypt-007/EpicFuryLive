@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-08-26T11:45:31Z",
+  "lastUpdated": "2026-08-26T13:16:32Z",
   "dayCount": 179,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,540+",
-    "cost": "$36.8B+"
+    "strikes": "~13,000",
+    "killed": "3,526+",
+    "cost": "$36.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "14",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.8 billion+",
-    "dailyBurnRate": "~$206M/day",
+    "totalCost": "$36.5 billion+",
+    "dailyBurnRate": "~$204M/day",
     "daysOfOps": 179,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: Operation Epic Fury used two carrier strike groups over five weeks)"
+          "source": "LLM-verified (AP on August 20, 2026 reported USS George Washington joined USS George H.W. Bush in the Middle East)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (CENTCOM public release, July 17, 2026: 'More than 50,000 American service members are operating across the Middle East.')"
+          "source": "LLM-verified (AP on March 24 and March 31, 2026 reported some 50,000 US troops supporting the war effort in the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (AP on August 13, 2026 said USS Abraham Lincoln's deployment included 10,000 aircraft flights; no broader official fighter/attack-only cumulative sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,000 \u00d7 $100,000 each",
+        "cost": "$1,000,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The USS Abraham Lincoln is repositioning after its long deployment, while the USS George Washington has arrived in theater to sustain US carrier presence.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The US Navy is still enforcing a blockade on Iranian ports in the Strait of Hormuz even as hostilities have calmed.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran and Oman are negotiating a temporary commercial shipping corridor in the Strait of Hormuz, while Iran says military vessels would not be allowed under such an arrangement.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 26, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran says Hormuz remains closed despite an Oman transit-route deal, according to Al Jazeera headlines provided by the user.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Fragile ceasefire/MoU framework remains at risk after renewed July-August strike cycles and Strait of Hormuz tensions",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Diplomatic uncertainty persists as Iran says it has not decided to resume talks with the US",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "US sanctions expansion branded an 'act of war' by Iran's new security chief in AP/Al Jazeera reporting",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-08-26T12:05:09Z",
+      "text": "<strong>Iran, Oman agree on temporary Hormuz route: What we know</strong> -- Iran\u2019s deputy foreign minister announced a temporary shipping corridor in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know?traffic_source=rss"
+    },
+    {
       "time": "2026-08-26T11:32:35Z",
       "text": "<strong>Why India is sharing missile secrets with its private sector</strong> -- New policy allows India\u2019s private sector to produce advanced weaponry, supporting its goal of military self-sufficiency. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/26/why-india-is-sharing-missile-secrets-with-its-private-sector?traffic_source=rss"
@@ -764,7 +769,7 @@
     },
     {
       "time": "2026-08-26T09:48:36Z",
-      "text": "<strong>At least eight killed, hundreds missing after Nepal flash flood</strong> -- Across the border, Tibet reported &amp;#039;major casualties&amp;#039; with people missing in the neighbouring county of Gyirong. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>At least 22 killed, hundreds missing after Nepal flash flood</strong> -- Across the border, Tibet reported &amp;#039;major casualties&amp;#039; with people missing in the neighbouring county of Gyirong. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/26/at-least-eight-killed-in-nepal-flash-floods-that-swept-away-villages-roads?traffic_source=rss"
     },
     {
@@ -773,9 +778,9 @@
       "link": "https://www.aljazeera.com/news/2026/8/26/the-bulgarian-village-that-fears-becoming-an-iranian-target?traffic_source=rss"
     },
     {
-      "time": "2026-08-26T07:18:07Z",
-      "text": "<strong>Trump threatens Iran\u2019s partners: How do secondary sanctions work?</strong> -- The US has used threats of secondary sanctions, whereby countries trading with a sanctioned country also face sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/8/26/trump-threatens-irans-partners-how-do-secondary-sanctions-work?traffic_source=rss"
+      "time": "2026-08-26T12:32:47Z",
+      "text": "<strong>Door was locked at Pakistan hospital where fire killed 14 babies, witnesses say</strong> -- A hospital official told the BBC that the door to the ward was not locked, but manned with security guards, to protect the babies. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/czdz13elezlo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-26T08:17:45Z",
@@ -796,6 +801,11 @@
       "time": "2026-08-26T08:47:18Z",
       "text": "<strong>Canada&#x27;s retaliation tests the limit of American power under Trump</strong> -- The president is using US dominance to challenge allies and enemies alike - but both Canada and Iran have found ways to fight back. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/ce8xd5k1krpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-26T07:18:07Z",
+      "text": "<strong>Trump threatens Iran\u2019s partners: How do secondary sanctions work?</strong> -- The US has used threats of secondary sanctions, whereby countries trading with a sanctioned country also face sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/8/26/trump-threatens-irans-partners-how-do-secondary-sanctions-work?traffic_source=rss"
     },
     {
       "time": "2026-08-26T06:02:13Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-25T21:26:25Z",
       "text": "<strong>Seven killed in Gaza as Israeli strike \u2018destroys\u2019 aid supply warehouse</strong> -- Health Ministry warns of &amp;#039;complete collapse of the basic necessities of life&amp;#039; in Gaza as Israel&amp;#039;s attacks continue. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/25/seven-killed-in-gaza-as-israeli-strike-destroys-aid-supply-warehouse?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-25T20:34:49Z",
-      "text": "<strong>New US sanctions signal Trump desperation on Iran, experts say</strong> -- Economic escalation is unlikely to force the Iranian government to capitulate to US demands, according to experts. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/25/new-us-sanctions-signal-trump-desperation-on-iran-experts-say?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-25T19:47:51Z",
-      "text": "<strong>Iran, Oman discuss temporary shipping lane through Strait of Hormuz</strong> -- Omani FM hopes the two countries will &amp;#039;soon announce&amp;#039; a joint temporary transit corridor through the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/25/iran-oman-discuss-temporary-shipping-lane-through-strait-of-hormuz?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Door was locked at Pakistan hospital where fire killed 14 babies, witnesses say",
+      "description": "A hospital official told the BBC that the door to the ward was not locked, but manned with security guards, to protect the babies.",
+      "link": "https://www.bbc.co.uk/news/articles/czdz13elezlo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-26T12:32:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran, Oman agree on temporary Hormuz route: What we know",
+      "description": "Iran\u2019s deputy foreign minister announced a temporary shipping corridor in the Strait of Hormuz.",
+      "link": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-26T12:05:09Z",
+      "tier": 2
+    },
+    {
       "title": "Why India is sharing missile secrets with its private sector",
       "description": "New policy allows India\u2019s private sector to produce advanced weaponry, supporting its goal of military self-sufficiency.",
       "link": "https://www.aljazeera.com/news/2026/8/26/why-india-is-sharing-missile-secrets-with-its-private-sector?traffic_source=rss",
@@ -1229,7 +1245,7 @@
       "tier": 2
     },
     {
-      "title": "At least eight killed, hundreds missing after Nepal flash flood",
+      "title": "At least 22 killed, hundreds missing after Nepal flash flood",
       "description": "Across the border, Tibet reported &#039;major casualties&#039; with people missing in the neighbouring county of Gyirong.",
       "link": "https://www.aljazeera.com/news/2026/8/26/at-least-eight-killed-in-nepal-flash-floods-that-swept-away-villages-roads?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1261,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Trump threatens Iran\u2019s partners: How do secondary sanctions work?",
-      "description": "The US has used threats of secondary sanctions, whereby countries trading with a sanctioned country also face sanctions.",
-      "link": "https://www.aljazeera.com/economy/2026/8/26/trump-threatens-irans-partners-how-do-secondary-sanctions-work?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-26T07:18:07Z",
-      "tier": 2
-    },
-    {
       "title": "Trump says all mines cleared from Strait of Hormuz",
       "description": "Iran has closed the vital waterway since the beginning of the conflict causing wild fluctuations in oil prices worldwide.",
       "link": "https://www.bbc.co.uk/news/articles/cwyzw836d05o?at_medium=RSS&at_campaign=rss",
@@ -1285,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting still supports 3,468 Iranian deaths and more than 26,500 wounded from Iran\u2019s Health Ministry, 26 deaths in Israel, 28 deaths in Gulf states, and 18 confirmed US military fatalities according to Pentagon-linked reporting. On the operations side, the latest official US campaign fact sheet publicly located remains CENTCOM\u2019s April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights, while a May 2026 Navy planning document says Operation Epic Fury used two carrier strike groups over five weeks. No newer official cumulative totals were found for destroyers, personnel, drone units, or specific munition counts such as JDAM, JASSM, SDB, B-2 sorties, or MOP bunker busters.",
+  "summary": "Confirmed reporting as of August 26, 2026 indicates the war\u2019s publicly cited cumulative fatality figures have not moved beyond the previously reported 3,468 killed in Iran, 18 US service members killed, and 26 Israelis killed, while AP reports the Pentagon\u2019s wounded count has risen to 757 US troops. In the Gulf, the latest clearly attributable confirmed death total I found remains 14 across Kuwait, the UAE and Bahrain from AP reporting. Militarily, CENTCOM\u2019s latest accessible fact sheet still lists 13,000+ targets struck, and AP confirms two US carrier strike groups are in theater, with USS George Washington now joining USS George H.W. Bush as USS Abraham Lincoln repositions amid continued Hormuz tensions.",
   "briefings": [
     {
       "date": "2026-08-26",
       "day": 179,
-      "summary": "Confirmed reporting still supports 3,468 Iranian deaths and more than 26,500 wounded from Iran\u2019s Health Ministry, 26 deaths in Israel, 28 deaths in Gulf states, and 18 confirmed US military fatalities according to Pentagon-linked reporting. On the operations side, the latest official US campaign fact sheet publicly located remains CENTCOM\u2019s April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights, while a May 2026 Navy planning document says Operation Epic Fury used two carrier strike groups over five weeks. No newer official cumulative totals were found for destroyers, personnel, drone units, or specific munition counts such as JDAM, JASSM, SDB, B-2 sorties, or MOP bunker busters."
+      "summary": "Confirmed reporting as of August 26, 2026 indicates the war\u2019s publicly cited cumulative fatality figures have not moved beyond the previously reported 3,468 killed in Iran, 18 US service members killed, and 26 Israelis killed, while AP reports the Pentagon\u2019s wounded count has risen to 757 US troops. In the Gulf, the latest clearly attributable confirmed death total I found remains 14 across Kuwait, the UAE and Bahrain from AP reporting. Militarily, CENTCOM\u2019s latest accessible fact sheet still lists 13,000+ targets struck, and AP confirms two US carrier strike groups are in theater, with USS George Washington now joining USS George H.W. Bush as USS Abraham Lincoln repositions amid continued Hormuz tensions."
     },
     {
       "date": "2026-08-25",
