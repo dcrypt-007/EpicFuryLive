@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-26T10:51:23Z",
+  "lastUpdated": "2026-08-26T11:45:31Z",
   "dayCount": 179,
   "banner": {
     "strikes": "~12,300",
-    "killed": "3,571+",
-    "cost": "$35.5B+"
+    "killed": "3,540+",
+    "cost": "$36.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "27,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "20",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.5 billion+",
-    "dailyBurnRate": "~$199M/day",
+    "totalCost": "$36.8 billion+",
+    "dailyBurnRate": "~$206M/day",
     "daysOfOps": 179,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington now operating in the Middle East relieving USS Abraham Lincoln; current confirmed in-theater carrier presence explicitly reported as one carrier)"
+          "source": "LLM-verified (U.S. Navy Shipbuilding Plan, May 2026: Operation Epic Fury used two carrier strike groups over five weeks)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026: 13,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet, April 1, 2026: 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (Reuters pool transcript of April 8, 2026 press remarks by Gen. Dan Caine: 1,700 ballistic missiles and one-way attack drones intercepted with Gulf partners)"
+          "source": "LLM-verified (Reuters Connect Pentagon remarks: US and Gulf partners had intercepted 1,700 ballistic missiles and one-way attack drones)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 179 days",
-        "cost": "$1,253,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 179 days",
+        "cost": "$2,506,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reported severe Iranian currency collapse, saying one US dollar had reached 2 million rials amid war and sanctions pressure.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC also reported on August 26, 2026 that the US threatened expanded secondary sanctions on Iran\u2019s trading partners, while China criticized the move as illegal.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC reported on August 26, 2026 that President Trump said all mines had been cleared from the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 26, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "US sanctions expansion branded an 'act of war' by Iran's new security chief in AP/Al Jazeera reporting",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reporting on August 24-25, 2026 indicate the U.S. has expanded sanctions on Iran under what Al Jazeera described as 'Operation Economic Outcast,' while Iran and regional states warned of economic and security consequences.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported August 19, 2026 that the UAE suspended all trade with Iran after renewed missile fire; AP said those latest attacks caused no injuries.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "The U.S. naval presence remains elevated, with two carrier strike groups now in the Middle East as the blockade and open-ended operations continue.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,18 @@
   ],
   "developments": [
     {
+      "time": "2026-08-26T11:32:35Z",
+      "text": "<strong>Why India is sharing missile secrets with its private sector</strong> -- New policy allows India\u2019s private sector to produce advanced weaponry, supporting its goal of military self-sufficiency. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/26/why-india-is-sharing-missile-secrets-with-its-private-sector?traffic_source=rss"
+    },
+    {
       "time": "2026-08-26T10:00:05Z",
       "text": "<strong>One US dollar now costs 2 million rials in Iran, and here\u2019s what it can buy</strong> -- Sanctions and the US-Israel war on Iran have left the country&amp;#039;s people unable to keep pace with rising prices. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/26/one-us-dollar-now-costs-2-million-rials-in-iran-and-heres-what-it-can-buy?traffic_source=rss"
     },
     {
       "time": "2026-08-26T09:48:36Z",
-      "text": "<strong>At least eight killed as Nepal flash flood damages roads, energy facilities</strong> -- Authorities say casualties could be much higher, alongside heavier losses of property. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>At least eight killed, hundreds missing after Nepal flash flood</strong> -- Across the border, Tibet reported &amp;#039;major casualties&amp;#039; with people missing in the neighbouring county of Gyirong. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/26/at-least-eight-killed-in-nepal-flash-floods-that-swept-away-villages-roads?traffic_source=rss"
     },
     {
@@ -771,21 +776,6 @@
       "time": "2026-08-26T07:18:07Z",
       "text": "<strong>Trump threatens Iran\u2019s partners: How do secondary sanctions work?</strong> -- The US has used threats of secondary sanctions, whereby countries trading with a sanctioned country also face sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/26/trump-threatens-irans-partners-how-do-secondary-sanctions-work?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-26T06:02:13Z",
-      "text": "<strong>Iran, Oman agree on new temporary route in Hormuz</strong> -- Deputy foreign minster says the route&amp;#039;s entry as well as part of the exit would run through Iranian territorial waters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/8/26/top-official-says-iran-oman-have-agreed-new-temporary-hormuz-route?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-26T05:20:17Z",
-      "text": "<strong>Iran bets economic pain will pressure Trump in game of \u2018chicken\u2019</strong> -- Iran is betting global economic fallout and Republicans worried about the midterms will force Trump&amp;#039;s retreat. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/26/iran-bets-economic-pain-will-pressure-trump-in-game-of?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-26T09:47:08Z",
-      "text": "<strong>At least 17 killed as flash flood sweeps part of Nepal-Tibet border</strong> -- The flood in Rasuwa - an area north of Kathmandu bordering Tibet - is feared to have swept away villages. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2zyerv2lmo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-26T08:17:45Z",
@@ -801,6 +791,26 @@
       "time": "2026-08-25T11:53:36Z",
       "text": "<strong>China hits out at &#x27;illegal&#x27; new US sanctions on Iran and trading partners</strong> -- The US has threatened to isolate nations that continue to do business with Tehran, which sells much of its oil to Beijing. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-26T08:47:18Z",
+      "text": "<strong>Canada&#x27;s retaliation tests the limit of American power under Trump</strong> -- The president is using US dominance to challenge allies and enemies alike - but both Canada and Iran have found ways to fight back. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ce8xd5k1krpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-26T06:02:13Z",
+      "text": "<strong>Iran, Oman agree on new temporary route in Hormuz</strong> -- Deputy foreign minster says the route&amp;#039;s entry as well as part of the exit would run through Iranian territorial waters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/8/26/top-official-says-iran-oman-have-agreed-new-temporary-hormuz-route?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-26T05:20:17Z",
+      "text": "<strong>Iran bets economic pain will pressure Trump in game of \u2018chicken\u2019</strong> -- Iran is betting global economic fallout and Republicans worried about the midterms will force Trump&amp;#039;s retreat. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/26/iran-bets-economic-pain-will-pressure-trump-in-game-of?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-26T09:47:08Z",
+      "text": "<strong>At least 17 killed as flash flood sweeps part of Nepal-Tibet border</strong> -- The flood in Rasuwa - an area north of Kathmandu bordering Tibet - is feared to have swept away villages. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2zyerv2lmo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-08-26T04:54:38Z",
@@ -841,16 +851,6 @@
       "time": "2026-08-25T19:47:51Z",
       "text": "<strong>Iran, Oman discuss temporary shipping lane through Strait of Hormuz</strong> -- Omani FM hopes the two countries will &amp;#039;soon announce&amp;#039; a joint temporary transit corridor through the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/25/iran-oman-discuss-temporary-shipping-lane-through-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-25T18:01:37Z",
-      "text": "<strong>Kremlin denies US talks amid reports CIA Director Ratcliffe in Russia</strong> -- Washington reportedly alerted Ukraine to refrain from strikes until delegation leaves Moscow, US media reports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/25/kremlin-denies-planned-talks-with-us-envoys-amid-reports-cia-head-in-russia?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-25T16:39:24Z",
-      "text": "<strong>Sanctions or missiles? How Gulf will view Trump\u2019s new Iran approach</strong> -- As Washington pressures Tehran, Gulf states weigh sanctions against the risk of escalation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/25/sanctions-or-missiles-why-gulf-may-not-relish-trumps-new-iran-approach?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Why India is sharing missile secrets with its private sector",
+      "description": "New policy allows India\u2019s private sector to produce advanced weaponry, supporting its goal of military self-sufficiency.",
+      "link": "https://www.aljazeera.com/news/2026/8/26/why-india-is-sharing-missile-secrets-with-its-private-sector?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-26T11:32:35Z",
+      "tier": 2
+    },
+    {
       "title": "One US dollar now costs 2 million rials in Iran, and here\u2019s what it can buy",
       "description": "Sanctions and the US-Israel war on Iran have left the country&#039;s people unable to keep pace with rising prices.",
       "link": "https://www.aljazeera.com/economy/2026/8/26/one-us-dollar-now-costs-2-million-rials-in-iran-and-heres-what-it-can-buy?traffic_source=rss",
@@ -1221,19 +1229,11 @@
       "tier": 2
     },
     {
-      "title": "At least eight killed as Nepal flash flood damages roads, energy facilities",
-      "description": "Authorities say casualties could be much higher, alongside heavier losses of property.",
+      "title": "At least eight killed, hundreds missing after Nepal flash flood",
+      "description": "Across the border, Tibet reported &#039;major casualties&#039; with people missing in the neighbouring county of Gyirong.",
       "link": "https://www.aljazeera.com/news/2026/8/26/at-least-eight-killed-in-nepal-flash-floods-that-swept-away-villages-roads?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-26T09:48:36Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 17 killed as flash flood sweeps part of Nepal-Tibet border",
-      "description": "The flood in Rasuwa - an area north of Kathmandu bordering Tibet - is feared to have swept away villages.",
-      "link": "https://www.bbc.co.uk/news/articles/cx2zyerv2lmo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-26T09:47:08Z",
       "tier": 2
     },
     {
@@ -1269,22 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "Iran, Oman agree on new temporary route in Hormuz",
-      "description": "Deputy foreign minster says the route&#039;s entry as well as part of the exit would run through Iranian territorial waters.",
-      "link": "https://www.aljazeera.com/economy/2026/8/26/top-official-says-iran-oman-have-agreed-new-temporary-hormuz-route?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-26T06:02:13Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran bets economic pain will pressure Trump in game of \u2018chicken\u2019",
-      "description": "Iran is betting global economic fallout and Republicans worried about the midterms will force Trump&#039;s retreat.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/26/iran-bets-economic-pain-will-pressure-trump-in-game-of?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-26T05:20:17Z",
-      "tier": 2
-    },
-    {
       "title": "Trump says all mines cleared from Strait of Hormuz",
       "description": "Iran has closed the vital waterway since the beginning of the conflict causing wild fluctuations in oil prices worldwide.",
       "link": "https://www.bbc.co.uk/news/articles/cwyzw836d05o?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today is thin on precise cumulative war metrics. AP reported on August 20 that Pentagon data shows 757 U.S. troops wounded since the war began, while earlier AP reporting on July 28 said the Pentagon had shifted some later Iran-related casualties into a new 'Overseas Operations' category after declaring Operation Epic Fury concluded, making direct KIA comparisons difficult. For currently usable cumulative figures from named sources, Al Jazeera\u2019s June 10 tracker still lists 26 Israelis killed and 28 deaths in Gulf states, while the latest official DoD/CENTCOM fact sheet located was the April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights. AP also confirmed on August 20 that the USS George Washington had arrived in the Middle East to relieve USS Abraham Lincoln, giving one explicitly confirmed U.S. carrier currently in theater.",
+  "summary": "Confirmed reporting still supports 3,468 Iranian deaths and more than 26,500 wounded from Iran\u2019s Health Ministry, 26 deaths in Israel, 28 deaths in Gulf states, and 18 confirmed US military fatalities according to Pentagon-linked reporting. On the operations side, the latest official US campaign fact sheet publicly located remains CENTCOM\u2019s April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights, while a May 2026 Navy planning document says Operation Epic Fury used two carrier strike groups over five weeks. No newer official cumulative totals were found for destroyers, personnel, drone units, or specific munition counts such as JDAM, JASSM, SDB, B-2 sorties, or MOP bunker busters.",
   "briefings": [
     {
       "date": "2026-08-26",
       "day": 179,
-      "summary": "Confirmed reporting available today is thin on precise cumulative war metrics. AP reported on August 20 that Pentagon data shows 757 U.S. troops wounded since the war began, while earlier AP reporting on July 28 said the Pentagon had shifted some later Iran-related casualties into a new 'Overseas Operations' category after declaring Operation Epic Fury concluded, making direct KIA comparisons difficult. For currently usable cumulative figures from named sources, Al Jazeera\u2019s June 10 tracker still lists 26 Israelis killed and 28 deaths in Gulf states, while the latest official DoD/CENTCOM fact sheet located was the April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights. AP also confirmed on August 20 that the USS George Washington had arrived in the Middle East to relieve USS Abraham Lincoln, giving one explicitly confirmed U.S. carrier currently in theater."
+      "summary": "Confirmed reporting still supports 3,468 Iranian deaths and more than 26,500 wounded from Iran\u2019s Health Ministry, 26 deaths in Israel, 28 deaths in Gulf states, and 18 confirmed US military fatalities according to Pentagon-linked reporting. On the operations side, the latest official US campaign fact sheet publicly located remains CENTCOM\u2019s April 1, 2026 update listing 12,300+ targets struck and 13,000+ combat flights, while a May 2026 Navy planning document says Operation Epic Fury used two carrier strike groups over five weeks. No newer official cumulative totals were found for destroyers, personnel, drone units, or specific munition counts such as JDAM, JASSM, SDB, B-2 sorties, or MOP bunker busters."
     },
     {
       "date": "2026-08-25",
