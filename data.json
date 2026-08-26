@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-08-26T07:59:48Z",
+  "lastUpdated": "2026-08-26T09:02:18Z",
   "dayCount": 179,
   "banner": {
-    "strikes": "~7,800",
-    "killed": "43+",
-    "cost": "$34.9B+"
+    "strikes": "~13,000",
+    "killed": "3,539+",
+    "cost": "$36.1B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "4",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "27,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "20",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.9 billion+",
-    "dailyBurnRate": "~$195M/day",
+    "totalCost": "$36.1 billion+",
+    "dailyBurnRate": "~$202M/day",
     "daysOfOps": 179,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (AP, Aug. 20 and Aug. 26, 2026: USS George Washington is now operating in the Middle East, relieving USS Abraham Lincoln, which departed for Thailand after lengthy deployment; current confirmed carrier strike groups in theater found via search: 1.)"
+          "source": "LLM-verified (AP reported on August 20, 2026 that USS George Washington joined USS George H.W. Bush in the Middle East)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-26",
-          "source": "LLM-verified (DoD/CENTCOM Operation Epic Fury Fact Sheet, March 16, 2026: 'Combat Flights: 6,500+'; no newer confirmed official cumulative sortie figure found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet-March 16th Update lists 'Combat Flights: 6,500+'; using confirmed floor only)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 179 days",
-        "cost": "$1,253,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 179 days",
+        "cost": "$2,506,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump administration is escalating pressure with threats of secondary sanctions on Iran's trading partners, according to Al Jazeera and BBC headline context",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 26, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran says Hormuz remains closed despite Oman temporary routing deal, according to Al Jazeera headline context",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 26, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Current reporting indicates the conflict focus has shifted toward sanctions, maritime pressure, and fragile diplomacy rather than newly confirmed large-scale strike waves.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera/Aug. 19: UAE said Iran launched two ballistic missiles toward maritime traffic; Iran denied the accusation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP/Aug. 24: Iran warned new U.S. sanctions would bring consequences and reiterated harsh retaliation threats.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -759,7 +759,7 @@
     },
     {
       "time": "2026-08-26T06:02:13Z",
-      "text": "<strong>Top official says Iran, Oman have agreed new temporary route in Hormuz</strong> -- Deputy foreign minster says the route&amp;#039;s entry as well as part of the exit would run through Iranian territorial waters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran, Oman agree on new temporary route in Hormuz</strong> -- Deputy foreign minster says the route&amp;#039;s entry as well as part of the exit would run through Iranian territorial waters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/8/26/top-official-says-iran-oman-have-agreed-new-temporary-hormuz-route?traffic_source=rss"
     },
     {
@@ -774,7 +774,7 @@
     },
     {
       "time": "2026-08-26T04:27:15Z",
-      "text": "<strong>At least 14 newborn babies killed in Pakistan hospital nursery fire</strong> -- Prime minister orders investigation and promises &amp;#039;strictest action&amp;#039; against those responsible for the blaze. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>At least 14 babies killed in Pakistan hospital nursery fire</strong> -- Only one infant rescued from the neonatal facility where the fire broke out, in Pakistan&amp;#039;s capital. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/26/at-least-15-newborns-killed-in-pakistan-hospital-fire?traffic_source=rss"
     },
     {
@@ -788,11 +788,6 @@
       "link": "https://www.aljazeera.com/news/liveblog/2026/8/26/iran-war-live-iran-says-hormuz-remains-closed-despite-oman-rout-deal?traffic_source=rss"
     },
     {
-      "time": "2026-08-25T21:26:25Z",
-      "text": "<strong>Seven killed in Gaza as Israeli strike \u2018destroys\u2019 aid supply warehouse</strong> -- Health Ministry warns of &amp;#039;complete collapse of the basic necessities of life&amp;#039; in Gaza as Israel&amp;#039;s attacks continue. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/25/seven-killed-in-gaza-as-israeli-strike-destroys-aid-supply-warehouse?traffic_source=rss"
-    },
-    {
       "time": "2026-08-25T11:53:36Z",
       "text": "<strong>China hits out at &#x27;illegal&#x27; new US sanctions on Iran and trading partners</strong> -- The US has threatened to isolate nations that continue to do business with Tehran, which sells much of its oil to Beijing. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss"
@@ -801,6 +796,11 @@
       "time": "2026-08-24T13:56:22Z",
       "text": "<strong>Israel warns of &#x27;forceful&#x27; response to kites flown from Gaza</strong> -- Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-25T21:26:25Z",
+      "text": "<strong>Seven killed in Gaza as Israeli strike \u2018destroys\u2019 aid supply warehouse</strong> -- Health Ministry warns of &amp;#039;complete collapse of the basic necessities of life&amp;#039; in Gaza as Israel&amp;#039;s attacks continue. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/25/seven-killed-in-gaza-as-israeli-strike-destroys-aid-supply-warehouse?traffic_source=rss"
     },
     {
       "time": "2026-08-25T20:34:49Z",
@@ -1221,7 +1221,7 @@
       "tier": 2
     },
     {
-      "title": "Top official says Iran, Oman have agreed new temporary route in Hormuz",
+      "title": "Iran, Oman agree on new temporary route in Hormuz",
       "description": "Deputy foreign minster says the route&#039;s entry as well as part of the exit would run through Iranian territorial waters.",
       "link": "https://www.aljazeera.com/economy/2026/8/26/top-official-says-iran-oman-have-agreed-new-temporary-hormuz-route?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1245,8 +1245,8 @@
       "tier": 2
     },
     {
-      "title": "At least 14 newborn babies killed in Pakistan hospital nursery fire",
-      "description": "Prime minister orders investigation and promises &#039;strictest action&#039; against those responsible for the blaze.",
+      "title": "At least 14 babies killed in Pakistan hospital nursery fire",
+      "description": "Only one infant rescued from the neonatal facility where the fire broke out, in Pakistan&#039;s capital.",
       "link": "https://www.aljazeera.com/news/2026/8/26/at-least-15-newborns-killed-in-pakistan-hospital-fire?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-08-26T04:27:15Z",
@@ -1269,14 +1269,6 @@
       "tier": 2
     },
     {
-      "title": "Seven killed in Gaza as Israeli strike \u2018destroys\u2019 aid supply warehouse",
-      "description": "Health Ministry warns of &#039;complete collapse of the basic necessities of life&#039; in Gaza as Israel&#039;s attacks continue.",
-      "link": "https://www.aljazeera.com/news/2026/8/25/seven-killed-in-gaza-as-israeli-strike-destroys-aid-supply-warehouse?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-25T21:26:25Z",
-      "tier": 2
-    },
-    {
       "title": "China hits out at 'illegal' new US sanctions on Iran and trading partners",
       "description": "The US has threatened to isolate nations that continue to do business with Tehran, which sells much of its oil to Beijing.",
       "link": "https://www.bbc.co.uk/news/articles/clyl8965j5go?at_medium=RSS&at_campaign=rss",
@@ -1293,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 26, 2026 shows the conflict has shifted toward economic coercion and maritime pressure: the United States is threatening broader secondary sanctions on Iran\u2019s trading partners, while Iran says the Strait of Hormuz remains closed despite an Oman routing arrangement reported by regional media. On the military side, AP reported the USS George Washington has relieved the USS Abraham Lincoln in the Middle East, indicating one confirmed US carrier strike group currently in theater, while CENTCOM\u2019s latest located force-posture release still says more than 50,000 US personnel are operating across the region. Pentagon casualty reporting located via AP shows 17 confirmed US military deaths tied to the war when combining the earlier official tally with four additional July deaths shifted into a new 'Overseas Operations' category.",
+  "summary": "Confirmed reporting available today remains fragmentary. The clearest casualty baselines still trace to Al Jazeera\u2019s June 10, 2026 live tracker citing Iran\u2019s Ministry of Health and Israel\u2019s Ministry of Health: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the U.S. side, AP\u2019s latest Pentagon-based reporting supports 17 total U.S. military deaths tied to the conflict when combining the 13 deaths counted under Operation Epic Fury with four additional deaths shifted into a new 'Overseas Operations' category after the Pentagon said Epic Fury had concluded. For force posture, AP reported on August 20, 2026 that USS George Washington had entered the Middle East and joined USS George H.W. Bush, indicating two U.S. carrier strike groups currently in theater. For strike volume, the latest official fact sheet surfaced in search remains CENTCOM\u2019s April 6, 2026 update listing 13,000+ targets struck, while the March 16 fact sheet lists 6,500+ combat flights.",
   "briefings": [
     {
       "date": "2026-08-26",
       "day": 179,
-      "summary": "Confirmed reporting on August 26, 2026 shows the conflict has shifted toward economic coercion and maritime pressure: the United States is threatening broader secondary sanctions on Iran\u2019s trading partners, while Iran says the Strait of Hormuz remains closed despite an Oman routing arrangement reported by regional media. On the military side, AP reported the USS George Washington has relieved the USS Abraham Lincoln in the Middle East, indicating one confirmed US carrier strike group currently in theater, while CENTCOM\u2019s latest located force-posture release still says more than 50,000 US personnel are operating across the region. Pentagon casualty reporting located via AP shows 17 confirmed US military deaths tied to the war when combining the earlier official tally with four additional July deaths shifted into a new 'Overseas Operations' category."
+      "summary": "Confirmed reporting available today remains fragmentary. The clearest casualty baselines still trace to Al Jazeera\u2019s June 10, 2026 live tracker citing Iran\u2019s Ministry of Health and Israel\u2019s Ministry of Health: 3,468 killed and more than 26,500 injured in Iran, 26 killed in Israel, and 28 killed in Gulf states. On the U.S. side, AP\u2019s latest Pentagon-based reporting supports 17 total U.S. military deaths tied to the conflict when combining the 13 deaths counted under Operation Epic Fury with four additional deaths shifted into a new 'Overseas Operations' category after the Pentagon said Epic Fury had concluded. For force posture, AP reported on August 20, 2026 that USS George Washington had entered the Middle East and joined USS George H.W. Bush, indicating two U.S. carrier strike groups currently in theater. For strike volume, the latest official fact sheet surfaced in search remains CENTCOM\u2019s April 6, 2026 update listing 13,000+ targets struck, while the March 16 fact sheet lists 6,500+ combat flights."
     },
     {
       "date": "2026-08-25",
