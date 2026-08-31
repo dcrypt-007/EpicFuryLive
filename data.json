@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-31T13:53:02Z",
+  "lastUpdated": "2026-08-31T20:06:09Z",
   "dayCount": 184,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,501+",
-    "cost": "$35.0B+"
+    "strikes": "~3,580",
+    "killed": "3,633+",
+    "cost": "$36.2B+"
   },
   "humanCost": {
-    "iranDeaths": "3,469",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "6",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "25",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "32,314+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$35.0 billion+",
-    "dailyBurnRate": "~$190M/day",
+    "totalCost": "$36.2 billion+",
+    "dailyBurnRate": "~$197M/day",
     "daysOfOps": 184,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-08-31",
-          "source": "LLM-verified (AP on March 31, 2026 says additional forces were sent on top of tens of thousands already in the region, but no later current official total specifically for Operation Epic Fury was found; leaving prior database figure unsupported by current confirmed source is not allowed, so this should be null. Returning null would be stricter, but Reuters/AP reporting supports only 'tens of thousands', not exact current total)"
+          "source": "LLM-verified (DoW transcript, Hegseth/Caine press briefing (Apr. 8, 2026): 'more than 50,000 American warfighters deployed across CENTCOM, EUCOM and stateside'; also CENTCOM HQ briefing (Mar. 5, 2026) referred to more than 50,000 currently executing Operation Epic Fury. No newer confirmed total found.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-08-31",
-          "source": "LLM-verified (IDF article 'Over 800 Strike Sorties, 16,000 Munitions' states over 800 strike sorties since launch of Operation Roaring Lion; this is an Israeli official figure and not a pure US total: idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/over-800-strike-sorties-16-000-munitions-what-has-happened-since-the-launch-of-operation-roaring-lion/)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet: April 1, 2026 lists 'Combat Flights: 13,000+'. This is the latest accessible official cumulative flights/sorties-style figure found, though not explicitly limited to fighters only.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Aug 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Iranian officials said the Larak strike killed two people and wounded several others; Al Jazeera said the IRGC reported several Iranian soldiers and civilians killed or wounded.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported Iran retaliated with missile/drone attacks toward US sites in Jordan and over/near UAE waters.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Aug 31, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on Aug. 30-31, 2026 that the US struck Iranian rocket launchers on Larak Island/Strait of Hormuz, ending a month-long lull.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Aug 31, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reporting indicate diplomacy remains stalled while Iran and Oman discuss a shipping-management framework for Hormuz that could exclude military vessels.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on August 27, 2026 that another tanker in the Strait of Hormuz was hit by an unknown projectile, underscoring continued shipping risks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported more than 750 US troops wounded since the war began, with most injuries described by officials as traumatic brain injuries",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 26, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said he is not in a hurry for Iran to return to talks, while Iranian officials say no decision has been made on restarting negotiations",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-08-31T19:51:46Z",
+      "text": "<strong>Ukrainians mourn community leader killed in Russian strike on Myla</strong> -- Ukrainians gathered to mourn Taras Didych, who was killed while rushing to help after a Russian strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/ukrainians-mourn-community-leader-killed-in-russian-strike-on-myla?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-31T17:22:32Z",
+      "text": "<strong>War on Iran: US bombs Iran</strong> -- War on Iran: US bombs Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/war-on-iran-us-bombs-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-31T17:11:54Z",
+      "text": "<strong>Vance says Trump \u2018sending a message\u2019 to Iran with AI-generated video</strong> -- Video depicting Kharg Island being attacked is later followed by more warnings from President Trump. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/8/31/vance-says-trump-sending-a-message-to-iran-with-ai-generated-video?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-31T17:04:24Z",
+      "text": "<strong>Iran could face economic collapse in months, US Treasury\u2019s Bessent warns</strong> -- Treasury Secretary Scott Bessent weighs in on the US&amp;#039;s economic pressure campaign at a meeting of G20 finance ministers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/8/31/iran-could-face-economic-collapse-in-months-us-treasurys-bessent-warns?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-31T15:56:28Z",
+      "text": "<strong>Israeli air strikes on Gaza kill at least five people: Report</strong> -- Israel escalates its attacks across the Gaza Strip in recent days despite a US-brokered &amp;#039;ceasefire&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/8/31/israeli-air-strikes-on-gaza-kill-at-least-five-people?traffic_source=rss"
+    },
+    {
+      "time": "2026-08-31T13:47:30Z",
+      "text": "<strong>US and Iran trade strikes for first time in weeks</strong> -- The attack on Larak Island in the Strait of Hormuz - the first known US strike since late July - has killed two people and injured two others. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-31T13:11:35Z",
+      "text": "<strong>Man arrested after Swiss rave shooting that killed woman</strong> -- A 22-year-old Italian woman was killed and several injured at a techno rave in Aarau. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-31T14:50:36Z",
+      "text": "<strong>&#x27;She slipped out of my hand&#x27; - children missing after ferry sinks off northern Cyprus</strong> -- Ayten and Hayri Bicer&#x27;s two young children are among 20 missing in an incident that killed eight people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1mv5ggg1l8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-29T13:55:55Z",
+      "text": "<strong>Deadly strike on Kyiv warehouse prompts evacuations</strong> -- Ukraine correspondent Dan Johnson reports from Kyiv after the deadly strike, which authorities said killed more than 30 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cy8z979y9e4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-08-28T14:06:13Z",
+      "text": "<strong>BBC tracks one week of Israeli settler violence in occupied West Bank</strong> -- The BBC&#x27;s Lucy Williamson reports on settler attacks on Palestinians, which have been observed over the last week alone. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c3wjq1188g9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-08-31T13:00:10Z",
       "text": "<strong>Can Iran use rockets to mine the Strait of Hormuz, as US claims?</strong> -- Analysts say it&amp;#039;s implausible but Iran is well-versed in adapting conventional weapons to suit its needs. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/31/can-iran-use-rockets-to-mine-the-strait-of-hormuz-as-us-claims?traffic_source=rss"
@@ -788,16 +838,6 @@
       "link": "https://www.aljazeera.com/news/2026/8/31/iran-attacks-jordan-uae-after-us-bombs-larak-island-whats-the-latest?traffic_source=rss"
     },
     {
-      "time": "2026-08-31T13:47:30Z",
-      "text": "<strong>US and Iran trade strikes for first time in weeks</strong> -- The attack on Larak Island in the Strait of Hormuz - the first known US strike since late July - has killed two people and injured two others. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-31T13:11:35Z",
-      "text": "<strong>Man arrested after Swiss rave shooting that killed woman</strong> -- A 22-year-old Italian woman was killed and several injured at a techno rave in Aarau. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-08-30T16:11:46Z",
       "text": "<strong>British woman killed in stabbing at German railway station</strong> -- A 27-year-old German man was arrested immediately after the incident in Rosenheim, Bavaria. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cx2zy118q7ko?at_medium=RSS&at_campaign=rss"
@@ -811,46 +851,6 @@
       "time": "2026-08-31T02:08:46Z",
       "text": "<strong>US plans to sanction another bank to keep economic pressure on Iran</strong> -- Washington has recently stepped up efforts to economically pressure Tehran amid the deadlocked truce talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/8/31/us-plans-to-sanction-another-bank-to-keep-economic-pressure-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-31T00:00:00Z",
-      "text": "<strong>Iran war live: Tehran says it attacked bases in Jordan, UAE after US strike</strong> -- CENTCOM says US forces bombed two IRGC rocket launchers on Larak Island which presented an &amp;#039;imminent threat&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/8/31/iran-war-live-irgc-attacks-us-bases-in-jordan-after-us-bombs-larak-island?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-30T21:02:45Z",
-      "text": "<strong>Israeli strike kills 3-year-old child in Gaza</strong> -- A deadly Israeli strike on Deir el-Balah killed two Palestinians including a 3-year-old child. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-strike-kills-3-year-old-child-in-gaza?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-30T20:50:04Z",
-      "text": "<strong>Jose Andres renews call for investigation into WCK Gaza staff killings</strong> -- World Central Kitchen founder Jos\u00e9 Andr\u00e9s is renewing his call for an independent investigation into Israeli strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/30/jose-andres-renews-call-for-investigation-into-wck-gaza-staff-killings?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-30T20:15:47Z",
-      "text": "<strong>Iran attacks US bases in Jordan after US strikes Larak Island</strong> -- The exchange of attacks is the first flare-up in violence between the two sides since late July. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/8/30/us-strikes-irans-lark-island-in-first-attack-in-weeks?traffic_source=rss"
-    },
-    {
-      "time": "2026-08-31T03:56:15Z",
-      "text": "<strong>Eight killed and 18 missing after ferry capsizes off northern Cyprus</strong> -- A search and rescue operation is under way after a ferry carrying nearly 270 people turns over after leaving port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-31T04:54:32Z",
-      "text": "<strong>US and Iran trade strikes for first time in weeks</strong> -- Iran says the attack on Larak Island, the first known US strikes since late July, killed two people and injured two others. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-29T01:14:13Z",
-      "text": "<strong>Somali piracy surges as the impact of the US-Iran war ripples outwards</strong> -- Two ships were seized within four days last week raising to at least 13 the number attacked since January. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cr4vx4pneydo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-08-30T20:02:43Z",
-      "text": "<strong>Eight killed and others missing after ferry capsizes off northern Cyprus</strong> -- A search and rescue operation is under way after a ferry carrying nearly 270 people turns over after leaving port. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,54 @@
   ],
   "newsFeed": [
     {
+      "title": "Ukrainians mourn community leader killed in Russian strike on Myla",
+      "description": "Ukrainians gathered to mourn Taras Didych, who was killed while rushing to help after a Russian strike.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/ukrainians-mourn-community-leader-killed-in-russian-strike-on-myla?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-31T19:51:46Z",
+      "tier": 2
+    },
+    {
+      "title": "War on Iran: US bombs Iran",
+      "description": "War on Iran: US bombs Iran",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/war-on-iran-us-bombs-iran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-31T17:22:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Vance says Trump \u2018sending a message\u2019 to Iran with AI-generated video",
+      "description": "Video depicting Kharg Island being attacked is later followed by more warnings from President Trump.",
+      "link": "https://www.aljazeera.com/economy/2026/8/31/vance-says-trump-sending-a-message-to-iran-with-ai-generated-video?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-31T17:11:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran could face economic collapse in months, US Treasury\u2019s Bessent warns",
+      "description": "Treasury Secretary Scott Bessent weighs in on the US&#039;s economic pressure campaign at a meeting of G20 finance ministers.",
+      "link": "https://www.aljazeera.com/economy/2026/8/31/iran-could-face-economic-collapse-in-months-us-treasurys-bessent-warns?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-31T17:04:24Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli air strikes on Gaza kill at least five people: Report",
+      "description": "Israel escalates its attacks across the Gaza Strip in recent days despite a US-brokered &#039;ceasefire&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/8/31/israeli-air-strikes-on-gaza-kill-at-least-five-people?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-08-31T15:56:28Z",
+      "tier": 2
+    },
+    {
+      "title": "'She slipped out of my hand' - children missing after ferry sinks off northern Cyprus",
+      "description": "Ayten and Hayri Bicer's two young children are among 20 missing in an incident that killed eight people.",
+      "link": "https://www.bbc.co.uk/news/articles/c1mv5ggg1l8o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-08-31T14:50:36Z",
+      "tier": 2
+    },
+    {
       "title": "US and Iran trade strikes for first time in weeks",
       "description": "The attack on Larak Island in the Strait of Hormuz - the first known US strike since late July - has killed two people and injured two others.",
       "link": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
@@ -1226,70 +1274,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-08-31T13:11:35Z",
-      "tier": 2
-    },
-    {
-      "title": "Can Iran use rockets to mine the Strait of Hormuz, as US claims?",
-      "description": "Analysts say it&#039;s implausible but Iran is well-versed in adapting conventional weapons to suit its needs.",
-      "link": "https://www.aljazeera.com/news/2026/8/31/can-iran-use-rockets-to-mine-the-strait-of-hormuz-as-us-claims?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-31T13:00:10Z",
-      "tier": 2
-    },
-    {
-      "title": "Pakistan, Saudi Arabia, Turkiye meet: What\u2019s next for their defence pact?",
-      "description": "As US-Iran strikes resume, Pakistan, Saudi Arabia and Turkiye test their pact&#039;s substance, and who might join next.",
-      "link": "https://www.aljazeera.com/news/2026/8/31/pakistan-saudi-arabia-turkiye-meet-whats-next-for-their-defence-pact?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-31T12:57:49Z",
-      "tier": 2
-    },
-    {
-      "title": "More value in Cairo\u2019s trash, but less for those who collect it",
-      "description": "War on Iran disrupts imports, driving demand for Cairo\u2019s recycled waste, but rising costs squeeze recyclers.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/more-value-in-cairos-trash-but-less-for-those-who-collect-it?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-31T12:39:53Z",
-      "tier": 2
-    },
-    {
-      "title": "Who are the economic winners and losers of the US-Israel war on Iran?",
-      "description": "Airlines and automakers have taken a hit, while banks and energy firms have raked in big profits.",
-      "link": "https://www.aljazeera.com/economy/2026/8/31/who-are-the-economic-winners-and-losers-of-the-us-israel-war-on-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-31T12:01:18Z",
-      "tier": 2
-    },
-    {
-      "title": "UAE intercepts drone after US and Iran exchange attacks",
-      "description": "The UAE says it intercepted a drone coming from Iran and rejected &#039;false&#039; reports of an attack on its Al Menhad airbase.",
-      "link": "https://www.aljazeera.com/news/2026/8/31/uae-intercepts-drone-after-us-and-iran-exchange-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-31T11:25:43Z",
-      "tier": 2
-    },
-    {
-      "title": "The looming failure of Operation Economic Outcast",
-      "description": "The latest package of US sanctions on Iran is unlikely to achieve Washington\u2019s objectives.",
-      "link": "https://www.aljazeera.com/opinions/2026/8/31/the-looming-failure-of-operation-economic-outcast?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-31T10:18:40Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran attacks Jordan, UAE after US bombs Larak Island: What\u2019s the latest?",
-      "description": "The retaliatory attacks came after the US targeted two Iranian launchers on Larak Island in the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/2026/8/31/iran-attacks-jordan-uae-after-us-bombs-larak-island-whats-the-latest?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-08-31T09:19:40Z",
-      "tier": 2
-    },
-    {
-      "title": "British woman killed in stabbing at German railway station",
-      "description": "A 27-year-old German man was arrested immediately after the incident in Rosenheim, Bavaria.",
-      "link": "https://www.bbc.co.uk/news/articles/cx2zy118q7ko?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-30T16:11:46Z",
       "tier": 2
     },
     {
@@ -1309,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on August 31 says the war re-escalated after U.S. forces struck two Iranian rocket launchers on Larak Island on August 30, the first known U.S. strike in weeks; Iran then announced retaliatory missile attacks on U.S. positions in Jordan, and the UAE said it intercepted an Iranian drone over its territorial waters. For cumulative figures, the latest accessible named-source totals I could firmly confirm were WHO\u2019s 14 May 2026 situation report listing 3,469 deaths and 32,314 injuries in Iran and 26 deaths in Israel, plus CENTCOM\u2019s March 13 confirmation that all six crew aboard the KC-135 lost over Iraq were deceased; I could not verify newer official cumulative casualty or deployment/munitions totals for most remaining fields without guessing, so those are left null.",
+  "summary": "Confirmed reporting on August 30-31, 2026 shows the war re-escalated after a weeks-long lull: the United States struck Iranian rocket launchers on Larak Island in the Strait of Hormuz, and Iran responded with missile and drone attacks toward US positions in Jordan and near/over UAE waters. The latest broadly cited cumulative figures I could confirm were Al Jazeera\u2019s August 28 totals of 3,527 killed in Iran, 60 Israelis killed, 18 US service members killed, 28 killed in Gulf states, and at least 3,580 US-Israeli attacks on Iran since February 28; official US fact sheets accessible online remain dated April and do not provide newer publicly confirmed weapons-expended totals.",
   "briefings": [
     {
       "date": "2026-08-31",
       "day": 184,
-      "summary": "Confirmed reporting on August 31 says the war re-escalated after U.S. forces struck two Iranian rocket launchers on Larak Island on August 30, the first known U.S. strike in weeks; Iran then announced retaliatory missile attacks on U.S. positions in Jordan, and the UAE said it intercepted an Iranian drone over its territorial waters. For cumulative figures, the latest accessible named-source totals I could firmly confirm were WHO\u2019s 14 May 2026 situation report listing 3,469 deaths and 32,314 injuries in Iran and 26 deaths in Israel, plus CENTCOM\u2019s March 13 confirmation that all six crew aboard the KC-135 lost over Iraq were deceased; I could not verify newer official cumulative casualty or deployment/munitions totals for most remaining fields without guessing, so those are left null."
+      "summary": "Confirmed reporting on August 30-31, 2026 shows the war re-escalated after a weeks-long lull: the United States struck Iranian rocket launchers on Larak Island in the Strait of Hormuz, and Iran responded with missile and drone attacks toward US positions in Jordan and near/over UAE waters. The latest broadly cited cumulative figures I could confirm were Al Jazeera\u2019s August 28 totals of 3,527 killed in Iran, 60 Israelis killed, 18 US service members killed, 28 killed in Gulf states, and at least 3,580 US-Israeli attacks on Iran since February 28; official US fact sheets accessible online remain dated April and do not provide newer publicly confirmed weapons-expended totals."
     },
     {
       "date": "2026-08-30",
