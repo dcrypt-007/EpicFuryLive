@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-09-02T00:15:15Z",
+  "lastUpdated": "2026-09-02T05:50:50Z",
   "dayCount": 186,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "35+",
-    "cost": "$37.1B+"
+    "strikes": "~3,580",
+    "killed": "3,633+",
+    "cost": "$37.5B+"
   },
   "humanCost": {
-    "iranDeaths": "3,636",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "13",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "21",
+    "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "32,314+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$37.1 billion+",
-    "dailyBurnRate": "~$199M/day",
+    "totalCost": "$37.5 billion+",
+    "dailyBurnRate": "~$202M/day",
     "daysOfOps": 186,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-02",
-          "source": "LLM-verified (AP reported on August 20, 2026 that USS George Washington had arrived in the Middle East and 'joins the USS George H.W. Bush in the Middle East,' indicating 2 U.S. carrier strike groups in theater.)"
+          "source": "LLM-verified (Defense/Pentagon materials and AP reporting describe two aircraft carriers in theater during the operation; AP Mar. 2026 reporting referred to two carriers as part of the buildup)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-09-01",
-          "source": "LLM-verified (AP reported on Mar. 21, 2026 that 'some 50,000 are supporting the war effort'; no newer confirmed official total was found.)"
+          "lastUpdated": "2026-09-02",
+          "source": "LLM-verified (AP Mar. 24 and Mar. 31, 2026 reporting said the U.S. had some 50,000 troops already in the Middle East / built up about 50,000 troops)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 11000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-02",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; no newer official cumulative fighter/attack sortie total found, so this is the latest confirmed official flight count located.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet 'The First 29 Days' (Mar. 28, 2026) lists 11,000+ combat flights; no newer official cumulative sortie total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "11,000 \u00d7 $100,000 each",
+        "cost": "$1,100,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported a U.S. strike near Sirik/Kuhestak in Hormozgan hit a wedding gathering, with local Iranian officials reporting five killed and dozens wounded.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 2, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran claimed attacks on U.S. bases in Bahrain, Jordan and Iraq on Sept. 2, 2026, after renewed U.S. strikes; Jordan said earlier it intercepted eight missiles that entered its airspace.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 2, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Iran launched retaliatory missile strikes at US positions in Jordan after the August 30 US strike on Larak Island, according to Al Jazeera's latest update.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports USS Abraham Lincoln has departed and USS George Washington is now the sole U.S. carrier operating in the Middle East",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Aug 31, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran said it retaliated by firing missiles at U.S. sites in Jordan; Jordan said it intercepted eight missiles",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-09-02T03:27:26Z",
+      "text": "<strong>US strikes on Iran kill child at wedding ceremony</strong> -- Dozens of people are injured, and at least five dead, after US strikes hit a wedding ceremony near Sirik, Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/us-strikes-on-iran-kill-child-at-wedding-ceremony?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T02:20:45Z",
+      "text": "<strong>Top US lawmaker Mike Johnson says lying is part of some Iranians\u2019 religion</strong> -- The Republican House speaker defends the US-Israel war on Iran and praises Trump&amp;#039;s &amp;#039;steady hands at the wheel&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/2/top-us-lawmaker-mike-johnson-says-lying-is-part-of-some-iranians-religion?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T01:34:55Z",
+      "text": "<strong>Iran says US bombed a wedding party in Sirik, killing five people</strong> -- Officials say at least 63 others wounded in attack on city of Kuhestak, including women and children. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/2/iran-says-us-strikes-hit-a-wedding-party-in-sirik-killing-five?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T01:21:06Z",
+      "text": "<strong>IAEA says Syria built a nuclear reactor in Deir Az Zor under al-Assad</strong> -- UN watchdog says Syria &amp;#039;failed to report nuclear material, facilities and activities&amp;#039; under Bashar al-Assad&amp;#039;s rule. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/2/iaea-says-syria-built-a-nuclear-reactor-in-deir-az-zor-under-al-assad?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T01:06:19Z",
+      "text": "<strong>US launches new strikes on Iran, denies its bases hit in Jordan</strong> -- The US launched new strikes on Iran&amp;#039;s southern coast with explosions reported in several locations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/us-launches-new-strikes-on-iran-denies-its-bases-hit-in-jordan?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T00:47:41Z",
+      "text": "<strong>Moment US strikes on Iranian port city hit wedding party</strong> -- Iran says a series of US strikes near the southern Iranian port city of Sirik has killed at least four people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/moment-us-strikes-on-iranian-port-city-hit-wedding-party?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T00:00:00Z",
+      "text": "<strong>Iran war live: Tehran claims attacks on US bases in Bahrain, Jordan, Iraq</strong> -- Tehran pledges &amp;#039;severe punishment&amp;#039; and retaliation against Washington following a new wave of US attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/9/2/iran-war-live-us-bombs-iran-tehran-retaliates-on-gulf-neighbours-jordan?traffic_source=rss"
+    },
+    {
       "time": "2026-09-01T21:28:00Z",
-      "text": "<strong>Urgent need for access to Iranian sites, cautions UN nuclear watchdog</strong> -- The IAEA said lack of information and access to facilities to verify Iran&amp;#039;s nuclear material is a proliferation concern. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>IAEA calls for access to Iran nuclear sites over proliferation concerns</strong> -- IAEA says lack of information and access to facilities to verify Iran&amp;#039;s nuclear material is a proliferation concern. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/1/urgent-need-for-access-to-iranian-sites-cautions-un-nuclear-watchdog?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T05:12:07Z",
+      "text": "<strong>Iran attacks US bases in Middle East after reports US strike killed five at wedding party</strong> -- The Iranian Red Crescent says a child was among those killed when shrapnel from a US strike hit a home. The US military says it is aware of the reports and it never targets civilians. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-02T05:03:09Z",
+      "text": "<strong>Israel expanding presence in Lebanon, officials say, as BBC visits occupied areas</strong> -- A BBC team joined a humanitarian mission of the UN peacekeeping force, which says Israeli troops are fortifying positions and continuing demolitions. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cge41d19gq9o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-01T20:59:43Z",
@@ -806,51 +851,6 @@
       "time": "2026-09-01T17:48:28Z",
       "text": "<strong>US health authorities dispute Pennsylvania\u2019s measles-related deaths</strong> -- Clash with Pennsylvania comes as US records highest number of measles cases in decades. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/1/us-health-authorities-contradict-state-officials-on-measles-related-deaths?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T17:39:29Z",
-      "text": "<strong>The US military began striking targets in Iran, CENTCOM says</strong> -- The US military said it has begun striking targets in Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/the-us-military-began-striking-targets-in-iran-centcom-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T21:32:23Z",
-      "text": "<strong>US strikes Iran as state media reports four killed at wedding party</strong> -- Iranian news agencies said retaliatory missile and drone attacks on US targets had begun. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-01T16:45:56Z",
-      "text": "<strong>Iran promises to respond to new wave of US strikes despite Trump\u2019s threats</strong> -- Trump says the US attacks were &amp;#039;large and powerful&amp;#039; and warns that Iran would be hit &amp;#039;much harder&amp;#039; if it retaliates. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/1/us-military-says-launching-new-attacks-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T15:55:25Z",
-      "text": "<strong>Iran and Russia vow to stand against US \u2018unilateralism\u2019</strong> -- Iranian President Pezeshkian thanked Putin for Moscow\u2019s support, vowing to resist US &amp;#039;unilateralism&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/iran-and-russia-vow-to-stand-against-us?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T15:45:18Z",
-      "text": "<strong>Six days of Russian strikes push Kyiv residents to consider leaving</strong> -- Russia has launched strikes almost continuously on Kyiv and surrounding areas for six straight days. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/six-days-of-russian-strikes-push-kyiv-residents-to-consider-leaving?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T15:36:08Z",
-      "text": "<strong>Mansouri rocked by Israeli strikes as residents flee again</strong> -- A large explosion shook Mansouri in southern Lebanon on Tuesday amid renewed Israeli airstrikes <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/mansouri-rocked-by-israeli-strikes-as-residents-flee-again?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T15:29:48Z",
-      "text": "<strong>Qatar says efforts under way to end Iran-US war and reopen Strait of Hormuz</strong> -- Qatar accuses Israel of exploiting regional conflicts to impose new realities in Palestine, Lebanon, and Syria. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/1/qatar-says-efforts-under-way-to-end-iran-us-war-and-reopen-strait-of-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T15:19:46Z",
-      "text": "<strong>Jerusalem schools strike after Israel enforces curriculum and bans teachers</strong> -- East Jerusalem schools strike as Israeli permit bans and forced curricula plunge the academic year into chaos. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/1/jerusalem-schools-strike-after-israel-enforces-curriculum-and-bans-teachers?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-01T12:58:44Z",
-      "text": "<strong>Israel says senior Hamas member seized as strikes kill three during Gaza raid</strong> -- Reports say the Israeli military carried out strikes after a raid by Israeli special forces and Israel-backed Palestinian militiamen was discovered. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1wxex4vg35o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,59 +1213,83 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran retaliates after US strikes kills four at wedding party, state media reports",
-      "description": "Iranian news agencies said retaliatory missile and drone attacks on US targets had begun.",
+      "title": "Iran attacks US bases in Middle East after reports US strike killed five at wedding party",
+      "description": "The Iranian Red Crescent says a child was among those killed when shrapnel from a US strike hit a home. The US military says it is aware of the reports and it never targets civilians.",
       "link": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-02T00:13:26Z",
+      "time": "2026-09-02T05:12:07Z",
       "tier": 2
     },
     {
-      "title": "Urgent need for access to Iranian sites, cautions UN nuclear watchdog",
-      "description": "The IAEA said lack of information and access to facilities to verify Iran&#039;s nuclear material is a proliferation concern.",
+      "title": "Israel expanding presence in Lebanon, officials say, as BBC visits occupied areas",
+      "description": "A BBC team joined a humanitarian mission of the UN peacekeeping force, which says Israeli troops are fortifying positions and continuing demolitions.",
+      "link": "https://www.bbc.co.uk/news/articles/cge41d19gq9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-02T05:03:09Z",
+      "tier": 2
+    },
+    {
+      "title": "US strikes on Iran kill child at wedding ceremony",
+      "description": "Dozens of people are injured, and at least five dead, after US strikes hit a wedding ceremony near Sirik, Iran.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/us-strikes-on-iran-kill-child-at-wedding-ceremony?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-02T03:27:26Z",
+      "tier": 2
+    },
+    {
+      "title": "Top US lawmaker Mike Johnson says lying is part of some Iranians\u2019 religion",
+      "description": "The Republican House speaker defends the US-Israel war on Iran and praises Trump&#039;s &#039;steady hands at the wheel&#039;.",
+      "link": "https://www.aljazeera.com/news/2026/9/2/top-us-lawmaker-mike-johnson-says-lying-is-part-of-some-iranians-religion?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-02T02:20:45Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran says US bombed a wedding party in Sirik, killing five people",
+      "description": "Officials say at least 63 others wounded in attack on city of Kuhestak, including women and children.",
+      "link": "https://www.aljazeera.com/news/2026/9/2/iran-says-us-strikes-hit-a-wedding-party-in-sirik-killing-five?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-02T01:34:55Z",
+      "tier": 2
+    },
+    {
+      "title": "IAEA says Syria built a nuclear reactor in Deir Az Zor under al-Assad",
+      "description": "UN watchdog says Syria &#039;failed to report nuclear material, facilities and activities&#039; under Bashar al-Assad&#039;s rule.",
+      "link": "https://www.aljazeera.com/news/2026/9/2/iaea-says-syria-built-a-nuclear-reactor-in-deir-az-zor-under-al-assad?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-02T01:21:06Z",
+      "tier": 2
+    },
+    {
+      "title": "US launches new strikes on Iran, denies its bases hit in Jordan",
+      "description": "The US launched new strikes on Iran&#039;s southern coast with explosions reported in several locations.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/us-launches-new-strikes-on-iran-denies-its-bases-hit-in-jordan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-02T01:06:19Z",
+      "tier": 2
+    },
+    {
+      "title": "Moment US strikes on Iranian port city hit wedding party",
+      "description": "Iran says a series of US strikes near the southern Iranian port city of Sirik has killed at least four people.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/moment-us-strikes-on-iranian-port-city-hit-wedding-party?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-02T00:47:41Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war live: Tehran claims attacks on US bases in Bahrain, Jordan, Iraq",
+      "description": "Tehran pledges &#039;severe punishment&#039; and retaliation against Washington following a new wave of US attacks.",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/9/2/iran-war-live-us-bombs-iran-tehran-retaliates-on-gulf-neighbours-jordan?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-02T00:00:00Z",
+      "tier": 2
+    },
+    {
+      "title": "IAEA calls for access to Iran nuclear sites over proliferation concerns",
+      "description": "IAEA says lack of information and access to facilities to verify Iran&#039;s nuclear material is a proliferation concern.",
       "link": "https://www.aljazeera.com/news/2026/9/1/urgent-need-for-access-to-iranian-sites-cautions-un-nuclear-watchdog?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-09-01T21:28:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Palestinians mourn children killed in Israeli airstrikes on Gaza City",
-      "description": "Three Palestinian children were among four people killed in Israeli strikes on Gaza.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/palestinians-mourn-children-killed-in-israeli-airstrikes-on-gaza-city?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-01T20:59:43Z",
-      "tier": 2
-    },
-    {
-      "title": "Iranian state media announces numerous US strikes on the country",
-      "description": "Iranian state television has reported numerous strikes on Iranian territory on Tuesday.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/iranian-state-media-announces-numerous-us-strikes-on-the-country?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-01T20:38:43Z",
-      "tier": 2
-    },
-    {
-      "title": "Israel says Hamas security chief captured as strikes kill four during Gaza raid",
-      "description": "The Israeli military says it carried out strikes in Gaza City during a raid by special forces to capture the head of Hamas's internal security service.",
-      "link": "https://www.bbc.co.uk/news/articles/c1wxex4vg35o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-01T20:24:28Z",
-      "tier": 2
-    },
-    {
-      "title": "Munitions vehicle explodes killing five in Idlib",
-      "description": "At least five people were killed and several others wounded when a vehicle carrying munitions exploded in Binnish",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/munitions-vehicle-explodes-killing-five-in-idlib?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-01T19:46:53Z",
-      "tier": 2
-    },
-    {
-      "title": "Woman killed in Times Square stabbing, suspect shot dead by police",
-      "description": "Police say the double stabbing, which injured another person, was random and the suspect had a mental health history.",
-      "link": "https://www.bbc.co.uk/news/articles/ckgvrm5nxexo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-01T15:48:38Z",
       "tier": 2
     },
     {
@@ -1277,22 +1301,6 @@
       "tier": 2
     },
     {
-      "title": "'She slipped out of my hand' - children missing after ferry sinks off northern Cyprus",
-      "description": "Ayten and Hayri Bicer's two young children are among 20 missing in an incident that killed eight people.",
-      "link": "https://www.bbc.co.uk/news/articles/c1mv5ggg1l8o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-31T14:50:36Z",
-      "tier": 2
-    },
-    {
-      "title": "Man arrested after Swiss rave shooting that killed woman",
-      "description": "A 22-year-old Italian woman was killed and several injured at a techno rave in Aarau.",
-      "link": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-08-31T13:11:35Z",
-      "tier": 2
-    },
-    {
       "title": "Deadly strike on Kyiv warehouse prompts evacuations",
       "description": "Ukraine correspondent Dan Johnson reports from Kyiv after the deadly strike, which authorities said killed more than 30 people.",
       "link": "https://www.bbc.co.uk/news/videos/cy8z979y9e4o?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 1-2, 2026 shows the Iran war has re-escalated after roughly a month of relative lull: AP reported renewed U.S. strikes on Iranian targets near the Strait of Hormuz and subsequent broader strikes on September 1, while Iranian retaliatory missile and drone attacks targeted U.S. and regional sites; separately, the IAEA warned of an urgent need for access to Iranian nuclear facilities. For hard cumulative figures, the latest official U.S. death toll I could confirm remains 13 combat-related deaths, CENTCOM's latest official public strike total located remains 13,000+ targets struck from its April 6 fact sheet, and AP reported on August 20 that two U.S. carriers \u2014 USS George Washington and USS George H.W. Bush \u2014 were operating in the Middle East.",
+  "summary": "Confirmed reporting on September 1-2, 2026 shows the U.S. resumed strikes against targets in Iran after a month-long lull, while Iran claimed retaliatory attacks on U.S. bases in Jordan and elsewhere in the Gulf; AP reported local Iranian officials said a strike on Kuhestak near Sirik killed five people at a wedding gathering and wounded dozens. For cumulative war totals, the latest accessible consolidated count located was Al Jazeera\u2019s August 28, 2026 data roundup citing official figures: 3,527 killed in Iran, 60 Israelis killed, 28 killed in Gulf states, and 18 U.S. service members killed, with ACLED counting at least 3,580 U.S.-Israeli attacks on Iran since February 28.",
   "briefings": [
     {
       "date": "2026-09-02",
       "day": 186,
-      "summary": "Confirmed reporting on September 1-2, 2026 shows the Iran war has re-escalated after roughly a month of relative lull: AP reported renewed U.S. strikes on Iranian targets near the Strait of Hormuz and subsequent broader strikes on September 1, while Iranian retaliatory missile and drone attacks targeted U.S. and regional sites; separately, the IAEA warned of an urgent need for access to Iranian nuclear facilities. For hard cumulative figures, the latest official U.S. death toll I could confirm remains 13 combat-related deaths, CENTCOM's latest official public strike total located remains 13,000+ targets struck from its April 6 fact sheet, and AP reported on August 20 that two U.S. carriers \u2014 USS George Washington and USS George H.W. Bush \u2014 were operating in the Middle East."
+      "summary": "Confirmed reporting on September 1-2, 2026 shows the U.S. resumed strikes against targets in Iran after a month-long lull, while Iran claimed retaliatory attacks on U.S. bases in Jordan and elsewhere in the Gulf; AP reported local Iranian officials said a strike on Kuhestak near Sirik killed five people at a wedding gathering and wounded dozens. For cumulative war totals, the latest accessible consolidated count located was Al Jazeera\u2019s August 28, 2026 data roundup citing official figures: 3,527 killed in Iran, 60 Israelis killed, 28 killed in Gulf states, and 18 U.S. service members killed, with ACLED counting at least 3,580 U.S.-Israeli attacks on Iran since February 28."
     },
     {
       "date": "2026-09-01",
