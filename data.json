@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-09-03T05:49:01Z",
+  "lastUpdated": "2026-09-03T11:15:55Z",
   "dayCount": 187,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,633+",
-    "cost": "$37.2B+"
+    "strikes": "~12,300",
+    "killed": "3,569+",
+    "cost": "$37.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "17",
+    "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$37.2 billion+",
-    "dailyBurnRate": "~$199M/day",
+    "totalCost": "$37.9 billion+",
+    "dailyBurnRate": "~$202M/day",
     "daysOfOps": 187,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-09-02",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan (May 2026) states Operation Epic Fury used 'Two carrier strike groups')"
+          "lastUpdated": "2026-09-03",
+          "source": "LLM-verified (War Department transcript (late March 2026) said 'a second aircraft carrier will join the blockade in just a few days,' confirming two carrier strike groups in theater at that time; no newer official deployment count found.)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-09-02",
-          "source": "LLM-verified (CENTCOM public release 'CENTCOM Completes Strikes on IRGC Targets in Iran' (Sept. 1, 2026): 'More than 50,000 U.S. service members are currently operating across the Middle East')"
+          "lastUpdated": "2026-09-03",
+          "source": "LLM-verified (War Department weekly sitrep reported on March 13, 2026: 'More than 50,000 service members are supporting Operation Epic Fury.' No newer official total found.)"
         },
         {
           "id": "intel_cyber",
@@ -260,14 +260,14 @@
             "2,000-pound bomb",
             "deep penetration"
           ],
-          "lastUpdated": "2026-08-25",
-          "source": "LLM-verified (U.S. Department of Defense transcript on Operation Midnight Hammer: '14 30,000-pound GBU-57 Massive Ordnance Penetrators' employed; latest confirmed figure found)"
+          "lastUpdated": "2026-09-03",
+          "source": "LLM-verified (War Department/Defense transcript on the Iran nuclear facilities bombing stated B-2 bombers dropped 14 GBU-57 MOP bombs. No newer cumulative total found.)"
         },
         {
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 6500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-03",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; no newer official cumulative fighter/attack sortie total located.)"
+          "source": "LLM-verified (CENTCOM Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'. This is the nearest official cumulative air-operations figure found, but it is combat flights overall, not explicitly fighter-only sorties.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "6,500 \u00d7 $100,000 each",
-        "cost": "$650,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Civilian-harm concerns intensified after the Kuhestak wedding strike; Iranian Red Crescent is calling for an ICC probe.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian retaliation has expanded to attacks on Gulf-state targets, including Kuwait, according to AP/Al Jazeera reporting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 3, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Renewed U.S.-Iran hostilities in the Strait of Hormuz after a month-long lull.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 3, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported renewed U.S. strikes in Iran on September 1, 2026 after attempted attacks on commercial shipping and U.S. forces",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Shanghai Cooperation Organization summit statement on Sept. 1, 2026 condemned US-Israeli strikes on Iran and warned of broader regional instability.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera live blog on Sept. 1, 2026 reports Iranian state media said the death toll from the US strike on Larak Island rose to three.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC/Al Jazeera/AP reporting on Sept. 1, 2026 indicates the late-August lull ended: US struck Iranian rocket launchers near the Strait of Hormuz/Larak area, Iran responded with missiles toward US positions in Jordan, and Jordan said it intercepted eight missiles.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,36 @@
   ],
   "developments": [
     {
+      "time": "2026-09-03T09:16:20Z",
+      "text": "<strong>Gulf insecurity fuels US energy dominance</strong> -- The no-war, no-peace status quo with Iran increasingly benefits the US, its energy sector and its ally Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/9/3/how-gulf-insecurity-fuels-us-energy-dominance?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-03T07:41:45Z",
+      "text": "<strong>Iran Red Crescent urges ICC probe into deadly US strike on wedding party</strong> -- Outrage grows over US strike that killed four people and wounded 67 at a wedding party in Kuhestak. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/3/iran-red-crescent-urges-icc-probe-into-deadly-us-strike-on-wedding-party?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-03T06:48:46Z",
+      "text": "<strong>China\u2019s support for Iran shows its limits as US ramps up pressure on Tehran</strong> -- Beijing&amp;#039;s support for Tehran is balanced against other relationships in the region, analysts say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/9/3/chinas-support-for-iran-shows-its-limits-as-us-ramps-up-pressure-on-tehran?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-02T17:33:45Z",
+      "text": "<strong>Iranian attack on Saudi tanker killed two Filipino sailors, Saudi Arabia says</strong> -- The kingdom condemns the targeting of Sidr, which was reportedly hit by unknown projectiles in the Strait of Hormuz on Monday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-02T19:05:31Z",
+      "text": "<strong>Maltese tycoon acquitted of orchestrating murder of renowned journalist</strong> -- Daphne Caruana Galizia exposed corruption and money laundering schemes in Malta before she was killed by a car bomb in 2017. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5ye295pxgxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-03T00:58:50Z",
+      "text": "<strong>&#x27;The crowd shouted that we&#x27;d stolen someone&#x27;s genitals&#x27; - deadly rumours spread on social media</strong> -- More than 80 people have been killed in the mob violence, the BBC finds after gathering data from six African nations. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckg8lw7n2ddo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-09-03T04:26:27Z",
       "text": "<strong>Asia looks to store oil, gas closer to home after Strait of Hormuz crisis</strong> -- Asian economies are racing to build up storage capacity to reduce their exposure to conflict in the Middle East. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/9/3/asia-looks-to-store-oil-gas-closer-to-home-after-strait-of-hormuz-crisis?traffic_source=rss"
@@ -778,24 +808,9 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-pm-says-israel-is-working-to-overthrow-irans-government?traffic_source=rss"
     },
     {
-      "time": "2026-09-02T17:33:45Z",
-      "text": "<strong>Iranian attack on Saudi tanker killed two Filipino sailors, Saudi Arabia says</strong> -- The kingdom condemns the targeting of Sidr, which was reportedly hit by unknown projectiles in the Strait of Hormuz on Monday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-02T19:05:31Z",
-      "text": "<strong>Maltese tycoon acquitted of orchestrating murder of renowned journalist</strong> -- Daphne Caruana Galizia exposed corruption and money laundering schemes in Malta before she was killed by a car bomb in 2017. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c5ye295pxgxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-09-02T15:33:19Z",
       "text": "<strong>Iran says US strike killed four at wedding in &#x27;war crime&#x27; as US denies targeting civilians</strong> -- Iranian media reports two children were among those killed when shrapnel hit a home. Iran then launched missiles and drones at US targets in the Middle East. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-03T00:58:50Z",
-      "text": "<strong>&#x27;The crowd shouted that we&#x27;d stolen someone&#x27;s genitals&#x27; - deadly rumours spread on social media</strong> -- More than 80 people have been killed in the mob violence, the BBC finds after gathering data from six African nations. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ckg8lw7n2ddo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-02T20:59:46Z",
@@ -836,21 +851,6 @@
       "time": "2026-09-02T16:52:52Z",
       "text": "<strong>Deadly bus crash in Egypt\u2019s Sinai kills 22, injures 28</strong> -- A deadly bus crash in Egypt\u2019s South Sinai killed 22 people and injured 28 <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/deadly-bus-crash-in-egypts-sinai-kills-22-injures-28?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-02T16:18:45Z",
-      "text": "<strong>WHO chief warns Ebola response must ramp up to stem DRC outbreak</strong> -- Number of people killed in the Democratic Republic of Congo from disease exceeds 3,000 amid response funding gap. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/2/who-chief-warns-ebola-response-must-ramp-up-to-stem-drc-outbreak?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-02T15:42:01Z",
-      "text": "<strong>China\u2019s Xi urges new Middle East security framework during rare Egypt visit</strong> -- Chinese, Egyptian leaders discuss the US-Israel war on Iran, which has prompted regional powers to rethink defence. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/2/chinas-xi-urges-new-middle-east-security-framework-during-rare-egypt-visit?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-02T15:21:43Z",
-      "text": "<strong>Aubameyang \u2018humiliated\u2019 as ex-Arsenal striker quits Gabon national team</strong> -- Pierre-Emerick Aubameyang cites 2025 Africa Cup of Nations treatment as captain steps away from Gabon duty. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/9/2/aubameyang-humiliated-as-ex-arsenal-striker-quits-gabon-national-team?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,27 @@
   ],
   "newsFeed": [
     {
-      "title": "Asia looks to store oil, gas closer to home after Strait of Hormuz crisis",
-      "description": "Asian economies are racing to build up storage capacity to reduce their exposure to conflict in the Middle East.",
-      "link": "https://www.aljazeera.com/economy/2026/9/3/asia-looks-to-store-oil-gas-closer-to-home-after-strait-of-hormuz-crisis?traffic_source=rss",
+      "title": "Gulf insecurity fuels US energy dominance",
+      "description": "The no-war, no-peace status quo with Iran increasingly benefits the US, its energy sector and its ally Israel.",
+      "link": "https://www.aljazeera.com/opinions/2026/9/3/how-gulf-insecurity-fuels-us-energy-dominance?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-03T04:26:27Z",
+      "time": "2026-09-03T09:16:20Z",
       "tier": 2
     },
     {
-      "title": "Trump threatens more strikes as death toll in Iran rises to 18",
-      "description": "Trump says US can hit Iran &#039;anytime we want&#039; as Tehran says deadly strikes, including on wedding party, a war crime.",
-      "link": "https://www.aljazeera.com/news/2026/9/3/trump-threatens-more-strikes-as-death-toll-in-iran-rises-to-19?traffic_source=rss",
+      "title": "Iran Red Crescent urges ICC probe into deadly US strike on wedding party",
+      "description": "Outrage grows over US strike that killed four people and wounded 67 at a wedding party in Kuhestak.",
+      "link": "https://www.aljazeera.com/news/2026/9/3/iran-red-crescent-urges-icc-probe-into-deadly-us-strike-on-wedding-party?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-03T01:45:32Z",
+      "time": "2026-09-03T07:41:45Z",
+      "tier": 2
+    },
+    {
+      "title": "China\u2019s support for Iran shows its limits as US ramps up pressure on Tehran",
+      "description": "Beijing&#039;s support for Tehran is balanced against other relationships in the region, analysts say.",
+      "link": "https://www.aljazeera.com/economy/2026/9/3/chinas-support-for-iran-shows-its-limits-as-us-ramps-up-pressure-on-tehran?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-03T06:48:46Z",
       "tier": 2
     },
     {
@@ -1234,30 +1242,6 @@
       "link": "https://www.bbc.co.uk/news/articles/ckg8lw7n2ddo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-09-03T00:58:50Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Trump says US ready to strike Iran \u2018at any time\u2019",
-      "description": "Iran&#039;s health ministry spokesman says the death toll from US attacks has risen to 18, including a child.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/9/3/iran-war-live-trump-says-renewed-us-iran-clashes-will-not-last-too?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-03T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Republican senator calls on Trump to fire Secretary of Defence Hegseth",
-      "description": "Senator Thom Tillis accuses Pentagon chief of &#039;inept mismanagement&#039; as US military is strained by war on Iran.",
-      "link": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-02T21:37:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli PM says Israel is working to overthrow Iran\u2019s government",
-      "description": "Israeli Prime Minister Benjamin Netanyahu said on Wednesday that his country is working to overthrow Iran\u2019s government.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-pm-says-israel-is-working-to-overthrow-irans-government?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-02T21:23:55Z",
       "tier": 2
     },
     {
@@ -1275,22 +1259,14 @@
       "source": "BBC World",
       "time": "2026-09-02T17:33:45Z",
       "tier": 2
-    },
-    {
-      "title": "Iran says US strike killed four at wedding in 'war crime' as US denies targeting civilians",
-      "description": "Iranian media reports two children were among those killed when shrapnel hit a home. Iran then launched missiles and drones at US targets in the Middle East.",
-      "link": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-02T15:33:19Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 2-3, 2026 shows the sharpest renewed U.S.-Iran exchange since July: CENTCOM said U.S. strikes hit Iranian air defenses, radar, maritime assets and related sites after alleged Iranian threats to shipping and U.S. forces, while Iran retaliated with missile and drone attacks on regional targets including Bahrain, Kuwait and Jordan. Iranian health officials, as reported by Al Jazeera, said the latest U.S. strikes killed 18 people and injured 142, including casualties from a strike on a wedding gathering in Kuhestak in Hormozgan province. AP also reported two Filipino sailors were killed after a Saudi-flagged tanker was attacked near the Strait of Hormuz. Accessible current reporting did not yield updated cumulative warwide totals for several database fields, so those remain null rather than estimated.",
+  "summary": "Confirmed reporting shows the war has reignited after a late-August lull, with U.S. strikes on Iranian coastal targets near the Strait of Hormuz followed by Iranian retaliatory attacks across the region. The clearest newly confirmed casualty update is from Iranian and AP/Al Jazeera reporting on the Kuhestak wedding strike, where at least four to five people were reported killed and roughly 67 to 68 wounded in that single incident, while Al Jazeera\u2019s August 28 six-month overview still lists the latest official cumulative war totals it could verify at 3,527 killed in Iran and 28 killed in Gulf states. On the U.S. side, the latest confirmed official death toll located remains 14 service members, and no newer official cumulative figures for Israeli deaths, Iranian civilian-only deaths, Iranian total wounded, or most weapons-expended categories were found in the searched sources.",
   "briefings": [
     {
       "date": "2026-09-03",
       "day": 187,
-      "summary": "Confirmed reporting on September 2-3, 2026 shows the sharpest renewed U.S.-Iran exchange since July: CENTCOM said U.S. strikes hit Iranian air defenses, radar, maritime assets and related sites after alleged Iranian threats to shipping and U.S. forces, while Iran retaliated with missile and drone attacks on regional targets including Bahrain, Kuwait and Jordan. Iranian health officials, as reported by Al Jazeera, said the latest U.S. strikes killed 18 people and injured 142, including casualties from a strike on a wedding gathering in Kuhestak in Hormozgan province. AP also reported two Filipino sailors were killed after a Saudi-flagged tanker was attacked near the Strait of Hormuz. Accessible current reporting did not yield updated cumulative warwide totals for several database fields, so those remain null rather than estimated."
+      "summary": "Confirmed reporting shows the war has reignited after a late-August lull, with U.S. strikes on Iranian coastal targets near the Strait of Hormuz followed by Iranian retaliatory attacks across the region. The clearest newly confirmed casualty update is from Iranian and AP/Al Jazeera reporting on the Kuhestak wedding strike, where at least four to five people were reported killed and roughly 67 to 68 wounded in that single incident, while Al Jazeera\u2019s August 28 six-month overview still lists the latest official cumulative war totals it could verify at 3,527 killed in Iran and 28 killed in Gulf states. On the U.S. side, the latest confirmed official death toll located remains 14 service members, and no newer official cumulative figures for Israeli deaths, Iranian civilian-only deaths, Iranian total wounded, or most weapons-expended categories were found in the searched sources."
     },
     {
       "date": "2026-09-02",
