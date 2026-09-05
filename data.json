@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-09-05T19:02:06Z",
+  "lastUpdated": "2026-09-05T21:15:23Z",
   "dayCount": 189,
   "banner": {
     "strikes": "~13,000",
     "killed": "3,527+",
-    "cost": "$37.7B+"
+    "cost": "$36.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$37.7 billion+",
-    "dailyBurnRate": "~$200M/day",
+    "totalCost": "$36.2 billion+",
+    "dailyBurnRate": "~$191M/day",
     "daysOfOps": 189,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-09-04",
-          "source": "LLM-verified (War Department article 'Hegseth Says Epic Fury Goals in Iran Are Laser-Focused' says two carrier strike groups began to move toward launch points; no newer official current theater count found)"
+          "lastUpdated": "2026-09-05",
+          "source": "LLM-verified (Associated Press, August 20, 2026: USS George Washington operating in the Middle East after relieving USS Abraham Lincoln, indicating one U.S. carrier currently in theater.)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-09-03",
-          "source": "LLM-verified (AP, 'US military will target Iran-linked ships worldwide, broadening scope beyond blockade' (Apr. 16, 2026), reported 11 destroyers in the Middle East; no newer confirmed theater-wide destroyer total found)"
+          "lastUpdated": "2026-09-05",
+          "source": "LLM-verified (Associated Press, April 2026 reporting on the blockade stated the Navy had 11 destroyers in the Middle East; no newer confirmed count found in accessible reporting searched on September 5, 2026.)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-09-05",
-          "source": "LLM-verified (CENTCOM public release, Sept. 1, 2026: 'More than 50,000 U.S. service members are currently operating across the Middle East' (https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4588389/centcom-completes-strikes-on-irgc-targets-in-iran/))"
+          "source": "LLM-verified (Associated Press, September 4, 2026: about 50,000 U.S. troops are currently deployed across the Middle East.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-05",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 23, 2026 reported 'Combat Flights: 9,000+'; no newer confirmed cumulative sortie total found)"
+          "source": "LLM-verified (U.S. Department of Defense Operation Epic Fury Fact Sheet dated March 16, 2026 lists 'Combat Flights: 6,500+'; no newer confirmed official cumulative fighter/attack sortie total found.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 189 days",
-        "cost": "$2,646,000,000"
+        "detail": "$7,000,000/day \u00d7 189 days",
+        "cost": "$1,323,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported a U.S. strike near a wedding in Kuhestak/Sirik, southern Iran, causing civilian deaths and dozens of injuries, heightening escalation risks and scrutiny over civilian harm.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on September 1-4, 2026 reported renewed U.S.-Iran exchanges after roughly a month of relative calm, including U.S. strikes in southern Iran and Iranian retaliatory missile/drone attacks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on September 5, 2026 reported U.S. strikes on three Iranian oil tankers after CENTCOM said an American aircraft carrier and a destroyer evaded multiple Iranian attacks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 5, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reported renewed US-Iran exchanges this week after a month-long lull, including US strikes on Iranian air defense/radar/maritime targets and Iranian retaliatory drone/missile fire toward Gulf states.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Civilian-harm concerns intensified after the Kuhestak wedding strike; Iranian Red Crescent is calling for an ICC probe.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian retaliation has expanded to attacks on Gulf-state targets, including Kuwait, according to AP/Al Jazeera reporting.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Renewed U.S.-Iran hostilities in the Strait of Hormuz after a month-long lull.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-09-05T20:03:29Z",
+      "text": "<strong>Colombian government reports three killed in rebel attack on military post</strong> -- Colombian authorities blame ELN rebel group for attack that reportedly included drones dropping explosives on compound. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post?traffic_source=rss"
+    },
+    {
       "time": "2026-09-05T18:44:41Z",
       "text": "<strong>Two pilots killed after Greek fighter jet crashes during an air show</strong> -- Greek authorities say that the two pilots onboard an F-4 Phantom fighter jet have been killed after it crashed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/5/two-pilots-killed-after-greek-fighter-jet-crashes-during-an-air-show?traffic_source=rss"
@@ -788,6 +793,16 @@
       "link": "https://www.aljazeera.com/features/2026/9/5/relatives-hold-cremations-without-bodies-for-nepals-missing-flood-victims?traffic_source=rss"
     },
     {
+      "time": "2026-09-05T20:41:59Z",
+      "text": "<strong>US hits three Iranian oil tankers after saying its warships were targeted</strong> -- Iran&#x27;s state media reported that Tehran has launched retaliatory attacks against three US-affiliated vessels; the US is yet to comment. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-04T22:48:38Z",
+      "text": "<strong>Mistrial declared in Lindsay Clancy murder case, after jury deadlocks</strong> -- The mistrial now puts the murder case - and Clancy&#x27;s future - in limbo as to whether she will be held criminally liable in the deaths of her three kids. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-09-05T13:07:36Z",
       "text": "<strong>Iran President Pezeshkian calls for unity as US ramps up economic pressure</strong> -- Amid rising public discontent, Iranian authorities say adversaries are focused on encouraging domestic unrest. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/economy/2026/9/5/iran-president-pezeshkian-calls-for-unity-as-us-ramps-up-economic-pressure?traffic_source=rss"
@@ -818,11 +833,6 @@
       "link": "https://www.aljazeera.com/news/2026/9/5/why-is-trump-threatening-to-strike-irans-pickaxe-mountain-again-now?traffic_source=rss"
     },
     {
-      "time": "2026-09-04T22:48:38Z",
-      "text": "<strong>Mistrial declared in Lindsay Clancy murder case, after jury deadlocks</strong> -- The mistrial now puts the murder case - and Clancy&#x27;s future - in limbo as to whether she will be held criminally liable in the deaths of her three kids. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-09-04T09:14:57Z",
       "text": "<strong>How could US-Iran conflict end? Three experts give their views</strong> -- After renewed strikes this week, does either side have an exit strategy? <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cgjql614glvo?at_medium=RSS&at_campaign=rss"
@@ -841,16 +851,6 @@
       "time": "2026-09-05T06:11:05Z",
       "text": "<strong>Bolivian military barracks explosion kills at least 10</strong> -- An explosion at a military barracks in Viacha, Bolivia, has killed at least 10 people and injured dozens. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/5/bolivian-military-barracks-explosion-kills-at-least-10?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-05T05:19:05Z",
-      "text": "<strong>US imposes sanctions on Turkish bank, prompting legal threat</strong> -- US sanctions Turkish bank over alleged IRGC ties, accusing it of facilitating millions in transactions for Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/5/us-imposes-sanctions-on-turkish-bank-prompting-legal-threat?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-05T00:00:00Z",
-      "text": "<strong>Iran war live: US polygraphs 50 Joint Staff members over Iran war leaks</strong> -- US President Donald Trump has repeated an earlier warning that the US may attack Iran&amp;#039;s Pickaxe Mountain &amp;quot;very soon&amp;quot;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/9/5/iran-war-live-trump-says-us-may-target-irans-pickaxe-mountain-very-soon?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1214,10 +1214,18 @@
   "newsFeed": [
     {
       "title": "US hits three Iranian oil tankers after saying its warships were targeted",
-      "description": "The strikes come nearly a week after fighting between the US and Iran flared again following weeks of relative calm.",
+      "description": "Iran's state media reported that Tehran has launched retaliatory attacks against three US-affiliated vessels; the US is yet to comment.",
       "link": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-05T18:48:37Z",
+      "time": "2026-09-05T20:41:59Z",
+      "tier": 2
+    },
+    {
+      "title": "Colombian government reports three killed in rebel attack on military post",
+      "description": "Colombian authorities blame ELN rebel group for attack that reportedly included drones dropping explosives on compound.",
+      "link": "https://www.aljazeera.com/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-05T20:03:29Z",
       "tier": 2
     },
     {
@@ -1277,30 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "Iran President Pezeshkian calls for unity as US ramps up economic pressure",
-      "description": "Amid rising public discontent, Iranian authorities say adversaries are focused on encouraging domestic unrest.",
-      "link": "https://www.aljazeera.com/economy/2026/9/5/iran-president-pezeshkian-calls-for-unity-as-us-ramps-up-economic-pressure?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-05T13:07:36Z",
-      "tier": 2
-    },
-    {
-      "title": "At least four civilians killed in Houthi missile strike near Yemen\u2019s Taiz",
-      "description": "The attack on a crowded road comes amid fierce clashes across Taiz and Hodeidah and rapid civilian displacement.",
-      "link": "https://www.aljazeera.com/news/2026/9/5/at-least-four-killed-in-houthi-missile-strike-near-yemens-taiz?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-05T12:54:15Z",
-      "tier": 2
-    },
-    {
-      "title": "Yemen government launches own air attacks on Houthis: What that means",
-      "description": "A major Houthi offensive towards Bab al-Mandeb has triggered some of Yemen\u2019s worst fighting in years.",
-      "link": "https://www.aljazeera.com/news/2026/9/5/yemen-government-launches-own-air-attacks-on-houthis-what-that-means?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-05T12:43:38Z",
-      "tier": 2
-    },
-    {
       "title": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
       "description": "The mistrial now puts the murder case - and Clancy's future - in limbo as to whether she will be held criminally liable in the deaths of her three kids.",
       "link": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss",
@@ -1325,12 +1309,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 5, 2026 shows renewed escalation in the U.S.-Iran conflict: AP reported that U.S. forces struck three Iranian oil tankers after Navy warships were targeted with ballistic missiles, while recent Iranian and humanitarian reporting cited by Al Jazeera says the September 2 U.S. strike wave killed 18 people and wounded 142, including casualties from the Sirik/Kuhestak wedding strike. The clearest still-valid cumulative official figures I could confirm are 3,468 Iranian deaths from the initial phase of the war, 14 U.S. military deaths in the war according to AP citing the official Pentagon/CENTCOM tally as of July 13, 26 Israeli deaths based on previously established totals plus two IDF deaths in Lebanon on August 6, and 13,000+ targets struck from the April 6 U.S. Department of War fact sheet; I could not verify newer official cumulative totals for several weapons-use and force-deployment fields.",
+  "summary": "Confirmed reporting on September 5, 2026 shows the conflict has re-escalated after a month of relative calm: the Associated Press reported that U.S. forces struck three Iranian oil tankers after CENTCOM said an American aircraft carrier and a destroyer evaded multiple Iranian attacks, while recent AP and Al Jazeera coverage also documented renewed U.S. strikes in southern Iran, Iranian retaliatory missile and drone attacks across the region, and mounting concern over civilian harm after a strike near a wedding in Kuhestak/Sirik. Accessible official and major-wire reporting currently confirms 18 U.S. personnel killed, about 50,000 U.S. troops deployed in the Middle East, and at least one carrier now operating in theater, but many requested cumulative casualty and weapons-use totals could not be independently confirmed from named current sources and therefore remain null.",
   "briefings": [
     {
       "date": "2026-09-05",
       "day": 189,
-      "summary": "Confirmed reporting on September 5, 2026 shows renewed escalation in the U.S.-Iran conflict: AP reported that U.S. forces struck three Iranian oil tankers after Navy warships were targeted with ballistic missiles, while recent Iranian and humanitarian reporting cited by Al Jazeera says the September 2 U.S. strike wave killed 18 people and wounded 142, including casualties from the Sirik/Kuhestak wedding strike. The clearest still-valid cumulative official figures I could confirm are 3,468 Iranian deaths from the initial phase of the war, 14 U.S. military deaths in the war according to AP citing the official Pentagon/CENTCOM tally as of July 13, 26 Israeli deaths based on previously established totals plus two IDF deaths in Lebanon on August 6, and 13,000+ targets struck from the April 6 U.S. Department of War fact sheet; I could not verify newer official cumulative totals for several weapons-use and force-deployment fields."
+      "summary": "Confirmed reporting on September 5, 2026 shows the conflict has re-escalated after a month of relative calm: the Associated Press reported that U.S. forces struck three Iranian oil tankers after CENTCOM said an American aircraft carrier and a destroyer evaded multiple Iranian attacks, while recent AP and Al Jazeera coverage also documented renewed U.S. strikes in southern Iran, Iranian retaliatory missile and drone attacks across the region, and mounting concern over civilian harm after a strike near a wedding in Kuhestak/Sirik. Accessible official and major-wire reporting currently confirms 18 U.S. personnel killed, about 50,000 U.S. troops deployed in the Middle East, and at least one carrier now operating in theater, but many requested cumulative casualty and weapons-use totals could not be independently confirmed from named current sources and therefore remain null."
     },
     {
       "date": "2026-09-04",
