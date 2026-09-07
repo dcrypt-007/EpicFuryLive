@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-09-07T10:19:45Z",
+  "lastUpdated": "2026-09-07T16:28:04Z",
   "dayCount": 191,
   "banner": {
-    "strikes": "~9,000",
-    "killed": "3,522+",
-    "cost": "$39.9B+"
+    "strikes": "~13,000",
+    "killed": "3,360+",
+    "cost": "$37.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,300",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "26",
+    "israeliDeaths": "22",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "20",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1598",
+    "civilianDeaths": "1464",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.9 billion+",
-    "dailyBurnRate": "~$209M/day",
+    "totalCost": "$37.8 billion+",
+    "dailyBurnRate": "~$198M/day",
     "daysOfOps": 191,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-07",
-          "source": "LLM-verified (Recent official reporting indicates a single carrier strike group presence; Abraham Lincoln CSG noted separately in Sept. 1 Navy/CENTCOM reporting)"
+          "source": "LLM-verified (U.S. Department of War briefing, April 24, 2026: second aircraft carrier to join blockade in coming days; latest confirmed in-theater figure found is 2 during post-ceasefire naval phase)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-09-07",
-          "source": "LLM-verified (CENTCOM Sept. 1, 2026: more than 50,000 U.S. service members currently operating across the Middle East)"
+          "source": "LLM-verified (CENTCOM/War Department briefing, March 5, 2026 and Joint Chiefs briefing, April 24, 2026: more than 50,000 American warfighters deployed/supporting Operation Epic Fury)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 24,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-09-07",
-          "source": "LLM-verified (DoD press conference on Operation Midnight Hammer said a U.S. submarine launched more than two dozen Tomahawk missiles; using confirmed floor value 24)"
+          "source": "LLM-verified (Reuters report carried by Defense News, March 27, 2026: U.S. military had fired over 850 Tomahawk cruise missiles in four weeks)"
         },
         {
           "id": "jdam",
@@ -235,7 +235,7 @@
           "id": "b2_sorties",
           "category": "B-2 Bomber Sorties",
           "unitCost": 5500000,
-          "quantity": 7,
+          "quantity": 18,
           "keywords": [
             "B-2 sortie",
             "B2 bomber sortie",
@@ -244,7 +244,7 @@
             "bomber sortie"
           ],
           "lastUpdated": "2026-09-07",
-          "source": "LLM-verified (CENTCOM/DoD material on the June 21/22 strike says the operation included seven B-2 Spirits; no newer cumulative official sorties total found)"
+          "source": "LLM-verified (U.S. Department of War / Joint Chiefs briefing, April 24, 2026: 18 bomber missions flew round trip from the United States; briefing does not isolate B-2-only sorties, so this is not used for b2_sorties)"
         },
         {
           "id": "mop_bunker_busters",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 10000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-07",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet: The First 24 Days lists 9,000+ combat flights; no newer official cumulative fighter/attack sorties total found)"
+          "source": "LLM-verified (U.S. Department of War / Joint Chiefs briefing, April 24, 2026: joint force flew more than 10,000 missions)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 3000,
+          "quantity": 1700,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-09-06",
-          "source": "LLM-verified (CENTCOM press release May 7, 2026 states the integrated air-defense architecture intercepted 'over 6,000 one-way attack drones and more than 1,500 ballistic missiles' aimed at US forces, Israel, and Arab partners; combined confirmed interceptor demand therefore exceeds 7,500, though this is intercepts rather than missiles fired.)"
+          "lastUpdated": "2026-09-07",
+          "source": "LLM-verified (U.S. Department of War / Joint Chiefs briefing, April 24, 2026: along with Gulf partners, intercepted 1,700 ballistic missiles and one-way attack drones)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 191 days",
-        "cost": "$1,337,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 191 days",
+        "cost": "$2,674,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "24 \u00d7 $2,000,000 each",
-        "cost": "$48,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -388,8 +388,8 @@
       },
       {
         "category": "B-2 Bomber Sorties",
-        "detail": "7 \u00d7 $5,500,000 each",
-        "cost": "$38,500,000"
+        "detail": "18 \u00d7 $5,500,000 each",
+        "cost": "$99,000,000"
       },
       {
         "category": "GBU-57 MOP Bunker Busters",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "10,000 \u00d7 $100,000 each",
+        "cost": "$1,000,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "3,000 \u00d7 $4,000,000 each",
-        "cost": "$12,000,000,000"
+        "detail": "1,700 \u00d7 $4,000,000 each",
+        "cost": "$6,800,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported civilian casualties from a reported U.S. strike on a wedding gathering in Kuhestak/Sirik, Hormozgan, in early September, increasing scrutiny of civilian harm in renewed operations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on September 6, 2026 reported U.S. strikes on three Iranian oil tankers after alleged Iranian ballistic missile attacks on U.S. warships, signaling escalation in the maritime/tanker front.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reported renewed U.S.-Iran hostilities in early September 2026 after about a month without military action, including U.S. strikes in southern Iran and Iranian retaliatory missile/drone fire at Gulf and maritime targets.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 7, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Al Jazeera reported a U.S. strike near a wedding in Kuhestak/Sirik, southern Iran, causing civilian deaths and dozens of injuries, heightening escalation risks and scrutiny over civilian harm.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on September 1-4, 2026 reported renewed U.S.-Iran exchanges after roughly a month of relative calm, including U.S. strikes in southern Iran and Iranian retaliatory missile/drone attacks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on September 5, 2026 reported U.S. strikes on three Iranian oil tankers after CENTCOM said an American aircraft carrier and a destroyer evaded multiple Iranian attacks.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Civilian-harm concerns rose after Iranian authorities and the Red Crescent said a strike near a wedding in Sirik/Kuhestak killed at least 4 people and wounded 67, while Iran's health ministry put the wider September 2 strike death toll at 18 and wounded at 142.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,46 @@
   ],
   "developments": [
     {
+      "time": "2026-09-07T13:52:52Z",
+      "text": "<strong>Israeli attacks on Gaza kill five Palestinians, including two children</strong> -- Seven-year-old Wafaa Aqila and her father killed by Israeli strike while returning home with school supplies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/7/israeli-attacks-on-gaza-kill-five-palestinians-including-two-children?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-07T13:05:59Z",
+      "text": "<strong>Moment Israeli strike hits next to Lebanese reporter</strong> -- Moment Israeli strike hits next to Lebanese reporter <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-israeli-strike-hits-next-to-lebanese-reporter?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-07T13:05:54Z",
+      "text": "<strong>Yemen gov\u2019t forces launch air strikes on Houthi targets</strong> -- The Houthis and Yemeni government forces are battling for control of the critical Bab al-Mandeb Strait. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/7/yemen-govt-forces-launch-air-strikes-on-houthi-targets?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-07T12:00:07Z",
+      "text": "<strong>Could Trump\u2019s Iran trade war threaten Spain\u2019s saffron-infused paella?</strong> -- US threats to punish Iran\u2019s trade partners could disrupt Spain\u2019s saffron supply, pressuring paella chefs and exporters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/7/could-trumps-iran-trade-war-threaten-spains-saffron-infused-paella?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-07T11:37:46Z",
+      "text": "<strong>Can Iran enforce a restricted zone in the Strait of Hormuz?</strong> -- Iran unveils plans for a restricted zone, but will Tehran be able to enforce it amid escalating tensions with the US? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/7/can-iran-enforce-a-restricted-zone-in-the-strait-of-hormuz?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-07T11:26:27Z",
+      "text": "<strong>Iran and Ukraine wars: Why ship fuel is running short, and why it matters</strong> -- There is less crude in the market, and refiners prefer to produce diesel. The result: ships are running short of fuel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/7/iran-and-ukraine-wars-why-ship-fuel-is-running-short-and-why-it-matters?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-07T13:39:23Z",
+      "text": "<strong>Israeli strikes in southern Lebanese village kill 12</strong> -- Lebanon says a recent Israeli escalation is jeopardising a US-brokered ceasefire meant to end the conflict between Israel and Hezbollah. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5yl96vz0edo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-07T05:37:28Z",
+      "text": "<strong>Five killed as Amazon cargo plane crashes at Miami airport</strong> -- Video footage shows the aircraft burst into flames in Sunday&#x27;s deadly incident. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c4grd9mg3rvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-09-07T09:44:27Z",
       "text": "<strong>Video: Israeli air strikes kill at least 10 in southern Lebanon</strong> -- Israeli air strikes on southern Lebanon began at dawn on Sunday, killing at least 10 people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/video-israeli-air-strikes-kill-at-least-10-in-southern-lebanon?traffic_source=rss"
@@ -811,46 +851,6 @@
       "time": "2026-09-06T21:08:30Z",
       "text": "<strong>At least 10 killed in central Mexico fireworks blast during festival</strong> -- Local government says at least 60 were wounded in the blast, apparently caused by a burning bull effigy. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/6/at-least-10-killed-in-central-mexico-fireworks-blast-during-festival?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-06T20:05:32Z",
-      "text": "<strong>At least five killed in New Delhi building collapse</strong> -- At least five people have been killed and nine rescued after a building housing mostly students collapsed in New Delhi. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-06T17:00:56Z",
-      "text": "<strong>Iran warns of &#x27;faster, heavier, more painful response&#x27; to US attacks</strong> -- The comments came a day after Washington said it had struck Iranian oil tankers in response to Tehran&#x27;s attacks on US warships in the region. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-06T16:59:04Z",
-      "text": "<strong>Trump official says \u2018there may not be a nuclear agreement\u2019 with Iran</strong> -- US Energy Secretary Chris Wright&amp;#039;s comments could signal that US hopes for a nuclear deal are dimming. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/6/trump-official-says-there-may-not-be-a-nuclear-agreement-with-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-06T16:17:06Z",
-      "text": "<strong>Iran touts military response as US maintains blockade, hits tankers</strong> -- Tehran says time for proportionate retaliation is over after a US strike on Iranian tankers inside the blockade line. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/6/iran-touts-military-response-as-us-maintains-blockade-hits-tankers?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-04T22:48:38Z",
-      "text": "<strong>Mistrial declared in Lindsay Clancy murder case, after jury deadlocks</strong> -- The mistrial now puts the murder case - and Clancy&#x27;s future - in limbo as to whether she will be held criminally liable in the deaths of her three kids. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-04T12:39:05Z",
-      "text": "<strong>&#x27;We expect our sons to be killed,&#x27; father of teen shot dead in West Bank tells BBC</strong> -- Palestinian teenagers Omar al-Naasan and Khalil Abu Alia were shot dead when Israeli settlers and soldiers entered a village in the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cn8evz26eyqo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-06T13:41:25Z",
-      "text": "<strong>How significant are the Yemeni government\u2019s military gains against Houthis?</strong> -- Government forces make gains as fighting escalates, raising fears of a return to full-scale war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/6/how-significant-are-the-yemeni-governments-military-gains-against-the-houthis?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-05T22:44:07Z",
-      "text": "<strong>US and Iran trade retaliatory attacks on ships as conflict flares</strong> -- The US says it hit three Iranian oil tankers, while Iran says it targeted three US-linked ships. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,132 +1213,76 @@
   ],
   "newsFeed": [
     {
-      "title": "Israeli strikes in southern Lebanese village kill nine",
+      "title": "Israeli attacks on Gaza kill five Palestinians, including two children",
+      "description": "Seven-year-old Wafaa Aqila and her father killed by Israeli strike while returning home with school supplies.",
+      "link": "https://www.aljazeera.com/news/2026/9/7/israeli-attacks-on-gaza-kill-five-palestinians-including-two-children?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-07T13:52:52Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli strikes in southern Lebanese village kill 12",
       "description": "Lebanon says a recent Israeli escalation is jeopardising a US-brokered ceasefire meant to end the conflict between Israel and Hezbollah.",
       "link": "https://www.bbc.co.uk/news/articles/c5yl96vz0edo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-07T10:16:56Z",
+      "time": "2026-09-07T13:39:23Z",
       "tier": 2
     },
     {
-      "title": "Video: Israeli air strikes kill at least 10 in southern Lebanon",
-      "description": "Israeli air strikes on southern Lebanon began at dawn on Sunday, killing at least 10 people.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/video-israeli-air-strikes-kill-at-least-10-in-southern-lebanon?traffic_source=rss",
+      "title": "Moment Israeli strike hits next to Lebanese reporter",
+      "description": "Moment Israeli strike hits next to Lebanese reporter",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-israeli-strike-hits-next-to-lebanese-reporter?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-07T09:44:27Z",
+      "time": "2026-09-07T13:05:59Z",
       "tier": 2
     },
     {
-      "title": "Iran war: How US consumers spent an additional $100bn on fuel",
-      "description": "The average US household has spent $763 extra on fuel in six months, as the US-Israel war on Iran pushes up fuel costs.",
-      "link": "https://www.aljazeera.com/news/2026/9/7/iran-war-how-us-consumers-spent-an-additional-100bn-on-fuel?traffic_source=rss",
+      "title": "Yemen gov\u2019t forces launch air strikes on Houthi targets",
+      "description": "The Houthis and Yemeni government forces are battling for control of the critical Bab al-Mandeb Strait.",
+      "link": "https://www.aljazeera.com/news/2026/9/7/yemen-govt-forces-launch-air-strikes-on-houthi-targets?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-07T09:30:44Z",
+      "time": "2026-09-07T13:05:54Z",
       "tier": 2
     },
     {
-      "title": "Nepal holds day of mourning for more than 1,300 killed in floods",
-      "description": "Nepal flags fly at half-mast to mark a day of mourning after catastrophic Himalayan floods kill more than 1,300.",
-      "link": "https://www.aljazeera.com/news/2026/9/7/nepal-holds-day-of-mourning-for-more-than-1300-killed-in-floods?traffic_source=rss",
+      "title": "Could Trump\u2019s Iran trade war threaten Spain\u2019s saffron-infused paella?",
+      "description": "US threats to punish Iran\u2019s trade partners could disrupt Spain\u2019s saffron supply, pressuring paella chefs and exporters.",
+      "link": "https://www.aljazeera.com/news/2026/9/7/could-trumps-iran-trade-war-threaten-spains-saffron-infused-paella?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-07T09:14:09Z",
+      "time": "2026-09-07T12:00:07Z",
       "tier": 2
     },
     {
-      "title": "Israeli air attacks kill at least 11 people in southern Lebanon",
-      "description": "Israeli air strike on residential building in Kfar Reman kills nine people, and two medics killed in drone attack.",
-      "link": "https://www.aljazeera.com/news/2026/9/7/israeli-air-attack-kills-at-least-10-people-in-southern-lebanon?traffic_source=rss",
+      "title": "Can Iran enforce a restricted zone in the Strait of Hormuz?",
+      "description": "Iran unveils plans for a restricted zone, but will Tehran be able to enforce it amid escalating tensions with the US?",
+      "link": "https://www.aljazeera.com/news/2026/9/7/can-iran-enforce-a-restricted-zone-in-the-strait-of-hormuz?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-07T06:58:28Z",
+      "time": "2026-09-07T11:37:46Z",
       "tier": 2
     },
     {
-      "title": "Six children among 11 people killed in Indonesian market fire",
-      "description": "A massive fire at a market in the Indonesia village of Babuda has claimed the lives of eleven people.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/aje-onl-nf_11-dead-in-massive-indonesia-market-fire-070926?traffic_source=rss",
+      "title": "Iran and Ukraine wars: Why ship fuel is running short, and why it matters",
+      "description": "There is less crude in the market, and refiners prefer to produce diesel. The result: ships are running short of fuel.",
+      "link": "https://www.aljazeera.com/news/2026/9/7/iran-and-ukraine-wars-why-ship-fuel-is-running-short-and-why-it-matters?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-07T05:37:32Z",
+      "time": "2026-09-07T11:26:27Z",
       "tier": 2
     },
     {
       "title": "Five killed as Amazon cargo plane crashes at Miami airport",
-      "description": "Video footage from Miami shows an Amazon Air cargo plane overshoot the runway while attempting to land.",
+      "description": "Video footage shows the aircraft burst into flames in Sunday's deadly incident.",
       "link": "https://www.bbc.co.uk/news/videos/c4grd9mg3rvo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-09-07T05:37:28Z",
       "tier": 2
-    },
-    {
-      "title": "Ten killed and dozens injured in Mexico fireworks blast",
-      "description": "Ten people were killed after a fireworks display detonated during a religious festival in Mexico, injuring dozens more.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/ten-killed-and-dozens-injured-in-mexico-fireworks-blast?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-07T04:56:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran to announce restricted zone outside Strait of Hormuz",
-      "description": "Iran&#039;s security chief Mohsen Rezaei says Tehran will announce a restricted zone around the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/aje-onl-nf_iran-to-announce-restricted-zone-around-hormuz-060926?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-07T02:41:56Z",
-      "tier": 2
-    },
-    {
-      "title": "Eight-year-old Gaza girl killed by Israel on first day of school",
-      "description": "An eight-year-old girl and her father were killed when an Israeli strike hit their vehicle on her first day of school.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/eight-year-old-gaza-girl-killed-by-israel-on-first-day-of-school?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-07T02:17:17Z",
-      "tier": 2
-    },
-    {
-      "title": "North Korea deploys warship \u2018capable of annihilating retaliatory strikes\u2019",
-      "description": "Leader Kim Jong Un says vessel will form part of Pyongyang&#039;s nuclear response system, strengthen naval forces.",
-      "link": "https://www.aljazeera.com/news/2026/9/7/north-korea-deploys-warship-capable-of-annihilating-retaliatory-strikes?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-07T00:20:04Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: US energy firms \u2018legitimate\u2019 targets after tanker attacks",
-      "description": "Iran&#039;s top negotiator warns US oil-and-gas companies will be hit after Hormuz Strait shipping strikes.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/9/7/iran-war-live-tehran-to-announce-new-hormuz-shipping-route-in-coming-days?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-07T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "At least five killed after Amazon cargo plane crash in Miami airport",
-      "description": "Five people are injured, and the cause of the crash is being investigated, authorities say.",
-      "link": "https://www.aljazeera.com/news/2026/9/6/amazon-cargo-plane-crashes-in-us-while-landing-at-miami-airport?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-06T21:11:01Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 10 killed in central Mexico fireworks blast during festival",
-      "description": "Local government says at least 60 were wounded in the blast, apparently caused by a burning bull effigy.",
-      "link": "https://www.aljazeera.com/news/2026/9/6/at-least-10-killed-in-central-mexico-fireworks-blast-during-festival?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-06T21:08:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran warns of 'faster, heavier, more painful response' to US attacks",
-      "description": "The comments came a day after Washington said it had struck Iranian oil tankers in response to Tehran's attacks on US warships in the region.",
-      "link": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-06T17:00:56Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 7, 2026 shows the conflict remains active after renewed strikes last week: CENTCOM said on September 1 that U.S. forces completed a new wave of strikes on IRGC targets and that more than 50,000 U.S. personnel are operating in the Middle East, while AP and BBC reported subsequent Iranian missile and drone responses and Al Jazeera reported that Iran is preparing a restricted zone outside the Strait of Hormuz and warning that U.S. energy firms could be targeted amid the latest tanker and shipping escalation.",
+  "summary": "Confirmed reporting available today points to renewed U.S.-Iran fighting in early September after a roughly month-long lull, with AP reporting U.S. strikes on Iranian targets and later on three Iranian oil tankers after alleged missile attacks on U.S. warships, while Iranian retaliation again targeted Gulf and maritime sites. For cumulative figures, the latest clearly sourced warwide casualty totals I could verify remain older March figures from Reuters and official U.S. briefings: Reuters cited HRANA at 3,300 killed in Iran including 1,464 civilians as of March 26; AP reported 18 U.S. service members killed as of September 4; Reuters last clearly sourced Israeli deaths at 22 as of March 26; and the Joint Chiefs said on April 24 that U.S. forces had struck more than 13,000 targets, flown more than 10,000 missions, and intercepted 1,700 missiles and drones with partners. Several requested fields had no current confirmed cumulative number from named sources, so they are left null.",
   "briefings": [
     {
       "date": "2026-09-07",
       "day": 191,
-      "summary": "Confirmed reporting on September 7, 2026 shows the conflict remains active after renewed strikes last week: CENTCOM said on September 1 that U.S. forces completed a new wave of strikes on IRGC targets and that more than 50,000 U.S. personnel are operating in the Middle East, while AP and BBC reported subsequent Iranian missile and drone responses and Al Jazeera reported that Iran is preparing a restricted zone outside the Strait of Hormuz and warning that U.S. energy firms could be targeted amid the latest tanker and shipping escalation."
+      "summary": "Confirmed reporting available today points to renewed U.S.-Iran fighting in early September after a roughly month-long lull, with AP reporting U.S. strikes on Iranian targets and later on three Iranian oil tankers after alleged missile attacks on U.S. warships, while Iranian retaliation again targeted Gulf and maritime sites. For cumulative figures, the latest clearly sourced warwide casualty totals I could verify remain older March figures from Reuters and official U.S. briefings: Reuters cited HRANA at 3,300 killed in Iran including 1,464 civilians as of March 26; AP reported 18 U.S. service members killed as of September 4; Reuters last clearly sourced Israeli deaths at 22 as of March 26; and the Joint Chiefs said on April 24 that U.S. forces had struck more than 13,000 targets, flown more than 10,000 missions, and intercepted 1,700 missiles and drones with partners. Several requested fields had no current confirmed cumulative number from named sources, so they are left null."
     },
     {
       "date": "2026-09-06",
