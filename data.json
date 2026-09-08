@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-09-08T18:41:15Z",
+  "lastUpdated": "2026-09-08T21:51:57Z",
   "dayCount": 192,
   "banner": {
-    "strikes": "~23,800",
-    "killed": "43+",
-    "cost": "$43.0B+"
+    "strikes": "~13,000",
+    "killed": "3,498+",
+    "cost": "$41.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "7",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "1",
+    "gulfCasualties": "5",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "26,580+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "18",
+    "civilianDeaths": "1300",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$43.0 billion+",
-    "dailyBurnRate": "~$224M/day",
+    "totalCost": "$41.6 billion+",
+    "dailyBurnRate": "~$217M/day",
     "daysOfOps": 192,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-08",
-          "source": "LLM-verified (U.S. Navy May 2026 shipbuilding plan states two carrier strike groups supported Operation Epic Fury.)"
+          "source": "LLM-verified (AP, Sept. 5, 2026: U.S. statement described 'an American aircraft carrier and a destroyer' patrolling in the region; AP, Sept. 3, 2026 reported USS Abraham Lincoln had already left the Middle East for Thailand)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 11,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-09-05",
-          "source": "LLM-verified (Associated Press, April 2026 reporting on the blockade stated the Navy had 11 destroyers in the Middle East; no newer confirmed count found in accessible reporting searched on September 5, 2026.)"
+          "lastUpdated": "2026-09-08",
+          "source": "LLM-verified (AP, Sept. 5, 2026: U.S. statement described 'an American aircraft carrier and a destroyer' patrolling in the region; no broader current destroyer total independently confirmed)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-08",
-          "source": "LLM-verified (IDF war-in-numbers report says Israeli Air Force fighter jets conducted some 8,500 sorties to Iran. No current official cumulative U.S. fighter/attack sortie total was found, so this is Israeli-only and not a combined U.S.-Israeli total.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, Apr. 1, 2026: 13,000+ combat flights)"
         },
         {
           "id": "interceptors",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 192 days",
-        "cost": "$2,688,000,000"
+        "detail": "$7,000,000/day \u00d7 192 days",
+        "cost": "$1,344,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "11 \u00d7 $240,000/day \u00d7 192 days",
-        "cost": "$506,880,000"
+        "detail": "$240,000/day \u00d7 192 days",
+        "cost": "$46,080,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-09-08T20:43:52Z",
+      "text": "<strong>Police bodycam captures Russian missile strike on Kyiv</strong> -- Bodycam video has captured the moment a Russian missile struck near police in Ukraine\u2019s capital Kiev <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-08T20:20:20Z",
+      "text": "<strong>Mamdani says 9/11 illnesses killed more than attacks did</strong> -- Mamdani says 9/11 illnesses killed more than attacks did <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/mamdani-says-9-11-illnesses-killed-more-than-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-08T20:17:38Z",
+      "text": "<strong>Fourteen on trial over deadliest English Channel crossing on record</strong> -- Fourteen men are on trial over the 2021 deaths of 31 migrants while attempting to cross the English Channel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/fourteen-on-trial-over-deadliest-english-channel-crossing-on-record?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-08T20:13:23Z",
+      "text": "<strong>What\u2019s happening in the Yemen war?</strong> -- Fighting between government forces and Iran-backed Houthis is raising fears Yemen could return to full-scale war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-hosted-yemen-explainer?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-08T18:44:39Z",
+      "text": "<strong>China and Qatar are strengthening bilateral ties: What that really means</strong> -- Beijing says it will increase coordination with Doha to help de-escalate regional tensions amid the ongoing war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/9/8/china-and-qatar-are-strengthening-bilateral-ties-what-that-really-means?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-08T19:11:39Z",
+      "text": "<strong>UK announces sanctions on West Bank settlements prompting furious Israeli response</strong> -- Britain&#x27;s foreign secretary accuses settlers of carrying out the &quot;ethnic cleansing&quot; of Palestinians, as Israel responds by shutting the UK consulate in East Jerusalem. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-08T21:46:31Z",
+      "text": "<strong>Paul Adams: British-Israeli relations at lowest ebb in decades</strong> -- Israel&#x27;s response to London&#x27;s trade ban with Israeli settlements in the occupied West Bank shows how important this moment is. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-08T17:10:54Z",
+      "text": "<strong>Ukrainian TV channel building hit by Russian drone as five killed in Kyiv</strong> -- President Zelensky describes the daytime drone attack in Ukraine&#x27;s capital as a &quot;new page in Russian degradation&quot; <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-08T13:58:32Z",
+      "text": "<strong>Saudi Arabia vows to respond after Houthis attack cities and energy facilities</strong> -- The Iran-backed Yemeni group&#x27;s attacks have injured 73 people and caused fires at oil facilities, Saudi authorities say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cp849n2nz01o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-08T21:41:11Z",
+      "text": "<strong>Five killed in Miami plane crash were in two vehicles on ground, investigators say</strong> -- Investigators described the scene as &quot;utter devastation&quot; after a Boeing 767-300 overshot the runway at Miami airport. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ce8e32n8epeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-09-08T17:04:28Z",
       "text": "<strong>Israeli strikes devastate homes, displace families across Gaza</strong> -- Israeli strikes hit several areas across Gaza, destroying homes in Khan Younis and sending thick smoke over Bureij camp. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-devastate-homes-displace-families-across-gaza?traffic_source=rss"
@@ -766,16 +816,6 @@
       "time": "2026-09-08T18:40:49Z",
       "text": "<strong>UK announces sanctions on West Bank settlements prompting furious Israeli response</strong> -- Britain&#x27;s foreign secretary accuses settlers of carrying out the &quot;ethnic cleansing&quot; of Palestinians, as Israel responds by shutting the UK consulate in East Jerusalem. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-08T17:10:54Z",
-      "text": "<strong>Ukrainian TV channel building hit by Russian drone as five killed in Kyiv</strong> -- President Zelensky describes the daytime drone attack in Ukraine&#x27;s capital as a &quot;new page in Russian degradation&quot; <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-08T13:58:32Z",
-      "text": "<strong>Saudi Arabia vows to respond after Houthis attack cities and energy facilities</strong> -- The Iran-backed Yemeni group&#x27;s attacks have injured 73 people and caused fires at oil facilities, Saudi authorities say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cp849n2nz01o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-08T16:38:03Z",
@@ -811,46 +851,6 @@
       "time": "2026-09-08T12:44:59Z",
       "text": "<strong>Qatar says reopening Strait of Hormuz \u2018unconditionally\u2019 is a priority</strong> -- Qatar&amp;#039;s Foreign Ministry says Doha working towards diplomatic solutions to end US war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/8/qatar-says-reopening-strait-of-hormuz-unconditionally-is-a-priority?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T12:00:16Z",
-      "text": "<strong>BRICS summit may be the only place another Iran ceasefire can be built</strong> -- Its members and partners have brokered every ceasefire so far and hold the relationships needed to build the next one. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/9/8/brics-summit-may-be-the-only-place-another-iran-ceasefire-can-be-built?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T11:40:21Z",
-      "text": "<strong>Saudi-Houthi fighting in Yemen escalates: What happened, and what\u2019s next?</strong> -- Saudi Arabia promises firm retaliation after Houthi strikes injure 73 and disrupt energy facilities in southern cities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/8/saudi-houthi-fighting-in-yemen-escalates-what-happened-and-whats-next?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T11:29:35Z",
-      "text": "<strong>Israeli forces kill Palestinian man and withhold his body near Nablus</strong> -- Israeli forces shot and killed a Palestinian man amid raids and arrests across the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/8/israeli-forces-kill-palestinian-man-and-withhold-his-body-near-nablus?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T11:01:21Z",
-      "text": "<strong>Saudi political analyst says \u2018No prolonged war with the Houthis\u2019</strong> -- Khaled Batarfi, a Saudi political analyst, says the war with the Houthis will not be \u2018prolonged\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/saudi-political-analyst-says-no-prolonged-war-with-the?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T10:00:52Z",
-      "text": "<strong>How South Korea finds itself trapped in the US-Iran war</strong> -- Washington is pressuring a reluctant Seoul to support its naval blockade of Iran; Tehran is threatening consequences. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/8/how-south-korea-finds-itself-trapped-in-the-us-iran-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T08:42:42Z",
-      "text": "<strong>Houthi attacks on southern Saudi Arabia reportedly injure dozens</strong> -- Saudi Arabia says a wave of Houthi attacks on the country\u2019s south have injured 73 people, including women and children. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/houthi-attacks-on-southern-saudi-arabia-reportedly-injure-dozens?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T08:15:29Z",
-      "text": "<strong>As fuel prices rise again, Iran\u2019s government urges citizens to cut back</strong> -- New fuel pricing targets consumption above 110 litres monthly, doubling costs to 100,000 riyals per litre. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/8/as-fuel-prices-rise-again-irans-government-urges-citizens-to-cut-back?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T07:40:56Z",
-      "text": "<strong>Yemen fighting live: Battles rage between Houthi and Saudi-backed forces</strong> -- Forces loyal to Yemen\u2019s internationally recognised government pledge to seize the capital Sanaa as battles rage. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/9/8/yemen-fighting-live-battles-rage?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,67 @@
   ],
   "newsFeed": [
     {
+      "title": "Paul Adams: British-Israeli relations at lowest ebb in decades",
+      "description": "Israel's response to London's trade ban with Israeli settlements in the occupied West Bank shows how important this moment is.",
+      "link": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-08T21:46:31Z",
+      "tier": 2
+    },
+    {
+      "title": "Five killed in Miami plane crash were in two vehicles on ground, investigators say",
+      "description": "Investigators described the scene as \"utter devastation\" after a Boeing 767-300 overshot the runway at Miami airport.",
+      "link": "https://www.bbc.co.uk/news/articles/ce8e32n8epeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-08T21:41:11Z",
+      "tier": 2
+    },
+    {
+      "title": "Police bodycam captures Russian missile strike on Kyiv",
+      "description": "Bodycam video has captured the moment a Russian missile struck near police in Ukraine\u2019s capital Kiev",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-08T20:43:52Z",
+      "tier": 2
+    },
+    {
+      "title": "Mamdani says 9/11 illnesses killed more than attacks did",
+      "description": "Mamdani says 9/11 illnesses killed more than attacks did",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/mamdani-says-9-11-illnesses-killed-more-than-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-08T20:20:20Z",
+      "tier": 2
+    },
+    {
+      "title": "Fourteen on trial over deadliest English Channel crossing on record",
+      "description": "Fourteen men are on trial over the 2021 deaths of 31 migrants while attempting to cross the English Channel.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/fourteen-on-trial-over-deadliest-english-channel-crossing-on-record?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-08T20:17:38Z",
+      "tier": 2
+    },
+    {
+      "title": "What\u2019s happening in the Yemen war?",
+      "description": "Fighting between government forces and Iran-backed Houthis is raising fears Yemen could return to full-scale war.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-hosted-yemen-explainer?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-08T20:13:23Z",
+      "tier": 2
+    },
+    {
       "title": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
       "description": "Britain's foreign secretary accuses settlers of carrying out the \"ethnic cleansing\" of Palestinians, as Israel responds by shutting the UK consulate in East Jerusalem.",
       "link": "https://www.bbc.co.uk/news/articles/c4g7zen0vveo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-08T18:40:49Z",
+      "time": "2026-09-08T19:11:39Z",
+      "tier": 2
+    },
+    {
+      "title": "China and Qatar are strengthening bilateral ties: What that really means",
+      "description": "Beijing says it will increase coordination with Doha to help de-escalate regional tensions amid the ongoing war on Iran.",
+      "link": "https://www.aljazeera.com/features/2026/9/8/china-and-qatar-are-strengthening-bilateral-ties-what-that-really-means?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-08T18:44:39Z",
       "tier": 2
     },
     {
@@ -1229,35 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Israeli strikes devastate homes, displace families across Gaza",
-      "description": "Israeli strikes hit several areas across Gaza, destroying homes in Khan Younis and sending thick smoke over Bureij camp.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-devastate-homes-displace-families-across-gaza?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-08T17:04:28Z",
-      "tier": 2
-    },
-    {
       "title": "Where is Israel's proposed West Bank settlement the UK opposes?",
       "description": "BBC's Middle East correspondent Lucy Williamson reports from an area close to Israel's proposed site in the occupied West Bank.",
       "link": "https://www.bbc.co.uk/news/videos/c74k1lw9nwko?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-09-08T16:45:32Z",
-      "tier": 2
-    },
-    {
-      "title": "Five killed in Miami plane crash were in two vehicles on ground, investigators say",
-      "description": "Investigators described the scene as \"utter devastation\" after a Boeing 767-300 overshot the runway at Miami airport.",
-      "link": "https://www.bbc.co.uk/news/articles/ce8e32n8epeo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-08T16:38:03Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli strikes transform Lebanese city into ghost town",
-      "description": "Nabatieh, once southern Lebanon\u2019s economic centre, is now a ghost town as Israel intensifies attacks.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-transform-lebanese-city-into-ghost-town?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-08T16:19:52Z",
       "tier": 2
     },
     {
@@ -1293,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 8, 2026 shows intermittent U.S.-Iran hostilities have resumed around the Strait of Hormuz after a prior lull, with AP reporting that the war has killed 18 U.S. service members so far; recent exchanges included U.S. strikes on Iranian coastal and maritime targets, including three oil tankers, while Iran and allied actors widened pressure through attacks on Gulf targets and a Houthi strike wave that wounded 73 in Saudi Arabia. Current searchable official and major-media reporting did not provide fresh confirmed cumulative totals for Iranian deaths or wounds, Israeli deaths, Gulf-state deaths, combined strike totals, or the requested detailed weapons-usage and deployment counts.",
+  "summary": "Confirmed reporting on September 8, 2026 shows the conflict remains active after the Pentagon\u2019s earlier declaration that Operation Epic Fury had ended: AP, citing Pentagon figures, reports 18 U.S. service members killed and 790 wounded since the war began, while AP and Reuters reporting indicate renewed maritime escalation with U.S. strikes on Iranian tankers following attempted attacks on U.S. warships. For Iranian casualties, the most recent clearly attributable cumulative baseline located was 3,468 dead and 26,580+ wounded, referenced as a standing figure in a September 4 war update summarizing Reuters-linked reporting; CENTCOM\u2019s latest accessible official operations fact sheet located in search remains the April 6, 2026 sheet listing 13,000+ targets struck, with no newer official public total found for munitions subcategories or troop/personnel counts.",
   "briefings": [
     {
       "date": "2026-09-08",
       "day": 192,
-      "summary": "Confirmed reporting on September 8, 2026 shows intermittent U.S.-Iran hostilities have resumed around the Strait of Hormuz after a prior lull, with AP reporting that the war has killed 18 U.S. service members so far; recent exchanges included U.S. strikes on Iranian coastal and maritime targets, including three oil tankers, while Iran and allied actors widened pressure through attacks on Gulf targets and a Houthi strike wave that wounded 73 in Saudi Arabia. Current searchable official and major-media reporting did not provide fresh confirmed cumulative totals for Iranian deaths or wounds, Israeli deaths, Gulf-state deaths, combined strike totals, or the requested detailed weapons-usage and deployment counts."
+      "summary": "Confirmed reporting on September 8, 2026 shows the conflict remains active after the Pentagon\u2019s earlier declaration that Operation Epic Fury had ended: AP, citing Pentagon figures, reports 18 U.S. service members killed and 790 wounded since the war began, while AP and Reuters reporting indicate renewed maritime escalation with U.S. strikes on Iranian tankers following attempted attacks on U.S. warships. For Iranian casualties, the most recent clearly attributable cumulative baseline located was 3,468 dead and 26,580+ wounded, referenced as a standing figure in a September 4 war update summarizing Reuters-linked reporting; CENTCOM\u2019s latest accessible official operations fact sheet located in search remains the April 6, 2026 sheet listing 13,000+ targets struck, with no newer official public total found for munitions subcategories or troop/personnel counts."
     },
     {
       "date": "2026-09-07",
