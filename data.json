@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-09-09T19:46:12Z",
+  "lastUpdated": "2026-09-09T22:33:54Z",
   "dayCount": 193,
   "banner": {
     "strikes": "~13,000",
-    "killed": "55+",
-    "cost": "$41.3B+"
+    "killed": "3,512+",
+    "cost": "$41.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "24",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "13",
+    "gulfCasualties": "5",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$41.3 billion+",
-    "dailyBurnRate": "~$214M/day",
+    "totalCost": "$41.8 billion+",
+    "dailyBurnRate": "~$216M/day",
     "daysOfOps": 193,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-09",
-          "source": "LLM-verified (CENTCOM, Sep. 5, 2026: 'A U.S. aircraft carrier and guided-missile destroyer' were patrolling regional waters during the incident (https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4591744/centcom-destroys-3-irgc-oil-tankers-after-iran-targets-2-us-navy-warships/).)"
+          "source": "LLM-verified (AP News, Aug. 20, 2026: USS George Washington operating in the Middle East after relieving USS Abraham Lincoln)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-09-09",
-          "source": "LLM-verified (CENTCOM, Sep. 5, 2026 states a guided-missile destroyer was operating with the carrier in regional waters (https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4591744/centcom-destroys-3-irgc-oil-tankers-after-iran-targets-2-us-navy-warships/).)"
+          "source": "LLM-verified (AP News, Sept. 5, 2026: 'an American aircraft carrier and a destroyer' were patrolling in the region)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-09",
-          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' reports 'Over 8,500 aircraft sorties'; used as 8500 exact floor because only numeric values are allowed.)"
+          "source": "LLM-verified (Department of War Operation Epic Fury Fact Sheet dated April 1, 2026 lists 'Combat Flights: 13,000+'; no newer official cumulative sorties total found)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported September 8-9, 2026 that U.S. forces destroyed additional Iranian oil tankers after renewed attacks on U.S. warships, and Iran fired missiles toward U.S. targets in Jordan.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "President Trump said on September 9, 2026 that the Iran war 'will end immediately' after the U.S. midterm elections, while also saying Washington is not looking to restart negotiations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "IAEA board referred Iran to the UN Security Council for nuclear non-compliance on September 9, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 9, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on September 2-4, 2026 reported a strike on a wedding gathering in Kuhestak, southern Iran, with at least five killed and more than 60 wounded according to Iranian media and AP follow-up reporting.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on September 5, 2026 reported renewed U.S. strikes on three Iranian oil tankers after alleged ballistic-missile targeting of U.S. warships.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported civilian casualties from a reported U.S. strike on a wedding gathering in Kuhestak/Sirik, Hormozgan, in early September, increasing scrutiny of civilian harm in renewed operations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on September 6, 2026 reported U.S. strikes on three Iranian oil tankers after alleged Iranian ballistic missile attacks on U.S. warships, signaling escalation in the maritime/tanker front.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-09-09T21:14:20Z",
+      "text": "<strong>Liverpool come back to beat Atletico Madrid 2-1 in Champions League opener</strong> -- Marcos Llorente gives Atleti an early lead but Liverpool strike back through Dominik Szoboszlai and Alexis Mac Allister. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/9/9/liverpool-come-back-to-beat-atletico-madrid-2-1-in-champions-league-opener?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-09T21:09:45Z",
+      "text": "<strong>Trump says Iran war \u2018will end immediately\u2019 after US midterm elections</strong> -- The president added the US is not looking to restart negotiations with Iran after the failure of previous ceasefires. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/9/trump-says-iran-war-will-end-immediately-after-us-midterm-elections?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-09T20:23:34Z",
+      "text": "<strong>IAEA board refers Iran to UN Security Council over nuclear \u2018non-compliance\u2019</strong> -- The symbolic escalation has been initiated by the United States, Germany, France and the United Kingdom. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/9/iaea-board-resolves-to-report-iran-to-security-council-over-nuclear-program?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-09T20:05:48Z",
+      "text": "<strong>Yemen envoy warns of wider war as Houthis threaten Bab al-Mandeb Strait</strong> -- In an interview with Al Jazeera, Yemen&amp;#039;s ambassador warns Houthi attacks threaten global shipping. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/9/yemen-envoy-warns-of-wider-war-as-houthis-threaten-bab-al-mandeb-strait?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-09T19:37:47Z",
+      "text": "<strong>Israeli strike targets home in Gaza\u2019s al-Shati refugee camp</strong> -- An Israeli strike devastated a home in Gaza City\u2019s al-Shati refugee camp, heavily damaging surrounding homes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/israeli-strike-targets-home-in-gazas-al-shati-refugee-camp?traffic_source=rss"
+    },
+    {
       "time": "2026-09-09T19:18:19Z",
       "text": "<strong>Yemeni diplomat says Houthis want to drag Saudi Arabia into war</strong> -- Houthis are trying to drag Saudi Arabia into conflict by targeting Saudi territory, says Yemen\u2019s Ambassador to Qatar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/09-09-clip-yemen-says-houthis-dragging-saudi-into-war-yn?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-09T16:46:53Z",
+      "text": "<strong>Oil hits $100 a barrel for first time since July after US and Houthi strikes</strong> -- Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-09T20:22:51Z",
+      "text": "<strong>Iran referred to UN Security Council for nuclear non-compliance</strong> -- Tehran condemns the resolution, blaming US and Israeli strikes on its nuclear facilities for disrupting inspections. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckgwj4kl5lno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-09T13:29:33Z",
+      "text": "<strong>Germany&#x27;s Merz attacks AfD in stormy debate after far-right election win</strong> -- Germany&#x27;s chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to &quot;ethnic cleansing&quot; for skilled workers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-09T20:28:04Z",
+      "text": "<strong>Two die at Moldovan border as Russia-Ukraine drone war rages</strong> -- Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-09T18:31:10Z",
@@ -766,16 +811,6 @@
       "time": "2026-09-09T15:29:11Z",
       "text": "<strong>Bangladesh measles deaths surpass 1,000 after vaccination drive falls short</strong> -- Bangladesh faces its worst measles outbreak, killing 1,002 children and infecting nearly 190,000 since March. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/9/bangladesh-measles-deaths-pass-1000-as-vaccination-drive-falls-short?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-09T13:29:33Z",
-      "text": "<strong>Germany&#x27;s Merz attacks AfD in stormy debate after far-right election win</strong> -- Germany&#x27;s chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to &quot;ethnic cleansing&quot; for skilled workers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-09T16:46:53Z",
-      "text": "<strong>Oil hits $100 a barrel for first time since July after US and Houthi strikes</strong> -- Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-09T18:53:15Z",
@@ -816,41 +851,6 @@
       "time": "2026-09-09T12:26:25Z",
       "text": "<strong>Brent crude surpasses $100 a barrel as Iran, US escalate attacks</strong> -- Benchmark Brent crude hits $100, shaking markets and fuelling concerns over rising inflation pressures worldwide. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/9/global-stocks-slide-as-brent-crude-surpasses-100-a-barrel?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-09T11:52:48Z",
-      "text": "<strong>Video: Dozens protest potential Strait of Hormuz deployment</strong> -- Almost 100 anti-war activists protested on Wednesday outside the Sejong Centre in Seoul. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/video-dozens-protest-potential-strait-of-hormuz-deployment?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-09T09:47:39Z",
-      "text": "<strong>Oil hits $100 a barrel for first time since July after US and Houthi strikes</strong> -- Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-09T16:01:54Z",
-      "text": "<strong>Two die at Moldovan border as Russia-Ukraine drone war rages</strong> -- Three deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-09T10:09:04Z",
-      "text": "<strong>The war in the Gulf will have to end in compromise</strong> -- Iran has not surrendered, and the war\u2019s original aims remain unmet. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/9/9/the-war-in-the-gulf-will-have-to-end-in-compromise?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-09T08:05:58Z",
-      "text": "<strong>Russian drone attack kills two at Ukraine-Moldova border crossing</strong> -- Russian drones strike Ukraine-Moldova border in Odesa, killing two and injuring three civilians, officials confirm. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/9/russian-drone-attack-kills-two-at-ukraine-moldova-border-crossing?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-09T07:14:12Z",
-      "text": "<strong>Medicine shortages grow in Iran as US tightens sanctions, blockade</strong> -- Many Iranians cannot access or afford life-saving drugs, but authorities say pharmaceutical sector will not collapse. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/9/medicine-shortages-grow-in-iran-as-us-tightens-sanctions-blockade?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-09T05:47:58Z",
-      "text": "<strong>Why US-Iran war over Hormuz is threatening the Gulf\u2019s waters</strong> -- US-Iran attacks on tankers around Hormuz are raising fears of devastating oil spills across the Gulf. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/9/why-us-iran-war-over-hormuz-is-threatening-the-gulfs-waters?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,70 @@
   ],
   "newsFeed": [
     {
+      "title": "Land in limbo: BBC visits West Bank village in area earmarked by Israel for settlement",
+      "description": "BBC's Middle East Correspondent Lucy Williamson visits the Palestinian community of Khan al Ahmar in the so-called E1 area, and the neighbouring Israeli settlement of Maale Admumim.",
+      "link": "https://www.bbc.co.uk/news/videos/cy5zpze3qe3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-09T22:17:22Z",
+      "tier": 2
+    },
+    {
+      "title": "Liverpool come back to beat Atletico Madrid 2-1 in Champions League opener",
+      "description": "Marcos Llorente gives Atleti an early lead but Liverpool strike back through Dominik Szoboszlai and Alexis Mac Allister.",
+      "link": "https://www.aljazeera.com/sports/2026/9/9/liverpool-come-back-to-beat-atletico-madrid-2-1-in-champions-league-opener?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-09T21:14:20Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump says Iran war \u2018will end immediately\u2019 after US midterm elections",
+      "description": "The president added the US is not looking to restart negotiations with Iran after the failure of previous ceasefires.",
+      "link": "https://www.aljazeera.com/news/2026/9/9/trump-says-iran-war-will-end-immediately-after-us-midterm-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-09T21:09:45Z",
+      "tier": 2
+    },
+    {
+      "title": "Two die at Moldovan border as Russia-Ukraine drone war rages",
+      "description": "Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
+      "link": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-09T20:28:04Z",
+      "tier": 2
+    },
+    {
+      "title": "IAEA board refers Iran to UN Security Council over nuclear \u2018non-compliance\u2019",
+      "description": "The symbolic escalation has been initiated by the United States, Germany, France and the United Kingdom.",
+      "link": "https://www.aljazeera.com/news/2026/9/9/iaea-board-resolves-to-report-iran-to-security-council-over-nuclear-program?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-09T20:23:34Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran referred to UN Security Council for nuclear non-compliance",
+      "description": "Tehran condemns the resolution, blaming US and Israeli strikes on its nuclear facilities for disrupting inspections.",
+      "link": "https://www.bbc.co.uk/news/articles/ckgwj4kl5lno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-09T20:22:51Z",
+      "tier": 2
+    },
+    {
+      "title": "Yemen envoy warns of wider war as Houthis threaten Bab al-Mandeb Strait",
+      "description": "In an interview with Al Jazeera, Yemen&#039;s ambassador warns Houthi attacks threaten global shipping.",
+      "link": "https://www.aljazeera.com/news/2026/9/9/yemen-envoy-warns-of-wider-war-as-houthis-threaten-bab-al-mandeb-strait?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-09T20:05:48Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli strike targets home in Gaza\u2019s al-Shati refugee camp",
+      "description": "An Israeli strike devastated a home in Gaza City\u2019s al-Shati refugee camp, heavily damaging surrounding homes.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/israeli-strike-targets-home-in-gazas-al-shati-refugee-camp?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-09T19:37:47Z",
+      "tier": 2
+    },
+    {
       "title": "Yemeni diplomat says Houthis want to drag Saudi Arabia into war",
       "description": "Houthis are trying to drag Saudi Arabia into conflict by targeting Saudi territory, says Yemen\u2019s Ambassador to Qatar.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/09-09-clip-yemen-says-houthis-dragging-saudi-into-war-yn?traffic_source=rss",
@@ -1221,35 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Two die at Moldovan border as Russia-Ukraine drone war rages",
-      "description": "Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
-      "link": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-09T18:53:15Z",
-      "tier": 2
-    },
-    {
-      "title": "Houthi attacks on Saudi Arabia could activate defence pact, Pakistan says",
-      "description": "Pakistan warns Mecca defence agreement may be activated if Yemen&#039;s Houthi rebels continue targeting Saudi Arabia.",
-      "link": "https://www.aljazeera.com/news/2026/9/9/pakistan-warns-mecca-defense-pact-will-activate-after-houthi-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-09T18:31:10Z",
-      "tier": 2
-    },
-    {
       "title": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
       "description": "Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday",
       "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-09-09T16:46:53Z",
-      "tier": 2
-    },
-    {
-      "title": "Bangladesh measles deaths surpass 1,000 after vaccination drive falls short",
-      "description": "Bangladesh faces its worst measles outbreak, killing 1,002 children and infecting nearly 190,000 since March.",
-      "link": "https://www.aljazeera.com/news/2026/9/9/bangladesh-measles-deaths-pass-1000-as-vaccination-drive-falls-short?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-09T15:29:11Z",
       "tier": 2
     },
     {
@@ -1293,12 +1333,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today points to renewed escalation around the Strait of Hormuz rather than a new officially named campaign update: AP reported that U.S. forces destroyed five more Iranian oil tankers on September 8, 2026 and that Iran then launched missiles toward U.S.-linked targets in Jordan, while AP separately reported rising pressure on Gulf states through Iranian-aligned militias and Houthi-linked activity. For cumulative war metrics, the clearest official figures still accessible in search were older operation-era tallies such as CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck and the IDF\u2019s Operation Roaring Lion page listing about 10,800 strikes and over 8,500 aircraft sorties; however, most casualty and munitions-use fields requested here could not be updated to current confirmed totals from named sources and were therefore left null.",
+  "summary": "Confirmed reporting on September 9, 2026 shows the conflict remains active despite earlier claims that Operation Epic Fury had ended: the IAEA board referred Iran to the UN Security Council for non-compliance, President Trump said the war would end only after the November 2026 midterm elections, and AP reported renewed U.S.-Iran exchanges including U.S. strikes on Iranian tankers after attacks on U.S. warships and Iranian missile launches toward U.S. positions in Jordan. For cumulative figures, the latest clearly attributable totals found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s June 10 tracker, 18 U.S. troops killed from AP\u2019s September 4 reporting, 26 Israelis killed from Al Jazeera\u2019s June 10 tracker, and 13,000+ targets struck from the April 6 CENTCOM fact sheet.",
   "briefings": [
     {
       "date": "2026-09-09",
       "day": 193,
-      "summary": "Confirmed reporting available today points to renewed escalation around the Strait of Hormuz rather than a new officially named campaign update: AP reported that U.S. forces destroyed five more Iranian oil tankers on September 8, 2026 and that Iran then launched missiles toward U.S.-linked targets in Jordan, while AP separately reported rising pressure on Gulf states through Iranian-aligned militias and Houthi-linked activity. For cumulative war metrics, the clearest official figures still accessible in search were older operation-era tallies such as CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck and the IDF\u2019s Operation Roaring Lion page listing about 10,800 strikes and over 8,500 aircraft sorties; however, most casualty and munitions-use fields requested here could not be updated to current confirmed totals from named sources and were therefore left null."
+      "summary": "Confirmed reporting on September 9, 2026 shows the conflict remains active despite earlier claims that Operation Epic Fury had ended: the IAEA board referred Iran to the UN Security Council for non-compliance, President Trump said the war would end only after the November 2026 midterm elections, and AP reported renewed U.S.-Iran exchanges including U.S. strikes on Iranian tankers after attacks on U.S. warships and Iranian missile launches toward U.S. positions in Jordan. For cumulative figures, the latest clearly attributable totals found were 3,468 killed and more than 26,500 wounded in Iran from Iran\u2019s Ministry of Health via Al Jazeera\u2019s June 10 tracker, 18 U.S. troops killed from AP\u2019s September 4 reporting, 26 Israelis killed from Al Jazeera\u2019s June 10 tracker, and 13,000+ targets struck from the April 6 CENTCOM fact sheet."
     },
     {
       "date": "2026-09-08",
