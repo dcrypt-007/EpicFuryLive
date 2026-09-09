@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-09-09T16:39:20Z",
+  "lastUpdated": "2026-09-09T19:46:12Z",
   "dayCount": 193,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,633+",
-    "cost": "$40.5B+"
+    "killed": "55+",
+    "cost": "$41.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$40.5 billion+",
-    "dailyBurnRate": "~$210M/day",
+    "totalCost": "$41.3 billion+",
+    "dailyBurnRate": "~$214M/day",
     "daysOfOps": 193,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-09",
-          "source": "LLM-verified (IDF page updated Sep. 7, 2026 says 'more than 800 Israeli Air Force strike sorties were carried out' in Operation Roaring Lion (https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/over-800-strike-sorties-16-000-munitions-what-has-happened-since-the-launch-of-operation-roaring-lion/). This is Israeli strike sorties, not a full U.S.-only CENTCOM cumulative total.)"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' reports 'Over 8,500 aircraft sorties'; used as 8500 exact floor because only numeric values are allowed.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on Sept. 8-9, 2026 that U.S. strikes destroyed additional Iranian oil tankers and Iran retaliated with missiles toward U.S. targets in Jordan, where Jordan said 18 ballistic missiles were intercepted and two landed in uninhabited areas.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 9, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on Sept. 9, 2026 that Iran and aligned groups are increasing pressure on Gulf states, especially Saudi Arabia, with Houthi-linked attacks threatening wider regional escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 9, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP on September 6, 2026 reported U.S. strikes on three Iranian oil tankers after alleged Iranian ballistic missile attacks on U.S. warships, signaling escalation in the maritime/tanker front.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and Al Jazeera reported renewed U.S.-Iran hostilities in early September 2026 after about a month without military action, including U.S. strikes in southern Iran and Iranian retaliatory missile/drone fire at Gulf and maritime targets.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 7, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and BBC reported renewed U.S.-Iran exchanges over the past week, including U.S. strikes on Iranian targets and Iranian missile/drone responses affecting Gulf states.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-09-09T19:18:19Z",
+      "text": "<strong>Yemeni diplomat says Houthis want to drag Saudi Arabia into war</strong> -- Houthis are trying to drag Saudi Arabia into conflict by targeting Saudi territory, says Yemen\u2019s Ambassador to Qatar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/09-09-clip-yemen-says-houthis-dragging-saudi-into-war-yn?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-09T18:31:10Z",
+      "text": "<strong>Houthi attacks on Saudi Arabia could activate defence pact, Pakistan says</strong> -- Pakistan warns Mecca defence agreement may be activated if Yemen&amp;#039;s Houthi rebels continue targeting Saudi Arabia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/9/pakistan-warns-mecca-defense-pact-will-activate-after-houthi-attacks?traffic_source=rss"
+    },
+    {
       "time": "2026-09-09T15:29:11Z",
       "text": "<strong>Bangladesh measles deaths surpass 1,000 after vaccination drive falls short</strong> -- Bangladesh faces its worst measles outbreak, killing 1,002 children and infecting nearly 190,000 since March. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/9/bangladesh-measles-deaths-pass-1000-as-vaccination-drive-falls-short?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-09T13:29:33Z",
+      "text": "<strong>Germany&#x27;s Merz attacks AfD in stormy debate after far-right election win</strong> -- Germany&#x27;s chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to &quot;ethnic cleansing&quot; for skilled workers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-09T16:46:53Z",
+      "text": "<strong>Oil hits $100 a barrel for first time since July after US and Houthi strikes</strong> -- Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-09T18:53:15Z",
+      "text": "<strong>Two die at Moldovan border as Russia-Ukraine drone war rages</strong> -- Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-09T09:58:48Z",
+      "text": "<strong>Family of killed teen call for death penalty in D4vd trial</strong> -- The parents of Celeste Rivas Hernandez say execution &quot;would be perfect&quot; if D4vd is found guilty. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c62mn90ppnro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-08T21:46:31Z",
+      "text": "<strong>British-Israeli relations at lowest ebb in decades</strong> -- Israel&#x27;s response to London&#x27;s trade ban with Israeli settlements in the occupied West Bank shows how important this moment is. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-08T16:45:32Z",
+      "text": "<strong>Where is Israel&#x27;s proposed West Bank settlement the UK opposes?</strong> -- BBC&#x27;s Middle East correspondent Lucy Williamson reports from an area close to Israel&#x27;s proposed site in the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c74k1lw9nwko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-08T06:58:02Z",
+      "text": "<strong>Pupils return to West Bank school behind barbed wire to protect against settlers</strong> -- Six people, including three pupils at the Palestinian school, have been killed in al-Mughayyir this year, in a surge of Israeli settler-related violence. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c62jdyld8myo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-09T14:19:00Z",
@@ -778,11 +823,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/video-dozens-protest-potential-strait-of-hormuz-deployment?traffic_source=rss"
     },
     {
-      "time": "2026-09-09T13:29:33Z",
-      "text": "<strong>Germany&#x27;s Merz attacks AfD in stormy debate after far-right election win</strong> -- Germany&#x27;s chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to &quot;ethnic cleansing&quot; for skilled workers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-09-09T09:47:39Z",
       "text": "<strong>Oil hits $100 a barrel for first time since July after US and Houthi strikes</strong> -- Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss"
@@ -791,16 +831,6 @@
       "time": "2026-09-09T16:01:54Z",
       "text": "<strong>Two die at Moldovan border as Russia-Ukraine drone war rages</strong> -- Three deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-09T09:58:48Z",
-      "text": "<strong>Family of killed teen call for death penalty in D4vd trial</strong> -- The parents of Celeste Rivas Hernandez say execution &quot;would be perfect&quot; if D4vd is found guilty. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c62mn90ppnro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-08T21:46:31Z",
-      "text": "<strong>British-Israeli relations at lowest ebb in decades</strong> -- Israel&#x27;s response to London&#x27;s trade ban with Israeli settlements in the occupied West Bank shows how important this moment is. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-09T10:09:04Z",
@@ -821,36 +851,6 @@
       "time": "2026-09-09T05:47:58Z",
       "text": "<strong>Why US-Iran war over Hormuz is threatening the Gulf\u2019s waters</strong> -- US-Iran attacks on tankers around Hormuz are raising fears of devastating oil spills across the Gulf. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/9/why-us-iran-war-over-hormuz-is-threatening-the-gulfs-waters?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-08T17:10:54Z",
-      "text": "<strong>Ukrainian TV channel building hit by Russian drone as five killed in Kyiv</strong> -- President Zelensky describes the daytime drone attack in Ukraine&#x27;s capital as a &quot;new page in Russian degradation&quot; <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-08T13:58:32Z",
-      "text": "<strong>Saudi Arabia vows to respond after Houthis attack cities and energy facilities</strong> -- The Iran-backed Yemeni group&#x27;s attacks have injured 73 people and caused fires at oil facilities, Saudi authorities say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cp849n2nz01o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-08T16:45:32Z",
-      "text": "<strong>Where is Israel&#x27;s proposed West Bank settlement the UK opposes?</strong> -- BBC&#x27;s Middle East correspondent Lucy Williamson reports from an area close to Israel&#x27;s proposed site in the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/c74k1lw9nwko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-08T06:58:02Z",
-      "text": "<strong>Pupils return to West Bank school behind barbed wire to protect against settlers</strong> -- Six people, including three pupils at the Palestinian school, have been killed in al-Mughayyir this year, in a surge of Israeli settler-related violence. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/c62jdyld8myo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-09T04:11:51Z",
-      "text": "<strong>Cluster munitions kill, wound over 1,000 globally in 2025</strong> -- The 1,063 global casualties in 2025 one of the highest annual tolls on record, a report has found. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/9/cluster-munitions-kill-wound-over-1000-globally-in-2025?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-09T02:54:28Z",
-      "text": "<strong>Cameraman catches the moment Yemeni government forces are ambushed</strong> -- A suspected-Houthi roadside ambush of Yemeni government forces has been captured on camera. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/cameraman-catches-the-moment-yemeni-government-forces-are-ambushed?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,35 @@
   ],
   "newsFeed": [
     {
+      "title": "Yemeni diplomat says Houthis want to drag Saudi Arabia into war",
+      "description": "Houthis are trying to drag Saudi Arabia into conflict by targeting Saudi territory, says Yemen\u2019s Ambassador to Qatar.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/09-09-clip-yemen-says-houthis-dragging-saudi-into-war-yn?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-09T19:18:19Z",
+      "tier": 2
+    },
+    {
       "title": "Two die at Moldovan border as Russia-Ukraine drone war rages",
-      "description": "Three deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
+      "description": "Five deaths are reported in Ukraine and four in Russia as both sides launch new drone strikes.",
       "link": "https://www.bbc.co.uk/news/articles/cvgyvpxe3yjo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-09T16:01:54Z",
+      "time": "2026-09-09T18:53:15Z",
+      "tier": 2
+    },
+    {
+      "title": "Houthi attacks on Saudi Arabia could activate defence pact, Pakistan says",
+      "description": "Pakistan warns Mecca defence agreement may be activated if Yemen&#039;s Houthi rebels continue targeting Saudi Arabia.",
+      "link": "https://www.aljazeera.com/news/2026/9/9/pakistan-warns-mecca-defense-pact-will-activate-after-houthi-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-09T18:31:10Z",
+      "tier": 2
+    },
+    {
+      "title": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
+      "description": "Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday",
+      "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-09T16:46:53Z",
       "tier": 2
     },
     {
@@ -1229,14 +1253,6 @@
       "tier": 2
     },
     {
-      "title": "What is Jordan\u2019s Al-Azraq base and why is Iran targeting it?",
-      "description": "Tehran appears to be increasingly targeting Jordanian assets in the latest round of escalation with the US.",
-      "link": "https://www.aljazeera.com/news/2026/9/9/what-is-jordans-al-azraq-base-and-why-is-iran-targeting-it?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-09T14:19:00Z",
-      "tier": 2
-    },
-    {
       "title": "Germany's Merz attacks AfD in stormy debate after far-right election win",
       "description": "Germany's chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to \"ethnic cleansing\" for skilled workers.",
       "link": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss",
@@ -1245,43 +1261,11 @@
       "tier": 2
     },
     {
-      "title": "At least 14 killed in weapons depot blast in Syria\u2019s Idlib, state TV says",
-      "description": "Authorities have not clarified what caused the explosion near the city of Sarmada.",
-      "link": "https://www.aljazeera.com/news/2026/9/9/at-least-14-killed-in-weapons-depot-blast-in-syrias-idlib-state-tv-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-09T13:02:38Z",
-      "tier": 2
-    },
-    {
-      "title": "Brent crude surpasses $100 a barrel as Iran, US escalate attacks",
-      "description": "Benchmark Brent crude hits $100, shaking markets and fuelling concerns over rising inflation pressures worldwide.",
-      "link": "https://www.aljazeera.com/news/2026/9/9/global-stocks-slide-as-brent-crude-surpasses-100-a-barrel?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-09T12:26:25Z",
-      "tier": 2
-    },
-    {
-      "title": "Video: Dozens protest potential Strait of Hormuz deployment",
-      "description": "Almost 100 anti-war activists protested on Wednesday outside the Sejong Centre in Seoul.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/video-dozens-protest-potential-strait-of-hormuz-deployment?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-09T11:52:48Z",
-      "tier": 2
-    },
-    {
       "title": "Family of killed teen call for death penalty in D4vd trial",
       "description": "The parents of Celeste Rivas Hernandez say execution \"would be perfect\" if D4vd is found guilty.",
       "link": "https://www.bbc.co.uk/news/articles/c62mn90ppnro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-09-09T09:58:48Z",
-      "tier": 2
-    },
-    {
-      "title": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
-      "description": "Brent crude - the global benchmark for prices - rises after the US hit five Iranian tankers on Tuesday",
-      "link": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-09T09:47:39Z",
       "tier": 2
     },
     {
@@ -1307,22 +1291,14 @@
       "source": "BBC World",
       "time": "2026-09-08T06:58:02Z",
       "tier": 2
-    },
-    {
-      "title": "Five killed as Amazon cargo plane crashes at Miami airport",
-      "description": "Video footage shows the aircraft burst into flames in Sunday's deadly incident.",
-      "link": "https://www.bbc.co.uk/news/videos/c4grd9mg3rvo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-07T05:37:28Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 8-9, 2026 shows renewed escalation rather than de-escalation: AP reported that U.S. forces destroyed five Iranian oil tankers after attacks on a U.S. warship, and Iran then launched missiles toward U.S. targets in Jordan, with Jordan saying it intercepted 18 ballistic missiles. AP also reported Houthi attacks on Saudi Arabia wounded 73 people and set oil facilities ablaze. For cumulative war metrics, the clearest current confirmed figure found today is 18 U.S. service members killed since the war began, while CENTCOM\u2019s latest directly located official campaign aggregate remains its April 6 fact sheet listing 13,000+ targets struck; several other requested cumulative totals could not be independently confirmed from current named sources and are therefore left null.",
+  "summary": "Confirmed reporting available today points to renewed escalation around the Strait of Hormuz rather than a new officially named campaign update: AP reported that U.S. forces destroyed five more Iranian oil tankers on September 8, 2026 and that Iran then launched missiles toward U.S.-linked targets in Jordan, while AP separately reported rising pressure on Gulf states through Iranian-aligned militias and Houthi-linked activity. For cumulative war metrics, the clearest official figures still accessible in search were older operation-era tallies such as CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck and the IDF\u2019s Operation Roaring Lion page listing about 10,800 strikes and over 8,500 aircraft sorties; however, most casualty and munitions-use fields requested here could not be updated to current confirmed totals from named sources and were therefore left null.",
   "briefings": [
     {
       "date": "2026-09-09",
       "day": 193,
-      "summary": "Confirmed reporting on September 8-9, 2026 shows renewed escalation rather than de-escalation: AP reported that U.S. forces destroyed five Iranian oil tankers after attacks on a U.S. warship, and Iran then launched missiles toward U.S. targets in Jordan, with Jordan saying it intercepted 18 ballistic missiles. AP also reported Houthi attacks on Saudi Arabia wounded 73 people and set oil facilities ablaze. For cumulative war metrics, the clearest current confirmed figure found today is 18 U.S. service members killed since the war began, while CENTCOM\u2019s latest directly located official campaign aggregate remains its April 6 fact sheet listing 13,000+ targets struck; several other requested cumulative totals could not be independently confirmed from current named sources and are therefore left null."
+      "summary": "Confirmed reporting available today points to renewed escalation around the Strait of Hormuz rather than a new officially named campaign update: AP reported that U.S. forces destroyed five more Iranian oil tankers on September 8, 2026 and that Iran then launched missiles toward U.S.-linked targets in Jordan, while AP separately reported rising pressure on Gulf states through Iranian-aligned militias and Houthi-linked activity. For cumulative war metrics, the clearest official figures still accessible in search were older operation-era tallies such as CENTCOM\u2019s April 6 fact sheet listing 13,000+ targets struck and the IDF\u2019s Operation Roaring Lion page listing about 10,800 strikes and over 8,500 aircraft sorties; however, most casualty and munitions-use fields requested here could not be updated to current confirmed totals from named sources and were therefore left null."
     },
     {
       "date": "2026-09-08",
