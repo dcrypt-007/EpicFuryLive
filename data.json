@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-09-12T10:48:28Z",
+  "lastUpdated": "2026-09-12T14:09:05Z",
   "dayCount": 196,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "3,482+",
-    "cost": "$33.0B+"
+    "strikes": "~11,000",
+    "killed": "28+",
+    "cost": "$30.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "14",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.0 billion+",
-    "dailyBurnRate": "~$168M/day",
+    "totalCost": "$30.4 billion+",
+    "dailyBurnRate": "~$155M/day",
     "daysOfOps": 196,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-12",
-          "source": "LLM-verified (CENTCOM release dated 2026-09-05 said a U.S. aircraft carrier was patrolling regional waters during the Iranian missile attack)"
+          "source": "LLM-verified (AP News live coverage, Mar. 18, 2026: with USS Gerald R. Ford departing, CENTCOM would only have one aircraft carrier supporting operations against Iran.)"
         },
         {
           "id": "destroyers",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 24,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-09-12",
-          "source": "LLM-verified (AP May 27, 2026, citing CSIS estimates, reported the U.S. fired 1,000-plus Tomahawk missiles at Iran; no newer confirmed precise cumulative total found, so rounded confirmed floor used.)"
+          "source": "LLM-verified (DoD transcript cited first strike included 'more than two dozen' Tomahawk land attack cruise missiles against Esfahan; minimum confirmed count recorded as 24.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 6500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-12",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated 2026-04-01 lists 13,000+ combat flights)"
+          "source": "LLM-verified (CENTCOM fact sheet dated Mar. 16, 2026 reported 6,500+ combat flights.)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "24 \u00d7 $2,000,000 each",
+        "cost": "$48,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "6,500 \u00d7 $100,000 each",
+        "cost": "$650,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. has made some progress reopening Hormuz, but the war remains stalemated and low-level fighting continues as of Sep. 11, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Saudi Arabia shut a critical oil pipeline after a drone attack launched from Iraqi territory, with AP/BBC reporting investigations and rising regional spillover risk on Sep. 12, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 12, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthis seized Mokha/Mayun-area Red Sea positions, tightening pressure around Bab al-Mandeb according to AP/BBC/Al Jazeera headline reporting on Sep. 10-12, 2026.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 12, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Renewed U.S.-Iran exchange around the Strait of Hormuz on September 5-9, 2026, including Iranian attacks toward U.S. warships and U.S. retaliatory strikes on Iranian oil tankers",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC reported President Trump said the Iran war is unlikely to end before the November elections.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported renewed U.S. strikes on Iranian oil tankers on September 5 and September 8 after alleged Iranian attacks on U.S. warships, signaling continued risk of escalation in the Gulf.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 10, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "IAEA board reported Iran to the UN Security Council for noncompliance, increasing diplomatic pressure amid the war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-09-12T13:45:00Z",
+      "text": "<strong>Iran-backed Houthis seize strategic Mayun Island: Can they hold it?</strong> -- The takeover solidifies the group&amp;#039;s position in the Bab al-Mandeb, but holding it long-term could be difficult. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/12/iran-backed-houthis-seize-strategic-mayun-island-can-they-hold-it?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-12T13:06:05Z",
+      "text": "<strong>\u2018Divine triumph\u2019: Iran celebrates Houthis\u2019 capture of Yemen\u2019s Red Sea coast</strong> -- Iranian officials have praised the Houthis&amp;#039; victories but have not spoken about any imminent closure of Bab al-Mandeb. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/12/divine-triumph-iran-celebrates-houthis-capture-of-yemens-red-sea-coast?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-12T12:10:13Z",
+      "text": "<strong>Trump: Iran probably \u2018behind\u2019 Saudi oil pipeline attack</strong> -- Trump: Iran probably \u2018behind\u2019 Saudi oil pipeline attack <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/12/trump-iran-probably-behind-saudi-oil-pipeline-attack?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-12T11:57:49Z",
+      "text": "<strong>Yemen government forces say Houthi \u2018members, vehicles\u2019 targeted in Mocha</strong> -- Yemeni government forces says they launched air strikes on Houthi fighters along the Red Sea coast. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/12/yemen-government-forces-say-houthi-members-vehicles-targeted-in-mocha?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-12T11:32:02Z",
+      "text": "<strong>Houthis celebrate seizing control of Yemen\u2019s Red Sea coast</strong> -- Yemen\u2019s Iran-aligned Houthis have been celebrating after seizing control of the Red Sea coast in a rapid offensive. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/12/houthis-celebrate-seizing-control-of-yemens-red-sea-coast?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-12T10:36:18Z",
+      "text": "<strong>Saudi Arabia shuts critical oil pipeline after drone attack: What it means</strong> -- Baghdad launches investigation, closes border after confirming strike came from Iraqi territory. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened?traffic_source=rss"
+    },
+    {
       "time": "2026-09-12T09:30:46Z",
       "text": "<strong>Fighting re-erupts in Yemen and civilians are paying the price</strong> -- More than 900 people have been killed or injured and at least 5,000 families have fled their homes in less than a week. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/12/fighting-re-erupts-in-yemen-and-civilians-are-paying-the-price?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-12T12:15:50Z",
+      "text": "<strong>Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq</strong> -- Iraq removes a military commander and opens investigations into the attack that came from an area bordering Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-12T08:04:16Z",
+      "text": "<strong>Grammy-winning US rapper Lil Durk acquitted in murder-for-hire trial</strong> -- The Chicago rapper was arrested in 2024 and accused of involvement in a shooting that killed the cousin of rival rapper Quando Rondo. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c1kx0jje18wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-11T22:17:45Z",
+      "text": "<strong>Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane</strong> -- The Iran-backed Houthis are also reported to have seized Perim - a strategic island on the major shipping route. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-12T08:38:48Z",
@@ -793,16 +838,6 @@
       "link": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-09-11T22:17:45Z",
-      "text": "<strong>Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane</strong> -- The Iran-backed Houthis are also reported to have seized Perim - a strategic island on the major shipping route. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-12T08:04:16Z",
-      "text": "<strong>Grammy-winning US rapper Lil Durk acquitted in murder-for-hire trial</strong> -- The Chicago rapper was arrested in 2024 and accused of involvement in a shooting that killed the cousin of rival rapper Quando Rondo. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c1kx0jje18wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-09-12T00:00:00Z",
       "text": "<strong>Iran war live: Houthis control Red Sea coast, Saudi pipeline shut down</strong> -- Houthi forces seize Yemen&amp;#039;s Red Sea coast while Saudi Arabia suspends crucial oil pipeline following drone attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/9/12/iran-war-live-houthis-control-red-sea-coast-saudi-pipeline-shut-down?traffic_source=rss"
@@ -816,41 +851,6 @@
       "time": "2026-09-11T19:44:58Z",
       "text": "<strong>Lightning Houthi advance in Yemen may bring dangerous new dimension to Iran war</strong> -- The capture by the rebels of a stretch Yemen&#x27;s strategic coastline is the group&#x27;s most impressive military coup for several years. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c3v4zgzr1kxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-11T19:23:41Z",
-      "text": "<strong>Deadly DRC school fire prompts calls for safety reforms</strong> -- A fire at a school in the Democratic Republic of the Congo killed 28 students and destroyed homes across a neighbourhood <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/11/deadly-drc-school-fire-prompts-calls-for-safety-reforms?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-11T19:21:48Z",
-      "text": "<strong>How US leaders remembered the 25th anniversary of the 9/11 attacks</strong> -- Trump drew parallels to the US&amp;#039;s present-day war against Iran, while figures like Abdul El-Sayed called for inclusivity. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/11/how-us-leaders-remembered-the-25th-anniversary-of-the-9-11?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-11T19:01:07Z",
-      "text": "<strong>Houthi advance in Yemen is about more than just the Red Sea</strong> -- Houthis were already able to disrupt shipping - their advance consolidates that power, and exposes government weakness. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/11/houthi-advance-in-yemen-is-about-more-than-just-the-red-sea?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-11T18:33:36Z",
-      "text": "<strong>Iran says will discuss Strait of Hormuz with Gulf states on Monday</strong> -- Iran&amp;#039;s Foreign Ministry says the meeting in Oman is to &amp;#039;promote better understanding among the countries of the region&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/11/iran-says-will-discuss-strait-of-hormuz-with-gulf-states-on-monday?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-11T18:00:41Z",
-      "text": "<strong>US holds memorials for the 9/11 attacks, 25 years later</strong> -- In New York, Virginia and Pennsylvania, mourners gathered to remember nearly 3,000 people killed during the hijackings. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/gallery/2026/9/11/us-holds-memorials-for-the-9-11-attacks-25-years?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-11T16:13:39Z",
-      "text": "<strong>How global trade and oil prices could be hit by Houthi advance</strong> -- Yemen&#x27;s Houthis have seized territory near the Bab al-Mandab Strait - a key trade gateway for oil and global shipping. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cy5z02w1zxxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-11T16:32:14Z",
-      "text": "<strong>Houthis declare Red Sea shipping safe except for Saudi vessels</strong> -- Houthi spokesman Yahya Saree said maritime navigation in the Red Sea is safe, except for Saudi ships. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/11/houthis-declare-red-sea-shipping-safe-except-for-saudi-vessels?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,62 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran-backed Houthis seize strategic Mayun Island: Can they hold it?",
+      "description": "The takeover solidifies the group&#039;s position in the Bab al-Mandeb, but holding it long-term could be difficult.",
+      "link": "https://www.aljazeera.com/news/2026/9/12/iran-backed-houthis-seize-strategic-mayun-island-can-they-hold-it?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-12T13:45:00Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018Divine triumph\u2019: Iran celebrates Houthis\u2019 capture of Yemen\u2019s Red Sea coast",
+      "description": "Iranian officials have praised the Houthis&#039; victories but have not spoken about any imminent closure of Bab al-Mandeb.",
+      "link": "https://www.aljazeera.com/news/2026/9/12/divine-triumph-iran-celebrates-houthis-capture-of-yemens-red-sea-coast?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-12T13:06:05Z",
+      "tier": 2
+    },
+    {
+      "title": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
+      "description": "Iraq removes a military commander and opens investigations into the attack that came from an area bordering Iran.",
+      "link": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-12T12:15:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump: Iran probably \u2018behind\u2019 Saudi oil pipeline attack",
+      "description": "Trump: Iran probably \u2018behind\u2019 Saudi oil pipeline attack",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/12/trump-iran-probably-behind-saudi-oil-pipeline-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-12T12:10:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Yemen government forces say Houthi \u2018members, vehicles\u2019 targeted in Mocha",
+      "description": "Yemeni government forces says they launched air strikes on Houthi fighters along the Red Sea coast.",
+      "link": "https://www.aljazeera.com/news/2026/9/12/yemen-government-forces-say-houthi-members-vehicles-targeted-in-mocha?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-12T11:57:49Z",
+      "tier": 2
+    },
+    {
+      "title": "Houthis celebrate seizing control of Yemen\u2019s Red Sea coast",
+      "description": "Yemen\u2019s Iran-aligned Houthis have been celebrating after seizing control of the Red Sea coast in a rapid offensive.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/12/houthis-celebrate-seizing-control-of-yemens-red-sea-coast?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-12T11:32:02Z",
+      "tier": 2
+    },
+    {
+      "title": "Saudi Arabia shuts critical oil pipeline after drone attack: What it means",
+      "description": "Baghdad launches investigation, closes border after confirming strike came from Iraqi territory.",
+      "link": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-12T10:36:18Z",
+      "tier": 2
+    },
+    {
       "title": "Fighting re-erupts in Yemen and civilians are paying the price",
       "description": "More than 900 people have been killed or injured and at least 5,000 families have fled their homes in less than a week.",
       "link": "https://www.aljazeera.com/news/2026/9/12/fighting-re-erupts-in-yemen-and-civilians-are-paying-the-price?traffic_source=rss",
@@ -1221,67 +1277,11 @@
       "tier": 2
     },
     {
-      "title": "Russia strikes cargo vessels, steel plants across Ukraine",
-      "description": "Russia&#039;s Defence Ministry says its forces have struck several industrial facilities across Ukraine.",
-      "link": "https://www.aljazeera.com/news/2026/9/12/russia-strikes-cargo-vessels-steel-plants-across-ukraine?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-12T08:38:48Z",
-      "tier": 2
-    },
-    {
       "title": "Grammy-winning US rapper Lil Durk acquitted in murder-for-hire trial",
       "description": "The Chicago rapper was arrested in 2024 and accused of involvement in a shooting that killed the cousin of rival rapper Quando Rondo.",
       "link": "https://www.bbc.co.uk/news/articles/c1kx0jje18wo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-09-12T08:04:16Z",
-      "tier": 2
-    },
-    {
-      "title": "BRICS meets in India: What\u2019s on the agenda, why it matters",
-      "description": "This year&#039;s summit comes amid the US-Israel war on Iran, Russia&#039;s war on Ukraine and global economic challenges.",
-      "link": "https://www.aljazeera.com/news/2026/9/12/brics-meets-in-india-whats-on-the-agenda-why-it-matters?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-12T05:22:09Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018The family paid the price\u2019: India\u2019s deadly online gambling crisis",
-      "description": "Debts and deaths are mounting, as a soaring online gambling industry adapts to evade an Indian government ban.",
-      "link": "https://www.aljazeera.com/features/2026/9/12/the-family-paid-the-price-indias-deadly-online-gambling-crisis?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-12T04:46:56Z",
-      "tier": 2
-    },
-    {
-      "title": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
-      "description": "Iraq removes a military commander and opens investigations into the attack that came from an area bordering Iran.",
-      "link": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-12T04:43:10Z",
-      "tier": 2
-    },
-    {
-      "title": "North Korea fires ballistic missiles off eastern coast, Seoul says",
-      "description": "South Korea said it was closely exchanging information on the launches with the US and Japan.",
-      "link": "https://www.aljazeera.com/news/2026/9/12/north-korea-fires-ballistic-missiles-off-eastern-coast-seoul-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-12T02:25:59Z",
-      "tier": 2
-    },
-    {
-      "title": "Putin and Pezeshkian call out US dominance ahead of BRICS",
-      "description": "The presidents of Iran and Russia have criticised US dollar dominance ahead of the BRICS summit in India.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/12/putin-and-pezeshkian-call-out-us-dominance-ahead-of-brics?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-12T02:22:29Z",
-      "tier": 2
-    },
-    {
-      "title": "CIA releases dozens of declassified documents on bin Laden prior to 9/11",
-      "description": "A briefer told Clinton in 1998 that bin Laden\u2019s &#039;preferred option is to strike the US on its own soil in Washington&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/9/12/cia-drops-dozens-of-declassified-documents-on-bin-laden-and-al-qaeda?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-12T01:22:41Z",
       "tier": 2
     },
     {
@@ -1325,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of 2026-09-12 shows the war remains active and regionally destabilizing: AP reported on 2026-09-11 that the Strait of Hormuz is partially reopening but the conflict is far from over, while CENTCOM confirmed on 2026-09-05 that Iran fired ballistic missiles at a U.S. aircraft carrier and destroyer and the U.S. retaliated by striking Iranian tankers. Separately, AP and BBC reported on 2026-09-12 that a drone attack from Iraqi territory shut a major Saudi pipeline, and BBC plus Al Jazeera reported major Houthi advances in Yemen that threaten Red Sea shipping. On cumulative figures, the clearest confirmed totals found were 3,468 Iranian deaths cited by Al Jazeera from Iranian authorities for the war\u2019s initial phase, 14 U.S. military deaths from the AP/Pentagon tally on 2026-07-13, and CENTCOM\u2019s 2026-04-01 fact sheet listing 12,300+ targets struck and 13,000+ combat flights.",
+  "summary": "Confirmed reporting as of September 12, 2026 shows the war remains active but stalemated: AP reported on September 11 that the U.S. has partially loosened Iran\u2019s grip on the Strait of Hormuz, while Houthi gains on Yemen\u2019s Red Sea coast and the drone attack that shut a major Saudi pipeline have widened regional spillover. For hard numbers, the clearest current confirmed figures found were 14 U.S. service members dead per AP\u2019s July 13 official casualty report, 14 deaths in Israel per AP\u2019s March 18 live coverage citing officials, 7,000+ U.S. targets struck and 6,500+ combat flights per CENTCOM\u2019s March 16 fact sheet, and 4,000+ Israeli targets struck in Iran per the IDF\u2019s updated Operation Roaring Lion summary; several other requested cumulative totals could not be confirmed from named current official or wire-service sources and were left null.",
   "briefings": [
     {
       "date": "2026-09-12",
       "day": 196,
-      "summary": "Confirmed reporting as of 2026-09-12 shows the war remains active and regionally destabilizing: AP reported on 2026-09-11 that the Strait of Hormuz is partially reopening but the conflict is far from over, while CENTCOM confirmed on 2026-09-05 that Iran fired ballistic missiles at a U.S. aircraft carrier and destroyer and the U.S. retaliated by striking Iranian tankers. Separately, AP and BBC reported on 2026-09-12 that a drone attack from Iraqi territory shut a major Saudi pipeline, and BBC plus Al Jazeera reported major Houthi advances in Yemen that threaten Red Sea shipping. On cumulative figures, the clearest confirmed totals found were 3,468 Iranian deaths cited by Al Jazeera from Iranian authorities for the war\u2019s initial phase, 14 U.S. military deaths from the AP/Pentagon tally on 2026-07-13, and CENTCOM\u2019s 2026-04-01 fact sheet listing 12,300+ targets struck and 13,000+ combat flights."
+      "summary": "Confirmed reporting as of September 12, 2026 shows the war remains active but stalemated: AP reported on September 11 that the U.S. has partially loosened Iran\u2019s grip on the Strait of Hormuz, while Houthi gains on Yemen\u2019s Red Sea coast and the drone attack that shut a major Saudi pipeline have widened regional spillover. For hard numbers, the clearest current confirmed figures found were 14 U.S. service members dead per AP\u2019s July 13 official casualty report, 14 deaths in Israel per AP\u2019s March 18 live coverage citing officials, 7,000+ U.S. targets struck and 6,500+ combat flights per CENTCOM\u2019s March 16 fact sheet, and 4,000+ Israeli targets struck in Iran per the IDF\u2019s updated Operation Roaring Lion summary; several other requested cumulative totals could not be confirmed from named current official or wire-service sources and were left null."
     },
     {
       "date": "2026-09-11",
