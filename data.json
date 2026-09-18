@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-09-18T19:37:16Z",
+  "lastUpdated": "2026-09-18T22:34:37Z",
   "dayCount": 202,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,075+",
-    "cost": "$54.4B+"
+    "strikes": "~10,800",
+    "killed": "3,228+",
+    "cost": "$55.6B+"
   },
   "humanCost": {
     "iranDeaths": "3,038",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "2",
+    "gulfCasualties": "1",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$54.4 billion+",
-    "dailyBurnRate": "~$269M/day",
+    "totalCost": "$55.6 billion+",
+    "dailyBurnRate": "~$275M/day",
     "daysOfOps": 202,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-18",
-          "source": "LLM-verified (Recent CENTCOM release last week referred to 'a U.S. aircraft carrier and guided-missile destroyer' in the theater, supporting one carrier currently active. https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4591744/centcom-destroys-3-irgc-oil-tankers-after-iran-targets-2-us-navy-warships/)"
+          "source": "LLM-verified (AP on Aug. 2026 reported USS George Washington joined USS George H.W. Bush in the Middle East)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-09-18",
-          "source": "LLM-verified (Same recent CENTCOM release referred to 'a U.S. aircraft carrier and guided-missile destroyer' evading Iranian attacks, confirming at least one destroyer currently active in theater. https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4591744/centcom-destroys-3-irgc-oil-tankers-after-iran-targets-2-us-navy-warships/)"
+          "source": "LLM-verified (AP on Sep. 5, 2026 said an American aircraft carrier and a destroyer were patrolling in the region during Iranian attacks)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10000,
+          "quantity": 8500,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-09-18",
-          "source": "LLM-verified (Gen. Ken Wilsbach statement reported by Anadolu, Sept. 15, 2026: fleet of 500 aircraft executed 10,000 sorties over 38 days)"
+          "source": "LLM-verified (IDF 'Operation Roaring Lion: The Numbers' page says over 8,500 aircraft sorties)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 202 days",
-        "cost": "$1,414,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 202 days",
+        "cost": "$2,828,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,000 \u00d7 $100,000 each",
-        "cost": "$1,000,000,000"
+        "detail": "8,500 \u00d7 $100,000 each",
+        "cost": "$850,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Saudi Arabia reported on Sep. 17 that debris from an intercepted Houthi drone killed one person, underscoring spillover risk to Gulf states.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "South Korea is considering expanding a naval mission to protect shipping routes but said it will not send troops into the war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran claimed on Sep. 18 it struck an oil tanker in the Strait of Hormuz, signaling continued pressure on commercial shipping.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Saudi Arabia is reportedly running low on missile interceptors in the Houthi fight and has asked allies for help, indicating regional air-defense strain.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Political pressure in Washington is increasing, with AP reporting a new House vote to end or limit the war powers basis for continued operations.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Saudi Arabia is reportedly seeking outside air-defense help as interceptor stocks run low, with AP reporting broader US/Gulf interceptor depletion tied to the Iran war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 17, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Renewed US-Iran escalation around the Strait of Hormuz after early-September exchanges, including US strikes on Iranian tankers and Iranian attacks on ships and regional bases.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-09-18T20:20:23Z",
+      "text": "<strong>Syria arrests five former al-Assad-era officers over strikes on civilians</strong> -- Former air officers, including an air force general, were arrested in a series of operations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/18/syria-arrests-five-former-al-assad-era-officers-over-strikes-on-civilians?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T19:31:32Z",
+      "text": "<strong>Lebanese artist turns Israeli missile debris into art</strong> -- In southern Lebanon, visual artist Lina Jouni transforms debris from Israeli missile strikes into pieces of art. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/lebanese-artist-turns-israeli-missile-debris-into-art?traffic_source=rss"
+    },
+    {
       "time": "2026-09-18T18:19:47Z",
       "text": "<strong>Russia\u2019s drones threaten Kyiv-bound Western officials as war effort stalls</strong> -- Russia strikes Ukraine\u2019s border crossings with Poland and Moldova as its offensives peter out in the east. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/18/russia-targets-ukraines-peaceful-borders?traffic_source=rss"
@@ -768,9 +778,9 @@
       "link": "https://www.aljazeera.com/news/2026/9/18/nigerian-forces-fire-at-protesters-rallying-over-deaths-of-detained-miners?traffic_source=rss"
     },
     {
-      "time": "2026-09-18T13:52:49Z",
-      "text": "<strong>The cost of Iran\u2019s regional leverage</strong> -- Tehran\u2019s use of pressure across the region is putting its rapprochement with Gulf states under increasing strain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/9/18/the-cost-of-irans-regional-leverage?traffic_source=rss"
+      "time": "2026-09-18T20:17:50Z",
+      "text": "<strong>At least 21 killed after vehicle loaded with explosives rams Pakistan mosque</strong> -- A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-18T11:49:46Z",
@@ -778,19 +788,29 @@
       "link": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-09-18T17:31:30Z",
-      "text": "<strong>At least 21 killed after vehicle loaded with explosives rams Pakistan mosque</strong> -- A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-09-18T15:47:28Z",
       "text": "<strong>Dozens of suspected illegal miners die in Nigerian custody</strong> -- Authorities linked the deaths to disease, but this has been disputed by intelligence reports and relatives of the accused. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss"
     },
     {
+      "time": "2026-09-18T17:57:30Z",
+      "text": "<strong>&#x27;We simply don&#x27;t know&#x27; - JP Morgan struggling to forecast oil prices due to Trump&#x27;s war with Iran</strong> -- The bank said it &quot;assumed&quot; there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-09-17T13:47:36Z",
       "text": "<strong>Verified video shows wreckage of Saudi fighter jet shot down over Yemen</strong> -- BBC Verify tracks down the location of a Houthi video showing the wreckage of an F-15 they claim to have shot down. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c8vgy3p6k3y9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-18T13:52:49Z",
+      "text": "<strong>The cost of Iran\u2019s regional leverage</strong> -- Tehran\u2019s use of pressure across the region is putting its rapprochement with Gulf states under increasing strain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/9/18/the-cost-of-irans-regional-leverage?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T17:31:30Z",
+      "text": "<strong>At least 21 killed after vehicle loaded with explosives rams Pakistan mosque</strong> -- A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-16T21:24:24Z",
@@ -831,26 +851,6 @@
       "time": "2026-09-18T10:43:18Z",
       "text": "<strong>United Nations says US may have committed war crimes in Iran: What it means</strong> -- UN probe finds US unlawfully struck an Iranian school and sports centre, killing children; White House rejects findings. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/18/united-nations-says-us-may-have-committed-war-crimes-in-iran-what-it-means?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-18T10:33:22Z",
-      "text": "<strong>\u2018My children did not attack Iran\u2019: 2bn South Asians suffer from distant war</strong> -- A quarter of the world\u2019s population faces a surging cost of living crisis because of the wars in the Middle East. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/18/my-children-did-not-attack-iran-2bn-south-asians-suffer-from-distant-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-18T10:29:34Z",
-      "text": "<strong>Israel is killing the people who could end its wars</strong> -- From Iran to Gaza and Lebanon, assassinations have repeatedly removed figures capable of negotiating an end to conflict. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/9/18/israel-is-killing-the-people-who-could-end-its-wars?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-18T09:12:09Z",
-      "text": "<strong>Bayern and England\u2019s Kane not focused on Ballon d\u2019Or despite 73-goal season</strong> -- Harry Kane could become first Ballon d&amp;#039;Or from England since 2001, but striker focused on Bayern Munich trophies. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/9/18/kane-not-focused-on-ballon-dor-despite-73-goal-season?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-18T06:45:05Z",
-      "text": "<strong>Nigerian police probe death in custody of 37 illegal mining suspects</strong> -- Officials blame disease outbreak for deaths as survivor suggests they suffocated. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/18/nigerian-police-probe-death-in-custody-of-37-illegal-mining-suspects?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "Syria arrests five former al-Assad-era officers over strikes on civilians",
+      "description": "Former air officers, including an air force general, were arrested in a series of operations.",
+      "link": "https://www.aljazeera.com/news/2026/9/18/syria-arrests-five-former-al-assad-era-officers-over-strikes-on-civilians?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T20:20:23Z",
+      "tier": 2
+    },
+    {
+      "title": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
+      "description": "A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility.",
+      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-18T20:17:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Lebanese artist turns Israeli missile debris into art",
+      "description": "In southern Lebanon, visual artist Lina Jouni transforms debris from Israeli missile strikes into pieces of art.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/lebanese-artist-turns-israeli-missile-debris-into-art?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T19:31:32Z",
+      "tier": 2
+    },
+    {
       "title": "Russia\u2019s drones threaten Kyiv-bound Western officials as war effort stalls",
       "description": "Russia strikes Ukraine\u2019s border crossings with Poland and Moldova as its offensives peter out in the east.",
       "link": "https://www.aljazeera.com/news/2026/9/18/russia-targets-ukraines-peaceful-borders?traffic_source=rss",
@@ -1221,11 +1245,11 @@
       "tier": 2
     },
     {
-      "title": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
-      "description": "A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility.",
-      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+      "title": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
+      "description": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
+      "link": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-18T17:31:30Z",
+      "time": "2026-09-18T17:57:30Z",
       "tier": 2
     },
     {
@@ -1253,14 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "The cost of Iran\u2019s regional leverage",
-      "description": "Tehran\u2019s use of pressure across the region is putting its rapprochement with Gulf states under increasing strain.",
-      "link": "https://www.aljazeera.com/opinions/2026/9/18/the-cost-of-irans-regional-leverage?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T13:52:49Z",
-      "tier": 2
-    },
-    {
       "title": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
       "description": "It is the first time the juror, who refused to side with the others and acquit Clancy, has spoken publicly about his decision.",
       "link": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
@@ -1285,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 17-18, 2026 indicates the war remains active around the Strait of Hormuz, with AP reporting Iran claimed a tanker strike and large pro-government rallies in Tehran, while recent UN-backed findings cited possible US war crimes in Iran. For database fields, the clearest currently confirmed figures found were Iran\u2019s government toll of 3,038 killed and 25,000 injured, a Pentagon-watchdog-cited US KIA total of 11 killed in action, and 26 Israelis killed; I did not find a newer confirmed official total for Iranian civilian-only deaths, Gulf-state deaths limited to UAE/Saudi/Kuwait/Bahrain, or most force-deployment and munitions-use quantities, so those are left null.",
+  "summary": "Confirmed reporting on September 18, 2026 indicates the war remains active but intermittent: AP reported the U.S. military\u2019s cost estimate rose to $43.6 billion as of September 3, while Iran claimed a fresh strike on an oil tanker in the Strait of Hormuz and large pro-government rallies took place in Tehran. The most recent official U.S. fatality accounting available through AP\u2019s reporting on the Pentagon inspector general shows 11 American troops killed in action. A UN-backed fact-finding mission, reported by AP and Al Jazeera on September 17, said two documented U.S. strikes killed at least 178 civilians, while Al Jazeera said Iran\u2019s government still reports 3,038 killed and 25,000 injured overall. On force posture, AP previously reported two U.S. carrier strike groups in the region after USS George Washington joined USS George H.W. Bush, but many weapons-use totals remain unconfirmed in currently accessible official reporting.",
   "briefings": [
     {
       "date": "2026-09-18",
       "day": 202,
-      "summary": "Confirmed reporting on September 17-18, 2026 indicates the war remains active around the Strait of Hormuz, with AP reporting Iran claimed a tanker strike and large pro-government rallies in Tehran, while recent UN-backed findings cited possible US war crimes in Iran. For database fields, the clearest currently confirmed figures found were Iran\u2019s government toll of 3,038 killed and 25,000 injured, a Pentagon-watchdog-cited US KIA total of 11 killed in action, and 26 Israelis killed; I did not find a newer confirmed official total for Iranian civilian-only deaths, Gulf-state deaths limited to UAE/Saudi/Kuwait/Bahrain, or most force-deployment and munitions-use quantities, so those are left null."
+      "summary": "Confirmed reporting on September 18, 2026 indicates the war remains active but intermittent: AP reported the U.S. military\u2019s cost estimate rose to $43.6 billion as of September 3, while Iran claimed a fresh strike on an oil tanker in the Strait of Hormuz and large pro-government rallies took place in Tehran. The most recent official U.S. fatality accounting available through AP\u2019s reporting on the Pentagon inspector general shows 11 American troops killed in action. A UN-backed fact-finding mission, reported by AP and Al Jazeera on September 17, said two documented U.S. strikes killed at least 178 civilians, while Al Jazeera said Iran\u2019s government still reports 3,038 killed and 25,000 injured overall. On force posture, AP previously reported two U.S. carrier strike groups in the region after USS George Washington joined USS George H.W. Bush, but many weapons-use totals remain unconfirmed in currently accessible official reporting."
     },
     {
       "date": "2026-09-17",
