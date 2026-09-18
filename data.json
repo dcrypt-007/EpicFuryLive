@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-09-18T11:16:33Z",
+  "lastUpdated": "2026-09-18T16:24:40Z",
   "dayCount": 202,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,077+",
-    "cost": "$36.6B+"
+    "killed": "39+",
+    "cost": "$54.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,038",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.6 billion+",
-    "dailyBurnRate": "~$181M/day",
+    "totalCost": "$54.4 billion+",
+    "dailyBurnRate": "~$269M/day",
     "daysOfOps": 202,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-18",
-          "source": "LLM-verified (CENTCOM Epic Fury page, Sept. 7, 2026 video update shows USS John Finn in 5th Fleet AOR; no current named second carrier confirmed in latest accessible official reporting)"
+          "source": "LLM-verified (Recent CENTCOM release last week referred to 'a U.S. aircraft carrier and guided-missile destroyer' in the theater, supporting one carrier currently active. https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4591744/centcom-destroys-3-irgc-oil-tankers-after-iran-targets-2-us-navy-warships/)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-09-18",
-          "source": "LLM-verified (CENTCOM Epic Fury page, Sept. 7, 2026 video update identifies destroyer USS John Finn (DDG-113) deployed to U.S. 5th Fleet AOR)"
+          "source": "LLM-verified (Same recent CENTCOM release referred to 'a U.S. aircraft carrier and guided-missile destroyer' evading Iranian attacks, confirming at least one destroyer currently active in theater. https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4591744/centcom-destroys-3-irgc-oil-tankers-after-iran-targets-2-us-navy-warships/)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-09-18",
-          "source": "LLM-verified (Stars and Stripes citing Pentagon inspector general report, Sept. 15, 2026: more than 50,000 U.S. troops deployed to region)"
+          "source": "LLM-verified (Washington Post Aug. 30, 2026: CENTCOM 'has kept a force of more than 50,000 troops on alert for months'; similar AP/WaPo reporting earlier also cited about 50,000 in region. https://www.washingtonpost.com/national-security/2026/08/30/military-leaders-warn-hegseth-against-extending-iran-war-operations/)"
         },
         {
           "id": "intel_cyber",
@@ -147,7 +147,7 @@
           "id": "drone_ops",
           "category": "UAV / Drone Operations",
           "unitCostPerDay": 8000000,
-          "quantity": 1,
+          "quantity": 12,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-09-11",
-          "source": "LLM-verified (CENTCOM posture statement for 2026 says RE-JTF established its first one-way attack UAS squadron, Task Force Scorpion Strike; accessible current reporting does not confirm more than one active drone operational unit for this operation.)"
+          "lastUpdated": "2026-09-18",
+          "source": "LLM-verified (Air & Space Forces, May 20, 2026: 'Reapers flew around a dozen orbits over Iran at a time.' Used as the clearest named-source current operational tempo indicator found, though it describes orbits rather than formal units. https://www.airandspaceforces.com/mq-9-reaper-mvp-iran-war-despite-losses-wilsbach/)"
         },
         {
           "id": "comms_space",
@@ -358,8 +358,8 @@
       },
       {
         "category": "UAV / Drone Operations",
-        "detail": "$8,000,000/day \u00d7 202 days",
-        "cost": "$1,616,000,000"
+        "detail": "12 \u00d7 $8,000,000/day \u00d7 202 days",
+        "cost": "$19,392,000,000"
       },
       {
         "category": "Satellite & Communications",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Recent CENTCOM reporting indicates continued naval clashes in and around the Strait of Hormuz, including attacks involving Iranian boats and Iranian attacks targeting a US carrier and destroyer.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Sept. 15 cited CBO estimating the war has cost the US more than $38 billion through Aug. 1 and could continue at up to $3 billion per month depending on intensity.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Sept. 14 cited the Pentagon inspector general saying the war has created strategic inventory shortfalls and munitions/interceptor resupply bottlenecks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera reported new Houthi claims of downing a Saudi fighter jet in Yemen.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Sept. 15 that the Trump administration is preparing a $2.8 billion weapons sale to Israel, including 2,000-pound bombs.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Sept. 13 that an Iranian commercial ship was struck near the Strait of Hormuz, killing 1 and wounding 4, and regional Hormuz talks were postponed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Sept. 16 that Saudi Arabia is running low on missile interceptors as fighting with the Houthis drags on.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-09-18T15:45:45Z",
+      "text": "<strong>Nigerian forces fire at protesters rallying over deaths of detained miners</strong> -- Government has promised to fully investigate after 37 miners died while being held in police custody in Niger State. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/18/nigerian-forces-fire-at-protesters-rallying-over-deaths-of-detained-miners?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T13:52:49Z",
+      "text": "<strong>The cost of Iran\u2019s regional leverage</strong> -- Tehran\u2019s use of pressure across the region is putting its rapprochement with Gulf states under increasing strain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/9/18/the-cost-of-irans-regional-leverage?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T13:09:27Z",
+      "text": "<strong>US voter opposition to war on Iran grows to new highs: Poll</strong> -- Poll reveals 71 percent in US believe Trump&amp;#039;s team lacks a clear strategy for resolving the conflict. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/18/us-voter-opposition-to-war-on-iran-grows-to-new-highs-poll?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T13:00:18Z",
+      "text": "<strong>Pakistan pledges full committment to defence of Saudi Arabia</strong> -- Assurance comes amid questions over Pakistan and Turkiye&amp;#039;s stance on Riyadh&amp;#039;s fight with Houthis following defence pact. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/18/pakistan-pledges-full-committment-to-defence-of-saudi-arabia?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T12:52:29Z",
+      "text": "<strong>As Houthis grab Bab al-Mandeb, US appears willing to watch from sidelines</strong> -- Stretched by its war with Iran, Washington may have little choice but to trust Houthi assurances on shipping. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/18/as-houthis-grab-bab-al-mandeb-us-appears-willing-to-watch-from-sidelines?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T11:15:52Z",
+      "text": "<strong>Deadly blast hits mosque at Pakistan police complex</strong> -- Several people have reportedly been killed in an explosion at a mosque near a police complex in northwest Pakistan. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/09-18-26-pakistan-blast?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T11:49:46Z",
+      "text": "<strong>Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children</strong> -- It is the first time the juror, who refused to side with the others and acquit Clancy, has spoken publicly about his decision. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-18T15:08:12Z",
+      "text": "<strong>At least 17 killed after vehicle loaded with explosives rams Pakistan mosque</strong> -- A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-18T15:47:28Z",
+      "text": "<strong>Dozens of suspected illegal miners die in Nigerian custody</strong> -- Authorities linked the deaths to disease, but this has been disputed by intelligence reports and relatives of the accused. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-17T13:44:07Z",
+      "text": "<strong>Ninth woman&#x27;s body found as South African police investigate string of deaths</strong> -- South Africa police have cautioned against assuming that all the killings are linked but many women are afraid. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-09-18T10:43:18Z",
       "text": "<strong>United Nations says US may have committed war crimes in Iran: What it means</strong> -- UN probe finds US unlawfully struck an Iranian school and sports centre, killing children; White House rejects findings. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/18/united-nations-says-us-may-have-committed-war-crimes-in-iran-what-it-means?traffic_source=rss"
@@ -801,56 +851,6 @@
       "time": "2026-09-18T10:35:59Z",
       "text": "<strong>Dozens of suspected illegal miners die in Nigerian custody</strong> -- Authorities linked the deaths to disease, but this has been disputed by intelligence reports and relatives of the accused. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-18T01:58:53Z",
-      "text": "<strong>UN findings show US strikes on Minab could be war crimes</strong> -- UN-backed human rights experts say the US committed possible war crimes when it launched two strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/un-findings-show-us-strikes-on-minab-could-be-war-crimes?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-18T00:09:32Z",
-      "text": "<strong>Iran expels Swedish diplomat in retaliatory move</strong> -- Tehran gives Swedish official 48 hours to leave as Iran says Stockholm is bowing down to outside pressure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/18/iran-expels-swedish-diplomat-in-retaliatory-move?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-18T00:00:00Z",
-      "text": "<strong>Iran war live: Trump weighs \u2018big decision\u2019 on Iran, tanker hit in Hormuz</strong> -- Trump says he faces a &amp;#039;big decision&amp;#039; on whether to &amp;#039;annihilate&amp;#039; his Iranian foes, adding that &amp;#039;anything could happen&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/9/18/iran-war-live-trump-weighs-big-decision-on-iran-tanker-hit-in-hormuz?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T23:42:37Z",
-      "text": "<strong>Migrant sea crossings to Europe drop sharply as deaths rise: IOM</strong> -- More than 2,200 migrants died or vanished at sea in 2026, despite declining crossings into Europe, says IOM. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/17/migrant-crossings-to-europe-by-sea-drop-sharply-amid-heightened-risks-iom?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T21:38:17Z",
-      "text": "<strong>Trump administration approves sale of F-35 jets to Saudi Arabia</strong> -- The deal, which needs approval from Congress, comes as Riyadh seeks Washington&amp;#039;s help in its war with Yemen&amp;#039;s Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/17/trump-administration-approves-sale-of-f-35-jets-to-saudi-arabia?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T21:20:57Z",
-      "text": "<strong>US approves visas for top Iranian leaders to attend UN General Assembly</strong> -- Iran&amp;#039;s delegation to UNGA will be smaller this year, with travel restrictions and limits on luxury goods purchases. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/17/us-approves-visas-for-top-iranian-leaders-to-attend-un-general-assembly?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T13:44:07Z",
-      "text": "<strong>Ninth woman&#x27;s body found as South African police investigate string of deaths</strong> -- South Africa police have cautioned against assuming that all the killings are linked but many women are afraid. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-17T20:34:30Z",
-      "text": "<strong>UN experts say grounds to believe US committed war crimes in Iran strikes</strong> -- The US has not acknowledged carrying out February&#x27;s deadly strikes on a primary school in Minab and a sports complex in Lamerd. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-17T21:08:51Z",
-      "text": "<strong>Pennsylvania seeks CDC help amid dispute over US measles deaths</strong> -- The CDC and officials from the US state differ over how four deaths should be classified as cases continue to spread. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/17/pennsylvania-seeks-cdc-help-amid-dispute-over-us-measles-deaths?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T21:01:41Z",
-      "text": "<strong>Russia, China veto UN mandate to monitor Iran sanctions</strong> -- Move ends the Security Council\u2019s watchdog panel on Iran sanctions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/17/russia-china-veto-un-mandate-to-monitor-iran-sanctions?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,91 +1213,75 @@
   ],
   "newsFeed": [
     {
-      "title": "United Nations says US may have committed war crimes in Iran: What it means",
-      "description": "UN probe finds US unlawfully struck an Iranian school and sports centre, killing children; White House rejects findings.",
-      "link": "https://www.aljazeera.com/news/2026/9/18/united-nations-says-us-may-have-committed-war-crimes-in-iran-what-it-means?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T10:43:18Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 16 killed in attack on mosque in Pakistan",
-      "description": "A vehicle loaded with explosives rammed into a mosque building during Friday prayers, a senior police official says.",
-      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-18T10:39:31Z",
-      "tier": 2
-    },
-    {
       "title": "Dozens of suspected illegal miners die in Nigerian custody",
       "description": "Authorities linked the deaths to disease, but this has been disputed by intelligence reports and relatives of the accused.",
       "link": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-18T10:35:59Z",
+      "time": "2026-09-18T15:47:28Z",
       "tier": 2
     },
     {
-      "title": "\u2018My children did not attack Iran\u2019: 2bn South Asians suffer from distant war",
-      "description": "A quarter of the world\u2019s population faces a surging cost of living crisis because of the wars in the Middle East.",
-      "link": "https://www.aljazeera.com/news/2026/9/18/my-children-did-not-attack-iran-2bn-south-asians-suffer-from-distant-war?traffic_source=rss",
+      "title": "Nigerian forces fire at protesters rallying over deaths of detained miners",
+      "description": "Government has promised to fully investigate after 37 miners died while being held in police custody in Niger State.",
+      "link": "https://www.aljazeera.com/news/2026/9/18/nigerian-forces-fire-at-protesters-rallying-over-deaths-of-detained-miners?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-18T10:33:22Z",
+      "time": "2026-09-18T15:45:45Z",
       "tier": 2
     },
     {
-      "title": "Israel is killing the people who could end its wars",
-      "description": "From Iran to Gaza and Lebanon, assassinations have repeatedly removed figures capable of negotiating an end to conflict.",
-      "link": "https://www.aljazeera.com/opinions/2026/9/18/israel-is-killing-the-people-who-could-end-its-wars?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T10:29:34Z",
-      "tier": 2
-    },
-    {
-      "title": "Bayern and England\u2019s Kane not focused on Ballon d\u2019Or despite 73-goal season",
-      "description": "Harry Kane could become first Ballon d&#039;Or from England since 2001, but striker focused on Bayern Munich trophies.",
-      "link": "https://www.aljazeera.com/sports/2026/9/18/kane-not-focused-on-ballon-dor-despite-73-goal-season?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T09:12:09Z",
-      "tier": 2
-    },
-    {
-      "title": "Nigerian police probe death in custody of 37 illegal mining suspects",
-      "description": "Officials blame disease outbreak for deaths as survivor suggests they suffocated.",
-      "link": "https://www.aljazeera.com/news/2026/9/18/nigerian-police-probe-death-in-custody-of-37-illegal-mining-suspects?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T06:45:05Z",
-      "tier": 2
-    },
-    {
-      "title": "UN mission alleges crimes against humanity in Iranian protest crackdown",
-      "description": "A UN fact-finding mission has concluded Iranian forces committed crimes against humanity.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/un-mission-alleges-crimes-against-humanity-in-iranian-protest-crackdown?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T05:26:51Z",
-      "tier": 2
-    },
-    {
-      "title": "South Korea says US-North Korea talks possible, rules out Hormuz deployment",
-      "description": "South Korean president will facilitate US-North Korea talks but will not deploy troops in US war on Iran.",
-      "link": "https://www.aljazeera.com/news/2026/9/18/south-korea-says-us-north-korea-talks-possible-rules-out-hormuz-deployment?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T05:23:10Z",
-      "tier": 2
-    },
-    {
-      "title": "Fire engulfs Zaporizhzhia shopping centre after Russian strike",
-      "description": "A Russian strike hit a shopping centre in Zaporizhzhia, southeastern Ukraine, sparking a major fire.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/fire-engulfs-zaporizhzhia-shopping-centre-after-russian-strike?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-18T05:03:29Z",
-      "tier": 2
-    },
-    {
-      "title": "US to allow Iran delegation to attend UN meetings in New York as war passes half-year mark",
-      "description": "The BBC understands Iranian President Masoud Pezeshkian and Foreign Minister Abbas Araghchi are among the delegates allowed to enter the US.",
-      "link": "https://www.bbc.co.uk/news/articles/c6n8m72r13ngo?at_medium=RSS&at_campaign=rss",
+      "title": "At least 17 killed after vehicle loaded with explosives rams Pakistan mosque",
+      "description": "A four-year-old child is among those killed in the attack, during which gunmen also opened fire on a police facility.",
+      "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-17T21:41:19Z",
+      "time": "2026-09-18T15:08:12Z",
+      "tier": 2
+    },
+    {
+      "title": "The cost of Iran\u2019s regional leverage",
+      "description": "Tehran\u2019s use of pressure across the region is putting its rapprochement with Gulf states under increasing strain.",
+      "link": "https://www.aljazeera.com/opinions/2026/9/18/the-cost-of-irans-regional-leverage?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T13:52:49Z",
+      "tier": 2
+    },
+    {
+      "title": "US voter opposition to war on Iran grows to new highs: Poll",
+      "description": "Poll reveals 71 percent in US believe Trump&#039;s team lacks a clear strategy for resolving the conflict.",
+      "link": "https://www.aljazeera.com/news/2026/9/18/us-voter-opposition-to-war-on-iran-grows-to-new-highs-poll?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T13:09:27Z",
+      "tier": 2
+    },
+    {
+      "title": "Pakistan pledges full committment to defence of Saudi Arabia",
+      "description": "Assurance comes amid questions over Pakistan and Turkiye&#039;s stance on Riyadh&#039;s fight with Houthis following defence pact.",
+      "link": "https://www.aljazeera.com/news/2026/9/18/pakistan-pledges-full-committment-to-defence-of-saudi-arabia?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T13:00:18Z",
+      "tier": 2
+    },
+    {
+      "title": "As Houthis grab Bab al-Mandeb, US appears willing to watch from sidelines",
+      "description": "Stretched by its war with Iran, Washington may have little choice but to trust Houthi assurances on shipping.",
+      "link": "https://www.aljazeera.com/news/2026/9/18/as-houthis-grab-bab-al-mandeb-us-appears-willing-to-watch-from-sidelines?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T12:52:29Z",
+      "tier": 2
+    },
+    {
+      "title": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
+      "description": "It is the first time the juror, who refused to side with the others and acquit Clancy, has spoken publicly about his decision.",
+      "link": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-18T11:49:46Z",
+      "tier": 2
+    },
+    {
+      "title": "Deadly blast hits mosque at Pakistan police complex",
+      "description": "Several people have reportedly been killed in an explosion at a mosque near a police complex in northwest Pakistan.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/09-18-26-pakistan-blast?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T11:15:52Z",
       "tier": 2
     },
     {
@@ -1333,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 17-18, 2026, shows the war remains active but strategically stalemated: UN-backed investigators said there are reasonable grounds to believe the United States committed war crimes in two February 28 strikes that killed at least 178 civilians, while AP reported Washington has nonetheless approved visas for Iran\u2019s senior delegation to attend next week\u2019s U.N. meetings. The latest Pentagon inspector-general-based reporting says more than 50,000 U.S. troops have been deployed for the campaign, with 11 U.S. personnel counted as killed in action and seven additional non-hostile deaths by June 30. Officially cited operational totals remain above 13,000 targets struck and 10,000 sorties flown during the main 38-day Epic Fury combat phase, while shipping insecurity around the Strait of Hormuz continues.",
+  "summary": "Confirmed reporting available on September 18, 2026, shows the clearest new official datapoint is from the Pentagon inspector general via AP: 11 U.S. service members are listed as killed in action in Operation Epic Fury, while the broader Pentagon casualty system now separates later post-Epic Fury losses from the original operation. AP and other accessible reporting also indicate the war has imposed heavy material costs, with the CBO estimating more than $38 billion in U.S. Defense Department costs through August 1 and the inspector general warning of interceptor and advanced-munition shortfalls. For several requested Iran-wide casualty and weapons-expended totals, I could not find a current September 18 confirmed cumulative number from named official or major-wire sources, so those fields are left null rather than estimated.",
   "briefings": [
     {
       "date": "2026-09-18",
       "day": 202,
-      "summary": "Confirmed reporting on September 17-18, 2026, shows the war remains active but strategically stalemated: UN-backed investigators said there are reasonable grounds to believe the United States committed war crimes in two February 28 strikes that killed at least 178 civilians, while AP reported Washington has nonetheless approved visas for Iran\u2019s senior delegation to attend next week\u2019s U.N. meetings. The latest Pentagon inspector-general-based reporting says more than 50,000 U.S. troops have been deployed for the campaign, with 11 U.S. personnel counted as killed in action and seven additional non-hostile deaths by June 30. Officially cited operational totals remain above 13,000 targets struck and 10,000 sorties flown during the main 38-day Epic Fury combat phase, while shipping insecurity around the Strait of Hormuz continues."
+      "summary": "Confirmed reporting available on September 18, 2026, shows the clearest new official datapoint is from the Pentagon inspector general via AP: 11 U.S. service members are listed as killed in action in Operation Epic Fury, while the broader Pentagon casualty system now separates later post-Epic Fury losses from the original operation. AP and other accessible reporting also indicate the war has imposed heavy material costs, with the CBO estimating more than $38 billion in U.S. Defense Department costs through August 1 and the inspector general warning of interceptor and advanced-munition shortfalls. For several requested Iran-wide casualty and weapons-expended totals, I could not find a current September 18 confirmed cumulative number from named official or major-wire sources, so those fields are left null rather than estimated."
     },
     {
       "date": "2026-09-17",
