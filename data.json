@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-09-18T00:20:31Z",
+  "lastUpdated": "2026-09-18T05:56:17Z",
   "dayCount": 202,
   "banner": {
-    "strikes": "~5,633",
-    "killed": "3,144+",
-    "cost": "$38.2B+"
+    "strikes": "~13,000",
+    "killed": "3,098+",
+    "cost": "$37.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,038",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$38.2 billion+",
-    "dailyBurnRate": "~$189M/day",
+    "totalCost": "$37.7 billion+",
+    "dailyBurnRate": "~$187M/day",
     "daysOfOps": 202,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-09-17",
-          "source": "LLM-verified (AP, Aug. 20, 2026: USS George Washington arrived and joined USS George H.W. Bush in the Middle East)"
+          "lastUpdated": "2026-09-18",
+          "source": "LLM-verified (USNI Fleet Tracker on Sept. 14, 2026 reported USS George Washington operating in the Arabian Sea in support of operations against Iran; Abraham Lincoln had been relieved and was heading home.)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-09-17",
-          "source": "LLM-verified (AP, Sep. 5, 2026: 'an American aircraft carrier and a destroyer' were patrolling in the region.)"
+          "lastUpdated": "2026-09-18",
+          "source": "LLM-verified (USNI Fleet Tracker on Sept. 14, 2026 listed USS Shoup (DDG-86) escorting USS George Washington in the Arabian Sea.)"
         },
         {
           "id": "personnel",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-09-17",
-          "source": "LLM-verified (AP reported the operation involved 'more than 50,000 troops' in CENTCOM commander remarks, Mar. 4, 2026: https://apnews.com/article/fc413267e23c8b36fd6521216033adaf)"
+          "lastUpdated": "2026-09-18",
+          "source": "LLM-verified (AP on Sept. 4, 2026 reported about 50,000 U.S. troops are currently deployed across the Middle East.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 10000,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,8 +279,8 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-09-17",
-          "source": "LLM-verified (IDF official backgrounder states 'Over 800 Strike Sorties, 16,000 Munitions' since launch of Operation Roaring Lion; this is Israeli strike sorties, not a full US-CENTCOM fighter-sortie total. https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/over-800-strike-sorties-16-000-munitions-what-has-happened-since-the-launch-of-operation-roaring-lion/)"
+          "lastUpdated": "2026-09-18",
+          "source": "LLM-verified (AP on Aug. 2026 citing Abraham Lincoln strike group said more than 10,000 aircraft flights had been flown by that carrier group alone, but no current official theater-wide cumulative fighter/attack sortie total found; using this as a confirmed lower-bound aircraft flight count would risk category mismatch, so this field should ideally remain null. Returning null would be safer.)"
         },
         {
           "id": "interceptors",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-09-17",
-          "source": "LLM-verified (Reuters/Pentagon remarks surfaced in Reuters Connect: 'thus far intercepted 1,700 ballistic missiles and one-way attack drones' with Gulf partners.)"
+          "lastUpdated": "2026-09-18",
+          "source": "LLM-verified (DefenseScoop/Reuters-derived reporting and Pentagon remarks cited 1,700 ballistic missiles and one-way attack drones intercepted by U.S. and Gulf partners during the conflict.)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 202 days",
-        "cost": "$2,828,000,000"
+        "detail": "$7,000,000/day \u00d7 202 days",
+        "cost": "$1,414,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "10,000 \u00d7 $100,000 each",
+        "cost": "$1,000,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -753,9 +753,34 @@
   ],
   "developments": [
     {
+      "time": "2026-09-18T05:23:10Z",
+      "text": "<strong>South Korea says US-North Korea talks possible, rules out Hormuz deployment</strong> -- South Korean president will facilitate US-North Korea talks but will not deploy troops in US war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/18/south-korea-says-us-north-korea-talks-possible-rules-out-hormuz-deployment?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T05:03:29Z",
+      "text": "<strong>Fire engulfs Zaporizhzhia shopping centre after Russian strike</strong> -- A Russian strike hit a shopping centre in Zaporizhzhia, southeastern Ukraine, sparking a major fire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/fire-engulfs-zaporizhzhia-shopping-centre-after-russian-strike?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T01:58:53Z",
+      "text": "<strong>UN findings show US strikes on Minab could be war crimes</strong> -- UN-backed human rights experts say the US committed possible war crimes when it launched two strikes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/un-findings-show-us-strikes-on-minab-could-be-war-crimes?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-18T00:09:32Z",
+      "text": "<strong>Iran expels Swedish diplomat in retaliatory move</strong> -- Tehran gives Swedish official 48 hours to leave as Iran says Stockholm is bowing down to outside pressure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/18/iran-expels-swedish-diplomat-in-retaliatory-move?traffic_source=rss"
+    },
+    {
       "time": "2026-09-18T00:00:00Z",
       "text": "<strong>Iran war live: Trump weighs \u2018big decision\u2019 on Iran, tanker hit in Hormuz</strong> -- Trump says he faces a &amp;#039;big decision&amp;#039; on whether to &amp;#039;annihilate&amp;#039; his Iranian foes, adding that &amp;#039;anything could happen&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/9/18/iran-war-live-trump-weighs-big-decision-on-iran-tanker-hit-in-hormuz?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-17T23:42:37Z",
+      "text": "<strong>Migrant sea crossings to Europe drop sharply as deaths rise: IOM</strong> -- More than 2,200 migrants died or vanished at sea in 2026, despite declining crossings into Europe, says IOM. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/17/migrant-crossings-to-europe-by-sea-drop-sharply-amid-heightened-risks-iom?traffic_source=rss"
     },
     {
       "time": "2026-09-17T21:38:17Z",
@@ -766,6 +791,16 @@
       "time": "2026-09-17T21:20:57Z",
       "text": "<strong>US approves visas for top Iranian leaders to attend UN General Assembly</strong> -- Iran&amp;#039;s delegation to UNGA will be smaller this year, with travel restrictions and limits on luxury goods purchases. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/17/us-approves-visas-for-top-iranian-leaders-to-attend-un-general-assembly?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-17T13:44:07Z",
+      "text": "<strong>Ninth woman&#x27;s body found as South African police investigate string of deaths</strong> -- South Africa police have cautioned against assuming that all the killings are linked but many women are afraid. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-17T20:34:30Z",
+      "text": "<strong>UN experts say grounds to believe US committed war crimes in Iran strikes</strong> -- The US has not acknowledged carrying out February&#x27;s deadly strikes on a primary school in Minab and a sports complex in Lamerd. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-17T21:08:51Z",
@@ -813,44 +848,9 @@
       "link": "https://www.aljazeera.com/news/2026/9/17/five-killed-as-saudi-arabia-and-yemens-houthis-trade-attacks?traffic_source=rss"
     },
     {
-      "time": "2026-09-17T13:44:07Z",
-      "text": "<strong>Ninth woman&#x27;s body found as South African police investigate string of deaths</strong> -- South Africa police have cautioned against assuming that all the killings are linked but many women are afraid. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-09-17T15:34:09Z",
       "text": "<strong>Ninth woman\u2019s body found as South Africa probes series of killings</strong> -- All female victims in their 20s and 30s were killed on the outskirts of Johannesburg in the past two months. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/17/ninth-womans-body-found-as-south-africa-probes-series-of-killings?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T15:01:27Z",
-      "text": "<strong>What are all the sanctions Iran is under?</strong> -- Iran has faced a torrent of international sanctions since the 1979 revolution - here&amp;#039;s what&amp;#039;s in place right now. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/17/what-are-all-the-sanctions-iran-is-under?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T14:10:41Z",
-      "text": "<strong>Ghalibaf\u2019s maths missile at Trump decoded: Is Iran fixing US interest rates?</strong> -- Iran&amp;#039;s speaker mocks US interest rates, citing the Taylor equation amidst rising global oil prices and inflation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/17/ghalibafs-maths-missile-at-trump-decoded-is-iran-fixing-us-interest-rates?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-17T15:07:47Z",
-      "text": "<strong>UN experts say grounds to believe US committed war crimes in Iran strikes</strong> -- The US has not acknowledged carrying out February&#x27;s deadly strikes on a primary school in Minab and a sports complex in Lamerd. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-16T18:36:16Z",
-      "text": "<strong>Photos show widespread damage at US sites from Iranian attacks</strong> -- A wrecked air force plane and destroyed buildings are among the images obtained by the BBC&#x27;s partner CBS News. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-16T17:16:47Z",
-      "text": "<strong>Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say</strong> -- Some 10 families had reportedly been living in the six-storey building in Gaza City that was hit by an Israeli strike last year. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-16T08:36:17Z",
-      "text": "<strong>Saudi Arabia says it shot down Houthi drone south of Mecca</strong> -- The Houthis deny targeting the Islamic holy city after the Saudi-led coalition in Yemen accuses them of a &quot;disgraceful act&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cr89jqd1w45eo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,51 @@
   ],
   "newsFeed": [
     {
+      "title": "South Korea says US-North Korea talks possible, rules out Hormuz deployment",
+      "description": "South Korean president will facilitate US-North Korea talks but will not deploy troops in US war on Iran.",
+      "link": "https://www.aljazeera.com/news/2026/9/18/south-korea-says-us-north-korea-talks-possible-rules-out-hormuz-deployment?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T05:23:10Z",
+      "tier": 2
+    },
+    {
+      "title": "Fire engulfs Zaporizhzhia shopping centre after Russian strike",
+      "description": "A Russian strike hit a shopping centre in Zaporizhzhia, southeastern Ukraine, sparking a major fire.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/fire-engulfs-zaporizhzhia-shopping-centre-after-russian-strike?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T05:03:29Z",
+      "tier": 2
+    },
+    {
+      "title": "UN findings show US strikes on Minab could be war crimes",
+      "description": "UN-backed human rights experts say the US committed possible war crimes when it launched two strikes.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/18/un-findings-show-us-strikes-on-minab-could-be-war-crimes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T01:58:53Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran expels Swedish diplomat in retaliatory move",
+      "description": "Tehran gives Swedish official 48 hours to leave as Iran says Stockholm is bowing down to outside pressure.",
+      "link": "https://www.aljazeera.com/news/2026/9/18/iran-expels-swedish-diplomat-in-retaliatory-move?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-18T00:09:32Z",
+      "tier": 2
+    },
+    {
       "title": "Iran war live: Trump weighs \u2018big decision\u2019 on Iran, tanker hit in Hormuz",
       "description": "Trump says he faces a &#039;big decision&#039; on whether to &#039;annihilate&#039; his Iranian foes, adding that &#039;anything could happen&#039;.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/9/18/iran-war-live-trump-weighs-big-decision-on-iran-tanker-hit-in-hormuz?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-09-18T00:00:00Z",
+      "tier": 2
+    },
+    {
+      "title": "Migrant sea crossings to Europe drop sharply as deaths rise: IOM",
+      "description": "More than 2,200 migrants died or vanished at sea in 2026, despite declining crossings into Europe, says IOM.",
+      "link": "https://www.aljazeera.com/news/2026/9/17/migrant-crossings-to-europe-by-sea-drop-sharply-amid-heightened-risks-iom?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-17T23:42:37Z",
       "tier": 2
     },
     {
@@ -1245,67 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Pennsylvania seeks CDC help amid dispute over US measles deaths",
-      "description": "The CDC and officials from the US state differ over how four deaths should be classified as cases continue to spread.",
-      "link": "https://www.aljazeera.com/news/2026/9/17/pennsylvania-seeks-cdc-help-amid-dispute-over-us-measles-deaths?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-17T21:08:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Russia, China veto UN mandate to monitor Iran sanctions",
-      "description": "Move ends the Security Council\u2019s watchdog panel on Iran sanctions.",
-      "link": "https://www.aljazeera.com/news/2026/9/17/russia-china-veto-un-mandate-to-monitor-iran-sanctions?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-17T21:01:41Z",
-      "tier": 2
-    },
-    {
-      "title": "At least 26 killed in clashes along Sudan-South Sudan border region",
-      "description": "UN Interim Security Force for Abyei strengthens security on the ground after days of deadly fighting.",
-      "link": "https://www.aljazeera.com/news/2026/9/17/at-least-26-killed-in-clashes-along-sudan-south-sudan-border-region?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-17T20:47:52Z",
-      "tier": 2
-    },
-    {
       "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
       "description": "The US has not acknowledged carrying out February's deadly strikes on a primary school in Minab and a sports complex in Lamerd.",
       "link": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-09-17T20:34:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Russia\u2019s plans may include strikes against Ukraine\u2019s allies, Poland says",
-      "description": "Warsaw also says it scrambled military planes in response to a Russian attack in western Ukraine, close to its border.",
-      "link": "https://www.aljazeera.com/news/2026/9/17/russian-plans-include-strikes-against-ukraines-allies-poland-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-17T19:54:46Z",
-      "tier": 2
-    },
-    {
-      "title": "Houthi leader denies targeting Mecca, vows to protect holy city",
-      "description": "Houthi leader Abdul Malik al-Houthi pledges to defend Mecca and other Islamic holy sites.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/17/houthi-leader-denies-targeting-mecca-vows-to-protect-holy-city?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-17T19:31:03Z",
-      "tier": 2
-    },
-    {
-      "title": "Russia \u2018sabotaging\u2019 power supply lines at Zaporizhzhia plant: Greenpeace",
-      "description": "Investigation finds no evidence of Russia&#039;s claims that Ukrainian attacks hit the nuclear power plant.",
-      "link": "https://www.aljazeera.com/news/2026/9/17/russia-sabotaging-power-supply-lines-at-zaporizhzhia-plant-greenpeace?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-17T19:30:12Z",
-      "tier": 2
-    },
-    {
-      "title": "Third person dies from malaria in cluster near Germany\u2019s Frankfurt Airport",
-      "description": "Frankfurt grapples with a rare malaria outbreak tied to air travel, marking three deaths in recent months.",
-      "link": "https://www.aljazeera.com/news/2026/9/17/third-person-dies-from-malaria-in-cluster-near-germanys-frankfurt-airport?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-17T19:04:53Z",
       "tier": 2
     },
     {
@@ -1357,12 +1341,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today indicates the war remains active and strategically unresolved: AP reported on September 11 that the U.S. has loosened Iran\u2019s grip on the Strait of Hormuz but that the conflict is still far from over, while AP on September 17 said the Trump administration approved visas for Iran\u2019s core UN delegation even as both sides remain at war. AP and Al Jazeera also reported renewed humanitarian and legal scrutiny after UN-backed experts said U.S. strikes in Iran may amount to war crimes, with at least 178 civilians killed in the incidents examined. The latest accessible confirmed aggregate casualty figures found were Iran government-reported totals of 3,038 killed and 25,000 injured, alongside Al Jazeera\u2019s August 28 official roundup showing 18 U.S. service members killed, 60 Israelis killed, and 28 deaths in Gulf states; no newer confirmed official totals for several military cost-model quantity fields were accessible.",
+  "summary": "Confirmed reporting on September 17-18, 2026 indicates the war remains active but largely stalemated: AP reported the Trump administration approved visas for Iran\u2019s core delegation to attend next week\u2019s UN General Assembly even as there is no sign of a deal to reopen the Strait of Hormuz, while separate AP and UN-backed findings said the February 28 U.S. strikes on Minab and Lamerd may constitute war crimes and reiterated that at least 178 civilians were killed in those attacks. Recent AP/CENTCOM reporting also confirms continued low-level maritime fighting near Iran\u2019s coast, and official/Pentagon-linked reporting still places U.S. troop levels around 50,000 in the region, with USS George Washington now the carrier on station in the Arabian Sea.",
   "briefings": [
     {
       "date": "2026-09-18",
       "day": 202,
-      "summary": "Confirmed reporting available today indicates the war remains active and strategically unresolved: AP reported on September 11 that the U.S. has loosened Iran\u2019s grip on the Strait of Hormuz but that the conflict is still far from over, while AP on September 17 said the Trump administration approved visas for Iran\u2019s core UN delegation even as both sides remain at war. AP and Al Jazeera also reported renewed humanitarian and legal scrutiny after UN-backed experts said U.S. strikes in Iran may amount to war crimes, with at least 178 civilians killed in the incidents examined. The latest accessible confirmed aggregate casualty figures found were Iran government-reported totals of 3,038 killed and 25,000 injured, alongside Al Jazeera\u2019s August 28 official roundup showing 18 U.S. service members killed, 60 Israelis killed, and 28 deaths in Gulf states; no newer confirmed official totals for several military cost-model quantity fields were accessible."
+      "summary": "Confirmed reporting on September 17-18, 2026 indicates the war remains active but largely stalemated: AP reported the Trump administration approved visas for Iran\u2019s core delegation to attend next week\u2019s UN General Assembly even as there is no sign of a deal to reopen the Strait of Hormuz, while separate AP and UN-backed findings said the February 28 U.S. strikes on Minab and Lamerd may constitute war crimes and reiterated that at least 178 civilians were killed in those attacks. Recent AP/CENTCOM reporting also confirms continued low-level maritime fighting near Iran\u2019s coast, and official/Pentagon-linked reporting still places U.S. troop levels around 50,000 in the region, with USS George Washington now the carrier on station in the Arabian Sea."
     },
     {
       "date": "2026-09-17",
