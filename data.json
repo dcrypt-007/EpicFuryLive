@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-09-21T01:06:49Z",
+  "lastUpdated": "2026-09-21T06:22:24Z",
   "dayCount": 205,
   "banner": {
     "strikes": "~3,580",
-    "killed": "18+",
-    "cost": "$50.3B+"
+    "killed": "3,144+",
+    "cost": "$51.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,038",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$50.3 billion+",
-    "dailyBurnRate": "~$245M/day",
+    "totalCost": "$51.9 billion+",
+    "dailyBurnRate": "~$253M/day",
     "daysOfOps": 205,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,14 +73,14 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-09-20",
-          "source": "LLM-verified (AP on Sep. 5, 2026 reported 'an American aircraft carrier and a destroyer' were patrolling in the region.)"
+          "lastUpdated": "2026-09-21",
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, Sept. 14, 2026: USS George Washington and USS George H.W. Bush carrier strike groups operating in Arabian Sea/Middle East support)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 1,
+          "quantity": 4,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-09-20",
-          "source": "LLM-verified (AP on Sep. 5, 2026 reported 'an American aircraft carrier and a destroyer' were patrolling in the region.)"
+          "lastUpdated": "2026-09-21",
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, Sept. 14, 2026: USS Shoup in Arabian Sea; USS Gonzalez and USS Oscar Austin in Red Sea; DDG Delbert D. Black with Bush CSG image/reporting indicates escort presence)"
         },
         {
           "id": "personnel",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 205 days",
-        "cost": "$1,435,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 205 days",
+        "cost": "$2,870,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "$240,000/day \u00d7 205 days",
-        "cost": "$49,200,000"
+        "detail": "4 \u00d7 $240,000/day \u00d7 205 days",
+        "cost": "$196,800,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Sept. 15-18, 2026 that fighting in and around the Strait of Hormuz continues, including US action against Iranian boats and Iranian claims of tanker attacks, underscoring persistent escalation risk in the Gulf shipping lane.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran warned on Sept. 21, 2026 that any resumed US strikes would trigger retaliation 'without limitations,' according to Al Jazeera live coverage cited in the provided headlines.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 21, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported Sept. 19, 2026 that Saudi Arabia issued overnight hostile-aerial-threat alerts, including in Riyadh, amid escalation involving Iran-backed rebels in Yemen.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran told Al Jazeera on Sept. 19, 2026 that it sent conditions to Washington via Qatar to end the war and said a new U.S. strike remains possible.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on Sept. 18, 2026 reported a large Tehran mobilization campaign with hundreds of thousands rallying and officials claiming over 600,000 registered for training.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,11 @@
   ],
   "developments": [
     {
+      "time": "2026-09-21T05:21:41Z",
+      "text": "<strong>Iran\u2019s military says US preparing to resume strikes</strong> -- Tehran threatens retaliation as Trump weighs military action while Qatar pushes to revive talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/21/irans-military-says-us-preparing-to-resume-strikes?traffic_source=rss"
+    },
+    {
       "time": "2026-09-21T00:00:47Z",
       "text": "<strong>Iran war live: Tehran warns US against new strikes; fighting rages in Yemen</strong> -- Tehran says it has learned the US may be planning a new round of strikes, warns of retaliation &amp;#039;without limitations&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/9/21/iran-war-live-tehran-warns-us-against-new-strikes-fighting-rages-in-yemen?traffic_source=rss"
@@ -846,11 +851,6 @@
       "time": "2026-09-20T04:55:33Z",
       "text": "<strong>Tunisian protesters demand release of four Sumud activists</strong> -- The protest comes as the health of one detainee deteriorates after more than a month on hunger strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/20/tunisian-protesters-demand-release-of-four-sumud-activists?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-20T03:40:24Z",
-      "text": "<strong>Morocco\u2019s PJD: what has the party learned ahead of the 2026 election?</strong> -- After its 2021 defeat, the party with an Islamic reference is rebuilding under Abdelilah Benkirane. Can it regain trust? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/20/moroccos-pjd-what-has-the-party-learned-from-its-dramatic-fall?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,14 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran\u2019s military says US preparing to resume strikes",
+      "description": "Tehran threatens retaliation as Trump weighs military action while Qatar pushes to revive talks.",
+      "link": "https://www.aljazeera.com/news/2026/9/21/irans-military-says-us-preparing-to-resume-strikes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-21T05:21:41Z",
+      "tier": 2
+    },
+    {
       "title": "Iran war live: Tehran warns US against new strikes; fighting rages in Yemen",
       "description": "Tehran says it has learned the US may be planning a new round of strikes, warns of retaliation &#039;without limitations&#039;.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/9/21/iran-war-live-tehran-warns-us-against-new-strikes-fighting-rages-in-yemen?traffic_source=rss",
@@ -1293,12 +1301,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed accessible reporting today indicates the war remains active and costly but many cumulative battlefield totals are not publicly available in verifiable form. The strongest newly confirmed hard figure found was from AP on September 18, 2026, citing Pentagon casualty records and a CENTCOM estimate showing 18 U.S. troops killed and more than 830 wounded as of early September. User-provided current headlines indicate Iran is warning of unrestricted retaliation if the U.S. launches new strikes, Qatar is trying to revive Iran-U.S. talks, and the Yemen front remains active with Houthi missile threats toward Saudi Arabia.",
+  "summary": "Confirmed reporting as of September 21, 2026 shows no authoritative update beyond the previously cited official casualty baselines for several core war metrics: Iran\u2019s government toll remains 3,038 killed and 25,000 wounded as referenced by the UN fact-finding mission, the Pentagon-linked US military death toll remains 18, and Al Jazeera\u2019s late-August compiled official figures still list 60 Israeli deaths, 28 Gulf-state deaths, and at least 3,580 US-Israeli attacks on Iran. AP and USNI reporting this past week indicate the conflict remains active around the Strait of Hormuz, with two US carrier strike groups and multiple destroyers in theater, while diplomacy remains stalled and Tehran is publicly warning it will retaliate if Washington resumes major strikes.",
   "briefings": [
     {
       "date": "2026-09-21",
       "day": 205,
-      "summary": "Confirmed accessible reporting today indicates the war remains active and costly but many cumulative battlefield totals are not publicly available in verifiable form. The strongest newly confirmed hard figure found was from AP on September 18, 2026, citing Pentagon casualty records and a CENTCOM estimate showing 18 U.S. troops killed and more than 830 wounded as of early September. User-provided current headlines indicate Iran is warning of unrestricted retaliation if the U.S. launches new strikes, Qatar is trying to revive Iran-U.S. talks, and the Yemen front remains active with Houthi missile threats toward Saudi Arabia."
+      "summary": "Confirmed reporting as of September 21, 2026 shows no authoritative update beyond the previously cited official casualty baselines for several core war metrics: Iran\u2019s government toll remains 3,038 killed and 25,000 wounded as referenced by the UN fact-finding mission, the Pentagon-linked US military death toll remains 18, and Al Jazeera\u2019s late-August compiled official figures still list 60 Israeli deaths, 28 Gulf-state deaths, and at least 3,580 US-Israeli attacks on Iran. AP and USNI reporting this past week indicate the conflict remains active around the Strait of Hormuz, with two US carrier strike groups and multiple destroyers in theater, while diplomacy remains stalled and Tehran is publicly warning it will retaliate if Washington resumes major strikes."
     },
     {
       "date": "2026-09-20",
