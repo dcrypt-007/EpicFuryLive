@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-09-23T11:38:34Z",
+  "lastUpdated": "2026-09-23T17:00:38Z",
   "dayCount": 207,
   "banner": {
     "strikes": "~3,580",
     "killed": "3,633+",
-    "cost": "$52.7B+"
+    "cost": "$56.4B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,038",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -15,7 +15,7 @@
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$52.7 billion+",
-    "dailyBurnRate": "~$255M/day",
+    "totalCost": "$56.4 billion+",
+    "dailyBurnRate": "~$272M/day",
     "daysOfOps": 207,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 1000,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-09-20",
-          "source": "LLM-verified (AP/CSIS reporting on May 27, 2026 said the U.S. fired 1,000-plus Tomahawk missiles at Iran)"
+          "lastUpdated": "2026-09-23",
+          "source": "LLM-verified (Navy Times, Mar. 27, 2026, citing Reuters/Washington Post reporting that the US had fired over 850 Tomahawks in the first four weeks; no newer confirmed cumulative total found)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,14 +279,14 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-09-22",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, March 23, 2026: 'Combat Flights: 9,000+'; this is the latest official sortie-style cumulative figure located, but it is not specific to fighters only)"
+          "lastUpdated": "2026-09-23",
+          "source": "LLM-verified (IDF page updated Sep. 7, 2026 reports more than 800 Israeli Air Force strike sorties during the first month of Operation Roaring Lion; no newer confirmed cumulative combined fighter-sortie total found)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 290,
+          "quantity": 1500,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-09-20",
-          "source": "LLM-verified (AP/CSIS reporting on May 27, 2026 said as many as 290 THAAD interceptors were used against incoming Iranian drones and missiles)"
+          "lastUpdated": "2026-09-23",
+          "source": "LLM-verified (AP, Aug. 27, 2026, citing CSIS analysis that about 65% of the US Patriot inventory, roughly 1,500 interceptors, had been used because of the Iran war; this is Patriot-only, not full SM-3/THAAD/Patriot combined)"
         },
         {
           "id": "prestrike_buildup",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "1,000 \u00d7 $2,000,000 each",
-        "cost": "$2,000,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "290 \u00d7 $4,000,000 each",
-        "cost": "$1,160,000,000"
+        "detail": "1,500 \u00d7 $4,000,000 each",
+        "cost": "$6,000,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "US and allied interceptor shortages remain a significant operational risk, especially for Patriot systems.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Intermittent fighting resumed in late August and early September, including renewed US strikes and Iranian retaliation around the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 23, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iranian officials warned this week at the UN and through the IRGC that the war is not over and that US escalation could widen the conflict.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 23, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera headline reported the US is threatening to ground Iranian airlines worldwide starting Wednesday via sanctions pressure on airports and service companies.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on September 21, 2026 reported an unknown projectile struck a tanker entering the Strait of Hormuz, injuring two crew members.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on September 21, 2026 reported Iran\u2019s Revolutionary Guard warned it would \"change the geography of the war\" if the US escalates.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 21, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Sept. 15-18, 2026 that fighting in and around the Strait of Hormuz continues, including US action against Iranian boats and Iranian claims of tanker attacks, underscoring persistent escalation risk in the Gulf shipping lane.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-09-23T16:34:47Z",
+      "text": "<strong>US envoy walks out on Pezeshkian UN speech slamming war on Iran</strong> -- As Iran\u2019s president began his speech at the UN General Assembly, an official from the US delegation walked out. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/us-envoy-walks-out-on-pezeshkian-un-speech-slamming-war-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T16:29:55Z",
+      "text": "<strong>Scientists warn super El Nino could cause 450,000 deaths: Should we worry?</strong> -- Global South countries will be worst affected by the phenomenon sweeping the planet from June to February. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/9/23/scientists-warn-super-el-nino-could-cause-450000-deaths-should-we-worry?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T16:21:18Z",
+      "text": "<strong>Yemeni government in military and diplomatic push to reverse Houthi gains</strong> -- Government claims battlefield advances as diplomats attempt to put anti-Houthi fight at UN centre stage. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/23/yemeni-government-in-military-and-diplomatic-push-to-reverse-houthi-gains?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T15:49:59Z",
+      "text": "<strong>\u2018They kill, we are punished\u2019: Iran calls out Western hypocrisy</strong> -- Iranian President Masoud Pezeshkian has accused Israel and the US of applying \u2018double standards\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/they-kill-we-are-punished-iran-calls-out-western-hypocrisy?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T15:24:13Z",
+      "text": "<strong>Iran: Strait of Hormuz won\u2019t be used to \u2018impose insecurity on us\u2019</strong> -- Iranian President Masoud Pezeshkian told the UN General Assembly that \u2018warfare knows no borders\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/iran-strait-of-hormuz-wont-be-used-to-impose-insecurity-on?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T14:49:04Z",
+      "text": "<strong>Trump pushes Russia-Ukraine \u2018energy truce\u2019: Can it work?</strong> -- Talks of a possible halt in attacks on energy facilities come as strikes on such targets continue unabated. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/23/trump-pushes-russia-ukraine-energy-truce-can-it-work?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T13:57:50Z",
+      "text": "<strong>How much is UK supporting Saudi Arabia in its war with Iran-backed Houthis?</strong> -- UK to refuel Saudi fighter jets and France to secure energy infrastructure amid fighting with Yemen&amp;#039;s Houthi group. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/23/how-much-is-uk-supporting-saudi-arabia-in-its-war-with-iran-backed-houthis?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T13:52:27Z",
+      "text": "<strong>Can flurry of New York diplomacy lead to US-Iran diplomatic breakthrough?</strong> -- Analysts say a deal this week is unlikely - core disagreements between Washington and Tehran remain unresolved. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/23/flurry-of-diplomacy-trumps-fiery-threats-us-iran-war-deal-still-elusive?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T13:23:25Z",
+      "text": "<strong>Priests Against Genocide hold shroud with names of children killed in Gaza</strong> -- Priests Against Genocide hold shroud with names of 300 children killed in &amp;#039;ceasefires&amp;#039; in Gaza, the occupied West Bank <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/priests-against-genocide-hold-shroud-with-names-of-children-killed-in-gaza?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-23T15:58:13Z",
+      "text": "<strong>Iran&#x27;s president tells Trump it will never &#x27;bend the knee&#x27;</strong> -- Masoud Pezeshkian&#x27;s defiant speech to the UN comes after the US president threatened to &quot;annihilate&quot; Iran if a peace deal is not agreed soon. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-09-23T11:03:35Z",
       "text": "<strong>Qatar on mediation efforts: \u2018We can\u2019t let diplomacy fail\u2019</strong> -- Qatar\u2019s Majed al-Ansari says Doha is determined to make diplomacy work to end the US-Iran conflict. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/qatar-on-mediation-efforts-we-cant-let-diplomacy?traffic_source=rss"
@@ -801,56 +851,6 @@
       "time": "2026-09-22T20:59:00Z",
       "text": "<strong>How Ceuta, football and Israel are shaping Morocco&#x27;s election</strong> -- Young voters are being courted with football slogans, promises of jobs and anti-Israel rallying calls. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c8r4v7n6py97o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-23T02:50:36Z",
-      "text": "<strong>Wall Street\u2019s Nasdaq hits all-time high as AI frenzy gathers pace</strong> -- Investors shrug off AI safety concerns and Iran war, sending market to a new peak. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/9/23/wall-streets-nasdaq-hits-all-time-high-as-ai-frenzy-gathers-pace?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-23T01:20:39Z",
-      "text": "<strong>Zelenskyy says Ukraine ready for energy truce with Russia after Trump talks</strong> -- Ukraine leader says Kyiv is ready to stop strikes on Russian facilities if Moscow halts attacks on its energy system. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/23/zelenskyy-says-ukraine-ready-for-energy-truce-with-russia-after-trump-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-23T01:11:06Z",
-      "text": "<strong>Iranian President Masoud Pezeshkian arrives in New York for UNGA</strong> -- Iranian President Masoud Pezeshkian has arrived in New York as the US-Iran war continues. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/iranian-president-masoud-pezeshkian-arrives-in-new-york-for-unga?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-23T00:00:00Z",
-      "text": "<strong>Iran war live: Trump confirms \u2018very good\u2019 meeting with Iran at UN</strong> -- President Trump says US officials held a &amp;#039;very good&amp;#039; meeting on Tuesday with the Iranian delegation at UN. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/9/23/iran-war-live-trump-confirms-very-good-meeting-with-iran-at-un?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-22T23:46:06Z",
-      "text": "<strong>Iran cancels Baghdad, Muscat flights as US aviation sanctions take effect</strong> -- Iran official says Baghdad and Muscat airports will not accept Iranian flights from midnight on Wednesday. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/22/iran-flights-to-baghdad-muscat-cancelled-ahead-of-us-aviation-sanctions?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-22T22:48:56Z",
-      "text": "<strong>UNGA Day 1: US and Iran hold talks despite Trump\u2019s threat</strong> -- The US and Iran hold talks on UNGA\u2019s first day, despite Trump threatening to \u2018annihilate\u2019 Iran in his opening address. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/22/unga-day-1-us-and-iran-hold-talks-despite-trumps-threat?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-22T20:27:45Z",
-      "text": "<strong>Saudi Arabia\u2019s King Salman slams targeting of Mecca by \u2018terrorist\u2019 Houthis</strong> -- Saudi monarch&amp;#039;s rare condemnation hints at sense of urgency in the kingdom amid ramped-up attacks from Yemen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/22/saudi-king-slams-heinous-targeting-of-mecca-by-terrorist-houthis?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-23T02:57:00Z",
-      "text": "<strong>Trump threatens to &#x27;annihilate&#x27; Iran in UN speech as officials from both countries meet on sidelines</strong> -- In his address, the US president pondered whether a peace deal would be agreed or whether he would have to take extreme action against Iran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-09-22T20:23:48Z",
-      "text": "<strong>Trump: US-Iran meeting at UN was \u2018very good\u2019</strong> -- US President Donald Trump says he had a \u2018very good\u2019 three-hour meeting with Iranian officials at the UN. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-us-iran-meeting-at-un-was-very?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-22T18:48:37Z",
-      "text": "<strong>Qatar\u2019s emir urges diplomacy as Gulf at \u2018one of the most dangerous phases\u2019</strong> -- Sheikh Tamim says years of delayed diplomacy led to the US-Israel war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/22/qatars-emir-urges-diplomacy-as-gulf-at-one-of-the-most-dangerous?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,43 +1213,59 @@
   ],
   "newsFeed": [
     {
-      "title": "Qatar on mediation efforts: \u2018We can\u2019t let diplomacy fail\u2019",
-      "description": "Qatar\u2019s Majed al-Ansari says Doha is determined to make diplomacy work to end the US-Iran conflict.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/qatar-on-mediation-efforts-we-cant-let-diplomacy?traffic_source=rss",
+      "title": "US envoy walks out on Pezeshkian UN speech slamming war on Iran",
+      "description": "As Iran\u2019s president began his speech at the UN General Assembly, an official from the US delegation walked out.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/us-envoy-walks-out-on-pezeshkian-un-speech-slamming-war-on-iran?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-23T11:03:35Z",
+      "time": "2026-09-23T16:34:47Z",
       "tier": 2
     },
     {
-      "title": "Powerful El Nino could cause more than 450,000 deaths, scientists say",
-      "description": "Heaviest toll expected in poorer countries, already struggling with food insecurity and high energy costs, report says.",
-      "link": "https://www.aljazeera.com/news/2026/9/23/powerful-el-nino-could-cause-450000-deaths-scientists-say?traffic_source=rss",
+      "title": "Scientists warn super El Nino could cause 450,000 deaths: Should we worry?",
+      "description": "Global South countries will be worst affected by the phenomenon sweeping the planet from June to February.",
+      "link": "https://www.aljazeera.com/features/2026/9/23/scientists-warn-super-el-nino-could-cause-450000-deaths-should-we-worry?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-23T10:44:52Z",
+      "time": "2026-09-23T16:29:55Z",
       "tier": 2
     },
     {
-      "title": "Yemen government forces claim control of Mount Qarfan in Taiz",
-      "description": "Major General Abdulaziz al-Majidi says five Houthi fighters killed and 20 wounded after &#039;fierce battles&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/9/23/yemen-government-forces-claim-control-of-mount-qarfan-in-taiz?traffic_source=rss",
+      "title": "Yemeni government in military and diplomatic push to reverse Houthi gains",
+      "description": "Government claims battlefield advances as diplomats attempt to put anti-Houthi fight at UN centre stage.",
+      "link": "https://www.aljazeera.com/news/2026/9/23/yemeni-government-in-military-and-diplomatic-push-to-reverse-houthi-gains?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-23T10:15:37Z",
+      "time": "2026-09-23T16:21:18Z",
       "tier": 2
     },
     {
-      "title": "\u2018Annihilate\u2019 vs \u2018crushing\u2019 attacks: Why Iran, US up rhetoric amid talks",
-      "description": "Trump threatens to &#039;annihilate&#039; Iran and then brags about diplomacy, provoking Tehran to warn of a response.",
-      "link": "https://www.aljazeera.com/news/2026/9/23/annihilate-vs-crushing-attacks-why-iran-us-up-rhetoric-amid-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-23T09:40:20Z",
+      "title": "Iran's president tells Trump it will never 'bend the knee'",
+      "description": "Masoud Pezeshkian's defiant speech to the UN comes after the US president threatened to \"annihilate\" Iran if a peace deal is not agreed soon.",
+      "link": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-23T15:58:13Z",
       "tier": 2
     },
     {
-      "title": "At least 11 people killed in South Africa township shooting",
-      "description": "Armed men open fire at a house party in a Durban township, killing a pregnant woman and 10 others.",
-      "link": "https://www.aljazeera.com/news/2026/9/23/at-least-11-people-killed-in-south-africa-township-shooting?traffic_source=rss",
+      "title": "\u2018They kill, we are punished\u2019: Iran calls out Western hypocrisy",
+      "description": "Iranian President Masoud Pezeshkian has accused Israel and the US of applying \u2018double standards\u2019.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/they-kill-we-are-punished-iran-calls-out-western-hypocrisy?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-23T07:31:58Z",
+      "time": "2026-09-23T15:49:59Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran: Strait of Hormuz won\u2019t be used to \u2018impose insecurity on us\u2019",
+      "description": "Iranian President Masoud Pezeshkian told the UN General Assembly that \u2018warfare knows no borders\u2019.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/iran-strait-of-hormuz-wont-be-used-to-impose-insecurity-on?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-23T15:24:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump pushes Russia-Ukraine \u2018energy truce\u2019: Can it work?",
+      "description": "Talks of a possible halt in attacks on energy facilities come as strikes on such targets continue unabated.",
+      "link": "https://www.aljazeera.com/news/2026/9/23/trump-pushes-russia-ukraine-energy-truce-can-it-work?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-23T14:49:04Z",
       "tier": 2
     },
     {
@@ -1257,31 +1273,31 @@
       "description": "One of those killed is believed to be a pregnant woman, police said.",
       "link": "https://www.bbc.co.uk/news/articles/crgjqxzl097eo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-09-23T07:02:52Z",
+      "time": "2026-09-23T14:02:55Z",
       "tier": 2
     },
     {
-      "title": "US and Iran hold first talks since June after Trump's 'annihilation' threat",
-      "description": "The talks are the first since a ceasefire collapsed in June, with the sides exchanging fire intermittently.",
-      "link": "https://www.bbc.co.uk/news/articles/ck62m1631d7po?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-23T06:12:56Z",
-      "tier": 2
-    },
-    {
-      "title": "US, Iran hold mediated UNGA talks on ending war, opening Strait of Hormuz",
-      "description": "Tehran ties diplomatic progress to lifting shipping blockades and unfreezing assets during New York negotiations.",
-      "link": "https://www.aljazeera.com/news/2026/9/23/us-iran-hold-mediated-unga-talks-on-ending-war-opening-strait-of-hormuz?traffic_source=rss",
+      "title": "How much is UK supporting Saudi Arabia in its war with Iran-backed Houthis?",
+      "description": "UK to refuel Saudi fighter jets and France to secure energy infrastructure amid fighting with Yemen&#039;s Houthi group.",
+      "link": "https://www.aljazeera.com/news/2026/9/23/how-much-is-uk-supporting-saudi-arabia-in-its-war-with-iran-backed-houthis?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-23T04:42:15Z",
+      "time": "2026-09-23T13:57:50Z",
       "tier": 2
     },
     {
-      "title": "Sri Lanka convicts 15 people over 2019 Easter Day bombings",
-      "description": "Fifteen people have been convicted over Sri Lanka\u2019s 2019 Easter Sunday bombings, which killed 279 people.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/sri-lanka-convicts-15-people-over-2019-easter-day-bombings?traffic_source=rss",
+      "title": "Can flurry of New York diplomacy lead to US-Iran diplomatic breakthrough?",
+      "description": "Analysts say a deal this week is unlikely - core disagreements between Washington and Tehran remain unresolved.",
+      "link": "https://www.aljazeera.com/news/2026/9/23/flurry-of-diplomacy-trumps-fiery-threats-us-iran-war-deal-still-elusive?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-09-23T04:08:17Z",
+      "time": "2026-09-23T13:52:27Z",
+      "tier": 2
+    },
+    {
+      "title": "Priests Against Genocide hold shroud with names of children killed in Gaza",
+      "description": "Priests Against Genocide hold shroud with names of 300 children killed in &#039;ceasefires&#039; in Gaza, the occupied West Bank",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/priests-against-genocide-hold-shroud-with-names-of-children-killed-in-gaza?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-23T13:23:25Z",
       "tier": 2
     },
     {
@@ -1293,14 +1309,6 @@
       "tier": 2
     },
     {
-      "title": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
-      "description": "Three churches and three luxury hotels were targeted in the 2019 attacks which killed 270.",
-      "link": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-22T19:47:44Z",
-      "tier": 2
-    },
-    {
       "title": "Neutral venues and no 'away' fans - how Israel v Republic of Ireland became so contentious",
       "description": "BBC Sport explores the backdrop to the Republic of Ireland's matches against Israel, amid fraught tensions between the nations.",
       "link": "https://www.bbc.co.uk/sport/football/articles/ckz7z5w7ey2jo?at_medium=RSS&at_campaign=rss",
@@ -1309,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting as of September 23, 2026 shows the war remains active but diplomacy has resumed: Al Jazeera reported mediated US-Iran talks at the UN General Assembly on ending the conflict and reopening the Strait of Hormuz, while AP reported Iran\u2019s Revolutionary Guard warning that further US escalation could broaden the conflict. The most recent confirmed casualty baselines I could verify remain 3,527 killed in Iran, 18 US military dead, 60 Israelis dead, and 28 killed in Gulf states; AP also reported the Pentagon now tallies more than 830 wounded US personnel, while earlier Iran Ministry of Health figures cited by Al Jazeera put Iranian wounded at more than 26,500. For force posture, AP confirmed two US carriers are currently in the theater: USS George Washington and USS George H.W. Bush.",
+  "summary": "Confirmed reporting as of September 23, 2026 shows the war remains active but intermittent. AP reported on September 18 that the Pentagon\u2019s tally for the conflict stood at 18 US dead and more than 830 wounded, while the latest publicly cited Iranian government toll, relayed by Al Jazeera from the UN fact-finding mission on September 17, was 3,038 killed and 25,000 injured. This week\u2019s reporting also points to continued escalation risks around the UN General Assembly and the Strait of Hormuz, with Iranian officials warning the conflict could expand and AP highlighting persistent pressure on US missile-interceptor stockpiles.",
   "briefings": [
     {
       "date": "2026-09-23",
       "day": 207,
-      "summary": "Confirmed reporting as of September 23, 2026 shows the war remains active but diplomacy has resumed: Al Jazeera reported mediated US-Iran talks at the UN General Assembly on ending the conflict and reopening the Strait of Hormuz, while AP reported Iran\u2019s Revolutionary Guard warning that further US escalation could broaden the conflict. The most recent confirmed casualty baselines I could verify remain 3,527 killed in Iran, 18 US military dead, 60 Israelis dead, and 28 killed in Gulf states; AP also reported the Pentagon now tallies more than 830 wounded US personnel, while earlier Iran Ministry of Health figures cited by Al Jazeera put Iranian wounded at more than 26,500. For force posture, AP confirmed two US carriers are currently in the theater: USS George Washington and USS George H.W. Bush."
+      "summary": "Confirmed reporting as of September 23, 2026 shows the war remains active but intermittent. AP reported on September 18 that the Pentagon\u2019s tally for the conflict stood at 18 US dead and more than 830 wounded, while the latest publicly cited Iranian government toll, relayed by Al Jazeera from the UN fact-finding mission on September 17, was 3,038 killed and 25,000 injured. This week\u2019s reporting also points to continued escalation risks around the UN General Assembly and the Strait of Hormuz, with Iranian officials warning the conflict could expand and AP highlighting persistent pressure on US missile-interceptor stockpiles."
     },
     {
       "date": "2026-09-22",
