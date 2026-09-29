@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-09-29T15:52:58Z",
+  "lastUpdated": "2026-09-29T20:47:48Z",
   "dayCount": 213,
   "banner": {
-    "strikes": "~10,800",
-    "killed": "3,052+",
-    "cost": "$56.4B+"
+    "strikes": "~3,580",
+    "killed": "3,633+",
+    "cost": "$58.4B+"
   },
   "humanCost": {
-    "iranDeaths": "3,038",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "14",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "21",
+    "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$56.4 billion+",
-    "dailyBurnRate": "~$265M/day",
+    "totalCost": "$58.4 billion+",
+    "dailyBurnRate": "~$274M/day",
     "daysOfOps": 213,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-09-29",
-          "source": "LLM-verified (AP reporting in early September 2026 and CENTCOM Sept. 5 release refer to a single U.S. aircraft carrier operating in the region during renewed fighting; USS Abraham Lincoln was the carrier on station.)"
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, Sept. 28, 2026: USS George Washington and USS George H.W. Bush operating in Arabian Sea in support of U.S. operations against Iran)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 1,
+          "quantity": 10,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-09-29",
-          "source": "LLM-verified (CENTCOM Sept. 5, 2026 public release said a U.S. aircraft carrier and guided-missile destroyer were operating together when attacked.)"
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, Sept. 28, 2026: USS Shoup, Donald Cook, Ross, Delbert D. Black, Milius, Mason, Higgins, John Paul Jones, Rafael Peralta, Michael Murphy in Arabian Sea region supporting Middle East ops)"
         },
         {
           "id": "personnel",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 213 days",
-        "cost": "$1,491,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 213 days",
+        "cost": "$2,982,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "$240,000/day \u00d7 213 days",
-        "cost": "$51,120,000"
+        "detail": "10 \u00d7 $240,000/day \u00d7 213 days",
+        "cost": "$511,200,000"
       },
       {
         "category": "Deployed Personnel",
@@ -435,6 +435,42 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Sep 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "USNI on Sept. 28 shows two U.S. carrier strike groups remain in the Arabian Sea supporting operations against Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera reporting this week indicate indirect U.S.-Iran diplomacy in New York continues, but no ceasefire breakthrough is confirmed.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Sept. 29 reported the U.S. sanctioned 10 individuals/entities tied to Iran's military supply chain as economic pressure continues.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Sep 29, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Sept. 29 reported Iran's IRGC publicly urged Americans to rally against Trump ahead of U.S. midterms.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Sep 29, 2026",
       "severity": "high",
@@ -623,42 +659,6 @@
       "text": "Al Jazeera and BBC reported on September 26-27, 2026 that President Trump rejected Iran's seven-day proposal tied to reopening the Strait of Hormuz.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Strait of Hormuz tensions remain elevated amid failed deal efforts and fears of renewed fighting, according to Al Jazeera headline reporting on September 27, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iranian Foreign Minister Abbas Araghchi said Iran is prepared for war to resume, including a 'doomsday war' scenario, according to Al Jazeera/BBC headline reporting on September 27, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Trump told the UN he is weighing a major decision on whether to pursue a deal or intensify the war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Sep 27, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "President Trump publicly rejected Iran's latest Hormuz proposal on September 26, 2026, keeping risk of renewed escalation high.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-09-29T17:51:11Z",
+      "text": "<strong>Trump administration \u2018must be changed\u2019: Iran\u2019s IRGC appeals to US voters</strong> -- Iran&amp;#039;s military has issued an open letter accusing Trump of lying to US citizens about the state of the ongoing war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/29/trump-administration-must-be-changed-irans-irgc-appeals-to-us-voters?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-29T16:57:59Z",
+      "text": "<strong>Mourners in Gaza bury remains of loved ones killed in 2023 Israeli strike</strong> -- Dozens of mourners in Gaza grieve the loss of their loved ones as they bury the fragmented remains of relatives killed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/29/mourners-in-gaza-bury-remains-of-loved-ones-killed-in-2023-israeli-strike?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-29T16:03:39Z",
+      "text": "<strong>Russian Tu-95 nuclear-capable bomber plane crashes, killing six people</strong> -- Tu-95 plane crashed during training flight in uninhabited area of Amur region, Defence Ministry says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/9/29/russian-nuclear-capable-bomber-plane-crashes-killing-six-people?traffic_source=rss"
+    },
+    {
       "time": "2026-09-29T15:09:53Z",
       "text": "<strong>US-Iran talks in New York: What\u2019s the latest?</strong> -- Both sides remain interested in a diplomatic settlement but differ on how to achieve one. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/29/us-iran-talks-in-new-york-whats-the-latest?traffic_source=rss"
@@ -764,8 +779,18 @@
     },
     {
       "time": "2026-09-29T14:51:43Z",
-      "text": "<strong>Photos: French students protest, public workers strike before budget cuts</strong> -- About 40 people have been arrested and 10 injured as protesting students clash with police. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Photos: French students protest, public workers strike before budget cuts</strong> -- More than 400 people have been arrested as protesting students clash with police. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/gallery/2026/9/29/photos-french-studentspublic-workers-protest-macrons-planned-budget-cuts?traffic_source=rss"
+    },
+    {
+      "time": "2026-09-29T12:39:18Z",
+      "text": "<strong>Israeli settlers attack West Bank village and block Palestinian family&#x27;s return home</strong> -- Two homes belonging to the al-Tubasi family were set on fire and Israeli security forces were also targeted by settlers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cvlylj41egxgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-09-29T20:42:10Z",
+      "text": "<strong>Former American Idol contestant and pastor found guilty of murdering wife</strong> -- Caleb Flynn shot his wife, Ashley, dead in their Ohio home in February before saying in a 911 call she was killed by burglars. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5rm9gv7n07xo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-29T13:22:28Z",
@@ -786,11 +811,6 @@
       "time": "2026-09-29T12:00:00Z",
       "text": "<strong>Hormuz and Yemen: Iran offers de-escalation at a price others will pay</strong> -- Iran is using Hormuz to seek US concessions, relief for the Houthis and greater control over Gulf shipping. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/opinions/2026/9/29/hormuz-and-yemen-iran-offers-de-escalation-at-a-price-others-will-pay?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-29T12:39:18Z",
-      "text": "<strong>Israeli settlers attack West Bank village and block Palestinian family&#x27;s return home</strong> -- Two homes belonging to the al-Tubasi family were set on fire and Israeli security forces were also targeted by settlers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cvlylj41egxgo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-09-28T17:26:21Z",
@@ -831,26 +851,6 @@
       "time": "2026-09-29T04:46:38Z",
       "text": "<strong>Rubio, Saudi Arabia\u2019s foreign minister hold talks on Yemen, Hormuz Strait</strong> -- Top US and Saudi diplomats discuss cooperation on security challenges, including hostilities with Yemen&amp;#039;s Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/9/29/rubio-saudi-arabias-foreign-minister-hold-talks-on-yemen-hormuz-strait?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-29T03:38:16Z",
-      "text": "<strong>Russia pounds Ukraine\u2019s Kyiv after deadly strike on Academy of Sciences</strong> -- Footage of attack on Academy shows people leaning out of windows as bright flames engulf part of the historic building. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/29/russian-strike-hits-ukraines-academy-of-sciences-in-kyiv-killing-2?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-29T02:36:25Z",
-      "text": "<strong>Iran\u2019s Araghchi meets Qatari mediators as US calls for nuclear talks</strong> -- Tehran awaits reply on Hormuz plan as a US official says there will be no deal unless nuclear issues are addressed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/29/irans-araghchi-meets-qatari-mediators-as-us-insists-on-nuclear-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-29T00:00:00Z",
-      "text": "<strong>Iran war live: Trump says he did not offer Tehran sanctions relief</strong> -- US President Trump rejects a news report claiming his administration offered Iran sanctions relief and frozen funds. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/9/29/iran-war-live-trump-says-he-did-not-offer-tehran-sanctions-relief?traffic_source=rss"
-    },
-    {
-      "time": "2026-09-28T19:31:27Z",
-      "text": "<strong>Myanmar army air strike kills dozens in Rakhine state</strong> -- Nearly half a million people are displaced in Rakhine as a result of the conflict between the military and rebel groups. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/9/28/myanmar-army-air-strike-kills-dozens-in-rakhine-state?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Former American Idol contestant and pastor found guilty of murdering wife",
+      "description": "Caleb Flynn shot his wife, Ashley, dead in their Ohio home in February before saying in a 911 call she was killed by burglars.",
+      "link": "https://www.bbc.co.uk/news/articles/c5rm9gv7n07xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-09-29T20:42:10Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump administration \u2018must be changed\u2019: Iran\u2019s IRGC appeals to US voters",
+      "description": "Iran&#039;s military has issued an open letter accusing Trump of lying to US citizens about the state of the ongoing war.",
+      "link": "https://www.aljazeera.com/news/2026/9/29/trump-administration-must-be-changed-irans-irgc-appeals-to-us-voters?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-29T17:51:11Z",
+      "tier": 2
+    },
+    {
+      "title": "Mourners in Gaza bury remains of loved ones killed in 2023 Israeli strike",
+      "description": "Dozens of mourners in Gaza grieve the loss of their loved ones as they bury the fragmented remains of relatives killed.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/29/mourners-in-gaza-bury-remains-of-loved-ones-killed-in-2023-israeli-strike?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-29T16:57:59Z",
+      "tier": 2
+    },
+    {
+      "title": "Russian Tu-95 nuclear-capable bomber plane crashes, killing six people",
+      "description": "Tu-95 plane crashed during training flight in uninhabited area of Amur region, Defence Ministry says.",
+      "link": "https://www.aljazeera.com/news/2026/9/29/russian-nuclear-capable-bomber-plane-crashes-killing-six-people?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-09-29T16:03:39Z",
+      "tier": 2
+    },
+    {
       "title": "US-Iran talks in New York: What\u2019s the latest?",
       "description": "Both sides remain interested in a diplomatic settlement but differ on how to achieve one.",
       "link": "https://www.aljazeera.com/news/2026/9/29/us-iran-talks-in-new-york-whats-the-latest?traffic_source=rss",
@@ -1230,26 +1262,10 @@
     },
     {
       "title": "Photos: French students protest, public workers strike before budget cuts",
-      "description": "About 40 people have been arrested and 10 injured as protesting students clash with police.",
+      "description": "More than 400 people have been arrested as protesting students clash with police.",
       "link": "https://www.aljazeera.com/gallery/2026/9/29/photos-french-studentspublic-workers-protest-macrons-planned-budget-cuts?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-09-29T14:51:43Z",
-      "tier": 2
-    },
-    {
-      "title": "Are Houthis using new modified cruise missiles in Yemen\u2019s war?",
-      "description": "Experts say use of modified Iranian defence system could alter the balance in the fight for the Red Sea.",
-      "link": "https://www.aljazeera.com/features/2026/9/29/are-houthis-using-new-modified-cruise-missiles-in-yemens-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-29T13:22:28Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran downplays possible role in Houthis\u2019 recent Yemen victories",
-      "description": "Iran has long been accused of links with the Houthis in Yemen, but how far do these links go?",
-      "link": "https://www.aljazeera.com/news-analysis/2026/9/29/iran-downplays-their-possible-role-in-houthis-recent-yemen-victories?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-29T13:20:34Z",
       "tier": 2
     },
     {
@@ -1259,38 +1275,14 @@
       "source": "BBC World",
       "time": "2026-09-29T12:39:18Z",
       "tier": 2
-    },
-    {
-      "title": "Iranians stock up on food and medicine as fears of new US fighting grow",
-      "description": "Iran is struggling with shortages as sanctions and blockade strain food and medicine supply chains.",
-      "link": "https://www.aljazeera.com/economy/2026/9/29/iranians-stock-up-on-food-and-medicine-as-fears-of-new-us-fighting-grow?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-29T12:32:10Z",
-      "tier": 2
-    },
-    {
-      "title": "Hormuz and Yemen: Iran offers de-escalation at a price others will pay",
-      "description": "Iran is using Hormuz to seek US concessions, relief for the Houthis and greater control over Gulf shipping.",
-      "link": "https://www.aljazeera.com/opinions/2026/9/29/hormuz-and-yemen-iran-offers-de-escalation-at-a-price-others-will-pay?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-09-29T12:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Twelve women have been killed in one part of South Africa since July. Here's what we know so far",
-      "description": "South African President Cyril Ramaphosa says the murders are a \"stain on our national conscience\".",
-      "link": "https://www.bbc.co.uk/news/articles/c6m27dprvzv7o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-09-28T17:26:21Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on September 29, 2026 indicates the war remains in a tense diplomatic phase rather than a settled ceasefire: AP and Al Jazeera report that U.S. and Iranian officials held mediated talks in New York during UNGA week, but key gaps remain and Trump rejected Iran\u2019s proposal to reopen the Strait of Hormuz within seven days. For casualties, the most current clearly attributable official Iranian government toll publicly cited in recent reporting remains 3,038 killed and 25,000 injured, while the Pentagon\u2019s official Iran war death tally remains 14 because four later U.S. deaths were reclassified into a separate 'Overseas Operations' bucket after Operation Epic Fury was deemed concluded. Recent CENTCOM and AP reporting also indicate at least one U.S. carrier and one guided-missile destroyer are still operating in the theater during renewed maritime clashes.",
+  "summary": "Confirmed reporting on September 29, 2026 shows the war remains active but increasingly centered on pressure and diplomacy: AP reported new U.S. sanctions on 10 people and entities tied to Iran\u2019s defense supply chain while Iran\u2019s IRGC appealed directly to U.S. voters, and Al Jazeera reported continued indirect talks in New York without a confirmed breakthrough. The latest accessible cumulative figures I found put Iranian deaths at 3,527, U.S. military dead at 18, Israeli deaths at 60, Gulf-state deaths at 28, and at least 3,580 U.S.-Israeli attacks on Iran; USNI\u2019s Sept. 28 fleet tracker also shows two U.S. carrier strike groups and multiple destroyers still operating in the Arabian Sea in support of operations against Iran.",
   "briefings": [
     {
       "date": "2026-09-29",
       "day": 213,
-      "summary": "Confirmed reporting on September 29, 2026 indicates the war remains in a tense diplomatic phase rather than a settled ceasefire: AP and Al Jazeera report that U.S. and Iranian officials held mediated talks in New York during UNGA week, but key gaps remain and Trump rejected Iran\u2019s proposal to reopen the Strait of Hormuz within seven days. For casualties, the most current clearly attributable official Iranian government toll publicly cited in recent reporting remains 3,038 killed and 25,000 injured, while the Pentagon\u2019s official Iran war death tally remains 14 because four later U.S. deaths were reclassified into a separate 'Overseas Operations' bucket after Operation Epic Fury was deemed concluded. Recent CENTCOM and AP reporting also indicate at least one U.S. carrier and one guided-missile destroyer are still operating in the theater during renewed maritime clashes."
+      "summary": "Confirmed reporting on September 29, 2026 shows the war remains active but increasingly centered on pressure and diplomacy: AP reported new U.S. sanctions on 10 people and entities tied to Iran\u2019s defense supply chain while Iran\u2019s IRGC appealed directly to U.S. voters, and Al Jazeera reported continued indirect talks in New York without a confirmed breakthrough. The latest accessible cumulative figures I found put Iranian deaths at 3,527, U.S. military dead at 18, Israeli deaths at 60, Gulf-state deaths at 28, and at least 3,580 U.S.-Israeli attacks on Iran; USNI\u2019s Sept. 28 fleet tracker also shows two U.S. carrier strike groups and multiple destroyers still operating in the Arabian Sea in support of operations against Iran."
     },
     {
       "date": "2026-09-28",
