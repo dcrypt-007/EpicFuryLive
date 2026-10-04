@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-10-04T06:49:55Z",
+  "lastUpdated": "2026-10-04T13:12:07Z",
   "dayCount": 218,
   "banner": {
     "strikes": "~13,000",
-    "killed": "29+",
-    "cost": "$53.4B+"
+    "killed": "3,539+",
+    "cost": "$54.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,038",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "15",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "25,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "178",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$53.4 billion+",
-    "dailyBurnRate": "~$245M/day",
+    "totalCost": "$54.9 billion+",
+    "dailyBurnRate": "~$252M/day",
     "daysOfOps": 218,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-04",
-          "source": "LLM-verified (AP, Oct. 1, 2026: USS George H.W. Bush and USS George Washington are in the region now; a third carrier could arrive by end of October.)"
+          "source": "LLM-verified (AP reported on October 1, 2026 that the U.S. troop movement includes a third aircraft carrier heading to the Middle East)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-10-04",
-          "source": "LLM-verified (AP, Oct. 1, 2026: roughly 9,000 troops are being dispatched aboard a group of ships to the Middle East.)"
+          "source": "LLM-verified (AP reported on October 1, 2026 that roughly 9,000 troops aboard a group of ships are being dispatched to the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 218 days",
-        "cost": "$3,052,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 218 days",
+        "cost": "$4,578,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on October 1, 2026 that the U.S. is bolstering forces to the Middle East with roughly 9,000 troops and a third aircraft carrier as Trump weighs possible new strikes on Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 4, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran said on October 4, 2026 that the Strait of Hormuz will remain closed until the U.S. meets its conditions, according to Al Jazeera RSS headline provided by user.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 4, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP on Oct. 1 reported the US is sending roughly 9,000 additional troops aboard ships toward the Middle East, potentially raising the naval presence above 20,000 sailors and Marines and setting conditions for as many as three carrier strike groups in region later in October.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Sept. 27-30, 2026 that U.S.-Iran diplomacy remains uncertain despite Tehran saying it received an official U.S. response to its latest war-ending proposal.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Sept. 29, 2026 that Pakistan said it would defend Saudi Arabia against Iran-backed Houthis by 'whatever means are available,' raising risk of broader regional involvement.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-10-04T12:48:50Z",
+      "text": "<strong>Yemen\u2019s leader announces military operation to retake Houthi-held territory</strong> -- Rashad al-Alimi says the campaign aims to restore state authority throughout Yemen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/4/yemens-leader-announces-military-operation-to-retake-houthi-held-territory?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T11:58:14Z",
+      "text": "<strong>Russia hits Kyiv bridge as Germany\u2019s Merz visits Ukraine\u2019s capital</strong> -- German chancellor visits Kyiv amid air raid sirens, pledging strong support as Russian strikes disrupt the capital. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/4/russian-strike-hits-kyiv-bridge-as-german-chancellor-visits-ukraine?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T11:11:30Z",
+      "text": "<strong>Iran says Hormuz to remain closed until US meets conditions</strong> -- Tehran says reopening Strait of Hormuz has been its main goal, while the US continues to focus on nuclear talks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/4/iran-says-strait-of-hormuz-to-remain-closed-until-us-meets-conditions?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T10:44:23Z",
+      "text": "<strong>Russia\u2019s nuclear plants are ageing. Who will pay to dismantle them?</strong> -- Moscow faces a huge decommissioning bill at home even as it expands its nuclear industry abroad. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/10/4/russias-nuclear-plants-are-ageing-who-will-pay-to-dismantle-them?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T10:04:54Z",
+      "text": "<strong>Tributes as Bosnian football star Edin Dzeko retires</strong> -- Bosnia and Herzegovina&amp;#039;s legendary striker Edin Dzeko has bid farewell to international football after a final match. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/4/tributes-as-bosnian-football-star-edin-dzeko-retires?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T08:31:29Z",
+      "text": "<strong>Inside the \u2018kill box\u2019: The Yemenis who stayed behind in Houthi-held Mocha</strong> -- Yemenis trapped in the Red Sea port city speak of deteriorating conditions there. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/10/4/inside-the-kill-box-the-yemenis-who-stayed-behind-in-houthi-held-mocha?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T08:02:38Z",
+      "text": "<strong>Gaza\u2019s Christians mourn mother and daughter killed in Israeli attack</strong> -- Maysa Abu Daoud and her daughter Mary al-Najjar among five Palestinians killed in Gaza City attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/4/gazas-christians-mourn-mother-and-daughter-killed-in-israeli-attack?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T07:39:04Z",
+      "text": "<strong>Saudi-led coalition dismisses \u2018misleading\u2019 Houthi claim of Riyadh attack</strong> -- The Saudi-led coalition spokesman says the Yemeni armed group is &amp;#039;attempting to divert attention&amp;#039; from its losses. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/4/houthi-claims-of-targeting-riyadh-are-misleading-saudi-led?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-04T06:19:17Z",
+      "text": "<strong>Australia investigating Flydubai co-pilot&#x27;s links to country</strong> -- State police and the country&#x27;s security agency are looking into the co-pilot, who attempted to take control of a Flydubai plane travelling to Israel. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-03T22:39:06Z",
+      "text": "<strong>US father and son arrested after &#x27;gas station heroin&#x27; deaths</strong> -- They are accused of selling at least one student derivatives of kratom, often called &quot;gas station heroin&quot; in the US. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c6qjnlk4r2jjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-04T05:00:40Z",
       "text": "<strong>Somalia President: Houthis \u2018not in a position\u2019 to bring Yemen peace</strong> -- Somalia\u2019s president accuses the Houthis of destabilising the region and disrupting navigation through the Bab al-Mandeb <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/4/somalia-president-houthis-not-in-a-position-to-bring-yemen-peace?traffic_source=rss"
@@ -778,11 +828,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/3/funeral-held-at-gaza-church-for-mother-and-daughter-killed-in-gaza-strike?traffic_source=rss"
     },
     {
-      "time": "2026-10-04T06:19:17Z",
-      "text": "<strong>Australia investigating Flydubai co-pilot&#x27;s links to country</strong> -- State police and the country&#x27;s security agency are looking into the co-pilot, who attempted to take control of a Flydubai plane travelling to Israel. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-10-03T10:58:51Z",
       "text": "<strong>UK-Iranian dual national bailed after RAF Fairford incident arrest</strong> -- The 25-year-old man was arrested in the London borough of Westminster on Thursday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c6d095ygggv1o?at_medium=RSS&at_campaign=rss"
@@ -806,51 +851,6 @@
       "time": "2026-10-03T14:27:33Z",
       "text": "<strong>Flydubai co-pilot attacked captain with axe, UAE official says</strong> -- The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-03T12:55:54Z",
-      "text": "<strong>Five killed as Kyiv and Moscow trade strikes, Russia hits second bridge</strong> -- Russia has also attacked another key bridge in Kyiv, the second such strike in two days. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/3/five-killed-as-kyiv-and-moscow-trade-strikes-russia-hits-second-bridge?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-03T10:48:28Z",
-      "text": "<strong>A Yemeni family spends a week on the road fleeing another Houthi offensive</strong> -- Displaced Yemenis are fleeing again, as the Houthis capture the Red Sea coast. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/features/2026/10/3/a-yemeni-family-spend-a-week-on-the-road-fleeing-another-houthi-offensive?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-03T09:27:38Z",
-      "text": "<strong>G7 to release 100 million barrels of oil and diesel, will it curb prices?</strong> -- Global energy prices have soared due to the US and Israel&amp;#039;s war on Iran and Russia&amp;#039;s war on Ukraine. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/3/g7-to-release-100-million-barrels-of-oil-and-diesel-will-it-curb-prices?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-03T08:36:17Z",
-      "text": "<strong>Yemen\u2019s army claims over 1,500 Houthi casualties, attacks Sanaa</strong> -- Government forces close a key crossing connecting Houthi-held al-Houban to government-held Taiz city. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/3/over-1500-houthi-casualties-in-past-24-hours-yemeni-army-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-03T08:17:40Z",
-      "text": "<strong>Floods sweep cars through streets after intense rain in Spain</strong> -- Floodwaters swept cars through Madrigueras, Spain, after near-record rainfall. One woman was killed and 90 rescued. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/3/10-3-spain-floods-clip-mp4?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-03T07:57:47Z",
-      "text": "<strong>Israeli air attack on residential apartment in Gaza kills 5 Palestinians</strong> -- An Israeli air attack on a residential apartment in Gaza City has killed at least five Palestinians. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/3/israeli-air-attack-on-residential-apartment-in-gaza-kills-5-palestinians?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-03T11:20:21Z",
-      "text": "<strong>Flydubai co-pilot attacked captain with axe, UAE official says</strong> -- The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-03T03:56:10Z",
-      "text": "<strong>Two Iranians charged over alleged plot targeting Jewish community in UK</strong> -- Two Iranian men are accused of preparing to \u200bcommit attack in Manchester on or before Yom Kippur. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/3/two-iranians-charged-over-alleged-plot-targeting-jewish-community-in-uk?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-03T00:00:00Z",
-      "text": "<strong>Iran war live: Fighting intensifies in Yemen, hundreds killed or injured</strong> -- Fighting intensifies across Yemen as the army says 474 attacks in 24 hours killed or wounded 1,540 Houthi fighters. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/3/iran-war-live-fighting-intensifies-in-yemen-hundreds-killed-or-injured?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,70 @@
   ],
   "newsFeed": [
     {
+      "title": "Yemen\u2019s leader announces military operation to retake Houthi-held territory",
+      "description": "Rashad al-Alimi says the campaign aims to restore state authority throughout Yemen.",
+      "link": "https://www.aljazeera.com/news/2026/10/4/yemens-leader-announces-military-operation-to-retake-houthi-held-territory?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T12:48:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Russia hits Kyiv bridge as Germany\u2019s Merz visits Ukraine\u2019s capital",
+      "description": "German chancellor visits Kyiv amid air raid sirens, pledging strong support as Russian strikes disrupt the capital.",
+      "link": "https://www.aljazeera.com/news/2026/10/4/russian-strike-hits-kyiv-bridge-as-german-chancellor-visits-ukraine?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T11:58:14Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran says Hormuz to remain closed until US meets conditions",
+      "description": "Tehran says reopening Strait of Hormuz has been its main goal, while the US continues to focus on nuclear talks.",
+      "link": "https://www.aljazeera.com/news/2026/10/4/iran-says-strait-of-hormuz-to-remain-closed-until-us-meets-conditions?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T11:11:30Z",
+      "tier": 2
+    },
+    {
+      "title": "Russia\u2019s nuclear plants are ageing. Who will pay to dismantle them?",
+      "description": "Moscow faces a huge decommissioning bill at home even as it expands its nuclear industry abroad.",
+      "link": "https://www.aljazeera.com/opinions/2026/10/4/russias-nuclear-plants-are-ageing-who-will-pay-to-dismantle-them?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T10:44:23Z",
+      "tier": 2
+    },
+    {
+      "title": "Tributes as Bosnian football star Edin Dzeko retires",
+      "description": "Bosnia and Herzegovina&#039;s legendary striker Edin Dzeko has bid farewell to international football after a final match.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/4/tributes-as-bosnian-football-star-edin-dzeko-retires?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T10:04:54Z",
+      "tier": 2
+    },
+    {
+      "title": "Inside the \u2018kill box\u2019: The Yemenis who stayed behind in Houthi-held Mocha",
+      "description": "Yemenis trapped in the Red Sea port city speak of deteriorating conditions there.",
+      "link": "https://www.aljazeera.com/features/2026/10/4/inside-the-kill-box-the-yemenis-who-stayed-behind-in-houthi-held-mocha?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T08:31:29Z",
+      "tier": 2
+    },
+    {
+      "title": "Gaza\u2019s Christians mourn mother and daughter killed in Israeli attack",
+      "description": "Maysa Abu Daoud and her daughter Mary al-Najjar among five Palestinians killed in Gaza City attack.",
+      "link": "https://www.aljazeera.com/news/2026/10/4/gazas-christians-mourn-mother-and-daughter-killed-in-israeli-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T08:02:38Z",
+      "tier": 2
+    },
+    {
+      "title": "Saudi-led coalition dismisses \u2018misleading\u2019 Houthi claim of Riyadh attack",
+      "description": "The Saudi-led coalition spokesman says the Yemeni armed group is &#039;attempting to divert attention&#039; from its losses.",
+      "link": "https://www.aljazeera.com/news/2026/10/4/houthi-claims-of-targeting-riyadh-are-misleading-saudi-led?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-04T07:39:04Z",
+      "tier": 2
+    },
+    {
       "title": "Australia investigating Flydubai co-pilot's links to country",
       "description": "State police and the country's security agency are looking into the co-pilot, who attempted to take control of a Flydubai plane travelling to Israel.",
       "link": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o?at_medium=RSS&at_campaign=rss",
@@ -1221,43 +1285,11 @@
       "tier": 2
     },
     {
-      "title": "Somalia President: Houthis \u2018not in a position\u2019 to bring Yemen peace",
-      "description": "Somalia\u2019s president accuses the Houthis of destabilising the region and disrupting navigation through the Bab al-Mandeb",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/4/somalia-president-houthis-not-in-a-position-to-bring-yemen-peace?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-04T05:00:40Z",
-      "tier": 2
-    },
-    {
-      "title": "Saudi-backed Yemeni army says 700 Houthis killed in 24 hours",
-      "description": "Yemen\u2019s government forces claim to have killed hundreds of Houthi rebels as they attempt to retake lost territory.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/4/saudi-backed-yemeni-army-says-700-houthis-killed-in-24-hours?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-04T04:09:13Z",
-      "tier": 2
-    },
-    {
-      "title": "Houthis claim strike on Aramco site as Yemen fighting intensifies",
-      "description": "Spokesman for Saudi-led coalition supporting Yemen government says Houthi claims of targeting Riyadh are &#039;misleading&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/10/4/houthis-claim-strike-on-saudi-energy-facility-as-yemen-fighting-intensifies?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-04T03:33:49Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Yemeni forces strike Sanaa as Trump warns Tehran of hard way",
-      "description": "Fighting in Yemen displaces more civilians, as Trump says a decision on Iran is coming.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/4/iran-war-live-yemeni-forces-strike-sanaa-as-trump-warns-tehran-of-hard-way?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-04T00:00:29Z",
-      "tier": 2
-    },
-    {
-      "title": "Funeral held at Gaza church for mother and daughter killed in Gaza strike",
-      "description": "Funeral prayers were held at Gaza City\u2019s Saint Porphyrius Greek Orthodox Church for a Palestinian mother and daughter.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/3/funeral-held-at-gaza-church-for-mother-and-daughter-killed-in-gaza-strike?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-03T20:10:17Z",
+      "title": "US father and son arrested after 'gas station heroin' deaths",
+      "description": "They are accused of selling at least one student derivatives of kratom, often called \"gas station heroin\" in the US.",
+      "link": "https://www.bbc.co.uk/news/articles/c6qjnlk4r2jjo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-03T22:39:06Z",
       "tier": 2
     },
     {
@@ -1267,30 +1299,14 @@
       "source": "BBC World",
       "time": "2026-10-03T10:58:51Z",
       "tier": 2
-    },
-    {
-      "title": "Renee Good: Family of US woman killed by ICE agent sues Trump officials",
-      "description": "Lawyers for Good's family say US officials created \"an unprecedented environment for state sponsored violence\" in Minneapolis.",
-      "link": "https://www.bbc.co.uk/news/articles/cwly7y5gvxlmo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-01T20:30:47Z",
-      "tier": 2
-    },
-    {
-      "title": "Netanyahu says Flydubai attacker had 'Islamist radical indoctrination'",
-      "description": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\".",
-      "link": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-01T19:59:24Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 1-4, 2026 shows the war remains active and may escalate again: AP reported the U.S. is sending roughly 9,000 additional troops and that two U.S. carriers are already in the region, with a third possibly arriving later in October. Pentagon-linked casualty reporting cited by AP put total U.S. military losses at 18 killed and 790 wounded as of early September, while Military Times previously cited CENTCOM as saying U.S. forces had supported more than 13,000 strikes. I could not verify newer confirmed cumulative totals today for Iranian deaths, Iranian wounded, Israeli deaths, Gulf-state deaths, destroyer count, drone-unit count, or most munitions-use fields from named primary or top-tier wire sources, so those are left null.",
+  "summary": "Confirmed reporting remains sparse and often outdated for cumulative war totals. The most recent clearly sourced casualty figures located were Iran Ministry of Health totals relayed by Al Jazeera on June 10, 2026: 3,468 dead and more than 26,500 injured in Iran, along with 28 deaths in Gulf states and 26 deaths in Israel. For U.S. losses, the latest confirmed tally found was 17 military deaths reported July 20, 2026 based on U.S. military releases. On the force posture side, AP reported on October 1, 2026 that roughly 9,000 U.S. troops and a third aircraft carrier are heading to the Middle East, while today\u2019s Al Jazeera headline says Iran insists the Strait of Hormuz will remain closed until U.S. conditions are met. I could not verify newer official cumulative numbers for civilian-only Iranian deaths or for most weapons-expended fields, so those remain null.",
   "briefings": [
     {
       "date": "2026-10-04",
       "day": 218,
-      "summary": "Confirmed reporting on October 1-4, 2026 shows the war remains active and may escalate again: AP reported the U.S. is sending roughly 9,000 additional troops and that two U.S. carriers are already in the region, with a third possibly arriving later in October. Pentagon-linked casualty reporting cited by AP put total U.S. military losses at 18 killed and 790 wounded as of early September, while Military Times previously cited CENTCOM as saying U.S. forces had supported more than 13,000 strikes. I could not verify newer confirmed cumulative totals today for Iranian deaths, Iranian wounded, Israeli deaths, Gulf-state deaths, destroyer count, drone-unit count, or most munitions-use fields from named primary or top-tier wire sources, so those are left null."
+      "summary": "Confirmed reporting remains sparse and often outdated for cumulative war totals. The most recent clearly sourced casualty figures located were Iran Ministry of Health totals relayed by Al Jazeera on June 10, 2026: 3,468 dead and more than 26,500 injured in Iran, along with 28 deaths in Gulf states and 26 deaths in Israel. For U.S. losses, the latest confirmed tally found was 17 military deaths reported July 20, 2026 based on U.S. military releases. On the force posture side, AP reported on October 1, 2026 that roughly 9,000 U.S. troops and a third aircraft carrier are heading to the Middle East, while today\u2019s Al Jazeera headline says Iran insists the Strait of Hormuz will remain closed until U.S. conditions are met. I could not verify newer official cumulative numbers for civilian-only Iranian deaths or for most weapons-expended fields, so those remain null."
     },
     {
       "date": "2026-10-03",
