@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-10-05T00:56:19Z",
+  "lastUpdated": "2026-10-05T07:03:40Z",
   "dayCount": 219,
   "banner": {
-    "strikes": "~17,500",
-    "killed": "20+",
-    "cost": "$62.8B+"
+    "strikes": "~5,633",
+    "killed": "3,633+",
+    "cost": "$61.3B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "2",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$62.8 billion+",
-    "dailyBurnRate": "~$287M/day",
+    "totalCost": "$61.3 billion+",
+    "dailyBurnRate": "~$280M/day",
     "daysOfOps": 219,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-05",
-          "source": "LLM-verified (AP, Oct. 1, 2026: U.S. troop movement to Middle East includes a third aircraft carrier; article says troop movement includes a third carrier.)"
+          "source": "LLM-verified (AP News, \"Third aircraft carrier and thousands of troops head to Mideast as Trump weighs new Iran strikes\" (Oct. 1, 2026): USS George H.W. Bush and USS George Washington are in the region now; a third carrier is en route, not yet in theater)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-10-05",
-          "source": "LLM-verified (AP, Oct. 1, 2026: roughly 9,000 troops aboard a group of ships are heading to the Middle East.)"
+          "source": "LLM-verified (AP News, \"Third aircraft carrier and thousands of troops head to Mideast as Trump weighs new Iran strikes\" (Oct. 1, 2026): roughly 9,000 troops aboard ships being dispatched to the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 219 days",
-        "cost": "$4,599,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 219 days",
+        "cost": "$3,066,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports all U.S. bombers were removed from RAF Fairford in the UK after security concerns tied to arrests outside the base",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "President Trump has threatened possible new U.S. strikes on Iran, while additional naval forces are being surged toward the region",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 5, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Yemeni government forces announced a major offensive against the Houthis, opening a wider regional front alongside the Iran conflict",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 5, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "BBC headline context indicates aviation-security fallout after the Flydubai cockpit attack on an Israel-bound flight, adding regional instability",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Trump warned Oct. 1, 2026 that new strikes on Iran could still be on the horizon",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on Oct. 1, 2026 that the U.S. is sending roughly 9,000 additional troops aboard ships to the Middle East and that a third carrier could be in theater by late October",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported UN investigators said U.S. strikes in Iran likely amounted to war crimes and cited at least 178 civilian deaths.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,16 @@
   ],
   "developments": [
     {
+      "time": "2026-10-05T05:20:57Z",
+      "text": "<strong>Middle East oil exports surpass pre-war levels despite tensions, data shows</strong> -- IRGC commander says oil flows through US-supervised route in Hormuz are \u2018negligible\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/5/middle-east-oil-exports-surpass-pre-war-levels-despite-tensions-data-shows?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-05T03:11:03Z",
+      "text": "<strong>Yemen gov\u2019t forces commence major combat operation against Houthis</strong> -- Yemeni government forces have declared a \u2018battle for liberation\u2019 to retake remaining territory held by the Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/5/yemen-govt-forces-commence-major-combat-operation-against-houthis?traffic_source=rss"
+    },
+    {
       "time": "2026-10-05T00:00:00Z",
       "text": "<strong>Iran war live: Yemen fighting intensifies; Tehran says ready for US attacks</strong> -- Yemeni government announces major offensive against Houthis, as Iran says it is ready to defend itself if US attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/5/iran-war-live-fighting-in-yemen-intensifies-tehran-says-ready-for-us-war?traffic_source=rss"
@@ -763,6 +773,11 @@
       "link": "https://www.aljazeera.com/news/2026/10/4/us-withdraws-b-1-bomber-aircraft-from-uks-fairford-base-amid-iran-fears?traffic_source=rss"
     },
     {
+      "time": "2026-10-04T16:51:30Z",
+      "text": "<strong>Yemen&#x27;s government announces all-out war to reclaim land from Houthis</strong> -- The Yemeni president&#x27;s announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-04T18:47:22Z",
       "text": "<strong>War on Iran: Is escalation more likely than a deal?</strong> -- Former Iranian and US diplomats agree that the war on Iran is likely to get worse in the coming weeks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/the-bottom-line/2026/10/4/war-on-iran-is-escalation-more-likely-than-a-deal-2?traffic_source=rss"
@@ -771,11 +786,6 @@
       "time": "2026-10-04T16:28:43Z",
       "text": "<strong>Air strike in Sudan kills UN aid truck driver: WFP</strong> -- Trucks were &amp;#039;clearly marked as humanitarian vehicles&amp;#039;, UN agency says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/4/air-strike-in-sudan-kills-un-aid-truck-driver-wfp?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-04T16:51:30Z",
-      "text": "<strong>Yemen&#x27;s government announces all-out war to reclaim land from Houthis</strong> -- The Yemeni president&#x27;s announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-04T06:19:17Z",
@@ -841,16 +851,6 @@
       "time": "2026-10-04T05:00:40Z",
       "text": "<strong>Somalia President: Houthis \u2018not in a position\u2019 to bring Yemen peace</strong> -- Somalia\u2019s president accuses the Houthis of destabilising the region and disrupting navigation through the Bab al-Mandeb <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/4/somalia-president-houthis-not-in-a-position-to-bring-yemen-peace?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-04T04:09:13Z",
-      "text": "<strong>Saudi-backed Yemeni army says 700 Houthis killed in 24 hours</strong> -- Yemen\u2019s government forces claim to have killed hundreds of Houthi rebels as they attempt to retake lost territory. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/4/saudi-backed-yemeni-army-says-700-houthis-killed-in-24-hours?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-04T03:33:49Z",
-      "text": "<strong>Houthis claim strike on Aramco site as Yemen fighting intensifies</strong> -- Spokesman for Saudi-led coalition supporting Yemen government says Houthi claims of targeting Riyadh are &amp;#039;misleading&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/4/houthis-claim-strike-on-saudi-energy-facility-as-yemen-fighting-intensifies?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Middle East oil exports surpass pre-war levels despite tensions, data shows",
+      "description": "IRGC commander says oil flows through US-supervised route in Hormuz are \u2018negligible\u2019.",
+      "link": "https://www.aljazeera.com/news/2026/10/5/middle-east-oil-exports-surpass-pre-war-levels-despite-tensions-data-shows?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-05T05:20:57Z",
+      "tier": 2
+    },
+    {
+      "title": "Yemen gov\u2019t forces commence major combat operation against Houthis",
+      "description": "Yemeni government forces have declared a \u2018battle for liberation\u2019 to retake remaining territory held by the Houthis.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/5/yemen-govt-forces-commence-major-combat-operation-against-houthis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-05T03:11:03Z",
+      "tier": 2
+    },
+    {
       "title": "Iran war live: Yemen fighting intensifies; Tehran says ready for US attacks",
       "description": "Yemeni government announces major offensive against Houthis, as Iran says it is ready to defend itself if US attacks.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/5/iran-war-live-fighting-in-yemen-intensifies-tehran-says-ready-for-us-war?traffic_source=rss",
@@ -1229,52 +1245,20 @@
       "tier": 2
     },
     {
-      "title": "War on Iran: Is escalation more likely than a deal?",
-      "description": "Former Iranian and US diplomats agree that the war on Iran is likely to get worse in the coming weeks.",
-      "link": "https://www.aljazeera.com/video/the-bottom-line/2026/10/4/war-on-iran-is-escalation-more-likely-than-a-deal-2?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-04T18:47:22Z",
-      "tier": 2
-    },
-    {
       "title": "Yemen's government announces all-out war to reclaim land from Houthis",
       "description": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
       "link": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-10-04T16:51:30Z",
       "tier": 2
-    },
-    {
-      "title": "Air strike in Sudan kills UN aid truck driver: WFP",
-      "description": "Trucks were &#039;clearly marked as humanitarian vehicles&#039;, UN agency says.",
-      "link": "https://www.aljazeera.com/news/2026/10/4/air-strike-in-sudan-kills-un-aid-truck-driver-wfp?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-04T16:28:43Z",
-      "tier": 2
-    },
-    {
-      "title": "Australia investigating Flydubai co-pilot's links to country",
-      "description": "State police and the country's security agency are looking into the co-pilot, who attempted to take control of a Flydubai plane travelling to Israel.",
-      "link": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-04T06:19:17Z",
-      "tier": 2
-    },
-    {
-      "title": "US father and son arrested after 'gas station heroin' deaths",
-      "description": "They are accused of selling at least one student derivatives of kratom, often called \"gas station heroin\" in the US.",
-      "link": "https://www.bbc.co.uk/news/articles/c6qjnlk4r2jjo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-03T22:39:06Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 5, 2026 indicates the regional security environment is worsening rather than stabilizing: AP reported the U.S. is dispatching roughly 9,000 troops with a third aircraft carrier toward the Middle East, while Yemen\u2019s internationally recognized government has launched a major operation against the Houthis and diplomacy between Washington and Tehran remains unclear after Iran said it received a U.S. response to its latest proposal. The best official U.S. casualty figure located remains 18 total American deaths tied to the conflict in DoD IG/DCAS reporting, while the most complete official operational metric located is CENTCOM\u2019s approximately 13,500 U.S. targets struck and 36,000 combat sorties during OEF; however, current confirmed cumulative Iranian, Israeli, and Iranian-civilian casualty totals could not be safely verified from named sources in this search session.",
+  "summary": "Confirmed reporting on October 5, 2026 shows the war remains active and regionally volatile: AP reported on October 1 that the U.S. is sending roughly 9,000 more troops aboard ship groups toward the Middle East and that a third carrier could join two already in the region later in October, while Al Jazeera\u2019s latest live coverage today says Yemen\u2019s government has launched a major operation against the Houthis and Tehran says it is ready to defend itself against renewed U.S. attacks. The most recent broadly cited confirmed cumulative casualty figures found in major reporting remain 3,527 killed in Iran, 18 U.S. service members killed, 60 Israelis killed, and 28 deaths in Gulf states; no newer confirmed official totals for Iranian civilian-only deaths, Iranian wounded, or key munitions-use counts were located in the sources searched.",
   "briefings": [
     {
       "date": "2026-10-05",
       "day": 219,
-      "summary": "Confirmed reporting on October 5, 2026 indicates the regional security environment is worsening rather than stabilizing: AP reported the U.S. is dispatching roughly 9,000 troops with a third aircraft carrier toward the Middle East, while Yemen\u2019s internationally recognized government has launched a major operation against the Houthis and diplomacy between Washington and Tehran remains unclear after Iran said it received a U.S. response to its latest proposal. The best official U.S. casualty figure located remains 18 total American deaths tied to the conflict in DoD IG/DCAS reporting, while the most complete official operational metric located is CENTCOM\u2019s approximately 13,500 U.S. targets struck and 36,000 combat sorties during OEF; however, current confirmed cumulative Iranian, Israeli, and Iranian-civilian casualty totals could not be safely verified from named sources in this search session."
+      "summary": "Confirmed reporting on October 5, 2026 shows the war remains active and regionally volatile: AP reported on October 1 that the U.S. is sending roughly 9,000 more troops aboard ship groups toward the Middle East and that a third carrier could join two already in the region later in October, while Al Jazeera\u2019s latest live coverage today says Yemen\u2019s government has launched a major operation against the Houthis and Tehran says it is ready to defend itself against renewed U.S. attacks. The most recent broadly cited confirmed cumulative casualty figures found in major reporting remain 3,527 killed in Iran, 18 U.S. service members killed, 60 Israelis killed, and 28 deaths in Gulf states; no newer confirmed official totals for Iranian civilian-only deaths, Iranian wounded, or key munitions-use counts were located in the sources searched."
     },
     {
       "date": "2026-10-04",
