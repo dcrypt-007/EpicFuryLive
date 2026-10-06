@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-10-06T02:59:02Z",
+  "lastUpdated": "2026-10-06T10:19:46Z",
   "dayCount": 220,
   "banner": {
-    "strikes": "~5,633",
-    "killed": "3,633+",
-    "cost": "$65.7B+"
+    "strikes": "~13,000",
+    "killed": "1,261+",
+    "cost": "$64.2B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "6",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$65.7 billion+",
-    "dailyBurnRate": "~$299M/day",
+    "totalCost": "$64.2 billion+",
+    "dailyBurnRate": "~$292M/day",
     "daysOfOps": 220,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-10-05",
-          "source": "LLM-verified (AP, Oct. 1, 2026: US could have 3 carriers in the Mideast soon / third aircraft carrier heading to region)"
+          "lastUpdated": "2026-10-06",
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, Oct. 5, 2026, shows USS George H.W. Bush CSG and USS George Washington CSG operating in/for Middle East theater; AP on Oct. 1 said a third carrier could arrive by end of October, implying not yet present: https://news.usni.org/2026/10/05/usni-news-fleet-and-marine-tracker-oct-5-2026 ; https://apnews.com/article/42c23e9af0333f4bc3b4f419cc3a603e)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-09-29",
-          "source": "LLM-verified (USNI News Fleet and Marine Tracker, Sept. 28, 2026: USS Shoup, Donald Cook, Ross, Delbert D. Black, Milius, Mason, Higgins, John Paul Jones, Rafael Peralta, Michael Murphy in Arabian Sea region supporting Middle East ops)"
+          "lastUpdated": "2026-10-06",
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker, Oct. 5, 2026, lists 2 Bush CSG destroyers, 1 with George Washington, and 7 additional warships/destroyers in Arabian Sea/Red Sea relevant to Iran theater: https://news.usni.org/2026/10/05/usni-news-fleet-and-marine-tracker-oct-5-2026)"
         },
         {
           "id": "personnel",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 220 days",
-        "cost": "$4,620,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 220 days",
+        "cost": "$3,080,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS headline says Trump joked at a Nebraska rally about letting Iran bomb Los Angeles and San Diego, reflecting escalatory rhetoric rather than a confirmed military event.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS headline says Yemen government forces claim gains near Bab al-Mandeb, signaling broader Red Sea instability around the Iran war theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Oct. 1 reported the U.S. is dispatching roughly 9,000 additional troops and a third carrier group that could put three carriers in the region by late October.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 6, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Al Jazeera headline says Yemeni forces struck Sanaa as Trump warned Tehran of the 'hard way,' indicating continued regional spillover linked to the Iran war.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reporting says early indications are being examined for possible Iranian links to the October 1 FlyDubai cockpit attack on an Israel-bound flight.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said on October 1, 2026 that new U.S. strikes on Iran could still be on the horizon, according to AP.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Recent AP reporting says Iran has received an official U.S. response to its latest war-ending proposal, but details remain unclear and no deal is confirmed.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-10-06T08:27:51Z",
+      "text": "<strong>Yemen forces claim key gains near Bab al-Mandeb: What\u2019s the latest?</strong> -- The internationally recognised government retakes territories from the Houthis as fighting rages on the western coast. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-06T07:12:00Z",
+      "text": "<strong>Trump jokes about letting Iran bomb Los Angeles and San Diego</strong> -- At a campaign rally in Nebraska, US President Donald Trump joked about letting Iran bomb Los Angeles and San Diego. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/6/trump-jokes-about-letting-iran-bomb-los-angeles-and-san-diego?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-06T07:07:47Z",
+      "text": "<strong>Southeast Asia\u2019s energy chiefs meet against backdrop of Iran war</strong> -- ASEAN ministers to discuss energy security amid energy crunch caused by the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/10/6/southeast-asias-energy-chiefs-meet-against-backdrop-of-iran-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-06T02:22:24Z",
+      "text": "<strong>Fort Hood shooter to be executed by firing squad - a first for US military since World War Two</strong> -- Nidal Malik Hasan killed 13 unarmed soldiers and injured another 32 in the deadliest ever non-combat attack on an American military base. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cq8ezkkkrpy1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-06T10:13:02Z",
+      "text": "<strong>Nigeria mourns 32 killed as military plane crashes into swamp</strong> -- President Bola Tinubu describes the crash as a &quot;painful moment&quot; for the military and the entire nation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ck1wvjer20qqo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-06T00:00:00Z",
       "text": "<strong>Iran war live: Yemen forces reclaim strategic port city Mocha from Houthis</strong> -- Turkiye and Pakistan agree to rapidly deploy militaries to bolster Saudi security as part of the Mecca defence pact. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis?traffic_source=rss"
@@ -826,31 +851,6 @@
       "time": "2026-10-05T14:37:17Z",
       "text": "<strong>Yemeni government forces say they have &#x27;secured&#x27; Bab al-Mandab Strait</strong> -- Houthi-run media deny the government has made advances in the Dhubab area, which overlooks the strategic Red Sea waterway. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-05T05:20:57Z",
-      "text": "<strong>Middle East oil exports surpass pre-war levels despite tensions, data shows</strong> -- IRGC commander says oil flows through US-supervised route in Hormuz are \u2018negligible\u2019. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/5/middle-east-oil-exports-surpass-pre-war-levels-despite-tensions-data-shows?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-05T03:11:03Z",
-      "text": "<strong>Yemen gov\u2019t forces commence major combat operation against Houthis</strong> -- Yemeni government forces have declared a \u2018battle for liberation\u2019 to retake remaining territory held by the Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/5/yemen-govt-forces-commence-major-combat-operation-against-houthis?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-05T00:00:00Z",
-      "text": "<strong>Iran war live: Yemen fighting intensifies; Tehran says ready for US attacks</strong> -- Yemeni government announces major offensive against Houthis, as Iran says it is ready to defend itself if US attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/5/iran-war-live-fighting-in-yemen-intensifies-tehran-says-ready-for-us-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-04T22:23:30Z",
-      "text": "<strong>US withdraws B-1 bomber aircraft from UK\u2019s Fairford base amid Iran fears</strong> -- The abrupt redeployment to the US comes after several &amp;#039;terrorism-related&amp;#039; arrests were made outside RAF Fairford. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/4/us-withdraws-b-1-bomber-aircraft-from-uks-fairford-base-amid-iran-fears?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-04T16:51:30Z",
-      "text": "<strong>Yemen&#x27;s government announces all-out war to reclaim land from Houthis</strong> -- The Yemeni president&#x27;s announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,52 +1213,52 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran war live: Yemen forces reclaim strategic port city Mocha from Houthis",
-      "description": "Turkiye and Pakistan agree to rapidly deploy militaries to bolster Saudi security as part of the Mecca defence pact.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-06T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Can Yemen retake territory seized by Houthis?",
-      "description": "The group has taken control of much of the Red Sea coast.",
-      "link": "https://www.aljazeera.com/video/inside-story/2026/10/5/can-yemen-retake-territory-seized-by-houthis?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-05T20:52:24Z",
-      "tier": 2
-    },
-    {
-      "title": "Turkiye, Pakistan agree to military deployment to Saudi Arabia",
-      "description": "Turkiye, Saudi Arabia and Pakistan have agreed to trigger collective deterrence measures in response to Houthi attacks.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/5/turkiye-pakistan-agree-to-military-deployment-to-saudi-arabia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-05T20:17:35Z",
-      "tier": 2
-    },
-    {
-      "title": "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
-      "description": "The vessel's captain was killed and 11 crew members were rescued after the attack on the Turkish-owned ship, Ukraine's leader says.",
-      "link": "https://www.bbc.co.uk/news/articles/cr0j0w3p8453o?at_medium=RSS&at_campaign=rss",
+      "title": "Nigeria mourns 32 killed as military plane crashes into swamp",
+      "description": "President Bola Tinubu describes the crash as a \"painful moment\" for the military and the entire nation.",
+      "link": "https://www.bbc.co.uk/news/articles/ck1wvjer20qqo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-10-05T15:17:23Z",
+      "time": "2026-10-06T10:13:02Z",
       "tier": 2
     },
     {
-      "title": "Georgia officials hunt for suspect in shooting that killed two and injured 35",
-      "description": "A homecoming celebration turned into a scene of deadly violence, as dozens of shots were fired into a crowd.",
-      "link": "https://www.bbc.co.uk/news/articles/c6e9lj5r3ej7o?at_medium=RSS&at_campaign=rss",
+      "title": "Yemen forces claim key gains near Bab al-Mandeb: What\u2019s the latest?",
+      "description": "The internationally recognised government retakes territories from the Houthis as fighting rages on the western coast.",
+      "link": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-06T08:27:51Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump jokes about letting Iran bomb Los Angeles and San Diego",
+      "description": "At a campaign rally in Nebraska, US President Donald Trump joked about letting Iran bomb Los Angeles and San Diego.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/6/trump-jokes-about-letting-iran-bomb-los-angeles-and-san-diego?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-06T07:12:00Z",
+      "tier": 2
+    },
+    {
+      "title": "Southeast Asia\u2019s energy chiefs meet against backdrop of Iran war",
+      "description": "ASEAN ministers to discuss energy security amid energy crunch caused by the war on Iran.",
+      "link": "https://www.aljazeera.com/economy/2026/10/6/southeast-asias-energy-chiefs-meet-against-backdrop-of-iran-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-06T07:07:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Fort Hood shooter to be executed by firing squad - a first for US military since World War Two",
+      "description": "Nidal Malik Hasan killed 13 unarmed soldiers and injured another 32 in the deadliest ever non-combat attack on an American military base.",
+      "link": "https://www.bbc.co.uk/news/articles/cq8ezkkkrpy1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-10-05T12:08:21Z",
+      "time": "2026-10-06T02:22:24Z",
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today did not produce newer official cumulative totals than the late-August figures already in wide circulation for most top-line war casualties. The clearest current reporting found is Al Jazeera\u2019s Aug. 28, 2026 data roundup, which lists 3,527 dead in Iran, 28 killed in Gulf states, 60 Israelis killed, and 18 US service members killed, while AP reporting on Oct. 5 focused on the March 1 Port Shuaiba drone strike that killed six US soldiers but did not provide a higher official cumulative US death toll. For Iranian wounded, the latest confirmed broad cumulative figure located from a named source was more than 26,500 injured from the war\u2019s start to the June ceasefire period, per Iran\u2019s Health Ministry as cited by Al Jazeera on Jul. 20. Today\u2019s headline developments center on Yemen\u2019s reported recapture of Mocha from the Houthis and a new Turkiye-Pakistan-Saudi security deployment arrangement, while AP says there is still no confirmed evidence publicly linking Iran to the recent attempted attack on an Israel-bound FlyDubai flight.",
+  "summary": "Confirmed reporting available today remains surprisingly thin on updated cumulative war tallies. AP\u2019s Oct. 5 coverage says the Pentagon-confirmed U.S. death toll tied to Operation Epic Fury is six, from the March 1 Iranian drone strike on Port Shuaiba in Kuwait. For Iran, the latest clearly sourced official casualty figure I found was still the March 9 Iranian health-official count reported by Al Jazeera of 1,255 killed and 12,000 wounded, mostly civilians; I did not find a newer named-source cumulative Iranian death or wound total that met your confirmation standard. On force posture, USNI\u2019s Oct. 5 fleet tracker shows two carrier strike groups actively supporting Middle East operations, while AP reported a third carrier and about 9,000 more troops are en route and could arrive later in October.",
   "briefings": [
     {
       "date": "2026-10-06",
       "day": 220,
-      "summary": "Confirmed reporting available today did not produce newer official cumulative totals than the late-August figures already in wide circulation for most top-line war casualties. The clearest current reporting found is Al Jazeera\u2019s Aug. 28, 2026 data roundup, which lists 3,527 dead in Iran, 28 killed in Gulf states, 60 Israelis killed, and 18 US service members killed, while AP reporting on Oct. 5 focused on the March 1 Port Shuaiba drone strike that killed six US soldiers but did not provide a higher official cumulative US death toll. For Iranian wounded, the latest confirmed broad cumulative figure located from a named source was more than 26,500 injured from the war\u2019s start to the June ceasefire period, per Iran\u2019s Health Ministry as cited by Al Jazeera on Jul. 20. Today\u2019s headline developments center on Yemen\u2019s reported recapture of Mocha from the Houthis and a new Turkiye-Pakistan-Saudi security deployment arrangement, while AP says there is still no confirmed evidence publicly linking Iran to the recent attempted attack on an Israel-bound FlyDubai flight."
+      "summary": "Confirmed reporting available today remains surprisingly thin on updated cumulative war tallies. AP\u2019s Oct. 5 coverage says the Pentagon-confirmed U.S. death toll tied to Operation Epic Fury is six, from the March 1 Iranian drone strike on Port Shuaiba in Kuwait. For Iran, the latest clearly sourced official casualty figure I found was still the March 9 Iranian health-official count reported by Al Jazeera of 1,255 killed and 12,000 wounded, mostly civilians; I did not find a newer named-source cumulative Iranian death or wound total that met your confirmation standard. On force posture, USNI\u2019s Oct. 5 fleet tracker shows two carrier strike groups actively supporting Middle East operations, while AP reported a third carrier and about 9,000 more troops are en route and could arrive later in October."
     },
     {
       "date": "2026-10-05",
