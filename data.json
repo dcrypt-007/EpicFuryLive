@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-10-08T08:59:13Z",
+  "lastUpdated": "2026-10-08T16:29:29Z",
   "dayCount": 222,
   "banner": {
-    "strikes": "~9,000",
-    "killed": "1,328+",
-    "cost": "$60.3B+"
+    "strikes": "~3,580",
+    "killed": "3,541+",
+    "cost": "$59.9B+"
   },
   "humanCost": {
-    "iranDeaths": "1,255",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "19",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$60.3 billion+",
-    "dailyBurnRate": "~$272M/day",
+    "totalCost": "$59.9 billion+",
+    "dailyBurnRate": "~$270M/day",
     "daysOfOps": 222,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-08",
-          "source": "LLM-verified (AP News, October 7, 2026: USS Abraham Lincoln was the second carrier to support the Iran war; article says Lincoln is the second carrier and notes USS Gerald R. Ford had also deployed in support)"
+          "source": "LLM-verified (AP on October 7, 2026 reports two carriers already supporting the war and says a third, USS Theodore Roosevelt, could join as early as end of October)"
         },
         {
           "id": "destroyers",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 450,
+          "quantity": 24,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-10-08",
-          "source": "LLM-verified (AP Oct. 7, 2026: award citation for USS Abraham Lincoln strike group said it 'launched 450 Tomahawk cruise missiles.')"
+          "source": "LLM-verified (Defense Department press conference transcript states a U.S. submarine launched more than two dozen Tomahawk land attack cruise missiles; no newer cumulative confirmed total found)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 9000,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-08",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 23, 2026 lists 'Combat Flights: 9,000+'; closest confirmed official cumulative sorties-related figure found)"
+          "source": "LLM-verified (CENTCOM fact sheet dated April 1, 2026 lists 13,000+ combat flights; no newer official cumulative sortie total found)"
         },
         {
           "id": "interceptors",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "450 \u00d7 $2,000,000 each",
-        "cost": "$900,000,000"
+        "detail": "24 \u00d7 $2,000,000 each",
+        "cost": "$48,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "9,000 \u00d7 $100,000 each",
-        "cost": "$900,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported October 6-8, 2026 that RAF Fairford in England, used by U.S. bombers striking Iran, faced an Iran-linked threat plot aimed at killing U.S. troops and destroying aircraft.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported October 8, 2026 that U.S. officials said a third carrier, USS Theodore Roosevelt, and thousands of troops aboard it and accompanying ships could join the two existing carrier groups by late October.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 8, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported October 8, 2026 that new Houthi-linked attacks hit Riyadh airport area, killing at least one person the previous day and causing fresh explosions on October 8.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 8, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on Oct. 5 reported renewed scrutiny of force protection after the March 1 Iranian drone strike on Port Shuaiba, Kuwait, the deadliest confirmed attack on US troops in the war.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on Oct. 1 reported a third US aircraft carrier and thousands of additional troops were heading to the Middle East as Trump weighed possible new strikes on Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reports all U.S. bombers were removed from RAF Fairford in the UK after security concerns tied to arrests outside the base",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 5, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "President Trump has threatened possible new U.S. strikes on Iran, while additional naval forces are being surged toward the region",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-10-08T14:50:20Z",
+      "text": "<strong>More killed in Kramatorsk as Russia targets Ukraine\u2019s transportation system</strong> -- Russia\u2019s attacks on trains, buses and ports are paralysing Ukraine\u2019s transport network and endangering civilians. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/8/more-killed-in-kramatorsk-as-russia-targets-ukraines-transportation-system?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-08T14:43:19Z",
+      "text": "<strong>Saudi-led coalition says it intercepts three Houthi ballistic missiles</strong> -- Saudi Arabia says two of the missiles intercepted were headed towards the capital, Riyadh. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/8/saudi-led-coalition-says-it-intercepts-three-houthi-ballistic-missiles?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-08T14:01:13Z",
+      "text": "<strong>\u2018This is a crisis of hope\u2019: Echoes of 1968 as France\u2019s students rise up</strong> -- As in 1968, when student protests triggered nationwide strikes, today\u2019s crisis is about generational discontent. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/8/echoes-of-may-1968-frances-students-rise-up-again?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-08T12:44:52Z",
+      "text": "<strong>Two killed after building partially collapses in Turkiye\u2019s Istanbul</strong> -- Eight survivors rescued from the rubble as fears of further collapse slow operations in Istanbul\u2019s Maltepe district. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/8/two-killed-after-building-partially-collapses-in-turkiye-capital?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-08T12:02:29Z",
+      "text": "<strong>Sri Lanka arrests ex-President Rajapaksa\u2019s wife in graft case</strong> -- Sri Lanka\u2019s former first lady Shiranthi Rajapaksa, wife of Mahinda Rajapaksa, has been arrested in a corruption case. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/8/sri-lanka-arrests-ex-president-rajapaksas-wife-in-graft-case?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-08T05:06:09Z",
+      "text": "<strong>&#x27;Every day there is killing&#x27;: Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls</strong> -- Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-08T12:11:31Z",
+      "text": "<strong>Tanker hit by multiple projectiles in Gulf off Qatar, maritime agency says</strong> -- Casualties have been reported on the vessel, identified by a maritime intelligence firm as the oil and chemical tanker, Acers. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-08T15:21:46Z",
+      "text": "<strong>Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says &#x27;vital services&#x27; to remain</strong> -- Israel said in September it would act in response to UK sanctions on illegal Israeli settlements in the West Bank. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw33xd6vegnno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-08T03:32:35Z",
+      "text": "<strong>Three people killed in Houthi attacks on Saudi Arabia airports, officials say</strong> -- The Houthis have claimed responsibility for the attacks, which mark an escalation in the conflict. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cwn8d5rx22rdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-07T16:00:18Z",
+      "text": "<strong>Israelis demand accountability over 7 October failures three years after attacks</strong> -- Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-08T06:50:08Z",
       "text": "<strong>Yemen\u2019s government needs tribes to defeat the Houthis. Will they join?</strong> -- Yemen&amp;#039;s tribes could prove crucial to government&amp;#039;s fight against the Houthis, but many may wait before choosing sides. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/8/yemens-government-needs-tribes-to-defeat-the-houthis-will-they-join?traffic_source=rss"
@@ -771,16 +821,6 @@
       "time": "2026-10-08T08:18:36Z",
       "text": "<strong>Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says &#x27;vital services&#x27; to remain</strong> -- Israel said in September it would act in response to UK sanctions on illegal Israeli settlements in the West Bank. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cw33xd6vegnno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-08T03:32:35Z",
-      "text": "<strong>Three people killed in Houthi attacks on Saudi Arabia airports, officials say</strong> -- The Houthis have claimed responsibility for the attacks, which mark an escalation in the conflict. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cwn8d5rx22rdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-07T16:00:18Z",
-      "text": "<strong>Israelis demand accountability over 7 October failures three years after attacks</strong> -- Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-08T00:33:03Z",
@@ -810,46 +850,6 @@
     {
       "time": "2026-10-07T18:12:58Z",
       "text": "<strong>Children killed while they slept as Russian missile kills 19 in block of flats</strong> -- Five children are among the victims of a strike that destroyed 30 flats in northern Ukraine as families slept. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ckr5ym098vdeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-07T18:32:08Z",
-      "text": "<strong>At least 24 killed as Russia launches massive attack on Ukraine</strong> -- Ukraine says Russia launched a massive overnight barrage of 130 drones, 48 cruise missiles and ballistic missiles <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/at-least-24-killed-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-07T18:29:34Z",
-      "text": "<strong>Saudi Arabia says Houthi attacks on airports killed three foreign nationals</strong> -- Moroccan, Algerian women killed in Abha, Sudanese national killed in Riyadh. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/7/saudi-arabia-says-three-foreign-nationals-killed-in-attacks-on-airports?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-07T18:03:14Z",
-      "text": "<strong>Jerusalem Daily: Gaza\u2019s devastation, three years after October 7</strong> -- Three years after the October 7 attacks, more than 74,000 people have been killed in Gaza. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/jerusalem-daily-gazas-devastation-three-years-after-october-7?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-07T16:02:17Z",
-      "text": "<strong>More than 200,000 displaced as fighting escalates in Yemen, UN says</strong> -- With 3,700 fleeing to Djibouti amid Houthi clashes, the UN warns three in four families in parts of Yemen face hunger. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/gallery/2026/10/7/more-than-200000-displaced-as-fighting-escalates-in-yemen-un-says-2?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-07T12:38:31Z",
-      "text": "<strong>Palestinian killed, 16 wounded in Israeli pogrom in occupied West Bank</strong> -- A 44-year-old Palestinian man was killed during Israeli settler assaults on olive harvesters in the West Bank. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/7/palestinian-killed-several-injured-in-israeli-pogrom-in-occupied-west-bank?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-07T11:13:32Z",
-      "text": "<strong>Israeli attacks across Gaza kill at least four Palestinians</strong> -- Israeli air strike kills Palestinian Civil Defence rescue volunteer in northern Gaza. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/7/israeli-attacks-across-gaza-kill-at-least-four-palestinians?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-07T10:58:23Z",
-      "text": "<strong>US sets new demands for Iran deal: What are they?</strong> -- US Vice President Vance\u2019s call for reduced nuclear enrichment suggests room for compromise, but major obstacles remain. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/7/us-sets-new-demands-for-iran-deal-what-are-they?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-07T14:53:43Z",
-      "text": "<strong>Zelensky condemns &#x27;vile&#x27; large-scale Russian attacks that killed 24</strong> -- Rescue workers are continuing a search for residents after an apartment building in Pryluky was destroyed. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/ckr5ym098vdeo?at_medium=RSS&at_campaign=rss"
     }
   ],
@@ -1217,15 +1217,63 @@
       "description": "Israel said in September it would act in response to UK sanctions on illegal Israeli settlements in the West Bank.",
       "link": "https://www.bbc.co.uk/news/articles/cw33xd6vegnno?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-10-08T08:18:36Z",
+      "time": "2026-10-08T15:21:46Z",
       "tier": 2
     },
     {
-      "title": "Yemen\u2019s government needs tribes to defeat the Houthis. Will they join?",
-      "description": "Yemen&#039;s tribes could prove crucial to government&#039;s fight against the Houthis, but many may wait before choosing sides.",
-      "link": "https://www.aljazeera.com/news/2026/10/8/yemens-government-needs-tribes-to-defeat-the-houthis-will-they-join?traffic_source=rss",
+      "title": "More killed in Kramatorsk as Russia targets Ukraine\u2019s transportation system",
+      "description": "Russia\u2019s attacks on trains, buses and ports are paralysing Ukraine\u2019s transport network and endangering civilians.",
+      "link": "https://www.aljazeera.com/news/2026/10/8/more-killed-in-kramatorsk-as-russia-targets-ukraines-transportation-system?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-08T06:50:08Z",
+      "time": "2026-10-08T14:50:20Z",
+      "tier": 2
+    },
+    {
+      "title": "Saudi-led coalition says it intercepts three Houthi ballistic missiles",
+      "description": "Saudi Arabia says two of the missiles intercepted were headed towards the capital, Riyadh.",
+      "link": "https://www.aljazeera.com/news/2026/10/8/saudi-led-coalition-says-it-intercepts-three-houthi-ballistic-missiles?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-08T14:43:19Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018This is a crisis of hope\u2019: Echoes of 1968 as France\u2019s students rise up",
+      "description": "As in 1968, when student protests triggered nationwide strikes, today\u2019s crisis is about generational discontent.",
+      "link": "https://www.aljazeera.com/news/2026/10/8/echoes-of-may-1968-frances-students-rise-up-again?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-08T14:01:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Two killed after building partially collapses in Turkiye\u2019s Istanbul",
+      "description": "Eight survivors rescued from the rubble as fears of further collapse slow operations in Istanbul\u2019s Maltepe district.",
+      "link": "https://www.aljazeera.com/news/2026/10/8/two-killed-after-building-partially-collapses-in-turkiye-capital?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-08T12:44:52Z",
+      "tier": 2
+    },
+    {
+      "title": "Tanker hit by multiple projectiles in Gulf off Qatar, maritime agency says",
+      "description": "Casualties have been reported on the vessel, identified by a maritime intelligence firm as the oil and chemical tanker, Acers.",
+      "link": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-08T12:11:31Z",
+      "tier": 2
+    },
+    {
+      "title": "Sri Lanka arrests ex-President Rajapaksa\u2019s wife in graft case",
+      "description": "Sri Lanka\u2019s former first lady Shiranthi Rajapaksa, wife of Mahinda Rajapaksa, has been arrested in a corruption case.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/8/sri-lanka-arrests-ex-president-rajapaksas-wife-in-graft-case?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-08T12:02:29Z",
+      "tier": 2
+    },
+    {
+      "title": "'Every day there is killing': Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls",
+      "description": "Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled.",
+      "link": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-08T05:06:09Z",
       "tier": 2
     },
     {
@@ -1237,22 +1285,6 @@
       "tier": 2
     },
     {
-      "title": "Tanker hit by multiple projectiles off north coast of Qatar, UKMTO says",
-      "description": "The UK maritime agency has reported a rise in attacks on vessels in the vital Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/2026/10/8/tanker-hit-by-multiple-projectiles-off-north-coast-of-qatar-ukmto-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-08T02:48:25Z",
-      "tier": 2
-    },
-    {
-      "title": "Yemeni government forces claim 1,860 Houthis \u2018neutralised\u2019",
-      "description": "Yemeni government forces say in a social media post they carried out 2,103 &#039;precise targeting operations&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/10/8/yemeni-government-forces-claim-1860-houthis-neutralised?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-08T01:02:07Z",
-      "tier": 2
-    },
-    {
       "title": "Israelis demand accountability over 7 October failures three years after attacks",
       "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry.",
       "link": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&at_campaign=rss",
@@ -1261,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today shows the clearest new verified change is on the U.S. side: AP reported on October 5, 2026 that total U.S. military deaths in the Iran war have reached 19, including the six killed at Port Shuaiba, Kuwait, while earlier AP reporting in July had put the toll at 14. For Iran and Israel, I found no newer named-source official cumulative totals that clearly supersede the best-documented figures located in search: Iran\u2019s Deputy Health Minister Ali Jafarian told Al Jazeera on March 9 that 1,255 had been killed, and Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Health Ministry listed more than 26,500 injured and 26 Israelis killed. CENTCOM\u2019s March 23 fact sheet remains the clearest official strike/activity baseline found, listing 9,000+ targets struck and 9,000+ combat flights; I did not find later official cumulative weapons-use totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptors.",
+  "summary": "Confirmed reporting available today shows no clear official update to the main Iran war casualty baselines beyond earlier midyear public tallies, but AP now reports the war has claimed 19 U.S. troops as of October 6, while Al Jazeera\u2019s latest accessible cumulative tracker still lists 3,468 killed in Iran, more than 26,500 wounded there, 26 killed in Israel, and 28 killed in Gulf states. On the military side, AP confirmed two U.S. carrier strike groups are presently supporting the war, with a third potentially joining later in October, while the latest accessible official operation-wide strike/activity total located was ACLED\u2019s 3,580 attacks on Iran by the U.S. and Israel through August 28 and CENTCOM\u2019s earlier official 13,000+ combat flights figure from April 1.",
   "briefings": [
     {
       "date": "2026-10-08",
       "day": 222,
-      "summary": "Confirmed reporting available today shows the clearest new verified change is on the U.S. side: AP reported on October 5, 2026 that total U.S. military deaths in the Iran war have reached 19, including the six killed at Port Shuaiba, Kuwait, while earlier AP reporting in July had put the toll at 14. For Iran and Israel, I found no newer named-source official cumulative totals that clearly supersede the best-documented figures located in search: Iran\u2019s Deputy Health Minister Ali Jafarian told Al Jazeera on March 9 that 1,255 had been killed, and Al Jazeera\u2019s June 10 tracker citing Iran\u2019s Health Ministry listed more than 26,500 injured and 26 Israelis killed. CENTCOM\u2019s March 23 fact sheet remains the clearest official strike/activity baseline found, listing 9,000+ targets struck and 9,000+ combat flights; I did not find later official cumulative weapons-use totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, or interceptors."
+      "summary": "Confirmed reporting available today shows no clear official update to the main Iran war casualty baselines beyond earlier midyear public tallies, but AP now reports the war has claimed 19 U.S. troops as of October 6, while Al Jazeera\u2019s latest accessible cumulative tracker still lists 3,468 killed in Iran, more than 26,500 wounded there, 26 killed in Israel, and 28 killed in Gulf states. On the military side, AP confirmed two U.S. carrier strike groups are presently supporting the war, with a third potentially joining later in October, while the latest accessible official operation-wide strike/activity total located was ACLED\u2019s 3,580 attacks on Iran by the U.S. and Israel through August 28 and CENTCOM\u2019s earlier official 13,000+ combat flights figure from April 1."
     },
     {
       "date": "2026-10-07",
