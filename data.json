@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-10-11T01:54:47Z",
+  "lastUpdated": "2026-10-11T08:53:15Z",
   "dayCount": 225,
   "banner": {
-    "strikes": "~3,580",
-    "killed": "33+",
-    "cost": "$56.5B+"
+    "strikes": "~4,500",
+    "killed": "3,588+",
+    "cost": "$58.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "21",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "15",
+    "gulfCasualties": "40",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "27,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "178",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$56.5 billion+",
-    "dailyBurnRate": "~$251M/day",
+    "totalCost": "$58.9 billion+",
+    "dailyBurnRate": "~$262M/day",
     "daysOfOps": 225,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-11",
-          "source": "LLM-verified (AP, Oct. 8, 2026: USS George Washington relieved USS Abraham Lincoln in August, indicating one US carrier strike group currently in theater.)"
+          "source": "LLM-verified (AP reporting Oct. 8, 2026 said USS George Washington and USS George H.W. Bush are in/heading to region now; third carrier USS Theodore Roosevelt could arrive by end of October)"
         },
         {
           "id": "destroyers",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 450,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-10-10",
-          "source": "LLM-verified (AP, October 7, 2026, quoting award citation for USS Abraham Lincoln strike group: launched 450 Tomahawk cruise missiles.)"
+          "lastUpdated": "2026-10-11",
+          "source": "LLM-verified (Washington Post, Mar. 27, 2026: U.S. had fired more than 850 Tomahawk cruise missiles in four weeks of war; no newer confirmed cumulative total found)"
         },
         {
           "id": "jdam",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 225 days",
-        "cost": "$1,575,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 225 days",
+        "cost": "$3,150,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "450 \u00d7 $2,000,000 each",
-        "cost": "$900,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Commercial shipping threats in the Gulf and Strait of Hormuz remain acute, including attacks on vessels and blockade-running incidents reported by CENTCOM/AP/Al Jazeera.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reporting indicates the U.S. may be evaluating whether to join Saudi strikes against the Houthis, raising risk of regional expansion beyond direct U.S.-Iran exchanges.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 11, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthi missile attacks on Saudi airports, including the Oct. 10 attack on Riyadh's King Khalid International Airport that killed 12 and injured more than 300, have opened a major new Gulf front connected to the wider Iran war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 11, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported October 8, 2026 that U.S. officials said a third carrier, USS Theodore Roosevelt, and thousands of troops aboard it and accompanying ships could join the two existing carrier groups by late October.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported October 8, 2026 that new Houthi-linked attacks hit Riyadh airport area, killing at least one person the previous day and causing fresh explosions on October 8.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "BBC reported three people killed in Houthi attacks on Saudi airports, signaling broader regional escalation risk beyond the Iran-Israel theater",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 8, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "UKMTO reported a tanker hit by multiple projectiles off Qatar's north coast, indicating continued maritime risk in/near the Strait of Hormuz",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,13 +753,48 @@
   ],
   "developments": [
     {
+      "time": "2026-10-11T08:22:02Z",
+      "text": "<strong>What the Iran war has done to the world\u2019s energy supply, in charts</strong> -- Fossil fuels produce 81 percent of global energy. We look at Middle East\u2019s role and what happens when supplies are cut. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/11/what-the-iran-war-has-done-to-the-worlds-energy-supply-in-charts?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-11T07:39:16Z",
+      "text": "<strong>US bombs cargo vessel in Gulf of Oman \u2018trying to run Iran blockade\u2019</strong> -- A US fighter jet bombed a commercial cargo ship in the Gulf of Oman, according to CENTCOM. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/us-bombs-cargo-vessel-in-gulf-of-oman-trying-to-run-iran-blockade?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-11T04:28:51Z",
+      "text": "<strong>Hurricane Isaias kills four, leaves 650,000 without power in Florida</strong> -- Hurricane Isaias has killed four people and left more than 650,000 people without power. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/10-10-clip-isaias-is-here-us?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-11T03:41:58Z",
+      "text": "<strong>Taiz hospitals near collapse as Houthis tighten siege: Yemen government</strong> -- Medical services in Taiz risk shutting down as fuel, medicines, and supplies run alarmingly low under Houthi blockade. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/11/taiz-hospitals-near-collapse-as-houthis-tighten-siege-yemen-government?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-11T03:13:53Z",
+      "text": "<strong>US forces disable ship \u2018attempting to run\u2019 Iran blockade in Gulf of Oman</strong> -- US military jet strikes stern of commercial cargo ship &amp;#039;without harming the crew&amp;#039;, CENTCOM says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/11/us-forces-disable-ship-attempting-to-run-iran-blockade-in-gulf-of-oman?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-11T02:12:07Z",
+      "text": "<strong>World condemns deadly Houthi attack on Saudi Arabia\u2019s Riyadh airport</strong> -- Trump denounces &amp;#039;terrible&amp;#039; attack and says the US is evaluating whether to join Saudi Arabia&amp;#039;s offensive on the Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/11/world-condemns-deadly-houthi-attack-on-saudi-arabias-riyadh-airport?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-11T01:59:02Z",
+      "text": "<strong>Trump \u2018may\u2019 join Saudi strikes on Houthis after Riyadh airport attack</strong> -- President Donald Trump says the US \u2018may\u2019 join Saudi strikes against Yemen\u2019s Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/10-10-clip-trump-weighs-joining-saudi-strikes-on-houthis-us?traffic_source=rss"
+    },
+    {
       "time": "2026-10-11T01:02:07Z",
       "text": "<strong>Twelve killed, more than 300 injured in Riyadh airport attack</strong> -- Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss"
     },
     {
       "time": "2026-10-11T00:00:13Z",
-      "text": "<strong>Iran war live: 12 killed in Riyadh, US weighs joining fight against Houthis</strong> -- As strikes on airports in Saudi Arabia turn deadly, Washington debates striking Houthis and restarting strikes on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: 12 killed in Riyadh, Saudi-led coalition vows to respond</strong> -- As strikes on airports in Saudi Arabia turn deadly, Washington debates striking Houthis and restarting strikes on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/11/iran-war-live-12-killed-in-riyadh-us-weighs-joining-fight-against-houthis?traffic_source=rss"
     },
     {
@@ -816,41 +851,6 @@
       "time": "2026-10-10T14:10:24Z",
       "text": "<strong>Has Yemen returned to \u2018full-scale war\u2019?</strong> -- Fighting is intensifying between Yemeni government forces and Houthi rebel group. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/10/has-yemen-returned-to-full-scale-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-10T13:09:09Z",
-      "text": "<strong>\u2018Anachronism\u2019: Rubio\u2019s civilisational rhetoric prompts pushback from Iran</strong> -- Rubio says threats to Western civilisation today &amp;#039;every bit as real as they were on the dramatic stage of antiquity&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news-analysis/2026/10/10/anachronism-rubios-civilisational-rhetoric-prompts-pushback-from-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-10T16:56:32Z",
-      "text": "<strong>Several injured in attack on airport in Saudi capital Riyadh</strong> -- The US embassy says it is &quot;aware of attacks on King Khalid International Airport&quot;, which come days after Yemen&#x27;s Houthis said they had struck it. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-10T12:40:57Z",
-      "text": "<strong>Child among seven killed by Israel in Gaza on \u2018ceasefire\u2019 anniversary</strong> -- At least 1,481 Palestinians killed in Israeli attacks since last year&amp;#039;s &amp;#039;ceasefire&amp;#039;, Gaza&amp;#039;s Health Ministry says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-10T09:45:14Z",
-      "text": "<strong>Suspect killed after 13 kindergarteners taken hostage, beaten in Brazil</strong> -- Man spreads flammable liquid in a room with 13 children while holding a lighter as police try to negotiate. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/10/suspect-killed-after-13-kindergarteners-taken-hostage-beaten-in-brazil?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-10T09:27:08Z",
-      "text": "<strong>Journalist Hamurabi Huesca Manzano killed in Mexico\u2019s Oaxaca</strong> -- Conflicting reports emerge on the circumstances of the killing, prompting calls for justice from advocacy groups. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/10/journalist-killed-in-mexico-ninth-this-year-ngo?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-10T07:19:36Z",
-      "text": "<strong>Saudi-led coalition says it\u2019s carrying out operation in Yemen</strong> -- The Saudi-led coalition says it\u2019s carrying out a wide-ranging operation, targeting Yemen\u2019s Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/10/saudi-led-coalition-says-its-carrying-out-operation-in-yemen?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-10T06:20:53Z",
-      "text": "<strong>Yemen\u2019s Taiz under siege again as food and fuel prices rise</strong> -- Houthi advances and the closure of vital roads into Taiz have triggered shortages, reviving memories of earlier siege. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/10/yemens-taiz-under-siege-again-as-food-and-fuel-prices-rise?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,62 @@
   ],
   "newsFeed": [
     {
+      "title": "What the Iran war has done to the world\u2019s energy supply, in charts",
+      "description": "Fossil fuels produce 81 percent of global energy. We look at Middle East\u2019s role and what happens when supplies are cut.",
+      "link": "https://www.aljazeera.com/news/2026/10/11/what-the-iran-war-has-done-to-the-worlds-energy-supply-in-charts?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-11T08:22:02Z",
+      "tier": 2
+    },
+    {
+      "title": "US bombs cargo vessel in Gulf of Oman \u2018trying to run Iran blockade\u2019",
+      "description": "A US fighter jet bombed a commercial cargo ship in the Gulf of Oman, according to CENTCOM.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/us-bombs-cargo-vessel-in-gulf-of-oman-trying-to-run-iran-blockade?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-11T07:39:16Z",
+      "tier": 2
+    },
+    {
+      "title": "Hurricane Isaias kills four, leaves 650,000 without power in Florida",
+      "description": "Hurricane Isaias has killed four people and left more than 650,000 people without power.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/10-10-clip-isaias-is-here-us?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-11T04:28:51Z",
+      "tier": 2
+    },
+    {
+      "title": "Taiz hospitals near collapse as Houthis tighten siege: Yemen government",
+      "description": "Medical services in Taiz risk shutting down as fuel, medicines, and supplies run alarmingly low under Houthi blockade.",
+      "link": "https://www.aljazeera.com/news/2026/10/11/taiz-hospitals-near-collapse-as-houthis-tighten-siege-yemen-government?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-11T03:41:58Z",
+      "tier": 2
+    },
+    {
+      "title": "US forces disable ship \u2018attempting to run\u2019 Iran blockade in Gulf of Oman",
+      "description": "US military jet strikes stern of commercial cargo ship &#039;without harming the crew&#039;, CENTCOM says.",
+      "link": "https://www.aljazeera.com/news/2026/10/11/us-forces-disable-ship-attempting-to-run-iran-blockade-in-gulf-of-oman?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-11T03:13:53Z",
+      "tier": 2
+    },
+    {
+      "title": "World condemns deadly Houthi attack on Saudi Arabia\u2019s Riyadh airport",
+      "description": "Trump denounces &#039;terrible&#039; attack and says the US is evaluating whether to join Saudi Arabia&#039;s offensive on the Houthis.",
+      "link": "https://www.aljazeera.com/news/2026/10/11/world-condemns-deadly-houthi-attack-on-saudi-arabias-riyadh-airport?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-11T02:12:07Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump \u2018may\u2019 join Saudi strikes on Houthis after Riyadh airport attack",
+      "description": "President Donald Trump says the US \u2018may\u2019 join Saudi strikes against Yemen\u2019s Houthis.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/10-10-clip-trump-weighs-joining-saudi-strikes-on-houthis-us?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-11T01:59:02Z",
+      "tier": 2
+    },
+    {
       "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
       "description": "Saudi Arabia has confirmed at least 12 people were killed and more than 300 injured after Houthi fighters struck Riyadh.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
@@ -1221,15 +1277,7 @@
       "tier": 2
     },
     {
-      "title": "Twelve killed in attack on airport in Saudi capital Riyadh",
-      "description": "Another 309 people are injured, with the Saudi-led coalition saying the attack by Yemen's Houthis is \"war crime\".",
-      "link": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-11T00:21:52Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: 12 killed in Riyadh, US weighs joining fight against Houthis",
+      "title": "Iran war live: 12 killed in Riyadh, Saudi-led coalition vows to respond",
       "description": "As strikes on airports in Saudi Arabia turn deadly, Washington debates striking Houthis and restarting strikes on Iran.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/11/iran-war-live-12-killed-in-riyadh-us-weighs-joining-fight-against-houthis?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1242,22 +1290,6 @@
       "link": "https://www.aljazeera.com/news/2026/10/10/yemeni-governments-military-says-its-forces-advancing-against-houthis?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-10-10T22:12:25Z",
-      "tier": 2
-    },
-    {
-      "title": "Yemen\u2019s Houthis release video of drone attacks on gov\u2019t forces",
-      "description": "Yemen\u2019s Houthis have released drone video said to show attacks on Saudi-backed Yemeni government forces.",
-      "link": "https://www.aljazeera.com/video/2026/10/10/yemens-houthis-release-video-of-drone-attacks-on-govt-forces?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-10T21:02:49Z",
-      "tier": 2
-    },
-    {
-      "title": "Israeli attack destroys building in Gaza one year into \u2018ceasefire\u2019",
-      "description": "An Israeli strike destroyed a residential building in the Al-Rimal neighbourhood in Gaza City.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/10/israeli-attack-destroys-building-in-gaza-one-year-into?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-10T20:14:01Z",
       "tier": 2
     },
     {
@@ -1285,12 +1317,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today indicates the most immediate escalation is no longer inside Iran itself but in the Gulf and Yemen theater: Saudi authorities said a Houthi strike on Riyadh\u2019s King Khalid airport on October 10, 2026 killed 12 people and injured 309, after earlier airport attacks this week had already killed three more people. On the US side, the clearest currently confirmed wartime combat-death figure remains 18 service members killed since the war began, while AP reported on October 10 that the Pentagon\u2019s broader Middle East death count has since risen to 21 because of additional non-combat or otherwise separate deaths, not new combat KIA. I could not verify newer official cumulative totals today for Iranian deaths, Iranian wounded, Israeli deaths, total strikes, or most weapons-usage/deployment cost-model fields from accessible named sources.",
+  "summary": "Confirmed reporting on October 10-11, 2026 shows the war\u2019s regional spillover worsening: the deadliest recent development was a Houthi strike on Riyadh\u2019s King Khalid airport that Saudi authorities said killed 12 people and injured more than 300, while AP also reported the Pentagon\u2019s official count of U.S. military deaths connected to the Iran war has risen to 21. For cumulative Iran-side losses, the newest clearly sourced totals found in available search results remain Al Jazeera\u2019s August 28 figures of 3,527 confirmed dead in Iran and more than 26,500 wounded, while IDF data posted October 7 said approximately 4,500 targets had been struck in Iran. Current U.S. force posture reporting indicates two carrier strike groups are presently tied to the theater, with a third potentially arriving later in October.",
   "briefings": [
     {
       "date": "2026-10-11",
       "day": 225,
-      "summary": "Confirmed reporting available today indicates the most immediate escalation is no longer inside Iran itself but in the Gulf and Yemen theater: Saudi authorities said a Houthi strike on Riyadh\u2019s King Khalid airport on October 10, 2026 killed 12 people and injured 309, after earlier airport attacks this week had already killed three more people. On the US side, the clearest currently confirmed wartime combat-death figure remains 18 service members killed since the war began, while AP reported on October 10 that the Pentagon\u2019s broader Middle East death count has since risen to 21 because of additional non-combat or otherwise separate deaths, not new combat KIA. I could not verify newer official cumulative totals today for Iranian deaths, Iranian wounded, Israeli deaths, total strikes, or most weapons-usage/deployment cost-model fields from accessible named sources."
+      "summary": "Confirmed reporting on October 10-11, 2026 shows the war\u2019s regional spillover worsening: the deadliest recent development was a Houthi strike on Riyadh\u2019s King Khalid airport that Saudi authorities said killed 12 people and injured more than 300, while AP also reported the Pentagon\u2019s official count of U.S. military deaths connected to the Iran war has risen to 21. For cumulative Iran-side losses, the newest clearly sourced totals found in available search results remain Al Jazeera\u2019s August 28 figures of 3,527 confirmed dead in Iran and more than 26,500 wounded, while IDF data posted October 7 said approximately 4,500 targets had been struck in Iran. Current U.S. force posture reporting indicates two carrier strike groups are presently tied to the theater, with a third potentially arriving later in October."
     },
     {
       "date": "2026-10-10",
