@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-10-14T06:11:54Z",
+  "lastUpdated": "2026-10-14T11:58:13Z",
   "dayCount": 228,
   "banner": {
     "strikes": "~3,580",
-    "killed": "3,486+",
-    "cost": "$56.1B+"
+    "killed": "3,633+",
+    "cost": "$57.3B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "39",
+    "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "19",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "178",
+    "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$56.1 billion+",
-    "dailyBurnRate": "~$246M/day",
+    "totalCost": "$57.3 billion+",
+    "dailyBurnRate": "~$251M/day",
     "daysOfOps": 228,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-14",
-          "source": "LLM-verified (AP, Oct. 7-8, 2026: USS George Washington and USS George H.W. Bush in region; AP says a third carrier could join by end of October, implying 2 currently deployed in theater.)"
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker (Oct. 13, 2026): USS George Washington and USS George H.W. Bush operating in Arabian Sea in support of Middle East operations)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-10-14",
-          "source": "LLM-verified (USNI News Fleet and Marine Tracker Sept. 14, 2026 lists 2 destroyers in the Red Sea (USS Gonzalez, USS Oscar Austin) and 2 named destroyers directly with carrier operations/support in the Arabian Sea (USS Shoup, USS Delbert D. Black visible with Bush CSG). This is a conservative confirmed minimum, not a full theater total.)"
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker (Oct. 13, 2026): USS Shoup in Arabian Sea; USS Jason Dunham and USS Gonzalez in Red Sea; USS Oscar Austin listed with Theodore Roosevelt deployment westward)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-14",
-          "source": "LLM-verified (IDF article updated Sept. 7, 2026 states 'More than 800 Israeli Air Force strike sorties' during the first month of Operation Roaring Lion; not a full current combined total, so use with caution.)"
+          "source": "LLM-verified (Operation Epic Fury Fact Sheet: April 1, 2026 (CENTCOM/DoD PDF snippet indexed by search) lists 13,000+ combat flights; this is the latest confirmed official sortie-style cumulative number found, though it is broader than fighters only)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP and Al Jazeera report repeated Houthi attacks on Riyadh airport in Saudi Arabia, including a strike on October 10 that killed 12 and later reports raising that toll to 13.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera and AP report a sharp escalation in attacks on shipping in the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 14, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Iran said the latest U.S. response to peace terms was 'insufficient,' indicating negotiations remain stalled.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Riyadh airport was struck again on October 11, 2026, one day after the deadliest Gulf-state attack since the war began.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 11, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headlines indicate intensified Hormuz attacks and continued Houthi strikes on Saudi territory, but no additional cumulative casualty numbers beyond the Riyadh airport toll were confirmed in searched sources.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,46 @@
   ],
   "developments": [
     {
+      "time": "2026-10-14T11:16:21Z",
+      "text": "<strong>Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again</strong> -- Ships in the Strait of Hormuz have been experiencing the worst spate of attacks since the start of the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T10:08:49Z",
+      "text": "<strong>Israeli air strike kills Palestinian woman in Gaza City</strong> -- The woman&amp;#039;s young daughter was rescued from a large fire inside the apartment, caused by the attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/14/israeli-air-strike-kills-palestinian-woman-in-gaza-city?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T08:24:02Z",
+      "text": "<strong>How do Iranians move money abroad to avoid US sanctions?</strong> -- From currency brokers to crypto, Iranians find ways to circumvent sanctions, but each comes with its own problems. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/14/how-do-iranians-move-money-abroad-to-avoid-us-sanctions?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T07:08:32Z",
+      "text": "<strong>\u2018Massive\u2019 Russian attack on Ukraine kills at least six, damages power sites</strong> -- Volodymyr Zelenskyy says Ukraine&amp;#039;s partners failed to warn of Russian ballistic missile attack on Kyiv. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T06:46:31Z",
+      "text": "<strong>Photos: Student protest in Albania prompts violent clashes with police</strong> -- Protesters in Tirana throw bricks at the Education Ministry building as police respond with tear gas and water cannon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/gallery/2026/10/14/photos-student-protest-in-albania-spark-violent-clashes-with-police-forces?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-13T15:52:15Z",
+      "text": "<strong>MI5 chief warns of threats to UK from Russia, Iran and AI</strong> -- Sir Ken McCallum says operations to tackle terrorism and state threats are now roughly of an &quot;equal scale&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-14T11:33:24Z",
+      "text": "<strong>Houthi missile hits Aramco building after Saudi-led coalition hits Yemen fuel depot</strong> -- The Saudi energy ministry says the Houthi attack caused a &quot;limited fire&quot; at Aramco&#x27;s headquarters complex in Dhahran. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-14T09:25:03Z",
+      "text": "<strong>Watch: Block of flats destroyed in Russian strikes on Ukraine</strong> -- BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cmx280x092x7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-14T05:07:55Z",
       "text": "<strong>Ukrainian drones strike more than 100km into Russian territory</strong> -- Ukrainian drones struck the Saratov region. The regional governor reported one person was killed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/ukrainian-drones-strike-more-than-100km-into-russian-territory?traffic_source=rss"
@@ -771,11 +811,6 @@
       "time": "2026-10-14T00:00:00Z",
       "text": "<strong>Iran war live: Saudi coalition hits Houthi sites; Aramco office hit in east</strong> -- A Saudi Aramco building has been hit in Dhahran, following Saudi-led coalition strikes on Houthi &amp;#039;vital assets&amp;#039; in Yemen <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T15:52:15Z",
-      "text": "<strong>MI5 chief warns of threats to UK from Russia, Iran and AI</strong> -- Sir Ken McCallum says operations to tackle terrorism and state threats are now roughly of an &quot;equal scale&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-14T04:20:17Z",
@@ -816,41 +851,6 @@
       "time": "2026-10-13T17:18:45Z",
       "text": "<strong>Cholera cases surge in Yemen as conflict intensifies, WHO says</strong> -- Yemen has reported 8,034 suspected cases and 27 deaths this year, with a quarter of the total coming in last four weeks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/13/cholera-cases-surge-in-yemen-as-conflict-intensifies-who-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T20:02:15Z",
-      "text": "<strong>Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot</strong> -- The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-13T04:27:22Z",
-      "text": "<strong>BBC&#x27;s Orla Guerin travels with Yemen&#x27;s southern national security forces through desert battlefield</strong> -- Orla Guerin travelled through Yemen, with forces loyal to its internationally recognised government, to a remote desert battlefield where Houthi rebels were dislodged just days ago. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-13T15:01:36Z",
-      "text": "<strong>Houthis threaten Saudi Arabia\u2019s Aramco facilities and airports</strong> -- Explosions in Sanaa reported shortly after Saudi-led coalition&amp;#039;s evacuation order as Houthis promise &amp;#039;harsh&amp;#039; response. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/13/houthis-threaten-saudi-arabias-aramco-facilities-and-airports?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T13:47:14Z",
-      "text": "<strong>Yemeni government launches air strikes on Houthi positions</strong> -- Yemeni rights group accuses the Houthis of killing five civilians and injuring more than a dozen others. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/13/yemeni-government-launches-air-strikes-on-houthi-positions?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T13:03:56Z",
-      "text": "<strong>Iran sees \u2018false flag\u2019 operations after UK blames IRGC for airbase incident</strong> -- Iran has been accused of being behind a plot against an airbase in the UK. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/13/iran-sees-false-flag-operations-after-uk-blames-irgc-for-airbase-incident?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T13:03:33Z",
-      "text": "<strong>Iran threatens Gulf data centres: How exposed is the region\u2019s internet?</strong> -- Iran has warned that cables and data centres in the region could be attacked, as Houthi allies hold internet chokepoint. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/13/iran-threatens-gulf-data-centres-how-exposed-is-the-regions-internet?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T12:57:33Z",
-      "text": "<strong>Deadly Houthi attacks in Yemen\u2019s Taiz as government forces advance in Marib</strong> -- Government forces engage in intense clashes as Houthi shelling targets residential areas and hospitals in Taiz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/13/deadly-houthi-attacks-in-yemens-taiz-as-government-forces-advance-in-marib?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,43 +1213,59 @@
   ],
   "newsFeed": [
     {
-      "title": "Ukrainian drones strike more than 100km into Russian territory",
-      "description": "Ukrainian drones struck the Saratov region. The regional governor reported one person was killed.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/ukrainian-drones-strike-more-than-100km-into-russian-territory?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-14T05:07:55Z",
-      "tier": 2
-    },
-    {
-      "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
-      "description": "The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa.",
+      "title": "Houthi missile hits Aramco building after Saudi-led coalition hits Yemen fuel depot",
+      "description": "The Saudi energy ministry says the Houthi attack caused a \"limited fire\" at Aramco's headquarters complex in Dhahran.",
       "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-10-14T04:20:17Z",
+      "time": "2026-10-14T11:33:24Z",
       "tier": 2
     },
     {
-      "title": "Houthi missiles intercepted over Saudi Arabia as battles intensify",
-      "description": "Saudi Arabia says it intercepted missiles targeting Riyadh and Dhahran, with falling debris injuring people.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/houthi-missiles-intercepted-over-saudi-arabia-as-battles-intensify?traffic_source=rss",
+      "title": "Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again",
+      "description": "Ships in the Strait of Hormuz have been experiencing the worst spate of attacks since the start of the war.",
+      "link": "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-14T03:09:46Z",
+      "time": "2026-10-14T11:16:21Z",
       "tier": 2
     },
     {
-      "title": "Kyiv hit by Russian ballistic missiles for second day with no warning",
-      "description": "Russian ballistic missiles struck Kyiv for a second consecutive day without advance warning.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/kyiv-russian-ballistic-missile-strikes-no-advance-warning?traffic_source=rss",
+      "title": "Israeli air strike kills Palestinian woman in Gaza City",
+      "description": "The woman&#039;s young daughter was rescued from a large fire inside the apartment, caused by the attack.",
+      "link": "https://www.aljazeera.com/news/2026/10/14/israeli-air-strike-kills-palestinian-woman-in-gaza-city?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-14T02:45:40Z",
+      "time": "2026-10-14T10:08:49Z",
       "tier": 2
     },
     {
-      "title": "Iran war live: Saudi coalition hits Houthi sites; Aramco office hit in east",
-      "description": "A Saudi Aramco building has been hit in Dhahran, following Saudi-led coalition strikes on Houthi &#039;vital assets&#039; in Yemen",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss",
+      "title": "Watch: Block of flats destroyed in Russian strikes on Ukraine",
+      "description": "BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes.",
+      "link": "https://www.bbc.co.uk/news/videos/cmx280x092x7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-14T09:25:03Z",
+      "tier": 2
+    },
+    {
+      "title": "How do Iranians move money abroad to avoid US sanctions?",
+      "description": "From currency brokers to crypto, Iranians find ways to circumvent sanctions, but each comes with its own problems.",
+      "link": "https://www.aljazeera.com/news/2026/10/14/how-do-iranians-move-money-abroad-to-avoid-us-sanctions?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-14T00:00:00Z",
+      "time": "2026-10-14T08:24:02Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018Massive\u2019 Russian attack on Ukraine kills at least six, damages power sites",
+      "description": "Volodymyr Zelenskyy says Ukraine&#039;s partners failed to warn of Russian ballistic missile attack on Kyiv.",
+      "link": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-14T07:08:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Photos: Student protest in Albania prompts violent clashes with police",
+      "description": "Protesters in Tirana throw bricks at the Education Ministry building as police respond with tear gas and water cannon.",
+      "link": "https://www.aljazeera.com/gallery/2026/10/14/photos-student-protest-in-albania-spark-violent-clashes-with-police-forces?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-14T06:46:31Z",
       "tier": 2
     },
     {
@@ -1261,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 12-14, 2026 indicates the war remains active around its maritime and Gulf fronts rather than through new large-scale U.S. strikes on Iran. AP reported Iran is threatening shipping near the Strait of Hormuz, while Saudi Arabia is investigating repeated Houthi-linked missile and drone attacks that killed at least 13 people at Riyadh airport and wounded more than 300. AP also reported the U.S. still has two carrier strike groups tied to the theater, with a third potentially arriving later in October, but Trump said on October 8 that he would not resume military strikes on Iran before the November 3 midterm elections.",
+  "summary": "Confirmed reporting on October 12-14, 2026 shows the war\u2019s most acute new risks are maritime and spillover escalation rather than fresh confirmed U.S. strike totals: AP and Al Jazeera report a worsening attack wave against shipping in and around the Strait of Hormuz, while Saudi Arabia has suffered repeated Houthi-linked airport strikes in Riyadh, with the October 10 attack killing at least 12 people and later reporting raising the toll to 13. I found updated confirmed cumulative casualty totals from Al Jazeera\u2019s August 28 by-the-numbers compilation and current U.S. naval posture from USNI\u2019s October 13 fleet tracker, but I did not find newer confirmed official totals for several weapons-usage fields or a current official U.S. troop-count figure specific to Operation Epic Fury.",
   "briefings": [
     {
       "date": "2026-10-14",
       "day": 228,
-      "summary": "Confirmed reporting on October 12-14, 2026 indicates the war remains active around its maritime and Gulf fronts rather than through new large-scale U.S. strikes on Iran. AP reported Iran is threatening shipping near the Strait of Hormuz, while Saudi Arabia is investigating repeated Houthi-linked missile and drone attacks that killed at least 13 people at Riyadh airport and wounded more than 300. AP also reported the U.S. still has two carrier strike groups tied to the theater, with a third potentially arriving later in October, but Trump said on October 8 that he would not resume military strikes on Iran before the November 3 midterm elections."
+      "summary": "Confirmed reporting on October 12-14, 2026 shows the war\u2019s most acute new risks are maritime and spillover escalation rather than fresh confirmed U.S. strike totals: AP and Al Jazeera report a worsening attack wave against shipping in and around the Strait of Hormuz, while Saudi Arabia has suffered repeated Houthi-linked airport strikes in Riyadh, with the October 10 attack killing at least 12 people and later reporting raising the toll to 13. I found updated confirmed cumulative casualty totals from Al Jazeera\u2019s August 28 by-the-numbers compilation and current U.S. naval posture from USNI\u2019s October 13 fleet tracker, but I did not find newer confirmed official totals for several weapons-usage fields or a current official U.S. troop-count figure specific to Operation Epic Fury."
     },
     {
       "date": "2026-10-13",
