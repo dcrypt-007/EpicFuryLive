@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-10-14T11:58:13Z",
+  "lastUpdated": "2026-10-14T17:11:18Z",
   "dayCount": 228,
   "banner": {
     "strikes": "~3,580",
-    "killed": "3,633+",
-    "cost": "$57.3B+"
+    "killed": "3,636+",
+    "cost": "$58.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "21",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$57.3 billion+",
-    "dailyBurnRate": "~$251M/day",
+    "totalCost": "$58.5 billion+",
+    "dailyBurnRate": "~$257M/day",
     "daysOfOps": 228,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-14",
-          "source": "LLM-verified (USNI News Fleet and Marine Tracker (Oct. 13, 2026): USS George Washington and USS George H.W. Bush operating in Arabian Sea in support of Middle East operations)"
+          "source": "LLM-verified (U.S. Department of War transcript, Apr. 24, 2026: a second aircraft carrier would join the blockade; AP on Oct. 7, 2026 confirmed USS Abraham Lincoln and accompanying ships had just completed Epic Fury deployment, but no newer official theater count beyond 2 was found)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 25000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-14",
-          "source": "LLM-verified (Operation Epic Fury Fact Sheet: April 1, 2026 (CENTCOM/DoD PDF snippet indexed by search) lists 13,000+ combat flights; this is the latest confirmed official sortie-style cumulative number found, though it is broader than fighters only)"
+          "source": "LLM-verified (Defence Fulcrum, citing new U.S. report/briefing figures in Oct. 2026: approximately 36,000 combat sorties during the major combat phase of Operation Epic Fury)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "25,000 \u00d7 $100,000 each",
+        "cost": "$2,500,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Oct. 11, 2026 reported Tehran called the latest U.S. response to negotiations 'insufficient,' suggesting diplomacy remains stalled.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Oct. 14, 2026 reported Iran said a ship sank after striking a mine in the Strait of Hormuz, underscoring persistent maritime risk in the theater.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 14, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera live coverage on Oct. 12, 2026 reported continued Houthi missile/drone attacks on Saudi targets, including Riyadh airport, indicating regional spillover remains active.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 14, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran said the latest U.S. response to Tehran's conditions for reopening the Strait of Hormuz was 'inadequate'.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Houthis struck Riyadh's King Khalid International Airport again on October 12, 2026, killing 1 and injuring 11, one day after a missile attack there killed 12 and wounded more than 300.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported multiple ballistic missiles were intercepted near U.S. forces during renewed hostilities tied to the Strait of Hormuz crisis.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran said the latest U.S. response to peace terms was 'insufficient,' indicating negotiations remain stalled.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,36 @@
   ],
   "developments": [
     {
+      "time": "2026-10-14T16:41:42Z",
+      "text": "<strong>Tehran municipality accused of \u2018overstep\u2019 after launching welfare projects</strong> -- Tehran&amp;#039;s new municipal welfare projects face intense criticism over funding sources, transparency, and inflation claims. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/10/14/tehran-municipality-accused-of-overstep-after-launching-welfare-projects?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T16:22:04Z",
+      "text": "<strong>At least two security officials killed near Iran\u2019s critical Chabahar port</strong> -- Iran says &amp;#039;terrorist groups&amp;#039; supported from outside the country are targeting security forces. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/14/at-least-two-security-officials-killed-near-irans-critical-chabahar-port?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T15:49:47Z",
+      "text": "<strong>Ronaldo\u2019s among three Saudi Arabia games postponed due to Houthi attacks</strong> -- Saudi Pro League postpones three matches after Houthi attacks, including one involving Cristiano Ronaldo&amp;#039;s Al Nassr. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/10/14/ronaldos-among-three-saudi-arabia-games-postponed-due-to-houthi-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T13:50:28Z",
+      "text": "<strong>Two scenarios for the Yemen war</strong> -- What comes next is either a retreat for the Houthis or a war of attrition. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/10/14/two-scenarios-for-the-yemen-war?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T13:17:34Z",
+      "text": "<strong>Iran targets Starlink as \u2018tool of war\u2019 with hints of more internet curbs</strong> -- One official claims satellite internet could erode online governance in Iran amid war with the US and Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/14/iran-targets-starlink-as-tool-of-war-with-hints-at-internet-restrictions?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-14T09:25:03Z",
+      "text": "<strong>Watch: Block of flats destroyed in Russian strikes on Ukraine</strong> -- BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cmx280x092x7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-14T11:16:21Z",
       "text": "<strong>Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again</strong> -- Ships in the Strait of Hormuz have been experiencing the worst spate of attacks since the start of the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again?traffic_source=rss"
@@ -788,11 +818,6 @@
       "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-10-14T09:25:03Z",
-      "text": "<strong>Watch: Block of flats destroyed in Russian strikes on Ukraine</strong> -- BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cmx280x092x7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-10-14T05:07:55Z",
       "text": "<strong>Ukrainian drones strike more than 100km into Russian territory</strong> -- Ukrainian drones struck the Saratov region. The regional governor reported one person was killed. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/ukrainian-drones-strike-more-than-100km-into-russian-territory?traffic_source=rss"
@@ -826,31 +851,6 @@
       "time": "2026-10-13T21:03:40Z",
       "text": "<strong>Surveillance video shows moment ICE vehicle strikes man in Houston</strong> -- New footage shows the moment 48-year-old Miguel Parra-Hernandez was hit by an ICE officer\u2019s car in Houston, Texas. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/13/surveillance-video-shows-moment-ice-vehicle-strikes-man-in-houston?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T20:33:10Z",
-      "text": "<strong>Funeral for Egyptian flight attendant killed in Houthi attack on Riyadh</strong> -- Funeral for Egyptian flight attendant killed in Houthi attack on Riyadh <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/13/funeral-for-egyptian-flight-attendant-killed-in-houthi-attack-on-riyadh?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T19:33:11Z",
-      "text": "<strong>Trump says Houthis trying to increase oil prices before US elections</strong> -- US president suggests that Yemen-based group are &amp;#039;purposefully trying to drive up oil prices&amp;#039; before November vote. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/13/trump-says-houthis-trying-to-increase-oil-prices-before-us-elections?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T22:29:55Z",
-      "text": "<strong>Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot</strong> -- The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-13T18:44:11Z",
-      "text": "<strong>Who killed Tupac?</strong> -- For decades, Tupac Shakur\u2019s murder remained unsolved. Now, Duane Davis has been sentenced 40 years for his killing. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/13/who-killed-tupac?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-13T17:18:45Z",
-      "text": "<strong>Cholera cases surge in Yemen as conflict intensifies, WHO says</strong> -- Yemen has reported 8,034 suspected cases and 27 deaths this year, with a quarter of the total coming in last four weeks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/13/cholera-cases-surge-in-yemen-as-conflict-intensifies-who-says?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,27 +1213,43 @@
   ],
   "newsFeed": [
     {
-      "title": "Houthi missile hits Aramco building after Saudi-led coalition hits Yemen fuel depot",
-      "description": "The Saudi energy ministry says the Houthi attack caused a \"limited fire\" at Aramco's headquarters complex in Dhahran.",
-      "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-14T11:33:24Z",
+      "title": "Tehran municipality accused of \u2018overstep\u2019 after launching welfare projects",
+      "description": "Tehran&#039;s new municipal welfare projects face intense criticism over funding sources, transparency, and inflation claims.",
+      "link": "https://www.aljazeera.com/economy/2026/10/14/tehran-municipality-accused-of-overstep-after-launching-welfare-projects?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-14T16:41:42Z",
       "tier": 2
     },
     {
-      "title": "Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again",
-      "description": "Ships in the Strait of Hormuz have been experiencing the worst spate of attacks since the start of the war.",
-      "link": "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again?traffic_source=rss",
+      "title": "At least two security officials killed near Iran\u2019s critical Chabahar port",
+      "description": "Iran says &#039;terrorist groups&#039; supported from outside the country are targeting security forces.",
+      "link": "https://www.aljazeera.com/news/2026/10/14/at-least-two-security-officials-killed-near-irans-critical-chabahar-port?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-14T11:16:21Z",
+      "time": "2026-10-14T16:22:04Z",
       "tier": 2
     },
     {
-      "title": "Israeli air strike kills Palestinian woman in Gaza City",
-      "description": "The woman&#039;s young daughter was rescued from a large fire inside the apartment, caused by the attack.",
-      "link": "https://www.aljazeera.com/news/2026/10/14/israeli-air-strike-kills-palestinian-woman-in-gaza-city?traffic_source=rss",
+      "title": "Ronaldo\u2019s among three Saudi Arabia games postponed due to Houthi attacks",
+      "description": "Saudi Pro League postpones three matches after Houthi attacks, including one involving Cristiano Ronaldo&#039;s Al Nassr.",
+      "link": "https://www.aljazeera.com/sports/2026/10/14/ronaldos-among-three-saudi-arabia-games-postponed-due-to-houthi-attacks?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-14T10:08:49Z",
+      "time": "2026-10-14T15:49:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Two scenarios for the Yemen war",
+      "description": "What comes next is either a retreat for the Houthis or a war of attrition.",
+      "link": "https://www.aljazeera.com/opinions/2026/10/14/two-scenarios-for-the-yemen-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-14T13:50:28Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran targets Starlink as \u2018tool of war\u2019 with hints of more internet curbs",
+      "description": "One official claims satellite internet could erode online governance in Iran amid war with the US and Israel.",
+      "link": "https://www.aljazeera.com/news/2026/10/14/iran-targets-starlink-as-tool-of-war-with-hints-at-internet-restrictions?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-14T13:17:34Z",
       "tier": 2
     },
     {
@@ -1243,46 +1259,14 @@
       "source": "BBC World",
       "time": "2026-10-14T09:25:03Z",
       "tier": 2
-    },
-    {
-      "title": "How do Iranians move money abroad to avoid US sanctions?",
-      "description": "From currency brokers to crypto, Iranians find ways to circumvent sanctions, but each comes with its own problems.",
-      "link": "https://www.aljazeera.com/news/2026/10/14/how-do-iranians-move-money-abroad-to-avoid-us-sanctions?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-14T08:24:02Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018Massive\u2019 Russian attack on Ukraine kills at least six, damages power sites",
-      "description": "Volodymyr Zelenskyy says Ukraine&#039;s partners failed to warn of Russian ballistic missile attack on Kyiv.",
-      "link": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-14T07:08:32Z",
-      "tier": 2
-    },
-    {
-      "title": "Photos: Student protest in Albania prompts violent clashes with police",
-      "description": "Protesters in Tirana throw bricks at the Education Ministry building as police respond with tear gas and water cannon.",
-      "link": "https://www.aljazeera.com/gallery/2026/10/14/photos-student-protest-in-albania-spark-violent-clashes-with-police-forces?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-14T06:46:31Z",
-      "tier": 2
-    },
-    {
-      "title": "MI5 chief warns of threats to UK from Russia, Iran and AI",
-      "description": "Sir Ken McCallum says operations to tackle terrorism and state threats are now roughly of an \"equal scale\".",
-      "link": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-13T15:52:15Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 12-14, 2026 shows the war\u2019s most acute new risks are maritime and spillover escalation rather than fresh confirmed U.S. strike totals: AP and Al Jazeera report a worsening attack wave against shipping in and around the Strait of Hormuz, while Saudi Arabia has suffered repeated Houthi-linked airport strikes in Riyadh, with the October 10 attack killing at least 12 people and later reporting raising the toll to 13. I found updated confirmed cumulative casualty totals from Al Jazeera\u2019s August 28 by-the-numbers compilation and current U.S. naval posture from USNI\u2019s October 13 fleet tracker, but I did not find newer confirmed official totals for several weapons-usage fields or a current official U.S. troop-count figure specific to Operation Epic Fury.",
+  "summary": "Confirmed reporting available today still points to no broadly published official revision of the main cumulative Iran-side fatality count since the Aug. 28 Al Jazeera compilation of official figures, which listed 3,527 dead in Iran, 60 Israelis killed, and 28 deaths in Gulf states; the main clear update since then is on the U.S. side, where the Pentagon\u2019s public casualty database was reported by The Washington Post on October 10, 2026, to have been revised upward to 21 U.S. troop deaths tied to operations against Iran. Regional security conditions also remain volatile, with AP and Al Jazeera reporting continuing Houthi attacks affecting Saudi Arabia, stalled U.S.-Iran negotiations, and new maritime danger in the Strait of Hormuz after Iran said a ship sank after hitting a mine.",
   "briefings": [
     {
       "date": "2026-10-14",
       "day": 228,
-      "summary": "Confirmed reporting on October 12-14, 2026 shows the war\u2019s most acute new risks are maritime and spillover escalation rather than fresh confirmed U.S. strike totals: AP and Al Jazeera report a worsening attack wave against shipping in and around the Strait of Hormuz, while Saudi Arabia has suffered repeated Houthi-linked airport strikes in Riyadh, with the October 10 attack killing at least 12 people and later reporting raising the toll to 13. I found updated confirmed cumulative casualty totals from Al Jazeera\u2019s August 28 by-the-numbers compilation and current U.S. naval posture from USNI\u2019s October 13 fleet tracker, but I did not find newer confirmed official totals for several weapons-usage fields or a current official U.S. troop-count figure specific to Operation Epic Fury."
+      "summary": "Confirmed reporting available today still points to no broadly published official revision of the main cumulative Iran-side fatality count since the Aug. 28 Al Jazeera compilation of official figures, which listed 3,527 dead in Iran, 60 Israelis killed, and 28 deaths in Gulf states; the main clear update since then is on the U.S. side, where the Pentagon\u2019s public casualty database was reported by The Washington Post on October 10, 2026, to have been revised upward to 21 U.S. troop deaths tied to operations against Iran. Regional security conditions also remain volatile, with AP and Al Jazeera reporting continuing Houthi attacks affecting Saudi Arabia, stalled U.S.-Iran negotiations, and new maritime danger in the Strait of Hormuz after Iran said a ship sank after hitting a mine."
     },
     {
       "date": "2026-10-13",
