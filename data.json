@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-10-15T09:56:06Z",
+  "lastUpdated": "2026-10-15T15:01:53Z",
   "dayCount": 229,
   "banner": {
     "strikes": "~4,500",
-    "killed": "29+",
-    "cost": "$50.9B+"
+    "killed": "7,633+",
+    "cost": "$52.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "17",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "12",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "25,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$50.9 billion+",
-    "dailyBurnRate": "~$222M/day",
+    "totalCost": "$52.0 billion+",
+    "dailyBurnRate": "~$227M/day",
     "daysOfOps": 229,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-15",
-          "source": "LLM-verified (USNI Fleet Tracker, Oct. 13, 2026: USS George Washington and USS George H.W. Bush operating in Arabian Sea in support of operations; Theodore Roosevelt still in Pacific and AP said a third carrier could arrive only later in October.)"
+          "source": "LLM-verified (AP, Oct. 7, 2026: 'There are now two aircraft carriers assigned to the Middle East' (USS George Washington and USS George H.W. Bush))"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-10-15",
-          "source": "LLM-verified (AP, Oct. 1, 2026: U.S. military dispatching roughly 9,000 troops aboard a group of ships to the Middle East.)"
+          "source": "LLM-verified (AP, Oct. 1, 2026 reported the U.S. military is dispatching roughly 9,000 troops aboard a group of ships to the Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 450,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-10-15",
-          "source": "LLM-verified (AP, Oct. 9, 2026: citation read to USS Abraham Lincoln crew said the carrier and strike group launched 450 Tomahawk cruise missiles.)"
+          "source": "LLM-verified (Al Jazeera, Oct. 15, 2026, citing analyst discussion, says the US has fired more than 1,000 Tomahawk cruise missiles during the war; exact official cumulative total not found)"
         },
         {
           "id": "jdam",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "450 \u00d7 $2,000,000 each",
-        "cost": "$900,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Oct. 12 that a Houthi strike on Riyadh airport killed at least 13 people, signaling a widening Gulf front linked to the broader Iran war.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Oct. 1 that a third U.S. carrier strike group could arrive by late October, potentially raising the carrier count from 2 to 3.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 15, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran has intensified attacks on shipping in the Strait of Hormuz; UKMTO recorded 15 ship attacks between Oct. 6 and Oct. 14, according to Al Jazeera reporting on Oct. 15 citing UKMTO and Reuters.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 15, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Houthi missile and drone attacks on Riyadh have expanded the regional front, with AP and Al Jazeera reporting the Riyadh airport strike death toll has risen to 13 and flights were halted.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported a suspected Iran-directed plot to attack RAF Fairford in the UK, a base used by U.S. bombers striking Iran",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Saudi Arabia says a Houthi missile-and-drone attack on Riyadh airport killed 13 and wounded over 300, with additional Saudi airport attacks reported in the past week (AP)",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 12, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Unexploded ordnance in northern Israel killed a 15-year-old and injured 24 on October 12, 2026 (AP/Al Jazeera)",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-10-15T13:29:38Z",
+      "text": "<strong>Russia accuses Ukraine of contradicting US brokered deal</strong> -- Russia has accused Ukraine of going against US peace efforts, after an overnight Ukrainian drone strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/russia-accuses-ukraine-of-contradicting-us-brokered-deal?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T13:19:09Z",
+      "text": "<strong>Ukrainians lash out at Trump as Zelenskyy warns of US betrayal</strong> -- Ukrainians accuse the US of gambling with their lives as Russian strikes devastated residential buildings in the capital <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/10-15-ukraine-angry-at-us-sv?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T11:45:39Z",
+      "text": "<strong>Ukrainians fear US intelligence cuts as Russian strikes intensify</strong> -- Reduced missile warnings increase threat to civilians as Trump pushes an &amp;#039;energy ceasefire&amp;#039; and peace negotiations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/15/ukrainians-fear-us-intelligence-cuts-as-russian-strikes-intensify?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T11:41:05Z",
+      "text": "<strong>US-Iran stalemate: What are Trump\u2019s next military options?</strong> -- Trump has ruled out attacks before the midterms. Analysts weigh what he could do next, and at what cost. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/15/us-iran-stalemate-what-are-trumps-next-military-options?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T10:52:12Z",
+      "text": "<strong>Fighting in Yemen intensifies: What\u2019s the latest on the battlefield?</strong> -- Houthis attempt to raise the cost of the Yemen war for Saudi Arabia as attacks, fighting intensify. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/15/fighting-in-yemen-intensifies-whats-the-latest-on-the-battlefield?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T10:44:03Z",
+      "text": "<strong>Asian Cup in Saudi Arabia could be postponed by a year amid Houthi attacks</strong> -- The tournament is scheduled to begin on January 7 but could be moved by a year if needed, AFC president says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/10/15/asian-cup-in-saudi-arabia-could-be-postponed-by-a-year-amid-houthi-attacks?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T10:21:43Z",
+      "text": "<strong>Dozens of children killed after roof collapses in Pakistani school</strong> -- At least 29 people, mostly children, have been killed after the school collapsed on them in Pakistan\u2019s Peshawar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/10-15-pak-school-collapse-sv?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T10:02:17Z",
+      "text": "<strong>Russia says Ukraine resumes attacks on oil refineries</strong> -- Ukraine&amp;#039;s president earlier said Kyiv was &amp;#039;done&amp;#039; with energy ceasefire and that strikes on Russian oil refineries would resume. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/15/russia-says-ukraine-resumes-attacks-on-oil-refineries?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-15T12:28:26Z",
+      "text": "<strong>At least 33 pupils and teacher killed after school roof collapses in Pakistan</strong> -- Rescue officials fear more people are buried under the debris in the north-western city of Peshawar. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-15T05:00:23Z",
+      "text": "<strong>Hundreds of IDF investigations into killings still have no public outcome, BBC Verify finds</strong> -- BBC Verify has identified 254 incidents from the past three years the Israeli military said it is reviewing after being accused of harm. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c574e228vlygo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-15T08:30:41Z",
       "text": "<strong>School roof collapses in northwestern Pakistan, killing at least 29 people</strong> -- At least 28 students and one teacher killed in incident at Al-Khair Education Centre, a private school in Peshawar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/15/school-roof-collapses-in-northwestern-pakistan-killing-at-least-29-people?traffic_source=rss"
@@ -801,56 +851,6 @@
       "time": "2026-10-14T20:42:59Z",
       "text": "<strong>Families of Trinidadian men killed in US boat strike demand accountability</strong> -- The Trump administration has killed at least 239 people in boat strikes denounced as extrajudicial killings. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/14/families-of-trinidadian-men-killed-in-us-boat-strike-demand-accountability?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T20:25:04Z",
-      "text": "<strong>Houthi attacks disrupt travel plans for Mecca pilgrims</strong> -- Muslim pilgrims headed to Mecca for Umrah are facing travel disruptions as Houthi attacks hit Saudi Arabia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/houthi-attacks-disrupt-travel-plans-for-mecca-pilgrims?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T19:02:51Z",
-      "text": "<strong>Bangladesh arrests two for luring locals to fight for Russia in Ukraine</strong> -- Twenty Bangladeshi citizens have been killed after being used by Russia as &amp;#039;bait&amp;#039; to locate enemy positions, police say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/14/bangladesh-arrests-two-for-luring-locals-to-fight-for-russia-in-ukraine?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T17:11:57Z",
-      "text": "<strong>Saudi tennis \u2018slam\u2019 with Alcaraz, Djokovic postponed amid Houthi attacks</strong> -- The Six Kings Slam exhibition tournament has been pushed from October to December by Saudi organisers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/10/14/saudi-tennis-slam-with-alcaraz-djokovic-postponed-amid-houthi-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T17:02:31Z",
-      "text": "<strong>Ukraine accuses Elon Musk\u2019s SpaceX of throttling Starlink terminals</strong> -- Officials say ability to block Russian drones restricted as Kyiv reels from second night of ballistic missile attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/14/ukraine-accuses-elon-musks-spacex-of-throttling-starlink-terminals?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T16:51:12Z",
-      "text": "<strong>Suspected Israeli online operations cause alarm in Iran and Lebanon</strong> -- Suspected online espionage triggers intense security crackdowns and counter-intelligence measures in Iran and Lebanon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/14/suspected-israeli-online-operations-cause-alarm-in-iran-and-lebanon?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T16:41:42Z",
-      "text": "<strong>Tehran municipality accused of \u2018overstep\u2019 after launching welfare projects</strong> -- Tehran&amp;#039;s new municipal welfare projects face intense criticism over funding sources, transparency, and inflation claims. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/economy/2026/10/14/tehran-municipality-accused-of-overstep-after-launching-welfare-projects?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T16:22:04Z",
-      "text": "<strong>At least two security officials killed near Iran\u2019s critical Chabahar port</strong> -- Iran says &amp;#039;terrorist groups&amp;#039; supported from outside the country are targeting security forces. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/14/at-least-two-security-officials-killed-near-irans-critical-chabahar-port?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T15:49:47Z",
-      "text": "<strong>Ronaldo\u2019s among three Saudi Arabia games postponed due to Houthi attacks</strong> -- Saudi Pro League postpones three matches after Houthi attacks, including one involving Cristiano Ronaldo&amp;#039;s Al Nassr. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/10/14/ronaldos-among-three-saudi-arabia-games-postponed-due-to-houthi-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T13:50:28Z",
-      "text": "<strong>Two scenarios for the Yemen war</strong> -- What comes next is either a retreat for the Houthis or a war of attrition. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/10/14/two-scenarios-for-the-yemen-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-14T13:17:34Z",
-      "text": "<strong>Iran targets Starlink as \u2018tool of war\u2019 with hints of more internet curbs</strong> -- One official claims satellite internet could erode online governance in Iran amid war with the US and Israel. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/14/iran-targets-starlink-as-tool-of-war-with-hints-at-internet-restrictions?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,60 +1213,92 @@
   ],
   "newsFeed": [
     {
-      "title": "School roof collapses in northwestern Pakistan, killing at least 29 people",
-      "description": "At least 28 students and one teacher killed in incident at Al-Khair Education Centre, a private school in Peshawar.",
-      "link": "https://www.aljazeera.com/news/2026/10/15/school-roof-collapses-in-northwestern-pakistan-killing-at-least-29-people?traffic_source=rss",
+      "title": "Russia accuses Ukraine of contradicting US brokered deal",
+      "description": "Russia has accused Ukraine of going against US peace efforts, after an overnight Ukrainian drone strike.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/russia-accuses-ukraine-of-contradicting-us-brokered-deal?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-15T08:30:41Z",
+      "time": "2026-10-15T13:29:38Z",
       "tier": 2
     },
     {
-      "title": "Containers and debris captured floating around the Strait of Hormuz",
-      "description": "Video shows containers and debris scattered around the Strait of Hormuz due to the recent attacks on vessels.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/containers-and-debris-captured-floating-around-the-strait-of-hormuz?traffic_source=rss",
+      "title": "Ukrainians lash out at Trump as Zelenskyy warns of US betrayal",
+      "description": "Ukrainians accuse the US of gambling with their lives as Russian strikes devastated residential buildings in the capital",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/10-15-ukraine-angry-at-us-sv?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-15T08:06:06Z",
+      "time": "2026-10-15T13:19:09Z",
       "tier": 2
     },
     {
-      "title": "Russian nuclear-powered submarine fires missiles during Pacific drills",
-      "description": "Russia&#039;s Pacific Fleet has test-fired cruise missiles from a nuclear-powered submarine, striking a target 1,200km away.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/10-15-clip-russia-nuclear-submarines?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-15T07:44:35Z",
+      "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
+      "description": "Rescue officials fear more people are buried under the debris in the north-western city of Peshawar.",
+      "link": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-15T12:28:26Z",
       "tier": 2
     },
     {
-      "title": "G20 finance ministers, central bankers gather amid fallout from Iran war",
-      "description": "Officials meet in Thailand as conflict drives energy prices higher and casts uncertainty over global economy.",
-      "link": "https://www.aljazeera.com/economy/2026/10/15/g20-finance-ministers-central-bankers-gather-amid-fallout-from-iran-war?traffic_source=rss",
+      "title": "Ukrainians fear US intelligence cuts as Russian strikes intensify",
+      "description": "Reduced missile warnings increase threat to civilians as Trump pushes an &#039;energy ceasefire&#039; and peace negotiations.",
+      "link": "https://www.aljazeera.com/news/2026/10/15/ukrainians-fear-us-intelligence-cuts-as-russian-strikes-intensify?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-15T06:16:46Z",
+      "time": "2026-10-15T11:45:39Z",
       "tier": 2
     },
     {
-      "title": "Albanian Ministry of Justice on fire as education protesters riot",
-      "description": "Hundreds of students joined anti-government protests in Tirana, demanding education reforms.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/albanian-ministry-of-justice-on-fire-as-education-protesters-riot?traffic_source=rss",
+      "title": "US-Iran stalemate: What are Trump\u2019s next military options?",
+      "description": "Trump has ruled out attacks before the midterms. Analysts weigh what he could do next, and at what cost.",
+      "link": "https://www.aljazeera.com/news/2026/10/15/us-iran-stalemate-what-are-trumps-next-military-options?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-15T03:30:42Z",
+      "time": "2026-10-15T11:41:05Z",
       "tier": 2
     },
     {
-      "title": "North Korea tests two submarine-launched missiles, state media reports",
-      "description": "The tests showcase North Korea&#039;s war deterrent capabilities in the region, KCNA says.",
-      "link": "https://www.aljazeera.com/news/2026/10/15/north-korea-tests-two-submarine-launched-missiles-state-media-reports?traffic_source=rss",
+      "title": "Fighting in Yemen intensifies: What\u2019s the latest on the battlefield?",
+      "description": "Houthis attempt to raise the cost of the Yemen war for Saudi Arabia as attacks, fighting intensify.",
+      "link": "https://www.aljazeera.com/news/2026/10/15/fighting-in-yemen-intensifies-whats-the-latest-on-the-battlefield?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-15T03:23:49Z",
+      "time": "2026-10-15T10:52:12Z",
+      "tier": 2
+    },
+    {
+      "title": "Asian Cup in Saudi Arabia could be postponed by a year amid Houthi attacks",
+      "description": "The tournament is scheduled to begin on January 7 but could be moved by a year if needed, AFC president says.",
+      "link": "https://www.aljazeera.com/sports/2026/10/15/asian-cup-in-saudi-arabia-could-be-postponed-by-a-year-amid-houthi-attacks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-15T10:44:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Dozens of children killed after roof collapses in Pakistani school",
+      "description": "At least 29 people, mostly children, have been killed after the school collapsed on them in Pakistan\u2019s Peshawar.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/10-15-pak-school-collapse-sv?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-15T10:21:43Z",
+      "tier": 2
+    },
+    {
+      "title": "Russia says Ukraine resumes attacks on oil refineries",
+      "description": "Ukraine&#039;s president earlier said Kyiv was &#039;done&#039; with energy ceasefire and that strikes on Russian oil refineries would resume.",
+      "link": "https://www.aljazeera.com/news/2026/10/15/russia-says-ukraine-resumes-attacks-on-oil-refineries?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-15T10:02:17Z",
+      "tier": 2
+    },
+    {
+      "title": "Hundreds of IDF investigations into killings still have no public outcome, BBC Verify finds",
+      "description": "BBC Verify has identified 254 incidents from the past three years the Israeli military said it is reviewing after being accused of harm.",
+      "link": "https://www.bbc.co.uk/news/articles/c574e228vlygo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-15T05:00:23Z",
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting accessible today indicates the war remains active but politically constrained: AP reported on October 8 and 10 that President Trump said the U.S. would not resume major strikes on Iran before the November 3, 2026 midterm elections, even as ceasefire efforts remain fragile. AP also reported the Pentagon has split renewed October fighting from Operation Epic Fury in its casualty accounting, with four additional U.S. deaths moved into a new category beyond the 13 previously reported killed during Epic Fury, bringing confirmed Pentagon/AP U.S. military deaths tied to the conflict to 17. In the Gulf, AP reported 12 people were killed in the October 10 attack on Riyadh airport, while other AP dispatches this week highlighted Iranian warnings about possible cyber/cable attacks and continued regional spillover threats, including Houthi strikes on Saudi targets.",
+  "summary": "Confirmed reporting on October 15, 2026 indicates the war remains in a stalemate: President Trump has publicly ruled out new U.S. strikes on Iran before the November 3 midterm elections, while Iran has intensified maritime pressure in the Strait of Hormuz, with Al Jazeera citing UKMTO data showing 15 ship attacks between October 6 and 14. AP reporting shows two U.S. aircraft carriers are currently assigned to the Middle East, with a third potentially arriving later in October, and roughly 9,000 additional troops were dispatched at the start of the month. For casualties, the most recent accessible confirmed cumulative figures remain 3,527 killed in Iran, 18 U.S. service members killed, 60 Israelis killed, and 28 killed in Gulf states, but several field-specific totals such as Iranian civilian-only deaths, official combined strike totals, and detailed munitions expenditure could not be newly confirmed from accessible named-source reporting today.",
   "briefings": [
     {
       "date": "2026-10-15",
       "day": 229,
-      "summary": "Confirmed reporting accessible today indicates the war remains active but politically constrained: AP reported on October 8 and 10 that President Trump said the U.S. would not resume major strikes on Iran before the November 3, 2026 midterm elections, even as ceasefire efforts remain fragile. AP also reported the Pentagon has split renewed October fighting from Operation Epic Fury in its casualty accounting, with four additional U.S. deaths moved into a new category beyond the 13 previously reported killed during Epic Fury, bringing confirmed Pentagon/AP U.S. military deaths tied to the conflict to 17. In the Gulf, AP reported 12 people were killed in the October 10 attack on Riyadh airport, while other AP dispatches this week highlighted Iranian warnings about possible cyber/cable attacks and continued regional spillover threats, including Houthi strikes on Saudi targets."
+      "summary": "Confirmed reporting on October 15, 2026 indicates the war remains in a stalemate: President Trump has publicly ruled out new U.S. strikes on Iran before the November 3 midterm elections, while Iran has intensified maritime pressure in the Strait of Hormuz, with Al Jazeera citing UKMTO data showing 15 ship attacks between October 6 and 14. AP reporting shows two U.S. aircraft carriers are currently assigned to the Middle East, with a third potentially arriving later in October, and roughly 9,000 additional troops were dispatched at the start of the month. For casualties, the most recent accessible confirmed cumulative figures remain 3,527 killed in Iran, 18 U.S. service members killed, 60 Israelis killed, and 28 killed in Gulf states, but several field-specific totals such as Iranian civilian-only deaths, official combined strike totals, and detailed munitions expenditure could not be newly confirmed from accessible named-source reporting today."
     },
     {
       "date": "2026-10-14",
