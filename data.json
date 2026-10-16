@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-10-16T01:21:39Z",
+  "lastUpdated": "2026-10-16T07:11:02Z",
   "dayCount": 230,
   "banner": {
-    "strikes": "~1,450",
-    "killed": "5,370+",
-    "cost": "$52.4B+"
+    "strikes": "~4,500",
+    "killed": "3,606+",
+    "cost": "$51.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,636",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "21",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "12",
+    "gulfCasualties": "19",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "32,314+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$52.4 billion+",
-    "dailyBurnRate": "~$228M/day",
+    "totalCost": "$51.8 billion+",
+    "dailyBurnRate": "~$225M/day",
     "daysOfOps": 230,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-10-15",
-          "source": "LLM-verified (AP News, October 1, 2026: USS George H.W. Bush and USS George Washington are in the region now; a third carrier is en route, not yet in theater.)"
+          "lastUpdated": "2026-10-16",
+          "source": "LLM-verified (USNI News Fleet Tracker (Oct. 13, 2026) says Bush Carrier Strike Group is operating in the Arabian Sea in support of U.S. operations in the Middle East; AP on Oct. 1 reported a third carrier was heading to the region but not yet there)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 3700,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,8 +279,8 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-10-15",
-          "source": "LLM-verified (AP, Oct. 9, 2026: citation read to USS Abraham Lincoln crew said the Lincoln and its strike group executed nearly 3,700 combat missions.)"
+          "lastUpdated": "2026-10-16",
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026, lists 13,000+ combat flights; no newer official cumulative sorties figure found in accessible search results)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 230 days",
-        "cost": "$3,220,000,000"
+        "detail": "$7,000,000/day \u00d7 230 days",
+        "cost": "$1,610,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "3,700 \u00d7 $100,000 each",
-        "cost": "$370,000,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Negotiations to fully reopen the Strait of Hormuz remain unresolved; AP reported Iran called the latest U.S. response to proposals 'insufficient' on Oct. 11, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Trump said renewed major U.S. strikes on Iran would not occur before the Nov. 3, 2026 U.S. midterms, but AP reports additional military resources have been dispatched to the region",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthi attacks on Saudi Arabia have opened a more lethal Gulf front; AP reported at least 19 killed in the recent escalation as of Oct. 15, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 16, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Houthi-linked attacks expanded pressure on Saudi Arabia, including repeated strikes on Riyadh airport and other Saudi infrastructure reported by AP and Al Jazeera headlines",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported U.S. officials say a third carrier strike group, led by USS Theodore Roosevelt, could join the two already in theater by late October if ordered.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Iran is increasing threats to commercial shipping and ship-to-ship oil transfers near the Strait of Hormuz on Oct. 13, 2026.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 13, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP and BBC/Al Jazeera headline reporting indicate intensified Houthi attacks on Saudi Arabia, including Riyadh airport, have opened a more dangerous Gulf front in the wider Iran war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,14 +753,54 @@
   ],
   "developments": [
     {
+      "time": "2026-10-16T05:55:23Z",
+      "text": "<strong>Alone in Gaza: Genocide leaves Palestinian man without family or a home</strong> -- One man wanders Gaza in search of somewhere to sleep, having lost his family in an Israeli strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/features/2026/10/16/alone-in-gaza-genocide-leaves-palestinian-man-without-family-or-a-home?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T05:51:40Z",
+      "text": "<strong>US sanctions leave Iranians facing flight cancellations and soaring costs</strong> -- New US aviation sanctions force Iranians to take longer, costlier journeys as international flight routes disappear. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news-analysis/2026/10/16/us-sanctions-leave-iranians-facing-flight-cancellations-and-soaring-costs?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T05:28:29Z",
+      "text": "<strong>Rubio presses Lebanon on confiscation of weapons from Hezbollah</strong> -- Lebanon&amp;#039;s president reaffirms the commitment to bring all arms under state control. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/16/rubio-presses-lebanon-on-confiscation-of-weapons-from-hezbollah?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T05:15:09Z",
+      "text": "<strong>Four killed as Indonesia battles worst forest fires in more than a decade</strong> -- The deaths come as Jakarta says it will accept foreign help to tackle its worst forest fires in more than a decade. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/16/four-killed-as-indonesia-battles-worst-forest-fires-in-more-than-a-decade?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T05:00:25Z",
+      "text": "<strong>Bystander guns down suspected primary school shooter in Oregon</strong> -- Three children and a teacher were killed in a shooting at Silver Rail Elementary School in Bend, Oregon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/bystander-guns-down-suspected-primary-school-shooter-in-oregon?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T02:01:43Z",
+      "text": "<strong>Peshawar mourns children killed in school roof collapse</strong> -- Thousands gather for funeral prayers in Pakistan\u2019s Peshawar after a school rooftop collapse killed at least 34 children. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/peshawar-mourns-children-killed-in-school-roof-collapse?traffic_source=rss"
+    },
+    {
       "time": "2026-10-16T00:02:37Z",
-      "text": "<strong>Iran war live: Saudi blasts Houthi \u2018war crimes\u2019; US warns on Saudi airports</strong> -- Saudi Arabia calls Houthi attacks &amp;#039;full-fledged war crimes&amp;#039; while the US warns of possible attacks on Saudi airports. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: Trump says ground troops unlikely in Iran; Saudi downs drone</strong> -- President Trump says deployment of ground troops to Iran unlikely as Saudi Arabia downs drone in its Eastern Province. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports?traffic_source=rss"
     },
     {
       "time": "2026-10-15T22:51:56Z",
-      "text": "<strong>At least 4, including 3 children, killed in US elementary school shooting</strong> -- Authorities have indicated that the shooter was killed by gunfire, though details remain scant about the attack. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Three children, one teacher killed in Oregon school shooting</strong> -- The police chief in Bend, Oregon, identified the shooter as a 16-year-old who was killed by a bystander at the school. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/15/at-least-4-including-3-children-killed-in-us-elementary-school-shooting?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T03:45:09Z",
+      "text": "<strong>Three children and teacher killed in US primary school shooting</strong> -- The suspect was shot dead by an armed bystander who followed him into the Oregon school, police said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-16T01:36:45Z",
+      "text": "<strong>&#x27;It&#x27;s really hard to believe&#x27; - How Oregon primary school shooting unfolded</strong> -- Three children aged 5, 8 and 11 and a teacher were killed after a 16-year-old suspect opened fire in the city of Bend, local police say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-15T15:26:16Z",
@@ -811,46 +851,6 @@
       "time": "2026-10-15T11:45:39Z",
       "text": "<strong>Ukrainians fear US intelligence cuts as Russian strikes intensify</strong> -- Reduced missile warnings increase threat to civilians as Trump pushes an &amp;#039;energy ceasefire&amp;#039; and peace negotiations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/15/ukrainians-fear-us-intelligence-cuts-as-russian-strikes-intensify?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T11:41:05Z",
-      "text": "<strong>US-Iran stalemate: What are Trump\u2019s next military options?</strong> -- Trump has ruled out attacks before the midterms. Analysts weigh what he could do next, and at what cost. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/15/us-iran-stalemate-what-are-trumps-next-military-options?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T10:52:12Z",
-      "text": "<strong>Fighting in Yemen intensifies: What\u2019s the latest on the battlefield?</strong> -- Houthis attempt to raise the cost of the Yemen war for Saudi Arabia as attacks, fighting intensify. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/15/fighting-in-yemen-intensifies-whats-the-latest-on-the-battlefield?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T10:44:03Z",
-      "text": "<strong>Asian Cup in Saudi Arabia could be postponed by a year amid Houthi attacks</strong> -- The tournament is scheduled to begin on January 7 but could be moved by a year if needed, AFC president says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/sports/2026/10/15/asian-cup-in-saudi-arabia-could-be-postponed-by-a-year-amid-houthi-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T10:21:43Z",
-      "text": "<strong>Dozens of children killed after roof collapses in Pakistani school</strong> -- At least 29 people, mostly children, have been killed after the school collapsed on them in Pakistan\u2019s Peshawar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/10-15-pak-school-collapse-sv?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T10:02:17Z",
-      "text": "<strong>Russia says Ukraine resumes attacks on oil refineries</strong> -- Ukraine&amp;#039;s president earlier said Kyiv was &amp;#039;done&amp;#039; with energy ceasefire and that strikes on Russian oil refineries would resume. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/15/russia-says-ukraine-resumes-attacks-on-oil-refineries?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T12:28:26Z",
-      "text": "<strong>At least 33 pupils and teacher killed after school roof collapses in Pakistan</strong> -- Rescue officials fear more people are buried under the debris in the north-western city of Peshawar. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-15T08:30:41Z",
-      "text": "<strong>School roof collapses in northwestern Pakistan, killing at least 29 people</strong> -- At least 28 students and one teacher killed in incident at Al-Khair Education Centre, a private school in Peshawar. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/15/school-roof-collapses-in-northwestern-pakistan-killing-at-least-29-people?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T08:06:06Z",
-      "text": "<strong>Containers and debris captured floating around the Strait of Hormuz</strong> -- Video shows containers and debris scattered around the Strait of Hormuz due to the recent attacks on vessels. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/15/containers-and-debris-captured-floating-around-the-strait-of-hormuz?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,72 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran war live: Saudi blasts Houthi \u2018war crimes\u2019; US warns on Saudi airports",
-      "description": "Saudi Arabia calls Houthi attacks &#039;full-fledged war crimes&#039; while the US warns of possible attacks on Saudi airports.",
+      "title": "Alone in Gaza: Genocide leaves Palestinian man without family or a home",
+      "description": "One man wanders Gaza in search of somewhere to sleep, having lost his family in an Israeli strike.",
+      "link": "https://www.aljazeera.com/features/2026/10/16/alone-in-gaza-genocide-leaves-palestinian-man-without-family-or-a-home?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T05:55:23Z",
+      "tier": 2
+    },
+    {
+      "title": "US sanctions leave Iranians facing flight cancellations and soaring costs",
+      "description": "New US aviation sanctions force Iranians to take longer, costlier journeys as international flight routes disappear.",
+      "link": "https://www.aljazeera.com/news-analysis/2026/10/16/us-sanctions-leave-iranians-facing-flight-cancellations-and-soaring-costs?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T05:51:40Z",
+      "tier": 2
+    },
+    {
+      "title": "Rubio presses Lebanon on confiscation of weapons from Hezbollah",
+      "description": "Lebanon&#039;s president reaffirms the commitment to bring all arms under state control.",
+      "link": "https://www.aljazeera.com/news/2026/10/16/rubio-presses-lebanon-on-confiscation-of-weapons-from-hezbollah?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T05:28:29Z",
+      "tier": 2
+    },
+    {
+      "title": "Four killed as Indonesia battles worst forest fires in more than a decade",
+      "description": "The deaths come as Jakarta says it will accept foreign help to tackle its worst forest fires in more than a decade.",
+      "link": "https://www.aljazeera.com/news/2026/10/16/four-killed-as-indonesia-battles-worst-forest-fires-in-more-than-a-decade?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T05:15:09Z",
+      "tier": 2
+    },
+    {
+      "title": "Bystander guns down suspected primary school shooter in Oregon",
+      "description": "Three children and a teacher were killed in a shooting at Silver Rail Elementary School in Bend, Oregon.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/bystander-guns-down-suspected-primary-school-shooter-in-oregon?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T05:00:25Z",
+      "tier": 2
+    },
+    {
+      "title": "Three children and teacher killed in US primary school shooting",
+      "description": "The suspect was shot dead by an armed bystander who followed him into the Oregon school, police said.",
+      "link": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-16T03:45:09Z",
+      "tier": 2
+    },
+    {
+      "title": "Peshawar mourns children killed in school roof collapse",
+      "description": "Thousands gather for funeral prayers in Pakistan\u2019s Peshawar after a school rooftop collapse killed at least 34 children.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/peshawar-mourns-children-killed-in-school-roof-collapse?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T02:01:43Z",
+      "tier": 2
+    },
+    {
+      "title": "'It's really hard to believe' - How Oregon primary school shooting unfolded",
+      "description": "Three children aged 5, 8 and 11 and a teacher were killed after a 16-year-old suspect opened fire in the city of Bend, local police say.",
+      "link": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-16T01:36:45Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war live: Trump says ground troops unlikely in Iran; Saudi downs drone",
+      "description": "President Trump says deployment of ground troops to Iran unlikely as Saudi Arabia downs drone in its Eastern Province.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-10-16T00:02:37Z",
@@ -1229,8 +1293,8 @@
       "tier": 2
     },
     {
-      "title": "At least 4, including 3 children, killed in US elementary school shooting",
-      "description": "Authorities have indicated that the shooter was killed by gunfire, though details remain scant about the attack.",
+      "title": "Three children, one teacher killed in Oregon school shooting",
+      "description": "The police chief in Bend, Oregon, identified the shooter as a 16-year-old who was killed by a bystander at the school.",
       "link": "https://www.aljazeera.com/news/2026/10/15/at-least-4-including-3-children-killed-in-us-elementary-school-shooting?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-10-15T22:51:56Z",
@@ -1261,12 +1325,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 15-16, 2026 shows the war remains active beyond Iran itself, with AP reporting escalating Houthi attacks on Saudi targets and continued concern over Iranian-linked external plots. The clearest newly confirmed cumulative casualty update is from the U.S. Defense Department\u2019s casualty system, summarized October 12, which raised U.S. deaths to 21 and wounded to 865. For Iran-wide fatalities, the strongest named cumulative figure located in accessible reporting remains HRANA\u2019s 3,636 dead, including 1,701 civilians, while a later summarized figure attributed to Iran\u2019s Health Ministry put the wounded toll at more than 32,314. I could not verify current official cumulative totals for Israeli deaths, total strikes, or most weapons/force-deployment quantity fields from accessible primary-source reporting, so those remain null.",
+  "summary": "Confirmed reporting available today shows the war remains active but without a fully updated official master tally across all categories. The clearest current figures found are 3,527 confirmed deaths in Iran and 60 Israeli deaths from Al Jazeera\u2019s August 28 compiled figures, and 18 confirmed U.S. service members killed from AP/Pentagon-linked reporting that remained the standing total through late summer before October AP reporting focused on wounded rather than announcing a new KIA total. On the military side, the freshest concrete force indicator found is one U.S. carrier strike group already operating in the Arabian Sea in support of Middle East operations, while AP reported additional naval forces moving toward the region. In the Gulf, the most important new development is the escalating Houthi/Saudi front: AP reported at least 19 people killed in Saudi Arabia in recent attacks by October 15, underscoring that cross-theater spillover is now one of the main live risks.",
   "briefings": [
     {
       "date": "2026-10-16",
       "day": 230,
-      "summary": "Confirmed reporting on October 15-16, 2026 shows the war remains active beyond Iran itself, with AP reporting escalating Houthi attacks on Saudi targets and continued concern over Iranian-linked external plots. The clearest newly confirmed cumulative casualty update is from the U.S. Defense Department\u2019s casualty system, summarized October 12, which raised U.S. deaths to 21 and wounded to 865. For Iran-wide fatalities, the strongest named cumulative figure located in accessible reporting remains HRANA\u2019s 3,636 dead, including 1,701 civilians, while a later summarized figure attributed to Iran\u2019s Health Ministry put the wounded toll at more than 32,314. I could not verify current official cumulative totals for Israeli deaths, total strikes, or most weapons/force-deployment quantity fields from accessible primary-source reporting, so those remain null."
+      "summary": "Confirmed reporting available today shows the war remains active but without a fully updated official master tally across all categories. The clearest current figures found are 3,527 confirmed deaths in Iran and 60 Israeli deaths from Al Jazeera\u2019s August 28 compiled figures, and 18 confirmed U.S. service members killed from AP/Pentagon-linked reporting that remained the standing total through late summer before October AP reporting focused on wounded rather than announcing a new KIA total. On the military side, the freshest concrete force indicator found is one U.S. carrier strike group already operating in the Arabian Sea in support of Middle East operations, while AP reported additional naval forces moving toward the region. In the Gulf, the most important new development is the escalating Houthi/Saudi front: AP reported at least 19 people killed in Saudi Arabia in recent attacks by October 15, underscoring that cross-theater spillover is now one of the main live risks."
     },
     {
       "date": "2026-10-15",
