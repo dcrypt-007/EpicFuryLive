@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-10-16T12:27:08Z",
+  "lastUpdated": "2026-10-16T17:24:50Z",
   "dayCount": 230,
   "banner": {
-    "strikes": "~4,500",
-    "killed": "3,606+",
-    "cost": "$51.8B+"
+    "strikes": "~13,500",
+    "killed": "3,537+",
+    "cost": "$31.2B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "17",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "33",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "19",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "32,314+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$51.8 billion+",
-    "dailyBurnRate": "~$225M/day",
+    "totalCost": "$31.2 billion+",
+    "dailyBurnRate": "~$136M/day",
     "daysOfOps": 230,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -147,7 +147,7 @@
           "id": "drone_ops",
           "category": "UAV / Drone Operations",
           "unitCostPerDay": 8000000,
-          "quantity": 12,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -158,8 +158,8 @@
             "RQ-4",
             "Global Hawk"
           ],
-          "lastUpdated": "2026-09-18",
-          "source": "LLM-verified (Air & Space Forces, May 20, 2026: 'Reapers flew around a dozen orbits over Iran at a time.' Used as the clearest named-source current operational tempo indicator found, though it describes orbits rather than formal units. https://www.airandspaceforces.com/mq-9-reaper-mvp-iran-war-despite-losses-wilsbach/)"
+          "lastUpdated": "2026-10-16",
+          "source": "LLM-verified (CENTCOM posture statement references establishment of one one-way attack UAS squadron, Task Force Scorpion Strike; no broader confirmed current drone-unit total found)"
         },
         {
           "id": "comms_space",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 10200,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-16",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, April 1, 2026, lists 13,000+ combat flights; no newer official cumulative sorties figure found in accessible search results)"
+          "source": "LLM-verified (CENTCOM commander Gen. Michael Kurilla posture statement, May 19, 2026: more than 10,200 sorties)"
         },
         {
           "id": "interceptors",
@@ -358,8 +358,8 @@
       },
       {
         "category": "UAV / Drone Operations",
-        "detail": "12 \u00d7 $8,000,000/day \u00d7 230 days",
-        "cost": "$22,080,000,000"
+        "detail": "$8,000,000/day \u00d7 230 days",
+        "cost": "$1,840,000,000"
       },
       {
         "category": "Satellite & Communications",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "10,200 \u00d7 $100,000 each",
+        "cost": "$1,020,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on October 14, 2026 that Iran said a ship sank after striking a mine in the Strait of Hormuz, underscoring continuing maritime risk despite ongoing negotiations.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on October 10, 2026 that Riyadh airport was hit in the deadliest Gulf Arab country attack since the Iran war began, indicating ongoing regional escalation beyond Iran proper.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 16, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported on October 15-16, 2026 that Gulf spillover remains active, including a deadly Houthi strike on Yemen's presidential palace and continued Saudi accusations that Iran is encouraging Houthi escalation.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 16, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on Oct. 13 reported Iran appears to be targeting commercial vessels conducting ship-to-ship oil transfers in and near the Strait of Hormuz.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "U.S. force-protection concerns remain elevated after AP reporting on the March 1 Port Shuaiba drone strike in Kuwait that killed six U.S. soldiers",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran appears to be increasingly targeting commercial shipping involved in ship-to-ship oil transfers near the Strait of Hormuz, according to AP citing the Institute for the Study of War",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 14, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Houthi-linked attacks expanded pressure on Saudi Arabia, including repeated strikes on Riyadh airport and other Saudi infrastructure reported by AP and Al Jazeera headlines",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-10-16T16:45:03Z",
+      "text": "<strong>Iran\u2019s president condemns environmental impact of war in Middle East</strong> -- Iranian President Masoud Pezeshkian has decried the ecological damage caused by conflict in the Middle East <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/irans-president-condemns-environmental-impact-of-war-in-middle-eas?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T16:09:43Z",
+      "text": "<strong>Division in Lebanon over Hezbollah\u2019s confiscated explosives</strong> -- Hezbollah said explosives were to be used against Israel but political figures and some analysts fear assassinations. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/16/division-in-lebanon-over-hezbollahs-confiscated-explosives?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-16T14:31:04Z",
+      "text": "<strong>Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack</strong> -- The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-16T14:33:32Z",
+      "text": "<strong>Albanian protests turn violent: What we know</strong> -- Albania&#x27;s capital Tirana has seen months of protests from an anti-government &quot;Flamingo&quot; movement, but what started on Tuesday this week was on a different scale. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqdjv90d1jpko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-16T08:45:54Z",
+      "text": "<strong>China tells Israel to stop &#x27;forced establishment&#x27; of West Bank settlements</strong> -- Chinese Foreign Minister Wang Yi spoke to Israeli President Isaac Herzog on the sidelines of a conference. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cq1j3wdxy48ro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-15T15:26:16Z",
+      "text": "<strong>At least 33 pupils and teacher killed after school roof collapses in Pakistan</strong> -- Children were buried under the debris after the roof crashed through three classrooms, police say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-15T23:38:46Z",
+      "text": "<strong>Houthi missile attack on Yemeni presidential palace kills five, minister says</strong> -- Yemen&#x27;s information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-15T05:00:23Z",
+      "text": "<strong>Hundreds of IDF investigations into killings still have no public outcome, BBC Verify finds</strong> -- BBC Verify has identified 254 incidents from the past three years the Israeli military said it is reviewing after being accused of harm. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c574e228vlygo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-16T08:27:16Z",
+      "text": "<strong>&#x27;It&#x27;s really hard to believe&#x27; - How Oregon primary school shooting unfolded</strong> -- Three children aged 5, 8 and 11 and a teacher were killed after a 16-year-old suspect opened fire in the city of Bend, local police say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-16T11:40:41Z",
+      "text": "<strong>Israeli settlers attack Palestinians in West Bank during olive harvest</strong> -- Israeli settlers were seen attacking Palestinian farmers and setting fire to olive trees in the West Bank. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/cqn06zx2r15jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-16T11:28:12Z",
       "text": "<strong>US in \u2018denuclearisation\u2019 talks with Russia and China: Trump</strong> -- US and Russia each have more than 4,000 warheads. China set to catch up with them within five years, Trump says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/16/us-in-denuclearisation-talks-with-russia-and-china-trump?traffic_source=rss"
@@ -801,56 +851,6 @@
       "time": "2026-10-16T11:41:58Z",
       "text": "<strong>Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander</strong> -- A teacher was also killed in the attack at the Silver Rail Elementary School in the city of Bend, Oregon, police say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-16T05:00:25Z",
-      "text": "<strong>Bystander guns down suspected primary school shooter in Oregon</strong> -- Three children and a teacher were killed in a shooting at Silver Rail Elementary School in Bend, Oregon. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/bystander-guns-down-suspected-primary-school-shooter-in-oregon?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-16T02:01:43Z",
-      "text": "<strong>Peshawar mourns children killed in school roof collapse</strong> -- Thousands gather for funeral prayers in Pakistan\u2019s Peshawar after a school rooftop collapse killed at least 34 children. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/peshawar-mourns-children-killed-in-school-roof-collapse?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-16T00:02:37Z",
-      "text": "<strong>Iran war live: Trump says ground troops unlikely in Iran; Saudi downs drone</strong> -- President Trump says deployment of ground troops to Iran unlikely as Saudi Arabia downs drone in its Eastern Province. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-15T22:51:56Z",
-      "text": "<strong>Three children, one teacher killed in Oregon school shooting</strong> -- The police chief in Bend, Oregon, identified the shooter as a 16-year-old who was killed by a bystander at the school. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/15/at-least-4-including-3-children-killed-in-us-elementary-school-shooting?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-16T03:45:09Z",
-      "text": "<strong>Three children and teacher killed in US primary school shooting</strong> -- The suspect was shot dead by an armed bystander who followed him into the Oregon school, police said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-16T01:36:45Z",
-      "text": "<strong>&#x27;It&#x27;s really hard to believe&#x27; - How Oregon primary school shooting unfolded</strong> -- Three children aged 5, 8 and 11 and a teacher were killed after a 16-year-old suspect opened fire in the city of Bend, local police say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-15T15:26:16Z",
-      "text": "<strong>At least 33 pupils and teacher killed after school roof collapses in Pakistan</strong> -- Children were buried under the debris after the roof crashed through three classrooms, police say. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-15T23:38:46Z",
-      "text": "<strong>Houthi missile attack on Yemeni presidential palace kills five, minister says</strong> -- Yemen&#x27;s information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-15T05:00:23Z",
-      "text": "<strong>Hundreds of IDF investigations into killings still have no public outcome, BBC Verify finds</strong> -- BBC Verify has identified 254 incidents from the past three years the Israeli military said it is reviewing after being accused of harm. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c574e228vlygo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-15T20:31:02Z",
-      "text": "<strong>At the scene of a school roof collapse in Pakistan</strong> -- At least 33 pupils and a teacher were killed according to hospital officials, and more than a dozen were injured. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/cr5yn5wel153o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,35 @@
   ],
   "newsFeed": [
     {
-      "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
-      "description": "A teacher was also killed in the attack at the Silver Rail Elementary School in the city of Bend, Oregon, police say.",
-      "link": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss",
+      "title": "Iran\u2019s president condemns environmental impact of war in Middle East",
+      "description": "Iranian President Masoud Pezeshkian has decried the ecological damage caused by conflict in the Middle East",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/irans-president-condemns-environmental-impact-of-war-in-middle-eas?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T16:45:03Z",
+      "tier": 2
+    },
+    {
+      "title": "Division in Lebanon over Hezbollah\u2019s confiscated explosives",
+      "description": "Hezbollah said explosives were to be used against Israel but political figures and some analysts fear assassinations.",
+      "link": "https://www.aljazeera.com/news/2026/10/16/division-in-lebanon-over-hezbollahs-confiscated-explosives?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-16T16:09:43Z",
+      "tier": 2
+    },
+    {
+      "title": "Albanian protests turn violent: What we know",
+      "description": "Albania's capital Tirana has seen months of protests from an anti-government \"Flamingo\" movement, but what started on Tuesday this week was on a different scale.",
+      "link": "https://www.bbc.co.uk/news/articles/cqdjv90d1jpko?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-10-16T11:41:58Z",
+      "time": "2026-10-16T14:33:32Z",
+      "tier": 2
+    },
+    {
+      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+      "description": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents.",
+      "link": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-16T14:31:04Z",
       "tier": 2
     },
     {
@@ -1229,51 +1253,11 @@
       "tier": 2
     },
     {
-      "title": "US in \u2018denuclearisation\u2019 talks with Russia and China: Trump",
-      "description": "US and Russia each have more than 4,000 warheads. China set to catch up with them within five years, Trump says.",
-      "link": "https://www.aljazeera.com/news/2026/10/16/us-in-denuclearisation-talks-with-russia-and-china-trump?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T11:28:12Z",
-      "tier": 2
-    },
-    {
-      "title": "Poland scrambles fighter jets as Russia strikes western Ukraine",
-      "description": "Countries along NATO\u2019s eastern flank growing increasingly concerned about the risk of escalation of the war in Ukraine.",
-      "link": "https://www.aljazeera.com/news/2026/10/16/poland-scrambles-fighter-jets-as-russia-strikes-western-ukraine?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T10:56:20Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump rules out using a nuclear bomb on Iran: Why that matters",
-      "description": "It is the first time the president has addressed nuclear weapons, but he didn&#039;t deny US could use &#039;mother of all bombs&#039;.",
-      "link": "https://www.aljazeera.com/news/2026/10/16/trump-rules-out-using-a-nuclear-bomb-on-iran-why-that-matters?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T10:21:12Z",
-      "tier": 2
-    },
-    {
       "title": "China tells Israel to stop 'forced establishment' of West Bank settlements",
       "description": "Chinese Foreign Minister Wang Yi spoke to Israeli President Isaac Herzog on the sidelines of a conference.",
       "link": "https://www.bbc.co.uk/news/articles/cq1j3wdxy48ro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-10-16T08:45:54Z",
-      "tier": 2
-    },
-    {
-      "title": "Asian Cup in Saudi Arabia still on, organisers say, but golf tour postponed",
-      "description": "Asian Cup preparations continue for January, but Asian Tour delays golf&#039;s Saudi Invitational after Houthi attacks.",
-      "link": "https://www.aljazeera.com/sports/2026/10/16/asian-cup-in-saudi-arabia-still-on-say-organisers-but-golf-tour-postponed?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T08:36:54Z",
-      "tier": 2
-    },
-    {
-      "title": "Norway wealth fund urged to ease nuclear arms ban after Gaza investment row",
-      "description": "The review called for Norway&#039;s sovereign wealth fund to lift ethical risk limitations on its investments.",
-      "link": "https://www.aljazeera.com/news/2026/10/16/norway-wealth-fund-urged-to-ease-nuclear-arms-ban-after-gaza-investment-row?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T08:36:13Z",
       "tier": 2
     },
     {
@@ -1285,51 +1269,11 @@
       "tier": 2
     },
     {
-      "title": "Alone in Gaza: Genocide leaves Palestinian man without family or a home",
-      "description": "One man wanders Gaza in search of somewhere to sleep, having lost his family in an Israeli strike.",
-      "link": "https://www.aljazeera.com/features/2026/10/16/alone-in-gaza-genocide-leaves-palestinian-man-without-family-or-a-home?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T05:55:23Z",
-      "tier": 2
-    },
-    {
-      "title": "US sanctions leave Iranians facing flight cancellations and soaring costs",
-      "description": "New US aviation sanctions force Iranians to take longer, costlier journeys as international flight routes disappear.",
-      "link": "https://www.aljazeera.com/news-analysis/2026/10/16/us-sanctions-leave-iranians-facing-flight-cancellations-and-soaring-costs?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T05:51:40Z",
-      "tier": 2
-    },
-    {
-      "title": "Rubio presses Lebanon on confiscation of weapons from Hezbollah",
-      "description": "Lebanon&#039;s president reaffirms the commitment to bring all arms under state control.",
-      "link": "https://www.aljazeera.com/news/2026/10/16/rubio-presses-lebanon-on-confiscation-of-weapons-from-hezbollah?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T05:28:29Z",
-      "tier": 2
-    },
-    {
-      "title": "Four killed as Indonesia battles worst forest fires in more than a decade",
-      "description": "The deaths come as Jakarta says it will accept foreign help to tackle its worst forest fires in more than a decade.",
-      "link": "https://www.aljazeera.com/news/2026/10/16/four-killed-as-indonesia-battles-worst-forest-fires-in-more-than-a-decade?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-16T05:15:09Z",
-      "tier": 2
-    },
-    {
       "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
       "description": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace.",
       "link": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-10-15T23:38:46Z",
-      "tier": 2
-    },
-    {
-      "title": "At the scene of a school roof collapse in Pakistan",
-      "description": "At least 33 pupils and a teacher were killed according to hospital officials, and more than a dozen were injured.",
-      "link": "https://www.bbc.co.uk/news/videos/cr5yn5wel153o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-15T20:31:02Z",
       "tier": 2
     },
     {
@@ -1349,12 +1293,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today shows the war remains active but without a fully updated official master tally across all categories. The clearest current figures found are 3,527 confirmed deaths in Iran and 60 Israeli deaths from Al Jazeera\u2019s August 28 compiled figures, and 18 confirmed U.S. service members killed from AP/Pentagon-linked reporting that remained the standing total through late summer before October AP reporting focused on wounded rather than announcing a new KIA total. On the military side, the freshest concrete force indicator found is one U.S. carrier strike group already operating in the Arabian Sea in support of Middle East operations, while AP reported additional naval forces moving toward the region. In the Gulf, the most important new development is the escalating Houthi/Saudi front: AP reported at least 19 people killed in Saudi Arabia in recent attacks by October 15, underscoring that cross-theater spillover is now one of the main live risks.",
+  "summary": "Confirmed reporting available today remains patchy and often dated. The clearest sourced cumulative figures I found are 3,468 deaths and more than 26,500 injuries in Iran through the June ceasefire period from Iranian figures summarized by Al Jazeera, 17 confirmed U.S. military deaths from CENTCOM announcements summarized by Al Jazeera as of July 20, 2026, 33 deaths in Israel from an Israeli government update in July, and more than 13,500 strikes and 10,200 sorties from Gen. Michael Kurilla\u2019s May 19, 2026 CENTCOM posture statement. Current headlines indicate the wider regional security environment remains unstable, with renewed Houthi attacks, continuing Saudi-Iran tensions, and maritime hazards in the Strait of Hormuz, but I did not find fresh official cumulative updates for many of the military cost-model fields.",
   "briefings": [
     {
       "date": "2026-10-16",
       "day": 230,
-      "summary": "Confirmed reporting available today shows the war remains active but without a fully updated official master tally across all categories. The clearest current figures found are 3,527 confirmed deaths in Iran and 60 Israeli deaths from Al Jazeera\u2019s August 28 compiled figures, and 18 confirmed U.S. service members killed from AP/Pentagon-linked reporting that remained the standing total through late summer before October AP reporting focused on wounded rather than announcing a new KIA total. On the military side, the freshest concrete force indicator found is one U.S. carrier strike group already operating in the Arabian Sea in support of Middle East operations, while AP reported additional naval forces moving toward the region. In the Gulf, the most important new development is the escalating Houthi/Saudi front: AP reported at least 19 people killed in Saudi Arabia in recent attacks by October 15, underscoring that cross-theater spillover is now one of the main live risks."
+      "summary": "Confirmed reporting available today remains patchy and often dated. The clearest sourced cumulative figures I found are 3,468 deaths and more than 26,500 injuries in Iran through the June ceasefire period from Iranian figures summarized by Al Jazeera, 17 confirmed U.S. military deaths from CENTCOM announcements summarized by Al Jazeera as of July 20, 2026, 33 deaths in Israel from an Israeli government update in July, and more than 13,500 strikes and 10,200 sorties from Gen. Michael Kurilla\u2019s May 19, 2026 CENTCOM posture statement. Current headlines indicate the wider regional security environment remains unstable, with renewed Houthi attacks, continuing Saudi-Iran tensions, and maritime hazards in the Strait of Hormuz, but I did not find fresh official cumulative updates for many of the military cost-model fields."
     },
     {
       "date": "2026-10-15",
