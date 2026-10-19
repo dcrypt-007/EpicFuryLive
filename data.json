@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-10-19T01:20:27Z",
+  "lastUpdated": "2026-10-19T07:47:31Z",
   "dayCount": 233,
   "banner": {
-    "strikes": "~13,500",
-    "killed": "3,646+",
-    "cost": "$33.1B+"
+    "strikes": "~12,300",
+    "killed": "31+",
+    "cost": "$31.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
@@ -13,7 +13,7 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "28",
+    "gulfCasualties": "13",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "25,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$33.1 billion+",
-    "dailyBurnRate": "~$142M/day",
+    "totalCost": "$31.7 billion+",
+    "dailyBurnRate": "~$136M/day",
     "daysOfOps": 233,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-19",
-          "source": "LLM-verified (AP News, Oct. 7, 2026: 'There are now two aircraft carriers assigned to the Middle East.')"
+          "source": "LLM-verified (AP, October 1, 2026 reported the recently deployed USS Theodore Roosevelt carrier strike group and a third carrier heading to the region, saying three carriers could be in region by end of October; this supports 2 currently deployed at that time.)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 29000,
+          "quantity": 9000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-10-19",
-          "source": "LLM-verified (AP News, Oct. 1, 2026: more than 20,000 sailors and Marines already in/heading to region plus roughly 9,000 additional troops aboard incoming ships)"
+          "source": "LLM-verified (AP, October 1, 2026 reported roughly 9,000 troops aboard a group of ships were being dispatched to the Middle East; no current confirmed total theater personnel figure found.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 3693,
+          "quantity": 13000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-19",
-          "source": "LLM-verified (AP News, Oct. 7, 2026, citing USS Abraham Lincoln strike group award for 3,693 combat missions)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 listed 'Combat Flights: 13,000+'; this is combat flights/sorties but not explicitly fighter-only, so treat cautiously.)"
         },
         {
           "id": "interceptors",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "29,000 \u00d7 $500/day \u00d7 233 days",
-        "cost": "$3,378,500,000"
+        "detail": "9,000 \u00d7 $500/day \u00d7 233 days",
+        "cost": "$1,048,500,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "3,693 \u00d7 $100,000 each",
-        "cost": "$369,300,000"
+        "detail": "13,000 \u00d7 $100,000 each",
+        "cost": "$1,300,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on October 8, 2026 reported Trump said the U.S. would not resume military strikes on Iran before the November 3, 2026 midterm elections.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on October 12-14, 2026 reported suspected Iran-linked plotting against RAF Fairford in the UK and continued tanker/mining threats around the Strait of Hormuz.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on October 12, 2026 reported at least 13 killed and over 300 wounded in a Houthi missile/drone attack on Riyadh airport in Saudi Arabia.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP reported on October 10, 2026 that Riyadh airport was hit in the deadliest Gulf Arab country attack since the Iran war began, indicating ongoing regional escalation beyond Iran proper.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on October 15-16, 2026 that Gulf spillover remains active, including a deadly Houthi strike on Yemen's presidential palace and continued Saudi accusations that Iran is encouraging Houthi escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Negotiations to fully reopen the Strait of Hormuz remain unresolved; AP reported Iran called the latest U.S. response to proposals 'insufficient' on Oct. 11, 2026",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Trump said renewed major U.S. strikes on Iran would not occur before the Nov. 3, 2026 U.S. midterms, but AP reports additional military resources have been dispatched to the region",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,13 @@
   ],
   "developments": [
     {
+      "time": "2026-10-19T02:10:09Z",
+      "text": "<strong>Ukraine launches over 1,000 drones at Russia, setting oil facilities ablaze</strong> -- The air strike, one of Ukraine&amp;#039;s largest in the war, comes amid rising tensions between Kyiv and Washington. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/19/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites?traffic_source=rss"
+    },
+    {
       "time": "2026-10-18T23:59:34Z",
-      "text": "<strong>Iran war live: Tehran says Netanyahu seeks more war; Yemen fighting flares</strong> -- Iran&amp;#039;s Foreign Minister Abbas Araghchi says Israeli Prime Minister Benjamin Netanyahu seeks more war before elections. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Iran war live: US issues Middle East security alert; Yemen fighting flares</strong> -- US embassies in the Middle East have issued a security alert for Americans as fighting in Yemen continues to ramp up. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares?traffic_source=rss"
     },
     {
@@ -763,14 +768,14 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/18/albania-protests-supreme-court-fire?traffic_source=rss"
     },
     {
-      "time": "2026-10-18T18:44:30Z",
-      "text": "<strong>GCC condemns Houthi attacks on Saudi Arabia as Yemen fighting intensifies</strong> -- Gulf ministers urge action against Houthis as fighting displaces more than 233,000 people across Yemen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies?traffic_source=rss"
+      "time": "2026-10-19T03:44:02Z",
+      "text": "<strong>Kenya pastor accused of ordering parents to starve their children to death faces verdict</strong> -- Prosecutors say Paul Mackenzie lured the latest victims to their deaths by writing notes from his prison cell. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-10-18T17:20:20Z",
-      "text": "<strong>Residents recount drone strikes in Ethiopia\u2019s northern Tigray region</strong> -- In Adigrat, a city close to the Eritrean border, residents recall recent drone strikes by Ethiopian forces <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/18/residents-recount-drone-strikes-in-ethiopias-northern-tigray-region?traffic_source=rss"
+      "time": "2026-10-19T06:29:55Z",
+      "text": "<strong>Bomb threat forces Israel to Austria flight into emergency landing</strong> -- The Airbus jet landed safely in Bulgaria and all passengers and crew aboard were unharmed, officials said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c680zdmn100lo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-18T15:46:10Z",
@@ -786,6 +791,16 @@
       "time": "2026-10-17T20:53:00Z",
       "text": "<strong>Anti-government protesters battle with police in Albania</strong> -- There were violent clashes between demonstrators and riot police throughout Saturday in the capital Tirana. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/crwydey50xeno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-18T18:44:30Z",
+      "text": "<strong>GCC condemns Houthi attacks on Saudi Arabia as Yemen fighting intensifies</strong> -- Gulf ministers urge action against Houthis as fighting displaces more than 233,000 people across Yemen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-18T17:20:20Z",
+      "text": "<strong>Residents recount drone strikes in Ethiopia\u2019s northern Tigray region</strong> -- In Adigrat, a city close to the Eritrean border, residents recall recent drone strikes by Ethiopian forces <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/18/residents-recount-drone-strikes-in-ethiopias-northern-tigray-region?traffic_source=rss"
     },
     {
       "time": "2026-10-18T15:08:18Z",
@@ -836,21 +851,6 @@
       "time": "2026-10-18T09:16:54Z",
       "text": "<strong>Fighting intensifies across Yemen as humanitarian crisis deepens</strong> -- Clashes between Yemeni forces and Houthis cause casualties on both sides as aid agencies warn of humanitarian crisis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/18/fighting-intensifies-across-yemen-as-humanitarian-crisis-deepens?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-18T11:57:49Z",
-      "text": "<strong>Oil facilities hit in deadly overnight attack on St Petersburg</strong> -- At least one person was killed in the strikes, which also hit a data centre used by Russia&#x27;s equivalent of Facebook. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c3eweygrjzd7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-18T07:32:59Z",
-      "text": "<strong>Why Iran-US negotiations keep failing</strong> -- Relations between the two countries are dominated by policy complexes shaped by a history of hostility. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/opinions/2026/10/18/why-iran-us-negotiations-keep-failing?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-17T23:52:38Z",
-      "text": "<strong>European diplomats attacked by Israeli settlers in West Bank</strong> -- The Israeli military condemns the violence but the prime minister&#x27;s office says it is part of a &quot;smear&quot; campaign. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,8 +1213,32 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran war live: Tehran says Netanyahu seeks more war; Yemen fighting flares",
-      "description": "Iran&#039;s Foreign Minister Abbas Araghchi says Israeli Prime Minister Benjamin Netanyahu seeks more war before elections.",
+      "title": "Bomb threat forces Israel to Austria flight into emergency landing",
+      "description": "The Airbus jet landed safely in Bulgaria and all passengers and crew aboard were unharmed, officials said.",
+      "link": "https://www.bbc.co.uk/news/articles/c680zdmn100lo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-19T06:29:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Kenya pastor accused of ordering parents to starve their children to death faces verdict",
+      "description": "Prosecutors say Paul Mackenzie lured the latest victims to their deaths by writing notes from his prison cell.",
+      "link": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-19T03:44:02Z",
+      "tier": 2
+    },
+    {
+      "title": "Ukraine launches over 1,000 drones at Russia, setting oil facilities ablaze",
+      "description": "The air strike, one of Ukraine&#039;s largest in the war, comes amid rising tensions between Kyiv and Washington.",
+      "link": "https://www.aljazeera.com/news/2026/10/19/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-19T02:10:09Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran war live: US issues Middle East security alert; Yemen fighting flares",
+      "description": "US embassies in the Middle East have issued a security alert for Americans as fighting in Yemen continues to ramp up.",
       "link": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-10-18T23:59:34Z",
@@ -1226,22 +1250,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/18/albania-protests-supreme-court-fire?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-10-18T20:26:03Z",
-      "tier": 2
-    },
-    {
-      "title": "GCC condemns Houthi attacks on Saudi Arabia as Yemen fighting intensifies",
-      "description": "Gulf ministers urge action against Houthis as fighting displaces more than 233,000 people across Yemen.",
-      "link": "https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-18T18:44:30Z",
-      "tier": 2
-    },
-    {
-      "title": "Residents recount drone strikes in Ethiopia\u2019s northern Tigray region",
-      "description": "In Adigrat, a city close to the Eritrean border, residents recall recent drone strikes by Ethiopian forces",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/18/residents-recount-drone-strikes-in-ethiopias-northern-tigray-region?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-18T17:20:20Z",
       "tier": 2
     },
     {
@@ -1269,12 +1277,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today is uneven. The clearest current official figures found were 18 U.S. military deaths from Pentagon/AP casualty reporting, two U.S. aircraft carriers currently assigned to the Middle East, and 450 Tomahawk missiles plus 3,693 combat missions and 77 drones shot down credited to the USS Abraham Lincoln strike group in an AP report from October 7. AP also reported on October 1 that roughly 9,000 additional troops are heading to the region and that the naval presence would rise to more than 20,000 sailors and Marines, with a third carrier potentially arriving by late October. For regional casualties, the most recent clearly sourced cross-war figure found for Gulf-state deaths was 28 from Al Jazeera\u2019s June 10 tracker. I could not verify newer current confirmed cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, Israeli deaths, total strikes, destroyers, drone units, JDAM, JASSM, SDB, or a cumulative B-2 sortie count from named official or wire-service sources, so those remain null.",
+  "summary": "Confirmed reporting available today remains fragmentary. AP reporting in July and later political coverage continued to cite 18 U.S. service members killed since the war began, while AP on October 12 reported at least 13 people killed and more than 300 wounded in a Houthi attack on Riyadh airport, underscoring ongoing regional spillover. For military activity, the newest official cumulative strike figure I could locate was CENTCOM\u2019s April 1, 2026 Operation Epic Fury fact sheet listing 12,300+ targets struck and 13,000+ combat flights, but I could not verify newer official totals for Iranian deaths, Iranian wounded, Israeli deaths, destroyers, drone units, or munitions expenditure without guessing.",
   "briefings": [
     {
       "date": "2026-10-19",
       "day": 233,
-      "summary": "Confirmed reporting available today is uneven. The clearest current official figures found were 18 U.S. military deaths from Pentagon/AP casualty reporting, two U.S. aircraft carriers currently assigned to the Middle East, and 450 Tomahawk missiles plus 3,693 combat missions and 77 drones shot down credited to the USS Abraham Lincoln strike group in an AP report from October 7. AP also reported on October 1 that roughly 9,000 additional troops are heading to the region and that the naval presence would rise to more than 20,000 sailors and Marines, with a third carrier potentially arriving by late October. For regional casualties, the most recent clearly sourced cross-war figure found for Gulf-state deaths was 28 from Al Jazeera\u2019s June 10 tracker. I could not verify newer current confirmed cumulative totals for Iranian deaths, Iranian civilian deaths, Iranian wounded, Israeli deaths, total strikes, destroyers, drone units, JDAM, JASSM, SDB, or a cumulative B-2 sortie count from named official or wire-service sources, so those remain null."
+      "summary": "Confirmed reporting available today remains fragmentary. AP reporting in July and later political coverage continued to cite 18 U.S. service members killed since the war began, while AP on October 12 reported at least 13 people killed and more than 300 wounded in a Houthi attack on Riyadh airport, underscoring ongoing regional spillover. For military activity, the newest official cumulative strike figure I could locate was CENTCOM\u2019s April 1, 2026 Operation Epic Fury fact sheet listing 12,300+ targets struck and 13,000+ combat flights, but I could not verify newer official totals for Iranian deaths, Iranian wounded, Israeli deaths, destroyers, drone units, or munitions expenditure without guessing."
     },
     {
       "date": "2026-10-18",
