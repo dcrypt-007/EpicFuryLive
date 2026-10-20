@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-10-20T20:35:54Z",
+  "lastUpdated": "2026-10-20T23:53:38Z",
   "dayCount": 234,
   "banner": {
     "strikes": "~3,580",
-    "killed": "3,634+",
-    "cost": "$40.6B+"
+    "killed": "3,633+",
+    "cost": "$34.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "19",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$40.6 billion+",
-    "dailyBurnRate": "~$173M/day",
+    "totalCost": "$34.9 billion+",
+    "dailyBurnRate": "~$149M/day",
     "daysOfOps": 234,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 1,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-20",
-          "source": "LLM-verified (USNI Fleet Tracker Sept. 21 and Oct. 5, 2026 shows USS George Washington and USS George H.W. Bush operating in/for Arabian Sea support of U.S. operations against Iran)"
+          "source": "LLM-verified (USNI News Fleet and Marine Tracker (Oct. 19, 2026) confirms USS George H.W. Bush CSG operating in Arabian Sea in support of US operations in the Middle East; AP on Oct. 1 said a third carrier could arrive by end of October, implying not yet present at that date)"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 29000,
+          "quantity": 9000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-10-20",
-          "source": "LLM-verified (AP, Oct. 1, 2026: roughly 9,000 troops aboard reinforcing group of ships; AP said this would bring U.S. naval presence in the region to more than 20,000 sailors and Marines, implying over 29,000 naval personnel in theater; no broader all-service Operation Epic Fury troop total clearly confirmed found)"
+          "source": "LLM-verified (AP (Oct. 1, 2026) reported roughly 9,000 troops aboard a group of ships were being dispatched to the Middle East; no current confirmed total deployed-for-operation figure found)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 450,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-10-20",
-          "source": "LLM-verified (Navy Times on Mar. 27, 2026, citing Washington Post reporting, said the U.S. military had fired over 850 Tomahawk cruise missiles in four weeks of war with Iran.)"
+          "source": "LLM-verified (AP (last week, Oct. 2026) reported SecDef award citation for USS Abraham Lincoln strike group said it launched 450 Tomahawk cruise missiles during deployment in support of the Iran war; no confirmed theater-wide total found)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 3693,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,8 +279,8 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-10-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated April 1, 2026 listed 'Combat Flights: 13,000+'; this is combat flights/sorties but not explicitly fighter-only, so treat cautiously.)"
+          "lastUpdated": "2026-10-20",
+          "source": "LLM-verified (AP (last week, Oct. 2026) reported award citation for USS Abraham Lincoln strike group said it executed 3,693 combat missions; not a theater-wide confirmed total for all fighter/attack aircraft)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 234 days",
-        "cost": "$3,276,000,000"
+        "detail": "$7,000,000/day \u00d7 234 days",
+        "cost": "$1,638,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "29,000 \u00d7 $500/day \u00d7 234 days",
-        "cost": "$3,393,000,000"
+        "detail": "9,000 \u00d7 $500/day \u00d7 234 days",
+        "cost": "$1,053,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "450 \u00d7 $2,000,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "3,693 \u00d7 $100,000 each",
+        "cost": "$369,300,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -753,6 +753,21 @@
   ],
   "developments": [
     {
+      "time": "2026-10-20T21:24:06Z",
+      "text": "<strong>PSG score late to sink Barcelona 4-2 in Champions League blockbuster</strong> -- Late strikes by Vitinha and Fabian Ruiz grab victory for PSG as they aim to win the UCL for third season running. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/sports/2026/10/20/psg-sink-barcelona-4-2-for-third-champions-league-win-in-a-row?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-20T20:23:52Z",
+      "text": "<strong>Why the war on Iran could backfire on US regime-change goals</strong> -- Mortazavi: The war on Iran could strengthen Iranian nationalism rather than trigger regime change. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/aje-onl-nf_war-on-iran-could-strengthen-nationalism-201026?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-20T20:17:53Z",
+      "text": "<strong>UK police rearrest two men on suspicion of assisting Iran\u2019s intelligence</strong> -- Duo was first arrested for suspected link to incident at US-run airbase used for striking Iran during this year&amp;#039;s war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/20/uk-police-re-arrest-two-men-on-suspicion-of-assisting-iranian-intelligence?traffic_source=rss"
+    },
+    {
       "time": "2026-10-20T19:51:09Z",
       "text": "<strong>Netanyahu says he discussed \u2018eliminating\u2019 Iran\u2019s regime with Trump</strong> -- Israeli Prime Minister Benjamin Netanyahu says he discussed the need to topple Iran\u2019s regime with US President Trump. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/netanyahu-says-he-discussed-eliminating-irans-regime-with-trump?traffic_source=rss"
@@ -761,21 +776,6 @@
       "time": "2026-10-20T18:55:52Z",
       "text": "<strong>UK to deploy fighter jets to defend Saudi Arabia</strong> -- British Typhoon jets will carry out defensive missions to protect Saudi Arabia from escalating Houthi attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/aje-onl-nf_uk-to-deploy-fighter-jets-to-defend-saudi-arabia_1-201026?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T16:59:55Z",
-      "text": "<strong>Jerusalem Daily: half a million Palestinians lose food aid</strong> -- Israeli strikes kill Palestinians in Gaza as funding shortages threaten food aid for half a million people <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/jerusalem-daily-half-a-million-palestinians-lose-food-aid?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T16:21:01Z",
-      "text": "<strong>Qatar says only negotiations can resolve regional tensions</strong> -- Qatar says diplomatic efforts are ongoing to de-escalate regional tensions and reopen the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/qatar-says-only-negotiations-can-resolve-regional-tensions?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T16:01:01Z",
-      "text": "<strong>Lavrov backs Tehran, but does Russia also gain from the US-Iran crisis?</strong> -- Moscow pledges support to its sanctioned ally, but analysts say the war Iran wants to end has filled Russia\u2019s coffers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/20/lavrov-backs-tehran-but-does-russia-also-gain-from-the-us-iran-crisis?traffic_source=rss"
     },
     {
       "time": "2026-10-20T15:58:57Z",
@@ -796,6 +796,21 @@
       "time": "2026-10-20T08:53:06Z",
       "text": "<strong>Why Israeli Gen Z voters are drawn to the far right</strong> -- More than half a million young people will cast their ballots in Israel next week - and they could make all the difference. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cmvg632xgndeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-20T16:59:55Z",
+      "text": "<strong>Jerusalem Daily: half a million Palestinians lose food aid</strong> -- Israeli strikes kill Palestinians in Gaza as funding shortages threaten food aid for half a million people <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/jerusalem-daily-half-a-million-palestinians-lose-food-aid?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-20T16:21:01Z",
+      "text": "<strong>Qatar says only negotiations can resolve regional tensions</strong> -- Qatar says diplomatic efforts are ongoing to de-escalate regional tensions and reopen the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/qatar-says-only-negotiations-can-resolve-regional-tensions?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-20T16:01:01Z",
+      "text": "<strong>Lavrov backs Tehran, but does Russia also gain from the US-Iran crisis?</strong> -- Moscow pledges support to its sanctioned ally, but analysts say the war Iran wants to end has filled Russia\u2019s coffers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/20/lavrov-backs-tehran-but-does-russia-also-gain-from-the-us-iran-crisis?traffic_source=rss"
     },
     {
       "time": "2026-10-20T14:39:50Z",
@@ -836,21 +851,6 @@
       "time": "2026-10-20T01:05:31Z",
       "text": "<strong>Saudi Arabia cancels 2026 \u2018Davos in the Desert\u2019 amid Houthi attacks</strong> -- Riyadh postpones flagship investment conference until 2027, orders government staff to work from home. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/20/saudi-arabia-cancels-2026-davos-in-the-desert-amid-houthi-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T00:00:00Z",
-      "text": "<strong>Iran war live: Trump says US hits Iran hard \u2018economically and militarily\u2019</strong> -- Trump says US continues to hit Iran &amp;#039;economically and militarily&amp;#039; while praising Russia for doing &amp;#039;nothing&amp;#039; to aid Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/20/draft-3?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-19T23:16:01Z",
-      "text": "<strong>Tehran rejects any role in plot to kill leaders of German Jewish groups</strong> -- Tehran summons German envoy after two men convicted of trying to kill leaders of Jewish groups, rejects any role. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/19/tehran-rejects-any-role-in-plot-to-kill-leaders-of-jewish-groups?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-19T23:12:42Z",
-      "text": "<strong>Children among six killed in Russian drone strike on Ukraine park</strong> -- Children among six killed in Russian drone strike on Ukraine park <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/19/children-among-six-killed-in-russian-drone-strike-on-ukraine-park?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,30 @@
   ],
   "newsFeed": [
     {
+      "title": "PSG score late to sink Barcelona 4-2 in Champions League blockbuster",
+      "description": "Late strikes by Vitinha and Fabian Ruiz grab victory for PSG as they aim to win the UCL for third season running.",
+      "link": "https://www.aljazeera.com/sports/2026/10/20/psg-sink-barcelona-4-2-for-third-champions-league-win-in-a-row?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-20T21:24:06Z",
+      "tier": 2
+    },
+    {
+      "title": "Why the war on Iran could backfire on US regime-change goals",
+      "description": "Mortazavi: The war on Iran could strengthen Iranian nationalism rather than trigger regime change.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/aje-onl-nf_war-on-iran-could-strengthen-nationalism-201026?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-20T20:23:52Z",
+      "tier": 2
+    },
+    {
+      "title": "UK police rearrest two men on suspicion of assisting Iran\u2019s intelligence",
+      "description": "Duo was first arrested for suspected link to incident at US-run airbase used for striking Iran during this year&#039;s war.",
+      "link": "https://www.aljazeera.com/news/2026/10/20/uk-police-re-arrest-two-men-on-suspicion-of-assisting-iranian-intelligence?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-20T20:17:53Z",
+      "tier": 2
+    },
+    {
       "title": "Netanyahu says he discussed \u2018eliminating\u2019 Iran\u2019s regime with Trump",
       "description": "Israeli Prime Minister Benjamin Netanyahu says he discussed the need to topple Iran\u2019s regime with US President Trump.",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/netanyahu-says-he-discussed-eliminating-irans-regime-with-trump?traffic_source=rss",
@@ -1226,30 +1250,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/aje-onl-nf_uk-to-deploy-fighter-jets-to-defend-saudi-arabia_1-201026?traffic_source=rss",
       "source": "Al Jazeera",
       "time": "2026-10-20T18:55:52Z",
-      "tier": 2
-    },
-    {
-      "title": "Jerusalem Daily: half a million Palestinians lose food aid",
-      "description": "Israeli strikes kill Palestinians in Gaza as funding shortages threaten food aid for half a million people",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/jerusalem-daily-half-a-million-palestinians-lose-food-aid?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-20T16:59:55Z",
-      "tier": 2
-    },
-    {
-      "title": "Qatar says only negotiations can resolve regional tensions",
-      "description": "Qatar says diplomatic efforts are ongoing to de-escalate regional tensions and reopen the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/qatar-says-only-negotiations-can-resolve-regional-tensions?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-20T16:21:01Z",
-      "tier": 2
-    },
-    {
-      "title": "Lavrov backs Tehran, but does Russia also gain from the US-Iran crisis?",
-      "description": "Moscow pledges support to its sanctioned ally, but analysts say the war Iran wants to end has filled Russia\u2019s coffers.",
-      "link": "https://www.aljazeera.com/news/2026/10/20/lavrov-backs-tehran-but-does-russia-also-gain-from-the-us-iran-crisis?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-20T16:01:01Z",
       "tier": 2
     },
     {
@@ -1285,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available in search results indicates the broader regional war remains active on October 20, 2026, with political escalation as Netanyahu says he discussed removing Iran\u2019s regime with Trump, and military spillover continuing via intensified Houthi attacks that prompted a new UK fighter deployment to defend Saudi Arabia. For cumulative war metrics, the clearest currently surfaced figures were Al Jazeera\u2019s August 28 count of 60 Israelis killed, 28 Gulf-state deaths, and at least 3,580 U.S.-Israeli attacks on Iran, while U.S. fatalities have since risen to 19 according to CBS News reporting based on Pentagon casualty listings. Several requested fields could not be safely updated because no current confirmed official figure was found in accessible results.",
+  "summary": "Confirmed reporting available today did not yield newer official cumulative war-casualty totals than those published by Al Jazeera\u2019s August 28, 2026 compilation of official figures, which lists 3,527 killed in Iran, 60 Israelis killed, 18 US service members killed, 28 killed in Gulf states, and at least 3,580 US-Israeli attacks on Iran. Current headlines instead point to escalation risks around the wider theater: AP and other outlets report the UK is deploying Typhoon jets for defensive patrols over Saudi Arabia amid intensifying Houthi attacks, while Israeli Prime Minister Benjamin Netanyahu said he discussed eliminating Iran\u2019s regime with President Trump, suggesting the conflict\u2019s political objectives remain unsettled.",
   "briefings": [
     {
       "date": "2026-10-20",
       "day": 234,
-      "summary": "Confirmed reporting available in search results indicates the broader regional war remains active on October 20, 2026, with political escalation as Netanyahu says he discussed removing Iran\u2019s regime with Trump, and military spillover continuing via intensified Houthi attacks that prompted a new UK fighter deployment to defend Saudi Arabia. For cumulative war metrics, the clearest currently surfaced figures were Al Jazeera\u2019s August 28 count of 60 Israelis killed, 28 Gulf-state deaths, and at least 3,580 U.S.-Israeli attacks on Iran, while U.S. fatalities have since risen to 19 according to CBS News reporting based on Pentagon casualty listings. Several requested fields could not be safely updated because no current confirmed official figure was found in accessible results."
+      "summary": "Confirmed reporting available today did not yield newer official cumulative war-casualty totals than those published by Al Jazeera\u2019s August 28, 2026 compilation of official figures, which lists 3,527 killed in Iran, 60 Israelis killed, 18 US service members killed, 28 killed in Gulf states, and at least 3,580 US-Israeli attacks on Iran. Current headlines instead point to escalation risks around the wider theater: AP and other outlets report the UK is deploying Typhoon jets for defensive patrols over Saudi Arabia amid intensifying Houthi attacks, while Israeli Prime Minister Benjamin Netanyahu said he discussed eliminating Iran\u2019s regime with President Trump, suggesting the conflict\u2019s political objectives remain unsettled."
     },
     {
       "date": "2026-10-19",
