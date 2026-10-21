@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-10-21T04:49:41Z",
+  "lastUpdated": "2026-10-21T10:10:06Z",
   "dayCount": 235,
   "banner": {
-    "strikes": "~4,500",
-    "killed": "3,661+",
-    "cost": "$36.3B+"
+    "strikes": "~13,000",
+    "killed": "3,518+",
+    "cost": "$34.2B+"
   },
   "humanCost": {
-    "iranDeaths": "3,636",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "7",
+    "gulfCasualties": "10",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$36.3 billion+",
-    "dailyBurnRate": "~$155M/day",
+    "totalCost": "$34.2 billion+",
+    "dailyBurnRate": "~$146M/day",
     "daysOfOps": 235,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (AP Oct. 8, 2026: USS George H.W. Bush and USS George Washington were in the region; a third carrier could arrive later in October)"
+          "source": "LLM-verified (AP, Oct. 1, 2026: third aircraft carrier heading to Middle East; AP said this could mean three carriers in region by end of October)"
         },
         {
           "id": "destroyers",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (AP Oct. 1, 2026: U.S. military dispatching roughly 9,000 troops aboard a group of ships to the Middle East)"
+          "source": "LLM-verified (AP, Oct. 1, 2026: roughly 9,000 troops aboard group of ships dispatched to Middle East)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 450,
+          "quantity": 1000,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-10-20",
-          "source": "LLM-verified (AP (last week, Oct. 2026) reported SecDef award citation for USS Abraham Lincoln strike group said it launched 450 Tomahawk cruise missiles during deployment in support of the Iran war; no confirmed theater-wide total found)"
+          "lastUpdated": "2026-10-21",
+          "source": "LLM-verified (AP, May 27, 2026 citing CSIS analysis: U.S. fired '1,000-plus Tomahawk missiles' at Iran)"
         },
         {
           "id": "jdam",
@@ -244,7 +244,7 @@
             "bomber sortie"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (U.S. Department of War briefing on initial Iran nuclear-site strike said seven B-2 Spirit bombers participated)"
+          "source": "LLM-verified (AP reporting on B-2 strike says seven B-2 Spirit bombers were used in the mission)"
         },
         {
           "id": "mop_bunker_busters",
@@ -261,7 +261,7 @@
             "deep penetration"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (U.S. Department of War briefing on initial Iran nuclear-site strike: seven B-2s each dropped two GBU-57 MOPs, totaling 14)"
+          "source": "LLM-verified (AP reporting on B-2 strike says 14 GBU-57 bunker busters were dropped)"
         },
         {
           "id": "fighter_sorties",
@@ -286,7 +286,7 @@
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 1500,
+          "quantity": 290,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -297,8 +297,8 @@
             "intercepted",
             "shot down missile"
           ],
-          "lastUpdated": "2026-10-20",
-          "source": "LLM-verified (AP, Aug. 27, 2026, citing CSIS analysis: about 1,500 U.S. Patriot interceptors expended/used up during the Iran war; this supports a conservative confirmed interceptor figure but does not fully capture THAAD/SM-3/Patriot combined total)"
+          "lastUpdated": "2026-10-21",
+          "source": "LLM-verified (AP, May 27, 2026 citing CSIS analysis: as many as 290 THAAD interceptors had been fired; no combined confirmed SM-3+THAAD+Patriot total found)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 235 days",
-        "cost": "$3,290,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 235 days",
+        "cost": "$4,935,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "450 \u00d7 $2,000,000 each",
-        "cost": "$900,000,000"
+        "detail": "1,000 \u00d7 $2,000,000 each",
+        "cost": "$2,000,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -403,8 +403,8 @@
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "1,500 \u00d7 $4,000,000 each",
-        "cost": "$6,000,000,000"
+        "detail": "290 \u00d7 $4,000,000 each",
+        "cost": "$1,160,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Blast heard in Aden near airport as Houthis claimed ballistic missile attack, Al Jazeera RSS headline",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Houthi missile strike on Yemen camp killed at least 53 security recruits, AP/BBC Oct. 19-20, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 21, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Houthi attacks intensified in Yemen, including a strike on a military camp in Shabwa reportedly killing at least 53, according to Al Jazeera headlines.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Pakistan suspended border trade with Iran amid cross-border violence and mediation efforts, according to Al Jazeera.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on October 8, 2026 reported Trump said the U.S. would not resume military strikes on Iran before the November 3, 2026 midterm elections.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,26 @@
   ],
   "developments": [
     {
+      "time": "2026-10-21T09:02:18Z",
+      "text": "<strong>Blast heard in Yemen\u2019s Aden as Houthis claim attack on military camp</strong> -- Smoke seen rising near airport in Aden as Houthis say they attacked a military camp with a ballistic missile. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/21/blast-heard-in-yemens-aden-as-houthis-claim-attack-on-military-camp?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-20T15:58:57Z",
+      "text": "<strong>Swimmer, 65, killed in shark attack off South Africa&#x27;s east coast</strong> -- Janine Lochrenberg, 65, was out on her daily morning swim with her club when she was attacked, her family tell the BBC. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqx297pxg1djo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-20T14:09:42Z",
+      "text": "<strong>Houthi missile strike on Yemen camp kills 73 security recruits, local authorities say</strong> -- Three missiles hit a camp in government-controlled Shabwa province on Monday that was being used as a training centre, Yemen&#x27;s army says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-20T01:52:43Z",
+      "text": "<strong>Deadly fire at Canada military base moved a kilometre &#x27;in 30 to 60 seconds&#x27;</strong> -- The blaze that killed four men and injured dozens of others spread with alarming speed, accounts suggest. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckj0ly6qnp1lo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-21T02:18:10Z",
       "text": "<strong>Drone strike on Abyei market near Sudan-South Sudan border kills 150</strong> -- Drone strike on Abyei market near Sudan-South Sudan border kills 150 <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/21/drone-strike-on-abyei-market-near-sudan-south-sudan-border-kills-150?traffic_source=rss"
@@ -786,21 +806,6 @@
       "time": "2026-10-20T20:17:53Z",
       "text": "<strong>UK police rearrest two men on suspicion of assisting Iran\u2019s intelligence</strong> -- Duo was first arrested for suspected link to incident at US-run airbase used for striking Iran during this year&amp;#039;s war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/20/uk-police-re-arrest-two-men-on-suspicion-of-assisting-iranian-intelligence?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T15:58:57Z",
-      "text": "<strong>Swimmer, 65, killed in shark attack off South Africa&#x27;s east coast</strong> -- Janine Lochrenberg, 65, was out on her daily morning swim with her club when she was attacked, her family tell the BBC. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqx297pxg1djo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-20T14:09:42Z",
-      "text": "<strong>Houthi missile strike on Yemen camp kills 73 security recruits, local authorities say</strong> -- Three missiles hit a camp in government-controlled Shabwa province on Monday that was being used as a training centre, Yemen&#x27;s army says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-20T01:52:43Z",
-      "text": "<strong>Deadly fire at Canada military base moved a kilometre &#x27;in 30 to 60 seconds&#x27;</strong> -- The blaze that killed four men and injured dozens of others spread with alarming speed, accounts suggest. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ckj0ly6qnp1lo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-20T19:51:09Z",
@@ -846,11 +851,6 @@
       "time": "2026-10-20T12:59:58Z",
       "text": "<strong>Israeli attacks kill at least four Palestinians in Gaza</strong> -- A couple and a 17-year-old are among those killed by Israeli air attacks and gunfire in the Gaza Strip. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/20/israeli-forces-kill-at-least-four-palestinians-in-gaza-strikes?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T12:37:06Z",
-      "text": "<strong>Why Rubio is visiting Reliance\u2019s oil refinery in India, the world\u2019s largest</strong> -- Reliance is central to Washington\u2019s efforts to punish Russian energy buyers and contain oil prices amid the war on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/20/why-rubio-is-visiting-reliances-oil-refinery-in-india-the-worlds-largest?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,59 +1213,11 @@
   ],
   "newsFeed": [
     {
-      "title": "Drone strike on Abyei market near Sudan-South Sudan border kills 150",
-      "description": "Drone strike on Abyei market near Sudan-South Sudan border kills 150",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/21/drone-strike-on-abyei-market-near-sudan-south-sudan-border-kills-150?traffic_source=rss",
+      "title": "Blast heard in Yemen\u2019s Aden as Houthis claim attack on military camp",
+      "description": "Smoke seen rising near airport in Aden as Houthis say they attacked a military camp with a ballistic missile.",
+      "link": "https://www.aljazeera.com/news/2026/10/21/blast-heard-in-yemens-aden-as-houthis-claim-attack-on-military-camp?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-21T02:18:10Z",
-      "tier": 2
-    },
-    {
-      "title": "US jails Guatemalan man for 30 years over deadly smuggling operation",
-      "description": "The 2022 incident resulted in the deaths of 53 migrants trapped inside a tractor-trailer in dangerously high heat.",
-      "link": "https://www.aljazeera.com/news/2026/10/21/us-jails-guatemalan-man-for-30-years-over-deadly-smuggling-operation?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-21T01:01:25Z",
-      "tier": 2
-    },
-    {
-      "title": "King Charles welcomes Omani sultan, hails peace efforts in UK state visit",
-      "description": "King Charles III pays tribute to Muscat&#039;s &#039;noble efforts&#039; to help reopen the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/2026/10/21/king-charles-welcomes-omani-sultan-hails-peace-efforts-in-uk-state-visit?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-21T00:08:25Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: US warns peace deal with Tehran is extremely difficult",
-      "description": "Rubio tells US media that reaching a peace deal with Tehran is extremely difficult while Hormuz attacks continue.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-21T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "PSG score late to sink Barcelona 4-2 in Champions League blockbuster",
-      "description": "Late strikes by Vitinha and Fabian Ruiz grab victory for PSG as they aim to win the UCL for third season running.",
-      "link": "https://www.aljazeera.com/sports/2026/10/20/psg-sink-barcelona-4-2-for-third-champions-league-win-in-a-row?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-20T21:24:06Z",
-      "tier": 2
-    },
-    {
-      "title": "Why the war on Iran could backfire on US regime-change goals",
-      "description": "Mortazavi: The war on Iran could strengthen Iranian nationalism rather than trigger regime change.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/aje-onl-nf_war-on-iran-could-strengthen-nationalism-201026?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-20T20:23:52Z",
-      "tier": 2
-    },
-    {
-      "title": "UK police rearrest two men on suspicion of assisting Iran\u2019s intelligence",
-      "description": "Duo was first arrested for suspected link to incident at US-run airbase used for striking Iran during this year&#039;s war.",
-      "link": "https://www.aljazeera.com/news/2026/10/20/uk-police-re-arrest-two-men-on-suspicion-of-assisting-iranian-intelligence?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-20T20:17:53Z",
+      "time": "2026-10-21T09:02:18Z",
       "tier": 2
     },
     {
@@ -1285,14 +1237,6 @@
       "tier": 2
     },
     {
-      "title": "Why Israeli Gen Z voters are drawn to the far right",
-      "description": "More than half a million young people will cast their ballots in Israel next week - and they could make all the difference.",
-      "link": "https://www.bbc.co.uk/news/articles/cmvg632xgndeo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-20T08:53:06Z",
-      "tier": 2
-    },
-    {
       "title": "Deadly fire at Canada military base moved a kilometre 'in 30 to 60 seconds'",
       "description": "The blaze that killed four men and injured dozens of others spread with alarming speed, accounts suggest.",
       "link": "https://www.bbc.co.uk/news/articles/ckj0ly6qnp1lo?at_medium=RSS&at_campaign=rss",
@@ -1301,12 +1245,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 21, 2026 still shows no clearly updated official cumulative Iran-wide casualty breakdown beyond earlier HRANA/Reuters tallies, with 3,636 reported dead in the war by the latest Reuters factbox located and U.S. military deaths standing at 18 according to U.S.-cited reporting. AP reporting indicates two U.S. carriers are currently in the region, with a third potentially arriving later in October, while Houthi attacks on Saudi infrastructure continue and diplomacy remains difficult according to AP and Al Jazeera. For strike volume, the most current official Iran-specific figure found was the IDF\u2019s October 7 statement that approximately 4,500 targets in Iran had been struck.",
+  "summary": "Confirmed reporting available today did not yield newer official cumulative casualty totals for Iran, Israel, or U.S. forces beyond figures already reported earlier in 2026. The latest notable development in the wider regional war is escalation in Yemen: AP reported on October 19 that Iran-backed Houthi rebels killed at least 53 government soldiers in a ballistic-missile strike, while Al Jazeera reported a blast near Aden airport tied to a claimed Houthi attack. AP also reported on October 1 that the U.S. was dispatching roughly 9,000 additional troops and a third carrier group toward the Middle East, potentially raising carrier presence in the region to three by late October.",
   "briefings": [
     {
       "date": "2026-10-21",
       "day": 235,
-      "summary": "Confirmed reporting on October 21, 2026 still shows no clearly updated official cumulative Iran-wide casualty breakdown beyond earlier HRANA/Reuters tallies, with 3,636 reported dead in the war by the latest Reuters factbox located and U.S. military deaths standing at 18 according to U.S.-cited reporting. AP reporting indicates two U.S. carriers are currently in the region, with a third potentially arriving later in October, while Houthi attacks on Saudi infrastructure continue and diplomacy remains difficult according to AP and Al Jazeera. For strike volume, the most current official Iran-specific figure found was the IDF\u2019s October 7 statement that approximately 4,500 targets in Iran had been struck."
+      "summary": "Confirmed reporting available today did not yield newer official cumulative casualty totals for Iran, Israel, or U.S. forces beyond figures already reported earlier in 2026. The latest notable development in the wider regional war is escalation in Yemen: AP reported on October 19 that Iran-backed Houthi rebels killed at least 53 government soldiers in a ballistic-missile strike, while Al Jazeera reported a blast near Aden airport tied to a claimed Houthi attack. AP also reported on October 1 that the U.S. was dispatching roughly 9,000 additional troops and a third carrier group toward the Middle East, potentially raising carrier presence in the region to three by late October."
     },
     {
       "date": "2026-10-20",
