@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-10-21T10:10:06Z",
+  "lastUpdated": "2026-10-21T15:15:58Z",
   "dayCount": 235,
   "banner": {
     "strikes": "~13,000",
-    "killed": "3,518+",
-    "cost": "$34.2B+"
+    "killed": "3,569+",
+    "cost": "$32.6B+"
   },
   "humanCost": {
-    "iranDeaths": "3,468",
+    "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "14",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "10",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "12,000+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "1701",
+    "civilianDeaths": "1255",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$34.2 billion+",
-    "dailyBurnRate": "~$146M/day",
+    "totalCost": "$32.6 billion+",
+    "dailyBurnRate": "~$139M/day",
     "daysOfOps": 235,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (AP, Oct. 1, 2026: third aircraft carrier heading to Middle East; AP said this could mean three carriers in region by end of October)"
+          "source": "LLM-verified (USNI Fleet Tracker, Oct. 19, 2026: George Washington and George H.W. Bush carrier strike groups operating in/for Middle East theater; Theodore Roosevelt is in Japan and not yet in theater)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (AP Apr. 16, 2026: Navy had 16 warships in the Middle East, including 11 destroyers)"
+          "source": "LLM-verified (USNI Fleet Tracker, Oct. 19, 2026: 1 with George Washington (Shoup) + 2 with Bush (Donald Cook, Ross) + 7 independently deployed warships in the Arabian Sea region + 1 additional destroyer in the Indian Ocean (Mustin) = 11 destroyers/escorts in theater; cruisers/ESB also present separately)"
         },
         {
           "id": "personnel",
@@ -213,8 +213,8 @@
             "cruise missile",
             "air-launched missile"
           ],
-          "lastUpdated": "2026-08-27",
-          "source": "LLM-verified (Al Jazeera, July 15, 2026, citing CSIS: 'About 1,100 were used in the war on Iran.')"
+          "lastUpdated": "2026-10-21",
+          "source": "LLM-verified (USNI News, Jul. 17, 2026, citing a CSIS report: Pentagon used up to 1,100 JASSMs since Feb. 28, 2026)"
         },
         {
           "id": "sdb",
@@ -244,7 +244,7 @@
             "bomber sortie"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (AP reporting on B-2 strike says seven B-2 Spirit bombers were used in the mission)"
+          "source": "LLM-verified (DoD transcript on opening B-2 strike package: seven B-2 Spirit bombers participated in the operation described; no newer cumulative sortie total found)"
         },
         {
           "id": "mop_bunker_busters",
@@ -261,7 +261,7 @@
             "deep penetration"
           ],
           "lastUpdated": "2026-10-21",
-          "source": "LLM-verified (AP reporting on B-2 strike says 14 GBU-57 bunker busters were dropped)"
+          "source": "LLM-verified (DoD transcript on the initial strike package: seven B-2 bombers each carried two bunker-buster weapons, implying 14 used in that operation; no newer confirmed cumulative MOP total found)"
         },
         {
           "id": "fighter_sorties",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 235 days",
-        "cost": "$4,935,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 235 days",
+        "cost": "$3,290,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,42 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC RSS reports Houthi missile strike on Yemen camp killed 73 security recruits",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS reports Houthi-claimed ballistic missile attack on a military camp in Aden",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS reports UK and France expanding defensive support to Saudi Arabia amid Houthi escalation risk",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 21, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera RSS reports renewed contention over Iran\u2019s enriched uranium in U.S. talks",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 21, 2026",
       "severity": "high",
@@ -623,42 +659,6 @@
       "text": "AP reported today that Houthi rebels struck a Yemeni government camp, killing at least 53, underscoring expansion of the Iran war's Yemen front.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported October 11-17 that attacks on shipping in and around the Strait of Hormuz intensified as mediated efforts to end the war stalled.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on October 14 that Iran said a cargo ship sank after hitting a naval mine in the Strait of Hormuz, the first such sinking Iran has reported during the war.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Russia's foreign minister discussed the U.S. war and regional security during a Tehran visit, while Gulf states pressed Moscow to help reopen the Strait of Hormuz, according to Al Jazeera headlines.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 19, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Houthi attacks intensified in Yemen, including a strike on a military camp in Shabwa reportedly killing at least 53, according to Al Jazeera headlines.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,9 +753,29 @@
   ],
   "developments": [
     {
+      "time": "2026-10-21T13:25:50Z",
+      "text": "<strong>Are the UK, France being pulled into the Saudi-Houthi conflict?</strong> -- The European states say their support for Riyadh is &amp;#039;defensive&amp;#039;, but analysts warn Houthi reaction may complicate that. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/21/are-the-uk-france-being-pulled-into-the-saudi-houthi-conflict?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-21T12:18:10Z",
+      "text": "<strong>Iran\u2019s enriched uranium re-emerges as point of contention in US talks</strong> -- Iran&amp;#039;s nuclear enrichment has emerged as a major point of contention amid diplomatic push to end the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/21/irans-enriched-uranium-re-emerges-as-point-of-contention-in-us-talks?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-21T10:22:35Z",
+      "text": "<strong>WW1 to Houthis: British jets for Saudi Arabia build on long military bond</strong> -- UK&amp;#039;s deployment of jets to defend Saudi Arabia is the latest chapter in a relationship older than the kingdom itself. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/21/ww1-to-houthis-british-jets-for-saudi-arabia-build-on-long-military-bond?traffic_source=rss"
+    },
+    {
       "time": "2026-10-21T09:02:18Z",
       "text": "<strong>Blast heard in Yemen\u2019s Aden as Houthis claim attack on military camp</strong> -- Smoke seen rising near airport in Aden as Houthis say they attacked a military camp with a ballistic missile. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/21/blast-heard-in-yemens-aden-as-houthis-claim-attack-on-military-camp?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-21T13:35:27Z",
+      "text": "<strong>Family of prison officer killed by IRA receives state apology</strong> -- Brian Stack was crossing a street in Dublin in 1983 when he was shot in the back of the neck and died 18 months later. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ck20rver1j31o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-20T15:58:57Z",
@@ -831,26 +851,6 @@
       "time": "2026-10-20T16:21:01Z",
       "text": "<strong>Qatar says only negotiations can resolve regional tensions</strong> -- Qatar says diplomatic efforts are ongoing to de-escalate regional tensions and reopen the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/qatar-says-only-negotiations-can-resolve-regional-tensions?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T16:01:01Z",
-      "text": "<strong>Lavrov backs Tehran, but does Russia also gain from the US-Iran crisis?</strong> -- Moscow pledges support to its sanctioned ally, but analysts say the war Iran wants to end has filled Russia\u2019s coffers. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/20/lavrov-backs-tehran-but-does-russia-also-gain-from-the-us-iran-crisis?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T14:39:50Z",
-      "text": "<strong>Pakistan army chief in Tehran: Can diplomacy prevent new US-Iran fighting?</strong> -- With new talk of escalation, Islamabad is trying to revive negotiations without alienating Tehran, Riyadh or Washington. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/20/pakistan-army-chief-in-tehran-can-diplomacy-prevent-new-us-iran-fighting?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T13:20:33Z",
-      "text": "<strong>US envoy Barrack defends decision to join Israel in war on Iran</strong> -- US envoy Tom Barrack says President Trump did not follow Israel in going to war against Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/20/20-10-iran-us-envoy-barrack-trump-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-20T12:59:58Z",
-      "text": "<strong>Israeli attacks kill at least four Palestinians in Gaza</strong> -- A couple and a 17-year-old are among those killed by Israeli air attacks and gunfire in the Gaza Strip. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/20/israeli-forces-kill-at-least-four-palestinians-in-gaza-strikes?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,38 @@
   ],
   "newsFeed": [
     {
+      "title": "Family of prison officer killed by IRA receives state apology",
+      "description": "Brian Stack was crossing a street in Dublin in 1983 when he was shot in the back of the neck and died 18 months later.",
+      "link": "https://www.bbc.co.uk/news/articles/ck20rver1j31o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-21T13:35:27Z",
+      "tier": 2
+    },
+    {
+      "title": "Are the UK, France being pulled into the Saudi-Houthi conflict?",
+      "description": "The European states say their support for Riyadh is &#039;defensive&#039;, but analysts warn Houthi reaction may complicate that.",
+      "link": "https://www.aljazeera.com/news/2026/10/21/are-the-uk-france-being-pulled-into-the-saudi-houthi-conflict?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-21T13:25:50Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran\u2019s enriched uranium re-emerges as point of contention in US talks",
+      "description": "Iran&#039;s nuclear enrichment has emerged as a major point of contention amid diplomatic push to end the war.",
+      "link": "https://www.aljazeera.com/news/2026/10/21/irans-enriched-uranium-re-emerges-as-point-of-contention-in-us-talks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-21T12:18:10Z",
+      "tier": 2
+    },
+    {
+      "title": "WW1 to Houthis: British jets for Saudi Arabia build on long military bond",
+      "description": "UK&#039;s deployment of jets to defend Saudi Arabia is the latest chapter in a relationship older than the kingdom itself.",
+      "link": "https://www.aljazeera.com/news/2026/10/21/ww1-to-houthis-british-jets-for-saudi-arabia-build-on-long-military-bond?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-21T10:22:35Z",
+      "tier": 2
+    },
+    {
       "title": "Blast heard in Yemen\u2019s Aden as Houthis claim attack on military camp",
       "description": "Smoke seen rising near airport in Aden as Houthis say they attacked a military camp with a ballistic missile.",
       "link": "https://www.aljazeera.com/news/2026/10/21/blast-heard-in-yemens-aden-as-houthis-claim-attack-on-military-camp?traffic_source=rss",
@@ -1235,22 +1267,14 @@
       "source": "BBC World",
       "time": "2026-10-20T14:09:42Z",
       "tier": 2
-    },
-    {
-      "title": "Deadly fire at Canada military base moved a kilometre 'in 30 to 60 seconds'",
-      "description": "The blaze that killed four men and injured dozens of others spread with alarming speed, accounts suggest.",
-      "link": "https://www.bbc.co.uk/news/articles/ckj0ly6qnp1lo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-20T01:52:43Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today did not yield newer official cumulative casualty totals for Iran, Israel, or U.S. forces beyond figures already reported earlier in 2026. The latest notable development in the wider regional war is escalation in Yemen: AP reported on October 19 that Iran-backed Houthi rebels killed at least 53 government soldiers in a ballistic-missile strike, while Al Jazeera reported a blast near Aden airport tied to a claimed Houthi attack. AP also reported on October 1 that the U.S. was dispatching roughly 9,000 additional troops and a third carrier group toward the Middle East, potentially raising carrier presence in the region to three by late October.",
+  "summary": "Confirmed reporting available today suggests the war\u2019s latest verified cumulative toll includes 3,527 dead in Iran and 28 dead in Gulf states according to Al Jazeera\u2019s Aug. 28 compilation of official figures, while the Pentagon\u2019s official Iran-war fatality count remains 14 after later deaths were shifted out of that tally by the Defense Casualty Analysis System. On the military side, CENTCOM\u2019s last accessible official fact sheet still lists more than 13,000 targets struck, and current naval tracking from USNI shows two U.S. carrier strike groups actively supporting Middle East operations, with Theodore Roosevelt not yet in theater as of Oct. 19. Today\u2019s headline environment points to continued regional spillover risk centered on Yemen, Saudi-Houthi escalation, and unresolved disputes over Iran\u2019s enriched uranium in ongoing diplomacy.",
   "briefings": [
     {
       "date": "2026-10-21",
       "day": 235,
-      "summary": "Confirmed reporting available today did not yield newer official cumulative casualty totals for Iran, Israel, or U.S. forces beyond figures already reported earlier in 2026. The latest notable development in the wider regional war is escalation in Yemen: AP reported on October 19 that Iran-backed Houthi rebels killed at least 53 government soldiers in a ballistic-missile strike, while Al Jazeera reported a blast near Aden airport tied to a claimed Houthi attack. AP also reported on October 1 that the U.S. was dispatching roughly 9,000 additional troops and a third carrier group toward the Middle East, potentially raising carrier presence in the region to three by late October."
+      "summary": "Confirmed reporting available today suggests the war\u2019s latest verified cumulative toll includes 3,527 dead in Iran and 28 dead in Gulf states according to Al Jazeera\u2019s Aug. 28 compilation of official figures, while the Pentagon\u2019s official Iran-war fatality count remains 14 after later deaths were shifted out of that tally by the Defense Casualty Analysis System. On the military side, CENTCOM\u2019s last accessible official fact sheet still lists more than 13,000 targets struck, and current naval tracking from USNI shows two U.S. carrier strike groups actively supporting Middle East operations, with Theodore Roosevelt not yet in theater as of Oct. 19. Today\u2019s headline environment points to continued regional spillover risk centered on Yemen, Saudi-Houthi escalation, and unresolved disputes over Iran\u2019s enriched uranium in ongoing diplomacy."
     },
     {
       "date": "2026-10-20",
