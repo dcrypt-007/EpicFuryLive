@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-10-22T15:19:14Z",
+  "lastUpdated": "2026-10-22T20:07:25Z",
   "dayCount": 236,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,040+",
-    "cost": "$32.1B+"
+    "strikes": "~4,500",
+    "killed": "3,488+",
+    "cost": "$34.4B+"
   },
   "humanCost": {
-    "iranDeaths": "3,038",
+    "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "21",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$32.1 billion+",
-    "dailyBurnRate": "~$136M/day",
+    "totalCost": "$34.4 billion+",
+    "dailyBurnRate": "~$146M/day",
     "daysOfOps": 236,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 1,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-22",
-          "source": "LLM-verified (USNI News Fleet and Marine Tracker dated October 19, 2026 identified Carrier Strike Group 9 led by USS Theodore Roosevelt as deployed; no second carrier was shown in current tracker.)"
+          "source": "LLM-verified (AP, Oct. 22, 2026: U.S. is sending more assets including a third aircraft carrier to the region. https://apnews.com/article/2abebce2fca2c085e0e0ee717e42cf28)"
         },
         {
           "id": "destroyers",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 800,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-22",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated March 28, 2026 lists 11,000+ combat flights; closest confirmed official cumulative sorties figure found)"
+          "source": "LLM-verified (IDF article states that at the time of publication more than 800 Israeli Air Force strike sorties had been carried out in Operation Roaring Lion; no newer combined US-Israeli official sortie total found. https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/over-800-strike-sorties-16-000-munitions-what-has-happened-since-the-launch-of-operation-roaring-lion/)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "$7,000,000/day \u00d7 236 days",
-        "cost": "$1,652,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 236 days",
+        "cost": "$4,956,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "800 \u00d7 $100,000 each",
+        "cost": "$80,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports the United States is sending additional military assets, including a third aircraft carrier and thousands of troops, to the region amid fears of renewed fighting.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 22, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/IRGC claim that seven tankers were damaged in the Strait of Hormuz overnight on October 22, 2026; the US disputes the claim, but if verified it would be the largest single-day vessel damage incident since the war began.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 22, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "Iranian Parliament Speaker Mohammad Bagher Qalibaf said Iran must be prepared for war even while negotiating with the U.S., according to AP on October 14, 2026.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Qatar said diplomatic efforts are ongoing to de-escalate tensions and reopen the Strait of Hormuz.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 20, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reporting on Oct. 20, 2026 said Israel's prime minister suggested to President Trump that the two countries could launch new attacks on Iran.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,19 +753,34 @@
   ],
   "developments": [
     {
+      "time": "2026-10-22T17:58:04Z",
+      "text": "<strong>Iran says seven ships hit in Hormuz Strait, warns US of wider response</strong> -- The US has pushed back on the IRGC&amp;#039;s claims, dismissing them as an attempt to increase oil prices ahead of US elections. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/22/iran-says-seven-ships-hit-in-hormuz-strait-warns-us-of-wider-response?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-22T17:35:44Z",
+      "text": "<strong>Foreign national beaten to death by a mob in South Africa</strong> -- Police say a 50-person mob in Durban killed a man amid a wave of anti-migrant marches. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/22/foreign-national-beaten-to-death-by-a-mob-in-south-africa?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-22T16:24:43Z",
+      "text": "<strong>Two Syrian security officers killed in raid on ISIL cell near Damascus</strong> -- The Syrian Interior Ministry says five suspected fighters killed and six arrested outside of Damascus. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/22/two-syrian-security-officers-killed-in-raid-on-isil-cell-near-damascus?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-22T16:06:55Z",
+      "text": "<strong>Israeli attacks kill four as famine risk looms in Gaza</strong> -- Four Palestinians killed as Israeli military expands control across Gaza, displacing millions and destroying homes. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/22/israeli-attacks-in-gaza-kill-four-including-a-young-girl?traffic_source=rss"
+    },
+    {
       "time": "2026-10-22T14:55:59Z",
       "text": "<strong>Netanyahu promises Iran regime change: Can Israel topple Tehran government?</strong> -- Israel can inflict devastating damage on Iran, but analysts question its ability to overthrow Tehran\u2019s government. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/22/netanyahu-promises-iran-regime-change-can-israel-topple-tehran-government?traffic_source=rss"
     },
     {
-      "time": "2026-10-22T13:42:26Z",
-      "text": "<strong>Yemenis face severe shortages in Taiz amid Houthi blockade</strong> -- Residents in Yemen\u2019s Taiz are facing severe food and water shortages as a Houthi blockade cuts off a key supply route. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/22/yemenis-face-severe-shortages-in-taiz-amid-houthi-blockade?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-22T12:12:32Z",
-      "text": "<strong>Iran reveals \u2018offensive\u2019 doctrine, US issues alert: Is war imminent?</strong> -- US orders diplomatic staff out of Saudi Arabia amid escalating conflict and reports of potential US strikes on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent?traffic_source=rss"
+      "time": "2026-10-22T15:56:36Z",
+      "text": "<strong>Newborn twins fight for survival as conflict fuels Yemen&#x27;s hunger crisis</strong> -- Raghad and Raad&#x27;s family had to flee their home on foot because of the fighting between pro-government forces and the Houthis. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cr5ynl63v0pyo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-22T11:23:16Z",
@@ -783,14 +798,24 @@
       "link": "https://www.bbc.co.uk/news/articles/cx8dz75633vjo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "time": "2026-10-21T16:58:16Z",
-      "text": "<strong>Family of prison officer killed by IRA receives state apology</strong> -- Brian Stack was crossing a street in Dublin in 1983 when he was shot in the back of the neck and died 18 months later. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/ck20rver1j31o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-10-22T05:30:22Z",
       "text": "<strong>How Arab parties could hold critical balance of power in Israeli election</strong> -- Disaffection has often driven down turnout among Arab Israelis, but there is a strong push to get rid of the right-wing governing coalition. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cx8dzrp768j8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-22T13:42:26Z",
+      "text": "<strong>Yemenis face severe shortages in Taiz amid Houthi blockade</strong> -- Residents in Yemen\u2019s Taiz are facing severe food and water shortages as a Houthi blockade cuts off a key supply route. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/22/yemenis-face-severe-shortages-in-taiz-amid-houthi-blockade?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-22T12:12:32Z",
+      "text": "<strong>Iran reveals \u2018offensive\u2019 doctrine, US issues alert: Is war imminent?</strong> -- US orders diplomatic staff out of Saudi Arabia amid escalating conflict and reports of potential US strikes on Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-21T16:58:16Z",
+      "text": "<strong>Family of prison officer killed by IRA receives state apology</strong> -- Brian Stack was crossing a street in Dublin in 1983 when he was shot in the back of the neck and died 18 months later. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ck20rver1j31o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-22T09:00:05Z",
@@ -826,31 +851,6 @@
       "time": "2026-10-22T00:25:41Z",
       "text": "<strong>One killed, eight injured in attack on Saudi Arabia\u2019s King Fahd airport</strong> -- Injured immediately transported to hospitals as aviation authority says updates will be forthcoming. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/22/one-killed-eight-injured-in-attack-on-saudi-arabias-king-fahd-airport-2?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-22T00:00:00Z",
-      "text": "<strong>Iran war live: IRGC vows invasion as defence doctrine turns \u2018offensive\u2019</strong> -- Iran&amp;#039;s IRGC threatens to invade any country that attacks it under a new &amp;#039;offensive and asymmetrical&amp;#039; doctrine. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/22/iran-war-live-irgc-vows-invasion-as-defence-doctrine-turns-offensive?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-21T23:13:35Z",
-      "text": "<strong>US orders departure of personnel from Saudi Arabia, citing Houthi threat</strong> -- US State Department says Iran-aligned Houthis have &amp;#039;increasingly \u2060\u2060engaged in hostilities&amp;#039; against Saudi Arabia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-21T21:43:06Z",
-      "text": "<strong>Tehran displays mock installation of Trump behind bars</strong> -- An Iranian performer in Tehran\u2019s busy Tajrish Square has impersonated US President Donald Trump behind bars. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/21/aje-onl-nf_tehran-displays-mock-installation-of-trump-211026?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-22T01:07:34Z",
-      "text": "<strong>US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate</strong> -- The warning to US officials comes as at least three people die in the latest strikes at an airport and an oil field. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c6x2vpk93770o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-20T15:58:57Z",
-      "text": "<strong>Swimmer, 65, killed in shark attack off South Africa&#x27;s east coast</strong> -- Janine Lochrenberg, 65, was out on her daily morning swim with her club when she was attacked, her family tell the BBC. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqx297pxg1djo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,46 @@
   ],
   "newsFeed": [
     {
+      "title": "Iran says seven ships hit in Hormuz Strait, warns US of wider response",
+      "description": "The US has pushed back on the IRGC&#039;s claims, dismissing them as an attempt to increase oil prices ahead of US elections.",
+      "link": "https://www.aljazeera.com/news/2026/10/22/iran-says-seven-ships-hit-in-hormuz-strait-warns-us-of-wider-response?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-22T17:58:04Z",
+      "tier": 2
+    },
+    {
+      "title": "Foreign national beaten to death by a mob in South Africa",
+      "description": "Police say a 50-person mob in Durban killed a man amid a wave of anti-migrant marches.",
+      "link": "https://www.aljazeera.com/news/2026/10/22/foreign-national-beaten-to-death-by-a-mob-in-south-africa?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-22T17:35:44Z",
+      "tier": 2
+    },
+    {
+      "title": "Two Syrian security officers killed in raid on ISIL cell near Damascus",
+      "description": "The Syrian Interior Ministry says five suspected fighters killed and six arrested outside of Damascus.",
+      "link": "https://www.aljazeera.com/news/2026/10/22/two-syrian-security-officers-killed-in-raid-on-isil-cell-near-damascus?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-22T16:24:43Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli attacks kill four as famine risk looms in Gaza",
+      "description": "Four Palestinians killed as Israeli military expands control across Gaza, displacing millions and destroying homes.",
+      "link": "https://www.aljazeera.com/news/2026/10/22/israeli-attacks-in-gaza-kill-four-including-a-young-girl?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-22T16:06:55Z",
+      "tier": 2
+    },
+    {
+      "title": "Newborn twins fight for survival as conflict fuels Yemen's hunger crisis",
+      "description": "Raghad and Raad's family had to flee their home on foot because of the fighting between pro-government forces and the Houthis.",
+      "link": "https://www.bbc.co.uk/news/articles/cr5ynl63v0pyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-22T15:56:36Z",
+      "tier": 2
+    },
+    {
       "title": "Netanyahu promises Iran regime change: Can Israel topple Tehran government?",
       "description": "Israel can inflict devastating damage on Iran, but analysts question its ability to overthrow Tehran\u2019s government.",
       "link": "https://www.aljazeera.com/news/2026/10/22/netanyahu-promises-iran-regime-change-can-israel-topple-tehran-government?traffic_source=rss",
@@ -1226,22 +1266,6 @@
       "link": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-10-22T13:46:33Z",
-      "tier": 2
-    },
-    {
-      "title": "Yemenis face severe shortages in Taiz amid Houthi blockade",
-      "description": "Residents in Yemen\u2019s Taiz are facing severe food and water shortages as a Houthi blockade cuts off a key supply route.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/22/yemenis-face-severe-shortages-in-taiz-amid-houthi-blockade?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-22T13:42:26Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran reveals \u2018offensive\u2019 doctrine, US issues alert: Is war imminent?",
-      "description": "US orders diplomatic staff out of Saudi Arabia amid escalating conflict and reports of potential US strikes on Iran.",
-      "link": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-22T12:12:32Z",
       "tier": 2
     },
     {
@@ -1267,22 +1291,14 @@
       "source": "BBC World",
       "time": "2026-10-22T05:30:22Z",
       "tier": 2
-    },
-    {
-      "title": "Family of prison officer killed by IRA receives state apology",
-      "description": "Brian Stack was crossing a street in Dublin in 1983 when he was shot in the back of the neck and died 18 months later.",
-      "link": "https://www.bbc.co.uk/news/articles/ck20rver1j31o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-21T16:58:16Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 22, 2026 indicates renewed regional escalation rather than a new authoritative update to the core Epic Fury casualty database: AP reported that seven oil tankers were damaged overnight in the Strait of Hormuz, potentially the largest single-day disruption there since the war began on February 28, 2026, and separately that the death toll from the strike on Saudi Arabia's King Fahd International Airport rose to two. AP also reported that the United States ordered some diplomats and family members to leave Saudi Arabia because of escalating Houthi attacks and fears of wider conflict. I could not verify newer confirmed cumulative totals for the main Iran/US/Israel casualty and weapons-usage fields from accessible Pentagon, CENTCOM, Reuters, AP, IDF, or Iran Health Ministry reporting today.",
+  "summary": "Confirmed reporting on October 22, 2026 indicates a sharp maritime escalation risk: AP says Iran\u2019s state media and the IRGC reported seven tankers damaged in the Strait of Hormuz overnight, while U.S. officials pushed back on the claim; separately, AP reported Washington is moving additional forces to the region, including a third aircraft carrier and thousands of troops. The latest accessible confirmed cumulative fatality figure for Iran remains 3,468 killed from Al Jazeera\u2019s tracker citing Iran\u2019s Ministry of Health, while the official U.S. military death toll reported in July stood at 18. I could not verify a current named-source cumulative Israeli death total, current Iranian wounded total, or most weapons-expended figures from accessible official/wire sources, so those remain null.",
   "briefings": [
     {
       "date": "2026-10-22",
       "day": 236,
-      "summary": "Confirmed reporting on October 22, 2026 indicates renewed regional escalation rather than a new authoritative update to the core Epic Fury casualty database: AP reported that seven oil tankers were damaged overnight in the Strait of Hormuz, potentially the largest single-day disruption there since the war began on February 28, 2026, and separately that the death toll from the strike on Saudi Arabia's King Fahd International Airport rose to two. AP also reported that the United States ordered some diplomats and family members to leave Saudi Arabia because of escalating Houthi attacks and fears of wider conflict. I could not verify newer confirmed cumulative totals for the main Iran/US/Israel casualty and weapons-usage fields from accessible Pentagon, CENTCOM, Reuters, AP, IDF, or Iran Health Ministry reporting today."
+      "summary": "Confirmed reporting on October 22, 2026 indicates a sharp maritime escalation risk: AP says Iran\u2019s state media and the IRGC reported seven tankers damaged in the Strait of Hormuz overnight, while U.S. officials pushed back on the claim; separately, AP reported Washington is moving additional forces to the region, including a third aircraft carrier and thousands of troops. The latest accessible confirmed cumulative fatality figure for Iran remains 3,468 killed from Al Jazeera\u2019s tracker citing Iran\u2019s Ministry of Health, while the official U.S. military death toll reported in July stood at 18. I could not verify a current named-source cumulative Israeli death total, current Iranian wounded total, or most weapons-expended figures from accessible official/wire sources, so those remain null."
     },
     {
       "date": "2026-10-21",
