@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-10-24T07:18:04Z",
+  "lastUpdated": "2026-10-24T12:40:59Z",
   "dayCount": 238,
   "banner": {
-    "strikes": "~5,633",
-    "killed": "3,633+",
-    "cost": "$39.9B+"
+    "strikes": "~10,000",
+    "killed": "3,360+",
+    "cost": "$37.8B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,300",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "19",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
-    "civilianDeaths": "178",
+    "civilianDeaths": "1464",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
     "chartData": {
       "dates": [
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$39.9 billion+",
-    "dailyBurnRate": "~$168M/day",
+    "totalCost": "$37.8 billion+",
+    "dailyBurnRate": "~$159M/day",
     "daysOfOps": 238,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-24",
-          "source": "LLM-verified (AP on October 22, 2026 reported the U.S. is sending more assets to the region, 'including a third aircraft carrier.' This supports 3 carrier strike groups in theater. Source: AP, 'Iran says 7 oil tankers attacked in the Strait of Hormuz as fears grow of a return to war'.)"
+          "source": "LLM-verified (AP, October 7, 2026: two U.S. aircraft carriers currently assigned to the Middle East (USS George Washington and USS George H.W. Bush); a third could join later in October but was not yet there)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-10-23",
-          "source": "LLM-verified (AP, Oct. 1, 2026: U.S. military dispatching roughly 9,000 troops aboard a group of ships to the Middle East)"
+          "lastUpdated": "2026-10-24",
+          "source": "LLM-verified (AP, October 1, 2026: roughly 9,000 troops aboard ships being dispatched to the Middle East; no newer confirmed total operation-wide troop figure found)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 850,
+          "quantity": 450,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
           "lastUpdated": "2026-10-24",
-          "source": "LLM-verified (Reuters report carried by Investing.com on Mar. 27, 2026, and Washington Post reporting the same day: US military had fired over 850 Tomahawk cruise missiles in four weeks of war)"
+          "source": "LLM-verified (AP, October 7, 2026: USS Abraham Lincoln strike group launched 450 Tomahawk cruise missiles during its deployment)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 800,
+          "quantity": 3693,
           "keywords": [
             "sortie",
             "F-35",
@@ -279,8 +279,8 @@
             "air sortie",
             "strike sortie"
           ],
-          "lastUpdated": "2026-10-22",
-          "source": "LLM-verified (IDF article states that at the time of publication more than 800 Israeli Air Force strike sorties had been carried out in Operation Roaring Lion; no newer combined US-Israeli official sortie total found. https://www.idf.il/en/mini-sites/iran-israel-war-2026/articles-iran-israel-war-2026/over-800-strike-sorties-16-000-munitions-what-has-happened-since-the-launch-of-operation-roaring-lion/)"
+          "lastUpdated": "2026-10-24",
+          "source": "LLM-verified (AP, October 7, 2026: USS Abraham Lincoln strike group executed 3,693 combat missions during deployment; this is the closest confirmed public sorties-related figure found, but it is strike-group combat missions rather than a theater-wide fighter-only sorties count)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 238 days",
-        "cost": "$4,998,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 238 days",
+        "cost": "$3,332,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "850 \u00d7 $2,000,000 each",
-        "cost": "$1,700,000,000"
+        "detail": "450 \u00d7 $2,000,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "800 \u00d7 $100,000 each",
-        "cost": "$80,000,000"
+        "detail": "3,693 \u00d7 $100,000 each",
+        "cost": "$369,300,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on October 24 reported U.S. embassy staffing reductions tied to increased regional threats, while Trump said the U.S. might conduct 'another little Epic Fury' if diplomacy fails.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 24, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on October 22 reported fears of renewed U.S.-Israeli strikes on Iran, continued tanker attacks in the Strait of Hormuz, and a U.S. move to send additional military assets including a third carrier and thousands of troops toward the region.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 24, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP/IRGC claim that seven tankers were damaged in the Strait of Hormuz overnight on October 22, 2026; the US disputes the claim, but if verified it would be the largest single-day vessel damage incident since the war began.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on October 21-22, 2026 that the United States ordered some diplomats and family members to leave Saudi Arabia amid fears of escalating Houthi attacks and broader regional escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 22, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported on October 22, 2026 that the death toll from the attack on Saudi Arabia's King Fahd International Airport rose to two.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-10-24T11:50:32Z",
+      "text": "<strong>Czech Republic advances media funding overhaul despite criticism</strong> -- Journalists prepare to strike as politicians push through changes that critics say threaten independence. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/24/czech-republic-advances-media-funding-overhaul-despite-criticism?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-24T08:56:54Z",
+      "text": "<strong>Bolivian teachers strike over wages and education reform</strong> -- Bolivian teachers strike over wages and education reform <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/bolivian-teachers-strike-over-wages-and-education-reform?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-23T22:47:07Z",
+      "text": "<strong>Father who killed Oregon school gunman describes anguish over children he couldn&#x27;t save</strong> -- Kaylub Giamanco has been hailed as a hero for killing a teenager who fatally shot three children and a teacher. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-23T15:37:07Z",
+      "text": "<strong>Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead</strong> -- The soldiers were killed in an attack by two Palestinian gunmen at a checkpoint outside the West Bank city on Friday morning. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-23T19:42:08Z",
+      "text": "<strong>Deadly shooting near Paris is a &#x27;racist terrorist attack&#x27;, Macron says</strong> -- One person is killed and five wounded in a series of attacks. The suspected gunman has been apprehended. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-24T05:20:35Z",
       "text": "<strong>Hospital in Yemen\u2019s Taiz warns of collapse in days because of Houthi siege</strong> -- Dialysis patients face shorter treatment sessions as severe shortages of fuel, medicines, and oxygen threaten hospitals. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/features/2026/10/24/hospital-yemen-taiz-warns-collapse-houthi-siege?traffic_source=rss"
@@ -776,16 +801,6 @@
       "time": "2026-10-23T20:44:02Z",
       "text": "<strong>Time \u2018running out\u2019 to reach Yemen\u2019s Taiz amid deepening crisis, UN says</strong> -- More than 800,000 people have been cut off from aid since the Houthis encircled Taiz city in early October. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/23/time-running-out-to-reach-yemens-taiz-amid-deepening-crisis-un-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-23T15:37:07Z",
-      "text": "<strong>Israeli forces begin demolishing Palestinian buildings in Hebron after two Israeli soldiers shot dead</strong> -- The soldiers were killed in an attack by two Palestinian gunmen at a checkpoint outside the West Bank city on Friday morning. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-23T19:42:08Z",
-      "text": "<strong>Deadly shooting near Paris is a &#x27;racist terrorist attack&#x27;, Macron says</strong> -- One person is killed and five wounded in a series of attacks. The suspected gunman has been apprehended. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-23T18:38:26Z",
@@ -836,21 +851,6 @@
       "time": "2026-10-23T11:43:53Z",
       "text": "<strong>US-Iran war, then and now: How the landscape has changed since February</strong> -- The positions of Washington and Tehran have changed dramatically since US-Israeli strikes began the war, analysts say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-23T14:15:23Z",
-      "text": "<strong>Deadly shooting near Paris investigated as &#x27;crime of terrorism&#x27;, minister says</strong> -- One person is killed and five wounded in a series of attacks and the suspected gunman has been apprehended. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-23T14:45:43Z",
-      "text": "<strong>Two Israeli soldiers killed in attack by suspected Palestinian gunmen in West Bank</strong> -- The two attackers were shot dead after a gun battle outside Hebron, four days before Israel&#x27;s general election. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-23T07:37:12Z",
-      "text": "<strong>Are global oil reserves sufficient to withstand renewed US-Iran war?</strong> -- With emergency stocks at multidecade lows, analysts say the world may have only a month or two if Hormuz shuts again. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/23/are-global-oil-reserves-sufficient-to-withstand-renewed-us-iran-war?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,43 +1213,27 @@
   ],
   "newsFeed": [
     {
-      "title": "Hospital in Yemen\u2019s Taiz warns of collapse in days because of Houthi siege",
-      "description": "Dialysis patients face shorter treatment sessions as severe shortages of fuel, medicines, and oxygen threaten hospitals.",
-      "link": "https://www.aljazeera.com/features/2026/10/24/hospital-yemen-taiz-warns-collapse-houthi-siege?traffic_source=rss",
+      "title": "Czech Republic advances media funding overhaul despite criticism",
+      "description": "Journalists prepare to strike as politicians push through changes that critics say threaten independence.",
+      "link": "https://www.aljazeera.com/news/2026/10/24/czech-republic-advances-media-funding-overhaul-despite-criticism?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-24T05:20:35Z",
+      "time": "2026-10-24T11:50:32Z",
       "tier": 2
     },
     {
-      "title": "Argentina identifies dozens of victims killed in its \u2018Dirty War\u2019",
-      "description": "Forensic anthropologists have identified the remains of at least 38 victims of Argentina\u2019s last military dictatorship.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/argentina-identifies-dozens-of-victims-killed-in-its-dirty?traffic_source=rss",
+      "title": "Bolivian teachers strike over wages and education reform",
+      "description": "Bolivian teachers strike over wages and education reform",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/bolivian-teachers-strike-over-wages-and-education-reform?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-24T03:51:58Z",
+      "time": "2026-10-24T08:56:54Z",
       "tier": 2
     },
     {
-      "title": "Iran war live: Tehran says US military banned entirely from Gulf entry",
-      "description": "Iran top general says US military vessels will not be allowed to enter the Gulf &quot;under any circumstances.&quot;",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-24T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Masked gunmen kill seven in attack on church funeral in Jordan",
-      "description": "At least seven people were killed and 34 wounded after two masked gunmen opened fire at a church in Karak, Jordan.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/23/aje-onl-nf_masked-gunmen-kill-seven-in-attack-on-church-jordan-231026?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-23T21:27:32Z",
-      "tier": 2
-    },
-    {
-      "title": "Time \u2018running out\u2019 to reach Yemen\u2019s Taiz amid deepening crisis, UN says",
-      "description": "More than 800,000 people have been cut off from aid since the Houthis encircled Taiz city in early October.",
-      "link": "https://www.aljazeera.com/news/2026/10/23/time-running-out-to-reach-yemens-taiz-amid-deepening-crisis-un-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-23T20:44:02Z",
+      "title": "Father who killed Oregon school gunman describes anguish over children he couldn't save",
+      "description": "Kaylub Giamanco has been hailed as a hero for killing a teenager who fatally shot three children and a teacher.",
+      "link": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-23T22:47:07Z",
       "tier": 2
     },
     {
@@ -1269,12 +1253,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed accessible reporting still supports the previously used topline casualty figures more than it does any higher unofficial claims: Al Jazeera\u2019s August 28 six-month tally, compiled from national health ministries and official bodies, lists 3,527 killed in Iran, 60 Israelis killed, 18 US service members killed, 28 killed in Gulf states, and at least 5,633 total recorded attacks/strikes across the theater; Iran\u2019s Ministry of Health had earlier reported more than 26,500 wounded. For today\u2019s developments, AP reported the US is cutting staffing at four Middle East embassies over increased threats tied to Iran, while regional tensions remain high after tanker attacks in the Strait of Hormuz and Iranian warnings that US military vessels would be barred from the Gulf.",
+  "summary": "Confirmed reporting available today was sparse and mostly contextual rather than statistical. The clearest current developments are AP reports that the U.S. is reducing embassy staffing at several Middle East posts because of heightened regional threats, while fears of a renewed U.S.-Israeli campaign against Iran have risen amid tanker attacks in the Strait of Hormuz and the movement of additional U.S. military assets toward the region. For hard cumulative war figures, the newest accessible confirmed casualty totals I found still trace back to Reuters/HRANA reporting from late March 2026 and CRS/Pentagon-linked reports from March-June 2026, with no newer official public updates for many of the detailed munitions and deployment fields.",
   "briefings": [
     {
       "date": "2026-10-24",
       "day": 238,
-      "summary": "Confirmed accessible reporting still supports the previously used topline casualty figures more than it does any higher unofficial claims: Al Jazeera\u2019s August 28 six-month tally, compiled from national health ministries and official bodies, lists 3,527 killed in Iran, 60 Israelis killed, 18 US service members killed, 28 killed in Gulf states, and at least 5,633 total recorded attacks/strikes across the theater; Iran\u2019s Ministry of Health had earlier reported more than 26,500 wounded. For today\u2019s developments, AP reported the US is cutting staffing at four Middle East embassies over increased threats tied to Iran, while regional tensions remain high after tanker attacks in the Strait of Hormuz and Iranian warnings that US military vessels would be barred from the Gulf."
+      "summary": "Confirmed reporting available today was sparse and mostly contextual rather than statistical. The clearest current developments are AP reports that the U.S. is reducing embassy staffing at several Middle East posts because of heightened regional threats, while fears of a renewed U.S.-Israeli campaign against Iran have risen amid tanker attacks in the Strait of Hormuz and the movement of additional U.S. military assets toward the region. For hard cumulative war figures, the newest accessible confirmed casualty totals I found still trace back to Reuters/HRANA reporting from late March 2026 and CRS/Pentagon-linked reports from March-June 2026, with no newer official public updates for many of the detailed munitions and deployment fields."
     },
     {
       "date": "2026-10-23",
