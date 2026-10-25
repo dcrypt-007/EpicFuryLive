@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-10-25T16:21:59Z",
+  "lastUpdated": "2026-10-25T19:37:54Z",
   "dayCount": 239,
   "banner": {
-    "strikes": "~23,800",
-    "killed": "3,043+",
-    "cost": "$38.9B+"
+    "strikes": "~3,580",
+    "killed": "3,597+",
+    "cost": "$40.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
@@ -13,9 +13,9 @@
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "24",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "19",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "25,000+",
+    "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$38.9 billion+",
-    "dailyBurnRate": "~$163M/day",
+    "totalCost": "$40.7 billion+",
+    "dailyBurnRate": "~$170M/day",
     "daysOfOps": 239,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-25",
-          "source": "LLM-verified (AP Oct. 1 reported USS George H.W. Bush and USS George Washington already in region, with a third carrier en route but not yet there.)"
+          "source": "LLM-verified (AP (Oct. 25, 2026): 'a third aircraft carrier and thousands of troops make their way to the region')"
         },
         {
           "id": "destroyers",
@@ -97,7 +97,7 @@
           "id": "personnel",
           "category": "Deployed Personnel",
           "unitCostPerDay": 500,
-          "quantity": 9000,
+          "quantity": 10000,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-10-25",
-          "source": "LLM-verified (AP Oct. 1 reported roughly 9,000 troops aboard ships being dispatched to the Middle East as reinforcements.)"
+          "source": "LLM-verified (Al Jazeera (Oct. 25, 2026): US deploying third carrier group 'along with roughly 10,000 additional soldiers' to the Middle East by end of November)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8500,
+          "quantity": 9000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-25",
-          "source": "LLM-verified (Times of Israel citing IDF: IAF fighter jets conducted some 8,500 sorties to Iran.)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet (March 23, 2026): 'Combat Flights: 9,000+')"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 239 days",
-        "cost": "$3,346,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 239 days",
+        "cost": "$5,019,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -338,8 +338,8 @@
       },
       {
         "category": "Deployed Personnel",
-        "detail": "9,000 \u00d7 $500/day \u00d7 239 days",
-        "cost": "$1,075,500,000"
+        "detail": "10,000 \u00d7 $500/day \u00d7 239 days",
+        "cost": "$1,195,000,000"
       },
       {
         "category": "Intelligence & Cyber Ops",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,500 \u00d7 $100,000 each",
-        "cost": "$850,000,000"
+        "detail": "9,000 \u00d7 $100,000 each",
+        "cost": "$900,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported deadly Houthi attacks in Saudi Arabia have widened regional risk, including fatal airport strikes in October.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Oct. 22-25 reported the US is sending additional military assets, including a third aircraft carrier and thousands of troops, amid Iranian threats against US bases and shipping.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 25, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Oct. 25 reported fears of renewed all-out war as US and Israeli leaders sharpen threats ahead of elections.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 25, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on October 24 reported U.S. embassy staffing reductions tied to increased regional threats, while Trump said the U.S. might conduct 'another little Epic Fury' if diplomacy fails.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on October 22 reported fears of renewed U.S.-Israeli strikes on Iran, continued tanker attacks in the Strait of Hormuz, and a U.S. move to send additional military assets including a third carrier and thousands of troops toward the region.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Israel began a targeted Hebron operation after a shooting killed two Israeli soldiers on October 23, 2026, increasing risk of wider West Bank escalation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 24, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "President Trump signaled possible further U.S. strikes on Iran on October 23, 2026, according to Al Jazeera live coverage.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,8 +753,13 @@
   ],
   "developments": [
     {
+      "time": "2026-10-25T18:12:13Z",
+      "text": "<strong>Israeli air strike on Gaza City university kills three people</strong> -- Two Israeli strikes hit students and security guards at the Islamic University in Gaza City. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-air-strike-on-gaza-city-university-kills-three-people?traffic_source=rss"
+    },
+    {
       "time": "2026-10-25T15:40:25Z",
-      "text": "<strong>Seven killed in Gaza as Israel targets university campus and other sites</strong> -- Israeli air strike kills three security guards in one of two attacks on the Islamic University in Gaza City. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "text": "<strong>Eight killed in Gaza as Israel targets university campus and other sites</strong> -- Israeli air strike kills three security guards in one of two attacks on the Islamic University in Gaza City. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/25/seven-killed-in-gaza-as-israel-targets-university-campus-and-other-sites?traffic_source=rss"
     },
     {
@@ -766,6 +771,21 @@
       "time": "2026-10-25T13:49:33Z",
       "text": "<strong>Saudi air defences intercept Houthi barrage near Mecca</strong> -- Houthi attacks on Saudi Arabia escalate as fierce ground battles and a devastating siege strangle Yemen&amp;#039;s Taiz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/25/saudi-air-defences-intercept-houthi-barrage-near-mecca?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-25T05:15:52Z",
+      "text": "<strong>Israel to close West Bank crossings on election day as crackdown escalates</strong> -- The Israeli Defense Forces announces restrictions on the movement of Palestinian workers in the run-up to Tuesday&#x27;s election. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-23T22:47:07Z",
+      "text": "<strong>Father who killed Oregon school gunman describes anguish over children he couldn&#x27;t save</strong> -- Kaylub Giamanco has been hailed as a hero for killing a teenager who fatally shot three children and a teacher. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-24T23:03:21Z",
+      "text": "<strong>The bitter row over military service that could shape Israel&#x27;s future</strong> -- The ultra-Orthodox community is resisting being drafted into the Israeli army. But will they now bring down the Netanyahu government? <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cmvg7w0x742do?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-25T11:39:41Z",
@@ -793,11 +813,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/trump-mocks-reporter-asking-about-iran-strikes-as-tehran-says-us-derailed?traffic_source=rss"
     },
     {
-      "time": "2026-10-25T05:15:52Z",
-      "text": "<strong>Israel to close West Bank crossings on election day as crackdown escalates</strong> -- The Israeli Defense Forces announces restrictions on the movement of Palestinian workers in the run-up to Tuesday&#x27;s election. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-10-25T03:20:16Z",
       "text": "<strong>Gunmen kill at least 10 villagers and loot shops in north-east Nigeria</strong> -- Police are searching for other casualties, with officials warning the actual death toll could rise further. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cq1kdlm1ze7do?at_medium=RSS&at_campaign=rss"
@@ -811,16 +826,6 @@
       "time": "2026-10-25T07:59:38Z",
       "text": "<strong>Why is Egypt so wary of getting involved in Yemen\u2019s conflict?</strong> -- As Egypt considers defending Saudi Arabia against Houthi attacks, memories of its war in Yemen in the 1960s loom large. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news-analysis/2026/10/25/why-is-egypt-so-wary-of-getting-involved-in-yemens-conflict?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-23T22:47:07Z",
-      "text": "<strong>Father who killed Oregon school gunman describes anguish over children he couldn&#x27;t save</strong> -- Kaylub Giamanco has been hailed as a hero for killing a teenager who fatally shot three children and a teacher. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-24T23:03:21Z",
-      "text": "<strong>The bitter row over military service that could shape Israel&#x27;s future</strong> -- The ultra-Orthodox community is resisting being drafted into the Israeli army. But will they now bring down the Netanyahu government? <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cmvg7w0x742do?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-10-25T02:45:43Z",
@@ -846,11 +851,6 @@
       "time": "2026-10-24T21:08:51Z",
       "text": "<strong>Houthis launch attacks on Saudi Arabia and Yemen\u2019s Aden</strong> -- Houthi missiles reportedly struck a number of targets in Yemen, including Aden&amp;#039;s airport and a coastguard base. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-24T23:02:06Z",
-      "text": "<strong>Palestinian families displaced as Israeli forces demolish Hebron homes</strong> -- The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel&#x27;s election. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,7 +1213,15 @@
   ],
   "newsFeed": [
     {
-      "title": "Seven killed in Gaza as Israel targets university campus and other sites",
+      "title": "Israeli air strike on Gaza City university kills three people",
+      "description": "Two Israeli strikes hit students and security guards at the Islamic University in Gaza City.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-air-strike-on-gaza-city-university-kills-three-people?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-25T18:12:13Z",
+      "tier": 2
+    },
+    {
+      "title": "Eight killed in Gaza as Israel targets university campus and other sites",
       "description": "Israeli air strike kills three security guards in one of two attacks on the Islamic University in Gaza City.",
       "link": "https://www.aljazeera.com/news/2026/10/25/seven-killed-in-gaza-as-israel-targets-university-campus-and-other-sites?traffic_source=rss",
       "source": "Al Jazeera",
@@ -1237,59 +1245,11 @@
       "tier": 2
     },
     {
-      "title": "CENTCOM reportedly has plans for Iran strikes: Will Trump approve them?",
-      "description": "Reports say Pentagon has drawn up plans for strikes after midterm polls, but analysts question what it could achieve.",
-      "link": "https://www.aljazeera.com/news/2026/10/25/centcom-reportedly-has-plans-for-iran-strikes-will-trump-approve-them?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-25T11:39:41Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran\u2019s authorities take \u2018self-sacrifice\u2019 mobilisation campaign nationwide",
-      "description": "The IRGC says it wants to use main squares in every capital of Iran\u2019s 31 provinces for the Janfada campaign.",
-      "link": "https://www.aljazeera.com/news/2026/10/25/irans-authorities-take-self-sacrifice-mobilisation-campaign-nationwide?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-25T10:50:38Z",
-      "tier": 2
-    },
-    {
-      "title": "Police in Albania filmed beating protester unconscious",
-      "description": "Police in Albania\u2019s capital, Tirana, were filmed beating a protester lying on the ground.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/police-in-albania-filmed-beating-protester-unconscious?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-25T10:45:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Saudi Arabia intercepts missiles and drones as fighting with Houthis rages",
-      "description": "Saudi Civil Defence says the interception of Houthi ballistic missiles caused two injuries in the country&#039;s south.",
-      "link": "https://www.aljazeera.com/news/2026/10/25/saudi-arabia-intercepts-missiles-and-drones-as-fighting-with-houthis-rages?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-25T10:42:51Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump mocks reporter asking about Iran strikes, as Tehran says US derailed",
-      "description": "US President Donald Trump sarcastically responded to a reporter asking about possible renewed attacks on Iran.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/trump-mocks-reporter-asking-about-iran-strikes-as-tehran-says-us-derailed?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-25T10:14:43Z",
-      "tier": 2
-    },
-    {
       "title": "Israel to close West Bank crossings on election day as crackdown escalates",
       "description": "The Israeli Defense Forces announces restrictions on the movement of Palestinian workers in the run-up to Tuesday's election.",
       "link": "https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-10-25T05:15:52Z",
-      "tier": 2
-    },
-    {
-      "title": "Gunmen kill at least 10 villagers and loot shops in north-east Nigeria",
-      "description": "Police are searching for other casualties, with officials warning the actual death toll could rise further.",
-      "link": "https://www.bbc.co.uk/news/articles/cq1kdlm1ze7do?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-25T03:20:16Z",
       "tier": 2
     },
     {
@@ -1309,12 +1269,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 25, 2026 indicates the war remains volatile despite months of stalemate: AP reports a third U.S. aircraft carrier and thousands of additional troops are moving toward the region, while the State Department has reduced staffing at four Middle East embassies after intelligence of increased Iranian plotting against U.S. personnel. On the maritime front, AP reported seven tankers damaged in the Strait of Hormuz this week, underscoring the widening risk to shipping. For cumulative war metrics, the most solid figures located were older but attributable: Iran's forensic chief said more than 3,000 people had been killed in Iran; Israeli reporting citing the IDF said 24 people were killed by Iranian missile attacks in Israel and the West Bank, while the same report said Israel carried out over 10,800 strikes and the U.S. military 13,000 strikes on Iranian targets. Many other requested totals, especially precise U.S. KIA and weapons expenditure counts, could not be updated from current confirmed official reporting and are left null rather than estimated.",
+  "summary": "Confirmed reporting on October 25, 2026 indicates the Iran war remains in a dangerous holding pattern rather than a settled ceasefire: AP reported rising fears of renewed all-out fighting, with the United States moving a third aircraft carrier and additional troops toward the region, while Iran continues threatening US bases and regional infrastructure. The latest broadly cited cumulative casualty figures available in named-source reporting remain 3,527 killed in Iran and 28 in Gulf states (Al Jazeera, Aug. 28), 18 US service members killed (DoD/Inspector General reporting via Task & Purpose, Sep. 15), and 24 Israelis killed in the conflict; no newer confirmed official totals for several military expenditure metrics were found.",
   "briefings": [
     {
       "date": "2026-10-25",
       "day": 239,
-      "summary": "Confirmed reporting on October 25, 2026 indicates the war remains volatile despite months of stalemate: AP reports a third U.S. aircraft carrier and thousands of additional troops are moving toward the region, while the State Department has reduced staffing at four Middle East embassies after intelligence of increased Iranian plotting against U.S. personnel. On the maritime front, AP reported seven tankers damaged in the Strait of Hormuz this week, underscoring the widening risk to shipping. For cumulative war metrics, the most solid figures located were older but attributable: Iran's forensic chief said more than 3,000 people had been killed in Iran; Israeli reporting citing the IDF said 24 people were killed by Iranian missile attacks in Israel and the West Bank, while the same report said Israel carried out over 10,800 strikes and the U.S. military 13,000 strikes on Iranian targets. Many other requested totals, especially precise U.S. KIA and weapons expenditure counts, could not be updated from current confirmed official reporting and are left null rather than estimated."
+      "summary": "Confirmed reporting on October 25, 2026 indicates the Iran war remains in a dangerous holding pattern rather than a settled ceasefire: AP reported rising fears of renewed all-out fighting, with the United States moving a third aircraft carrier and additional troops toward the region, while Iran continues threatening US bases and regional infrastructure. The latest broadly cited cumulative casualty figures available in named-source reporting remain 3,527 killed in Iran and 28 in Gulf states (Al Jazeera, Aug. 28), 18 US service members killed (DoD/Inspector General reporting via Task & Purpose, Sep. 15), and 24 Israelis killed in the conflict; no newer confirmed official totals for several military expenditure metrics were found."
     },
     {
       "date": "2026-10-24",
