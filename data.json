@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-10-27T06:17:28Z",
+  "lastUpdated": "2026-10-27T13:12:39Z",
   "dayCount": 241,
   "banner": {
-    "strikes": "~12,300",
-    "killed": "18+",
-    "cost": "$46.2B+"
+    "strikes": "~13,000",
+    "killed": "21+",
+    "cost": "$44.5B+"
   },
   "humanCost": {
     "iranDeaths": "3,527",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "21",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "60",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$46.2 billion+",
-    "dailyBurnRate": "~$192M/day",
+    "totalCost": "$44.5 billion+",
+    "dailyBurnRate": "~$185M/day",
     "daysOfOps": 241,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-10-27",
-          "source": "LLM-verified (AP, Oct. 25, 2026: a third aircraft carrier and thousands of troops are making their way to the region; AP, Oct. 1, 2026: three carriers could be in region by end of October.)"
+          "source": "LLM-verified (Navy/government reporting cited two carrier strike groups supporting Operation Epic Fury in official May 2026 materials; no later confirmed current theater count found.)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-10-26",
-          "source": "LLM-verified (CENTCOM release dated July 22, 2026: 'More than 50,000 U.S. service members are operating across the Middle East')"
+          "lastUpdated": "2026-10-27",
+          "source": "LLM-verified (Reuters reporting in March 2026 said there were 50,000 U.S. troops in the region prior to additional deployments; no later confirmed official current total found.)"
         },
         {
           "id": "intel_cyber",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-10-27",
-          "source": "LLM-verified (AP, Apr. 4, 2026, citing CENTCOM statement that American forces had flown more than 13,000 missions in the Iran war; closest confirmed official sorties/missions figure found.)"
+          "source": "LLM-verified (CENTCOM April 1/6 2026 fact sheets reported 13,000+ combat flights/targets struck during Operation Epic Fury; no newer official cumulative sortie total found.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 241 days",
-        "cost": "$5,061,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 241 days",
+        "cost": "$3,374,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Oct 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera headline context indicates Iran said the U.S. was 'not serious' about talks during a Tehran meeting involving Iran, Pakistan, Turkiye and Saudi Arabia.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Reuters reporting carried Oct. 23 said President Trump stated the U.S. may conduct another military operation against Iran.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Oct 27, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP on Oct. 24 reported the U.S. reduced staffing at four Middle East embassies after intelligence indicating Iran had stepped up efforts to target American personnel.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Oct 27, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP on Oct. 25 reported a third U.S. aircraft carrier and thousands of troops are heading to the region as Trump again threatens to 'finish the job' in Iran.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Oct. 19 and Oct. 20 that Houthi missile and drone attacks on Saudi Arabia continue, widening the regional front tied to the Iran war",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Oct. 22 that seven oil tankers were damaged in the Strait of Hormuz overnight, signaling renewed maritime escalation risk",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Oct 25, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported Oct. 25 that Trump mocked a question about renewed Iran strikes while Tehran said the U.S. had derailed talks",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-10-27T10:52:48Z",
+      "text": "<strong>Families of victims killed in Jordanian strike deny links to church attack</strong> -- Jordan said it targeted \u2018terrorist hideouts\u2019 in Syria, but relatives of those killed deny any link to last week\u2019s church <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/families-of-victims-killed-in-jordanian-strike-deny-links-to-church-attack?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-27T10:36:54Z",
+      "text": "<strong>Iran says US \u2018not serious\u2019 about talks amid Tehran meeting</strong> -- Officials from Iran, Pakistan, Turkiye and Saudi Arabia held talks in Tehran in an effort to stop further escalation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/iran-says-us-not-serious-about-talks-amid-tehran-meeting?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-27T09:12:21Z",
+      "text": "<strong>UK prosecutors charge two after RAF Fairford incident</strong> -- British Iranian Mohmed Abdulkarim and British citizen Nouman Essghir have been charged under the National Security Act. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/27/uk-prosecutors-charge-two-after-raf-fairford-incident?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-27T08:38:44Z",
+      "text": "<strong>Israelis begin voting as Netanyahu fights for political survival</strong> -- Israelis vote as Netanyahu faces Gadi Eisenkot amid divisions over the wars in Gaza and Iran and growing isolation. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/israelis-begin-voting-as-netanyahu-fights-for-political-survival?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-27T08:35:27Z",
+      "text": "<strong>Drone strike in Sudan\u2019s Nyala kills at least 21, injures 40</strong> -- Drone hit a market in the city that serves as the de facto capital of the paramilitary RSF in Darfur, resident says. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/10/27/drone-strike-kills-at-least-21-and-injures-40-in-sudans-nyala?traffic_source=rss"
+    },
+    {
+      "time": "2026-10-27T11:11:33Z",
+      "text": "<strong>Turnout so far highest in decades as Israelis vote in pivotal election</strong> -- The elections - the first since the Hamas-led attacks on Israel and the wars which followed - are widely seen as a referendum on Benjamin Netanyahu. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c3j47l4kdez4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-27T02:40:17Z",
+      "text": "<strong>Jordan carries out deadly strike in Syria in retaliation for church attack</strong> -- The attack on a village in Syria killed five people, including women and children, Syrian health officials said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cq8ezg6dy6xlo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-27T11:23:19Z",
+      "text": "<strong>Netherlands pulls out of Eurovision again over Israel participation</strong> -- A Dutch broadcaster reverses a decision to take part, citing &quot;sensitivities&quot; over Israel&#x27;s participation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cmr4y5dvlzneo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-27T10:17:36Z",
+      "text": "<strong>What does Israel&#x27;s election mean for Gaza and the wider world?</strong> -- The BBC&#x27;s diplomatic correspondent James Landale reports from Jerusalem as ballots are cast. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/ck240dg5n4gjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-10-27T08:37:30Z",
+      "text": "<strong>Why it could take time for a new Israeli government to form</strong> -- Israel faces what many view as one of the most pivotal elections in the country&#x27;s history. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/videos/c574p31l1l2no?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-10-27T04:54:26Z",
       "text": "<strong>Iran, Saudi, Turkiye and Pakistan agree to more talks amid Houthi attacks</strong> -- Top officials from four countries to continue talks on peace and security as Saudi forces down more Houthi missiles. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/27/iran-saudi-turkiye-and-pakistan-agree-to-more-talks-amid-houthi-attacks?traffic_source=rss"
@@ -788,11 +838,6 @@
       "link": "https://www.aljazeera.com/sports/2026/10/26/englands-harry-kane-wins-ballon-dor-alexia-putellas-takes-womens-award?traffic_source=rss"
     },
     {
-      "time": "2026-10-27T02:40:17Z",
-      "text": "<strong>Jordan carries out deadly strike in Syria in retaliation for church attack</strong> -- The attack on a village in Syria killed five people, including women and children, Syrian health officials said. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cq8ezg6dy6xlo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-10-26T14:27:32Z",
       "text": "<strong>Nurse killed in attack while responding to Ebola alert in DR Congo</strong> -- Local youths reportedly accused the health workers of contaminating water sources and spreading Ebola. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/crx2dyd24188o?at_medium=RSS&at_campaign=rss"
@@ -806,51 +851,6 @@
       "time": "2026-10-26T21:42:18Z",
       "text": "<strong>Africa food security under threat due to Iran war, trade officials warn</strong> -- The war on Iran is driving up fuel and fertiliser costs across Africa, threatening food security, trade officials say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/10/26/africa-food-security-under-threat-due-to-iran-war-warn-trade-officials?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-26T19:25:53Z",
-      "text": "<strong>Jordan arrests three suspects over deadly church attack</strong> -- Jordanian authorities have arrested three relatives over a church attack in Karak that killed eight people. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/26/jordan-arrests-three-suspects-over-deadly-church-attack?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-25T22:05:30Z",
-      "text": "<strong>Why Israel&#x27;s election is one of the most important in its history</strong> -- Security and democracy emerge as central issues in Israel&#x27;s highly anticipated general election, as Middle East correspondent Lucy Williamson reports. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/videos/c64g1wje3jjwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-26T16:30:34Z",
-      "text": "<strong>Israel and the US are both going to the polls - the consequences will be global</strong> -- The next fortnight sees two elections on different continents. The outcomes will shape geopolitics and the global economy, writes James Landale <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/crlykey9jywqo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-10-26T16:55:19Z",
-      "text": "<strong>Delegations arrive in Tehran for security talks</strong> -- Delegations arrive in Tehran for security talks <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/26/delegations-arrive-in-tehran-for-security-talks?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-26T16:39:48Z",
-      "text": "<strong>Guterres warns of \u2018unimaginable\u2019 consequences of Iran-Gulf escalation</strong> -- UN Chief Antonio Guterres has warned of devastating consequences from any military escalation in the Gulf region. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/26/guterres-warns-iran-gulf-escalation-west-bank?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-26T15:41:29Z",
-      "text": "<strong>Egyptian parliament authorises military aid for Saudi Arabia</strong> -- Legislators approve military support amid Houthi attacks on Saudi Arabia, but Cairo has ruled out strikes on Yemen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/26/egyptian-parliament-authorises-military-aid-for-saudi-arabia?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-26T14:38:50Z",
-      "text": "<strong>Mecca defence alliance members in Tehran to defuse Iran-US, Yemen tensions</strong> -- Countering Houthi advances in Yemen will be a major focus for Saudi Arabia and its allies in Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-26T13:01:16Z",
-      "text": "<strong>Has Pakistan reopened its border with Iran for trade?</strong> -- Traders say some exports are crossing border after a weeklong halt, but Tehran says its cargo is not getting through. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/10/26/has-pakistan-reopened-its-border-with-iran-for-trade?traffic_source=rss"
-    },
-    {
-      "time": "2026-10-26T12:54:05Z",
-      "text": "<strong>Intercepted Houthi missiles cause damage in Saudi Arabian city</strong> -- Debris fell on the Saudi city of Khamis Mushait after Houthi-fired missiles were intercepted. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/26/intercepted-houthi-missiles-cause-damage-in-saudi-arabian-city?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,11 +1213,75 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran, Saudi, Turkiye and Pakistan agree to more talks amid Houthi attacks",
-      "description": "Top officials from four countries to continue talks on peace and security as Saudi forces down more Houthi missiles.",
-      "link": "https://www.aljazeera.com/news/2026/10/27/iran-saudi-turkiye-and-pakistan-agree-to-more-talks-amid-houthi-attacks?traffic_source=rss",
+      "title": "Netherlands pulls out of Eurovision again over Israel participation",
+      "description": "A Dutch broadcaster reverses a decision to take part, citing \"sensitivities\" over Israel's participation.",
+      "link": "https://www.bbc.co.uk/news/articles/cmr4y5dvlzneo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-27T11:23:19Z",
+      "tier": 2
+    },
+    {
+      "title": "Turnout so far highest in decades as Israelis vote in pivotal election",
+      "description": "The elections - the first since the Hamas-led attacks on Israel and the wars which followed - are widely seen as a referendum on Benjamin Netanyahu.",
+      "link": "https://www.bbc.co.uk/news/articles/c3j47l4kdez4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-27T11:11:33Z",
+      "tier": 2
+    },
+    {
+      "title": "Families of victims killed in Jordanian strike deny links to church attack",
+      "description": "Jordan said it targeted \u2018terrorist hideouts\u2019 in Syria, but relatives of those killed deny any link to last week\u2019s church",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/families-of-victims-killed-in-jordanian-strike-deny-links-to-church-attack?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-10-27T04:54:26Z",
+      "time": "2026-10-27T10:52:48Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran says US \u2018not serious\u2019 about talks amid Tehran meeting",
+      "description": "Officials from Iran, Pakistan, Turkiye and Saudi Arabia held talks in Tehran in an effort to stop further escalation.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/iran-says-us-not-serious-about-talks-amid-tehran-meeting?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-27T10:36:54Z",
+      "tier": 2
+    },
+    {
+      "title": "What does Israel's election mean for Gaza and the wider world?",
+      "description": "The BBC's diplomatic correspondent James Landale reports from Jerusalem as ballots are cast.",
+      "link": "https://www.bbc.co.uk/news/videos/ck240dg5n4gjo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-27T10:17:36Z",
+      "tier": 2
+    },
+    {
+      "title": "UK prosecutors charge two after RAF Fairford incident",
+      "description": "British Iranian Mohmed Abdulkarim and British citizen Nouman Essghir have been charged under the National Security Act.",
+      "link": "https://www.aljazeera.com/news/2026/10/27/uk-prosecutors-charge-two-after-raf-fairford-incident?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-27T09:12:21Z",
+      "tier": 2
+    },
+    {
+      "title": "Israelis begin voting as Netanyahu fights for political survival",
+      "description": "Israelis vote as Netanyahu faces Gadi Eisenkot amid divisions over the wars in Gaza and Iran and growing isolation.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/israelis-begin-voting-as-netanyahu-fights-for-political-survival?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-27T08:38:44Z",
+      "tier": 2
+    },
+    {
+      "title": "Why it could take time for a new Israeli government to form",
+      "description": "Israel faces what many view as one of the most pivotal elections in the country's history.",
+      "link": "https://www.bbc.co.uk/news/videos/c574p31l1l2no?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-10-27T08:37:30Z",
+      "tier": 2
+    },
+    {
+      "title": "Drone strike in Sudan\u2019s Nyala kills at least 21, injures 40",
+      "description": "Drone hit a market in the city that serves as the de facto capital of the paramilitary RSF in Darfur, resident says.",
+      "link": "https://www.aljazeera.com/news/2026/10/27/drone-strike-kills-at-least-21-and-injures-40-in-sudans-nyala?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-10-27T08:35:27Z",
       "tier": 2
     },
     {
@@ -1229,92 +1293,20 @@
       "tier": 2
     },
     {
-      "title": "Russia halts strikes on Ukraine\u2019s Kherson as Oleshky ceasefire takes effect",
-      "description": "The localised ceasefire, secured by US First Lady Melania Trump, will allow evacuations and aid deliveries to Oleshky.",
-      "link": "https://www.aljazeera.com/news/2026/10/27/russia-halts-strikes-on-ukraines-kherson-as-oleshky-ceasefire-takes-effect?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-27T02:29:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Harry Kane wins Ballon d\u2019Or, ending England\u2019s 25-year wait",
-      "description": "Bayern Munich and England striker Harry Kane has won his first Ballon d\u2019Or after a record-breaking season.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/harry-kane-wins-ballon-dor-ending-englands-25-year-wait?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-27T01:20:56Z",
-      "tier": 2
-    },
-    {
-      "title": "Iran war live: Iran says US \u2018not serious\u2019 about talks; ship ablaze off Iraq",
-      "description": "Iran says the United States is &quot;not serious&quot; about negotiations as UKMTO reports a ship on fire off the coast of Iraq.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/27/iran-war-live-iran-says-us-not-serious-on-talks-ship-on-fire-off-iraq?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-27T00:00:00Z",
-      "tier": 2
-    },
-    {
-      "title": "Jordan strikes Syria after church attack, killing at least seven people",
-      "description": "Syria closes border crossings with Jordan after air strikes kill seven people in Deraa and Suweyda, including children.",
-      "link": "https://www.aljazeera.com/news/2026/10/26/jordan-launches-air-strikes-in-syria-in-response-to-a-fatal-church-shooting?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-26T23:50:11Z",
-      "tier": 2
-    },
-    {
-      "title": "Jordan attacks Syria in response to Karak church attack",
-      "description": "Jordan\u2019s air force has carried out several strikes in southern Syria in response to Friday\u2019s church attack.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/26/jordan-attacks-syria-in-response-to-karak-church-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-26T23:48:51Z",
-      "tier": 2
-    },
-    {
-      "title": "England\u2019s Harry Kane wins Ballon d\u2019Or, Alexia Putellas takes women\u2019s award",
-      "description": "Bayern Munich striker becomes the first Englishman to win the prestigious award in 25 years, after Michael Owen in 2001.",
-      "link": "https://www.aljazeera.com/sports/2026/10/26/englands-harry-kane-wins-ballon-dor-alexia-putellas-takes-womens-award?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-10-26T23:25:29Z",
-      "tier": 2
-    },
-    {
-      "title": "More than 60 Christians killed in Ethiopia 'massacre', church official says",
-      "description": "One resident, whose 75-year-old father was killed, described it as an ambush, saying they were surrounded.",
-      "link": "https://www.bbc.co.uk/news/articles/cm4g175dgdx2o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-26T16:31:09Z",
-      "tier": 2
-    },
-    {
       "title": "Israel and the US are both going to the polls - the consequences will be global",
       "description": "The next fortnight sees two elections on different continents. The outcomes will shape geopolitics and the global economy, writes James Landale",
       "link": "https://www.bbc.co.uk/news/articles/crlykey9jywqo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-10-26T16:30:34Z",
       "tier": 2
-    },
-    {
-      "title": "Nurse killed in attack while responding to Ebola alert in DR Congo",
-      "description": "Local youths reportedly accused the health workers of contaminating water sources and spreading Ebola.",
-      "link": "https://www.bbc.co.uk/news/articles/crx2dyd24188o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-26T14:27:32Z",
-      "tier": 2
-    },
-    {
-      "title": "Why Israel's election is one of the most important in its history",
-      "description": "Security and democracy emerge as central issues in Israel's highly anticipated general election, as Middle East correspondent Lucy Williamson reports.",
-      "link": "https://www.bbc.co.uk/news/videos/c64g1wje3jjwo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-10-25T22:05:30Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on October 27, 2026 indicates diplomacy is continuing but the risk of renewed fighting remains elevated: AP and Al Jazeera report Iran says the U.S. is not serious about talks, while the U.S. has surged forces toward the region, including a third aircraft carrier and thousands of additional troops. AP also reported intensified maritime and regional spillover risks, including multiple tanker attacks in the Strait of Hormuz and continued deadly Houthi attacks on Saudi targets. For hard numbers, the clearest current confirmed figures found were the Pentagon/AP toll of 18 U.S. personnel killed, AP/CENTCOM\u2019s earlier official count of more than 13,000 U.S. missions and more than 12,300 targets struck, and AP\u2019s October 7 award citation saying the USS Abraham Lincoln strike group alone launched 450 Tomahawk missiles.",
+  "summary": "Confirmed reporting located today shows the war remains in a tense holding pattern rather than fully ended: AP reported U.S. embassy staffing reductions in four Middle Eastern countries on October 24 after intelligence of heightened Iranian threats to American personnel, while Reuters reporting from October 23 said President Trump publicly warned Washington may launch another operation against Iran. On the hard data side, the clearest newly confirmed number found was the Pentagon\u2019s official U.S. death toll rising to 21 as of October 10, 2026. For operational totals, the latest confirmed official cumulative figures located remain the spring 2026 CENTCOM/White House fact-sheet numbers of roughly 13,000-plus targets/combat flights during Operation Epic Fury; no newer official cumulative weapons-use or casualty totals for Iran, Israel, Gulf states, or civilians were found in this search session.",
   "briefings": [
     {
       "date": "2026-10-27",
       "day": 241,
-      "summary": "Confirmed reporting on October 27, 2026 indicates diplomacy is continuing but the risk of renewed fighting remains elevated: AP and Al Jazeera report Iran says the U.S. is not serious about talks, while the U.S. has surged forces toward the region, including a third aircraft carrier and thousands of additional troops. AP also reported intensified maritime and regional spillover risks, including multiple tanker attacks in the Strait of Hormuz and continued deadly Houthi attacks on Saudi targets. For hard numbers, the clearest current confirmed figures found were the Pentagon/AP toll of 18 U.S. personnel killed, AP/CENTCOM\u2019s earlier official count of more than 13,000 U.S. missions and more than 12,300 targets struck, and AP\u2019s October 7 award citation saying the USS Abraham Lincoln strike group alone launched 450 Tomahawk missiles."
+      "summary": "Confirmed reporting located today shows the war remains in a tense holding pattern rather than fully ended: AP reported U.S. embassy staffing reductions in four Middle Eastern countries on October 24 after intelligence of heightened Iranian threats to American personnel, while Reuters reporting from October 23 said President Trump publicly warned Washington may launch another operation against Iran. On the hard data side, the clearest newly confirmed number found was the Pentagon\u2019s official U.S. death toll rising to 21 as of October 10, 2026. For operational totals, the latest confirmed official cumulative figures located remain the spring 2026 CENTCOM/White House fact-sheet numbers of roughly 13,000-plus targets/combat flights during Operation Epic Fury; no newer official cumulative weapons-use or casualty totals for Iran, Israel, Gulf states, or civilians were found in this search session."
     },
     {
       "date": "2026-10-26",
