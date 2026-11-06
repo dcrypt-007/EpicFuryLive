@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-11-06T02:26:50Z",
+  "lastUpdated": "2026-11-06T10:54:26Z",
   "dayCount": 251,
   "banner": {
     "strikes": "~12,300",
-    "killed": "3,633+",
-    "cost": "$43.7B+"
+    "killed": "3,467+",
+    "cost": "$45.4B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,434",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "18",
+    "usKIA": "13",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "20",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$43.7 billion+",
-    "dailyBurnRate": "~$174M/day",
+    "totalCost": "$45.4 billion+",
+    "dailyBurnRate": "~$181M/day",
     "daysOfOps": 251,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 2,
+          "quantity": 3,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-11-05",
-          "source": "LLM-verified (U.S. Navy Shipbuilding Plan May 2026 states two carrier strike groups were deployed for Operation Epic Fury.)"
+          "lastUpdated": "2026-11-06",
+          "source": "LLM-verified (AP, Oct. 1, 2026: 'Third aircraft carrier and thousands of troops head to Mideast as Trump weighs new Iran strikes.' AP on Nov. 2 and Nov. 4 also says another aircraft carrier is on the way.)"
         },
         {
           "id": "destroyers",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-11-06",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet (April 1, 2026): 'Combat Flights: 13,000+'; no newer official fighter/attack sortie total found)"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet, Apr. 1, 2026 lists 'Combat Flights: 13,000+'; used here as the closest confirmed cumulative sortie figure.)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "2 \u00d7 $7,000,000/day \u00d7 251 days",
-        "cost": "$3,514,000,000"
+        "detail": "3 \u00d7 $7,000,000/day \u00d7 251 days",
+        "cost": "$5,271,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -435,6 +435,51 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Nov 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports Iran\u2019s security chief met Putin and delivered a message from Mojtaba Khamenei",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC reports major construction near Iranian missile bases based on November satellite imagery",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Al Jazeera reports Iran is exempting ships from India, China, Qatar and Iraq from some Hormuz restrictions",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reports a third U.S. aircraft carrier and thousands of additional troops are heading to the Middle East",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP/WSJ-reported U.S. defensive strikes on Iranian targets in the Strait of Hormuz on Nov. 2, 2026",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Nov 6, 2026",
       "severity": "high",
@@ -614,51 +659,6 @@
       "text": "AP reported Oct. 28-Nov. 2, 2026 that the US is moving a third aircraft carrier and thousands of additional troops toward the region as Trump weighs possible renewed strikes after the midterms.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera reported on Nov. 2, 2026 that Tehran says it is pushing an accelerated ceasefire plan with the US that could be implemented within two days.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Axios on Oct. 29-30, 2026 reported Trump was being briefed on a possible resumption of major combat operations and a continuing U.S. naval blockade pressure campaign after the midterms.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on Oct. 29, 2026 reported Iran claimed to have captured an American drone near the Strait of Hormuz, though the U.S. military denied the claim.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 2, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera live blog on Nov. 2, 2026 reported two tankers on fire in the Strait of Hormuz after mines were allegedly involved, indicating renewed maritime escalation risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 1, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Axios reported Nov. 1, 2026 that Trump held a call with Netanyahu while preparing for a possible resumption of major combat operations after the midterms",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,51 @@
   ],
   "developments": [
     {
+      "time": "2026-11-06T06:06:24Z",
+      "text": "<strong>Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?</strong> -- Tehran says ships from four countries can cross Hormuz freely, but analysts say the deals carry political risks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-06T05:00:47Z",
+      "text": "<strong>Iraq\u2019s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran</strong> -- Call comes as Iraq&amp;#039;s top diplomat urges armed groups not to join any Iranian retaliation to US attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/6/iraqs-al-zaidi-talks-to-trump-as-baghdad-seeks-to-stay-out-of-war-on-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-06T02:48:19Z",
+      "text": "<strong>Iran\u2019s security chief meets Putin, delivers message from Khamenei</strong> -- Putin meets Iran&amp;#039;s top security official to discuss regional security and receives a letter from Mojtaba Khamenei. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/6/irans-security-chief-meets-putin-delivers-message-from-khamenei?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-06T10:36:31Z",
+      "text": "<strong>Two dead after bus crashes in France, officials say</strong> -- One child and one young adult were killed in the crash, local authorities say, with more injured. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-06T07:33:41Z",
+      "text": "<strong>Major construction ongoing near Iran missile bases, satellite images suggest</strong> -- Evidence of digging and new buildings are visible in satellite imagery taken in November, satellite images suggest. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-05T19:32:54Z",
+      "text": "<strong>Eight killed in series of shootings in western Turkey</strong> -- Victims are found in several locations in three separate vehicles, according to local reports. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cvj6jj21pd2ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-06T06:00:46Z",
+      "text": "<strong>A wildfire killed their loved ones in Spain. These British families demand to know why</strong> -- Nine British nationals were among the 15 people who died when fire ripped through the village of B\u00e9dar this summer. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cm3vq4wyeld1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-05T03:47:56Z",
+      "text": "<strong>Vance walks Trump tightrope with scathing election critique blaming Iran war</strong> -- The vice-president&#x27;s blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-05T19:58:40Z",
+      "text": "<strong>Who could be behind hoax bomb threats to European air travel?</strong> -- There is no hard evidence so far linking airline bomb threats to Russia, Iran or any proxy groups. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-11-06T00:15:22Z",
       "text": "<strong>Turkiye\u2019s parliament ratifies Mecca defence agreement</strong> -- Parliament&amp;#039;s approval lays the groundwork for further Turkish involvement in Saudi Arabia&amp;#039;s conflict with the Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/11/6/turkiyes-parliament-ratifies-mecca-defence-agreement?traffic_source=rss"
@@ -788,21 +833,6 @@
       "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jordanian-officer-killed-in-stabbing-attack-in-amman?traffic_source=rss"
     },
     {
-      "time": "2026-11-05T19:32:54Z",
-      "text": "<strong>Eight killed in series of shootings in western Turkey</strong> -- Victims are found in several locations in three separate vehicles, according to local reports. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cvj6jj21pd2ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-05T19:58:40Z",
-      "text": "<strong>Who could be behind hoax bomb threats to European air travel?</strong> -- There is no hard evidence so far linking airline bomb threats to Russia, Iran or any proxy groups. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-05T03:47:56Z",
-      "text": "<strong>Vance walks Trump tightrope with scathing election critique blaming Iran war</strong> -- The vice-president&#x27;s blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "time": "2026-11-05T02:09:23Z",
       "text": "<strong>Pope Leo hosts Bob Dylan at official residence in Rome</strong> -- Pope Leo had previously quoted Dylan&#x27;s work in the preface of a book warning against nuclear rearmament. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cm0e035n13ylo?at_medium=RSS&at_campaign=rss"
@@ -821,36 +851,6 @@
       "time": "2026-11-05T13:04:52Z",
       "text": "<strong>Four people, including a child, killed in Israeli attacks on Gaza</strong> -- Gaza officials say more than 1,600 Palestinians have been killed since the so-called &amp;#039;ceasefire&amp;#039; took effect. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-05T12:25:28Z",
-      "text": "<strong>New Yorkers rally against gun violence after Ghanaian teen\u2019s killing</strong> -- New Yorkers marched to demand justice for Ghanaian boy Javits Frimpong, who was shot and killed in the Bronx last month. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/new-yorkers-rally-against-gun-violence-after-ghanaian-teens-killing?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-05T12:21:13Z",
-      "text": "<strong>Workers strike across France, hundreds of thousands expected to protest</strong> -- Demonstrators are demanding an increase in the minimum wage and higher salaries for all workers, among other reforms. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/5/workers-strike-across-france-hundreds-of-thousands-expected-to-protest?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-05T12:04:00Z",
-      "text": "<strong>Security \u2060officer killed in stabbing attack in Jordan\u2019s capital</strong> -- Assailant stabbed a corporal outside the Sri Lankan embassy in Amman, killing him and injuring another officer. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/5/security-%e2%81%a0officer-killed-in-stabbing-attack-in-jordans-capital?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-05T11:32:40Z",
-      "text": "<strong>Iran, Gaza, Ukraine: What will US midterm results mean for these conflicts?</strong> -- Despite wins, Democrats lack the two-thirds majority needed to overturn a presidential veto and push through a law. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-04T22:48:43Z",
-      "text": "<strong>Ukraine says bodycam video shows deadly Russian double-tap bombing</strong> -- At least 40 people were killed and another 30 may still be under the rubble after Monday&#x27;s attack on a Ukrainian village, Kyiv says. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-05T00:25:43Z",
-      "text": "<strong>Democrats won Congress. But can they deliver on their promises?</strong> -- Despite their midterm election victories, Democrats face major obstacles to reining in Trump on Iran, tariffs and more. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,43 +1213,51 @@
   ],
   "newsFeed": [
     {
-      "title": "Turkiye\u2019s parliament ratifies Mecca defence agreement",
-      "description": "Parliament&#039;s approval lays the groundwork for further Turkish involvement in Saudi Arabia&#039;s conflict with the Houthis.",
-      "link": "https://www.aljazeera.com/news/2026/11/6/turkiyes-parliament-ratifies-mecca-defence-agreement?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-06T00:15:22Z",
+      "title": "Two dead after bus crashes in France, officials say",
+      "description": "One child and one young adult were killed in the crash, local authorities say, with more injured.",
+      "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-06T10:36:31Z",
       "tier": 2
     },
     {
-      "title": "Iran war live: Trump warns US may have to \u2018destroy\u2019 rest of Iran",
-      "description": "Trump says the US may have to &#039;destroy&#039; the rest of Iran, adding that people will &#039;know soon enough&#039;.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-06T00:00:00Z",
+      "title": "Major construction ongoing near Iran missile bases, satellite images suggest",
+      "description": "Evidence of digging and new buildings are visible in satellite imagery taken in November, satellite images suggest.",
+      "link": "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-06T07:33:41Z",
       "tier": 2
     },
     {
-      "title": "Spanish footballer Jesus de Miguel mourned by family and friends",
-      "description": "The 30-year-old striker suffered cardiac arrest following an on-field collision.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/spanish-footballer-jesus-de-miguel-mourned-by-family-and-friends?traffic_source=rss",
+      "title": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
+      "description": "Tehran says ships from four countries can cross Hormuz freely, but analysts say the deals carry political risks.",
+      "link": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-05T21:42:30Z",
+      "time": "2026-11-06T06:06:24Z",
       "tier": 2
     },
     {
-      "title": "Saudi coalition intercepts missile fired towards Medina",
-      "description": "Interception comes after Saudi civil defence agency warned of potential danger near the strategic port of Yanbu.",
-      "link": "https://www.aljazeera.com/news/2026/11/5/saudi-coalition-intercepts-missile-fired-towards-medina?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-05T20:48:47Z",
+      "title": "A wildfire killed their loved ones in Spain. These British families demand to know why",
+      "description": "Nine British nationals were among the 15 people who died when fire ripped through the village of B\u00e9dar this summer.",
+      "link": "https://www.bbc.co.uk/news/articles/cm3vq4wyeld1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-06T06:00:46Z",
       "tier": 2
     },
     {
-      "title": "Mass protests in France driven by nationwide strike action",
-      "description": "More than 250,000 people took to the streets across France on Thursday as five unions called a day of strike action.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/mass-protests-in-france-driven-by-nationwide-strike-action?traffic_source=rss",
+      "title": "Iraq\u2019s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran",
+      "description": "Call comes as Iraq&#039;s top diplomat urges armed groups not to join any Iranian retaliation to US attacks.",
+      "link": "https://www.aljazeera.com/news/2026/11/6/iraqs-al-zaidi-talks-to-trump-as-baghdad-seeks-to-stay-out-of-war-on-iran?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-05T20:11:37Z",
+      "time": "2026-11-06T05:00:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Iran\u2019s security chief meets Putin, delivers message from Khamenei",
+      "description": "Putin meets Iran&#039;s top security official to discuss regional security and receives a letter from Mojtaba Khamenei.",
+      "link": "https://www.aljazeera.com/news/2026/11/6/irans-security-chief-meets-putin-delivers-message-from-khamenei?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-06T02:48:19Z",
       "tier": 2
     },
     {
@@ -1269,22 +1277,6 @@
       "tier": 2
     },
     {
-      "title": "Iran says tankers struck in Hormuz amid fears of new US attack",
-      "description": "Iranian forces say five oil tankers and a tugboat have caught fire in several incidents in the Strait of Hormuz.",
-      "link": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-05T18:47:10Z",
-      "tier": 2
-    },
-    {
-      "title": "Jordanian officer killed in stabbing attack in Amman",
-      "description": "A Jordanian security officer has been killed and another one wounded near the Sri Lankan embassy in Amman.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jordanian-officer-killed-in-stabbing-attack-in-amman?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-05T17:08:45Z",
-      "tier": 2
-    },
-    {
       "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
       "description": "The vice-president's blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory.",
       "link": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
@@ -1293,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available as of November 6, 2026 does not show newer verified cumulative casualty totals than the late-August figures carried by Al Jazeera: 3,527 killed in Iran, 28 killed in Gulf states, 60 Israelis killed, and 18 US service members killed. A UN mission cited by Al Jazeera on September 17 said Iran\u2019s government reported 25,000 injured. AP reported on November 2 that the US carried out defensive strikes on Iranian targets in the Strait of Hormuz, while Al Jazeera\u2019s November 6 live coverage said Trump warned the US may have to 'destroy' the rest of Iran, indicating a renewed escalation threat, but no newer confirmed official totals were found for most deployment or munitions-use fields.",
+  "summary": "Confirmed reporting indicates the war remains in a tense but lower-intensity phase: AP reported U.S. defensive strikes on Iranian targets in the Strait of Hormuz on November 2, 2026, while thousands of U.S. troops remain enforcing a naval blockade and a third aircraft carrier with additional troops is heading to the region. Iran is simultaneously signaling both deterrence and diplomacy, including selective Hormuz exemptions for some countries and high-level outreach to Russia, while BBC satellite imagery suggests new construction near Iranian missile bases. Casualty figures remain fragmented, with the clearest confirmed cumulative numbers still coming from earlier official and AP/Al Jazeera reporting rather than fresh comprehensive government updates.",
   "briefings": [
     {
       "date": "2026-11-06",
       "day": 251,
-      "summary": "Confirmed reporting available as of November 6, 2026 does not show newer verified cumulative casualty totals than the late-August figures carried by Al Jazeera: 3,527 killed in Iran, 28 killed in Gulf states, 60 Israelis killed, and 18 US service members killed. A UN mission cited by Al Jazeera on September 17 said Iran\u2019s government reported 25,000 injured. AP reported on November 2 that the US carried out defensive strikes on Iranian targets in the Strait of Hormuz, while Al Jazeera\u2019s November 6 live coverage said Trump warned the US may have to 'destroy' the rest of Iran, indicating a renewed escalation threat, but no newer confirmed official totals were found for most deployment or munitions-use fields."
+      "summary": "Confirmed reporting indicates the war remains in a tense but lower-intensity phase: AP reported U.S. defensive strikes on Iranian targets in the Strait of Hormuz on November 2, 2026, while thousands of U.S. troops remain enforcing a naval blockade and a third aircraft carrier with additional troops is heading to the region. Iran is simultaneously signaling both deterrence and diplomacy, including selective Hormuz exemptions for some countries and high-level outreach to Russia, while BBC satellite imagery suggests new construction near Iranian missile bases. Casualty figures remain fragmented, with the clearest confirmed cumulative numbers still coming from earlier official and AP/Al Jazeera reporting rather than fresh comprehensive government updates."
     },
     {
       "date": "2026-11-05",
