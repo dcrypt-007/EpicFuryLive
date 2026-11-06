@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-11-06T17:58:05Z",
+  "lastUpdated": "2026-11-06T23:09:25Z",
   "dayCount": 251,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,511+",
-    "cost": "$45.4B+"
+    "strikes": "~13,500",
+    "killed": "3,529+",
+    "cost": "$44.9B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "17",
+    "usKIA": "7",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
     "israeliDeaths": "26",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "19",
+    "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
     "iranWounded": "26,500+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$45.4 billion+",
-    "dailyBurnRate": "~$181M/day",
+    "totalCost": "$44.9 billion+",
+    "dailyBurnRate": "~$179M/day",
     "daysOfOps": 251,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-11-06",
-          "source": "LLM-verified (AP, Oct. 1, 2026: 'Third aircraft carrier and thousands of troops head to Mideast as Trump weighs new Iran strikes.' AP on Nov. 2 and Nov. 4 also says another aircraft carrier is on the way.)"
+          "source": "LLM-verified (Lead Inspector General for Operation Epic Fury report to Congress (April 1-June 30, 2026): two carrier strike groups supported OEF throughout the quarter; George H.W. Bush only briefly overlapped for turnover)"
         },
         {
           "id": "destroyers",
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-10-28",
-          "source": "LLM-verified (CNN transcript surfaced in web results on September 9, 2026: more than a dozen guided-missile destroyers in the region; using minimum confirmed whole-number floor of 12)"
+          "lastUpdated": "2026-11-06",
+          "source": "LLM-verified (Lead Inspector General for Operation Epic Fury report to Congress (April 1-June 30, 2026): at the height of conflict U.S. forces included more than a dozen destroyers; exact current in-theater total not specified, so using minimum confirmed whole-number floor of 12)"
         },
         {
           "id": "personnel",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-11-04",
-          "source": "LLM-verified (CBS News reported officials said there has been no significant reduction since the war began, meaning roughly 50,000 U.S. forces remain in the region)"
+          "lastUpdated": "2026-11-06",
+          "source": "LLM-verified (Lead Inspector General for Operation Epic Fury report to Congress (April 1-June 30, 2026): more than 50,000 U.S. service members were deployed in support of OEF)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 13000,
+          "quantity": 25000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-11-06",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury fact sheet dated April 1, 2026 lists 13,000+ combat flights; used here as closest confirmed official proxy for fighter/attack sorties, though the source labels them 'combat flights')"
+          "source": "LLM-verified (Lead Inspector General for Operation Epic Fury report to Congress (April 1-June 30, 2026): USCENTCOM reported approximately 36,000 combat sorties)"
         },
         {
           "id": "interceptors",
@@ -328,8 +328,8 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 251 days",
-        "cost": "$5,271,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 251 days",
+        "cost": "$3,514,000,000"
       },
       {
         "category": "Destroyers & Escorts",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "13,000 \u00d7 $100,000 each",
-        "cost": "$1,300,000,000"
+        "detail": "25,000 \u00d7 $100,000 each",
+        "cost": "$2,500,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,15 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Nov 6, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "BBC World headline: major construction ongoing near Iranian missile bases, with satellite images in November suggesting digging and new buildings near missile facilities",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Nov 6, 2026",
       "severity": "high",
@@ -650,15 +659,6 @@
       "text": "AP reported October saw the most attacks on commercial ships in the Strait of Hormuz since March, indicating elevated maritime risk.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported ongoing warnings from U.S. officials to regional allies to prepare for possible renewed post-election strikes and possible Iranian retaliation.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,19 +753,19 @@
   ],
   "developments": [
     {
-      "time": "2026-11-06T13:30:18Z",
-      "text": "<strong>Ukraine raises Zaporizhia aid strike death toll to at least 50</strong> -- Ukrainian officials say DNA tests are being used to identify bodies while up to 39 remain trapped under rubble. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/6/ukraine-raises-zaporizhia-aid-strike-death-toll-to-at-least-50?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-06T12:57:33Z",
-      "text": "<strong>Russia to UAE, Iran steps up diplomacy amid Trump threats: What we know</strong> -- Iran launches diplomatic offensive as US mulls resumption of war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know?traffic_source=rss"
+      "time": "2026-11-06T18:09:49Z",
+      "text": "<strong>Yemeni gov\u2019t forces, Houthis trade blame for deadly strikes on Taiz market</strong> -- The attack on al-Hadara market in Taiz governorate&amp;#039;s al-Waziiya district killed at least 30 people, Houthi rebels say. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market?traffic_source=rss"
     },
     {
       "time": "2026-11-06T15:33:52Z",
       "text": "<strong>Two dead after bus crashes in France, officials say</strong> -- One child and one young adult were killed in the crash, local authorities say, with more injured. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-06T17:44:02Z",
+      "text": "<strong>Spain&#x27;s rail authorities face European fraud probe after Urda rail disaster</strong> -- Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-11-06T07:33:41Z",
@@ -781,6 +781,16 @@
       "time": "2026-11-06T06:00:46Z",
       "text": "<strong>A wildfire killed their loved ones in Spain. These British families demand to know why</strong> -- Nine British nationals were among the 15 people who died when fire ripped through the village of B\u00e9dar this summer. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cm3vq4wyeld1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-06T13:30:18Z",
+      "text": "<strong>Ukraine raises Zaporizhia aid strike death toll to at least 50</strong> -- Ukrainian officials say DNA tests are being used to identify bodies while up to 39 remain trapped under rubble. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/6/ukraine-raises-zaporizhia-aid-strike-death-toll-to-at-least-50?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-06T12:57:33Z",
+      "text": "<strong>Russia to UAE, Iran steps up diplomacy amid Trump threats: What we know</strong> -- Iran launches diplomatic offensive as US mulls resumption of war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know?traffic_source=rss"
     },
     {
       "time": "2026-11-06T06:06:24Z",
@@ -841,16 +851,6 @@
       "time": "2026-11-05T20:11:37Z",
       "text": "<strong>Mass protests in France driven by nationwide strike action</strong> -- More than 250,000 people took to the streets across France on Thursday as five unions called a day of strike action. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/mass-protests-in-france-driven-by-nationwide-strike-action?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-05T18:47:10Z",
-      "text": "<strong>Iran says tankers struck in Hormuz amid fears of new US attack</strong> -- Iranian forces say five oil tankers and a tugboat have caught fire in several incidents in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-05T17:08:45Z",
-      "text": "<strong>Jordanian officer killed in stabbing attack in Amman</strong> -- A Jordanian security officer has been killed and another one wounded near the Sri Lankan embassy in Amman. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jordanian-officer-killed-in-stabbing-attack-in-amman?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,6 +1213,22 @@
   ],
   "newsFeed": [
     {
+      "title": "Yemeni gov\u2019t forces, Houthis trade blame for deadly strikes on Taiz market",
+      "description": "The attack on al-Hadara market in Taiz governorate&#039;s al-Waziiya district killed at least 30 people, Houthi rebels say.",
+      "link": "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-06T18:09:49Z",
+      "tier": 2
+    },
+    {
+      "title": "Spain's rail authorities face European fraud probe after Urda rail disaster",
+      "description": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people.",
+      "link": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-06T17:44:02Z",
+      "tier": 2
+    },
+    {
       "title": "Two dead after bus crashes in France, officials say",
       "description": "One child and one young adult were killed in the crash, local authorities say, with more injured.",
       "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss",
@@ -1221,27 +1237,11 @@
       "tier": 2
     },
     {
-      "title": "Ukraine raises Zaporizhia aid strike death toll to at least 50",
-      "description": "Ukrainian officials say DNA tests are being used to identify bodies while up to 39 remain trapped under rubble.",
-      "link": "https://www.aljazeera.com/news/2026/11/6/ukraine-raises-zaporizhia-aid-strike-death-toll-to-at-least-50?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-06T13:30:18Z",
-      "tier": 2
-    },
-    {
       "title": "US midterm results spark fears in Israel over future of two countries' ties",
       "description": "Staunch US support of Israel has been raised as one of the reasons why Republicans performed so badly.",
       "link": "https://www.bbc.co.uk/news/articles/cx30ee8018lvo?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
       "time": "2026-11-06T13:23:44Z",
-      "tier": 2
-    },
-    {
-      "title": "Russia to UAE, Iran steps up diplomacy amid Trump threats: What we know",
-      "description": "Iran launches diplomatic offensive as US mulls resumption of war.",
-      "link": "https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-06T12:57:33Z",
       "tier": 2
     },
     {
@@ -1261,12 +1261,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed reporting available today remains sparse on updated cumulative war metrics. AP reported renewed U.S. defensive strikes on Iranian targets in the Strait of Hormuz on November 2, 2026, while BBC reported new construction activity near Iranian missile bases and Al Jazeera said Iran has intensified diplomacy as Washington weighs whether to resume wider combat. For hard totals, the latest clearly attributable cumulative casualty figures I could verify were still the Iran Ministry of Health numbers carried by Al Jazeera through June 10, 2026: 3,468 killed and more than 26,500 injured in Iran, with 26 Israelis killed. The latest cumulative U.S. military death total I could verify from reporting based on CENTCOM announcements was 17, reported July 20, 2026. I did not find newer confirmed official totals for civilian-only Iranian deaths, current U.S. force posture counts, or cumulative weapons expenditure figures, so those fields remain null.",
+  "summary": "Confirmed reporting still points to no major officially published revision of the cumulative Iran war casualty baseline since midyear: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded as cited by Al Jazeera on June 10, while a later Al Jazeera six-month review on August 28 put Gulf-state deaths at 28 and reported 18 U.S. service members killed, but the latest official U.S. government document located here\u2014the Lead Inspector General report covering operations through June 30\u2014confirmed seven U.S. troops killed in action, seven more in non-hostile events, more than 50,000 deployed personnel, roughly 13,500 targets struck, about 36,000 combat sorties, and two carrier strike groups supporting the operation during that reporting period. AP reporting on October 31 said the deadliest known strike on U.S. troops was the March 1 drone attack at Port Shuaiba, Kuwait, which killed six soldiers.",
   "briefings": [
     {
       "date": "2026-11-06",
       "day": 251,
-      "summary": "Confirmed reporting available today remains sparse on updated cumulative war metrics. AP reported renewed U.S. defensive strikes on Iranian targets in the Strait of Hormuz on November 2, 2026, while BBC reported new construction activity near Iranian missile bases and Al Jazeera said Iran has intensified diplomacy as Washington weighs whether to resume wider combat. For hard totals, the latest clearly attributable cumulative casualty figures I could verify were still the Iran Ministry of Health numbers carried by Al Jazeera through June 10, 2026: 3,468 killed and more than 26,500 injured in Iran, with 26 Israelis killed. The latest cumulative U.S. military death total I could verify from reporting based on CENTCOM announcements was 17, reported July 20, 2026. I did not find newer confirmed official totals for civilian-only Iranian deaths, current U.S. force posture counts, or cumulative weapons expenditure figures, so those fields remain null."
+      "summary": "Confirmed reporting still points to no major officially published revision of the cumulative Iran war casualty baseline since midyear: Iran\u2019s Health Ministry figure remains 3,468 killed and more than 26,500 wounded as cited by Al Jazeera on June 10, while a later Al Jazeera six-month review on August 28 put Gulf-state deaths at 28 and reported 18 U.S. service members killed, but the latest official U.S. government document located here\u2014the Lead Inspector General report covering operations through June 30\u2014confirmed seven U.S. troops killed in action, seven more in non-hostile events, more than 50,000 deployed personnel, roughly 13,500 targets struck, about 36,000 combat sorties, and two carrier strike groups supporting the operation during that reporting period. AP reporting on October 31 said the deadliest known strike on U.S. troops was the March 1 drone attack at Port Shuaiba, Kuwait, which killed six soldiers."
     },
     {
       "date": "2026-11-05",
