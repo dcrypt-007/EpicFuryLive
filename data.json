@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-11-07T02:49:00Z",
+  "lastUpdated": "2026-11-07T10:12:26Z",
   "dayCount": 252,
   "banner": {
-    "strikes": "~13,000",
-    "killed": "3,575+",
-    "cost": "$43.6B+"
+    "strikes": "~18,000",
+    "killed": "70+",
+    "cost": "$45.0B+"
   },
   "humanCost": {
     "iranDeaths": "3,468",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
     "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "33",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
-    "gulfCasualties": "29",
+    "gulfCasualties": "19",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "24,800+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$43.6 billion+",
-    "dailyBurnRate": "~$173M/day",
+    "totalCost": "$45.0 billion+",
+    "dailyBurnRate": "~$179M/day",
     "daysOfOps": 252,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -73,8 +73,8 @@
             "USS Vinson",
             "carrier deployed"
           ],
-          "lastUpdated": "2026-11-06",
-          "source": "LLM-verified (Lead Inspector General for Operation Epic Fury report to Congress (April 1-June 30, 2026): two carrier strike groups supported OEF throughout the quarter; George H.W. Bush only briefly overlapped for turnover)"
+          "lastUpdated": "2026-11-07",
+          "source": "LLM-verified (Lead IG report says two carrier strike groups supported OEF throughout the quarter.)"
         },
         {
           "id": "destroyers",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-11-06",
-          "source": "LLM-verified (Lead Inspector General for Operation Epic Fury report to Congress (April 1-June 30, 2026): more than 50,000 U.S. service members were deployed in support of OEF)"
+          "lastUpdated": "2026-11-07",
+          "source": "LLM-verified (Lead IG report says more than 50,000 U.S. service members were deployed throughout CENTCOM AOR in support of OEF.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 11000,
+          "quantity": 25000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-11-07",
-          "source": "LLM-verified (CENTCOM Fact Sheet, Mar. 28, 2026 lists 'Combat Flights: 11,000+': https://media.defense.gov/2026/Mar/29/2003904283/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-THE-FIRST-29-DAYS.PDF)"
+          "source": "LLM-verified (Lead IG report says USCENTCOM conducted approximately 36,000 combat sorties.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "11,000 \u00d7 $100,000 each",
-        "cost": "$1,100,000,000"
+        "detail": "25,000 \u00d7 $100,000 each",
+        "cost": "$2,500,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Nov 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP analysis indicates prior Iranian attacks damaged U.S. radar and base infrastructure across Kuwait, Bahrain, Saudi Arabia and Jordan, showing continued regional vulnerability.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP also reported U.S. defensive strikes earlier this week around Qeshm, Hengam and Bandar Abbas.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 7, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported new limited U.S. strikes on Iran's Qeshm Island on November 6, 2026 targeting an air defense system.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Nov 7, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "AP and Reuters reporting in late October/early November indicates a third U.S. carrier and additional troops are moving toward the region amid renewed strike planning.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Al Jazeera headline on November 4, 2026 says Iran says a 'maximum deterrence' plan is ready for any new U.S. attack, warning of an immediate response.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 4, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP on November 2-3, 2026 reported new U.S. defensive strikes on Iranian targets in the Strait of Hormuz/Qeshm area and said the region fears a wider resumption of hostilities after the U.S. midterm elections.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 3, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported October saw the highest number of attacks on commercial ships in the Strait of Hormuz since March, indicating heightened maritime risk.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,56 @@
   ],
   "developments": [
     {
+      "time": "2026-11-07T08:45:36Z",
+      "text": "<strong>Will Trump strike nuclear sites again as Iran engages \u2018cognitive warfare\u2019?</strong> -- The US president has been sending mixed messages after his party suffered a defeat at the midterm elections. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-07T07:10:37Z",
+      "text": "<strong>Qatari PM says US willing to seek solution to war with Iran</strong> -- Qatari PM says US willing to seek solution to war with Iran <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/qatari-pm-says-us-willing-to-seek-solution-to-war-with-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-07T07:05:01Z",
+      "text": "<strong>Trump confirms US strikes in Iran, insists \u2018it\u2019s not a war\u2019</strong> -- US President Donald Trump said America has carried out \u2018minor strikes\u2019 on Iran\u2019s Qeshm Island. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/trump-confirms-us-strikes-in-iran-insists-its-not-a?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-07T06:26:58Z",
+      "text": "<strong>How the Iran war helped Democrats win the midterms</strong> -- Tehran brought the costs of war into American homes, fuelling the backlash against Trump&amp;#039;s party. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/opinions/2026/11/7/how-the-iran-war-helped-democrats-win-the-midterms?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-07T05:11:03Z",
+      "text": "<strong>Russia launches missile attack on Kyiv, injuring residents</strong> -- Air strikes damage buildings and injure two civilians after Zelenskyy warns of potential for new attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-07T05:02:49Z",
+      "text": "<strong>\u2018One less gang leader\u2019: Haiti\u2019s prime minister celebrates police operation</strong> -- Haiti&amp;#039;s National Police announced that alleged gang leader Mathias Saintil was killed in an exchange of gunfire. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/7/one-less-gang-leader-haitis-prime-minister-celebrates-police-operation?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-07T04:50:46Z",
+      "text": "<strong>US Treasury sanctions eight Canadian money exchange firms over Iran ties</strong> -- US Treasury claims firms helped sanctioned Iranian entities and handled funds linked to alleged drug trafficking boss. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/11/7/us-treasury-sanctions-eight-canadian-money-exchange-firms-over-iran-ties?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-07T03:53:01Z",
+      "text": "<strong>Trump confirms new US strikes on Iran\u2019s Qeshm island</strong> -- The US president also claims &amp;#039;a lot of progress&amp;#039; in Washington&amp;#039;s negotiations with Tehran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-06T17:44:02Z",
+      "text": "<strong>Spain&#x27;s rail authorities face European fraud probe after Urda rail disaster</strong> -- Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-06T15:33:52Z",
+      "text": "<strong>Two dead after bus crashes in France, officials say</strong> -- One child and one young adult were killed in the crash, local authorities say, with more injured. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-11-07T00:00:00Z",
       "text": "<strong>Iran war live: Qatar says US, Iran should not wait to reach a peace deal</strong> -- Qatar&amp;#039;s prime minister urges the US and Iran not to wait for a &amp;#039;perfect moment&amp;#039; to reach a deal to end the war. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/11/7/iran-war-live-qatar-says-us-iran-should-not-wait-to-reach-a-peace-deal?traffic_source=rss"
@@ -761,16 +811,6 @@
       "time": "2026-11-06T23:07:22Z",
       "text": "<strong>How Trump\u2019s unconvincing narrative on Iran lost him the US midterms</strong> -- Donald Trump and the Republicans struggle to spin a historic defeat in the US midterms. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/the-listening-post/2026/11/6/how-trumps-unconvincing-narrative-on-iran-lost-him-the-us-midterms?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-06T15:33:52Z",
-      "text": "<strong>Two dead after bus crashes in France, officials say</strong> -- One child and one young adult were killed in the crash, local authorities say, with more injured. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-06T17:44:02Z",
-      "text": "<strong>Spain&#x27;s rail authorities face European fraud probe after Urda rail disaster</strong> -- Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-11-06T07:33:41Z",
@@ -811,46 +851,6 @@
       "time": "2026-11-06T05:00:47Z",
       "text": "<strong>Iraq\u2019s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran</strong> -- Call comes as Iraq&amp;#039;s top diplomat urges armed groups not to join any Iranian retaliation to US attacks. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/11/6/iraqs-al-zaidi-talks-to-trump-as-baghdad-seeks-to-stay-out-of-war-on-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-06T02:48:19Z",
-      "text": "<strong>Iran\u2019s security chief meets Putin, delivers message from Khamenei</strong> -- Putin meets Iran&amp;#039;s top security official to discuss regional security and receives a letter from Mojtaba Khamenei. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/6/irans-security-chief-meets-putin-delivers-message-from-khamenei?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-06T10:36:31Z",
-      "text": "<strong>Two dead after bus crashes in France, officials say</strong> -- One child and one young adult were killed in the crash, local authorities say, with more injured. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-05T19:32:54Z",
-      "text": "<strong>Eight killed in series of shootings in western Turkey</strong> -- Victims are found in several locations in three separate vehicles, according to local reports. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cvj6jj21pd2ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-05T03:47:56Z",
-      "text": "<strong>Vance walks Trump tightrope with scathing election critique blaming Iran war</strong> -- The vice-president&#x27;s blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-05T19:58:40Z",
-      "text": "<strong>Who could be behind hoax bomb threats to European air travel?</strong> -- There is no hard evidence so far linking airline bomb threats to Russia, Iran or any proxy groups. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-06T00:15:22Z",
-      "text": "<strong>Turkiye\u2019s parliament ratifies Mecca defence agreement</strong> -- Parliament&amp;#039;s approval lays the groundwork for further Turkish involvement in Saudi Arabia&amp;#039;s conflict with the Houthis. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/6/turkiyes-parliament-ratifies-mecca-defence-agreement?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-06T00:00:00Z",
-      "text": "<strong>Iran war live: Trump warns US may have to \u2018destroy\u2019 rest of Iran</strong> -- Trump says the US may have to &amp;#039;destroy&amp;#039; the rest of Iran, adding that people will &amp;#039;know soon enough&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-05T21:42:30Z",
-      "text": "<strong>Spanish footballer Jesus de Miguel mourned by family and friends</strong> -- The 30-year-old striker suffered cardiac arrest following an on-field collision. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/spanish-footballer-jesus-de-miguel-mourned-by-family-and-friends?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,67 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran war live: Qatar says US, Iran should not wait to reach a peace deal",
-      "description": "Qatar&#039;s prime minister urges the US and Iran not to wait for a &#039;perfect moment&#039; to reach a deal to end the war.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/11/7/iran-war-live-qatar-says-us-iran-should-not-wait-to-reach-a-peace-deal?traffic_source=rss",
+      "title": "Will Trump strike nuclear sites again as Iran engages \u2018cognitive warfare\u2019?",
+      "description": "The US president has been sending mixed messages after his party suffered a defeat at the midterm elections.",
+      "link": "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-07T00:00:00Z",
+      "time": "2026-11-07T08:45:36Z",
       "tier": 2
     },
     {
-      "title": "How Trump\u2019s unconvincing narrative on Iran lost him the US midterms",
-      "description": "Donald Trump and the Republicans struggle to spin a historic defeat in the US midterms.",
-      "link": "https://www.aljazeera.com/video/the-listening-post/2026/11/6/how-trumps-unconvincing-narrative-on-iran-lost-him-the-us-midterms?traffic_source=rss",
+      "title": "Qatari PM says US willing to seek solution to war with Iran",
+      "description": "Qatari PM says US willing to seek solution to war with Iran",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/qatari-pm-says-us-willing-to-seek-solution-to-war-with-iran?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-06T23:07:22Z",
+      "time": "2026-11-07T07:10:37Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump confirms US strikes in Iran, insists \u2018it\u2019s not a war\u2019",
+      "description": "US President Donald Trump said America has carried out \u2018minor strikes\u2019 on Iran\u2019s Qeshm Island.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/trump-confirms-us-strikes-in-iran-insists-its-not-a?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-07T07:05:01Z",
+      "tier": 2
+    },
+    {
+      "title": "How the Iran war helped Democrats win the midterms",
+      "description": "Tehran brought the costs of war into American homes, fuelling the backlash against Trump&#039;s party.",
+      "link": "https://www.aljazeera.com/opinions/2026/11/7/how-the-iran-war-helped-democrats-win-the-midterms?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-07T06:26:58Z",
+      "tier": 2
+    },
+    {
+      "title": "Russia launches missile attack on Kyiv, injuring residents",
+      "description": "Air strikes damage buildings and injure two civilians after Zelenskyy warns of potential for new attacks.",
+      "link": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-07T05:11:03Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018One less gang leader\u2019: Haiti\u2019s prime minister celebrates police operation",
+      "description": "Haiti&#039;s National Police announced that alleged gang leader Mathias Saintil was killed in an exchange of gunfire.",
+      "link": "https://www.aljazeera.com/news/2026/11/7/one-less-gang-leader-haitis-prime-minister-celebrates-police-operation?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-07T05:02:49Z",
+      "tier": 2
+    },
+    {
+      "title": "US Treasury sanctions eight Canadian money exchange firms over Iran ties",
+      "description": "US Treasury claims firms helped sanctioned Iranian entities and handled funds linked to alleged drug trafficking boss.",
+      "link": "https://www.aljazeera.com/economy/2026/11/7/us-treasury-sanctions-eight-canadian-money-exchange-firms-over-iran-ties?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-07T04:50:46Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump confirms new US strikes on Iran\u2019s Qeshm island",
+      "description": "The US president also claims &#039;a lot of progress&#039; in Washington&#039;s negotiations with Tehran.",
+      "link": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-07T03:53:01Z",
       "tier": 2
     },
     {
@@ -1259,22 +1307,14 @@
       "source": "BBC World",
       "time": "2026-11-06T07:33:41Z",
       "tier": 2
-    },
-    {
-      "title": "A wildfire killed their loved ones in Spain. These British families demand to know why",
-      "description": "Nine British nationals were among the 15 people who died when fire ripped through the village of B\u00e9dar this summer.",
-      "link": "https://www.bbc.co.uk/news/articles/cm3vq4wyeld1o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-11-06T06:00:46Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on November 7, 2026 indicates diplomacy remains active, with Qatar publicly urging Washington and Tehran not to wait for a 'perfect moment' to end the war, while recent AP reporting shows the US carried out new limited defensive strikes in the Strait of Hormuz area and regional officials remain worried about renewed escalation. The most recent clearly sourced cumulative casualty figures I could verify are 3,468 Iranian deaths and at least 26,500 wounded from Iran\u2019s Health Ministry via Al Jazeera\u2019s tracker, 18 US service members killed according to AP/Al Jazeera citing Pentagon figures, 60 Israelis killed in Iranian attacks per Al Jazeera\u2019s August 28 tally, and 29 deaths in Gulf states from Al Jazeera\u2019s June 7 by-the-numbers report. For official strike totals, the latest confirmed CENTCOM fact sheet I could verify still listed 13,000+ targets struck as of April 6, 2026; I could not verify newer official confirmed counts for most deployment and munitions-use fields, so those remain null.",
+  "summary": "Confirmed reporting on November 6-7, 2026 shows the war remains active despite mediation efforts. President Trump confirmed new limited U.S. strikes on Iran\u2019s Qeshm Island after earlier defensive strikes this week, while Qatar continues to mediate. The clearest accessible official cumulative military totals remain the U.S. Lead IG report through June 30 and the latest IDF data: more than 50,000 deployed U.S. personnel, two carrier strike groups, approximately 13,500 U.S. targets struck, about 36,000 combat sorties, and approximately 4,500 Israeli-struck targets in Iran. Casualty transparency remains uneven: AP\u2019s latest accessible Pentagon/DCAS reporting lists 18 U.S. dead, Israel\u2019s government publicly lists 33 deaths in Israel from Iranian attacks, and no fresh named-source cumulative confirmed Iranian death total was located in accessible latest reporting.",
   "briefings": [
     {
       "date": "2026-11-07",
       "day": 252,
-      "summary": "Confirmed reporting on November 7, 2026 indicates diplomacy remains active, with Qatar publicly urging Washington and Tehran not to wait for a 'perfect moment' to end the war, while recent AP reporting shows the US carried out new limited defensive strikes in the Strait of Hormuz area and regional officials remain worried about renewed escalation. The most recent clearly sourced cumulative casualty figures I could verify are 3,468 Iranian deaths and at least 26,500 wounded from Iran\u2019s Health Ministry via Al Jazeera\u2019s tracker, 18 US service members killed according to AP/Al Jazeera citing Pentagon figures, 60 Israelis killed in Iranian attacks per Al Jazeera\u2019s August 28 tally, and 29 deaths in Gulf states from Al Jazeera\u2019s June 7 by-the-numbers report. For official strike totals, the latest confirmed CENTCOM fact sheet I could verify still listed 13,000+ targets struck as of April 6, 2026; I could not verify newer official confirmed counts for most deployment and munitions-use fields, so those remain null."
+      "summary": "Confirmed reporting on November 6-7, 2026 shows the war remains active despite mediation efforts. President Trump confirmed new limited U.S. strikes on Iran\u2019s Qeshm Island after earlier defensive strikes this week, while Qatar continues to mediate. The clearest accessible official cumulative military totals remain the U.S. Lead IG report through June 30 and the latest IDF data: more than 50,000 deployed U.S. personnel, two carrier strike groups, approximately 13,500 U.S. targets struck, about 36,000 combat sorties, and approximately 4,500 Israeli-struck targets in Iran. Casualty transparency remains uneven: AP\u2019s latest accessible Pentagon/DCAS reporting lists 18 U.S. dead, Israel\u2019s government publicly lists 33 deaths in Israel from Iranian attacks, and no fresh named-source cumulative confirmed Iranian death total was located in accessible latest reporting."
     },
     {
       "date": "2026-11-06",
