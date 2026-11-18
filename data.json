@@ -1,21 +1,21 @@
 {
-  "lastUpdated": "2026-11-18T13:59:33Z",
+  "lastUpdated": "2026-11-18T21:57:41Z",
   "dayCount": 263,
   "banner": {
     "strikes": "~13,500",
-    "killed": "3,626+",
-    "cost": "$54.5B+"
+    "killed": "3,695+",
+    "cost": "$48.9B+"
   },
   "humanCost": {
-    "iranDeaths": "3,527",
+    "iranDeaths": "3,636",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "11",
+    "usKIA": "23",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "60",
+    "israeliDeaths": "36",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
-    "iranWounded": "26,500+",
+    "iranWounded": "33,806+",
     "iranWoundedNote": "Iranian Ministry reports 6,000+ injured in airstrikes and military operations. 300+ children hospitalized. Source: Iranian state media, IRC reports.",
     "civilianDeaths": "1701",
     "civilianDeathsNote": "Iranian government claims 148+ killed in US-Israeli airstrike on girls' school in southern Iran (Mar 2). US disputes strike was intentional; target claimed to be IRGC facility. Independent verification pending. Source: Iranian state media, Airwars, disputed.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$54.5 billion+",
-    "dailyBurnRate": "~$207M/day",
+    "totalCost": "$48.9 billion+",
+    "dailyBurnRate": "~$186M/day",
     "daysOfOps": 263,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -57,7 +57,7 @@
           "id": "carrier_ops",
           "category": "Carrier Strike Groups",
           "unitCostPerDay": 7000000,
-          "quantity": 3,
+          "quantity": 2,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-11-18",
-          "source": "LLM-verified (AP, Nov. 16, 2026: 'Third US aircraft carrier arrives in the Middle East')"
+          "source": "LLM-verified (AP, Nov. 18, 2026: U.S. military down to two aircraft carriers in the Middle East; AP noted the Theodore Roosevelt had briefly brought the total to three two days earlier.)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 15,
+          "quantity": 13,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -90,8 +90,8 @@
             "Arleigh Burke",
             "guided-missile destroyer"
           ],
-          "lastUpdated": "2026-11-17",
-          "source": "LLM-verified (AP, Nov. 16, 2026: flotilla in Arabian Sea included 13 destroyers, with two more destroyers in the Red Sea.)"
+          "lastUpdated": "2026-11-18",
+          "source": "LLM-verified (INSS U.S. Force Posture in the Middle East vis-a-vis Iran, Nov. 1-7, 2026: 11 destroyers and a cruiser in the Arabian Sea, plus 2 more destroyers in the Red Sea. Excludes 3 under Sixth Fleet in the Mediterranean because not clearly in the theater requested.)"
         },
         {
           "id": "personnel",
@@ -108,7 +108,7 @@
             "marines deployed"
           ],
           "lastUpdated": "2026-11-18",
-          "source": "LLM-verified (Lead IG Report to Congress: more than 50,000 U.S. service members were deployed throughout CENTCOM AOR in support of OEF)"
+          "source": "LLM-verified (CRS report U.S. Conflict with Iran states an estimated 50,000 U.S. service members deployed in and around the Middle East.)"
         },
         {
           "id": "intel_cyber",
@@ -178,14 +178,14 @@
           "id": "tomahawk",
           "category": "Tomahawk Cruise Missiles",
           "unitCost": 2000000,
-          "quantity": 24,
+          "quantity": 850,
           "keywords": [
             "tomahawk",
             "cruise missile launched",
             "TLAM"
           ],
-          "lastUpdated": "2026-11-16",
-          "source": "LLM-verified (No newer confirmed cumulative total found; Defense Department press conference described 'more than two dozen' Tomahawks in the opening major strike package, but that is not a precise updated cumulative war total)"
+          "lastUpdated": "2026-11-18",
+          "source": "LLM-verified (Washington Post, March 27, 2026, citing people familiar with the matter: the U.S. had fired more than 850 Tomahawk cruise missiles in four weeks of war with Iran. No newer confirmed cumulative total found.)"
         },
         {
           "id": "jdam",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 25000,
+          "quantity": 10000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,13 +280,13 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-11-18",
-          "source": "LLM-verified (Lead IG Report to Congress: USCENTCOM reported approximately 36,000 combat sorties during major combat operations; source does not break out fighter/attack-only sorties)"
+          "source": "LLM-verified (Air & Space Forces / Gen. Kenneth Wilsbach: around 500 combat aircraft executed around 250 sorties per day for 38 days during Epic Fury, about 10,000 sorties total.)"
         },
         {
           "id": "interceptors",
           "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
           "unitCost": 4000000,
-          "quantity": 3000,
+          "quantity": 2050,
           "keywords": [
             "SM-3",
             "SM-6",
@@ -298,7 +298,7 @@
             "shot down missile"
           ],
           "lastUpdated": "2026-11-18",
-          "source": "LLM-verified (Lead IG Report to Congress: Middle East Defense network intercepted more than 6,000 one-way UAS and more than 1,500 ballistic missiles targeting U.S. and partner forces)"
+          "source": "LLM-verified (CRS report on U.S. military operations against Iran, citing August 2026 news reporting: approximately 1,700 Patriot, 200 THAAD, and 150 Standard Missile interceptors expended.)"
         },
         {
           "id": "prestrike_buildup",
@@ -328,13 +328,13 @@
     "breakdown": [
       {
         "category": "Carrier Strike Groups",
-        "detail": "3 \u00d7 $7,000,000/day \u00d7 263 days",
-        "cost": "$5,523,000,000"
+        "detail": "2 \u00d7 $7,000,000/day \u00d7 263 days",
+        "cost": "$3,682,000,000"
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "15 \u00d7 $240,000/day \u00d7 263 days",
-        "cost": "$946,800,000"
+        "detail": "13 \u00d7 $240,000/day \u00d7 263 days",
+        "cost": "$820,560,000"
       },
       {
         "category": "Deployed Personnel",
@@ -368,8 +368,8 @@
       },
       {
         "category": "Tomahawk Cruise Missiles",
-        "detail": "24 \u00d7 $2,000,000 each",
-        "cost": "$48,000,000"
+        "detail": "850 \u00d7 $2,000,000 each",
+        "cost": "$1,700,000,000"
       },
       {
         "category": "JDAM Guided Bombs",
@@ -398,13 +398,13 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "25,000 \u00d7 $100,000 each",
-        "cost": "$2,500,000,000"
+        "detail": "10,000 \u00d7 $100,000 each",
+        "cost": "$1,000,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
-        "detail": "3,000 \u00d7 $4,000,000 each",
-        "cost": "$12,000,000,000"
+        "detail": "2,050 \u00d7 $4,000,000 each",
+        "cost": "$8,200,000,000"
       },
       {
         "category": "Pre-strike Buildup & Deployment",
@@ -435,6 +435,33 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Nov 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported the U.S. carrier count briefly rose to three with USS Theodore Roosevelt's arrival, but by Nov. 18 the force was back down to two carriers in the Middle East.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "The U.S. struck an IRGC missile launch site on Qeshm Island on Nov. 17, 2026, in retaliation for attacks on U.S. targets in Bahrain, according to AP.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 18, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "Iran resumed attacks on U.S. facilities in Bahrain and struck toward Ali Al Salem Air Base in Kuwait on Nov. 18, 2026, according to AP and Al Jazeera.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Nov 18, 2026",
       "severity": "high",
@@ -632,33 +659,6 @@
       "text": "Iran warned it may strike first rather than wait for another U.S. attack",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Regional tensions remain elevated around Gulf shipping and U.S. facilities despite recent U.S. political messaging that the war may be 'effectively over'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran claimed on November 15, 2026 that it struck a U.S. early-warning radar site in Bahrain, while the U.S. military said it intercepted two Iranian attack drones headed toward Bahrain and denied the strike caused the claimed effect.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 15, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP Nov. 9 and Nov. 13 reporting indicates the U.S. has still carried out limited recent strikes on Iranian air defenses despite Trump saying the war is militarily 'effectively over'.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,51 @@
   ],
   "developments": [
     {
+      "time": "2026-11-18T20:24:50Z",
+      "text": "<strong>Putin\u2019s nuclear briefcase makes surprise appearance at China summit</strong> -- Russian President Vladimir Putin\u2019s nuclear briefcase was spotted at the APEC summit in China. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/putins-nuclear-briefcase-makes-surprise-appearance-at-china-summit?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-18T19:31:31Z",
+      "text": "<strong>Four killed as Russian strikes hit Ukraine\u2019s Odesa</strong> -- At least four people have been killed and thirteen more injured after Russian strikes hit Ukraine\u2019s port city of Odesa. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/four-killed-as-russian-strikes-hit-ukraines-odesa?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-18T19:27:42Z",
+      "text": "<strong>Israeli settler kills Palestinian grandmother in occupied West Bank</strong> -- A Palestinian grandmother was killed by an Israeli settler in the occupied West Bank. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/israeli-settler-kills-palestinian-grandmother-in-occupied-west-bank?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-18T16:47:26Z",
+      "text": "<strong>Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island</strong> -- Iranian attacks on the Gulf countries draw condemnation from across the region. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-18T20:14:57Z",
+      "text": "<strong>Israeli military launches rare ground operation in Gaza beyond Yellow Line</strong> -- Hamas condemns the incursion, which the Israeli military says is dismantling a &quot;terror tunnel&quot;, as a &quot;flagrant&quot; ceasefire violation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-18T13:04:48Z",
+      "text": "<strong>Kuwait says it repelled first Iranian attack in two months after US strikes island</strong> -- Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-18T02:29:52Z",
+      "text": "<strong>Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump</strong> -- Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-17T21:04:00Z",
+      "text": "<strong>US loses measles elimination status after 26 years amid record case numbers</strong> -- States have reported over 5,400 cases and 10 measles-related deaths for the first time since the early 1990s. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c977p71jx0xxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-17T20:30:20Z",
+      "text": "<strong>Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says</strong> -- Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-11-18T12:27:40Z",
       "text": "<strong>Ukraine mourns mother, athlete and drone operator killed in Russian strike</strong> -- Rayana joined Ukraine\u2019s army in 2024 to protect her son from Russia\u2019s invasion. She was killed in Russian air strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/ukraine-mourns-mother-athlete-and-drone-operator-killed-in-russian-strike?traffic_source=rss"
@@ -766,16 +811,6 @@
       "time": "2026-11-18T10:38:13Z",
       "text": "<strong>Why has an NYT report on Iran\u2019s dams ignited fierce pushback?</strong> -- The NYT faces backlash over report suggesting a possible link between Iranian dams and underground missile facilities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/11/18/why-has-an-nyt-report-on-irans-dams-ignited-fierce-pushback?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T21:04:00Z",
-      "text": "<strong>US loses measles elimination status after 26 years amid record case numbers</strong> -- States have reported over 5,400 cases and 10 measles-related deaths for the first time since the early 1990s. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c977p71jx0xxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-17T20:30:20Z",
-      "text": "<strong>Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says</strong> -- Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-11-17T17:37:04Z",
@@ -816,41 +851,6 @@
       "time": "2026-11-17T20:57:56Z",
       "text": "<strong>US Navy chief says Iran war has put \u2018strain\u2019 on maritime forces</strong> -- Lawmakers hound Hung Cao over expanding war, opaque leadership shake-ups, and low crew morale at confirmation hearing. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/11/17/us-navy-chief-says-iran-war-has-put-strain-on-maritime-forces?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T12:50:12Z",
-      "text": "<strong>Iranians fear more civilian infrastructure could be targeted in new US war</strong> -- Energy facilities, industrial units, ports and bridges, schools, hospitals and apartment buildings have already been hit <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/17/iranians-fear-more-civilian-infrastructure-could-be-targeted-in-new-us-war?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T12:33:51Z",
-      "text": "<strong>Is the US-Israel war on Iran turning into a \u2018frozen conflict\u2019?</strong> -- Trump says Washington doesn&amp;#039;t need a deal with Tehran, while Iran rejects &amp;#039;no war, no peace&amp;#039;. Is the war at an impasse? <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T11:19:04Z",
-      "text": "<strong>Vessels on fire after naval mine hit in Hormuz Strait, Iran says</strong> -- Two vessels have caught fire after hitting a naval mine in the Strait of Hormuz. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vessels-on-fire-after-naval-mine-hit-in-hormuz-strait-iran-says?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T13:02:17Z",
-      "text": "<strong>Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says</strong> -- Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-17T03:12:54Z",
-      "text": "<strong>Tankers hit in Strait of Hormuz as drone raises alarm at Iraq gas field</strong> -- Iran reports tanker mine strikes as a drone alert in Iraq and the arrival of a US aircraft carrier raise tensions. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T01:38:13Z",
-      "text": "<strong>Yemeni army reports 661 attacks on Houthis as group advances towards Aden</strong> -- Yemen&amp;#039;s army reports 173 Houthi fighters killed or wounded as government forces reposition to defend Aden. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/17/yemen-army-reports-661-attacks-on-houthis-amid-houthi-push-towards-aden?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-16T23:57:49Z",
-      "text": "<strong>Iran war live: Houthis advance in Yemen as Vance rejects \u2018forever war\u2019</strong> -- Iran-aligned Houthi fighters kept up their push in southern Yemen as JD Vance ruled out a US &amp;#039;forever war&amp;#039; in Iran. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,27 +1213,59 @@
   ],
   "newsFeed": [
     {
-      "title": "Ukraine mourns mother, athlete and drone operator killed in Russian strike",
-      "description": "Rayana joined Ukraine\u2019s army in 2024 to protect her son from Russia\u2019s invasion. She was killed in Russian air strike.",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/ukraine-mourns-mother-athlete-and-drone-operator-killed-in-russian-strike?traffic_source=rss",
+      "title": "Putin\u2019s nuclear briefcase makes surprise appearance at China summit",
+      "description": "Russian President Vladimir Putin\u2019s nuclear briefcase was spotted at the APEC summit in China.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/putins-nuclear-briefcase-makes-surprise-appearance-at-china-summit?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-18T12:27:40Z",
+      "time": "2026-11-18T20:24:50Z",
       "tier": 2
     },
     {
-      "title": "Saudi coalition hits 60 Houthi military sites; Taiz sees \u2018fierce battles\u2019",
-      "description": "Houthis advance towards Aden as Saudi-led coalition conducts precision strikes on key military targets in Yemen.",
-      "link": "https://www.aljazeera.com/news/2026/11/18/houthis-advance-on-aden-as-saudi-coalition-targets-military-sites?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-18T11:57:09Z",
+      "title": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
+      "description": "Hamas condemns the incursion, which the Israeli military says is dismantling a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
+      "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-18T20:14:57Z",
       "tier": 2
     },
     {
-      "title": "Why has an NYT report on Iran\u2019s dams ignited fierce pushback?",
-      "description": "The NYT faces backlash over report suggesting a possible link between Iranian dams and underground missile facilities.",
-      "link": "https://www.aljazeera.com/news/2026/11/18/why-has-an-nyt-report-on-irans-dams-ignited-fierce-pushback?traffic_source=rss",
+      "title": "Four killed as Russian strikes hit Ukraine\u2019s Odesa",
+      "description": "At least four people have been killed and thirteen more injured after Russian strikes hit Ukraine\u2019s port city of Odesa.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/four-killed-as-russian-strikes-hit-ukraines-odesa?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-18T10:38:13Z",
+      "time": "2026-11-18T19:31:31Z",
+      "tier": 2
+    },
+    {
+      "title": "Israeli settler kills Palestinian grandmother in occupied West Bank",
+      "description": "A Palestinian grandmother was killed by an Israeli settler in the occupied West Bank.",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/israeli-settler-kills-palestinian-grandmother-in-occupied-west-bank?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-18T19:27:42Z",
+      "tier": 2
+    },
+    {
+      "title": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+      "description": "Iranian attacks on the Gulf countries draw condemnation from across the region.",
+      "link": "https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-18T16:47:26Z",
+      "tier": 2
+    },
+    {
+      "title": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
+      "description": "Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday.",
+      "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-18T13:04:48Z",
+      "tier": 2
+    },
+    {
+      "title": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
+      "description": "Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president.",
+      "link": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-18T02:29:52Z",
       "tier": 2
     },
     {
@@ -1251,22 +1283,14 @@
       "source": "BBC World",
       "time": "2026-11-17T20:30:20Z",
       "tier": 2
-    },
-    {
-      "title": "Trump says US taking 'very seriously' any Iranian plot against Washington",
-      "description": "Tehran rejects any suggestion it was plotting a so-called dirty bomb attack on the US capital as \"baseless\".",
-      "link": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-11-17T17:37:04Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting indicates no clear public update to the core Iran, Israel, Gulf-state, or U.S. fatality totals beyond figures already widely cited in late August and in official U.S. reporting, though AP on November 16-18, 2026 confirmed renewed hostilities in the Gulf, including Iranian strikes on Bahrain and Kuwait-related targets, a U.S. retaliatory strike on an IRGC missile site in the Strait of Hormuz, and the arrival of a third U.S. aircraft carrier in theater; the most detailed official U.S. operational figures located remain the Lead IG report citing more than 50,000 deployed U.S. personnel, about 13,500 targets struck, about 36,000 combat sorties, and 11 U.S. personnel killed in action total.",
+  "summary": "Confirmed reporting on November 18, 2026 shows renewed escalation in the Gulf: AP reported Iran targeted Ali Al Salem Air Base in Kuwait and launched additional attacks on Bahrain after a U.S. strike on an IRGC missile launch site on Qeshm Island the previous day. The Pentagon-linked casualty total most recently available remains 23 U.S. service members killed as of November 4, while the most recent independently cited Iran death total still in broad use is HRANA's 3,636 through April 7, including 1,701 civilians; WHO last reported 33,806 injuries in Iran. For force posture, AP said the U.S. is now back to two aircraft carriers in the Middle East after briefly reaching three, and no newer official cumulative strike figure beyond about 13,500 targets struck was found.",
   "briefings": [
     {
       "date": "2026-11-18",
       "day": 263,
-      "summary": "Confirmed reporting indicates no clear public update to the core Iran, Israel, Gulf-state, or U.S. fatality totals beyond figures already widely cited in late August and in official U.S. reporting, though AP on November 16-18, 2026 confirmed renewed hostilities in the Gulf, including Iranian strikes on Bahrain and Kuwait-related targets, a U.S. retaliatory strike on an IRGC missile site in the Strait of Hormuz, and the arrival of a third U.S. aircraft carrier in theater; the most detailed official U.S. operational figures located remain the Lead IG report citing more than 50,000 deployed U.S. personnel, about 13,500 targets struck, about 36,000 combat sorties, and 11 U.S. personnel killed in action total."
+      "summary": "Confirmed reporting on November 18, 2026 shows renewed escalation in the Gulf: AP reported Iran targeted Ali Al Salem Air Base in Kuwait and launched additional attacks on Bahrain after a U.S. strike on an IRGC missile launch site on Qeshm Island the previous day. The Pentagon-linked casualty total most recently available remains 23 U.S. service members killed as of November 4, while the most recent independently cited Iran death total still in broad use is HRANA's 3,636 through April 7, including 1,701 civilians; WHO last reported 33,806 injuries in Iran. For force posture, AP said the U.S. is now back to two aircraft carriers in the Middle East after briefly reaching three, and no newer official cumulative strike figure beyond about 13,500 targets struck was found."
     },
     {
       "date": "2026-11-17",
