@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-11-19T13:09:50Z",
+  "lastUpdated": "2026-11-19T21:35:45Z",
   "dayCount": 264,
   "banner": {
-    "strikes": "~4,500",
-    "killed": "3,105+",
-    "cost": "$52.7B+"
+    "strikes": "~13,500",
+    "killed": "46+",
+    "cost": "$54.4B+"
   },
   "humanCost": {
     "iranDeaths": "3,038",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$52.7 billion+",
-    "dailyBurnRate": "~$199M/day",
+    "totalCost": "$54.4 billion+",
+    "dailyBurnRate": "~$206M/day",
     "daysOfOps": 264,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,7 +74,7 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-11-19",
-          "source": "LLM-verified (AP, Nov. 18, 2026: USS George H.W. Bush and USS Theodore Roosevelt are the two U.S. carriers now in the region after USS George Washington departed)"
+          "source": "LLM-verified (AP News, Nov. 18, 2026: USS George H.W. Bush and USS Theodore Roosevelt are the two U.S. carriers currently in the region.)"
         },
         {
           "id": "destroyers",
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-11-19",
-          "source": "LLM-verified (AP, Nov. 16, 2026: flotilla in the Arabian Sea included 13 destroyers, two cruisers and a littoral combat ship)"
+          "source": "LLM-verified (AP News, Nov. 18, 2026: naval force in region includes 'more than a dozen destroyers, cruisers and a littoral combat ship'; using 13 as the minimum confirmed count consistent with 'more than a dozen' for destroyers/escorts in theater.)"
         },
         {
           "id": "personnel",
@@ -107,8 +107,8 @@
             "soldiers deployed",
             "marines deployed"
           ],
-          "lastUpdated": "2026-11-18",
-          "source": "LLM-verified (CRS report U.S. Conflict with Iran states an estimated 50,000 U.S. service members deployed in and around the Middle East.)"
+          "lastUpdated": "2026-11-19",
+          "source": "LLM-verified (Lead IG Report to Congress on Operation Epic Fury says more than 50,000 U.S. service members were deployed throughout CENTCOM AOR in support of OEF.)"
         },
         {
           "id": "intel_cyber",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 8000,
+          "quantity": 25000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-11-19",
-          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 18, 2026 lists 8,000+ combat flights; no newer official cumulative fighter/attack sortie total located)"
+          "source": "LLM-verified (Lead IG Report to Congress on Operation Epic Fury says USCENTCOM reported approximately 36,000 combat sorties.)"
         },
         {
           "id": "interceptors",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "8,000 \u00d7 $100,000 each",
-        "cost": "$800,000,000"
+        "detail": "25,000 \u00d7 $100,000 each",
+        "cost": "$2,500,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,15 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Nov 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Nov. 18-19, 2026 that U.S. forces carried out limited strikes on Iranian targets in the Strait of Hormuz and that Iran increased attacks on shipping; Al Jazeera/BBC headline context also indicates Kuwait and Bahrain reported fresh Iranian attacks after the U.S. strike on Qeshm.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Nov 19, 2026",
       "severity": "high",
@@ -650,15 +659,6 @@
       "text": "AP Nov. 16, 2026: third U.S. aircraft carrier (USS Theodore Roosevelt) arrived in the Middle East",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "AP reported Nov. 13-16, 2026 that Iranian-linked threats around Bahrain and the Gulf continue, including drone incidents and repeated attacks on Bahrain during the broader conflict.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,31 @@
   ],
   "developments": [
     {
+      "time": "2026-11-19T20:30:54Z",
+      "text": "<strong>Senate Republicans in US reject measure to limit Trump\u2019s war powers in Iran</strong> -- The resolution was defeated 51-48. Three Republicans broke rank, voting against the measure. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/19/senate-republicans-in-us-reject-measure-to-limit-trumps-war-powers-in-iran?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T18:16:09Z",
+      "text": "<strong>Iraq reaches compromise with Kataib Hezbollah over armed group\u2019s stronghold</strong> -- The compromise reached will unite forces that include brigades from the Popular Mobilisation Forces. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/19/iraq-reaches-compromise-with-kataib-hezbollah-over-armed-group-stronghold?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T20:07:02Z",
+      "text": "<strong>Myanmar committed genocide against Rohingya minority, top UN court rules</strong> -- The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-19T17:03:23Z",
+      "text": "<strong>Israeli military completes ground operation in Gaza beyond Yellow Line</strong> -- Hamas condemned the incursion, which the Israeli military said was to dismantle a &quot;terror tunnel&quot;, as a &quot;flagrant&quot; ceasefire violation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-18T13:04:48Z",
+      "text": "<strong>Kuwait says it repelled first Iranian attack in two months after US strikes island</strong> -- Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-11-19T12:11:42Z",
       "text": "<strong>What is a \u2018nuclear briefcase\u2019, spotted at the APEC summit?</strong> -- Vladimir Putin&amp;#039;s special briefcase - thought to carry access to nuclear weapons - made a rare appearance in Shenzhen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/11/19/what-is-a-nuclear-briefcase-spotted-at-the-apec-summit?traffic_source=rss"
@@ -786,11 +811,6 @@
       "time": "2026-11-19T11:07:37Z",
       "text": "<strong>Israeli military completes ground operation in Gaza beyond Yellow Line</strong> -- Hamas condemned the incursion, which the Israeli military said was to dismantle a &quot;terror tunnel&quot;, as a &quot;flagrant&quot; ceasefire violation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-18T13:04:48Z",
-      "text": "<strong>Kuwait says it repelled first Iranian attack in two months after US strikes island</strong> -- Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-11-18T02:29:52Z",
@@ -831,26 +851,6 @@
       "time": "2026-11-18T16:47:26Z",
       "text": "<strong>Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island</strong> -- Iranian attacks on the Gulf countries draw condemnation from across the region. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-18T20:14:57Z",
-      "text": "<strong>Israeli military launches rare ground operation in Gaza beyond Yellow Line</strong> -- Hamas condemns the incursion, which the Israeli military says is dismantling a &quot;terror tunnel&quot;, as a &quot;flagrant&quot; ceasefire violation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-17T21:04:00Z",
-      "text": "<strong>US loses measles elimination status after 26 years amid record case numbers</strong> -- States have reported over 5,400 cases and 10 measles-related deaths for the first time since the early 1990s. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/c977p71jx0xxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-17T20:30:20Z",
-      "text": "<strong>Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says</strong> -- Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-18T12:27:40Z",
-      "text": "<strong>Ukraine mourns mother, athlete and drone operator killed in Russian strike</strong> -- Rayana joined Ukraine\u2019s army in 2024 to protect her son from Russia\u2019s invasion. She was killed in Russian air strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/ukraine-mourns-mother-athlete-and-drone-operator-killed-in-russian-strike?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,19 +1213,27 @@
   ],
   "newsFeed": [
     {
-      "title": "What is a \u2018nuclear briefcase\u2019, spotted at the APEC summit?",
-      "description": "Vladimir Putin&#039;s special briefcase - thought to carry access to nuclear weapons - made a rare appearance in Shenzhen.",
-      "link": "https://www.aljazeera.com/news/2026/11/19/what-is-a-nuclear-briefcase-spotted-at-the-apec-summit?traffic_source=rss",
+      "title": "Senate Republicans in US reject measure to limit Trump\u2019s war powers in Iran",
+      "description": "The resolution was defeated 51-48. Three Republicans broke rank, voting against the measure.",
+      "link": "https://www.aljazeera.com/news/2026/11/19/senate-republicans-in-us-reject-measure-to-limit-trumps-war-powers-in-iran?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-19T12:11:42Z",
+      "time": "2026-11-19T20:30:54Z",
       "tier": 2
     },
     {
-      "title": "Trump claims Iran is developing bioweapons: Is there any evidence?",
-      "description": "Trump threatens to &#039;wipe out&#039; Iran in case of attack as Tehran&#039;s capabilities remain unclear.",
-      "link": "https://www.aljazeera.com/news/2026/11/19/trump-claims-iran-is-developing-bioweapons-is-there-any-evidence?traffic_source=rss",
+      "title": "Myanmar committed genocide against Rohingya minority, top UN court rules",
+      "description": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands.",
+      "link": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "time": "2026-11-19T20:07:02Z",
+      "tier": 2
+    },
+    {
+      "title": "Iraq reaches compromise with Kataib Hezbollah over armed group\u2019s stronghold",
+      "description": "The compromise reached will unite forces that include brigades from the Popular Mobilisation Forces.",
+      "link": "https://www.aljazeera.com/news/2026/11/19/iraq-reaches-compromise-with-kataib-hezbollah-over-armed-group-stronghold?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-19T11:38:39Z",
+      "time": "2026-11-19T18:16:09Z",
       "tier": 2
     },
     {
@@ -1233,39 +1241,7 @@
       "description": "Hamas condemned the incursion, which the Israeli military said was to dismantle a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
       "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-11-19T11:07:37Z",
-      "tier": 2
-    },
-    {
-      "title": "Trump calls for nuclear arms reduction at APEC summit",
-      "description": "Trump calls for nuclear arms reduction at APEC summit",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-calls-for-nuclear-arms-reduction-at-apec-summit?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-19T10:03:27Z",
-      "tier": 2
-    },
-    {
-      "title": "North Korea expanding uranium enrichment facility, UN nuclear watchdog says",
-      "description": "North Korea can produce both highly enriched uranium and weapons-grade plutonium at its facilities, according to IAEA.",
-      "link": "https://www.aljazeera.com/news/2026/11/19/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-19T09:16:47Z",
-      "tier": 2
-    },
-    {
-      "title": "Saudi-led coalition intercepts Houthi missiles targeting Riyadh and south",
-      "description": "Material damage was reported after \u200bdebris fell following the latest Houthi strikes launched towards Saudi Arabia.",
-      "link": "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-19T08:19:17Z",
-      "tier": 2
-    },
-    {
-      "title": "\u2018Too early\u2019 to determine impact of US blockade on Iran, with Tehran defiant",
-      "description": "The US blockade of Iranian ports has a crippling effect on the economy, but Tehran insists its economy can survive.",
-      "link": "https://www.aljazeera.com/economy/2026/11/19/too-early-to-determine-impact-of-us-siege-on-iran-with-tehran-defiant?traffic_source=rss",
-      "source": "Al Jazeera",
-      "time": "2026-11-19T07:08:57Z",
+      "time": "2026-11-19T17:03:23Z",
       "tier": 2
     },
     {
@@ -1275,22 +1251,14 @@
       "source": "BBC World",
       "time": "2026-11-18T13:04:48Z",
       "tier": 2
-    },
-    {
-      "title": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
-      "description": "Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president.",
-      "link": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC World",
-      "time": "2026-11-18T02:29:52Z",
-      "tier": 2
     }
   ],
-  "summary": "Confirmed reporting on November 16-19, 2026 shows renewed tension rather than a new major offensive: AP reported that the U.S. briefly surged to three carriers before returning to two currently deployed carrier strike groups, while Iran-linked attacks on Gulf shipping and nearby infrastructure resumed, including an attack that left one ADNOC tanker crew member missing and 11 injured. For cumulative casualties, the most recent clearly sourced figures located remain Iran\u2019s government toll of 3,038 killed and 25,000 injured cited by the UN fact-finding mission in September, the Pentagon/AP count of 18 U.S. service members killed and more than 830 wounded, 21 Israelis and foreign nationals killed in Israel by Iranian missile attacks per Israeli reporting in September, and 28 deaths in Gulf states per Al Jazeera\u2019s August compilation from official bodies. Official current cumulative weapons-expended totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptors were not found in the searched official and major-wire sources, so those fields are left null.",
+  "summary": "Confirmed reporting on November 19, 2026 shows the Senate rejected a measure to limit President Trump\u2019s war powers in Iran, while the U.S. military currently has two carrier strike groups in the region and a large naval presence supporting continued operations and blockade enforcement. The most recent official operation-wide figures located in accessible primary reporting were from the Lead Inspector General report covering OEF through June 30, which lists 18 total U.S. service-member deaths, more than 50,000 deployed personnel, about 13,500 targets struck, and about 36,000 combat sorties. For broader regional casualties, the latest clearly sourced cumulative figure found in search results was Al Jazeera\u2019s August compilation citing official bodies, which put Gulf-state deaths at 28.",
   "briefings": [
     {
       "date": "2026-11-19",
       "day": 264,
-      "summary": "Confirmed reporting on November 16-19, 2026 shows renewed tension rather than a new major offensive: AP reported that the U.S. briefly surged to three carriers before returning to two currently deployed carrier strike groups, while Iran-linked attacks on Gulf shipping and nearby infrastructure resumed, including an attack that left one ADNOC tanker crew member missing and 11 injured. For cumulative casualties, the most recent clearly sourced figures located remain Iran\u2019s government toll of 3,038 killed and 25,000 injured cited by the UN fact-finding mission in September, the Pentagon/AP count of 18 U.S. service members killed and more than 830 wounded, 21 Israelis and foreign nationals killed in Israel by Iranian missile attacks per Israeli reporting in September, and 28 deaths in Gulf states per Al Jazeera\u2019s August compilation from official bodies. Official current cumulative weapons-expended totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptors were not found in the searched official and major-wire sources, so those fields are left null."
+      "summary": "Confirmed reporting on November 19, 2026 shows the Senate rejected a measure to limit President Trump\u2019s war powers in Iran, while the U.S. military currently has two carrier strike groups in the region and a large naval presence supporting continued operations and blockade enforcement. The most recent official operation-wide figures located in accessible primary reporting were from the Lead Inspector General report covering OEF through June 30, which lists 18 total U.S. service-member deaths, more than 50,000 deployed personnel, about 13,500 targets struck, and about 36,000 combat sorties. For broader regional casualties, the latest clearly sourced cumulative figure found in search results was Al Jazeera\u2019s August compilation citing official bodies, which put Gulf-state deaths at 28."
     },
     {
       "date": "2026-11-18",
