@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-11-19T03:29:00Z",
+  "lastUpdated": "2026-11-19T13:09:50Z",
   "dayCount": 264,
   "banner": {
-    "strikes": "~13,500",
-    "killed": "3,220+",
-    "cost": "$53.0B+"
+    "strikes": "~4,500",
+    "killed": "3,105+",
+    "cost": "$52.7B+"
   },
   "humanCost": {
     "iranDeaths": "3,038",
     "iranDeathsNote": "Iranian Ministry of Health reports 1,045+ confirmed deaths from airstrikes, military operations. HRANA (opposition group) estimates up to 7,000 when including indirect casualties and unreported deaths. Trump administration estimates 32,000. Figures remain heavily disputed. Source: CENTCOM, Iranian state media, HRANA, Reuters.",
-    "usKIA": "4",
+    "usKIA": "18",
     "usKIANote": "6 killed in Iranian ballistic missile strike on US operations center in Kuwait, March 2. 47 additional injured in same strike. Source: CENTCOM.",
-    "israeliDeaths": "36",
+    "israeliDeaths": "21",
     "israeliDeathsNote": "Including 9 killed in ballistic missile strike on Beit Shemesh, March 1. 2 killed in IED attack in Gaza. Source: IDF spokesperson.",
     "gulfCasualties": "28",
     "gulfCasualtiesNote": "Deaths in UAE, Saudi Arabia, Kuwait from Iranian retaliation. Mostly civilian. Source: Official statements, Reuters.",
@@ -47,8 +47,8 @@
     }
   },
   "financialCost": {
-    "totalCost": "$53.0 billion+",
-    "dailyBurnRate": "~$201M/day",
+    "totalCost": "$52.7 billion+",
+    "dailyBurnRate": "~$199M/day",
     "daysOfOps": 264,
     "costModel": {
       "_note": "OpenClaw cost model. 'timeBased' items accumulate cost every day they are active. 'eventBased' items are one-time costs based on quantity \u00d7 unit cost. OpenClaw updates quantities when new data appears in RSS feeds.",
@@ -74,13 +74,13 @@
             "carrier deployed"
           ],
           "lastUpdated": "2026-11-19",
-          "source": "LLM-verified (AP News, November 18, 2026: USS George H.W. Bush and USS Theodore Roosevelt are the two carriers currently in region after USS George Washington departed)"
+          "source": "LLM-verified (AP, Nov. 18, 2026: USS George H.W. Bush and USS Theodore Roosevelt are the two U.S. carriers now in the region after USS George Washington departed)"
         },
         {
           "id": "destroyers",
           "category": "Destroyers & Escorts",
           "unitCostPerDay": 240000,
-          "quantity": 15,
+          "quantity": 13,
           "activeStartDate": "2026-02-28",
           "activeEndDate": null,
           "keywords": [
@@ -91,7 +91,7 @@
             "guided-missile destroyer"
           ],
           "lastUpdated": "2026-11-19",
-          "source": "LLM-verified (AP News, November 16, 2026: 13 destroyers in Arabian Sea/Persian Gulf/Mediterranean force plus 2 more in Red Sea)"
+          "source": "LLM-verified (AP, Nov. 16, 2026: flotilla in the Arabian Sea included 13 destroyers, two cruisers and a littoral combat ship)"
         },
         {
           "id": "personnel",
@@ -267,7 +267,7 @@
           "id": "fighter_sorties",
           "category": "Fighter/Attack Sorties",
           "unitCost": 100000,
-          "quantity": 10200,
+          "quantity": 8000,
           "keywords": [
             "sortie",
             "F-35",
@@ -280,7 +280,7 @@
             "strike sortie"
           ],
           "lastUpdated": "2026-11-19",
-          "source": "LLM-verified (CENTCOM 2026 SASC Posture Statement: 'more than 10,200 sorties')"
+          "source": "LLM-verified (CENTCOM Operation Epic Fury Fact Sheet dated March 18, 2026 lists 8,000+ combat flights; no newer official cumulative fighter/attack sortie total located)"
         },
         {
           "id": "interceptors",
@@ -333,8 +333,8 @@
       },
       {
         "category": "Destroyers & Escorts",
-        "detail": "15 \u00d7 $240,000/day \u00d7 264 days",
-        "cost": "$950,400,000"
+        "detail": "13 \u00d7 $240,000/day \u00d7 264 days",
+        "cost": "$823,680,000"
       },
       {
         "category": "Deployed Personnel",
@@ -398,8 +398,8 @@
       },
       {
         "category": "Fighter/Attack Sorties",
-        "detail": "10,200 \u00d7 $100,000 each",
-        "cost": "$1,020,000,000"
+        "detail": "8,000 \u00d7 $100,000 each",
+        "cost": "$800,000,000"
       },
       {
         "category": "Missile Interceptors (SM-3, THAAD, Patriot)",
@@ -435,6 +435,24 @@
     "destroyers": 13
   },
   "threats": [
+    {
+      "date": "Nov 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Nov. 16-18, 2026 that the USS Theodore Roosevelt entered the region, briefly raising U.S. carrier presence to three before settling back to two, as Washington kept options open for renewed large-scale strikes.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
+    {
+      "date": "Nov 19, 2026",
+      "severity": "high",
+      "actor": "unknown",
+      "actorLabel": "UNKNOWN",
+      "text": "AP reported Nov. 18-19, 2026 that Iran-linked attacks on Gulf shipping and infrastructure intensified this week, including a strike on an ADNOC tanker that left one crew member missing and 11 injured, while Bahrain said it intercepted additional Iranian attacks.",
+      "target": "",
+      "source": "Source: LLM synthesis of recent reporting"
+    },
     {
       "date": "Nov 19, 2026",
       "severity": "high",
@@ -641,24 +659,6 @@
       "text": "AP reported Nov. 13-16, 2026 that Iranian-linked threats around Bahrain and the Gulf continue, including drone incidents and repeated attacks on Bahrain during the broader conflict.",
       "target": "",
       "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "USS Theodore Roosevelt arrived in the Middle East on Nov. 15-16, 2026, raising US carrier presence in the region to three strike groups, according to Al Jazeera.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
-    },
-    {
-      "date": "Nov 16, 2026",
-      "severity": "high",
-      "actor": "unknown",
-      "actorLabel": "UNKNOWN",
-      "text": "Iran warned on Nov. 16, 2026 that it may strike first before another US attack, according to Al Jazeera live coverage.",
-      "target": "",
-      "source": "Source: LLM synthesis of recent reporting"
     }
   ],
   "homelandThreats": [
@@ -753,6 +753,51 @@
   ],
   "developments": [
     {
+      "time": "2026-11-19T12:11:42Z",
+      "text": "<strong>What is a \u2018nuclear briefcase\u2019, spotted at the APEC summit?</strong> -- Vladimir Putin&amp;#039;s special briefcase - thought to carry access to nuclear weapons - made a rare appearance in Shenzhen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/19/what-is-a-nuclear-briefcase-spotted-at-the-apec-summit?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T11:38:39Z",
+      "text": "<strong>Trump claims Iran is developing bioweapons: Is there any evidence?</strong> -- Trump threatens to &amp;#039;wipe out&amp;#039; Iran in case of attack as Tehran&amp;#039;s capabilities remain unclear. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/19/trump-claims-iran-is-developing-bioweapons-is-there-any-evidence?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T10:03:27Z",
+      "text": "<strong>Trump calls for nuclear arms reduction at APEC summit</strong> -- Trump calls for nuclear arms reduction at APEC summit <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-calls-for-nuclear-arms-reduction-at-apec-summit?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T09:16:47Z",
+      "text": "<strong>North Korea expanding uranium enrichment facility, UN nuclear watchdog says</strong> -- North Korea can produce both highly enriched uranium and weapons-grade plutonium at its facilities, according to IAEA. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/19/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T08:19:17Z",
+      "text": "<strong>Saudi-led coalition intercepts Houthi missiles targeting Riyadh and south</strong> -- Material damage was reported after \u200bdebris fell following the latest Houthi strikes launched towards Saudi Arabia. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T07:08:57Z",
+      "text": "<strong>\u2018Too early\u2019 to determine impact of US blockade on Iran, with Tehran defiant</strong> -- The US blockade of Iranian ports has a crippling effect on the economy, but Tehran insists its economy can survive. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
+      "link": "https://www.aljazeera.com/economy/2026/11/19/too-early-to-determine-impact-of-us-siege-on-iran-with-tehran-defiant?traffic_source=rss"
+    },
+    {
+      "time": "2026-11-19T11:07:37Z",
+      "text": "<strong>Israeli military completes ground operation in Gaza beyond Yellow Line</strong> -- Hamas condemned the incursion, which the Israeli military said was to dismantle a &quot;terror tunnel&quot;, as a &quot;flagrant&quot; ceasefire violation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-18T13:04:48Z",
+      "text": "<strong>Kuwait says it repelled first Iranian attack in two months after US strikes island</strong> -- Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "time": "2026-11-18T02:29:52Z",
+      "text": "<strong>Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump</strong> -- Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
+      "link": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss"
+    },
+    {
       "time": "2026-11-19T00:01:02Z",
       "text": "<strong>Iran war live: Trump says Iran seeks new weapons; Houthis target Riyadh</strong> -- Trump claims Iran is seeking to develop biological weapons, as the Saudi-led coalition combats Houthi missiles. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz?traffic_source=rss"
@@ -766,16 +811,6 @@
       "time": "2026-11-18T22:34:56Z",
       "text": "<strong>Israeli military launches rare ground operation in Gaza beyond Yellow Line</strong> -- Hamas condemns the incursion, which the Israeli military says is dismantling a &quot;terror tunnel&quot;, as a &quot;flagrant&quot; ceasefire violation. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
       "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-18T13:04:48Z",
-      "text": "<strong>Kuwait says it repelled first Iranian attack in two months after US strikes island</strong> -- Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-18T02:29:52Z",
-      "text": "<strong>Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump</strong> -- Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss"
     },
     {
       "time": "2026-11-18T20:24:50Z",
@@ -816,41 +851,6 @@
       "time": "2026-11-18T12:27:40Z",
       "text": "<strong>Ukraine mourns mother, athlete and drone operator killed in Russian strike</strong> -- Rayana joined Ukraine\u2019s army in 2024 to protect her son from Russia\u2019s invasion. She was killed in Russian air strike. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/ukraine-mourns-mother-athlete-and-drone-operator-killed-in-russian-strike?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-18T11:57:09Z",
-      "text": "<strong>Saudi coalition hits 60 Houthi military sites; Taiz sees \u2018fierce battles\u2019</strong> -- Houthis advance towards Aden as Saudi-led coalition conducts precision strikes on key military targets in Yemen. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/18/houthis-advance-on-aden-as-saudi-coalition-targets-military-sites?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-18T10:38:13Z",
-      "text": "<strong>Why has an NYT report on Iran\u2019s dams ignited fierce pushback?</strong> -- The NYT faces backlash over report suggesting a possible link between Iranian dams and underground missile facilities. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/18/why-has-an-nyt-report-on-irans-dams-ignited-fierce-pushback?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T17:37:04Z",
-      "text": "<strong>Trump says US taking &#x27;very seriously&#x27; any Iranian plot against Washington</strong> -- Tehran rejects any suggestion it was plotting a so-called dirty bomb attack on the US capital as &quot;baseless&quot;. <span style=\"color:#64748b;font-size:11px;\">[BBC World]</span>",
-      "link": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "time": "2026-11-18T01:04:43Z",
-      "text": "<strong>Ecuadorian fishermen sue Trump administration over drone strike</strong> -- Crew say their boat was attacked by drones launched from US-operated vessel as part of &amp;#039;manifestly unlawful&amp;#039; campaign. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/18/ecuadorian-fishermen-sue-trump-administration-over-drone-strike?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-18T00:33:36Z",
-      "text": "<strong>Top IRGC commander in Iraq for talks amid Kataib Hezbollah tensions</strong> -- Head of Iran&amp;#039;s IRGC Quds Force to attend meetings over alleged oil smuggling linked to pro-Iranian armed groups. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/18/top-irgc-commander-in-iraq-for-talks-amid-kataib-hezbollah-tensions?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-18T00:00:27Z",
-      "text": "<strong>Iran war live: Kuwait says intercepting \u2018hostile\u2019 drone attacks</strong> -- Kuwait intercepts &amp;#039;hostile&amp;#039; drone attacks as Bahrain accuses Iran of &amp;#039;criminal attacks&amp;#039;. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks?traffic_source=rss"
-    },
-    {
-      "time": "2026-11-17T23:38:38Z",
-      "text": "<strong>Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain</strong> -- Kuwait&amp;#039;s military says its air defence was repelling drones as Iran and the US hit out at each other across the Gulf. <span style=\"color:#64748b;font-size:11px;\">[Al Jazeera]</span>",
-      "link": "https://www.aljazeera.com/news/2026/11/17/kuwait-reports-drone-attacks-as-iran-us-trade-attacks-on-qeshm-and-bahrain?traffic_source=rss"
     }
   ],
   "mapMarkers": {
@@ -1213,27 +1213,59 @@
   ],
   "newsFeed": [
     {
-      "title": "Iran war live: Trump says Iran seeks new weapons; Houthis target Riyadh",
-      "description": "Trump claims Iran is seeking to develop biological weapons, as the Saudi-led coalition combats Houthi missiles.",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz?traffic_source=rss",
+      "title": "What is a \u2018nuclear briefcase\u2019, spotted at the APEC summit?",
+      "description": "Vladimir Putin&#039;s special briefcase - thought to carry access to nuclear weapons - made a rare appearance in Shenzhen.",
+      "link": "https://www.aljazeera.com/news/2026/11/19/what-is-a-nuclear-briefcase-spotted-at-the-apec-summit?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-19T00:01:02Z",
+      "time": "2026-11-19T12:11:42Z",
       "tier": 2
     },
     {
-      "title": "US steps up pressure on Iran-backed Hezbollah with new sanctions",
-      "description": "The US Treasury has accused Hezbollah of using charitable organisations as &#039;fronts&#039; for fundraising.",
-      "link": "https://www.aljazeera.com/news/2026/11/18/us-steps-up-pressure-on-iran-backed-hezbollah-with-new-sanctions?traffic_source=rss",
+      "title": "Trump claims Iran is developing bioweapons: Is there any evidence?",
+      "description": "Trump threatens to &#039;wipe out&#039; Iran in case of attack as Tehran&#039;s capabilities remain unclear.",
+      "link": "https://www.aljazeera.com/news/2026/11/19/trump-claims-iran-is-developing-bioweapons-is-there-any-evidence?traffic_source=rss",
       "source": "Al Jazeera",
-      "time": "2026-11-18T22:56:19Z",
+      "time": "2026-11-19T11:38:39Z",
       "tier": 2
     },
     {
-      "title": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
-      "description": "Hamas condemns the incursion, which the Israeli military says is dismantling a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
+      "title": "Israeli military completes ground operation in Gaza beyond Yellow Line",
+      "description": "Hamas condemned the incursion, which the Israeli military said was to dismantle a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
       "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
       "source": "BBC World",
-      "time": "2026-11-18T22:34:56Z",
+      "time": "2026-11-19T11:07:37Z",
+      "tier": 2
+    },
+    {
+      "title": "Trump calls for nuclear arms reduction at APEC summit",
+      "description": "Trump calls for nuclear arms reduction at APEC summit",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-calls-for-nuclear-arms-reduction-at-apec-summit?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-19T10:03:27Z",
+      "tier": 2
+    },
+    {
+      "title": "North Korea expanding uranium enrichment facility, UN nuclear watchdog says",
+      "description": "North Korea can produce both highly enriched uranium and weapons-grade plutonium at its facilities, according to IAEA.",
+      "link": "https://www.aljazeera.com/news/2026/11/19/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-19T09:16:47Z",
+      "tier": 2
+    },
+    {
+      "title": "Saudi-led coalition intercepts Houthi missiles targeting Riyadh and south",
+      "description": "Material damage was reported after \u200bdebris fell following the latest Houthi strikes launched towards Saudi Arabia.",
+      "link": "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-19T08:19:17Z",
+      "tier": 2
+    },
+    {
+      "title": "\u2018Too early\u2019 to determine impact of US blockade on Iran, with Tehran defiant",
+      "description": "The US blockade of Iranian ports has a crippling effect on the economy, but Tehran insists its economy can survive.",
+      "link": "https://www.aljazeera.com/economy/2026/11/19/too-early-to-determine-impact-of-us-siege-on-iran-with-tehran-defiant?traffic_source=rss",
+      "source": "Al Jazeera",
+      "time": "2026-11-19T07:08:57Z",
       "tier": 2
     },
     {
@@ -1253,12 +1285,12 @@
       "tier": 2
     }
   ],
-  "summary": "Confirmed current reporting indicates the conflict remains active but below the intensity of the opening campaign. AP reported on November 18, 2026 that two U.S. carrier strike groups are currently in theater after the USS George Washington left, while AP on November 17 said Iran had launched a third attack on U.S. targets in Bahrain in five days and the U.S. retaliated with a precision strike on Qeshm Island. For cumulative official campaign metrics, CENTCOM\u2019s 2026 posture statement says Operation Epic Fury involved more than 10,200 sorties, over 13,500 strikes, and more than 7,500 total drone and ballistic-missile intercepts. For Iranian casualties, the only clearly accessible named cumulative figure found was the Iranian government toll cited by Al Jazeera on September 17, 2026: 3,038 killed and 25,000 injured; the same UN-linked report documented at least 178 civilians killed in two specific U.S. strike incidents. Many requested fields, including current Pentagon/CENTCOM cumulative U.S. KIA beyond early March, Israeli deaths, Gulf-state deaths, troop totals, and munition-by-type totals, could not be confirmed in accessible current named-source reporting and are left null.",
+  "summary": "Confirmed reporting on November 16-19, 2026 shows renewed tension rather than a new major offensive: AP reported that the U.S. briefly surged to three carriers before returning to two currently deployed carrier strike groups, while Iran-linked attacks on Gulf shipping and nearby infrastructure resumed, including an attack that left one ADNOC tanker crew member missing and 11 injured. For cumulative casualties, the most recent clearly sourced figures located remain Iran\u2019s government toll of 3,038 killed and 25,000 injured cited by the UN fact-finding mission in September, the Pentagon/AP count of 18 U.S. service members killed and more than 830 wounded, 21 Israelis and foreign nationals killed in Israel by Iranian missile attacks per Israeli reporting in September, and 28 deaths in Gulf states per Al Jazeera\u2019s August compilation from official bodies. Official current cumulative weapons-expended totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptors were not found in the searched official and major-wire sources, so those fields are left null.",
   "briefings": [
     {
       "date": "2026-11-19",
       "day": 264,
-      "summary": "Confirmed current reporting indicates the conflict remains active but below the intensity of the opening campaign. AP reported on November 18, 2026 that two U.S. carrier strike groups are currently in theater after the USS George Washington left, while AP on November 17 said Iran had launched a third attack on U.S. targets in Bahrain in five days and the U.S. retaliated with a precision strike on Qeshm Island. For cumulative official campaign metrics, CENTCOM\u2019s 2026 posture statement says Operation Epic Fury involved more than 10,200 sorties, over 13,500 strikes, and more than 7,500 total drone and ballistic-missile intercepts. For Iranian casualties, the only clearly accessible named cumulative figure found was the Iranian government toll cited by Al Jazeera on September 17, 2026: 3,038 killed and 25,000 injured; the same UN-linked report documented at least 178 civilians killed in two specific U.S. strike incidents. Many requested fields, including current Pentagon/CENTCOM cumulative U.S. KIA beyond early March, Israeli deaths, Gulf-state deaths, troop totals, and munition-by-type totals, could not be confirmed in accessible current named-source reporting and are left null."
+      "summary": "Confirmed reporting on November 16-19, 2026 shows renewed tension rather than a new major offensive: AP reported that the U.S. briefly surged to three carriers before returning to two currently deployed carrier strike groups, while Iran-linked attacks on Gulf shipping and nearby infrastructure resumed, including an attack that left one ADNOC tanker crew member missing and 11 injured. For cumulative casualties, the most recent clearly sourced figures located remain Iran\u2019s government toll of 3,038 killed and 25,000 injured cited by the UN fact-finding mission in September, the Pentagon/AP count of 18 U.S. service members killed and more than 830 wounded, 21 Israelis and foreign nationals killed in Israel by Iranian missile attacks per Israeli reporting in September, and 28 deaths in Gulf states per Al Jazeera\u2019s August compilation from official bodies. Official current cumulative weapons-expended totals for Tomahawks, JDAMs, JASSMs, SDBs, B-2 sorties, MOPs, and interceptors were not found in the searched official and major-wire sources, so those fields are left null."
     },
     {
       "date": "2026-11-18",
